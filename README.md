@@ -28,3 +28,31 @@ but is not yet rendered as pages.
 
 Static. Any host. Canonical text stays at alexanarch.org — this surface points, it does not
 duplicate. If that changes, the pointers here are the thing to update, not the texts.
+
+## Contents
+
+```
+index.html      the page — centre, materials, disciplines, site plan, spine, machine section
+index.json      schema.org Dataset with 4 declared distributions
+topology.svg    the discipline centre-out
+vercel.json     static config; CORS and content-type headers for /data and /pdf
+robots.txt      open to machine readers; points at the JSON index and the OAI endpoint
+sitemap.xml
+data/
+  gather.json          the full working index (122 KB)
+  assembly-brief.md    the brief circulated for Assembly rounds (28 KB)
+pdf/
+  Operative-Semiotics-A-Grundrisse-SIGIL.pdf   880 pp, 2.3 MB
+  HESPERUS-The-Back-Matter-Machine-SIGIL.pdf   147 pp, 0.4 MB
+```
+
+## Deploy
+
+Static. No build step. Import to Vercel, framework preset **Other**, output directory the
+repository root. `vercel.json` sets `cleanUrls`, CORS on `/data` and `/pdf`, and the correct
+content types.
+
+The page carries Google Scholar `citation_*` tags including `citation_pdf_url`, which is the
+block Scholar parses to index a PDF against a landing page. That is the mechanism by which the
+work becomes findable in scholarly retrieval, and it is the reason the PDFs are hosted here
+rather than only linked.
