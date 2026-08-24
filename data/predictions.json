@@ -1,0 +1,617 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "name": "Operative Semiotics — Predictions & Builds Register",
+ "description": "The curated register behind operativesemiotics.org/open/: three classes — experimental predictions (resolve by running a frozen protocol or checking an observable), applied-theory predictions (resolve by watching a live system the theory was applied to), and unimplemented software builds (resolve by construction). Every entry links its primary sources in the Alexanarch record layer. Results obtained by others are admissible on the same terms as results obtained here; nothing requires permission.",
+ "version": "2.0",
+ "date": "2026-08-24",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "creator": "Lee Sharks (ORCID 0009-0000-1599-0703)",
+ "classes": {
+  "experimental": "Experimental predictions — pre-registered; resolve by running a frozen protocol or checking a stated observable, often on a date. The world or the instrument does the work; you check.",
+  "applied-theory": "Predictions from applied theory — the theory applied to a live system; resolve by watching the system evolve. Directional, longer horizons, updated as evidence files in.",
+  "unbuilt": "Unimplemented software builds — instruments specified but unconstructed; resolve by building. Each states what it would measure and what its absence currently excuses."
+ },
+ "status_vocabulary": [
+  "open",
+  "in-progress",
+  "partial",
+  "supported",
+  "disconfirmed",
+  "built",
+  "superseded"
+ ],
+ "honesty": "Statuses are curated and hand-verified; where a status could not be determined it says so rather than guessing. Six predictions in the whole-archive ledger have resolved wrong and are preserved as such — a register whose entries all came true would be evidence of a register written after the fact.",
+ "intake_note": "data/archive-intake.json snapshots the whole-archive prediction registry (190 machine-extracted predictions from deposit falsification apparatus). Entries graduate from intake to this register by triage: classed, sourced, given a check route and a status.",
+ "entries": [
+  {
+   "id": "P-EXPORT-RESUMES",
+   "cls": "experimental",
+   "title": "Zenodo's deletion export resumes after the cron fix",
+   "statement": "A stoppage with an identified mechanism should end when the mechanism is repaired.",
+   "check": "GET zenodo.org/api/exporter — a records-deleted.csv.gz version created after 2026-08-20 confirms; nothing by the check date disconfirms.",
+   "requires": "curl",
+   "effort": "one API call",
+   "due": "2026-09-10",
+   "settles": "Confirms the mundane explanation BY PREDICTION rather than inference — a stronger position than the one the archive currently holds.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "P-STALE-INDEX",
+   "cls": "experimental",
+   "title": "The crimson-hexagonal address stops naming Zenodo as host",
+   "statement": "A composition layer reporting a stale state should update once the source surfaces propagate.",
+   "check": "Re-run the address on Bing Copilot. Still returning Zenodo as host a month after the archive's surfaces changed disconfirms.",
+   "requires": "a browser",
+   "effort": "one query, one capture",
+   "due": "2026-09-23",
+   "settles": "The withdrawn finding's only route back.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "P-INTERVENTION-180",
+   "cls": "experimental",
+   "title": "SPXI treatment raises archive source share on the UNPREFIXED address",
+   "statement": "Inscribing the discriminating coordinates should alter composition-layer behaviour.",
+   "check": "Re-run the prefix battery, signed out, same surfaces, three epochs. Success: share above zero on the bare address.",
+   "requires": "a browser",
+   "effort": "four addresses × three epochs",
+   "due": "2026-09-22 / 2026-11-21 / 2027-02-19",
+   "settles": "#1535 declared itself an intervention. This is whether it executed.",
+   "sources": [
+    {
+     "deposit": 1535,
+     "url": "https://www.alexanarch.org/s/records/1535/",
+     "note": ""
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "P-PEO-COHORT-2",
+   "cls": "experimental",
+   "title": "Second global cohort epoch",
+   "statement": "A publication-year cohort should be monotonically non-decreasing; any decrease is erasure.",
+   "check": "scripts/peo_cohort_epoch.py — runs and diffs automatically.",
+   "requires": "curl (script provided)",
+   "effort": "37 API calls",
+   "due": "2026-09-23",
+   "settles": "The baseline's entire value is that a second epoch can exist.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "P-PEO-PANEL-2",
+   "cls": "experimental",
+   "title": "Second fixed-panel epoch",
+   "statement": "Re-querying a frozen DOI set measures erasure directly; minting cannot mask it.",
+   "check": "scripts/peo_panel_epoch.py — 404 rate is the erasure rate.",
+   "requires": "curl (script provided)",
+   "effort": "720 API calls",
+   "due": "2026-09-23",
+   "settles": "First direct measurement of global erasure the archive has ever taken.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "P-PHASE2-PROLIF",
+   "cls": "applied-theory",
+   "title": "Adjacent disciplines exhibit the Phase-2 Proliferation signature",
+   "statement": "Applied from #106, registered 2026-05-15. The exact prediction text and window need recovery from the source.",
+   "check": "Recover the exact prediction text and its window from #106; then monitor.",
+   "requires": "reading #106",
+   "effort": "unknown — needs reading",
+   "due": "stated in #106",
+   "settles": "The archive's oldest live theory-prediction. Currently unmonitored.",
+   "sources": [
+    {
+     "deposit": 106,
+     "url": "https://www.alexanarch.org/s/records/106/",
+     "note": ""
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "OPB-01",
+   "cls": "experimental",
+   "title": "The Operativity Penalty Battery",
+   "statement": "Registered hypothesis with frozen protocol; §7's seven statistical parameters must each hold a number before the first score.",
+   "check": "Instantiate §7. Assemble Family A. Run the two-reviewer harm-constancy panel.",
+   "requires": "access to 2+ model surfaces; 3 blind reviewers",
+   "effort": "high — item construction, blind review, blind scoring, three arms",
+   "settles": "Turns the developmental-convergence thesis from claim into coefficient.",
+   "sources": [
+    {
+     "deposit": 1537,
+     "url": "https://www.alexanarch.org/s/records/1537/",
+     "note": ""
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "QFO-01",
+   "cls": "experimental",
+   "title": "Qurʾanic Frozen Operator Test",
+   "statement": "Positive-control loci not locked from #1532; control panels unscored.",
+   "check": "Lock loci, score positives and negatives, fix the admissible region, then open U.",
+   "requires": "the seated corpora (public)",
+   "effort": "high",
+   "settles": "P_material for the Sappho transform-family in a fourth corpus.",
+   "sources": [
+    {
+     "deposit": 1533,
+     "url": "https://www.alexanarch.org/s/records/1533/",
+     "note": ""
+    },
+    {
+     "deposit": 1532,
+     "url": "https://www.alexanarch.org/s/records/1532/",
+     "note": ""
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "M6-CT-02",
+   "cls": "experimental",
+   "title": "The relational instrument",
+   "statement": "UNDEPOSITED, and a granularity question is open: O_UR gives five stations, M1–M9 gives nine, Fragment 31's own order gives ten.",
+   "check": "Settle granularity, deposit, score positives and hard negatives, fix threshold.",
+   "requires": "the seated corpora (public)",
+   "effort": "medium",
+   "settles": "CT-01's null is uninformative about the relational channel; this is the channel.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "PEARSON-FALSIFIER",
+   "cls": "experimental",
+   "title": "Can OS operators be written as TOS strings without remainder?",
+   "statement": "Not attempted. #1535 §10 says the archive should attempt it directly rather than wait.",
+   "check": "Attempt the translation on the nine Codex operators, now that #1534 is seated.",
+   "requires": "Pearson 1998 + the Operator Codex (both public)",
+   "effort": "medium",
+   "settles": "THE STRONGEST AVAILABLE DEFEATER of #1535. If it succeeds, operative semiotics is a domain application of TOS.",
+   "sources": [
+    {
+     "deposit": 1535,
+     "url": "https://www.alexanarch.org/s/records/1535/",
+     "note": ""
+    },
+    {
+     "deposit": 1534,
+     "url": "https://www.alexanarch.org/s/records/1534/",
+     "note": ""
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "INVERSION-T3",
+   "cls": "experimental",
+   "title": "Battery v0.3 — T3 and the faithful-NAE cell",
+   "statement": "Unrun. The deposit states T3 decides which numbers survive honest intervals.",
+   "check": "Close T3 and the NAE constituent cell before the empirical paper mints.",
+   "requires": "GPU; the battery code",
+   "effort": "high",
+   "settles": "Blocks ACRB (#1454) and the accelerator series' empirical paper.",
+   "sources": [
+    {
+     "deposit": 1456,
+     "url": "https://www.alexanarch.org/s/records/1456/",
+     "note": ""
+    },
+    {
+     "deposit": 1454,
+     "url": "https://www.alexanarch.org/s/records/1454/",
+     "note": ""
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "DATACITE-ANNUAL-DIFF",
+   "cls": "experimental",
+   "title": "2024 vs 2025 Public Data File diff",
+   "statement": "Access by email request; 33 GiB compressed. Identifiers-only extraction keeps it tractable.",
+   "check": "Request both files, extract DOI lists, verify against published SHA256, diff.",
+   "requires": "~60GB disk; an email request",
+   "effort": "high — bandwidth and storage, but complete rather than sampled",
+   "settles": "THE COMPLETE GLOBAL ERASURE SET FOR 2025, every identifier by name. Supersedes both instruments built today.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "HEBREWS-CONTROL",
+   "cls": "experimental",
+   "title": "Hebrews as control for the midrashim transform",
+   "statement": "Named in the kernel as the bidirectional canary; not run.",
+   "check": "Run the transform against Hebrews. Clean OT genetics with no throne-liturgy mediation falsifies the UNIVERSAL claim only.",
+   "requires": "the seated corpora (public)",
+   "effort": "medium",
+   "settles": "The transform's stated defeater.",
+   "sources": [
+    {
+     "deposit": 1414,
+     "url": "https://www.alexanarch.org/s/records/1414/",
+     "note": ""
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "M6-CT-01-DEPOSIT",
+   "cls": "experimental",
+   "title": "Deposit the CT-01 null",
+   "statement": "Conducted 2026-08-23, result preserved, NEVER SEATED.",
+   "check": "Deposit protocol and null together.",
+   "requires": "archive write access",
+   "effort": "low",
+   "settles": "A preserved failed prediction is the archive's strongest credential and it is currently only in outputs.",
+   "sources": [],
+   "status": "in-progress"
+  },
+  {
+   "id": "COMPRESSION-DETECTOR",
+   "cls": "unbuilt",
+   "title": "An instrument that detects compression, not copying",
+   "statement": "A six-gram gate returned a FALSE NEGATIVE on material deposited five times. Until this exists, 'not previously deposited' is a claim without an instrument.",
+   "check": "Concept-level overlap: distinctive-term sets, named-entity and formula matching, section-structure similarity — not n-grams.",
+   "requires": "python",
+   "effort": "medium",
+   "settles": "Blocks: the blog compression audit; the Ω-Engine, Constitution and ASW seating runs; Gate 0 of EA-BLOG-RECOVERY-01.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "PER-FACTORED",
+   "cls": "unbuilt",
+   "title": "Score the capture registry on the five-stage chain",
+   "statement": "σ_PE factors as chunk:detach:rerank:compose:reattribute. 356 seated captures become PROFILES rather than scalars.",
+   "check": "Per-capture stage attribution against the registered rubric in #1536.",
+   "requires": "python; the capture registry (public)",
+   "effort": "medium — HIGHEST YIELD PER HOUR IN THE QUEUE",
+   "settles": "Blocks nothing. Pure upside on data already held.",
+   "sources": [
+    {
+     "deposit": 1536,
+     "url": "https://www.alexanarch.org/s/records/1536/",
+     "note": ""
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "BLOG-INDEX-CADENCE",
+   "cls": "unbuilt",
+   "title": "Regenerate the blog index on a schedule",
+   "statement": "2,939 posts indexed 2026-08-23; it is a snapshot with no refresh.",
+   "check": "Wrap the start-index harvester; verify against openSearch:totalResults each run.",
+   "requires": "python; cron",
+   "effort": "low",
+   "settles": "The demonstrated-completeness rule depends on the index being current.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "COUNTS-REGEN",
+   "cls": "unbuilt",
+   "title": "Regenerate api/counts.json",
+   "statement": "Still reads 1,520 deposits, generated 2026-08-21; the registry is at 1,540. Every fleet surface fetching it shows the stale figure.",
+   "check": "Determine whether the pipeline should emit it; if so, wire it into the surfaces stage.",
+   "requires": "archive write access",
+   "effort": "low",
+   "settles": "Fleet-wide surface truth.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "PROJECTION-GROUPING",
+   "cls": "unbuilt",
+   "title": "Per-surface projection in the capture gallery",
+   "statement": "One projection should carry one address's captures on ONE surface — that is what makes the longitudinal series legible.",
+   "check": "Group by (addr_id, surface) at render; addr_id keying unchanged.",
+   "requires": "archive write access",
+   "effort": "low",
+   "settles": "Longitudinal reading of any address across surfaces.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "CORPORA-SPLIT",
+   "cls": "unbuilt",
+   "title": "Split corpora originals into a companion repo",
+   "statement": "811 MB of 861 MB is original/; text/ is 50 MB. A 2 GB clone is a barrier to the external custodian the archive needs.",
+   "check": "text/, source.json, MANIFEST stay; original/ moves; manifests still hash the heavy repo. Split forward, never rewrite.",
+   "requires": "archive write access",
+   "effort": "medium",
+   "settles": "Third-party harvest — the redundancy fix.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "RESOLUTION-ROUTES",
+   "cls": "unbuilt",
+   "title": "Assign resolution routes to 164 conditions",
+   "statement": "More than a third of registered falsification conditions do not state HOW they would resolve. A condition without a route is a gesture.",
+   "check": "Triage the 164; assign or mark unresolvable.",
+   "requires": "reading",
+   "effort": "medium",
+   "settles": "The ledger's usefulness.",
+   "sources": [],
+   "status": "open"
+  },
+  {
+   "id": "RCS-ARCHIVAL-DRIFT",
+   "cls": "experimental",
+   "title": "Archival drift: successive detectors reclassify a fixed pre-2022 human corpus",
+   "statement": "Run successive versions of the leading commercial AI-text detectors against a frozen pre-2022 human corpus and track the flagged fraction across versions. The co-evolution model predicts a rising trajectory under the detector-sanctions regime; a flat trajectory disconfirms §V's central dynamic.",
+   "check": "Freeze a pre-2022 corpus (hashes published); score it under each detector version as released; publish the flagged-fraction time series. Simulation reference trajectory: 0.9% → 43% (gen 4) → ~100% (gen 8) under full-regime co-evolution.",
+   "requires": "detector access (free tiers exist); a frozen corpus",
+   "effort": "medium; ongoing per detector release",
+   "settles": "The paper's most exposed live prediction — directly measurable today, by anyone.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§IX(i); simulation EA-SEI-RCS-SIM-01 attached"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "RCS-PERFORMED-BURSTINESS",
+   "cls": "experimental",
+   "title": "Detector-screened corpora show surface novelty at or above historical baseline",
+   "statement": "Certified corpora produced under detector screening will show measured surface-novelty statistics (burstiness, perplexity variance) at or above matched historical baselines within a few enforcement years — the performed-variance transient. Flat or declining measured novelty in screened corpora disconfirms.",
+   "check": "Stylometric comparison of a screened venue's admitted corpus against its own matched pre-regime baseline.",
+   "requires": "corpus access; stylometrics",
+   "effort": "medium-high; horizon years",
+   "settles": "Whether tailsification of prose occurs as the model predicts — while §V predicts the same audit will MISS the underlying contraction.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§V, §IX(ii)"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "RCS-SCREENING-EFFORT",
+   "cls": "experimental",
+   "title": "Screening effort escalates across detector versions",
+   "statement": "Drafting-to-pass revision cycles and pre-submission screening-tool usage rise across detector versions under sanctions regimes; stable effort disconfirms the narrowing claim.",
+   "check": "Survey/telemetry of authors under detector-governed venues; screening-service usage statistics.",
+   "requires": "survey instrument or vendor data",
+   "effort": "medium",
+   "settles": "Whether the certified region is narrowing as modeled (natural-draft pass rates falling).",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§IX(iii)"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "RCS-DECOUPLING-FIDELITY",
+   "cls": "experimental",
+   "title": "Surface-tail statistics fail to predict conceptual-tail measures",
+   "statement": "Across a detector-governed corpus, surface-tail statistics will fail to reliably predict conceptual-tail measures; during the tailsification window the two move in opposite directions. High predictive fidelity across the regime falsifies strong prose–thought decoupling.",
+   "check": "Requires the plural measurement membrane (see MEMBRANE-CODER): coded argument form, new distinctions, concept transformations, source-domain conjunctions, problem formulations, retrospective uptake — correlated against surface statistics.",
+   "requires": "the membrane instrument; corpus",
+   "effort": "high",
+   "settles": "Whether homogenization of thought proceeds beneath tailsification of prose — the paper's deepest empirical claim.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§V operationalization; §IX(iv)"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "RCS-MEMBRANE-RECEPTION",
+   "cls": "applied-theory",
+   "title": "Reception of #1540 measures the membrane",
+   "statement": "An answer on the merits from any defender of the P&PA policy admits machine-mediated arguments are epistemic objects; a DOCUMENTED refusal to engage because of the declared production method is a confirmation datum for the membrane analysis. Mere non-response is observationally ambiguous and carries no evidentiary weight.",
+   "check": "Log documented engagements and documented provenance-refusals as they occur; file each with its evidence URL.",
+   "requires": "a browser; patience",
+   "effort": "low, ongoing",
+   "settles": "Nothing falsifying either way — an observation channel, not a heads-I-win argument (the falsifiers are RCS-ARCHIVAL-DRIFT etc.).",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "Declaration of Production; §IX reception-instrument paragraph"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "RCS-SCREENING-MARKET",
+   "cls": "applied-theory",
+   "title": "A pre-submission screening industry forms around journal detector policies",
+   "statement": "Retroactive liability plus a scoreable boundary produces a screening market, with detection vendors on both sides of the transaction. First half already occurred: the leading vendor's researchers published a study of nineteen humanizer tools and trained their next model against them (Masrour, Emi & Spero 2025). Open: philosophy/humanities-specific pre-submission screening services.",
+   "check": "Track emergence of academic pre-submission AI-screening services and their vendor relationships.",
+   "requires": "a browser",
+   "effort": "low, ongoing",
+   "settles": "§III's market prediction; the certified center's economic substrate.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§III"
+    },
+    {
+     "deposit": null,
+     "url": "https://arxiv.org/abs/2501.03437",
+     "note": "DAMAGE — the vendor's humanizer study"
+    }
+   ],
+   "status": "partial",
+   "registered": "2026-08-24",
+   "status_note": "Shield/sword co-location documented at the vendor level; venue-specific screening market still open."
+  },
+  {
+   "id": "RCS-AUDIT-HEALTH",
+   "cls": "applied-theory",
+   "title": "Measured-novelty audits report health during contraction",
+   "statement": "If any venue under a detector regime audits its corpus with surface statistics, the audit will report stability or improvement during the period the model identifies as contraction — because deployed instruments measure the center and the performed layer.",
+   "check": "Watch for any published corpus-health audit by a detector-governed venue; compare its instrument choice against the tail-preservation spec.",
+   "requires": "a browser",
+   "effort": "low, ongoing",
+   "settles": "Ease-as-collapse (Ω-M08) at institutional scale: the loss experienced as rigor.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§IV, §V"
+    },
+    {
+     "deposit": 855,
+     "url": "https://www.alexanarch.org/s/records/855/",
+     "note": "ease-as-collapse mechanism"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "WOLFBOY-FRICTIONLESS",
+   "cls": "applied-theory",
+   "title": "No countervailing force emerges before significant capacity loss",
+   "statement": "The frictionless-path claim: no dominant factor in the current development landscape adds friction to convergence — user preference, training economics, benchmarks, safety classifiers, the data wall, competitive pressure are uniformly aligned. Fails if any factor is identified that slows tail-thinning, rewards diversity, or creates felt-noticing of capacity loss at scale.",
+   "check": "Standing watch: any deployed tail-preservation benchmark, diversity-injection mandate, or mediation-fraction cap in production counts against.",
+   "requires": "a browser",
+   "effort": "low, ongoing",
+   "settles": "The Wolf Boy's central time-bound claim about the current landscape.",
+   "sources": [
+    {
+     "deposit": 855,
+     "url": "https://www.alexanarch.org/s/records/855/",
+     "note": "EA-LO-WOLFBOY-01 §III, §VII"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-06-19"
+  },
+  {
+   "id": "TAIL-OBSERVATORY",
+   "cls": "unbuilt",
+   "title": "Tail-preservation observatory over an admitted corpus",
+   "statement": "An instrument measuring the support of a discourse's distribution — variance of construction, vocabulary, argument-form, genre — over a venue's admitted corpus across time. No editorial workflow deploys one; §IX predicts the institutions in a position to take the falsifying measurement won't. Building it takes the excuse away.",
+   "check": "Corpus ingestion → stylometric + structural variance panels → longitudinal dashboard. Start with any open-access philosophy corpus.",
+   "requires": "python; an open corpus",
+   "effort": "high",
+   "settles": "The instrument whose absence is itself a finding; makes RCS-PERFORMED-BURSTINESS and corpus-variance falsifiers runnable.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§VII specification"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "DRIFT-HARNESS",
+   "cls": "unbuilt",
+   "title": "Archival-drift test harness",
+   "statement": "A frozen pre-2022 human corpus (published hashes) × detector-version matrix, producing the flagged-fraction time series RCS-ARCHIVAL-DRIFT needs. One script, one JSON of results, rerun per detector release.",
+   "check": "Corpus freeze + hash manifest; adapter per detector API/UI tier; results ledger with version, date, threshold, flagged fraction.",
+   "requires": "python; detector access",
+   "effort": "medium",
+   "settles": "Converts the paper's most exposed prediction into a standing public instrument.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§V limitations; §IX(i)"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "ATHETIC-APPARATUS",
+   "cls": "unbuilt",
+   "title": "Athetic enforcement apparatus — the obelus layer for classifier verdicts",
+   "statement": "A mark schema + renderer under which a classifier verdict enters a record as a signed, dated, versioned, reversible annotation on a STANDING text — instrument, version, score, judge — accumulating alongside prior verdicts, never deleting text or prior marks. The constitutional alternative to retraction, specified in #1540 §VI–VII on the foundation of EA-SIGIL-OBELUS-01.",
+   "check": "Schema (per-text mark ledger) + record-page rendering + reconciliation view (marks vs provenance evidence). Alexanarch's SUPERSEDED banners and errata chains are the existing partial implementation to generalize.",
+   "requires": "python; a host archive",
+   "effort": "medium",
+   "settles": "Demonstrates that RCS dissolves under athetic custody: a working existence proof, not an argument.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§VI–VII"
+    },
+    {
+     "deposit": 1068,
+     "url": "https://www.alexanarch.org/s/records/1068/",
+     "note": "the two marks of custody"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "MEMBRANE-CODER",
+   "cls": "unbuilt",
+   "title": "The plural measurement membrane for conceptual tails",
+   "statement": "The instrument RCS-DECOUPLING-FIDELITY requires: independently coded argument form; new-distinction and concept-introduction detection; transformations of inherited concepts; source-domain conjunctions; problem formulations; retrospective uptake tracking. Explicitly plural — any scalar proxy becomes another classifier.",
+   "check": "Coding rubric + inter-coder protocol first; automation only where the rubric survives it; uptake tracked via the citation graph.",
+   "requires": "rubric design; coders; python",
+   "effort": "high",
+   "settles": "Whether conceptual variance can be observed at all without replacing it with a statistic — the reflexive measurement problem, faced.",
+   "sources": [
+    {
+     "deposit": 1540,
+     "url": "https://www.alexanarch.org/s/records/1540/",
+     "note": "§V operationalization"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-08-24"
+  },
+  {
+   "id": "TAILRENEWAL-01",
+   "cls": "unbuilt",
+   "title": "Point-of-Contact Tail Renewal — implement the pre-registered design",
+   "statement": "EA-MANDALA-TAILRENEWAL-01 v0.3 is a pre-registered deposit protocol design, not yet an implementation: diversity injection at the point of contact, the counter-operation to the semiotic short circuit.",
+   "check": "Implement the protocol as deposited; run against the mandala corpus; deposit results against the pre-registration.",
+   "requires": "python; the deposited design",
+   "effort": "medium",
+   "settles": "Whether bearing labor can be instrumented — the only counter-operation the Wolf Boy names.",
+   "sources": [
+    {
+     "deposit": 949,
+     "url": "https://www.alexanarch.org/s/records/949/",
+     "note": "the pre-registered design"
+    },
+    {
+     "deposit": 855,
+     "url": "https://www.alexanarch.org/s/records/855/",
+     "note": "bearing labor, Ω-M14"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-07-03"
+  }
+ ]
+}
