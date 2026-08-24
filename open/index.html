@@ -1,0 +1,149 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Open Problems — Operative Semiotics</title>
+<meta name=description content="The research program of operative semiotics: 21 open commitments sorted by the kind of labour that resolves them. Every item states its blocker, its next action, and what you would need to run it.">
+<link rel=canonical href="https://operativesemiotics.org/open/">
+<style>
+:root{--bg:#faf8f4;--fg:#1a1a1a;--dim:#6b6560;--line:#ddd6cc}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Georgia,serif;padding:3rem 1.2rem 6rem}
+.wrap{max-width:56rem;margin:0 auto}
+h1{font-size:2rem;margin:0 0 .2rem;font-weight:normal}
+.lede{color:var(--dim);margin:0 0 2rem;font-size:1.05rem}
+.frame{border:1px solid var(--line);background:#fff;padding:1.2rem 1.4rem;margin:0 0 2.5rem}
+.frame p{margin:.7rem 0}
+section{margin:0 0 3rem;border-top:2px solid var(--c);padding-top:1.2rem}
+h2{font-size:1.3rem;margin:0 0 .2rem;font-weight:normal;display:flex;gap:.7rem;align-items:baseline}
+.num{font:600 .8rem/1 ui-monospace,monospace;color:var(--c);border:1px solid var(--c);padding:.35rem .5rem;border-radius:2px}
+.sub{color:var(--dim);margin:0 0 1.4rem;font-size:.92rem}
+.item{border-left:2px solid var(--line);padding:.9rem 0 .9rem 1.2rem;margin:0 0 1.4rem}
+.item header{display:flex;flex-wrap:wrap;gap:.6rem;align-items:baseline;margin-bottom:.3rem}
+.item h3{font-size:1.05rem;margin:0;font-weight:600}
+code{font:11px/1 ui-monospace,monospace;color:var(--dim);background:#f0ece4;padding:.25rem .45rem;border-radius:2px}
+.dep{font:11px/1 ui-monospace,monospace;color:var(--dim)} .dep a{color:#8a5a2b}
+.req{font:12px/1.5 ui-monospace,monospace;color:var(--dim);margin:.2rem 0 .7rem}
+.f{margin:.5rem 0;font-size:.95rem}
+.k{display:inline-block;font:10px/1 ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-right:.5rem;vertical-align:.08em}
+footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.4rem;color:var(--dim);font-size:.9rem}
+a{color:#8a5a2b}
+</style></head><body><div class=wrap>
+<h1>Open Problems</h1>
+<p class=lede>The research program of operative semiotics — what is registered, what is frozen, what is unbuilt.</p>
+<div class=frame>
+<p><b>Operative semiotics is the study <i>and design</i> of signs that intervene in the systems in which they circulate.</b> A discipline defined that way owes a public account of what it has committed to and not yet done.</p>
+<p>These twenty-one items are sorted by <b>the kind of labour that resolves them</b>, not by importance. The first resolves by waiting and checking. The second by running a protocol already frozen. The third by building something that does not exist.</p>
+<p><b>Seven require nothing but a browser, curl, or python.</b> Every item states its blocker, its next action, and what you would need in hand. The protocols are pre-registered with declared failure conditions, which means <b>a result obtained by someone else is admissible on the same terms as one obtained here.</b></p>
+<p class=sub>Nothing here requires permission.</p>
+</div>
+<section style="--c:#c8a45c"><h2><span class=num>1</span>Registered predictions</h2><p class=sub>resolve by observation on a date — the world does the work, you check · <b>6 open</b></p><article class=item>
+<header><h3>Zenodo&#x27;s deletion export resumes after the cron fix</h3><code>P-EXPORT-RESUMES</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>curl · 2026-09-10 · one API call</div>
+<div class=f><span class=k>theory</span>A stoppage with an identified mechanism should end when the mechanism is repaired.</div><div class=f><span class=k>how to check</span>GET zenodo.org/api/exporter — a records-deleted.csv.gz version created after 2026-08-20 confirms; nothing by 2026-09-10 disconfirms and the explanation is incomplete.</div>
+
+<div class=f><span class=k>what it settles</span>Confirms the mundane explanation BY PREDICTION rather than inference, which is a stronger position than the one argued from all evening.</div></article><article class=item>
+<header><h3>The crimson-hexagonal address stops naming Zenodo as host</h3><code>P-STALE-INDEX</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>a browser · 2026-09-23 · one query, one capture</div>
+<div class=f><span class=k>theory</span>A composition layer reporting a stale state should update once the source surfaces propagate.</div><div class=f><span class=k>how to check</span>Re-run the address on Bing Copilot. If it still returns Zenodo as host a month after the archive&#x27;s surfaces were updated, the local explanation fails and the ghost-host reading becomes live again.</div>
+
+<div class=f><span class=k>what it settles</span>The withdrawn finding&#x27;s only route back.</div></article><article class=item>
+<header><h3>SPXI treatment raises archive source share on the UNPREFIXED address</h3><code>P-INTERVENTION-180</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>a browser · 2026-09-22 / 2026-11-21 / 2027-02-19 · four addresses × three epochs</div>
+<div class=f><span class=k>theory</span>Inscribing the discriminating coordinates should alter composition-layer behaviour.</div><div class=f><span class=k>how to check</span>Re-run the prefix battery, signed out, same surfaces. Success: share above zero on the bare address and no merge parenthetical. Failure at 180 days is recorded as failure.</div>
+
+<div class=f><span class=k>what it settles</span>#1535 declared itself an intervention. This is whether it executed.</div></article><article class=item>
+<header><h3>Second global cohort epoch</h3><code>P-PEO-COHORT-2</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>curl (script provided) · 2026-09-23 · 37 API calls</div>
+<div class=f><span class=k>theory</span>A publication-year cohort should be monotonically non-decreasing; any decrease is erasure.</div><div class=f><span class=k>how to check</span>scripts/peo_cohort_epoch.py — runs and diffs automatically.</div>
+
+<div class=f><span class=k>what it settles</span>The baseline&#x27;s entire value is that a second epoch can exist.</div></article><article class=item>
+<header><h3>Second fixed-panel epoch</h3><code>P-PEO-PANEL-2</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>curl (script provided) · 2026-09-23 · 720 API calls</div>
+<div class=f><span class=k>theory</span>Re-querying a frozen DOI set measures erasure directly; minting cannot mask it.</div><div class=f><span class=k>how to check</span>scripts/peo_panel_epoch.py — 404 rate is the erasure rate.</div>
+
+<div class=f><span class=k>what it settles</span>First direct measurement of global erasure the archive has ever taken.</div></article><article class=item>
+<header><h3>Adjacent disciplines exhibit the Phase-2 Proliferation signature</h3><code>P-PHASE2-PROLIF</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>reading #106 · stated in #106 · unknown — needs reading</div>
+<div class=f><span class=k>theory</span>Applied from #106, registered 2026-05-15.</div><div class=f><span class=k>how to check</span>Recover the exact prediction text and its window from #106.</div>
+
+<div class=f><span class=k>what it settles</span>The archive&#x27;s oldest live theory-prediction. Currently unmonitored.</div></article></section><section style="--c:#6fb39e"><h2><span class=num>2</span>Experiments with registered hypotheses</h2><p class=sub>resolve by running a frozen protocol · <b>8 open</b></p><article class=item>
+<header><h3>The Operativity Penalty Battery</h3><code>OPB-01</code><span class=dep><a href="https://www.alexanarch.org/s/records/1537/">#1537</a></span></header>
+<div class=req><span class=k>requires</span>access to 2+ model surfaces; 3 blind reviewers · high — item construction, blind review, blind scoring, three arms</div>
+
+<div class=f><span class=k>blocker</span>§7&#x27;s seven statistical parameters must each hold a number before the first score.</div><div class=f><span class=k>next action</span>Instantiate §7. Assemble Family A. Run the two-reviewer harm-constancy panel.</div>
+<div class=f><span class=k>what it settles</span>Turns the developmental-convergence thesis from claim into coefficient.</div></article><article class=item>
+<header><h3>Qurʾanic Frozen Operator Test</h3><code>QFO-01</code><span class=dep><a href="https://www.alexanarch.org/s/records/1533/">#1533</a></span></header>
+<div class=req><span class=k>requires</span>the seated corpora (public) · high</div>
+
+<div class=f><span class=k>blocker</span>Positive-control loci not locked from #1532; control panels unscored.</div><div class=f><span class=k>next action</span>Lock loci, score positives and negatives, fix the admissible region, then open U.</div>
+<div class=f><span class=k>what it settles</span>P_material for the Sappho transform-family in a fourth corpus.</div></article><article class=item>
+<header><h3>The relational instrument</h3><code>M6-CT-02</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>the seated corpora (public) · medium</div>
+
+<div class=f><span class=k>blocker</span>UNDEPOSITED, and a granularity question is open: O_UR gives five stations, M1–M9 gives nine, Fragment 31&#x27;s own order gives ten. Which is canonical must be settled BEFORE scoring.</div><div class=f><span class=k>next action</span>Settle granularity, deposit, score positives and hard negatives, fix threshold.</div>
+<div class=f><span class=k>what it settles</span>CT-01&#x27;s null is uninformative about the relational channel; this is the channel.</div></article><article class=item>
+<header><h3>Can OS operators be written as TOS strings without remainder?</h3><code>PEARSON-FALSIFIER</code><span class=dep><a href="https://www.alexanarch.org/s/records/1535/">#1535</a></span></header>
+<div class=req><span class=k>requires</span>Pearson 1998 + the Operator Codex (both public) · medium</div>
+
+<div class=f><span class=k>blocker</span>Not attempted. #1535 §10 says the archive should attempt it directly rather than wait.</div><div class=f><span class=k>next action</span>Attempt the translation on the nine Codex operators, now that #1534 is seated.</div>
+<div class=f><span class=k>what it settles</span>THE STRONGEST AVAILABLE DEFEATER of #1535. If it succeeds, operative semiotics is a domain application of TOS.</div></article><article class=item>
+<header><h3>Battery v0.3 — T3 and the faithful-NAE cell</h3><code>INVERSION-T3</code><span class=dep><a href="https://www.alexanarch.org/s/records/1456/">#1456</a></span></header>
+<div class=req><span class=k>requires</span>GPU; the battery code · high</div>
+
+<div class=f><span class=k>blocker</span>Unrun. The deposit states T3 decides which numbers survive honest intervals.</div><div class=f><span class=k>next action</span>Close T3 and the NAE constituent cell before the empirical paper mints.</div>
+<div class=f><span class=k>what it settles</span>Blocks ACRB (#1454) and the accelerator series&#x27; empirical paper.</div></article><article class=item>
+<header><h3>2024 vs 2025 Public Data File diff</h3><code>DATACITE-ANNUAL-DIFF</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>~60GB disk; an email request · high — bandwidth and storage, but complete rather than sampled</div>
+
+<div class=f><span class=k>blocker</span>Access by email request; 33 GiB compressed. Identifiers-only extraction keeps it tractable.</div><div class=f><span class=k>next action</span>Request both files, extract DOI lists, verify against published SHA256, diff.</div>
+<div class=f><span class=k>what it settles</span>THE COMPLETE GLOBAL ERASURE SET FOR 2025, every identifier by name. Supersedes both instruments built today.</div></article><article class=item>
+<header><h3>Hebrews as control for the midrashim transform</h3><code>HEBREWS-CONTROL</code><span class=dep><a href="https://www.alexanarch.org/s/records/1414/">#1414</a></span></header>
+<div class=req><span class=k>requires</span>the seated corpora (public) · medium</div>
+
+<div class=f><span class=k>blocker</span>Named in the kernel as the bidirectional canary; not run.</div><div class=f><span class=k>next action</span>Run the transform against Hebrews. Clean OT genetics with no throne-liturgy mediation falsifies the UNIVERSAL claim only.</div>
+<div class=f><span class=k>what it settles</span>The transform&#x27;s stated defeater.</div></article><article class=item>
+<header><h3>Deposit the CT-01 null</h3><code>M6-CT-01-DEPOSIT</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>archive write access · low</div>
+
+<div class=f><span class=k>blocker</span>Conducted 2026-08-23, result preserved, NEVER SEATED.</div><div class=f><span class=k>next action</span>Deposit protocol and null together.</div>
+<div class=f><span class=k>what it settles</span>A preserved failed prediction is the archive&#x27;s strongest credential and it is currently only in outputs.</div></article></section><section style="--c:#8f9ec8"><h2><span class=num>3</span>Unimplemented instruments</h2><p class=sub>resolve by building · <b>7 open</b></p><article class=item>
+<header><h3>An instrument that detects compression, not copying</h3><code>COMPRESSION-DETECTOR</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>python · medium</div>
+
+<div class=f><span class=k>why</span>A six-gram gate returned a FALSE NEGATIVE on material deposited five times. Until this exists, &#x27;not previously deposited&#x27; is a claim the archive cannot make about its own work.</div>
+<div class=f><span class=k>sketch</span>Concept-level overlap: distinctive-term sets, named-entity and formula matching, section-structure similarity — not n-grams.</div><div class=f><span class=k>blocks</span>The blog compression audit; the Ω-Engine, Constitution and ASW seating runs; Gate 0 of EA-BLOG-RECOVERY-01.</div></article><article class=item>
+<header><h3>Score the capture registry on the five-stage chain</h3><code>PER-FACTORED</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>python; the capture registry (public) · medium — HIGHEST YIELD PER HOUR IN THE QUEUE</div>
+
+<div class=f><span class=k>why</span>σ_PE factors as chunk:detach:rerank:compose:reattribute. 356 seated captures become PROFILES rather than scalars, and the four from tonight already separate cleanly.</div>
+<div class=f><span class=k>sketch</span>Per-capture stage attribution against the registered rubric in #1536.</div><div class=f><span class=k>blocks</span>Nothing. Pure upside on data already held.</div></article><article class=item>
+<header><h3>Regenerate the blog index on a schedule</h3><code>BLOG-INDEX-CADENCE</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>python; cron · low</div>
+
+<div class=f><span class=k>why</span>2,939 posts indexed 2026-08-23; it is a snapshot with no refresh.</div>
+<div class=f><span class=k>sketch</span>Wrap the start-index harvester; verify against openSearch:totalResults each run.</div><div class=f><span class=k>blocks</span>The demonstrated-completeness rule depends on the index being current.</div></article><article class=item>
+<header><h3>Regenerate api/counts.json</h3><code>COUNTS-REGEN</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>archive write access · low</div>
+
+<div class=f><span class=k>why</span>Still reads 1,520 deposits, generated 2026-08-21; the registry is at 1,537. Every fleet surface fetching it shows the stale figure.</div>
+<div class=f><span class=k>sketch</span>Determine whether the pipeline should emit it; if so, wire it into the surfaces stage.</div><div class=f><span class=k>blocks</span>Fleet-wide surface truth.</div></article><article class=item>
+<header><h3>Per-surface projection in the capture gallery</h3><code>PROJECTION-GROUPING</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>archive write access · low</div>
+
+<div class=f><span class=k>why</span>One projection should carry one address&#x27;s captures on ONE surface — that is what makes the longitudinal series legible. Ruled 2026-08-23; deferred as a rendering change touching existing records.</div>
+<div class=f><span class=k>sketch</span>Group by (addr_id, surface) at render; addr_id keying unchanged.</div><div class=f><span class=k>blocks</span>Longitudinal reading of any address across surfaces.</div></article><article class=item>
+<header><h3>Split corpora originals into a companion repo</h3><code>CORPORA-SPLIT</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>archive write access · medium</div>
+
+<div class=f><span class=k>why</span>811 MB of 861 MB is original/; text/ is 50 MB. A 2 GB clone is a barrier to the external custodian the archive needs, and history cannot be rewritten because deposits pin commit SHAs.</div>
+<div class=f><span class=k>sketch</span>text/, source.json, MANIFEST stay; original/ moves; manifests still hash the heavy repo. Split forward, never rewrite.</div><div class=f><span class=k>blocks</span>Third-party harvest — the redundancy fix.</div></article><article class=item>
+<header><h3>Assign resolution routes to 164 conditions</h3><code>RESOLUTION-ROUTES</code><span class=dep>undeposited</span></header>
+<div class=req><span class=k>requires</span>reading · medium</div>
+
+<div class=f><span class=k>why</span>More than a third of registered falsification conditions do not state HOW they would resolve. A condition without a route is a gesture.</div>
+<div class=f><span class=k>sketch</span>Triage the 164; assign or mark unresolvable.</div><div class=f><span class=k>blocks</span>The ledger&#x27;s usefulness.</div></article></section>
+<footer>
+<p><b>Coverage.</b> Curated, not exhaustive. A separate register of 38 numbered predictions and 451 registered falsification conditions extracted from the archive is at <a href="https://www.alexanarch.org/datasets/prediction-registry.json">prediction-registry.json</a>.</p>
+<p><b>Data.</b> <a href="https://www.alexanarch.org/datasets/work-queue/manifest.json">work-queue/manifest.json</a> · <a href="https://www.alexanarch.org/datasets/study-dashboard/">study dashboard</a> · <a href="https://www.alexanarch.org/datasets/prediction-ledger/">prediction ledger</a></p>
+<p><b>Honesty.</b> Statuses are curated and hand-verified; where a status could not be determined it says so rather than guessing. <b>Six predictions in the ledger have resolved wrong</b> and are preserved as such — a register whose entries all came true would be evidence of a register written after the fact.</p>
+<p>Operative Semiotics · <a href="https://operativesemiotics.org/">operativesemiotics.org</a> · Lee Sharks, <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a> · CC BY 4.0 · ∮ = 1</p>
+</footer></div></body></html>
