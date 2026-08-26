@@ -12,7 +12,7 @@ synthesis_status: unsynthesized — received whole, unmerged; the source documen
 
 # X-016 · ORS-Core v0.1
 
-*Received in response to the census finding. Seated in its own voice. The source breaks off mid-sentence at the third axiom ("Axiom of Context:"); the axiom set is therefore incomplete as received and is not completed here.*
+*Received in response to the census finding. Seated in its own voice. The source breaks off mid-sentence at the third axiom ("Axiom of Context:"); the axiom set was therefore incomplete as received and was not completed here. The remainder has since arrived whole and is seated as X-047; this plate's truncation record stands as accurate history of the arrival.*
 
 **The framing move.** Stop treating the operator canon as a finite list; treat it as a **registry with typed statuses**. The recovered November Codex alone ran 52 posts and ~50,884 words, and `OPERATOR // X` was used well beyond any ninefold — sometimes for operations acting on form, medium, or possibility itself rather than on a sign-state.
 

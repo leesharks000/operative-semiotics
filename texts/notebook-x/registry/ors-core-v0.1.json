@@ -143,7 +143,8 @@
   "possibility_space": [
    "grammar",
    "admissibility_set",
-   "constraint_delta"
+   "constraint_delta",
+   "attribution_survival"
   ],
   "stochastic": [
    "sampling_protocol",
@@ -172,5 +173,63 @@
  "separations": {
   "operatorhood_vs_admissibility": "Op(sigma) in {0,1} is independent of Adm(sigma,x,gamma) in {allowed,disallowed,undetermined}",
   "process_metric_measurement": "sigma != metric != measurement operator"
- }
+ },
+ "lifecycle": {
+  "note": "Status is a PATH, not a label: an entry records its transitions. Formal improvement without retrospective deletion \u2014 nothing is deleted because later formalization retypes it. An entry that changes state without a recorded transition is malformed.",
+  "states": [
+   "DISCOVERED",
+   "TYPED",
+   "FACTORED",
+   "REGISTERED",
+   "REPLICATED"
+  ],
+  "branches": [
+   "SUPERSEDED",
+   "COMPOSITE",
+   "RECLASSIFIED",
+   "UNRESOLVED",
+   "NULL_ARCHIVED",
+   "KERNEL_EXTRACTED",
+   "CONSTITUTIONAL"
+  ],
+  "transitions": {
+   "DISCOVERED": [
+    "TYPED",
+    "RECLASSIFIED",
+    "CONSTITUTIONAL",
+    "UNRESOLVED"
+   ],
+   "TYPED": [
+    "FACTORED",
+    "REGISTERED",
+    "COMPOSITE",
+    "RECLASSIFIED",
+    "UNRESOLVED",
+    "NULL_ARCHIVED"
+   ],
+   "FACTORED": [
+    "REGISTERED",
+    "COMPOSITE",
+    "UNRESOLVED"
+   ],
+   "REGISTERED": [
+    "REPLICATED",
+    "SUPERSEDED",
+    "RECLASSIFIED"
+   ],
+   "REPLICATED": [
+    "SUPERSEDED"
+   ]
+  }
+ },
+ "axioms": [
+  "realization: for every sigma there exists an artifact capable of realizing it",
+  "typed transformation: sigma: D -> C, declared",
+  "context: claimed only over a declared Gamma_sigma; no unrestricted universality by default",
+  "reproduction: transition signature T_sigma with d(T(E(a,x,gamma)), T_sigma) <= epsilon_sigma across admissible contexts",
+  "minimality: relative to declared instrumentation and observation state; empirical and revisable",
+  "failure: declared observations under which execution counts as absent or registration weakened",
+  "versioning: sigma^v1 != sigma^v2 unless equivalence is established"
+ ],
+ "non_equivalence_law": "operator != metric != gate != constraint != invariant != architecture; a member of one category becomes operative only if its execution satisfies the operator axioms (migration is earned, not asserted)"
 }
