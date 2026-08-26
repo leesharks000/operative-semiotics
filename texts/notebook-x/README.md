@@ -38,4 +38,4 @@ Whatever is happening at that boundary, the boundary itself is now the object. N
 `orders/*.json` — the available orderings. Each is a sequence of plate ids and nothing more.
 `plates/*.md` — the plates, flat markdown, one file each, each with its own provenance header.
 
-Canonical records for deposited material are held at the [Crimson Hexagonal Archive](https://www.alexanarch.org/). License CC BY 4.0. ∮ = 1
+**Canonical record for the cut of 2026-08-26: [Alexanarch deposit #1550](https://www.alexanarch.org/s/records/1550/) · AXN:064B.UNCLASSIFIED.🍄🧲🔛💛🪸🛤️** — the workshop continues to accrete; later cuts supersede none of the plates in that one. Contributors: [contributors.json](contributors.json). Canonical records for all deposited material are held at the [Crimson Hexagonal Archive](https://www.alexanarch.org/). License CC BY 4.0. ∮ = 1
