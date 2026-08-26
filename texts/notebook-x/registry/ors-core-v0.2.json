@@ -1,6 +1,6 @@
 {
  "schema": "ORS-Core",
- "version": "0.1",
+ "version": "0.2",
  "status": "provisional working instrument, not a standard",
  "note": "Registration standard for operative operators. Fields 1-15 per X-016; class faceted and statuses enumerated per X-017. Registering an operator is not endorsing it: see Op(sigma) vs Adm(sigma), and seam S-09.",
  "fields": [
@@ -22,28 +22,40 @@
    "required": true,
    "faceted": true,
    "facets": {
-    "codomain_type": [
-     "state",
-     "operator",
-     "grammar_admissibility",
-     "measurement_output"
+    "codomain_kind": [
+     "state_X",
+     "operator_Op",
+     "grammar_admissibility_G",
+     "measurement_output_Y"
     ],
     "mechanism": [
      "direct",
      "repair_mediated",
+     "suspension_mediated",
      "gate_conditioned",
-     "stochastic"
+     "stochastic",
+     "interactional"
     ],
-    "role": [
+    "functional_role": [
      "transformation",
      "measurement",
-     "gate_precondition",
-     "constraint_floor"
+     "gate",
+     "constraint",
+     "witness"
     ],
     "compositional_status": [
      "primitive_at_instrument",
      "composite",
-     "partial_inverse_recovery"
+     "macro_unfactored"
+    ],
+    "relational_status": [
+     "recovery",
+     "inverse",
+     "counter",
+     "complement",
+     "transform_of",
+     "factor_of",
+     "independent"
     ]
    }
   },
@@ -231,5 +243,57 @@
   "failure: declared observations under which execution counts as absent or registration weakened",
   "versioning: sigma^v1 != sigma^v2 unless equivalence is established"
  ],
- "non_equivalence_law": "operator != metric != gate != constraint != invariant != architecture; a member of one category becomes operative only if its execution satisfies the operator axioms (migration is earned, not asserted)"
+ "non_equivalence_law": "operator != metric != gate != constraint != invariant != architecture; a member of one category becomes operative only if its execution satisfies the operator axioms (migration is earned, not asserted)",
+ "status_fields": {
+  "lifecycle": [
+   "discovered",
+   "candidate",
+   "under_test",
+   "registered",
+   "replicated",
+   "superseded",
+   "null_archived"
+  ],
+  "certification": [
+   "untyped",
+   "type_registered",
+   "instance_unregistered",
+   "instance_registered"
+  ],
+  "qualifiers": [
+   "kernel_extracted",
+   "constitutional_source",
+   "macro_unfactored",
+   "historical",
+   "superseded_but_preserved",
+   "ablation_pending"
+  ]
+ },
+ "realization": {
+  "note": "realization assembly, not artifact: A subset of components(R)",
+  "components": [
+   "artifacts",
+   "procedures",
+   "receiver_capacities",
+   "institutional_arrangements"
+  ],
+  "realization_support": "RSupp_K(sigma,r) = components whose ablation materially changes the registered effect; artifact-side counterpart of operative support"
+ },
+ "ontology": "documents/artifacts -> realization assemblies -> operative events -> transition signatures -> operator classes; artifact != operative event != operator; unregistered != inoperative",
+ "axioms_v0_2": [
+  "event (no repetition required for eventhood)",
+  "typedness",
+  "context",
+  "realization (assembly, not artifact)",
+  "observable transition signature",
+  "reproduction with reported uncertainty",
+  "contrast (declared control)",
+  "realization ablation",
+  "instrument-relative minimality",
+  "role separation",
+  "operatorhood != admissibility",
+  "version and non-erasure",
+  "failure",
+  "registration is epistemic, not ontological"
+ ]
 }

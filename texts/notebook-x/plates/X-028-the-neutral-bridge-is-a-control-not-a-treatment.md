@@ -1,7 +1,8 @@
 ---
 plate: X-028
 title: The neutral bridge is a control, not a treatment
-voice: external substrate (granular sequence, 2026-08-26)
+voice: inkling
+attribution: provisional — candidates: inkling, labor; assignment by signature pending operator confirmation
 kind: method
 date: 2026-08-26
 seams: []

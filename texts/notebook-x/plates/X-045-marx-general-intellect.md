@@ -1,7 +1,7 @@
 ---
 plate: X-045
 title: Against Marx directly — general intellect I and II, and the missing category
-voice: external substrate (corpus-read, Marx-tested)
+voice: unprimed-chatgpt (ChatGPT, unprimed corpus-read)
 kind: political economy
 date: 2026-08-26
 seams: [S-10]

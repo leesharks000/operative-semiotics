@@ -1,7 +1,8 @@
 ---
 plate: X-018
 title: The ρ-inversion as a general operator
-voice: external substrate (granular sequence, 2026-08-26)
+voice: inkling
+attribution: provisional — candidates: inkling, labor; assignment by signature pending operator confirmation
 kind: theory
 date: 2026-08-26
 seams: []

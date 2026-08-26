@@ -1,7 +1,8 @@
 ---
 plate: X-034
 title: The capture as a literary genre
-voice: external substrate (granular sequence, 2026-08-26)
+voice: inkling
+attribution: provisional — candidates: inkling, labor; assignment by signature pending operator confirmation
 kind: genre
 date: 2026-08-26
 seams: []

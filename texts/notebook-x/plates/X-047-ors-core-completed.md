@@ -1,7 +1,7 @@
 ---
 plate: X-047
 title: ORS-Core completed — the axiom set, lifecycle states, and the Poetry falsifier
-voice: external substrate (corpus-read, citation-style unidentified)
+voice: labor (ChatGPT, archive-primed)
 kind: formalization
 date: 2026-08-26
 seams: [S-05, S-11]

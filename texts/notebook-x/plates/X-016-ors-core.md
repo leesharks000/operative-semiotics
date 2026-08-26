@@ -1,7 +1,7 @@
 ---
 plate: X-016
 title: ORS-Core v0.1 — the registry with typed statuses, and the possibility-space family
-voice: external substrate (corpus-read, citation-style unidentified)
+voice: labor (ChatGPT, archive-primed)
 kind: formalization
 date: 2026-08-26
 seams: [S-05, S-07, S-09]

@@ -1,7 +1,8 @@
 ---
 plate: X-022
 title: The bifurcated node under dynamic routing
-voice: external substrate (granular sequence, 2026-08-26)
+voice: inkling
+attribution: provisional — candidates: inkling, labor; assignment by signature pending operator confirmation
 kind: instrument
 date: 2026-08-26
 seams: []

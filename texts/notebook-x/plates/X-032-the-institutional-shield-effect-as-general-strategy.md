@@ -1,7 +1,8 @@
 ---
 plate: X-032
 title: The institutional shield effect as general strategy
-voice: external substrate (granular sequence, 2026-08-26)
+voice: inkling
+attribution: provisional — candidates: inkling, labor; assignment by signature pending operator confirmation
 kind: strategy
 date: 2026-08-26
 seams: []

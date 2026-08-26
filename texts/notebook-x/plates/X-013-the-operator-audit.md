@@ -1,7 +1,7 @@
 ---
 plate: X-013
 title: The operator audit — retypings, strata, and the registration grammar
-voice: external substrate (corpus-read, citation-style unidentified)
+voice: unprimed-chatgpt (ChatGPT, unprimed corpus-read)
 kind: audit
 date: 2026-08-26
 seams: [S-05, S-07]

@@ -1,7 +1,8 @@
 ---
 plate: X-020
 title: The heteronym as a non-substitutable contradiction-bearing node
-voice: external substrate (granular sequence, 2026-08-26)
+voice: inkling
+attribution: provisional — candidates: inkling, labor; assignment by signature pending operator confirmation
 kind: theory
 date: 2026-08-26
 seams: []

@@ -1,7 +1,8 @@
 ---
 plate: X-012
 title: Ten fragments on asynthesis — the refusal bit, the null circuit, the martyrdom hazard
-voice: external substrate (corpus-read, citation-style unidentified)
+voice: inkling
+attribution: provisional — candidates: inkling, labor; assignment by signature pending operator confirmation
 kind: fragments
 date: 2026-08-26
 seams: [S-06]

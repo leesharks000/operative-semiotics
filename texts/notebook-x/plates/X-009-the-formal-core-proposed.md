@@ -1,7 +1,7 @@
 ---
 plate: X-009
 title: The formal core, proposed
-voice: ChatGPT (unprimed, corpus-read)
+voice: labor (ChatGPT, archive-primed)
 kind: formalization
 date: 2026-08-26
 seams: [S-05]
