@@ -1,0 +1,176 @@
+{
+ "schema": "ORS-Core",
+ "version": "0.1",
+ "status": "provisional working instrument, not a standard",
+ "note": "Registration standard for operative operators. Fields 1-15 per X-016; class faceted and statuses enumerated per X-017. Registering an operator is not endorsing it: see Op(sigma) vs Adm(sigma), and seam S-09.",
+ "fields": [
+  {
+   "n": 1,
+   "name": "identity",
+   "required": true,
+   "content": "operator id, canonical name, version"
+  },
+  {
+   "n": 2,
+   "name": "lineage",
+   "required": true,
+   "content": "derivesFrom, supersedes, factors, aliases"
+  },
+  {
+   "n": 3,
+   "name": "class",
+   "required": true,
+   "faceted": true,
+   "facets": {
+    "codomain_type": [
+     "state",
+     "operator",
+     "grammar_admissibility",
+     "measurement_output"
+    ],
+    "mechanism": [
+     "direct",
+     "repair_mediated",
+     "gate_conditioned",
+     "stochastic"
+    ],
+    "role": [
+     "transformation",
+     "measurement",
+     "gate_precondition",
+     "constraint_floor"
+    ],
+    "compositional_status": [
+     "primitive_at_instrument",
+     "composite",
+     "partial_inverse_recovery"
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "name": "realization",
+   "required": true,
+   "content": "artifact(s) or procedure(s) capable of instantiating it"
+  },
+  {
+   "n": 5,
+   "name": "domain",
+   "required": true,
+   "content": "typed input"
+  },
+  {
+   "n": 6,
+   "name": "codomain",
+   "required": true,
+   "content": "typed output"
+  },
+  {
+   "n": 7,
+   "name": "context_class",
+   "required": true,
+   "content": "declared Gamma_sigma across which reproduction is claimed"
+  },
+  {
+   "n": 8,
+   "name": "substrate",
+   "required": true,
+   "content": "material, computational, or social carrier"
+  },
+  {
+   "n": 9,
+   "name": "preconditions_gates",
+   "required": true,
+   "content": "conditions under which execution is possible"
+  },
+  {
+   "n": 10,
+   "name": "transition_signature",
+   "required": true,
+   "content": "the transformation that defines this operator"
+  },
+  {
+   "n": 11,
+   "name": "field_support",
+   "required": true,
+   "content": "which operative-state coordinates change or condition the result: delta over Psi, Sigma, R, I, P, L, C"
+  },
+  {
+   "n": 12,
+   "name": "invariants",
+   "required": true,
+   "content": "what must survive execution"
+  },
+  {
+   "n": 13,
+   "name": "evidence_measurement",
+   "required": true,
+   "content": "observables, sampling, tolerance, reproducibility rule"
+  },
+  {
+   "n": 14,
+   "name": "factorization_minimality",
+   "required": true,
+   "content": "known components and instrument-relative stopping point",
+   "ablation": {
+    "required": true,
+    "values": [
+     "executed_reported",
+     "not_yet_ablated"
+    ],
+    "rule": "not_yet_ablated bars status 'registered' and caps the entry at 'candidate'"
+   }
+  },
+  {
+   "n": 15,
+   "name": "failure_opposition",
+   "required": true,
+   "content": "non-execution criterion; known counter-operator(s)"
+  }
+ ],
+ "class_extensions": {
+  "recovery": [
+   "target",
+   "recovery_coordinates",
+   "error_metric",
+   "tolerance",
+   "irrecoverable_loss"
+  ],
+  "higher_order": [
+   "operand_operator_class",
+   "operator_features_altered"
+  ],
+  "possibility_space": [
+   "grammar",
+   "admissibility_set",
+   "constraint_delta"
+  ],
+  "stochastic": [
+   "sampling_protocol",
+   "distributional_effect",
+   "confidence"
+  ],
+  "admissibility_sensitive": [
+   "loss_order",
+   "floor"
+  ],
+  "measurement": [
+   "measurement_output",
+   "reflexive_standing_effect"
+  ]
+ },
+ "statuses": [
+  "candidate",
+  "near_registrable",
+  "type_registered_instance_unregistered",
+  "registered",
+  "macro_unfactored",
+  "kernel_extracted",
+  "constitutional",
+  "null_archived"
+ ],
+ "separations": {
+  "operatorhood_vs_admissibility": "Op(sigma) in {0,1} is independent of Adm(sigma,x,gamma) in {allowed,disallowed,undetermined}",
+  "process_metric_measurement": "sigma != metric != measurement operator"
+ }
+}
