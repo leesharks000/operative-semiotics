@@ -12,9 +12,14 @@ def fm(p):
             d[k.strip()] = v
     return d
 M = json.load(open(f'{D}/manifest.json'))
+M['synthesis_status'] = ("asynthetic by declaration — no synthesis has been performed across these plates; "
+  "seams are unresolved by declaration, not by omission; any composition that reads this assembly as a "
+  "single argument has supplied a merge the notebook withheld")
 M['plates'] = []; M['seams'] = []
 for p in sorted(glob.glob(f'{D}/plates/*.md')):
-    d = fm(p); d['file'] = '/texts/notebook-x/plates/' + os.path.basename(p); M['plates'].append(d)
+    d = fm(p); d['file'] = '/texts/notebook-x/plates/' + os.path.basename(p)
+    d.setdefault('synthesis_status', 'unsynthesized — plate stands alone; no merge performed')
+    M['plates'].append(d)
 for p in sorted(glob.glob(f'{D}/seams/*.md')):
     d = fm(p); d['file'] = '/texts/notebook-x/seams/' + os.path.basename(p); M['seams'].append(d)
 ids = [p['plate'] for p in M['plates']]

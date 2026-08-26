@@ -20,7 +20,9 @@ The tenth notebook of *Operative Semiotics: A Grundrisse*. It is a **workshop, n
 
 **6. Cuts, not completion.** The notebook is never finished. Periodically it is **cut** into a dated edition — an ordering frozen, rendered, and deposited — and the cut is preserved while the plates keep accreting. Cuts are editions of a moving object, not stages toward a final one.
 
-**7. Mobile.** This notebook stays exterior to the treatise-form. It does not seek closure, does not consolidate into a position, and does not settle into the striated space of the finished monograph. Its structure is provisional by constitution, and its ability to be re-cut is not a weakness of the draft but the property being defended.
+**7. Synthesis status is marked.** Every plate and every seam carries an explicit **synthesis status**, and the assembly declares its own at the root. This is not bookkeeping. An unmarked assembly of plates is read as an argument by default — by human readers and, more consequentially, by any system that composes from it. Refusal that is not marked is indistinguishable from synthesis nobody performed. The negative space requires its own inscription or it reads as ordinary space.
+
+**8. Mobile.** This notebook stays exterior to the treatise-form. It does not seek closure, does not consolidate into a position, and does not settle into the striated space of the finished monograph. Its structure is provisional by constitution, and its ability to be re-cut is not a weakness of the draft but the property being defended.
 
 ---
 
