@@ -3,8 +3,8 @@
  "@type": "Dataset",
  "name": "Operative Semiotics — Predictions & Builds Register",
  "description": "The curated register behind operativesemiotics.org/open/: three classes — experimental predictions (resolve by running a frozen protocol or checking an observable), applied-theory predictions (resolve by watching a live system the theory was applied to), and unimplemented software builds (resolve by construction). Every entry links its primary sources in the Alexanarch record layer. Results obtained by others are admissible on the same terms as results obtained here; nothing requires permission.",
- "version": "2.0",
- "date": "2026-08-24",
+ "version": "2.1",
+ "date": "2026-08-27",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "creator": "Lee Sharks (ORCID 0009-0000-1599-0703)",
  "classes": {
@@ -638,6 +638,178 @@
    "status": "open",
    "registered": "2026-08-25",
    "status_note": "Baseline C1 (2026-08-25): canonical retrievable, composition merged, zero canonical attribution."
+  },
+  {
+   "id": "LO-HOOK-1",
+   "cls": "experimental",
+   "title": "ΔD ensemble panel: watermark reduces inter-response diversity at flat quality",
+   "statement": "For matched prompts across a marked and an unmarked generator of the same implementation (open SynthID-Text reference where production controls are unavailable): ΔQ ≈ 0 and ΔD < 0 — small but signed — in Self-BLEU, distinct-n, and semantic-embedding dispersion across k repeated generations at deployment temperatures.",
+   "check": "Run the panel on the open SynthID-Text implementation (marked vs unmarked, same weights). Signed ΔD<0 with ΔQ≈0 supports; ΔD≥0 or quality-coupled contraction disconfirms the per-round/ensemble split.",
+   "requires": "GPU inference on an open model + the open SynthID-Text code",
+   "effort": "medium",
+   "settles": "Whether the certification mismatch is measurable outside the keyholder: non-distortion certified per-sequence while the ensemble contracts.",
+   "sources": [
+    {
+     "deposit": 1555,
+     "url": "https://www.alexanarch.org/s/records/1555/",
+     "note": "EA-LO-KEYED-ENSEMBLE-01 v1.0, §6 observables"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "LO-HOOK-2",
+   "cls": "experimental",
+   "title": "Tail-mass retention under watermarking — a test, not a prediction",
+   "statement": "Determine whether watermark-associated diversity contraction concentrates in the rank-frequency tail (rare n-grams, rare constructions) of large marked corpora vs unmarked baselines. Registered as a TEST: a positive connects the perturbation to the Shumailov tails-first failure mode; a null separates the phenomena.",
+   "check": "Tail-mass comparison on large matched marked/unmarked corpora from the reference implementation. Either outcome is informative and is recorded.",
+   "requires": "large-corpus generation + n-gram accounting",
+   "effort": "medium-high",
+   "settles": "Whether the keyed perturbation strikes where collapse starts, or is orthogonal to it.",
+   "sources": [
+    {
+     "deposit": 1555,
+     "url": "https://www.alexanarch.org/s/records/1555/",
+     "note": "EA-LO-KEYED-ENSEMBLE-01 v1.0, §6 observables"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "LO-HOOK-3",
+   "cls": "experimental",
+   "title": "PER × watermark persistence: the signature can outlive the provenance",
+   "statement": "There exists a mediation regime (summarize → translate → human-edit chains) in which text remains legible under the keyed test as machine-touched after every human-recoverable trace of its genealogy is gone — the signature outliving the provenance.",
+   "check": "Run the Capture Registry PER protocol on marked text through standard mediation chains; track where causal provenance dies vs where detectability survives. Requires detector access (API when available; reference implementation meanwhile).",
+   "requires": "PER protocol + a detector",
+   "effort": "medium",
+   "settles": "Whether verification asymmetry has a temporal shadow: issuer-legible ancestry after public provenance death.",
+   "sources": [
+    {
+     "deposit": 1555,
+     "url": "https://www.alexanarch.org/s/records/1555/",
+     "note": "EA-LO-KEYED-ENSEMBLE-01 v1.0, §6 observables"
+    },
+    {
+     "deposit": 1556,
+     "url": "https://www.alexanarch.org/s/records/1556/",
+     "note": "EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0, hooks + §6 toy"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "LO-HOOK-4",
+   "cls": "experimental",
+   "title": "Reverse Turing Test, Stage 2: mediation signatures in human text from marked-model populations",
+   "statement": "Human-authored text from populations assisted by marked models will carry detectable mediation signatures relative to pre-2026 baselines (per the Reverse Turing Test design, AXN:02F8).",
+   "check": "Execute RTT Stage 2 on post-watermark cohorts vs pre-2026 baselines. Contingent on 02F8 execution and calibration.",
+   "requires": "the 02F8 battery",
+   "effort": "high",
+   "settles": "Whether the loop reaches back through human hands — the Sourati 21–50% complexity-variance band acquiring a keyed component.",
+   "sources": [
+    {
+     "deposit": 1555,
+     "url": "https://www.alexanarch.org/s/records/1555/",
+     "note": "EA-LO-KEYED-ENSEMBLE-01 v1.0, §6 observables"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "LO-HOOK-5",
+   "cls": "experimental",
+   "title": "Β across the four components, with the random-unit null",
+   "statement": "The Audit-Performance Bifurcation operator, computed across Components I–IV of the interlocking map with a random-unit null, will show the observation regime (IV) certifying at units where the state variable does not live.",
+   "check": "Compute Β per component against the random-unit null as specified in the map; the null failing to separate disconfirms the operator's use here.",
+   "requires": "the Β operator (AXN:02F1) + component observables",
+   "effort": "medium",
+   "settles": "Whether the per-round veil is a measurable property of the measurement regime rather than a narrative.",
+   "sources": [
+    {
+     "deposit": 1556,
+     "url": "https://www.alexanarch.org/s/records/1556/",
+     "note": "EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0, hooks + §6 toy"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "LO-HOOK-6",
+   "cls": "experimental",
+   "title": "Ratchet parameter tracking under the w_H·g₀ decomposition — toy F1–F5 as the preregistered hypothesis set",
+   "statement": "Track the Mediation Ratchet's threshold α* = p/(w_H·g₀) with admission weight w_H measured separately from generation rate g₀. Preregistered hypothesis set from the toy (seed 20260827): F1 two-track divergence (per-round quality can rise while tail mass halves); F2 velocity ordering (ratchet+remapping dominate, watermark second-order); F3 detection lag monotone in probe head-weighting; F4 watermark Simpson excess compounding as diversity falls (existence result); F5 retention counterfactual (capping synthetic share + mediation stabilizes the tail).",
+   "check": "Field estimates of p, w_H, g₀ at annual resolution; each F1–F5 carries its own toy-calibrated direction to confirm or break.",
+   "requires": "corpus-scale provenance estimates",
+   "effort": "high",
+   "settles": "Whether opacity and mediation move the admission weight of fresh variation rather than its generation rate — the control surface question.",
+   "sources": [
+    {
+     "deposit": 1556,
+     "url": "https://www.alexanarch.org/s/records/1556/",
+     "note": "EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0, hooks + §6 toy"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "LO-HOOK-7",
+   "cls": "experimental",
+   "title": "Hook 7 — held contingent on Reverse Turing Test calibration",
+   "statement": "Registered as contingent: this hook runs only after 02F8 execution and calibration establish the mediation-signature baseline it consumes.",
+   "check": "Blocked-by: 02F8. Opens when RTT calibration exists.",
+   "requires": "02F8 first",
+   "effort": "high",
+   "settles": "Held open so the dependency is a decision on record rather than an omission.",
+   "sources": [
+    {
+     "deposit": 1556,
+     "url": "https://www.alexanarch.org/s/records/1556/",
+     "note": "EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0, hooks + §6 toy"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "LO-HOOK-8",
+   "cls": "experimental",
+   "title": "Benchmark composition audit: probe head-weighting predicts detection lag",
+   "statement": "For the major public evaluation suites, the effective probe-rank distribution against a reference corpus frequency ranking will show strong head-weighting — and the toy predicts detection lag of ensemble collapse is monotone in that head-weighting. Candidate first-pass suites: MMLU, GSM8K, HumanEval, HellaSwag, a BIG-bench sample, a public arena prompt set; reference ranking from a declared open-corpus vintage.",
+   "check": "Compute probe-rank distributions for each suite against the declared reference ranking. Requires nothing but the benchmarks themselves — the cheapest of the eight.",
+   "requires": "the public benchmark files + one reference corpus",
+   "effort": "low",
+   "settles": "Whether the instruments the field trusts are structurally positioned to miss tail collapse — Component IV made countable.",
+   "sources": [
+    {
+     "deposit": 1556,
+     "url": "https://www.alexanarch.org/s/records/1556/",
+     "note": "EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0, hooks + §6 toy"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "LO-TWO-TRACK",
+   "cls": "applied-theory",
+   "title": "The two-track prediction: the ensemble unit inflects before the per-round unit",
+   "statement": "Track B (ensemble diversity measures) inflects downward before Track A (per-round quality measures); Track A may improve during Track B's collapse. Falsifier stated in the deposit: if Track A proves sensitive first or simultaneously, the observation-regime claim is weakened and the map must be revised.",
+   "check": "Run both tracks at annual resolution on production corpora; ordering of inflection points is the verdict.",
+   "requires": "longitudinal corpus access",
+   "effort": "high",
+   "settles": "The map's central falsifiable commitment: green dashboards over a dying tail, or not.",
+   "sources": [
+    {
+     "deposit": 1555,
+     "url": "https://www.alexanarch.org/s/records/1555/",
+     "note": "EA-LO-KEYED-ENSEMBLE-01 v1.0, §6 observables"
+    },
+    {
+     "deposit": 1556,
+     "url": "https://www.alexanarch.org/s/records/1556/",
+     "note": "EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0, hooks + §6 toy"
+    }
+   ],
+   "status": "open"
   }
  ]
 }
