@@ -89,5 +89,18 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "operativesemiotics.org"
+        }
+      ],
+      "destination": "https://www.operativesemiotics.org/:path*",
+      "permanent": true
+    }
   ]
 }
