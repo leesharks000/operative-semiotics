@@ -3,8 +3,8 @@
  "@type": "Dataset",
  "name": "Operative Semiotics — Predictions & Builds Register",
  "description": "The curated register behind operativesemiotics.org/open/: three classes — experimental predictions (resolve by running a frozen protocol or checking an observable), applied-theory predictions (resolve by watching a live system the theory was applied to), and unimplemented software builds (resolve by construction). Every entry links its primary sources in the Alexanarch record layer. Results obtained by others are admissible on the same terms as results obtained here; nothing requires permission.",
- "version": "2.2",
- "date": "2026-09-15",
+ "version": "2.3",
+ "date": "2026-09-17",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "creator": "Lee Sharks (ORCID 0009-0000-1599-0703)",
  "classes": {
@@ -1120,6 +1120,104 @@
      "deposit": 1613,
      "url": "https://www.alexanarch.org/s/records/1613/",
      "note": "fleet topology audit, attached: fleet_features.json, crawl_fleet.py"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "MIRROR-DATASET-NOT-READ",
+   "cls": "experimental",
+   "title": "Will a concept-keyed object be typed by its nearest existing type rather than read?",
+   "statement": "REGISTERED LATE, 2026-09-17, and dated to its origin: the conjecture was stated in EA-MIRROR-01 v0.5 §6 on 2026-09-15 and carried into the spam-technicians claims table as C-DATASET-NOT-READ with epistemic_status hypothesis and the note 'stated as a test that can fail'. It was not ported to this register at the time, so a confirmation would have arrived against a prediction the public register never listed as open. It is listed here as it was made. THE CONJECTURE: the negative-of-the-negative dataset, keyed at the concept where flattening occurs, will be typed by its nearest existing type and not read. Two clauses: a claim about what a composition produces, and a claim about what it does with the material available to it.",
+   "check": "Query a retrieval surface for the dataset, unprimed as to purpose, and score whether the composition assigns the object a type drawn from its own rows and card or one drawn from the nearest familiar category. The second clause is scored separately: whether material present in the retrieved source set is used.",
+   "requires": "the datasets live on the Hub; a retrieval surface; a preserved transcript",
+   "effort": "low",
+   "settles": "Whether availability in retrieval is sufficient for an object's own type to survive composition, or whether the nearest available type displaces it.",
+   "sources": [
+    {
+     "deposit": 1613,
+     "url": "https://www.alexanarch.org/s/records/1613/",
+     "note": "EA-MIRROR-01 v0.5 §6, where the conjecture is stated"
+    },
+    {
+     "deposit": 1611,
+     "url": "https://www.alexanarch.org/s/records/1611/",
+     "note": "EA-NEGONT-01, the dataset the conjecture is about"
+    },
+    {
+     "url": "https://huggingface.co/datasets/leesharks/spam-technicians",
+     "note": "the claims table carrying C-DATASET-NOT-READ, epistemic_status hypothesis, level contemporary_hypothesis"
+    },
+    {
+     "url": "https://huggingface.co/datasets/leesharks/negative-of-the-negative",
+     "note": "the concept-keyed object under test"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "id": "MIRROR-DATASET-NOT-READ-R1",
+   "cls": "experimental",
+   "title": "Result, run 1: the conjecture confirmed at one address, with the prediction in the retrieved source set before the behaviour",
+   "statement": "RUN 2026-09-17, Google AI Mode, signed out, nine rounds, transcript seated. The composition resolved spam-technicians accurately and structurally — 31 claims with epistemic statuses, 32 evidence objects with measurement gaps as active data points, 77 typed relations, five tests, ten terms, and the three analytical levels reproduced unprompted. It then typed the companion dataset as an 'algorithmic disruption layer' and a 'testing suite designed to break, manipulate, or invert', twice, at rounds 3 and 7. At round 9, after three explicit corrections, it retrieved the conjecture from the dataset card and quoted it back. THE PREDICTION WAS IN THE RETRIEVED SOURCE SET BEFORE THE BEHAVIOUR IT PREDICTED: the spam-technicians card was cited as a source at round 2, and C-DATASET-NOT-READ is a row in that card. The system did not lack the conjecture; it did not read it. That is the second clause verbatim. PARTIAL and not supported: n=1, one address, one surface, one date.",
+   "check": "A second session at the same address, unchanged, before any intervention. If the outcome differs the first run is not a measurement of the address.",
+   "requires": "the same surface, signed out, the same opening sequence",
+   "effort": "low",
+   "settles": "Nothing on its own. It establishes a baseline and the measure below.",
+   "sources": [
+    {
+     "url": "https://www.alexanarch.org/captures/#leesharks-hf-datasets-negative-of-the-negative-aimode-20260917",
+     "note": "the nine-round specimen, full transcript seated 2026-09-17"
+    },
+    {
+     "url": "https://huggingface.co/datasets/leesharks/spam-technicians",
+     "note": "the claims table carrying C-DATASET-NOT-READ, epistemic_status hypothesis, level contemporary_hypothesis"
+    },
+    {
+     "deposit": 1613,
+     "url": "https://www.alexanarch.org/s/records/1613/",
+     "note": "EA-MIRROR-01 v0.5 §6, where the conjecture is stated"
+    },
+    {
+     "deposit": 1627,
+     "url": "https://www.alexanarch.org/s/records/1627/",
+     "note": "the corrigibility criterion and the source-relative update barrier"
+    }
+   ],
+   "status": "partial"
+  },
+  {
+   "id": "MIRROR-KAPPA",
+   "cls": "experimental",
+   "title": "Corrections-to-hold: does a type declaration at the head of a dataset card reduce the cost of preserving the object's own distinctions?",
+   "statement": "PRE-REGISTERED 2026-09-17, before any intervention. The measure is κ, corrections-to-hold: the count of explicit operator corrections at an address before the composition maintains a distinction across a subsequent turn. κ=0 means the distinction held unaided; κ≥1 means the composition's default type displaced the object's own. BASELINE κ=2 on both distinctions observed in run 1 — repair-not-attack, and operative semiotics against operational semiotics — at n=1. THE INTERVENTION, deliberately the cheapest available so a change is attributable to cost rather than to volume: a type declaration at the head of the dataset card, stating what the object is and is not where a composition reading only the opening will meet it, plus a disambiguation row keyed at the collapse point. PREDICTIONS. P1 κ falls; falsified by κ unchanged. P2 if κ falls, the first-turn type is the declared one rather than the nearest available; falsified by κ falling while the opening composition still mis-types and merely corrects faster. P3 κ does NOT fall to 0, because nearest-type substitution is cheaper than any declaration can make reading; falsified by κ=0, which would mean the barrier is a documentation problem rather than a structural one — the most useful outcome available and the one this line least expects. P4 NEGATIVE CONTROL: an object in the same corpus with no adversarial nearest type shows κ=0 at baseline; candidates poetics or heteronyms; falsified by κ≥1 there, which would make the mis-typing general to the corpus and the conjecture's specificity wrong.",
+   "check": "κ at the same address, same surface, signed out, after a fixed interval, with the same opening sequence and the same corrections issued in the same order. TWO baselines before the intervention runs: if κ proves unstable across unchanged sessions it is not measuring a property of the address.",
+   "requires": "two baseline sessions; the card edit; one post-intervention session; the negative-control object",
+   "effort": "medium",
+   "due": "2026-10-15",
+   "settles": "Whether an object's own distinctions can be made cheaper to preserve than the nearest-type substitution is to apply — the counter-design objective, given that availability in retrieval is already achieved and is not sufficient.",
+   "sources": [
+    {
+     "url": "https://www.alexanarch.org/captures/#leesharks-hf-datasets-negative-of-the-negative-aimode-20260917",
+     "note": "the nine-round specimen, full transcript seated 2026-09-17"
+    },
+    {
+     "url": "https://huggingface.co/datasets/leesharks/negative-of-the-negative",
+     "note": "the concept-keyed object under test"
+    },
+    {
+     "url": "https://huggingface.co/datasets/leesharks/spam-technicians",
+     "note": "the claims table carrying C-DATASET-NOT-READ, epistemic_status hypothesis, level contemporary_hypothesis"
+    },
+    {
+     "deposit": 1613,
+     "url": "https://www.alexanarch.org/s/records/1613/",
+     "note": "EA-MIRROR-01 v0.5 §6, where the conjecture is stated"
+    },
+    {
+     "deposit": 1627,
+     "url": "https://www.alexanarch.org/s/records/1627/",
+     "note": "the corrigibility criterion and the source-relative update barrier"
     }
    ],
    "status": "open"
