@@ -1,0 +1,106 @@
+<!doctype html><html lang=en><head>
+<link rel="canonical" href="https://www.operativesemiotics.org/papers/corrigibility"><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Can the Ontology Be Wrong and Find Out? &mdash; Operative Semiotics</title>
+<meta name=description content="One criterion, askable of any representational system: can evidence from a misrepresented object revise the representation that misrepresented it? With the ground-truth regress showing the criterion favours neither topological nor content-based trust.">
+<link rel=canonical href="https://www.operativesemiotics.org/papers/corrigibility">
+<style>
+:root{--bg:#faf8f4;--fg:#1a1a1a;--dim:#6b6560;--line:#ddd6cc}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.7 Georgia,serif;padding:3rem 1.2rem 6rem}
+.wrap{max-width:46rem;margin:0 auto}
+h1{font-size:1.9rem;margin:0 0 .3rem;font-weight:normal;line-height:1.25}
+.sub{color:var(--dim);font-size:1.1rem;margin:0 0 1.2rem}
+.meta{font:12px/1.7 ui-monospace,monospace;color:var(--dim);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.8rem 0;margin:0 0 2rem}
+.meta a{color:#8a5a2b}
+.blurb{background:#fff;border:1px solid var(--line);padding:1.1rem 1.3rem;margin:0 0 2.5rem}
+h2{font-size:1.25rem;margin:2.4rem 0 .6rem;font-weight:600;line-height:1.3}
+h3{font-size:1.05rem;margin:1.8rem 0 .5rem;font-weight:600}
+blockquote{border-left:3px solid var(--line);margin:1.2rem 0;padding:.2rem 0 .2rem 1.2rem;color:#333}
+code{font:13px/1 ui-monospace,monospace;background:#f0ece4;padding:.15rem .35rem;border-radius:2px}
+pre{background:#f0ece4;padding:1rem;overflow-x:auto;font:12px/1.5 ui-monospace,monospace;border-radius:2px}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:1.2rem 0}
+th,td{border-bottom:1px solid var(--line);padding:.5rem .4rem;text-align:left;vertical-align:top}
+hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
+a{color:#8a5a2b}
+footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.4rem;color:var(--dim);font-size:.9rem}
+nav{display:flex;gap:14px;flex-wrap:wrap;font-size:.9em;margin:0 0 22px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+</style><link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head><body><div class=wrap>
+<nav><a href="/" style="font-weight:bold">Operative Semiotics</a><a href="/papers" style="font-weight:bold">Papers</a><a href="/open" style="border:1px solid #8a6a20;border-radius:14px;padding:1px 12px;text-decoration:none">Predictions &amp; Builds</a><a href="/data/predictions.json">Data</a><a href="https://www.alexanarch.org/">Archive</a></nav>
+<h1>Can the Ontology Be Wrong and Find Out?</h1><p class=sub>Source-admission systems, the proxy for standing, and the damage a representation does to itself.</p>
+<div class=meta>Lee Sharks &middot; <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a><br>Deposit <a href="https://www.alexanarch.org/s/records/1627/">#1627</a> &middot; AXN:06BD.GENERATIVE<br>Transport form of <a href="https://www.alexanarch.org/s/records/1613/">#1613</a> &middot; companion to <a href="https://www.alexanarch.org/s/records/1626/">#1626</a> on operative standing<br>Crimson Hexagonal Archive &middot; CC BY 4.0 &middot; 2026-09-17</div>
+<div class=blurb>The damage a source-admission ontology does to <em>itself</em> when a proxy for epistemic standing substitutes for the judgment the proxy was introduced to approximate. Adversarial information retrieval evaluates such proxies by ranking quality; the epistemology of testimony evaluates credibility discounts by the wrong done to the speaker. Neither asks about the third harm.</div>
+
+<h2>1. The criterion</h2>
+
+<blockquote><p><strong>Can evidence from the misrepresented object revise the representation that misrepresented it?</strong></p>
+<p>Where it can, the ontology can be wrong and find out. Where it cannot, the ontology can only be scored.</p></blockquote>
+
+<p>The distinction is between an ontology corrigible by its objects and one merely evaluable by its operators. The second can be measured, tuned, benchmarked and improved on every axis its own metrics express, and cannot discover that it is wrong about a source in a way those metrics do not capture.</p>
+
+<h2>2. Reading, defined narrowly</h2>
+
+<p><strong>Reading is permitting the claims, distinctions, evidence, corrections and internal relations of a text to revise the representation under which the text is evaluated.</strong></p>
+
+<p>Tokenization is not reading. Embedding is not reading. Extraction, classification and summarization are not reading. Each consumes the text and returns a value; none permits the text to alter the frame in which it is being valued. <em>A system can consume every byte of a document and read none of it</em>, and the sentence is precise under this definition rather than rhetorical.</p>
+
+<p>The definition names a direction of permission, not a substrate. It applies identically to a human reviewer who has decided what a submission is before opening it, and is satisfiable by a machine that routes a source's corrections back into the variables governing its admission.</p>
+
+<h2>3. The source-relative update barrier</h2>
+
+<p>Let <b>P(s)</b> be a prior on source <em>s</em>, <b>A(s)</b> the admission decision that prior controls, and <b>E(s)</b> the evidence the source could supply.</p>
+
+<p><strong>Evidence has <em>operative standing</em> with respect to admission when it can alter, block or redirect P(s) or A(s).</strong> Evidence may be present, retrievable, and even correctly represented while lacking operative standing over the decision that governs its own admission. Presence and standing are separate properties, and the second determines whether a representation can be corrected.</p>
+
+<blockquote><p>The barrier obtains when E(s) exists and does not reach P(s) or A(s) &mdash; available only downstream of the admission that P(s) controls.</p></blockquote>
+
+<p>This is the structure Fricker describes for testimonial injustice: a credibility assessment poorly grounded in evidence, tracking category membership rather than the testimony, and resistant to rational revision. Her remedy is a hearer virtue &mdash; noticing the distortion and correcting for it &mdash; which presupposes a hearer who can hold the prejudice and the testimony in view at once.</p>
+
+<p><strong>The topology-only admission operation cannot, and the reason is the reason it works.</strong> A topological variable does not have the testimony in view, because it is content-free by design, and content-free by design was the founding virtue. The incapacity belongs to the operation rather than to every architecture containing it: a larger system combining topology with endogenous content evaluation would have the faculty, in the part performing the evaluation. What is settled is that the operation cannot supply its own correction, so any correction must come from a component the operation does not contain.</p>
+
+<h2>4. The ground-truth regress</h2>
+
+<p>It is tempting to read content-based trust as the solution and its non-adoption as institutional failure. The criterion does not permit that reading.</p>
+
+<p><strong>Evaluating the correctness of a source's claims requires a corpus of established fact against which to evaluate them.</strong> That corpus is itself a source-admission ontology: something decided which sources constitute it, with what standing, under what prior. A source excluded from the ground-truth corpus cannot correct the ground-truth corpus, because its corrections are in material the corpus does not admit.</p>
+
+<blockquote><p>The corrigibility criterion does not favour endogenous trust over topological trust. It applies to both, and neither satisfies it by construction.</p></blockquote>
+
+<p>So the criterion is not a design recommendation. It does not say <em>use content rather than topology</em>. It asks whether a representation can be revised by the object it misrepresents, and a content-based system fails that test exactly as a graph-based one does &mdash; by admitting evidence only through a gate the evidence cannot reach.</p>
+
+<h2>5. What is not new here</h2>
+
+<p>That link-topological trust is manipulable and not Sybil-proof was established by adversarial information retrieval two decades ago. That an endogenous content-based signal is the alternative was proposed by Google Research in 2015, distinguishing itself from every topological method on exactly that axis. That a credibility discount can track category rather than evidence, and resist revision, is Fricker 2007.</p>
+
+<p><strong>What neither literature supplies is an account of the damage to the representation.</strong> Adversarial IR evaluates the proxy by ranking quality: does the spam get through, do good pages surface. Epistemology evaluates the discount by the wrong done to the speaker: is this person wronged in their capacity as a knower. Neither asks about the third harm &mdash; the representation's own capacity to be corrected.</p>
+
+<h2>6. The inverted legibility incentive</h2>
+
+<p><strong>Under a topology-only proxy, some operations that increase semantic legibility can simultaneously increase the features associated with manufactured standing.</strong> The claim is existential rather than monotonic: a collision is exhibited between a specific family of legibility operations &mdash; reciprocal cross-linking so related material is reachable, templated surfaces, mirrors, dense internal propagation &mdash; and a specific family of topology features.</p>
+
+<p>An audit on a twenty-nine host fleet under single ownership found reciprocal cross-host density at <b>0.86</b>. A major reference platform's signature is the opposite shape: it links almost entirely to itself and almost never outward.</p>
+
+<p>The finding cuts both ways and is reported as such. <strong>The proxy is not blind.</strong> Cross-host reciprocal density under common ownership does separate the two cases without reading either. What it cannot do is distinguish a small distributed corpus that is internally consistent from one manufacturing standing, because the distinguishing evidence is in the text.</p>
+
+<h2>7. Three levels, kept apart</h2>
+
+<p><b>1.</b> What the audit measures: the link-topology vector of a specific fleet on a specific date. <b>2.</b> What classical trust-graph models imply, from published specifications. <b>3.</b> What is hypothesised of contemporary retrieval &mdash; that a source-admission step operates on standing variables of this kind in current systems.</p>
+
+<p><strong>The third is not established by the first two.</strong> Stated at the right strength: level three is a diagnosis of a black box that cannot be verified from outside it, and the evidence that would settle it is evidence only its operators can supply. It is system-relative, and one system shown not to use such a variable does not falsify the attribution to another.</p>
+
+<h2>8. What remains owed</h2>
+
+<p>An independent audit of the topology finding, since the fleet measured is the author's own. And a positive construction, whose difficulty &sect;4 explains: a system satisfying the criterion would need <strong>an admission path a misrepresented source can reach without first passing admission</strong> &mdash; cheap enough to be always open and narrow enough not to be an attack surface. The tension between corrigibility and manipulability is why the problem is open, and it is not resolved by preferring one signal over another.</p>
+
+<p>The paper may not be defended by the misrepresentation of any particular source, including its author's. A single misrepresented object is an anecdote; the claim is structural and is about what a class of representation can and cannot discover about itself.</p>
+
+
+<div class=meta style="margin-top:3rem">Operative Semiotics &middot; <a href="/papers">Papers</a> &middot; <a href="/open">Predictions &amp; Builds</a> &middot; <a href="https://www.alexanarch.org/">Archive</a></div>
+</div></body></html>
