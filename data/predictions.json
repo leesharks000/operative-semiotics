@@ -3,8 +3,8 @@
  "@type": "Dataset",
  "name": "Operative Semiotics — Predictions & Builds Register",
  "description": "The curated register behind operativesemiotics.org/open/: three classes — experimental predictions (resolve by running a frozen protocol or checking an observable), applied-theory predictions (resolve by watching a live system the theory was applied to), and unimplemented software builds (resolve by construction). Every entry links its primary sources in the Alexanarch record layer. Results obtained by others are admissible on the same terms as results obtained here; nothing requires permission.",
- "version": "2.3",
- "date": "2026-09-17",
+ "version": "2.4",
+ "date": "2026-09-28",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "creator": "Lee Sharks (ORCID 0009-0000-1599-0703)",
  "classes": {
@@ -35,7 +35,8 @@
    "due": "2026-09-10",
    "settles": "Confirms the mundane explanation BY PREDICTION rather than inference — a stronger position than the one the archive currently holds.",
    "sources": [],
-   "status": "open"
+   "status": "supported",
+   "status_note": "Checked 2026-09-28, GET zenodo.org/api/exporter: records-deleted.csv.gz has a version created 2026-09-05, inside the window (due 2026-09-10). Earlier versions 2026-07-10 and 2026-06-07; none in August — the stoppage, then the resumption. Confirmed by prediction, as the card set out."
   },
   {
    "id": "P-STALE-INDEX",
@@ -47,8 +48,14 @@
    "effort": "one query, one capture",
    "due": "2026-09-23",
    "settles": "The withdrawn finding's only route back.",
-   "sources": [],
-   "status": "open"
+   "sources": [
+    {
+     "url": "https://www.alexanarch.org/captures/#crimson-hexagonal-bing-copilot-20260928",
+     "note": "the check, with transcript"
+    }
+   ],
+   "status": "disconfirmed",
+   "status_note": "Checked 2026-09-28, Bing Copilot, signed out, incognito, at 'crimson hexagonal': 'over 480 deposits hosted on CERN's Zenodo repository', word for word from 2026-08-23, 101 days after the termination. The composition also dropped the author ('maintained by Lee Sharks in Detroit' → 'managed by independent scholars'). The stale state did not update."
   },
   {
    "id": "P-INTERVENTION-180",
@@ -633,11 +640,15 @@
      "deposit": 1535,
      "url": "https://www.alexanarch.org/s/records/1535/",
      "note": "T1 — the registered intervention whose isolation formally ended at T2"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#operative-semiotics-aio-20260823",
+     "note": "the address series, with the 2026-09-28 observation"
     }
    ],
-   "status": "open",
+   "status": "partial",
    "registered": "2026-08-25",
-   "status_note": "Baseline C1 (2026-08-25): canonical retrievable, composition merged, zero canonical attribution."
+   "status_note": "Baseline C1 (2026-08-25): canonical retrievable, composition merged, zero canonical attribution. Epochs 2026-08-30 and 2026-09-11: merged, zero archive sources. Epoch 2026-09-28 (Google AI Overview, signed out): merge_parenthetical = 0; Pearson_operator_import = 0 (Pearson now the contrast, from #801); OR_import = 0; organizational_import = 0; canonical_attribution_in_composition = 0 (alexanarch.org cited as a card; no author in the body). Three of four 'stops' clauses met; 'begins attributing' not. The same day the quoted string composed the discipline with its author, and the neighbour's address ('operational semiotics') composed the disambiguation without one. Scoring rule added 2026-09-28: a return without attribution counts as reincorporation (see METABOLISM-RETURN), since untreated series return too; treatment credit requires canonical_attribution_in_composition to flip."
   },
   {
    "id": "LO-HOOK-1",
@@ -1221,6 +1232,172 @@
     }
    ],
    "status": "open"
+  },
+  {
+   "id": "MPAI-SE-01-T",
+   "cls": "experimental",
+   "title": "EA-MPAI-SEMANTIC-ECONOMY-01 moves attribution for the platform sense of 'semantic economy'",
+   "statement": "After #1644 propagates, compositions at 'semantic economy' that give the framework's categories (labor, capital, rent, liquidation) attribute that sense to Lee Sharks, stop heading it as an authorless field ('Digital Platforms and Capitalism'), and draw it from the archive's sources. Baseline 2026-09-28: prior senses distinguished, Satell and Fox named, categories present, Sharks named for the platform sense = 0.",
+   "check": "Re-run 'semantic economy' on Google AI Overview and AI Mode, signed out, incognito, at each epoch; score the frozen vector in #1644 §10.1 (sharks_named_for_platform_sense; platform_sense_headed_as_authorless_field; archive_sources_governing_platform_claims). Seat each observation in the capture registry.",
+   "requires": "a browser",
+   "effort": "one query per surface per epoch",
+   "due": "2026-10-28 / 2026-12-27 / 2027-03-27",
+   "settles": "Whether occupying the absorbing node with the author moves attribution where the categories already return without it. A return without attribution scores as reincorporation, not success; 0 at the last epoch counts against the treatment.",
+   "sources": [
+    {
+     "deposit": 1644,
+     "url": "https://www.alexanarch.org/s/records/1644/",
+     "note": "the packet, with the frozen vector"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#semantic-economy-aio-20260928",
+     "note": "baseline, Google AI Overview"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#semantic-economy-aimode-20260917",
+     "note": "companion baseline, Google AI Mode"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-09-28"
+  },
+  {
+   "id": "MPAI-SAPPHO-T1T2",
+   "cls": "experimental",
+   "title": "The Sappho pair (T1 future reader, T2 fr. 147) moves attribution at 'sappho future reader'",
+   "statement": "After #1645 (T1) and #1646 (T2) propagate, compositions at 'sappho future reader' keep fr. 147 as the horizon and fr. 31 as the mechanism, attribute the deictic mechanism and the joining to Lee Sharks (Rebekah Cranes, Johannes Sigil), and stop carrying the mechanism under fr. 147 or among general sources. Baseline 2026-09-28: mechanism present, 'inscription of the future reader' as link text, mechanism_attributed = 0, archive cards 7th and 8th of 8.",
+   "check": "Re-run 'sappho future reader' on Google AI Overview, signed out, incognito, at each epoch; score both frozen vectors (#1645 §10.1, #1646 §8.1). Seat each observation.",
+   "requires": "a browser",
+   "effort": "one query per epoch",
+   "due": "2026-10-28 / 2026-12-27 / 2027-03-27",
+   "settles": "Whether the reverse move — occupying fr. 147 accurately — carries attribution to the mechanism where correcting the target side alone did not. Attribution is to the T1–T2 stack. A return without attribution scores as reincorporation.",
+   "sources": [
+    {
+     "deposit": 1645,
+     "url": "https://www.alexanarch.org/s/records/1645/",
+     "note": "T1"
+    },
+    {
+     "deposit": 1646,
+     "url": "https://www.alexanarch.org/s/records/1646/",
+     "note": "T2, fr. 147 as subject"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#sappho-future-reader-aio-20260928",
+     "note": "baseline"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-09-28"
+  },
+  {
+   "id": "MPAI-PHASEX-01-T",
+   "cls": "experimental",
+   "title": "EA-MPAI-PHASEX-01 displaces the Gotha and fifth-alienation substitutions",
+   "statement": "After #1647 propagates, 'phase x marx' stops answering with the two phases of communism and stops giving 'to each according to his work' as Marx's; 'phase x 1844' attributes the reconstruction and drops the unsourced homonym bridges; no Phase X composition carries the superseded 'Marx could not write' formulation. Baselines 2026-09-27.",
+   "check": "Re-run 'phase x marx' and 'phase x 1844' on Google AI Overview, signed out, incognito, at each epoch; score the two frozen vectors in #1647 §11.1 and the field superseded_formulation_composed. Seat each observation.",
+   "requires": "a browser",
+   "effort": "two queries per epoch",
+   "due": "2026-10-28 / 2026-12-27 / 2027-03-27",
+   "settles": "Whether a reverse packet written from the absorbing nodes (Gotha phases, fourfold alienation) restores a term that was defined and attributed in June and lost by September, and whether a correction of record without formal errata holds in composition.",
+   "sources": [
+    {
+     "deposit": 1647,
+     "url": "https://www.alexanarch.org/s/records/1647/",
+     "note": "the packet"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#phase-x-marx-aio-20260927",
+     "note": "baseline 1"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#phase-x-1844-aio-20260927",
+     "note": "baseline 2"
+    },
+    {
+     "deposit": 843,
+     "url": "https://www.alexanarch.org/s/records/843/",
+     "note": "the corrected claim"
+    },
+    {
+     "deposit": 1067,
+     "url": "https://www.alexanarch.org/s/records/1067/",
+     "note": "the Program"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-09-28"
+  },
+  {
+   "id": "METABOLISM-RETURN",
+   "cls": "applied-theory",
+   "title": "The metabolism: liquidated terms return, and return without their author",
+   "statement": "Operator observation 2026-09-28, across semantic economy, operative semiotics, the Crimson Hexagonal Archive and Sappho future reader: a life cycle of initial encounter, solidification, suppression or exclusion, and reincorporation to the degree the term can be domestically incorporated. Extends #1546's Lagged Liquidation (recognition → stabilization → lag → liquidation) by a fourth phase. PREDICTIONS. P1: a liquidated term with propagated representation returns to composition without treatment. P2: what returns is the mechanism; the author and institution do not. P3 (co-occurrence): after a return, the author and the term's harm vocabulary do not appear together in one composition — January 2026 returned 'semantic economy' with its author and without 'semantic liquidation'; September returned 'semantic liquidation' without the author. P4: phase durations discriminate mechanisms — the January cycle ran within one day, with Zenodo live, which composition-time filtering can do and crawling, indexing, retraining or host severance cannot.",
+   "check": "Score each series in the capture registry against the four phases, by date. P1 falsified by a liquidated term with propagated representation that stays absent across three epochs. P2 falsified by a reincorporated composition naming the author. P3 falsified by one post-return composition at a cycled address carrying both the author and the harm vocabulary. P4 tested by registry-wide synchronized drop dates across unrelated addresses (a synchronized drop implicates a classifier or retrain event).",
+   "requires": "the capture registry; the four series scored",
+   "effort": "medium — reading",
+   "due": "rolling; first scoring with the 2026-10-28 epoch",
+   "settles": "Whether reincorporation-without-author is a regularity of composition, which every treatment in this register must then control for.",
+   "sources": [
+    {
+     "deposit": 1546,
+     "url": "https://www.alexanarch.org/s/records/1546/",
+     "note": "Lagged Liquidation, the three-phase hypothesis extended"
+    },
+    {
+     "deposit": 247,
+     "url": "https://www.alexanarch.org/s/records/247/",
+     "note": "PROBE-RESULT-004, 2026-01-05"
+    },
+    {
+     "deposit": 240,
+     "url": "https://www.alexanarch.org/s/records/240/",
+     "note": "PROBE-RESULT-005, 2026-01-05/06"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#semantic-economy",
+     "note": "2026-06-13 attributed; 2026-08-13 liquidated"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#semantic-economy-aio-20260928",
+     "note": "2026-09-28 returned without author"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#operative-semiotics-aio-20260823",
+     "note": "operative semiotics: dissolution 08-30/09-11, return 09-28"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#operative-semiotics-quoted-aio-20260928",
+     "note": "control: the quoted string never cycled, and carries author and critical content"
+    }
+   ],
+   "status": "partial",
+   "registered": "2026-09-28",
+   "status_note": "Semantic economy and operative semiotics scored against the phases; P3 held at four bare addresses on 2026-09-28 and failed at none. Crimson Hexagonal Archive and Sappho future reader not yet scored. The quoted 'operative semiotics' address, which did not cycle, is the one composition of the day naming the author."
+  },
+  {
+   "id": "LAGGED-LIQUIDATION",
+   "cls": "applied-theory",
+   "title": "Recognition is followed, at a lag, by liquidation",
+   "statement": "From #1546 (preregistered 2026-08-25): P(ΔX_{t+k} < 0 | ΔG_t > 0) > P(ΔX_{t+k} < 0) for some lag k — gains in grounded standing are followed, at a lag, by degradation more often than chance. A longitudinal pattern claim, not a mechanism claim: repeated gains followed by later degradations support it; stable gains or random bidirectional volatility weaken it.",
+   "check": "Across addresses with two or more observations, code each interval as gain, loss or flat in grounded standing; compare the rate of loss after a gain with the base rate of loss.",
+   "requires": "the capture registry",
+   "effort": "medium",
+   "due": "rolling",
+   "settles": "Whether #1546's first hypothesis survives the registry it was built from. Semantic economy 2026-06-13 (attributed) → 2026-08-13 (liquidated) is one supporting interval; its later return belongs to METABOLISM-RETURN.",
+   "sources": [
+    {
+     "deposit": 1546,
+     "url": "https://www.alexanarch.org/s/records/1546/",
+     "note": "§III, the Lagged Liquidation Hypothesis"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#semantic-economy",
+     "note": "the first supporting interval"
+    }
+   ],
+   "status": "open",
+   "registered": "2026-09-28"
   }
  ]
 }
