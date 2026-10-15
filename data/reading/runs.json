@@ -1,0 +1,58 @@
+{
+ "what": "Run log of the prediction sweep: the launcher's record of every parallel reader — what it was given, when, by whom, under which protocol — kept apart from the readers' own self-reported provenance in each batch file, so each can be checked against the other.",
+ "launcher": {
+  "role": "TACHYON — Claude, Anthropic; in-session coordinator under MANUS (Lee Sharks) direction",
+  "session": "https://claude.ai/code/session_01Q8CVU7j8bFiJ6Nz3pQbDTf"
+ },
+ "ruling": "Lee Sharks, 2026-10-15: \"shape g. parallel reading, but they need to keep track of what theyve read and havent and how. the agents need to track their own provenance as well\"",
+ "runs": [
+  {
+   "run": "R-pilot-CAL",
+   "batch_id": "CAL",
+   "phase": "pilot",
+   "launched_at": "2026-10-15T19:07:18Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.0",
+   "protocol_sha256": "25b5135afc4b806aaa941c7042742e0a792c95402029bb032258a5567f5918bd",
+   "instructions": "batch file + protocol; blind for CAL (in-session readings withheld)",
+   "output": "data/reading/batches/CAL.json",
+   "status": "running"
+  },
+  {
+   "run": "R-pilot-B0001",
+   "batch_id": "B0001",
+   "phase": "pilot",
+   "launched_at": "2026-10-15T19:07:18Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.0",
+   "protocol_sha256": "25b5135afc4b806aaa941c7042742e0a792c95402029bb032258a5567f5918bd",
+   "instructions": "batch file + protocol; blind for CAL (in-session readings withheld)",
+   "output": "data/reading/batches/B0001.json",
+   "status": "running"
+  },
+  {
+   "run": "R-pilot-B0002",
+   "batch_id": "B0002",
+   "phase": "pilot",
+   "launched_at": "2026-10-15T19:07:18Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.0",
+   "protocol_sha256": "25b5135afc4b806aaa941c7042742e0a792c95402029bb032258a5567f5918bd",
+   "instructions": "batch file + protocol; blind for CAL (in-session readings withheld)",
+   "output": "data/reading/batches/B0002.json",
+   "status": "running"
+  },
+  {
+   "run": "R-pilot-B0003",
+   "batch_id": "B0003",
+   "phase": "pilot",
+   "launched_at": "2026-10-15T19:07:18Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.0",
+   "protocol_sha256": "25b5135afc4b806aaa941c7042742e0a792c95402029bb032258a5567f5918bd",
+   "instructions": "batch file + protocol; blind for CAL (in-session readings withheld)",
+   "output": "data/reading/batches/B0003.json",
+   "status": "running"
+  }
+ ]
+}
