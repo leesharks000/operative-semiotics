@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 307,
+ "deposits_with_notes": 315,
  "deposits": [
   {
    "deposit": 8,
@@ -723,6 +723,50 @@
      "batch_id": "B0079",
      "field": "incidental",
      "text": "Text file is v1.2 (supersedes v1.1, DOI 10.5281/zenodo.20586831) though queue title says v1.1. Extraction damage: many list/table/graph bodies are missing; headings like \"Lexical features:\", \"Syntactic features:\", \"Falsifiability:\", \"Primary outcomes:\", \"Predictions:\", the causal-model graph (§4.3), MDI subscale list, Stage 2B conditions, Stage 3 corpora, collapse benchmarks, §6.4 natural experiments and §8.2 metadata list are followed by nothing. The abstract also ends with a colon and no stage list (line 32). Stage-level falsifiers may have been lost."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 163,
+   "notes": [
+    {
+     "batch_id": "B0080",
+     "field": "incidental",
+     "text": "Some markdown lists are run together on single lines (e.g. lines 13, 39, 101, 105, 201, 203, 237, 279-297); tables flattened into one line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 164,
+   "notes": [
+    {
+     "batch_id": "B0080",
+     "field": "incidental",
+     "text": "Image link at line 49 has empty alt text; receipt text is a different verbatim AI Mode response than the one quoted in #167."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 166,
+   "notes": [
+    {
+     "batch_id": "B0080",
+     "field": "incidental",
+     "text": "Tables flattened to one-cell-per-line (lines 382-410, 951-985, 1109-1156). Abstract cost figure (~$40,000-65,000, line 61) differs from table/conclusion (~$38,000-63,000)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 167,
+   "notes": [
+    {
+     "batch_id": "B0080",
+     "field": "incidental",
+     "text": "Figures referenced as PNG files are not embedded (image link at line 18 empty). Assembly cross-check section (line 291) describes a four-trajectory taxonomy with different names than §7."
     }
    ],
    "rulings": []
@@ -2556,6 +2600,17 @@
    "rulings": []
   },
   {
+   "deposit": 825,
+   "notes": [
+    {
+     "batch_id": "B0085",
+     "field": "incidental",
+     "text": "Body does not match queue title: queue says v6.0, 87 captures; the file is EA-WG-CAPTURES-01 v7.2 with 131 captures (header line 1-3; contents line 9). Body is otherwise intact. Almost entirely dated observations (not recorded per protocol)."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 835,
    "notes": [
     {
@@ -2797,6 +2852,17 @@
      "batch_id": "B0076",
      "field": "incidental",
      "text": "Lines 374-705 are a verbatim DataCite JSON record (captured 2026-07-03); header calls the DOI \"Dead DOI\"."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1023,
+   "notes": [
+    {
+     "batch_id": "B0085",
+     "field": "incidental",
+     "text": "WRONG BODY: queue title is \"Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.1)\", but the file AXN-040B-text.md holds \"The Self-Audit Module Dissolved\" (EA-WG-SELF-AUDIT-01 v1.0, DOI 10.5281/zenodo.20682278). The Generative Monoculture text was not read in this batch. The self-audit body may duplicate another deposit's text."
     }
    ],
    "rulings": []
@@ -3540,6 +3606,17 @@
    "rulings": []
   },
   {
+   "deposit": 1263,
+   "notes": [
+    {
+     "batch_id": "B0085",
+     "field": "incidental",
+     "text": "Recovered from blog after Zenodo severance (lines 30-44 are restoration framing; falsification line 40 is restoration boilerplate, not recorded)."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1268,
    "notes": [
     {
@@ -3877,6 +3954,17 @@
      "batch_id": "B0079",
      "field": "incidental",
      "text": "WRONG/DUPLICATE BODY: the queue title is the Jess Elgene Certificate of Conferral and Honorary Laureate License, but the text file contains the v1.1 Announcement of Establishment and Inaugural Conferral, i.e. the same body as #160 (AXN-02F6), re-formatted with stray asterisks. Finds duplicate #160."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1396,
+   "notes": [
+    {
+     "batch_id": "B0086",
+     "field": "incidental",
+     "text": "Body is a dated observation registry (captures 2026-06-07 to 2026-06-15); no forecast, confirmation of an earlier prediction, or historical thesis is framed. Captures note error-amplification (#83, pre-correction stanza numbering; erratum DOI 10.5281/zenodo.20693274) and a stale deposit count (#130). Final line 946 has a stray trailing asterisk (italic closer without opener)."
     }
    ],
    "rulings": []

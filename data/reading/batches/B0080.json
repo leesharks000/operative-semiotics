@@ -1,0 +1,567 @@
+{
+ "batch_id": "B0080",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic assistant) running as a Claude Code subagent; model stated in session as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:10:34Z",
+  "finished_at": "2026-10-15T20:12:28Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 163,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02FE-text.md",
+   "lines_total": 375,
+   "read_ranges": [
+    [
+     1,
+     375
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper / coupling hypothesis with falsification conditions",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Within a corpus of contributions whose later uptake can be independently documented, greater initial distance from contemporaneous norms should predict lower contemporaneous recognition, greater provenance loss, and longer delay between functional uptake and durable attribution. The hypothesis is falsified if high-distance, later-used contributions receive recognition at rates comparable to matched, lower-distance contributions, or if attribution loss does not covary with independently measured tail distance and structural position.",
+     "lines": [
+      17,
+      17
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       203,
+       203
+      ],
+      [
+       261,
+       263
+      ]
+     ],
+     "note": "P3, the paper's principal empirical prediction: a standing conditional claim about recognition systems with its falsifier in the same sentence-run; no date."
+    },
+    {
+     "shape": "G",
+     "quote": "P4 (Machine acceleration): Composition systems can reproduce concepts before durable source recognition forms, increasing the rate of uptake without attribution.",
+     "lines": [
+      13,
+      13
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       203,
+       203
+      ],
+      [
+       227,
+       228
+      ],
+      [
+       313,
+       313
+      ]
+     ],
+     "note": "P4 AI-era extension: composition systems produce uptake before source recognition; stated as requiring comparative evidence; no window."
+    },
+    {
+     "shape": "F",
+     "quote": "Second, the empirical test of the hypothesis requires a corpus of cases independent of the investigator. The framework commits to identifying such a corpus, to applying the operationalized variables (T, U, R, P, S) per §V.1, and to publishing the results regardless of whether they confirm or falsify the hypothesis. The corpus, the operationalization, and the published results — confirming or falsifying — together constitute the empirical work the framework owes its own claims.",
+     "lines": [
+      253,
+      253
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       199,
+       207
+      ],
+      [
+       299,
+       299
+      ]
+     ],
+     "note": "The empirical program of §V.1 (variables T,U,R,P,S over an independent corpus) committed to but not yet run."
+    },
+    {
+     "shape": "H",
+     "quote": "The structural reading proposed here is harsher and more precise: the pattern recurs because the system's recognition apparatus is calibrated to prune precisely the labor the system depends on, and the system has no internal corrective for this because the apparatus that prunes is the same apparatus by which the field is identifying its own contents. The neglected author is not the exception to the field. The neglected author is the structural position of the producer of what the field needs but cannot register.",
+     "lines": [
+      29,
+      29
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the historical neglected-author cases (Dickinson, Melville, Blake, Hopkins, Kafka, Mendel, Trota, etc.)",
+     "points_to": "",
+     "also_at": [
+      [
+       27,
+       27
+      ],
+      [
+       309,
+       309
+      ]
+     ],
+     "note": "Historical thesis the paper argues against the romantic reading: neglect recurred because the recognition apparatus prunes what the field depends on."
+    },
+    {
+     "shape": "H",
+     "quote": "The classical pattern, across the typology of §I.1, was *accelerated uptake* often coupled with *eventual recovery of provenance* through the field's own consecration apparatus. The producer's eventual reintegration into the canon was structurally available, even when the producer was dead, because the recognition system and the absorbing system were (mostly) the same system. Bourdieu's analytic captures this temporality: consecration arrives late, but it arrives, and when it arrives it tends to preserve provenance because preserving provenance is part of how the field accumulates symbolic capital from rediscovery.",
+     "lines": [
+      225,
+      225
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "classical (pre-AI) period, decades to centuries",
+     "points_to": "",
+     "also_at": [
+      [
+       223,
+       223
+      ],
+      [
+       311,
+       311
+      ]
+     ],
+     "note": "Historical thesis about how provenance was recovered in the classical pattern (absorbing and recognizing apparatus were the same system)."
+    },
+    {
+     "shape": "D",
+     "quote": "The Composition-Layer Capture Event (EA-CLCE-01, DOI 10.5281/zenodo.20587549) documents this decoupling at a two-week timescale. A two-week-old framework on a high-perplexity term (\"Socrates as orthonym\") was rendered as established philosophical fact by Google AI Mode within fifteen days of deposit. The framework's upstream conceptual lineage (Pessoa's heteronyms) was attributed. The downstream artifact (the Zenodo deposit) was linked. The present author was not surfaced. A direct query for the author's name on the same surface returned Mary Lee the OCEARCH great white shark as primary entity, documented separately at CTI_WOUND (DOI 10.5281/zenodo.20546318).",
+     "lines": [
+      231,
+      231
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-CLCE-01, DOI 10.5281/zenodo.20587549; Socrates as Orthonym deposit",
+     "also_at": [
+      [
+       19,
+       19
+      ]
+     ],
+     "note": "Chronology: the archive's framework rendered by Google AI Mode within fifteen days of deposit; recounted here as index case."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Some markdown lists are run together on single lines (e.g. lines 13, 39, 101, 105, 201, 203, 237, 279-297); tables flattened into one line."
+  },
+  {
+   "deposit": 164,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02FF-text.md",
+   "lines_total": 177,
+   "read_ranges": [
+    [
+     1,
+     177
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "compressed propagatable receipt of a composition-layer capture",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "This particular case will probably be dissolved or absorbed into other frameworks in the coming weeks.",
+     "lines": [
+      43,
+      43
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "in the coming weeks",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the captured framework will be dissolved or absorbed into other frameworks."
+    },
+    {
+     "shape": "D",
+     "quote": "Google AI Mode, queried socrates as orthonym, June 7–8, 2026.\n\n\nCapture: [https://share.google/aimode/b1rZDfL3QhNtOqDJ4](https://share.google/aimode/b1rZDfL3QhNtOqDJ4)",
+     "lines": [
+      52,
+      55
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Google AI Mode share link b1rZDfL3QhNtOqDJ4, June 7-8, 2026; CTI_WOUND DOI 10.5281/zenodo.20546318 (June 4, 2026)",
+     "also_at": [
+      [
+       93,
+       93
+      ]
+     ],
+     "note": "Third-party timestamped anchor (share link) for the capture; line 93 names the dated CTI_WOUND anchor."
+    },
+    {
+     "shape": "D",
+     "quote": "**3.** This happens on a timescale of two weeks or less, for a search string without previous strong matches (socrates as orthonym).",
+     "lines": [
+      34,
+      34
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Socrates as Orthonym, DOI 10.5281/zenodo.20357013",
+     "also_at": [
+      [
+       90,
+       90
+      ],
+      [
+       100,
+       100
+      ]
+     ],
+     "note": "Chronology: framework composed as established fact within two weeks of the archive's deposit on a previously unmatched string."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Image link at line 49 has empty alt text; receipt text is a different verbatim AI Mode response than the one quoted in #167."
+  },
+  {
+   "deposit": 166,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0301-text.md",
+   "lines_total": 1323,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     900
+    ],
+    [
+     901,
+     1323
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "methodological specification / grant-ready observational infrastructure (v2.0)",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "The Meaning Feudalism framework (Sharks 2026a, 2026b) makes a specific empirical prediction that SNW is designed to test: *composition-layer drift on stabilized nodes will be directional rather than random.* Specifically, the framework predicts that, under sustained observation across years, drift will tend to:\n\n- **Consolidate platform jurisdiction.** Renderings will shift toward formulations that present the composition-layer surface as the authoritative knowledge mediator and reduce the visibility of independent sources outside platform-canonized referents.",
+     "lines": [
+      200,
+      202
+     ],
+     "falsifier_quote": "SNW does not assume this prediction is correct. The specification is what makes the prediction *testable*. If the prediction is correct, the federated observational record over a multi-year window will exhibit directional drift consistent with the four patterns above. If the prediction is incorrect, the observational record will exhibit random drift or null drift, falsifying or substantially weakening the Meaning Feudalism framework's claim. Either outcome is empirically valuable.",
+     "falsifier_lines": [
+      208,
+      208
+     ],
+     "window": "under sustained observation across years",
+     "points_to": "",
+     "also_at": [
+      [
+       203,
+       205
+      ],
+      [
+       731,
+       731
+      ],
+      [
+       757,
+       757
+      ],
+      [
+       1207,
+       1207
+      ]
+     ],
+     "note": "Meaning Feudalism predictive hypothesis made testable by SNW: directional drift on stabilized nodes; multi-year window and falsifier given."
+    },
+    {
+     "shape": "G",
+     "quote": "**Expected effect size:** What magnitude of drift do we expect on stabilized nodes under the Meaning Feudalism hypothesis? The framework predicts directional drift on the order of 5–10% per quarter on the framing fingerprint and source authority distribution dimensions, with smaller effects on definitional commitments. These expected effect sizes are themselves hypotheses to be tested.",
+     "lines": [
+      731,
+      731
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Quantified expected drift rate (5-10% per quarter) on named dimensions, explicitly a hypothesis to be tested; rate, not dated event."
+    },
+    {
+     "shape": "F",
+     "quote": "**Name:** Crimson Hexagonal Stabilized Node Watch Pilot (CHA-SNW-Pilot-01)\n\n\n**Sponsoring institution:** Crimson Hexagonal Archive, Semantic Economy Institute\n\n\n**Catalog:** 24-node pilot catalog as specified in §4.3 (8 contested + 8 stable + 4 positive controls + 4 surface controls)\n\n\n**Surfaces:** 5 surfaces — Google AI Overview, Google AI Mode, Bing Copilot, Perplexity, ChatGPT (free tier)\n\n\n**Sessions per query per interval:** 3 (exploratory floor) with power-analysis re-evaluation after 4 weeks",
+     "lines": [
+      1084,
+      1096
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1099,
+       1105
+      ],
+      [
+       64,
+       64
+      ],
+      [
+       1162,
+       1176
+      ]
+     ],
+     "note": "CHA-SNW-Pilot-01: the named pilot (24-node catalog, 5 surfaces, 20 weeks) specified but not run; the spec states it does not implement the infrastructure."
+    },
+    {
+     "shape": "F",
+     "quote": "- Catalog reports include a self-reference audit: how often has the dashboard appeared in monitored renderings? Is the frequency increasing over time?\n\n\nIf the surface begins citing the SNW dashboard in renderings of monitored nodes, the catalog reports this as a methodological finding in itself and adjusts the analysis accordingly. The recursion is acknowledged rather than denied.",
+     "lines": [
+      855,
+      858
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Self-set monitoring check: self-reference audit for whether the dashboard appears in monitored renderings and whether the frequency increases."
+    },
+    {
+     "shape": "B",
+     "quote": "Once the SNW infrastructure is operating, composition-layer operators face an incentive to tune surfaces in ways that are less detectable by the SNW methodology.",
+     "lines": [
+      865,
+      865
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional embedded forecast of operator adaptation once SNW runs; §9.1 lists expected evasion moves."
+    },
+    {
+     "shape": "D",
+     "quote": "The Composition-Layer Capture Event deposit (Sharks 2026f, DOI 10.5281/zenodo.20587549) documents one such transition for the *Socrates as orthonym* node, where the surface rendering acquired the framework's relational structure within fifteen days of the originating Zenodo deposit. The capture is real and methodologically informative, but the capture dynamic is structurally specific to nodes that lack stabilized public-knowledge background. The dynamic does not, by itself, characterize what happens to *stabilized* nodes under the same surface.",
+     "lines": [
+      161,
+      161
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Composition-Layer Capture Event, Sharks 2026f, DOI 10.5281/zenodo.20587549",
+     "also_at": [],
+     "note": "Chronology: framework's relational structure acquired by the surface within fifteen days of deposit."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Tables flattened to one-cell-per-line (lines 382-410, 951-985, 1109-1156). Abstract cost figure (~$40,000-65,000, line 61) differs from table/conclusion (~$38,000-63,000)."
+  },
+  {
+   "deposit": 167,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0302-text.md",
+   "lines_total": 351,
+   "read_ranges": [
+    [
+     1,
+     351
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "field observation / empirical case study with forecast trajectories",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "the framework predicts that some combination of softening, erasure, and substitution is more likely than pure stabilization, but the empirical question remains open.",
+     "lines": [
+      209,
+      209
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Over the Coming Weeks and Months",
+     "points_to": "",
+     "also_at": [
+      [
+       187,
+       205
+      ],
+      [
+       11,
+       11
+      ],
+      [
+       267,
+       267
+      ]
+     ],
+     "note": "Four-trajectory forecast with ranked expectation (softening/erasure/substitution over stabilization); window from §7 heading; §7.2 calls softening the most likely intermediate outcome."
+    },
+    {
+     "shape": "C",
+     "quote": "Predicted dynamic (i): the AI Mode rendering composes *through* the framework, not merely *to* the framework's source — confirmed.- Predicted dynamic (ii): the framework is composable while the authorial entity is not stably resolvable — confirmed in §4.",
+     "lines": [
+      181,
+      181
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Meaning Feudalism series — Sharks 2026a (DOI 10.5281/zenodo.19487009); Sharks 2026b (DOI 10.5281/zenodo.20581444)",
+     "also_at": [
+      [
+       179,
+       179
+      ],
+      [
+       15,
+       15
+      ],
+      [
+       215,
+       215
+      ]
+     ],
+     "note": "Deposit states the series' predicted dynamics (i)-(ii) are confirmed by the capture, (iii) observed, (iv) not yet."
+    },
+    {
+     "shape": "D",
+     "quote": "Approximately fifteen days after the originating deposit's publication, the conjugation became composable: Google AI Mode produced an explanatory response that did not list sources discussing whether a thing called \"Socrates as orthonym\" exists, but instead *composed an answer* presupposing the configuration as a stable interpretive framework, and then situated conventional philosophical sources beneath it.",
+     "lines": [
+      29,
+      29
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Socrates as Orthonym, 23 May 2026, DOI 10.5281/zenodo.20357013",
+     "also_at": [
+      [
+       9,
+       9
+      ],
+      [
+       253,
+       253
+      ]
+     ],
+     "note": "Chronology: archive's framework became composable at Google AI Mode about fifteen days after deposit."
+    },
+    {
+     "shape": "D",
+     "quote": "To control for personalization confounds, the same query was executed in an incognito session and the resulting share link (https://share.google/aimode/QuBDxlpQvnPOQAJsR) was captured separately.",
+     "lines": [
+      163,
+      163
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Google AI Mode share link https://share.google/aimode/QuBDxlpQvnPOQAJsR",
+     "also_at": [],
+     "note": "Third-party timestamped anchor for the 7 June 2026 capture."
+    },
+    {
+     "shape": "F",
+     "quote": "Third, it establishes a temporal anchor for the longitudinal observational record that the series requires to operate fully as both critique and constructive program. Without a documented baseline, the framework's predictions cannot be tested against actual composition-layer dynamics over time. The deposit creates the baseline. Subsequent observations against the documented baseline will produce the drift record that distinguishes among the four trajectories identified in §7.",
+     "lines": [
+      219,
+      219
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       175,
+       175
+      ],
+      [
+       185,
+       185
+      ],
+      [
+       273,
+       273
+      ]
+     ],
+     "note": "Self-set longitudinal monitoring against the documented baseline to distinguish the four trajectories; not yet run."
+    },
+    {
+     "shape": "H",
+     "quote": "Under the reading, Socrates is not a historical figure imperfectly accessed through later authors. Socrates is the *orthonymic position* in a heteronymic project, characterized analytically by the refusal to write — the same refusal that is the structurally constitutive property of any orthonymic position vis-à-vis its heteronyms. Plato (and Xenophon, and in the extended framework Aristotle) are not later authors transmitting an earlier figure; they are the *survival-heteronyms* whose textual production is structurally necessary because the orthonym's refusal to write would otherwise have terminated the project at its founding gesture.",
+     "lines": [
+      77,
+      77
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the Socratic corpus: Socrates, Plato, Xenophon, Aristotle",
+     "points_to": "",
+     "also_at": [
+      [
+       79,
+       79
+      ],
+      [
+       55,
+       55
+      ]
+     ],
+     "note": "The orthonymic configuration thesis: Socrates as orthonymic position, Plato/Xenophon/Aristotle as survival-heteronyms; deposit says it is sincerely held (line 63)."
+    },
+    {
+     "shape": "H",
+     "quote": "The argument does not assert that Plato and Aristotle were one biographical person. The argument is structural: the corpus is intelligible as a single sustained heteronymic project, in the same way that the Pessoa corpus is intelligible as a single sustained heteronymic project, with the orthonymic position occupied (in the Socratic case) by an author who refuses to write and whose refusal is constitutive of the project's textual continuation through heteronymic survival-voices.",
+     "lines": [
+      85,
+      85
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Plato-Aristotle extant corpus, ~65 years of composition",
+     "points_to": "",
+     "also_at": [
+      [
+       83,
+       83
+      ]
+     ],
+     "note": "Thesis that the Plato-Aristotle corpus is intelligible as a single sustained heteronymic project; evidence is the comparative-volume argument."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Figures referenced as PNG files are not embedded (image link at line 18 empty). Assembly cross-check section (line 291) describes a four-trajectory taxonomy with different names than §7."
+  }
+ ]
+}
