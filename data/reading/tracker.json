@@ -9,17 +9,17 @@
  "h_covered": 471,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 528,
+  "G": 530,
   "F": 544,
   "E": 124,
   "B": 351,
   "A": 166,
-  "C": 170,
-  "D": 179,
-  "H": 662
+  "C": 176,
+  "D": 181,
+  "H": 666
  },
- "finds_verified": 2639,
- "finds_total": 2724,
+ "finds_verified": 2652,
+ "finds_total": 2738,
  "deposits": [
   {
    "deposit": 172,
@@ -31096,6 +31096,59 @@
      },
      "none_found": false,
      "incidental": "Range is records 419-510. Much of records 451-469 and 481-486 repeats d_full verbatim in analysis and embeds machine-transcript text inside own-voice fields (e.g. 'Full AI Mode transcript' at 9330-9345, 9395-9398); nothing quoted from those. Record 496 notes (9533-9606) hold an errata log with a reverted repair. A first Read of 8855-9204 failed on token size and was re-read as 8855-9029 and 9030-9204.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 8,
+      "lines_returned": 1640,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "X0007",
+     "run": "R-w19-X0007",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model reported to me as claude-opus-5-5), reading with the Read tool and slicing quotes with a python script",
+      "started_at": "2026-10-15T20:27:28Z",
+      "finished_at": "2026-10-15T20:29:09Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 quote slicing, date)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "partial",
+     "status_note": "",
+     "read_ranges": [
+      [
+       9895,
+       10294
+      ],
+      [
+       10295,
+       10694
+      ],
+      [
+       10695,
+       11094
+      ],
+      [
+       11095,
+       11493
+      ]
+     ],
+     "lines_total": 12373,
+     "genre_observed": "own-voice reading/analysis/findings fields of capture-registry records (records 511-604), Revelation First, Josephus, Phase X, Semantic Economy and valuation captures",
+     "finds_by_shape": {
+      "D": 2,
+      "C": 6,
+      "H": 4,
+      "G": 2
+     },
+     "none_found": false,
+     "incidental": "Many analysis/d_full fields in this range embed full AI Mode transcripts (e.g. records 512, 514, 516-529, 559, 562, 572) and duplicate d_full verbatim; nothing quoted from them. H finds quote archive deposit text as carried in cards (records 520, 528) inside own-voice readings.",
      "verification": [
       "UNVERIFIED"
      ],
@@ -31173,6 +31226,7 @@
      "X0003",
      "X0004",
      "X0005",
+     "X0006",
      "X0008"
     ],
     "scope": "own-voice fields read in full from a derived text; transcripts and observations excluded by protocol (see scripts/reading/derive_voice.py)"
@@ -34077,7 +34131,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude model; system prompt names Opus 5.5)",
       "started_at": "2026-10-15T20:27:06Z",
-      "finished_at": "2026-10-15T20:28:58Z",
+      "finished_at": "2026-10-15T20:29:20Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -34128,7 +34182,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude model; system prompt names Opus 5.5)",
       "started_at": "2026-10-15T20:27:06Z",
-      "finished_at": "2026-10-15T20:28:58Z",
+      "finished_at": "2026-10-15T20:29:20Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -34158,7 +34212,7 @@
       "C": 2
      },
      "none_found": false,
-     "incidental": "Read chunk 131-255 returned through line 252; file content ends at 252 though queue lines_total is 251 (trailing line).",
+     "incidental": "",
      "verification": [
       "UNVERIFIED"
      ],
@@ -34184,7 +34238,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude model; system prompt names Opus 5.5)",
       "started_at": "2026-10-15T20:27:06Z",
-      "finished_at": "2026-10-15T20:28:58Z",
+      "finished_at": "2026-10-15T20:29:20Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -34230,7 +34284,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude model; system prompt names Opus 5.5)",
       "started_at": "2026-10-15T20:27:06Z",
-      "finished_at": "2026-10-15T20:28:58Z",
+      "finished_at": "2026-10-15T20:29:20Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -34278,7 +34332,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude model; system prompt names Opus 5.5)",
       "started_at": "2026-10-15T20:27:06Z",
-      "finished_at": "2026-10-15T20:28:58Z",
+      "finished_at": "2026-10-15T20:29:20Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -34335,7 +34389,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude model; system prompt names Opus 5.5)",
       "started_at": "2026-10-15T20:27:06Z",
-      "finished_at": "2026-10-15T20:28:58Z",
+      "finished_at": "2026-10-15T20:29:20Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -34388,7 +34442,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic assistant); model reported in its environment as Claude Opus 5.5",
       "started_at": "2026-10-15T20:27:15Z",
-      "finished_at": "x",
+      "finished_at": "2026-10-15T20:29:11Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue loading and verbatim quote slicing)"
@@ -34438,7 +34492,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic assistant); model reported in its environment as Claude Opus 5.5",
       "started_at": "2026-10-15T20:27:15Z",
-      "finished_at": "x",
+      "finished_at": "2026-10-15T20:29:11Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue loading and verbatim quote slicing)"
@@ -34495,7 +34549,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic assistant); model reported in its environment as Claude Opus 5.5",
       "started_at": "2026-10-15T20:27:15Z",
-      "finished_at": "x",
+      "finished_at": "2026-10-15T20:29:11Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue loading and verbatim quote slicing)"
@@ -34543,7 +34597,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic assistant); model reported in its environment as Claude Opus 5.5",
       "started_at": "2026-10-15T20:27:15Z",
-      "finished_at": "x",
+      "finished_at": "2026-10-15T20:29:11Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue loading and verbatim quote slicing)"
@@ -34591,7 +34645,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic assistant); model reported in its environment as Claude Opus 5.5",
       "started_at": "2026-10-15T20:27:15Z",
-      "finished_at": "x",
+      "finished_at": "2026-10-15T20:29:11Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue loading and verbatim quote slicing)"
