@@ -2,13 +2,13 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 401,
-  "unread": 1215
+  "read": 402,
+  "unread": 1214
  },
- "h_covered": 401,
+ "h_covered": 402,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 433,
+  "G": 434,
   "F": 415,
   "E": 112,
   "B": 281,
@@ -17,8 +17,8 @@
   "D": 146,
   "H": 500
  },
- "finds_verified": 2151,
- "finds_total": 2151,
+ "finds_verified": 2152,
+ "finds_total": 2152,
  "deposits": [
   {
    "deposit": 172,
@@ -30182,9 +30182,64 @@
    "tier": 1,
    "words": 16001,
    "batch_id": "B0089",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0089",
+     "run": "R-w16-B0089",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant), model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:14:46Z",
+      "finished_at": "2026-10-15T20:15:23Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       1000
+      ],
+      [
+       1001,
+       1550
+      ],
+      [
+       1551,
+       2100
+      ],
+      [
+       2101,
+       2649
+      ]
+     ],
+     "lines_total": 2649,
+     "genre_observed": "JSON-LD dataset: AI Overview capture registry v6.1, 87 capture records with prose annotations",
+     "finds_by_shape": {
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Body is a single JSON object (schema.org Dataset), not prose; the one-line description_html fields are very long (line 1160 etc.). Record annotations are almost entirely dated observations (telemetry), not recorded. Reported-not-argued theses (Phase X 1844 reconstruction at line 1064, Josephus thesis at line 1888) appear only as summaries of what AI Overview said, so not recorded as H. Line 2616 notes leesharks.com '532+' figure stale vs '832 deposits'.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 2649,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1400,
