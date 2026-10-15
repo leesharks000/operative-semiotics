@@ -17,7 +17,7 @@
   "D": 146,
   "H": 500
  },
- "finds_verified": 2106,
+ "finds_verified": 2151,
  "finds_total": 2151,
  "deposits": [
   {
@@ -30080,10 +30080,13 @@
      },
      "none_found": false,
      "incidental": "Header says v7.1 (13/14 June 2026); #1025 cites the plan as v1.2 (DOI 10.5281/zenodo.20690868) while this text's self-audit block gives DOI 10.5281/zenodo.20686327. Many list items are run together on single lines ('Structure:- ', ':- ') from lost line breaks. Line 85 has typo 'contradiciton'. The text names 780+ deposits on Zenodo (l.389).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 790,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -30128,10 +30131,13 @@
      },
      "none_found": false,
      "incidental": "Queue title names 'Keyword Surface and Pre-Seeding Baseline' (SURFACE v1.0 + BASELINE), but the text body holds only EA-LOGOS-REVFIRST-BASELINE v1.1; the keyword surface is listed as a file (l.308) but its text is absent. Markdown tables are flattened onto single lines (l.35, l.303). Self-audit DOI reads '[assigned at deposit]'.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 339,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
