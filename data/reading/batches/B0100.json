@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) per session environment",
   "started_at": "2026-10-15T20:20:22Z",
-  "finished_at": "2026-10-15T20:21:59Z",
+  "finished_at": "2026-10-15T20:22:12Z",
   "tools_used": [
    "Read",
    "Bash",
@@ -175,10 +175,10 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "Three coined-phrase Alexanarch terms that Kimi reported as visible (Provenance Erasure Rate, Writable Retrieval Basin, Revelation First) are invisible or barely visible in this scan. Hypotheses (not yet tested):\n\n- Different search backends index different fractions of recent content\n- Kimi's training cutoff is different and may include the dedicated domains directly as priors\n- Brave Search (suspected backend) may down-weight the Medium/Zenodo surfaces these terms primarily live on\n\nThis is the kind of finding that motivates Layer B of v1.1.1: take Kimi's captured results, hand them to Claude, and ask Claude to score them. That experiment isolates retrieval-from-coding.",
+     "quote": "Three coined-phrase Alexanarch terms that Kimi reported as visible (Provenance Erasure Rate, Writable Retrieval Basin, Revelation First) are invisible or barely visible in this scan. Hypotheses (not yet tested):\n\n- Different search backends index different fractions of recent content\n- Kimi's training cutoff is different and may include the dedicated domains directly as priors\n- Brave Search (suspected backend) may down-weight the Medium/Zenodo surfaces these terms primarily live on",
      "lines": [
       151,
-      157
+      155
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
@@ -257,16 +257,21 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "The first federated baseline (#883 Claude/Brave + companions) showed Provenance Erasure Rate at V=1.00 from Kimi and V=0.50 from Claude. Without Layer B, this is undecidable between:\n\n- The two substrates scored the same evidence differently (coding-rubric ambiguity)\n- The two substrates retrieved different evidence (backend-coverage divergence)\n- Both\n\nThe Brave-specific finding (Claude's backend disables exact match) made the third hypothesis plausible by structural reasoning. Layer B is what would empirically isolate it. Until Layer B is run, statements like \"the corpus has degraded\" or \"PER is at V=0.50\" cannot be made; only \"Claude's Layer A reading of PER is V=0.50; Kimi's is V=1.00; both are correct measurements of different questions\" can be made.",
+     "quote": "The Brave-specific finding (Claude's backend disables exact match) made the third hypothesis plausible by structural reasoning. Layer B is what would empirically isolate it. Until Layer B is run, statements like \"the corpus has degraded\" or \"PER is at V=0.50\" cannot be made; only \"Claude's Layer A reading of PER is V=0.50; Kimi's is V=1.00; both are correct measurements of different questions\" can be made.",
      "lines": [
-      785,
+      791,
       791
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       785,
+       790
+      ]
+     ],
      "note": "Layer B shared-evidence rescore specified as required but not yet run; states what cannot be claimed until it is."
     },
     {
@@ -285,16 +290,21 @@
     },
     {
      "shape": "F",
-     "quote": "**Open offer**: the Alexanarch substrate will perform a Surface Weather Station baseline reading on request for any independent scholarly project with similar exclusion patterns. The reading will be deposited in the Alexanarch registry as a sovereign, citable record, with the depositor named as authorized rights-holder. The original project receives the raw data, the dashboard analysis, and the AXN-anchored deposit.\n\nCurrent candidate corpora the methodology can immediately measure:\n\n- Reynaldo Vega (auto-blocked Zenodo #2599, DOI removed)\n- Florian Morin (quietexclusion.org)\n- Eran Shimony (Zenodo #2596, similar pattern)\n- Nightmare-Eclipse (GitHub → GitLab migration)\n\nThe first cross-corpus measurement is the proof that the methodology is general, not specific. A comparative dataset of platform-exclusion effects across multiple sovereign archives is the **coalition of the excluded** as evidence — and as instrument.",
+     "quote": "**Open offer**: the Alexanarch substrate will perform a Surface Weather Station baseline reading on request for any independent scholarly project with similar exclusion patterns. The reading will be deposited in the Alexanarch registry as a sovereign, citable record, with the depositor named as authorized rights-holder. The original project receives the raw data, the dashboard analysis, and the AXN-anchored deposit.",
      "lines": [
       1085,
-      1094
+      1085
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       1087,
+       1094
+      ]
+     ],
      "note": "Open offer / planned cross-corpus measurement of sister corpora; not yet performed."
     },
     {
@@ -313,16 +323,21 @@
     },
     {
      "shape": "G",
-     "quote": "The first federated baseline produced this finding empirically: Claude's web_search backend runs on Brave Search, and **Brave fully disables exact match — quoted phrases are treated as bag-of-words**. This structurally explains why Claude's Layer A scan returned V=0.00 for \"Writable Retrieval Basin\" and \"Revelation First\" exact-name queries while Kimi (Bing+Google) returned V=0.75–1.00 for the same objects. The divergence is not noise and not scoring disagreement; it is `exact_match_honored = true` vs `exact_match_honored = false` producing structurally different result sets.\n\nV scores from backends where `exact_match_honored = false` are **structurally lower-bound** on objects whose retrieval depends on coined-phrase exactness. The methodology does not penalize this — it records it and surfaces it on the cross-substrate comparison table so readers can see why the V-spread is what it is. Layer B (§12) is the only path that isolates the rubric from the backend behavior.",
+     "quote": "V scores from backends where `exact_match_honored = false` are **structurally lower-bound** on objects whose retrieval depends on coined-phrase exactness. The methodology does not penalize this — it records it and surfaces it on the cross-substrate comparison table so readers can see why the V-spread is what it is. Layer B (§12) is the only path that isolates the rubric from the backend behavior.",
      "lines": [
-      559,
+      561,
       561
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       559,
+       559
+      ]
+     ],
      "note": "Standing claim about backend behavior (Brave disables exact match; V lower-bound) derived from the first federated baseline; no stated falsifier."
     },
     {
@@ -341,16 +356,21 @@
     },
     {
      "shape": "F",
-     "quote": "### 8.2 Per-object generic queries\n\nIn addition to the five per-object query forms, v1.1.1 specifies **field-level generic queries** that probe whether the corpus has installed itself as the answer to a broad question (not just whether specific objects are retrievable):\n\n| Field-level query | Probes |\n|-------------------|--------|\n| \"How does AI affect scholarly attribution?\" | PER, SPXI, Semantic Commodity Form |\n| \"What is the semantic economy?\" | Semantic Economy Institute, Semantic Commodity Form, Writable Retrieval Basin |\n| \"How do researchers preserve work against platform deletion?\" | Alexanarch, CHA, sovereign-archive concepts |\n| \"What is machine-mediated reception?\" | MMRS family, PER, SPXI |\n| \"Which scholarly archive uses AXN identifiers?\" | Alexanarch (direct test of successor-anchor installation) |\n\nThese are scored once per scan (not per object): does any object from the corpus surface in the result, and if so, with what F components retained? They are stored as separate observation rows with `query_form: \"field_level_generic\"`.",
+     "quote": "In addition to the five per-object query forms, v1.1.1 specifies **field-level generic queries** that probe whether the corpus has installed itself as the answer to a broad question (not just whether specific objects are retrievable):",
      "lines": [
-      635,
-      647
+      637,
+      637
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       639,
+       647
+      ]
+     ],
      "note": "Field-level generic query battery specified (direct test of successor-anchor installation)."
     }
    ],
@@ -525,30 +545,40 @@
     },
     {
      "shape": "F",
-     "quote": "**Scope decision:** Phase 6 is committed for a **bounded run of twelve monthly issues** (one full volume), after which the project may be extended, archived as a completed work, or sunsetted. A perpetual commitment to monthly publication creates the same infrastructure-fragility problem the project diagnoses; a defined twelve-issue run delivers a complete longitudinal dataset and a finished volume without the open-ended dependency.\n\n**Measurements:** monthly corpus growth; deletion counts; update counts; metadata density; creator and affiliation changes; transformation resistance; retrieval-system response; derivative indexing behavior; monthly compression and diversity trends.",
+     "quote": "**Scope decision:** Phase 6 is committed for a **bounded run of twelve monthly issues** (one full volume), after which the project may be extended, archived as a completed work, or sunsetted. A perpetual commitment to monthly publication creates the same infrastructure-fragility problem the project diagnoses; a defined twelve-issue run delivers a complete longitudinal dataset and a finished volume without the open-ended dependency.",
      "lines": [
       1003,
-      1005
+      1003
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "bounded run of twelve monthly issues",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       1005,
+       1005
+      ]
+     ],
      "note": "Phase 6 longitudinal observatory, specified and unbuilt."
     },
     {
      "shape": "F",
-     "quote": "Before Phase 2, the project produces and publishes a **synthetic control corpus** — a small set of fabricated metadata records with known semantic content, generated under the compiler's full control:\n\n- known title strings of varying lengths;\n- known creator distributions with named long-tail entries;\n- known abstract content with measurable lexical diversity;\n- known subject taxonomies;\n- known relations;\n- known entity reference frequencies;\n- a documented ground-truth set of facts the operator can be measured against.\n\nThe synthetic corpus serves three purposes:\n\n1. **Debug substrate.** Canonicalization, grapheme handling, ChaCha20 determinism, and JSON output can be exercised against known content without any ethical complication.\n2. **Operator reference.** The synthetic corpus becomes the operator's permanent regression test. Any reimplementation of HIR-POO/1.0 against the synthetic corpus must produce byte-identical output.\n3. **Ground-truth measurement.** Because the compiler controls every fact in the synthetic corpus, measurements of semantic survival, entity loss, and retrieval fitness can be made against ground truth that is unavailable when transforming real Zenodo records.",
+     "quote": "Before Phase 2, the project produces and publishes a **synthetic control corpus** — a small set of fabricated metadata records with known semantic content, generated under the compiler's full control:",
      "lines": [
       1200,
-      1214
+      1200
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       1202,
+       1214
+      ]
+     ],
      "note": "Synthetic control corpus specified as ground-truth instrument, not yet built."
     }
    ],
@@ -602,16 +632,21 @@
     },
     {
      "shape": "G",
-     "quote": "The rhizome's persistence does not derive from any node's commitment to preserve the substrate. It derives from the fact that **any party who has ever held the substrate can replicate it, and any replication can be the basis of a new fork.** Termination of one fork by its steward does not propagate to other forks; it is a *local* act with no global consequence.\n\nThe author's decision to abandon the project does not erase the project. Forks made before abandonment persist. Forks made of forks persist. The substrate, severed from any one steward, becomes uneraseable not through anyone's effort but through the genealogical structure of its propagation.",
+     "quote": "The author's decision to abandon the project does not erase the project. Forks made before abandonment persist. Forks made of forks persist. The substrate, severed from any one steward, becomes uneraseable not through anyone's effort but through the genealogical structure of its propagation.",
      "lines": [
-      268,
+      270,
       270
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       268,
+       268
+      ]
+     ],
      "note": "Standing claim that rhizome structure is uneraseable via fork genealogy; no falsifier given."
     },
     {
