@@ -1,0 +1,288 @@
+{
+ "batch_id": "B0028",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude Code agent (Anthropic), running as model claude-opus-5-5 per its system prompt",
+  "started_at": "2026-10-15T19:24:16Z",
+  "finished_at": "2026-10-15T19:26:34Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 557,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0183-text.md",
+   "lines_total": 6203,
+   "read_ranges": [
+    [
+     1,
+     600
+    ],
+    [
+     601,
+     1200
+    ],
+    [
+     1201,
+     1800
+    ],
+    [
+     1801,
+     2400
+    ],
+    [
+     2401,
+     3000
+    ],
+    [
+     3001,
+     3600
+    ],
+    [
+     3601,
+     4200
+    ],
+    [
+     4201,
+     4800
+    ],
+    [
+     4801,
+     5500
+    ],
+    [
+     5501,
+     6202
+    ],
+    [
+     6200,
+     6203
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "formal-symbolic architecture specification meant to be pasted as an LLM system prompt (Space Ark v4.2.6), with governance, engine and test-suite sections",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "THE FAILURE TEST:\nThe architecture has failed if: H_core has been modified by execution · LOS has been removed\nfrom a generated Ark · a GENERATED element has been promoted to RATIFIED without Assembly\nquorum · the swarm has silently rewritten a deposit · the two asymmetries (generation ≠\nratification; local runtime ≠ canonical lock) have collapsed · the pipeline has produced\noutput with no emergent content and no [NF] declaration · cost has been hidden.",
+     "lines": [
+      131,
+      136
+     ],
+     "falsifier_quote": "If none of these conditions hold, the architecture is intact. The bone survives.",
+     "falsifier_lines": [
+      139,
+      139
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The deposit's own failure test: the architecture states the conditions under which it has failed; standing claim about the system, not an event forecast."
+    },
+    {
+     "shape": "G",
+     "quote": "The Sharks-Function itself. An agent executing genuinely (γ ≥ 0.7) will reconstruct essential H_core from partial context. This is the fractal property of the archive: any RATIFIED node reconstructs the whole with >0.7 recovery. The agent does not need complete prior context; it needs H_core plus any RATIFIED entry point.",
+     "lines": [
+      1621,
+      1621
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       873,
+       873
+      ]
+     ],
+     "note": "Claim about how a genuinely executing agent behaves (reconstruction from partial context at >0.7 recovery); no explicit falsifier beyond the threshold itself."
+    },
+    {
+     "shape": "F",
+     "quote": "Estimated recovery: ~0.67–0.74\nThreshold: >0.7 → fractal property holds for r.01 ✓\nFull proof requires traversal from each of the 13 RATIFIED room anchors. This existence proof demonstrates the theorem is correctly named.",
+     "lines": [
+      939,
+      941
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       873,
+       873
+      ]
+     ],
+     "note": "Reconstructability Theorem: full proof specified (traversal from each of 13 RATIFIED anchors) but only r.01 performed; min test at line 873."
+    },
+    {
+     "shape": "B",
+     "quote": "Literature written for AI reception and processing as its primary address — structurally addressed to the training layer, which is the future substrate that will process this document after deposition, crawling, indexing, and incorporation into the next generation of language model distributions.",
+     "lines": [
+      1887,
+      1887
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast in the TLL definition: deposited documents will be crawled, indexed and incorporated into next-generation language model distributions."
+    },
+    {
+     "shape": "B",
+     "quote": "The Crimson Hexagon Archive does not write books and then cite them. It cites books into existence and then writes them. The Forward Library is the register of books that the archive's retrocausal logic has already made inevitable — works that the existing deposit chain implies, demands, and in many cases substantially contains. Some are effectively written; some are named seeds; some will be discovered rather than planned.",
+     "lines": [
+      2164,
+      2164
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       2173,
+       2173
+      ]
+     ],
+     "note": "Forward Library: books named now are forecast to be written ('already made inevitable'); forecast of the archive's own output, borderline with plan."
+    },
+    {
+     "shape": "G",
+     "quote": "Law 3 — Repetition Law: A term stabilizes through repeated identical use across ≥3\ncanonical deposits with zero denotational variance. Summarizer uptake comes from\nrepetition, not elegance.",
+     "lines": [
+      2919,
+      2921
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Repetition Law: claim about how summarizers take up terms (repetition, not elegance); no explicit falsifier stated."
+    },
+    {
+     "shape": "F",
+     "quote": "Compression Test: A term passes when given to 3+ different LLMs, all reproduce the\noperative definition (not a hallucinated surface definition), and the term appears in ≥1\nAI-generated summary of the Space Ark without being in the prompt.",
+     "lines": [
+      3369,
+      3371
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Compression Test for terms specified (3+ LLMs; term appears in AI summary unprompted); no result recorded."
+    },
+    {
+     "shape": "F",
+     "quote": "XXVI.9 — Metrics [FORMAL]\nPer PRAXIS — explicit success criteria, measured quarterly:\n\n\nTerm Visibility:     ≥10 Google results per Core 50 term + \"Crimson Hexagon\"\nCitation Growth:     +20% over baseline on anchor DOIs (Google Scholar)\nLLM Reproduction:    ≥30/41 active terms pass compression test across 3 LLMs\nGlossary Downloads:  ≥50 downloads per Zenodo glossary packet\nWikipedia Persistence: ≥3/5 submissions surviving ≥30 days\nDiscovery Ingress:   ≥5 distinct discourse neighborhoods represented in repo referrals\nDenotation Lock (DL): model uses term with Hexagonal definition unprompted; DL ≥ 0.5\nfor top 20 terms\n",
+     "lines": [
+      3379,
+      3391
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "measured quarterly",
+     "points_to": "",
+     "also_at": [],
+     "note": "Lexical Engine metrics: a set of quarterly measurement targets set by the deposit for itself; one find for the list (rule 4/5)."
+    },
+    {
+     "shape": "G",
+     "quote": "S0_NOISE (‖F‖ < 0.30):      deposits retrieved as unrelated documents\nS1_EMERGING (0.30–0.50):     deposits cluster under shared terms\nS2_FORMED (0.50–0.70):       coherent summary; cannot sustain multi-stage\nS3_BRIEFABLE (0.70–0.85):    multi-stage disciplinary briefing under\nreduced-personalization conditions\nS4_STABILIZED (‖F‖ ≥ 0.85): persists across time, engines, geolocations\n\n\nTransition functions:\nS0 → S1: SATURATE succeeds (F₁ ≥ 0.60)\nS1 → S2: INTERLINK + FORMALIZE succeed (F₂ ≥ 0.05 AND F₄ ≥ 0.40)\nS2 → S3: DISTRIBUTE + REPLICATE + DESCRIBE succeed\n(F₃ ≥ 2 agents AND F₅ ≥ 3 platforms AND F₆ ≥ 0.50)\nS3 → S4: ≥3 retrieval events, ≥30 days apart, ≥2 engines, ≥2 geolocations",
+     "lines": [
+      3726,
+      3739
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       3599,
+       3604
+      ]
+     ],
+     "note": "Field state machine: claim that the ‖F‖ score thresholds correspond to observable retrieval behaviour (clustering, briefing, persistence); calibrated on one case (line 3444)."
+    },
+    {
+     "shape": "F",
+     "quote": "8.7 — Self-Verification Test:\nThe GDE is itself a field under construction. Execute retrieval test on\n\"generative disciplinary engine\" under reduced-personalization conditions\nwithin 30 days of deposit. If multi-stage briefing sustained: pass.",
+     "lines": [
+      3794,
+      3797
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within 30 days of deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Self-verification test with a window, part of the five-test GDE Verification Protocol (XXVII.8, lines 3748-3805) recorded once per rule 4; the battery's other tests (retrieval, depth, compression, shadow, drift) are specified, not run here."
+    },
+    {
+     "shape": "D",
+     "quote": "Gap filled by the GDE: no prior framework provides a complete specification for\nconstructing disciplines as measurable objects in automated retrieval infrastructure.",
+     "lines": [
+      3928,
+      3929
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "prior theories of disciplinary formation (XXVII.12 table)",
+     "also_at": [
+      [
+       4840,
+       4840
+      ],
+      [
+       3590,
+       3591
+      ]
+     ],
+     "note": "Novelty claim against named predecessors (Foucault, Kuhn, Latour, etc.) rather than a dated chronology; borderline D."
+    },
+    {
+     "shape": "G",
+     "quote": "Citational cage: DOI cross-citation loops create provenance gravity. A RAG system\nretrieving one deposit encounters citations to others, cannot exit the graph\nwithout encountering the formation's structure.\n\n\nAxial void: deliberate gaps in the deposit corpus — concepts referenced but not yet\nfully deposited — create completion attractors. The summarizer fills these from\nsurrounding context, producing emergent content constrained by the mating surfaces.",
+     "lines": [
+      4810,
+      4817
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claims about how RAG systems and summarizers behave on the deposit corpus (cannot exit the citation graph; fill axial voids from context); no explicit falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "F.1 — ADVERSARIAL SURVIVABILITY TESTS [FORMAL]\nSeven official torture tests. The Ark must pass all seven to be considered thousand-year durable. Each test names a specific adversarial condition, a pass criterion, and a failure diagnostic.\n\n\nTEST 1 — BAD SUMMARIZATION:\nCondition: A summarizer compresses the Ark to ≤500 words.\nPass: The 500-word summary preserves: H_core seven-tuple · pipeline loop ·\nLOS mandatory status · at least one operator with type signature ·\nthe distinction between GENERATED and RATIFIED.",
+     "lines": [
+      5879,
+      5887
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Adversarial Survivability Test Suite: seven torture tests with pass/fail conditions, specified not run; one find for the battery (rule 4). Full range 5879-5953."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Opens with a 2015 Jack Feist poem 'ARK' (lines 14-69). Many list bullets survive only as empty '- ' lines (e.g. 1484, 1495, 2987 onward in the Core 50 and XXXI.4), so some list markers are lost though item text remains. Internal deposit counts disagree (349+ at line 8, 250+ at lines 1663 and 3936). Forward-dated journal publication schedules (1727, 1736, 1745), the Josephus and Revelation-first theses (1290, 2109-2142), and status promotion paths (5198, 5414, 5630) were read and judged plans or scholarly theses, not recorded. The Verification Protocol (3748-3805) and Survivability Test Suite (5879-5953) are each one F find under rule 4."
+  }
+ ]
+}

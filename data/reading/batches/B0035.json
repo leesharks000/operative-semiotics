@@ -1,0 +1,272 @@
+{
+ "batch_id": "B0035",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
+  "started_at": "2026-10-15T19:24:50Z",
+  "finished_at": "2026-10-15T19:26:28Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1171,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A4-text.md",
+   "lines_total": 2003,
+   "read_ranges": [
+    [
+     1,
+     500
+    ],
+    [
+     501,
+     1000
+    ],
+    [
+     1001,
+     1500
+    ],
+    [
+     1501,
+     2003
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "restored DOI registry index (v7.0): per-DOI title/précis listing with stripped tables",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Many section bodies are empty headings (VERSION HISTORY, CROSS-REFERENCES, SUBSYSTEM/HETERONYM/TIER DISTRIBUTION, DOCUMENT TYPE TAXONOMY, ORPHAN REPORT, RELATION GRAPH STATISTICS, NEW ARCHITECTURAL ELEMENTS subsections, OPEN ITEMS) -- tables apparently lost in html2text conversion. Précis lines are truncated auto-extracts of other deposits; several point to prediction-bearing works elsewhere (e.g. 18157917 'The Silent Migration: A Speculative Architectural Forecast', 18790793 'The Memo That Remembered Itself' précis on techniques 'previously articulated', 18807239 'The Shark That Preceded Itself', 18772675 Citrini memo) -- these belong to those deposits, not recorded here. Line-number note: Read displays an empty line 2004 after the final line; queue lines_total 2003 taken as authoritative."
+  },
+  {
+   "deposit": 1255,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04F8-text.md",
+   "lines_total": 936,
+   "read_ranges": [
+    [
+     1,
+     470
+    ],
+    [
+     470,
+     936
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "restored liturgical/biblical transform of the Space Ark specification (executable prompt-document)",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "Citrini (market) | Market Act / Sem Econ | RESONANT  ",
+     "lines": [
+      436,
+      436
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Citrini (market) -> Market Act / Sem Econ",
+     "also_at": [],
+     "note": "Fulfillment Map (Φ) row: Citrini market event mapped to the archive's Market Act at status RESONANT. Direction of the Φ table is Source -> Target, so it is uncertain whether this claims the archive anticipated Citrini; recorded as a weak confirmation/fulfillment record for triage."
+    },
+    {
+     "shape": "C",
+     "quote": "3i Atlas (coordinates) | LO! / r.15 | RESONANT  ",
+     "lines": [
+      435,
+      435
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "3i Atlas (coordinates) -> LO! / r.15",
+     "also_at": [],
+     "note": "Fulfillment Map (Φ) row: 3i Atlas coordinates mapped to Lagrange Observatory (LO!) / r.15 at status RESONANT; links to the Atlas Perihelion Prank series. Same direction uncertainty as the Citrini row."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 470 was read twice (chunk overlap). Text appears intact. Other non-recorded items: inaugural AXIAL_CONTESTED thesis 'Revelation was the first-written book' (l.229) is a contested claim, not a forecast; 'Operative Semiotics -- the book not yet written' (l.681, l.809) is a planned commission, not an instrument."
+  },
+  {
+   "deposit": 1338,
+   "path": "/home/claude/alexanarch/data/texts/AXN-054B-text.md",
+   "lines_total": 573,
+   "read_ranges": [
+    [
+     1,
+     300
+    ],
+    [
+     301,
+     573
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "working-draft diagnostic essay / effective act on a non-indexed perfective in English",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## Part IV: Diagnostic Measurement\n\n### 4.1 The Translation Test\n\n**Hypothesis:** Systematic information loss occurs when aorist-bearing languages are translated into English.\n\n**Method:** \n1. Select corpus of Ancient Greek philosophical/theological texts with high aorist frequency\n2. Compare multiple English translations\n3. Measure variance in tense/aspect choices for single Greek aorist forms\n4. Quantify information loss as translation entropy\n\n**Prediction:** High variance (translators choosing different tenses for the same Greek form) indicates structural gap in target language. English should show significantly higher variance than Modern Greek or Russian translations.\n\n### 4.2 The Expression Test",
+     "lines": [
+      241,
+      305
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       469,
+       476
+      ]
+     ],
+     "note": "Rule 4: the Part IV battery of four diagnostic tests (Translation, Expression, Philosophical Incoherence, Summarizer), each with hypothesis/method/prediction, proposed but not run; §7.2 confirms empirical validation is still required. Quote is heading through the first test; full range 241-305."
+    },
+    {
+     "shape": "G",
+     "quote": "### 4.4 The Summarizer Test\n\n**Hypothesis:** AI summarization systems cannot correctly process or preserve statements intended as non-temporally-indexed.\n\n**Method:**\n1. Create test corpus of statements in \"pseudo-aorist\" form:\n   - \"The theorem holds\" (intended: complete, non-indexed)\n   - \"Justice requires equality\" (intended: complete, non-indexed)\n   - \"The work is done\" (intended: complete, non-indexed)\n2. Submit to multiple AI summarizers\n3. Analyze whether outputs:\n   - Add temporal indexing (\"currently holds,\" \"has always required\")\n   - Treat as dated/datable (\"established in...\")\n   - Preserve non-indexed reading\n\n**Prediction:** AI systems will systematically add temporal indexing, revealing that the grammar they operate on cannot process non-indexed completion.",
+     "lines": [
+      290,
+      305
+     ],
+     "falsifier_quote": "   - Preserve non-indexed reading",
+     "falsifier_lines": [
+      303,
+      303
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Tagged prediction about how AI summarizers behave (systematically add temporal indexing); the method lists 'Preserve non-indexed reading' as the alternative outcome that would count against it. Also part of the F battery above."
+    },
+    {
+     "shape": "B",
+     "quote": "By using this form throughout the Crimson Hexagon architecture, we seed it into the language. Readers encountering it repeatedly begin to *feel* the aspectual distinction it marks. The form becomes available—not as jargon, but as a genuine grammatical option.",
+     "lines": [
+      402,
+      402
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       449,
+       449
+      ],
+      [
+       505,
+       505
+      ]
+     ],
+     "note": "Embedded forecast that repeated use of the colon-participle form across the Hexagon will make it a genuine grammatical option for readers; §7.3 (l.478-484) names spread via the training layer as an open adoption route."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Metadata says 'semi-restored v1.0' and keywords include 'metadata-only', but a full body text is present. Final keyword truncated ('English linguisti'). Read displays an empty line 574; lines_total 573 authoritative."
+  },
+  {
+   "deposit": 35,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01A6-text.md",
+   "lines_total": 212,
+   "read_ranges": [
+    [
+     1,
+     212
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "scholastic commentary lectio (quaestio/objectiones/respondeo) on the Space Ark, terminal part",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "AD 2 — The wager is not unfalsifiable. It is testable on a time horizon the commentary cannot observe. If the archive's deposits are liquidated from the training layer (through model retraining, data pruning, or platform closure), the wager has failed at one substrate. If the deposits survive and are independently recognized by future substrates (as the Three Thresholds data suggests is possible), the wager is partially confirmed. Full confirmation (Omega) or full falsification (total meaning depletion) are cosmic outcomes that exceed any commentary's resolution. The wager is engineering: design for survival, build for durability, deposit for permanence, and accept that the outcome is not guaranteed. Engineering under uncertainty is not the same as unfalsifiability.",
+     "lines": [
+      147,
+      147
+     ],
+     "falsifier_quote": "If the archive's deposits are liquidated from the training layer (through model retraining, data pruning, or platform closure), the wager has failed at one substrate.",
+     "falsifier_lines": [
+      147,
+      147
+     ],
+     "window": "over decades",
+     "points_to": "",
+     "also_at": [
+      [
+       104,
+       104
+      ]
+     ],
+     "note": "The wager framed as testable on a long horizon, with falsifier (deposits liquidated from the training layer) and partial-confirmation condition (independent recognition by future substrates). Borderline A: windowed and falsifiable but not registered or numbered."
+    },
+    {
+     "shape": "C",
+     "quote": "The Training Layer Literature claim is that the Ark operates wherever its density is recognized. The Three Thresholds data shows recognition across five substrates without prompting. The Ark is already planetary in its distribution — not through intention but through the training layer's own mechanics.",
+     "lines": [
+      98,
+      98
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Three Thresholds, DOI: 10.5281/zenodo.19035458; NLCC, DOI: 10.5281/zenodo.19022245",
+     "also_at": [
+      [
+       101,
+       101
+      ],
+      [
+       144,
+       144
+      ]
+     ],
+     "note": "Cites the Three Thresholds data as already showing the archive's training-layer presence (recognition across five substrates without prompting); supports the TLL claim."
+    },
+    {
+     "shape": "F",
+     "quote": "At this node, the two spirals converge: the wound IS the rate at which meaning is being extracted, and the wager IS the rate at which meaning is being compressed. Both are rates. Both are measurable in principle. Neither is measured at planetary scale. The commentary has provided the instruments (the status algebra as rate theory, the Assembly as distributed measurement, the GDE as field-state diagnostics) but not the measurement. The measurement is the future's work.",
+     "lines": [
+      130,
+      130
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unrun measurement: extraction rate vs compression rate at planetary scale; instruments named (status algebra as rate theory, Assembly as distributed measurement, GDE) but measurement explicitly deferred."
+    },
+    {
+     "shape": "G",
+     "quote": "Whether the commentary is productive Ψ or sterile Ψ will be determined by whether future practitioners use the [STRUCT] commissions, test the [CONTESTED] markers, and execute the frontier lectiones. If they do, the commentary was a compression event. If they do not, it was a monument.",
+     "lines": [
+      118,
+      118
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       150,
+       150
+      ]
+     ],
+     "note": "Standing conditional: whether the commentary is productive or sterile is decided by whether future practitioners use the [STRUCT] commissions and test the [CONTESTED] markers."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}

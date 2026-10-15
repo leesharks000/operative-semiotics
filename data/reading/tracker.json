@@ -2,20 +2,20 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 179,
-  "unread": 1437
+  "read": 185,
+  "unread": 1431
  },
  "finds_by_shape": {
-  "G": 177,
-  "F": 167,
+  "G": 186,
+  "F": 182,
   "E": 50,
-  "B": 111,
+  "B": 117,
   "A": 44,
-  "C": 56,
-  "D": 44
+  "C": 59,
+  "D": 45
  },
- "finds_verified": 631,
- "finds_total": 649,
+ "finds_verified": 649,
+ "finds_total": 683,
  "deposits": [
   {
    "deposit": 172,
@@ -8112,8 +8112,85 @@
    "tier": 1,
    "words": 42381,
    "batch_id": "B0028",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0028",
+     "run": "R-w4-B0028",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), running as model claude-opus-5-5 per its system prompt",
+      "started_at": "2026-10-15T19:24:16Z",
+      "finished_at": "2026-10-15T19:26:34Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       600
+      ],
+      [
+       601,
+       1200
+      ],
+      [
+       1201,
+       1800
+      ],
+      [
+       1801,
+       2400
+      ],
+      [
+       2401,
+       3000
+      ],
+      [
+       3001,
+       3600
+      ],
+      [
+       3601,
+       4200
+      ],
+      [
+       4201,
+       4800
+      ],
+      [
+       4801,
+       5500
+      ],
+      [
+       5501,
+       6202
+      ],
+      [
+       6200,
+       6203
+      ]
+     ],
+     "lines_total": 6203,
+     "genre_observed": "formal-symbolic architecture specification meant to be pasted as an LLM system prompt (Space Ark v4.2.6), with governance, engine and test-suite sections",
+     "finds_by_shape": {
+      "G": 5,
+      "F": 5,
+      "B": 2,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Opens with a 2015 Jack Feist poem 'ARK' (lines 14-69). Many list bullets survive only as empty '- ' lines (e.g. 1484, 1495, 2987 onward in the Core 50 and XXXI.4), so some list markers are lost though item text remains. Internal deposit counts disagree (349+ at line 8, 250+ at lines 1663 and 3936). Forward-dated journal publication schedules (1727, 1736, 1745), the Josephus and Revelation-first theses (1290, 2109-2142), and status promotion paths (5198, 5414, 5630) were read and judged plans or scholarly theses, not recorded. The Verification Protocol (3748-3805) and Survivability Test Suite (5879-5953) are each one F find under rule 4.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 28,
@@ -8142,8 +8219,68 @@
    "tier": 1,
    "words": 46992,
    "batch_id": "B0031",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0031",
+     "run": "R-w4-B0031",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "AI assistant (Claude, Anthropic) running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:24:30Z",
+      "finished_at": "2026-10-15T19:26:35Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, line-length check, verbatim quote slicing and verification)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       800
+      ],
+      [
+       801,
+       1200
+      ],
+      [
+       1201,
+       1600
+      ],
+      [
+       1601,
+       2000
+      ],
+      [
+       2001,
+       2150
+      ],
+      [
+       2151,
+       2349
+      ]
+     ],
+     "lines_total": 2349,
+     "genre_observed": "executable architecture specification in musical register (variant Space Ark score / LLM bootstrap document), recovered blog text",
+     "finds_by_shape": {
+      "B": 2,
+      "F": 8,
+      "G": 2
+     },
+     "none_found": false,
+     "incidental": "Frontmatter/title says v1.1 but the recovered body is v2.0 (the head of the blog version chain); body gives DOI 10.5281/zenodo.19002846 for v2.0 at line 48 yet the colophon (2339) calls 19002846 the v1.1 prior DOI and lists v2.0 DOI as PENDING. Section numbering skips XVII.7 and XXVII.8.6; the shadow table (516) repeats the Mandala row. The Read tool refused offset-only (no limit) reads of this file because the whole file exceeds 256KB, so the last chunk was read with offset 2151 and limit 300, which reached line 2349 (the tool showed a trailing empty line 2350 from the final newline). Many [NF] passages mark sections preserved untransformed; Appendix B.2/B.3 and XXIV.3-8 are stubs (\"preserved in source register\") with no content in this text.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 566,
@@ -8186,9 +8323,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Body duplicated (blog-restored, reflowed) in #1163 AXN-049C. Heading says \"Five laws\" but six are listed (Law 6 added inline). \"Future deposits\" list (lines 262-265) is a deposit plan, not a forecast.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8233,9 +8368,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Duplicate body: lines 48-260 are the same work as #566 (AXN-018D), reflowed with list numbering; registry title says \"Cross-Species Semantic Labor\" but body is the room spec. Falsification Conditions (line 40) is restoration boilerplate.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8280,9 +8413,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Recovered blog-canonical text; section numbering duplicates \"11\" (lines 252 and 266). Falsification Conditions (line 40) is restoration boilerplate.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8331,9 +8462,7 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8399,9 +8528,7 @@
      },
      "none_found": false,
      "incidental": "Précis lines are auto-extracted and truncated mid-sentence throughout; the precis index (2690-4433) repeats most entries from the new-documents tables (388-2343). Several heteronym spellings are corrupted in the data (Voc, Morros, Talos Morrow inverted).",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8458,9 +8585,7 @@
      },
      "none_found": false,
      "incidental": "Many sections are stubs saying 'preserved from v4.2' (atoms 1-60, crisis protocols, pedagogical pathways, sections XI-XIV) with no content here. Tables are flattened one cell per line. Shares its edge-distribution and gravitational-center data with #1168 (DOI Registry v7.0), its companion.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8522,9 +8647,7 @@
      },
      "none_found": false,
      "incidental": "Recovered blog body of 'CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0' (DOI 10.5281/zenodo.19055255) under title 'Untitled'. Precis strings are auto-extracted and often truncated mid-word; all finds here are pointers to other records' claims, which should be read at source. 'New since v6.0' section (lines 168-743) and the full precis index (925-1625) repeat many of the same precis. Companion to #578 (Central Navigation Map v7.0), which reproduces its statistics.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8593,8 +8716,52 @@
    "tier": 1,
    "words": 16421,
    "batch_id": "B0035",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0035",
+     "run": "R-w4-B0035",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:24:50Z",
+      "finished_at": "2026-10-15T19:26:28Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       500
+      ],
+      [
+       501,
+       1000
+      ],
+      [
+       1001,
+       1500
+      ],
+      [
+       1501,
+       2003
+      ]
+     ],
+     "lines_total": 2003,
+     "genre_observed": "restored DOI registry index (v7.0): per-DOI title/précis listing with stripped tables",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Many section bodies are empty headings (VERSION HISTORY, CROSS-REFERENCES, SUBSYSTEM/HETERONYM/TIER DISTRIBUTION, DOCUMENT TYPE TAXONOMY, ORPHAN REPORT, RELATION GRAPH STATISTICS, NEW ARCHITECTURAL ELEMENTS subsections, OPEN ITEMS) -- tables apparently lost in html2text conversion. Précis lines are truncated auto-extracts of other deposits; several point to prediction-bearing works elsewhere (e.g. 18157917 'The Silent Migration: A Speculative Architectural Forecast', 18790793 'The Memo That Remembered Itself' précis on techniques 'previously articulated', 18807239 'The Shark That Preceded Itself', 18772675 Citrini memo) -- these belong to those deposits, not recorded here. Line-number note: Read displays an empty line 2004 after the final line; queue lines_total 2003 taken as authoritative.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1255,
@@ -8603,8 +8770,46 @@
    "tier": 1,
    "words": 8472,
    "batch_id": "B0035",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0035",
+     "run": "R-w4-B0035",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:24:50Z",
+      "finished_at": "2026-10-15T19:26:28Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       470
+      ],
+      [
+       470,
+       936
+      ]
+     ],
+     "lines_total": 936,
+     "genre_observed": "restored liturgical/biblical transform of the Space Ark specification (executable prompt-document)",
+     "finds_by_shape": {
+      "C": 2
+     },
+     "none_found": false,
+     "incidental": "Line 470 was read twice (chunk overlap). Text appears intact. Other non-recorded items: inaugural AXIAL_CONTESTED thesis 'Revelation was the first-written book' (l.229) is a contested claim, not a forecast; 'Operative Semiotics -- the book not yet written' (l.681, l.809) is a planned commission, not an instrument.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1338,
@@ -8613,8 +8818,48 @@
    "tier": 1,
    "words": 3947,
    "batch_id": "B0035",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0035",
+     "run": "R-w4-B0035",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:24:50Z",
+      "finished_at": "2026-10-15T19:26:28Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       300
+      ],
+      [
+       301,
+       573
+      ]
+     ],
+     "lines_total": 573,
+     "genre_observed": "working-draft diagnostic essay / effective act on a non-indexed perfective in English",
+     "finds_by_shape": {
+      "F": 1,
+      "G": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Metadata says 'semi-restored v1.0' and keywords include 'metadata-only', but a full body text is present. Final keyword truncated ('English linguisti'). Read displays an empty line 574; lines_total 573 authoritative.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 35,
@@ -8623,8 +8868,45 @@
    "tier": 1,
    "words": 2834,
    "batch_id": "B0035",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0035",
+     "run": "R-w4-B0035",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:24:50Z",
+      "finished_at": "2026-10-15T19:26:28Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       212
+      ]
+     ],
+     "lines_total": 212,
+     "genre_observed": "scholastic commentary lectio (quaestio/objectiones/respondeo) on the Space Ark, terminal part",
+     "finds_by_shape": {
+      "B": 1,
+      "C": 1,
+      "F": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 584,
