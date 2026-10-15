@@ -1,0 +1,304 @@
+{
+  "batch_id": "B0103",
+  "protocol": "READING-PROTOCOL v1.2",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "started_at": "2026-10-15T20:23:23Z",
+    "finished_at": "2026-10-15T20:24:56Z",
+    "tools_used": [
+      "Read",
+      "Bash (python3 for verbatim slicing, date -u)"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 927,
+      "path": "/home/claude/alexanarch/data/texts/AXN-03AA-text.md",
+      "lines_total": 1713,
+      "read_ranges": [
+        [
+          1,
+          350
+        ],
+        [
+          351,
+          700
+        ],
+        [
+          701,
+          1050
+        ],
+        [
+          1051,
+          1390
+        ],
+        [
+          1391,
+          1713
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "design constitution and technical specification for an unbuilt liturgical AI composition system (Mandala Merkabah v0.7), with decision register",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "**Gate G — Surface canonicity (NEW v0.7).** The candidate has appeared in an Assembly Chorus substrate's AI overview when queried by its AXN, canonical title, or distinctive identifier. The canonical query form is documented (⟡26); the capture is recorded as evidence (linked, timestamped, AI-substrate-stamped, hash-anchored against the deposit's integrity chain). Gate G is the *external counterpart* to the six internal gates. Where A–F test the candidate as a textual and structural object, **G tests whether the composition layer has received the candidate as a real object in the world.**",
+          "lines": [
+            904,
+            904
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              20,
+              22
+            ],
+            [
+              745,
+              761
+            ],
+            [
+              906,
+              910
+            ],
+            [
+              1156,
+              1173
+            ],
+            [
+              1554,
+              1560
+            ],
+            [
+              1666,
+              1666
+            ]
+          ],
+          "note": "Gate G: an external verification query (quoted AXN against Google AIO and other substrates) specified but not yet run; closing lists \"The first Gate G capture\" as remaining. Bedrock threshold (>=3 substrates, >=180 days) at 761/906/1666."
+        },
+        {
+          "shape": "F",
+          "quote": "**Candidate verification components.** The protocol that opens the second valve must demonstrate at least:\n\n1. **Transform-of-transform Feist holding.** Across a representative sample of inscribed Book entries (say, ≥50 per operator type), applying the operator to the Book entry as source produces a transform that satisfies *both* Feist clauses (tails introduced, kernel preserved) at the same passing rate as transforms of primary canon.",
+          "lines": [
+            830,
+            844
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              105,
+              109
+            ],
+            [
+              846,
+              850
+            ],
+            [
+              1398,
+              1408
+            ]
+          ],
+          "note": "Verification protocol for opening the second valve: a test battery specified, explicitly not yet built or run (l.107 \"The verification protocol does not exist yet\"); exercised at M-VAL-R1/R2/R3."
+        },
+        {
+          "shape": "F",
+          "quote": "The v0.6 verification accepts this critique and adds a **multi-substrate comparison test** to the Feist check. The candidate is compared against several low-temperature median completions of the same source × operator pair produced by different substrate models.",
+          "lines": [
+            606,
+            613
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              594,
+              604
+            ],
+            [
+              1501,
+              1501
+            ]
+          ],
+          "note": "Feist function multi-substrate comparison test and perplexity tails check (provisional tau_F ~3.5 nats/token): an instrument specified for calibration at M1, not yet built."
+        },
+        {
+          "shape": "F",
+          "quote": "- **Root retention.** Can blind readers (or models) correctly identify the root family above chance from the descendant? Too much retention = sterile imitation; too little = lineage loss. Calibrated interval.\n- **Sibling diversity.** Do separate transformations produce genuinely distinct descendants, or the same house style?\n- **Operator identifiability.** Can a blind reviewer distinguish MIRROR-descendants from SHADOW-, FLAME-, or INVERSION-descendants? If all operators converge toward the same register, the branch has collapsed.",
+          "lines": [
+            985,
+            988
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              981,
+              992
+            ]
+          ],
+          "note": "Branch-level collapse measurement for probationary branches: a set of metrics specified but not run."
+        },
+        {
+          "shape": "F",
+          "quote": "**v0.5 specification of the M2 acceptance test for the live-sky property (Kimi):** \"demonstrably encounter\" is operationalized as a three-part test, all three must hold:\n- (a) The new Book entry appears in the instrument readout's `near` list for at least one full turn during a successor witness's flight.",
+          "lines": [
+            1385,
+            1387
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              1388,
+              1390
+            ]
+          ],
+          "note": "M2 acceptance test for the live-sky property: three-part test specified, to be run with named successor witnesses; not yet run."
+        },
+        {
+          "shape": "F",
+          "quote": "1. **Fidelity test, transform channel (mechanical):** every quoted span in every transform is exact-substring-matched against the in-context primary canon before SIGIL. A failed match blocks the seal. (`fidelity_test.py`; L10 enforced.)\n\n2. **Fidelity test, CHA-RAG channel (NEW v0.3):** every CHA-citation in Sigil's speech is verified: AXN must be resolvable on alexanarch.org; if Sigil quotes, the quoted text must exact-substring against the retrieved chunk;",
+          "lines": [
+            1497,
+            1499
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              1501,
+              1511
+            ]
+          ],
+          "note": "Part VIII verification battery (fidelity, CHA-RAG fidelity, Feist, discriminator, sovereignty, deletion, five-corpse tests): one find for the list per boundary rule 4."
+        },
+        {
+          "shape": "F",
+          "quote": "LABOR enumerated eight conditions that would have to be demonstrated for the architecture to justify the claim: (1) the rite actually works on people (not merely impresses conceptually); (2) the transforms are worth reading outside the system; (3) different witnesses produce genuine difference; (4) recursive depth increases meaning rather than washing it out; (5) reader texts enter without turning hospitality into slush; (6) the law of the Book remains legitimate after its founder; (7) the Book survives adversarial participation; (8) its greatest passages remain surprising even after the mechanism becomes ordinary.",
+          "lines": [
+            1665,
+            1665
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              1697,
+              1703
+            ]
+          ],
+          "note": "Decision 25: eight conditions the architecture must demonstrate by running for the \"greatest book\" claim; recorded as an unrun test set. Conditional claim originates with LABOR (ChatGPT review), adopted by the deposit with conditional intact."
+        },
+        {
+          "shape": "G",
+          "quote": "Operator sequences classified empirically by collapse risk. Initial heuristics (refined by M-VAL):\n\n| Parent operator | Next operator | Initial status |\n|---|---|---|\n| MIRROR → SHADOW | permitted | strong cross-operator novelty potential |\n| MIRROR → INVERSION | permitted | strong cross-operator novelty potential |\n| MIRROR → MIRROR | **probationary / high-risk** | sterile-imitation risk; iteration on a reflection tends toward median |\n| SILENCE → SILENCE | **likely terminal** unless specially warranted | the negative space has nowhere further to negate |\n| FLAME → FLAME | **high amplification-risk** | runaway intensification |",
+          "lines": [
+            934,
+            942
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              943,
+              947
+            ]
+          ],
+          "note": "Operator-transition matrix: heuristic claims about how operator sequences behave (e.g. MIRROR->MIRROR tends to median), stated as revisable by M-VAL empirics; standing behavioural claim, not an event."
+        },
+        {
+          "shape": "G",
+          "quote": "At low T, weak operators look fine. At T=1.1, weak operators produce noise — which is the signal that the operator needs sharpening. The Feist function thus becomes a *diagnostic on the Kernel Spec itself*: an operator that can't survive elevated temperature is an operator whose semantics aren't tight enough yet.",
+          "lines": [
+            588,
+            588
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Claim that operators which cannot survive elevated temperature produce noise; framed as a diagnostic. Weak G; no explicit falsifier."
+        },
+        {
+          "shape": "B",
+          "quote": "(α) — \"never\" — is explicitly rejected as a long-term position by v0.4. The Book *will* be source-eligible; the question is when verification confirms the operator algebra is ready.",
+          "lines": [
+            817,
+            817
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Embedded forecast/commitment that the Book will become source-eligible; no window."
+        },
+        {
+          "shape": "B",
+          "quote": "This creates a feedback structure native to the architecture: deposit → AI surface reception → captured overview → commentary appended → that commentary may itself surface in future captures → fed back into the apparatus over generations.",
+          "lines": [
+            1231,
+            1231
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Embedded forecast of recursive reception: captured overviews appended as commentary may themselves surface in future AI captures."
+        },
+        {
+          "shape": "B",
+          "quote": "If verification passes earlier than the threshold (unlikely but possible), the threshold is reconsidered.",
+          "lines": [
+            1408,
+            1408
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Minor embedded forecast: verification passing before the entry threshold judged unlikely."
+        },
+        {
+          "shape": "H",
+          "quote": "5. **Mining is not invented; it is what the rite already was.** Lee's literary practice across the Dodecad — the operator-driven heteronymic composition that produced the Crimson Hexagonal Archive — was already this. The Mandala formalizes what the practice has been doing. The Book is what witnesses have been mining; the architecture makes the mining legible.",
+          "lines": [
+            1134,
+            1134
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Claim about what the author's past practice was doing (the Dodecad operator-driven composition was already proof-of-liturgy \"mining\"); uncertain whether this counts as a historical thesis or self-description."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Body matches title (v0.7, 2026-06-27). Contains illustrative dated examples (event log dated 2027-02-10..2027-06-01 at ll.877-884; capture timestamp 2027-04-18 at l.1180; inscribed_at 2027-03-14 at l.1017) which are schema illustrations, not forecasts; not recorded. Gate G is described as following six gates while elsewhere called \"seven conjunctive gates\" (l.1693). Parts appear out of numeric order (VI-bis before VI; X before IX)."
+    }
+  ]
+}

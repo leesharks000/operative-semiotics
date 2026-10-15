@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 365,
+ "deposits_with_notes": 371,
  "deposits": [
   {
    "deposit": 1,
@@ -45,6 +45,21 @@
      "batch_id": "X0002",
      "field": "status_note",
      "text": "X-batch range 1522–2937 of the derived voice text only; the rest of deposit #3 is covered by other X-batches."
+    },
+    {
+     "batch_id": "X0003",
+     "field": "incidental",
+     "text": "Range 2938-4610 covers records 190 (header at 2938) through 296 (ends at 4610). Many June-2026 records repeat d_full verbatim in analysis and consist largely of quoted machine composition; nothing was recorded from those quotations. Record 277 carries an erratum (2026-10-12) correcting a false absence claim about the 2014-12-01 joint byline."
+    },
+    {
+     "batch_id": "X0005",
+     "field": "incidental",
+     "text": "Range is almost wholly dated capture observation (excluded by rule). Embedded machine speech in d_full/findings fields was not quoted. Record 413 notes an observed-not-replicated notice effect (line 8096) and record 411 a category 'not yet ruled' (line 8054); neither recorded as a find."
+    },
+    {
+     "batch_id": "X0005",
+     "field": "status_note",
+     "text": "X-batch X0005 covers derived lines 6276-8254 only (records 354-418)"
     }
    ],
    "rulings": []
@@ -3103,6 +3118,72 @@
      "batch_id": "B0102",
      "field": "incidental",
      "text": "Text intact. The body carries stacked changelogs (v0.6, v0.5, v0.4) that restate later sections, so several finds recur in the changelog (see also_at). Illustrative dated example records (2027 event log, lines 832-837; 2027 arrival timestamp, line 965) are schema examples, not forecasts, and were not recorded. Header says it builds on deposit #925 (AXN:03A8)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 927,
+   "notes": [
+    {
+     "batch_id": "B0103",
+     "field": "incidental",
+     "text": "Body matches title (v0.7, 2026-06-27). Contains illustrative dated examples (event log dated 2027-02-10..2027-06-01 at ll.877-884; capture timestamp 2027-04-18 at l.1180; inscribed_at 2027-03-14 at l.1017) which are schema illustrations, not forecasts; not recorded. Gate G is described as following six gates while elsewhere called \"seven conjunctive gates\" (l.1693). Parts appear out of numeric order (VI-bis before VI; X before IX)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 928,
+   "notes": [
+    {
+     "batch_id": "B0104",
+     "field": "incidental",
+     "text": "Read tool displayed a trailing empty line 513 (file ends with newline); lines_total 512 taken as authoritative. Text references Zenodo June 2026 termination; draft v0.1."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 929,
+   "notes": [
+    {
+     "batch_id": "B0104",
+     "field": "incidental",
+     "text": "Read tool displayed a trailing empty line 1035; lines_total 1034 authoritative. Line 973 is a single ~2700-char paragraph; quote taken as its final clause."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 930,
+   "notes": [
+    {
+     "batch_id": "B0105",
+     "field": "incidental",
+     "text": "Line 13 gives parent DOI as \"10.5281/zenodo.19022245-like\" (placeholder-like). Closing \"SUCCESSOR EXPECTED: v0.2\" (l.946) is a planned-version note, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 932,
+   "notes": [
+    {
+     "batch_id": "B0105",
+     "field": "incidental",
+     "text": "Appendices W1-W3 are verbatim AI substrate texts (Kimi-K2, ChatGPT); W1/W2 make strong unhedged claims (e.g. \"The collapse is not coming. It is here.\", l.1238) which the synthesis itself retracts to hypotheses; not recorded as the deposit's own forecasts. Header (l.20) points to deposit #931 as combined family deposit; footer (l.1845) gives #932."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 933,
+   "notes": [
+    {
+     "batch_id": "B0105",
+     "field": "incidental",
+     "text": "Header (l.22) cites deposit #931 combined family; kernels in Appendix H duplicate content of #932 appendices."
     }
    ],
    "rulings": []

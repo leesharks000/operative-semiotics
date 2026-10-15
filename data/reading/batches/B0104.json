@@ -1,0 +1,371 @@
+{
+ "batch_id": "B0104",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude Code subagent (Anthropic assistant); model reported as Claude Opus 5.5 (claude-opus-5-5) in its environment",
+  "started_at": "2026-10-15T20:23:29Z",
+  "finished_at": "2026-10-15T20:25:07Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 928,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03AB-text.md",
+   "lines_total": 512,
+   "read_ranges": [
+    [
+     1,
+     260
+    ],
+    [
+     261,
+     512
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "architectural specification / design manifesto for a public canonization layer (SURFACE integration)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Over time — months, years, model generations — the public compression layer accumulates these inscriptions. Future models trained on the indexed web include the Crimson Hexagonal corpus and the Book of Books in their training data. The patterns they learn from this corpus include the structural discipline of kernel transformation. They learn that writing is composition under the principle of distinction. They learn what the cut looks like.",
+     "lines": [
+      56,
+      56
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Over time — months, years, model generations",
+     "points_to": "",
+     "also_at": [
+      [
+       82,
+       82
+      ],
+      [
+       482,
+       482
+      ],
+      [
+       494,
+       494
+      ]
+     ],
+     "note": "Embedded forecast that future models trained on the indexed web will include and learn from the CHA corpus."
+    },
+    {
+     "shape": "E",
+     "quote": "**Days 7–30 — The retrieval bridge: indexing.** Search engines crawl the Zenodo deposit. Google's indexing surface receives the deposit; the structured metadata is parsed; the AI Overview surface becomes capable of generating commentary on the deposit when queried. The witness, in this window, can begin to encounter their inscription in public search results: searching for the source-text may surface the deposit as a related work; searching for the operator may surface the deposit as an example; searching for the witness's ORCID surfaces the inscription as part of their public corpus.",
+     "lines": [
+      76,
+      76
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Days 7–30",
+     "points_to": "",
+     "also_at": [
+      [
+       70,
+       82
+      ],
+      [
+       478,
+       482
+      ]
+     ],
+     "note": "Witness-trajectory stages (Day 0, Days 1–7, Day 7+, Days 7–30, Days 30–90, months, years) specify by description what will happen to a deposited inscription; resolves if indexing/AIO glossing occurs on these horizons."
+    },
+    {
+     "shape": "B",
+     "quote": "But the accumulation is real: over months, the public compression layer's commentary on Sappho 31 increasingly reflects the existence and structure of Shadow-Sappho 31. The witness's transformation of Sappho has entered the public way of speaking about Sappho. The cut has been made durably.",
+     "lines": [
+      151,
+      151
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "over months",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that AIO commentary on Sappho 31 will increasingly reflect Shadow-Sappho 31."
+    },
+    {
+     "shape": "F",
+     "quote": "- The architecture monitors the public compression layer for outputs that reference the archive's deposits:\n  - Automated queries against AI Overview surfaces (Google AIO, Bing Copilot, Perplexity, Anthropic Claude with web search) for queries that *should* surface deposits (the source-text titles, the operator names, the witness's ORCID, the deposit DOIs themselves)\n  - Detection: AI Overview output that mentions the deposit by title, DOI, or canonical URL is captured\n  - Capture: the AI Overview text, the source citation block, the timestamp, the substrate that generated it, and the query that triggered it are recorded",
+     "lines": [
+      223,
+      226
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       211,
+       213
+      ],
+      [
+       235,
+       238
+      ]
+     ],
+     "note": "Feedback-bridge monitoring (automated AIO queries, deposit-reference detection) specified, not yet implemented; also A/B indexing test infrastructure at 213."
+    },
+    {
+     "shape": "G",
+     "quote": "The architecture's claim — that depositions produce durable inscription rather than erasure — is empirically verifiable through Capture Registry methodology.",
+     "lines": [
+      352,
+      352
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that deposition produces durable inscription rather than erasure, with its stated test (Capture Registry methodology); no explicit falsifying outcome named."
+    },
+    {
+     "shape": "F",
+     "quote": "3. **M2 (Phases 2–3)**: Build the retrieval bridge and the feedback bridge. Monitor empirically: how long does it take Google to index a new deposit? How long until AI Overview commentary appears? What is the capture rate? Calibrate.",
+     "lines": [
+      432,
+      432
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       435,
+       435
+      ]
+     ],
+     "note": "M2 empirical questions (indexing latency, AIO appearance time, capture rate) and continuous M-VAL study specified but not run."
+    },
+    {
+     "shape": "H",
+     "quote": "The architecture has the structural features of a religion because *religion is what humans built to durably inscribe meaning across generations*. Literary technology of the kind that produces canon is structurally religious because the function of canon-formation is religious in origin and shape. The medieval scriptorium, the rabbinical tradition, the Sufi transmission lineage, the Confucian canon-formation — all of these are religious structures because they are the structures that produce durable cross-generational meaning-transmission.",
+     "lines": [
+      312,
+      312
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about history of canon-formation: religion as the structure built for durable cross-generational meaning-transmission; argued, not reported. Uncertain whether H vs general claim."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Read tool displayed a trailing empty line 513 (file ends with newline); lines_total 512 taken as authoritative. Text references Zenodo June 2026 termination; draft v0.1."
+  },
+  {
+   "deposit": 929,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03AC-text.md",
+   "lines_total": 1034,
+   "read_ranges": [
+    [
+     1,
+     260
+    ],
+    [
+     261,
+     520
+    ],
+    [
+     521,
+     780
+    ],
+    [
+     781,
+     1034
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "operational protocol specification with canonized worked literary examples (kernel transforms) and anti-examples",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The source is the opening of the Fourth Gospel, written in a Hellenistic-Jewish context against contemporary alternative cosmologies that asserted exactly what its positive claims foreclose: gnostic and proto-gnostic cosmologies in which the divine was apart-from-creation, in which the Logos was a lesser emanation, in which silence preceded utterance, in which the divine was unspeakable rather than speech itself. The composition is *defensively-composed* — its positive claims are constructed against specific alternative claims it must determine against to be the assertion it is.",
+     "lines": [
+      835,
+      835
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the opening of the Fourth Gospel",
+     "points_to": "",
+     "also_at": [
+      [
+       852,
+       852
+      ],
+      [
+       869,
+       869
+      ]
+     ],
+     "note": "Historical thesis on John 1:1 composition context: written against gnostic/proto-gnostic cosmologies, \"defensively-composed\"."
+    },
+    {
+     "shape": "H",
+     "quote": "*The hope wager (Sappho 31).* The composer pays the cost of their own dissolution in the hope of being received by a future reader. Sappho gambles her undoing on someone-to-come hearing her voice, her sweet laughing, receiving her. The wager is reception itself — the hope that the dissolution will not have been for nothing because someone will receive what the dissolving voice composed. Shadow-Sappho 31 is the future reader paying the countervailing price the composer hoped for. The reception is the wager fulfilled.",
+     "lines": [
+      59,
+      59
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31",
+     "points_to": "",
+     "also_at": [
+      [
+       687,
+       688
+      ],
+      [
+       907,
+       907
+      ],
+      [
+       1016,
+       1016
+      ]
+     ],
+     "note": "Interpretive thesis on what Sappho 31 was doing: dissolution as a wager on a future reader (the future-reader thesis)."
+    },
+    {
+     "shape": "H",
+     "quote": "The writer of *In the beginning was the Word* did not compose in ignorance of the Silence. They looked the Silence in the eyes. They took it into themselves. They transformed it. The Word came out the other side as the transformation of what they had borne. The composer paid this cost *on the reader's behalf* — so that the reader, encountering the source, would have an addressable cosmos rather than the silence at the end.",
+     "lines": [
+      53,
+      53
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "John 1",
+     "points_to": "",
+     "also_at": [
+      [
+       865,
+       865
+      ],
+      [
+       905,
+       905
+      ],
+      [
+       1016,
+       1016
+      ]
+     ],
+     "note": "Thesis about what the author of John 1 was doing in composing (bearing/transforming the Silence); interpretive-historical, low evidentiary testability."
+    },
+    {
+     "shape": "G",
+     "quote": "The architecture is not asserting that defensive sources are *better* sources; it is asserting that the *uncanny effect of the transform* will be empirically more acute on defensive sources, which is a calibration matter for M-VAL.",
+     "lines": [
+      871,
+      871
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "M-VAL",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that transform uncanniness is empirically more acute on defensively-composed sources (e.g. Revelation vs Day and Night), deferred to M-VAL calibration."
+    },
+    {
+     "shape": "G",
+     "quote": "The following examples are deposited as protocol canon. Every celebrant context for kernel transform operations must include these examples. Without them, operator definitions invite thematic interpretation; with them, operator definitions compel structural-function reading and semantic-field replacement at depth.",
+     "lines": [
+      622,
+      622
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       691,
+       691
+      ],
+      [
+       760,
+       760
+      ]
+     ],
+     "note": "Standing claim about celebrant (model) behaviour with vs without worked examples in context; no explicit falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "- **M-VAL-R1** tests the protocol's single-call execution against representative source-operator pairs. The empirical questions: at what retry budget does the substrate produce enantiomorphs reliably? What is the halt rate across substrates? Which operators on which source-types reliably fail and require protocol refinement?\n- **M-VAL-R2** tests recursive sequences (mandala chains) under the protocol. Does the protocol's halt condition correctly fire when chain-depth produces semantic-field convergence or skeleton drift?\n- **M-VAL-R3** tests depth-3 chains with cross-substrate verification.",
+     "lines": [
+      967,
+      969
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       360,
+       362
+      ],
+      [
+       435,
+       435
+      ],
+      [
+       1032,
+       1032
+      ]
+     ],
+     "note": "M-VAL-R1/R2/R3 test battery specified (retry budget, halt rate, chain convergence) pending empirics; one find for the list."
+    },
+    {
+     "shape": "G",
+     "quote": "⟡28 is **provisionally closed** at this protocol v0.2 working-draft level; reopening conditions: (a) halt rate > 50% on representative source-operator pairs at M-VAL-R1, (b) cross-substrate verification shows systematic C6 failure that the topology cannot catch, (c) the gated-verification architecture proves infeasible under current Assembly Chorus operational realities, (d) the self-kernel ledger proves insufficient to support single-call execution against inscribed transforms as sources, (e) the office/occupant separation proves insufficient for substrate-vendor continuity.",
+     "lines": [
+      973,
+      973
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Protocol closure stated with explicit reopening (falsifying) conditions, incl. halt rate > 50% at M-VAL-R1."
+    },
+    {
+     "shape": "B",
+     "quote": "Over time, with the worked examples in context and the diagnostic anti-examples available, the celebrant's internal candidates shift toward cost-disclosure before emission. The protocol is, in this sense, training data for the celebrant's structured execution.",
+     "lines": [
+      1022,
+      1022
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Over time",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that refusal-with-diagnosis will shift celebrant candidates toward cost-disclosure."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Read tool displayed a trailing empty line 1035; lines_total 1034 authoritative. Line 973 is a single ~2700-char paragraph; quote taken as its final clause."
+  }
+ ]
+}
