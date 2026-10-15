@@ -7751,7 +7751,33 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
    "output": "data/reading/batches/B0156.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 122131,
+    "tool_uses": 18,
+    "tokens": 191016
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T20:53:29Z",
+    "finished_at": "2026-10-15T20:55:14Z",
+    "self_description": "Claude Code subagent (Anthropic assistant); model reported as Claude Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load and verbatim quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 13,
+    "entries": 13,
+    "finds": 17,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 13,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w25-B0157",
