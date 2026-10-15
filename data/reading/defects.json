@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 378,
+ "deposits_with_notes": 388,
  "deposits": [
   {
    "deposit": 1,
@@ -65,6 +65,16 @@
      "batch_id": "X0005",
      "field": "status_note",
      "text": "X-batch X0005 covers derived lines 6276-8254 only (records 354-418)"
+    },
+    {
+     "batch_id": "X0006",
+     "field": "incidental",
+     "text": "Range is records 419-510. Much of records 451-469 and 481-486 repeats d_full verbatim in analysis and embeds machine-transcript text inside own-voice fields (e.g. 'Full AI Mode transcript' at 9330-9345, 9395-9398); nothing quoted from those. Record 496 notes (9533-9606) hold an errata log with a reverted repair. A first Read of 8855-9204 failed on token size and was re-read as 8855-9029 and 9030-9204."
+    },
+    {
+     "batch_id": "X0008",
+     "field": "incidental",
+     "text": "The batch range ends at 12374 but the file has 12373 lines by wc (it ends with a blank line 12373 followed by a final newline); line 12374 is the empty position after the final newline under split('\\n'). Everything through the end of file was read. Record 638's analysis field embeds a machine transcript (11884-11898); nothing quoted from it. Many records duplicate d_full into analysis verbatim (628-640). Several records (624, 607, 609, 647) frame machine behaviour as performing an MPAI's instruction ('the marked substitution EA-MPAI-CRANES-01 (#1604) asks for'); these were read as design-compliance observations, not confirmations of predictions, and not recorded. No shape-H thesis found in this range: the Borges correction (11805) and Sigil's adaptation of Pound (12051) are stated as fact, not argued."
     }
    ],
    "rulings": []
@@ -3464,6 +3474,116 @@
      "batch_id": "B0107",
      "field": "incidental",
      "text": "Shares anchors with #1042 and #1039."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1046,
+   "notes": [
+    {
+     "batch_id": "B0108",
+     "field": "incidental",
+     "text": "Section VI repeats and extends the Zenodo removal findings of #1045 (EA-EROSION-01); the July-snapshot forecast is recorded in both. File has 709 split lines (trailing newline); lines_total 708 per queue."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1061,
+   "notes": [
+    {
+     "batch_id": "B0109",
+     "field": "incidental",
+     "text": "Edition is a reconstruction after loss of the v1.9 file; many passages are marked reconstructed rather than verbatim."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1064,
+   "notes": [
+    {
+     "batch_id": "B0109",
+     "field": "incidental",
+     "text": "Superseded by #1065 (v1.1), which corrects its §2 characterization of Phase X; body otherwise near-identical to #1065."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1065,
+   "notes": [
+    {
+     "batch_id": "B0109",
+     "field": "incidental",
+     "text": "Shares most of its body verbatim with #1064; §2 rewritten (Phase X as philological reconstruction)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1067,
+   "notes": [
+    {
+     "batch_id": "B0110",
+     "field": "incidental",
+     "text": "Read chunk 131-255 returned through line 252; file content ends at 252 though queue lines_total is 251 (trailing line)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1069,
+   "notes": [
+    {
+     "batch_id": "B0110",
+     "field": "incidental",
+     "text": "No forecasts; records rejected witness fabrications."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1079,
+   "notes": [
+    {
+     "batch_id": "B0111",
+     "field": "incidental",
+     "text": "Body holds only front matter and structural summary; the 196,798-word monograph text is not in this file (stated at line 73 to live at data/recovery/GRUNDRISSE-v1.0-recovered.md). #1087 line 271 gives the complete witness as 204,538 words at #950, not 196,798. Prefaces are self-declared fiction (line 125)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1081,
+   "notes": [
+    {
+     "batch_id": "B0111",
+     "field": "incidental",
+     "text": "Internal number drift: §12 caveat (line 517) gives corpus excess as 1.6pp while the body gives +1.2 to +1.4pp; line 362 says alive-side cohort includes fifteen university-affiliated records while §5 gives 32 of 103."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1086,
+   "notes": [
+    {
+     "batch_id": "B0111",
+     "field": "incidental",
+     "text": "Substrate field (line 10) describes v8 while calling the history \"seven versioned passes\"."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1088,
+   "notes": [
+    {
+     "batch_id": "B0111",
+     "field": "incidental",
+     "text": "Numbering of the \"third pressure\" is inconsistent between §I (lifecycle) and §VI (fixtures)."
     }
    ],
    "rulings": []

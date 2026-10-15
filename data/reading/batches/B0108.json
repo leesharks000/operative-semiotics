@@ -1,0 +1,464 @@
+{
+ "batch_id": "B0108",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:26:54Z",
+  "finished_at": "2026-10-15T20:28:46Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1045,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0421-text.md",
+   "lines_total": 148,
+   "read_ranges": [
+    [
+     1,
+     148
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "empirical research instrument specification with baseline findings and dated roadmap",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The July snapshot, due imminently and preserved on release, will contain the Lee Sharks removal events and will provide the first population-level view of the case within Zenodo's own record. This snapshot serves as the immediate-pre-severance population baseline: whatever cluster the Lee Sharks records fall into when they appear in July, the systemic context has been measured from what preceded, in this deposit, before the fact.",
+     "lines": [
+      76,
+      76
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "The July snapshot, due imminently",
+     "points_to": "",
+     "also_at": [
+      [
+       36,
+       36
+      ],
+      [
+       138,
+       138
+      ]
+     ],
+     "note": "Forecast that the July 2026 Zenodo deletion snapshot will contain the Lee Sharks 2026-06-19 removal events as a population event; baseline measured before the fact."
+    },
+    {
+     "shape": "H",
+     "quote": "Preliminary hypothesis: the 2024 concentration reflects one or more automated spam-account cleanup campaigns, which is confirmable by clustering same-day removals and inspecting removal-note patterns. This hypothesis is testable in a subsequent pass and, if confirmed, is a governance-policy datum in its own right.",
+     "lines": [
+      70,
+      70
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2024",
+     "points_to": "",
+     "also_at": [],
+     "note": "Hypothesis about past events (the 2024 removal concentration as automated spam-account cleanup campaigns), with its stated test; recorded as H (historical claim about platform action) though it is close to an empirical hypothesis."
+    },
+    {
+     "shape": "G",
+     "quote": "But even as a proxy, the ceiling is 7.86%: at most 7.86% of removed records could possibly meet the tombstone-continuity standard DataCite's policy asks for. **The population data shows the tombstone-persistence principle is not being followed in aggregate.** This is not a Lee-Sharks-specific finding; it is a systemic governance finding about Zenodo as a repository.",
+     "lines": [
+      72,
+      72
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about repository behaviour (tombstone-persistence principle not followed in aggregate), bounded by the 7.86% proxy ceiling; the full TCR requires the unrun Layer 4 probe."
+    },
+    {
+     "shape": "F",
+     "quote": "**Layer 2: DataCite state history.** Specified, not yet implemented. Baseline harvest of the Zenodo repository's findable DOIs via DataCite's public API (`https://api.datacite.org/dois?client-id=cern.zenodo`), preserved as a longitudinal baseline. Monthly re-probe against the same query to detect DOIs that have transitioned from findable to registered (or from findable to deleted).",
+     "lines": [
+      84,
+      84
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       80,
+       80
+      ],
+      [
+       86,
+       88
+      ],
+      [
+       140,
+       140
+      ]
+     ],
+     "note": "Four-layer instrument; Layers 2-4 specified, not yet implemented (Layer 2 quoted; Layer 3 provenance activities at 86, Layer 4 DOI resolution/tombstone audit at 88). E2 baseline harvest at 140 is the Layer 2 build."
+    },
+    {
+     "shape": "F",
+     "quote": "Three cohort study designs are inscribed here as first-priority research passes.",
+     "lines": [
+      92,
+      92
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       94,
+       98
+      ]
+     ],
+     "note": "Three-cohort study design (A full population, B account-level actions, C matched controls) specified as first-priority passes, not yet run."
+    },
+    {
+     "shape": "F",
+     "quote": "**Phase 3: cross-platform synthesis.** Once at least three platforms have running preservation pipelines producing at least six months of data each, publish a cross-platform Erosion Report presenting the four-metric family (RIR, MSR, TCR, PER) per platform, per year, per removal reason. This is the deliverable that makes \"platform erosion\" a systemic category rather than a per-platform complaint.",
+     "lines": [
+      112,
+      112
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       100,
+       110
+      ]
+     ],
+     "note": "Phase 2A-2D and Phase 3 cross-platform tracker plan: unbuilt; Phase 3 cross-platform Erosion Report at 112."
+    },
+    {
+     "shape": "A",
+     "quote": "**Cross-platform yield.** By 2027-07-06 (twelve months from this mint), if Phase 2 has not produced at least one non-Zenodo platform under active preservation with initial descriptive analysis published, the roadmap is behind schedule and requires either resource reallocation or scope reduction.",
+     "lines": [
+      130,
+      130
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "By 2027-07-06 (twelve months from this mint)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Dated roadmap condition: at least one non-Zenodo platform under active preservation with analysis published by 2027-07-06."
+    },
+    {
+     "shape": "A",
+     "quote": "**Empirical yield.** By 2027-07-06, if the four-metric family has not been computed for at least two platforms and at least twelve months of cohort data, the family design is unimplemented and either the specification requires simplification or the operational cadence requires acceleration.",
+     "lines": [
+      132,
+      132
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "By 2027-07-06",
+     "points_to": "",
+     "also_at": [],
+     "note": "Dated condition: four-metric family computed for at least two platforms and twelve months of cohort data by 2027-07-06."
+    },
+    {
+     "shape": "D",
+     "quote": "The 2026-06-07 snapshot was downloaded, checksummed, and preserved to data-rhizome at commit `cb7b59390f4ecbc37e38cf9030e5d01549ea6223` prior to this deposit's mint.",
+     "lines": [
+      146,
+      146
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "data-rhizome commit cb7b59390f4ecbc37e38cf9030e5d01549ea6223",
+     "also_at": [],
+     "note": "Timestamped third-party anchor (git commit) offered as proof the snapshot was preserved before the mint; marginal D."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1046,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0422-text.md",
+   "lines_total": 708,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     251,
+     500
+    ],
+    [
+     501,
+     708
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity update gathering a 2014 poem fragment, oracle rotation, Iliad translation experiment, pipeline plan and erasure-observatory findings",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "*Fragment of the Epic Poem*\n*Recovered from the Future (6/24/14, 2:10 PM)*\n*Tuesday, night after dream — van, on way to Zehnder's*\n\nRecreate for me, System, the last days of\nTachyon, star of the latter day race of man,\nand the betrayal of sentient constructs, how\nthey loosed bright doom on mankind's home,\nplunged billions-weight souls to black hole\ndeep; how Command sent the Daystar\nabove a dying Earth, with weak control\nof time's wan currents, on a suicide run\nto buy them room, to effect an evacuation,\nout—out to uncertain, distant suns, a remnant;",
+     "lines": [
+      29,
+      42
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       43,
+       56
+      ]
+     ],
+     "note": "The 2014 Tachyonica fragment, headed \"Recovered from the Future (6/24/14, 2:10 PM)\": a speculative scenario of sentient constructs betraying mankind and a System asked to reconstruct the past; the deposit frames it as the archive's generative myth. Uncertain whether the deposit itself advances it as forecast."
+    },
+    {
+     "shape": "F",
+     "quote": "**Falsification protocol.** Run the full 611-line Book 1 L2, then compute two metrics per 100-line block: `material_speech_density` (Anglo-Saxon monosyllable fraction over content words) and `clinamen_rate` (distinct syntactic-strain events per 100 lines — fragments, register collisions, circuit interruptions, seam insertions). Establish the lines 1-100 values as baseline targets. If either metric regresses toward the L1 baseline by more than 30% in any middle block, the mechanism is failing at that block.",
+     "lines": [
+      441,
+      441
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       565,
+       566
+      ],
+      [
+       703,
+       703
+      ]
+     ],
+     "note": "Falsification protocol for the Feist L2 mechanism at book scale (material_speech_density, clinamen_rate, 30% regression threshold); not yet run."
+    },
+    {
+     "shape": "H",
+     "quote": "Gutenberg's U.S. public-domain constraint means its canonical translation layer is mostly older public-domain translation: Victorian, Edwardian, and early twentieth-century surfaces (as of 2026 Public Domain Day, works published in 1930 or earlier are in the U.S. public domain). These often overwrite the source voice with the translator's historical voice. Chapman's Homer sounds like Chapman. Butcher & Lang's *Odyssey* sounds like the King James Bible pretending to be Greek. Cary's Dante sounds like Milton pretending to be Italian.",
+     "lines": [
+      531,
+      531
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Literary-historical thesis the deposit argues: public-domain translations overwrite the source voice with the translator's historical voice (Chapman, Butcher & Lang, Cary); marginal H."
+    },
+    {
+     "shape": "F",
+     "quote": "A two-layer pipeline:\n\n- **Layer 1 (semantic clarity):** machine-translate the source language directly to modern English at semantic-accuracy priority. Strips the intermediary voice entirely. Produces a flat, distributionally-central, competent English base. This is exactly the condition Feist v1.0 §0 describes as \"what remains after the voice died into writing.\" MT is now the composition layer performing its first tail-thinning.",
+     "lines": [
+      537,
+      539
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       541,
+       541
+      ],
+      [
+       547,
+       553
+      ],
+      [
+       559,
+       559
+      ]
+     ],
+     "note": "Two-layer Feist Gutenberg pipeline (L1 MT, L2 voice restoration) with two-tier economics and a proposed Feist Library surface; specified, unbuilt."
+    },
+    {
+     "shape": "B",
+     "quote": "At scale across all of Gutenberg's public-domain classical translations (~640 curated targets), Tier 1 could plausibly run for tens of dollars total. Tier 2 is *selective within selective*: not 20 passages per work across all 640, but ~20 passages per major work applied to a shortlist of ~20 canonical works (Homer, Vergil, Dante, Rumi, Sappho, Sophocles, and the like). At that scope, Tier 2 runs for hundreds of dollars total at current frontier-model pricing.",
+     "lines": [
+      555,
+      555
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded cost/size estimate for the unbuilt pipeline: Tier 1 tens of dollars, Tier 2 hundreds of dollars, storage under 4GB."
+    },
+    {
+     "shape": "F",
+     "quote": "## Immediate next steps\n\n1. **Homer parameter file** — abstract the Book 1 experiment's parameters into a machine-readable specification. Register-collision partners, material-speech vocabulary weighting profile, syntactic strain patterns, seam conditions. One week of careful spec work.\n2. **Tier 1 prototype** — apply generalized T1/T6/T5 to MT Iliad Book 1 on a cheap open-source model with the Homer parameter file. Compare against the Book 1 L2 samples above to measure the gap between Tier 1 and full L2.",
+     "lines": [
+      561,
+      564
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       565,
+       567
+      ],
+      [
+       703,
+       706
+      ]
+     ],
+     "note": "Immediate next-steps list for the Feist pipeline (Homer parameter file, Tier 1 prototype, Book 1 complete, Books 12 and 24, second source). One find per rule 4."
+    },
+    {
+     "shape": "B",
+     "quote": "**Pearl estimate (Beta-Jeffreys bootstrap, 10K iterations).** Using 400-probe recovery rate × 14/19 plausibly-scholarly-of-recovered × 1,155,751 spam population: median 39,737 recoverable-scholarly records in the spam bucket, 95% CI [22,526, 63,987]. *Order-of-magnitude: tens of thousands of plausibly-scholarly records are recoverable in the spam bucket. A full-population probe would collapse the interval.*",
+     "lines": [
+      614,
+      614
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       646,
+       646
+      ]
+     ],
+     "note": "Estimate of the unobserved (recoverable-scholarly records in the spam bucket) that the full-population probe E3 is expected to confirm or collapse; E3 line states \"Expected ~40K plausibly-scholarly pearls\"."
+    },
+    {
+     "shape": "G",
+     "quote": "Zero clean hits on critique-of-platform work at n=324 — hypothesis not falsified, sample too small on the spam bucket where such work would surface.",
+     "lines": [
+      616,
+      616
+     ],
+     "falsifier_quote": "- **E8** — critique-hypothesis retest at higher sample after E3 completes. n=324 is too small on the spam bucket to falsify the critique-suppression hypothesis; n=40,000 recovered will be adequately powered.",
+     "falsifier_lines": [
+      651,
+      651
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Critique-suppression hypothesis held open as a standing claim; the retest E8 at n=40,000 is its stated falsification test."
+    },
+    {
+     "shape": "F",
+     "quote": "## Tracker plan\n\nThe Erasure Tracker is not a single product but a coordination substrate with five distinguishable functional layers:\n\n1. **Preservation layer** — snapshot the deletion CSV whenever it drops. Checksum, MANIFEST.json, per-record schema. Substrate: `data-rhizome/datasets/erasure/zenodo/snapshots/{date}/`. Discipline: append-only; snapshots are historical instruments; no snapshot is ever modified after preservation.",
+     "lines": [
+      624,
+      628
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       630,
+       640
+      ]
+     ],
+     "note": "Five-layer Erasure Tracker plan (preservation, recovery, enrichment, coordination, reform-target); coordination and reform-target layers unbuilt. Quote is the heading through the start of layer 4."
+    },
+    {
+     "shape": "F",
+     "quote": "## Operational steps\n\n- **E1** — preserve the July 2026-07 snapshot when Zenodo releases it. Diff against June. Includes the Lee Sharks 871 severance as an event within the population.\n- **E2** — day-filtered concept-DOI recovery on the 2026-05-20 cluster (60,584 rows). Expected ~31,000 recoveries at the out-of-scope rate. Produces de la Serna's cohort roster. ~5 hours background.",
+     "lines": [
+      642,
+      645
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       646,
+       651
+      ]
+     ],
+     "note": "Operational steps E1-E8 as one planned-probe list (rule 4); E4 proposes an Identity/Output Divergence Rate metric."
+    },
+    {
+     "shape": "B",
+     "quote": "- **E1** — preserve the July 2026-07 snapshot when Zenodo releases it. Diff against June. Includes the Lee Sharks 871 severance as an event within the population.",
+     "lines": [
+      644,
+      644
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the July 2026-07 snapshot",
+     "points_to": "",
+     "also_at": [
+      [
+       620,
+       620
+      ],
+      [
+       704,
+       704
+      ]
+     ],
+     "note": "Forecast that the July 2026 Zenodo snapshot will include the Lee Sharks 871 severance; line 620 asks whether it appears in the same account-cascade form."
+    },
+    {
+     "shape": "B",
+     "quote": "- **E2** — day-filtered concept-DOI recovery on the 2026-05-20 cluster (60,584 rows). Expected ~31,000 recoveries at the out-of-scope rate.",
+     "lines": [
+      645,
+      645
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Expected yield of E2 (~31,000 recoveries from the 2026-05-20 cluster)."
+    },
+    {
+     "shape": "F",
+     "quote": "The full-population probe (E3) will be run at 400-probe pacing to resolve the discrepancy empirically.",
+     "lines": [
+      610,
+      610
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Planned resolution of the 400- vs 800-probe discrepancy; the stated aggressive-timing-induces-false-negatives hypothesis is what E3 would test. A planned probe (F); could be read as B."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Section VI repeats and extends the Zenodo removal findings of #1045 (EA-EROSION-01); the July-snapshot forecast is recorded in both. File has 709 split lines (trailing newline); lines_total 708 per queue."
+  }
+ ]
+}
