@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 552,
-  "unread": 1064
+  "read": 554,
+  "unread": 1062
  },
- "h_covered": 552,
+ "h_covered": 554,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 670,
-  "F": 746,
+  "G": 682,
+  "F": 751,
   "E": 127,
-  "B": 392,
+  "B": 393,
   "A": 196,
   "C": 234,
-  "D": 201,
-  "H": 942
+  "D": 202,
+  "H": 951
  },
- "finds_verified": 3508,
- "finds_total": 3508,
+ "finds_verified": 3517,
+ "finds_total": 3536,
  "deposits": [
   {
    "deposit": 172,
@@ -39541,9 +39541,59 @@
    "tier": 1,
    "words": 16276,
    "batch_id": "B0137",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0137",
+     "run": "R-w23-B0137",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:45:49Z",
+      "finished_at": "2026-10-15T20:47:10Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim slicing and checks)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       500
+      ],
+      [
+       501,
+       720
+      ],
+      [
+       721,
+       918
+      ]
+     ],
+     "lines_total": 918,
+     "genre_observed": "theoretical paper in political economy with Marx textual collation (MEGA²) and formal notation",
+     "finds_by_shape": {
+      "H": 7,
+      "G": 9,
+      "F": 3
+     },
+     "none_found": false,
+     "incidental": "Body is the attached v0.2 file ingested into the deposit (lines 31-918); header front matter appears twice (deposit and attached file). Notation is flattened ASCII (e.g. 'sigma[A][d]elta', 'arrow') — likely conversion damage of math symbols, text otherwise intact.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1634,
@@ -39552,9 +39602,81 @@
    "tier": 1,
    "words": 25586,
    "batch_id": "B0138",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0138",
+     "run": "R-w23-B0138",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Claude Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:45:54Z",
+      "finished_at": "2026-10-15T20:47:06Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       700
+      ],
+      [
+       701,
+       1400
+      ],
+      [
+       1401,
+       2100
+      ],
+      [
+       2101,
+       2800
+      ],
+      [
+       2801,
+       3500
+      ],
+      [
+       3501,
+       4200
+      ],
+      [
+       4201,
+       4900
+      ],
+      [
+       4901,
+       5400
+      ]
+     ],
+     "lines_total": 5400,
+     "genre_observed": "theoretical political-economy paper with formal notation, built on a Google AI Mode entity-substitution specimen, plus legal-recourse survey and appendices",
+     "finds_by_shape": {
+      "H": 2,
+      "D": 1,
+      "F": 2,
+      "G": 3,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Body is the ingested staged v0.12 Markdown; organic-results surface for the specimen is reported, not captured (§24.3, v0.3 source note). Dollar signs in several salary figures render as LaTeX-escaped backslashes (e.g. \\262,000). Last chunk read through line 5401 (blank).",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 8,
+      "lines_returned": 5400,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1635,

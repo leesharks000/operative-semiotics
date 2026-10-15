@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 447,
+ "deposits_with_notes": 449,
  "deposits": [
   {
    "deposit": 1,
@@ -5520,6 +5520,28 @@
      "batch_id": "B0134",
      "field": "incidental",
      "text": "Frontmatter creator field embeds a markdown heading (\"Kuro, Sen\\n\\n### Contributor\\n\\nGlas, Nobel; Sharks, Lee\")."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1631,
+   "notes": [
+    {
+     "batch_id": "B0137",
+     "field": "incidental",
+     "text": "Body is the attached v0.2 file ingested into the deposit (lines 31-918); header front matter appears twice (deposit and attached file). Notation is flattened ASCII (e.g. 'sigma[A][d]elta', 'arrow') — likely conversion damage of math symbols, text otherwise intact."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1634,
+   "notes": [
+    {
+     "batch_id": "B0138",
+     "field": "incidental",
+     "text": "Body is the ingested staged v0.12 Markdown; organic-results surface for the specimen is reported, not captured (§24.3, v0.3 source note). Dollar signs in several salary figures render as LaTeX-escaped backslashes (e.g. \\262,000). Last chunk read through line 5401 (blank)."
     }
    ],
    "rulings": []
