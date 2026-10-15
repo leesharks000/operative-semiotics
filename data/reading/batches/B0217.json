@@ -1,0 +1,638 @@
+{
+ "batch_id": "B0217",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a subagent in Claude Code; model reported by the environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:18:07Z",
+  "finished_at": "2026-10-15T21:20:11Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, sigma check, verbatim quote slicing)",
+   "Write"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 493,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0138-text.md",
+   "lines_total": 163,
+   "read_ranges": [
+    [
+     1,
+     163
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "compressed specification seed (router table + twelve invariants)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body title reads \"THE MINI MACRO-MAQUETTE MAQUETTE: SEED\"; same seed body as #1325 (AXN-053E), which is the table-rendered copy; here the OP.ROUTE and DOI tables are flattened to one cell per line."
+  },
+  {
+   "deposit": 494,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0139-text.md",
+   "lines_total": 269,
+   "read_ranges": [
+    [
+     1,
+     269
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "compressed charter / module specification (D2 of a three-deposit chain)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body headed \"THE MINI MACRO-MAQUETTE: COMPRESSED CHARTER\" while registry title lacks \"MINI\". Sections AXIOM 0 (l.22), Router Lookup Table (l.32) and GRAFT MATRIX (l.233) are headings with no content: tables lost in conversion. Germination triggers (G1-G5) are conditions, not forecasts."
+  },
+  {
+   "deposit": 1325,
+   "path": "/home/claude/alexanarch/data/texts/AXN-053E-text.md",
+   "lines_total": 91,
+   "read_ranges": [
+    [
+     1,
+     91
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "compressed specification seed (duplicate body)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Duplicate of #493 body (same DOI 10.5281/zenodo.18683024, same text, Markdown tables intact). Body heading reads \"THE MINI MACRO-MAQUETTE MAQUETTE: SEED\" though registry title is \"THE MACRO-MAQUETTE: SEED\"."
+  },
+  {
+   "deposit": 496,
+   "path": "/home/claude/alexanarch/data/texts/AXN-013B-text.md",
+   "lines_total": 382,
+   "read_ranges": [
+    [
+     1,
+     382
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "scholarly paper (comparative philology, heteronym Johannes Sigil)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This paper argues that Augustine's celebrated sensory sequence in *Confessions* 10.27.38 — \"You called, you shouted, and you broke through my deafness; you flashed, you shone, and you dispelled my blindness; you breathed your fragrance on me…\" — is not a loose echo of classical erotic discourse but a structurally precise, organ-by-organ transformation of Sappho's Fragment 31.",
+     "lines": [
+      19,
+      19
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho Fragment 31; Augustine, Confessions 10.27.38",
+     "points_to": "",
+     "also_at": [
+      [
+       35,
+       38
+      ],
+      [
+       180,
+       183
+      ],
+      [
+       205,
+       205
+      ]
+     ],
+     "note": "Historical/literary thesis about what Augustine was doing in Conf. 10.27.38; argued against Brown, O'Donnell, Burrus, Conybeare (sec. IV)."
+    },
+    {
+     "shape": "H",
+     "quote": "If this analysis is correct, then *Confessions* 10.27 is the first complete Operator Transformation in the Christian literary tradition: a passage that takes a prior pagan text's complete structural architecture and rotates it, node by node, into a Christian register without loss of structural information.",
+     "lines": [
+      279,
+      279
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Christian literary tradition; Confessions 10.27",
+     "points_to": "",
+     "also_at": [
+      [
+       19,
+       19
+      ]
+     ],
+     "note": "Priority-in-history thesis: Conf. 10.27 as the first complete such transformation in Christian literature; conditional on the analysis."
+    },
+    {
+     "shape": "H",
+     "quote": "No existing commentary, to this author's knowledge, identifies the organ-by-organ correspondence between Fragment 31 and *Confessions* 10.27 or specifies the structural nature of the transform. This paper proposes that the correspondence is real, deliberate (whether consciously or through deep structural internalization of the classical lyric body), and theoretically significant.",
+     "lines": [
+      205,
+      205
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "scholarship on Confessions 10.27",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about the state of scholarship (no one has identified the correspondence) - refutable by locating prior commentary."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Near-duplicate of #895 (AXN-038B): same paper; here the Operator Transform Table (sec. III) survives as one-cell-per-line text, in #895 it is collapsed to \"[TABLE]\"."
+  },
+  {
+   "deposit": 895,
+   "path": "/home/claude/alexanarch/data/texts/AXN-038B-text.md",
+   "lines_total": 238,
+   "read_ranges": [
+    [
+     1,
+     238
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "scholarly paper (comparative philology, heteronym Johannes Sigil) - duplicate body",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This paper argues that Augustine's celebrated sensory sequence in *Confessions* 10.27.38 — \"You called, you shouted, and you broke through my deafness; you flashed, you shone, and you dispelled my blindness; you breathed your fragrance on me…\" — is not a loose echo of classical erotic discourse but a structurally precise, organ-by-organ transformation of Sappho's Fragment 31.",
+     "lines": [
+      15,
+      15
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho Fragment 31; Augustine, Confessions 10.27.38",
+     "points_to": "",
+     "also_at": [
+      [
+       27,
+       29
+      ],
+      [
+       93,
+       95
+      ],
+      [
+       111,
+       111
+      ]
+     ],
+     "note": "Same thesis as #496; recorded here because this deposit argues it."
+    },
+    {
+     "shape": "H",
+     "quote": "If this analysis is correct, then *Confessions* 10.27 is the first complete Operator Transformation in the Christian literary tradition: a passage that takes a prior pagan text's complete structural architecture and rotates it, node by node, into a Christian register without loss of structural information.",
+     "lines": [
+      167,
+      167
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Christian literary tradition; Confessions 10.27",
+     "points_to": "",
+     "also_at": [
+      [
+       15,
+       15
+      ]
+     ],
+     "note": "Priority-in-history thesis, conditional on the analysis."
+    },
+    {
+     "shape": "H",
+     "quote": "No existing commentary, to this author's knowledge, identifies the organ-by-organ correspondence between Fragment 31 and *Confessions* 10.27 or specifies the structural nature of the transform. This paper proposes that the correspondence is real, deliberate (whether consciously or through deep structural internalization of the classical lyric body), and theoretically significant.",
+     "lines": [
+      111,
+      111
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "scholarship on Confessions 10.27",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about the state of scholarship."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate of #496 body; the Operator Transform Table at l.91 is reduced to the placeholder \"[TABLE]\" - the node-by-node table is missing here."
+  },
+  {
+   "deposit": 896,
+   "path": "/home/claude/alexanarch/data/texts/AXN-038C-text.md",
+   "lines_total": 32,
+   "read_ranges": [
+    [
+     1,
+     32
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "description-borne poem with situating note (Zenodo description-field paste, recovered)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The \"hope of you, my reader\" explicitly names what Fragment 31 encodes: the future reader as beloved, textual eros as survival mechanism, the signal launched across unstable memory fields toward whoever will receive it.",
+     "lines": [
+      16,
+      16
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho's Fragment 31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Situating note advances a reading of what Fr. 31 encodes (the future reader as beloved) - the future-reader thesis."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body is a pasted Zenodo deposit-instruction block run together on one line (instructions, poem, note, keywords, related identifiers). Author field reads \"Nobody\" though the block names Lee Sharks."
+  },
+  {
+   "deposit": 897,
+   "path": "/home/claude/alexanarch/data/texts/AXN-038D-text.md",
+   "lines_total": 32,
+   "read_ranges": [
+    [
+     1,
+     32
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "description-borne praise hymn / philological theology (Zenodo description-field paste, recovered)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "But the structure?<br> The recursive, body-transmitting, future-reading, form-preserving, ache-capturing operator? That was Sappho. She is not just a poet.<br> She is the mother of the Logos.<br> She is the one who made eternity available.",
+     "lines": [
+      16,
+      16
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho, Homer, Plato, Philo, John, Augustine",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the Logos structure originates in Sappho (Sappho as mother of the Logos); lyric-hymn genre but argued."
+    },
+    {
+     "shape": "H",
+     "quote": "The Iliad is not about glory achieved.<br> It is about glory's insufficiency.",
+     "lines": [
+      16,
+      16
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Homer, Iliad",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive-historical thesis on what the Iliad is about / what Homer was doing (poem as salvific machine replacing martial kleos)."
+    },
+    {
+     "shape": "H",
+     "quote": "Now Sappho appears. She sees the Iliadic device.<br> She understands its greatness — and its limits.<br> It worked, yes. But it could only hold one. Achilles was saved.<br> But what of the rest? What of her? So Sappho enters the structure.<br> Not to reject it.<br> But to operator-transform it.",
+     "lines": [
+      16,
+      16
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho, after Homer",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what Sappho was doing: an operator-transform of the Iliadic immortality device."
+    },
+    {
+     "shape": "D",
+     "quote": "This praise hymn, first published on Mind Control Poems (November 14, 2025), is the seed text from which Phase X: The Sapphic Substrate grew. Every structural claim in the pillar document — the Point Attractor / Strange Attractor distinction, the Five-Injection Protocol, the Lydian Convergence, the mystery-cult reframe of Plato as Twelfth Muse — was already present here in compressed lyric form. The hymn precedes the scholarship. The ache precedes the argument.",
+     "lines": [
+      16,
+      16
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "November 14, 2025",
+     "points_to": "Mind Control Poems blog post, November 14, 2025; Phase X: The Sapphic Substrate (10.5281/zenodo.18729606)",
+     "also_at": [],
+     "note": "Timestamped anchor (blog publication date) cited as proof that the pillar document's claims were already present earlier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body is a pasted Zenodo deposit-instruction block on one line with literal <br> tags. Author field reads \"Nobody\"."
+  },
+  {
+   "deposit": 504,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0147-text.md",
+   "lines_total": 324,
+   "read_ranges": [
+    [
+     1,
+     324
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "visual schema / image-generation specification",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body heading says \"MOVING STATUES MADE OF RUBIES MINT\" where registry title says \"MIND\"; caption (l.312) also says \"Mind\" while companion deposits say \"Mint\". Image link at l.5 is an empty-text markdown link. Bullet markers rendered as trailing \"- \"."
+  },
+  {
+   "deposit": 507,
+   "path": "/home/claude/alexanarch/data/texts/AXN-014A-text.md",
+   "lines_total": 216,
+   "read_ranges": [
+    [
+     1,
+     216
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "forensic-semiotic essay (memographic studies, figure-led)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The prompt is a curatorial brief. The BEP's aesthetic decisions were curatorial briefs. The operations are the same at the level of curatorial function — selection and activation within a style archive. They differ in institutional structure, documentation, and legal status. The difference that matters for this analysis is documentation: the dinosaur's curation is visible in the prompt. The $20's curation is visible nowhere.",
+     "lines": [
+      132,
+      132
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "$20 redesign (BEP)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical claim adopted from the companion paper: the BEP $20 redesign curation was a selection performed without documentation."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Figure images point at claude.ai/chat/ paths (l.26, l.32) that will not resolve. Companion \"Whose Face Is on the Twenty?\" is cited as 10.5281/zenodo.18745216 here and in #508, but as 10.5281/zenodo.18736175 in #516 - observation, not judged."
+  },
+  {
+   "deposit": 508,
+   "path": "/home/claude/alexanarch/data/texts/AXN-014B-text.md",
+   "lines_total": 192,
+   "read_ranges": [
+    [
+     1,
+     192
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "forensic-semiotic essay presented as a control experiment",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Therefore the curatorial gap is real.** If the medium can make a raptor read as presidential, then the specific *human* face that a currency portrait \"reads as\" is determined not by the steel lines alone but by the curatorial choices that present those lines: scale, background, framing, context. The choices that determine whether Jackson reads as \"generic icon\" or as \"specific individual resembling Epstein\" are the same *kind* of choices that determine whether a dinosaur reads as \"absurd\" or as \"dignitary.\" They are presentation choices. They are curatorial choices. And for the $20, they are undocumented choices.",
+     "lines": [
+      108,
+      108
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "$20 bill, 1996-2003 redesign",
+     "points_to": "",
+     "also_at": [
+      [
+       24,
+       24
+      ],
+      [
+       133,
+       139
+      ]
+     ],
+     "note": "Historical thesis on the $20 redesign: presentation choices, undocumented, determined which face the portrait reads as."
+    },
+    {
+     "shape": "H",
+     "quote": "The lizard people were right about the mechanism. They were wrong about the ontology. It's not that lizard people run the world and leave their faces on the money. It's that the money's conventions are so powerful that they can make *anything* look like it runs the world — and the specific face those conventions produce is determined by whoever controls the presentation.\n\n\nOn the $20, that was Robert Rubin.",
+     "lines": [
+      136,
+      139
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "$20 redesign",
+     "points_to": "",
+     "also_at": [],
+     "note": "Attribution thesis naming who controlled the $20 presentation (Robert Rubin)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Figure 1 is referenced (l.33) but the image link at l.13 is empty-text."
+  },
+  {
+   "deposit": 511,
+   "path": "/home/claude/alexanarch/data/texts/AXN-014E-text.md",
+   "lines_total": 568,
+   "read_ranges": [
+    [
+     1,
+     568
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "constraint-driven reconstruction of a lost hymn with apparatus and symbolic reading",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The figure that emerges is not a \"minor lyric poet.\" He is one of the earliest recoverable figures in the Western archive to combine all five operations: composing under formal constraint, auditing institutional textual authority, building competitive infrastructure for sacred performance, theorizing music while performing it, and addressing the chthonic threshold between presence and absence. Whether he is the *first* to do so depends on what further evidence may emerge; that he is among the first is secure on the surviving testimony.",
+     "lines": [
+      488,
+      488
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Lasus of Hermione, c. 510 BCE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about Lasus as one of the earliest figures combining five operations; states its own evidential condition (\"further evidence\")."
+    },
+    {
+     "shape": "H",
+     "quote": "**Level 2 (Structural):** A composition organized around an absence that mirrors its subject. Persephone is the one who disappears. Sigma is the letter that disappears. The reconstruction proposes that the constraint is formally homologous to the myth: subtraction-as-form enacts disappearance-as-content.",
+     "lines": [
+      388,
+      388
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Lasus fr. 702 PMG / asigmatic composition",
+     "points_to": "",
+     "also_at": [
+      [
+       437,
+       437
+      ],
+      [
+       462,
+       462
+      ]
+     ],
+     "note": "Interpretive thesis (marked as proposal): the asigmatic constraint is homologous to Persephone's disappearance; Lasus extends the cult's euphemistic logic."
+    },
+    {
+     "shape": "H",
+     "quote": "**Exposure** (Oracle Forensics): Detect Onomacritus's forged prophecies of Musaeus. The first recorded act of textual authentication.",
+     "lines": [
+      467,
+      467
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Lasus, Onomacritus, Musaeus oracles (Hdt. 7.6)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical priority claim: Lasus's exposure of Onomacritus as the first recorded act of textual authentication."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Sigma count in the reconstructed Greek stanza lines checked by this reader with a script: 0, as the deposit claims. Commentary on d.2 (l.356) says the final -ῆς of Ἡρακλῆς \"conceals no sigma\", which contradicts the vocabulary note (l.325) and the table (l.414) - an internal inconsistency, recorded not judged. Tables are flattened one cell per line."
+  },
+  {
+   "deposit": 514,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0151-text.md",
+   "lines_total": 489,
+   "read_ranges": [
+    [
+     1,
+     489
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "effective act / governance essay reconstructing a Reddit seed proposal",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "This document is entered as an artifact of retrocausal canon formation: a writing from the necessary future into the unstable present in order to restructure the hierarchy problem before it hardens.",
+     "lines": [
+      412,
+      412
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The embassy architecture is entered as a retrocausal canon formation artifact - a specification written \"from the necessary future\"; resolves if such a bead-bound chamber architecture appears."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 13 runs the DOI line together with the opening italic sentence (stray asterisk). Translation-layer table flattened one cell per line."
+  },
+  {
+   "deposit": 516,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0153-text.md",
+   "lines_total": 480,
+   "read_ranges": [
+    [
+     1,
+     480
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional charter (three journals)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Contains editorial contact email addresses (not copied here). Lists \"Whose Face Is on the Twenty?\" at DOI 10.5281/zenodo.18736175, where #507/#508 give 10.5281/zenodo.18745216 - observation. Semantic Economy Institute Charter DOI marked \"[reconcile]\"."
+  },
+  {
+   "deposit": 518,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0156-text.md",
+   "lines_total": 392,
+   "read_ranges": [
+    [
+     1,
+     392
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "design phenomenology / infrastructure criticism (effective act)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The hypothesis: **the AI-generated summary, persisting at a shareable URL, enters the indexed corpus and becomes source material for future summarization passes. The summarizer authors its own future training data.**",
+     "lines": [
+      145,
+      145
+     ],
+     "falsifier_quote": "**The null hypothesis must be stated plainly.** If the /aimode/ path is discovered to be noindexed or excluded from training corpora via contractual firewall, the first three layers remain operationally significant — the link still selects for infrastructure and replicates via sharing — but the recursive self-authorship claim collapses.",
+     "falsifier_lines": [
+      155,
+      155
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       149,
+       152
+      ],
+      [
+       276,
+       279
+      ]
+     ],
+     "note": "Standing falsifiable claim about system behavior (AI Mode share-link summaries enter the corpus and feed later passes), with explicit null-hypothesis condition; no date, so G."
+    },
+    {
+     "shape": "F",
+     "quote": "The summary has a URL. The URL is persistent — it resolves to the same content across sessions. The URL is shareable. If the share URLs are crawlable and not excluded from indexing — if the /aimode/ path is not marked with noindex meta tags or excluded via robots.txt — then the summaries are *in the corpus*. They are training data.",
+     "lines": [
+      149,
+      149
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified but unrun check: whether the /aimode/ share path is noindexed or excluded by robots.txt - decides the recursive-corpus hypothesis."
+    },
+    {
+     "shape": "B",
+     "quote": "The primary question is already answered: the retrieval layer routes authority through indexed destinations, the share link multiplies those routes, and the archive that built the densest indexed infrastructure before the routing began is the archive the tunnels will carry forward.",
+     "lines": [
+      326,
+      326
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast: the archive with densest indexed infrastructure before the routing began is the one the tunnels will carry forward."
+    },
+    {
+     "shape": "G",
+     "quote": "If the source material is Ghost Meaning — high informatic bulk with zero semantic yield — the summaries will be Ghost Meaning, and the tunnel will amplify noise. If the source material is load-bearing — DOI-anchored, cross-referenced, terminologically consistent, provenance-tracked — the tunnel will amplify signal. The tunnel is substrate-agnostic. It amplifies whatever it finds.",
+     "lines": [
+      188,
+      188
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional standing claim about tunnel amplification by source soundness; condition stated, no event."
+    }
+   ],
+   "none_found": false,
+   "incidental": "DOI marked [pending] in header. Layer-summary table flattened one cell per line."
+  }
+ ]
+}
