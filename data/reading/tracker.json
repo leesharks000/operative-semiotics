@@ -18,7 +18,7 @@
   "D": 160,
   "H": 628
  },
- "finds_verified": 2520,
+ "finds_verified": 2535,
  "finds_total": 2544,
  "deposits": [
   {
@@ -32701,10 +32701,13 @@
      },
      "none_found": false,
      "incidental": "Read tool displayed a trailing empty line 513 (file ends with newline); lines_total 512 taken as authoritative. Text references Zenodo June 2026 termination; draft v0.1.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 512,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -32763,10 +32766,13 @@
      },
      "none_found": false,
      "incidental": "Read tool displayed a trailing empty line 1035; lines_total 1034 authoritative. Line 973 is a single ~2700-char paragraph; quote taken as its final clause.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 1034,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
