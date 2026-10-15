@@ -17,7 +17,7 @@
   "D": 320,
   "H": 1430
  },
- "finds_verified": 5093,
+ "finds_verified": 5128,
  "finds_total": 5220,
  "deposits": [
   {
@@ -64920,10 +64920,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 225,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -64970,10 +64973,13 @@
      },
      "none_found": false,
      "incidental": "Header and body are v1.1 although the queue lists this as the v1.0-era deposit; body is substantively identical to #1228 (same v1.1 text, different markdown formatting). Cites 845 deposits, 134 captures.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 147,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -65017,10 +65023,13 @@
      },
      "none_found": false,
      "incidental": "Header reads v1.4 while queue title says v1.3 and the closing (line 249) calls itself v1.0. Internal counts differ as observations, not errors: line 169 says \"five-level\" propagation vs seven levels elsewhere; Level 7 names ChatGPT, Muse Spark, Gemini (line 285) while the preamble names ChatGPT, Meta AI, Gemini (line 15); line 241 says 131 captures where sibling deposits #834/#845 say 134.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 291,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -65062,10 +65071,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Consent record table is blank (template, not activated).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 65,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -65109,10 +65121,13 @@
      },
      "none_found": false,
      "incidental": "Wrong-body risk: title says \"Term Index v0.1 ... Systematic Extraction of Coined Terms\" but the recovered body is the TERM INDEX WORK PLAN (EA-REGISTRY-TERMINDEX-PLAN v1.0), not an index dataset. Restoration falsification boilerplate (line 40) not recorded per protocol. Session log says API paginates at size=25 / 34 pages while Phase 1.1 says size=200 / 5 pages.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 275,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -65159,10 +65174,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #834 with degraded markdown (italic markers broken, e.g. \"Threshold:*\"; list item fused with following paragraph at line 126 and 178). Finds mirror #834.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 178,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -65209,10 +65227,13 @@
      },
      "none_found": false,
      "incidental": "Body substantively identical to #1229 (same v0.2 text, different formatting).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 257,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -65259,10 +65280,13 @@
      },
      "none_found": false,
      "incidental": "Status says pre-deposit draft v0.3; provenance kernel gives DOI 10.5281/zenodo.20735736. Three-mode table rendered as loose lines (76-97).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 257,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -65306,10 +65330,13 @@
      },
      "none_found": false,
      "incidental": "Manifest current_count 131 captures; sibling deposits say 134.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 271,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -65356,10 +65383,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #845 with reformatting; several list items fused with the next paragraph (e.g. lines 43, 57, 91, 230, 372, 431). Finds mirror #845.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 431,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
