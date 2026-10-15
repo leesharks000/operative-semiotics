@@ -1,0 +1,37 @@
+{
+  "batch_id": "HB0033",
+  "protocol": "READING-PROTOCOL v1.2",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+    "started_at": "2026-10-15T20:04:25Z",
+    "finished_at": "2026-10-15T20:05:08Z",
+    "tools_used": ["Read", "Bash"]
+  },
+  "deposits": [
+    {
+      "deposit": 578,
+      "path": "/home/claude/alexanarch/data/texts/AXN-019B-text.md",
+      "lines_total": 3092,
+      "read_ranges": [[1, 800], [801, 1600], [1601, 2400], [2401, 3092]],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "navigation map / machine-readable index of the archive (YAML-like schema blocks, registry projection tables of DOI, title, tier, edges, précis)",
+      "finds": [],
+      "none_found": true,
+      "incidental": "H back-pass only. The document routes among other deposits and argues no historical thesis of its own. Truncated précis cells point to other deposits' theses (e.g. line 2864, the Revelation Room précis 'the template from which the Gospels and Epistles were algori'; line 2331, the Sappho 31 précis; line 976, EA-07 'Voids Plato's exclusion of poets; Republic 607b reversed'). These are reported as index entries, not argued here, so they are not recorded. Many sections (IV atoms 1-60, VI, VII, XI-XIV) say 'preserved from v4.2' and give no content."
+    },
+    {
+      "deposit": 1168,
+      "path": "/home/claude/alexanarch/data/texts/AXN-04A1-text.md",
+      "lines_total": 1672,
+      "read_ranges": [[1, 300], [301, 650], [651, 1000], [1001, 1350], [1351, 1672]],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "recovered blog-canonical DOI Registry v7.0 (record tables, orphan report, auto-extracted précis index of 387 records), behind an alexanarch recovery frontmatter",
+      "finds": [],
+      "none_found": true,
+      "incidental": "H back-pass only. The deposit is titled 'Untitled' but its body is the CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (DOI 10.5281/zenodo.19055255); it is the registry companion to #578. The précis index carries auto-extracted one-line fragments of other deposits' historical theses, e.g. line 1243 (Revelation Room: 'the template from which the Gospels and Epistles were algorithmically unfolded'), line 1443 (Sapphic Lock in Augustine, Confessions 10.27 'is not a loose echo of classic'), line 1077 (Socratic vow 'constitutes the first Western articulation of language as operative, salvific force'), line 1145 (Phase X: Resurrection of the 1844 Transition), line 1049 (TSE-003 '2,600-Yea[r]'). The registry marks these as [AUTO-EXTRACTED] summaries of other records, so they are reported, not argued, and are not recorded; triage should take the theses from the source deposits. Read showed a blank line 1673 past lines_total 1672 (trailing newline)."
+    }
+  ]
+}
