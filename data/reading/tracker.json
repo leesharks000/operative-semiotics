@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 747,
-  "unread": 869
+  "read": 753,
+  "unread": 863
  },
- "h_covered": 747,
+ "h_covered": 753,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 810,
-  "F": 862,
+  "G": 812,
+  "F": 864,
   "E": 150,
-  "B": 468,
+  "B": 474,
   "A": 223,
   "C": 262,
   "D": 237,
-  "H": 1111
+  "H": 1125
  },
- "finds_verified": 4111,
- "finds_total": 4123,
+ "finds_verified": 4123,
+ "finds_total": 4147,
  "deposits": [
   {
    "deposit": 172,
@@ -50218,10 +50218,13 @@
      },
      "none_found": false,
      "incidental": "Same text (same DOI 10.5281/zenodo.18682979, Deposit 1 Full Charter) as #1324, which is a reflowed copy. The Compressed Charter and Seed deposits it names (DOIs 18683016, 18683024) are not in this batch.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 888,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -50266,10 +50269,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #495 (same DOI 10.5281/zenodo.18682979, same \"Deposit 1 of 3\" header); headings and bold markup stripped, line breaks reflowed; title line appends \"— Crimson Hexagon Archive\". Finds mirror #495.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 530,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -50323,10 +50329,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 866,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -50338,9 +50347,50 @@
    "tier": 2,
    "words": 10430,
    "batch_id": "B0161",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0161",
+     "run": "R-w26-B0161",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:56:47Z",
+      "finished_at": "2026-10-15T20:58:34Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       350
+      ],
+      [
+       351,
+       698
+      ]
+     ],
+     "lines_total": 698,
+     "genre_observed": "juridical-theological manifesto (retrocausal abolition of contract), recovered blog bytes",
+     "finds_by_shape": {
+      "B": 3,
+      "H": 3
+     },
+     "none_found": false,
+     "incidental": "Restoration frame (lines 1-46) carries byte-fidelity falsification boilerplate, not recorded. Body is the canonical Murder of the Vow (Document 157), cited by #20 and #500.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 19,
@@ -50349,9 +50399,46 @@
    "tier": 2,
    "words": 3914,
    "batch_id": "B0161",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0161",
+     "run": "R-w26-B0161",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:56:47Z",
+      "finished_at": "2026-10-15T20:58:34Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       374
+      ]
+     ],
+     "lines_total": 374,
+     "genre_observed": "media-phenomenology essay / heteronymic specification (Talos Morrow & Sen Kuro) on the Enter key",
+     "finds_by_shape": {
+      "G": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Line 10 states first publication November 27, 2025 (Mind Control Poems); DOI listed as pending. #500 cites this work as DOI 10.5281/zenodo.18727624.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 20,
@@ -50360,9 +50447,47 @@
    "tier": 2,
    "words": 3411,
    "batch_id": "B0161",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0161",
+     "run": "R-w26-B0161",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:56:47Z",
+      "finished_at": "2026-10-15T20:58:34Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       453
+      ]
+     ],
+     "lines_total": 453,
+     "genre_observed": "popular agitational manifesto (Rev. Ayanna Vox), compression of Autonomous Semantic Warfare",
+     "finds_by_shape": {
+      "G": 1,
+      "B": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Line 13: first published December 2025 (Mind Control Poems), revised February 2026. Line 118 claims the contract-form \"has been abolished, in principle\" by the work grounding the manifesto (points to Murder of the Vow, #1150).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 500,
@@ -50371,9 +50496,50 @@
    "tier": 2,
    "words": 7653,
    "batch_id": "B0161",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0161",
+     "run": "R-w26-B0161",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:56:47Z",
+      "finished_at": "2026-10-15T20:58:34Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       300
+      ],
+      [
+       301,
+       592
+      ]
+     ],
+     "lines_total": 592,
+     "genre_observed": "comparative-poetics canon declaration (House of Leaves as ancestor of the Crimson Hexagon)",
+     "finds_by_shape": {
+      "H": 4,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Line 33 and 561 refer to an undated Michigan PhD admissions paper on House of Leaves as the origin of the Hexagon (biographical provenance, not recorded as D). Cites #19 (Commitment Key) as 10.5281/zenodo.18727624 and Murder of the Vow as Document 157.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 502,
@@ -50382,9 +50548,46 @@
    "tier": 2,
    "words": 3152,
    "batch_id": "B0161",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0161",
+     "run": "R-w26-B0161",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:56:47Z",
+      "finished_at": "2026-10-15T20:58:34Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       213
+      ]
+     ],
+     "lines_total": 213,
+     "genre_observed": "provenance investigation (Rex Fraction) of the $20 portrait redesign, with evidence tiers",
+     "finds_by_shape": {
+      "H": 3,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Same body as #1151 (which is the blog-recovered copy with ASCII dashes and a restoration frame); figure image links point to claude.ai/chat placeholders, likely broken.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1151,
@@ -50393,9 +50596,46 @@
    "tier": 2,
    "words": 3582,
    "batch_id": "B0161",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0161",
+     "run": "R-w26-B0161",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:56:47Z",
+      "finished_at": "2026-10-15T20:58:34Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       260
+      ]
+     ],
+     "lines_total": 260,
+     "genre_observed": "recovered blog copy of the $20 portrait provenance investigation (Rex Fraction)",
+     "finds_by_shape": {
+      "H": 3,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Duplicate body of #502 (lines 48-260 = #502 lines 1-213, dashes rendered as --); restoration frame lines 1-46 carries byte-fidelity boilerplate, not recorded. Figure links to claude.ai/chat placeholders.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 505,
