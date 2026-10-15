@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 532,
-  "unread": 1084
+  "read": 535,
+  "unread": 1081
  },
- "h_covered": 532,
+ "h_covered": 535,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 629,
-  "F": 658,
+  "G": 640,
+  "F": 686,
   "E": 126,
   "B": 377,
-  "A": 171,
-  "C": 194,
-  "D": 198,
-  "H": 769
+  "A": 177,
+  "C": 206,
+  "D": 199,
+  "H": 843
  },
- "finds_verified": 3122,
- "finds_total": 3122,
+ "finds_verified": 3176,
+ "finds_total": 3254,
  "deposits": [
   {
    "deposit": 172,
@@ -38048,9 +38048,68 @@
    "tier": 1,
    "words": 22840,
    "batch_id": "B0124",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0124",
+     "run": "R-w21-B0124",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:35:00Z",
+      "finished_at": "2026-10-15T20:38:54Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       900
+      ],
+      [
+       901,
+       1350
+      ],
+      [
+       1351,
+       1800
+      ],
+      [
+       1801,
+       2215
+      ]
+     ],
+     "lines_total": 2215,
+     "genre_observed": "working measurement register of a stylometric/philological authorship investigation (Plato-Aristotle), with refutations attached",
+     "finds_by_shape": {
+      "H": 22,
+      "G": 2,
+      "F": 8,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Section 29 is absent (numbering jumps §28 to §30). Lines 2199-2206 are an orphaned duplicate of M17 (lines 420-427) missing its '**M17 —' prefix, after the M52 entry. §36.8 sits after §36.9-36.11. M40b/M40c are cited (1115, 1396) but not present in this register. Read tool returned through line 2215; the queue's lines_total 2215 is reached.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 2215,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1571,
@@ -38059,9 +38118,61 @@
    "tier": 1,
    "words": 10265,
    "batch_id": "B0124",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0124",
+     "run": "R-w21-B0124",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:35:00Z",
+      "finished_at": "2026-10-15T20:38:54Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       800
+      ],
+      [
+       801,
+       1175
+      ]
+     ],
+     "lines_total": 1175,
+     "genre_observed": "append-only ledger of frozen pre-registrations (eleven entries) with appended dispositions",
+     "finds_by_shape": {
+      "G": 3,
+      "A": 6,
+      "C": 6,
+      "H": 3,
+      "F": 3
+     },
+     "none_found": false,
+     "incidental": "Eleven entries as the frontmatter states. The last four entries carry 'registered: 2026-08-29' instead of a sha256.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1175,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1569,
@@ -38070,9 +38181,85 @@
    "tier": 1,
    "words": 46238,
    "batch_id": "B0125",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0125",
+     "run": "R-w21-B0125",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; the environment gives the model as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:35:13Z",
+      "finished_at": "2026-10-15T20:39:06Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       900
+      ],
+      [
+       901,
+       1350
+      ],
+      [
+       1351,
+       1800
+      ],
+      [
+       1801,
+       2250
+      ],
+      [
+       2251,
+       2700
+      ],
+      [
+       2701,
+       3150
+      ],
+      [
+       3151,
+       3600
+      ],
+      [
+       3601,
+       4100
+      ],
+      [
+       4101,
+       4569
+      ]
+     ],
+     "lines_total": 4569,
+     "genre_observed": "append-forward research notebook (54 rounds) of a Plato–Aristotle authorship investigation: measurements, registered tests, retractions and readings",
+     "finds_by_shape": {
+      "H": 49,
+      "F": 17,
+      "C": 6,
+      "G": 6
+     },
+     "none_found": false,
+     "incidental": "Single attached notebook (EA-NOTEBOOK-01) consolidating four earlier files. Most theses are argued and then corrected, withdrawn or voided later in the same file (e.g. Round 2 refutes the snub position; Rounds 28-29 marked VOID; §129 withdrawn in Round 34; §66 withdrawn, then its ground withdrawn; §179's inference withdrawn in §181). The notes record these, and triage should read each thesis against its later disposition. The notebook says its own section numbering has gaps (§§170-175 absent; §233 filled by an audit; the 165/166 numbers are reused across Rounds 41 and 42) and treats them as numbering jumps, not lost text. The registrations cited (EA-YIELD-02, EA-COMPLETE-01, EA-UNRES-01, EA-SPEC-01, EA-FULFIL-01) are internal hashes, not third-party timestamps, so no D anchors were recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1575,
