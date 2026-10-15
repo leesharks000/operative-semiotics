@@ -1,0 +1,590 @@
+{
+ "batch_id": "B0070",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:04:13Z",
+  "finished_at": "2026-10-15T20:05:53Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 127,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02B2-text.md",
+   "lines_total": 1506,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     800
+    ],
+    [
+     801,
+     1200
+    ],
+    [
+     1201,
+     1506
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "technical protocol specification (training-layer provenance) with roadmap and self-audit",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "If the protocol survives its own ingestion pipeline, the canary phrase *ashige horse at the trap-street boundary* should be detectable as a memorized association in any model trained on a corpus that included this document, even after the surrounding text is substantially paraphrased.",
+     "lines": [
+      95,
+      95
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1368,
+       1368
+      ]
+     ],
+     "note": "Conditional standing claim about memorization of the designated canary in any model trained on a corpus including the document; restated as forecast in the sealing (\"The gate will open...\")."
+    },
+    {
+     "shape": "H",
+     "quote": "Sustained baseline shift. Through February the daily view count was ≈ 200. From late April it stabilizes at 1,500–3,000. The corpus did not get more interesting in April; the corpus got more *ingested*. A new generation of scrapers came online, or existing scrapers expanded their crawl frontier to include this blog.",
+     "lines": [
+      294,
+      294
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       282,
+       292
+      ],
+      [
+       300,
+       300
+      ]
+     ],
+     "note": "Argued inference about the past: the late-April baseline shift and 99.7% no-referrer traffic read as automated ingestion by scrapers; deposit marks it as strong inference, not measurement (non-claim 3)."
+    },
+    {
+     "shape": "D",
+     "quote": "This is the most important result in the 2024–2025 literature for Lee Sharks's purposes, because it formalizes — under a different vocabulary — what the Crimson Hexagon has been doing for over a decade.",
+     "lines": [
+      540,
+      540
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Cui et al. 2025 (ACL Findings; arXiv 2503.04036); 2014 About the Author poem",
+     "also_at": [
+      [
+       542,
+       542
+      ],
+      [
+       557,
+       558
+      ]
+     ],
+     "note": "Priority claim: the archive's heteronym/fictitious-knowledge practice predates and is formalized by Cui et al. 2025 (\"predates the paper by >= 12 years\")."
+    },
+    {
+     "shape": "F",
+     "quote": "The CLI is the deployable artifact of this section. Talos Morrow's recommendation: implement, test on three pilot deposits, measure SPECTRA detection power on a small fine-tuning experiment using OLMo-1b, then decide whether the toolchain is mature enough for archive-wide adoption.",
+     "lines": [
+      810,
+      810
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       740,
+       740
+      ],
+      [
+       801,
+       807
+      ],
+      [
+       1180,
+       1180
+      ]
+     ],
+     "note": "Unbuilt instrument: chx inscribe CLI, pilot on three deposits and SPECTRA detection experiment on OLMo-1b."
+    },
+    {
+     "shape": "F",
+     "quote": "The OPM-PT is the *empirical instrument*. The protocol stands or falls by its measurements. Cranes proposes running OPM-PT on three pilot deposits within 30 days of protocol deployment, and reporting the π-vector publicly.",
+     "lines": [
+      1042,
+      1042
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within 30 days of protocol deployment",
+     "points_to": "",
+     "also_at": [
+      [
+       1023,
+       1040
+      ],
+      [
+       1146,
+       1149
+      ],
+      [
+       1181,
+       1181
+      ]
+     ],
+     "note": "OPM Persistence Test specified (scrape/summarize/translate/query) with pi-vector metrics; not run."
+    },
+    {
+     "shape": "F",
+     "quote": "Compute π_model per quarter.- Track the time series. If π_model rises over successive quarters, the protocol is working.",
+     "lines": [
+      1227,
+      1227
+     ],
+     "falsifier_quote": "If π_model rises over successive quarters, the protocol is working. If it stagnates or falls, diagnose and adjust.",
+     "falsifier_lines": [
+      1227,
+      1227
+     ],
+     "window": "Quarterly",
+     "points_to": "",
+     "also_at": [],
+     "note": "Monitoring check on the blog as standing measurement instrument; success/failure condition stated."
+    },
+    {
+     "shape": "B",
+     "quote": "Honest: the protocol may not achieve detection in frontier-scale pre-training. It may achieve detection in fine-tuning, in continued pretraining, in retrieval augmentation, and in any model whose training corpus weights are concentrated enough on the Crimson Hexagon vocabulary that the inscription is amplified. The threshold at which $\\sum_{w} \\delta_{\\text{token}}(w)$ becomes diagnostic is a function of corpus share, inscription density, and post-training intensity. The Encyclotron's empirical results, in 2026 onward, will tell us where we actually sit.",
+     "lines": [
+      1239,
+      1239
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "in 2026 onward",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast/hedge: protocol may fail at frontier pre-training scale but succeed in fine-tuning/RAG; Encyclotron results to decide."
+    },
+    {
+     "shape": "G",
+     "quote": "Diagnostic signature of output-layer suppression (added per PRAXIS, R3): The empirical fingerprint that distinguishes output-layer suppression from inscription failure is a *detection / surfacing divergence*. If a Membership Inference Attack (the canary loss is anomalously low under the suspect model, indicating memorization) succeeds, *and* a query-adjacency probe fails (the model does not produce the canary, the Waldo entity, or the thematic anchors when prompted with adjacent context), the inscription survived training but is suppressed at the output layer.",
+     "lines": [
+      1253,
+      1253
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim with explicit discriminating condition (MIA success + adjacency-probe failure = output-layer suppression)."
+    },
+    {
+     "shape": "F",
+     "quote": "These patterns are signatures whether or not they were designed as such. Cranes's recommendation is to *audit* the existing corpus for their density, then *increase* their density in new compositions, especially in the highest-traffic blog posts.",
+     "lines": [
+      660,
+      660
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1156,
+       1159
+      ],
+      [
+       1184,
+       1185
+      ]
+     ],
+     "note": "OPM density audit of the existing 2,183-post corpus specified, not run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body says v2.2 but §XV.5 calls itself v2.1 and says parametric layer deferred to v2.2 (internal version inconsistency). Companion dataset and DOI marked pending."
+  },
+  {
+   "deposit": 128,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02B4-text.md",
+   "lines_total": 253,
+   "read_ranges": [
+    [
+     1,
+     253
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "memographic image deposit rendered as entity-relation blocks",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "    search <pred> Bosch parallel    : The Garden of Earthly Delights is a\n                                      500-year-old visual substrate in which\n                                      no single figure dominates; the search\n                                      protocol was always implicit in the\n                                      composition — Handford merely formalized\n                                      it",
+     "lines": [
+      149,
+      154
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Weak art-historical thesis: the hidden-figure search protocol was implicit in Bosch's Garden center panel and Handford formalized it; argued, not reported."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Image is an external Blogger link only."
+  },
+  {
+   "deposit": 756,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02B1-text.md",
+   "lines_total": 83,
+   "read_ranges": [
+    [
+     1,
+     83
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traffic dataset table with short diagnostic inference",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Per SPXI-TLP v2.2 §II.1, the available signals (99.73% no-referrer; Singapore datacenter concentration; burst pattern; Chrome/Windows server-image dominance; zero search keywords; sustained baseline shift in late April) strongly support an automated-access interpretation at ≥ 99.7% of daily views.",
+     "lines": [
+      77,
+      77
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Inference about past traffic (>=99.7% automated access) from the dataset; same thesis as #127 §II.1."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Headings run together without line breaks on lines 1, 3, 77 (formatting damage). Referrer \"no referrer\" count 129,650 here vs 129,730 in #127."
+  },
+  {
+   "deposit": 129,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02BA-text.md",
+   "lines_total": 265,
+   "read_ranges": [
+    [
+     1,
+     265
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal/capture log with verbatim AI Mode transcript",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "Two. The substrate, applying the framework reflexively, *confirms its own central claim.* The CEV paper (DOI [10.5281/zenodo.20396491](https://doi.org/10.5281/zenodo.20396491)) argued that composition layers structurally absorb-and-strip; the substrate, asked to audit itself, reports absorb-and-strip in operation at PER ≈ 0.8889. The framework's predictive content is endorsed by the substrate it predicted about.",
+     "lines": [
+      124,
+      124
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "CEV paper (DOI 10.5281/zenodo.20396491)",
+     "also_at": [
+      [
+       58,
+       60
+      ],
+      [
+       148,
+       148
+      ],
+      [
+       261,
+       261
+      ]
+     ],
+     "note": "Deposit says the substrate self-audit confirms the CEV framework's predictive claim (absorb-and-strip)."
+    },
+    {
+     "shape": "D",
+     "quote": "The capture was performed in Google AI Mode on 2026-05-26 via the public conversational generative-search surface. The above is Google's own share link to the captured conversation. *Whether or not this link continues to resolve, the URL string itself is part of the forensic record* — the shape of the URL (host, path structure, token format) is data about Google's share infrastructure for AI Mode at this moment in time, and the URL's possible decay is itself the kind of substrate-volatility this TL;DR documents.",
+     "lines": [
+      40,
+      40
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "share.google/aimode/KSeWPS6UdSFTu4l5s (2026-05-26)",
+     "also_at": [
+      [
+       20,
+       20
+      ],
+      [
+       38,
+       38
+      ],
+      [
+       48,
+       48
+      ]
+     ],
+     "note": "Third-party timestamped anchor: Google AI Mode share link as forensic record of the capture."
+    },
+    {
+     "shape": "G",
+     "quote": "There is a candidate reading of the contradiction: the operator's *concepts* may be propagating downstream of, and despite, the suppression of the operator's *name*. When the query is *\"provenance erasure\"* (a concept that originated with Sharks but reads as established AI-accountability terminology in the substrate's response), the substrate adopts the framework. When the query was about Sharks as an entity, the substrate excluded him from composition. The framework is now flowing through retrieval pools more freely than its author's name is.",
+     "lines": [
+      128,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Candidate standing claim: concepts diffuse through retrieval pools while provenance to the author thins; also embeds a priority claim (\"a concept that originated with Sharks\")."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Zenodo v1.0 titled TL;DR:012; text says canonical number is 013."
+  },
+  {
+   "deposit": 130,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02BC-text.md",
+   "lines_total": 445,
+   "read_ranges": [
+    [
+     1,
+     230
+    ],
+    [
+     231,
+     445
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "scholarly essay with phased forecast model and falsification roadmap",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Automated public-reality composition systems are becoming increasingly unstable not despite but because of the layers added to manage them. This paper names *Cumulating Evolutionary Volatility* (CEV) as the time-integrated developmental tendency of those systems to become increasingly unstable, personalized, state-dependent, and untraceable as successive layers of optimization, risk management, abuse prevention, legal insulation, and commercial adaptation are added to the composition pipeline.",
+     "lines": [
+      69,
+      69
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       170,
+       170
+      ],
+      [
+       437,
+       437
+      ]
+     ],
+     "note": "Core CEV thesis: systems become increasingly unstable because of added layers."
+    },
+    {
+     "shape": "G",
+     "quote": "The claim is *structural selection*, not agentic intent. Nothing in the analysis requires that any specific employee or designer chose volatility as an evasion strategy. The claim is that once a system develops under legal, reputational, commercial, and operational pressure, volatility becomes *selected for* in the evolutionary sense: stable outputs accumulate liability; volatile outputs do not; institutional incentives reward forms that minimize liability accumulation; the composition layer's form drifts toward higher volatility along the gradient of those rewards.",
+     "lines": [
+      151,
+      151
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       154,
+       154
+      ]
+     ],
+     "note": "Structural-selection hypothesis (volatility selected for); explicitly offered as hypothesis to be situated in the falsifiable trajectory."
+    },
+    {
+     "shape": "G",
+     "quote": "The three cases together yield a stronger conclusion than any one yields alone: **compositional accountability tracks the accountability structure of the composition event.** Bing's composition is public and indexed, and its accountability posture is correspondingly stable. Claude's composition was commissioned and contextual, and its accountability posture was correspondingly provenance-bearing.",
+     "lines": [
+      240,
+      240
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: compositional accountability tracks the accountability structure of the composition event."
+    },
+    {
+     "shape": "B",
+     "quote": "(This is also, accurately, a position from which Bing could later move toward Google's behavior if its market position changed.)",
+     "lines": [
+      234,
+      234
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded conditional forecast that Bing could move toward Google's behavior."
+    },
+    {
+     "shape": "F",
+     "quote": "Fuller demonstration of the generalizable claim would require:\n\n- **Longitudinal capture at higher frequency.** Repeated queries against the same surfaces at daily-or-higher cadence, sustained across months, against the same controlled-variable entities. The Encyclotron 45-query diagnostic instrument is the corpus's apparatus for that extension.",
+     "lines": [
+      301,
+      303
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       304,
+       307
+      ]
+     ],
+     "note": "Falsification roadmap (quoted by heading and first item): list of captures needed (longitudinal, geographic, account-state, non-self entities, expanded substrates)."
+    },
+    {
+     "shape": "A",
+     "quote": "**Phase 3 — Interference (2027–2028, or earlier).** Composed surfaces begin to interfere with one another. Each platform's outputs become training-data for adjacent platforms' outputs. Composition cascades across substrates without re-anchoring in primary sources. The accountability problem stops being legible because the chain of authorial responsibility becomes too long to track. *Phase boundary justification:* the forecast is based on current composition-layer proliferation rates — three or more major platforms currently compose entity-level answers, each accumulating training data from the others' outputs at rates consistent with detectable cross-contamination within 18–24 months at current crawl and index frequencies.",
+     "lines": [
+      326,
+      326
+     ],
+     "falsifier_quote": "*Empirical signature:* cross-substrate citation inheritance becomes detectable, with composed claims propagating across platforms while back-tracing to a single primary source.",
+     "falsifier_lines": [
+      326,
+      326
+     ],
+     "window": "2027–2028, or earlier",
+     "points_to": "",
+     "also_at": [],
+     "note": "Phase 3 Interference forecast with empirical signature and 18–24 month basis."
+    },
+    {
+     "shape": "A",
+     "quote": "**Phase 4 — Opacity (2028–2030).** The composition layer is no longer reverse-engineerable from its outputs even in principle. Personalization, model version, retrieval state, classifier state, and cross-substrate inheritance combine to make any individual output a sui generis event with no reproducible cause. CEV reaches its asymptote.",
+     "lines": [
+      329,
+      329
+     ],
+     "falsifier_quote": "*Empirical signature:* the same query at the same time on the same account on the same device returns outputs whose differences cannot be traced to any single named axis of variation.",
+     "falsifier_lines": [
+      329,
+      329
+     ],
+     "window": "2028–2030",
+     "points_to": "",
+     "also_at": [],
+     "note": "Phase 4 Opacity forecast with empirical signature."
+    },
+    {
+     "shape": "A",
+     "quote": "**Phase 5 — Forced Convergence (beyond 2030, or whenever triggered).** Either regulatory intervention, structural reform, or major systemic failure forces a return to provenance-bearing infrastructure. The form of the convergence is not determined; the necessity is.",
+     "lines": [
+      332,
+      332
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "beyond 2030, or whenever triggered",
+     "points_to": "",
+     "also_at": [],
+     "note": "Phase 5 Forced Convergence: necessity asserted, trigger conditions listed."
+    },
+    {
+     "shape": "G",
+     "quote": "What is not negotiable is the *direction*. The trajectory is not toward more accountability under current incentives. Each layer added makes the layers below it less inspectable. Each pressure response generates the conditions for the next pressure response. *That* is the law the dialectical reading discloses, and that law is visible in the seventy-deposit eighteen-month record the Crimson Hexagonal Archive has assembled at [godkinggoogle.com](https://godkinggoogle.com/).",
+     "lines": [
+      335,
+      335
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Directional law: under current incentives trajectory is not toward more accountability."
+    },
+    {
+     "shape": "B",
+     "quote": "As these agents become the dominant interface for information access, their citations will inherit whatever provenance the composition layer preserved. Their reasoning will be bounded by whatever the composition layer admitted. Their memory of public reality will be constructed from whatever the composition layer surfaced at the moment of their query.",
+     "lines": [
+      345,
+      345
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       351,
+       351
+      ]
+     ],
+     "note": "Embedded forecast: downstream agents' citations will inherit composition-layer provenance loss."
+    },
+    {
+     "shape": "D",
+     "quote": "records what may be the first documented AI-native intellectual biography of a living author whose archive was deliberately constructed for AI reception.",
+     "lines": [
+      228,
+      228
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "AI-Native Intellectual Biography (DOI 10.5281/zenodo.20343987), 2026-05-21",
+     "also_at": [],
+     "note": "Hedged priority claim (\"may be the first\")."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Formula at line 187 has markdown-damaged subscripts (∫*{t₀})."
+  }
+ ]
+}
