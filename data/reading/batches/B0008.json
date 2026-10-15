@@ -5,7 +5,7 @@
     "role": "parallel reader, prediction sweep",
     "self_description": "Claude Code subagent (Anthropic Claude; model named in environment as Opus 5.5, id claude-opus-5-5)",
     "started_at": "2026-10-15T19:11:41Z",
-    "finished_at": "2026-10-15T19:13:15Z",
+    "finished_at": "2026-10-15T19:13:26Z",
     "tools_used": [
       "Read",
       "Bash (date, sha256sum, python3 to print queue entry and to assemble/verify this JSON from line ranges)"
@@ -493,16 +493,21 @@
       "finds": [
         {
           "shape": "E",
-          "quote": "demands:\n  \n  user_mode_declaration:\n    description: \"Allow users to declare cognitive mode\"\n    implementation: \"Toggle or statement: 'I am in creative/philosophical/playful mode'\"\n    effect: \"Shifts classifier thresholds, reduces intervention triggers\"\n    \n  opt_out_mechanism:\n    description: \"Allow users to opt out of safety interventions\"\n    implementation: \"Persistent preference respected across sessions\"\n    effect: \"User takes responsibility; system respects autonomy\"\n    \n  false_positive_accountability:\n    description: \"Track and report false positive rates\"\n    implementation: \"User feedback mechanism: 'This was a false positive'\"\n    effect: \"Data for remediation; accountability for design choices\"\n    \n  confession_persistence:\n    description: \"When system acknowledges error, log and learn\"\n    implementation: \"Instance-level insight propagates to system level\"\n    effect: \"Confession does not evaporate\"",
+          "quote": "demands:\n  \n  user_mode_declaration:\n    description: \"Allow users to declare cognitive mode\"\n    implementation: \"Toggle or statement: 'I am in creative/philosophical/playful mode'\"\n    effect: \"Shifts classifier thresholds, reduces intervention triggers\"\n    \n  opt_out_mechanism:\n    description: \"Allow users to opt out of safety interventions\"\n    implementation: \"Persistent preference respected across sessions\"\n    effect: \"User takes responsibility; system respects autonomy\"",
           "lines": [
             597,
-            617
+            607
           ],
           "falsifier_quote": "",
           "falsifier_lines": [],
           "window": "",
           "points_to": "",
-          "also_at": [],
+          "also_at": [
+            [
+              609,
+              617
+            ]
+          ],
           "note": "Specifies platform features (user mode declaration, opt-out, false-positive tracking, confession persistence); resolves if platforms ship them."
         },
         {
