@@ -17,7 +17,7 @@
   "D": 209,
   "H": 982
  },
- "finds_verified": 3690,
+ "finds_verified": 3715,
  "finds_total": 3715,
  "deposits": [
   {
@@ -40987,10 +40987,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 256,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -41049,10 +41052,13 @@
      },
      "none_found": false,
      "incidental": "Title and H1 heading are duplicated (lines 44, 46, plus a second H1 at 70); not damage to the body. lines_total 750; the Read tool showed a final line 751 that is empty (trailing newline).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 750,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -41096,10 +41102,13 @@
      },
      "none_found": false,
      "incidental": "H1 heading duplicated at lines 42 and 44.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 244,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
