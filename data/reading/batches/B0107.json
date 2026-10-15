@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T20:23:43Z",
-  "finished_at": "2026-10-15T20:25:40Z",
+  "finished_at": "2026-10-15T20:26:03Z",
   "tools_used": [
    "Read",
    "Bash",
@@ -117,7 +117,7 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "**Phase 2: Reference implementation.**\n\n- Extend `registry.json` entry schema to include optional `provenance_metadata` field per §4 specification.\n- Extend deposit validation script (`validate_deposit.py`) to check schema conformance where the field is present, without requiring the field.\n- Extend static-page generation to include structured data for the `provenance_metadata` field alongside the existing substrate field.\n- Extend API endpoints to expose the field through per-deposit metadata queries.\n- Document backward compatibility: existing deposits (all 940+ at time of specification) remain valid with freeform substrate only; no migration required.\n- Coordinate with EA-BEARING-METRIC-01 implementation so the two schemas evolve consistently.",
+     "quote": "**Phase 2: Reference implementation.**\n\n- Extend `registry.json` entry schema to include optional `provenance_metadata` field per §4 specification.\n- Extend deposit validation script (`validate_deposit.py`) to check schema conformance where the field is present, without requiring the field.",
      "lines": [
       227,
       234
@@ -149,7 +149,7 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "New in v0.2:\n- **EA-WHITESPACE-01 v0.1** (zero draft, 2026-07-02): The paper whose argument the v0.2 schema extension serves. To be minted as an alexanarch deposit after revision (remove private-correspondence references; correct Bhyravajjula et al. citation; correct \"compositionally-fidelius\" to \"compositionally faithful\"; resolve Snub-Poemed AXN; add empirical tokenization demonstration; refocus on representation pipeline per LABOR review; extend coda per LABOR's engineers-serving-markets recommendation).\n- **EA-PROVENANCE-METADATA-01 v0.2 mint**: This document, once MANUS-reviewed, to be minted as a new alexanarch deposit. Title: \"EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation and Representation Pipeline.\" The v0.1 deposit (AXN:03B9) is the predecessor; v0.2 carries a new hex/AXN.\n- **Pearl re-sourcing**: Manual transcription from Andrew-Waldron 2007 or Cotton Nero A.x facsimile. The v0.2 schema's representation_pipeline field makes the Pearl-double-invisibility problem machine-recordable; the re-sourcing makes it machine-solvable.\n- **Compiler spatial_form extension**: Amendment to EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 §3 adding spatial_form / typographic_skeleton to the Layer A parse and to the /api/transform response schema. Required before any source can achieve compositionally_operational status.",
+     "quote": "New in v0.2:\n- **EA-WHITESPACE-01 v0.1** (zero draft, 2026-07-02): The paper whose argument the v0.2 schema extension serves. To be minted as an alexanarch deposit after revision",
      "lines": [
       330,
       334
@@ -228,13 +228,16 @@
     },
     {
      "shape": "A",
-     "quote": "**P3 — Accusatory inversion visible.** By mid-2027, sampled public-platform occurrences of the phrase are majority second-person/accusatory rather than first-person or clinical (methodology: stratified sample of ≥1,000 occurrences across two major platforms, coded by grammatical person and speech act; protocol to be deposited before sampling). At least one publicly reported dispute by end-2027 in which each party explicitly and reciprocally claims the other's accusations are model-formulated — model involvement operationalized as self-reported or third-party-attested within the dispute record, since models do not watermark correspondence. *Falsifier:* clinical/self-report usage remains majority through 2028.",
+     "quote": "**P3 — Accusatory inversion visible.** By mid-2027, sampled public-platform occurrences of the phrase are majority second-person/accusatory rather than first-person or clinical (methodology: stratified sample of ≥1,000 occurrences across two major platforms, coded by grammatical person and speech act; protocol to be deposited before sampling).",
      "lines": [
       64,
       64
      ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
+     "falsifier_quote": "*Falsifier:* clinical/self-report usage remains majority through 2028.",
+     "falsifier_lines": [
+      64,
+      64
+     ],
      "window": "By mid-2027; dispute by end-2027; falsifier through 2028",
      "points_to": "",
      "also_at": [
@@ -325,13 +328,16 @@
     },
     {
      "shape": "A",
-     "quote": "**P8 — The Wolf Boy point.** By end-2028, help-seeking posts that *use the term* receive measurably worse triage (higher mockery/dismissal ratio, lower substantive-referral ratio) than symptom-described posts without it, in matched samples — the crossing at which the sign's possession becomes a cost to the genuinely suffering, and the alarm function inverts: the person actually in crisis reaches for the only name the culture has given the experience and finds the name itself now triggers dismissal. Coding categories here are high-inference; the protocol deposit will pre-register rubrics with demonstrated inter-rater reliability and specify threshold kappa before any sampling. *Falsifier:* term-bearing posts triage equal or better through 2029. This is the prediction we would most like to lose.",
+     "quote": "**P8 — The Wolf Boy point.** By end-2028, help-seeking posts that *use the term* receive measurably worse triage (higher mockery/dismissal ratio, lower substantive-referral ratio) than symptom-described posts without it, in matched samples — the crossing at which the sign's possession becomes a cost to the genuinely suffering, and the alarm function inverts: the person actually in crisis reaches for the only name the culture has given the experience and finds the name itself now triggers dismissal.",
      "lines": [
       74,
       74
      ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
+     "falsifier_quote": "*Falsifier:* term-bearing posts triage equal or better through 2029. This is the prediction we would most like to lose.",
+     "falsifier_lines": [
+      74,
+      74
+     ],
      "window": "By end-2028; falsifier through 2029",
      "points_to": "",
      "also_at": [],
@@ -640,7 +646,7 @@
     },
     {
      "shape": "D",
-     "quote": "*One line of evidentiary function: \"Posted on Jun 15, 2026, 4:42 PM.\" But the thing dated is not documentation — it is a work. On June 15, four days before any ban existed, the deponent exhibited the platform's own counter, frozen at 666 on the Book of Revelation's archive, as a found object — scored to Dr. Octagon's \"Blue Flowers,\" which is to say: a heteronym's soundtrack ushering the viewer toward a heteronymic archive's last counter, the track's opening functioning as exactly what an exhibition is, an invitation to be shown something. The removal then deputized the artwork as evidence — retrocausal canon formation (AXN:0155.GENERATIVE.📋🛤️🌌🙏✨🚨, AXN:01C7.GOVERNANCE.🔻🎺🎲🧫🔵🪧) enacted at exhibit scale",
+     "quote": "*One line of evidentiary function: \"Posted on Jun 15, 2026, 4:42 PM.\" But the thing dated is not documentation — it is a work. On June 15, four days before any ban existed, the deponent exhibited the platform's own counter, frozen at 666 on the Book of Revelation's archive, as a found object — scored to Dr. Octagon's \"Blue Flowers,\" which is to say: a heteronym's soundtrack ushering the viewer toward a heteronymic archive's last counter, the track's opening functioning as exactly what an exhibition is, an invitation to be shown something.",
      "lines": [
       141,
       141
@@ -778,10 +784,10 @@
    "finds": [
     {
      "shape": "D",
-     "quote": "> **Erratum (v2, 2026-07-04, same day).** v1 framed the captured 666 as \"~2 days\" of accumulation for v7.2. A\n> platform timestamp obtained the same day (TikTok Post analysis: image posted Jun 15, 2026, 4:42 PM — the day of\n> the v7.2 upload) supersedes the recollection that produced that framing, and the 666 is best read as the\n> record's cumulative counter at that moment. The corrected anchors: **666 cumulative at 2026-06-15 16:42**\n> (platform-timestamped) and **1,000+ at removal, 2026-06-19** (contemporaneous issue body, unrefuted) — a delta\n> of **>=334 downloads in <=4 days**. The cohort table below is unchanged; the Reading and Conclusion are",
+     "quote": "> **Erratum (v2, 2026-07-04, same day).** v1 framed the captured 666 as \"~2 days\" of accumulation for v7.2. A\n> platform timestamp obtained the same day (TikTok Post analysis: image posted Jun 15, 2026, 4:42 PM — the day of\n> the v7.2 upload) supersedes the recollection that produced that framing, and the 666 is best read as the\n> record's cumulative counter at that moment. The corrected anchors: **666 cumulative at 2026-06-15 16:42**\n> (platform-timestamped) and **1,000+ at removal, 2026-06-19** (contemporaneous issue body, unrefuted) — a delta",
      "lines": [
       45,
-      50
+      49
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
@@ -880,7 +886,7 @@
     },
     {
      "shape": "F",
-     "quote": "The methodology is direct: identify the population of publicly-documented severed scholars (via GitHub issue #2606 and its linked threads, via public statements, via news coverage of similar cases, and via any other authoritative signal that a specific scholar has been removed from a specific repository under comparable conditions), enumerate their concept DOIs where those can be established from external evidence, query each concept DOI against the DataCite live API using Alexanarch's existing four-way taxonomy (sovereign-content-resolved, concept-root-structure-rebound, orphan-dark, not-in-index), and publish the result as a rate finding with provenance for every classified case. If the rate of severance-beyond-the-reporting-scholar is high — meaning the sovereign author's case is representative of a broader pattern — the survey converts the restoration line from a personal witness into empirical evidence of a systemic infrastructure failure. If the rate is low, the survey converts the sovereign author's case into a documented outlier whose specificity reveals something about the platform's discretionary enforcement patterns. Both outcomes are publishable, both are contributions to the discipline, and both make the sovereign author's situation legible in the terms scholarly infrastructure conversations already use.",
+     "quote": "The methodology is direct: identify the population of publicly-documented severed scholars (via GitHub issue #2606 and its linked threads, via public statements, via news coverage of similar cases, and via any other authoritative signal that a specific scholar has been removed from a specific repository under comparable conditions), enumerate their concept DOIs where those can be established from external evidence, query each concept DOI against the DataCite live API using Alexanarch's existing four-way taxonomy (sovereign-content-resolved, concept-root-structure-rebound, orphan-dark, not-in-index)",
      "lines": [
       98,
       98
