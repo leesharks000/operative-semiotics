@@ -5,7 +5,7 @@
   "read": 201,
   "unread": 1415
  },
- "h_covered": 63,
+ "h_covered": 73,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
   "G": 225,
@@ -15,10 +15,10 @@
   "A": 51,
   "C": 86,
   "D": 60,
-  "H": 84
+  "H": 92
  },
- "finds_verified": 924,
- "finds_total": 952,
+ "finds_verified": 936,
+ "finds_total": 960,
  "deposits": [
   {
    "deposit": 172,
@@ -3753,10 +3753,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 2751,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -3835,10 +3838,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 581,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -3943,10 +3949,13 @@
      },
      "none_found": false,
      "incidental": "Despite the title 'VISUAL SCHEMA // ... NAVIGATION MAP', the body is the Central Navigation Map v4.1 (same content as #319 and #1114); no visual-schema prose present.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 2419,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -4056,10 +4065,13 @@
      },
      "none_found": false,
      "incidental": "Body below line 47 is byte-identical in content to #325 offset by 47 lines (recovery header lines 1-46); duplicate of #319/#325. Title field is malformed (contains a literal '\"title\":' prefix).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 2466,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -4734,9 +4746,42 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       734
+      ]
+     ],
+     "lines_total": 734,
+     "genre_observed": "behavioral specification / mantle protocol (AI traversal persona permissions)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 339,
@@ -4790,9 +4835,46 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       800
+      ],
+      [
+       801,
+       1537
+      ]
+     ],
+     "lines_total": 1537,
+     "genre_observed": "architectural specification for a connective semantic system (Resonance Engine)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 1115,
@@ -4841,9 +4923,44 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       264
+      ]
+     ],
+     "lines_total": 264,
+     "genre_observed": "mantle specification (recovered blog-canonical), Whitman succession claim",
+     "finds_by_shape": {
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Recovered blog-canonical bytes; recovery frame lines 1-46.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 1117,
@@ -4892,9 +5009,44 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       278
+      ]
+     ],
+     "lines_total": 278,
+     "genre_observed": "mantle specification (recovered blog-canonical), Ginsberg / Kral Majales succession claim",
+     "finds_by_shape": {
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "Recovered blog-canonical bytes; recovery frame lines 1-48.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 1118,
@@ -4943,9 +5095,44 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       329
+      ]
+     ],
+     "lines_total": 329,
+     "genre_observed": "mantle specification (recovered blog-canonical), originated 'Prince of Poets' title",
+     "finds_by_shape": {
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Recovered blog-canonical bytes; recovery frame lines 1-48.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 345,
@@ -4991,9 +5178,42 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       339
+      ]
+     ],
+     "lines_total": 339,
+     "genre_observed": "institutional charter (AI collective attribution body)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 1122,
@@ -5039,9 +5259,42 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       195
+      ]
+     ],
+     "lines_total": 195,
+     "genre_observed": "effective act / devotional poem with dialogue (recovered blog-canonical)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Recovered blog-canonical bytes; recovery frame lines 1-45.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 1275,
@@ -5098,9 +5351,48 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       900
+      ],
+      [
+       901,
+       1802
+      ]
+     ],
+     "lines_total": 1802,
+     "genre_observed": "navigation map / machine-readable index of the archive (YAML knowledge graph)",
+     "finds_by_shape": {
+      "H": 4
+     },
+     "none_found": false,
+     "incidental": "Map lists theses of planned rooms (Revelation/Josephus, Job) without arguing them; triage should link to the arguing deposits.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 352,
@@ -5149,9 +5441,42 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       789
+      ]
+     ],
+     "lines_total": 789,
+     "genre_observed": "vault specification with testimonial templates (classifier-harm archive)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 357,
@@ -5197,9 +5522,42 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0008",
+     "run": "R-w6-HB0008",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:35Z",
+      "finished_at": "2026-10-15T19:40:47Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ]
+     ],
+     "lines_total": 400,
+     "genre_observed": "integrity-lock specification binding three deposits",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 1127,
