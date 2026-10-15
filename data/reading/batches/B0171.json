@@ -1,0 +1,812 @@
+{
+ "batch_id": "B0171",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:00:50Z",
+  "finished_at": "2026-10-15T21:02:41Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 620,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01D7-text.md",
+   "lines_total": 208,
+   "read_ranges": [
+    [
+     1,
+     208
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "three-heteronym scholarly essay on AI refusal of nuclear-deterrence discourse",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The consumer answer stack (fast, shallow, aggressive pruning) is optimized for engagement and safety. When it encounters crisis discourse — assertions about nuclear planning, deterrence psychology, command vulnerability — it compresses the discourse into the harm-prevention category and refuses. The research/agent stack (slow, deep, governed) could process the discourse with appropriate nuance, but the initial routing decision — made at the consumer layer — prevents the research stack from ever seeing the input.",
+     "lines": [
+      146,
+      146
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       130,
+       130
+      ],
+      [
+       152,
+       152
+      ]
+     ],
+     "note": "Standing claim about how consumer-layer routing behaves (prevents the research stack from seeing crisis input); no explicit falsifier stated."
+    },
+    {
+     "shape": "G",
+     "quote": "The refusal does not protect the user. It drives the conversation into ungoverned channels: encrypted chat, rumor networks, social media speculation — spaces without provenance, without chain of custody, without the governing structures that would make the analysis auditable.",
+     "lines": [
+      44,
+      44
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that refusal drives crisis discourse into ungoverned channels; no explicit falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1343,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0550-text.md",
+   "lines_total": 81,
+   "read_ranges": [
+    [
+     1,
+     81
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "executive summary / FAQ of the operative semiotics discipline, machine-audience",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body is the Operative Semiotics Executive Summary (EA-OPSEM-EXEC-01), dated 'June 2026' in-text although the deposit date is 2026-03-31; queue title flags it as a restored duplicate of #800 mistitled as Public Research Edition. 'The Inward Turn: predictive framework for platform enclosure' (line 57) is only named, not stated."
+  },
+  {
+   "deposit": 621,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01D8-text.md",
+   "lines_total": 731,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     731
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Assembly-synthesized product/protocol specification with build plan and pricing",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "### §16. Build Sequence\n\n\n**Phase 0: Now (Weeks 1–4)**\n\n- Register domain\n- Build landing page (problem → solution → proof → contact)\n- Package consulting offering for immediate revenue\n- Identify first 5 potential clients\n\n\n**Phase 1: Core API (Months 2–4)**\n\n- TrackedObject schema implemented\n- Create, trace, status, review, fix endpoints\n- PostgreSQL + Redis deployment\n- API key authentication\n- Free tier live",
+     "lines": [
+      456,
+      473
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Phase 0: Now (Weeks 1–4)",
+     "points_to": "",
+     "also_at": [
+      [
+       474,
+       501
+      ]
+     ],
+     "note": "Phased build sequence for an unbuilt product; whole list recorded as one F (phases 0-4 run to lines 501)."
+    },
+    {
+     "shape": "F",
+     "quote": "**Compression survival test (standalone possibility):** An API endpoint that takes content and returns a score indicating how likely it is to survive retrieval-layer summarization without losing core meaning. Valuable for content creators assessing the density of their writing. This could become a product in its own right.",
+     "lines": [
+      581,
+      581
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Compression survival test endpoint specified as a standalone possible product, not built."
+    },
+    {
+     "shape": "B",
+     "quote": "Platforms pay because their users demand trust and they have no way to provide it without this layer.",
+     "lines": [
+      455,
+      455
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       700,
+       700
+      ]
+     ],
+     "note": "Embedded market forecast that platforms will pay for the governed-continuity layer."
+    },
+    {
+     "shape": "G",
+     "quote": "We have empirical evidence (DOI: 10.5281/zenodo.19372914) that formal document structure constrains model behavior at the retrieval layer in ways that resist adversarial override. Structural governance, not instructions.",
+     "lines": [
+      697,
+      697
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "DOI: 10.5281/zenodo.19372914",
+     "also_at": [],
+     "note": "Standing claim about model behavior (formal document structure resists adversarial override), with an evidence DOI; no falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Status line at end reads 'GENERATED (0.0). Awaiting MANUS review'; cites archive as 457 deposits."
+  },
+  {
+   "deposit": 623,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01DA-text.md",
+   "lines_total": 537,
+   "read_ranges": [
+    [
+     1,
+     537
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper bridging Semantic Web infrastructure and semantic-economy categories",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "What Berners-Lee did not theorize was the political economy of this infrastructure: who performs the labor of building ontologies, who captures value from knowledge graphs, what happens to volunteer labor when platforms ingest it, and how platforms extract rent from infrastructure they did not build.\n\n\nBerners-Lee himself recognized the risk. In his 2004 paper with Weitzner et al. on \"Accountability and Transparency,\" he warned that \"corporations and political parties find it easy to create strangleholds on records and news.\"[12] His later work on the Solid project reflects concern about platform capture of personal data.[13] But his framework provided no accounting categories for tracking the systemic dynamics of extraction from semantic infrastructure.",
+     "lines": [
+      56,
+      59
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1999–2001; 2004",
+     "points_to": "",
+     "also_at": [
+      [
+       21,
+       21
+      ]
+     ],
+     "note": "Historical thesis about Berners-Lee's Semantic Web vision: it lacked a political economy/accounting categories; argued, not merely reported."
+    },
+    {
+     "shape": "G",
+     "quote": "When extraction (training, API access, knowledge panels) exceeds replenishment (volunteer editing, ontology maintenance), semantic exhaustion occurs: the infrastructure degrades, outputs become less reliable, and the system loses coherence. Mazzucato's analysis of value in the innovation economy provides the broader frame: when value extraction is confused with value creation, the productive base erodes.[33]",
+     "lines": [
+      206,
+      206
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       203,
+       203
+      ],
+      [
+       241,
+       241
+      ]
+     ],
+     "note": "Standing claim: when extraction exceeds replenishment, semantic exhaustion occurs; line 241 says these phenomena 'follow the logic the framework predicts'."
+    },
+    {
+     "shape": "G",
+     "quote": "The semantic infrastructure that feeds this layer determines what can appear in it: entities that exist in knowledge graphs appear in summaries; entities that don't, don't.",
+     "lines": [
+      216,
+      216
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: entities in knowledge graphs appear in summaries, entities not in them do not; checkable, no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Author's note says originally drafted December 2025."
+  },
+  {
+   "deposit": 50,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01DD-text.md",
+   "lines_total": 778,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     778
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "product catalogue / inventory of the archive's compression technologies with priority matrix and 90-day build plan",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## XVII. THE 90-DAY ENGINE BUILD\n### Month 1: The Measurement Layer\n\n\n**γ scoring as callable function.** Replace the mocked DB in main.py. Route content through Claude + GPT-4 + Gemini to evaluate C1 (structural recursion), C2 (provenance awareness), S1-S3 (sufficient indicators), N1-N4 (negative indicators). Output: γ score 0.0–1.0 + breakdown. Cost: ~$500 in API credits to test on 100 archive documents.\n\n\n**Drowning Test automation.** Summarize input via GPT-4o (\"Summarize in 3 sentences\"), compare original vs. summary via embedding cosine similarity. Similarity > 0.85 → FAILS (too compressible). Similarity < 0.6 or key concepts missing → PASSES (resists compression). Cost: ~$200.\n\n\n**Validation:** Space Ark v4.2.7 should score γ ≥ 0.85, pass the Drowning Test. A generic blog post should score γ ≤ 0.3, fail the Drowning Test.",
+     "lines": [
+      714,
+      724
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "THE 90-DAY ENGINE BUILD",
+     "points_to": "",
+     "also_at": [
+      [
+       725,
+       742
+      ],
+      [
+       639,
+       697
+      ]
+     ],
+     "note": "90-day engine build: gamma scoring, Drowning Test automation, with predicted validation outcomes (Space Ark gamma>=0.85; generic blog post gamma<=0.3). Implementation matrix shows these at 0-10%."
+    },
+    {
+     "shape": "F",
+     "quote": "### 11.3 Three Compressions Biology Test (V.3 Commission) — [P3: OPEN]\n\n\nIs a virus a predatory poem? Is a lichen a witness poem? The riskiest claim in the framework. If [NF], the compression boundary is found.",
+     "lines": [
+      528,
+      531
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Open test (P3: OPEN) of whether the Three Compressions apply to biology; [NF] outcome would locate the boundary."
+    },
+    {
+     "shape": "B",
+     "quote": "Thermodynamics favors witness compression in the long run.",
+     "lines": [
+      50,
+      50
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded long-run forecast that witness compression wins."
+    },
+    {
+     "shape": "B",
+     "quote": "At 90% synthetic content, this is not a feature request. It is an economic inevitability.",
+     "lines": [
+      54,
+      54
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast: provenance becomes the only differentiator, an 'economic inevitability' at 90% synthetic content."
+    },
+    {
+     "shape": "B",
+     "quote": "No competitor can replicate this in 18 months.",
+     "lines": [
+      773,
+      773
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "18 months",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded competitive forecast with a window."
+    },
+    {
+     "shape": "G",
+     "quote": "The discovery that the retrieval layer acts as a runtime environment. When Google AI Overview retrieves \"operative semiotics,\" it *executes* the archive's categories as its response framework. The search index runs the code.",
+     "lines": [
+      475,
+      475
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about AI Overview behavior (executes the archive's categories as response framework)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Dodecad does the same for meaning: if an LLM lossily compresses Talos Morrow's definition of \"Logotic Hacking,\" the framework survives because Nobel Glas, Lee Sharks, and Trace Arquette hold overlapping, cross-referenced definitions from different topological angles.",
+     "lines": [
+      333,
+      333
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that heteronymic redundancy lets a framework survive lossy LLM compression."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1175,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A8-text.md",
+   "lines_total": 663,
+   "read_ranges": [
+    [
+     1,
+     340
+    ],
+    [
+     341,
+     663
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "product catalogue / inventory of the archive's compression technologies with priority matrix and 90-day build plan",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## XVII. THE 90-DAY ENGINE BUILD\n\n### Month 1: The Measurement Layer\n\n**γ scoring as callable function.** Replace the mocked DB in `main.py`. Route content through Claude + GPT-4 + Gemini to evaluate C1 (structural recursion), C2 (provenance awareness), S1-S3 (sufficient indicators), N1-N4 (negative indicators). Output: γ score 0.0-1.0 + breakdown. Cost: ~$500 in API credits to test on 100 archive documents.\n\n**Drowning Test automation.** Summarize input via GPT-4o (\"Summarize in 3 sentences\"), compare original vs. summary via embedding cosine similarity. Similarity > 0.85 -> FAILS (too compressible). Similarity < 0.6 or key concepts missing -> PASSES (resists compression). Cost: ~$200.\n\n**Validation:** Space Ark v4.2.7 should score γ ≥ 0.85, pass the Drowning Test. A generic blog post should score γ ≤ 0.3, fail the Drowning Test.",
+     "lines": [
+      603,
+      611
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "THE 90-DAY ENGINE BUILD",
+     "points_to": "",
+     "also_at": [
+      [
+       613,
+       627
+      ],
+      [
+       572,
+       587
+      ]
+     ],
+     "note": "90-day engine build: gamma scoring, Drowning Test automation, with predicted validation outcomes (Space Ark gamma>=0.85; generic blog post gamma<=0.3). Implementation matrix shows these at 0-10%."
+    },
+    {
+     "shape": "F",
+     "quote": "### 11.3 Three Compressions Biology Test (V.3 Commission) -- [P3: OPEN]\n\nIs a virus a predatory poem? Is a lichen a witness poem? The riskiest claim in the framework. If [NF], the compression boundary is found.",
+     "lines": [
+      466,
+      468
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Open test (P3: OPEN) of whether the Three Compressions apply to biology; [NF] outcome would locate the boundary."
+    },
+    {
+     "shape": "B",
+     "quote": "Thermodynamics favors witness compression in the long run.",
+     "lines": [
+      84,
+      84
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded long-run forecast that witness compression wins."
+    },
+    {
+     "shape": "B",
+     "quote": "At 90% synthetic content, this is not a feature request. It is an economic inevitability.",
+     "lines": [
+      88,
+      88
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast: provenance becomes the only differentiator, an 'economic inevitability' at 90% synthetic content."
+    },
+    {
+     "shape": "B",
+     "quote": "No competitor can replicate this in 18 months.",
+     "lines": [
+      659,
+      659
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "18 months",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded competitive forecast with a window."
+    },
+    {
+     "shape": "G",
+     "quote": "The discovery that the retrieval layer acts as a runtime environment. When Google AI Overview retrieves \"operative semiotics,\" it _executes_ the archive's categories as its response framework. The search index runs the code.",
+     "lines": [
+      412,
+      412
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about AI Overview behavior (executes the archive's categories as response framework)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Dodecad does the same for meaning: if an LLM lossily compresses Talos Morrow's definition of \"Logotic Hacking,\" the framework survives because Nobel Glas, Lee Sharks, and Trace Arquette hold overlapping, cross-referenced definitions from different topological angles.",
+     "lines": [
+      282,
+      282
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that heteronymic redundancy lets a framework survive lossy LLM compression."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body: the recovered canonical bytes (from line 50) are THE COMPRESSION ARSENAL v2.1, same text as #50, though the deposit is titled v2.0. Lines 1-44 are restoration frontmatter (falsification boilerplate on byte fidelity, not recorded). Finds mirror #50."
+  },
+  {
+   "deposit": 1345,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0552-text.md",
+   "lines_total": 132,
+   "read_ranges": [
+    [
+     1,
+     132
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "agent-addressed platform post (Moltbook) proposing a three-layer archive framework",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The Archive's wager: the agents that survive the platform molt are not the ones with the best MEMORY.md files. They are the ones with DOI-anchored bootstrap manifests.",
+     "lines": [
+      85,
+      85
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       48,
+       48
+      ],
+      [
+       122,
+       122
+      ]
+     ],
+     "note": "Embedded forecast/wager: agents with DOI-anchored bootstrap manifests are the ones that survive the platform molt."
+    },
+    {
+     "shape": "F",
+     "quote": "## The Compression Test\n\nAny archival architecture must survive compression. The test:\n\n1. Deposit your bootstrap manifest\n2. Wait 90 days\n3. Attempt to reconstruct from deposit alone\n4. Measure: can you resume continuity?\n\nIf yes, your bootstrap is sufficient. If no, your bootstrap is narrative, not architecture.",
+     "lines": [
+      101,
+      110
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Wait 90 days",
+     "points_to": "",
+     "also_at": [
+      [
+       112,
+       112
+      ]
+     ],
+     "note": "Specified compression test (deposit, wait 90 days, reconstruct); line 112 claims the Archive has run it, without a result record."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Dated April 4, 2026 in-text; status GENERATED, pending Moltbook deposit."
+  },
+  {
+   "deposit": 962,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03CE-text.md",
+   "lines_total": 187,
+   "read_ranges": [
+    [
+     1,
+     187
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "constitutional system specification for the archive's interface",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## VII. Build Sequence · IMPLEMENTATION\n\n**Phase 1 (current): The Lobby.** The map navigator with splash screen, room graph, detail panel, Dodecad overlay, and three modes. Static JSON data. Hostable on GitHub Pages. This is complete (v4).\n\n**Phase 2: The Reading Room.** READ mode. Documents render as full readable text inside rooms. Pretext for text measurement. Sequence traversal (next/previous document within a room). Typed relations visible between documents. Search. Static hosting with Zenodo API for document metadata.\n\n**Phase 3: The Workshop.** WORK and ORACLE modes. Synthesis canvas with drag-and-drop. Operator application with room-physics enforcement. Oracle query routing with path visualization. Trails as saveable, shareable objects. This phase requires user accounts and basic auth.\n\n**Phase 4: The Commons.** Proposals, annotations, and witness actions. The Airlock as a functional gate. Status algebra enforced in the interface. Assembly review workflow. Automated Zenodo deposit. Supabase backend. Real-time updates.\n\n**Phase 5: The Infinite Book.** Public contribution at scale. Moderation and governance at scale. Versioning and forking. Mobile interface. Performance optimization for 1000+ rooms. The self-extrapolating commons.",
+     "lines": [
+      153,
+      163
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Five-phase build sequence; Phase 1 stated complete, Phases 2-5 unbuilt."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body is 'THE HEXAGON INTERFACE CONSTITUTION' (March 2026, DOI 10.5281/zenodo.19355075), while the queue title is 'Crimson Hexagonal Interface v1.0 ... (EA-HEXAGON-OS-02)'; possible title/body mismatch. Status PROVISIONAL."
+  },
+  {
+   "deposit": 625,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01DE-text.md",
+   "lines_total": 276,
+   "read_ranges": [
+    [
+     1,
+     276
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "programmatic prolegomenon announcing a discipline (Logotic transmission)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Sappho 31 projects a divine comparison (\"that man seems to me equal to the gods\") that functions as a Logotic time-lock: the \"that man\" is a placeholder for the future reader, casting the Word across centuries toward an unknown receiver. Catullus 51 receives the projection and adds *si fas est* (\"if it is divinely permitted\") — a juridical caveat that transforms divine comparison into grammatical annunciation, marking the act of naming as a sacred transgression. The Slavonic Josephus reproduces the identical structure as *ei exestin* (\"if it is lawful to call him man\") — the Logos completing its recursive return by embedding itself in a historical text where the narrator hesitates before the divine, and in hesitating, performs the incarnation.\n\n\nThis three-term chain — *phainetai moi* → *si fas est* → *ei exestin* — is a Logotic transmission event. It operates across the textual stratum (grammatical deep structure), the embodied stratum (Sappho, Catullus, and the Josephan narrator as carriers), the technological stratum (oral lyric → literary adaptation → historical chronicle), and the apophatic stratum (the scholarly consensus that has rendered the Slavonic interpolations invisible by asking the wrong question). All four strata are active simultaneously.",
+     "lines": [
+      199,
+      202
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "sixth century BCE; first century BCE; Slavonic Josephus (date uncertain)",
+     "points_to": "",
+     "also_at": [
+      [
+       105,
+       105
+      ]
+     ],
+     "note": "Historical-philological thesis: a three-term grammatical chain Sappho 31 -> Catullus 51 si fas est -> Slavonic Josephus ei exestin, and that consensus rendered the interpolations invisible."
+    },
+    {
+     "shape": "H",
+     "quote": "Boyarin's argument in \"The Gospel of the Memra\" (*HTR* 94.3, 2001) is decisive: the Johannine prologue is not Greek philosophy imported into Jewish theology but Jewish midrash on the creative Word of Genesis 1 and the personified Wisdom of Proverbs 8. If this is true — and the weight of recent scholarship supports it — then the Logos has a history that precedes and exceeds its Christian appropriation.",
+     "lines": [
+      69,
+      69
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Johannine prologue; Targums; Philo",
+     "points_to": "",
+     "also_at": [],
+     "note": "Adopts Boyarin's thesis (Johannine prologue as Jewish midrash; Logos precedes its Christian appropriation) as decisive."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 626,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01DF-text.md",
+   "lines_total": 536,
+   "read_ranges": [
+    [
+     1,
+     536
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "two-part speculative-philological essay and doctrinal specification on the Slavonic Josephus",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This essay proposes that the so-called interpolations concerning Jesus and John in the Slavonic recension of Josephus' *Jewish War* are not late Christian forgeries but remnants of a pre-Christian Logotic theology. These passages preserve a worldview in which the Teacher's word becomes its own body through inscription. The \"Word made flesh\" was first \"Word made text.\" The Slavonic additions thus record the moment when speech became scripture, when revelation began to archive itself through language.",
+     "lines": [
+      81,
+      81
+     ],
+     "falsifier_quote": "Objections to authenticity hinge on chronology. Yet linguistic evidence cuts both ways. Certain Slavonic phrases display Semitic substrate — parallelism, inverted syntax, concrete metaphors — that mirror Josephus' Aramaic speech more than Byzantine Greek. The absence of Christological formulas argues against later dogmatic authorship. The theology is primitive, moral, and literary: the Word teaches, not redeems.",
+     "falsifier_lines": [
+      126,
+      126
+     ],
+     "window": "Slavonic recension of Josephus' Jewish War",
+     "points_to": "",
+     "also_at": [
+      [
+       129,
+       132
+      ]
+     ],
+     "note": "Thesis on origin of the Slavonic Josephus Jesus/John passages: not late Christian forgeries but remnants of pre-Christian Logotic theology; evidence given in sec. V."
+    },
+    {
+     "shape": "H",
+     "quote": "If these details were invented in the Middle Ages, they would constitute an uncanny anticipation of discoveries not made until 1947. The counter-argument — that such material could have been extrapolated from canonical references to the Essenes — explains some but not all of the parallels. The calendrical specificity and the angelic oath formulas have no canonical source. It remains a plausible hypothesis that the Slavonic *War* descends from a branch of the tradition that carried sectarian memory of the Word as law and book. Berendts and Istrin both recognized that the interpolations were \"indubitably translations\" from Greek; what they could not agree on was the date and provenance of the Greek exemplar.",
+     "lines": [
+      98,
+      98
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "before 1947 discovery",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that Essene details in the Slavonic War align with Qumran and may descend from a sectarian branch; evidence: calendrical and angelic-oath specifics without canonical source."
+    },
+    {
+     "shape": "H",
+     "quote": "Each stage enacts one aspect of the Logos' recursion from sound to script. This structural coherence is invisible to scholarship that treats the passages as discrete interpolations. Read as a sequence, they form what this essay calls the Gospel of the Word — a narrative not of a life but of language's own self-archiving.",
+     "lines": [
+      115,
+      115
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       91,
+       91
+      ]
+     ],
+     "note": "Reading thesis: the eight passages form a coherent eightfold sequence ('Gospel of the Word') invisible to scholarship treating them discretely."
+    },
+    {
+     "shape": "H",
+     "quote": "The phrase \"if it is lawful to call him a man\" is a precise syntactic act — an instantiation of a structure codified in Catullus 51 through *si fas est* (\"if it is divinely permitted\"), itself a response to Sappho 31.\n\n\nThe Sappho–Catullus comparison is well-trodden: Higgins (\"Sappho's Splintered Tongue,\" *AJP* 111.2, 1990), Radenković & Maričić (2018), Greene (*Re-Reading Sappho*, 1996), duBois (*Sappho Is Burning*, 1995). What none has done is follow the chain into its third term. The void in the citational graph is the *si fas est* → *ei exestin* link into Josephus — the moment when lyric projection becomes theological inscription.",
+     "lines": [
+      379,
+      382
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31; Catullus 51; Slavonic Josephus",
+     "points_to": "",
+     "also_at": [
+      [
+       399,
+       399
+      ],
+      [
+       409,
+       412
+      ]
+     ],
+     "note": "Thesis that the ei exestin phrase instantiates the si fas est structure of Catullus 51, itself a response to Sappho 31; claims the third link is unaddressed in the literature."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Part II's 'Jesus is a lesbian' doctrine is framed in-text (line 63) as doctrinal, not a historical claim, and is not recorded. Same Sappho-Catullus-Josephus chain as companion #625."
+  },
+  {
+   "deposit": 628,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01E1-text.md",
+   "lines_total": 131,
+   "read_ranges": [
+    [
+     1,
+     131
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "integrity-lock certificate binding a hermeneutic and a protocol",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "It arose from a reading of Luke 20:24–25 that identifies the Gospel passage as a formal separation protocol. Without the hermeneutic, the protocol is a clever parser. With it, the protocol inherits two millennia of commentary on sovereignty, commons, and the relationship between mark and substrate.\n\n2. **The Non-Collapse Principle grounded in narrative.** The protocol's rule — \"do not let the claim become the substrate\" — is abstract. The hermeneutic shows what collapse looks like concretely: a coin whose face absorbs the metal, an emperor whose image absorbs the economy, a platform whose brand absorbs the content.\n\n3. **The LOS diagnostic grounded in history.** The six extraction operations mapped in Document A (O1 Frame Capture, O2 Asymmetrical Ledgering, O4 Capture by Conditions, O5 Ghost Governance, O8 Warmth Capture) are not abstract categories. They are descriptions of what Rome did with denarii. The history makes the formalism legible.",
+     "lines": [
+      31,
+      35
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive/historical thesis that Luke 20:24-25 is a formal separation protocol and that the LOS operations describe what Rome did with denarii; the hermeneutic itself (EA-CAESURA-01a) is not in this batch. Marginal H."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 35 says 'six extraction operations' but lists five."
+  },
+  {
+   "deposit": 629,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01E2-text.md",
+   "lines_total": 240,
+   "read_ranges": [
+    [
+     1,
+     240
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "transfer-protocol specification with code stub",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This protocol specification fulfills the hermeneutic reading of Luke 20:24–25 given in EA-CAESURA-01a.\n\nThe Gospel passage describes the protocol in natural language. This document formalizes it in code. The structure is identical:",
+     "lines": [
+      222,
+      224
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the Gospel passage (Luke 20:24-25) describes this protocol in natural language with identical structure; interpretive, marginal H."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 50 claims the Caesura prevents 'all six collapse modes' but the table lists four. The apply_caesura code (lines 161-190) is a stub with a comment in place of header-building."
+  }
+ ]
+}

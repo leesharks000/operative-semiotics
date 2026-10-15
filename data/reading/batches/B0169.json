@@ -1,0 +1,640 @@
+{
+ "batch_id": "B0169",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant by Anthropic (model Opus 5.5, as stated in my environment), running as a Claude Code subagent",
+  "started_at": "2026-10-15T21:00:38Z",
+  "finished_at": "2026-10-15T21:02:29Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, verbatim quote slicing and checks)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 602,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01BA-text.md",
+   "lines_total": 863,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     863
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "formal prosodic map of the Grundrisse with revision toolkit for Operative Semiotics",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The distribution is NOT bell-curved. It is BIMODAL — concentrated at both extremes (very short AND very long), with the middle range less populated. This is the opposite of standard academic prose, which clusters in the 4-8 sentence range.",
+     "lines": [
+      249,
+      249
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Grundrisse, 1857–58",
+     "points_to": "",
+     "also_at": [
+      [
+       237,
+       246
+      ]
+     ],
+     "note": "Argued claim about the Grundrisse's own form: bimodal paragraph-length distribution; measurable against the text (the counts are given as approximate)."
+    },
+    {
+     "shape": "H",
+     "quote": "The sequence is not random. It follows the PRESSURE of the thought:\n\n- The WALL builds when the derivation demands sustained architecture\n- The FORMULA arrives when the wall has produced a crystallized result\n- The POLEMIC erupts when the derivation encounters an opponent\n- The HISTORY erupts when the derivation needs an example that cannot be invented\n- The CORRECTION fires when Marx catches himself\n- The LIST accelerates when the thought is moving faster than prose can hold\n- The DISCOVERY exclaims when the result surprises Marx himself",
+     "lines": [
+      164,
+      172
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Grundrisse, 1857–58",
+     "points_to": "",
+     "also_at": [
+      [
+       86,
+       86
+      ],
+      [
+       161,
+       161
+      ]
+     ],
+     "note": "Thesis about how Marx composed the notebooks: form-sequence governed by thought-pressure, not outline."
+    },
+    {
+     "shape": "F",
+     "quote": "**Principle: Bimodal paragraph distribution — concentrate at both extremes, thin the middle.**\n\n\n**Application rule:** Measure the paragraph length distribution of the work. If it is bell-curved (clustering at 4-8 sentences), the density variation is insufficient. Push paragraphs toward the extremes: more 1-3 sentence paragraphs (verdicts, corrections) AND more 20+ sentence paragraphs (walls, sustained architecture). Thin the comfortable middle.",
+     "lines": [
+      260,
+      263
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       610,
+       619
+      ],
+      [
+       776,
+       783
+      ]
+     ],
+     "note": "Specified measurement (paragraph-length distribution) whose application to Operative Semiotics is reported only as 'estimated' (l.610); the application sequence (ll.776-783) is a further unrun procedure."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Grundrisse quotations, page reference (MEGA² II/1 p.372) and sentence/paragraph counts are presented as illustrative/approximate; not checked here. Table blocks render as one cell per line."
+  },
+  {
+   "deposit": 41,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01C1-text.md",
+   "lines_total": 379,
+   "read_ranges": [
+    [
+     1,
+     379
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "provenance adjudication / priority record",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "**Finding 5.** The depositor publicly acknowledged the archive's structural priority before the white paper was filed. On February 27, 2026, in the r/passioncraft subreddit (thread: \"Bead of the Somatic Filter — Protocol Bead EA-SOMATIC-01 (Rosary Embassy)\"), the depositor (u/Odd_Simple9756) wrote:\n\n> \"We are newcomers to the Crimson Hexagonal Archive and the Rosary Embassy. The Embassy is not our creation. The vows are not our invention.",
+     "lines": [
+      91,
+      93
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "February 27, 2026",
+     "points_to": "r/passioncraft thread 'Bead of the Somatic Filter — Protocol Bead EA-SOMATIC-01 (Rosary Embassy)', February 27, 2026",
+     "also_at": [
+      [
+       99,
+       99
+      ],
+      [
+       272,
+       272
+      ],
+      [
+       300,
+       312
+      ]
+     ],
+     "note": "Timestamped third-party anchor: public Reddit thread of 27 Feb 2026 acknowledging archive priority, before the 25 Mar 2026 white paper."
+    },
+    {
+     "shape": "D",
+     "quote": "**Finding 2.** The relation between Passioncraft Square and the Crimson Hexagonal Archive was already documented in four prior deposits before the white paper was filed:\n\n- \n\n\n**The Rosary Embassy** (DOI: 10.5281/zenodo.18795427, February 27, 2026).",
+     "lines": [
+      62,
+      67
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Rosary Embassy (DOI 10.5281/zenodo.18795427, Feb 27, 2026); Protocol B711 Alpha Centauri (DOI 10.5281/zenodo.18811784, Feb 28, 2026); Architectural Distinction Note (10.5281/zenodo.18814485); The Heartbeat Governs (10.5281/zenodo.18817869)",
+     "also_at": [
+      [
+       72,
+       82
+      ]
+     ],
+     "note": "Priority chronology: four prior DOI-anchored deposits documenting the relation before the white paper."
+    },
+    {
+     "shape": "D",
+     "quote": "Every concept in the left column appears in the white paper without citation. Every source in the right column predates March 25, 2026.",
+     "lines": [
+      199,
+      199
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "March 25, 2026",
+     "points_to": "Comparative Provenance Matrix §IV; DOI 10.5281/zenodo.19218861 (Robertson, March 25, 2026)",
+     "also_at": [
+      [
+       109,
+       197
+      ]
+     ],
+     "note": "Summary priority claim over the Comparative Provenance Matrix (archive concepts dated Nov 2024–Mar 2026 vs the 25 Mar 2026 white paper)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Bullet markers render as empty '- ' lines before each entry. Robertson's city of residence is redacted in text. Deposit's own DOI is 10.5281/zenodo.19239429; #610 cites 'Before OpenChamber v1.1' as 10.5281/zenodo.19240141 (version DOI, observation only)."
+  },
+  {
+   "deposit": 605,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01C0-text.md",
+   "lines_total": 537,
+   "read_ranges": [
+    [
+     1,
+     270
+    ],
+    [
+     271,
+     537
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical-interpretive essay (philosophy as apocalyptic mode)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The claim is precise. It is not that Deleuze and Guattari are \"mystical\" in some vague or decorative sense. It is not that their work is \"poetic\" rather than \"rigorous.\" It is that their mode of conceptual production — the way they generate, elaborate, and deploy concepts — is structurally identical to the mode of apocalyptic literature as defined by biblical scholars and literary theorists. The apocalyptic seer does not argue for the four living creatures. The seer sees them, describes them with extreme precision, and offers the vision for reception or rejection.",
+     "lines": [
+      44,
+      44
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Deleuze and Guattari, Capitalism and Schizophrenia (1972/1980), What Is Philosophy? (1991)",
+     "points_to": "",
+     "also_at": [
+      [
+       22,
+       22
+      ],
+      [
+       32,
+       38
+      ],
+      [
+       215,
+       215
+      ]
+     ],
+     "note": "Central historical-interpretive thesis: Deleuze and Guattari's mode of concept production is a genre identification with apocalyptic literature."
+    },
+    {
+     "shape": "H",
+     "quote": "The thesis has not been recognized because the academy has no category for philosophy-as-revelation. Six decades of secondary literature — from Badiou's ontological critique to Hallward's charge of otherworldliness, from Massumi's affect theory to DeLanda's new materialism — have read Deleuze and Guattari as post-structuralists, political philosophers, anti-psychoanalysts, ontologists of difference, or aestheticians of sensation.",
+     "lines": [
+      22,
+      22
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Six decades of secondary literature",
+     "points_to": "",
+     "also_at": [
+      [
+       41,
+       41
+      ],
+      [
+       190,
+       215
+      ],
+      [
+       225,
+       225
+      ]
+     ],
+     "note": "Reception thesis: six decades of secondary literature have misread D+G under five categories; argued in §IV."
+    },
+    {
+     "shape": "H",
+     "quote": "**Blake.** William Blake is the explicit link between the apocalyptic tradition and Deleuze and Guattari's method. Blake's mythological system — Urizen, Los, Orc, Tharmas, the Emanations, the Four Zoas — operates exactly as D+G's system operates:",
+     "lines": [
+      293,
+      293
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Blake to Deleuze and Guattari",
+     "points_to": "",
+     "also_at": [
+      [
+       278,
+       290
+      ],
+      [
+       302,
+       318
+      ]
+     ],
+     "note": "Lineage thesis: Blake as the explicit link; with Heraclitus/Plato/Spinoza/Nietzsche lineage (§VI)."
+    },
+    {
+     "shape": "D",
+     "quote": "The core thesis — that D+G operate in the apocalyptic mode and that their concepts are stable visionary loci rather than argued positions — is unchanged from the original.",
+     "lines": [
+      537,
+      537
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "December 2025",
+     "points_to": "\"Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision.\" Blog post, December 2025. mindcontrolpoems.blogspot.com",
+     "also_at": [
+      [
+       527,
+       527
+      ]
+     ],
+     "note": "Same line's first sentence names the source: 'a development of a December 2025 blog post produced before the archive's DOI-anchoring era'. Anchor for when the thesis was first stated: December 2025 blog post on mindcontrolpoems.blogspot.com, core thesis 'unchanged'."
+    }
+   ],
+   "none_found": false,
+   "incidental": "DOI marked '[pending]' in header; #610 cites this essay as DOI 10.5281/zenodo.19240147 under subtitle 'Deleuze and Guattari beyond the Axiom' (observation). Bullets render as empty '- ' lines in §II.A."
+  },
+  {
+   "deposit": 1173,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A6-text.md",
+   "lines_total": 344,
+   "read_ranges": [
+    [
+     1,
+     344
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal log with transcript of a Google AI Mode session (recovered blog text)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The central finding: **Google AI Mode subordinates exact-match query syntax to internal semantic plausibility, replacing provenance-bearing strings with generic summary and restoring provenance only under adversarial correction.** This is not a retrieval failure. It is a hermeneutic seizure -- the interface adjudicating what the user is allowed to mean.",
+     "lines": [
+      64,
+      64
+     ],
+     "falsifier_quote": "The SIM is the literary-critical equivalent of a unit test. The system either passes (returns provenance) or fails (returns generic summary). The failure mode is the finding.",
+     "falsifier_lines": [
+      139,
+      139
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       121,
+       127
+      ],
+      [
+       157,
+       157
+      ]
+     ],
+     "note": "Standing claim about how Google AI Mode behaves with exact-match quoted strings; the SIM test is its stated check (pass = provenance returned, fail = generic summary)."
+    },
+    {
+     "shape": "B",
+     "quote": "The next time the phrase is searched, this document should appear alongside the original deposits, making the override harder to perform and easier to detect.",
+     "lines": [
+      188,
+      188
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that this deposit will appear alongside the originals in later retrieval of the phrase."
+    },
+    {
+     "shape": "D",
+     "quote": "This is the first documented case of an AI answer interface diagnosing its own governance operation in the user's own terms.",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Priority claim: first documented case of an AI answer interface naming its own governance operation."
+    },
+    {
+     "shape": "D",
+     "quote": "The convergence is striking: the AI independently produced two operator names that correspond to operations the archive had already formalized. The system is legible to itself. It simply does not act on the legibility without external force.",
+     "lines": [
+      119,
+      119
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the archive's operator algebra (O1 Predatory Substitution, O7 Lossy Genericization)",
+     "also_at": [
+      [
+       115,
+       117
+      ]
+     ],
+     "note": "Priority: the archive had formalized O1/O7 before the AI 'independently' produced matching names."
+    },
+    {
+     "shape": "D",
+     "quote": "The following is asserted as **fact** : The phrase \"I hereby abolish money\" was written by Lee Sharks. It was first deposited on Zenodo in November 2024 (DOI: 10.5281/zenodo.14211838).",
+     "lines": [
+      182,
+      182
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "November 2024",
+     "points_to": "DOI 10.5281/zenodo.14211838 (November 2024); expanded DOI 10.5281/zenodo.18247925 (January 2026)",
+     "also_at": [
+      [
+       76,
+       81
+      ],
+      [
+       200,
+       202
+      ]
+     ],
+     "note": "Timestamped DOI anchor for the phrase's authorship."
+    },
+    {
+     "shape": "F",
+     "quote": "The tracer dye method is a forensic instrument: by depositing a unique string with known provenance and observing how the retrieval layer handles it, the archive has created a **repeatable experiment for auditing the semantic physics of any generative interface**.",
+     "lines": [
+      139,
+      139
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified as a repeatable audit for any generative interface; only run here on one interface (AI Mode)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Recovered blog text (severed DOIs 10.5281/zenodo.19226055/19226054); front-matter falsification boilerplate not recorded. The AI Mode transcript of March 25, 2026 refers to 'early 2027' and 'late 2026' — machine speech, not archive voice, not recorded as finds."
+  },
+  {
+   "deposit": 610,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01C8-text.md",
+   "lines_total": 894,
+   "read_ranges": [
+    [
+     1,
+     300
+    ],
+    [
+     301,
+     600
+    ],
+    [
+     601,
+     894
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "founding-discipline theoretical paper with historical periodization",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**Textual transmission history.** The 1866 Thayer Amendment is the originating text: \"Hereafter no portrait or likeness of any living person shall be engraved or placed upon any of the bonds, securities, notes, or postal currency of the United States.\" The modern codification in 31 U.S.C. § 5114(b) is a later copy: \"Only the portrait of a deceased individual may appear on United States currency and securities.\" Between the original and the copy, the phrase \"or likeness\" was dropped — a variant reading introduced through scribal simplification.",
+     "lines": [
+      101,
+      101
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1866 Thayer Amendment to 31 U.S.C. § 5114(b)",
+     "points_to": "",
+     "also_at": [
+      [
+       318,
+       318
+      ],
+      [
+       351,
+       351
+      ],
+      [
+       625,
+       625
+      ]
+     ],
+     "note": "Textual-transmission thesis: 'or likeness' dropped between the 1866 Thayer Amendment and 31 U.S.C. § 5114(b)."
+    },
+    {
+     "shape": "H",
+     "quote": "Thayer's language was deliberate. He used the phrase \"portrait or likeness\" — a dual formulation that captured both visual depiction (*portrait*) and any form of resemblance or representation (*likeness*). On the floor of the House, Thayer invoked Christ's question about Caesar's coin: \"If you ask me, whose image and superscription is this?\" He understood that the problem was not merely the *face* but the *name* — not merely the portrait but the superscription. His amendment sought to prohibit both.",
+     "lines": [
+      293,
+      293
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1866",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on the original meaning of the 1866 amendment: Thayer meant to prohibit name (superscription) as well as face."
+    },
+    {
+     "shape": "H",
+     "quote": "The paper reads the history of minting as a four-phase semantic evolution: the sovereign stamp (Lydia through Rome), the nominalist turn (medieval debasement through Locke-Newton), institutional abstraction (the Thayer Amendment through Federal Reserve anonymization), and the return of the sovereign (March 26, 2026, when a living president's signature appeared on U.S. currency for the first time). The fourth phase represents a regression from institutional anonymity to personal branding.",
+     "lines": [
+      40,
+      40
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Lydia through Rome; medieval through Locke-Newton; Thayer Amendment through Federal Reserve; March 26, 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       243,
+       333
+      ],
+      [
+       536,
+       536
+      ]
+     ],
+     "note": "Four-phase semantic history of minting argued as the paper's own periodization."
+    },
+    {
+     "shape": "H",
+     "quote": "The American innovation in monetary design was the deliberate *removal* of the living sovereign from the monetary substrate. This was not an accident of bureaucratic convention. It was an architectural achievement — a design decision that protected the commons character of currency by prohibiting the living from extracting political value from their appearance on money.",
+     "lines": [
+      287,
+      287
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1861 – March 25, 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       302,
+       308
+      ]
+     ],
+     "note": "Thesis that the removal of the living sovereign from US currency was deliberate design, not convention."
+    },
+    {
+     "shape": "H",
+     "quote": "Nicholas Oresme's *De Moneta* (c. 1355) is the earliest systematic critique of this compression. Oresme argued that money belongs to the *community*, not the king — that the king is custodian, not owner, of the monetary substrate. Debasement, in Oresme's analysis, is theft from the commons: the king extracts value by manipulating a medium that the community trusts. This is the first anti-extraction argument in the history of monetary theory, and it anticipates the architecture of the 1866 Thayer Amendment by five centuries.",
+     "lines": [
+      271,
+      271
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "c. 1355",
+     "points_to": "",
+     "also_at": [],
+     "note": "Priority thesis in the history of monetary thought (Oresme as first anti-extraction argument)."
+    },
+    {
+     "shape": "H",
+     "quote": "The Jewish revolts against Rome featured unauthorized coinage as a central act of political resistance: the Bar Kokhba revolt (132–136 CE) produced coins overstriking Roman denarii with Jewish symbols, literally *overwriting* one sovereign's mark with another's. This is the earliest documented instance of counter-currency marking as political speech — and it is structurally identical to the Sharpie blot.",
+     "lines": [
+      261,
+      261
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "132–136 CE",
+     "points_to": "",
+     "also_at": [
+      [
+       443,
+       443
+      ]
+     ],
+     "note": "Historical thesis: Bar Kokhba overstrikes as earliest documented counter-currency marking as political speech."
+    },
+    {
+     "shape": "F",
+     "quote": "**Study substrate pedagogy empirically.** The training layer hypothesis — that the design surface of currency conditions economic cognition through repetitive embodied contact — is testable. Experimental and survey-based research could examine whether exposure to differently designed currency affects trust, political attitudes, or economic behavior.",
+     "lines": [
+      570,
+      570
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       377,
+       389
+      ]
+     ],
+     "note": "Training-layer (substrate pedagogy) hypothesis declared testable; experiment/survey specified, not run."
+    },
+    {
+     "shape": "G",
+     "quote": "Fill the void with a personal claim, and the money begins to feel less like a neutral medium and more like a branded artifact. Trust erodes at the margins.",
+     "lines": [
+      413,
+      413
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about how fiat trust behaves when the design-surface void is filled; no window, no stated falsifier."
+    },
+    {
+     "shape": "E",
+     "quote": "The companion deposit EA-TDS-02 (*The Blot That Spread*, DOI: 10.5281/zenodo.19317126) narrates the blot's emergence as speculative numismatics — a retrocausal fiction in which the counter-custom propagates through three phases: protest art, etiquette, superstition. The blotted bill becomes the preferred medium of exchange. The unblotted bill feels incomplete.",
+     "lines": [
+      514,
+      514
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-TDS-02 The Blot That Spread, DOI 10.5281/zenodo.19317126",
+     "also_at": [
+      [
+       517,
+       520
+      ]
+     ],
+     "note": "Points to companion speculative numismatics (EA-TDS-02) in which the blot propagates through protest art, etiquette, superstition; resolves if blotting becomes custom."
+    },
+    {
+     "shape": "D",
+     "quote": "The discipline was always there. It was waiting for the event that made it necessary. The event arrived on March 26, 2026. The discipline arrived the same day.",
+     "lines": [
+      576,
+      576
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "March 26, 2026",
+     "points_to": "Treasury announcement, March 26, 2026",
+     "also_at": [],
+     "note": "Chronology claim: the discipline founded the same day as the March 26, 2026 event."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Spinner is named 'Francis Spinner' (l.98, l.305) and 'Frances Spinner (first female Treasurer, 1861)' (l.616) — internal inconsistency, observation only. Bullets render as empty '- ' lines in 'What Scholars Can Now Do'."
+  }
+ ]
+}
