@@ -2441,7 +2441,33 @@
    "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; H back-pass",
    "output": "data/reading/batches/HB0014.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 75052,
+    "tool_uses": 18,
+    "tokens": 200757
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:47:40Z",
+    "finished_at": "2026-10-15T19:48:37Z",
+    "self_description": "Claude (Anthropic) running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash"
+    ]
+   },
+   "verification": {
+    "deposits": 8,
+    "entries": 8,
+    "finds": 0,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 8,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w8-HB0015",
