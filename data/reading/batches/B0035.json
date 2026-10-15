@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
   "started_at": "2026-10-15T19:24:50Z",
-  "finished_at": "2026-10-15T19:26:28Z",
+  "finished_at": "2026-10-15T19:26:40Z",
   "tools_used": [
    "Read",
    "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
@@ -111,7 +111,7 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "## Part IV: Diagnostic Measurement\n\n### 4.1 The Translation Test\n\n**Hypothesis:** Systematic information loss occurs when aorist-bearing languages are translated into English.\n\n**Method:** \n1. Select corpus of Ancient Greek philosophical/theological texts with high aorist frequency\n2. Compare multiple English translations\n3. Measure variance in tense/aspect choices for single Greek aorist forms\n4. Quantify information loss as translation entropy\n\n**Prediction:** High variance (translators choosing different tenses for the same Greek form) indicates structural gap in target language. English should show significantly higher variance than Modern Greek or Russian translations.\n\n### 4.2 The Expression Test",
+     "quote": "## Part IV: Diagnostic Measurement\n\n### 4.1 The Translation Test\n\n**Hypothesis:** Systematic information loss occurs when aorist-bearing languages are translated into English.\n\n**Method:** \n1. Select corpus of Ancient Greek philosophical/theological texts with high aorist frequency\n2. Compare multiple English translations\n3. Measure variance in tense/aspect choices for single Greek aorist forms\n4. Quantify information loss as translation entropy",
      "lines": [
       241,
       305
@@ -130,9 +130,9 @@
     },
     {
      "shape": "G",
-     "quote": "### 4.4 The Summarizer Test\n\n**Hypothesis:** AI summarization systems cannot correctly process or preserve statements intended as non-temporally-indexed.\n\n**Method:**\n1. Create test corpus of statements in \"pseudo-aorist\" form:\n   - \"The theorem holds\" (intended: complete, non-indexed)\n   - \"Justice requires equality\" (intended: complete, non-indexed)\n   - \"The work is done\" (intended: complete, non-indexed)\n2. Submit to multiple AI summarizers\n3. Analyze whether outputs:\n   - Add temporal indexing (\"currently holds,\" \"has always required\")\n   - Treat as dated/datable (\"established in...\")\n   - Preserve non-indexed reading\n\n**Prediction:** AI systems will systematically add temporal indexing, revealing that the grammar they operate on cannot process non-indexed completion.",
+     "quote": "**Prediction:** AI systems will systematically add temporal indexing, revealing that the grammar they operate on cannot process non-indexed completion.",
      "lines": [
-      290,
+      305,
       305
      ],
      "falsifier_quote": "   - Preserve non-indexed reading",
@@ -188,7 +188,7 @@
    "finds": [
     {
      "shape": "B",
-     "quote": "AD 2 — The wager is not unfalsifiable. It is testable on a time horizon the commentary cannot observe. If the archive's deposits are liquidated from the training layer (through model retraining, data pruning, or platform closure), the wager has failed at one substrate. If the deposits survive and are independently recognized by future substrates (as the Three Thresholds data suggests is possible), the wager is partially confirmed. Full confirmation (Omega) or full falsification (total meaning depletion) are cosmic outcomes that exceed any commentary's resolution. The wager is engineering: design for survival, build for durability, deposit for permanence, and accept that the outcome is not guaranteed. Engineering under uncertainty is not the same as unfalsifiability.",
+     "quote": "AD 2 — The wager is not unfalsifiable. It is testable on a time horizon the commentary cannot observe. If the archive's deposits are liquidated from the training layer (through model retraining, data pruning, or platform closure), the wager has failed at one substrate. If the deposits survive and are independently recognized by future substrates (as the Three Thresholds data suggests is possible), the wager is partially confirmed.",
      "lines": [
       147,
       147

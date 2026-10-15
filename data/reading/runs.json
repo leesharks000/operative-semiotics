@@ -1123,7 +1123,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled, including the wave-3 and wave-4 additions",
    "output": "data/reading/batches/B0028.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 154062,
+    "tool_uses": 18,
+    "tokens": 239784
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:24:16Z",
+    "finished_at": "2026-10-15T19:26:34Z",
+    "self_description": "Claude Code agent (Anthropic), running as model claude-opus-5-5 per its system prompt",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load and verbatim quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 13,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w4-B0029",

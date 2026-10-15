@@ -2,20 +2,20 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 185,
-  "unread": 1431
+  "read": 186,
+  "unread": 1430
  },
  "finds_by_shape": {
-  "G": 186,
-  "F": 182,
-  "E": 50,
-  "B": 117,
+  "G": 189,
+  "F": 190,
+  "E": 52,
+  "B": 118,
   "A": 44,
   "C": 59,
-  "D": 45
+  "D": 48
  },
- "finds_verified": 649,
- "finds_total": 683,
+ "finds_verified": 662,
+ "finds_total": 700,
  "deposits": [
   {
    "deposit": 172,
@@ -8186,9 +8186,7 @@
      },
      "none_found": false,
      "incidental": "Opens with a 2015 Jack Feist poem 'ARK' (lines 14-69). Many list bullets survive only as empty '- ' lines (e.g. 1484, 1495, 2987 onward in the Core 50 and XXXI.4), so some list markers are lost though item text remains. Internal deposit counts disagree (349+ at line 8, 250+ at lines 1663 and 3936). Forward-dated journal publication schedules (1727, 1736, 1745), the Josephus and Revelation-first theses (1290, 2109-2142), and status promotion paths (5198, 5414, 5630) were read and judged plans or scholarly theses, not recorded. The Verification Protocol (3748-3805) and Survivability Test Suite (5879-5953) are each one F find under rule 4.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8209,8 +8207,82 @@
    "tier": 1,
    "words": 48215,
    "batch_id": "B0030",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0030",
+     "run": "R-w4-B0030",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as claude-opus-5-5",
+      "started_at": "2026-10-15T19:24:28Z",
+      "finished_at": "2026-10-15T19:26:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, line-length check, quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       700
+      ],
+      [
+       701,
+       1700
+      ],
+      [
+       1701,
+       2700
+      ],
+      [
+       2701,
+       3700
+      ],
+      [
+       3701,
+       4700
+      ],
+      [
+       4701,
+       5700
+      ],
+      [
+       5701,
+       6700
+      ],
+      [
+       6701,
+       6850
+      ],
+      [
+       6851,
+       7000
+      ],
+      [
+       7001,
+       7066
+      ]
+     ],
+     "lines_total": 7066,
+     "genre_observed": "executable specification / operating-system document (heteronymous formal architecture with engines, governance and test suites)",
+     "finds_by_shape": {
+      "F": 8,
+      "B": 1,
+      "E": 2,
+      "D": 3,
+      "G": 3
+     },
+     "none_found": false,
+     "incidental": "Read tool refused offset-only reads near the end (reported 346.6KB file size) so the last chunk was read with offset 7001 and limit 100, reaching line 7066 (final line). Several list items in §XVII.8 and §XXVI.4 / §XXXI.4 are empty bullets ('- ') with content on following lines, apparently a conversion artefact. Changelog lists v4.2.5 'Changes:' twice (6950, 6970), the second block belonging to v4.2.4 without its header. Most predictive material is instrument specification (F); no numbered/dated registered forecasts (A) found.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1162,
@@ -8726,7 +8798,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
       "started_at": "2026-10-15T19:24:50Z",
-      "finished_at": "2026-10-15T19:26:28Z",
+      "finished_at": "2026-10-15T19:26:40Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
@@ -8780,7 +8852,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
       "started_at": "2026-10-15T19:24:50Z",
-      "finished_at": "2026-10-15T19:26:28Z",
+      "finished_at": "2026-10-15T19:26:40Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
@@ -8828,7 +8900,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
       "started_at": "2026-10-15T19:24:50Z",
-      "finished_at": "2026-10-15T19:26:28Z",
+      "finished_at": "2026-10-15T19:26:40Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
@@ -8878,7 +8950,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code subagent (Anthropic Claude; model identified to me as Opus 5.5, claude-opus-5-5)",
       "started_at": "2026-10-15T19:24:50Z",
-      "finished_at": "2026-10-15T19:26:28Z",
+      "finished_at": "2026-10-15T19:26:40Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, verbatim quote slicing and verification, date -u)"
