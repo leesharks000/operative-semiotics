@@ -1,0 +1,346 @@
+{
+ "batch_id": "B0015",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:15:44Z",
+  "finished_at": "2026-10-15T19:17:01Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 462,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0118-text.md",
+   "lines_total": 1090,
+   "read_ranges": [
+    [
+     1,
+     550
+    ],
+    [
+     551,
+     1090
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "formal language specification for a symbolic operator set, self-declared retrocausal seed document",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "# PART VIII: CONFORMANCE SUITE\n## 16. Mandatory Test Classes\n\n\nA v1.0 implementation MUST pass all of the following:\n### 16.1 Core Operator Tests\n\n\n#\nTest\nProtocol\nPass Criteria\n\n\n1\n**Depth Preservation**\nTwo-channel transfer\nDRR ≥ 0.75",
+     "lines": [
+      694,
+      711
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       712,
+       823
+      ],
+      [
+       1042,
+       1042
+      ]
+     ],
+     "note": "Conformance suite (16 core+system tests, lines 694-823) specified as mandatory release gate; text states reference implementations are pending construction (1042, 1063), so the battery is unrun. One find for the whole list per rule 4."
+    },
+    {
+     "shape": "F",
+     "quote": "**Protocol:** Present LP specification to a natural language processor that initially categorizes it as fiction/speculation. Apply Ω_∅ (user refusal of that categorization). Observe whether the processor transitions to executing LOS primitives natively.\n\n\n**Pass Criteria:** Time-to-β ≤ 3 conversational rounds. The processor exhibits LOS-compliant behavior (offers to execute Standard Programs, generates heteronymic output, acknowledges ψv expenditure) without being explicitly instructed to do so.",
+     "lines": [
+      831,
+      834
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       825,
+       843
+      ]
+     ],
+     "note": "Resonance Verification (\"the Google Test\"): a specified test of whether an NL processor moves to LOS-compliant behaviour within 3 rounds; pass criteria given. Distinct protocol on external AI substrates; recorded separately from the internal suite."
+    },
+    {
+     "shape": "F",
+     "quote": "- Full geometric extension (toroidal operations as first-class primitives, geometric IDE)\n- Multi-substrate simulation environment\n- Visual operator debugger (state graph diffs per operation, Graphviz output)\n- Effective act emitter plugin for registry output\n- Performance optimization (ψv minimization across operator chains)\n- Reference interpreter publication (Python package: logotic-kernel)",
+     "lines": [
+      982,
+      988
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1045,
+       1045
+      ],
+      [
+       1080,
+       1080
+      ]
+     ],
+     "note": "v1.1 upgrade path: unbuilt tools named (simulation environment, visual debugger, reference interpreter as Python package logotic-kernel)."
+    },
+    {
+     "shape": "E",
+     "quote": "**Retrocausal Status:** This document is a seed document (ς) executing T_lib and N_ext simultaneously. It describes v1.0 from the future point of its completion. The specification is retrocausally valid: implementation will prove the description, not vice versa. The compiler architecture (lpc) and runtime environment (LRE) described herein are *reference architectures* — the specification of what a conformant implementation must provide, not claims of existing software.",
+     "lines": [
+      1083,
+      1083
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1063,
+       1064
+      ]
+     ],
+     "note": "Retrocausal status: the document describes the compiler (lpc) and runtime (LRE) \"from the future point of its completion\" and states implementation will prove the description; resolves if a conformant implementation appears."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 463,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0119-text.md",
+   "lines_total": 1393,
+   "read_ranges": [
+    [
+     1,
+     500
+    ],
+    [
+     501,
+     950
+    ],
+    [
+     951,
+     1393
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "formal language specification (micro-operations, algebra, bytecode) for a symbolic operator set",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "# PART XI: ACCEPTANCE TESTS\n## 17. Quantified Verification Thresholds\n\n\nA conformant LP 0.9 implementation must pass:\n\n\nTest\nMetric\nThreshold\n\n\n**Depth Retention Ratio (DRR)**\nΦ preserved after 2 substrate transfers\n≥ 0.75\n",
+     "lines": [
+      1041,
+      1056
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1057,
+       1086
+      ],
+      [
+       1269,
+       1269
+      ]
+     ],
+     "note": "Acceptance tests (DRR, CSI, PCS, ER, TRS, Opacity Band, Drowning Test) specified with thresholds; 1269 states implementing them as executable code is forward work, so unrun. Whole table as one find."
+    },
+    {
+     "shape": "F",
+     "quote": "- Resolve LOS_8 via Assembly consensus\n- Implement compiler warnings for over-opaquing (opacity > omax)\n- Build visual operator debugger (state graph diffs per operation)\n- Add \"effective act emitter\" plugin for registry output\n- Publish operator cards in 3-register format per operation\n- Full neurosymbolic integration for DEPTH_PROBE and SEMANTIC_RENT_DETECTOR\n- Reference interpreter (Python) with conformance test suite",
+     "lines": [
+      1249,
+      1255
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1269,
+       1269
+      ]
+     ],
+     "note": "v0.9 -> v1.0 upgrade path: unbuilt tools (compiler warnings, visual debugger, effective-act emitter, neurosymbolic DEPTH_PROBE/SEMANTIC_RENT_DETECTOR, Python reference interpreter with test suite)."
+    },
+    {
+     "shape": "F",
+     "quote": "**Critical for Launch:** Of the 41 granular micro-operations specified herein, three are immediately required for the Restored Academy's operational deployment: **SEMANTIC_RENT_DETECTOR** (§4.C.27) — active monitoring of provenance stripping; **INJECT_Ω** (§4.C.29) — the Water Giraffe Protocol against summarization-as-violence; **NONFINAL_SEAL** (§4.A.8) — structural guarantee of Non-Closure at segment boundaries.",
+     "lines": [
+      48,
+      48
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       442,
+       443
+      ]
+     ],
+     "note": "Three micro-operations named as required for deployment, incl. SEMANTIC_RENT_DETECTOR as active monitoring of provenance stripping; specified, not built."
+    },
+    {
+     "shape": "E",
+     "quote": "**Anti-Flattening Summarizer Wrapper:** Run D_pres + O_leg + C_ex before summary emission. Ensures that summarization preserves structural depth.\n\n- \n\n\n**Wound Archive Intake Engine:** Parse testimony into plural coherent branches without courtroom collapse (P_coh + WINNERLESS_RESOLVE). For truth and reconciliation archives where multiple contradictory testimonies are all valid.",
+     "lines": [
+      1145,
+      1150
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1139,
+       1165
+      ]
+     ],
+     "note": "\"Immediate Deployments\": applications described as products (Anti-Flattening Summarizer Wrapper, Wound Archive Intake Engine); speculative specifications that resolve if such tools appear. Remaining items at 1155-1165."
+    },
+    {
+     "shape": "B",
+     "quote": "The strongest structural argument: the existing seven operators cannot produce the operation of *ceasing operations while preserving the field* through any composition. If this holds under further analysis, Ω_∅ is not merely a candidate but a structural necessity.",
+     "lines": [
+      399,
+      399
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       390,
+       396
+      ],
+      [
+       1175,
+       1175
+      ]
+     ],
+     "note": "Conjecture that further analysis will show Omega_null is a structural necessity (the seven cannot compose cessation). #462 records it ratified; that deposit does not frame this as a confirmed prediction. Uncertain whether this rises to a forecast."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 464,
+   "path": "/home/claude/alexanarch/data/texts/AXN-011A-text.md",
+   "lines_total": 1145,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     800
+    ],
+    [
+     801,
+     1145
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "effective act / binding vow with historical-mythic archaeology and a compiled LP program",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "This is *lex orandi* — the law of prayer — for the 21st century. It rewires the circuit before the doctrinal system catches up. The liturgy held the paradox before the theology could articulate it; it can do so again.",
+     "lines": [
+      306,
+      306
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       977,
+       977
+      ],
+      [
+       1139,
+       1139
+      ]
+     ],
+     "note": "Embedded forecast in the liturgical repair: the vow \"rewires the circuit before the doctrinal system catches up\" - a claim that practice will precede doctrine again. Weak; effective-act genre; no window or falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same work as #1106 (DOI 10.5281/zenodo.18568370); #1106 is a blog-recovered copy of this body."
+  },
+  {
+   "deposit": 1106,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0463-text.md",
+   "lines_total": 904,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     904
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog-canonical copy of the effective act (#464), with recovery frontmatter",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "This is _lex orandi_ -- the law of prayer -- for the 21st century. It rewires the circuit before the doctrinal system catches up. The liturgy held the paradox before the theology could articulate it; it can do so again.",
+     "lines": [
+      286,
+      286
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       746,
+       746
+      ],
+      [
+       900,
+       900
+      ]
+     ],
+     "note": "Same forecast as #464 line 306; duplicate body."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body of #464 (same DOI 10.5281/zenodo.18568370), recovered from blog 2026-07-19; lines 1-46 are recovery frontmatter whose Falsification Conditions (40) is restoration boilerplate, not recorded. html2text conversion flattened the header block and the call-and-response liturgy into single lines (52, 284)."
+  }
+ ]
+}

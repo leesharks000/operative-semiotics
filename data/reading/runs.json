@@ -532,7 +532,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "batch entry in queue.json + protocol",
    "output": "data/reading/batches/B0018.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 60361,
+    "tool_uses": 8,
+    "tokens": 115721
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:15:56Z",
+    "finished_at": "2026-10-15T19:16:39Z",
+    "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load and verbatim quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 2,
+    "entries": 2,
+    "finds": 8,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 2,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w2-B0019",
