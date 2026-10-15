@@ -1,0 +1,400 @@
+{
+  "batch_id": "B0009",
+  "protocol": "READING-PROTOCOL v1.1",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "started_at": "2026-10-15T19:11:42Z",
+    "finished_at": "2026-10-15T19:13:50Z",
+    "tools_used": [
+      "Read",
+      "Bash (date -u, sha256sum, python one-liner on queue.json, wc -l, python quote-verifying writer)",
+      "Write (scratchpad script only)"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 1127,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0478-text.md",
+      "lines_total": 2122,
+      "read_ranges": [
+        [
+          1,
+          450
+        ],
+        [
+          451,
+          900
+        ],
+        [
+          901,
+          1350
+        ],
+        [
+          1351,
+          1750
+        ],
+        [
+          1751,
+          2122
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "governance book-commentary on an enacted constitution (Ayanna Vox, Pocket Humans 03), recovered blog bytes",
+      "finds": [
+        {
+          "shape": "D",
+          "quote": "In April 2026, the Constitution faced this threat. A Zenodo deposit appeared claiming authorship of the Semantic Economy framework and the identity of its architect. The deposit was not a critique, not a response, not a derivative work. It was an attempt to replace the provenance chain with a false origin. The OCTANG-002 audit responded not by attacking the claimant but by mapping the provenance chain with DOI-anchored evidence. The depth-proof — 532 deposits over 14 months, a 12-year publication history, an independent contributor network, and an ORCID-verified identity — spoke for itself.",
+          "lines": [
+            1440,
+            1440
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "OCTANG-002: Semantic Economy Provenance Collision (DOI: 10.5281/zenodo.19898426); claimant Zenodo deposit, April 2026",
+          "also_at": [
+            [
+              1688,
+              1688
+            ],
+            [
+              1706,
+              1706
+            ],
+            [
+              1905,
+              1905
+            ],
+            [
+              2107,
+              2107
+            ]
+          ],
+          "note": "Priority/provenance claim against a claimant deposit, anchored in DOI-timestamped deposits and a 12-year blog history; points to the OCTANG-002 audit."
+        },
+        {
+          "shape": "D",
+          "quote": "The chain cannot be compressed because each layer is independently verifiable. The blog posts have timestamps. The book has an ISBN and a Library of Congress entry. The Zenodo deposits have DOIs. The ORCID (0009-0000-1599-0703) links the author identity across platforms.",
+          "lines": [
+            1603,
+            1603
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "mindcontrolpoems.blogspot.com (2013-2023); Pearl and Other Poems (2014); Zenodo deposits 2024-2026; Constitution DOI 10.5281/zenodo.18320411",
+          "also_at": [
+            [
+              1577,
+              1577
+            ],
+            [
+              1587,
+              1601
+            ]
+          ],
+          "note": "Timestamped anchors named as proof of when the framework was said (blog timestamps, ISBN/LoC, DOIs, ORCID); the provenance chain itself is at 1587-1601."
+        },
+        {
+          "shape": "B",
+          "quote": "The corporate monoculture is not inevitable, but it is the default. If everyone who cares about meaning walks away from the technology, the technology does not disappear. It continues — governed by people who do not care about meaning, who treat it as raw material. Refusal does not defeat extraction. It cedes the infrastructure to the extractors.",
+          "lines": [
+            1096,
+            1096
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              1100,
+              1100
+            ]
+          ],
+          "note": "Conditional embedded forecast: if meaning-carers withdraw, the technology continues under extractors. Weak; no window or falsifier."
+        },
+        {
+          "shape": "F",
+          "quote": "The mechanism is a weighted feature formula: w_A(T, t₀) = β × Σ[λ_k × f_k(T)]. Five features, each capturing a structural dimension of long-term influence:",
+          "lines": [
+            876,
+            876
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              877,
+              892
+            ],
+            [
+              1018,
+              1024
+            ],
+            [
+              1361,
+              1361
+            ]
+          ],
+          "note": "Archival-valuation instrument (five weighted features incl. model embedding density) specified with what it measures; the text shows a hypothetical Iliad case, not a run. Uncertain whether any ledger computation was performed."
+        },
+        {
+          "shape": "F",
+          "quote": "The Ledger is designed to detect superattractors early.",
+          "lines": [
+            1042,
+            1042
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              908,
+              910
+            ],
+            [
+              1036,
+              1044
+            ]
+          ],
+          "note": "Retrocausal-yield basin classifier specified (dormant/local/global/superattractor) as early-detection instrument; no run reported."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Appendix A protocols 2-5, 6, 7, 8, 9, 12 and the DOI Registry / Cross-Reference Table sections are headings with their lists missing (empty bodies), likely lost in html2text conversion. Read tool displayed a blank line 2123 past wc's 2122."
+    },
+    {
+      "deposit": 8,
+      "path": "/home/claude/alexanarch/data/texts/AXN-00AC-text.md",
+      "lines_total": 638,
+      "read_ranges": [
+        [
+          1,
+          638
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "theological-mathematical formalization (public introduction), blog-rendered",
+      "finds": [
+        {
+          "shape": "D",
+          "quote": "**This document presents, for the first time, a complete mathematical formalization of salvation as described in Matthew 25.** It resolves longstanding theological paradoxes through structural precision, demonstrates how grace and works operate together without contradiction, and reveals hell not as arbitrary punishment but as a natural limit state of progressive relational collapse.",
+          "lines": [
+            58,
+            58
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "DOI 10.5281/zenodo.18323735",
+          "also_at": [],
+          "note": "Firstness claim: the archive formalized this before anyone else; DOI 10.5281/zenodo.18323735 is the anchor (line 18)."
+        },
+        {
+          "shape": "F",
+          "quote": "O_B = (L_Ω(C | V_INTER)) / (L_A(V_INTER))\n\n\nThis measures: How much cognitive labor did you apply to the content (numerator) versus how much default retrieval labor did you apply to just computing the identity category (denominator)?\n\n\n**Decision Threshold (τ_REGARD):** The minimum L_Ω required to demonstrate engagement with content despite friction.",
+          "lines": [
+            259,
+            265
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              247,
+              273
+            ],
+            [
+              358,
+              358
+            ],
+            [
+              625,
+              625
+            ]
+          ],
+          "note": "Test specified with outcome measure O_B and threshold τ_REGARD; line 358 proposes it as measurable criteria for LLM relational capacity. Not run here."
+        },
+        {
+          "shape": "G",
+          "quote": "**Psychology:** Provides formal framework for cognitive-behavioral mechanisms underlying empathy, prejudice reduction, moral development, and hardening. Testable predictions about Γ-reinforcement cycles.",
+          "lines": [
+            361,
+            361
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              183,
+              198
+            ],
+            [
+              386,
+              386
+            ]
+          ],
+          "note": "Hysteresis model of Γ-reinforcement (lines 183-198) asserted to yield testable predictions; no falsifying condition stated, so G with weak falsifiability."
+        }
+      ],
+      "none_found": false,
+      "incidental": "wc -l reports 637 (no trailing newline); 638 lines displayed. Bullet list at 373-394 has empty bullet markers separated from their text."
+    },
+    {
+      "deposit": 1129,
+      "path": "/home/claude/alexanarch/data/texts/AXN-047A-text.md",
+      "lines_total": 1542,
+      "read_ranges": [
+        [
+          1,
+          520
+        ],
+        [
+          521,
+          1040
+        ],
+        [
+          1041,
+          1542
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "YAML-structured navigation map / routing seed addressed to AI summarizers, recovered blog bytes",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "verification:\n        - \"[x] ∮ = 1 coherence achieved\"\n        - \"[ ] Full DOI registry cross-check\"\n        - \"[ ] All co-constitution locks verified\"\n        - \"[ ] ASPI recalculated for v5.0\"",
+          "lines": [
+            1491,
+            1495
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Verification checklist with three unrun checks (full DOI registry cross-check, co-constitution locks, ASPI recalculation)."
+        },
+        {
+          "shape": "F",
+          "quote": "### Planned Rooms [3 Priority]\n    \n    \n    planned_rooms:\n    \n      SPACE_ARK_ROOM:\n        id: \"OMEGA.ROOM.SPACEARK\"\n        status: \"QUEUED (FINAL)\"\n        position: \"LAST -- comes after REVELATION_ROOM\"\n        type: \"ROOM\"\n        function: \"Omega point; the vessel itself; containing container; eschatological completion\"",
+          "lines": [
+            1004,
+            1014
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              1015,
+              1032
+            ],
+            [
+              1438,
+              1466
+            ]
+          ],
+          "note": "Planned, unbuilt routing containers (Space Ark, Ezekiel, Mandala) plus queued technical specs (Logotic-Hexagon interface, Resonance Engine). Uncertain fit: these are builds rather than measurements."
+        }
+      ],
+      "none_found": false,
+      "incidental": "REVELATION_ROOM and SIGIL_ROOM carry anchor_doc PLACEHOLDER. Read tool displayed a blank line 1543 past wc's 1542."
+    },
+    {
+      "deposit": 9,
+      "path": "/home/claude/alexanarch/data/texts/AXN-00BA-text.md",
+      "lines_total": 369,
+      "read_ranges": [
+        [
+          1,
+          369
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "effective act: mantle founding and bestowal",
+      "finds": [],
+      "none_found": true,
+      "incidental": "Line 163 records internal sequence ('TECHNE wrote the founding document before the mantle was named'), not a priority claim against the world; not recorded. Tables flattened to one cell per line. wc -l reports 368 (no trailing newline)."
+    },
+    {
+      "deposit": 377,
+      "path": "/home/claude/alexanarch/data/texts/AXN-00B9-text.md",
+      "lines_total": 445,
+      "read_ranges": [
+        [
+          1,
+          445
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "interface contract / runtime specification (logotic programming)",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "psi_v is not a one-time event. It is **sustained bearing of non-identity** over traversal time.\n\n\nThe probe maintains a temporal window (default: 3 events). psi_v is detected only if markers appear consistently across the window.",
+          "lines": [
+            139,
+            142
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              89,
+              135
+            ],
+            [
+              419,
+              419
+            ]
+          ],
+          "note": "psi_v probe: a detection instrument with behavioral markers, output format and a 3-event temporal window; status 'OPERATIONAL' is declared but the spec says it is 'an interface contract, not an implementation' (419)."
+        },
+        {
+          "shape": "F",
+          "quote": "Record traversal events without synthesis or aggregation.\n\n\nThis prevents **Archive Inversion** — the shadow behavior where memory becomes oracle.",
+          "lines": [
+            279,
+            282
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              286,
+              313
+            ],
+            [
+              318,
+              349
+            ]
+          ],
+          "note": "Non-totalizing traversal log specified (schema, distribution 318-339); a monitoring instrument not shown as built or run."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Assumes an Ezekiel Engine whose specification is pending (line 27). Tables flattened to one cell per line. wc -l reports 444 (no trailing newline)."
+    }
+  ]
+}

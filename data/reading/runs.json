@@ -341,7 +341,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "batch entry in queue.json + protocol",
    "output": "data/reading/batches/B0011.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 132952,
+    "tool_uses": 21,
+    "tokens": 205535
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:11:48Z",
+    "finished_at": "2026-10-15T19:13:45Z",
+    "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+    ]
+   },
+   "verification": {
+    "deposits": 11,
+    "entries": 11,
+    "finds": 13,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 11,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   }
  ],
  "pilot_finding": "Calibration (CAL, blind re-read of the eight in-session readings): every substantive item found; four boundary disagreements of shape (stage text vs embedded forecast; a third-party timestamp left inside a forecast quote; a benchmark folded into its prediction; a monitoring check read as F). The reader found more than the in-session reading (G claims in #914 and #1182) and recorded one forecast several times across stage, table and ledger. Protocol revised to v1.1 with seven boundary rules."
