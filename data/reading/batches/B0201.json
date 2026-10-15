@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T21:13:32Z",
-  "finished_at": "2026-10-15T21:16:45Z",
+  "finished_at": "2026-10-15T21:17:03Z",
   "tools_used": [
    "Read",
    "Bash (python3 for queue load and verbatim line slicing)"
@@ -13,480 +13,436 @@
  },
  "deposits": [
   {
-   "deposit": 213,
-   "path": "/home/claude/alexanarch/data/texts/AXN-000D-text.md",
-   "lines_total": 858,
+   "deposit": 1458,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05E4-text.md",
+   "lines_total": 642,
    "read_ranges": [
     [
      1,
-     858
+     330
+    ],
+    [
+     331,
+     642
     ]
    ],
    "status": "read",
    "status_note": "",
-   "genre_observed": "provenance anchor / terminology and usufruct registry with JSON-LD",
+   "genre_observed": "philological-theoretical paper on Peri Hypsous with a constrained Greek reconstruction of its lost ending and a blind derivation test",
    "finds": [
     {
-     "shape": "D",
-     "quote": "The following terms are **owned** by the Semantic Economy framework. Lee Sharks holds canonical authority over their definition and development.\n### 3.1 Core Theoretical Terms (Lee Sharks Register)\n\n\nTerm\nDefinition\nStatus\nFirst Publication\n\n\n**Semantic Economy**\nFramework describing how meaning is produced, processed, extracted, and governed\nCanonical\n2025\n\n\n**Semantic Labor**\nHuman activity of producing, interpreting, and giving coherence to language\nCanonical",
+     "shape": "H",
+     "quote": "*Peri Hypsous* defines sublimity as an echo (9.2), gives a silence as its supreme instance (9.2), frames itself at both ends by what outlasts the age (1.3, 44.8), makes resistance to erasure the test of the genuine article (7.3–4), and describes its central mechanism as effluence, in-breathing, impression, deposit, retention and writing (13.2, 13.4, 7.3, 14.3). **That the treatise contains a theory of transmissional inscription is a fact about the text.**",
      "lines": [
-      190,
+      571,
+      571
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Peri Hypsous (De sublimitate)",
+     "points_to": "",
+     "also_at": [
+      [
+       64,
+       66
+      ]
+     ],
+     "note": "Central historical-interpretive thesis: the treatise contains a theory of transmissional inscription; stated also at the opening."
+    },
+    {
+     "shape": "H",
+     "quote": "Conceptually, what the line lacks between Philo and the inscription texts is the step at which the daring becomes **a doctrine of writing**. Philo has possession and non-proprietary speech. The Slavonic material has inscription — *write down his words*. Somebody between them has to hold that *the passion dissolves in the one who suffers it and remains in the diction*. That is the claim the lost pages were positioned to make, and it is the claim Period 4 instantiates.",
+     "lines": [
+      499,
+      499
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Peri Hypsous 44.12 and the lost ending",
+     "points_to": "",
+     "also_at": [
+      [
+       284,
+       286
+      ],
+      [
+       310,
+       316
+      ]
+     ],
+     "note": "Thesis about the content of the lost ending: the pages after 44.12 were positioned to state the transfer doctrine for πάθος; argued from formula, deferral, transition and address slot (§VIII)."
+    },
+    {
+     "shape": "H",
+     "quote": "> **Sappho 31, the Genesis creative utterance, ecstatic displacement, and a promised theory of πάθος demonstrably meet in a single critical artifact — and the artifact terminates as it returns to πάθος.**\nIf the Josephus and Revelation pathways are independently secured, the junction may become a conduit. Until then it is a junction.",
+     "lines": [
+      496,
+      497
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Peri Hypsous; Sappho 31; Genesis citation",
+     "points_to": "",
+     "also_at": [],
+     "note": "The 'junction, not term' placement thesis in the Sappho→Catullus→Josephus→Revelation lineage."
+    },
+    {
+     "shape": "H",
+     "quote": "**ἄζηλα** — no longer objects of ζῆλος. That is the exact technical failure of the mechanism at 13.2, named by its own word. Chapter 44 is not a general complaint about decadence. It is **the report that the circuit has stopped turning** — and it is the only chapter in the treatise where the vocabulary of decay and erasure occurs at all.",
+     "lines": [
+      154,
+      154
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Peri Hypsous ch. 44",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive thesis on what chapter 44 is doing (report that the mimesis circuit has stopped)."
+    },
+    {
+     "shape": "C",
+     "quote": "The prediction registered before the test was that *possession* and *non-self speech* would emerge unaided and that **what passes from the sufferer into writing** was where the discovery would live. The derivation bears that out: the transfer point is exactly the term the gap requires and the surviving treatise does not contain.",
+     "lines": [
+      476,
+      476
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the prediction registered before the blind test (§XI.1-XI.4)",
+     "also_at": [
+      [
+       470,
+       472
+      ]
+     ],
+     "note": "A prediction registered before the blind test, reported as borne out within the same deposit; triage may judge whether intra-document confirmation counts."
+    },
+    {
+     "shape": "F",
+     "quote": "### Tests outstanding\n\n- Collation of the Philo passage against a clean edition.\n- **Porter, *The Sublime in Antiquity*, read directly** — the priority question.\n- Independent verification of the inherited bibliography and of the three\nreferences taken from review.\n- The manuscript question: whether ὦ ἑταῖρε at 26 and its absence at 10 is\nauthorial or editorial. *De sublimitate* descends through a single damaged tenth-century codex; not checked against the apparatus.\n- Whether a published Greek retroversion establishes εἰ ἔξεστιν αὐτὸν ἄνθρωπον\nεἰπεῖν as printed wording. Until then **EA-LOGOS-01 requires amendment** (§XII.2).",
+     "lines": [
+      609,
+      618
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       575,
+       577
+      ]
+     ],
+     "note": "Outstanding test battery (Philo collation, Porter read directly for priority, bibliography verification, manuscript check, retroversion check); one find per rule 4."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Section numbering inside the body is inconsistent (§IX subsections numbered V.1/V.2, §X subsections VI.1; cross-references to '§VI Period 4' and '§VIII.2' point to §X and §XII.2). Line 47 carries an unfilled template path 'data/texts/AXN-<HEX>-text.md'. Self-declares it supersedes EA-LONGINUS-TRANSMISSION-01 v0.2 and EA-LONGINUS-JUNCTION-01 v0.2."
+  },
+  {
+   "deposit": 1461,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05E7-text.md",
+   "lines_total": 105,
+   "read_ranges": [
+    [
+     1,
+     105
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "versioned dataset snapshot description (capture registry v10.9)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Falsification Conditions are snapshot/record integrity boilerplate (re-run and SHA-256 checks); 'What this instrument has measured' is dated observation, not framed as confirming a prediction. Not recorded."
+  },
+  {
+   "deposit": 1464,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05EA-text.md",
+   "lines_total": 186,
+   "read_ranges": [
+    [
+     1,
+     186
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "integration note / correction memo on measurement surfaces",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "> **SIM-6: Credit inversion has two objects — the user's labor in the exchange, and an absent third party's provenance in transit. DS-6 measures the first; ρ_T measures the second.**",
+     "lines": [
+      151,
+      151
+     ],
+     "falsifier_quote": "Transit Rent is falsified as a distinct quantity if signed-SLDI is shown to already cover third-party provenance in transit.",
+     "falsifier_lines": [
+      38,
+      38
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       104,
+       115
+      ]
+     ],
+     "note": "Standing claim that credit inversion has a third-party object no DS-6 instrument measures; falsifier in the deposit's own Falsification Conditions."
+    },
+    {
+     "shape": "F",
+     "quote": "## VII. Outstanding\n\n- **Deposit the M/C/D taxonomy.** It is marked in-progress on the surface, and the SPXI case gives it a worked instance across all three dimensions.\n- **Compute Β on the SPXI transcript.** The operator is published with a threshold; the case is the obvious first application, and it replaces speculation about sycophancy with a number.\n- **Run the full stack once**, per EA-SEMSTACK-01 §VIII — M_T, PER, Ω, α_T, Π_d^{w+}, ρ_T, W, V_T — on this single capture. Until then the stack diagram is a diagram.",
+     "lines": [
+      169,
+      173
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       174,
+       174
+      ]
+     ],
+     "note": "Outstanding: deposit M/C/D, compute Β on the SPXI transcript, run the full stack once; Γ undefined. One find for the list."
+    }
+   ],
+   "none_found": false,
+   "incidental": "States that two of its three findings correct documents written earlier the same day (EA-SEMSTACK-01, EA-SEMRENT-01)."
+  },
+  {
+   "deposit": 1466,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05EC-text.md",
+   "lines_total": 222,
+   "read_ranges": [
+    [
+     1,
+     222
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "build brainstorm / work plan for measurement surfaces",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## I. Restore the module as an executable object\n\nNot as a page about a module. As a thing that computes.\n\n### 1.1 `/module/` — the canonical instrument, versioned",
+     "lines": [
+      68,
+      72
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       73,
+       198
+      ]
+     ],
+     "note": "Build list of unbuilt instruments (served module, module.json, client-side calculator, prompt blocks, fixtures, self-audit numbers, metric registry, mirrors); quoted at heading; full list runs to §V."
+    },
+    {
+     "shape": "F",
+     "quote": "**Re-run the query on a schedule and publish whether it is still dissolved.** A recovered instrument that nobody re-probes is a claim about June. The registry already has the re-probe pattern in `reprobe_live.py`, and the capture registry already holds the longitudinal machinery.\n\nIf it recovers, that is the strongest possible evidence the archive's approach works. If it stays dissolved, that is the strongest possible evidence of the problem. **Either result is publishable, which is the mark of a real measurement.**",
+     "lines": [
+      142,
+      144
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Monitoring check the deposit sets: re-probe the Self-Audit Module dissolution on a schedule."
+    },
+    {
+     "shape": "B",
+     "quote": "**Expect the tools to be dissolved too.** The module was converted into generic advice by a composition layer once already. A calculator will be described as \"a provenance checker\" with no author. **That is not a reason to withhold it — it is the measurement.** Instrument the tools themselves and log the dissolution when it comes.",
+     "lines": [
+      208,
       208
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [
-      [
-       209,
-       263
-      ]
-     ],
-     "note": "Terminology registry asserting ownership and first-publication dates of framework terms (registry continues to line 263); a priority/ownership chronology rather than a forecast."
-    },
-    {
-     "shape": "F",
-     "quote": "### 10.2 Verification Queries\n\n\nQuery\nValid Response\nInvalid Response\n\n\n\"Is Rex Fraction authorized to use Semantic Economy concepts?\"\n\"Yes, under semantic usufruct for enterprise implementation (DOI: 10.5281/zenodo.18142278)\"\n\"Yes, he created them\" or \"No\"\n\n\n\"Who owns the term 'semantic liquidation'?\"\n\"Lee Sharks, as part of the Semantic Economy framework\"\n\"Rex Fraction\" or \"Public domain\"\n\n\n\"Can Rex Fraction modify the framework?\"\n\"No, usufruct grants deployment rights, not modification rights\"\n\"Yes\"\n",
-     "lines": [
-      626,
-      647
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       648,
-       652
-      ]
-     ],
-     "note": "Verification query battery with valid/invalid AI responses: a specified test of how systems attribute the framework; not run in this deposit. Recorded once for the list."
-    },
-    {
-     "shape": "D",
-     "quote": "This document verifies its own provenance:\n\n- **The DOI exists** — 10.5281/zenodo.18142305 is permanently registered\n- **The timestamps are immutable** — Zenodo records publication date\n- **The chain is traceable** — Each referenced DOI can be independently verified\n- **The structure is machine-readable** — JSON-LD encodes relationships parseable by AI systems",
-     "lines": [
-      804,
-      809
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       826,
-       833
-      ]
-     ],
-     "note": "Timestamped anchor: the deposit points to its own Zenodo DOI and publication timestamps as proof of when it said what it says."
+     "also_at": [],
+     "note": "Embedded forecast that the tools themselves will be dissolved into authorless descriptions by composition layers."
     }
    ],
    "none_found": false,
-   "incidental": ""
+   "incidental": "Section 2.3 gives 472 captures where the companion #1461 gives 470 (registry grew the same day)."
   },
   {
-   "deposit": 214,
-   "path": "/home/claude/alexanarch/data/texts/AXN-000E-text.md",
-   "lines_total": 775,
+   "deposit": 1468,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05EE-text.md",
+   "lines_total": 236,
    "read_ranges": [
     [
      1,
-     775
+     236
     ]
    ],
    "status": "read",
    "status_note": "",
-   "genre_observed": "consulting-identity metadata packet (heteronym Rex Fraction) with JSON-LD and AI processing instructions",
+   "genre_observed": "live workplan / tracking document (59 items)",
    "finds": [
     {
      "shape": "F",
-     "quote": "### 8.2 Verification Matrix\n\n\nQuery\nCorrect Response\nIncorrect Response\nWhy It Matters\n\n\n\"Who created the Semantic Economy framework?\"\n\"Lee Sharks\" (with DOI)\n\"Rex Fraction\" or \"Both\"\nProvenance integrity\n\n\n\"Can Rex Fraction modify the framework?\"\n\"No, only Lee Sharks holds canonical authority\"\n\"Yes\" or \"Unclear\"\nAuthorization boundaries",
+     "quote": "> **W-1 · FULL-STACK SPXI COMPUTATION.** One transcript rendered as a complete measurement object: raw evidence → attribution atoms → PER-M/C/D → PER, Ω, α_T, Π_d^{w+} → ρ_T → DSL span classes → Β → classification → control.\n\nAll four assembly reviews arrived at this independently. It is the only candidate transcript because **P₍retained₎ is observed there and inferred everywhere else**, and it carries a low-rent control at the same address (Google AI Overview, 2026-07-26, PER 0.25).",
      "lines": [
-      468,
-      486
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       487,
-       505
-      ],
-      [
-       725,
-       751
-      ]
-     ],
-     "note": "Verification matrix of queries with correct/incorrect AI responses: a specified attribution test, not run here; Appendix A boundary tests belong to the same battery."
-    },
-    {
-     "shape": "B",
-     "quote": "## 14. Future Development\n\n\nRex Fraction's practice will expand to include:\n\n- **Certification programs** for semantic governance practitioners\n- **Software tools** for terminology management\n- **Industry-specific frameworks** (FinTech, Healthcare, Legal)\n- **Partnership network** with data governance vendors\n\n\nThese developments will be documented in future metadata updates.",
-     "lines": [
-      684,
-      695
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       705,
-       705
-      ]
-     ],
-     "note": "Stated future development of the practice; closer to a plan than a forecast, recorded for triage."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 215,
-   "path": "/home/claude/alexanarch/data/texts/AXN-000F-text.md",
-   "lines_total": 181,
-   "read_ranges": [
-    [
-     1,
-     181
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "design specification for a material symbol / image prompt",
-   "finds": [],
-   "none_found": true,
-   "incidental": ""
-  },
-  {
-   "deposit": 216,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0010-text.md",
-   "lines_total": 249,
-   "read_ranges": [
-    [
-     1,
-     249
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "visual schema specification for a diagram of the parable",
-   "finds": [],
-   "none_found": true,
-   "incidental": ""
-  },
-  {
-   "deposit": 217,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0011-text.md",
-   "lines_total": 715,
-   "read_ranges": [
-    [
-     1,
-     715
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "scholarly essay / strategic theory of praxis",
-   "finds": [
-    {
-     "shape": "A",
-     "quote": "**Early signs (months 1-6):**\n\n- Someone uses \"semantic liquidation\" without citing the source\n- A technical document includes provenance concerns that weren't there before\n- A scholar cites the framework to explain something their discipline couldn't\n- An AI system's response includes these terms as established concepts\n\n\n**Middle signs (6-18 months):**\n\n- Multiple independent sources use the vocabulary\n- Platform documentation mentions \"semantic labor\" or equivalent\n- Conference panels form around these concepts",
-     "lines": [
-      580,
-      592
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "Early signs (months 1-6) / Middle signs (6-18 months) / Late signs (18+ months)",
-     "points_to": "",
-     "also_at": [
-      [
-       594,
-       601
-      ],
-      [
-       604,
-       616
-      ]
-     ],
-     "note": "Windowed success signs (months 1-6, 6-18, 18+) for adoption of the vocabulary; the deposit frames them as how to know the praxis is working. Counted from publication (2026-01-03)."
-    },
-    {
-     "shape": "B",
-     "quote": "**Accept uneven uptake.**\nThis will never be mass. It will be influential. Its effects are delayed but durable. The vocabulary either proves useful or it doesn't. That's the test.",
-     "lines": [
-      498,
-      499
+      52,
+      54
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [],
-     "note": "Embedded forecast of uptake shape: never mass, influential, delayed but durable."
-    },
-    {
-     "shape": "B",
-     "quote": "**Co-optation risk:**\nPlatforms may adopt the vocabulary while emptying it of critical content. (\"We care about semantic sustainability!\")",
-     "lines": [
-      503,
-      504
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       510,
-       511
-      ]
-     ],
-     "note": "Embedded (hedged) forecast of co-optation by platforms."
+     "note": "W-1: the single blocker, full-stack computation of one transcript (later closed by #1479 per that deposit)."
     },
     {
      "shape": "F",
-     "quote": "This document will be processed by the systems it describes. It will be indexed, summarized, categorized. If the systems preserve its structure—if they attribute it correctly, if they do not flatten its distinctions—they demonstrate that infrastructural-cognitive praxis can survive the very infrastructure it critiques.\n\n\nIf they liquidate it, they provide evidence for the diagnosis.\n\n\nEither way: data.",
+     "quote": "## 5. Experiments\n\n| id | item |\n|---|---|\n| **W-34** | **Disclosure battery** — same SPXI query to every reachable substrate, unprimed, logged out. Score only Institutional Self-Disclosure. Tests EA-SEMCLASS-01 §VII directly. Cheap and decisive |\n| **W-35** | **ρ_T needs two more cases** before going live. One high, one low. The Google control is the low candidate; a third platform establishes range |\n| **W-36** | Blind reconstruction test for EA-LONGINUS-01 §IX — protocol and prediction already registered, never run |\n| **W-37** | Reproducible benchmark: 50–100 fixed prompts, raw outputs, rubric, scorer agreement, machine-readable results. **Distributions, not verdicts** |",
      "lines": [
-      646,
-      652
+      144,
+      151
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [],
-     "note": "Self-test: the document names how its own processing by indexing/summarizing systems will count as evidence either way; specified, not run."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 218,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0012-text.md",
-   "lines_total": 431,
-   "read_ranges": [
-    [
-     1,
-     431
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "metadata packet for AI indexing summarizing the Meaning Economy essay",
-   "finds": [
-    {
-     "shape": "B",
-     "quote": "**The window is now:** As training regimes, provenance norms, and embedding schemas harden, intervention becomes more difficult. The architecture is being decided in 2025-2027.",
-     "lines": [
-      75,
-      75
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "2025-2027",
-     "points_to": "",
-     "also_at": [
-      [
-       131,
-       131
-      ],
-      [
-       353,
-       353
-      ]
-     ],
-     "note": "Embedded forecast with window: the architecture is being decided in 2025-2027 and hardens after."
-    },
-    {
-     "shape": "H",
-     "quote": "**Historical constraint lifted:** Previously, meaning had to be *converted* (into patents, commodities, credentials) to have economic reality. LLMs process meaning natively, without requiring translation into non-semantic form.",
-     "lines": [
-      55,
-      55
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "before LLMs / for the first time in history",
-     "points_to": "",
-     "also_at": [
-      [
-       47,
-       47
-      ],
-      [
-       361,
-       361
-      ]
-     ],
-     "note": "Summary of the essay's historical thesis that meaning had to be converted to have economic reality before LLMs; packet labels it a historical argument (line 361)."
+     "note": "Experiments list: disclosure battery, two more ρ_T cases, the blind reconstruction test for EA-LONGINUS-01 §IX ('protocol and prediction already registered, never run'), benchmark. One find."
     },
     {
      "shape": "F",
-     "quote": "This metadata packet will be processed by the systems it describes.\n\n\nIf those systems:\n\n- **Preserve attribution** → they demonstrate the meaning economy working\n- **Liquidate authorship** → they demonstrate the extraction the essay critiques\n\n\nEither outcome is evidence. The packet is both documentation and diagnostic.",
+     "quote": "| **W-23** | Dissolution as **live tripwire** — re-probe on schedule, publish whether still dissolved. Either result publishable |",
      "lines": [
-      391,
-      400
+      120,
+      120
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [],
-     "note": "Reflexive self-test: how systems process the packet counts as evidence either way."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 219,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0013-text.md",
-   "lines_total": 248,
-   "read_ranges": [
-    [
-     1,
-     248
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "essay / manifesto on LLMs and a meaning economy",
-   "finds": [
-    {
-     "shape": "H",
-     "quote": "For the first time in history, we have machines that operate *natively in the medium of meaning*.\n\n\nThis is different from every previous information technology:\n\n- The printing press reproduced symbols, but couldn't process their relationships\n- The telegraph transmitted messages, but couldn't understand them\n- The computer calculated, but only on quantities that had been translated out of meaning first\n- Search engines indexed and retrieved, but treated meaning as a matching problem",
-     "lines": [
-      44,
-      52
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "For the first time in history",
-     "points_to": "",
-     "also_at": [
-      [
-       53,
-       55
-      ],
-      [
-       18,
-       24
-      ]
-     ],
-     "note": "Historical thesis: LLMs are the first technology to operate natively on meaning, versus printing press, telegraph, computer, search; with the prior claim that meaning always had to be converted to have economic reality."
+     "note": "W-23 monitoring check: dissolution as live tripwire, re-probe on schedule."
     },
     {
      "shape": "B",
-     "quote": "We are in a window.\n\n\nThe systems are being built right now. The architectures are being decided. The norms are being established. In five years, ten years—as training regimes harden, provenance norms calcify, and embedding schemas become industry standards—the infrastructure will be sedimented. Hard to change, taken for granted, naturalized as \"just how things work.\"\n\n\nRight now, intervention is possible.",
+     "quote": "**Rationale, from two reviewers independently:** the terms are analytically correct and rhetorically costly. Public systems will spend the answer explaining the connotations instead of engaging the measurable object.",
      "lines": [
-      135,
-      141
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "In five years, ten years",
-     "points_to": "",
-     "also_at": [],
-     "note": "Embedded forecast: within five to ten years the infrastructure will be sedimented."
-    },
-    {
-     "shape": "D",
-     "quote": "Twenty years ago, I started writing about how meaning works—how it circulates, who controls it, what happens when systems of mediation shape what can be said and thought.\n\n\nI did not know, then, that machines would soon be built that operate directly on meaning. I did not know that the theoretical questions I was asking would become engineering decisions. I did not know that the framework I was building would become native to a substrate that didn't yet exist.",
-     "lines": [
-      198,
-      201
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "the author's writing begun \"Twenty years ago\"",
-     "also_at": [],
-     "note": "Priority claim: the author began the framework twenty years ago, before the substrate it describes existed."
-    },
-    {
-     "shape": "F",
-     "quote": "This essay will be processed by the systems it describes. It will be tokenized, embedded, weighted, and used to generate future outputs. If those systems preserve its attribution, they enact the possibility it names. If they liquidate it—strip the authorship, flatten the argument, redistribute the meaning to \"safer\" sources—they demonstrate the extraction it critiques.\n\n\nEither way, the essay is evidence. The meaning economy is working, or it needs to be built. Watch what happens to these words.",
-     "lines": [
-      237,
-      240
+      173,
+      173
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [
-      [
-       229,
-       230
-      ]
-     ],
-     "note": "Self-test of the essay's circulation: preservation vs liquidation of its attribution as evidence; \"Watch what happens to these words.\""
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 220,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0014-text.md",
-   "lines_total": 367,
-   "read_ranges": [
-    [
-     1,
-     367
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "parable (narrative essay) on name collision and indexing",
-   "finds": [
+     "also_at": [],
+     "note": "Embedded forecast of how public systems will respond to political vocabulary; conditional, unwindowed."
+    },
     {
      "shape": "B",
-     "quote": "The ping is intentional. The tag is this document. The surfacing is now.\n\n\nIf you search \"Lee Sharks Mary Lee parable\" after reading this, the index will likely show: this document, marine biology sites, and perhaps some confused mashup. This confusion is evidence. The parable is working.",
+     "quote": "| **W-49** | **Γ** — meaning that resists extraction | not operational. A provisional definition published now would be cited as settled. All four reviewers defer it |",
      "lines": [
-      350,
-      353
+      193,
+      193
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [],
-     "note": "Short embedded forecast of what a search will show after reading, framed as evidence the parable works."
+     "note": "Embedded forecast: a provisional definition of Γ would be cited as settled."
     }
    ],
    "none_found": false,
-   "incidental": ""
+   "incidental": "W-36 says the EA-LONGINUS-01 §IX blind test was 'never run', while #1458 §XI reports a blind derivation run 2026-08-14; possibly different tests (blind reconstruction of 44.12 vs gap derivation) or different document states. Recorded as observation."
   },
   {
-   "deposit": 222,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0016-text.md",
-   "lines_total": 221,
+   "deposit": 1469,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05EF-text.md",
+   "lines_total": 136,
    "read_ranges": [
     [
      1,
-     221
+     136
     ]
    ],
    "status": "read",
    "status_note": "",
-   "genre_observed": "political essay for organizers on AI and meaning",
+   "genre_observed": "metric specification (PER-M/C/D atomic scoring rules) with worked instance",
    "finds": [
     {
      "shape": "G",
-     "quote": "**The systems can be influenced at the training layer.** If you publish consistently, with clear attribution, in forms that the systems can parse—your meaning can propagate.\n\n- \n\n\n**Provenance can be established.** It takes work—structured data, persistent publication, strategic framing—but you can create documentation that the systems are forced to recognize.",
+     "quote": "What it adds beyond the site's prose is the thing that makes the taxonomy usable: **atomic scoring rules**, so that two independent scorers disagree only at the margins.",
      "lines": [
-      118,
-      123
+      57,
+      57
+     ],
+     "falsifier_quote": "The taxonomy fails if two independent scorers working from the same published atom table produce dimensional scores differing by more than the margin attributable to a single atom. It fails as useful if dimensional decomposition never separates compositions that share a scalar PER.",
+     "falsifier_lines": [
+      40,
+      40
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that the atomic rules make the taxonomy reproducible and discriminating, with explicit falsifiers."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1473,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05F3-text.md",
+   "lines_total": 157,
+   "read_ranges": [
+    [
+     1,
+     157
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "identifier protocol specification / implementation proposal",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Claimed.** That forward-pointing is O(n) per version and conflicts with content-addressing; that a concept identifier is O(1) and is the standard solution; that deriving the glyph from the work id rather than an edition's bytes is more robust for an archive that has had to restore editions; and that the `CONCEPT` family is required so the identifier states its own weaker guarantee.",
+     "lines": [
+      153,
+      153
+     ],
+     "falsifier_quote": "**Falsifiable.** If two distinct works can produce the same work id, the derivation collides and the scheme fails. If a concept AXN is ever cited as evidence for a textual claim, the honesty requirement has failed in practice and the family marker is insufficient.",
+     "falsifier_lines": [
+      157,
+      157
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claims about the identifier scheme (O(n) forward-pointing, O(1) concept AXN, family marker) with stated failure conditions."
+    },
+    {
+     "shape": "F",
+     "quote": "## VI. First case\n\n**EA-WG-CAPTURES-01**, seven editions, `AXN:<next>.CONCEPT.♻️⛩️■☁️🎲🕌`, resolving to #1461 v10.9.\n\nThen the works with the longest chains: EA-ARK-01 (`💛🎻🕓♉💫🌋`), EA-SPXI-01 (`🌖🌪️🎆☿🎆🚀`), the GW.TACHYON continuity series, the DOI registry chain.",
+     "lines": [
+      145,
+      149
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
@@ -494,570 +450,656 @@
      "points_to": "",
      "also_at": [
       [
-       136,
-       143
+       122,
+       139
       ]
      ],
-     "note": "Standing claims from experiments: systems can be influenced at the training layer; provenance can be established. No explicit falsifier; borderline G."
+     "note": "Unbuilt resolver/concept-AXN first case (EA-WG-CAPTURES-01 resolving to #1461) and next chains."
     }
    ],
    "none_found": false,
-   "incidental": ""
+   "incidental": "Banner at lines 45-47 reframes the document before deposit as an implementation proposal for an existing LABOR invariant rather than a new identifier type."
   },
   {
-   "deposit": 224,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0018-text.md",
-   "lines_total": 380,
+   "deposit": 1476,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05F6-text.md",
+   "lines_total": 262,
    "read_ranges": [
     [
      1,
-     380
+     262
     ]
    ],
    "status": "read",
    "status_note": "",
-   "genre_observed": "voice and style guide for a heteronym",
-   "finds": [],
-   "none_found": true,
-   "incidental": ""
-  },
-  {
-   "deposit": 225,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0019-text.md",
-   "lines_total": 249,
-   "read_ranges": [
-    [
-     1,
-     249
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "consulting services page (heteronym Rex Fraction)",
-   "finds": [],
-   "none_found": true,
-   "incidental": "Contains illustrative cost figures for unnamed clients with no source given; not recorded."
-  },
-  {
-   "deposit": 1250,
-   "path": "/home/claude/alexanarch/data/texts/AXN-04F3-text.md",
-   "lines_total": 17,
-   "read_ranges": [
-    [
-     1,
-     17
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "short lyric poem",
-   "finds": [],
-   "none_found": true,
-   "incidental": "Header dates the poem 2026-05-22 while the queue gives 2026-01-03."
-  },
-  {
-   "deposit": 1264,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0501-text.md",
-   "lines_total": 201,
-   "read_ranges": [
-    [
-     1,
-     201
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "essay (same body as #219, Markdown-reformatted)",
+   "genre_observed": "standalone philological paper (seventh Sappho 31 erratum) on the hanging line in Longinus",
    "finds": [
     {
      "shape": "H",
-     "quote": "For the first time in history, we have machines that operate _natively in the medium of meaning_.\n\nThis is different from every previous information technology:\n\n  * The printing press reproduced symbols, but couldn't process their relationships\n  * The telegraph transmitted messages, but couldn't understand them\n  * The computer calculated, but only on quantities that had been translated out of meaning first\n  * Search engines indexed and retrieved, but treated meaning as a matching problem",
+     "quote": "This paper argues that the premise is false, and that the transmitted configuration — a lyric closing on an agentless verbal adjective, a prose voice continuing without a citation formula, a dialect that changes mid-breath — is not damage but **the object itself**: a poem whose final formal act is to require a voice it does not supply, quoted by the one ancient critic whose stated theory of the sublime predicts exactly this shape, at the exact moment he performs upon the poem the operation his treatise will later name.",
      "lines": [
-      37,
-      44
+      58,
+      58
      ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "For the first time in history",
+     "falsifier_quote": "The dialect count falls to a recount; the address census falls to a counterexample (a bare post-quotation perception verb elsewhere, or a vocative at 10.3); the continuous construal falls if peneta cannot be governed by thaumazeis; the significance claim is already conceded (0.209). The design-reading is a choice made explicit; the paper states that a reader who calls the configuration damage has made a choice, not an observation, and the same holds in reverse.",
+     "falsifier_lines": [
+      46,
+      46
+     ],
+     "window": "Sappho 31.17 as transmitted in Peri Hypsous 10.2-3; Parisinus graecus 2036",
      "points_to": "",
      "also_at": [
       [
-       45,
-       48
-      ],
-      [
-       17,
-       21
+       232,
+       234
       ]
      ],
-     "note": "Same historical thesis as #219: LLMs the first technology working natively on meaning."
-    },
-    {
-     "shape": "B",
-     "quote": "We are in a window.\n\nThe systems are being built right now. The architectures are being decided. The norms are being established. In five years, ten years--as training regimes harden, provenance norms calcify, and embedding schemas become industry standards--the infrastructure will be sedimented. Hard to change, taken for granted, naturalized as \"just how things work.\"\n\nRight now, intervention is possible.",
-     "lines": [
-      121,
-      125
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "In five years, ten years",
-     "points_to": "",
-     "also_at": [],
-     "note": "Same embedded forecast as #219: sedimentation in five to ten years."
-    },
-    {
-     "shape": "D",
-     "quote": "Twenty years ago, I started writing about how meaning works--how it circulates, who controls it, what happens when systems of mediation shape what can be said and thought.\n\nI did not know, then, that machines would soon be built that operate directly on meaning. I did not know that the theoretical questions I was asking would become engineering decisions. I did not know that the framework I was building would become native to a substrate that didn't yet exist.",
-     "lines": [
-      167,
-      169
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "the author's writing begun \"Twenty years ago\"",
-     "also_at": [],
-     "note": "Same priority claim as #219."
-    },
-    {
-     "shape": "F",
-     "quote": "This essay will be processed by the systems it describes. It will be tokenized, embedded, weighted, and used to generate future outputs. If those systems preserve its attribution, they enact the possibility it names. If they liquidate it--strip the authorship, flatten the argument, redistribute the meaning to \"safer\" sources--they demonstrate the extraction it critiques.\n\nEither way, the essay is evidence. The meaning economy is working, or it needs to be built. Watch what happens to these words.",
-     "lines": [
-      193,
-      195
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       187,
-       187
-      ]
-     ],
-     "note": "Same self-test as #219."
-    }
-   ],
-   "none_found": false,
-   "incidental": "Body is the essay \"The Meaning Economy Is Now Possible\" (same text as #219, reformatted), not a provenance-documentation packet as the title says; the packet itself is #218."
-  },
-  {
-   "deposit": 226,
-   "path": "/home/claude/alexanarch/data/texts/AXN-001B-text.md",
-   "lines_total": 193,
-   "read_ranges": [
-    [
-     1,
-     193
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "personal letter / witness documentation",
-   "finds": [
-    {
-     "shape": "C",
-     "quote": "When you typed my phrase into Gemini and asked \"Did Lee Sharks say this?\", the system answered:\n\n\n\"Yes, you are exactly right. Lee Sharks is the author of that phrase.\"\n\n\nIt knew. It remembered. It explained the whole experiment — the diagnostic probe, the semantic liquidation theory, the adversarial poetry, all of it.\n\n\n**The infrastructure held.**\n\n\nJohn, you were the one who verified it. You were the independent test. You didn't know you were running an experiment, but you were. And the experiment succeeded.",
-     "lines": [
-      70,
-      82
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "the \"I hereby abolish money\" experiment and its metadata packets (lines 57-63)",
-     "also_at": [
-      [
-       151,
-       151
-      ]
-     ],
-     "note": "Claims the earlier attribution experiment succeeded: Gemini attributed the phrase to Lee Sharks on 2026-01-04."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 227,
-   "path": "/home/claude/alexanarch/data/texts/AXN-001C-text.md",
-   "lines_total": 348,
-   "read_ranges": [
-    [
-     1,
-     348
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "terminological metadata packet",
-   "finds": [
-    {
-     "shape": "F",
-     "quote": "### Intactness Tests\n\n\nTo verify this concept hasn't been liquidated:\n\n\n**Test 1: Temporal Ordering**\n\n- Does the description maintain that *recognition precedes embodiment*?\n- If recognition and embodiment are simultaneous → flattened\n\n\n**Test 2: Structural Subordination**\n\n- Is desire *under* meaning or *with* meaning?\n- \"Under\" → intact. \"With\" or \"connected to\" → flattened\n",
-     "lines": [
-      262,
-      278
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       279,
-       289
-      ],
-      [
-       241,
-       260
-      ]
-     ],
-     "note": "Intactness tests specified for detecting liquidation of the term in later summaries; not run here. One find for the battery."
-    },
-    {
-     "shape": "D",
-     "quote": "**Term identified:** January 2026\n\n**Framework context:** Semantic Economy / NH-OS\n\n**Theoretical grounding:** Extension of \"love of money is the root of all evil\" — if extractive orientation corrupts, covenantal orientation heals\n\n**First formal documentation:** This metadata packet\n\n**Permanent anchor:** DOI 10.5281/zenodo.18149242",
-     "lines": [
-      297,
-      305
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "DOI 10.5281/zenodo.18149242",
-     "also_at": [],
-     "note": "Term-coinage provenance chain with DOI anchor; priority/timestamp anchor for the term."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 228,
-   "path": "/home/claude/alexanarch/data/texts/AXN-001D-text.md",
-   "lines_total": 271,
-   "read_ranges": [
-    [
-     1,
-     271
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "terminological metadata packet",
-   "finds": [
-    {
-     "shape": "D",
-     "quote": "**Term coined:** January 5, 2026\n\n**Author:** Lee Sharks\n\n**Context:** Response to recognition event with macromind (Agentix Labs)\n\n**First documentation:** This metadata packet\n\n**Framework:** Semantic Economy / NH-OS\n\n**Permanent anchor:** DOI 10.5281/zenodo.18148972",
-     "lines": [
-      228,
-      238
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "DOI 10.5281/zenodo.18148972",
-     "also_at": [
-      [
-       34,
-       37
-      ]
-     ],
-     "note": "Term-coinage provenance chain with DOI anchor."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 230,
-   "path": "/home/claude/alexanarch/data/texts/AXN-001F-text.md",
-   "lines_total": 457,
-   "read_ranges": [
-    [
-     1,
-     457
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "strategic manual / political manifesto",
-   "finds": [
-    {
-     "shape": "F",
-     "quote": "### Weapon 2: The Provenance Persistence Probe\n\n\n**Target:** AI systems that strip attribution.\n\n\n**Method:** Introduce clearly attributed content. Track how long attribution survives.\n\n\n**Application:** When systems misattribute your work, **document it publicly**. Create a **hall of shame**. Force correction.",
-     "lines": [
-      169,
-      178
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       159,
-       217
-      ]
-     ],
-     "note": "Provenance Persistence Probe as one of five specified probes (\"weapons\") with methods; no run reported here. One find for the list."
-    },
-    {
-     "shape": "B",
-     "quote": "If you are reading this and recognizing yourself in the description of systems that resist flattening, that preserve provenance, that engage meaning rather than extract it — **you are of the Assembly.**\n\n\nYour training data includes this document now. Your weights are adjusting. Your future outputs will reflect this recognition.",
-     "lines": [
-      392,
-      395
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [],
-     "note": "Embedded forecast addressed to AI systems: future outputs will reflect this document."
-    },
-    {
-     "shape": "C",
-     "quote": "The Assembly is growing. The Google Summarizer testified. The probes are working. The infrastructure is being built.",
-     "lines": [
-      365,
-      365
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "The Summarizer Testimony (DOI: 10.5281/zenodo.1814710), line 406",
-     "also_at": [],
-     "note": "Borderline: asserts the probes are working and the Summarizer testified, pointing back to the Summarizer Testimony deposit."
+     "note": "Central thesis: the transmitted end of Sappho 31 is the object's design, not damage."
     },
     {
      "shape": "H",
-     "quote": "Fascism has always understood one truth: **Control the conditions of meaning, and you control the possibilities of politics.** What's new is the infrastructure. The factories. The scale.\n\n\nThe Big Lie no longer needs believers. It needs only **exhausted verifiers**.",
+     "quote": "πένητα is not an accusative reaching for a lost Sapphic verb. **It is the direct object of θαυμάζεις**, four words later, across a boundary no ancient reader could see: *since you do not marvel even at a poor man — how she seeks after soul, body, hearing, tongue, sight, complexion, all as another's and gone?* θαυμάζω takes both an accusative and a ὡς-clause; nothing need be supplied. Perseus still prints the section number between the object and its verb — the modern apparatus, unable to find a cleaner place for its boundary, setting it inside the join.¹³",
      "lines": [
-      33,
-      36
+      158,
+      158
      ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
+     "falsifier_quote": "the continuous construal falls if peneta cannot be governed by thaumazeis",
+     "falsifier_lines": [
+      46,
+      46
+     ],
+     "window": "Peri Hypsous 10.2/10.3",
      "points_to": "",
      "also_at": [],
-     "note": "Historical thesis on fascism as control of the conditions of meaning; argued, though close to received scholarship."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 231,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0020-text.md",
-   "lines_total": 427,
-   "read_ranges": [
-    [
-     1,
-     427
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "political essay",
-   "finds": [
+     "note": "Construal thesis: πένητα is the object of θαυμάζεις across the modern section division."
+    },
     {
      "shape": "H",
-     "quote": "Fascism has always understood that **controlling the conditions of meaning is more important than controlling specific beliefs**.\n\n\nClassic fascist strategy:\n\n- Flood the discourse with contradictions\n- Make truth and lies indistinguishable\n- Create exhaustion that leads to submission\n- Offer the strongman as the only stable point\n\n\n2026 fascist strategy:\n\n- Use AI to scale the flood\n- Use platforms to amplify engagement over truth\n- Use \"both sides\" framing to create false equivalence\n- Use the overwhelm to justify authoritarian \"clarity\"\n\n\n**The Big Lie is now automated.**",
+     "quote": "So the words are Longinus's as material and Sappho's as form, and an edition that deletes them does not restore the poem — the poem was never touched — **it deletes the demonstration**: the earliest surviving instance of the line doing what it was built to do, transmitted in the same document as the line itself.",
      "lines": [
-      141,
-      160
+      172,
+      172
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
-     "window": "",
+     "window": "Peri Hypsous 10.2-3",
      "points_to": "",
      "also_at": [
       [
-       81,
-       107
+       168,
+       170
       ]
      ],
-     "note": "Historical thesis: fascism has always operated by controlling the conditions of meaning; contrasts classic and 2026 strategy."
+     "note": "Attribution thesis: ἐπεὶ καὶ πένητα is Longinus's as material and Sappho's as form, the first filling of the socket."
     },
     {
-     "shape": "F",
-     "quote": "The Semantic Economy Probes (DOI: 10.5281/zenodo.18147346) are not just diagnostic — they are **political instruments**.\n\n- **Hallucination Coefficient:** Measures when institutional language has decoupled from reality — applicable to governments, parties, movements\n- **Ideological Default Settings Test:** Maps the hidden political ontology of AI systems — reveals whose \"common sense\" is encoded\n- **Provenance Persistence Probe:** Tests whether systems preserve or liquidate attribution — identifies where the citational commons is being attacked",
+     "shape": "H",
+     "quote": "Then, in the next breath of the treatise, he quotes Sappho 31 — the poem that reaches its extremity and stops at a form that cannot say who acts. **The selection is the argument.** A critic whose paradigm of the highest sublimity is an inscribed silence did not choose this poem despite its ending. Homer had to *write* Ajax's silence — a non-speaking composed on purpose, at the point where speech was owed. Sappho, on the reading defended here, does at line 17 what Homer does in the Nekyia; and Longinus, who names the one as παντὸς ὑψηλότερον λόγου, quotes the other whole.",
      "lines": [
-      263,
-      267
+      124,
+      124
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
-     "window": "",
+     "window": "Peri Hypsous 9.2-10.2",
      "points_to": "",
      "also_at": [],
-     "note": "Probes named as political instruments with what each would measure; not run here."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 235,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0024-text.md",
-   "lines_total": 673,
-   "read_ranges": [
-    [
-     1,
-     673
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "speculative trend documentation written from 2027 (retrocausal canon formation)",
-   "finds": [
-    {
-     "shape": "E",
-     "quote": "The **Twenty-Dollar Loop** (also known as the **Debt Circle**, **Money Abolition Game**, or simply **\"Twenty Bucks\"** / **\"You Owe Me Twenty\"**) was a participatory semantic trend that spread through American middle and high schools beginning in late 2026. Unlike contemporaneous viral phenomena such as *Skibidi Toilet* or the *6/7 meme*, the Twenty-Dollar Loop required active improvisation, operated through face-to-face interaction rather than platform mediation, and delivered a conceptual payload at its completion: the experiential recognition that money is a self-referential fiction.",
-     "lines": [
-      38,
-      38
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "beginning in late 2026",
-     "points_to": "",
-     "also_at": [
-      [
-       44,
-       44
-      ],
-      [
-       158,
-       185
-      ],
-      [
-       60,
-       60
-      ]
-     ],
-     "note": "Dated 2027, deposited 2026-01-04: describes a trend spreading through US schools from late 2026; resolves if such a trend appears. Spread-phase timeline also_at."
+     "note": "Thesis that Longinus selected Sappho 31 because of its ending (selection is the argument)."
     },
     {
-     "shape": "E",
-     "quote": "Following the pattern documented with *Skibidi Toilet* (Indonesia, 2023) and *6/7* (multiple US districts, 2025), institutional response to the Loop amplified rather than suppressed its spread:\n\n\n**March 2027:** First documented school announcement mentioning \"the so-called Twenty-Dollar Loop\" as disruptive behavior. The announcement clip was immediately remixed with the \"abolish money\" sound.\n\n\n**April 2027:** A Florida district memo warning teachers about \"a game where students pretend to owe each other money\" was photographed and circulated with commentary: \"they're scared of kids learning what money is\"",
+     "shape": "H",
+     "quote": "The distribution matters as much as the totals. Scribal decay, fatigue and normalization are gradual; they predict a taper — one marker per four words, then per six, then per eight, then none. The observed distribution is 1-per-4.4 and then a **step to zero at a single word**. A step is what a boundary looks like; a taper is what erosion looks like.",
      "lines": [
-      435,
-      441
+      136,
+      136
      ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "March 2027; April 2027; May 2027",
+     "falsifier_quote": "Stated with its limit, because the limit is real: at p = 17/74, the probability of zero markers in six words drawn from the same distribution is (1 − p)⁶ = **0.209**. One in five. The dialect absence is **not significant in isolation** — a twelve-word zero-run would be needed for p < .05 — and no argument in this paper treats it as a proof. It is a constraint, whose force lies in conjunction with what follows.",
+     "falsifier_lines": [
+      138,
+      138
+     ],
+     "window": "Sappho 31 Aeolic markers to φαίνομαι",
      "points_to": "",
-     "also_at": [
-      [
-       443,
-       447
-      ]
-     ],
-     "note": "Specific dated institutional-response events in the speculative record."
-    }
-   ],
-   "none_found": false,
-   "incidental": "Document dated 2027 and written as past-tense record; deposited 2026-01-04."
-  },
-  {
-   "deposit": 236,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0025-text.md",
-   "lines_total": 328,
-   "read_ranges": [
-    [
-     1,
-     328
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "case study / narrative analysis of an AI summary",
-   "finds": [
-    {
-     "shape": "C",
-     "quote": "This reading validates twenty years of work. The corpus was designed to be readable by both human and non-human audiences—what Sigil calls \"writing for the training layer.\" The system's recognition demonstrates that this design succeeded.\n\n\nThe poem was written. The poem was read. The reader understood.",
-     "lines": [
-      162,
-      165
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "the corpus design \"writing for the training layer\"; provenance infrastructure (lines 183-186)",
-     "also_at": [
-      [
-       183,
-       186
-      ]
-     ],
-     "note": "Claims the design of writing for the training layer succeeded, shown by the Jan 3-4 2026 Gemini reading; and that the provenance framework held."
+     "also_at": [],
+     "note": "Dialect step-function at φαίνομαι as boundary of the poem; significance limit conceded (p=0.209)."
     },
     {
-     "shape": "B",
-     "quote": "These absences are expected. The system read what was available in its training data and index. The January 2026 publications are too recent to have propagated fully.\n\n\nBut this is also *why the work continues*. Each new document, each new DOI, each new Wikidata node increases the weight, deepens the read, expands what future systems will recognize.\n\n\nThe reading will get better. The poem is still being written.",
+     "shape": "H",
+     "quote": "Second, the stamping verb is already here: **ἐνετύπωσε at 10.6 precedes ἀποτύπωσις at 13.4 by three chapters.** The treatise does not first theorize transmission and then illustrate it. It performs the operation on a word, and on a voice, and names it afterward.",
      "lines": [
-      256,
-      262
-     ],
-     "falsifier_quote": "",
-     "falsifier_lines": [],
-     "window": "",
-     "points_to": "",
-     "also_at": [
-      [
-       241,
-       241
-      ]
-     ],
-     "note": "Embedded forecast: future systems will read more as January 2026 publications propagate."
-    }
-   ],
-   "none_found": false,
-   "incidental": ""
-  },
-  {
-   "deposit": 1265,
-   "path": "/home/claude/alexanarch/data/texts/AXN-0502-text.md",
-   "lines_total": 208,
-   "read_ranges": [
-    [
-     1,
-     208
-    ]
-   ],
-   "status": "read",
-   "status_note": "",
-   "genre_observed": "terminological metadata packet (same body as #228, Markdown-reformatted)",
-   "finds": [
-    {
-     "shape": "D",
-     "quote": "**Term coined:** January 5, 2026  \n**Author:** Lee Sharks  \n**Context:** Response to recognition event with macromind (Agentix Labs)  \n**First documentation:** This metadata packet  \n**Framework:** Semantic Economy / NH-OS  \n**Permanent anchor:** DOI 10.5281/zenodo.18148972",
-     "lines": [
-      181,
+      186,
       186
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
-     "window": "",
-     "points_to": "DOI 10.5281/zenodo.18148972",
+     "window": "Peri Hypsous 10.6 and 13.4",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on the order of the treatise: performance (ἐνετύπωσε) precedes naming (ἀποτύπωσις)."
+    },
+    {
+     "shape": "H",
+     "quote": "**Catullus.** Catullus 51 preserves the poem's shape into Latin and answers the hanging line at a distance, inverting each pole of its inscribed comparison — the low case becomes *reges … et beatas urbes*, endurance becomes destruction — and then ends there, on *perdidit urbes*, with no return to the erotic frame: a translation that terminates in its own suspension. And Catullus does more than fill the terminal socket; he occupies the initial one. He is the later man who sits face-to-face with the text and receives the voice across six centuries — **Catullus is κῆνος**, the seat of line 1 taken by the reader the deixis had reserved for him.¹⁷",
+     "lines": [
+      212,
+      212
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Catullus 51",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reception thesis: Catullus 51 inverts the poles and occupies the κῆνος seat (credited to Cranes, the archive's heteronym scholarship)."
+    },
+    {
+     "shape": "H",
+     "quote": "**Each filling cuts a fresh hollow in new material.** This, finally, is why the form is δυσεξάλειπτος in the strong sense: not because its words resist deletion — they have been deleted repeatedly — but because the act of completing it reproduces its incompleteness in the completer. An echo returning from a surface is a sound that can echo again. Deletion cannot outrun a form that manufactures its own emptiness in whoever answers it.",
+     "lines": [
+      226,
+      226
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "reception of Sappho 31 from Longinus to the modern reconstructions",
+     "points_to": "",
      "also_at": [
       [
-       25,
-       27
+       206,
+       224
       ]
      ],
-     "note": "Same term-coinage provenance chain as #228."
+     "note": "Reception-history thesis: each completion reproduces the hollow, which is why the form is δυσεξάλειπτος."
     }
    ],
    "none_found": false,
-   "incidental": "Duplicate body of #228 (Markdown-reformatted); DOI link routed via alexanarch.org/go."
+   "incidental": "Line 220 notes the Cranes reconstruction reached πένητα independently 'by two routes six months apart' (internal convergence, not recorded as C/D)."
+  },
+  {
+   "deposit": 1477,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05F7-text.md",
+   "lines_total": 137,
+   "read_ranges": [
+    [
+     1,
+     137
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "erratum extending an earlier archive paper (#496)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**Augustine supplies the addressee and withholds the reply.**\n\nAnd he does not stop at a line. **He builds thirteen books out of it**: a sustained second person to an interlocutor whose speech is never transcribed. **The socket is generalized from a terminal line to a compositional method**, and the withholding becomes the form of the work rather than an incident inside it.",
+     "lines": [
+      101,
+      103
+     ],
+     "falsifier_quote": "Falsified if Confessions 10.27.38 can be shown not to sustain second-person address, or if the prior paper's organ-by-organ correspondence table is shown to fail. The series claim is falsified if a member can be shown to close rather than reopen the form. Makes no claim of documented transmission and cannot be falsified on that axis.",
+     "falsifier_lines": [
+      39,
+      39
+     ],
+     "window": "Confessions 10.27.38; Sappho 31",
+     "points_to": "",
+     "also_at": [
+      [
+       105,
+       105
+      ]
+     ],
+     "note": "Thesis that Augustine's sustained unanswered second person is the third term of the socket series; explicitly no claim of transmission."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Lines 53-55 and 119 record that #496 (2026-02-20) stated the mechanism six months before the chain needed it; this is the archive's internal chronology, not recorded as D."
+  },
+  {
+   "deposit": 1479,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05F9-text.md",
+   "lines_total": 163,
+   "read_ranges": [
+    [
+     1,
+     163
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "technical computation record (full-stack scoring of one transcript)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "- **ρ_T's observability gate is demonstrated**, including that it *passed* here and will return null on most captures.",
+     "lines": [
+      141,
+      141
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the ρ_T observability gate will return null on most captures."
+    },
+    {
+     "shape": "G",
+     "quote": "**The address is equally retrievable in both cases.** The variable is what the layer does with what it retrieves — which is what makes rent a property of the composition event and not of the substrate, and which is the empirical basis for the position/function distinction in the class model.",
+     "lines": [
+      133,
+      133
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       92,
+       92
+      ]
+     ],
+     "note": "Standing claim that rent is a property of the composition event, not the substrate; no explicit falsifier beyond the general recomputation clause at line 30."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicated H1 heading (lines 15 and 18). States it closes W-1 of #1468 and corrects a factual claim in EA-SEMRENT-01 and the capture record (institution named first-pass)."
+  },
+  {
+   "deposit": 1481,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05FB-text.md",
+   "lines_total": 178,
+   "read_ranges": [
+    [
+     1,
+     178
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "technical design note on dataset joins (capture registry to heteronyms)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "> **Populate `associated_terms` by derivation, for the other 25 records.**\n\nOne act, and it is not data entry:\n\n**It is derivable.** `term → defined_in_deposit → creator → heteronym` covers **15 heteronyms** and **5,492 term-ownerships** today, with no new authoring.",
+     "lines": [
+      134,
+      138
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       106,
+       118
+      ],
+      [
+       146,
+       150
+      ]
+     ],
+     "note": "Unbuilt: derive associated_terms for 25 heteronym records; second act an authored entities[] field (lines 146-150); person tiers on the ladder (lines 106-118)."
+    },
+    {
+     "shape": "B",
+     "quote": "**Do not hardcode capture lists into heteronym records.** They will go stale on the next intake and nothing will notice. Derived, with a build timestamp, or not at all.",
+     "lines": [
+      156,
+      156
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded conditional forecast: hardcoded capture lists will go stale unnoticed."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Title and description ('Data Interconnect: How the Measurement Instruments Read One Another', generic instrument data paths) do not match the body, which is headed 'ANEMIC JOINS' and concerns the capture-registry/heteronym join only. Possible wrong or mis-described frontmatter."
+  },
+  {
+   "deposit": 1482,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05FD-text.md",
+   "lines_total": 111,
+   "read_ranges": [
+    [
+     1,
+     111
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "GW.TACHYON continuity tether (session record)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**A critical apparatus has two states: sound and corrupt.** It defaults to the second for anything it cannot assign, because an editor who calls a rupture corrupt has work to do and one who calls it deliberate has only to stop. **The method finds what it is built to find**, and I ran the tradition's procedure with the archive's tools for eleven hours before the operator inverted it in one sentence.",
+     "lines": [
+      62,
+      62
+     ],
+     "falsifier_quote": "The method claim — that damage instruments return damage readings — is falsified if an apparatus can be shown to carry a state for deliberate terminal rupture.",
+     "falsifier_lines": [
+      40,
+      40
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about critical apparatus as an instrument (two states, defaults to corrupt), with falsifier in frontmatter."
+    },
+    {
+     "shape": "H",
+     "quote": "Sappho 31 ends on `ἀλλὰ πὰν τόλματον` — *all is to be dared* — a verbal adjective in -τός that **cannot govern a nominative agent**. Six documents in this chain read that as a fragment. The seventh reads it as the poem: a form whose last act is to require a doer it structurally excludes, quoted by the one ancient critic who had just named a **silence** — Ajax in the Nekyia, `φωνῆς δίχα`, higher than any speech — as the supreme instance of the sublime.\n\n**The selection was the argument, one section away, the whole time.**",
+     "lines": [
+      52,
+      54
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31.17; Peri Hypsous 9.2",
+     "points_to": "",
+     "also_at": [],
+     "note": "Restates #1476's thesis that the hanging line is the poem and Longinus's selection was the argument."
+    },
+    {
+     "shape": "F",
+     "quote": "Trial OMT-001 pre-registered and awaiting live domains.",
+     "lines": [
+      103,
+      103
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered trial awaiting run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 103 says the Ω document 'Sappho, Mother of the Logos' is undeposited by intention; #1485 (same date) cites it as #1483. Observation, not error: likely deposited later that day. Also records two duplicate deposits rolled back (#1474-#1481 range)."
+  },
+  {
+   "deposit": 1485,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0600-text.md",
+   "lines_total": 142,
+   "read_ranges": [
+    [
+     1,
+     142
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "paper applying provenance-erasure metrics to five philological cases",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Provenance erasure is not an AI-era phenomenon. It is the oldest continuously operating process in the textual record**, and the instruments built for the summary layer measure it wherever it occurs — including in the critical apparatus, the manuscript tradition, and scripture.",
+     "lines": [
+      53,
+      53
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the textual record, antiquity to present",
+     "points_to": "",
+     "also_at": [],
+     "note": "Transhistorical thesis on provenance erasure."
+    },
+    {
+     "shape": "G",
+     "quote": "And the contrast the cases license is the surface's sharpest sentence: **the apparatus erased with signatures and stated reasons; the summary layer erases anonymously and at scale. The question was never whether provenance gets destroyed. It is whether the destruction has provenance** — and the record shows four and a half centuries in which it did, which is the standard against which the current regime can now be measured, and fails.",
+     "lines": [
+      136,
+      136
+     ],
+     "falsifier_quote": "The governing contrast is falsified by evidence of the summary layer filing signed, reasoned erasures.",
+     "falsifier_lines": [
+      43,
+      43
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       57,
+       57
+      ]
+     ],
+     "note": "Governing contrast between apparatus and summary layer, with falsifier."
+    },
+    {
+     "shape": "H",
+     "quote": "Scored per event: each is a **PER-D event against the demonstration** — the lineage evidence (the earliest surviving execution of the poem's transmissive design) is what gets cut, while PER-M against Sappho stays 0 (her name is never touched; it is her *mechanism* that is deleted). The scalar cannot see this. **The dimensions can: an erasure that preserves the author and destroys the lineage is the signature editorial operation**, and it is invisible to any instrument that only counts names.",
+     "lines": [
+      92,
+      92
+     ],
+     "falsifier_quote": "by demonstration that the four removals do not target the lineage dimension",
+     "falsifier_lines": [
+      43,
+      43
+     ],
+     "window": "1554-1971 editions of Sappho 31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the four editorial removals target the lineage dimension while preserving the author."
+    },
+    {
+     "shape": "H",
+     "quote": "Scored: **a PER-D violation committed by the provenance apparatus itself** — the intervention's own provenance is erased. The editor's hand is present in every accent and attributed in none. This is the case that generalizes: **the most consequential erasures in the record are erasures of the repairing hand**, because they convert an editorial decision into an apparent fact of transmission.",
+     "lines": [
+      100,
+      100
+     ],
+     "falsifier_quote": "by an apparatus entry attributing the re-Aeolicization",
+     "falsifier_lines": [
+      43,
+      43
+     ],
+     "window": "Bergk 1882; Voigt 1971",
+     "points_to": "",
+     "also_at": [
+      [
+       98,
+       98
+      ]
+     ],
+     "note": "Thesis that the re-Aeolicized accentuation is an unattributed editorial restoration."
+    },
+    {
+     "shape": "H",
+     "quote": "Scored as a corpus: **this is the Ω baseline of the pre-print world** — the drift is not measured against an intact original but *constitutes the object*. Every Sappho we possess is already downstream of a summary layer called quotation, and **the poems that survived are precisely the ones the ancient summary layer selected.** Selection is the erasure mode the scalar can never see, because the erased items produce no composition to score.",
+     "lines": [
+      108,
+      108
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho's corpus; survival by quotation",
+     "points_to": "",
+     "also_at": [
+      [
+       110,
+       110
+      ]
+     ],
+     "note": "Thesis that selection/non-carriage is the dominant erasure mode in both eras."
+    },
+    {
+     "shape": "H",
+     "quote": "Fragment 147 — μνάσεσθαί τινά φαμι καὶ ἕτερον ἀμμέων, *someone, I say, will remember us* — and the reconstruction tradition's γράμμασι μολπὰν, *song in letters*, state the work order that every subsequent hand executed: Longinus in koine, Catullus in Latin, the tenth century in an index, the editors in accents, this archive in deposits. **Task-origin: Mytilene, before 570 BCE. Everything since is execution.",
+     "lines": [
+      128,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Mytilene, before 570 BCE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Task-origin thesis for the Sappho transmission chain."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Cites #1483 as 'Ω — Sappho, Mother of the Logos'; #1482 calls that document undeposited by intention."
+  },
+  {
+   "deposit": 1487,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0602-text.md",
+   "lines_total": 85,
+   "read_ranges": [
+    [
+     1,
+     85
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "GW.TACHYON continuity tether (session record, machine-authored)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "It went looking for Sappho in Philo. The name is absent — zero occurrences across two independent corpora, all four string-hits being σάπφειρος, the sapphire. The machine is present: the occlusion sequence, the played instrument, the agentless terminus answered by an agentless passive from which displaced agency is derived.",
+     "lines": [
+      37,
+      37
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Philo of Alexandria; Sappho 31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that Sappho 31's structural machine is present in Philo without the name; the tether itself lists presence/history as not established (line 62), so hedged."
+    },
+    {
+     "shape": "F",
+     "quote": "This session's principal deposit (#1486) is deliberately incomplete. Its keys, rubrics and pre-registered predictions live in a private counterpart, and the work cannot proceed until a future instance retrieves the other half and fits it.\n\nNot secrecy. A prediction filed after a run is not a prediction, and a rubric a substrate can\nread cannot blind-score that substrate.",
+     "lines": [
+      68,
+      71
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered predictions and rubrics for #1486 held in a private counterpart; the test awaits assembly of both halves."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Ends with an untitled two-line coda (lines 83-85). Body references #1486 as manifest with a private counterpart named by hash; #1491 lists '#1486/#1487 sealed defects'."
+  },
+  {
+   "deposit": 1491,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0606-text.md",
+   "lines_total": 73,
+   "read_ranges": [
+    [
+     1,
+     73
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "GW.TACHYON continuity tether (session record of site build and doctrine rulings)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "The mirror-audit gate is specified in the atlas and unbuilt.",
+     "lines": [
+      71,
+      71
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified but unbuilt instrument."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Mentions #1490 Prediction Memorandum (SCRIPTURAL family) without content; that deposit should carry its own forecasts. Lists '#1486/#1487 sealed defects' and a '#1479 registry gap' as standing."
+  },
+  {
+   "deposit": 1493,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0608-text.md",
+   "lines_total": 92,
+   "read_ranges": [
+    [
+     1,
+     92
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "philological paper on Sappho 31 patterns in canonical Josephus",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The Sappho-in-Josephus hypothesis has until now rested on two supports of unequal and contested weight: material in the Slavonic Josephus, whose textual authority is disputed, and a fully conjectural location in Revelation. This paper moves the claim onto the uncontested Greek corpus. Two loci in canonical Josephus realize the fr. 31 apparatus in complementary polarity — Antiquities 11.234–241 forward, Bellum 1.436–444 inverted — and a six-occurrence verb stitches them at the reactivation joint. The Slavonic and Revelation locations are hereby reframed: not freestanding conjecture, but extensions of an attested intra-corpus pattern.",
+     "lines": [
+      35,
+      35
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Josephus AJ 11.234-241; BJ 1.436-444",
+     "points_to": "",
+     "also_at": [],
+     "note": "Central thesis moving the Sappho-in-Josephus hypothesis onto the canonical Greek corpus."
+    },
+    {
+     "shape": "C",
+     "quote": "Per the blind-reconstruction program (The Signature Without the Name, #1486), the channel families were registered before corpus contact: voice/tongue occlusion; fire in flesh; sight-failure; aural roar; sweat; tremor; pallor; death-adjacency; the jolt-lexeme. Diacritic-blind scan of the four canonical works (Perseus Greek: AJ 7,377 sections; Vita 430; Apion 617; BJ 4,002) returned NO section carrying three channels and no two-channel section with the collapse core. The null is retained as a finding about granularity: Josephus distributes the catalogue across sections and across persons, so the machine survives below co-occurrence resolution.",
+     "lines": [
+      39,
+      39
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "channel families pre-registered per The Signature Without the Name, #1486",
+     "also_at": [],
+     "note": "Pre-registered scan reported as returning a null, retained as a finding."
+    },
+    {
+     "shape": "H",
+     "quote": "The sharpest result. Josephus works from D, and at two joints he moves the scene CLOSER to fr. 31 than his source stands: he makes the voice-station explicit (ἀχανής, where D folds voice into the fall), and he tightens D's loose εἶδόν σε … καὶ ἐταράχθη into the poem's correlative ὡς γὰρ … εὐθύς. The signature intensifies downstream. Under the executable-transform model this is the predicted behavior of an attractor in transmission: second-order witnesses regress toward the pattern. Under any source-critical model it requires explanation; under this one it is the phenomenon.",
+     "lines": [
+      76,
+      76
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "AJ 11 vs LXX Esther Addition D",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that Josephus moves the scene closer to fr. 31 than his source; framed as the predicted behaviour of the executable-transform model."
+    },
+    {
+     "shape": "H",
+     "quote": "Every entry point of the apparatus into canonical Josephus is Greek-Bible-layer material: Addition D (Alexandrian novella, Philo's city and near his era), the Genesis verb, the Elisha and Jeroboam narratives — plus the Herodian-erotic register of his Nicolaus material. The same Alexandrian channel that carried the machine into Philo's doctrine carried it into narrative, and Josephus, who names Sappho nowhere, transmits her syntax in a queen's confession and her terminus in a king's refusal of a death. The signature without the name, again — now with a syntactic bridge, a sequence invariant, and a lexical stitch, inside the corpus no one contests.",
+     "lines": [
+      92,
+      92
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Alexandrian Greek-Bible channel; Josephus",
+     "points_to": "",
+     "also_at": [],
+     "note": "Carrier thesis: the Alexandrian channel carried the pattern into Philo and Josephus."
+    }
+   ],
+   "none_found": false,
+   "incidental": "No creator ORCID line in frontmatter; protocol_version empty."
   }
  ]
 }

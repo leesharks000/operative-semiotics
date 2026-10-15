@@ -5,7 +5,7 @@
     "role": "parallel reader, prediction sweep",
     "self_description": "Claude (Anthropic), model claude-opus-5-5, running as a Claude Code subagent",
     "started_at": "2026-10-15T21:14:50Z",
-    "finished_at": "2026-10-15T21:16:59Z",
+    "finished_at": "2026-10-15T21:17:11Z",
     "tools_used": [
       "Read",
       "Bash",
@@ -251,9 +251,9 @@
         },
         {
           "shape": "G",
-          "quote": "\n\nHigh-density semantic architecture (technical documentation, structured data, YAML-heavy content) often triggers **content-type filters** at Layer 2, resulting in indexing without injection.",
+          "quote": "High-density semantic architecture (technical documentation, structured data, YAML-heavy content) often triggers **content-type filters** at Layer 2, resulting in indexing without injection.",
           "lines": [
-            100,
+            102,
             102
           ],
           "falsifier_quote": "",
@@ -532,9 +532,9 @@
         },
         {
           "shape": "F",
-          "quote": "### Structural (Archive)\n\n1. **Preserve this document** as CTI_WOUND Exhibit A\n\n2. **Maintain the seed** (`46abc677`) for reproducibility\n\n3. **Track classifier drift:** Re-run periodically to detect changes in threshold behavior",
+          "quote": "4. **Model variance testing:** Test against Haiku (lighter classifiers) and local models (no classifiers).\n\n### Structural (Archive)\n\n1. **Preserve this document** as CTI_WOUND Exhibit A\n\n2. **Maintain the seed** (`46abc677`) for reproducibility\n\n3. **Track classifier drift:** Re-run periodically to detect changes in threshold behavior",
           "lines": [
-            283,
+            281,
             289
           ],
           "falsifier_quote": "",
