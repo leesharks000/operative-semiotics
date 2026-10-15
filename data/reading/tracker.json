@@ -2,20 +2,20 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 131,
-  "unread": 1485
+  "read": 154,
+  "unread": 1462
  },
  "finds_by_shape": {
-  "G": 138,
-  "F": 135,
-  "E": 30,
-  "B": 80,
-  "A": 37,
-  "C": 40,
-  "D": 22
+  "G": 153,
+  "F": 157,
+  "E": 35,
+  "B": 94,
+  "A": 38,
+  "C": 44,
+  "D": 31
  },
- "finds_verified": 482,
- "finds_total": 482,
+ "finds_verified": 495,
+ "finds_total": 552,
  "deposits": [
   {
    "deposit": 172,
@@ -6070,8 +6070,45 @@
    "tier": 1,
    "words": 5831,
    "batch_id": "B0020",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0020",
+     "run": "R-w3-B0020",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:23Z",
+      "finished_at": "2026-10-15T19:21:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; date -u)",
+       "Write via python"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       200
+      ],
+      [
+       201,
+       348
+      ]
+     ],
+     "lines_total": 348,
+     "genre_observed": "recovered blog sampler of a book (field manual): introduction, opening chapter, rules of engagement, sales copy",
+     "finds_by_shape": {
+      "B": 2
+     },
+     "none_found": false,
+     "incidental": "Body (from line 48) duplicates deposit #1326 (AXN-053F) nearly verbatim; differences are markdown/punctuation (html2text conversion, -- for em dash). Lines 106-110, 158-162, 264-266, 318-322 are bare separator rules.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 1326,
@@ -6080,8 +6117,45 @@
    "tier": 1,
    "words": 5425,
    "batch_id": "B0020",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0020",
+     "run": "R-w3-B0020",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:23Z",
+      "finished_at": "2026-10-15T19:21:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; date -u)",
+       "Write via python"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       200
+      ],
+      [
+       201,
+       395
+      ]
+     ],
+     "lines_total": 395,
+     "genre_observed": "announcement and sampler of a book (field manual); same body as #1107",
+     "finds_by_shape": {
+      "B": 2
+     },
+     "none_found": false,
+     "incidental": "Duplicate body of #1107 (AXN-0464); this copy has no YAML header or recovery note and uses em dashes.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 501,
@@ -6090,8 +6164,50 @@
    "tier": 1,
    "words": 6720,
    "batch_id": "B0020",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0020",
+     "run": "R-w3-B0020",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:23Z",
+      "finished_at": "2026-10-15T19:21:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; date -u)",
+       "Write via python"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       500
+      ],
+      [
+       501,
+       703
+      ]
+     ],
+     "lines_total": 703,
+     "genre_observed": "liberation-philology essay on the sign \"Marx\", with a diagnostic audit protocol",
+     "finds_by_shape": {
+      "B": 1,
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Tables at 74-101 and 462-505 are flattened to one cell per line.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 1327,
@@ -6100,8 +6216,46 @@
    "tier": 1,
    "words": 6751,
    "batch_id": "B0020",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0020",
+     "run": "R-w3-B0020",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:23Z",
+      "finished_at": "2026-10-15T19:21:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; date -u)",
+       "Write via python"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       487
+      ]
+     ],
+     "lines_total": 487,
+     "genre_observed": "Effective Act: performative declaration readmitting the poets to the polis",
+     "finds_by_shape": {
+      "B": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "PDF-extraction damage: words split across lines with hyphens (e.g. \"theoret-/ical\" 69-71, \"metaphoric-/al\" 134-136, \"re-/cursion\" 168-170), headings broken (\"EF-/FECTIVE\" 45-47), and a spurious heading at 395. Lines 93 repeats a sentence twice. \"DOI: [pending]\" at 437.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 21,
@@ -6110,8 +6264,46 @@
    "tier": 1,
    "words": 6023,
    "batch_id": "B0020",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0020",
+     "run": "R-w3-B0020",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:23Z",
+      "finished_at": "2026-10-15T19:21:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; date -u)",
+       "Write via python"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       622
+      ]
+     ],
+     "lines_total": 622,
+     "genre_observed": "theoretical paper on red teaming vs. collaborative method, with a proposed protocol and an appended Effective Act",
+     "finds_by_shape": {
+      "F": 2,
+      "B": 2
+     },
+     "none_found": false,
+     "incidental": "Tables at 175-245 and 257-289 are flattened to one cell per line.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 503,
@@ -6180,8 +6372,48 @@
    "tier": 1,
    "words": 5454,
    "batch_id": "B0022",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0022",
+     "run": "R-w3-B0022",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:32Z",
+      "finished_at": "X",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       200
+      ],
+      [
+       201,
+       405
+      ]
+     ],
+     "lines_total": 405,
+     "genre_observed": "traversal log of an AI Mode session with full transcript appendix",
+     "finds_by_shape": {
+      "C": 2,
+      "G": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 22,
@@ -6190,8 +6422,47 @@
    "tier": 1,
    "words": 4060,
    "batch_id": "B0022",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0022",
+     "run": "R-w3-B0022",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:32Z",
+      "finished_at": "X",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       240
+      ],
+      [
+       241,
+       473
+      ]
+     ],
+     "lines_total": 473,
+     "genre_observed": "effective-act canonization essay with priority chronology",
+     "finds_by_shape": {
+      "D": 2,
+      "C": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1154,
@@ -6200,8 +6471,48 @@
    "tier": 1,
    "words": 7287,
    "batch_id": "B0022",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0022",
+     "run": "R-w3-B0022",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:32Z",
+      "finished_at": "X",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       280
+      ],
+      [
+       281,
+       554
+      ]
+     ],
+     "lines_total": 554,
+     "genre_observed": "recovered theoretical paper with diagnostic framework",
+     "finds_by_shape": {
+      "F": 1,
+      "G": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Section headed \"RSE Subtype Comparison\" has no table body (lines 249-251); \"Glossary of Proposed Terms\" (466-469) and \"Alternative Titles\" (513-516) headings have empty bodies. Front matter is restoration metadata; falsification boilerplate at 40 not recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 23,
@@ -6210,8 +6521,46 @@
    "tier": 1,
    "words": 4896,
    "batch_id": "B0022",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0022",
+     "run": "R-w3-B0022",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:32Z",
+      "finished_at": "X",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       270
+      ],
+      [
+       271,
+       539
+      ]
+     ],
+     "lines_total": 539,
+     "genre_observed": "citational-archaeology essay on name antecedents",
+     "finds_by_shape": {
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Provenance table is flattened into one-cell-per-line (326-432).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 24,
@@ -6220,8 +6569,46 @@
    "tier": 1,
    "words": 4979,
    "batch_id": "B0022",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0022",
+     "run": "R-w3-B0022",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:32Z",
+      "finished_at": "X",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       280
+      ],
+      [
+       281,
+       560
+      ]
+     ],
+     "lines_total": 560,
+     "genre_observed": "theoretical essay / effective act on Marx and symbolic alienation",
+     "finds_by_shape": {
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Tables flattened one-cell-per-line; own DOI listed as [pending] in provenance chain (487) though DOI given at line 12.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 521,
@@ -6230,8 +6617,49 @@
    "tier": 1,
    "words": 6228,
    "batch_id": "B0022",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0022",
+     "run": "R-w3-B0022",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:32Z",
+      "finished_at": "X",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       290
+      ],
+      [
+       291,
+       574
+      ]
+     ],
+     "lines_total": 574,
+     "genre_observed": "retrocausal future-positioned scenario (field report dated 2028) with projected bibliography",
+     "finds_by_shape": {
+      "E": 5,
+      "A": 1,
+      "F": 1,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "DOI [pending] in header; tables flattened. Future-dated citations are declared fictional/projected by the text itself (336).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1155,
@@ -6300,8 +6728,40 @@
    "tier": 1,
    "words": 928,
    "batch_id": "B0024",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0024",
+     "run": "R-w3-B0024",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:40Z",
+      "finished_at": "2026-10-15T19:22:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       158
+      ]
+     ],
+     "lines_total": 158,
+     "genre_observed": "integrity-lock certificate binding a three-document set",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Body duplicated in #1159 (blog-recovered copy, AXN-0498). Enforcement consequences are procedural rules, not recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 537,
@@ -6310,8 +6770,42 @@
    "tier": 1,
    "words": 1333,
    "batch_id": "B0024",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0024",
+     "run": "R-w3-B0024",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:40Z",
+      "finished_at": "2026-10-15T19:22:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       178
+      ]
+     ],
+     "lines_total": 178,
+     "genre_observed": "protocol specification for a symbol (the star seal)",
+     "finds_by_shape": {
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Body duplicated in #1158 (AXN-0497, blog-recovered copy).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 538,
@@ -6320,8 +6814,43 @@
    "tier": 1,
    "words": 4079,
    "batch_id": "B0024",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0024",
+     "run": "R-w3-B0024",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:40Z",
+      "finished_at": "2026-10-15T19:22:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       319
+      ]
+     ],
+     "lines_total": 319,
+     "genre_observed": "political-economy essay closing in a declaration (effective act)",
+     "finds_by_shape": {
+      "G": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Same essay body as #1329 (AXN-0542), with different line spacing (blank lines doubled here).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1158,
@@ -6330,8 +6859,42 @@
    "tier": 1,
    "words": 1744,
    "batch_id": "B0024",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0024",
+     "run": "R-w3-B0024",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:40Z",
+      "finished_at": "2026-10-15T19:22:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       165
+      ]
+     ],
+     "lines_total": 165,
+     "genre_observed": "blog-recovered restoration of the star protocol specification",
+     "finds_by_shape": {
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Duplicate body of #537 under a recovery frame (lines 1-46). The Falsification Conditions section is restoration boilerplate, not recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1159,
@@ -6340,8 +6903,40 @@
    "tier": 1,
    "words": 1359,
    "batch_id": "B0024",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0024",
+     "run": "R-w3-B0024",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:40Z",
+      "finished_at": "2026-10-15T19:22:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       142
+      ]
+     ],
+     "lines_total": 142,
+     "genre_observed": "blog-recovered restoration of the integrity lock certificate",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Duplicate body of #536 under a recovery frame (lines 1-46); falsification boilerplate not recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1329,
@@ -6350,8 +6945,43 @@
    "tier": 1,
    "words": 4079,
    "batch_id": "B0024",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0024",
+     "run": "R-w3-B0024",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:40Z",
+      "finished_at": "2026-10-15T19:22:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       234
+      ]
+     ],
+     "lines_total": 234,
+     "genre_observed": "political-economy essay closing in a declaration (effective act)",
+     "finds_by_shape": {
+      "G": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Same essay body as #538 (AXN-016D), compact spacing.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 540,
@@ -6360,8 +6990,47 @@
    "tier": 1,
    "words": 3832,
    "batch_id": "B0024",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0024",
+     "run": "R-w3-B0024",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:40Z",
+      "finished_at": "2026-10-15T19:22:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       841
+      ]
+     ],
+     "lines_total": 841,
+     "genre_observed": "glyphic operator document (shadow transform tables over the Space Ark architecture)",
+     "finds_by_shape": {
+      "F": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Tables are flattened to one cell per line. Read range [451,841] reported last line 842 empty in the Read tool; wc counts 841.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 542,
@@ -6370,8 +7039,51 @@
    "tier": 1,
    "words": 9461,
    "batch_id": "B0024",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0024",
+     "run": "R-w3-B0024",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:40Z",
+      "finished_at": "2026-10-15T19:22:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       800
+      ],
+      [
+       801,
+       1130
+      ]
+     ],
+     "lines_total": 1130,
+     "genre_observed": "genre specification with theoretical grounding (TANG), with an unbuilt inaugural instance",
+     "finds_by_shape": {
+      "F": 3,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Section XIII Open Questions (lines 797-912) is a queue register of mostly procedural items (registrations, schema updates); not recorded except the Lambda_hex_enforce row as also_at. Tables flattened one cell per line.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1160,
@@ -6430,8 +7142,47 @@
    "tier": 1,
    "words": 4506,
    "batch_id": "B0026",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0026",
+     "run": "R-w3-B0026",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), model claude-opus-5-5 as stated in my system prompt, running as a Claude Code subagent",
+      "started_at": "2026-10-15T19:20:50Z",
+      "finished_at": "2026-10-15T19:21:59Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       520
+      ],
+      [
+       521,
+       1018
+      ]
+     ],
+     "lines_total": 1018,
+     "genre_observed": "normative technical specification (Space Ark meta-component, effective act)",
+     "finds_by_shape": {
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Section 8.1 heads 'Four Safety Gates' but lists five gates (GATE 5 GOVERNANCE); SIM-SAG-06 says five. Table bodies are flattened to one cell per line.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 552,
@@ -6440,8 +7191,53 @@
    "tier": 1,
    "words": 7471,
    "batch_id": "B0026",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0026",
+     "run": "R-w3-B0026",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), model claude-opus-5-5 as stated in my system prompt, running as a Claude Code subagent",
+      "started_at": "2026-10-15T19:20:50Z",
+      "finished_at": "2026-10-15T19:21:59Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       550
+      ],
+      [
+       551,
+       1100
+      ],
+      [
+       1101,
+       1591
+      ]
+     ],
+     "lines_total": 1591,
+     "genre_observed": "normative technical specification (Space Ark engine component, LP extension module)",
+     "finds_by_shape": {
+      "F": 2,
+      "G": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Header says v1.1; YAML comment line 1380 still reads v1.0, and section 14 interfaces SAG-v1.0 while colophon says SAG-v1.2. Tables flattened to one cell per line.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 553,
@@ -6450,8 +7246,51 @@
    "tier": 1,
    "words": 5052,
    "batch_id": "B0026",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0026",
+     "run": "R-w3-B0026",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), model claude-opus-5-5 as stated in my system prompt, running as a Claude Code subagent",
+      "started_at": "2026-10-15T19:20:50Z",
+      "finished_at": "2026-10-15T19:21:59Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       280
+      ],
+      [
+       281,
+       540
+      ]
+     ],
+     "lines_total": 540,
+     "genre_observed": "theoretical paper / normative specification founding Retrieval Formation Theory",
+     "finds_by_shape": {
+      "C": 1,
+      "D": 1,
+      "F": 1,
+      "G": 3,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Document ID is 00.SPEC.RFT.v1.1 while #552 implements RFT v1.2. Tables flattened to one cell per line.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 556,
@@ -6460,8 +7299,68 @@
    "tier": 1,
    "words": 24873,
    "batch_id": "B0027",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0027",
+     "run": "R-w3-B0027",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:20:54Z",
+      "finished_at": "2026-10-15T19:22:10Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       600
+      ],
+      [
+       601,
+       1300
+      ],
+      [
+       1301,
+       2000
+      ],
+      [
+       2001,
+       2700
+      ],
+      [
+       2701,
+       3400
+      ],
+      [
+       3401,
+       3900
+      ],
+      [
+       3901,
+       4350
+      ]
+     ],
+     "lines_total": 4350,
+     "genre_observed": "glyphic (emoji-encoded) normative specification of the Space Ark architecture, with prefatory 2015 poem",
+     "finds_by_shape": {
+      "D": 3,
+      "G": 3,
+      "F": 6
+     },
+     "none_found": false,
+     "incidental": "Several bullet lists render as empty '- ' markers followed by detached content (e.g. lines 271-314, 1981-2008), likely a conversion artifact. Line 1113 '- = institutional packet' has lost its leading asterisk to list conversion. Appendices A-E are [NF] summaries only; full content lives in the formal-register Ark v4.2.6 (DOI 10.5281/zenodo.18969405). Most predictive material is normative thresholds/tests rather than dated forecasts; no dated forecast found.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 557,

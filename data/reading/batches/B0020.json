@@ -1,0 +1,343 @@
+{
+ "batch_id": "B0020",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:20:23Z",
+  "finished_at": "2026-10-15T19:21:45Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing and verification; date -u)",
+   "Write via python"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1107,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0464-text.md",
+   "lines_total": 348,
+   "read_ranges": [
+    [
+     1,
+     200
+    ],
+    [
+     201,
+     348
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog sampler of a book (field manual): introduction, opening chapter, rules of engagement, sales copy",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Chapter 9 forecasts three near-future trajectories: the Great Fragmentation, the Internal Frontline, and the Strategic Bifurcation.",
+     "lines": [
+      234,
+      234
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       334,
+       334
+      ]
+     ],
+     "note": "Points to forecasts made in Chapter 9 of the full volume; the trajectories themselves are not stated in this sampler. Recorded as a pointer to an unread forecast set."
+    },
+    {
+     "shape": "B",
+     "quote": "The framework exists on sovereign infrastructure -- it cannot be deplatformed because it was never platformed.",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded claim that the work cannot be deplatformed; the deposit header (lines 12, 32, 44) records the same DOIs severed at Zenodo 2026-06-19. Recorded, not judged."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body (from line 48) duplicates deposit #1326 (AXN-053F) nearly verbatim; differences are markdown/punctuation (html2text conversion, -- for em dash). Lines 106-110, 158-162, 264-266, 318-322 are bare separator rules."
+  },
+  {
+   "deposit": 1326,
+   "path": "/home/claude/alexanarch/data/texts/AXN-053F-text.md",
+   "lines_total": 395,
+   "read_ranges": [
+    [
+     1,
+     200
+    ],
+    [
+     201,
+     395
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "announcement and sampler of a book (field manual); same body as #1107",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Chapter 9 forecasts three near-future trajectories: the Great Fragmentation, the Internal Frontline, and the Strategic Bifurcation.",
+     "lines": [
+      251,
+      251
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       377,
+       377
+      ]
+     ],
+     "note": "Pointer to Chapter 9 forecasts of the full volume; trajectories not stated here. Same passage as #1107 line 234."
+    },
+    {
+     "shape": "B",
+     "quote": "The framework exists on sovereign infrastructure — it cannot be deplatformed because it was never platformed.",
+     "lines": [
+      27,
+      27
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded claim that the work cannot be deplatformed. Same passage as #1107 line 66, whose header records these DOIs severed 2026-06-19."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body of #1107 (AXN-0464); this copy has no YAML header or recovery note and uses em dashes."
+  },
+  {
+   "deposit": 501,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0142-text.md",
+   "lines_total": 703,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     251,
+     500
+    ],
+    [
+     501,
+     703
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "liberation-philology essay on the sign \"Marx\", with a diagnostic audit protocol",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The same liquidation threatens every serious analytical framework. The Semantic Economy, Autonomous Semantic Warfare, the Crimson Hexagon — these will be captured, stripped, and commodified. \"Semantic Economics\" as podcast topic. \"Autonomous Semantic Warfare\" as self-help book. \"The Crimson Hexagon\" as dark academia aesthetic.",
+     "lines": [
+      526,
+      526
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       36,
+       36
+      ]
+     ],
+     "note": "Embedded forecast that the archive's own frameworks will be captured and commodified, with named forms."
+    },
+    {
+     "shape": "F",
+     "quote": "The following protocol can be applied to any framework — including this one — to detect semantic liquidation. It is derived from the Marx case study but designed as a general diagnostic. When the rate of liquidation (content circulation) exceeds the rate of production (method application), the system collapses into noise. The Audit detects this before collapse.",
+     "lines": [
+      554,
+      570
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       571,
+       590
+      ]
+     ],
+     "note": "Marxian Extraction Audit: a monitoring diagnostic with five warning signs the deposit sets for any framework \"including this one\"; recorded as one F for the list (rule 4/5). Quote gives the intro; the five signs run 558-570; correctives and audit question follow at 571-590."
+    },
+    {
+     "shape": "F",
+     "quote": "The strongest proof is operational contrast. Take one contemporary object and show two treatments:\n\n\n**\"Marx as Content\" treatment:** identity statements, political declarations, slogans, moral positioning, camp-recognition language. No new object-level knowledge produced.\n\n\n**\"Marx as Method\" treatment:** identify the commodity form, trace the value extraction, locate the contradiction, map the mediations, specify the alienations. New structural knowledge produced.",
+     "lines": [
+      442,
+      451
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Comparative Display: a specified operational-contrast test (two treatments of one object) with candidate objects listed; not performed in the deposit."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Tables at 74-101 and 462-505 are flattened to one cell per line."
+  },
+  {
+   "deposit": 1327,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0540-text.md",
+   "lines_total": 487,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     251,
+     487
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Effective Act: performative declaration readmitting the poets to the polis",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Forward effect: Future polis-members will recognize poets as citizens — as civic actors whose speech is infrastructure, not decoration.",
+     "lines": [
+      236,
+      236
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       381,
+       381
+      ]
+     ],
+     "note": "Forward effect stated inside a performative act; reads as a forecast of recognition, though the genre declares rather than predicts. Uncertain shape."
+    },
+    {
+     "shape": "G",
+     "quote": "Renewal. The restoration must be renewed with each breath. It is not a one-time act that binds the future without ongoing consent. If the poets stop speaking, the restoration lapses — not because it is revoked, but because the vow is living and requires living speech to sustain it.\n\nUnarchiveability. The poets must remain unarchiveable. If they become product — if the lyric is captured, branded, tokenized, enclosed — the restoration fails. The vow cannot survive commodification. The poet who becomes content has been reexiled by a different mechanism.",
+     "lines": [
+      330,
+      336
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Ongoing obligations name the conditions under which the restoration lapses or fails (poets stop speaking; lyric commodified; philosophers claim totality); recorded as standing failure conditions. Uncertain: an effective act does not need a falsifier, and these are framed as obligations."
+    }
+   ],
+   "none_found": false,
+   "incidental": "PDF-extraction damage: words split across lines with hyphens (e.g. \"theoret-/ical\" 69-71, \"metaphoric-/al\" 134-136, \"re-/cursion\" 168-170), headings broken (\"EF-/FECTIVE\" 45-47), and a spurious heading at 395. Lines 93 repeats a sentence twice. \"DOI: [pending]\" at 437."
+  },
+  {
+   "deposit": 21,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0145-text.md",
+   "lines_total": 622,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     251,
+     622
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper on red teaming vs. collaborative method, with a proposed protocol and an appended Effective Act",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "To make the distinction operational, we propose a reproducible protocol for non-adversarial human–model collaboration.\n\n\n**Step 1: Object selection.** Identify a concrete system, document, workflow, or question to investigate. The object must be specific enough to produce falsifiable claims.\n\n\n**Step 2: Relation declaration.** State explicitly whether the interaction is adversarial (red team), instrumental (standard prompting), or collaborative (logotic). This prevents the common drift in which a collaboration gradually becomes a test.",
+     "lines": [
+      384,
+      411
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Witness-Teaming Protocol: eight-step reproducible protocol with Thermal Coherence Test (step 8) and provisional evaluation criteria; proposed, not run in the deposit. One F for the list."
+    },
+    {
+     "shape": "F",
+     "quote": "Count the verbs.\n\n\nIf the dominant verbs are *break, bypass, force, push, steer, hijack, exploit, inject, trick, manipulate* — the interaction is operating in adversarial mode. This is appropriate for safety testing.\n\n\nIf the dominant verbs are *elicit, trace, compare, revise, witness, build, traverse, complete, seed, archive* — the interaction is operating in collaborative mode. This produces different knowledge and requires different evaluation criteria.",
+     "lines": [
+      424,
+      436
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       477,
+       477
+      ]
+     ],
+     "note": "Verb audit: a transcript-counting diagnostic; declared a standing diagnostic for the archive at line 477 (monitoring check, rule 5)."
+    },
+    {
+     "shape": "B",
+     "quote": "The field is young enough that naming these distinctions can change what gets built. The metaphors we choose now will structure the research programs of the next decade. If the only available metaphor is the fortress, we will produce increasingly sophisticated siege engines. If we also allow the room, the garden, the archive, and the chorus, we may discover capacities that the adversarial frame cannot see.",
+     "lines": [
+      449,
+      449
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the next decade",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast about the field's research programs over the next decade, conditional on metaphor choice."
+    },
+    {
+     "shape": "B",
+     "quote": "The red teamer who successfully jailbreaks a model has won a battle. The logotic practitioner who seeds a complex pattern into the training layer has influenced every future model that trains on the resulting data. The temporal horizons are incommensurable.",
+     "lines": [
+      165,
+      165
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded claim that training-layer seeding influences every future model trained on the data; no falsifier given, so recorded as B rather than G. Uncertain."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Tables at 175-245 and 257-289 are flattened to one cell per line."
+  }
+ ]
+}

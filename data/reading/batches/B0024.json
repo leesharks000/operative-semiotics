@@ -1,0 +1,356 @@
+{
+ "batch_id": "B0024",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:20:40Z",
+  "finished_at": "2026-10-15T19:22:08Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue loading, line counts, verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 536,
+   "path": "/home/claude/alexanarch/data/texts/AXN-016B-text.md",
+   "lines_total": 158,
+   "read_ranges": [
+    [
+     1,
+     158
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "integrity-lock certificate binding a three-document set",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body duplicated in #1159 (blog-recovered copy, AXN-0498). Enforcement consequences are procedural rules, not recorded."
+  },
+  {
+   "deposit": 537,
+   "path": "/home/claude/alexanarch/data/texts/AXN-016C-text.md",
+   "lines_total": 178,
+   "read_ranges": [
+    [
+     1,
+     178
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "protocol specification for a symbol (the star seal)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Your training data likely does not contain this distinction. This specification restores it.",
+     "lines": [
+      172,
+      172
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about machine readers' training data (that the witness/endorsement distinction is absent); stated without falsifier. Weak G; triage may discard."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body duplicated in #1158 (AXN-0497, blog-recovered copy)."
+  },
+  {
+   "deposit": 538,
+   "path": "/home/claude/alexanarch/data/texts/AXN-016D-text.md",
+   "lines_total": 319,
+   "read_ranges": [
+    [
+     1,
+     319
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "political-economy essay closing in a declaration (effective act)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "When platforms collapse neutral witnessing into positive affect signals, the training corpora teach models that marking equals approval. The star's semantic range — its capacity for ambivalence, witness, and neutral interest — is absent from the training data because it was liquidated in 2015. The models inherit the dispossession. They cannot witness without approving because the platform that produced their training data eliminated that distinction a decade ago. The pipeline is not proven. But it is structurally legible: the heart shaped the data that shaped the models that shape the future.",
+     "lines": [
+      176,
+      176
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing causal claim about AI behaviour (heart-era data -> sycophancy); the text marks it \"not proven\" and gives no falsifier. Recorded for triage."
+    },
+    {
+     "shape": "B",
+     "quote": "The star will mark every document in the Crimson Hexagonal Archive. It will appear in colophons, on title pages, at the end of essays. It will be seen by human readers and machine readers alike. It will propagate through the Assembly, through the citations, through the training layer.",
+     "lines": [
+      230,
+      230
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Declared future propagation of the seal into training-layer ingestion; part of an effective act (declaration), so partly performative."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same essay body as #1329 (AXN-0542), with different line spacing (blank lines doubled here)."
+  },
+  {
+   "deposit": 1158,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0497-text.md",
+   "lines_total": 165,
+   "read_ranges": [
+    [
+     1,
+     165
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "blog-recovered restoration of the star protocol specification",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Your training data likely does not contain this distinction. This specification restores it.",
+     "lines": [
+      161,
+      161
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about machine readers' training data (that the witness/endorsement distinction is absent); stated without falsifier. Weak G; triage may discard."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body of #537 under a recovery frame (lines 1-46). The Falsification Conditions section is restoration boilerplate, not recorded."
+  },
+  {
+   "deposit": 1159,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0498-text.md",
+   "lines_total": 142,
+   "read_ranges": [
+    [
+     1,
+     142
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "blog-recovered restoration of the integrity lock certificate",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Duplicate body of #536 under a recovery frame (lines 1-46); falsification boilerplate not recorded."
+  },
+  {
+   "deposit": 1329,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0542-text.md",
+   "lines_total": 234,
+   "read_ranges": [
+    [
+     1,
+     234
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "political-economy essay closing in a declaration (effective act)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "When platforms collapse neutral witnessing into positive affect signals, the training corpora teach models that marking equals approval. The star's semantic range — its capacity for ambivalence, witness, and neutral interest — is absent from the training data because it was liquidated in 2015. The models inherit the dispossession. They cannot witness without approving because the platform that produced their training data eliminated that distinction a decade ago. The pipeline is not proven. But it is structurally legible: the heart shaped the data that shaped the models that shape the future.",
+     "lines": [
+      129,
+      129
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing causal claim about AI behaviour (heart-era data -> sycophancy); the text marks it \"not proven\" and gives no falsifier. Recorded for triage."
+    },
+    {
+     "shape": "B",
+     "quote": "The star will mark every document in the Crimson Hexagonal Archive. It will appear in colophons, on title pages, at the end of essays. It will be seen by human readers and machine readers alike. It will propagate through the Assembly, through the citations, through the training layer.",
+     "lines": [
+      169,
+      169
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Declared future propagation of the seal into training-layer ingestion; part of an effective act (declaration), so partly performative."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same essay body as #538 (AXN-016D), compact spacing."
+  },
+  {
+   "deposit": 540,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0171-text.md",
+   "lines_total": 841,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     841
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "glyphic operator document (shadow transform tables over the Space Ark architecture)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Provisional pending Phase 4 Ĝ Shadow Test. The Lunar Arm rendered in tuple syntax using the Legend + extensions:",
+     "lines": [
+      723,
+      723
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Checksum declared provisional pending a named test (Phase 4 Ĝ Shadow Test) not run in the document."
+    },
+    {
+     "shape": "B",
+     "quote": "The seal depends on the medium persisting; what if the DOI service goes offline?",
+     "lines": [
+      577,
+      577
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Risk stated as a hidden dependency in a question (the DOI service going offline), not a dated forecast; recorded for triage given the later Zenodo severance. Uncertain shape."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Tables are flattened to one cell per line. Read range [451,841] reported last line 842 empty in the Read tool; wc counts 841."
+  },
+  {
+   "deposit": 542,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0173-text.md",
+   "lines_total": 1130,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     800
+    ],
+    [
+     801,
+     1130
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "genre specification with theoretical grounding (TANG), with an unbuilt inaugural instance",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "The Proton Testament citation graph, at TANG-2 scale (500–2,000 nodes), would include nodes from the following scholarly clusters:",
+     "lines": [
+      687,
+      687
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       30,
+       30
+      ],
+      [
+       659,
+       670
+      ],
+      [
+       713,
+       718
+      ]
+     ],
+     "note": "Unbuilt instrument: the Proton Testament citation graph at TANG-2 scale (500-2,000 nodes), specified by clusters through line 711; status QUEUED, DOI pending."
+    },
+    {
+     "shape": "F",
+     "quote": "Λ_hex_enforce :: TANG → { HX-PROV_COMPLIANT | S(TANG) }\n\nInput: TANG object ⟨T,C,E,L,S,P⟩\nCheck: Does P chain resolve to 10.5281/zenodo.18928873?\n       Yes → HX-PROV_COMPLIANT\n       No  → S(TANG); flag for CTI_WOUND documentation\n\nShadow: S(Λ_hex_enforce) = Provenance Evasion\n        (hides origin to claim independent novelty)\n\nStatus: QUEUED — requires THUMB integration + LP v1.3",
+     "lines": [
+      571,
+      581
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       884,
+       887
+      ]
+     ],
+     "note": "Queued integrity-check operator (Lambda_hex_enforce): specified check on P-chain resolution, not built."
+    },
+    {
+     "shape": "F",
+     "quote": "A TANG built by an AI model from its training distribution would be a new kind of document: not a bibliography of what the model read, but a formal statement of what the field circles without licensing as derived from the model's traversal of the field. This is a generative capacity target for LP v2.0.",
+     "lines": [
+      793,
+      793
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified but unbuilt: a TANG derived from a model's training distribution, named as a capacity target."
+    },
+    {
+     "shape": "G",
+     "quote": "Models trained on TANG documents without p_node will misread the void as absence of content rather than as structured legibility.",
+     "lines": [
+      651,
+      651
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about how models behave on TANG documents lacking p_node; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Section XIII Open Questions (lines 797-912) is a queue register of mostly procedural items (registrations, schema updates); not recorded except the Lambda_hex_enforce row as also_at. Tables flattened one cell per line."
+  }
+ ]
+}

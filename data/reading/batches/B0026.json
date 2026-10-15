@@ -1,0 +1,333 @@
+{
+ "batch_id": "B0026",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), model claude-opus-5-5 as stated in my system prompt, running as a Claude Code subagent",
+  "started_at": "2026-10-15T19:20:50Z",
+  "finished_at": "2026-10-15T19:21:59Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 551,
+   "path": "/home/claude/alexanarch/data/texts/AXN-017C-text.md",
+   "lines_total": 1018,
+   "read_ranges": [
+    [
+     1,
+     520
+    ],
+    [
+     521,
+     1018
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "normative technical specification (Space Ark meta-component, effective act)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "verification_status:\n  Claim: SAG_formal = SAG(A₀, Ξ_formal)\n  Test: This document (v1.2) serves as the verification case.\n        Derive H_core from this document alone using π_formal.\n  Result: [To be completed by independent reader within 30 days\n           of deposit]\n  If FAIL: This document is costume, not meta-component.",
+     "lines": [
+      777,
+      783
+     ],
+     "falsifier_quote": "If FAIL: This document is costume, not meta-component.",
+     "falsifier_lines": [
+      783,
+      783
+     ],
+     "window": "within 30 days\n           of deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Self-verification test of the SAG specified with a 30-day window, result left blank; unrun test."
+    },
+    {
+     "shape": "F",
+     "quote": "π test:\n  An independent interpreter (human or model) under reduced-context\n  conditions — without access to A₀ or any other Ark — must be able\n  to recover from A_Ξ + π:\n    (a) the seven-tuple structure of H_core\n    (b) the engine component roles (FL, LE, UKTP, GDE)\n    (c) core structural asymmetries\n    (d) threshold logic (status algebra, quorum, tier gates)\n    (e) exclusions and blind spots (Lunar Arm, Ichabod isolation)\n\nπ failure:\n  If π cannot enable recovery of (a)-(e), the Ark is not a compression.\n  It is a costume. Do not deposit.",
+     "lines": [
+      154,
+      166
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The pi back-projection test: reduced-context reconstruction test specified with recoverables (a)-(e) and failure condition; not run in the document."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Section 8.1 heads 'Four Safety Gates' but lists five gates (GATE 5 GOVERNANCE); SIM-SAG-06 says five. Table bodies are flattened to one cell per line."
+  },
+  {
+   "deposit": 552,
+   "path": "/home/claude/alexanarch/data/texts/AXN-017D-text.md",
+   "lines_total": 1591,
+   "read_ranges": [
+    [
+     1,
+     550
+    ],
+    [
+     551,
+     1100
+    ],
+    [
+     1101,
+     1591
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "normative technical specification (Space Ark engine component, LP extension module)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "self_verification:\n  claim: |\n    The GDE is itself a field under construction. This document\n    performs its own six operations (§18) and should be verifiable\n    through its own verification protocol.\n\n  test: |\n    Execute the retrieval test (§8.1) on \"generative disciplinary\n    engine\" under reduced-personalization conditions within 30 days\n    of deposit. If the retrieval system can sustain a multi-stage\n    briefing on the GDE as a field — not merely as a document —\n    the self-verification passes.\n\n  result: \"[To be completed by independent reader within 30 days of deposit]\"\n  if_fail: \"This document is a specification, not yet a field. Iterate.\"",
+     "lines": [
+      921,
+      935
+     ],
+     "falsifier_quote": "if_fail: \"This document is a specification, not yet a field. Iterate.\"",
+     "falsifier_lines": [
+      935,
+      935
+     ],
+     "window": "within 30 days\n    of deposit",
+     "points_to": "",
+     "also_at": [
+      [
+       1439,
+       1439
+      ]
+     ],
+     "note": "Self-verification retrieval test on the term \"generative disciplinary engine\" within 30 days of deposit; result left blank."
+    },
+    {
+     "shape": "F",
+     "quote": "retrieval_test:\n  procedure: |\n    1. Open incognito browser (reduced-personalization conditions)\n    2. Search founding term in quotes: \"[term]\"\n    3. Evaluate retrieval system response:\n\n  stages:\n    1_INDEXING:    ≥3 deposits appear in results\n    2_CLUSTERING:  results recognized as related\n    3_SYNTHESIS:   summarizer returns coherent field description\n    4_BRIEFING:    sustains ≥3 follow-up stages\n    5_GENEALOGY:   cites founder names, traces lineage\n    6_METHOD:      describes core operations\n\n  pass_condition: Stage 4 or higher",
+     "lines": [
+      794,
+      808
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       814,
+       892
+      ]
+     ],
+     "note": "Verification battery (retrieval, depth, compression, shadow, drift tests, sections 8.1-8.5, lines 794-892) recorded as one F per boundary rule 4; quoted by its first test."
+    },
+    {
+     "shape": "G",
+     "quote": "  state_interpretation:\n    S0_NOISE:     ‖F‖ < 0.30  → deposits retrieved as unrelated documents\n    S1_EMERGING:  0.30 ≤ ‖F‖ < 0.50  → deposits cluster under shared terms\n    S2_FORMED:    0.50 ≤ ‖F‖ < 0.70  → coherent summary but no multi-stage\n    S3_BRIEFABLE: 0.70 ≤ ‖F‖ < 0.85  → multi-stage disciplinary briefing\n    S4_STABILIZED: ‖F‖ ≥ 0.85  → persists across time, engines, geolocations",
+     "lines": [
+      533,
+      538
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       741,
+       768
+      ],
+      [
+       1425,
+       1430
+      ]
+     ],
+     "note": "State interpretation: claims mapping field magnitude to retrieval-system behaviour; testable by the retrieval test, no explicit falsifier."
+    },
+    {
+     "shape": "B",
+     "quote": "This specification (GDE)\n~0.55\nS2 (FORMED)\nPending multi-stage retrieval verification. Post-deposit estimate; climbing via the six primitives executed in §18.",
+     "lines": [
+      1284,
+      1287
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1574,
+       1577
+      ]
+     ],
+     "note": "Table row estimating the GDE at S2 post-deposit and \"climbing\"; embedded forecast of rising field state."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Header says v1.1; YAML comment line 1380 still reads v1.0, and section 14 interfaces SAG-v1.0 while colophon says SAG-v1.2. Tables flattened to one cell per line."
+  },
+  {
+   "deposit": 553,
+   "path": "/home/claude/alexanarch/data/texts/AXN-017F-text.md",
+   "lines_total": 540,
+   "read_ranges": [
+    [
+     1,
+     280
+    ],
+    [
+     281,
+     540
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper / normative specification founding Retrieval Formation Theory",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "This traversal is not final proof of field stabilization. It is the first clear public confirmation that the installation operation is producing the kind of retrieval-layer behavior it predicted. It establishes the narrower and more decisive fact that the archive can already cause a public retrieval system to re-teach the field to a stranger in structurally recognizable form.",
+     "lines": [
+      349,
+      349
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the installation operation (prediction unnamed); retrieval event of 2026-03-11, 00.TLDR.OPPHIL.SEARCH.v1.1",
+     "also_at": [],
+     "note": "The 2026-03-11 traversal is framed as first public confirmation of behaviour the installation operation predicted; the earlier prediction is not cited by deposit."
+    },
+    {
+     "shape": "D",
+     "quote": "Share link archived\nhttps://share.google/aimode/Ri4Os1hlHaHfwNkbj",
+     "lines": [
+      272,
+      273
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Google AI Mode share link, query \"operative philology\", 2026-03-11",
+     "also_at": [
+      [
+       244,
+       245
+      ],
+      [
+       276,
+       277
+      ]
+     ],
+     "note": "Third-party timestamped anchor: Google AI Mode share link archived for the 2026-03-11 traversal (boundary rule 2)."
+    },
+    {
+     "shape": "F",
+     "quote": "**Not yet established.** Stability across users, regions, devices, time, model updates, and competing query phrasings. Denotational lock (long-term terminological fidelity). Canonical survival through index updates. Whether the formation holds under adversarial query reformulation. Whether other retrieval systems (Bing, Perplexity, future summarizers) produce comparable output.",
+     "lines": [
+      346,
+      346
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "\"Not yet established\" list: untested stability conditions (users, regions, time, model updates, other retrieval systems) recorded as one F."
+    },
+    {
+     "shape": "G",
+     "quote": "A retrieval formation is not produced by any single operation. It requires six conditions, each necessary, jointly sufficient. The operations are stated here in the order they were identified through reconstruction from the first verified case (Operative Philology, 2024–2026), but execution order may vary.",
+     "lines": [
+      98,
+      98
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       111,
+       111
+      ],
+      [
+       127,
+       127
+      ],
+      [
+       143,
+       143
+      ],
+      [
+       159,
+       159
+      ],
+      [
+       175,
+       175
+      ],
+      [
+       188,
+       188
+      ]
+     ],
+     "note": "Standing claim that the six operations are each necessary and jointly sufficient; each has a stated test in sections 2.1-2.6."
+    },
+    {
+     "shape": "G",
+     "quote": "SEO can produce first-page results. It cannot produce a four-stage guided introduction to a field, because there is no field — only optimized surface. The summarizer, which synthesizes across multiple sources and evaluates internal coherence, detects the absence of genuine depth. SEO targets the index. Retrieval formation targets the synthesizer.",
+     "lines": [
+      211,
+      211
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about summarizer behaviour: SEO cannot yield a multi-stage field briefing."
+    },
+    {
+     "shape": "G",
+     "quote": "Citation rings and paper mills produce high citational density without intellectual coherence. The retrieval system may index them, but the summarizer — which evaluates whether cited works actually contribute to a synthesizable framework — will not produce a disciplinary briefing from fraudulent citations. The test is synthesis, not indexing.",
+     "lines": [
+      220,
+      220
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: summarizers will not produce a disciplinary briefing from citation-ring density; \"The test is synthesis\"."
+    },
+    {
+     "shape": "B",
+     "quote": "**Instrumentalization.** The most likely capture mode is the reduction of RFT to a \"growth hacking\" technique for academic visibility, stripped of its theoretical commitments.",
+     "lines": [
+      421,
+      421
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of RFT's most likely capture mode (instrumentalization as growth hacking)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Document ID is 00.SPEC.RFT.v1.1 while #552 implements RFT v1.2. Tables flattened to one cell per line."
+  }
+ ]
+}
