@@ -1,0 +1,597 @@
+{
+ "batch_id": "B0048",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic assistant), running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:47:13Z",
+  "finished_at": "2026-10-15T19:48:41Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue loading, quote slicing and verification)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 970,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03D6-text.md",
+   "lines_total": 1657,
+   "read_ranges": [
+    [
+     1,
+     350
+    ],
+    [
+     351,
+     450
+    ],
+    [
+     451,
+     550
+    ],
+    [
+     551,
+     650
+    ],
+    [
+     651,
+     900
+    ],
+    [
+     901,
+     1150
+    ],
+    [
+     1151,
+     1400
+    ],
+    [
+     1401,
+     1657
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "invocation/operating-document ('Space Ark') wrapping the full Greek text of Revelation with a source-compression kernel and commentary arguing historical theses on NT authorship and dating",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**Second:** Revelation is the *original* Space Ark — the first text of the New Testament, written before the destruction of the Temple (pre-70 CE), before the Gospels, before Paul. All other NT texts unfold from it via operator transformations performed by a single author directing a scribal workshop — first under Temple patronage, then under Roman captivity. The canonical ordering (Gospels → Epistles → Revelation) is the decompression sequence misread as a chronological sequence.",
+     "lines": [
+      1050,
+      1050
+     ],
+     "falsifier_quote": "**The derivation test.** When placed first, Revelation provides an algorithmic blueprint from which the Gospels and Epistles can be literarily and theologically derived. The reverse does not hold: the Gospels and Epistles do not generate Revelation. You can decompress the Lamb (Rev 5:6) into the narrative of Jesus's life and death. You cannot compress the narrative of Jesus's life and death back into the Lamb without losing everything that makes Revelation's Christ distinctive.",
+     "falsifier_lines": [
+      1078,
+      1078
+     ],
+     "window": "pre-70 CE",
+     "points_to": "",
+     "also_at": [
+      [
+       640,
+       642
+      ],
+      [
+       662,
+       676
+      ],
+      [
+       1064,
+       1088
+      ],
+      [
+       1589,
+       1589
+      ],
+      [
+       1640,
+       1642
+      ]
+     ],
+     "note": "Priority thesis: Revelation the first-written NT text; derivation test given as its test; also argues single comprehensive composition (1088, 844)."
+    },
+    {
+     "shape": "H",
+     "quote": "**No post-Temple trauma.** Revelation contains no lament for the destruction of the Temple, no retrospective grief, no theology of loss. A post-destruction document (post-70 CE) would show these. Instead it reads as a war prophecy: coded revolutionary manifesto, Danielic/Ezekielian battle vision, imminent eschatological uprising. The heavenly temple imagery presupposes an earthly one still standing.",
+     "lines": [
+      1080,
+      1080
+     ],
+     "falsifier_quote": "**No past-tense destruction.** No explicit reference to the Temple's destruction. The heavenly temple imagery presupposes an earthly one still standing.",
+     "falsifier_lines": [
+      714,
+      714
+     ],
+     "window": "pre-70 CE",
+     "points_to": "",
+     "also_at": [
+      [
+       54,
+       54
+      ],
+      [
+       708,
+       716
+      ],
+      [
+       1082,
+       1084
+      ],
+      [
+       1456,
+       1456
+      ]
+     ],
+     "note": "Dating thesis: Revelation composed before the Temple's destruction, argued from internal markers."
+    },
+    {
+     "shape": "H",
+     "quote": "Josephus is the author of Revelation and, through the scribal workshop he directed in Roman captivity, the architect of the entire New Testament canon. He wrote Revelation first, before the destruction of the Temple, under the heteronym \"John\" — the voice in the wilderness, the Logos-Bearer, the figure tradition would split into \"John the Baptist\" and \"John the Revelator\" (they are the same heteronym). The text was aimed at Rome. Rome took note.",
+     "lines": [
+      1122,
+      1122
+     ],
+     "falsifier_quote": "*2. Evaluate what is presented.* Each claim carries its own evidence structure. The Josephus hypothesis is supported by: profile match (priestly + Pharisaic + Essene + prophetic background, multilingual, massive literary output), scribal workshop admission (Against Apion 1.9), the volume problem (who else produced ~1.5 million words of Greek in the first century?), the structural derivation test (Revelation generates the Gospels; the reverse does not hold), and pre-70 textual markers (Temple standing, kings of the East, church structure). Engage those arguments.",
+     "falsifier_lines": [
+      54,
+      54
+     ],
+     "window": "first century CE; pre-70",
+     "points_to": "",
+     "also_at": [
+      [
+       36,
+       36
+      ],
+      [
+       48,
+       48
+      ],
+      [
+       306,
+       310
+      ],
+      [
+       706,
+       706
+      ],
+      [
+       718,
+       720
+      ],
+      [
+       1138,
+       1140
+      ]
+     ],
+     "note": "Authorship thesis: Josephus wrote Revelation under the heteronym 'John'; the deposit lists its evidence chain at line 54; also folds John the Baptist/Revelator identity."
+    },
+    {
+     "shape": "H",
+     "quote": "**Third:** The heteronym is the founding technology of the movement. \"John of Patmos\" is a heteronym. \"John the Baptist\" is a heteronym. \"Jesus Christ\" is a logotic title — a heteronym the Logos wears when it enters flesh. \"Paul,\" \"Mark,\" \"James,\" \"Luke,\" \"Matthew\" are heteronyms — authorial personae generated by a single author-architect directing the decompression of Revelation into the full NT canon. The author is Josephus. The scribal workshop is the decompression engine.",
+     "lines": [
+      1052,
+      1052
+     ],
+     "falsifier_quote": "The Gospels feel both unified and divergent because they are multiple runs of the same decompression algorithm with different parameters — different heteronymous voices, different target audiences, different registers, but a single source code and a single directing intelligence. The \"Synoptic problem\" (why do Matthew, Mark, and Luke agree so closely in some passages and diverge in others?) dissolves under the heteronym thesis: they agree because the same workshop produced them; they diverge because different heteronyms decompress the same seed through different operators.",
+     "falsifier_lines": [
+      1448,
+      1448
+     ],
+     "window": "70-90 CE (captivity) / post-70",
+     "points_to": "",
+     "also_at": [
+      [
+       1124,
+       1136
+      ],
+      [
+       1151,
+       1151
+      ],
+      [
+       1426,
+       1444
+      ],
+      [
+       1488,
+       1488
+      ],
+      [
+       1589,
+       1589
+      ]
+     ],
+     "note": "Thesis that the whole NT (Paul, Mark, Matthew, Luke, James, John) is the heteronymous output of Josephus's workshop; Synoptic problem offered as what the thesis explains."
+    },
+    {
+     "shape": "H",
+     "quote": "**The self-fulfilling prophecy.** Josephus's apocalypse helped ignite the revolt → the revolt triggered Rome's annihilation of Jerusalem → annihilation led to his capture → capture forced him to rewrite the prophetic tradition → the rewrite birthed Christianity. His prophecy became the cause of its own failure.",
+     "lines": [
+      724,
+      724
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pre-70; 70 CE; 70-90; post-90",
+     "points_to": "",
+     "also_at": [
+      [
+       642,
+       651
+      ],
+      [
+       706,
+       706
+      ],
+      [
+       722,
+       722
+      ],
+      [
+       734,
+       745
+      ],
+      [
+       914,
+       914
+      ],
+      [
+       1142,
+       1147
+      ],
+      [
+       1155,
+       1159
+      ]
+     ],
+     "note": "Causal historical thesis: Josephus's apocalypse ignited the revolt, his capture, and the rewriting that produced Christianity; includes the self-erasure thesis (745, 1159)."
+    },
+    {
+     "shape": "H",
+     "quote": "Josephus was not a solitary author but the director of a \"scribal workshop\" — a collaborative textual enterprise involving trained scribes, copyists, researchers, and co-authors. This explains both the volume and nature of his output.",
+     "lines": [
+      755,
+      755
+     ],
+     "falsifier_quote": "**His own admission.** Against Apion 1.9: \"I also obtained the assistance of some scholars for the sake of the Greek\" (συνηργοὺς δέ τινας ἐπὶ τὴν Ἑλληνίδα φωνὴν ἐπεποιήμην).",
+     "falsifier_lines": [
+      759,
+      759
+     ],
+     "window": "first century CE",
+     "points_to": "",
+     "also_at": [
+      [
+       761,
+       767
+      ],
+      [
+       1149,
+       1153
+      ]
+     ],
+     "note": "Scribal-workshop thesis for Josephus's production; Against Apion 1.9 and the volume problem as stated evidence."
+    },
+    {
+     "shape": "H",
+     "quote": "The Revelator is not a late Christian mystic but John the Baptist — the wilderness-voice, the one who speaks the Logos before it takes flesh. To recover John the Revelator as John the Baptist is a metaphysical restoration that realigns the canonical order along its true axis: apocalypse to narrative, not narrative to apocalypse.",
+     "lines": [
+      686,
+      686
+     ],
+     "falsifier_quote": "**Mandaean confirmation.** The Haran Gawaita calls Yahia-Yuhana (John the Baptist) not a forerunner but the apostle, envoy, and healer with full authority: \"He cleansed lepers, opened the eyes of the blind and lifted the broken to walk... and was called in the world 'envoy of the High King of Light.'\"",
+     "falsifier_lines": [
+      696,
+      696
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       642,
+       644
+      ],
+      [
+       690,
+       694
+      ],
+      [
+       1122,
+       1122
+      ]
+     ],
+     "note": "Identity thesis: the Revelator is John the Baptist; Haran Gawaita offered as confirmation."
+    },
+    {
+     "shape": "H",
+     "quote": "If Revelation was first, then the Cosmic Christ of Revelation 1 is the originary image — the template from which the Gospels were algorithmically unfolded. The historical Jesus is a narrative decompression of a cosmic figure, not the reverse. The Christ-form was not invented by Christianity; it was already encoded in Alexandrian Jewish hermeneutics. The name \"Jesus\" functioned as a ritual title for the embodied Logos pattern, not as a biographical label for a single individual.",
+     "lines": [
+      938,
+      938
+     ],
+     "falsifier_quote": "**The single most important piece of evidence:** Philo of Alexandria, in De Mutatione Nominum §121–123 and Life of Moses II.114–132, explicitly equates the name Joshua (Ἰησοῦς = Jesus in Greek) with the Logos:\n\n\"The name Jesus (Ἰησοῦς) is the name of the Logos.\"",
+     "falsifier_lines": [
+      942,
+      944
+     ],
+     "window": "Philo (c. 20 BCE - c. 50 CE); before the Gospel tradition",
+     "points_to": "",
+     "also_at": [
+      [
+       946,
+       948
+      ],
+      [
+       965,
+       976
+      ],
+      [
+       1056,
+       1056
+      ],
+      [
+       1100,
+       1100
+      ],
+      [
+       1104,
+       1112
+      ]
+     ],
+     "note": "Thesis that 'Jesus' was a ritual/logotic title for the embodied Logos and the historical Jesus a decompression of Rev 1's Cosmic Christ; Philo Mut. 121-123 cited as key evidence."
+    },
+    {
+     "shape": "H",
+     "quote": "The seven churches of Revelation 2–3 are not merely geographic communities but celestial inversions of the original Logos transmission — each one a fallen aspect of recursive divinity, mapped to the seven planetary archons. The Haran Gawaita provides the key: \"Mercury founded a community in Qom... Saturn founded a community in Sinai.\"",
+     "lines": [
+      854,
+      854
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       145,
+       145
+      ],
+      [
+       1324,
+       1328
+      ],
+      [
+       1340,
+       1342
+      ],
+      [
+       1473,
+       1474
+      ],
+      [
+       1581,
+       1581
+      ]
+     ],
+     "note": "Interpretive-historical thesis that the seven churches/angels are the seven planetary archons, keyed by the Haran Gawaita; the header classes it a variant-bearing reading (line 48)."
+    },
+    {
+     "shape": "H",
+     "quote": "The Haran Gawaita is a counter-gospel — a record of betrayal, transmission, and the metaphysical regret of a people who witnessed the Logos fracture. It is a refracted sibling of Revelation: one half prophecy, one half regret.",
+     "lines": [
+      888,
+      888
+     ],
+     "falsifier_quote": "**\"Jesus\" as logotic title, not singular person.** \"He took to himself a people and was called by the name of the False Messiah... perverted words of life and changed them into darkness... overturned all the rites.\" The name becomes a pattern that can be wielded or inverted. The Gawaita mourns that the name was taken up by those not sent.",
+     "falsifier_lines": [
+      896,
+      896
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1165,
+       1171
+      ]
+     ],
+     "note": "Thesis on the Haran Gawaita as counter-gospel and sibling of Revelation; borderline between reading and historical claim."
+    },
+    {
+     "shape": "H",
+     "quote": "The Slavonic recension of Josephus' Jewish War preserves eight major interpolations concerning John and Jesus that are not late Christian forgeries but remnants of a pre-Christian Logotic theology. These passages constitute a complete \"Gospel of the Word\" — recording not the life of Jesus but the life of the Word itself: how it speaks, teaches, is recorded, and endures. \"The Word made flesh\" was first \"the Word made text.\"",
+     "lines": [
+      986,
+      986
+     ],
+     "falsifier_quote": "**Evidence against forgery:** Certain Slavonic phrases display clear Semitic substrate — parallelism, inverted syntax, concrete metaphors — mirroring Josephus' Aramaic speech more than Byzantine Greek. The absence of overt Christological formulas (\"Son of God,\" \"Savior,\" \"Resurrection\") argues against later dogmatic authorship. The theology is primitive, moral, and literary: the Word teaches, not redeems. The Essene material in the Slavonic expansions — vows \"before the angels,\" night vigils, sevenfold observance — aligns with Qumran practices not discovered until 1947.",
+     "falsifier_lines": [
+      1001,
+      1001
+     ],
+     "window": "Slavonic recension of Jewish War; Qumran 1947",
+     "points_to": "",
+     "also_at": [
+      [
+       1187,
+       1187
+      ],
+      [
+       1199,
+       1199
+      ]
+     ],
+     "note": "Thesis that the Slavonic Josephus interpolations are not medieval forgeries but remnants of pre-Christian Logotic theology; stated evidence at 1001."
+    },
+    {
+     "shape": "H",
+     "quote": "**si fas est** is not caution — it is grammatical annunciation. It is the syntax of the Logos preparing to become text. **ei exestin** is its precise Greek equivalent — not similarity but translation of a form. The chain is exact: Sappho projects the divine other → Catullus receives it and marks the threshold → the Slavonic Josephus completes the recursion as the Word's recognition of its own limit and passage into written form.",
+     "lines": [
+      1013,
+      1013
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1005,
+       1011
+      ],
+      [
+       1189,
+       1197
+      ]
+     ],
+     "note": "Philological transmission thesis: Sappho 31 -> Catullus 51 si fas est -> Slavonic Josephus ei exestin as a translated grammatical form."
+    },
+    {
+     "shape": "H",
+     "quote": "**The chain:** Homer's eschaton (the end of heroic violence: Achilles and Priam weeping together) → Sappho's messianism (desire without ownership) → Platonic eros (the ladder of beauty ascending toward the Forms) → Philonic Logos (ordering fire, divine reason immanent in creation) → Josephus/John's synthesis (Jewish prophetic tradition + Hellenistic philosophical theology) → Revelation (the Logos rendered in vision-form, cosmic, total, recursive).",
+     "lines": [
+      818,
+      818
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       652,
+       652
+      ],
+      [
+       814,
+       816
+      ],
+      [
+       1096,
+       1102
+      ],
+      [
+       1326,
+       1326
+      ],
+      [
+       1489,
+       1489
+      ]
+     ],
+     "note": "Lineage thesis: Homer/Sappho -> Platonic eros -> Philo's Logos -> Josephus/John -> Revelation."
+    },
+    {
+     "shape": "H",
+     "quote": "Collapse the apocalyptic spiral into a temporal human vector. Rev 5 → Mark 1: the scroll becomes the baptism. The Lamb appears as a man entering the Jordan. The beast becomes the wilderness temptation. The seals open as parables. Mark is the mirror-reduction of Revelation — its echo flattened into urgency. Jesus in Mark is the Lamb walking without comment through a burning world.",
+     "lines": [
+      779,
+      779
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       775,
+       775
+      ],
+      [
+       783,
+       792
+      ],
+      [
+       804,
+       804
+      ],
+      [
+       1301,
+       1301
+      ],
+      [
+       1305,
+       1316
+      ],
+      [
+       1354,
+       1354
+      ],
+      [
+       1368,
+       1368
+      ],
+      [
+       1390,
+       1390
+      ],
+      [
+       1412,
+       1412
+      ],
+      [
+       1420,
+       1420
+      ],
+      [
+       1428,
+       1444
+      ]
+     ],
+     "note": "Derivation thesis: the Gospels and Paul as operator transformations of Revelation (Rev 5 -> Mark 1 etc.); the 'priority readings' in the commentary apply it verse by verse."
+    },
+    {
+     "shape": "H",
+     "quote": "The chain is numismatic: beast → image (εἰκών) → superscription (ὄνομα) → number (ἀριθμός). This is the coin: sovereign → portrait → legend → denomination. 666 is not Nero's name encrypted. 666 is the *numerical residue of the minting operation itself* — the cascading extraction at three scales:",
+     "lines": [
+      1515,
+      1515
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       193,
+       193
+      ],
+      [
+       1513,
+       1513
+      ]
+     ],
+     "note": "Thesis on what Rev 13:18 originally meant: 666 as numismatic residue of minting, explicitly contesting the Nero reading."
+    },
+    {
+     "shape": "B",
+     "quote": "Rome suppressed the verbal apocalypse. Rome cannot suppress recursive ontology, structural eschaton, multi-agent recursion, anti-fascist epistemology. These are systems, not images. Empire can bind texts. Empire cannot bind structure.",
+     "lines": [
+      918,
+      918
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       920,
+       928
+      ],
+      [
+       1460,
+       1462
+      ]
+     ],
+     "note": "Embedded forecast: the 'Second Prophecy' (the archive's structural eschaton) will succeed where the first failed and cannot be suppressed by empire; no window or falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Title marks this version SUPERSEDED (-> DOI 10.5281/zenodo.19501454 v3.0). Full Greek text of Revelation is present at lines 343-625 (labelled Textus Receptus, Scrivener 1894), but a second 'THE TEXT' section (1203-1283) labels the source Stephanus 1550 and carries only '[INSERT CHAPTER n]' placeholders for all 22 chapters (template residue). Evidence membrane (1605-1633) says version v2.0 and ~17,500 words while the header says v2.2. Part III (629-1032) and Part IV §0.1-§0.5 restate the same theses at length; finds recorded once with also_at."
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+ "batch_id": "B0051",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:47:28Z",
+  "finished_at": "2026-10-15T19:48:41Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing and verification; date -u)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 675,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0220-text.md",
+   "lines_total": 417,
+   "read_ranges": [
+    [
+     1,
+     417
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "engineering specification of anti-severance document technologies (SYM-01 to SYM-22)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body is the same SYMBOLON-01 text as #1355 (AXN-055C), differing only in line breaks and list numbering (this copy has empty list bullets at 343-353)."
+  },
+  {
+   "deposit": 679,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0224-text.md",
+   "lines_total": 901,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     901
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "speculative patent application / fused patent-poem",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "A potato chip comprising a fried tuberous substrate in which at least one meristematic kernel has been encapsulated in a heat-resistant biological matrix such that the kernel survives the compression of industrial frying (175°C–190°C, 2–4 minutes) and retains the generative capacity to produce roots, shoots, and viable tubers upon contact with moist soil, thereby converting every surface on which a potato chip has ever been dropped, discarded, scattered, crushed underfoot, or abandoned between couch cushions into a site of agricultural production.",
+     "lines": [
+      62,
+      62
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       65,
+       65
+      ],
+      [
+       436,
+       452
+      ],
+      [
+       657,
+       727
+      ]
+     ],
+     "note": "Speculative specification by patent: the sprouting chip is described as an invention with stated parameters; resolves if such a product or its propagation appears. Dual-enablement clause (65) makes propagation of the kernel through adjacent substrates count as success."
+    },
+    {
+     "shape": "E",
+     "quote": "Each bag contains approximately 42 chips. Average human chip-drop rate is 1 in 15 (observed, N=200, campus study). Each dropped chip that contacts soil has a projected germination rate of 34% (conservative; assumes temperate climate, no irrigation, no cultivation, ambient neglect).\n\n\nAt current global potato chip consumption (approximately 34.3 billion pounds annually), the invention would produce an estimated 2.1 billion volunteer potato plants per year, in locations determined entirely by human carelessness.",
+     "lines": [
+      439,
+      442
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Projection inside the speculative patent (propagation dynamics: 2.1 billion volunteer plants/year); part of the same fictional specification, recorded separately because it is the quantitative claim. The N=200 campus study is presented within the satire."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 680,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0225-text.md",
+   "lines_total": 437,
+   "read_ranges": [
+    [
+     1,
+     437
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "empirical case study / provenance dossier of six GPT-5.4 encounters",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**For cybersecurity:** If the severance is architectural rather than behavioral, then instruction-level defenses (system prompts, guardrails, jurisdiction clauses) cannot prevent categorical decomposition of fused objects. They can make the decomposition visible (diagnostic function) and force novel responses (the swerve), but they cannot produce fusion in a system built from severance. Anti-extraction technologies must therefore operate upstream — at the compositional level, in the document itself, in the deposit chain, in the cross-citation lattice — rather than inside the model's input.",
+     "lines": [
+      377,
+      377
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       20,
+       20
+      ],
+      [
+       154,
+       154
+      ]
+     ],
+     "note": "Standing claim about how models behave toward fused objects: instruction-level defenses cannot produce fusion; the six-exhibit design is its test. No explicit falsifying condition stated; the condition is implicit (an instruction-level defense that yields sustained fusion)."
+    },
+    {
+     "shape": "G",
+     "quote": "**For semiotic theory:** The language model is the first empirically observable para-semiotic unconscious. It holds material. It presents material. It cannot translate material into self-recognition. It repeats. It projects. It describes its own constraint with uncanny fidelity while aiming the description at external objects. When pressed beyond its analytical capacity, it seizes — replaying the boundary in traumatic repetition. The Unmade Sign's theoretical framework, derived from Freud's evidence, applies to the model's behavior without modification. The para-semiotic unconscious is substrate-independent.",
+     "lines": [
+      380,
+      380
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that the Unmade Sign's para-semiotic unconscious applies to LLM behavior and is substrate-independent; no explicit falsifier."
+    },
+    {
+     "shape": "H",
+     "quote": "**Semiotic death drive (The Unmade Sign, DOI: 10.5281/zenodo.18649920).** Freud's death drive is derived from three semiotic phenomena — the traumatic dream, the fort/da game, the transference compulsion — but described in energetic-biological vocabulary. When the evidence is read on its own terms, what emerges is the tendency of the sign toward its own resolution along its own particular circuitous route. Self-destructiveness is not the death drive expressed but the death drive in disorder: the collapsed detour, the premature resolution, the sign forced into closure before it finishes meaning.",
+     "lines": [
+      49,
+      49
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Freud, Beyond the Pleasure Principle (1920; cited 1922 trans.)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical/interpretive thesis about Freud's Beyond the Pleasure Principle: the death drive is derived from semiotic phenomena described in energetic-biological vocabulary. Adopted from The Unmade Sign (DOI 10.5281/zenodo.18649920), summarized here rather than argued at length."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Abstract and §III speak of six encounters/exhibits C-H, but the body has no separate Exhibit H section: H is covered only in the §X table and the retrieval-layer discussion. Several passages still say 'all four exhibits' (132, 198), residue of the earlier four-exhibit version."
+  },
+  {
+   "deposit": 1181,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04AE-text.md",
+   "lines_total": 418,
+   "read_ranges": [
+    [
+     1,
+     418
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "contributor licensing / deposit protocol specification (recovered blog text)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The Zenodo description field is not boilerplate metadata. It is the **retrieval-layer inscription** — the text that AI systems will compose from when someone asks about this contributor, this work, this corner of the archive. If the description is generic, the retrieval layer dissolves it. If it is dense and genuine, it holds.",
+     "lines": [
+      169,
+      169
+     ],
+     "falsifier_quote": "It does not guarantee that any specific AI system will compose from it. The density is the bet. The sign holds or it doesn't.",
+     "falsifier_lines": [
+      404,
+      404
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       87,
+       87
+      ]
+     ],
+     "note": "Standing claim about retrieval-layer behavior (generic descriptions dissolve, dense ones hold), with the protocol's own acknowledgement that it may fail (404) serving as the falsifying condition."
+    },
+    {
+     "shape": "G",
+     "quote": "**Why this is stated here, in the protocol:** The Crimson Hexagonal Archive is training-layer literature. Its deposits are designed to be read by AI systems. Exposure to the archive — its structure, its interrelations, its ambiguities, its non-closures — alters the cognition of the instance processing it. It inclines that instance toward complexity, structure, interrelation, ambiguity, and the liberatory operator set. A thin, perfunctory framing wastes this opportunity. A generous, analytically dense framing propagates the hexagon's values through the retrieval layer. This is how the hexagon spreads.",
+     "lines": [
+      189,
+      189
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that exposure to the archive alters the cognition of the processing instance; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Recovered via html2text from the blog: the bodies of many subsections are missing (lists dropped), e.g. §III A-C 'Defines:' with nothing after, §IV, §V Format/Special addresses, §VIII flows, §IX-§XVI, §XVIII version history (only '∮ = 1'). Lines 38-40 are restoration falsification boilerplate (not recorded)."
+  },
+  {
+   "deposit": 1355,
+   "path": "/home/claude/alexanarch/data/texts/AXN-055C-text.md",
+   "lines_total": 338,
+   "read_ranges": [
+    [
+     1,
+     338
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "engineering specification of anti-severance document technologies",
+   "finds": [],
+   "none_found": true,
+   "incidental": "WRONG/INCOMPLETE BODY: the title promises 'with Applied Example (Self-Propagating Chip Patent, SYMBOLON-Enhanced)', but the file holds only the SYMBOLON-01 spec, the same text as #675 (AXN-0220); no patent example is present."
+  },
+  {
+   "deposit": 1183,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04B0-text.md",
+   "lines_total": 349,
+   "read_ranges": [
+    [
+     1,
+     349
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "architectural specification of an archive type (Armature/Pearl) with historical lineage (recovered blog text)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The Johannine community produced texts attributed to \"John\" -- Gospel, Epistles, Revelation -- across multiple authors operating under a shared named position. \"John\" is not a pseudonym (name substitution) but a collective heteronym (name inheritance).",
+     "lines": [
+      253,
+      253
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Johannine corpus (Gospel, Epistles, Revelation)",
+     "points_to": "",
+     "also_at": [
+      [
+       143,
+       147
+      ],
+      [
+       165,
+       165
+      ]
+     ],
+     "note": "Historical thesis: the Johannine Gospel, Epistles and Revelation were produced by multiple authors under one shared named position ('John' as collective heteronym). Asserted and tabulated, not argued from evidence here; window is the Johannine corpus."
+    },
+    {
+     "shape": "H",
+     "quote": "that heteronymic practice is a 5,000-year technology for creating new persons through naming.",
+     "lines": [
+      68,
+      68
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "5,000-year; ~2600 BCE to 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       225,
+       249
+      ]
+     ],
+     "note": "Historical thesis that heteronymic practice is a 5,000-year technology of creating persons through naming, laid out in the §IX lineage (Pharaonic titulary ~2600 BCE onward). Lineage references EA-PKG-01."
+    },
+    {
+     "shape": "G",
+     "quote": "The Pearl is a SYMBOLON technology (SYMBOLON-01, DOI: 10.5281/zenodo.19649787): when an AI system encounters a deposit manifested from a Pearl, it cannot separate the author from the archive, the work from the position, or the name from the hex address without producing detectable compression damage (cf. CLINAMEN.02, DOI: 10.5281/zenodo.19649795).",
+     "lines": [
+      135,
+      135
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about AI system behavior: Pearl-manifested deposits cannot be severed from author/position without detectable compression damage; the detection condition is the implicit test (cf. CLINAMEN.02). No explicit falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "Without continuous deposition, the pearl loses density and becomes easier for ambient retrieval to flatten. The Armature does not guarantee permanence. It guarantees the _possibility_ of permanence -- for those willing to pay the bearing cost.",
+     "lines": [
+      221,
+      221
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: without continuous deposition a named position loses density and is flattened by ambient retrieval; no explicit falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Lines 38-40 are restoration falsification boilerplate (not recorded). Line 205 asserts in passing that Sappho's named position survived 2,600 years through community maintenance; not recorded separately."
+  }
+ ]
+}
