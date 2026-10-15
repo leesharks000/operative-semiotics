@@ -499,7 +499,34 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "batch entry in queue.json + protocol",
    "output": "data/reading/batches/B0013.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 195838,
+    "tool_uses": 20,
+    "tokens": 193004
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:15:36Z",
+    "finished_at": "2026-10-15T19:18:20Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "Write"
+    ]
+   },
+   "verification": {
+    "deposits": 9,
+    "entries": 9,
+    "finds": 24,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 9,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w2-B0014",
@@ -702,7 +729,57 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "batch entry in queue.json + protocol",
    "output": "data/reading/batches/B0019.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 159187,
+    "tool_uses": 17,
+    "tokens": 252330
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:16:00Z",
+    "finished_at": "2026-10-15T19:18:22Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue loading, quote slicing and verification)"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 23,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
+  },
+  {
+   "run": "R-s-S0001",
+   "batch_id": "S0001",
+   "phase": "out-of-queue",
+   "launched_at": "2026-10-15T19:24:00Z",
+   "reader_kind": "the launcher itself (in-session), not a subagent",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "#244 read out of queue order: cited by three wave readers, queued late (B0146) because the genre test reads content_type only. First pass missed line 725; the verifier flagged COVER; line 725 read and the range added.",
+   "output": "data/reading/batches/S0001.json",
+   "status": "completed",
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 10,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   }
  ],
  "pilot_finding": "Calibration (CAL, blind re-read of the eight in-session readings): every substantive item found; four boundary disagreements of shape (stage text vs embedded forecast; a third-party timestamp left inside a forecast quote; a benchmark folded into its prediction; a monitoring check read as F). The reader found more than the in-session reading (G claims in #914 and #1182) and recorded one forecast several times across stage, table and ledger. Protocol revised to v1.1 with seven boundary rules."

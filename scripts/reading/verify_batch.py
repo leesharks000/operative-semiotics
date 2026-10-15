@@ -12,6 +12,7 @@ verification record, nothing is dropped):
   SHAPE   shape in A–G
   NONE    none_found consistent with finds
   QUEUED  every queued deposit of the batch has an entry, and no entry is outside the batch
+          (S-batches: out-of-queue readings by the launcher; each listed deposit is checked against its queue row)
 With --write, the verification is stored beside the batch as <batch>.verified.json.
 """
 import json, pathlib, re, sys, hashlib
@@ -31,6 +32,10 @@ def main():
     if out["batch_id"] == "CAL":
         cal = json.loads((ROOT / "data/reading/calibration-batch.json").read_text())
         queued = {r["deposit"]: r for r in cal["deposits"]}
+    elif out["batch_id"].startswith("S"):
+        # out-of-queue reading by the launcher: the deposits it lists, checked against their queue rows
+        want = {e.get("deposit") for e in out.get("deposits", [])}
+        queued = {r["deposit"]: r for x in q["batches"] for r in x["deposits"] if r["deposit"] in want}
     else:
         b = next(x for x in q["batches"] if x["batch_id"] == out["batch_id"])
         queued = {r["deposit"]: r for r in b["deposits"]}

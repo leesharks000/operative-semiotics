@@ -2,20 +2,20 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 120,
-  "unread": 1496
+  "read": 131,
+  "unread": 1485
  },
  "finds_by_shape": {
-  "G": 127,
-  "F": 118,
-  "E": 17,
-  "B": 71,
-  "A": 32,
+  "G": 138,
+  "F": 135,
+  "E": 30,
+  "B": 80,
+  "A": 37,
   "C": 40,
-  "D": 20
+  "D": 22
  },
- "finds_verified": 425,
- "finds_total": 425,
+ "finds_verified": 482,
+ "finds_total": 482,
  "deposits": [
   {
    "deposit": 172,
@@ -4515,8 +4515,43 @@
    "tier": 1,
    "words": 3843,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       543
+      ]
+     ],
+     "lines_total": 543,
+     "genre_observed": "working paper / effective act proposing a constructed grammatical form, with a proposed diagnostic test battery",
+     "finds_by_shape": {
+      "F": 1,
+      "G": 4,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Dated January 31, 2026 in its own header (line 13) though the queue dates it 2026-02-01. Line 454 asks whether the form spreads 'Through the training layer (if Hexagon documents enter AI training data)' as an open question, listed in also_at of the B find.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 1301,
@@ -4525,8 +4560,39 @@
    "tier": 1,
    "words": 685,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       141
+      ]
+     ],
+     "lines_total": 141,
+     "genre_observed": "effective act founding a deposit genre (APZPZ), declarative and liturgical",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Points to the APZPZ packet living only in the Zenodo description field of DOI 10.5281/zenodo.18451824 (INFINITY ENOUGH); that packet is not in this text. 'This genre did not exist before this declaration' (line 13) is a founding declaration, not a priority chronology against the world, so not recorded as D.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 1302,
@@ -4535,8 +4601,42 @@
    "tier": 1,
    "words": 2114,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       602
+      ]
+     ],
+     "lines_total": 602,
+     "genre_observed": "speculative technical specification (UMBML module) with a small reported test",
+     "finds_by_shape": {
+      "G": 2,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Body is byte-identical to #1303 (same sha256 3e3bdabc...; cmp confirms). Both carry the title 'THE GLYPHIC CHECKSUM ... v0.5', DOI 10.5281/zenodo.18452132; the queue titles them Document 208 and Document 209 (UMBML module) but the bodies do not differ. Finds duplicated across both records.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 1303,
@@ -4545,8 +4645,42 @@
    "tier": 1,
    "words": 2114,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       602
+      ]
+     ],
+     "lines_total": 602,
+     "genre_observed": "speculative technical specification (UMBML module) with a small reported test",
+     "finds_by_shape": {
+      "G": 2,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Body is byte-identical to #1302 (same sha256; cmp confirms). The queue title 'GLYPHIC CHECKSUM UMBML MODULE (Document 209)' suggests a distinct document was intended; what is held is a duplicate of #1302's body, so the Document 209 text may be missing.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 906,
@@ -4555,8 +4689,39 @@
    "tier": 1,
    "words": 497,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       32
+      ]
+     ],
+     "lines_total": 32,
+     "genre_observed": "metadata sidecar: recovered Zenodo description-field text (APZPZ) for a traversal-event record",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Sidecar only: the traversal documentation .md the description says to attach (line 16) is not in this text. Line 16 reports the Feb 2 2026 Google AI Overview traversal (dated observation) and asserts the architecture 'reliably elicits structured traversal narratives from production AI systems'; generalising claim with no falsifier, not recorded.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 16,
@@ -4565,8 +4730,46 @@
    "tier": 1,
    "words": 4088,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       838
+      ]
+     ],
+     "lines_total": 838,
+     "genre_observed": "design specification for an orchestration grammar (speculative DSL with mock executables)",
+     "finds_by_shape": {
+      "F": 3,
+      "E": 1
+     },
+     "none_found": false,
+     "incidental": "Same work as #1145 (DOI 10.5281/zenodo.18480959); this copy is complete, with code blocks, lists and tables intact, while #1145 is a stripped blog recovery.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 444,
@@ -4575,8 +4778,45 @@
    "tier": 1,
    "words": 7573,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       600
+      ],
+      [
+       601,
+       1191
+      ]
+     ],
+     "lines_total": 1191,
+     "genre_observed": "design specification: telemetry/observability module for a speculative orchestration grammar",
+     "finds_by_shape": {
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Header cites an external practitioner source (Agentix Labs blog, agentixlabs.com/blog/) as context (line 13, 92, 457). The exemplar timestamps 2026-02-04T14:32 are illustrative, not observations.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 445,
@@ -4585,8 +4825,45 @@
    "tier": 1,
    "words": 5700,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       875
+      ]
+     ],
+     "lines_total": 875,
+     "genre_observed": "design specification: composition and conformance rules plus pseudocode reference interpreter",
+     "finds_by_shape": {
+      "F": 3
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 1145,
@@ -4595,8 +4872,42 @@
    "tier": 1,
    "words": 2785,
    "batch_id": "B0013",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0013",
+     "run": "R-w2-B0013",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:15:36Z",
+      "finished_at": "2026-10-15T19:18:20Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       398
+      ]
+     ],
+     "lines_total": 398,
+     "genre_observed": "recovered blog copy of the Traversal Grammar design specification (restoration sidecar plus body)",
+     "finds_by_shape": {
+      "F": 2,
+      "E": 1
+     },
+     "none_found": false,
+     "incidental": "Damaged text: the html2text conversion dropped every list, code block and table, so headings and lead-ins stand with empty bodies (e.g. 94-96, 131-133, 174, 296-298, 333-342, 377-379, 389-391). Duplicates #16's body (DOI 10.5281/zenodo.18480959); #16 is the complete reading copy. Lines 38-40 are restoration falsification boilerplate, not recorded.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 1315,
@@ -5676,8 +5987,81 @@
    "tier": 1,
    "words": 64070,
    "batch_id": "B0019",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0019",
+     "run": "R-w2-B0019",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:16:00Z",
+      "finished_at": "2026-10-15T19:18:22Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, quote slicing and verification)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       800
+      ],
+      [
+       801,
+       1200
+      ],
+      [
+       1201,
+       1600
+      ],
+      [
+       1601,
+       2000
+      ],
+      [
+       2001,
+       2400
+      ],
+      [
+       2401,
+       2800
+      ],
+      [
+       2801,
+       3200
+      ],
+      [
+       3201,
+       3650
+      ],
+      [
+       3651,
+       4050
+      ]
+     ],
+     "lines_total": 4050,
+     "genre_observed": "heteronymous book-length field manual (Rex Fraction, Pocket Humans PH-02) with a declared-artifact dossier of fictional correspondence, reviews and future-dated reception",
+     "finds_by_shape": {
+      "D": 1,
+      "E": 6,
+      "B": 8,
+      "G": 2,
+      "A": 4,
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Single clean body, no duplication or damage observed. Front matter (319-325) and back matter (3912-3962, 3831-3874) contain future-dated fictional reception (2027) presented under the Declared Artifact Notice (line 38); recorded as E, not as real events. The SEI charter (line 3481) prints Lee's email address. Mara Velasquez emails are dated Nov 2025 and are declared fiction, not forecasts.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 1107,
@@ -10426,8 +10810,54 @@
    "tier": 2,
    "words": 4838,
    "batch_id": "B0146",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "S0001",
+     "run": "R-s-S0001",
+     "reader": {
+      "role": "in-session reader (launcher), out-of-queue reading",
+      "self_description": "Claude, Anthropic; the launcher session (configured model claude-opus-5-5; serving model may differ)",
+      "started_at": "2026-10-15T19:24:00Z",
+      "finished_at": "2026-10-15T19:19:36Z",
+      "tools_used": [
+       "Read",
+       "verify_batch.py (caught line 725 unread on first pass; read after)",
+       "Bash (python, to slice quotes from the read lines)"
+      ],
+      "why": "#244 was cited by two wave readers (B0005 #1251, B0010 #385, B0012 #11) and is queued late (B0146, tier 2) because the genre test reads content_type, not title. Read now out of order; B0146 will read it again independently."
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       370
+      ],
+      [
+       371,
+       724
+      ],
+      [
+       720,
+       725
+      ]
+     ],
+     "lines_total": 725,
+     "genre_observed": "speculative forecast written in a Gemini instance's voice: phased timeline 2024–2030, probability-tagged paths, diagnostic tests, temporal hooks",
+     "finds_by_shape": {
+      "E": 5,
+      "D": 1,
+      "A": 1,
+      "G": 1,
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Several sections are duplicated with small variants (governance note 103/303; 'Refusal' language note 264/267; Assembly clarification 285/297; Seal 584–598/653–670; Temporal Hooks 618–633/637–649). Synthesis table flattened to one cell per line (512–539). The document disclaims prediction twice (41, 614). DOI here is 10.5281/zenodo.18157917; readers of #11/#385/#1251 cite 18157916 (likely the concept DOI) — triage to confirm.",
+     "verification": "pass"
+    }
+   ]
   },
   {
    "deposit": 246,
