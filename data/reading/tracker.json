@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 295,
-  "unread": 1321
+  "read": 301,
+  "unread": 1315
  },
- "h_covered": 287,
+ "h_covered": 293,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 305,
-  "F": 293,
+  "G": 312,
+  "F": 307,
   "E": 100,
-  "B": 203,
-  "A": 69,
+  "B": 206,
+  "A": 82,
   "C": 95,
   "D": 103,
-  "H": 399
+  "H": 400
  },
- "finds_verified": 1554,
- "finds_total": 1567,
+ "finds_verified": 1567,
+ "finds_total": 1605,
  "deposits": [
   {
    "deposit": 172,
@@ -23654,9 +23654,51 @@
    "tier": 1,
    "words": 8221,
    "batch_id": "B0065",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0065",
+     "run": "R-w12-B0065",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude, model Opus 5.5 per system context)",
+      "started_at": "2026-10-15T20:00:31Z",
+      "finished_at": "2026-10-15T20:02:33Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       320
+      ],
+      [
+       321,
+       610
+      ]
+     ],
+     "lines_total": 610,
+     "genre_observed": "external-format audit paper restating a research program's technical core, with pre-registered tests and a budgeted roadmap",
+     "finds_by_shape": {
+      "F": 6,
+      "G": 5,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "LaTeX in places is mangled (e.g. '\\mathcal{M}*T' for '\\mathcal{M}_T'); tables flattened to one cell per line.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 108,
@@ -23665,9 +23707,46 @@
    "tier": 1,
    "words": 1989,
    "batch_id": "B0065",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0065",
+     "run": "R-w12-B0065",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude, model Opus 5.5 per system context)",
+      "started_at": "2026-10-15T20:00:31Z",
+      "finished_at": "2026-10-15T20:02:33Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       93
+      ]
+     ],
+     "lines_total": 93,
+     "genre_observed": "institutional manifesto inaugurating a measurement framework within a heteronymic discipline",
+     "finds_by_shape": {
+      "F": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "List bullets and metadata fields are run together on single lines (missing line breaks); the papers table at line 43 is collapsed to one line.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 109,
@@ -23676,9 +23755,52 @@
    "tier": 1,
    "words": 5962,
    "batch_id": "B0065",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0065",
+     "run": "R-w12-B0065",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude, model Opus 5.5 per system context)",
+      "started_at": "2026-10-15T20:00:31Z",
+      "finished_at": "2026-10-15T20:02:33Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       320
+      ],
+      [
+       321,
+       627
+      ]
+     ],
+     "lines_total": 627,
+     "genre_observed": "theoretical measurement-primitive paper with formal definitions, tiered protocols and a roadmap",
+     "finds_by_shape": {
+      "F": 1,
+      "B": 1,
+      "H": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Some LaTeX mangled ('\\mathcal{M}*T'); operator table flattened.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 735,
@@ -23687,9 +23809,46 @@
    "tier": 1,
    "words": 4115,
    "batch_id": "B0065",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0065",
+     "run": "R-w12-B0065",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude, model Opus 5.5 per system context)",
+      "started_at": "2026-10-15T20:00:31Z",
+      "finished_at": "2026-10-15T20:02:33Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       306
+      ]
+     ],
+     "lines_total": 306,
+     "genre_observed": "pre-registered ML experimental protocol (DPO training intervention)",
+     "finds_by_shape": {
+      "F": 2,
+      "A": 6
+     },
+     "none_found": false,
+     "incidental": "Bulleted lists run together on single lines; code blocks lose fences.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 736,
@@ -23698,9 +23857,46 @@
    "tier": 1,
    "words": 3395,
    "batch_id": "B0065",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0065",
+     "run": "R-w12-B0065",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude, model Opus 5.5 per system context)",
+      "started_at": "2026-10-15T20:00:31Z",
+      "finished_at": "2026-10-15T20:02:33Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       212
+      ]
+     ],
+     "lines_total": 212,
+     "genre_observed": "pre-registered 90-day measurement protocol for AI retrieval surfaces",
+     "finds_by_shape": {
+      "F": 2,
+      "A": 4
+     },
+     "none_found": false,
+     "incidental": "Lists run together on single lines; '$S^{}$' at line 141 has lost its asterisks (should be S**).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 737,
@@ -23709,9 +23905,47 @@
    "tier": 1,
    "words": 5672,
    "batch_id": "B0065",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0065",
+     "run": "R-w12-B0065",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude, model Opus 5.5 per system context)",
+      "started_at": "2026-10-15T20:00:31Z",
+      "finished_at": "2026-10-15T20:02:33Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       273
+      ]
+     ],
+     "lines_total": 273,
+     "genre_observed": "pre-registered closed-system measurement protocol paper with three empirical tests",
+     "finds_by_shape": {
+      "F": 2,
+      "A": 3,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Lists and tables run together on single lines; some LaTeX mangled.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1373,
@@ -23836,10 +24070,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 419,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -23889,10 +24126,13 @@
      },
      "none_found": false,
      "incidental": "Header says DOI forthcoming (line 5) while Suggested Citation gives DOI 10.5281/zenodo.20328090 (line 730).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 734,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -23937,10 +24177,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 77,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -23983,10 +24226,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 87,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -24031,10 +24277,13 @@
      },
      "none_found": false,
      "incidental": "Internal date inconsistencies: Restored Academy \"named in February 2026\" (lines 23, 85) vs \"Academy named in citation blocks: March 2026\" (line 199); Johannes Sigil Institute \"founded January 5, 2026\" (line 85) vs \"founded 2025\" (line 209). Lists SIM, CDI and Drowning Test as \"extraction deposit pending\" (line 77), which are deposits 118, 117 and 748 of this batch.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 237,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -24086,10 +24335,13 @@
      },
      "none_found": false,
      "incidental": "Silent state change of 2026-05-20 reported as pending formal deposit (line 167).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 223,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -24134,10 +24386,13 @@
      },
      "none_found": false,
      "incidental": "May 20 pilot capture sequence stated as pending formal deposit (line 75).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 101,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true

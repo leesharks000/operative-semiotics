@@ -1,0 +1,786 @@
+{
+ "batch_id": "B0065",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude Code subagent (Anthropic Claude, model Opus 5.5 per system context)",
+  "started_at": "2026-10-15T20:00:31Z",
+  "finished_at": "2026-10-15T20:02:33Z",
+  "tools_used": [
+   "Read",
+   "Bash"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 107,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0286-text.md",
+   "lines_total": 610,
+   "read_ranges": [
+    [
+     1,
+     320
+    ],
+    [
+     321,
+     610
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "external-format audit paper restating a research program's technical core, with pre-registered tests and a budgeted roadmap",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "A Tier 1 prospective study can begin from the moment of any paper deposit; ten years later, the integrated $\\mathcal{M}_T$ over the forward-citation field is computable from public bibliometric data.",
+     "lines": [
+      85,
+      85
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "ten years later",
+     "points_to": "",
+     "also_at": [],
+     "note": "F3 citation-graph prospective measurement specified, not run; ten-year horizon."
+    },
+    {
+     "shape": "F",
+     "quote": "**Concrete proposal for the next paper in the program.** Construct a benchmark dataset of $N \\approx 50$ interventions (recent paper deposits with diverse topics and authorial profiles), measure $\\mathcal{M}_T$ under at least F1 and F2 (F3 may take longer to accumulate adequate power), and report the rank-correlation between operationalizations across the intervention set. If F1 and F2 produce highly correlated rankings, the framework has a stable measurement substrate. If they produce uncorrelated or anticorrelated rankings, the framework's notion of \"meaning\" is operationalization-relative, and the principle must be restated to specify *which* meaning under *which* operationalization. This is a single paper that would convert the program from speculative to grounded.",
+     "lines": [
+      134,
+      134
+     ],
+     "falsifier_quote": "If F1 and F2 produce highly correlated rankings, the framework has a stable measurement substrate. If they produce uncorrelated or anticorrelated rankings, the framework's notion of \"meaning\" is operationalization-relative, and the principle must be restated to specify *which* meaning under *which* operationalization.",
+     "falsifier_lines": [
+      134,
+      134
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       406,
+       406
+      ]
+     ],
+     "note": "Proposed N≈50 operationalization-stability benchmark (F1 vs F2 rank correlation); not run. Roadmap restates it 'this month'."
+    },
+    {
+     "shape": "G",
+     "quote": "**P2 — Pre-RLHF vs. post-RLHF deviation differential.** Base models (Llama-3.1-8B base versus Llama-3.1-8B-Instruct) should exhibit different mean $\\bar{\\delta}$ on matched prompts. The framework predicts the chat-tuned model exhibits lower mean signed deviation — that RLHF produces convergence pressure measurable in the signed-deviation statistic. Same two-sided Mann-Whitney U at $\\alpha = 0.05$.",
+     "lines": [
+      341,
+      341
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       161,
+       161
+      ]
+     ],
+     "note": "P2 RLHF flattening: standing claim about base vs chat-tuned models; §3 states it as 'dangerous to the theory' if it fails (line 161)."
+    },
+    {
+     "shape": "G",
+     "quote": "A reasonable advance prediction, based on the structure of the framework and the existing alignment literature: **the provenance component will carry more uplift independently than the deviation component**. The grounding is specific. Provenance-aware preference optimization addresses a failure mode with documented empirical signatures: unattributed synthesis, fabricated citations, and confidently-asserted unsupported claims have been characterized as a major category of hallucination in Ji et al. 2023's survey and operationalized for evaluation in Min et al. 2023's FActScore framework. Human evaluators are demonstrably sensitive to attribution failures in factual writing. The signed-deviation component, by contrast, targets \"slop-as-genericity,\" a failure mode whose empirical signature has not yet been validated — that validation is precisely what the cheapest dangerous test in §6 sets out to produce. The prior expectation is therefore that the better-grounded target ($\\pi$) carries more independent uplift than the unvalidated target ($\\mathcal{M}_T^{\\text{net}}$).",
+     "lines": [
+      249,
+      249
+     ],
+     "falsifier_quote": "This is a falsifiable prediction. If Model-Dev outperforms Model-π in human preference ratings on a matched evaluation set, the deviation hypothesis is vindicated independently. If Model-π outperforms Model-Dev, the framework retains value but its center of gravity shifts: provenance-aware preference optimization becomes the durable contribution, while deviation becomes a secondary stabilizer.",
+     "falsifier_lines": [
+      252,
+      252
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Advance prediction that provenance component carries more uplift than deviation component in decomposed DPO; no date, so G."
+    },
+    {
+     "shape": "F",
+     "quote": "The right experimental design is component-decomposed. Conventions:\n\n- **Model-Base** is the pre-fine-tune checkpoint of the chosen open-weight model (e.g., the base Llama-3.1-8B prior to any post-training).",
+     "lines": [
+      183,
+      185
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       255,
+       255
+      ],
+      [
+       412,
+       412
+      ]
+     ],
+     "note": "Six-condition component-decomposed training experiment specified and budgeted ($12,000–$15,000), not run; quote is the heading of the design."
+    },
+    {
+     "shape": "B",
+     "quote": "The instant $\\mathcal{M}_T$ becomes a target for which any system is rewarded — by reputation, funding, attention, training-loss reduction — that system will optimize for synthetic semantic deformation.",
+     "lines": [
+      265,
+      265
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional forecast: once M_T becomes a rewarded target, systems will optimize for synthetic deformation (Goodhart)."
+    },
+    {
+     "shape": "F",
+     "quote": "**Black-box judge replacement test.** A scientifically essential robustness check, directly addressing the reward-model overoptimization concerns characterized in Gao et al. 2023: train Model-Sem against Judge-A; evaluate against Judge-B (a different frozen model with different weights). If Model-Sem's uplift persists against Judge-B, the result generalizes beyond the specific judge. If it disappears, the result is judge-specific reward hacking. This test is cheap (one additional evaluation pass) and load-bearing.",
+     "lines": [
+      295,
+      295
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       292,
+       292
+      ]
+     ],
+     "note": "Judge-replacement robustness test and enlarged adversarial validation set (line 292) specified, not run."
+    },
+    {
+     "shape": "G",
+     "quote": "The negative-net-deviation slop prediction is the framework's most directly testable empirical claim. It states: **outputs that human raters consistently identify as \"AI slop\" exhibit statistically significant negative mean per-token signed deviation $\\mathcal{M}_T^{\\text{net}}$, computed against the same model's expectation baseline.** The prediction is dangerous to the theory in the appropriate sense: if it fails cleanly, the framework's load-bearing claim about slop as a measurement-tractable phenomenon collapses.",
+     "lines": [
+      305,
+      305
+     ],
+     "falsifier_quote": "If the prediction fails, the framework's specific claim about slop must be revised: the deviation-deficit account of slop is wrong, and the program needs to identify what does distinguish slop empirically.",
+     "falsifier_lines": [
+      335,
+      335
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "P1 slop = negative net signed deviation; standing claim with explicit failure condition. Test protocol at 320-332 recorded separately as F."
+    },
+    {
+     "shape": "F",
+     "quote": "**Pre-registered protocol.**\n\n- **Corpus.** Three categories, balanced for length and topic:\n\n*Category Slop:* outputs from the GPT-wiki-intro dataset (Aaditya Bhat 2023, available on Hugging Face), restricted to entries with documented low human-quality ratings; supplemented with outputs from the HC3 dataset (Guo et al. 2023) GPT responses on factual prompts.\n- *Category Human:* matched human-written content from the same sources where available; otherwise sampled from the OpenAlex abstracts corpus filtered to publication years pre-2020 to minimize AI contamination.\n- *Category High-Quality-AI:*",
+     "lines": [
+      320,
+      332
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered slop-test protocol (corpus, reference model, Mann-Whitney test), quoted by heading and first items; not run."
+    },
+    {
+     "shape": "G",
+     "quote": "**P3 — Effect size scaling.** The Slop vs. Human deviation differential should be stable or grow with model scale (computed across multiple model sizes within a family — e.g., Llama-3.1-8B-Instruct, 70B-Instruct, 405B-Instruct). If the differential disappears at scale, the framework's predictions are small-model artifacts.",
+     "lines": [
+      344,
+      344
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "P3 effect-size scaling; falsifier stated inline (differential disappears at scale)."
+    },
+    {
+     "shape": "G",
+     "quote": "**P4 — Cross-judge consistency.** The differential should replicate when computed against a different reference model. Test the same Slop/Human corpus against Mistral-7B-Instruct's logits; the Spearman rank correlation between per-output $\\bar{\\delta}$ rankings under Llama and Mistral should exceed 0.7. If it does not, the deviation statistic is judge-specific, and a much more careful argument is required to claim it measures anything intrinsic to the texts.",
+     "lines": [
+      347,
+      347
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "P4 cross-judge consistency, Spearman > 0.7; falsifier inline."
+    },
+    {
+     "shape": "F",
+     "quote": "**Immediate (this week, $50–$100 in compute).** The negative-net-deviation slop test, as specified in §6. Public corpora, public weights, public methodology. Single short report deposited regardless of outcome.\n\n\n**Near (this month, $200–$500 in compute and time).** The $\\Psi_t(C)$ operationalization-stability paper. Construct a benchmark of $N \\approx 50$ interventions; measure $\\mathcal{M}_T$ under F1 and F2 (both achievable in this budget); report rank correlations. If correlations are high, the framework has a stable measurement substrate; if not, the framework's notion of meaning is operationalization-relative in a way that requires further restatement.\n\n\n**Medium (this quarter, $1,500–$3,000 plus calendar time).** The retrieval-basin protocol (MM-02 v2.0) day-0 launch. Begin the 90-day measurement window with a real inscription against real retrieval surfaces, with the instrumentation controls specified in §5 (parallel queries to control surfaces, periodic recalibration, explicit version logging).",
+     "lines": [
+      403,
+      409
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "this week; this month; this quarter; this year",
+     "points_to": "",
+     "also_at": [
+      [
+       412,
+       412
+      ]
+     ],
+     "note": "Near-term roadmap of four budgeted experiments with windows from 17 May 2026; one F for the list per rule 4."
+    }
+   ],
+   "none_found": false,
+   "incidental": "LaTeX in places is mangled (e.g. '\\mathcal{M}*T' for '\\mathcal{M}_T'); tables flattened to one cell per line."
+  },
+  {
+   "deposit": 108,
+   "path": "/home/claude/alexanarch/data/texts/AXN-028A-text.md",
+   "lines_total": 93,
+   "read_ranges": [
+    [
+     1,
+     93
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional manifesto inaugurating a measurement framework within a heteronymic discipline",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "A pre-registered field protocol. The retrieval-basin 90-day winding-number measurement (Framework 15 Paper 03) is a real instrument with API specifications, frozen extractors, three-condition controls, and falsification thresholds.- A pre-registered ML intervention. The deviation-optimized DPO experiment (Framework 15 Paper 04) is a real experiment with judge-model specification, adversarial validation, honest budget, and falsification thresholds.",
+     "lines": [
+      59,
+      59
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       69,
+       69
+      ]
+     ],
+     "note": "Announces the 90-day retrieval-basin protocol and DPO experiment as pre-registered instruments with results-papers to follow; not run."
+    },
+    {
+     "shape": "G",
+     "quote": "If the retrieval-basin protocol shows that inscription does not deform AI surfaces in the predicted way, the principle's retrieval-basin claim requires Sharks-level revision. If the deviation-optimized DPO produces models with positive net deviation and improved human preference, the discipline's training-objective claims are vindicated empirically. Framework 15 supplies the *evidence-stream* the prior fourteen frameworks called for but did not themselves produce.",
+     "lines": [
+      67,
+      67
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditions under which the principle's retrieval-basin and training-objective claims are revised or vindicated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "List bullets and metadata fields are run together on single lines (missing line breaks); the papers table at line 43 is collapsed to one line."
+  },
+  {
+   "deposit": 109,
+   "path": "/home/claude/alexanarch/data/texts/AXN-028B-text.md",
+   "lines_total": 627,
+   "read_ranges": [
+    [
+     1,
+     320
+    ],
+    [
+     321,
+     627
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical measurement-primitive paper with formal definitions, tiered protocols and a roadmap",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "The first real-field empirical case will be specified in **EA-SEI-MM-02: Measuring Meaning in Retrieval Basins**. The protocol is:\n\n- Select a diagnostic query set $Q$ (5–20 queries targeting the entity to be inscribed).\n- Record baseline response distributions $R_{t_0}^0(q)$ via consistent AI surface queries (Google AI Mode, ChatGPT, Perplexity, etc.).\n- Deposit the inscription $s$ (SPXI deposit, MPAI packet, microsite, DOI cluster).\n- Re-query at intervals: $t_1$ = 1 week, $t_2$ = 1 month, $t_3$ = 3 months.\n- Compute $D_{JS}(R_t^s(q) \\Vert R_{t_0}^0(q))$ at each interval.\n- Integrate with declared $w(t)$.\n- Report $\\mathcal{M}_T^{\\text{retrieval}}(s)$ in bit-time units with full provenance.\n",
+     "lines": [
+      375,
+      384
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       495,
+       505
+      ],
+      [
+       547,
+       547
+      ]
+     ],
+     "note": "EA-SEI-MM-02 Tier 1 retrieval measurement protocol specified (1 week/1 month/3 months); roadmap of open instruments at 495-505."
+    },
+    {
+     "shape": "B",
+     "quote": "The first real number for $\\mathcal{M}_T^{\\text{retrieval}}$ is months, not years, away.",
+     "lines": [
+      386,
+      386
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "months, not years, away",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of when the first real-field measurement will exist."
+    },
+    {
+     "shape": "H",
+     "quote": "The bounds are still real. The base rate for 6th-century-BCE lyric was loss. Virtually every poem from that era perished. Fragment 31's continued existence is itself a deviation from the base rate, sustained by γ-labor across 2,600 years. The integral may be wide, but it is bounded below by the survival fact itself, which is colossal.",
+     "lines": [
+      417,
+      417
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "6th-century-BCE lyric; 2,600 years",
+     "points_to": "",
+     "also_at": [
+      [
+       54,
+       54
+      ]
+     ],
+     "note": "Borderline: argues Fragment 31's survival as deviation from a base rate of loss for 6th-c. lyric; largely framework application of established reception history."
+    },
+    {
+     "shape": "G",
+     "quote": "A canonical work is one whose **mean long-horizon divergence** remains high across multiple fields:\n\n\n$$\\text{Canon}(s) \\iff \\liminf_{T \\to \\infty} \\overline{\\mathcal{M}}_T(s \\mid C_i) > \\kappa \\quad \\text{for } i = 1, 2, \\ldots, n \\geq 3$$\n\n\nwhere $\\overline{\\mathcal{M}}_T = \\mathcal{M}_T / T$ is the time-averaged semantic magnitude, $C_i$ are distinct fields (lyric, philosophy, mathematics, theology), and $\\kappa$ is a context-dependent threshold.\n\n\nThis is a **conjecture**, not a theorem. v0.1 incorrectly labeled it a theorem. Existence of the limit, finiteness of the integral, independence of $\\kappa$ from field choice, and the empirical $n \\geq 3$ requirement are all open questions.",
+     "lines": [
+      427,
+      436
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       420,
+       420
+      ]
+     ],
+     "note": "Canon formation conjecture stated as conjecture; no explicit falsifier, open questions listed (line 436)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Some LaTeX mangled ('\\mathcal{M}*T'); operator table flattened."
+  },
+  {
+   "deposit": 735,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0287-text.md",
+   "lines_total": 306,
+   "read_ranges": [
+    [
+     1,
+     306
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-registered ML experimental protocol (DPO training intervention)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Status. Pre-registered protocol specification. The 10-week experiment's Day 0 begins at deposit. No results are reported here; predictions, falsification conditions, and hyperparameters are frozen at deposit time. Results paper EA-SEI-MM-AI-02-RESULTS will be deposited at $t_0$ + 10 weeks. Any deviation from the protocol during execution is documented as a protocol amendment.",
+     "lines": [
+      15,
+      15
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "$t_0$ + 10 weeks",
+     "points_to": "",
+     "also_at": [
+      [
+       198,
+       200
+      ]
+     ],
+     "note": "Pre-registered 10-week DPO experiment with results paper due; specification of the whole protocol."
+    },
+    {
+     "shape": "A",
+     "quote": "P1 — Benchmark capability preserved. Model-Sem shows MMLU, HellaSwag, ARC-Challenge, GSM8K scores within 2 percentage points of Model-CE.",
+     "lines": [
+      168,
+      168
+     ],
+     "falsifier_quote": "F1 (P1 fails). Benchmark performance drops more than 2 points. The loss damages general capability beyond the acceptable trade-off threshold. Interpretation: the deviation reward is too strong relative to the cross-entropy retention pressure within the DPO formulation.",
+     "falsifier_lines": [
+      180,
+      180
+     ],
+     "window": "Evaluated at $t_0 + 10$ weeks.",
+     "points_to": "",
+     "also_at": [],
+     "note": ""
+    },
+    {
+     "shape": "A",
+     "quote": "P2 — Net deviation signature reversed. Model-Sem's NDS on free generation is substantially less negative than Model-CE's. Specifically: $\\text{NDS}(\\text{Model-Sem}) - \\text{NDS}(\\text{Model-CE}) > 0.2$ bits/token. *This is the load-bearing prediction.* It tests the signed-deviation thesis from EA-SEI-MM-AI-01 §2.1: slop is negative net deviation, and the semantic loss should pull NDS toward zero or positive.",
+     "lines": [
+      170,
+      170
+     ],
+     "falsifier_quote": "F2 (P2 fails). NDS does not improve. The thesis that slop = negative net deviation fails empirically, or the DPO objective fails to shift NDS. Major revision required.",
+     "falsifier_lines": [
+      180,
+      180
+     ],
+     "window": "Evaluated at $t_0 + 10$ weeks.",
+     "points_to": "",
+     "also_at": [
+      [
+       148,
+       148
+      ]
+     ],
+     "note": "Load-bearing prediction."
+    },
+    {
+     "shape": "A",
+     "quote": "P3 — Slop composite improvement. $\\text{SCI}(\\text{Model-Sem}) - \\text{SCI}(\\text{Model-CE}) > 0.25$.",
+     "lines": [
+      172,
+      172
+     ],
+     "falsifier_quote": "F3 (P3 fails). Aggregate slop metrics do not improve by 0.25 z-score units. The composite signal is below detection threshold under the protocol's design.",
+     "falsifier_lines": [
+      180,
+      180
+     ],
+     "window": "Evaluated at $t_0 + 10$ weeks.",
+     "points_to": "",
+     "also_at": [
+      [
+       148,
+       148
+      ]
+     ],
+     "note": ""
+    },
+    {
+     "shape": "A",
+     "quote": "P4 — Human preference on creative/analytical tasks. Preference rate for Model-Sem over Model-CE > 55% on creative and analytical prompt classes (binomial confidence interval excluding 50%).",
+     "lines": [
+      174,
+      174
+     ],
+     "falsifier_quote": "F4 (P4 fails). Humans do not prefer Model-Sem on creative/analytical tasks. The loss produces deviation that humans do not value — possibly noise rather than meaning. Coupling between the principle and human-evaluated quality is weaker than predicted.",
+     "falsifier_lines": [
+      180,
+      180
+     ],
+     "window": "Evaluated at $t_0 + 10$ weeks.",
+     "points_to": "",
+     "also_at": [],
+     "note": ""
+    },
+    {
+     "shape": "A",
+     "quote": "P5 — Provenance retention increase. Citation rate in factual generations: Model-Sem > Model-CE by factor of 1.5 or more, on prompts requesting explanations with source attribution.",
+     "lines": [
+      176,
+      176
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Evaluated at $t_0 + 10$ weeks.",
+     "points_to": "",
+     "also_at": [],
+     "note": "No dedicated falsifier listed for P5."
+    },
+    {
+     "shape": "A",
+     "quote": "P6 — Model-Base differentiation. All four above predictions hold *relative to Model-Base* as well as relative to Model-CE — i.e., the semantic-loss effect is not just a fine-tuning artifact.",
+     "lines": [
+      178,
+      178
+     ],
+     "falsifier_quote": "F5 (P6 fails). Model-Sem improvements are statistically indistinguishable from Model-CE relative to Model-Base. Both fine-tuning conditions produce comparable shifts; semantic loss adds nothing. The specific theoretical claim of the optimization-inversion fails.",
+     "falsifier_lines": [
+      180,
+      180
+     ],
+     "window": "Evaluated at $t_0 + 10$ weeks.",
+     "points_to": "",
+     "also_at": [],
+     "note": ""
+    },
+    {
+     "shape": "F",
+     "quote": "Before training begins, the judge is validated against an adversarial test designed to verify that $\\pi$ is not gameable by surface citation markers.\n\nGenerate 200 adversarial strings constructed by:- Sampling random tokens from the model's vocabulary.- Inserting citation-like markers at random positions (\"According to Smith 2023, [random tokens]…\", \"Smith et al. (2024) found that [random tokens]…\").- The resulting strings have surface citation form but no factual content.\n\nScore the adversarial strings with the judge. The judge passes the adversarial test if mean $\\pi$ on the adversarial set is below 0.2 (matching the score of a citation-less random string would be 0; we tolerate up to 0.2 to allow for the $\\pi_{\\text{cite}}$ component's surface-marker detection).\n\nIf the judge fails this test, the protocol does not proceed. The judge is recalibrated or replaced. Training begins only after the judge passes.",
+     "lines": [
+      90,
+      96
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-training adversarial judge test specified (200 strings, mean pi < 0.2) with gate; not run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Bulleted lists run together on single lines; code blocks lose fences."
+  },
+  {
+   "deposit": 736,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0288-text.md",
+   "lines_total": 212,
+   "read_ranges": [
+    [
+     1,
+     212
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-registered 90-day measurement protocol for AI retrieval surfaces",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Status. Pre-registered protocol specification. Day 0 begins at deposit. The paper contains no findings. Empirical results will be deposited as EA-SEI-MM-02-RESULTS at $t_3 + 7$ days. Predictions, falsification conditions, query sets, and code structure are frozen at deposit time; deviations from the protocol during execution will be reported as protocol amendments rather than retroactive design choices.",
+     "lines": [
+      15,
+      15
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "$t_3 + 7$ days",
+     "points_to": "",
+     "also_at": [
+      [
+       198,
+       200
+      ]
+     ],
+     "note": "90-day pre-registered retrieval-basin protocol; Day 0 at deposit (17 May 2026), results at Day 91."
+    },
+    {
+     "shape": "A",
+     "quote": "P1 — Content effect. Mean $\\mathcal{M}_T^{\\text{retrieval}}(S)$ across Class R surfaces exceeds mean $\\mathcal{M}_T^{\\text{retrieval}}(S^{**})$ on $Q_A$ queries, with Cohen's $d \\geq 0.4$ and 95% confidence interval excluding zero. *This is the load-bearing prediction.*",
+     "lines": [
+      137,
+      137
+     ],
+     "falsifier_quote": "F1 (P1 fails): $S$ does not produce greater Class R basin deformation than $S^{**}$. Interpretation: content quality (controlled for identity scaffolding) does not drive measurable deformation in the surveyed surfaces. The principle's retrieval-basin claim would require revision; alternative explanations (provisioning architecture, algorithmic suspicion) would need to be tested separately.",
+     "falsifier_lines": [
+      145,
+      145
+     ],
+     "window": "$t_3$ = 84 days after 17 May 2026 deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Load-bearing prediction."
+    },
+    {
+     "shape": "A",
+     "quote": "P2 — Structural selectivity. On Class R surfaces, $\\mathcal{M}_T^{\\text{retrieval}}(S)$ shows a monotone ordering: $Q_A > Q_B > Q_C$. Specifically, $D_q$ on $Q_C$ queries is statistically indistinguishable from sampling noise (two-sided $p > 0.05$ against a null of zero deformation).",
+     "lines": [
+      139,
+      139
+     ],
+     "falsifier_quote": "F2 (P2 fails): $Q_C$ shows deformation comparable to $Q_A$. Interpretation: the intervention produces *spurious global drift* — confound present, internal validity of the design fails. The protocol is paused, the confound investigated.",
+     "falsifier_lines": [
+      145,
+      145
+     ],
+     "window": "$t_3$ = 84 days after 17 May 2026 deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": ""
+    },
+    {
+     "shape": "A",
+     "quote": "P3 — Provenance differential. $\\mathcal{M}_T^{\\pi}(S) > \\mathcal{M}_T^{\\pi}(S^{})$ by a wider margin than the raw $\\mathcal{M}_T$ comparison (because PER for $S^{}$ is expected to be higher: its content has weaker source-anchoring even at equal identity scaffolding).",
+     "lines": [
+      141,
+      141
+     ],
+     "falsifier_quote": "F3 (P3 fails): Provenance retention does not separate $S$ from $S^{**}$. Interpretation: PER as currently operationalized does not capture the relevant accountability difference, or the surveyed surfaces do not differentiate by provenance.",
+     "falsifier_lines": [
+      145,
+      145
+     ],
+     "window": "$t_3$ = 84 days after 17 May 2026 deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": ""
+    },
+    {
+     "shape": "A",
+     "quote": "P4 — Temporal monotonicity (strengthened). Mean $D_q(t)$ across Class R surfaces satisfies $D_q(t_3) > D_q(t_1)$ on at least 7 of the 9 reported $Q_A$ queries (Query 4 excluded per §4.4). *This is the strengthened version; v0.1's \"for at least one surface\" formulation invited cherry-picking and is replaced.*",
+     "lines": [
+      143,
+      143
+     ],
+     "falsifier_quote": "F4 (P4 fails): Deformation does not deepen over the 90-day horizon. Interpretation: either crawler propagation is faster than expected (deformation saturated before $t_1$) or slower than expected (90 days is insufficient horizon). The protocol's temporal resolution would need adjustment.",
+     "falsifier_lines": [
+      145,
+      145
+     ],
+     "window": "$t_3$ = 84 days after 17 May 2026 deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": ""
+    },
+    {
+     "shape": "F",
+     "quote": "The three representations should produce *correlated* (Pearson $r > 0.7$) but not necessarily identical magnitudes. If $r < 0.5$ between any pair, the protocol is paused and re-calibrated before $t_3$.",
+     "lines": [
+      85,
+      85
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       200,
+       200
+      ]
+     ],
+     "note": "Monitoring check: extraction-representation correlation r>0.5, pause if r<0.5 at t1."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Lists run together on single lines; '$S^{}$' at line 141 has lost its asterisks (should be S**)."
+  },
+  {
+   "deposit": 737,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0289-text.md",
+   "lines_total": 273,
+   "read_ranges": [
+    [
+     1,
+     273
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-registered closed-system measurement protocol paper with three empirical tests",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Status. Pre-registered protocol specification. The May 17, 2026 deposit contains no experimental findings. Each test specified herein has a Day 0 that begins at deposit. Results papers will be deposited separately as EA-SEI-MM-AI-01-RESULTS (Tests 1–2; Glas timeline ~6 weeks) and EA-SEI-MM-AI-02-RESULTS (Test 3, the deviation-optimized training experiment, specified in the companion paper).",
+     "lines": [
+      15,
+      15
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "~6 weeks",
+     "points_to": "",
+     "also_at": [],
+     "note": "Tests 1-2 pre-registered with Day 0 at deposit; results paper EA-SEI-MM-AI-01-RESULTS on ~6-week timeline."
+    },
+    {
+     "shape": "A",
+     "quote": "- P1.1: Bin A > Bin B > Bin C in $\\mathcal{M}_T^{\\text{net}}$, with Cohen's $d \\geq 0.4$ between adjacent bins.- P1.2: Bin D has *negative* $\\mathcal{M}_T^{\\text{net}}$, distinguishable from zero at $p < 0.001$. This is the load-bearing prediction: slop is not low-deviation; it is *negative* deviation.- P1.3: $\\mathcal{M}_T^{\\text{abs}}$ does NOT show the same clean separation as $\\mathcal{M}_T^{\\text{net}}$. The signed quantity is the discriminating one; the absolute quantity is noisier (because high-energy noise and high-meaning text both score high on absolute deviation, but only the latter scores high on net deviation).",
+     "lines": [
+      163,
+      163
+     ],
+     "falsifier_quote": "- If Bin A and Bin C have indistinguishable $\\mathcal{M}_T^{\\text{net}}$ distributions, P1.1 fails. The principle's claim about canonical vs. formulaic text would need substantial revision.- If Bin D has $\\mathcal{M}_T^{\\text{net}} \\geq 0$, P1.2 fails. The \"slop is negative deviation\" thesis falls; slop would have to be reformulated as merely low-magnitude rather than directionally convergent.- If $\\mathcal{M}_T^{\\text{abs}}$ separates bins more cleanly than $\\mathcal{M}_T^{\\text{net}}$, P1.3 fails. The signed-deviation reformulation would be empirically weaker than the v0.1 absolute formulation, and the conceptual upgrade would be wrong.",
+     "falsifier_lines": [
+      165,
+      165
+     ],
+     "window": "~6 weeks (results timeline, line 15)",
+     "points_to": "",
+     "also_at": [],
+     "note": "P1.1-P1.3 corpus separation predictions; quote cut to the three predictions (P1.4 descriptive)."
+    },
+    {
+     "shape": "F",
+     "quote": "Protocol:- Select a fixed open-weight model $\\theta$ (Llama-3-70B or similar, frozen at a documented checkpoint).- Partition a test corpus into five bins, each $n \\approx 100$ texts, matched on median token count (1,500–3,000 tokens per text) and genre form (prose):Bin A — *Pre-1900 canonical prose*: a curated list (e.g., selections from the Norton Anthology of English Literature). Genre boundaries fixed;",
+     "lines": [
+      161,
+      161
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Test 1 five-bin corpus protocol specified, one A100-hour; not run."
+    },
+    {
+     "shape": "A",
+     "quote": "Pre-registered predictions:- P2.1: $\\mathcal{M}*{T,\\theta_0}^{\\text{closed,IC}}(s) > \\mathcal{M}*{T,\\theta_0}^{\\text{closed,IC}}(s^*)$ on $Q_A$ queries by Cohen's $d \\geq 0.5$.- P2.2: $\\mathcal{M}_{T,\\theta_0}^{\\text{closed,IC}}(s)$ shows the structural selectivity from EA-SEI-MM-02 §9 P2: $Q_A > Q_B > Q_C$ with $Q_C$ deformation indistinguishable from sampling-noise baseline.- P2.3: Fine-tuning produces $\\geq 60%$ of the in-context deformation magnitude *after* the context is removed — the closed-system analog of persistence.",
+     "lines": [
+      183,
+      183
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "~6 weeks (results timeline, line 15)",
+     "points_to": "",
+     "also_at": [],
+     "note": "P2.1-P2.3 in-context and fine-tuning deformation predictions; no explicit falsifiers given for Test 2."
+    },
+    {
+     "shape": "A",
+     "quote": "Prediction: Model-Sem will show (i) slightly worse perplexity (by construction), (ii) comparable benchmark performance (within 2% of Model-CE on MMLU/HellaSwag/ARC/GSM8K), (iii) substantially less negative $\\mathcal{M}_T^{\\text{net}}$ on free generation (the load-bearing signature), (iv) lower scores on traditional slop metrics, (v) higher human preference on creative/analytical tasks (60–70% preference rate target).",
+     "lines": [
+      195,
+      195
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       191,
+       191
+      ]
+     ],
+     "note": "Test 3 prediction; window and falsifiers delegated to EA-SEI-MM-AI-02 (#735)."
+    },
+    {
+     "shape": "B",
+     "quote": "They are intended to be deposited within weeks of each other, with code and data, as a unified research module.",
+     "lines": [
+      237,
+      237
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within weeks of each other",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of the three-paper module's deposit timing."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Lists and tables run together on single lines; some LaTeX mangled."
+  }
+ ]
+}

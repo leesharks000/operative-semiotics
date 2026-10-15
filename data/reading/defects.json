@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 247,
+ "deposits_with_notes": 253,
  "deposits": [
   {
    "deposit": 8,
@@ -371,6 +371,39 @@
      "batch_id": "B0064",
      "field": "incidental",
      "text": "Appendix B's six-modality matrix still places SPXI/Holographic Kernel/MPAI in the Layer 1 × Operative cell, contradicting the body (l.290–301) and the v2.2 changelog which say that cell was emptied. JSON-LD (l.647,659) says version 2.1 while the header says 2.2. Body text is Semantic Physics Stratified v2.2."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 107,
+   "notes": [
+    {
+     "batch_id": "B0065",
+     "field": "incidental",
+     "text": "LaTeX in places is mangled (e.g. '\\mathcal{M}*T' for '\\mathcal{M}_T'); tables flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 108,
+   "notes": [
+    {
+     "batch_id": "B0065",
+     "field": "incidental",
+     "text": "List bullets and metadata fields are run together on single lines (missing line breaks); the papers table at line 43 is collapsed to one line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 109,
+   "notes": [
+    {
+     "batch_id": "B0065",
+     "field": "incidental",
+     "text": "Some LaTeX mangled ('\\mathcal{M}*T'); operator table flattened."
     }
    ],
    "rulings": []
@@ -2002,6 +2035,39 @@
      "batch_id": "B0064",
      "field": "incidental",
      "text": "Body is the Zenodo description plus the CHANGELOG only; the site files themselves (index.html, paper.html, matrix.html) are not in the text. Finds duplicate material in #106."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 735,
+   "notes": [
+    {
+     "batch_id": "B0065",
+     "field": "incidental",
+     "text": "Bulleted lists run together on single lines; code blocks lose fences."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 736,
+   "notes": [
+    {
+     "batch_id": "B0065",
+     "field": "incidental",
+     "text": "Lists run together on single lines; '$S^{}$' at line 141 has lost its asterisks (should be S**)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 737,
+   "notes": [
+    {
+     "batch_id": "B0065",
+     "field": "incidental",
+     "text": "Lists and tables run together on single lines; some LaTeX mangled."
     }
    ],
    "rulings": []
