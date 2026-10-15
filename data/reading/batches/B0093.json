@@ -1,0 +1,60 @@
+{
+ "batch_id": "B0093",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:15:06Z",
+  "finished_at": "2026-10-15T20:16:54Z",
+  "tools_used": [
+   "Read",
+   "Bash"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 3,
+   "path": "/home/claude/alexanarch/data/EA-WG-CAPTURES-01.json",
+   "lines_total": 135660,
+   "read_ranges": [
+    [
+     1,
+     300
+    ],
+    [
+     301,
+     550
+    ],
+    [
+     551,
+     830
+    ],
+    [
+     831,
+     899
+    ]
+   ],
+   "status": "partial",
+   "status_note": "File is a ~2.3M-word JSON dataset (135,660 lines; Read reports ~79k tokens per 250 lines in the entries section, i.e. on the order of 10M+ tokens in total). It cannot be read in full within one reader's context: the Read tool refused further chunks for lack of remaining context at line 900. Read consecutively lines 1-899 (registry header, citation grammar, _alias_redirects, _defect_counts, and the first three entries of 'entries'). Lines 900-135660 unread. This deposit needs splitting into many sub-batches by line range (entry boundaries are '  {' lines at indent 2 inside 'entries', which begins at line 650).",
+   "genre_observed": "capture registry dataset: per-observation records of AI-surface compositions (verbatim machine transcripts) with analyst reading/analysis fields",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "An entity query returns an entity reconstruction; an architecture query returns the architecture, and the architecture carries its own attribution.",
+     "lines": [
+      859,
+      859
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Analyst field of entry what-is-the-crimson-hexagonal-archive-20260821: a standing claim about how composition surfaces behave by query type (entity vs architecture trigger), contrasted with who-is-johannes-sigil-20260814; no falsifier stated, so G is uncertain."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Most of the volume is verbatim machine transcripts (e.g. line 843 is a single ~16-message ChatGPT session); forecast-like sentences inside transcripts are the surfaces' own and were not recorded. Archive-voice material sits in the maxim/_FLOW/citation header and in each entry's reading, analysis, findings and notes fields. Header says version 12.203, dated 2026-10-15, total_captures 666; sha256 checked at read time and matches the queue (f4b71648...)."
+  }
+ ]
+}

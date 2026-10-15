@@ -1,7 +1,23 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 335,
+ "deposits_with_notes": 339,
  "deposits": [
+  {
+   "deposit": 3,
+   "notes": [
+    {
+     "batch_id": "B0093",
+     "field": "incidental",
+     "text": "Most of the volume is verbatim machine transcripts (e.g. line 843 is a single ~16-message ChatGPT session); forecast-like sentences inside transcripts are the surfaces' own and were not recorded. Archive-voice material sits in the maxim/_FLOW/citation header and in each entry's reading, analysis, findings and notes fields. Header says version 12.203, dated 2026-10-15, total_captures 666; sha256 checked at read time and matches the queue (f4b71648...)."
+    },
+    {
+     "batch_id": "B0093",
+     "field": "status_note",
+     "text": "File is a ~2.3M-word JSON dataset (135,660 lines; Read reports ~79k tokens per 250 lines in the entries section, i.e. on the order of 10M+ tokens in total). It cannot be read in full within one reader's context: the Read tool refused further chunks for lack of remaining context at line 900. Read consecutively lines 1-899 (registry header, citation grammar, _alias_redirects, _defect_counts, and the first three entries of 'entries'). Lines 900-135660 unread. This deposit needs splitting into many sub-batches by line range (entry boundaries are '  {' lines at indent 2 inside 'entries', which begins at line 650)."
+    }
+   ],
+   "rulings": []
+  },
   {
    "deposit": 8,
    "notes": [
@@ -2765,6 +2781,17 @@
    "rulings": []
   },
   {
+   "deposit": 837,
+   "notes": [
+    {
+     "batch_id": "B0092",
+     "field": "incidental",
+     "text": "'Related:' field at line 11 is empty; its contents appear at line 21 after the provenance capsule."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 863,
    "notes": [
     {
@@ -3679,6 +3706,17 @@
    "rulings": []
   },
   {
+   "deposit": 1215,
+   "notes": [
+    {
+     "batch_id": "B0092",
+     "field": "incidental",
+     "text": "Restored blog-canonical text (TACHYON 2026-07-19); severed Zenodo DOIs. Body designates itself v1.2 while title says v1.3; section X precedes section IX in the body. Self-audit DOI 10.5281/zenodo.20723820 differs from 'This analysis: DOI 10.5281/zenodo.20723750' (line 351). Lines 38-40 falsification boilerplate (excluded)."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1225,
    "notes": [
     {
@@ -4185,6 +4223,17 @@
      "batch_id": "B0089",
      "field": "incidental",
      "text": "Body is a single JSON object (schema.org Dataset), not prose; the one-line description_html fields are very long (line 1160 etc.). Record annotations are almost entirely dated observations (telemetry), not recorded. Reported-not-argued theses (Phase X 1844 reconstruction at line 1064, Josephus thesis at line 1888) appear only as summaries of what AI Overview said, so not recorded as H. Line 2616 notes leesharks.com '532+' figure stale vs '832 deposits'."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1401,
+   "notes": [
+    {
+     "batch_id": "B0092",
+     "field": "incidental",
+     "text": "Dated observations throughout (telemetry, excluded per protocol). Capture 55 (lines 346-348) names 'compositional bystanding' (2026-06-14) without a falsifier; the falsifiable form is recorded elsewhere (#863). Capture 45/46 and 53 report AI Overview renderings of the archive's own theses (Phase X, Future Beloved/Sappho 31) without arguing them here. Header says v7.2, 131 captures; capture 1 transcribes the Overview describing 'v6.1, 96 captures'. Captures 40/41 share slug operative-feminism."
     }
    ],
    "rulings": []
