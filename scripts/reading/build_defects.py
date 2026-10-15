@@ -26,6 +26,11 @@ def main():
                 if t:
                     rows.setdefault(e["deposit"], {"deposit": e["deposit"], "notes": [], "rulings": []})["notes"].append(
                         {"batch_id": out["batch_id"], "field": k, "text": t})
+    ln = R / "launcher-notes.json"
+    for nt in (json.loads(ln.read_text())["notes"] if ln.exists() else []):
+        rows.setdefault(nt["deposit"], {"deposit": nt["deposit"], "notes": [], "rulings": []})["notes"].append(
+            {"batch_id": "launcher", "field": "launcher_note", "text": nt["text"], "lines": nt.get("lines"),
+             "also_in": nt.get("also_in", [])})
     for ru in rulings:
         for n in ru.get("deposits", []):
             rows.setdefault(n, {"deposit": n, "notes": [], "rulings": []})["rulings"].append(ru)
