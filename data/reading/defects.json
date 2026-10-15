@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 179,
+ "deposits_with_notes": 182,
  "deposits": [
   {
    "deposit": 8,
@@ -20,6 +20,11 @@
      "batch_id": "B0009",
      "field": "incidental",
      "text": "Line 163 records internal sequence ('TECHNE wrote the founding document before the mantle was named'), not a priority claim against the world; not recorded. Tables flattened to one cell per line. wc -l reports 368 (no trailing newline)."
+    },
+    {
+     "batch_id": "HB0009",
+     "field": "incidental",
+     "text": "Lineage table states Homer 'Dictated to scribes, never saw final form' (l.112) as a cell in a structural homology; not argued, so not recorded as H."
     }
    ],
    "rulings": []
@@ -174,6 +179,17 @@
      "batch_id": "B0043",
      "field": "incidental",
      "text": "Section order irregular: §1.6 precedes §1.5. Line 14 and line 12 give companion spec as v1.0 and v1.1."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 55,
+   "notes": [
+    {
+     "batch_id": "B0044",
+     "field": "incidental",
+     "text": "Internal counts disagree (fourteen vs thirteen articles; 18 vs 19 DOIs; SIMs x8 vs 9; ratio 40:1 vs 38:1). Contains a kernel of #635 (FSA v2.2)."
     }
    ],
    "rulings": []
@@ -1357,6 +1373,17 @@
    "rulings": []
   },
   {
+   "deposit": 635,
+   "notes": [
+    {
+     "batch_id": "B0044",
+     "field": "incidental",
+     "text": "Changelog table at end (lines 840–1029) rendered as one cell per line; ends at the v2.0→v2.1 table without a closing line."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 713,
    "notes": [
     {
@@ -1461,6 +1488,17 @@
      "batch_id": "B0043",
      "field": "incidental",
      "text": "Body is byte-identical to #1347 (same sha256)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 967,
+   "notes": [
+    {
+     "batch_id": "B0044",
+     "field": "incidental",
+     "text": "Header gives Dead DOI 10.5281/zenodo.19455104 while body gives 19455105; DataCite JSON appended at lines 154–346."
     }
    ],
    "rulings": []
@@ -1612,6 +1650,11 @@
      "batch_id": "B0009",
      "field": "incidental",
      "text": "Appendix A protocols 2-5, 6, 7, 8, 9, 12 and the DOI Registry / Cross-Reference Table sections are headings with their lists missing (empty bodies), likely lost in html2text conversion. Read tool displayed a blank line 2123 past wc's 2122."
+    },
+    {
+     "batch_id": "HB0009",
+     "field": "incidental",
+     "text": "Read tool shows a final line 2123 (closing italic line) beyond lines_total 2122; read through it. Recovered blog-canonical bytes. Provenance chain (ll.1587-1601, e.g. 'The Josephus Thesis and the Revelation First thesis predate Pearl') is internal chronology, not recorded as H. Dickinson (l.902) and Pessoa (l.487) are illustrative reports of established scholarship, not recorded."
     }
    ],
    "rulings": []
@@ -1623,6 +1666,11 @@
      "batch_id": "B0009",
      "field": "incidental",
      "text": "REVELATION_ROOM and SIGIL_ROOM carry anchor_doc PLACEHOLDER. Read tool displayed a blank line 1543 past wc's 1542."
+    },
+    {
+     "batch_id": "HB0009",
+     "field": "incidental",
+     "text": "Read tool shows a final line 1543 beyond lines_total 1542; read through it. Sappho kenos future-reader mechanism and Marx-completion appear only as room function labels (ll.496, 547, 717), not argued here."
     }
    ],
    "rulings": []

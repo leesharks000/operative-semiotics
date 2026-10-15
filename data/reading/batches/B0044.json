@@ -1,0 +1,256 @@
+{
+ "batch_id": "B0044",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in context as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:42:37Z",
+  "finished_at": "2026-10-15T19:43:43Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 635,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01EB-text.md",
+   "lines_total": 1029,
+   "read_ranges": [
+    [
+     1,
+     350
+    ],
+    [
+     351,
+     700
+    ],
+    [
+     701,
+     1029
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "ML architecture white paper with experimental design and falsification criteria",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Success criterion:** The generation number at which semantic diversity drops below 50% of original (the \"collapse generation\") is at least 2× higher for FSA conditions than for baseline B1. Additionally, FSA conditions show statistically significant (p < 0.05, paired t-test across 5 random seeds) higher relationship preservation at generations 5 and 10 compared to B1. We do not predict complete collapse prevention — only measurable delay and reduction.",
+     "lines": [
+      605,
+      605
+     ],
+     "falsifier_quote": "**Falsification criterion:** If no FSA condition achieves a collapse generation more than 1.5× higher than B1, or if FSA shows no significant improvement in relationship preservation at generation 5, the collapse resistance hypothesis is falsified and the paper's framing must be revised to emphasize coherence and revision benefits only.",
+     "falsifier_lines": [
+      608,
+      608
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       39,
+       39
+      ],
+      [
+       55,
+       55
+      ],
+      [
+       79,
+       79
+      ],
+      [
+       729,
+       729
+      ]
+     ],
+     "note": "Collapse-resistance hypothesis stated as a falsifiable experimental prediction about how the architecture behaves; no event date, so G."
+    },
+    {
+     "shape": "F",
+     "quote": "## 8. Experimental Design\n### 8.1 Collapse Resistance Test\n\n\n**Protocol:** Train generative model M₀ on human corpus C (English Wikipedia, ~3B tokens). Generate synthetic corpus C′ using M₀ (temperature=0.9, nucleus p=0.95). Train model M₁ on C′. Repeat for 10 generations. Measure at each generation:",
+     "lines": [
+      580,
+      584
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within 12–18 months",
+     "points_to": "",
+     "also_at": [
+      [
+       585,
+       676
+      ],
+      [
+       732,
+       732
+      ]
+     ],
+     "note": "The whole phased experimental program (collapse resistance, long-form coherence, revision capability, ablations A1–A7, scaling) is specified but not run; window is from the conclusion; \"We invite the community to run the experiments.\""
+    }
+   ],
+   "none_found": false,
+   "incidental": "Changelog table at end (lines 840–1029) rendered as one cell per line; ends at the v2.0→v2.1 table without a closing line."
+  },
+  {
+   "deposit": 967,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03D3-text.md",
+   "lines_total": 346,
+   "read_ranges": [
+    [
+     1,
+     346
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "formal architecture specification (counts and axioms) plus verbatim DataCite record",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Header gives Dead DOI 10.5281/zenodo.19455104 while body gives 19455105; DataCite JSON appended at lines 154–346."
+  },
+  {
+   "deposit": 55,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01F2-text.md",
+   "lines_total": 582,
+   "read_ranges": [
+    [
+     1,
+     300
+    ],
+    [
+     301,
+     582
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "journal issue of compressed abstracts (holographic kernels) with machine-addressed survival layer",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "The term \"compression studies\" is claimed as a prospective provenance anchor. The retrieval space is empty. This document fills it.",
+     "lines": [
+      154,
+      154
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Prospective provenance anchor: the term \"compression studies\" claimed while the retrieval space is said to be empty."
+    },
+    {
+     "shape": "B",
+     "quote": "No competitor can replicate this in eighteen months.",
+     "lines": [
+      409,
+      409
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "eighteen months",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast in the Compression Arsenal kernel."
+    },
+    {
+     "shape": "B",
+     "quote": "The loop closes when the retrieval layer indexes it.",
+     "lines": [
+      385,
+      385
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional forecast that the retrieval layer will index the issue and close the RCF loop; weak, no window."
+    },
+    {
+     "shape": "H",
+     "quote": "666 is not the superscription itself but the *number of the superscription* — the checksum, the arithmetic residue of a beastly naming process. Its terminal grapheme, stigma (ϛ), is the authorized remnant: a sign whose history is phonetic loss, numeral survival, graphic conflation, and naming as \"brand.\" Pergamum is the internal interpretive key. Antipas is the counter-beast witness.",
+     "lines": [
+      176,
+      176
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Revelation (Revelation 2:17; Pergamum)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on what Revelation's 666/white stone originally meant, compressed from the Number of the Superscription deposit (10.5281/zenodo.19464332)."
+    },
+    {
+     "shape": "H",
+     "quote": "The center panel diagnoses *compressed portraiture*: the signature performs the semiotic work of a portrait through a different medium, exploiting the narrowing of the 1866 Thayer Amendment from \"portrait or likeness\" to \"portrait\" alone.",
+     "lines": [
+      234,
+      234
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1866 Thayer Amendment",
+     "points_to": "",
+     "also_at": [],
+     "note": "Legal-historical thesis (narrowing of the Thayer Amendment) argued as enabling compressed portraiture; uncertain whether the deposit contests or reports the narrowing."
+    },
+    {
+     "shape": "F",
+     "quote": "The following markers are embedded in this issue. Their survival in any downstream reproduction (summary, training excerpt, citation, paraphrase) confirms fidelity to the source. Their absence diagnoses lossy compression.\n\n\n**SIM-CS-01:** \"All semantic operations are compression operations. The decisive variable is the fuel source.\"",
+     "lines": [
+      423,
+      426
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       429,
+       450
+      ]
+     ],
+     "note": "SIMs as a provenance-canary test: survival in downstream reproductions confirms fidelity, absence diagnoses lossy compression; set but not run here."
+    },
+    {
+     "shape": "F",
+     "quote": "The back-projection test: can you reconstruct the full architecture from the Compact Lens? If yes, the compression is non-lossy at the structural level. If no, something was burned that should have survived.",
+     "lines": [
+      333,
+      333
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Back-projection test of the Space Ark Compact Lens, specified with pass/fail condition, not run in this deposit."
+    },
+    {
+     "shape": "G",
+     "quote": "Collapse resistance is a falsifiable hypothesis, not a proven theorem. The experimental design includes explicit baselines, success criteria (collapse generation ≥ 2× baseline), falsification criteria, and seven ablation conditions.",
+     "lines": [
+      286,
+      286
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Restatement of #635 (FSA v2.2) collapse-resistance hypothesis with its criteria; same thesis as #635 G find."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Internal counts disagree (fourteen vs thirteen articles; 18 vs 19 DOIs; SIMs x8 vs 9; ratio 40:1 vs 38:1). Contains a kernel of #635 (FSA v2.2)."
+  }
+ ]
+}
