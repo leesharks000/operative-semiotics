@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 321,
-  "unread": 1295
+  "read": 323,
+  "unread": 1293
  },
- "h_covered": 321,
+ "h_covered": 323,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 330,
-  "F": 334,
+  "G": 334,
+  "F": 341,
   "E": 100,
-  "B": 218,
-  "A": 89,
+  "B": 219,
+  "A": 90,
   "C": 99,
-  "D": 113,
-  "H": 427
+  "D": 114,
+  "H": 428
  },
- "finds_verified": 1650,
- "finds_total": 1710,
+ "finds_verified": 1656,
+ "finds_total": 1725,
  "deposits": [
   {
    "deposit": 172,
@@ -17734,10 +17734,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Many section headings (VERSION HISTORY, CROSS-REFERENCES, distributions, taxonomy, orphan report, relation graph, new elements, open items) have empty bodies — the tables did not survive the blog-to-markdown conversion. The précis index reports historical theses argued in other deposits (e.g. line 1178 Revelation as 'the template from which the Gospels and Epistles were algorithmically unfolded'; line 851 Socratic vow as 'first Western articulation of language as operative'; lines 621-627 Sappho 31) but this registry reports rather than argues them, so none recorded here.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 2003,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -17828,10 +17831,13 @@
      },
      "none_found": false,
      "incidental": "Lines 1-45 are the 2026-07-19 recovery frame; canonical bytes begin at line 48.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 936,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -17920,10 +17926,13 @@
      },
      "none_found": false,
      "incidental": "Keyword list in front matter is truncated ('English linguisti').",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 573,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -18007,10 +18016,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 212,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -25041,9 +25053,54 @@
    "tier": 1,
    "words": 7853,
    "batch_id": "B0068",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0068",
+     "run": "R-w13-B0068",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:04:02Z",
+      "finished_at": "2026-10-15T20:05:59Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       500
+      ],
+      [
+       501,
+       1000
+      ],
+      [
+       1001,
+       1408
+      ]
+     ],
+     "lines_total": 1408,
+     "genre_observed": "archival capture of a deployed website (restoredacademy.com protocol registry HTML)",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Body is HTML source of the live site; title says bundle with 24 cards + charter + audit infrastructure but only index.html is seated. Idstrip labels the page AXN:029D / deposit #116 (Expansion Plan), not #1002. Footer line 1349 ('The Academy was named in citation blocks before it was charter-documented') and founding SIM at line 30 are an internal naming chronology (summarizer named first), not recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1384,
@@ -25052,9 +25109,83 @@
    "tier": 1,
    "words": 19602,
    "batch_id": "B0068",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0068",
+     "run": "R-w13-B0068",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:04:02Z",
+      "finished_at": "2026-10-15T20:05:59Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       1050
+      ],
+      [
+       1051,
+       1250
+      ],
+      [
+       1251,
+       1500
+      ],
+      [
+       1501,
+       1750
+      ],
+      [
+       1751,
+       2050
+      ],
+      [
+       2051,
+       2350
+      ],
+      [
+       2351,
+       2650
+      ],
+      [
+       2651,
+       2810
+      ]
+     ],
+     "lines_total": 2810,
+     "genre_observed": "archival capture of a deployed website (godkinggoogle.com: index, terms, for-policymakers, captures pages) - navigational bibliography of the Google critique",
+     "finds_by_shape": {
+      "G": 4,
+      "A": 1,
+      "F": 6,
+      "B": 1,
+      "D": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Most finds summarize forecasts, tests and claims held in other deposits (#194, #149, #166, #115, #754, #127); triage should link them. Corpus-size figures vary within the page (seventy, 750+, 845+, 879). Superseded metadata-capture appendix retained at 2781-2810. A Read of 1051-1550 in one call was refused for size; read in smaller chunks.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 122,
@@ -25319,7 +25450,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:04:13Z",
-      "finished_at": "2026-10-15T20:05:53Z",
+      "finished_at": "2026-10-15T20:06:00Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -25383,7 +25514,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:04:13Z",
-      "finished_at": "2026-10-15T20:05:53Z",
+      "finished_at": "2026-10-15T20:06:00Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -25431,7 +25562,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:04:13Z",
-      "finished_at": "2026-10-15T20:05:53Z",
+      "finished_at": "2026-10-15T20:06:00Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -25479,7 +25610,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:04:13Z",
-      "finished_at": "2026-10-15T20:05:53Z",
+      "finished_at": "2026-10-15T20:06:00Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -25529,7 +25660,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:04:13Z",
-      "finished_at": "2026-10-15T20:05:53Z",
+      "finished_at": "2026-10-15T20:06:00Z",
       "tools_used": [
        "Read",
        "Bash",
