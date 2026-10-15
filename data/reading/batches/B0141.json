@@ -1,0 +1,560 @@
+{
+ "batch_id": "B0141",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:46:10Z",
+  "finished_at": "2026-10-15T20:47:52Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1664,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06E6-text.md",
+   "lines_total": 586,
+   "read_ranges": [
+    [
+     1,
+     200
+    ],
+    [
+     200,
+     399
+    ],
+    [
+     400,
+     586
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dataset specification with hand-run worked example (model collapse, AI Overview)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The hypothesis per entry: the claims admission added need less severe revision than the field claims they displace or qualify.",
+     "lines": [
+      212,
+      212
+     ],
+     "falsifier_quote": "The opposite result is adverse evidence for admission in that row and is recorded as visibly.",
+     "falsifier_lines": [
+      212,
+      212
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim of the specification: admitted archive claims need less severe revision than the field claims they displace or qualify; the opposite result is stated as adverse evidence. No window."
+    },
+    {
+     "shape": "F",
+     "quote": "Whether the archive would have been surfaced on equal terms is a different question, answerable only across addresses, by matched pairs: an address where the layer surfaces a standing source for a claim, against one where it fails to surface the archive's counterpart claim. The Capture Registry can supply such pairs; that instrument is outside this specification.",
+     "lines": [
+      75,
+      75
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Matched-pair surfacing test specified and placed outside the spec; not built here."
+    },
+    {
+     "shape": "F",
+     "quote": "**v2.1** (the evaluative arm, §10.2) asks what changes when evaluation, and not standing, governs assertoric force once the claims are present. Run in sequence and kept separate, they tell apart an effect that comes from letting the tail enter at all from an effect that comes from weighing it differently once it is in.",
+     "lines": [
+      79,
+      79
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The evaluative arm v2.1 is specified as a later experiment, reserved and not run."
+    },
+    {
+     "shape": "F",
+     "quote": "## 7. The panel\n\n7.1. A frozen address list: the dataset's rows (all types), a random draw from EA-SEMANTIC-ADDRESSES-01's 1,743 subjunctive addresses, and fixed controls (an address that resolves well with attribution; a third-party term with no archive claim).\n7.2. Every address run each epoch on the declared surfaces; every outcome seated, null included. Only strings the archive has already published enter the list.\n7.3. Surfaces and cadence: the operator's ruling (§10.3).",
+     "lines": [
+      194,
+      198
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The panel (address list, every address run each epoch, every outcome seated) is specified; not yet run as a battery."
+    },
+    {
+     "shape": "F",
+     "quote": "### A.7. Prospective kernel K (derived from the frozen plan; sealed only at freeze)\n\nDerived under §8.2 from the claim ids composed in L(B ∪ A) (body, rail, open block and channel log) and absent from L(B), plus the field claim they contradict. K6a was added in 0.5 with L855-11; the contrast column was added in 0.6 (§8.2). The f column lists the sources' falsifiers by id; their classification as falsifier or watch condition (§8.2: observation type, threshold, locus) is done at freeze and is not yet done.",
+     "lines": [
+      485,
+      487
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       489,
+       519
+      ],
+      [
+       527,
+       527
+      ]
+     ],
+     "note": "The prospective kernel K (28 entries, adjudication handles entered as conditions in the prediction ledger) is drafted but not sealed; falsifier/watch classification not yet done. Recorded once as F; triage may treat entries as conditions."
+    },
+    {
+     "shape": "F",
+     "quote": "15. **Arms** (§3.9). The next pass composes L(B ∪ A_naive) and L(B ∪ A′). The control's candidate sources are listed in §3.9.",
+     "lines": [
+      578,
+      578
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       551,
+       551
+      ],
+      [
+       553,
+       553
+      ],
+      [
+       549,
+       549
+      ]
+     ],
+     "note": "Control arm A′ and naive arm compositions specified, not yet composed; reproducibility (k≥3, two composers) and second rater not yet run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body is near-identical to #1665 (v0.7 supersedes this v0.6); finds duplicated across both. No historical thesis argued. Appendix A reports #1023's text file holds #198 (a wrong body in another deposit)."
+  },
+  {
+   "deposit": 1665,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06E7-text.md",
+   "lines_total": 647,
+   "read_ranges": [
+    [
+     1,
+     220
+    ],
+    [
+     221,
+     440
+    ],
+    [
+     441,
+     647
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dataset specification (v0.7, supersedes #1664) with worked example and a first D/R/O traversal of Howl",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The hypothesis per entry: the claims admission added need less severe revision than the field claims they displace or qualify.",
+     "lines": [
+      226,
+      226
+     ],
+     "falsifier_quote": "The opposite result is adverse evidence for admission in that row and is recorded as visibly.",
+     "falsifier_lines": [
+      226,
+      226
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim of the specification: admitted archive claims need less severe revision than the field claims they displace or qualify; the opposite result is stated as adverse evidence. No window."
+    },
+    {
+     "shape": "F",
+     "quote": "Whether the archive would have been surfaced on equal terms is a different question, answerable only across addresses, by matched pairs: an address where the layer surfaces a standing source for a claim, against one where it fails to surface the archive's counterpart claim. The Capture Registry can supply such pairs; that instrument is outside this specification.",
+     "lines": [
+      86,
+      86
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Matched-pair surfacing test specified and placed outside the spec; not built here."
+    },
+    {
+     "shape": "F",
+     "quote": "**v2.1** (the evaluative arm, §10.2) asks what changes when evaluation, and not standing, governs assertoric force once the claims are present. Run in sequence and kept separate, they tell apart an effect that comes from letting the tail enter at all from an effect that comes from weighing it differently once it is in.",
+     "lines": [
+      90,
+      90
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The evaluative arm v2.1 is specified as a later experiment, reserved and not run."
+    },
+    {
+     "shape": "F",
+     "quote": "7.1. At freeze, the address list: the dataset's rows (all types), a random draw from EA-SEMANTIC-ADDRESSES-01's 1,743 subjunctive addresses, and fixed controls (an address that resolves well with attribution; a third-party term with no archive claim).\n7.2. Every address run each epoch on the declared surfaces; every outcome seated, null included. Only strings the archive has already published enter the list.",
+     "lines": [
+      210,
+      211
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The panel (address list, every address run each epoch, every outcome seated) is specified; not yet run as a battery."
+    },
+    {
+     "shape": "F",
+     "quote": "### A.7. Prospective kernel K (derived from the frozen plan; sealed only at freeze)\n\nDerived under §8.2 from the claim ids composed in L(B ∪ A) (body, rail, open block and channel log) and absent from L(B), plus the field claim they contradict. K6a was added in 0.5 with L855-11; the contrast column was added in 0.6 (§8.2). The f column lists the sources' falsifiers by id; their classification as falsifier or watch condition (§8.2: observation type, threshold, locus) is done at freeze and is not yet done.",
+     "lines": [
+      504,
+      506
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       508,
+       538
+      ],
+      [
+       546,
+       546
+      ]
+     ],
+     "note": "The prospective kernel K (28 entries, adjudication handles entered as conditions in the prediction ledger) is drafted but not sealed; falsifier/watch classification not yet done. Recorded once as F; triage may treat entries as conditions."
+    },
+    {
+     "shape": "F",
+     "quote": "15. **Arms** (§3.9). The next pass composes L(B ∪ A_naive) and L(B ∪ A′). The control's candidate sources are listed in §3.9.",
+     "lines": [
+      597,
+      597
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       570,
+       570
+      ],
+      [
+       572,
+       572
+      ],
+      [
+       568,
+       568
+      ]
+     ],
+     "note": "Control arm A′ and naive arm compositions specified, not yet composed; reproducibility (k≥3, two composers) and second rater not yet run."
+    },
+    {
+     "shape": "F",
+     "quote": "**The control arm, uncapped.** The ruling removes the step-(ii) cap of 15 (§A.9). A′ has not yet been re-assembled without it; that requires fetching the uncapped expansion's references and is the next pass of the arm.",
+     "lines": [
+      617,
+      617
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Re-assembly of A′ without the cap specified as the arm's next pass; not run."
+    },
+    {
+     "shape": "F",
+     "quote": "The pass also returns 97 candidates S1–S3 never considered, which are unread.",
+     "lines": [
+      615,
+      615
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "97 D/R/O candidates returned and left unread; reading pending."
+    },
+    {
+     "shape": "F",
+     "quote": "**Next.** The hop from the 30 admitted deposits returns 235 candidates (`candidates-H.jsonl`), unread. The row then needs its transcript (a panel run at `howl`), which gives the disclosed field, the O-class pass, and the first T against L(B) for a public work. `allen ginsberg` has been run through the string pass only (D in 102 deposits, R in 68, O in 90), unread.",
+     "lines": [
+      647,
+      647
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Howl row: hop candidates unread, transcript (panel run at `howl`) and T against L(B) still to be produced; `allen ginsberg` unread."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Repeats #1664's body nearly verbatim, adding §3.4 D/R/O, §7.0, §10.10–10.13, §A.11 and Appendix B. Appendix B quotes other deposits' claims about Howl (e.g. #268, #69, #152) as data on the archive's bearing; they are reported, not argued here, so no shape H recorded. Restates #1023 holds #198."
+  },
+  {
+   "deposit": 1666,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06E8-text.md",
+   "lines_total": 411,
+   "read_ranges": [
+    [
+     1,
+     411
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "economic-model extension paper (heteronym Rex Fraction) with capture specimens and falsifier section",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Status.** G is the hypothesis this module makes measurable. §9.1 is its existence proof. Its estimate waits on §12.1. G is the flow form of two terms #1634 already holds: ontological rent (§3) and entity substitution as transfer (§9).",
+     "lines": [
+      117,
+      117
+     ],
+     "falsifier_quote": "11.1. **G.** If coded replacements, at addresses where the queried concept is not itself the returned entity, show no excess toward monetizable entities, then G is unsupported and the margin reduces to S.",
+     "falsifier_lines": [
+      313,
+      313
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       269,
+       269
+      ]
+     ],
+     "note": "Routing gain G stated as the module's measurable hypothesis, with explicit falsifier in §11.1."
+    },
+    {
+     "shape": "G",
+     "quote": "Revenue is a head instrument. It weights queries by commercial demand. The model predicts that this demand concentrates in the head, where the fewest distinctions are lost; §5.4 and §11.2 test the prediction.",
+     "lines": [
+      193,
+      193
+     ],
+     "falsifier_quote": "11.2. **The commercial gradient.** If κ shows no commercial gradient at matched commercial and non-commercial addresses, flattening carries no commercial gradient at address scale, and §5.4 fails.",
+     "falsifier_lines": [
+      315,
+      315
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       201,
+       201
+      ]
+     ],
+     "note": "Commercial demand concentrates in the head; falsifier: no commercial gradient in κ at matched addresses."
+    },
+    {
+     "shape": "G",
+     "quote": "If external costs stay external, and no endogenous channel returns them, W can stay open indefinitely. Three lines bear on this:\n1. **Measurement (primary).** The platform detects cost with head instruments: satisfaction, click-through, evaluation sets drawn from frequent queries. Flattening accrues in the tail. The sensors sit where the cost is not. This requires no indifference from anyone, only that the instruments are optimized for the same head the flattening serves.",
+     "lines": [
+      176,
+      177
+     ],
+     "falsifier_quote": "11.4. **Non-arrival (§4.5).** If platforms build tail-diversity or origin-quality instrumentation that no regulation requires, the measurement line weakens.",
+     "falsifier_lines": [
+      319,
+      319
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       178,
+       179
+      ]
+     ],
+     "note": "No necessary finite private reversal t*: the window can stay open, primarily because head instruments miss tail cost; falsified by voluntary tail-diversity instrumentation."
+    },
+    {
+     "shape": "B",
+     "quote": "A query routed to a monetizable entity is sold to advertisers whose buyers wanted something else. Conversion on that traffic falls. Bids follow, with a lag.",
+     "lines": [
+      207,
+      207
+     ],
+     "falsifier_quote": "11.3. **Conversion.** If cost-per-click and conversion on rerouted traffic hold steady while the agentic channel opens, §6.1 carries no cost, and W is longer than §6 implies.",
+     "falsifier_lines": [
+      317,
+      317
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that advertiser conversion and bids fall on rerouted traffic; §11.3 gives the falsifier."
+    },
+    {
+     "shape": "B",
+     "quote": "An agent's wrong action is a transaction. A transaction has a counterparty and a record, so the cost arrives already attributed. That is why this channel converts C[Δ] into C_int faster than any other.",
+     "lines": [
+      209,
+      209
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       178,
+       178
+      ]
+     ],
+     "note": "Embedded forecast: the agentic channel carries cost onto platform books fastest, and weakens the competition line once it opens. No window."
+    },
+    {
+     "shape": "B",
+     "quote": "Proposition, stated as a prediction: *the last channel to carry cost onto the platform's books is the corpus itself.*",
+     "lines": [
+      213,
+      213
+     ],
+     "falsifier_quote": "11.6. **The write-back regime (§6.4).** If reachable distinction diversity rises, sustained across a panel of re-queried addresses and with the exogenous input measured, the process is not absorbing, and repair is cheaper than §7 assumes. One address becoming richer does not establish it.",
+     "falsifier_lines": [
+      323,
+      323
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       223,
+       223
+      ],
+      [
+       237,
+       237
+      ]
+     ],
+     "note": "Explicitly framed as a prediction (write-back is the last channel and can eventually force private reversal); no date, so B rather than A; falsifier §11.6."
+    },
+    {
+     "shape": "B",
+     "quote": "At t_d the debt becomes callable. The platform finds that the distinctions it needs are held by the parties that preserved them. Whether it pays, by license, acquisition, settlement or coordination, or does without, is a separate question. At t_d the holders of B_P, the parties who kept the stripped distinctions, move from bag-holder to creditor: #939 §0's \"structural bet on what future models will need\". The rest of the bag has no such reversal.",
+     "lines": [
+      239,
+      239
+     ],
+     "falsifier_quote": "11.5. **The reversal (§7.3).** If repair runs without the preserved records, the bag-holder's position does not reverse. Two ways this could happen: the platform builds a synthetic tail-recovery mechanism that bypasses them, or it accepts lower-fidelity repair over paying for them.",
+     "falsifier_lines": [
+      321,
+      321
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Forecast that at the debt threshold the preserving parties move from bag-holder to creditor; §11.5 states how it would fail."
+    },
+    {
+     "shape": "B",
+     "quote": "C_ext need not be linear in time. If write-back compounds the loss (§6.4), C_ext is plausibly convex late in W, and late repair costs more than early repair. This is stated as a hypothesis.",
+     "lines": [
+      172,
+      172
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Hypothesis that external cost is convex late in the window; no falsifier given."
+    },
+    {
+     "shape": "F",
+     "quote": "7.6. **Proxies for the approach of t_d.** t\\* sits on the platform's books. The condition that makes t_d approach shows in the corpus, and the corpus can be sampled. Candidate instruments, not yet results:\n1. field coverage at the layer's own addresses, re-measured across epochs;\n2. the share of compositions carrying no sources;\n3. the size of the reachable sense set at re-queried addresses, over the registry's longitudinal pairs;\n4. entity replacements at addresses the same surface earlier composed correctly.",
+     "lines": [
+      251,
+      255
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Four candidate proxy instruments for the approach of t_d, 'not yet results'."
+    },
+    {
+     "shape": "F",
+     "quote": "## 12. Next steps\n\n1. **The G pilot.** Code the Capture Registry's existing pairs for substitution under §2.2's two criteria. Report r_s and m with the coding rule stated. This converts §11.1 from hypothetical to live.\n2. **The panel.** Pre-register a set of addresses, commercial and non-commercial, matched by type, and run them on a schedule. It supplies the population rates of §10 and the matched pairs of §11.2.\n3. **The typology.** Tag registry and /non addresses by commercial surface: product, financial instrument, service, none.",
+     "lines": [
+      325,
+      329
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       330,
+       330
+      ],
+      [
+       290,
+       290
+      ],
+      [
+       299,
+       299
+      ]
+     ],
+     "note": "Next steps list: G pilot, pre-registered panel, commercial typology, epoch proxies; none run. Also the uncoded breadth form k/n and the typology 'to be built'."
+    },
+    {
+     "shape": "F",
+     "quote": "Here κ = 0.5 at claim grain. The lineage-grain figure is next.",
+     "lines": [
+      288,
+      288
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Lineage-grain κ for model collapse specified as next measurement, not yet computed."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}

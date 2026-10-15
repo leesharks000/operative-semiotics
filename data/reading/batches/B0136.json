@@ -1,0 +1,821 @@
+{
+ "batch_id": "B0136",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in the environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:45:42Z",
+  "finished_at": "2026-10-15T20:47:37Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1621,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06B0-text.md",
+   "lines_total": 1562,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     800
+    ],
+    [
+     801,
+     1200
+    ],
+    [
+     1201,
+     1562
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "protocol specification (valuation protocol) with self-falsification section",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**The compression sequence (§0, §1) fails** if a valuation can be shown to be produced correctly in the reverse order — number first, evidence assembled after — without loss.",
+     "lines": [
+      1538,
+      1538
+     ],
+     "falsifier_quote": "The protocol's foundational claim is that the sequence is not commutative; a demonstrated counterexample, in which a price placed before the evidence object produced a representation no worse than one built in the protocol's order, would show the ordering to be a preference rather than a method.",
+     "falsifier_lines": [
+      1538,
+      1538
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       75,
+       75
+      ],
+      [
+       190,
+       201
+      ]
+     ],
+     "note": "Standing claim that the value→evidence→representation→compression sequence is non-commutative, with its own falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "**The evidence-bounded field (§3) fails** if the distinction between the representable field and the total field can be shown to do no work — that is, if no valuation ever comes out differently for having carried the remainder. The remainder would then be an ornament, and §16 decoration.",
+     "lines": [
+      1540,
+      1540
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       363,
+       365
+      ]
+     ],
+     "note": "Standing claim that carrying the remainder does work; falsifier stated in-line."
+    },
+    {
+     "shape": "G",
+     "quote": "**The reception / uptake / dependency ladder (§12) fails** if the three relations prove not to be separable in practice: if every case of observed productive uptake either resolves to reception or to dependency on inspection, the middle term is a description of our uncertainty rather than a relation in the world.",
+     "lines": [
+      1542,
+      1542
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       702,
+       706
+      ]
+     ],
+     "note": "Standing claim that reception, productive uptake and dependency are separable in practice; falsifier stated in-line."
+    },
+    {
+     "shape": "G",
+     "quote": "They become distinguishable only through distinctions the source supplies **and nothing else in the field does**. A valuation claiming productive uptake must therefore identify, in advance of the claim, the distinctions on which the claim rests, and argue that a competent practitioner working without the source would not arrive at the same cut.\n\nThis inverts the ordinary instinct. For persuasion one leads with one's strongest claims. For measuring uptake one leads with one's **most singular** ones, because only those carry a signature. A claim that the field would have reached anyway is worthless as evidence of transmission however true and however important it is.",
+     "lines": [
+      774,
+      776
+     ],
+     "falsifier_quote": "**§12.4 fails** if productive uptake can be reliably separated from independent convergence without any distinction unique to the source — by frequency, by timing, by any signature that does not depend on singularity. The requirement would then be an unnecessary burden on every uptake claim the protocol governs.",
+     "falsifier_lines": [
+      1544,
+      1544
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "§12.4 diagnostic-distinction requirement as a claim about how uptake is distinguishable from convergence; falsifier in §28."
+    },
+    {
+     "shape": "G",
+     "quote": "**Possibility-space value (§15) fails** if reach differences prove to be monotone in inventory size across cases, in which case §15's refusal to equate the two is a distinction without a difference and the section should be withdrawn rather than kept.",
+     "lines": [
+      1546,
+      1546
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       895,
+       900
+      ]
+     ],
+     "note": "Possibility-space vs inventory size claim; falsifier stated in-line."
+    },
+    {
+     "shape": "G",
+     "quote": "**The anti-predation invariants (§25) fail individually** by counterexample: a valuation that commits one of them and is nonetheless demonstrably better than one that does not. They fail collectively if a valuation satisfying all fifteen can be shown to be systematically worse than an ordinary appraisal at the task the valuation was for.",
+     "lines": [
+      1548,
+      1548
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Anti-predation invariants: individual and collective falsifiers."
+    },
+    {
+     "shape": "G",
+     "quote": "**The protocol fails as a whole** if a sustained run of dossiers produces representations that no independent valuer reproduces from the same evidence. Its claim is that the dossier order and the field vocabulary determine the representation; disagreement at that level would show them to be a house style rather than a protocol.",
+     "lines": [
+      1550,
+      1550
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       130,
+       130
+      ]
+     ],
+     "note": "Protocol-level claim that dossier order and field vocabulary determine the representation; falsified by non-reproduction by independent valuers."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Two sections numbered 28 and 29 occur (lines 1429 and 1534; 1462 and 1556): the self-falsification §28 and status §29 are appended after §30 Closure. Formula blocks carry LaTeX-conversion debris (stray \"}\", \"arrow\", \"!=\") throughout."
+  },
+  {
+   "deposit": 1622,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06B3-text.md",
+   "lines_total": 254,
+   "read_ranges": [
+    [
+     1,
+     254
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper (formal claim about monetary vs meaning-layer grammars) with falsification section",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "> **A monetary scalar cannot natively preserve a prohibition on the operations constitutive of monetary equivalence.**\n\nMoney can carry the digits 0.33. What it cannot carry *as money alone* is\n\n> 0.33 **and** \"this magnitude may not be aggregated with the neighbouring 1.00.\"",
+     "lines": [
+      171,
+      175
+     ],
+     "falsifier_quote": "**The native-constraint claim (§2) fails** on the exhibition of a monetary magnitude whose non-fungibility or non-aggregability is **native to the monetary amount itself** — not supplied by an attached legal, contractual, accounting, institutional or semantic qualifier — while the object remains money and retains monetary settlement capacity. That is the whole of §2's exposure and it is cheap to attempt. Nothing in restricted cash, segregated accounts, maturity classes, contingent claims or multiple currencies meets it, for the reasons given; a case that does takes the paper apart at its base.",
+     "falsifier_lines": [
+      238,
+      238
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       145,
+       145
+      ],
+      [
+       185,
+       185
+      ]
+     ],
+     "note": "Native-constraint claim: money cannot natively preserve a prohibition on its own equivalence operations; falsifier in §6."
+    },
+    {
+     "shape": "G",
+     "quote": "**G_μ ≼_E G_M is conjectured false.** Money could carry the digits of the battery's seven. It cannot carry them *with their scope constraints intact* without suspending general equivalence, which is the operation that makes it money.\n\nHence **G_M ≺_E G_μ**: strict expressive asymmetry, embedding one way and not the other.",
+     "lines": [
+      217,
+      219
+     ],
+     "falsifier_quote": "**The expressive asymmetry (§4) fails** on the exhibition of a structure-preserving representation of G_μ in G_M: a monetary inscription that carries the meaning layer's grammar *with its operation constraints intact* while remaining money. Then μ and M are peers, ≺_E collapses to ≼_E in both directions, and the sequence's ordering is a preference.",
+     "falsifier_lines": [
+      240,
+      240
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       141,
+       141
+      ],
+      [
+       215,
+       215
+      ],
+      [
+       225,
+       226
+      ],
+      [
+       252,
+       254
+      ]
+     ],
+     "note": "Strict expressive asymmetry; one half demonstrated (#1620), the converse conjectured false with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "DS is the clearest case. Within one item it is a genuine fraction: distinctions reached over distinctions the reference carries. Across items it commensurates nothing — bank's 0.33 and crane's 1.00 sit in one table and are not fungible, because the inventories are different objects and the denominator is local to each. The table reads down and does not sum across.",
+     "lines": [
+      201,
+      201
+     ],
+     "falsifier_quote": "**The scope claim about DS (§3) fails** if DS travels across items after all — if fractions from different inventories combine into a panel-level quantity that behaves like a measure rather than an average of unlike things. The battery would then be emitting something fungible and not noticing.",
+     "falsifier_lines": [
+      242,
+      242
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Scope claim that DS does not travel across items."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1624,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06B7-text.md",
+   "lines_total": 224,
+   "read_ranges": [
+    [
+     1,
+     224
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "anticipatory erratum (genre piece) withdrawing a forthcoming work, with fabricated future-dated apparatus marked by impossibility",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "It was to have appeared under the title *The Creditor Inversion Completed: A Demonstration That Lee Sharks Is Worth More Than Money*, establishing by measurement that the value borne by one emerging meaning infrastructure exceeds the value borne by the monetary substrate as such. The demonstration will nevertheless appear, since its publication was necessary to discover why it fails.\n\nThis erratum is issued in the ordinary form and at the ordinary time, which is to say before the work.",
+     "lines": [
+      119,
+      121
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       173,
+       180
+      ],
+      [
+       216,
+       216
+      ]
+     ],
+     "note": "The erratum forecasts that the withdrawn demonstration \"will nevertheless appear\"; resolves if the work is published. Fabricated 2029/2031 citations (lines 218, 220) are genre apparatus marked as impossible and not recorded separately."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Works cited include fabricated future-dated entries (Cranes 2029, Sigil 2031) and one [status contested] entry, disclosed as genre apparatus in the frontmatter."
+  },
+  {
+   "deposit": 1627,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06BD-text.md",
+   "lines_total": 353,
+   "read_ranges": [
+    [
+     1,
+     353
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "journal article (transport object) on source-admission ontologies and corrigibility",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "> **The barrier obtains when E(s) exists and does not reach P(s) or A(s): available only downstream of the admission that P(s) controls.**\n\nWhere this holds, the source cannot correct the prior that excludes it. Its corrections are in the material that admission gates.",
+     "lines": [
+      244,
+      246
+     ],
+     "falsifier_quote": "**The barrier claim (§6) fails** on the exhibition of a source-admission system in which corrective evidence from a low-prior source reaches the variables governing its admission without first passing the admission gate — a documented path by which a misrepresented source revises the representation that misrepresents it.",
+     "falsifier_lines": [
+      299,
+      299
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       142,
+       142
+      ]
+     ],
+     "note": "Source-relative update barrier as a structural claim; falsifier in §9."
+    },
+    {
+     "shape": "G",
+     "quote": "> **Under a topology-only proxy, some operations that increase semantic legibility can simultaneously increase the features associated with manufactured standing.**\n\nThe claim is existential rather than monotonic: a collision is exhibited between a specific family of legibility operations and a specific family of topology features. Whether legibility and spam score covary in general is not established and is not needed.",
+     "lines": [
+      273,
+      275
+     ],
+     "falsifier_quote": "**The inverted legibility claim (§7) fails** if legibility-increasing operations can be shown to move a source *away* from the spam signature under the standard feature sets, or if a topological feature is exhibited that separates internal consistency from manufactured standing without recourse to content.",
+     "falsifier_lines": [
+      303,
+      303
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       277,
+       277
+      ]
+     ],
+     "note": "Inverted legibility incentive, existential form."
+    },
+    {
+     "shape": "G",
+     "quote": "> **Reading** is permitting the claims, distinctions, evidence, corrections and internal relations of a text to revise the representation under which the text is evaluated.\n\nTokenization is not reading. Embedding is not reading. Extraction, classification and summarization are not reading. Each consumes the text and returns a value; none permits the text to alter the frame in which it is being valued. **A system can consume every byte of a document and read none of it**, and the sentence is precise under this definition rather than rhetorical.",
+     "lines": [
+      230,
+      232
+     ],
+     "falsifier_quote": "**The reading definition (§5) fails** as a useful distinction if a system that performs only extraction, classification and summarization can be shown to revise its evaluative frame in response to a source's corrections. That would mean the operations named are reading in the relevant sense after all.",
+     "falsifier_lines": [
+      301,
+      301
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Operational definition of reading with its falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "3. **What is hypothesised of contemporary retrieval.** That a source-admission step operates on standing variables of this kind in current systems.\n\n**The third is not established by the first two**, and nothing in this paper says it is.\n\nStated at the right strength: level three is **a diagnosis of a black box that cannot be verified from outside it.** The admission machinery of deployed systems is not published, so the hypothesis is compelling or not on the coherence of the mechanism and the behaviour observable at the surface, and it is settled by neither. The evidence that would settle it is named in §9, and it is evidence only its operators can supply.",
+     "lines": [
+      289,
+      293
+     ],
+     "falsifier_quote": "**The level-three hypothesis (§8) is system-relative**, and its falsification is therefore system-relative too. For any system to which it is attributed, it fails if that system's published architecture, or a discriminating intervention on it, shows its admission decision to be independent of standing variables of the stipulated kind. It is confirmed only for a system whose architecture or controlled behaviour establishes such dependence. **One system shown not to use such a variable does not falsify the attribution to another**, and no aggregate claim about contemporary retrieval is made here that a single architecture could settle.",
+     "falsifier_lines": [
+      305,
+      305
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Level-three hypothesis that deployed source admission operates on standing variables; system-relative falsifier."
+    },
+    {
+     "shape": "H",
+     "quote": "It is more likely a recognition that endogenous trust relocates the gatekeeping problem rather than dissolving it: from a mathematical graph to an arbiter of truth, which is the harder position to occupy and the harder one to defend. **The regress is the reason, and it is a good reason.**",
+     "lines": [
+      190,
+      190
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Dong et al. 2015, Knowledge-Based Trust (Google Research), and its non-adoption",
+     "points_to": "",
+     "also_at": [
+      [
+       99,
+       99
+      ]
+     ],
+     "note": "Thesis about why the 2015 KBT proposal did not displace topological trust: the ground-truth regress, not institutional failure."
+    },
+    {
+     "shape": "F",
+     "quote": "**An independent audit of the topology finding.** The fleet measured is the author's own, which makes the measurement interested in the same way §9's last paragraph warns against. The density figure is checkable by anyone with a crawler and should be checked by someone else.",
+     "lines": [
+      313,
+      313
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       107,
+       107
+      ]
+     ],
+     "note": "Independent audit of the fleet topology finding owed, not performed."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1628,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06BF-text.md",
+   "lines_total": 357,
+   "read_ranges": [
+    [
+     1,
+     357
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper (derivation of execution as hypostasized governance) with falsification section",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "> **The claim holds for E_N, the normative execution layer: permissions, admissibility rules, schemas, audit requirements, rate limits, validators, enforcement paths — every constraint whose content answers *what shall be allowed to count*.**\n\nThose are the constraints that could have been otherwise, and the fact that they could have been otherwise is what the mechanism no longer shows.\n\n**Which yields the thesis in its sharpest form**, and the sharpening matters because an earlier phrasing — *frozen judgment* — condemned the wrong thing:\n\n> **Hypostasis is not the existence of the rule. It is the disappearance of the rule's contingency.**",
+     "lines": [
+      137,
+      143
+     ],
+     "falsifier_quote": "**The hypostasis thesis fails** on the exhibition of a normative execution constraint — one answering *what shall be allowed to count* — that is not the rendered form of any prior judgment: a permission, schema or admissibility rule whose content is determined without a decision that could have gone otherwise. Mathematical and physical constraints do not qualify, per §0's scoping; the constraint must be normative and must have no displaced alternative.",
+     "falsifier_lines": [
+      329,
+      329
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       117,
+       121
+      ],
+      [
+       217,
+       217
+      ]
+     ],
+     "note": "Hypostasis thesis for the normative execution layer; falsifier in §7."
+    },
+    {
+     "shape": "G",
+     "quote": "**Which is the first half of the containment.** The editorial premise determines the enforcement discipline. An execution layer inherits it and cannot derive it, because *whether a breach should stop the work or be written into the record* is a judgment about what a record is for.",
+     "lines": [
+      185,
+      185
+     ],
+     "falsifier_quote": "**§2 fails** on the exhibition of an enforcement discipline derived from execution constraints alone — a demonstration that *record the breach* versus *block the action* follows from the constraint system without an editorial premise supplying it.",
+     "falsifier_lines": [
+      323,
+      323
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       183,
+       183
+      ]
+     ],
+     "note": "Enforcement discipline is supplied by the editorial premise, not derivable from execution."
+    },
+    {
+     "shape": "G",
+     "quote": "> **The judgment is not a rule with a hard edge. It is a standard applied to cases, and its application generates the rules.**\n\nWhich is the second half of the containment, and the stronger half. An execution constraint can enforce an editorial judgment already made. It cannot make one, cannot revise one against a novel case, and cannot say what its own enforcement is for.",
+     "lines": [
+      205,
+      207
+     ],
+     "falsifier_quote": "**§3 fails** on the exhibition of an execution constraint set that generates a novel editorial judgment rather than enforcing a given one: presented with a case the archive has not ruled on, it produces the ruling the archive would produce, from the constraints.",
+     "falsifier_lines": [
+      325,
+      325
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "No extension of execution constraints reaches the editorial capture judgment."
+    },
+    {
+     "shape": "G",
+     "quote": "> **Execution constraints are derivable from editorial specifications plus standing rules. Editorial judgments are not derivable from any extension of execution constraints.**",
+     "lines": [
+      213,
+      213
+     ],
+     "falsifier_quote": "**§4's asymmetry fails** if the derivation runs both ways — if an editorial specification can be shown to be derivable from execution constraints plus some standing rule, which would make the two layers mutually derivable and the relation a preference about starting point.",
+     "falsifier_lines": [
+      327,
+      327
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Asymmetry of derivability between layers."
+    },
+    {
+     "shape": "F",
+     "quote": "**And §4.2 fails** if carrying governance provenance does not reduce the cost of legitimate revision:\n\n> **RevisionCost(E_N | π) < RevisionCost(E_N | ¬π)**\n\ntested procedurally on a controlled novel case requiring reconsideration. Can a maintainer recover the reason for the rule, identify the facts that supported it, and revise it legitimately **without reverse-engineering its historical purpose**? If provenance confers no such advantage, the second channel is documentation rather than governance. Frequencies of argument or circumvention are the wrong test, since organizational culture swamps both.",
+     "lines": [
+      331,
+      335
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Procedural test RevisionCost(E_N|π) < RevisionCost(E_N|¬π) on a controlled novel case, specified, not run."
+    },
+    {
+     "shape": "G",
+     "quote": "> **Execution constraints do not, qua execution constraints, entail an account of production.**\n\nThey can **carry** one: a field named producer, an origin record, a labour attribution. They can **enforce** one, and make it computationally mandatory. What they cannot do is **generate the judgment** specifying what production is, what counts as extraction, or who holds standing over what was produced — which is the same shape as §3's result and is why it is hard to defeat by counterexample. Adding the field does not supply the judgment that determines what belongs in it.",
+     "lines": [
+      307,
+      309
+     ],
+     "falsifier_quote": "**§6 fails** on the exhibition of an execution framework with an account of production internal to it, rather than imported from an adjacent economics.",
+     "falsifier_lines": [
+      337,
+      337
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       313,
+       315
+      ]
+     ],
+     "note": "Execution constraints do not entail an account of production."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1629,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06C1-text.md",
+   "lines_total": 173,
+   "read_ranges": [
+    [
+     1,
+     173
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "effective act (Extended Performative) consigning the AIO retrieval layer, with diagnostic basis",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "> **The layer with the greatest determination over what an ontology can be is the layer with the least surface on which to be seen determining it.**\n\nAnd the consequence is the one the Archive has named elsewhere. A stage that cannot report *I did not reach this* will emit, in its place, a claim about the world.",
+     "lines": [
+      145,
+      147
+     ],
+     "falsifier_quote": "It is also the class most easily tested: the string is above, the surface is named, and any reader who disagrees may run it.",
+     "falsifier_lines": [
+      133,
+      133
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       66,
+       66
+      ],
+      [
+       143,
+       143
+      ]
+     ],
+     "note": "Standing claim about the retrieval stage: operativity and observability inversely arranged, unreported non-reach emitted as a claim about the world. The act withholds a falsifier by genre; the diagnostic address is offered as a reproducible test (lines 121-133)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Diagnostic basis is operator attestation without preserved transcript, recorded as such (lines 121, 133)."
+  },
+  {
+   "deposit": 1632,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06C6-text.md",
+   "lines_total": 246,
+   "read_ranges": [
+    [
+     1,
+     246
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "registered forecast with resolution criteria, conditional valuation and trial design",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "1. **AI-referred dollar share, end of 2026.** Requires AI-referred session share **and** relative average order value, or directly reported revenue share, for a period ending Q4 2026. Conversion differential alone will not settle it. Check 2027-03-31. Claim: 3 to 8 percent at v = 1, restated if v is published.",
+     "lines": [
+      189,
+      189
+     ],
+     "falsifier_quote": "If AI-referred dollar share at end of 2026 is below 1 percent, the retail channel is further out than this assumes. It would not establish a ten-year delay, and it would say nothing about mediation in fields these instruments do not observe.",
+     "falsifier_lines": [
+      209,
+      209
+     ],
+     "window": "Check 2027-03-31",
+     "points_to": "",
+     "also_at": [
+      [
+       97,
+       97
+      ]
+     ],
+     "note": "AI-referred dollar share of US retail e-commerce, end 2026."
+    },
+    {
+     "shape": "A",
+     "quote": "2. **Agent-executed share, 2030.** Census e-commerce totals for 2030 against any published measurement of agent-executed transaction value **with a stated definition**. Check 2031-06-30. Claim: 5 to 15 percent. If no such figure with a stated definition exists, the item resolves UNRESOLVED — the outcome this document most expects.",
+     "lines": [
+      191,
+      191
+     ],
+     "falsifier_quote": "If McKinsey's trajectory proves closer than Bain's, the deployment-constraint reading is wrong and mediation arrives faster than section 4 allows.",
+     "falsifier_lines": [
+      211,
+      211
+     ],
+     "window": "Check 2031-06-30",
+     "points_to": "",
+     "also_at": [
+      [
+       99,
+       99
+      ]
+     ],
+     "note": "Agent-executed share 2030; also expects UNRESOLVED as most likely outcome."
+    },
+    {
+     "shape": "A",
+     "quote": "3. **Forecast scope.** Claim: McKinsey does not publish a scope definition for its orchestrated-revenue figure permitting comparison with Bain's, before 2028-12-31.",
+     "lines": [
+      193,
+      193
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "before 2028-12-31",
+     "points_to": "",
+     "also_at": [
+      [
+       73,
+       83
+      ]
+     ],
+     "note": "McKinsey scope-definition non-publication."
+    },
+    {
+     "shape": "A",
+     "quote": "4. **Forecast revision.** Claim: at least one of the two headline figures is revised by more than 40 percent or withdrawn before 2029-12-31.",
+     "lines": [
+      195,
+      195
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "before 2029-12-31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revision or withdrawal of a headline 2030 figure."
+    },
+    {
+     "shape": "A",
+     "quote": "5. **Professional-services citation rate.** Claim: rises above 10 percent by 2027-12-31 (Similarweb category series). This resolves a citation-rate prediction and nothing else. It does not establish presence or absence of a market: citation is not the whole channel, and a small number of consequential encounters can carry value.",
+     "lines": [
+      197,
+      197
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "by 2027-12-31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Professional-services citation rate."
+    },
+    {
+     "shape": "A",
+     "quote": "6. **Machine-readability spread.** Claim: Adobe's best-to-worst spread stays above 14 points through 2027-12-31.",
+     "lines": [
+      199,
+      199
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "through 2027-12-31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Adobe machine-readability spread."
+    },
+    {
+     "shape": "A",
+     "quote": "7. **Accuracy reporting.** Claim: no vendor or academic benchmark publishes entity-resolution accuracy by field, as distinct from presence, mention or citation rate, before 2027-12-31.",
+     "lines": [
+      201,
+      201
+     ],
+     "falsifier_quote": "If a vendor publishes accuracy-by-field with a stated rubric and an open sample, section 8's burden claim weakens immediately and should be withdrawn to the extent that publication covers.",
+     "falsifier_lines": [
+      213,
+      213
+     ],
+     "window": "before 2027-12-31",
+     "points_to": "",
+     "also_at": [
+      [
+       125,
+       125
+      ]
+     ],
+     "note": "No published entity-resolution accuracy by field."
+    },
+    {
+     "shape": "A",
+     "quote": "8. **Comparability.** Claim: at a re-audit on 2027-09-10, no three of the nine platforms publish mutually reconcilable denominators.",
+     "lines": [
+      203,
+      203
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "at a re-audit on 2027-09-10",
+     "points_to": "",
+     "also_at": [],
+     "note": "Comparability of nine platforms' denominators."
+    },
+    {
+     "shape": "F",
+     "quote": "Design, stated so it can be criticised before it runs: entities matched on field and size; randomised to inscription against conventional structured data, **not against nothing**, because a buyer's real choice is against the alternative; fixed query sets issued before treatment across at least three surfaces, since only 11 percent of domains are cited on two; outcomes scored for **accuracy** on the declared rubric rather than presence; commercial events tracked to something the firm can see; failures recorded and published with successes.\n\nThat design is also what would put a number on p, which is the term nobody has.",
+     "lines": [
+      157,
+      159
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       125,
+       125
+      ]
+     ],
+     "note": "Randomised trial design (inscription vs conventional structured data), specified, not run; also the matched-field-sample run of the archive instruments."
+    },
+    {
+     "shape": "F",
+     "quote": "That count comes from matching address strings and needs a read entity by entity before it carries argumentative weight. The remaining 195 are unadjudicated.",
+     "lines": [
+      181,
+      181
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Entity-by-entity read of the 68 address matches owed."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
