@@ -18,7 +18,7 @@
   "D": 154,
   "H": 593
  },
- "finds_verified": 2292,
+ "finds_verified": 2325,
  "finds_total": 2325,
  "deposits": [
   {
@@ -30881,7 +30881,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in system context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:15:16Z",
-      "finished_at": "X",
+      "finished_at": "2026-10-15T20:18:16Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -30918,10 +30918,13 @@
      },
      "none_found": false,
      "incidental": "Recovered blog-canonical bytes (html2text). Many bulleted lists and tables were lost in conversion: headings followed by nothing at e.g. 78-80 (five deficits), 90 (thematic anchors), 144-148 (dating arguments), 192 (Falsification Conditions heading empty), 198 (papyrus list), 274-280 (TANG coverage), 296, 342, 358, 396, 408-410, 504-510 (Phase 1-4 contents with windows \"within 3/6/12 months\"), 541-554 (query battery), 563, 741-743 (three nested theses), 754, 769, 786, 825, 841, 847, 878. Deposit count inconsistent internally (845+ at 69, 780+ at 474/981). Read display showed a trailing empty line 1047 beyond lines_total.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 1046,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -30943,7 +30946,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in system context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:15:16Z",
-      "finished_at": "X",
+      "finished_at": "2026-10-15T20:18:16Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -30981,10 +30984,13 @@
      },
      "none_found": false,
      "incidental": "Section headings are fused onto the preceding line (\"seam_density=5# PROLOGUE\" at 5; \"∮ = 1# II.\" at 175, 403, 613, 891, 1227; \"without him.# I.\" at 39; \"began.# CODA\" at 1507 etc.) - concatenation seams, not damage to prose. Dagger (†) corruption notes at 217 and 939 are authored, not damage.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 1541,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
