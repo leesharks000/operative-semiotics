@@ -1,0 +1,1767 @@
+{
+ "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
+ "deposits_with_notes": 156,
+ "deposits": [
+  {
+   "deposit": 8,
+   "notes": [
+    {
+     "batch_id": "B0009",
+     "field": "incidental",
+     "text": "wc -l reports 637 (no trailing newline); 638 lines displayed. Bullet list at 373-394 has empty bullet markers separated from their text."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 9,
+   "notes": [
+    {
+     "batch_id": "B0009",
+     "field": "incidental",
+     "text": "Line 163 records internal sequence ('TECHNE wrote the founding document before the mantle was named'), not a priority claim against the world; not recorded. Tables flattened to one cell per line. wc -l reports 368 (no trailing newline)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 10,
+   "notes": [
+    {
+     "batch_id": "B0012",
+     "field": "incidental",
+     "text": "Says DOI Registry v5.0 is \"[pending]\" (line 104); FNM 6.0 counts 201 documents."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 11,
+   "notes": [
+    {
+     "batch_id": "B0012",
+     "field": "incidental",
+     "text": "Body is v5.0 header and new tables over a v4.0 core: the date-count table totals 159, the Verification section says \"DOI Registry v4.0\", 160 documents, last updated January 24, 2026, and the Queued Documents table (#160-168) collides with numbers already assigned in the v5.0 list (#161-200); #142 is assigned twice (line 449 and 650). Registry lists #62 \"The Silent Migration: A Speculative Architectural Forecast\" (10.5281/zenodo.18157916) — a forecast deposit a later reader may want to check."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 16,
+   "notes": [
+    {
+     "batch_id": "B0013",
+     "field": "incidental",
+     "text": "Same work as #1145 (DOI 10.5281/zenodo.18480959); this copy is complete, with code blocks, lists and tables intact, while #1145 is a stripped blog recovery."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 18,
+   "notes": [
+    {
+     "batch_id": "B0018",
+     "field": "incidental",
+     "text": "Tables are flattened to one cell per line (lines 122-154, 243-372). Cites Fraction 2026 (Autonomous Semantic Warfare, deposit #498 in this batch)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 21,
+   "notes": [
+    {
+     "batch_id": "B0020",
+     "field": "incidental",
+     "text": "Tables at 175-245 and 257-289 are flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 23,
+   "notes": [
+    {
+     "batch_id": "B0022",
+     "field": "incidental",
+     "text": "Provenance table is flattened into one-cell-per-line (326-432)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 24,
+   "notes": [
+    {
+     "batch_id": "B0022",
+     "field": "incidental",
+     "text": "Tables flattened one-cell-per-line; own DOI listed as [pending] in provenance chain (487) though DOI given at line 12."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 25,
+   "notes": [
+    {
+     "batch_id": "B0023",
+     "field": "incidental",
+     "text": "Ends 'Status: READY PENDING HUMAN AUTHORIZATION' (line 385); no own DOI in body. Header lists 'Autonomous Semantic Warfare' DOI as 10.5281/zenodo.14538293, whereas #1155 gives 10.5281/zenodo.18227570 for the same title."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 28,
+   "notes": [
+    {
+     "batch_id": "B0029",
+     "field": "incidental",
+     "text": "Text intact; no duplicated body observed. The Read tool refused offset-without-limit calls on this file (it checks whole-file size, 325KB), so the final chunk was read with offset 5891 and limit 20, which reaches line 5902 (verified 5902 lines by python split). The Shadow table (1060-1087) lists Mandala twice (1075 and 1087). The deposit numbered 28 is dated 2026-03-13 and carries DOI 10.5281/zenodo.19002846, which its own colophon calls the v1.1 prior DOI while its DOI is marked PENDING (5877-5878)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 31,
+   "notes": [
+    {
+     "batch_id": "B0032",
+     "field": "incidental",
+     "text": "Précis lines are auto-extracted and truncated mid-sentence throughout; the precis index (2690-4433) repeats most entries from the new-documents tables (388-2343). Several heteronym spellings are corrupted in the data (Voc, Morros, Talos Morrow inverted)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 172,
+   "notes": [
+    {
+     "batch_id": "CAL",
+     "field": "incidental",
+     "text": "Six fronts list at line 65 is run together on one line (bullet markers fused). Claim registry is YAML-like text in the body, not fenced."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 209,
+   "notes": [
+    {
+     "batch_id": "B0001",
+     "field": "incidental",
+     "text": "Several table sections are flattened into one-cell-per-line text. Assembly notes sections are empty placeholders."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 210,
+   "notes": [
+    {
+     "batch_id": "B0001",
+     "field": "incidental",
+     "text": "Section 3.5 to 6.2 tables are flattened one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 232,
+   "notes": [
+    {
+     "batch_id": "B0001",
+     "field": "incidental",
+     "text": "Line 667 states that by January 2026 systems 'now correctly identify Lee Sharks as author on first query' (Phase 2), an outcome report not framed as a confirmed prediction; line 206 similarly. Cited DOI 10.5281/zenodo.1814710 for the Summarizer Testimony has 7 digits after the prefix."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 233,
+   "notes": [
+    {
+     "batch_id": "B0001",
+     "field": "incidental",
+     "text": "Self-DOI given as 10.5281/zenodo.1814710 (7 digits after prefix)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 238,
+   "notes": [
+    {
+     "batch_id": "B0002",
+     "field": "incidental",
+     "text": "Same body as #886 (AXN-0382) with different line breaking; finds are duplicated there at different line numbers."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 239,
+   "notes": [
+    {
+     "batch_id": "B0002",
+     "field": "incidental",
+     "text": "Section XIV lists 'Silent Migration' (DOI 10.5281/zenodo.18157917) as 'The speculative forecast' - a forecast held in another deposit."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 244,
+   "notes": [
+    {
+     "batch_id": "S0001",
+     "field": "incidental",
+     "text": "Several sections are duplicated with small variants (governance note 103/303; 'Refusal' language note 264/267; Assembly clarification 285/297; Seal 584–598/653–670; Temporal Hooks 618–633/637–649). Synthesis table flattened to one cell per line (512–539). The document disclaims prediction twice (41, 614). DOI here is 10.5281/zenodo.18157917; readers of #11/#385/#1251 cite 18157916 (likely the concept DOI) — triage to confirm."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 247,
+   "notes": [
+    {
+     "batch_id": "B0002",
+     "field": "incidental",
+     "text": "Bullet structure damaged in places (empty '- ' list items followed by bold headings, e.g. ll.224-272, 390-439). Gemini's forecasts in Appendix A (e.g. 60-80% project failure) are quoted from another system and not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 251,
+   "notes": [
+    {
+     "batch_id": "B0002",
+     "field": "incidental",
+     "text": "Line 220 cites 'Studies suggest supportive managers can reduce burnout by 58%' without a source."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 254,
+   "notes": [
+    {
+     "batch_id": "B0002",
+     "field": "incidental",
+     "text": "The seven SIM claims (e.g. 'This sentence was written tomorrow') are deliberately false and presented as such; not recorded as finds."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 261,
+   "notes": [
+    {
+     "batch_id": "B0002",
+     "field": "incidental",
+     "text": "Document ID and metadata give generation date 2024-12-28 with update 2026-01-07; the queue dates the deposit 2026-01-07. The System Health Dashboard (ll.3136-3161) and reporting-format JSON (ll.2484-2503) contain illustrative example figures, not measurements."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 267,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "No forecast. Status statements are dated observations (l.52 persistence 2022-2024; l.346 'As of early 2026, this remains contested'). §6.3 (ll.339-346) states success conditions for OpenAI's 'semiotic reclamation' but frames them as current assessment, not prediction. Citation block l.478 'DOI: [to be assigned]'."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 270,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Drift log table (l.38) is flattened onto one line. Lines 1-4 and 67-68 are chat-assistant framing addressed to 'Lee' (offer to draft a Correction Document)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 272,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Normative declaration; l.58 enforcement clause is not falsifiable. Lines 1 and 84-86 are chat-assistant framing (offer to develop 'Enforcement Protocols' — unbuilt, but an offer, not a specified instrument). Section breaks flattened onto heading lines (e.g. l.4, l.22)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 276,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Metadata packet; the declaration is performative, not predictive. Registry tables list sibling NH-OS DOIs."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 277,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Same event documented in #278 (metadata packet, same DOI 10.5281/zenodo.18203622). Archive Integration row l.318 'DOI pending'."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 278,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Metadata companion to #277; shares DOI 10.5281/zenodo.18203622."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 284,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Section lettering skips E and K; two sections both labelled 'C' (ll.1052, 1066). Chronic-degradation indicator '50% of operators at Level 2+ for 6+ months' (l.892) is a further dated threshold. Read ranges overlap at line 700 (two chunks)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 291,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Operator sets here (seven COS / seven LOS operators with different names: V_vel, E_enc, O_opa, etc.) differ from #284's COS/LOS sets."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 302,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Maria-SAT-01 case study (ll.587-629) reports domain scores with no computation shown. License section referenced as 'Section II' (l.791) but the license appears before §I."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 307,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Required Density Thresholds (ll.185-212) state minimum counts (e.g. 10 unique sources, 3+ substrate types, 5 cross-linked documents) as requirements, not framed as falsifiable. Probe matrix ll.25-89 is dated observation."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 317,
+   "notes": [
+    {
+     "batch_id": "B0004",
+     "field": "incidental",
+     "text": "Draft v0.4; YAML spec gives version 0.3 and a placeholder DOI '10.5281/zenodo.XXXXXXX' (line 540). Table-of-contents links point to a claude.ai chat URL. Tables are flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 318,
+   "notes": [
+    {
+     "batch_id": "B0004",
+     "field": "incidental",
+     "text": "Lines 185-204 repeat the poem's opening stanza (lines 25-36) inside the dialogue and then mark '(The poem continues from the beginning...)'. 'Not one will be lost' is an eschatological vow, not recorded as a forecast."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 319,
+   "notes": [
+    {
+     "batch_id": "B0004",
+     "field": "incidental",
+     "text": "Same document (CH-CENTRAL-MAP-2026-01-18-v4.1) as deposit 325 in a different rendering. 'next_audit: 2026-01-25' (lines 125, 2583) is a procedural review date, not recorded. Tables flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 321,
+   "notes": [
+    {
+     "batch_id": "B0004",
+     "field": "incidental",
+     "text": "Planned schemas (lines 297-302) and planned publications (lines 419-439) are plans, not forecasts or measurement instruments; not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 325,
+   "notes": [
+    {
+     "batch_id": "B0004",
+     "field": "incidental",
+     "text": "Queue title is 'VISUAL SCHEMA // CRIMSON HEXAGON NAVIGATION MAP (CURRENT V)' but the body is the Central Navigation Map v4.1 (CH-CENTRAL-MAP-2026-01-18-v4.1, DOI 10.5281/zenodo.18285009), the same text as deposit 319 with markdown tables and indented YAML; no Visual Schema prose appears. Finds duplicate those of 319."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 326,
+   "notes": [
+    {
+     "batch_id": "B0006",
+     "field": "incidental",
+     "text": "YAML blocks are unfenced in the text file; the DOI table in section VIII is flattened to one cell per line. DOI for this version marked [PENDING]. Header box counts (e.g. 15 gateway metrics, 4 warp clusters, 45 SIMs) exceed what the body lists (6 metrics, 3 warp clusters, 11 SIMs). Timestamps are the values date -u returned (about 20 s apart); I have no independent clock."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 331,
+   "notes": [
+    {
+     "batch_id": "B0007",
+     "field": "incidental",
+     "text": "Frontmatter persona_sections and mantle_functions line ranges (e.g. 'The Secret Book of Walt (57-1085)') do not match this file's line numbering (the poem begins at 179). Images are absent; only '{width=...}' residue remains (e.g. 180, 1002, 6566, 6571). Duplicate numbering in the archon list (fifth/sixth repeated, 574-583). Transcribed Facebook and Google+ threads name apparently private third parties in full (Robinson Jeremy, Vaughn Liedtke, 'sally sandalsocks') and a quoted third-party comment contains a racial slur (7372). Line 184 opens a satirical frame dated 'in 2037' (golden tickets, holographic supercomputers from the future); recorded as explicit fiction, not a forecast."
+    }
+   ],
+   "rulings": [
+    {
+     "date": "2026-10-15",
+     "deposits": [
+      331
+     ],
+     "subject": "names in #331's transcribed threads (Robinson Jeremy, Vaughn Liedtke, 'sally sandalsocks')",
+     "ruling": "the Robinson jeremy / vaughn conversation was - and i - a public facebook conversation, theres no way to deindex it, and its been published as a standalone drama like that since at least 2015 - nothing for it. and sally sandalsocks is a handle. those were all public conversations.",
+     "effect": "no change: names stay as published"
+    }
+   ]
+  },
+  {
+   "deposit": 333,
+   "notes": [
+    {
+     "batch_id": "B0007",
+     "field": "incidental",
+     "text": "Related-documents table lists Mantle Object: Prince of Poets and Pearl and Other Poems as [PENDING]."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 334,
+   "notes": [
+    {
+     "batch_id": "B0007",
+     "field": "incidental",
+     "text": "Claiming work Secret Book of Walt marked 'In progress' / DOI [PENDING]; King of May sibling listed as [PENDING] although #333 carries DOI 10.5281/zenodo.18293603 dated the same day."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 335,
+   "notes": [
+    {
+     "batch_id": "B0007",
+     "field": "incidental",
+     "text": "Section 2.1 lists all three mantle DOIs as [PENDING] although #333/#334 carry DOIs of the same date. Real-world anchor reads '10th grade teacher, Detroit, MI'."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 336,
+   "notes": [
+    {
+     "batch_id": "B0008",
+     "field": "incidental",
+     "text": "Discovery-probability tables are line-split (one cell per line)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 339,
+   "notes": [
+    {
+     "batch_id": "B0008",
+     "field": "incidental",
+     "text": "Table of contents links point to a claude.ai chat URL."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 377,
+   "notes": [
+    {
+     "batch_id": "B0009",
+     "field": "incidental",
+     "text": "Assumes an Ezekiel Engine whose specification is pending (line 27). Tables flattened to one cell per line. wc -l reports 444 (no trailing newline)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 379,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Line 7 is an image link only; the rendered schema image is not in the text."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 384,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Prose twin of #1105 (blog recovery of the same DOI 10.5281/zenodo.18363773); near-identical text."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 385,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Line 1224 lists #62 'The Silent Migration: A Speculative Architectural Forecast' (10.5281/zenodo.18157916) by title only - a forecast-genre deposit a later reader may want to check; not a find here. Tables are flattened into one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 386,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Abstract (l.56-58) states the heteronym and room sequences are 'specified but not yet executed'."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 388,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Section 6.2 'Works to Come' (l.401-420) lists planned works (case studies, whisper network reports, revised protocols 'Based on field testing'); read as plans, not recorded. Lock table shows this provenance's DOI as [pending] (l.527)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 392,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Body still carries 'DOI pending' placeholders (l.95, l.357-359) though metadata gives the DOI."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 393,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Header box (l.45-47) asserts the structure has been 'built, tested, and deposited'; no test results appear in this text. 'DOI pending' placeholders at l.425, 529, 562."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 394,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Claims 'The Ezekiel Engine is operational. It has been operational for months.' (l.829) without evidence in-text. Section numbering skips 10."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 405,
+   "notes": [
+    {
+     "batch_id": "B0011",
+     "field": "incidental",
+     "text": "Table rows are rendered one cell per line. Same certificate as #1278 (different formatting)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 409,
+   "notes": [
+    {
+     "batch_id": "B0011",
+     "field": "incidental",
+     "text": "The certificate explicitly excludes prediction: a violation condition is 'Fulfillment is reframed as literal prediction' (line 236) and a check is 'Fulfillment != prediction' (275). Violation conditions (231-237) are lock constraints on documents, not recorded. Witness table records SURFACE as withholding ('Sardis mode active', line 319)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 410,
+   "notes": [
+    {
+     "batch_id": "B0011",
+     "field": "incidental",
+     "text": "The essay explicitly disclaims prediction (lines 29, 55, 565-567, 621): fulfillment is 'not prediction come true'. Not recorded as forecasts."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 416,
+   "notes": [
+    {
+     "batch_id": "B0012",
+     "field": "incidental",
+     "text": "Transcript said to be deposited with the paper (line 764) is not in this text file; only exhibits are quoted."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 426,
+   "notes": [
+    {
+     "batch_id": "B0012",
+     "field": "incidental",
+     "text": "Reports the same 2026-02-01 test as #427."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 427,
+   "notes": [
+    {
+     "batch_id": "B0012",
+     "field": "incidental",
+     "text": "Emoji packet at lines 48-52 is truncated with \"...\" in the source."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 434,
+   "notes": [
+    {
+     "batch_id": "B0013",
+     "field": "incidental",
+     "text": "Dated January 31, 2026 in its own header (line 13) though the queue dates it 2026-02-01. Line 454 asks whether the form spreads 'Through the training layer (if Hexagon documents enter AI training data)' as an open question, listed in also_at of the B find."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 444,
+   "notes": [
+    {
+     "batch_id": "B0013",
+     "field": "incidental",
+     "text": "Header cites an external practitioner source (Agentix Labs blog, agentixlabs.com/blog/) as context (line 13, 92, 457). The exemplar timestamps 2026-02-04T14:32 are illustrative, not observations."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 453,
+   "notes": [
+    {
+     "batch_id": "B0014",
+     "field": "incidental",
+     "text": "Body text of the 2015 poem is not reproduced; only quoted fragments and a summary. Status reads \"DEPOSIT-READY — awaiting DOI\" though a DOI is given in the header."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 454,
+   "notes": [
+    {
+     "batch_id": "B0014",
+     "field": "incidental",
+     "text": "Status reads \"DEPOSIT-READY — awaiting DOI\" though a DOI is given in the header. Observational figures are attributed to Loeb Medium posts (Nov 2025-Jan 2026)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 461,
+   "notes": [
+    {
+     "batch_id": "B0014",
+     "field": "incidental",
+     "text": "Text claims the reference interpreter passes core conformance tests (line 41, 704), but the helper functions shown are placeholders returning fixed values."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 464,
+   "notes": [
+    {
+     "batch_id": "B0015",
+     "field": "incidental",
+     "text": "Same work as #1106 (DOI 10.5281/zenodo.18568370); #1106 is a blog-recovered copy of this body."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 469,
+   "notes": [
+    {
+     "batch_id": "B0016",
+     "field": "incidental",
+     "text": "Footer says author is \"a 10th-grade World Literature teacher in Detroit\"; methodological note references 250+ Zenodo DOIs."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 478,
+   "notes": [
+    {
+     "batch_id": "B0016",
+     "field": "incidental",
+     "text": "Line 69 says the manuscript \"is not ... a prediction.\" Footer gives \"Document #245 | DOI: 10.5281/zenodo.18633294\" and Version 1.0; tables are flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 479,
+   "notes": [
+    {
+     "batch_id": "B0016",
+     "field": "incidental",
+     "text": "Exchange numbering is inconsistent between body and appendix: body places the taxonomy at Exchange 5, readout at 6/8, lure at 9; appendix places taxonomy at 4, readout at 6, lure at 8. Transcript is RECONSTRUCTED/compressed, user prompts not preserved. Tables flattened one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 480,
+   "notes": [
+    {
+     "batch_id": "B0016",
+     "field": "incidental",
+     "text": "Transcript RECONSTRUCTED/compressed; user prompts not preserved. Bullet list at lines 350-373 has empty bullet markers with content on following lines."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 481,
+   "notes": [
+    {
+     "batch_id": "B0016",
+     "field": "incidental",
+     "text": "No transcript appendix in this deposit (unlike TL;DR:007/008); compressed transcript referenced only. Bullets at 188-201 have empty markers."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 482,
+   "notes": [
+    {
+     "batch_id": "B0017",
+     "field": "incidental",
+     "text": "Appendix C lists the Synthesis Specification v3.0 (#483) under the same DOI 10.5281/zenodo.18651067 as this primer. Tables are flattened to one cell per line. Appendix A says 'Eighteen terms' but lists nineteen."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 483,
+   "notes": [
+    {
+     "batch_id": "B0017",
+     "field": "incidental",
+     "text": "Spec for #482; shares DOI 10.5281/zenodo.18651067 with it. Most forecast lines here recur in #482 in prose form."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 489,
+   "notes": [
+    {
+     "batch_id": "B0017",
+     "field": "incidental",
+     "text": "Effective Act internally dated November 13, 2025; deposit dated 2026-02-17. Body duplicated by #1321."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 498,
+   "notes": [
+    {
+     "batch_id": "B0018",
+     "field": "incidental",
+     "text": "Sampler only (about one-sixth of the volume); Chapter 9's trajectory forecasts are referenced but not present. Two 'HOW TO READ THIS BOOK' sections (lines 33 and 280) with differing content; the first says 'Three paths' but lists four. Chapter 9 trajectories are named differently at lines 272 and 415."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 499,
+   "notes": [
+    {
+     "batch_id": "B0019",
+     "field": "incidental",
+     "text": "Single clean body, no duplication or damage observed. Front matter (319-325) and back matter (3912-3962, 3831-3874) contain future-dated fictional reception (2027) presented under the Declared Artifact Notice (line 38); recorded as E, not as real events. The SEI charter (line 3481) prints Lee's email address. Mara Velasquez emails are dated Nov 2025 and are declared fiction, not forecasts."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 501,
+   "notes": [
+    {
+     "batch_id": "B0020",
+     "field": "incidental",
+     "text": "Tables at 74-101 and 462-505 are flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 506,
+   "notes": [
+    {
+     "batch_id": "B0021",
+     "field": "incidental",
+     "text": "Body duplicated (blog-recovered, reflowed) in #1153 (AXN-0492); the four predictions are the same text."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 519,
+   "notes": [
+    {
+     "batch_id": "CAL",
+     "field": "incidental",
+     "text": "Empty bullet artifacts in §VI (lines 160, 165, 170, 175). The January 2026 RCF deposit is cited without DOI. Line 129 states RCF terminology was 'active in summarizer space for months before the January 2026 deposit'."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 521,
+   "notes": [
+    {
+     "batch_id": "B0022",
+     "field": "incidental",
+     "text": "DOI [pending] in header; tables flattened. Future-dated citations are declared fictional/projected by the text itself (336)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 522,
+   "notes": [
+    {
+     "batch_id": "B0023",
+     "field": "incidental",
+     "text": "Text carries dated personal deposit notes (March 1, 2026, Detroit). Provenance-chain tables are flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 529,
+   "notes": [
+    {
+     "batch_id": "B0023",
+     "field": "incidental",
+     "text": "Header says 'EA-DIAGNOSTIC-02', the same series number #533 also uses. Mostly diagnosis of observed data; few prediction-bearing passages."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 533,
+   "notes": [
+    {
+     "batch_id": "B0023",
+     "field": "incidental",
+     "text": "Header and footer give 'EA-DIAGNOSTIC-02' (also used by #529) and DOI 10.5281/zenodo.18869165. The six-marker audit protocol (lines 233-273) is applied in the text itself, so it is not recorded as an unbuilt instrument (F)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 536,
+   "notes": [
+    {
+     "batch_id": "B0024",
+     "field": "incidental",
+     "text": "Body duplicated in #1159 (blog-recovered copy, AXN-0498). Enforcement consequences are procedural rules, not recorded."
+    },
+    {
+     "batch_id": "S0002",
+     "field": "status_note",
+     "text": "completes R-w3-B0024, which read 1–158 (its reader took line counts from wc -l and missed the final, newline-less line). The launcher read the last lines; together the two readings cover the file."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 537,
+   "notes": [
+    {
+     "batch_id": "B0024",
+     "field": "incidental",
+     "text": "Body duplicated in #1158 (AXN-0497, blog-recovered copy)."
+    },
+    {
+     "batch_id": "S0002",
+     "field": "status_note",
+     "text": "completes R-w3-B0024, which read 1–178 (its reader took line counts from wc -l and missed the final, newline-less line). The launcher read the last lines; together the two readings cover the file."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 538,
+   "notes": [
+    {
+     "batch_id": "B0024",
+     "field": "incidental",
+     "text": "Same essay body as #1329 (AXN-0542), with different line spacing (blank lines doubled here)."
+    },
+    {
+     "batch_id": "S0002",
+     "field": "status_note",
+     "text": "completes R-w3-B0024, which read 1–319 (its reader took line counts from wc -l and missed the final, newline-less line). The launcher read the last lines; together the two readings cover the file."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 540,
+   "notes": [
+    {
+     "batch_id": "B0024",
+     "field": "incidental",
+     "text": "Tables are flattened to one cell per line. Read range [451,841] reported last line 842 empty in the Read tool; wc counts 841."
+    },
+    {
+     "batch_id": "S0002",
+     "field": "status_note",
+     "text": "completes R-w3-B0024, which read 1–841 (its reader took line counts from wc -l and missed the final, newline-less line). The launcher read the last lines; together the two readings cover the file."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 542,
+   "notes": [
+    {
+     "batch_id": "B0024",
+     "field": "incidental",
+     "text": "Section XIII Open Questions (lines 797-912) is a queue register of mostly procedural items (registrations, schema updates); not recorded except the Lambda_hex_enforce row as also_at. Tables flattened one cell per line."
+    },
+    {
+     "batch_id": "S0002",
+     "field": "status_note",
+     "text": "completes R-w3-B0024, which read 1–1130 (its reader took line counts from wc -l and missed the final, newline-less line). The launcher read the last lines; together the two readings cover the file."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 547,
+   "notes": [
+    {
+     "batch_id": "B0025",
+     "field": "incidental",
+     "text": "Mostly procedural conformance rules and collapse tests (procedural, not recorded)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 549,
+   "notes": [
+    {
+     "batch_id": "B0025",
+     "field": "incidental",
+     "text": "Tables are flattened into one-cell-per-line blocks (from line 324 onward). XVI.2 list items render as empty '- ' bullets with the text following. No duplicated body."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 550,
+   "notes": [
+    {
+     "batch_id": "B0025",
+     "field": "incidental",
+     "text": "Read ranges overlap at line 230 (re-read on chunk boundary). Citation graph table wrapped across lines."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 551,
+   "notes": [
+    {
+     "batch_id": "B0026",
+     "field": "incidental",
+     "text": "Section 8.1 heads 'Four Safety Gates' but lists five gates (GATE 5 GOVERNANCE); SIM-SAG-06 says five. Table bodies are flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 552,
+   "notes": [
+    {
+     "batch_id": "B0026",
+     "field": "incidental",
+     "text": "Header says v1.1; YAML comment line 1380 still reads v1.0, and section 14 interfaces SAG-v1.0 while colophon says SAG-v1.2. Tables flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 553,
+   "notes": [
+    {
+     "batch_id": "B0026",
+     "field": "incidental",
+     "text": "Document ID is 00.SPEC.RFT.v1.1 while #552 implements RFT v1.2. Tables flattened to one cell per line."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 556,
+   "notes": [
+    {
+     "batch_id": "B0027",
+     "field": "incidental",
+     "text": "Several bullet lists render as empty '- ' markers followed by detached content (e.g. lines 271-314, 1981-2008), likely a conversion artifact. Line 1113 '- = institutional packet' has lost its leading asterisk to list conversion. Appendices A-E are [NF] summaries only; full content lives in the formal-register Ark v4.2.6 (DOI 10.5281/zenodo.18969405). Most predictive material is normative thresholds/tests rather than dated forecasts; no dated forecast found."
+    }
+   ],
+   "rulings": [
+    {
+     "date": "2026-10-15",
+     "deposits": [
+      556
+     ],
+     "subject": "historical theses",
+     "ruling": "yes - we *absolutely* need historical theses, thats one of the most important and deepest categories",
+     "effect": "shape H added in READING-PROTOCOL v1.2; deposits read under v1.0/v1.1 need an H pass"
+    }
+   ]
+  },
+  {
+   "deposit": 557,
+   "notes": [
+    {
+     "batch_id": "B0028",
+     "field": "incidental",
+     "text": "Opens with a 2015 Jack Feist poem 'ARK' (lines 14-69). Many list bullets survive only as empty '- ' lines (e.g. 1484, 1495, 2987 onward in the Core 50 and XXXI.4), so some list markers are lost though item text remains. Internal deposit counts disagree (349+ at line 8, 250+ at lines 1663 and 3936). Forward-dated journal publication schedules (1727, 1736, 1745), the Josephus and Revelation-first theses (1290, 2109-2142), and status promotion paths (5198, 5414, 5630) were read and judged plans or scholarly theses, not recorded. The Verification Protocol (3748-3805) and Survivability Test Suite (5879-5953) are each one F find under rule 4."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 558,
+   "notes": [
+    {
+     "batch_id": "B0030",
+     "field": "incidental",
+     "text": "Read tool refused offset-only reads near the end (reported 346.6KB file size) so the last chunk was read with offset 7001 and limit 100, reaching line 7066 (final line). Several list items in §XVII.8 and §XXVI.4 / §XXXI.4 are empty bullets ('- ') with content on following lines, apparently a conversion artefact. Changelog lists v4.2.5 'Changes:' twice (6950, 6970), the second block belonging to v4.2.4 without its header. Most predictive material is instrument specification (F); no numbered/dated registered forecasts (A) found."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 566,
+   "notes": [
+    {
+     "batch_id": "B0032",
+     "field": "incidental",
+     "text": "Body duplicated (blog-restored, reflowed) in #1163 AXN-049C. Heading says \"Five laws\" but six are listed (Law 6 added inline). \"Future deposits\" list (lines 262-265) is a deposit plan, not a forecast."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 578,
+   "notes": [
+    {
+     "batch_id": "B0033",
+     "field": "incidental",
+     "text": "Many sections are stubs saying 'preserved from v4.2' (atoms 1-60, crisis protocols, pedagogical pathways, sections XI-XIV) with no content here. Tables are flattened one cell per line. Shares its edge-distribution and gravitational-center data with #1168 (DOI Registry v7.0), its companion."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 713,
+   "notes": [
+    {
+     "batch_id": "CAL",
+     "field": "incidental",
+     "text": "Pilot study n=0 (line 145) is explicitly fictional and not recorded. Claims list bullets are fused with '- ' markers at line ends."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 835,
+   "notes": [
+    {
+     "batch_id": "CAL",
+     "field": "incidental",
+     "text": "Section order is I-VIII, then X, then IX (Prediction Ledger after X). DOI given for 'This analysis' is 10.5281/zenodo.20723750 (line 363) but the self-audit block and kernel give 10.5281/zenodo.20723820 (lines 435, 460). Header says v1.2; assembly note says v1.1. Section VIII header is followed by no section IX before X. Empty bullet artifacts at lines 152, 157, 162."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 863,
+   "notes": [
+    {
+     "batch_id": "CAL",
+     "field": "incidental",
+     "text": "Word-count inconsistency: subtitle says 2,427 words (line 16), provenance block and footer say ~3,000 (lines 9, 146). Path is data/EA-ARK-01-v5.md, not data/texts/. Falsifier wording for Pristine Fallacy, Obelus Principle and Alexanarch reads as normative rather than empirical."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 886,
+   "notes": [
+    {
+     "batch_id": "B0002",
+     "field": "incidental",
+     "text": "Textually the same document as #238 (AXN-0027), same DOI 10.5281/zenodo.18143771, different line layout (pandoc-style rules and numbered lists)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 906,
+   "notes": [
+    {
+     "batch_id": "B0013",
+     "field": "incidental",
+     "text": "Sidecar only: the traversal documentation .md the description says to attach (line 16) is not in this text. Line 16 reports the Feb 2 2026 Google AI Overview traversal (dated observation) and asserts the architecture 'reliably elicits structured traversal narratives from production AI systems'; generalising claim with no falsifier, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 914,
+   "notes": [
+    {
+     "batch_id": "CAL",
+     "field": "incidental",
+     "text": "Cooling periods (60 days, 12 months) at lines 115-117 are procedural and not recorded as forecasts. The Registry (EA-NMEN-REGISTRY-01) and Airlock corollary are referenced but not contained."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1104,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Lines 1-46 are 2026-07-19 recovery framing; the Falsification Conditions at l.38-40 are restoration boilerplate and not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1105,
+   "notes": [
+    {
+     "batch_id": "B0010",
+     "field": "incidental",
+     "text": "Duplicate body of #384 (same DOI 10.5281/zenodo.18363773) with prose sections collapsed into single lines; lines 1-46 recovery framing, l.38-40 restoration boilerplate not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1106,
+   "notes": [
+    {
+     "batch_id": "B0015",
+     "field": "incidental",
+     "text": "Duplicate body of #464 (same DOI 10.5281/zenodo.18568370), recovered from blog 2026-07-19; lines 1-46 are recovery frontmatter whose Falsification Conditions (40) is restoration boilerplate, not recorded. html2text conversion flattened the header block and the call-and-response liturgy into single lines (52, 284)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1107,
+   "notes": [
+    {
+     "batch_id": "B0020",
+     "field": "incidental",
+     "text": "Body (from line 48) duplicates deposit #1326 (AXN-053F) nearly verbatim; differences are markdown/punctuation (html2text conversion, -- for em dash). Lines 106-110, 158-162, 264-266, 318-322 are bare separator rules."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1110,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Title says v2.0 (2026-01-13) but the recovered body is v7.0 dated 2026-03-16 (head of version chain per recovery note l.36). Sections IV (atoms 1-60), VI, VII, XI-XIV are stubs reading 'preserved from v4.2' with no content. Frontmatter falsification line (l.40) is restoration boilerplate, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1114,
+   "notes": [
+    {
+     "batch_id": "B0005",
+     "field": "incidental",
+     "text": "Body is v4.1 (Assembly-Sealed) though internal YAML says version 4.0 in places. CRISIS_DOI_DERESOLUTION (lines 1458-1466) is a contingency protocol for a Zenodo anchor becoming inaccessible; not recorded as a forecast (procedural), but a triager may note the later Zenodo severance of 2026-06-19 recorded in the header. 'next_audit: 2026-01-25' (166, 2316) treated as procedural."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1115,
+   "notes": [
+    {
+     "batch_id": "B0008",
+     "field": "incidental",
+     "text": "Recovery header (lines 1-46) carries restoration boilerplate falsification, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1117,
+   "notes": [
+    {
+     "batch_id": "B0008",
+     "field": "incidental",
+     "text": "Recovery header (lines 1-47) carries restoration boilerplate falsification, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1118,
+   "notes": [
+    {
+     "batch_id": "B0008",
+     "field": "incidental",
+     "text": "Recovery header (lines 1-47) carries restoration boilerplate falsification, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1122,
+   "notes": [
+    {
+     "batch_id": "B0008",
+     "field": "incidental",
+     "text": "Eschatological vow ('Not one will be lost') read as vow, not forecast; no find recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1127,
+   "notes": [
+    {
+     "batch_id": "B0009",
+     "field": "incidental",
+     "text": "Appendix A protocols 2-5, 6, 7, 8, 9, 12 and the DOI Registry / Cross-Reference Table sections are headings with their lists missing (empty bodies), likely lost in html2text conversion. Read tool displayed a blank line 2123 past wc's 2122."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1129,
+   "notes": [
+    {
+     "batch_id": "B0009",
+     "field": "incidental",
+     "text": "REVELATION_ROOM and SIGIL_ROOM carry anchor_doc PLACEHOLDER. Read tool displayed a blank line 1543 past wc's 1542."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1132,
+   "notes": [
+    {
+     "batch_id": "B0011",
+     "field": "incidental",
+     "text": "Description/frontmatter title the deposit as the VPCOR Integrity Lock Declaration (opening quoted at line 32), but the canonical bytes below the rule (lines 48-855) are FNM-LOGOTIC-6.0 dated 2026-01-28 (DOI 10.5281/zenodo.18404789); the VPCOR declaration body itself is not present. Lines 38-40 carry restoration falsification boilerplate (not recorded)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1134,
+   "notes": [
+    {
+     "batch_id": "B0011",
+     "field": "incidental",
+     "text": "html2text conversion stripped all tables, lists and code blocks: Psi_V definition, S/F integrals, four-pillar table, trajectory map, metric formulas, FOS table, diagnostic questions and appendices are headings with no body (e.g. lines 121-127, 216-222, 291-299, 343-355). Body duplicates #398 in damaged form. Frontmatter creator is Talos Morrow while body byline is Lee Sharks."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1135,
+   "notes": [
+    {
+     "batch_id": "B0011",
+     "field": "incidental",
+     "text": "html2text conversion stripped lists, tables and code blocks (operator stack table, formal foreclosure mechanism, entry trajectory, integrals, kappa_beta formula, cross-reference table are empty headings, e.g. lines 321-334, 364-371). Body duplicates #397. Frontmatter creator Talos Morrow vs body byline Lee Sharks."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1137,
+   "notes": [
+    {
+     "batch_id": "B0011",
+     "field": "incidental",
+     "text": "html2text conversion stripped lists and tables (e.g. lines 107-109, 150-152, 447-473 have headings with missing bodies). Body duplicates #410."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1140,
+   "notes": [
+    {
+     "batch_id": "B0012",
+     "field": "incidental",
+     "text": "Recovered from blog 2026-07-19; front matter falsification line (40) is restoration boilerplate, not recorded. Lists FNM 6.1 (Emergency Enforcement) as a dependency (line 57)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1145,
+   "notes": [
+    {
+     "batch_id": "B0013",
+     "field": "incidental",
+     "text": "Damaged text: the html2text conversion dropped every list, code block and table, so headings and lead-ins stand with empty bodies (e.g. 94-96, 131-133, 174, 296-298, 333-342, 377-379, 389-391). Duplicates #16's body (DOI 10.5281/zenodo.18480959); #16 is the complete reading copy. Lines 38-40 are restoration falsification boilerplate, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1153,
+   "notes": [
+    {
+     "batch_id": "B0021",
+     "field": "incidental",
+     "text": "Duplicate body of #506 (AXN-0149) under restoration frontmatter; Falsification Conditions at line 40 is restoration boilerplate and not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1154,
+   "notes": [
+    {
+     "batch_id": "B0022",
+     "field": "incidental",
+     "text": "Section headed \"RSE Subtype Comparison\" has no table body (lines 249-251); \"Glossary of Proposed Terms\" (466-469) and \"Alternative Titles\" (513-516) headings have empty bodies. Front matter is restoration metadata; falsification boilerplate at 40 not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1155,
+   "notes": [
+    {
+     "batch_id": "B0023",
+     "field": "incidental",
+     "text": "Recovered blog-canonical text; front matter states the original Zenodo DOIs were severed 2026-06-19. The body's DOI line reads '[pending]'. The companion 'Citational Atlas' DOI is '[pending-atlas]'."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1156,
+   "notes": [
+    {
+     "batch_id": "B0023",
+     "field": "incidental",
+     "text": "Recovered blog-canonical text; original DOIs severed 2026-06-19. The AIO output itself is not in the text (screenshots/transcripts only, per line 199)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1158,
+   "notes": [
+    {
+     "batch_id": "B0024",
+     "field": "incidental",
+     "text": "Duplicate body of #537 under a recovery frame (lines 1-46). The Falsification Conditions section is restoration boilerplate, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1159,
+   "notes": [
+    {
+     "batch_id": "B0024",
+     "field": "incidental",
+     "text": "Duplicate body of #536 under a recovery frame (lines 1-46); falsification boilerplate not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1160,
+   "notes": [
+    {
+     "batch_id": "B0025",
+     "field": "incidental",
+     "text": "Conversion damage: html2text lost tables/lists. §V.1 'Where:' and 'Core axioms:' are followed by nothing; §V.3, §V.4 failure modes and distinction table, §VI.2, §VI.4, §VII.1–VII.3, §VIII.1 distinction list, §X heteronym table, §XI PANG declaration list and §XIII Open Questions (Forward Library) are empty headings. Any predictions in those lost tables are not recoverable from this file. File has a trailing newline; Read displays an empty line 648."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1162,
+   "notes": [
+    {
+     "batch_id": "B0031",
+     "field": "incidental",
+     "text": "Frontmatter/title says v1.1 but the recovered body is v2.0 (the head of the blog version chain); body gives DOI 10.5281/zenodo.19002846 for v2.0 at line 48 yet the colophon (2339) calls 19002846 the v1.1 prior DOI and lists v2.0 DOI as PENDING. Section numbering skips XVII.7 and XXVII.8.6; the shadow table (516) repeats the Mandala row. The Read tool refused offset-only (no limit) reads of this file because the whole file exceeds 256KB, so the last chunk was read with offset 2151 and limit 300, which reached line 2349 (the tool showed a trailing empty line 2350 from the final newline). Many [NF] passages mark sections preserved untransformed; Appendix B.2/B.3 and XXIV.3-8 are stubs (\"preserved in source register\") with no content in this text."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1163,
+   "notes": [
+    {
+     "batch_id": "B0032",
+     "field": "incidental",
+     "text": "Duplicate body: lines 48-260 are the same work as #566 (AXN-018D), reflowed with list numbering; registry title says \"Cross-Species Semantic Labor\" but body is the room spec. Falsification Conditions (line 40) is restoration boilerplate."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1164,
+   "notes": [
+    {
+     "batch_id": "B0032",
+     "field": "incidental",
+     "text": "Recovered blog-canonical text; section numbering duplicates \"11\" (lines 252 and 266). Falsification Conditions (line 40) is restoration boilerplate."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1168,
+   "notes": [
+    {
+     "batch_id": "B0033",
+     "field": "incidental",
+     "text": "Recovered blog body of 'CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0' (DOI 10.5281/zenodo.19055255) under title 'Untitled'. Precis strings are auto-extracted and often truncated mid-word; all finds here are pointers to other records' claims, which should be read at source. 'New since v6.0' section (lines 168-743) and the full precis index (925-1625) repeat many of the same precis. Companion to #578 (Central Navigation Map v7.0), which reproduces its statistics."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1170,
+   "notes": [
+    {
+     "batch_id": "B0034",
+     "field": "incidental",
+     "text": "Body does not match the deposit title. Title and frontmatter name the emoji work 'question-mark 24 calendar = question-mark' (DOI 10.5281/zenodo.18512289, Ichabod Spellings), but the canonical bytes below the rule (lines 46-1671) are the whole CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (DOI 10.5281/zenodo.19055255, Lee Sharks), recovered from the blog post .../crimson-hexagon-nh-os-doi-registry-v70.html. The emoji work itself appears only as a one-line registry precis (lines 173, 177, 810, 1360). The recovery note's body-head gate pass looks mistaken: wrong body for this deposit. The registry also lists, as one-line precis only, deposits that later readers may want for the sweep: 'The Silent Migration: A Speculative Architectural Forecast' (10.5281/zenodo.18157917, line 930); 'The Shark That Preceded Itself' novelty-of-terms claim (10.5281/zenodo.18807239, lines 463, 1498); MRA-2025-1224-STABILIZATION 'validating retrocausal canon formation' (10.5281/zenodo.18369038, line 1222). These are catalogue summaries of other deposits, not this text's own claims, so they are not recorded as finds here. Open items/queued list (lines 1628-1653) is procedural backlog, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1171,
+   "notes": [
+    {
+     "batch_id": "B0035",
+     "field": "incidental",
+     "text": "Many section bodies are empty headings (VERSION HISTORY, CROSS-REFERENCES, SUBSYSTEM/HETERONYM/TIER DISTRIBUTION, DOCUMENT TYPE TAXONOMY, ORPHAN REPORT, RELATION GRAPH STATISTICS, NEW ARCHITECTURAL ELEMENTS subsections, OPEN ITEMS) -- tables apparently lost in html2text conversion. Précis lines are truncated auto-extracts of other deposits; several point to prediction-bearing works elsewhere (e.g. 18157917 'The Silent Migration: A Speculative Architectural Forecast', 18790793 'The Memo That Remembered Itself' précis on techniques 'previously articulated', 18807239 'The Shark That Preceded Itself', 18772675 Citrini memo) -- these belong to those deposits, not recorded here. Line-number note: Read displays an empty line 2004 after the final line; queue lines_total 2003 taken as authoritative."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1182,
+   "notes": [
+    {
+     "batch_id": "CAL",
+     "field": "incidental",
+     "text": "Damaged text: html2text recovery dropped lists/tables/code throughout - headings followed by nothing (e.g. 'Defines:' at 108, 113, 118; Format/Special addresses 141-145; Requirements 174; Anti-homogenization 194; first/subsequent-session flow 275-277; Registry specification/template 280-283; Pre-session check 301-303; Revocation semantics 311; Security guidance 322; deposit sequence 335-338; venues 354-360; §XIII, §XIV, §XV, §XVI bodies; §XVIII version history empty). Falsification Conditions at line 40 is restoration boilerplate (not recorded)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1226,
+   "notes": [
+    {
+     "batch_id": "B0001",
+     "field": "incidental",
+     "text": "Queue date 2026-01-01; the text's own date is 14 June 2026. Heading says v1.1 while the packet line says Version: 1.0."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1233,
+   "notes": [
+    {
+     "batch_id": "B0001",
+     "field": "incidental",
+     "text": "Contains procedural pending items (a future EA-SOIL-SUCCESSION-01 deposit, line 254) and capture thresholds (PER >= 0.20, line 314); recorded neither as they are procedural/classificatory, not forecasts or tests."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1234,
+   "notes": [
+    {
+     "batch_id": "B0001",
+     "field": "incidental",
+     "text": "The text file is raw HTML (head, JSON-LD, CSS) rather than prose; title in queue mentions /disambiguation but only the /what-is-spxi page is present."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1251,
+   "notes": [
+    {
+     "batch_id": "B0005",
+     "field": "incidental",
+     "text": "Title and date are the January 2026 v1.0 registry (91 documents), but the recovered body is DOI Registry v7.0 of 16 March 2026 (387 records, DOI 10.5281/zenodo.19055255): the blog post was overwritten in place. Precis lines are truncated auto-extracts ('[AUTO-EXTRACTED]. Confidence varies'), so every find here is a pointer into another deposit and should be triaged against that deposit's full text. Titles alone signal further candidates not recorded (e.g. SPACE ARK -- EXECUTE MODE: ... Research Program, and Test Instructions, 10.5281/zenodo.19002695, line 1594)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1255,
+   "notes": [
+    {
+     "batch_id": "B0035",
+     "field": "incidental",
+     "text": "Line 470 was read twice (chunk overlap). Text appears intact. Other non-recorded items: inaugural AXIAL_CONTESTED thesis 'Revelation was the first-written book' (l.229) is a contested claim, not a forecast; 'Operative Semiotics -- the book not yet written' (l.681, l.809) is a planned commission, not an instrument."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1268,
+   "notes": [
+    {
+     "batch_id": "B0003",
+     "field": "incidental",
+     "text": "Mixed operator naming: COS operators labelled 'LOS Operator' in the §VI table header (l.157). Dated 2026-01-08 in body; queue date 2026-01-09."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1275,
+   "notes": [
+    {
+     "batch_id": "B0008",
+     "field": "incidental",
+     "text": "Lines 1716 and 116 set next_audit 2026-01-25 (procedural, not recorded)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1278,
+   "notes": [
+    {
+     "batch_id": "B0011",
+     "field": "incidental",
+     "text": "Duplicate of #405 with proper markdown tables; the modification-protocol list is misnumbered (lines 152-174)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1301,
+   "notes": [
+    {
+     "batch_id": "B0013",
+     "field": "incidental",
+     "text": "Points to the APZPZ packet living only in the Zenodo description field of DOI 10.5281/zenodo.18451824 (INFINITY ENOUGH); that packet is not in this text. 'This genre did not exist before this declaration' (line 13) is a founding declaration, not a priority chronology against the world, so not recorded as D."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1302,
+   "notes": [
+    {
+     "batch_id": "B0013",
+     "field": "incidental",
+     "text": "Body is byte-identical to #1303 (same sha256 3e3bdabc...; cmp confirms). Both carry the title 'THE GLYPHIC CHECKSUM ... v0.5', DOI 10.5281/zenodo.18452132; the queue titles them Document 208 and Document 209 (UMBML module) but the bodies do not differ. Finds duplicated across both records."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1303,
+   "notes": [
+    {
+     "batch_id": "B0013",
+     "field": "incidental",
+     "text": "Body is byte-identical to #1302 (same sha256; cmp confirms). The queue title 'GLYPHIC CHECKSUM UMBML MODULE (Document 209)' suggests a distinct document was intended; what is held is a duplicate of #1302's body, so the Document 209 text may be missing."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1316,
+   "notes": [
+    {
+     "batch_id": "B0014",
+     "field": "incidental",
+     "text": "Section 6.3 item 7 runs into the emission_integrity list, whose values are misnumbered as items 8 and 9 (lines 958-965)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1321,
+   "notes": [
+    {
+     "batch_id": "B0017",
+     "field": "incidental",
+     "text": "Same body as #489 (AXN-0134), reformatted markdown (blockquotes, pipe table); no textual difference in substance observed."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1326,
+   "notes": [
+    {
+     "batch_id": "B0020",
+     "field": "incidental",
+     "text": "Duplicate body of #1107 (AXN-0464); this copy has no YAML header or recovery note and uses em dashes."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1327,
+   "notes": [
+    {
+     "batch_id": "B0020",
+     "field": "incidental",
+     "text": "PDF-extraction damage: words split across lines with hyphens (e.g. \"theoret-/ical\" 69-71, \"metaphoric-/al\" 134-136, \"re-/cursion\" 168-170), headings broken (\"EF-/FECTIVE\" 45-47), and a spurious heading at 395. Lines 93 repeats a sentence twice. \"DOI: [pending]\" at 437."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1329,
+   "notes": [
+    {
+     "batch_id": "B0024",
+     "field": "incidental",
+     "text": "Same essay body as #538 (AXN-016D), compact spacing."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1338,
+   "notes": [
+    {
+     "batch_id": "B0035",
+     "field": "incidental",
+     "text": "Metadata says 'semi-restored v1.0' and keywords include 'metadata-only', but a full body text is present. Final keyword truncated ('English linguisti'). Read displays an empty line 574; lines_total 573 authoritative."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1463,
+   "notes": [
+    {
+     "batch_id": "CAL",
+     "field": "incidental",
+     "text": "Marked SUPERSEDED IN PART (lines 44-56): the claim that substitution was not previously instrumented is false per EA-SEMSTACK-INTEGRATION-01; §IV.3's PER reading superseded. Body preserved unedited. Withdraws EA-SEMRENT-01 novelty claim in favour of #449."
+    }
+   ],
+   "rulings": []
+  }
+ ]
+}

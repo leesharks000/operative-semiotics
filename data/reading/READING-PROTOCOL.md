@@ -1,4 +1,4 @@
-# Reading Protocol — the prediction sweep (v1.1, 2026-10-15)
+# Reading Protocol — the prediction sweep (v1.2, 2026-10-15)
 
 You are a reader in the archive's prediction sweep. Your batch is a list of deposits of the Crimson
 Hexagonal Archive. You read each one IN FULL and record every prediction-bearing passage in it, by shape,
@@ -9,6 +9,9 @@ the source texts: every quotation, every line number and every read range is ver
 The ruling (Lee Sharks, 2026-10-15): "we need to do a more thorough sweep for timestamped predictions.
 we never actually read them" — "parallel reading, but they need to keep track of what theyve read and
 havent and how. the agents need to track their own provenance as well."
+
+v1.2 adds shape H, on the ruling (Lee Sharks, 2026-10-15): "yes - we *absolutely* need historical theses, thats one of
+the most important and deepest categories."
 
 ## How to read
 
@@ -22,7 +25,7 @@ havent and how. the agents need to track their own provenance as well."
    a speculative patent, a memo written from the future, a poem, a protocol. The pilot reading found the
    strongest material in deposits with almost no predictive words in them.
 
-## What to record — the seven shapes
+## What to record — the eight shapes
 
 A. REGISTERED FORECAST — an explicit forecast the deposit itself frames as a prediction: numbered
    (P1, Prediction 3, O-1), dated or windowed, usually with a falsifier. Example: "P1 — Entity dissolution
@@ -54,6 +57,18 @@ G. STANDING FALSIFIABLE CLAIM — a claim about how a system behaves, stated wit
    falsify it, not a forecast of an event. Example: "Compositional bystanding occurs when … this is falsified
    if top-ranked sources are proportionally represented in AI-generated summaries." (#863)
 
+H. HISTORICAL THESIS — a claim about the past that the deposit advances as its own and that evidence could
+   confirm or refute: who wrote a text, when it was written, which came first, what a passage originally meant,
+   how a work was received, what an author was doing. It need not be labelled falsifiable; it is a thesis when
+   the deposit argues it rather than reports it. Examples: "Revelation was the first-written book of the New
+   Testament" (#556, labelled there as a falsifiable claim); a thesis that Plato and Aristotle are one authorial
+   practice divided by name; Socrates as an edition of a received Aristophanic character. Record the thesis at
+   its fullest statement, and its stated evidence or test (in "falsifier_quote") where one is given; put the
+   period or text concerned in "window". A thesis repeated across deposits is recorded in each deposit that
+   argues it (triage links them). Do NOT record: summaries of established scholarship the deposit does not
+   contest; other scholars' theses unless the deposit adopts them; the archive's own internal chronology (when a
+   deposit was filed — that is D or provenance, not history).
+
 ## What NOT to record
 
 - Falsification boilerplate on restored or recovered records (e.g. "Byte fidelity verifiable against the
@@ -80,6 +95,12 @@ G. STANDING FALSIFIABLE CLAIM — a claim about how a system behaves, stated wit
 6. QUOTES stay under ~600 characters. For a table, quote the row, not the table.
 7. Add to each find: "also_at": [[first, last], ...] (empty list if none).
 
+## The H back-pass
+
+Deposits read before v1.2 are re-read for shape H alone (batches HB0001…, from data/reading/hpass.json). Read each
+deposit IN FULL exactly as above, record ONLY shape-H finds, and set none_found true when the deposit argues no
+historical thesis. The other shapes were already recorded by the first reading; do not record them again.
+
 ## Each find
 
 Quote the passage VERBATIM from the file — exact characters, no paraphrase, no ellipsis inside the quote —
@@ -92,7 +113,7 @@ Write ONE JSON file to the path given in your batch, exactly this shape:
 
 {
   "batch_id": "<given>",
-  "protocol": "READING-PROTOCOL v1.1",
+  "protocol": "READING-PROTOCOL v1.2",
   "reader": {
     "role": "parallel reader, prediction sweep",
     "self_description": "<what you are, as you understand it: assistant, model if known to you; say 'unknown' rather than guess>",
@@ -111,7 +132,7 @@ Write ONE JSON file to the path given in your batch, exactly this shape:
       "genre_observed": "<one phrase: what kind of text this actually is>",
       "finds": [
         {
-          "shape": "A" | "B" | "C" | "D" | "E" | "F" | "G",
+          "shape": "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H",
           "quote": "<verbatim>",
           "lines": [first, last],
           "falsifier_quote": "<verbatim, or empty>",

@@ -1161,7 +1161,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled, including the wave-3 and wave-4 additions",
    "output": "data/reading/batches/B0029.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 169829,
+    "tool_uses": 23,
+    "tokens": 242335
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:24:21Z",
+    "finished_at": "2026-10-15T19:26:54Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for line-length check, quote slicing and verification)"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 18,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w4-B0030",
@@ -1173,7 +1199,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled, including the wave-3 and wave-4 additions",
    "output": "data/reading/batches/B0030.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 156090,
+    "tool_uses": 18,
+    "tokens": 261198
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:24:28Z",
+    "finished_at": "2026-10-15T19:26:45Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as claude-opus-5-5",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load, line-length check, quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 17,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w4-B0031",
@@ -1366,6 +1418,102 @@
      "skipped": 0
     }
    }
+  },
+  {
+   "run": "R-w5-B0036",
+   "batch_id": "B0036",
+   "phase": "wave 5",
+   "launched_at": "2026-10-15T19:28:43Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0036.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w5-B0037",
+   "batch_id": "B0037",
+   "phase": "wave 5",
+   "launched_at": "2026-10-15T19:28:43Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0037.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w5-B0038",
+   "batch_id": "B0038",
+   "phase": "wave 5",
+   "launched_at": "2026-10-15T19:28:43Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0038.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w5-B0039",
+   "batch_id": "B0039",
+   "phase": "wave 5",
+   "launched_at": "2026-10-15T19:28:43Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0039.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w5-HB0001",
+   "batch_id": "HB0001",
+   "phase": "wave 5 (H back-pass)",
+   "launched_at": "2026-10-15T19:28:43Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled; H back-pass: batch from hpass.json, record shape H only",
+   "output": "data/reading/batches/HB0001.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w5-HB0002",
+   "batch_id": "HB0002",
+   "phase": "wave 5 (H back-pass)",
+   "launched_at": "2026-10-15T19:28:43Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled; H back-pass: batch from hpass.json, record shape H only",
+   "output": "data/reading/batches/HB0002.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w5-HB0003",
+   "batch_id": "HB0003",
+   "phase": "wave 5 (H back-pass)",
+   "launched_at": "2026-10-15T19:28:43Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled; H back-pass: batch from hpass.json, record shape H only",
+   "output": "data/reading/batches/HB0003.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w5-HB0004",
+   "batch_id": "HB0004",
+   "phase": "wave 5 (H back-pass)",
+   "launched_at": "2026-10-15T19:28:43Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled; H back-pass: batch from hpass.json, record shape H only",
+   "output": "data/reading/batches/HB0004.json",
+   "status": "running"
   }
  ],
  "pilot_finding": "Calibration (CAL, blind re-read of the eight in-session readings): every substantive item found; four boundary disagreements of shape (stage text vs embedded forecast; a third-party timestamp left inside a forecast quote; a benchmark folded into its prediction; a monitoring check read as F). The reader found more than the in-session reading (G claims in #914 and #1182) and recorded one forecast several times across stage, table and ledger. Protocol revised to v1.1 with seven boundary rules."

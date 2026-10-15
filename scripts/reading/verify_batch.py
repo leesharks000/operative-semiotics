@@ -9,7 +9,7 @@ verification record, nothing is dropped):
   HASH    the file read is the one queued (sha256 at the queue's alexanarch commit)
   QUOTE   each quote occurs verbatim in the file (whitespace-normalised) and inside its stated lines (±2)
   FALSI   same for falsifier_quote
-  SHAPE   shape in A–G
+  SHAPE   shape in A–H (H from protocol v1.2)
   NONE    none_found consistent with finds
   QUEUED  every queued deposit of the batch has an entry, and no entry is outside the batch
           (S-batches: out-of-queue readings by the launcher; each listed deposit is checked against its queue row)
@@ -18,7 +18,7 @@ With --write, the verification is stored beside the batch as <batch>.verified.js
 import json, pathlib, re, sys, hashlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-SH = set("ABCDEFG")
+SH = set("ABCDEFGH")
 
 
 def norm(s):
@@ -32,6 +32,10 @@ def main():
     if out["batch_id"] == "CAL":
         cal = json.loads((ROOT / "data/reading/calibration-batch.json").read_text())
         queued = {r["deposit"]: r for r in cal["deposits"]}
+    elif out["batch_id"].startswith("HB"):
+        hp = json.loads((ROOT / "data/reading/hpass.json").read_text())
+        b = next(x for x in hp["batches"] if x["batch_id"] == out["batch_id"])
+        queued = {r["deposit"]: r for r in b["deposits"]}
     elif out["batch_id"].startswith("S"):
         # out-of-queue reading by the launcher: the deposits it lists, checked against their queue rows
         want = {e.get("deposit") for e in out.get("deposits", [])}
@@ -65,6 +69,8 @@ def main():
             fails.append("NONE: no finds and none_found false")
         for i, f in enumerate(finds):
             nq += 1
+            if out["batch_id"].startswith("HB") and f.get("shape") != "H":
+                fails.append(f"SHAPE: find {i} is {f.get('shape')!r} in an H back-pass (H only)")
             if f.get("shape") not in SH:
                 fails.append(f"SHAPE: find {i} shape {f.get('shape')!r}")
             for qk, lk, tag in (("quote", "lines", "QUOTE"), ("falsifier_quote", "falsifier_lines", "FALSI")):

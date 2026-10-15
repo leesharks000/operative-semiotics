@@ -48,7 +48,7 @@ def main():
             sc = collections.Counter(f.get("shape") for f in e.get("finds") or [])
             rows.setdefault(n, {"deposit": n, "state": "unread", "readings": []})
             rows[n]["readings"].append({"by": "parallel", "batch_id": out["batch_id"], "run": run.get("run"),
-                                        "reader": out.get("reader"), "status": e.get("status"), "status_note": e.get("status_note"),
+                                        "reader": out.get("reader"), "protocol": out.get("protocol"), "status": e.get("status"), "status_note": e.get("status_note"),
                                         "read_ranges": e.get("read_ranges"), "lines_total": e.get("lines_total"),
                                         "genre_observed": e.get("genre_observed"), "finds_by_shape": dict(sc),
                                         "none_found": e.get("none_found"), "incidental": e.get("incidental"),
@@ -62,17 +62,22 @@ def main():
     for r in rows.values():
         st = [x["status"] for x in r["readings"]]
         r["state"] = "read" if "read" in st else ("partial" if "partial" in st else ("skipped" if "skipped" in st else "unread"))
+    for r in rows.values():
+        r["h_covered"] = any(x.get("status") == "read" and str(x.get("protocol", "")) >= "READING-PROTOCOL v1.2"
+                             for x in r["readings"])
     tr = sorted(rows.values(), key=lambda r: (r.get("tier") or 0, r.get("date") or "", r["deposit"]))
     c = collections.Counter(r["state"] for r in tr)
     out = {"what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, "
                    "how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
            "alexanarch_commit": q["alexanarch_commit"], "counts": dict(c),
+           "h_covered": sum(1 for r in tr if r["h_covered"]),
+           "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
            "finds_by_shape": dict(collections.Counter(f["shape"] for f in finds)),
            "finds_verified": sum(1 for f in finds if f["verified"]), "finds_total": len(finds),
            "deposits": tr}
     (R / "tracker.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
     (R / "finds.jsonl").write_text("".join(json.dumps(f, ensure_ascii=False) + "\n" for f in finds))
-    print(json.dumps({k: out[k] for k in ("counts", "finds_by_shape", "finds_verified", "finds_total")}))
+    print(json.dumps({k: out[k] for k in ("counts", "h_covered", "finds_by_shape", "finds_verified", "finds_total")}))
 
 
 if __name__ == "__main__":
