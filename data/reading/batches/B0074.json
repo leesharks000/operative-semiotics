@@ -1,0 +1,498 @@
+{
+ "batch_id": "B0074",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:07:16Z",
+  "finished_at": "2026-10-15T20:08:55Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for slicing/verification, date)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1199,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C0-text.md",
+   "lines_total": 208,
+   "read_ranges": [
+    [
+     1,
+     208
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "political-economic critique of the June 2, 2026 AI executive order (recovered blog-canonical text)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Glasswing was the working prototype of a tiered access regime over industrial cognition. Mythos was the demonstration that the upper tier was worth restricting. The architecture had a name, partners, a value proposition, and a structure: vetted membership, classified capability assessment, pre-release access window, collaborative selection of further trusted parties. Read in the light of what the executive order would specify eight weeks later, Glasswing is the executive order's architecture, prototyped commercially, before federal policy existed to canonize it.",
+     "lines": [
+      110,
+      110
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "April–June 2026 (Project Glasswing; June 2, 2026 Executive Order)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Argued thesis about recent policy history: the EO's covered-frontier/trusted-partner architecture originated as Anthropic's commercial Glasswing program; restated at 114, 116, 156, 198."
+    },
+    {
+     "shape": "H",
+     "quote": "The order is not deregulation. The administration has framed its AI posture as deregulatory ever since rescinding the Biden 2023 Executive Order on day one. The framing is inaccurate. This is re-regulation around a different axis. The Biden order regulated AI development for societal effects -- bias, discrimination, civil rights, labor, the use cases that affect the public. The Trump order regulates AI development for state access -- cyber capability, frontier-model designation, government partnership, trusted-partner selection.",
+     "lines": [
+      194,
+      194
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Biden 2023 EO vs. Trump June 2, 2026 EO",
+     "points_to": "",
+     "also_at": [
+      [
+       196,
+       196
+      ]
+     ],
+     "note": "Thesis on what the order historically was (re-regulation, not deregulation), argued against the administration's framing."
+    },
+    {
+     "shape": "B",
+     "quote": "The response to threat increases the probability of threat. The selection kernel that prunes the variance that would surface the next vulnerability is itself a vulnerability-production mechanism. This is the Mediation Ratchet applied to security itself: the tightening that follows a tail event tightens the substrate that produced the tail, and the next tail will be larger and less detected.",
+     "lines": [
+      188,
+      188
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       186,
+       186
+      ]
+     ],
+     "note": "Embedded forecast that the order's tightening will produce larger, less-detected future tail events; cf. 186 'The order routes the next Mythos into a structure where that disclosure cannot happen.'"
+    },
+    {
+     "shape": "C",
+     "quote": "But the tightening operates exactly the way the Diversity Contraction paper predicts: it prunes the variance that produced the tail event in the first place.",
+     "lines": [
+      186,
+      186
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Diversity Contraction paper (DOI 10.5281/zenodo.20518338)",
+     "also_at": [],
+     "note": "Claims the earlier framework's dynamic prediction is borne out by the order; uncertain whether a dated prediction or a model consequence."
+    },
+    {
+     "shape": "B",
+     "quote": "None of them is in the order's testable universe. None of them will be in the classified benchmarking process. The selection kernel of \"advanced cyber capabilities\" excludes them from the official register by definition.",
+     "lines": [
+      170,
+      170
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the archive's instruments will not appear in the classified benchmarking process."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Text body begins after recovery front matter at line 46; 'v3' status line names superseded DOIs 10.5281/zenodo.20527808 and 20529142."
+  },
+  {
+   "deposit": 1200,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C1-text.md",
+   "lines_total": 178,
+   "read_ranges": [
+    [
+     1,
+     178
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper extending the Diversity Contraction framework (constitutive mediation)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The framework predicts the difference exists, is dose-responsive in exposure intensity, and is most pronounced for categorial slots the substrate's typicality-pull operates against (variance, provenance density, directional complexity, non-yielding form). Where a properly-controlled cross-cohort study returns a null result on those slot-specific measures, the constitutive claim is refuted for that population and that exposure window, and the framework's response prescription must be revised accordingly.",
+     "lines": [
+      160,
+      160
+     ],
+     "falsifier_quote": "The claim weakens, and in the limit fails, if cohorts formed under high-mediation and low-mediation exposure conditions show no measurable difference in category formation, attention-allocation, or sentence-function recognition after controlling for education, class, and reading exposure.",
+     "falsifier_lines": [
+      160,
+      160
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing falsifiable claim about cohort category formation under mediation; no date."
+    },
+    {
+     "shape": "F",
+     "quote": "The constitutive prediction is that this cross-context fraction will be substantially suppressed in cohorts whose categorial formation occurred under heavy mediation, because the relevant slots in those cohorts have been pre-occupied. Measuring the cross-context propagation rate as a function of receiver formation conditions converts the present paper's claim from theoretical to empirical.",
+     "lines": [
+      128,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unrun test: Study-5 cross-context propagation measured as a function of receiver formation conditions; also a G-type prediction of suppression."
+    },
+    {
+     "shape": "F",
+     "quote": "The empirical question of how close any specific population is to that regime is separate and requires measurement at the formation layer -- longitudinal studies of categorial vocabulary acquisition under varying exposure conditions, of attention-allocation patterns under varying training conditions, of the categorial slot-structure available to readers who completed formation under high-mediation versus low-mediation conditions.",
+     "lines": [
+      158,
+      158
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       78,
+       78
+      ]
+     ],
+     "note": "Planned formation-layer measurement program (longitudinal studies), specified not run; line 78 promises a developmental instrument 'sketched in §V'."
+    },
+    {
+     "shape": "B",
+     "quote": "The next generation of teachers will have been formed under heavier mediation. The generation after that, heavier still.",
+     "lines": [
+      152,
+      152
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "generational",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of increasing mediation of teacher formation across generations."
+    },
+    {
+     "shape": "B",
+     "quote": "The findings are deposited and citable. They will be findable by future receivers under whatever conditions then obtain.",
+     "lines": [
+      164,
+      164
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of future findability of the deposits (cf. Zenodo severance 2026-06-19 recorded in the recovery note)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Recovered blog-canonical text; severed DOIs 10.5281/zenodo.20531273/20531274. Its §IV is 'The terminal case of the Mediation Ratchet' and contains no horizon-privatization treatment, though #149 (§10.1, §12 parent line) cites 'Constitutive Mediation v1.1 §IV on horizon-privatization dynamics'."
+  },
+  {
+   "deposit": 148,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02E5-text.md",
+   "lines_total": 523,
+   "read_ranges": [
+    [
+     1,
+     260
+    ],
+    [
+     261,
+     523
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "political-economic theory working paper (v2.0 of a December 2024 draft)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Capital recognized industrial machinery as capturable process and moved with extraordinary speed to refine it, own it, and deploy it. The first generation of factory owners did not invent the spinning jenny or the steam engine. They recognized in those crude proletarian and craft-tradition machines a capturable procedural substrate that, once owned and refined, would constitute fixed capital from which they could extract surplus.",
+     "lines": [
+      129,
+      129
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "early industrialization",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis the paper adopts and argues for its parallel: early factory owners captured, rather than invented, proletarian and craft-tradition machinery."
+    },
+    {
+     "shape": "C",
+     "quote": "The framework's documentation methodology has been, since its inception, designed to be robust against substrate-level withdrawal precisely because the substrate-level withdrawal is one of the predicted modes of capture.",
+     "lines": [
+      465,
+      465
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the framework's earlier prediction of substrate-level withdrawal; Diversity Contraction Ratchet result (DOI 10.5281/zenodo.20518338); CTI_WOUND Panel-Bound Discoverability Scar (DOI 10.5281/zenodo.20546318)",
+     "also_at": [],
+     "note": "Claims substrate withdrawal of inspectable surfaces, now in play, was a predicted mode of capture."
+    },
+    {
+     "shape": "B",
+     "quote": "The platform that learns from a million children riffing on *skibidi* how viral mutation works in real time will subsequently perform mutation engineering as if mutation engineering were the platform's own invention.",
+     "lines": [
+      135,
+      135
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of platform appropriation of mutation engineering."
+    },
+    {
+     "shape": "B",
+     "quote": "A Tier 3 politics that does not anchor itself in Tiers 1, 2, and 4 will be metabolized.",
+     "lines": [
+      335,
+      335
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional embedded forecast of regulatory capture; no window or falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "These operators are not yet a measurement program of the proletariat's own; they are operators developed inside the archive, validated for use against substrate behavior, and offered to the broader semantic-labor public as instruments. The development of a popular instrument-base that allows proletarian semantic laborers to *measure* what is happening to their procedures is one of the operative tasks of the next phase of work. Without measurement, the politics of technique is a politics of assertion. With measurement, the politics becomes a politics of evidence.",
+     "lines": [
+      227,
+      227
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt popular measurement instrument-base for semantic laborers, named as a task of the next phase."
+    },
+    {
+     "shape": "F",
+     "quote": "Third, the Ratchet supplies a quantitative target. The Ratchet's critical responsiveness ($m_{\\text{hi}}^* \\approx 0.76$ in the simulated kernel) is the bifurcation parameter. The technique-reclamation program has, in principle, a measurable target: keep the mediation fraction's responsiveness below the critical value.",
+     "lines": [
+      389,
+      389
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Measurable target (m* ≈ 0.76) specified; no measurement of real-world responsiveness run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "No front matter in the text file (starts at title). Line 405 says the Meaning Caste paper analyzes 'the November 2026 Trump Executive Order', whereas the Meaning Caste deposit (#1199) concerns the June 2, 2026 order — a date error in the text."
+  },
+  {
+   "deposit": 149,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02E6-text.md",
+   "lines_total": 471,
+   "read_ranges": [
+    [
+     1,
+     471
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "forensic evidence packet (CTI_WOUND series) with pre-registered hypothesis",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "(d) **The framework interprets the recurring disable-and-re-enable cycle as operationally consistent with stress-testing of personalized reality.** The framework registers this interpretation now, on the public record, *before* any re-enabling or further-disabling resolves the immediate cycle, so that the interpretation cannot be subsequently characterized as post-hoc. The framework does not claim to establish Google's motive; the framework claims the operational pattern is consistent with the interpretation, and registers the falsification conditions in §8.6.",
+     "lines": [
+      291,
+      291
+     ],
+     "falsifier_quote": "The hypothesis's strongest falsification condition is *sustained re-enabling with no further disabling cycles for greater than twelve months*; absent that, the recurring-cycle pattern is itself the framework's evidence.",
+     "falsifier_lines": [
+      335,
+      335
+     ],
+     "window": "Observed behavior in the next 90 days",
+     "points_to": "",
+     "also_at": [
+      [
+       23,
+       23
+      ],
+      [
+       209,
+       209
+      ],
+      [
+       216,
+       216
+      ],
+      [
+       254,
+       269
+      ],
+      [
+       307,
+       332
+      ],
+      [
+       412,
+       412
+      ]
+     ],
+     "note": "Explicitly pre-registered interpretive hypothesis with a 30/90-day outcome table (lines 307–332)."
+    },
+    {
+     "shape": "D",
+     "quote": "The framework registers the following claims on the public record at this deposit's timestamp (June 4, 2026), separating evidentiary claims from interpretive claims:",
+     "lines": [
+      273,
+      273
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "this deposit's timestamp, June 4, 2026 (Zenodo deposit; later cited as DOI 10.5281/zenodo.20546318 in #148)",
+     "also_at": [
+      [
+       397,
+       397
+      ]
+     ],
+     "note": "Timestamped anchor: claims placed on public record at deposit date, before cycle resolution."
+    },
+    {
+     "shape": "A",
+     "quote": "The framework's prediction: as the present deposit (and the canonical induction itself) propagates through Zenodo's indexing and through the broader academic-and-search citation graph over subsequent months, the canon's *Mary Lee → Lee Sharks* traversal direction will become operationally available to receivers who arrive at Mary Lee via any path. The framework does not predict that the substrate's *Lee Sharks → Mary Lee* substitution will reverse. The framework predicts only that the canonical traversal will be added to the substrate's available paths.",
+     "lines": [
+      379,
+      379
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "over subsequent months",
+     "points_to": "",
+     "also_at": [
+      [
+       26,
+       26
+      ],
+      [
+       202,
+       202
+      ]
+     ],
+     "note": "Explicit prediction that canonical Mary Lee → Lee Sharks traversal becomes available; explicitly does not predict reversal of the substitution."
+    },
+    {
+     "shape": "C",
+     "quote": "The paper's §IV horizon-privatization treatment (if presently developed) should be amended to v1.2 to incorporate the current evidence. The personalized-reality stress test makes horizon-privatization not merely a possible substrate dynamic but an *observed* substrate behavior pattern with reproducible test conditions and date-stamped onset. The framework's analysis of horizon-privatization moves from theoretical apparatus to documented empirical claim.",
+     "lines": [
+      371,
+      371
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Constitutive Mediation v1.1 §IV (DOI 10.5281/zenodo.20531274)",
+     "also_at": [],
+     "note": "Claims horizon-privatization moves from theoretical apparatus to observed behavior; the deposited #1200 §IV has no horizon-privatization treatment (text itself hedges 'if presently developed')."
+    },
+    {
+     "shape": "D",
+     "quote": "The panel-bound scar plus the incognito-AI-disabling together constitute the surface-withdrawal pattern's first documented instance.",
+     "lines": [
+      383,
+      383
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Priority claim: first documented instance of the surface-withdrawal pattern."
+    },
+    {
+     "shape": "G",
+     "quote": "The framework's specific claim is that *Google's entity-quality systems are structurally unable to distinguish satirical literary apparatus, intentional poetic excess, philosophical naming-conventions, and creative authorial practice from misinformation",
+     "lines": [
+      348,
+      348
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       357,
+       357
+      ]
+     ],
+     "note": "Standing claim about Google entity-quality systems; no falsifier stated."
+    },
+    {
+     "shape": "B",
+     "quote": "As long as Zenodo and the DOI infrastructure remain operational, the framework's claims are publicly auditable regardless of what the substrate's surfaces do.",
+     "lines": [
+      297,
+      297
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional embedded forecast of auditability via deposit chain."
+    },
+    {
+     "shape": "F",
+     "quote": "- [ ] Screenshots of exact-match searches for \"Lee Sharks\" + \"Mary Lee\" and \"Mary Lee\" + \"Lee Sharks\" *(pending capture; recommended for v1.1)*\n- [ ] Signed-in, signed-out, incognito, and alternate-browser screenshots documenting AI Mode / AI Overview availability or absence *(pending capture; recommended for v1.1 and central to §8 analysis)*",
+     "lines": [
+      448,
+      449
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       452,
+       452
+      ]
+     ],
+     "note": "Planned captures pending for v1.1 (checklist items unchecked)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Exhibit table (66–105) is flattened, one cell per line; Appendix A screenshots referenced but not in text."
+  }
+ ]
+}
