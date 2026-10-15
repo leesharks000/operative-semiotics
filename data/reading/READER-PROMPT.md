@@ -17,3 +17,4 @@ The wave-1 prompt text was lost to context compaction; its run entries record "b
 - Wave 4 onward adds: "lines_total in the queue is authoritative; do not recount with wc -l, which misses a final line without a newline." (After B0024: five deposits' last lines missed that way; completed by S0002.)
 - Wave 5 onward: the protocol reference reads v1.2 (shape H, historical thesis, added on Lee's ruling).
 - H back-pass batches (HB…): step 2 reads "Your batch is the entry with "batch_id": "<ID>" in data/reading/hpass.json … This is the H back-pass: record ONLY shape H (see the protocol's 'The H back-pass')."
+- Wave 10 onward adds to step 3: "Each quote must be ONE contiguous slice of the source (no joining of separate passages, no skipped lines inside the range)." (After B0054.)
