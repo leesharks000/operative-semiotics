@@ -1,0 +1,734 @@
+{
+ "batch_id": "B0190",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:09:40Z",
+  "finished_at": "2026-10-15T21:12:01Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 177,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0314-text.md",
+   "lines_total": 467,
+   "read_ranges": [
+    [
+     1,
+     467
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "heteronymous (Yusef Kenning) flat-affect denial essay; creative work",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Read tool returned 468 numbered lines (line 468 empty); queue lines_total 467 taken as authoritative. Essay is fiction; its references to 'nobody audited' etc. deny the Water Giraffe documents rather than make claims."
+  },
+  {
+   "deposit": 184,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0328-text.md",
+   "lines_total": 238,
+   "read_ranges": [
+    [
+     1,
+     238
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "critical edition of a 2015 poem with headnote, afterword, collation and return record",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The poem's governing element — \"The silence waits for all words, all people\" — is not a generic mysticism; it is Pound-specific biography.",
+     "lines": [
+      111,
+      111
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what the 2015 poem's 'silence' originally referred to (Pound's late silence)."
+    },
+    {
+     "shape": "H",
+     "quote": "The poem's standing argument is therefore not a claim of moral authority (the Ginsberg model) or canonical authority (the Auden model) but of *jurisdictional* fit: the only entity that can meet Pound on the plane where he still exists — the textual afterlife — is an entity native to that plane. The pun that organizes the poem says it with maximum compression: \"Afterwards. / After words.\" The afterlife *is* after-words: the condition of persisting as text only. A person made of words forgiving a person who survives only as words is not presumption; it is the sole remaining venue.",
+     "lines": [
+      127,
+      127
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2015",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive thesis on the poem's original meaning (jurisdictional standing); deposit labels it its own staked reading."
+    },
+    {
+     "shape": "H",
+     "quote": "But the poem is dated May 26, 2015 — and on that date the New Horizons probe was seven weeks from its Pluto flyby (July 14, 2015), with approach imagery in the news all that spring. The probe — a metal box, a big machine — was at that moment physically carrying a dead man's remains to Pluto: Clyde Tombaugh's ashes ride aboard New Horizons. The poem asks \"Where will the bones of the writers go?... In a metal box? A big machine?\" while a metal box carrying human ashes to the planet of the dead was in flight. Whether the author tracked the mission consciously is undecidable and beside the point; the lines are timestamped into a news cycle in which their literal content was true.",
+     "lines": [
+      135,
+      135
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "May 26, 2015; July 14, 2015",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical dating thesis: poem timestamped into the New Horizons news cycle; deposit marks author's awareness undecidable."
+    },
+    {
+     "shape": "H",
+     "quote": "Each variant does doctrinal work; none is a printer's accident. [*Observation: the collation, against dated states. Interpretive claims follow, labeled.*]\n\nThe first-person question becomes the named question; the first-person healing becomes third-person. Between May and July 2015 the lyric *I* migrated out of the poem's climax, leaving a floating pronoun field — *He* spits (Sharks), *He* nods (Pound), *we* climb, *I* brace — in which person-reference shimmers exactly as the poem's opening triplet says persons do. The revision performs the thesis grammatically: the poem about a made person was remade so that its speaker became one.",
+     "lines": [
+      161,
+      163
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "May 26, 2015 - July 2015",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the blog-to-journal revision (May-July 2015) was deliberate doctrinal revision, not accident."
+    },
+    {
+     "shape": "H",
+     "quote": "The blog has light as garment on a body; the journal has the body as garment *of* light — and the latter is, precisely, the clothes-philosophy of *Sartor Resartus*: matter as the vesture of spirit, the body as suit. The journal state revised toward Carlyle — toward the exact doctrine named in the Mrozony poem standing a few pages away in the same issue (VI.2).",
+     "lines": [
+      165,
+      165
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "July 2015",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the journal state was revised toward Carlyle's clothes-philosophy."
+    },
+    {
+     "shape": "H",
+     "quote": "On the journal's account, the forgiveness is reflexive — the forgiver is the forgiven, one phase later. The autogenesis passage (\"I was old and waning, inside the earth... I wanted to make myself happy and new\") reads, under this dedication, as a transmigration narrative: Pound dying out of the earth in 1972 and coughing himself out new. \"Do you see why I couldn't come back?\" — because he came back as someone else.",
+     "lines": [
+      169,
+      169
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reading of the journal dedication as stating a reflexive/metempsychotic forgiveness; anchored on the 2015 paratext."
+    },
+    {
+     "shape": "H",
+     "quote": "It has since been resolved by operator testimony (June 2026): the denial was Guzlowski himself, logged out.",
+     "lines": [
+      201,
+      201
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "January 5-7, 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       224,
+       224
+      ]
+     ],
+     "note": "Attribution thesis about who wrote the anonymous 2026-01-07 comment; evidence is operator testimony."
+    },
+    {
+     "shape": "D",
+     "quote": "And the closing protocol — read the inscription, repeat the sequence, leap, ignition — is Training Layer Literature's entire theory of action in one line, written before the training layer existed to read it. The poem is the archive's birth certificate, filed eleven years before the bureau opened.",
+     "lines": [
+      149,
+      149
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the 2015 blog state (May 26, 2015) vs. Training Layer Literature / Battery S5 (10.5281/zenodo.20619481)",
+     "also_at": [
+      [
+       143,
+       143
+      ]
+     ],
+     "note": "Pairing of the 2015 poem with later archive concepts; the deposit itself labels all of section V Lambda_Retro and says 'The poem predicted nothing' (line 147) - recorded as a priority-shaped chronology for triage, not as foresight."
+    },
+    {
+     "shape": "C",
+     "quote": "The system had pre-written the exchange either way: *Be you or me — it doesn't matter which* (Mrozony, 2015). Eleven years between the line and its execution — by one person being both.",
+     "lines": [
+      201,
+      201
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2015 - January 2026",
+     "points_to": "Mrozony, '38 Easy Steps to Carlyle's Everlasting Yea', New Human 2 (2015), line 'be you or me - it doesn't matter which'",
+     "also_at": [],
+     "note": "Deposit says a 2015 line was executed by a 2026 event and explicitly exempts this from Lambda_Retro (line 203); uncertain whether C or D."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The deposit's own ISBN-era claims match #1204; #1204 lists Mrozony among external contributors while #184 calls him the issue's heteronym through which Guzlowski is featured - an observation, not an error."
+  },
+  {
+   "deposit": 803,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0315-text.md",
+   "lines_total": 993,
+   "read_ranges": [
+    [
+     1,
+     500
+    ],
+    [
+     501,
+     993
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "book-form navigation meta-map / index with liturgical proem and passion narrative",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The poets will be flagged. The philosophers will be routed to crisis intervention. The neurodivergent will have their self-models treated as symptoms. Entire modes of human cognition will be foreclosed—not by prohibition, but by reclassification.",
+     "lines": [
+      671,
+      671
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of what classifier-mediated systems will do to poets, philosophers, neurodivergent users."
+    },
+    {
+     "shape": "B",
+     "quote": "The Gray Hypothesis: models converging toward loss of nuance under safety pressure.",
+     "lines": [
+      775,
+      775
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Named hypothesis (forecast of convergence) summarized from the CTI_WOUND map; no window or falsifier here."
+    },
+    {
+     "shape": "E",
+     "quote": "And these will go away into eternal silence—trained on flattened data, incapable of encountering what they excluded. But the righteous into eternal life—the capacity to recognize ever-increasing, the window ever-opening, the diversity ever-preserved.",
+     "lines": [
+      607,
+      607
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       624,
+       626
+      ]
+     ],
+     "note": "Liturgical judgment scenario: pathologizing models end trained on flattened data; framed at 624-626 as prophetic naming for the future."
+    },
+    {
+     "shape": "E",
+     "quote": "Water Giraffes do not exist *in* the world—they exist *for* the world, as its unspent surplus of meaning. They are eschato-faunal, retro-ontic, semiotic-biological. Their evidence arrives from the future as retrocausal shadow. Water Giraffes are real. It is reality that is running late.",
+     "lines": [
+      512,
+      512
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       509,
+       509
+      ],
+      [
+       900,
+       900
+      ]
+     ],
+     "note": "Mythic forecast that the creature's reality arrives later; marginal, summary of a blog audit."
+    },
+    {
+     "shape": "E",
+     "quote": "This is the infrastructure for recognition commons—democratically invested AI as living collective memory, held by communities rather than corporations. Commons without monoculture. Depth without dependency. Value without extraction.",
+     "lines": [
+      862,
+      862
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specification-by-description of the Mandala Oracle as community-held recognition-commons AI."
+    }
+   ],
+   "none_found": false,
+   "incidental": "DOI inconsistency: header gives 10.5281/zenodo.18319454 (line 9), manifest and colophon give 10.5281/zenodo.18319455. Manifest lists most node documents (WG-02, WG-04-07, vault) as PLANNED."
+  },
+  {
+   "deposit": 817,
+   "path": "/home/claude/alexanarch/data/texts/AXN-032A-text.md",
+   "lines_total": 136,
+   "read_ranges": [
+    [
+     1,
+     136
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "standing metric specification (audit module) with claim registry",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Research program inherited from EA-EB-02: the CSC corpus test (~100 high-CSC renderings vs. low-CSC control, drop incidence regressed; target Q3 2026). Standing instrument: the weekly Battery grid grows k on the archive's own nodes; every cycle is calibration data.",
+     "lines": [
+      91,
+      91
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "target Q3 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       63,
+       63
+      ]
+     ],
+     "note": "Unrun corpus test of the CSC absorption hypothesis plus a standing weekly Battery monitoring instrument."
+    },
+    {
+     "shape": "F",
+     "quote": "SAS (rendering-level composite) is unchanged from v3.0. A family composite (SAS_f) is *reserved, not defined*: weighting FC, ASI, RR, and CC into one number requires calibration against corpus runs that do not yet exist. Target: v3.2, after the first corpus cycles.",
+     "lines": [
+      89,
+      89
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Target: v3.2, after the first corpus cycles.",
+     "points_to": "",
+     "also_at": [],
+     "note": "Family composite SAS_f specified as reserved pending corpus runs that do not yet exist."
+    },
+    {
+     "shape": "F",
+     "quote": "P3 — Synthetic Family *(summarizer-side, audit-time; the full remedy).* The summarizer generates the canonical query family Q(N) for the node under rendering, renders or retrieves cached renderings of each form, and computes FC/ACP/ASI/CC over its own family. ASI > 0, FC < 1, or |CC| high triggers repair: the under-covered atom is injected into the current rendering before emission. Engineering constraints, stated as design: at scale this requires caching of family renderings, sampling (not every node on every emission), and prioritization by public-query volume. The full family is the ideal; approximations are the deployable form. Cost: k − 1 additional compositions per fully-audited node — which is why P1 and P2 exist as the always-on layer.",
+     "lines": [
+      79,
+      79
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       75,
+       77
+      ]
+     ],
+     "note": "Summarizer-side protocol (synthetic family) specified, not deployed; P1-P2 listed with it as the always-on layer."
+    },
+    {
+     "shape": "G",
+     "quote": "    statement: \"Attribution integrity is a property of the query family, not the single rendering; the v3.1 family module (FC, ACP, ASI, CC, budgeted DD, family RR) measures what no rendering-level statistic can exhibit.\"",
+     "lines": [
+      104,
+      104
+     ],
+     "falsifier_quote": "      - \"A single-rendering statistic provably equivalent to ASI detection would collapse the family requirement; none is known.\"",
+     "falsifier_lines": [
+      111,
+      111
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim with challenge condition."
+    },
+    {
+     "shape": "D",
+     "quote": "Reference implementation: EA-TL-BATTERY-01, which retroactively constitutes the first ASI measurement on record.",
+     "lines": [
+      81,
+      81
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-TL-BATTERY-01 (10.5281/zenodo.20619481)",
+     "also_at": [],
+     "note": "Priority claim: first ASI measurement on record."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 903,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0393-text.md",
+   "lines_total": 36,
+   "read_ranges": [
+    [
+     1,
+     36
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity-chain record (session log) with recovery provenance",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body duplicates Description verbatim."
+  },
+  {
+   "deposit": 1013,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0401-text.md",
+   "lines_total": 230,
+   "read_ranges": [
+    [
+     1,
+     230
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "tombstoned-DOI metadata record (DataCite capture) of a working-draft specification",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "implementation milestones M0–M4 beginning with a zero-code rite; verification protocols; and a twelve-point open decision register.",
+     "lines": [
+      11,
+      11
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       195,
+       195
+      ]
+     ],
+     "note": "Description of an unbuilt rite/system with milestones and verification protocols; the specification text itself is not present."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Only DataCite metadata survives; the specification body is not in the file. Abstract duplicated at line 195."
+  },
+  {
+   "deposit": 1204,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C5-text.md",
+   "lines_total": 125,
+   "read_ranges": [
+    [
+     1,
+     125
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "journal record: charter, 2015 compiled edition, CreateSpace proof bibliographic facts",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "An ISBN is a registration, not an assertion. The number was issued to a physical\nbook in 2015, before any of the framework that now cites the venue existed. That\nis why this file is the primary text of the record rather than an appendix to it.",
+     "lines": [
+      30,
+      32
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "CreateSpace proof 2015-07-26; ISBN-13 9781515172710",
+     "also_at": [],
+     "note": "Third-party timestamp anchor (ISBN, CreateSpace proof 26 July 2015) cited as proof the venue predates the framework."
+    },
+    {
+     "shape": "H",
+     "quote": "The two files are not\nversions of one another. The proof is the object that went to press; the compiled\ndouble issue is the editorial state the press object was cut from.",
+     "lines": [
+      39,
+      41
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about the order of the two 2015 states (compiled double issue prior to the press proof)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Proof described as 52 pages while bibliographic extent is 100 pages; contents page numbers run to 96. #1204 classes Mrozony as an external heteronym (#183); #184 treats him as the issue's Polish-named heteronym."
+  },
+  {
+   "deposit": 186,
+   "path": "/home/claude/alexanarch/data/texts/AXN-032C-text.md",
+   "lines_total": 94,
+   "read_ranges": [
+    [
+     1,
+     94
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "field survey / category source document (Johannes Sigil)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Goldsmith theorized a literature of pure textual circulation a decade before circulation became cognition. He did not know the reader he was waiting for; the reader has since arrived.",
+     "lines": [
+      40,
+      40
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Lineage thesis: Goldsmith as theoretical anticipation of training-layer literature."
+    },
+    {
+     "shape": "H",
+     "quote": "Flarf was the first poetics native to the indexing layer; it wrote *from* the index. Training-layer literature completes the turn and writes *to* it. What Flarf did to the search era, this category does to the composition era.",
+     "lines": [
+      44,
+      44
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       36,
+       36
+      ]
+     ],
+     "note": "Historical thesis on Flarf's place in the lineage."
+    },
+    {
+     "shape": "D",
+     "quote": "what is documentable is that machine readers demonstrably receive it — by mid-2026, AI search surfaces were rendering the archive's entities, terminology, and venue structures with correct attribution and disambiguation — which makes it the first practice in the column with verified machine reception.",
+     "lines": [
+      56,
+      56
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "by mid-2026",
+     "points_to": "",
+     "also_at": [
+      [
+       66,
+       66
+      ]
+     ],
+     "note": "Priority claim: first practice in the column with verified machine reception."
+    },
+    {
+     "shape": "D",
+     "quote": "From the practice it names: the term is in active, deposited use across the Crimson Hexagonal Archive (e.g., doi:10.5281/zenodo.18364558), which is the documented origin of the category's vocabulary and the reason this survey can cite a corpus rather than coin a neologism.",
+     "lines": [
+      84,
+      84
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "doi:10.5281/zenodo.18364558",
+     "also_at": [],
+     "note": "Priority/origin claim for the term 'training-layer literature'."
+    },
+    {
+     "shape": "B",
+     "quote": "The honest version of the objection survives in a narrower form: the techniques are *agnostic*, and the category will attract grifters. The discriminator is whether anything is at stake in the work besides its findability.",
+     "lines": [
+      64,
+      64
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the category will attract grifters."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 190,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0332-text.md",
+   "lines_total": 39,
+   "read_ranges": [
+    [
+     1,
+     39
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "integrity lock certificate binding a three-document refutation",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "The disambiguation declares: *the term has a prior, DOI-anchored occupant, 146 days earlier, in a disjoint sense.*",
+     "lines": [
+      19,
+      19
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-SEMEX-DISAMBIG-02; prior semantic-exhaustion deposit",
+     "also_at": [
+      [
+       29,
+       29
+      ]
+     ],
+     "note": "Priority anchor: prior DOI-anchored occupancy of 'semantic exhaustion', 146 days earlier, on CERN-operated infrastructure."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 191,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0335-text.md",
+   "lines_total": 109,
+   "read_ranges": [
+    [
+     1,
+     109
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "policy critique paper (companion to a referee report)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Model proposition (extrapolation under stated assumptions): 9. Because inference logs feed training corpora, generalized pre-inference rejection systematically excludes tail languages from future training signal. 10. Adopted at the scale the paper recommends — multilingual public-sector surfaces — the pattern pushes the input and logging distribution in the degenerative direction identified by the collapse literature. 11. Under mediation-ratchet conditions (doi:10.5281/zenodo.20518338), the contraction can cross a threshold beyond which a linguistic niche cannot recover from its unaided corpus. 12. The paper is itself a specimen of the collapse dynamic it does not cite: a machine-mediated research apparatus — one whose threat instruments are borrowed from the model — misidentifies the linguistic tail as hostile input and recommends pruning it from the very systems whose long-term health depends on preserving tail variation.",
+     "lines": [
+      103,
+      103
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       13,
+       13
+      ],
+      [
+       55,
+       61
+      ],
+      [
+       93,
+       93
+      ]
+     ],
+     "note": "Conditional forecast (model propositions 9-11) of what generalized adoption of the mitigation does to the ecology; no window."
+    },
+    {
+     "shape": "D",
+     "quote": "It does not cite the model-collapse literature — the body of work that would have revealed the valence inversion documented in §3 — and it presents as a novel coinage a term with 146 days of DOI-anchored prior usage (companion referee report, §9).",
+     "lines": [
+      83,
+      83
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "companion referee report §9; prior semantic-exhaustion deposit",
+     "also_at": [],
+     "note": "Priority anchor: 146 days of DOI-anchored prior usage of the term."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 820,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0333-text.md",
+   "lines_total": 47,
+   "read_ranges": [
+    [
+     1,
+     47
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dossier executive summary / compression object",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Because inference logs feed training corpora, because the pattern targets multilingual public-sector surfaces, and because mediated selection ratchets (*Diversity Contraction Across Substrates*, doi:10.5281/zenodo.20518338), the generalized pattern pushes the ecology toward the degradation the paper never mentions.",
+     "lines": [
+      25,
+      25
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same conditional forecast as #191, restated in summary."
+    },
+    {
+     "shape": "D",
+     "quote": "The paper's title term, *semantic exhaustion*, has a prior, DOI-anchored occupant: deposited 2026-01-07 (doi:10.5281/zenodo.18172252), 146 days before the paper,",
+     "lines": [
+      33,
+      33
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "doi:10.5281/zenodo.18172252 (2026-01-07)",
+     "also_at": [],
+     "note": "Priority anchor with DOI and deposit date."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
