@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T20:04:02Z",
-  "finished_at": "2026-10-15T20:05:59Z",
+  "finished_at": "2026-10-15T20:06:09Z",
   "tools_used": [
    "Read",
    "Bash",
@@ -256,16 +256,20 @@
     },
     {
      "shape": "G",
-     "quote": "<p class=\"lead\"><span class=\"lemma msp-auto\">When platforms evaluate work for inclusion, ranking, or retrieval, work that comes from a</span> <strong>single sustained author with deep provenance</strong> receives systematically lower scores than work assembled from many shallow sources — even when the substantive content is identical.</p>\n<p><span class=\"lemma msp-auto\">The discount is operational, not editorial: it arises from the evaluation procedures themselves rather than from human moderation choices.</span> The structural consequence is that the public information environment is biased toward atomized, low-provenance content and against sustained, attributable expertise. The finding is consequential for any regulatory frame that treats search and retrieval as neutral infrastructure.</p>",
+     "quote": "<p class=\"lead\"><span class=\"lemma msp-auto\">When platforms evaluate work for inclusion, ranking, or retrieval, work that comes from a</span> <strong>single sustained author with deep provenance</strong> receives systematically lower scores than work assembled from many shallow sources — even when the substantive content is identical.</p>",
      "lines": [
       2476,
-      2477
+      2476
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "The Single-Owner Discount, DOI 10.5281/zenodo.20290865",
      "also_at": [
+      [
+       2477,
+       2477
+      ],
       [
        1491,
        1491
@@ -331,16 +335,25 @@
     },
     {
      "shape": "F",
-     "quote": "<p><strong><span class=\"lemma msp-auto\">To mark a term as tested:</span></strong> Set <code>tested: true</code> after running a capture battery query on the term. Add corresponding entry to the capture registry.</p>\n<p><strong><span class=\"lemma msp-auto\">To sync with the capture registry:</span></strong> Each capture registry entry has a <code>q</code> field (the search query). Cross-reference against the term index's <code>key</code> field. Any capture registry query that matches a term index key should set that term's <code>tested</code> to <code>true</code>.</p>\n<p><strong>Tier definitions:</strong></p>\n<pre>Tier 1: Two-word operative interventions (count ≥ 5)\n        — highest priority for capture battery\n        — these reshape the composition layer's vocabulary",
+     "quote": "<p><strong><span class=\"lemma msp-auto\">To mark a term as tested:</span></strong> Set <code>tested: true</code> after running a capture battery query on the term. Add corresponding entry to the capture registry.</p>",
      "lines": [
       1915,
-      1920
+      1915
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       1916,
+       1916
+      ],
+      [
+       1918,
+       1920
+      ]
+     ],
      "note": "Term Index continuity protocol: untested terms are to be run through a capture battery, Tier 1 first; monitoring/test programme specified."
     },
     {
