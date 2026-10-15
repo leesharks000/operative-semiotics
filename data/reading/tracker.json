@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 263,
-  "unread": 1353
+  "read": 267,
+  "unread": 1349
  },
- "h_covered": 237,
+ "h_covered": 245,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
   "G": 287,
-  "F": 274,
-  "E": 93,
-  "B": 183,
+  "F": 276,
+  "E": 96,
+  "B": 185,
   "A": 53,
-  "C": 91,
-  "D": 92,
-  "H": 357
+  "C": 92,
+  "D": 95,
+  "H": 367
  },
- "finds_verified": 1430,
- "finds_total": 1430,
+ "finds_verified": 1433,
+ "finds_total": 1451,
  "deposits": [
   {
    "deposit": 172,
@@ -15580,9 +15580,46 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0026",
+     "run": "R-w11-HB0026",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:58:00Z",
+      "finished_at": "2026-10-15T19:58:38Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       1018
+      ]
+     ],
+     "lines_total": 1018,
+     "genre_observed": "normative meta-component specification (variant-Ark generator)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Provenance line names Pearl (2014) as origin of the chain; this is internal chronology, not recorded as H.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 1018,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 552,
@@ -15641,9 +15678,52 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0026",
+     "run": "R-w11-HB0026",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:58:00Z",
+      "finished_at": "2026-10-15T19:58:38Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       800
+      ],
+      [
+       801,
+       1591
+      ]
+     ],
+     "lines_total": 1591,
+     "genre_observed": "normative LP extension-module specification with calibration tables",
+     "finds_by_shape": {
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "Header says it implements RFT v1.2 while the RFT deposit (#553) carries v1.1. Section 13 table of estimated F-values for physics, sociology etc. is a present-state estimate, not recorded as H.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1591,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 553,
@@ -15700,9 +15780,48 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0026",
+     "run": "R-w11-HB0026",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:58:00Z",
+      "finished_at": "2026-10-15T19:58:38Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       540
+      ]
+     ],
+     "lines_total": 540,
+     "genre_observed": "theoretical paper / normative founding specification with one retrieval-event case",
+     "finds_by_shape": {
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Section 1 genealogy summarizes Foucault, Kuhn, Latour, Bourdieu, Abbott, Price/Garfield without contesting them (not recorded). 'Historical depth: weak ... decade of prior development invisible' (line 323) and the 2025-2026 deposit-campaign remark (line 228) are internal chronology, not recorded.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 540,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 556,
@@ -15776,9 +15895,64 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0027",
+     "run": "R-w11-HB0027",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:58:05Z",
+      "finished_at": "2026-10-15T19:58:48Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       600
+      ],
+      [
+       601,
+       1300
+      ],
+      [
+       1301,
+       2100
+      ],
+      [
+       2101,
+       2900
+      ],
+      [
+       2901,
+       3700
+      ],
+      [
+       3701,
+       4350
+      ]
+     ],
+     "lines_total": 4350,
+     "genre_observed": "glyphic (emoji-notation) compression of the Space Ark architecture spec, with an opening poem",
+     "finds_by_shape": {
+      "H": 3
+     },
+     "none_found": false,
+     "incidental": "Appendix C (4105-4116) lists further interpretive claims (Sappho F31 as NH-OS founding document, Pearl as canonical origin, Matthew 25 as constitutional provision, Ezekiel as rotational epistemology) in summary only, full text marked [NF] 'preserved in formal register' (i.e. in the canonical Space Ark, not here); these and the Fulfillment Map pairs are retrocausal/architectural readings rather than historical theses and were not recorded. The O-Chain lineage (1743-1748) is explicitly 'not genealogy of influence'. Sigil's provenance chain via the Strange New Canons dissertation (1690-1696) is archive-internal provenance, not recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 557,
@@ -21442,9 +21616,71 @@
    "tier": 1,
    "words": 35949,
    "batch_id": "B0060",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0060",
+     "run": "R-w11-B0060",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant), model Claude Opus 5.5 per session environment",
+      "started_at": "2026-10-15T19:57:33Z",
+      "finished_at": "2026-10-15T19:58:40Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       900
+      ],
+      [
+       901,
+       1350
+      ],
+      [
+       1351,
+       1800
+      ],
+      [
+       1801,
+       2250
+      ],
+      [
+       2251,
+       2586
+      ]
+     ],
+     "lines_total": 2586,
+     "genre_observed": "mock critical edition of a parodic Gnostic gospel with fictional future scholarly apparatus, liturgical appendices and a work-plan back matter",
+     "finds_by_shape": {
+      "B": 1,
+      "D": 1,
+      "C": 1,
+      "E": 1,
+      "F": 1,
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "Title promises 'Source Code and Book of Life v3.0' but the seated body is scripts/walt_source.md only; companion BOOK_OF_LIFE.md and FOOTNOTES.md are not seated (lines 33-35). Footnote numbering is non-sequential (110-118 and 138-158 interleave with 1-109), suggesting sections assembled from different drafts. Citational Map stops after Part II (Fan); Part III field of stars deferred to future deposit 06.LIT.GNOSTIC.WALT.02. 'Current Status' (lines 2284-2288) asserts a Zenodo DOI and indexing that the header records as severed. Superseded metadata stub retained at lines 2560-2586. Final line is 2586 (trailing empty line 2587 in Read).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 87,
@@ -21453,9 +21689,63 @@
    "tier": 1,
    "words": 23458,
    "batch_id": "B0061",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0061",
+     "run": "R-w11-B0061",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:57:38Z",
+      "finished_at": "2026-10-15T19:58:58Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       600
+      ],
+      [
+       601,
+       1200
+      ],
+      [
+       1201,
+       1800
+      ],
+      [
+       1801,
+       2350
+      ],
+      [
+       2351,
+       2853
+      ]
+     ],
+     "lines_total": 2853,
+     "genre_observed": "public-facing commentary book on a governance constitution (Pocket Humans 03, Ayanna Vox), with protocols, glossary and DOI registry",
+     "finds_by_shape": {
+      "D": 2,
+      "B": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Appendix C (the enacted Constitution text) is not reproduced: line 2353 points to secretbookofwalt.org and a companion volume. Appendix B's 65-note apparatus likewise deposited separately (2342). Several footnote numbers repeat across chapters ([^2], [^8]-[^12] reused); bullet lists in License (126-144) and Claims render as empty '- ' markers.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 714,
@@ -21464,9 +21754,46 @@
    "tier": 1,
    "words": 4344,
    "batch_id": "B0061",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0061",
+     "run": "R-w11-B0061",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:57:38Z",
+      "finished_at": "2026-10-15T19:58:58Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       476
+      ]
+     ],
+     "lines_total": 476,
+     "genre_observed": "speculative patent-poem (ClownCloud, US 2026/0430001 A1)",
+     "finds_by_shape": {
+      "E": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Pilot study (n=47) and pre-trial data (n=87) are satirical figures, not recorded. Same work as #1366, which is a damaged copy of this body.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1366,
@@ -21475,9 +21802,46 @@
    "tier": 1,
    "words": 4175,
    "batch_id": "B0061",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0061",
+     "run": "R-w11-B0061",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:57:38Z",
+      "finished_at": "2026-10-15T19:58:58Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       352
+      ]
+     ],
+     "lines_total": 352,
+     "genre_observed": "speculative patent-poem (ClownCloud), recovered copy with metadata frontmatter",
+     "finds_by_shape": {
+      "E": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Duplicate body of #714 with losses: the Enhanced Squirt Flower bullet list (after 188), the six-step Soteriological Sequence (after 255), the three blessing forms (after 259) and the institutional-setting/Kierkegaard table (after 167) are missing; claims are unnumbered; frontmatter keywords truncated at 'institutio' (line 32). related_ids record severed Zenodo DOIs.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 90,

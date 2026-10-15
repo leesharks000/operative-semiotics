@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 222,
+ "deposits_with_notes": 226,
  "deposits": [
   {
    "deposit": 8,
@@ -306,6 +306,17 @@
      "batch_id": "B0059",
      "field": "incidental",
      "text": "Read tool displays a line 483 beyond lines_total 482 (final line without newline). STRUCTURAL CROSS-REFERENCES heading (467) has no content."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 87,
+   "notes": [
+    {
+     "batch_id": "B0061",
+     "field": "incidental",
+     "text": "Appendix C (the enacted Constitution text) is not reproduced: line 2353 points to secretbookofwalt.org and a companion volume. Appendix B's 65-note apparatus likewise deposited separately (2342). Several footnote numbers repeat across chapters ([^2], [^8]-[^12] reused); bullet lists in License (126-144) and Claims render as empty '- ' markers."
     }
    ],
    "rulings": []
@@ -1452,6 +1463,11 @@
      "batch_id": "B0026",
      "field": "incidental",
      "text": "Section 8.1 heads 'Four Safety Gates' but lists five gates (GATE 5 GOVERNANCE); SIM-SAG-06 says five. Table bodies are flattened to one cell per line."
+    },
+    {
+     "batch_id": "HB0026",
+     "field": "incidental",
+     "text": "Provenance line names Pearl (2014) as origin of the chain; this is internal chronology, not recorded as H."
     }
    ],
    "rulings": []
@@ -1463,6 +1479,11 @@
      "batch_id": "B0026",
      "field": "incidental",
      "text": "Header says v1.1; YAML comment line 1380 still reads v1.0, and section 14 interfaces SAG-v1.0 while colophon says SAG-v1.2. Tables flattened to one cell per line."
+    },
+    {
+     "batch_id": "HB0026",
+     "field": "incidental",
+     "text": "Header says it implements RFT v1.2 while the RFT deposit (#553) carries v1.1. Section 13 table of estimated F-values for physics, sociology etc. is a present-state estimate, not recorded as H."
     }
    ],
    "rulings": []
@@ -1474,6 +1495,11 @@
      "batch_id": "B0026",
      "field": "incidental",
      "text": "Document ID is 00.SPEC.RFT.v1.1 while #552 implements RFT v1.2. Tables flattened to one cell per line."
+    },
+    {
+     "batch_id": "HB0026",
+     "field": "incidental",
+     "text": "Section 1 genealogy summarizes Foucault, Kuhn, Latour, Bourdieu, Abbott, Price/Garfield without contesting them (not recorded). 'Historical depth: weak ... decade of prior development invisible' (line 323) and the 2025-2026 deposit-campaign remark (line 228) are internal chronology, not recorded."
     }
    ],
    "rulings": []
@@ -1485,6 +1511,11 @@
      "batch_id": "B0027",
      "field": "incidental",
      "text": "Several bullet lists render as empty '- ' markers followed by detached content (e.g. lines 271-314, 1981-2008), likely a conversion artifact. Line 1113 '- = institutional packet' has lost its leading asterisk to list conversion. Appendices A-E are [NF] summaries only; full content lives in the formal-register Ark v4.2.6 (DOI 10.5281/zenodo.18969405). Most predictive material is normative thresholds/tests rather than dated forecasts; no dated forecast found."
+    },
+    {
+     "batch_id": "HB0027",
+     "field": "incidental",
+     "text": "Appendix C (4105-4116) lists further interpretive claims (Sappho F31 as NH-OS founding document, Pearl as canonical origin, Matthew 25 as constitutional provision, Ezekiel as rotational epistemology) in summary only, full text marked [NF] 'preserved in formal register' (i.e. in the canonical Space Ark, not here); these and the Fulfillment Map pairs are retrocausal/architectural readings rather than historical theses and were not recorded. The O-Chain lineage (1743-1748) is explicitly 'not genealogy of influence'. Sigil's provenance chain via the Strange New Canons dissertation (1690-1696) is archive-internal provenance, not recorded."
     }
    ],
    "rulings": [
@@ -1803,6 +1834,17 @@
      "batch_id": "CAL",
      "field": "incidental",
      "text": "Pilot study n=0 (line 145) is explicitly fictional and not recorded. Claims list bullets are fused with '- ' markers at line ends."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 714,
+   "notes": [
+    {
+     "batch_id": "B0061",
+     "field": "incidental",
+     "text": "Pilot study (n=47) and pre-trial data (n=87) are satirical figures, not recorded. Same work as #1366, which is a damaged copy of this body."
     }
    ],
    "rulings": []
@@ -2831,6 +2873,28 @@
      "batch_id": "B0057",
      "field": "incidental",
      "text": "Near-duplicate of #692 body (later deployed version with MSP/SPXI-TLP layers). sameAs (line 73) and 'Basin Theory' link (line 712) point to alexanarch.org/s/records/0/, which looks like a placeholder/wrong record for EA-HK-01 / EA-RBT-01. Front matter lists original DOIs as severed."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1362,
+   "notes": [
+    {
+     "batch_id": "B0060",
+     "field": "incidental",
+     "text": "Title promises 'Source Code and Book of Life v3.0' but the seated body is scripts/walt_source.md only; companion BOOK_OF_LIFE.md and FOOTNOTES.md are not seated (lines 33-35). Footnote numbering is non-sequential (110-118 and 138-158 interleave with 1-109), suggesting sections assembled from different drafts. Citational Map stops after Part II (Fan); Part III field of stars deferred to future deposit 06.LIT.GNOSTIC.WALT.02. 'Current Status' (lines 2284-2288) asserts a Zenodo DOI and indexing that the header records as severed. Superseded metadata stub retained at lines 2560-2586. Final line is 2586 (trailing empty line 2587 in Read)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1366,
+   "notes": [
+    {
+     "batch_id": "B0061",
+     "field": "incidental",
+     "text": "Duplicate body of #714 with losses: the Enhanced Squirt Flower bullet list (after 188), the six-step Soteriological Sequence (after 255), the three blessing forms (after 259) and the institutional-setting/Kierkegaard table (after 167) are missing; claims are unnumbered; frontmatter keywords truncated at 'institutio' (line 32). related_ids record severed Zenodo DOIs."
     }
    ],
    "rulings": []
