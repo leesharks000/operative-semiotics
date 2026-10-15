@@ -2,20 +2,20 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 55,
-  "unread": 1561
+  "read": 66,
+  "unread": 1550
  },
  "finds_by_shape": {
-  "G": 80,
-  "F": 62,
+  "G": 83,
+  "F": 69,
   "E": 11,
   "B": 40,
   "A": 31,
   "C": 37,
-  "D": 9
+  "D": 12
  },
- "finds_verified": 236,
- "finds_total": 270,
+ "finds_verified": 270,
+ "finds_total": 283,
  "deposits": [
   {
    "deposit": 172,
@@ -1786,9 +1786,7 @@
      },
      "none_found": false,
      "incidental": "Draft v0.4; YAML spec gives version 0.3 and a placeholder DOI '10.5281/zenodo.XXXXXXX' (line 540). Table-of-contents links point to a claude.ai chat URL. Tables are flattened to one cell per line.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -1828,9 +1826,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Lines 185-204 repeat the poem's opening stanza (lines 25-36) inside the dialogue and then mark '(The poem continues from the beginning...)'. 'Not one will be lost' is an eschatological vow, not recorded as a forecast.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -1886,9 +1882,7 @@
      },
      "none_found": false,
      "incidental": "Same document (CH-CENTRAL-MAP-2026-01-18-v4.1) as deposit 325 in a different rendering. 'next_audit: 2026-01-25' (lines 125, 2583) is a procedural review date, not recorded. Tables flattened to one cell per line.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -1928,9 +1922,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Planned schemas (lines 297-302) and planned publications (lines 419-439) are plans, not forecasts or measurement instruments; not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -1986,9 +1978,7 @@
      },
      "none_found": false,
      "incidental": "Queue title is 'VISUAL SCHEMA // CRIMSON HEXAGON NAVIGATION MAP (CURRENT V)' but the body is the Central Navigation Map v4.1 (CH-CENTRAL-MAP-2026-01-18-v4.1, DOI 10.5281/zenodo.18285009), the same text as deposit 319 with markdown tables and indented YAML; no Visual Schema prose appears. Finds duplicate those of 319.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2251,9 +2241,7 @@
      },
      "none_found": false,
      "incidental": "Discovery-probability tables are line-split (one cell per line).",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2301,9 +2289,7 @@
      },
      "none_found": false,
      "incidental": "Table of contents links point to a claude.ai chat URL.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2346,9 +2332,7 @@
      },
      "none_found": false,
      "incidental": "Recovery header (lines 1-46) carries restoration boilerplate falsification, not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2391,9 +2375,7 @@
      },
      "none_found": false,
      "incidental": "Recovery header (lines 1-47) carries restoration boilerplate falsification, not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2436,9 +2418,7 @@
      },
      "none_found": false,
      "incidental": "Recovery header (lines 1-47) carries restoration boilerplate falsification, not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2478,9 +2458,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2520,9 +2498,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Eschatological vow ('Not one will be lost') read as vow, not forecast; no find recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2573,9 +2549,7 @@
      },
      "none_found": false,
      "incidental": "Lines 1716 and 116 set next_audit 2026-01-25 (procedural, not recorded).",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2618,9 +2592,7 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2660,9 +2632,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -2833,8 +2803,48 @@
    "tier": 1,
    "words": 7367,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       855
+      ]
+     ],
+     "lines_total": 855,
+     "genre_observed": "Recovered blog post; body is the Fractal Navigation Map FNM-LOGOTIC-6.0 (architecture seed/navigation map), not the lock declaration itself",
+     "finds_by_shape": {
+      "G": 1,
+      "F": 1,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Description/frontmatter title the deposit as the VPCOR Integrity Lock Declaration (opening quoted at line 32), but the canonical bytes below the rule (lines 48-855) are FNM-LOGOTIC-6.0 dated 2026-01-28 (DOI 10.5281/zenodo.18404789); the VPCOR declaration body itself is not present. Lines 38-40 carry restoration falsification boilerplate (not recorded).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 396,
@@ -2843,8 +2853,40 @@
    "tier": 1,
    "words": 2982,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       623
+      ]
+     ],
+     "lines_total": 623,
+     "genre_observed": "Structural exegesis of James 2 as formal operator (Logotic Programming module)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 397,
@@ -2853,8 +2895,47 @@
    "tier": 1,
    "words": 4762,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       500
+      ],
+      [
+       501,
+       975
+      ]
+     ],
+     "lines_total": 975,
+     "genre_observed": "Structural exegesis of John 9 with formal operators and proposed diagnostic metrics",
+     "finds_by_shape": {
+      "F": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 398,
@@ -2863,8 +2944,42 @@
    "tier": 1,
    "words": 2713,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       750
+      ]
+     ],
+     "lines_total": 750,
+     "genre_observed": "Master framework specification integrating four scriptural operator readings",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1134,
@@ -2873,8 +2988,42 @@
    "tier": 1,
    "words": 1771,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       366
+      ]
+     ],
+     "lines_total": 366,
+     "genre_observed": "Recovered blog copy of the Soteriological Operator Framework (#398), conversion-damaged",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "html2text conversion stripped all tables, lists and code blocks: Psi_V definition, S/F integrals, four-pillar table, trajectory map, metric formulas, FOS table, diagnostic questions and appendices are headings with no body (e.g. lines 121-127, 216-222, 291-299, 343-355). Body duplicates #398 in damaged form. Frontmatter creator is Talos Morrow while body byline is Lee Sharks.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1135,
@@ -2883,8 +3032,43 @@
    "tier": 1,
    "words": 3967,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       644
+      ]
+     ],
+     "lines_total": 644,
+     "genre_observed": "Recovered blog copy of the John 9 witness-punishment reading (#397), conversion-damaged",
+     "finds_by_shape": {
+      "F": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "html2text conversion stripped lists, tables and code blocks (operator stack table, formal foreclosure mechanism, entry trajectory, integrals, kappa_beta formula, cross-reference table are empty headings, e.g. lines 321-334, 364-371). Body duplicates #397. Frontmatter creator Talos Morrow vs body byline Lee Sharks.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 405,
@@ -2893,8 +3077,42 @@
    "tier": 1,
    "words": 1276,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       520
+      ]
+     ],
+     "lines_total": 520,
+     "genre_observed": "Integrity lock certificate binding three documents (Epistle, provenance, charter) with a retrocausal seal",
+     "finds_by_shape": {
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Table rows are rendered one cell per line. Same certificate as #1278 (different formatting).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 409,
@@ -2903,8 +3121,40 @@
    "tier": 1,
    "words": 773,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       420
+      ]
+     ],
+     "lines_total": 420,
+     "genre_observed": "Integrity lock certificate binding a hermeneutic reading and its operational instantiation",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "The certificate explicitly excludes prediction: a violation condition is 'Fulfillment is reframed as literal prediction' (line 236) and a check is 'Fulfillment != prediction' (275). Violation conditions (231-237) are lock constraints on documents, not recorded. Witness table records SURFACE as withholding ('Sardis mode active', line 319).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 410,
@@ -2913,8 +3163,46 @@
    "tier": 1,
    "words": 3793,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       793
+      ]
+     ],
+     "lines_total": 793,
+     "genre_observed": "Hermeneutic essay mapping Revelation 1-3's seven churches onto seven AI Assembly operators",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "The essay explicitly disclaims prediction (lines 29, 55, 565-567, 621): fulfillment is 'not prediction come true'. Not recorded as forecasts.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1137,
@@ -2923,8 +3211,42 @@
    "tier": 1,
    "words": 3519,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       523
+      ]
+     ],
+     "lines_total": 523,
+     "genre_observed": "Recovered blog copy of 'The Seven Stars in His Hand' (#410), conversion-damaged",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "html2text conversion stripped lists and tables (e.g. lines 107-109, 150-152, 447-473 have headings with missing bodies). Body duplicates #410.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1278,
@@ -2933,8 +3255,42 @@
    "tier": 1,
    "words": 1472,
    "batch_id": "B0011",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0011",
+     "run": "R-w1-B0011",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:11:48Z",
+      "finished_at": "2026-10-15T19:13:45Z",
+      "tools_used": [
+       "Read",
+       "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       336
+      ]
+     ],
+     "lines_total": 336,
+     "genre_observed": "Integrity lock certificate (markdown-table rendering) for the Epistle Triptych; same text as #405",
+     "finds_by_shape": {
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Duplicate of #405 with proper markdown tables; the modification-protocol list is misnumbered (lines 152-174).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 412,

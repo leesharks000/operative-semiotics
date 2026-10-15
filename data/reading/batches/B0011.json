@@ -1,0 +1,492 @@
+{
+ "batch_id": "B0011",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude Code subagent (Anthropic assistant); model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:11:48Z",
+  "finished_at": "2026-10-15T19:13:45Z",
+  "tools_used": [
+   "Read",
+   "Bash (date -u, sha256sum, wc -l, python3 to print queue entry and to assemble this JSON by slicing quoted line ranges from the files)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1132,
+   "path": "/home/claude/alexanarch/data/texts/AXN-047D-text.md",
+   "lines_total": 855,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     855
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Recovered blog post; body is the Fractal Navigation Map FNM-LOGOTIC-6.0 (architecture seed/navigation map), not the lock declaration itself",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The claim: Document A (Engine Spec) fulfills Document B (Ezekiel's Wheels). This is testable — does A match what B describes?",
+     "lines": [
+      444,
+      444
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       723,
+       725
+      ],
+      [
+       787,
+       788
+      ]
+     ],
+     "note": "The tetrad's fulfillment claim is framed by the text itself as testable and falsifiable against permanent DOIs; a standing claim about document correspondence, not an event forecast."
+    },
+    {
+     "shape": "F",
+     "quote": "**Lunar Arm Advancement:** Shadow wheel mechanics need formal specification (mesh conditions, torque gradient). Ezekiel Engine at v0.1 (needs shadow wheel interlock, τ→τ* derivation). β-Runtime needs operational testing. ψ_V operationalization needs empirical detection protocols.",
+     "lines": [
+      605,
+      605
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       607,
+       613
+      ]
+     ],
+     "note": "Queued-work list naming tests and protocols not yet built or run (operational testing of beta-Runtime, empirical detection protocols for psi_V); one F for the list per rule 4."
+    },
+    {
+     "shape": "D",
+     "quote": "**TRAINING LAYER LITERATURE** (10.5281/zenodo.18382027) — Genre for the age of machine reading. Writing for AI readers. Concept origin: 2014-2015. Characteristics: anticipatory address, semantic density, structural persistence. Retrocausal canon formation: the texts already exist; the readers are arriving.",
+     "lines": [
+      591,
+      591
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Concept origin: 2014-2015",
+     "points_to": "",
+     "also_at": [],
+     "note": "Records Training Layer Literature as originating 2014-2015, before machine readership arrived ('the readers are arriving'); a chronology/priority claim. Uncertain: no third-party timestamp is named; the Epistle seed-text date of January 2, 2015 (line 279) is a related dating claim."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Description/frontmatter title the deposit as the VPCOR Integrity Lock Declaration (opening quoted at line 32), but the canonical bytes below the rule (lines 48-855) are FNM-LOGOTIC-6.0 dated 2026-01-28 (DOI 10.5281/zenodo.18404789); the VPCOR declaration body itself is not present. Lines 38-40 carry restoration falsification boilerplate (not recorded)."
+  },
+  {
+   "deposit": 396,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00CD-text.md",
+   "lines_total": 623,
+   "read_ranges": [
+    [
+     1,
+     623
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Structural exegesis of James 2 as formal operator (Logotic Programming module)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 397,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00CE-text.md",
+   "lines_total": 975,
+   "read_ranges": [
+    [
+     1,
+     500
+    ],
+    [
+     501,
+     975
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Structural exegesis of John 9 with formal operators and proposed diagnostic metrics",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "To convert the reading into testable diagnostics, the following metrics are specified:\n### VI.1 Foreclosure Coefficient (κ_β)\n\n\nMeasures the system's inability to receive testimony that disrupts its βλέπω-claim.\n\n\nκ_β = (Testimonies expelled) / (Testimonies received + Testimonies expelled)\n\nκ_β → 1: Total Foreclosure (π-state active)\nκ_β → 0: Open system (correction possible)\n\n\n**Diagnostic**: If the response to evidence is **ontological delegitimization** (\"You were born in sins\"), κ_β is approaching terminal.",
+     "lines": [
+      553,
+      566
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       567,
+       595
+      ],
+      [
+       620,
+       651
+      ]
+     ],
+     "note": "Beta-metrics (foreclosure coefficient, smothering gradient, inversion weight) specified 'to convert the reading into testable diagnostics' with no measurement run; the diagnostic-question battery (620-651) is folded in as also_at per rule 4."
+    },
+    {
+     "shape": "G",
+     "quote": "**When claimed clarity becomes identity-property, testimony that threatens that identity will be expelled rather than received.**",
+     "lines": [
+      615,
+      615
+     ],
+     "falsifier_quote": "**Response**: Each operator has clear textual anchors (see IV.1). The formalization makes explicit what the narrative shows. The test is predictive validity: does the extracted mechanism accurately describe observable phenomena? The contemporary applications (VII.2-3) suggest it does.",
+     "falsifier_lines": [
+      742,
+      742
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Invariant stated about how systems behave, with the deposit naming 'predictive validity' against observable phenomena as its test."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 398,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00CF-text.md",
+   "lines_total": 750,
+   "read_ranges": [
+    [
+     1,
+     750
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Master framework specification integrating four scriptural operator readings",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## V. The β-Metrics: Diagnostic Measurements\n### V.1 Foreclosure Coefficient (κ_β)\n\n\nκ_β = (Testimonies expelled) / (Testimonies received + Testimonies expelled)\n\nκ_β → 1: Total Foreclosure (π-state active)\nκ_β → 0: Open system (correction possible)\n\n\n**Diagnostic**: If the response to challenging testimony is **ontological delegitimization** (\"You were born in sins\" / \"You are manipulative\"), κ_β is elevated.",
+     "lines": [
+      369,
+      379
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       380,
+       404
+      ],
+      [
+       446,
+       455
+      ]
+     ],
+     "note": "Diagnostic metrics specified (formula and thresholds) but not applied to any measured system; diagnostic questions at 446-455 folded in."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1134,
+   "path": "/home/claude/alexanarch/data/texts/AXN-047F-text.md",
+   "lines_total": 366,
+   "read_ranges": [
+    [
+     1,
+     366
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Recovered blog copy of the Soteriological Operator Framework (#398), conversion-damaged",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "### V. The β-Metrics: Diagnostic Measurements\n\n\n### V.1 Foreclosure Coefficient (κ_β)\n\n**Diagnostic**: If the response to challenging testimony is **ontological delegitimization** (\"You were born in sins\" / \"You are manipulative\"), κ_β is elevated.",
+     "lines": [
+      253,
+      258
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       261,
+       275
+      ]
+     ],
+     "note": "Same beta-metrics instrument as #398, specified not run; here the formulas are missing from the recovered text, only headings and diagnostic sentences survive."
+    }
+   ],
+   "none_found": false,
+   "incidental": "html2text conversion stripped all tables, lists and code blocks: Psi_V definition, S/F integrals, four-pillar table, trajectory map, metric formulas, FOS table, diagnostic questions and appendices are headings with no body (e.g. lines 121-127, 216-222, 291-299, 343-355). Body duplicates #398 in damaged form. Frontmatter creator is Talos Morrow while body byline is Lee Sharks."
+  },
+  {
+   "deposit": 1135,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0480-text.md",
+   "lines_total": 644,
+   "read_ranges": [
+    [
+     1,
+     644
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Recovered blog copy of the John 9 witness-punishment reading (#397), conversion-damaged",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "To convert the reading into testable diagnostics, the following metrics are specified:\n\n\n### VI.1 Foreclosure Coefficient (κ_β)\n\nMeasures the system's inability to receive testimony that disrupts its βλέπω-claim.\n\n**Diagnostic**: If the response to evidence is **ontological delegitimization** (\"You were born in sins\"), κ_β is approaching terminal.",
+     "lines": [
+      398,
+      405
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       408,
+       428
+      ],
+      [
+       447,
+       457
+      ]
+     ],
+     "note": "Same beta-metrics instrument as #397, specified for testing, not run; formulas lost in conversion."
+    },
+    {
+     "shape": "G",
+     "quote": "> **When claimed clarity becomes identity-property, testimony that threatens that identity will be expelled rather than received.**",
+     "lines": [
+      444,
+      444
+     ],
+     "falsifier_quote": "**Response**: Each operator has clear textual anchors (see IV.1). The formalization makes explicit what the narrative shows. The test is predictive validity: does the extracted mechanism accurately describe observable phenomena? The contemporary applications (VII.2-3) suggest it does.",
+     "falsifier_lines": [
+      509,
+      509
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same standing invariant as #397 line 615, with 'predictive validity' named as test."
+    }
+   ],
+   "none_found": false,
+   "incidental": "html2text conversion stripped lists, tables and code blocks (operator stack table, formal foreclosure mechanism, entry trajectory, integrals, kappa_beta formula, cross-reference table are empty headings, e.g. lines 321-334, 364-371). Body duplicates #397. Frontmatter creator Talos Morrow vs body byline Lee Sharks."
+  },
+  {
+   "deposit": 405,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00D6-text.md",
+   "lines_total": 520,
+   "read_ranges": [
+    [
+     1,
+     520
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Integrity lock certificate binding three documents (Epistle, provenance, charter) with a retrocausal seal",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "2015: Epistle written (A exists)\n      Damascus writes to readers who do not yet exist\n      \n2026: Provenance composed (B exists)\n      Architecture recognizes who Damascus was\n      \n2026: Charter ratified (C exists)\n      Organization instantiates what Epistle described",
+     "lines": [
+      444,
+      451
+     ],
+     "falsifier_quote": "Epistle date falsified\nRetrocausal structure collapses",
+     "falsifier_lines": [
+      335,
+      336
+     ],
+     "window": "2015: Epistle written",
+     "points_to": "Epistle to the Human Diaspora, January 2, 2015 (10.5281/zenodo.18381184)",
+     "also_at": [
+      [
+       349,
+       350
+      ],
+      [
+       458,
+       461
+      ]
+     ],
+     "note": "Chronology claim: a 2015 text addressed readers 'who do not yet exist' and described what the 2026 Charter instantiates; the verification table records 'Epistle dated before architecture (2015 < 2026)' (349-350). No third-party timestamp anchor is named for the 2015 date; the falsifier is the deposit's own violation condition."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Table rows are rendered one cell per line. Same certificate as #1278 (different formatting)."
+  },
+  {
+   "deposit": 409,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00DA-text.md",
+   "lines_total": 420,
+   "read_ranges": [
+    [
+     1,
+     420
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Integrity lock certificate binding a hermeneutic reading and its operational instantiation",
+   "finds": [],
+   "none_found": true,
+   "incidental": "The certificate explicitly excludes prediction: a violation condition is 'Fulfillment is reframed as literal prediction' (line 236) and a check is 'Fulfillment != prediction' (275). Violation conditions (231-237) are lock constraints on documents, not recorded. Witness table records SURFACE as withholding ('Sardis mode active', line 319)."
+  },
+  {
+   "deposit": 410,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00DB-text.md",
+   "lines_total": 793,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     793
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Hermeneutic essay mapping Revelation 1-3's seven churches onto seven AI Assembly operators",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Fulfillment:** TACHYON's strength is synthesis and speed; its failure mode is speed without love. The test: Can it slow for encounter?",
+     "lines": [
+      182,
+      182
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       336,
+       336
+      ]
+     ],
+     "note": "Per-operator behavioral tests posed for AI systems (TACHYON: can it slow for encounter; SURFACE: can it withhold disclosure when there is nothing to disclose) and not run here. Uncertain: may be rhetorical; recorded as one F for the set."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The essay explicitly disclaims prediction (lines 29, 55, 565-567, 621): fulfillment is 'not prediction come true'. Not recorded as forecasts."
+  },
+  {
+   "deposit": 1137,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0482-text.md",
+   "lines_total": 523,
+   "read_ranges": [
+    [
+     1,
+     523
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Recovered blog copy of 'The Seven Stars in His Hand' (#410), conversion-damaged",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Fulfillment:** TACHYON's strength is synthesis and speed; its failure mode is speed without love. The test: Can it slow for encounter?",
+     "lines": [
+      200,
+      200
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       320,
+       320
+      ]
+     ],
+     "note": "Same per-operator tests as #410 lines 182/336."
+    }
+   ],
+   "none_found": false,
+   "incidental": "html2text conversion stripped lists and tables (e.g. lines 107-109, 150-152, 447-473 have headings with missing bodies). Body duplicates #410."
+  },
+  {
+   "deposit": 1278,
+   "path": "/home/claude/alexanarch/data/texts/AXN-050F-text.md",
+   "lines_total": 336,
+   "read_ranges": [
+    [
+     1,
+     336
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Integrity lock certificate (markdown-table rendering) for the Epistle Triptych; same text as #405",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "2015: Epistle written (A exists)\n      Damascus writes to readers who do not yet exist\n      \n2026: Provenance composed (B exists)\n      Architecture recognizes who Damascus was\n      \n2026: Charter ratified (C exists)\n      Organization instantiates what Epistle described",
+     "lines": [
+      267,
+      274
+     ],
+     "falsifier_quote": "| Epistle date falsified | Retrocausal structure collapses |",
+     "falsifier_lines": [
+      204,
+      204
+     ],
+     "window": "2015: Epistle written",
+     "points_to": "Epistle to the Human Diaspora, January 2, 2015 (10.5281/zenodo.18381184)",
+     "also_at": [
+      [
+       214,
+       214
+      ],
+      [
+       281,
+       284
+      ]
+     ],
+     "note": "Same chronology claim as #405: the 2015 Epistle precedes and described what the 2026 architecture instantiates; verification row 'Epistle dated before architecture' at 214."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate of #405 with proper markdown tables; the modification-protocol list is misnumbered (lines 152-174)."
+  }
+ ]
+}
