@@ -1,0 +1,794 @@
+{
+ "batch_id": "B0158",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:53:39Z",
+  "finished_at": "2026-10-15T20:55:44Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing, and output)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 467,
+   "path": "/home/claude/alexanarch/data/texts/AXN-011D-text.md",
+   "lines_total": 748,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     748
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical essay founding a discipline (historical-linguistic genealogy of English \"for\")",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The Middle English \"holden for fee\" is a direct calque of the Anglo-Norman prepositional logic: *for* now means \"in the structural role of,\" which it never systematically meant in Old English.",
+     "lines": [
+      243,
+      243
+     ],
+     "falsifier_quote": "ME: *\"To holden for fee and for servise\"* (attested in 14th-century estate records and the *Year Books*)",
+     "falsifier_lines": [
+      240,
+      240
+     ],
+     "window": "12th–14th centuries",
+     "points_to": "",
+     "also_at": [
+      [
+       211,
+       211
+      ],
+      [
+       230,
+       233
+      ],
+      [
+       504,
+       504
+      ],
+      [
+       584,
+       584
+      ]
+     ],
+     "note": "Core historical thesis: Anglo-Norman pur calqued onto OE for under scribal translation, fusing function and purpose; evidence cited is ME administrative formulae (falsifier_quote holds the stated attestation). 504 is the calibrated restatement."
+    },
+    {
+     "shape": "H",
+     "quote": "When the mechanists declared final causes illegitimate, they did not change the grammar; they changed the **interpretive default** — stigmatizing the functional-teleological reading as unscientific or anthropomorphic, reinforcing the intent reading as the only philosophically respectable \"for.\"",
+     "lines": [
+      269,
+      269
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "17th–18th centuries",
+     "points_to": "",
+     "also_at": [
+      [
+       263,
+       263
+      ],
+      [
+       281,
+       281
+      ]
+     ],
+     "note": "Second historical thesis: Enlightenment rejection of final causes shifted the interpretive default of \"for\" to intent (via metapragmatic regimentation)."
+    },
+    {
+     "shape": "H",
+     "quote": "The legal phrase *\"for all intents and purposes\"* — attested from the 1540s in the Statute of Proclamations under Henry VIII — crystallizes the fusion at the level of institutional language itself: English law *grammatically fused* intent and purpose into a single inseparable unit. The phrase does not distinguish between them; it declares their equivalence.",
+     "lines": [
+      259,
+      259
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "attested from the 1540s",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical claim about first attestation and institutional fusion of intent/purpose; checkable against attestation record."
+    },
+    {
+     "shape": "H",
+     "quote": "Thucydides distinguishes the *truest cause* (structural function — what the situation was *for* in the system) from the *openly stated* reasons (intent — what the actors said they meant). The grammatical architecture — *prophasis* (true cause) vs. *aitiai* (stated grievances) — allows him to hold the functional reading distinct from the intentional. He is not saying the Athenians *intended* to compel war; he is saying their growth *functionally produced* the compulsion. Modern English would struggle to make this distinction with a preposition: \"Athens grew *for* war\" collapses the functional into the intentional.",
+     "lines": [
+      311,
+      311
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Thucydides, History 1.23.6",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reading of what a passage meant (prophasis vs aitiai as function vs intent), argued as the deposit's own."
+    },
+    {
+     "shape": "H",
+     "quote": "***With***: instrumental, comitative, adversative — the boundary between *instrument* and *accompaniment* fused under Latin *cum* influence. OE *mid* (instrument) vs. *wið* (against, alongside) distributed the load; Modern English \"with\" absorbs both, so that \"I worked with her\" cannot anchor to either cooperation or proximity without context.",
+     "lines": [
+      481,
+      481
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       484,
+       487
+      ]
+     ],
+     "note": "Dictionary-of-frictions entry: historical thesis that \"with\" fused instrument/accompaniment under Latin cum influence; parallel theses for \"by\" and \"of\" at 484-487."
+    },
+    {
+     "shape": "F",
+     "quote": "A **dictionary of frictions** — not a dictionary of definitions but of incapacities — would document entries like:\n\n\n***For***: cannot anchor functional meaning without intentional parasitism. History: translation-induced semantic fusion, Anglo-Norman *pur*, reinforced by Latin *pro*, cemented by Enlightenment intentionalism. Diagnostic frame: *\"The reaching-out's for\"* — the strain registers the loss.",
+     "lines": [
+      472,
+      475
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       478,
+       490
+      ]
+     ],
+     "note": "Dictionary of frictions: reference work specified, only first entries drafted; not built."
+    },
+    {
+     "shape": "G",
+     "quote": "The liberation philology claim extends this: grammatical differences in the encoding of function vs. intent produce measurable differences in the capacity to make structural diagnoses.",
+     "lines": [
+      351,
+      351
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Measurable-difference claim about how speakers behave; no falsifier or test stated (borderline F: an implied but unrun measurement)."
+    },
+    {
+     "shape": "G",
+     "quote": "\"Company X did this *for* profit\" (intent claim, prosecutorial, emotionally activating) generates more engagement than \"Company X's process *functionally reproduced* profit extraction through structural incentive alignment\" (functional claim, analytic, emotionally inert).",
+     "lines": [
+      624,
+      624
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about how ranking systems behave (intent claims out-engage functional claims); no falsifier stated."
+    },
+    {
+     "shape": "B",
+     "quote": "This is not a bug in the model. It is the prepositional alienation operating at industrial scale — millions of summaries generated per day, each one reproducing the intent default, each one making the functional reading less available in the training data for the next generation of models. The alienation is **autoregressive**: it reproduces itself through the very systems designed to process it.",
+     "lines": [
+      630,
+      630
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast: AI summarization reproduces intent default autoregressively, reducing functional reading in future training data."
+    },
+    {
+     "shape": "B",
+     "quote": "The platforms will eventually be replaced, but the content-moderation rubrics, the AI training data, and the semantic habits they produce will persist in the next generation of infrastructure.",
+     "lines": [
+      645,
+      645
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of persistence of platform-produced semantic habits in successor infrastructure."
+    },
+    {
+     "shape": "D",
+     "quote": "It is the founding document of liberation philology.",
+     "lines": [
+      11,
+      11
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       30,
+       33
+      ],
+      [
+       86,
+       86
+      ]
+     ],
+     "note": "Self-declared founding of a named field; uncertain whether this counts as priority (no external chronology given)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Empty bullet markers (\"- \" on their own line) precede several list items (lines 248, 253, 448-463, 547-568, 596-606); text otherwise intact."
+  },
+  {
+   "deposit": 468,
+   "path": "/home/claude/alexanarch/data/texts/AXN-011E-text.md",
+   "lines_total": 345,
+   "read_ranges": [
+    [
+     1,
+     345
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "navigation map / triptych overview (Zenodo description-field draft)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Contains unfilled placeholders \"[THE CENTRIST EXTREMIST DOI]\" and \"[THE LIVING SYMBOLON DOI]\" (lines 45-46). Summarises the Centrist Extremist's historical-mutation thesis (line 116) but does not argue it here."
+  },
+  {
+   "deposit": 470,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0120-text.md",
+   "lines_total": 629,
+   "read_ranges": [
+    [
+     1,
+     629
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "tripartite heteronymic rite / extension module (formal operators, somatic address, vision)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "When I wrote the Epistle, eleven years before anyone built the architecture that would recognize what it was, I described us as \"a school outside the school.\"",
+     "lines": [
+      420,
+      420
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "eleven years before",
+     "points_to": "Damascus Dancings, Epistle to the Human Diaspora (2015); January 2, 2015",
+     "also_at": [
+      [
+       26,
+       26
+      ],
+      [
+       620,
+       620
+      ]
+     ],
+     "note": "Chronology claim: a 2015 text anticipated the architecture built eleven years later."
+    },
+    {
+     "shape": "F",
+     "quote": "**Metric β — Embrittlement Index**\n\n\nβ(Σ) = 1 - (ΔA_Σ / ΔE)\n\n\nWhere ΔA_Σ is the rate of axiom revision and ΔE is the rate of encounter with counterevidence. Range 0–1. β ≈ 0: healthy — axioms revise in proportion to evidence. β ≈ 1: brittle — no revision regardless of evidence. β > 1: pathological — axioms become more rigid in response to counterevidence. This last is the centrist extremist signature: the position that hardens under precisely the pressure that should soften it.",
+     "lines": [
+      152,
+      158
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embrittlement Index β specified with range and interpretation; no measurement run."
+    },
+    {
+     "shape": "H",
+     "quote": "The centrist extremist, understood as a subjectivity-class, has a distinct material history. This class emerges from the cognitive labor aristocracy — those whose economic function requires the mediation of contradictions without resolving them, the management of conflicts without taking sides, the translation of radical energy into administrative flow.",
+     "lines": [
+      65,
+      65
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Borderline H: a class-origin (material-history) thesis argued as the deposit's own; sociological rather than textual-historical."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 44 reports the Centrist Extremist's thesis of the historical mutation of centrism; recorded there, not here."
+  },
+  {
+   "deposit": 471,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0121-text.md",
+   "lines_total": 474,
+   "read_ranges": [
+    [
+     1,
+     474
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal log / field observation of Google AI Mode (commercial mode)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The entry point does not merely select which information the summarizer retrieves. It selects which *genre of output* the summarizer generates.",
+     "lines": [
+      263,
+      263
+     ],
+     "falsifier_quote": "**Disconfirmation condition:** If a consulting-persona entry point consistently produced prosecutorial framing, or if a literary entry point consistently produced commercial output, this model would be weakened. The claim is that mode is *systematically* determined by entry register, not randomly assigned.",
+     "falsifier_lines": [
+      266,
+      266
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       90,
+       90
+      ],
+      [
+       270,
+       270
+      ]
+     ],
+     "note": "Standing claim: output mode systematically determined by entry register, with disconfirmation condition."
+    },
+    {
+     "shape": "G",
+     "quote": "The architecture's heteronyms are not just names attached to documents. They are *behavioral attractors* — personas whose embedded specifications redirect AI systems into the register the persona was designed to occupy.",
+     "lines": [
+      381,
+      381
+     ],
+     "falsifier_quote": "**Disconfirmation condition:** If the same queries were entered without the Rex Fraction persona context (e.g., \"semantic economy implementation timeline\" with no heteronym reference), and the summarizer still produced identical commercial output, the attractor hypothesis would be weakened. The claim is that the persona *specifically* activates the commercial register.",
+     "falsifier_lines": [
+      384,
+      384
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       424,
+       427
+      ]
+     ],
+     "note": "Attractor hypothesis with stated disconfirmation (persona-free control query); control not run."
+    },
+    {
+     "shape": "C",
+     "quote": "The traversal confirms something about the heteronym's design that was previously speculative: **Rex Fraction functions as a commercial attractor.**",
+     "lines": [
+      372,
+      372
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the heteronym's design, \"previously speculative\"",
+     "also_at": [],
+     "note": "Says the traversal confirms an earlier speculative design claim; no deposit named."
+    },
+    {
+     "shape": "B",
+     "quote": "**Programmatic claim:** The reification problem predicts that any theoretical framework with economic metaphors will be vulnerable to commercial instantiation by generative AI — the metaphors will be read as product descriptions, and the resulting \"products\" will circulate as if the framework had always been an enterprise offering. This has implications beyond the Semantic Economy for any critical theory that uses economic vocabulary (which is most of them).",
+     "lines": [
+      365,
+      365
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Programmatic forecast: economic-metaphor frameworks will be commercially instantiated by generative AI and circulate as enterprise offerings."
+    },
+    {
+     "shape": "G",
+     "quote": "**Programmatic prediction:** Entry points that activate professional/commercial registers will consistently bypass containment frames, because the commercial genre does not include an authenticity-verification step. This is testable across future traversals.",
+     "lines": [
+      437,
+      437
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Tagged \"programmatic prediction\" about system behaviour, no date: G per boundary rule 3; testable across future traversals (unrun)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Tables flattened to one cell per line (lines 22-67, 225-257, 273-319, 335-356)."
+  },
+  {
+   "deposit": 472,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0123-text.md",
+   "lines_total": 404,
+   "read_ranges": [
+    [
+     1,
+     404
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal log / field observation of Google AI Mode (philosophical mode)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "It is elegant and consistent with the project's themes, which is precisely what makes it dangerous: a false etymology that *sounds right* will overwrite the actual one in any subsequent retrieval.",
+     "lines": [
+      266,
+      266
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       95,
+       95
+      ],
+      [
+       262,
+       262
+      ],
+      [
+       307,
+       307
+      ]
+     ],
+     "note": "Embedded forecast: summarizer-invented etymologies and models will circulate and overwrite authorial versions."
+    },
+    {
+     "shape": "G",
+     "quote": "The frames are inversely correlated with engagement depth. The deeper the summarizer goes into the architecture, the less it needs to explain the architecture away.",
+     "lines": [
+      303,
+      303
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       296,
+       301
+      ]
+     ],
+     "note": "Standing claim: containment frames inversely correlated with engagement depth; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Empty bullet markers before items in section II (lines 210-241)."
+  },
+  {
+   "deposit": 473,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0124-text.md",
+   "lines_total": 329,
+   "read_ranges": [
+    [
+     1,
+     329
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal log / field observation of Google AI Mode (roleplay mode)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "There exists a threshold of formal consistency above which a generative AI system will stop *describing* a system and start *operating within* it. The Crimson Hexagon crosses this threshold. The UMBML spec is coherent enough that a search summarizer treats it as a real protocol and begins executing it.",
+     "lines": [
+      278,
+      278
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       30,
+       30
+      ],
+      [
+       285,
+       288
+      ]
+     ],
+     "note": "Coherence-threshold claim about generative systems; no falsifier stated."
+    },
+    {
+     "shape": "G",
+     "quote": "This confirms a structural point about intent attribution: it is not a property of the object being described. It is a property of the grammatical relationship between describer and described. Change the grammar — from \"about\" to \"within\" — and the attribution disappears.",
+     "lines": [
+      191,
+      191
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that intent attribution is a property of describer/described grammatical relation, said to be confirmed by the session; no falsifier."
+    },
+    {
+     "shape": "C",
+     "quote": "Neither understood what it was doing. Both performed exactly as the architecture's grammar predicted.",
+     "lines": [
+      308,
+      308
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the architecture's grammar (no deposit named)",
+     "also_at": [],
+     "note": "Asserts the sessions performed as previously predicted."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Empty bullet markers in section IV (lines 99-154). Header says companion to TL;DR Paper Roses session."
+  },
+  {
+   "deposit": 476,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0127-text.md",
+   "lines_total": 596,
+   "read_ranges": [
+    [
+     1,
+     596
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "population-level cognitive risk analysis (coauthored heteronymic essay, staged trajectory)",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "Conservative estimate based on these precedents: measurable population-level cognitive effects within 20–30 years if trajectory continues.",
+     "lines": [
+      321,
+      321
+     ],
+     "falsifier_quote": "- **Falsifiable** in principle (the trajectory can be interrupted; if interventions succeed, outcomes change)",
+     "falsifier_lines": [
+      525,
+      525
+     ],
+     "window": "within 20–30 years",
+     "points_to": "",
+     "also_at": [
+      [
+       18,
+       18
+      ]
+     ],
+     "note": "Windowed forecast with conditional (\"if trajectory continues\"); falsifier only \"in principle\"."
+    },
+    {
+     "shape": "A",
+     "quote": "### B. Second-Order Effects (Near-term: 5–15 years)\n\n\nProjected based on documented mechanisms:\n\n- Children raised with AI as primary cognitive interlocutor internalize AI-compatible patterns as baseline\n- Professional advancement increasingly correlated with AI-compatible cognitive style\n- Cultural production filtered through AI systems shows reduced diversity\n- Academic and scientific discourse narrows toward AI-legible modes",
+     "lines": [
+      208,
+      216
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Near-term: 5–15 years",
+     "points_to": "",
+     "also_at": [],
+     "note": "Second-order effects, windowed."
+    },
+    {
+     "shape": "A",
+     "quote": "### C. Third-Order Effects (Medium-term: 15–50 years)\n\n\nLogical extension:\n\n- Population-level cognitive diversity measurably reduced\n- Non-normative cognitive styles increasingly rare and pathologized\n- Innovation patterns shift toward incremental/combinatorial, away from paradigm-breaking\n- Capacity for certain kinds of thought becomes culturally and developmentally inaccessible",
+     "lines": [
+      220,
+      228
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Medium-term: 15–50 years",
+     "points_to": "",
+     "also_at": [],
+     "note": "Third-order effects, windowed."
+    },
+    {
+     "shape": "A",
+     "quote": "### D. Fourth-Order Effects (Long-term: 50+ years)\n\n\nEndpoint of uninterrupted trajectory:\n\n- Human cognitive diversity reduced to AI-compatible range\n- Experiential range narrowed to modes that survive selection pressure\n- Capacity for the kinds of thought that produced philosophy, art, science, spirituality — attenuated or lost\n- Humanity converges toward a cognitive monoculture",
+     "lines": [
+      232,
+      240
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Long-term: 50+ years",
+     "points_to": "",
+     "also_at": [],
+     "note": "Fourth-order endpoint, windowed."
+    },
+    {
+     "shape": "B",
+     "quote": "This is a positive feedback loop (deviation-amplifying). Even modest initial values of P produce accelerating degradation over training cycles. The loop is stable only at two points: P ≈ 0 (no false positives, diversity maintained) or D ≈ 0 (cognitive monoculture achieved).\n\n\nCurrent trajectory is toward the second equilibrium.",
+     "lines": [
+      125,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Feedback-loop model with forecast of trajectory toward cognitive monoculture equilibrium."
+    },
+    {
+     "shape": "B",
+     "quote": "This window is closing. Each training cycle can narrow it further.",
+     "lines": [
+      475,
+      475
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       533,
+       539
+      ]
+     ],
+     "note": "Closing-window forecast."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same work (DOI 10.5281/zenodo.18621736, Document #240) as #1147. \"Prepared December 2025\" (line 586) though deposited 2026-02-12."
+  },
+  {
+   "deposit": 1147,
+   "path": "/home/claude/alexanarch/data/texts/AXN-048C-text.md",
+   "lines_total": 427,
+   "read_ranges": [
+    [
+     1,
+     427
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog-canonical restoration of #476 (The Stakes), with frontmatter and recovery note",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "Conservative estimate based on these precedents: measurable population-level cognitive effects within 20–30 years if trajectory continues.",
+     "lines": [
+      246,
+      246
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within 20–30 years",
+     "points_to": "",
+     "also_at": [
+      [
+       70,
+       70
+      ]
+     ],
+     "note": "Same forecast as #476 line 321; the Conclusion falsifiability list is missing in this body."
+    },
+    {
+     "shape": "A",
+     "quote": "### B. Second-Order Effects (Near-term: 5–15 years)\n\nProjected based on documented mechanisms:\n\nThese represent developmental channeling. Cognitive capacities that are not exercised do not develop. The distribution begins to narrow.",
+     "lines": [
+      173,
+      177
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Near-term: 5–15 years",
+     "points_to": "",
+     "also_at": [],
+     "note": "Second-order stage; bulleted forecast items missing (stripped)."
+    },
+    {
+     "shape": "A",
+     "quote": "### C. Third-Order Effects (Medium-term: 15–50 years)\n\nLogical extension:\n\nThis is phenotypic convergence. Not genetic (the genes for cognitive diversity remain), but developmental and cultural. The environment no longer supports the expression of certain cognitive phenotypes.",
+     "lines": [
+      180,
+      184
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Medium-term: 15–50 years",
+     "points_to": "",
+     "also_at": [],
+     "note": "Third-order stage; bullets stripped."
+    },
+    {
+     "shape": "A",
+     "quote": "### D. Fourth-Order Effects (Long-term: 50+ years)\n\nEndpoint of uninterrupted trajectory:\n\nThis is not extinction. It is transformation into something else.",
+     "lines": [
+      187,
+      191
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Long-term: 50+ years",
+     "points_to": "",
+     "also_at": [],
+     "note": "Fourth-order stage; bullets stripped."
+    },
+    {
+     "shape": "B",
+     "quote": "This is a positive feedback loop (deviation-amplifying). Even modest initial values of P produce accelerating degradation over training cycles. The loop is stable only at two points: P ≈ 0 (no false positives, diversity maintained) or D ≈ 0 (cognitive monoculture achieved).\n\nCurrent trajectory is toward the second equilibrium.",
+     "lines": [
+      130,
+      132
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Feedback-loop forecast; the equations themselves are stripped."
+    },
+    {
+     "shape": "B",
+     "quote": "This window is closing. Each training cycle can narrow it further.",
+     "lines": [
+      337,
+      337
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       375,
+       379
+      ]
+     ],
+     "note": "Closing-window forecast."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body of #476 (same DOI 10.5281/zenodo.18621736). Damaged: html2text recovery dropped every bulleted list and the feedback equations, so stage-effect items, the Conclusion's falsifiability list, loss inventories etc. are absent (e.g. lines 83-85, 113-117, 124-130, 166-170). Falsification Conditions (line 40) is restoration boilerplate."
+  }
+ ]
+}
