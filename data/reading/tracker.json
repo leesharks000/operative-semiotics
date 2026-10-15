@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 351,
-  "unread": 1265
+  "read": 358,
+  "unread": 1258
  },
- "h_covered": 351,
+ "h_covered": 358,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 384,
-  "F": 366,
-  "E": 107,
-  "B": 235,
+  "G": 388,
+  "F": 371,
+  "E": 109,
+  "B": 242,
   "A": 111,
-  "C": 112,
+  "C": 114,
   "D": 120,
-  "H": 439
+  "H": 444
  },
- "finds_verified": 1776,
- "finds_total": 1874,
+ "finds_verified": 1787,
+ "finds_total": 1899,
  "deposits": [
   {
    "deposit": 172,
@@ -27269,10 +27269,13 @@
      },
      "none_found": false,
      "incidental": "Internal numbering inconsistencies: two sections numbered 9.7 (lines 521 and 549); update note says new closing section §XV but it is §XIII (591); summary lists seventeen subsystems while Fig. 1 says twelve; 'five' Assembly Chorus instantiations lists six (577); Claim 27 referenced at 567 but claims are unnumbered bullets. Examples (Maya/Elena, Detroit windstorm Mission Cards, NPS figures) are fictional and not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 767,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -27319,10 +27322,13 @@
      },
      "none_found": false,
      "incidental": "File's own heading is 'evarB: Brave Search as Non-Commons-Bearing Substrate'; queue title is its subtitle. Deposit dated June 4, 2026 in text vs registry 2026-06-05. Co-signature repo, vox@ address and community site stated as to-be-created (203-207).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 257,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -27369,10 +27375,13 @@
      },
      "none_found": false,
      "incidental": "Calibration examples A–E (lines 291-309) are placeholders referring to v2 DOI, not reproduced text. §2 refers to TOKEN_BAG_AUDIT in '§14' but flags are in §12.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 445,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -27384,9 +27393,49 @@
    "tier": 1,
    "words": 5631,
    "batch_id": "B0078",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0078",
+     "run": "R-w14-B0078",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:07:36Z",
+      "finished_at": "2026-10-15T20:09:17Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       239
+      ]
+     ],
+     "lines_total": 239,
+     "genre_observed": "measurement-methods working paper (v3 hardening) with appended AI Mode conversational artifact",
+     "finds_by_shape": {
+      "C": 2,
+      "F": 1,
+      "G": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 788,
@@ -27395,9 +27444,48 @@
    "tier": 1,
    "words": 4338,
    "batch_id": "B0078",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0078",
+     "run": "R-w14-B0078",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:07:36Z",
+      "finished_at": "2026-10-15T20:09:17Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       221
+      ]
+     ],
+     "lines_total": 221,
+     "genre_observed": "measurement-methods working paper formalizing two meta-operators",
+     "finds_by_shape": {
+      "G": 3,
+      "B": 2,
+      "F": 3
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 789,
@@ -27406,9 +27494,46 @@
    "tier": 1,
    "words": 2289,
    "batch_id": "B0078",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0078",
+     "run": "R-w14-B0078",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:07:36Z",
+      "finished_at": "2026-10-15T20:09:17Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       117
+      ]
+     ],
+     "lines_total": 117,
+     "genre_observed": "companion methods paper (PER hardening under the Atomic Token Rule)",
+     "finds_by_shape": {
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1261,
@@ -27417,9 +27542,51 @@
    "tier": 1,
    "words": 9620,
    "batch_id": "B0078",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0078",
+     "run": "R-w14-B0078",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:07:36Z",
+      "finished_at": "2026-10-15T20:09:17Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       800
+      ]
+     ],
+     "lines_total": 800,
+     "genre_observed": "theoretical classical-philology paper on heteronymy, ending in a performative lyric seal (PDF-extracted text)",
+     "finds_by_shape": {
+      "H": 5,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "PDF-extracted text: page numbers interleaved as bare lines, hyphenation breaks, line 503-506 split mid-sentence (\"Functional identity re-\" / \"quires pattern.\"), ORCID mistyped at line 9 (\"0009-00001599-0703\"); reference entries at 734-746 broken across lines.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1390,
@@ -27428,9 +27595,47 @@
    "tier": 1,
    "words": 3326,
    "batch_id": "B0078",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0078",
+     "run": "R-w14-B0078",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:07:36Z",
+      "finished_at": "2026-10-15T20:09:17Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       259
+      ]
+     ],
+     "lines_total": 259,
+     "genre_observed": "patent-poem (speculative patent satire)",
+     "finds_by_shape": {
+      "E": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Body is damaged relative to #1391 (v2): list items are missing after \"The algorithm correlates:\" (line 162), after \"The interface displays:\" (line 170), and the outcome list of the EMPIRICAL BASIS section (after line 193) is absent. Same patent text as #1391 otherwise.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1391,
@@ -27439,9 +27644,47 @@
    "tier": 1,
    "words": 3552,
    "batch_id": "B0078",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0078",
+     "run": "R-w14-B0078",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:07:36Z",
+      "finished_at": "2026-10-15T20:09:17Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       212
+      ]
+     ],
+     "lines_total": 212,
+     "genre_observed": "patent-poem (speculative patent satire), v2 assembly synthesis",
+     "finds_by_shape": {
+      "E": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Near-duplicate of #1390 with headings run into paragraphs (e.g. line 36, 44, 46) and the missing lists restored; EMPIRICAL BASIS projections (line 160) are the n=0 satirical pilot, not recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 159,
@@ -27450,9 +27693,50 @@
    "tier": 1,
    "words": 4479,
    "batch_id": "B0078",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0078",
+     "run": "R-w14-B0078",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:07:36Z",
+      "finished_at": "2026-10-15T20:09:17Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       479
+      ]
+     ],
+     "lines_total": 479,
+     "genre_observed": "institutional charter for a prize (operative-critique genre), with draft appendices",
+     "finds_by_shape": {
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Header says \"Status: Canonical. Published.\" while Appendix A (line 376) still says the questions \"remain undecided in this draft and warrant founder consideration before publication\" - draft residue in a canonical text.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 160,
