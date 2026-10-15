@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 402,
-  "unread": 1214
+  "read": 403,
+  "unread": 1213
  },
- "h_covered": 402,
+ "h_covered": 403,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 434,
-  "F": 415,
+  "G": 435,
+  "F": 419,
   "E": 112,
   "B": 281,
   "A": 132,
   "C": 132,
-  "D": 146,
-  "H": 500
+  "D": 147,
+  "H": 501
  },
- "finds_verified": 2152,
- "finds_total": 2152,
+ "finds_verified": 2159,
+ "finds_total": 2159,
  "deposits": [
   {
    "deposit": 172,
@@ -30259,9 +30259,68 @@
    "tier": 1,
    "words": 24424,
    "batch_id": "B0091",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0091",
+     "run": "R-w16-B0091",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic assistant) running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:14:55Z",
+      "finished_at": "2026-10-15T20:15:53Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       900
+      ],
+      [
+       901,
+       1350
+      ],
+      [
+       1351,
+       1799
+      ],
+      [
+       1800,
+       2190
+      ]
+     ],
+     "lines_total": 2190,
+     "genre_observed": "scholarly paper founding a field, with its dataset appendix of 131 capture annotations",
+     "finds_by_shape": {
+      "H": 1,
+      "D": 1,
+      "G": 1,
+      "F": 4
+     },
+     "none_found": false,
+     "incidental": "Markdown edition: all 221 screenshots are [IMAGE] placeholders. The annotation codebook tables (147-227) are flattened to one cell per line. Line 77 and the reference at 408 carry [REDACTED] for the author's 2015 orthonymous byline. Appendix entries 1-131 are dated capture observations (no finds recorded from them); entry #1 reports 'v6.1, 96 captures' from the composition while the paper is v7.2/131. Entry 53 cites the Future Beloved thesis under DOI 10.5281/zenodo.20413317 while the references list Sharks 2026f as 10.5281/zenodo.20693104.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 2190,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1401,
