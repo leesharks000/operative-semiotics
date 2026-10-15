@@ -105,6 +105,31 @@
    "subject": "KADEEZY",
    "ruling": "kadeezy is an artist name, a heteronym, and he wanted it to promote his publicly published music - why would we remove that? this is all very silly",
    "effect": "No change: KADEEZY is the artist's public name, deposited at his wish to promote his published music. Not a repair item."
+  },
+  {
+   "date": "2026-10-15",
+   "deposits": [],
+   "subject": "Repair landing and the front page",
+   "ruling": "look i want the actual full text to be canonical, i just dont want hundreds of old posts pushing out recent work on main / main of alexanarch, not github",
+   "effect": "Restorations land on alexanarch main as canonical. Checked: the front page's Recent Deposits and feed.xml list the last 12 by deposit number, which a repair never changes; both files unchanged by the repair bundles."
+  },
+  {
+   "date": "2026-10-15",
+   "deposits": [
+    1142,
+    1170,
+    1025
+   ],
+   "subject": "Retirements caused by wrong bodies; missing parts",
+   "ruling": "yes, unretire and seat texts, but make sure youre not duplicating something that already exists elsewhere on the blog. and yes, add it - flesh it out wherever the full text is available.",
+   "effect": "#1170 un-retired and its poem seated (seated as its own work nowhere else). #1142 stays retired: THE THUMB already stands at #431; successor corrected #13 -> #431. #1025's missing file 2 (SURFACE) added. Standing: where a deposit names a part whose full text is available, seat it (restore_wrong_bodies.py kind missing_part). alexanarch commit d377c0b2ec."
+  },
+  {
+   "date": "2026-10-15",
+   "deposits": [],
+   "subject": "Pace",
+   "ruling": "and lets proceed - this is a lot of repairs to make",
+   "effect": "Repairs proceed round by round, each landed by bundle."
   }
  ]
 }
