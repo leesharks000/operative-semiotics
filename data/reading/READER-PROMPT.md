@@ -18,3 +18,4 @@ The wave-1 prompt text was lost to context compaction; its run entries record "b
 - Wave 5 onward: the protocol reference reads v1.2 (shape H, historical thesis, added on Lee's ruling).
 - H back-pass batches (HB…): step 2 reads "Your batch is the entry with "batch_id": "<ID>" in data/reading/hpass.json … This is the H back-pass: record ONLY shape H (see the protocol's 'The H back-pass')."
 - Wave 10 onward adds to step 3: "Each quote must be ONE contiguous slice of the source (no joining of separate passages, no skipped lines inside the range)." (After B0054.)
+- X-batches (wave 17 on): step 2 reads the entry in data/reading/xqueue.json — a line RANGE of a derived own-voice text; read that range in full, all shapes, quote from the derived text.
