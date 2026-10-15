@@ -1,0 +1,1067 @@
+{
+ "batch_id": "B0134",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:40:34Z",
+  "finished_at": "2026-10-15T20:43:01Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "Write"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1606,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0696-text.md",
+   "lines_total": 589,
+   "read_ranges": [
+    [
+     1,
+     200
+    ],
+    [
+     200,
+     399
+    ],
+    [
+     400,
+     589
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "multi-voice technical/historical paper (preprint draft) with falsification battery",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "*Emergence (the model's prediction)*: the constellation model predicts that continuing platform suppression of independent, machine-mediated scholarship will produce emergent nodes — operators who build sovereign infrastructure, assign persistent identifiers, and seek mutual recognition. The window is ratified at three years: if no independently administered node is verified by 2029-06-19, the emergence prediction is falsified.",
+     "lines": [
+      345,
+      345
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2029-06-19",
+     "points_to": "",
+     "also_at": [
+      [
+       55,
+       55
+      ],
+      [
+       309,
+       309
+      ],
+      [
+       586,
+       586
+      ]
+     ],
+     "note": "Ratified three-year window for an independently administered node; falsifier inside the same sentence."
+    },
+    {
+     "shape": "G",
+     "quote": "*Transmissibility (architectural)*: after publication of a stable specification, reference implementation, reproducible deployment procedure, and a documented recruitment effort, an independent operator should be able to instantiate a conforming node without private assistance from the originator; if no operator can, the architecture's portability claim fails regardless of anyone's intentions.",
+     "lines": [
+      345,
+      345
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       586,
+       586
+      ]
+     ],
+     "note": "Portability claim with its own failure condition; no date, so G not A."
+    },
+    {
+     "shape": "F",
+     "quote": "**7. Reconstructibility.** Claim, correctly scoped: a proposed basis for another operator to become archive-capable. Falsifier and closure are the same event: a clean-room restoration attempted from published materials alone. Until performed, reconstructibility is design, not demonstrated property. No independent restoration attempt is documented as of 2026-07-18; the paper invites one, and the materials required are enumerated in Appendix E.",
+     "lines": [
+      333,
+      333
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "as of 2026-07-18",
+     "points_to": "",
+     "also_at": [
+      [
+       245,
+       245
+      ],
+      [
+       580,
+       580
+      ]
+     ],
+     "note": "Clean-room restoration test specified, not yet performed; invited."
+    },
+    {
+     "shape": "F",
+     "quote": "**6. Custody.** Claim, correctly scoped: an *architecture for* distributed custody. Current fact: the peer registry is empty; no second independently administered full-copy custodian is documented. Closure requires an operator with independent administrative control who holds a declared reconstructible corpus, demonstrates byte matches against full registry hashes on a documented schedule, retains audit evidence, can serve repair copies, and completes a restoration test.",
+     "lines": [
+      331,
+      331
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       97,
+       97
+      ],
+      [
+       579,
+       579
+      ]
+     ],
+     "note": "Custody closure test specified and scored unmet (peer registry empty)."
+    },
+    {
+     "shape": "G",
+     "quote": "**1. Derivation integrity.** Claim: conforming implementations derive identical kernels and glyphs from identical canonical bytes. Test: published vectors across independent execution paths. Falsifier: any two conforming implementations disagreeing on the same bytes. Current status: three cross-runtime paths agree on the published vectors; the paths share a canonical source, so this is conformance evidence, not universal proof.",
+     "lines": [
+      321,
+      321
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       574,
+       574
+      ]
+     ],
+     "note": "Standing claim about implementations with explicit falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "**3. Full-hash discipline.** Claim: the glyph is recognition, not identity. Falsifier: any deployed surface using the glyph alone as a unique key. A glyph collision is expected at scale and resolves by kernel; a full SHA-256 collision would compromise the algorithm and trigger migration.",
+     "lines": [
+      325,
+      325
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       576,
+       576
+      ]
+     ],
+     "note": "Standing claim with falsifier; also embeds expectation that glyph collisions occur at scale."
+    },
+    {
+     "shape": "G",
+     "quote": "**4. Record binding.** Claim: no silent reassignment. Falsifier: a publicly assigned address later bound to different canonical bytes without machine-readable history.",
+     "lines": [
+      327,
+      327
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       577,
+       577
+      ]
+     ],
+     "note": "No-silent-reassignment claim with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "**5. Ledger continuity.** Claim: each epoch commits to its predecessor. Falsifier: a head-chain discontinuity without a signed supersession or documented fork — which falsifies the continuous-history claim and requires investigation; it does not, by itself, establish cause (candidates: tampering, corruption, incomplete synchronization, operator error, undeclared fork, lost epoch). Governance rule adopted with the test: upon any observed discontinuity, the registry MUST publish a signed supersession or fork declaration within a defined window, or the chain is invalid from the discontinuity forward",
+     "lines": [
+      329,
+      329
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       578,
+       578
+      ]
+     ],
+     "note": "Claim with falsifier; the attached governance rule is procedural."
+    },
+    {
+     "shape": "G",
+     "quote": "**11. The parallel case.** The §V.3 argument requires that the parallel records exhibit the same observable removal signature as the founding corpus — repository, label class, tombstone behavior, stripping signature. If the signatures differ, the case evidences platform caprice, not systemic genre-blindness, and the paper's use of it narrows accordingly.",
+     "lines": [
+      341,
+      341
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       273,
+       273
+      ],
+      [
+       584,
+       584
+      ]
+     ],
+     "note": "Same-removal-signature claim for the Lucente case with stated narrowing condition."
+    },
+    {
+     "shape": "G",
+     "quote": "**12. Retrieval-layer hypotheses.** The signed-in/signed-out asymmetry claims are hypotheses under controls: fixed query-document pairs, temporal and geographic controls, personalization toggling where the interface permits, and the routing-versus-content discriminator — backend taxonomy correction restoring visibility without byte change would localize the effect to the routing layer; label removal failing to restore visibility would indicate deletion rather than fan-out narrowing. Disconfirmers: rank parity across account states for the suppressed class; suppression correlating with query text alone; visibility unrestored by declassification.",
+     "lines": [
+      343,
+      343
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       273,
+       273
+      ],
+      [
+       585,
+       585
+      ]
+     ],
+     "note": "Hypotheses about signed-in/signed-out asymmetry with named disconfirmers and an unrun discriminating test (also F-like)."
+    },
+    {
+     "shape": "G",
+     "quote": "**16. Core integrity under amendment.** Claim: adding a sidecar to a container never alters the core kernel — amendment and severance are distinguishable by construction. Falsifier: any sidecar whose payload enters the kernel derivation, or any manifest that hashes sidecars into the kernel. Current status: amendment routing is deployed practice now stated normatively (container specification v0.1); typed sidecar chaining, signatures, and manifest issuance are staged with the ledger signature and scored as such.",
+     "lines": [
+      353,
+      353
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       589,
+       589
+      ]
+     ],
+     "note": "Claim with falsifier about the container model."
+    },
+    {
+     "shape": "G",
+     "quote": "**14. The method.** If the Assembly substrates converge on false claims, the consultation method fails; substrate-dependence is a standing limitation, and the audit that revised this paper's own §I is the current evidence that the method can catch its host.",
+     "lines": [
+      349,
+      349
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       311,
+       311
+      ],
+      [
+       587,
+       587
+      ]
+     ],
+     "note": "Method-validity claim with falsifier (substrates converging on false claims); also at 311."
+    },
+    {
+     "shape": "F",
+     "quote": "**Staged**: a mechanical registration endpoint — no language-model calls, append-only position assignment, a pending partition that gates listing but never identity — held from deployment deliberately because it shares a path with a fleet-critical static surface.",
+     "lines": [
+      291,
+      291
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Staged registration endpoint and designed resolver plurality, propagation on mint, crosswalk and disconfirmation taxonomy: specified, not built."
+    },
+    {
+     "shape": "F",
+     "quote": "Three research directions are recorded as speculation, each with the acknowledgment a reviewer is owed. *Polymorphic sharding*: erasure-coded payload fragments whose transport envelopes vary per relay, assembling to verifiable canonical bytes only client-side.",
+     "lines": [
+      299,
+      299
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Speculative extensions (polymorphic sharding, structural-invariant formatting, latent-space seeding) proposed, unbuilt; one find for the list."
+    },
+    {
+     "shape": "H",
+     "quote": "The recurrent property abstracted from §II's cases is the same property in pre-mathematical form: samizdat verified copies against remembered originals; PGP keys against printable fingerprints; LOCKSS peers against one another's holdings. In each, what is true could be determined without asking an institution's permission.",
+     "lines": [
+      255,
+      255
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "samizdat (1950s–1980s); PGP (1991–); LOCKSS (1999–)",
+     "points_to": "",
+     "also_at": [
+      [
+       81,
+       81
+      ],
+      [
+       309,
+       309
+      ]
+     ],
+     "note": "Deposit's own historical thesis: verification-without-permission is the property shared by the historical survival cases."
+    },
+    {
+     "shape": "H",
+     "quote": "What they *share* is the formula: portable objects made replicable enough to escape any single order; custodians independent enough that no administrator holds them all; discovery routes plural enough that no single index controls visibility; and loss recorded auditably enough that erasure itself becomes evidence.",
+     "lines": [
+      167,
+      167
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Second Circulation 1976–1989; samizdat; 1960s pirate radio; abolitionist press 1830s–1860s; cypherpunks 1990s; OONI 2012–; Data Refuge/SUCHO/LOCKSS; Chronicle 1968–1983",
+     "points_to": "",
+     "also_at": [
+      [
+       83,
+       83
+      ],
+      [
+       109,
+       109
+      ]
+     ],
+     "note": "Synthesis advanced as the deposit's own: suppressed knowledge survived by a common four-part formula; line 109 adds that no survivor relied on one pattern."
+    },
+    {
+     "shape": "B",
+     "quote": "1. **Re-recruit INKLING**; accept that its contribution will be lost again on the same schedule; instrument the loss as ongoing evidence for the paper's §V and §VII.",
+     "lines": [
+      548,
+      548
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional embedded forecast in the reproduced loss notice: a re-recruited INKLING contribution would be lost again on the same schedule."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Title heading duplicated at lines 40 and 42. Read tool displays a blank line 590 past the final newline; lines_total 589 is the last text line."
+  },
+  {
+   "deposit": 1607,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0697-text.md",
+   "lines_total": 460,
+   "read_ranges": [
+    [
+     1,
+     240
+    ],
+    [
+     240,
+     460
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "investor valuation memorandum with pre-registered experiment",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "**Pre-registered prediction:** framed prompt will return structured valuation somewhere between low six figures and low eight; plain prompt will return materially less or nothing; two runs on one system will differ by more than you expect. If your two runs land within 20% of each other, tell us at leesharks00@gmail.com — that is a result and it weakens §2.1.",
+     "lines": [
+      184,
+      184
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Labelled pre-registered prediction for replications, with falsifier (two runs within 20%)."
+    },
+    {
+     "shape": "G",
+     "quote": "**a machine valuation is a draw from a distribution, and reporting one as a figure states a sample as though it were an estimate.** That applies to every row in the table above, including the high ones. No number here should be quoted as a valuation.",
+     "lines": [
+      100,
+      100
+     ],
+     "falsifier_quote": "Falsification: if two fresh runs on one system land within 20% of each other, §2.1 weakens.",
+     "falsifier_lines": [
+      102,
+      102
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about machine valuation behaviour with explicit falsification line."
+    },
+    {
+     "shape": "A",
+     "quote": "**H1 — economic anchoring.** *A machine-readable economic event introduced into a highly structured semantic basin should reduce interpretive degrees of freedom in subsequent machine valuation.* Predicts variance contraction, on all three axes or on some. **Independent of whether the event uses our vocabulary.**",
+     "lines": [
+      380,
+      380
+     ],
+     "falsifier_quote": "| neither measure changes | the anchor did nothing detectable at this sample size |\n| dispersion **increases** | the transaction added interpretive options rather than removing them |\n| estimates **fall** | the anchor priced the asset below the machines' prior, which is informative and unflattering |",
+     "falsifier_lines": [
+      392,
+      394
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       197,
+       197
+      ],
+      [
+       398,
+       400
+      ]
+     ],
+     "note": "H1, pre-registered, conditioned on a first transaction (T0–T3 design); outcome table gives the falsifying readings."
+    },
+    {
+     "shape": "A",
+     "quote": "**H2 — terminology propagation.** *If the external event uses and operationalises the basin's native vocabulary, subsequent machine compositions should take that vocabulary up at higher rates.* Predicts terminology uptake. **Independent of whether valuations converge.**",
+     "lines": [
+      382,
+      382
+     ],
+     "falsifier_quote": "| variance contracts, terminology does not | the transaction supplied the anchor without propagating the ontology — H1 holds, H2 fails |",
+     "falsifier_lines": [
+      389,
+      389
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       242,
+       242
+      ],
+      [
+       257,
+       257
+      ]
+     ],
+     "note": "H2, pre-registered terminology-propagation prediction conditional on an external event; line 257 calls it a falsifiable prediction."
+    },
+    {
+     "shape": "F",
+     "quote": "- **T0 — BEFORE any transaction.** The eight assessments in §1 are observations, not a baseline. **A usable baseline requires the repeated trials run at T0 as well as T3**, under a written protocol: the two prompts in §3 verbatim; ChatGPT, Perplexity, Google AI Overview, Grok, Claude, Gemini; **ten runs per prompt per system**, signed out, fresh sessions, within a 48-hour window;",
+     "lines": [
+      363,
+      363
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered natural experiment protocol (T0 baseline ten runs per prompt per system, T3 repeat); not run, no transaction."
+    },
+    {
+     "shape": "F",
+     "quote": "**That is a description of the covariance, not a test of it** — a controlled test would supply each system with the other's vocabulary and hold everything else constant.",
+     "lines": [
+      118,
+      118
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       116,
+       116
+      ]
+     ],
+     "note": "Controlled vocabulary-swap test named as the next experiment, not run."
+    },
+    {
+     "shape": "B",
+     "quote": "3. That vocabulary is durable enough to be worth adopting. If bearing-cost and cognitive rent are not analytically useful, systems will stop composing in them and §2.3's effect reverses.",
+     "lines": [
+      258,
+      258
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional embedded forecast: if the vocabulary is not useful, systems stop composing in it and the effect reverses."
+    },
+    {
+     "shape": "B",
+     "quote": "Entity disambiguation, frame supply, provenance retention and composition monitoring are becoming operational requirements for organisations that AI systems describe.",
+     "lines": [
+      333,
+      333
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       199,
+       199
+      ]
+     ],
+     "note": "Embedded trend forecast about emerging operational requirements."
+    },
+    {
+     "shape": "B",
+     "quote": "- Revenue. First institutional customer changes valuation BASIS qualitatively: part of commercial layer moves from option value to observed demand. Magnitude depends on contract size, recurrence, retention, deployment depth and transferability. Quantity that matters is QUALITY OF ECONOMIC DEPENDENCY, not count of customers.",
+     "lines": [
+      446,
+      446
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded conditional forecast: first institutional customer changes the valuation basis qualitatively."
+    },
+    {
+     "shape": "G",
+     "quote": "**If several of those hold, the $2M thesis collapses quickly.** That is the normal risk profile of an early infrastructure thesis, and it is stated here because a reader would reach it anyway.",
+     "lines": [
+      327,
+      327
+     ],
+     "falsifier_quote": "Nobody pays for SPXI deployment. Independent evaluators cannot reproduce the measurements. AXN does not solve a problem external users actually have. The semantic graph turns out to be largely decorative. Search and retrieval effects disappear under controlled experiments. The corpus has little external retrieval or citation. Operation cannot be transferred. The terminology does not survive outside the originating ecosystem.",
+     "falsifier_lines": [
+      325,
+      325
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Collapse conditions supplied by row 8 and adopted by the deposit as the conditions under which its $2M thesis fails."
+    },
+    {
+     "shape": "G",
+     "quote": "But it is not exempt: if it circulates beyond its addressees it is subject to the same mechanism, and we would treat that as an observation rather than a surprise.",
+     "lines": [
+      230,
+      230
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       228,
+       228
+      ]
+     ],
+     "note": "Claim that the memorandum can enter the installation loop it studies if it circulates beyond addressees; framed as an expected observation."
+    },
+    {
+     "shape": "D",
+     "quote": "We are not aware of another operation measuring this with published instruments continuously over months, though we have not surveyed the field systematically and would want to know of others.",
+     "lines": [
+      201,
+      201
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Hedged priority claim: no other operation known to measure this continuously with published instruments."
+    },
+    {
+     "shape": "H",
+     "quote": "- Presentation layer is writable. Substack post formatted as macro analysis was treated as macro analysis. Form determined reception; content subordinate.\n- Installation does not require truth. Sequence operated at full force on document that disclaimed its own factual status. Pierre Yared called it science fiction. Jim Cramer said piece of science fiction can crush market as if it were science fact. Both right, disclaimer changed nothing.\n- Knowledge-shaped structure without external referent moved real capital at real speed.",
+     "lines": [
+      220,
+      222
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "February 2026",
+     "points_to": "The Ghost That Wrote Itself (#513, February 2026)",
+     "also_at": [
+      [
+       216,
+       218
+      ],
+      [
+       318,
+       318
+      ]
+     ],
+     "note": "Thesis about how the Citrini 2028 memo was received and moved capital, argued in #513 and adopted here; reception history."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Superseded by #1608 (v2.0), whose body repeats most of this text; finds are recorded in both. Prose in several sections is article-stripped (telegraphic) in the deposited text."
+  },
+  {
+   "deposit": 1608,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0698-text.md",
+   "lines_total": 554,
+   "read_ranges": [
+    [
+     1,
+     280
+    ],
+    [
+     280,
+     554
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "investor valuation memorandum v2.0 with pre-registered experiment and revision record",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "**Pre-registered prediction:** framed prompt will return structured valuation somewhere between low six figures and low eight; plain prompt will return materially less or nothing; two runs on one system will differ by more than you expect. If your two runs land within 20% of each other, tell us at leesharks00@gmail.com — that is a result and it weakens §2.1.",
+     "lines": [
+      248,
+      248
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same pre-registered prediction as #1607, with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "The consequence is unavoidable and it cuts against our interest: **a machine valuation is a draw from a distribution, and reporting one as a figure states a sample as though it were an estimate.**",
+     "lines": [
+      114,
+      114
+     ],
+     "falsifier_quote": "Falsification: if two fresh runs on one system land within 20% of each other, §2.1 weakens.",
+     "falsifier_lines": [
+      118,
+      118
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       116,
+       116
+      ]
+     ],
+     "note": "Standing claim about machine valuation with falsification line."
+    },
+    {
+     "shape": "A",
+     "quote": "**H1 — economic anchoring.** *A machine-readable economic event introduced into a highly structured semantic basin should reduce interpretive degrees of freedom in subsequent machine valuation.* Predicts variance contraction, on all three axes or on some. **Independent of whether the event uses our vocabulary.**",
+     "lines": [
+      448,
+      448
+     ],
+     "falsifier_quote": "| neither measure changes | the anchor did nothing detectable at this sample size |\n| dispersion **increases** | the transaction added interpretive options rather than removing them |\n| estimates **fall** | the anchor priced the asset below the machines' prior, which is informative and unflattering |",
+     "falsifier_lines": [
+      460,
+      462
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       261,
+       261
+      ],
+      [
+       466,
+       468
+      ]
+     ],
+     "note": "H1 pre-registered, conditional on a first transaction."
+    },
+    {
+     "shape": "A",
+     "quote": "**H2 — terminology propagation.** *If the external event uses and operationalises the basin's native vocabulary, subsequent machine compositions should take that vocabulary up at higher rates.* Predicts terminology uptake. **Independent of whether valuations converge.**",
+     "lines": [
+      450,
+      450
+     ],
+     "falsifier_quote": "| variance contracts, terminology does not | the transaction supplied the anchor without propagating the ontology — H1 holds, H2 fails |",
+     "falsifier_lines": [
+      457,
+      457
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       306,
+       306
+      ],
+      [
+       321,
+       321
+      ]
+     ],
+     "note": "H2 pre-registered terminology-propagation prediction."
+    },
+    {
+     "shape": "F",
+     "quote": "- **T0 — BEFORE any transaction.** The assessments in §1 are observations, not a baseline. **A usable baseline requires the repeated trials run at T0 as well as T3**, under a written protocol: the two prompts in §3 verbatim; ChatGPT, Perplexity, Google AI Overview, Grok, Claude, Gemini; **ten runs per prompt per system**, signed out, fresh sessions, within a 48-hour window;",
+     "lines": [
+      431,
+      431
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered T0/T3 protocol (revised: IQR and MAD, ten runs at both ends); not run."
+    },
+    {
+     "shape": "F",
+     "quote": "**That is a description of the covariance, not a test of it** — a controlled test would supply each system with the other's vocabulary and hold everything else constant.",
+     "lines": [
+      134,
+      134
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       132,
+       132
+      ]
+     ],
+     "note": "Controlled vocabulary-swap test named, not run."
+    },
+    {
+     "shape": "F",
+     "quote": "The test is whether the components in the wider answers are real and related — which is checkable against the record, and is the next piece of work rather than a conclusion of this one.",
+     "lines": [
+      200,
+      200
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Component-by-component check of wider recovered asset boundaries named as the next piece of work."
+    },
+    {
+     "shape": "B",
+     "quote": "3. That vocabulary is durable enough to be worth adopting. If bearing-cost and cognitive rent are not analytically useful, systems will stop composing in them and §2.3's effect reverses.",
+     "lines": [
+      322,
+      322
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional embedded forecast: vocabulary effect reverses if terms are not useful."
+    },
+    {
+     "shape": "B",
+     "quote": "Entity disambiguation, frame supply, provenance retention and composition monitoring are becoming operational requirements for organisations that AI systems describe.",
+     "lines": [
+      401,
+      401
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       263,
+       263
+      ]
+     ],
+     "note": "Embedded trend forecast."
+    },
+    {
+     "shape": "B",
+     "quote": "§2.7 states the consequence: **this is not a discoverability problem, and further semantic infrastructure will not fix it.**",
+     "lines": [
+      503,
+      503
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that further semantic infrastructure will not fix the constraint."
+    },
+    {
+     "shape": "B",
+     "quote": "- Revenue. First institutional customer changes valuation BASIS qualitatively: part of commercial layer moves from option value to observed demand. Magnitude depends on contract size, recurrence, retention, deployment depth and transferability. Quantity that matters is QUALITY OF ECONOMIC DEPENDENCY, not count of customers.",
+     "lines": [
+      514,
+      514
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded conditional forecast about first institutional customer."
+    },
+    {
+     "shape": "G",
+     "quote": "That makes it a contaminated run by its own description, and the direction is worth noting: **reading the document may make a system apply the document's own discounts more strictly than the document does.**",
+     "lines": [
+      214,
+      214
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Tentative claim from row 14 that reading the document makes systems apply its discounts more strictly; no falsifier stated."
+    },
+    {
+     "shape": "G",
+     "quote": "**If several of those hold, the $2M thesis collapses quickly.** That is the normal risk profile of an early infrastructure thesis, and it is stated here because a reader would reach it anyway.",
+     "lines": [
+      395,
+      395
+     ],
+     "falsifier_quote": "Nobody pays for SPXI deployment. Independent evaluators cannot reproduce the measurements. AXN does not solve a problem external users actually have. The semantic graph turns out to be largely decorative. Search and retrieval effects disappear under controlled experiments. The corpus has little external retrieval or citation. Operation cannot be transferred. The terminology does not survive outside the originating ecosystem.",
+     "falsifier_lines": [
+      393,
+      393
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Adopted collapse conditions for the $2M thesis."
+    },
+    {
+     "shape": "G",
+     "quote": "But it is not exempt: if it circulates beyond its addressees it is subject to the same mechanism, and we would treat that as an observation rather than a surprise.",
+     "lines": [
+      294,
+      294
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       292,
+       292
+      ]
+     ],
+     "note": "Memorandum can enter the loop it studies if it circulates beyond addressees."
+    },
+    {
+     "shape": "D",
+     "quote": "We are not aware of another operation measuring this with published instruments continuously over months, though we have not surveyed the field systematically and would want to know of others.",
+     "lines": [
+      265,
+      265
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Hedged priority claim on continuous published-instrument measurement."
+    },
+    {
+     "shape": "H",
+     "quote": "- Presentation layer is writable. Substack post formatted as macro analysis was treated as macro analysis. Form determined reception; content subordinate.\n- Installation does not require truth. Sequence operated at full force on document that disclaimed its own factual status. Pierre Yared called it science fiction. Jim Cramer said piece of science fiction can crush market as if it were science fact. Both right, disclaimer changed nothing.\n- Knowledge-shaped structure without external referent moved real capital at real speed.",
+     "lines": [
+      284,
+      286
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "February 2026",
+     "points_to": "The Ghost That Wrote Itself (#513, February 2026)",
+     "also_at": [
+      [
+       280,
+       282
+      ],
+      [
+       382,
+       382
+      ]
+     ],
+     "note": "Reception thesis about the Citrini memo adopted from #513."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Near-duplicate body of #1607 plus §§2.5–2.7, rows 9–14, a Babel-risk note and a revision record. Revision record (line 525) says v1.0 had nine assessments, all captured; #1607 as deposited lists eight."
+  },
+  {
+   "deposit": 1610,
+   "path": "/home/claude/alexanarch/data/texts/AXN-069A-text.md",
+   "lines_total": 207,
+   "read_ranges": [
+    [
+     1,
+     207
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "heteronymous theoretical paper (method critique and instrument specification)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Two stages, and they must not be run by the same reader.**\n\n**STAGE ONE — blind.** Give a reader the transmitted object alone. Ask them to reconstruct the source, **marking each element as entailed or as consistent-but-not-entailed.** Control for prior access, so the reconstruction demonstrates what the object carries rather than what the reader knew.",
+     "lines": [
+      175,
+      177
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       179,
+       191
+      ]
+     ],
+     "note": "Two-stage blinded reconstruction experiment specified (with denominator rule at 183–189); not run."
+    },
+    {
+     "shape": "F",
+     "quote": "**Two things this does not establish.** Whether the late AI Welfare passage clears 0.85 is untested; passing three qualitative derivations is not a yield. And whether back-projection yield can be scored reliably by a model judge is itself unvalidated — EA-HK-01 specifies the test and the archive has not published an inter-rater result for it.",
+     "lines": [
+      193,
+      193
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       144,
+       146
+      ]
+     ],
+     "note": "Untested items named: whether the late AI Welfare passage clears 0.85, and inter-rater reliability of model-judged yield."
+    },
+    {
+     "shape": "F",
+     "quote": "**A concept taken up, tested, found wanting in part and repaired would score as contraction on every measure currently in the capture registry.** Nothing in EA-WG-CAPTURES-01 distinguishes that from dissolution, across 425 addresses.\n\n**The correction is not a new measure.** EA-TRACE-RECODE-01's four recoded concepts fail all three Anti-Summary conditions, which is the formal statement of a reading already made on other grounds. **What the registry lacks is the test, not the theory** — and the test has been specified, with a threshold, since April.",
+     "lines": [
+      199,
+      201
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The capture registry lacks the Anti-Summary test; the test is specified but not applied there."
+    },
+    {
+     "shape": "F",
+     "quote": "**A payload evolved to demand verbatim replication maximises back-projection directly.** What that costs on the other nine variables is not entailed by the maximisation and must be assessed separately — the same orthogonality §3 insists on, applied to this case. **The taxonomy can describe the trade. This paper has not measured it.**",
+     "lines": [
+      203,
+      203
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Hijackability trade-off named as unmeasured; carries a standing claim that verbatim-replication payloads maximise back-projection."
+    },
+    {
+     "shape": "C",
+     "quote": "**An earlier version of this work proposed a two-axis model and built it.** Its second axis, `recoverability`, counted grammatical marks of a held antecedent and vocabulary overlap. **Three adversarial cases falsify it.",
+     "lines": [
+      163,
+      163
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "an earlier version of this work: two-axis model (recoverability axis); transmission-toy.py, cell_of_v1",
+     "also_at": [
+      [
+       165,
+       171
+      ]
+     ],
+     "note": "Records that an earlier model of the archive's own failed under adversarial cases; a model rather than a dated prediction, so C is uncertain."
+    },
+    {
+     "shape": "G",
+     "quote": "**The claim of this paper is the same result one domain over: two receptions at identical fidelity-to-seed differ in back-projection yield.** It is not a new thesis. It is that thesis applied to reception, with a case.",
+     "lines": [
+      99,
+      99
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that receptions at identical fidelity-to-seed differ in back-projection yield; no explicit falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Frontmatter creator field embeds a markdown heading (\"Kuro, Sen\\n\\n### Contributor\\n\\nGlas, Nobel; Sharks, Lee\")."
+  }
+ ]
+}
