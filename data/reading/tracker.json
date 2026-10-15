@@ -18,7 +18,7 @@
   "D": 160,
   "H": 627
  },
- "finds_verified": 2505,
+ "finds_verified": 2507,
  "finds_total": 2535,
  "deposits": [
   {
@@ -30968,10 +30968,13 @@
      },
      "none_found": false,
      "incidental": "Range is almost wholly dated capture observation (excluded by rule). Embedded machine speech in d_full/findings fields was not quoted. Record 413 notes an observed-not-replicated notice effect (line 8096) and record 411 a category 'not yet ruled' (line 8054); neither recorded as a find.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 7,
+      "lines_returned": 1979,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "xpass": {
@@ -30988,7 +30991,8 @@
     "done": [
      "X0001",
      "X0002",
-     "X0003"
+     "X0003",
+     "X0005"
     ],
     "scope": "own-voice fields read in full from a derived text; transcripts and observations excluded by protocol (see scripts/reading/derive_voice.py)"
    },
