@@ -4969,7 +4969,33 @@
    "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled (wave-10 form)",
    "output": "data/reading/batches/B0093.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 130206,
+    "tool_uses": 15,
+    "tokens": 129500
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T20:15:06Z",
+    "finished_at": "2026-10-15T20:16:54Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 1,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 0,
+     "partial": 1,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w16-B0094",
