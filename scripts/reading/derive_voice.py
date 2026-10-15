@@ -82,8 +82,9 @@ def main():
                 parts.append((a, starts[k])); a = starts[k]; w = 0
             w += sw
         parts.append((a, len(L)))
+        last = len(L) - (1 if L[-1] == "" else 0)
         for a, b in parts:
-            xb.append({"batch_id": f"X{len(xb)+1:04d}", "deposit": n, "path": str(p), "range": [a + 1, b],
+            xb.append({"batch_id": f"X{len(xb)+1:04d}", "deposit": n, "path": str(p), "range": [a + 1, min(b, last)],
                        "words": sum(len(x.split()) for x in L[a:b]), "lines_total": len(L) - (1 if L[-1] == "" else 0),
                        "sha256": hashlib.sha256(p.read_bytes()).hexdigest()})
         print(n, p, len(L), sum(len(x.split()) for x in L))
