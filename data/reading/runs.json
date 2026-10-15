@@ -141,6 +141,128 @@
      "skipped": 0
     }
    }
+  },
+  {
+   "run": "R-w1-B0004",
+   "batch_id": "B0004",
+   "phase": "wave 1",
+   "launched_at": "2026-10-15T19:11:16Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "batch entry in queue.json + protocol",
+   "output": "data/reading/batches/B0004.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w1-B0005",
+   "batch_id": "B0005",
+   "phase": "wave 1",
+   "launched_at": "2026-10-15T19:11:16Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "batch entry in queue.json + protocol",
+   "output": "data/reading/batches/B0005.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w1-B0006",
+   "batch_id": "B0006",
+   "phase": "wave 1",
+   "launched_at": "2026-10-15T19:11:16Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "batch entry in queue.json + protocol",
+   "output": "data/reading/batches/B0006.json",
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 51718,
+    "tool_uses": 11,
+    "tokens": 116456
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:11:32Z",
+    "finished_at": "2026-10-15T19:11:52Z",
+    "self_description": "Claude Code subagent (Anthropic assistant); model reported to me as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (date, sha256sum, python3 to print queue entry and to write this file with quotes sliced from the source lines)"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 4,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
+  },
+  {
+   "run": "R-w1-B0007",
+   "batch_id": "B0007",
+   "phase": "wave 1",
+   "launched_at": "2026-10-15T19:11:16Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "batch entry in queue.json + protocol",
+   "output": "data/reading/batches/B0007.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w1-B0008",
+   "batch_id": "B0008",
+   "phase": "wave 1",
+   "launched_at": "2026-10-15T19:11:16Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "batch entry in queue.json + protocol",
+   "output": "data/reading/batches/B0008.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w1-B0009",
+   "batch_id": "B0009",
+   "phase": "wave 1",
+   "launched_at": "2026-10-15T19:11:16Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "batch entry in queue.json + protocol",
+   "output": "data/reading/batches/B0009.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w1-B0010",
+   "batch_id": "B0010",
+   "phase": "wave 1",
+   "launched_at": "2026-10-15T19:11:16Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "batch entry in queue.json + protocol",
+   "output": "data/reading/batches/B0010.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w1-B0011",
+   "batch_id": "B0011",
+   "phase": "wave 1",
+   "launched_at": "2026-10-15T19:11:16Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "batch entry in queue.json + protocol",
+   "output": "data/reading/batches/B0011.json",
+   "status": "running"
   }
  ],
  "pilot_finding": "Calibration (CAL, blind re-read of the eight in-session readings): every substantive item found; four boundary disagreements of shape (stage text vs embedded forecast; a third-party timestamp left inside a forecast quote; a benchmark folded into its prediction; a monitoring check read as F). The reader found more than the in-session reading (G claims in #914 and #1182) and recorded one forecast several times across stage, table and ledger. Protocol revised to v1.1 with seven boundary rules."

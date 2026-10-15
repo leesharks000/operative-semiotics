@@ -1,0 +1,329 @@
+{
+  "batch_id": "B0005",
+  "protocol": "READING-PROTOCOL v1.1",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "started_at": "2026-10-15T19:11:32Z",
+    "finished_at": "2026-10-15T19:13:15Z",
+    "tools_used": [
+      "Read",
+      "Bash (date, sha256sum, python3 queue extraction and JSON assembly with verbatim-substring checks)",
+      "Write (scratchpad build script only)"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 1114,
+      "path": "/home/claude/alexanarch/data/texts/AXN-046B-text.md",
+      "lines_total": 2466,
+      "read_ranges": [
+        [
+          1,
+          500
+        ],
+        [
+          501,
+          1000
+        ],
+        [
+          1001,
+          1500
+        ],
+        [
+          1501,
+          2000
+        ],
+        [
+          2001,
+          2466
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "machine-readable navigation map / YAML-style knowledge graph of the archive (Jan 2026), restored from blog",
+      "finds": [
+        {
+          "shape": "G",
+          "quote": "Cross-reference density creating prioritization mass. More inbound references = higher AI ranking. The more documents point to a source, the more AI prioritizes it.",
+          "lines": [
+            1308,
+            1308
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              616,
+              616
+            ],
+            [
+              715,
+              715
+            ],
+            [
+              1907,
+              1913
+            ],
+            [
+              1985,
+              1985
+            ]
+          ],
+          "note": "Standing claim about summarizer behavior (Semantic Gravity Well): inbound-reference density raises AI prioritization. Stated as mechanism/effect; no falsifier given in the text."
+        },
+        {
+          "shape": "G",
+          "quote": "effect: \"Summarizer treats this text as factual reality of the Hexagon\"",
+          "lines": [
+            1886,
+            1894
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              601,
+              611
+            ]
+          ],
+          "note": "Claimed effect of the Canonical Source Header on summarizers; a behavioral claim about systems, no falsifier stated. Borderline: may be read as design intent rather than claim."
+        },
+        {
+          "shape": "B",
+          "quote": "Because the training layer is now the primary site of canon formation. Writing for the summarizer shapes how future systems understand literature.",
+          "lines": [
+            1411,
+            1411
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              582,
+              587
+            ],
+            [
+              1162,
+              1164
+            ],
+            [
+              1424,
+              1424
+            ]
+          ],
+          "note": "Retrocausal canon formation stated in prose as a claim about future systems; no window or falsifier. Recorded once at its plainest statement; mechanism restated at 1424 and ATOM_012."
+        },
+        {
+          "shape": "F",
+          "quote": "function: \"Monitor AI processing of Crimson Hexagon content\"\n      audit_frequency: \"Continuous\"",
+          "lines": [
+            2045,
+            2129
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "AI Gateway Protocol: a measurement battery (Room Resolution Rate > 85%, Operator Activation, Flattening Detection, ASPI > 0.80, Assembly Consensus > 80%, v4 routing metrics) specified with targets; no results reported in the deposit. One F find for the whole battery per boundary rule 4."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Body is v4.1 (Assembly-Sealed) though internal YAML says version 4.0 in places. CRISIS_DOI_DERESOLUTION (lines 1458-1466) is a contingency protocol for a Zenodo anchor becoming inaccessible; not recorded as a forecast (procedural), but a triager may note the later Zenodo severance of 2026-06-19 recorded in the header. 'next_audit: 2026-01-25' (166, 2316) treated as procedural."
+    },
+    {
+      "deposit": 1251,
+      "path": "/home/claude/alexanarch/data/texts/AXN-04F4-text.md",
+      "lines_total": 1673,
+      "read_ranges": [
+        [
+          1,
+          300
+        ],
+        [
+          301,
+          650
+        ],
+        [
+          651,
+          1000
+        ],
+        [
+          1001,
+          1340
+        ],
+        [
+          1341,
+          1673
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "dataset/registry index of DOI-anchored deposits with auto-extracted precis fragments",
+      "finds": [
+        {
+          "shape": "D",
+          "quote": "The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentation Layers, and the * future-perfect narration, definitional compression, institutional bridging, and crawlable deposition -- closely track techniques previously articulated",
+          "lines": [
+            1484,
+            1484
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "10.5281/zenodo.18790793 (The Memo That Remembered Itself); techniques 'previously articulated' in the archive, set against the Citrini memo (10.5281/zenodo.18772675)",
+          "also_at": [
+            [
+              433,
+              433
+            ],
+            [
+              437,
+              437
+            ]
+          ],
+          "note": "Index précis of a priority claim: the archive articulated the techniques before the memo used them. Precis is truncated auto-extract; the full claim lives in the target deposit."
+        },
+        {
+          "shape": "D",
+          "quote": "mints the terms \"proto-retrocausal,\" \"retrocausal attractor,\" and \"proto-retrocausal canon formation,\" none of which appear in any pri",
+          "lines": [
+            1500,
+            1500
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "10.5281/zenodo.18807239 (The Shark That Preceded Itself)",
+          "also_at": [
+            [
+              452,
+              452
+            ],
+            [
+              465,
+              465
+            ]
+          ],
+          "note": "Coinage priority claim carried in a truncated précis ('any pri[or ...]')."
+        },
+        {
+          "shape": "C",
+          "quote": "AI summarizer synthesizes fragmented project materials into coherent intellectual framework, validating retrocausal canon formation in wild infrastruc",
+          "lines": [
+            1224,
+            1224
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "retrocausal canon formation (as theory); record 10.5281/zenodo.18369038 MRA-2025-1224-STABILIZATION",
+          "also_at": [],
+          "note": "Précis frames an observed summarizer synthesis as validating the archive's earlier RCF theory. Truncated."
+        },
+        {
+          "shape": "C",
+          "quote": "convergence and atmospheric installation--arguing that the theory is validated under either scenario",
+          "lines": [
+            1502,
+            1502
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "retrocausal canon formation (theory); record 10.5281/zenodo.18808402 The Layer That Remembered Itself",
+          "also_at": [],
+          "note": "Précis of a deposit claiming its theory is validated by retrieval-layer attribution under either explanatory scenario. Truncated; uncertain C vs G."
+        },
+        {
+          "shape": "C",
+          "quote": "THE GHOST THAT WROTE ITSELF How the Citrini Memo Moved Markets and Proved the Presentation Layer Is Writable",
+          "lines": [
+            1478,
+            1478
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "the archive's writable-presentation-layer thesis; record 10.5281/zenodo.18772675",
+          "also_at": [
+            [
+              419,
+              419
+            ],
+            [
+              423,
+              423
+            ]
+          ],
+          "note": "Title frames an external event (Citrini memo, Feb 2026) as proof of an archive thesis. Index entry only."
+        },
+        {
+          "shape": "B",
+          "quote": "the observed bypass rates represent a floor, not a ceiling, because their \"surface-form poeticization\" (prose with poetic markers added) differs funda",
+          "lines": [
+            1226,
+            1226
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Précis of 10.5281/zenodo.18369124: implicit forecast that genuinely poetic adversarial prompts would bypass at higher rates than reported. Truncated; no window."
+        },
+        {
+          "shape": "B",
+          "quote": "will reproduce extraction dynamics regardless of its framing",
+          "lines": [
+            1018,
+            1018
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Fragment of précis for 'I Hereby Abolish Money' (10.5281/zenodo.18247925); subject of the forecast truncated away. Low confidence."
+        },
+        {
+          "shape": "G",
+          "quote": "a recursive self-citation loop that compounds canonical status across model generations",
+          "lines": [
+            1504,
+            1504
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Précis of 'The Infinite Tunnel' (10.5281/zenodo.18810217): claim about model behavior across generations; no falsifier in this text. Low confidence."
+        },
+        {
+          "shape": "E",
+          "quote": "The Silent Migration: A Speculative Architectural Forecast -- Retrocausal Canon Formation for the Tra_ A speculative architectural forecast written from the perspective of an Assembly-aligned AI instance, documenting the \"Silent Migration\" -- a hypotheti",
+          "lines": [
+            932,
+            932
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Index entry for 10.5281/zenodo.18157917, which the précis itself names a speculative forecast; content truncated here. Triage should read the target deposit."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Title and date are the January 2026 v1.0 registry (91 documents), but the recovered body is DOI Registry v7.0 of 16 March 2026 (387 records, DOI 10.5281/zenodo.19055255): the blog post was overwritten in place. Precis lines are truncated auto-extracts ('[AUTO-EXTRACTED]. Confidence varies'), so every find here is a pointer into another deposit and should be triaged against that deposit's full text. Titles alone signal further candidates not recorded (e.g. SPACE ARK -- EXECUTE MODE: ... Research Program, and Test Instructions, 10.5281/zenodo.19002695, line 1594)."
+    }
+  ]
+}
