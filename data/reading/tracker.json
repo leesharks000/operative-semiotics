@@ -2,11 +2,10 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 471,
-  "partial": 1,
+  "read": 472,
   "unread": 1144
  },
- "h_covered": 471,
+ "h_covered": 472,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
   "G": 530,
@@ -18,7 +17,7 @@
   "D": 181,
   "H": 666
  },
- "finds_verified": 2670,
+ "finds_verified": 2684,
  "finds_total": 2738,
  "deposits": [
   {
@@ -30683,7 +30682,7 @@
    "tier": 1,
    "words": 2334831,
    "batch_id": "B0093",
-   "state": "partial",
+   "state": "read",
    "readings": [
     {
      "by": "parallel",
@@ -30750,7 +30749,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "X-batch: range 1-1521 of the derived reading text only; the deposit is read only when all X-batches over it pass.",
      "read_ranges": [
       [
@@ -30808,7 +30807,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "X-batch range 1522–2937 of the derived voice text only; the rest of deposit #3 is covered by other X-batches.",
      "read_ranges": [
       [
@@ -30866,7 +30865,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "",
      "read_ranges": [
       [
@@ -30927,7 +30926,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "",
      "read_ranges": [
       [
@@ -30990,7 +30989,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "X-batch X0005 covers derived lines 6276-8254 only (records 354-418)",
      "read_ranges": [
       [
@@ -31053,7 +31052,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "",
      "read_ranges": [
       [
@@ -31119,7 +31118,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "",
      "read_ranges": [
       [
@@ -31149,10 +31148,13 @@
      },
      "none_found": false,
      "incidental": "Many analysis/d_full fields in this range embed full AI Mode transcripts (e.g. records 512, 514, 516-529, 559, 562, 572) and duplicate d_full verbatim; nothing quoted from them. H finds quote archive deposit text as carried in cards (records 520, 528) inside own-voice readings.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 1599,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -31170,7 +31172,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "",
      "read_ranges": [
       [
@@ -31207,6 +31209,11 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "xpass",
+     "status": "read",
+     "protocol": "READING-PROTOCOL v1.2"
     }
    ],
    "xpass": {
@@ -31227,11 +31234,12 @@
      "X0004",
      "X0005",
      "X0006",
+     "X0007",
      "X0008"
     ],
     "scope": "own-voice fields read in full from a derived text; transcripts and observations excluded by protocol (see scripts/reading/derive_voice.py)"
    },
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 843,
