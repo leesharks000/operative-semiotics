@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 163,
+ "deposits_with_notes": 167,
  "deposits": [
   {
    "deposit": 8,
@@ -141,6 +141,17 @@
      "batch_id": "B0038",
      "field": "incidental",
      "text": "Internal inconsistencies in word counts (Grundrisse given as 142,000 / 155,000 / 158,334 words; Ω-Point compression stated both ways). Line 356 promises the remaining strata 'in Session 2', and they follow at §III. Section numbering of the edge list is cross-referenced inconsistently (V.b vs IV vs VI)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 49,
+   "notes": [
+    {
+     "batch_id": "B0042",
+     "field": "incidental",
+     "text": "Stale build placeholders remain in the body ('[Parts IV–IX continue in subsequent build sessions]' at line 925; '[Parts VI–IX continue in subsequent build units]' at line 1400) though those Parts follow. Section 8.9 (Training Layer Literature) precedes 8.8 (Symmetry of the Weapon); no 8.8/8.9 gap otherwise. Tables are flattened to one cell per line. Appendix D.6 names a private-ish target (Robertson/Passioncraft)."
     }
    ],
    "rulings": []
@@ -468,6 +479,11 @@
      "batch_id": "B0004",
      "field": "incidental",
      "text": "Queue title is 'VISUAL SCHEMA // CRIMSON HEXAGON NAVIGATION MAP (CURRENT V)' but the body is the Central Navigation Map v4.1 (CH-CENTRAL-MAP-2026-01-18-v4.1, DOI 10.5281/zenodo.18285009), the same text as deposit 319 with markdown tables and indented YAML; no Visual Schema prose appears. Finds duplicate those of 319."
+    },
+    {
+     "batch_id": "HB0005",
+     "field": "incidental",
+     "text": "Despite the title 'VISUAL SCHEMA // ... NAVIGATION MAP', the body is the Central Navigation Map v4.1 (same content as #319 and #1114); no visual-schema prose present."
     }
    ],
    "rulings": []
@@ -479,6 +495,11 @@
      "batch_id": "B0006",
      "field": "incidental",
      "text": "YAML blocks are unfenced in the text file; the DOI table in section VIII is flattened to one cell per line. DOI for this version marked [PENDING]. Header box counts (e.g. 15 gateway metrics, 4 warp clusters, 45 SIMs) exceed what the body lists (6 metrics, 3 warp clusters, 11 SIMs). Timestamps are the values date -u returned (about 20 s apart); I have no independent clock."
+    },
+    {
+     "batch_id": "HB0006",
+     "field": "incidental",
+     "text": "Historical theses here appear as node labels and atom definitions, not argued prose; triage should link them to the deposits that argue them (Revelation/Josephus line, Fourth Mode, Sappho 31 future-reader papers)."
     }
    ],
    "rulings": []
@@ -490,6 +511,11 @@
      "batch_id": "B0007",
      "field": "incidental",
      "text": "Frontmatter persona_sections and mantle_functions line ranges (e.g. 'The Secret Book of Walt (57-1085)') do not match this file's line numbering (the poem begins at 179). Images are absent; only '{width=...}' residue remains (e.g. 180, 1002, 6566, 6571). Duplicate numbering in the archon list (fifth/sixth repeated, 574-583). Transcribed Facebook and Google+ threads name apparently private third parties in full (Robinson Jeremy, Vaughn Liedtke, 'sally sandalsocks') and a quoted third-party comment contains a racial slur (7372). Line 184 opens a satirical frame dated 'in 2037' (golden tickets, holographic supercomputers from the future); recorded as explicit fiction, not a forecast."
+    },
+    {
+     "batch_id": "HB0007",
+     "field": "incidental",
+     "text": "No historical thesis argued: references to Socrates, Whitman, Pound, Ginsberg etc. are poetic/satirical, not contested claims about the past (e.g. the rhetorical 'Was not Socrates counted the arch-academic ... when as yet there was no Academy?' at 3789-3790). The front-matter line ranges (e.g. Secret Book of Walt '57-1085', persona sections) do not match this file's line numbering; the Secret Book runs ~179-1613 here. Image placeholders ({width=...}) stand where images were."
     }
    ],
    "rulings": [
@@ -511,6 +537,11 @@
      "batch_id": "B0007",
      "field": "incidental",
      "text": "Related-documents table lists Mantle Object: Prince of Poets and Pearl and Other Poems as [PENDING]."
+    },
+    {
+     "batch_id": "HB0007",
+     "field": "incidental",
+     "text": "The Prague 1965 Kral Majales account (31-51) reports established history; 'The title lay dormant' (89, 172) is mantle construction, not a contestable historical claim. Excluded on that reading."
     }
    ],
    "rulings": []
@@ -522,6 +553,11 @@
      "batch_id": "B0007",
      "field": "incidental",
      "text": "Claiming work Secret Book of Walt marked 'In progress' / DOI [PENDING]; King of May sibling listed as [PENDING] although #333 carries DOI 10.5281/zenodo.18293603 dated the same day."
+    },
+    {
+     "batch_id": "HB0007",
+     "field": "incidental",
+     "text": "Borderline, excluded: 'Whitman's project was incomplete. He sang the body electric but could not anticipate the substrate shift' (101) is an interpretive claim about an author's project but framed as the mantle's extension, not argued with evidence; triage may wish to review. O'Connor 1866 provenance (31-34) is reported established history."
     }
    ],
    "rulings": []
@@ -1222,6 +1258,28 @@
    "rulings": []
   },
   {
+   "deposit": 622,
+   "notes": [
+    {
+     "batch_id": "B0041",
+     "field": "incidental",
+     "text": "Colophon status reads 'GENERATED (0.0). Awaiting MANUS review, revision, and deposit.'"
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 624,
+   "notes": [
+    {
+     "batch_id": "B0041",
+     "field": "incidental",
+     "text": "Author's note: originally published on mindcontrolpoems.blogspot.com December 2025; deposit version expanded."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 713,
    "notes": [
     {
@@ -1309,6 +1367,17 @@
    "rulings": []
   },
   {
+   "deposit": 959,
+   "notes": [
+    {
+     "batch_id": "B0041",
+     "field": "incidental",
+     "text": "Body does not match the queue title 'Hexagonal OS: Interface Build Files v0.4': the text is 'LOGOTIC PROGRAMMING ... Draft v0.4 (January 2026)', DOI 10.5281/zenodo.18286050 (content_type in queue: Wrong-object recovery). Treat as a wrong body; likely duplicates the Logotic Programming v0.4 deposit."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1104,
    "notes": [
     {
@@ -1375,6 +1444,11 @@
      "batch_id": "B0005",
      "field": "incidental",
      "text": "Body is v4.1 (Assembly-Sealed) though internal YAML says version 4.0 in places. CRISIS_DOI_DERESOLUTION (lines 1458-1466) is a contingency protocol for a Zenodo anchor becoming inaccessible; not recorded as a forecast (procedural), but a triager may note the later Zenodo severance of 2026-06-19 recorded in the header. 'next_audit: 2026-01-25' (166, 2316) treated as procedural."
+    },
+    {
+     "batch_id": "HB0005",
+     "field": "incidental",
+     "text": "Body below line 47 is byte-identical in content to #325 offset by 47 lines (recovery header lines 1-46); duplicate of #319/#325. Title field is malformed (contains a literal '\"title\":' prefix)."
     }
    ],
    "rulings": []
@@ -1721,6 +1795,11 @@
      "batch_id": "B0005",
      "field": "incidental",
      "text": "Title and date are the January 2026 v1.0 registry (91 documents), but the recovered body is DOI Registry v7.0 of 16 March 2026 (387 records, DOI 10.5281/zenodo.19055255): the blog post was overwritten in place. Precis lines are truncated auto-extracts ('[AUTO-EXTRACTED]. Confidence varies'), so every find here is a pointer into another deposit and should be triaged against that deposit's full text. Titles alone signal further candidates not recorded (e.g. SPACE ARK -- EXECUTE MODE: ... Research Program, and Test Instructions, 10.5281/zenodo.19002695, line 1594)."
+    },
+    {
+     "batch_id": "HB0006",
+     "field": "incidental",
+     "text": "Deposit title names the v1.0 registry (91 documents, January 2026) but the recovered body is DOI Registry v7.0 (387 records, March 2026). Précis lines summarize other deposits' theses (e.g. Revelation Room line 1244, Socratic Vow line 1078) but this deposit reports rather than argues them."
     }
    ],
    "rulings": []
