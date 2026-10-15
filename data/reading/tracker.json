@@ -17,7 +17,7 @@
   "D": 121,
   "H": 445
  },
- "finds_verified": 1899,
+ "finds_verified": 1923,
  "finds_total": 1923,
  "deposits": [
   {
@@ -27839,10 +27839,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 123,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -27888,10 +27891,13 @@
      },
      "none_found": false,
      "incidental": "WRONG/DUPLICATE BODY: the queue title is the Jess Elgene Certificate of Conferral and Honorary Laureate License, but the text file contains the v1.1 Announcement of Establishment and Inaugural Conferral, i.e. the same body as #160 (AXN-02F6), re-formatted with stray asterisks. Finds duplicate #160.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 137,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -27943,10 +27949,13 @@
      },
      "none_found": false,
      "incidental": "Text file is v1.2 (supersedes v1.1, DOI 10.5281/zenodo.20586831) though queue title says v1.1. Extraction damage: many list/table/graph bodies are missing; headings like \"Lexical features:\", \"Syntactic features:\", \"Falsifiability:\", \"Primary outcomes:\", \"Predictions:\", the causal-model graph (§4.3), MDI subscale list, Stage 2B conditions, Stage 3 corpora, collapse benchmarks, §6.4 natural experiments and §8.2 metadata list are followed by nothing. The abstract also ends with a colon and no stage list (line 32). Stage-level falsifiers may have been lost.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 513,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -27998,10 +28007,13 @@
      },
      "none_found": false,
      "incidental": "Some bulleted lists are run together onto single lines (e.g. lines 185, 257, 315, 319). Cites the Dodecad and \"738+ deposits\" as cognitive proof of concept.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 439,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -28052,10 +28064,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 466,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
