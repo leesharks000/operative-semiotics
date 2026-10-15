@@ -18,7 +18,7 @@
   "D": 158,
   "H": 608
  },
- "finds_verified": 2393,
+ "finds_verified": 2405,
  "finds_total": 2442,
  "deposits": [
   {
@@ -30785,10 +30785,13 @@
      },
      "none_found": false,
      "incidental": "Many June 2026 records (100–109, 145–174) carry identical d_full and analysis fields (duplicated body). Records cite earlier deposits' theses (Aristotle/Theophrastus one maker #1588, Socrates heteronymy #123, Sappho 31 κῆνος future reader #1270) only as content being checked against compositions; these were not recorded as H because the records report rather than argue them. Record 143 (line 2443) states an indexing-latency floor ('NEED 48-72 HOURS') as a capture-protocol rule; not recorded (procedural). Record 137 (2361-2389) is the later observation bearing on the Acanthian-dove H find at 2113.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 1416,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "xpass": {
@@ -30802,7 +30805,9 @@
      "X0007",
      "X0008"
     ],
-    "done": [],
+    "done": [
+     "X0002"
+    ],
     "scope": "own-voice fields read in full from a derived text; transcripts and observations excluded by protocol (see scripts/reading/derive_voice.py)"
    },
    "h_covered": false
