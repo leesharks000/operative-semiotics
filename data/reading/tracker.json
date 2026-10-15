@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 308,
-  "unread": 1308
+  "read": 311,
+  "unread": 1305
  },
- "h_covered": 304,
+ "h_covered": 307,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 316,
-  "F": 317,
+  "G": 319,
+  "F": 322,
   "E": 100,
-  "B": 207,
+  "B": 211,
   "A": 85,
   "C": 97,
   "D": 109,
-  "H": 401
+  "H": 407
  },
  "finds_verified": 1632,
- "finds_total": 1632,
+ "finds_total": 1650,
  "deposits": [
   {
    "deposit": 172,
@@ -17385,10 +17385,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "H back-pass only. The document routes among other deposits and argues no historical thesis of its own. Truncated précis cells point to other deposits' theses (e.g. line 2864, the Revelation Room précis 'the template from which the Gospels and Epistles were algori'; line 2331, the Sappho 31 précis; line 976, EA-07 'Voids Plato's exclusion of poets; Republic 607b reversed'). These are reported as index entries, not argued here, so they are not recorded. Many sections (IV atoms 1-60, VI, VII, XI-XIV) say 'preserved from v4.2' and give no content.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 3092,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -17504,10 +17507,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "H back-pass only. The deposit is titled 'Untitled' but its body is the CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (DOI 10.5281/zenodo.19055255); it is the registry companion to #578. The précis index carries auto-extracted one-line fragments of other deposits' historical theses, e.g. line 1243 (Revelation Room: 'the template from which the Gospels and Epistles were algorithmically unfolded'), line 1443 (Sapphic Lock in Augustine, Confessions 10.27 'is not a loose echo of classic'), line 1077 (Socratic vow 'constitutes the first Western articulation of language as operative, salvific force'), line 1145 (Phase X: Resurrection of the 1844 Transition), line 1049 (TSE-003 '2,600-Yea[r]'). The registry marks these as [AUTO-EXTRACTED] summaries of other records, so they are reported, not argued, and are not recorded; triage should take the theses from the source deposits. Read showed a blank line 1673 past lines_total 1672 (trailing newline).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 1672,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -25011,9 +25017,51 @@
    "tier": 1,
    "words": 9803,
    "batch_id": "B0071",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0071",
+     "run": "R-w13-B0071",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:04:17Z",
+      "finished_at": "2026-10-15T20:05:25Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and checks)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       220
+      ],
+      [
+       221,
+       431
+      ]
+     ],
+     "lines_total": 431,
+     "genre_observed": "operational specification / procedure for minting a heteronym (Pearl) — provisional, pre-execution",
+     "finds_by_shape": {
+      "F": 2,
+      "B": 2,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Same body as #1009 (AXN-03FD) with markdown formatting and line breaks flattened: tables and lists collapsed onto single lines (e.g. lines 77, 241, 365). Finds duplicated in #1009.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1009,
@@ -25022,9 +25070,55 @@
    "tier": 1,
    "words": 10490,
    "batch_id": "B0071",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0071",
+     "run": "R-w13-B0071",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:04:17Z",
+      "finished_at": "2026-10-15T20:05:25Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and checks)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       260
+      ],
+      [
+       261,
+       520
+      ],
+      [
+       521,
+       772
+      ]
+     ],
+     "lines_total": 772,
+     "genre_observed": "operational specification / procedure for minting a heteronym (Pearl) — provisional, pre-execution",
+     "finds_by_shape": {
+      "F": 2,
+      "B": 2,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Duplicate body of #135 (AXN-02C3), here with markdown formatting intact, a \"Dead DOI: 10.5281/zenodo.20413064\" header, and an appended verbatim DataCite record (captured 2026-07-03, lines 604-772). Finds duplicate those of #135.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 136,
@@ -25033,9 +25127,55 @@
    "tier": 1,
    "words": 10545,
    "batch_id": "B0071",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0071",
+     "run": "R-w13-B0071",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:04:17Z",
+      "finished_at": "2026-10-15T20:05:25Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and checks)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       100
+      ],
+      [
+       101,
+       200
+      ],
+      [
+       201,
+       285
+      ]
+     ],
+     "lines_total": 285,
+     "genre_observed": "scholarly essay in classical philology / authorship theory, ending in a disclosed performative seal",
+     "finds_by_shape": {
+      "H": 6,
+      "G": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Lists and the operator spec are flattened onto single lines (e.g. 81, 83, 125, 145, 159, 207). Line 285 notes citations should be confirmed against print editions before final mint.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 137,

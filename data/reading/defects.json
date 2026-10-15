@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 260,
+ "deposits_with_notes": 263,
  "deposits": [
   {
    "deposit": 8,
@@ -470,6 +470,28 @@
      "batch_id": "B0067",
      "field": "incidental",
      "text": "Silent state change of 2026-05-20 reported as pending formal deposit (line 167)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 135,
+   "notes": [
+    {
+     "batch_id": "B0071",
+     "field": "incidental",
+     "text": "Same body as #1009 (AXN-03FD) with markdown formatting and line breaks flattened: tables and lists collapsed onto single lines (e.g. lines 77, 241, 365). Finds duplicated in #1009."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 136,
+   "notes": [
+    {
+     "batch_id": "B0071",
+     "field": "incidental",
+     "text": "Lists and the operator spec are flattened onto single lines (e.g. 81, 83, 125, 145, 159, 207). Line 285 notes citations should be confirmed against print editions before final mint."
     }
    ],
    "rulings": []
@@ -2357,6 +2379,17 @@
      "batch_id": "B0063",
      "field": "incidental",
      "text": "Same body as #100 with markdown lists restored; duplicate content."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1009,
+   "notes": [
+    {
+     "batch_id": "B0071",
+     "field": "incidental",
+     "text": "Duplicate body of #135 (AXN-02C3), here with markdown formatting intact, a \"Dead DOI: 10.5281/zenodo.20413064\" header, and an appended verbatim DataCite record (captured 2026-07-03, lines 604-772). Finds duplicate those of #135."
     }
    ],
    "rulings": []
