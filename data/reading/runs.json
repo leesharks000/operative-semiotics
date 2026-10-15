@@ -5454,7 +5454,33 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
    "output": "data/reading/batches/B0103.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 116570,
+    "tool_uses": 13,
+    "tokens": 176753
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T20:23:23Z",
+    "finished_at": "2026-10-15T20:24:56Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for verbatim slicing, date -u)"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 13,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w18-B0104",

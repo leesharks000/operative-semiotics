@@ -9,17 +9,17 @@
  "h_covered": 442,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 503,
-  "F": 504,
+  "G": 507,
+  "F": 506,
   "E": 119,
   "B": 331,
-  "A": 143,
-  "C": 148,
+  "A": 144,
+  "C": 149,
   "D": 160,
-  "H": 627
+  "H": 628
  },
- "finds_verified": 2507,
- "finds_total": 2535,
+ "finds_verified": 2520,
+ "finds_total": 2544,
  "deposits": [
   {
    "deposit": 172,
@@ -30914,6 +30914,65 @@
     },
     {
      "by": "parallel",
+     "batch_id": "X0004",
+     "run": "R-w18-X0004",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude, model claude-opus-5-5 as reported by the environment)",
+      "started_at": "2026-10-15T20:23:59Z",
+      "finished_at": "2026-10-15T20:25:19Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue lookup and verbatim slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "partial",
+     "status_note": "",
+     "read_ranges": [
+      [
+       4611,
+       4890
+      ],
+      [
+       4891,
+       5170
+      ],
+      [
+       5171,
+       5450
+      ],
+      [
+       5451,
+       5730
+      ],
+      [
+       5731,
+       6010
+      ],
+      [
+       6011,
+       6275
+      ]
+     ],
+     "lines_total": 12373,
+     "genre_observed": "own-voice fields (d_full, reading, analysis, findings, notes) of Capture Registry records 297–353",
+     "finds_by_shape": {
+      "A": 1,
+      "G": 4,
+      "F": 2,
+      "C": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Range is X-batch 4611–6275 of the derived text only, records 297–353. Record 300 and 304 duplicate d_full in analysis verbatim. Record 340 notes carry a long words_per_line array (lines 5716–5803). Many own-voice fields quote machine speech in single quotes; no find quotes machine speech except where the archive adopts it (F at 5003 names a machine-composed instrument).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    },
+    {
+     "by": "parallel",
      "batch_id": "X0005",
      "run": "R-w18-X0005",
      "reader": {
@@ -32584,10 +32643,13 @@
      },
      "none_found": false,
      "incidental": "Body matches title (v0.7, 2026-06-27). Contains illustrative dated examples (event log dated 2027-02-10..2027-06-01 at ll.877-884; capture timestamp 2027-04-18 at l.1180; inscribed_at 2027-03-14 at l.1017) which are schema illustrations, not forecasts; not recorded. Gate G is described as following six gates while elsewhere called \"seven conjunctive gates\" (l.1693). Parts appear out of numeric order (VI-bis before VI; X before IX).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 1713,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
