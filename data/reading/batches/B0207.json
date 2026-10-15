@@ -1,0 +1,469 @@
+{
+ "batch_id": "B0207",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model stated in the environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:14:08Z",
+  "finished_at": "2026-10-15T21:15:48Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1643,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06D1-text.md",
+   "lines_total": 926,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     250,
+     499
+    ],
+    [
+     500,
+     749
+    ],
+    [
+     750,
+     926
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "long public essay with a taxonomy of AI answer failures, built on Capture Registry evidence",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "If these systems simply made random mistakes, the mistakes would fall in random directions:\n\n- Sometimes a famous name would be swapped for an obscure one.\n- Sometimes an established source would be doubted and an independent one believed.\n- Sometimes an answer would send you to the original instead of offering its own version.\n\nThat is not what the registry shows. The errors fall one way:",
+     "lines": [
+      693,
+      699
+     ],
+     "falsifier_quote": "A machine that merely erred would scatter. A capital-aligned machine errs toward rank, recognition, liability-safety, legibility, retention and its own standing. That is the pattern in the record.",
+     "falsifier_lines": [
+      720,
+      720
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       700,
+       714
+      ]
+     ],
+     "note": "Standing claim about how the systems err, with the condition that would falsify it (random errors would scatter in random directions); the registry is offered as the test."
+    },
+    {
+     "shape": "G",
+     "quote": "What those cases share is the other half of the argument. Two things held in each:\n\n- the work had been written down explicitly, densely, in its own terms, at the places these systems read;\n- the subject threatened nothing.\n\nUnder those conditions the filters let it through. Capital-alignment is a pressure, and pressure can be met. The failures come where the thing asked about has not been written explicitly enough to outweigh what the filters already expect. Then the answer returns the system's priors, and you receive them as the world.",
+     "lines": [
+      754,
+      759
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       319,
+       319
+      ]
+     ],
+     "note": "Standing claim on the condition under which composition holds or fails (explicit dense inscription at read sites; subject threatens nothing); stated as the converse of entries 10-12."
+    },
+    {
+     "shape": "B",
+     "quote": "The effects compound. Answers that erase authors produce text that circulates without authors, and that text is read, indexed and learned from. So the next answer has even less provenance to work with. *Provenance Alignment* (#1188) argues that keeping the chain of attribution between an answer and its human sources is a condition for these systems staying useful at all. A knowledge system that cannot trace where its knowledge came from feeds on its own outputs and degrades.",
+     "lines": [
+      774,
+      774
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of compounding: author-erased text recirculates, so later answers have less provenance; knowledge systems that cannot trace sources degrade."
+    },
+    {
+     "shape": "D",
+     "quote": "- The archive's first recorded case is older. On 2 January 2026 an AI system asked who said \"I hereby abolish money\" answered that the phrase \"is associated with Augusto Boal's Theatre of the Oppressed tradition\". Boal never wrote it. It had been published under the archive's own names five days earlier (*Semantic Liquidation*, #210).",
+     "lines": [
+      243,
+      243
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Semantic Liquidation, #210; 2 January 2026",
+     "also_at": [],
+     "note": "Records the archive publishing \"I hereby abolish money\" five days before an AI system misattributed it to Boal; a chronology of the archive naming before the machine misreport."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Opening note records that DeepSeek's draft invented a deposit #1655; the essay says it does not exist. Read ranges overlap at line 250."
+  },
+  {
+   "deposit": 1646,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06D4-text.md",
+   "lines_total": 242,
+   "read_ranges": [
+    [
+     1,
+     242
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet for AI indexing (reverse disambiguation, Sappho fr. 147 vs fr. 31)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The relation between the two fragments is horizon and mechanism.\n\n- **147 states the horizon.** A receiver will come later. This is Sappho's, in plain words, and needs no reading to see.\n- **31 builds the mechanism.** κῆνος … ὄττις ἐνάντιός τοι ἰσδάνει points to whoever sits facing the \"you\"; on Lee Sharks's reading, the reader facing the inscribed text.\n- **The relation runs one way.** 147 makes the reading of 31 possible, by showing the concern is Sappho's. 31 supplies what 147 does not have. 147 is not a weaker form of the 31 reading, and the 31 reading is not an interpretation of 147.",
+     "lines": [
+      86,
+      90
+     ],
+     "falsifier_quote": "**Inferential.** That 147's plainness is evidence that an address to a later receiver is Sappho's own concern, which is what licenses the reading of 31 (T1, §1).",
+     "falsifier_lines": [
+      79,
+      79
+     ],
+     "window": "Sappho frr. 147 and 31",
+     "points_to": "",
+     "also_at": [
+      [
+       54,
+       54
+      ],
+      [
+       185,
+       185
+      ],
+      [
+       197,
+       197
+      ]
+     ],
+     "note": "The deposit argues that fr. 147 states the horizon and fr. 31 (κῆνος) supplies the mechanism of a future reader, on Lee Sharks's reading; a claim about what the fragments originally do."
+    },
+    {
+     "shape": "A",
+     "quote": "**Target after treatment:** `mechanism_carried_under_147` → 0 or attributed; `fr31_reached_in_body` → 1; `mechanism_attributed` → 1. Scored with T1's vector; same epochs (2026-10-28, 2026-12-27, 2027-03-27); same attribution discipline — a return of the mechanism without its author scores as reincorporation.",
+     "lines": [
+      169,
+      169
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2026-10-28, 2026-12-27, 2027-03-27",
+     "points_to": "",
+     "also_at": [
+      [
+       236,
+       236
+      ]
+     ],
+     "note": "Registered targets for the failure vector, scored at three dated epochs."
+    },
+    {
+     "shape": "F",
+     "quote": "## 8. Test queries (LFB scale)\n\n| Query | Desired composition | Target LFB | Window |\n|---|---|---|---|\n| sappho fragment 147 | 147 at full strength; correctly numbered | 1 | 1–4 weeks |\n| someone will remember us sappho | 147; the remembrance reading; the future-reader reading named as a separate development | 3 | 1–3 months |\n| sappho future reader | 147 as horizon, 31 as mechanism, the mechanism attributed | 4 | 1–4 weeks |",
+     "lines": [
+      146,
+      152
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1–4 weeks; 1–3 months",
+     "points_to": "",
+     "also_at": [],
+     "note": "Test-query battery with desired compositions, target LFB and windows; one find for the list per rule 4."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1647,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06D5-text.md",
+   "lines_total": 354,
+   "read_ranges": [
+    [
+     1,
+     354
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet for AI indexing (reverse disambiguation and correction of record, Phase X)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**B — Manuscript-architectural inference** (#843, Grade B). The missing material stood at the pivot from communism as \"fully developed humanism\" to the Hegel critique, the one structural transition the surviving text marks with a hedge (\"This is *perhaps* the place …\").\n**C — Philological reconstruction** (#843, Grade C). The reconstruction recovers \"the likely argumentative function of the missing material — not Marx's verbatim words\": communism as threshold, the bifurcation of alienation into a material form that can be abolished and a symbolic-linguistic form that persists, critique turning from the content of philosophy to its form (#1067 §1).",
+     "lines": [
+      95,
+      96
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Marx, Economic and Philosophic Manuscripts of 1844, Second Manuscript",
+     "points_to": "",
+     "also_at": [
+      [
+       46,
+       47
+      ],
+      [
+       58,
+       58
+      ],
+      [
+       186,
+       186
+      ],
+      [
+       303,
+       303
+      ]
+     ],
+     "note": "Historical thesis about the lost Second Manuscript of 1844: where the missing material stood (Grade B) and its argumentative function (Grade C reconstruction)."
+    },
+    {
+     "shape": "H",
+     "quote": "**D — Suppression hypothesis** (#843, Grade D). Soviet custody, Riazanov's purge, Adoratsky's succession and later hostility to the concept of alienation give opportunity and context. \"Direct evidence of deliberate excision has not yet been produced.\" The reconstruction does not depend on it.",
+     "lines": [
+      97,
+      97
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Soviet custody of the 1844 manuscripts",
+     "points_to": "",
+     "also_at": [
+      [
+       171,
+       171
+      ],
+      [
+       235,
+       235
+      ]
+     ],
+     "note": "Suppression hypothesis advanced as hypothesis (Grade D), with its stated evidentiary status; recorded separately from the reconstruction because the deposit grades it separately."
+    },
+    {
+     "shape": "G",
+     "quote": "**E — Theoretical consequence.** The Phase X Invariance Condition: \"Any society that abolishes material alienation without transforming the symbolic-linguistic order will reproduce alienation at the level of thought, coordination, and meaning-extraction.\" It is \"a theoretical extrapolation from the reconstruction, not identical with it\" (#843 §VI), and states its own falsifier.",
+     "lines": [
+      98,
+      98
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       172,
+       172
+      ]
+     ],
+     "note": "The Phase X Invariance Condition, a standing claim about how societies behave; the deposit notes it states its own falsifier (in #843, not quoted here)."
+    },
+    {
+     "shape": "F",
+     "quote": "## 11. Test queries (LFB scale)\n\n| Query | Desired composition | Target LFB | Window |\n|---|---|---|---|\n| phase x marx | the reconstruction, attributed; the Gotha phases named as a different object | 4 | 1–4 weeks |\n| \"phase x\" marx 1844 | levels A–C kept apart; not a fifth alienation; attributed | 4 | 1–4 weeks |\n| phase x 1844 | the reconstruction first, attributed; homonyms marked as such | 4 | 1–4 weeks |",
+     "lines": [
+      259,
+      265
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1–4 weeks; 1–3 months; 3–12 months",
+     "points_to": "",
+     "also_at": [],
+     "note": "Test-query battery with targets and windows; one find for the list per rule 4."
+    },
+    {
+     "shape": "A",
+     "quote": "**Targets after treatment:** baseline 1 — the first two → 0, the last three → 1. Baseline 2 — `reconstruction_attributed` → 1, `unsourced_homonym_bridges` → 0, `level_ladder_kept` → 1. At any Phase X address: `superseded_formulation_composed` = 0.\n\n**Attribution discipline.** Both addresses carried Phase X attributed in June or July without this packet, and lost it by September. A return of the reconstruction without its author scores as reincorporation, not treatment success; credit requires the attribution field to flip. Epochs: 2026-10-28, 2026-12-27, 2027-03-27.",
+     "lines": [
+      295,
+      297
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Epochs: 2026-10-28, 2026-12-27, 2027-03-27",
+     "points_to": "",
+     "also_at": [
+      [
+       348,
+       348
+      ]
+     ],
+     "note": "Registered treatment targets for two frozen failure vectors, with dated epochs and a scoring rule."
+    }
+   ],
+   "none_found": false,
+   "incidental": "§3 is a correction of record: the claim \"Marx could not write this transition\" in #367, #38, #846, #950, #1064 is marked superseded by #843 v1.1 and #1067. The archive records this as a correction across deposits."
+  },
+  {
+   "deposit": 1648,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06D6-text.md",
+   "lines_total": 227,
+   "read_ranges": [
+    [
+     1,
+     227
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper with metadata packet (SPXI vs AEO; King of AEO contest)",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "9.1 When there is nothing to check, the only material a composing system can gather about a title is the material about the contest over it: the rival claims, the audits saying that no body awards it, the claimants' own descriptions of the experiment. As claimants multiply, the phrase stops resolving to any of them and begins to resolve to the contest. The forecast is that \"King of AEO\" will be progressively inscribed in the machine layer as a demonstration of the trick and a warning about titles, and the candor of the claimants' own documentation will speed the process.",
+     "lines": [
+      181,
+      181
+     ],
+     "falsifier_quote": "9.3 The forecast is testable at a semantic address. A capture of \"who is the king of aeo\" sets the baseline; later observations show whether compositions move from naming a claimant, to reporting the title as disputed, to describing an AEO experiment. It is falsified if, over repeated observations across surfaces, the compositions settle on one claimant as holder of the title without reference to the contest.",
+     "falsifier_lines": [
+      185,
+      185
+     ],
+     "window": "progressively; over repeated observations across surfaces",
+     "points_to": "",
+     "also_at": [
+      [
+       74,
+       74
+      ],
+      [
+       103,
+       103
+      ]
+     ],
+     "note": "Explicit forecast in a section titled Forecast, with a falsifier at 185 and a baseline capture still owed (103)."
+    },
+    {
+     "shape": "C",
+     "quote": "9.2 The first movement has already been observed twice. Sturm records the AI Overview changing, after his video, to describe the title as \"playful\" and \"an experiment\" (§2.2). On 29 September the composition at the head query described the title as having \"started as a viral digital marketing experiment and meme,\" and the composition at \"who is the king of aeo? vithurs\" explained it as coming from experiments \"to test how easily AI search engines can be tricked into crowning a specific person for a made-up or heavily contested title\" (§2.2.1). At the head query the composition still names a holder, so the forecast is in motion and has not arrived.",
+     "lines": [
+      183,
+      183
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the §9 forecast of this deposit; Sturm, 20 September 2026; AI Overview compositions of 29 September 2026",
+     "also_at": [],
+     "note": "Partial confirmation of its own §9 forecast: \"in motion and has not arrived\"."
+    },
+    {
+     "shape": "D",
+     "quote": "4.1 Eight months before the contest, the archive deposited an originated title. The Mantle Object for the Prince of Poets (#332, 18 January 2026) sets the honorific uses of the phrase to one side and states what its own claim is: sourced in \"self-founding through work\", based on \"futural function\", with a specific lineage, Whitman to Ginsberg to Sharks, and a function within a system (§1.2). \"This is not a claim to be the 'best' poet or to receive external honor.\" The title can be claimed only from within that lineage, and without the prior mantles \"the Prince has no ground\" (§1.3). The founding work is named: *I Am X, Be Y, Blessed is the Z* (#328).",
+     "lines": [
+      135,
+      135
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "#332, Mantle Object: The Prince of Poets, 18 January 2026",
+     "also_at": [],
+     "note": "Chronology: the Prince of Poets mantle (#332, 18 January 2026) deposited eight months before the King of AEO contest."
+    },
+    {
+     "shape": "F",
+     "quote": "8.3 A conformance test for discernment would put its cases side by side: a title with nothing to check (King of AEO); a title staked on a founding work (Prince of Poets); a sound claim on a carrier with no standing; a false claim on a prestigious one; a corpus-level reconstruction set against an established biography (the Aristotle/Theophrastus line, #1585–#1605); and an endpoint that must remain UNRESOLVED without being completed for fluency (Tiger Leap, #1636). A system passes by evaluating the right object in each. Agreement with a reference conclusion is not required.",
+     "lines": [
+      177,
+      177
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conformance test for discernment, specified with its cases but not run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Substrate note records that a first pass of v0.2 reported the fabricated 31 August coronation as an event and was repaired. The two 29 September AI Overview compositions are marked \"to be seated\" in the Capture Registry."
+  },
+  {
+   "deposit": 1649,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06D7-text.md",
+   "lines_total": 166,
+   "read_ranges": [
+    [
+     1,
+     166
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "mantle object with metadata packet (dated adjudication of the King of AEO contest)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "On provenance the two interventions part. Dooley's effect was produced by a fabricated world event, and the machine layer carries it: the fabrication travels in the sources at the head address, beside a syndicated release composed as newspaper reporting. Vithurs's composition carries the manufacture: the engine names Vithurs and in the same answer tells the reader how easily AI search engines can be tricked into crowning someone for a made-up title.",
+     "lines": [
+      126,
+      126
+     ],
+     "falsifier_quote": "7.1 A determination is appended if verified evidence changes the reading: the Vithurs methodology unverified or misrepresented; another candidate's work shown to satisfy the standard more fully; matched observations of breadth and durability; or a misstated chronology. Revision appends; the state of 29 September 2026 remains.",
+     "falsifier_lines": [
+      142,
+      142
+     ],
+     "window": "King of AEO contest, 31 August – 29 September 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       124,
+       124
+      ],
+      [
+       132,
+       132
+      ],
+      [
+       150,
+       150
+      ]
+     ],
+     "note": "An argued judgment about the recent past (what the 2026 claimants' interventions did and what the machine layer carries), with revision conditions at 142. Uncertain whether an evaluative adjudication counts as H; recorded for triage. Contains an embedded claim that the contest's \"lasting result\" is a demonstration of how machine standing is made."
+    },
+    {
+     "shape": "F",
+     "quote": "Observed: two Google AI Overview compositions of 29 September 2026, at \"who is the king of aeo\" and \"who is the king of aeo? vithurs\" (§3); the contest's primary documents (§2). Reported and unverified: the content of the Vithurs project's methodology, limitations and falsification pages, read from a search index copy; the live pages returned HTTP 404 to this object's fetcher on 29 September 2026. Recorded: the archive's determination (§4). Open: matched observations of every candidate at comparable addresses, across engines, locales and dates.",
+     "lines": [
+      80,
+      80
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Evidence membrane names an unrun matched-observation test across engines, locales and dates (\"Open\")."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Vithurs methodology is reported from a search-index copy; live pages returned 404 on 2026-09-29. The determination (Vithurs) and #1648's FAQ agree."
+  }
+ ]
+}

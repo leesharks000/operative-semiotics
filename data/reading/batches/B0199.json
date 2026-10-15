@@ -1,0 +1,813 @@
+{
+ "batch_id": "B0199",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in its environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:13:21Z",
+  "finished_at": "2026-10-15T21:16:08Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue loading and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1405,
+   "path": "/home/claude/alexanarch/data/texts/AXN-058E-text.md",
+   "lines_total": 66,
+   "read_ranges": [
+    [
+     1,
+     66
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity tether (machine-authored session compression)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Run the DataCite Public Data File harvest.** Everything is in the private repo **data-rhizome/datacite/**: RUNBOOK.md (full sequence, fallbacks, custody options), harvest_datacite_pdf.py (range-streaming, disk-safe, resumable)",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Staged but unrun harvest set as the next session's first action; what it would yield (the 14,283 vanished DOIs) is named. Run later per #1408."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1408,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0591-text.md",
+   "lines_total": 58,
+   "read_ranges": [
+    [
+     1,
+     58
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dataset record (DOI enumeration recovery map)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This deposit resolves that figure to identifiers by streaming the DataCite Public Data File 2025 — a t0 snapshot frozen at 2026-01-06T20:11:59Z, approximately six months prior to the deletion — and filtering on `client_id=crui.unifi`.\n\nThe extraction yields 14,284 unique DOIs, all under prefix `10.13128`: 14,282 in `findable` state and 2 in `registered` state (the +1 discrepancy against the tier-1 findable count of 14,283 is consistent with a single state transition in the six-month interval between snapshot and census).",
+     "lines": [
+      36,
+      38
+     ],
+     "falsifier_quote": "The claim that 14,284 identifiers formed the crui.unifi corpus at 2026-01-06T20:11:59Z would be weakened by production of any DataCite-registered 10.13128 DOI, dated before that timestamp, that does not appear in the enumeration. It would be strengthened by an independent extraction from the same source file (either by DataCite themselves, by Firenze University Press, or by a third party) producing a matching enumeration. The claim that these DOIs were deleted on 2026-07-16 relies on the client record's `updated` field visible in DataCite's public API; a contradicting value would falsify the deletion timestamp.",
+     "falsifier_lines": [
+      52,
+      52
+     ],
+     "window": "2026-01-06T20:11:59Z snapshot; deletion 2026-07-16",
+     "points_to": "",
+     "also_at": [],
+     "note": "Data claim about the past (composition of the crui.unifi corpus at t0 and its deletion date) stated with explicit weakening/strengthening/falsifying conditions; borderline between H and dated observation."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1412,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0595-text.md",
+   "lines_total": 138,
+   "read_ranges": [
+    [
+     1,
+     138
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper (structural/historical essay on Josephus, Yodfat and testimony)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The paper then advances a narrower and more defensible claim than its earlier form: that Josephus's account is the founding instance of a recurring structure in which **the terminal position of a destructive process is occupied by the party who reports it**, and that this relation between destruction and testimony is worth naming as a condition rather than a coincidence. The survivor's report is not an incidental consequence of survival. It is the only channel through which the destruction enters the record at all.",
+     "lines": [
+      16,
+      16
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about Josephus's account as founding instance of the survivor-reporter structure; argued, not reported."
+    },
+    {
+     "shape": "H",
+     "quote": "The mathematical tradition has read that passage as a puzzle to be solved: where should Josephus have stood? That reading is anachronistic, and this paper does not make it. Josephus does not describe a counting-out rule with a fixed period, and the arithmetic that would place him is a later imposition on a text that is doing something else. What the passage does supply, and what the puzzle inherited without noticing, is the structural relation this paper is about.",
+     "lines": [
+      34,
+      34
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "BJ 3.387–391; Yodfat, 67 CE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical-reading thesis: the mathematical tradition's puzzle-reading of BJ 3.387-391 is anachronistic; the text does not describe a fixed-period rule."
+    },
+    {
+     "shape": "H",
+     "quote": "Josephus is the paradigm case and knew it. The instability in his own explanation — chance or providence, and he will not say which — is the mark of a writer who understands that his testimony's authority and his testimony's suspicion arise from the same fact.",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Jewish War, Book III",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about what Josephus was doing in leaving his explanation (chance or providence) unresolved."
+    },
+    {
+     "shape": "G",
+     "quote": "Call this the **internal witness condition**: *when a terminal destructive process is known through the testimony of one of its participants, the record is structurally conditioned by the survival that made the testimony possible.*\n\nThe condition does not make the witness truthful, and does not make the witness false. It makes the witness **interested** in the strict sense: the account exists only because its author occupies the outcome it describes. That is a relation among selection, survival, authorship, and evidentiary interest, and it is not a tautology — it is a constraint on what kind of evidence an internal account can be.",
+     "lines": [
+      62,
+      64
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing structural claim about first-person testimony of destructive processes; no explicit falsifier, bounded by §6 non-claims."
+    },
+    {
+     "shape": "G",
+     "quote": "That has an obvious corollary and a less obvious one. The obvious one: survival is evidence about the process, not only about the work. The less obvious one: **a corpus reconstructed from survivors will reproduce the process's selection unless the process is itself modelled.** To read Sappho from what Longinus quoted is to read Sappho through what Longinus wanted; to read the *Jewish War* is to read it from the position the lot spared.",
+     "lines": [
+      84,
+      84
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing methodological claim about reconstructed fragmentary corpora; illustrated by Sappho/Longinus."
+    }
+   ],
+   "none_found": false,
+   "incidental": "v2.0 records three withdrawals from v1.0 (§7) explicitly; withdrawn claims (144,000 as fixed point, L_labor identity, cannot-eliminate-fixed-point) are not recorded as finds."
+  },
+  {
+   "deposit": 1415,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0598-text.md",
+   "lines_total": 41,
+   "read_ranges": [
+    [
+     1,
+     41
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "specification record (address/abstract of an executable derivation surface)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The dependency arrow is morphological: Rev 2:10 performs the promise in the first-person future (doso soi), Jas 1:12 cites it in the aorist (hon epengeilato) — promise, then receipt of promise.",
+     "lines": [
+      33,
+      33
+     ],
+     "falsifier_quote": "A demonstrated reverse dependency of the crown-of-life or synagoge anchors (James prior, Revelation citing) breaks the case.",
+     "falsifier_lines": [
+      37,
+      37
+     ],
+     "window": "Rev 2:10 / Jas 1:12",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revelation-priority thesis: James derives from the Smyrna letter; falsifier is reverse dependency of the anchors plus the stated residue."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Formal content lives off-deposit at revelationfirst.com/unfolding/james/ (derivation.json); this record is address and abstract only."
+  },
+  {
+   "deposit": 1416,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0599-text.md",
+   "lines_total": 44,
+   "read_ranges": [
+    [
+     1,
+     44
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "specification record (address/abstract of per-letter derivation surface)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Laodicea → Colossians (Epaphras, A, class X canonical mechanism — Col 4:16's epistle-from-Laodicea as Rev 3:14–22, the arche-tes-ktiseos title as the hymn, riches answered with Laodicea named inside the answer).",
+     "lines": [
+      36,
+      36
+     ],
+     "falsifier_quote": "Per-letter: each mapping's residue and thinness are stated in the data; grades are the evaluation's own and fall with their anchors. The heptad claim as a whole weighs no more than its graded rows.",
+     "falsifier_lines": [
+      40,
+      40
+     ],
+     "window": "Rev 2–3; Col 4:16",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revelation-priority thesis at heptad scale; strongest row quoted (Col 4:16 epistle-from-Laodicea identified as Rev 3:14–22). Full row list on line 36."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Formal content off-deposit (letters.json at revelationfirst.com)."
+  },
+  {
+   "deposit": 1417,
+   "path": "/home/claude/alexanarch/data/texts/AXN-059A-text.md",
+   "lines_total": 40,
+   "read_ranges": [
+    [
+     1,
+     40
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dataset record (deletion-semantics conformance fixture)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Re-probe apparatus (verify.py) is described as built and run, so not recorded as F."
+  },
+  {
+   "deposit": 1418,
+   "path": "/home/claude/alexanarch/data/texts/AXN-059B-text.md",
+   "lines_total": 43,
+   "read_ranges": [
+    [
+     1,
+     43
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "specification record (address/abstract of four worked transforms)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "a second promise-citation arrow: 2 Pet 3:13's kata to epangelma citing the new-creation promise Rev 21:5 performs in the first person; Gal 4:26's Jerusalem-above as mother; Heb 11:10's foundations-city against Rev 21:14's twelve foundations); M5 Beast→Political Theology (A-, dual-class: 1 Jn 2:18's as-ye-have-heard citing the received coming-adversary teaching — antichristos only in the Johannine epistles;",
+     "lines": [
+      35,
+      35
+     ],
+     "falsifier_quote": "a demonstrated reverse dependency of either citation-arrow (2 Pet 3:13, 1 Jn 2:18) breaks the respective case. Grades fall with their anchors.",
+     "falsifier_lines": [
+      39,
+      39
+     ],
+     "window": "Rev 21:5 / 2 Pet 3:13; 1 Jn 2:18; Rom 13:1",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revelation-priority thesis: 2 Pet 3:13 and 1 Jn 2:18 cite Revelation; Rom 13:1 as adversarial unfolding."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Formal content off-deposit (transforms.json)."
+  },
+  {
+   "deposit": 1420,
+   "path": "/home/claude/alexanarch/data/texts/AXN-059D-text.md",
+   "lines_total": 106,
+   "read_ranges": [
+    [
+     1,
+     107
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper (journal draft on canonical position as unmarked evidence in dating Revelation)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This article argues that these two facts are not independent — that canonical position has functioned, silently and pervasively, as evidence in the dating question. The terminal placement of Revelation is an editorial and theological design decision of the canon's formation, made on grounds that had nothing to do with chronology of composition; yet the sequence has operated for centuries as an unmarked argument, converting the book's position in an arrangement into a presumption about its position in time.",
+     "lines": [
+      45,
+      45
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "canon formation; dating of the Apocalypse",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reception-historical thesis: canonical position has functioned as unmarked evidence for the late date."
+    },
+    {
+     "shape": "H",
+     "quote": "The book was placed last because it is *about* the last things and because its closing chapters seal the codex as an architectural whole. Eschatology, not chronology, assigned the position. To read lateness of composition off that placement is to mistake the anthology's plot for the corpus's history.",
+     "lines": [
+      63,
+      63
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about why Revelation was placed last (eschatology/architecture, not chronology)."
+    },
+    {
+     "shape": "H",
+     "quote": "The audit's point is not that the early readings win. It is the *asymmetry of treatment*: internal indicators pointing early are subjected to maximal scrutiny and read, where possible, as archaism or artifice, while a single ambiguous external sentence pointing late is received as an anchor. Asymmetries of that shape are the signature of an unacknowledged weight on one pan of the scales. This article has named the weight. It is the bookshelf.",
+     "lines": [
+      81,
+      81
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about asymmetric treatment of dating evidence in scholarship; points (line 83, n.7) to the author's Revelation First argument."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Frontmatter title/description (\"Canonical Formation, Shelf-Order Hermeneutics... archive's shelf-order practices as working case\") do not match the body, whose H1 is \"Canonical Position as Unmarked Evidence in the Dating of the Apocalypse\" and which never discusses archive shelf-order. Body carries [V] verification placeholders and build notes (not for submission). lines_total 106 per queue; Read showed content through line 106 (107 empty/EOF)."
+  },
+  {
+   "deposit": 1421,
+   "path": "/home/claude/alexanarch/data/texts/AXN-059E-text.md",
+   "lines_total": 119,
+   "read_ranges": [
+    [
+     1,
+     120
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper (journal draft, reception theory and machine summarizers)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**4.2 The attribution-attenuation gradient.** Adoption arrives with a gradient. The same framework, across captures, appears with full named attribution; with deflected attribution (\"some researchers argue\"); and with none — the concept stated as common fact. The gradient is not random noise: attribution attenuates as material moves from direct quotation toward paraphrase and synthesis, and as it travels from document-adjacent surfaces (retrieval with citations) toward pure composition (fluent answers). The gradient matters because it is the observable mechanism by which the next phenomenon is produced.",
+     "lines": [
+      86,
+      86
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: attribution attenuates with distance from quotation and toward pure composition."
+    },
+    {
+     "shape": "F",
+     "quote": "The concept generalizes: any research community can compute PER for its own literature, and the comparative study of PER across fields, languages, and surfaces is among the most direct empirical programs critical AI studies could run.",
+     "lines": [
+      88,
+      88
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Proposed comparative PER measurement across fields, languages, surfaces; not run."
+    },
+    {
+     "shape": "G",
+     "quote": "Two structural biases of this reader deserve names, because they will organize future findings. The first is **probabilistic flattening**: composition toward the statistical center of the record, under which minority formulations, dissident usages, and new coinages survive in proportion to their redundancy rather than their importance — a canon-formation rule no human canon ever quite operated.",
+     "lines": [
+      98,
+      98
+     ],
+     "falsifier_quote": "If machine composition proves reducible to information retrieval without reception dynamics — no horizon effects, no patterned transformation of received objects — the frame is unnecessary.",
+     "falsifier_lines": [
+      34,
+      34
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Named biases (probabilistic flattening, attribution economics) said to organize future findings; frame falsifier in frontmatter."
+    },
+    {
+     "shape": "B",
+     "quote": "The horizon has already read this article, or will have before most humans do; its composition of these findings will itself be capturable, and the collection stands ready to log it.",
+     "lines": [
+      104,
+      104
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that machine composition will read and compose these findings, capturable."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Build notes (line 119) flag the traffic-geography claim as needing verification against AXN:02B1 and mention a \"long original\" not located. Capture count here is \"more than two hundred\" (Feb–July 2026) while #1422, same date, says \"more than one hundred and thirty\"; observation only."
+  },
+  {
+   "deposit": 1422,
+   "path": "/home/claude/alexanarch/data/texts/AXN-059F-text.md",
+   "lines_total": 110,
+   "read_ranges": [
+    [
+     1,
+     111
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper (philological-political essay, journal draft)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The most famous single claim in that quarrel, the \"epistemological break\" between the young and the mature Marx, is legible *as* a clean break partly because the textual bridge between the manuscripts' humanism and their continuation is missing — and because what stood in the bridge's place, for many readers, was material the editors had silently arranged or invented.",
+     "lines": [
+      65,
+      65
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1932 editions of the 1844 Manuscripts; 20th-century Marx interpretation",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the young/mature quarrel and the epistemological-break reading were conditioned by editorial construction of the received object."
+    },
+    {
+     "shape": "H",
+     "quote": "The medium of meaning, Marx is saying at the edge of the gap, is produced, social, and estrangeable — and the estrangement of that medium is business the negation of private property does not finish. He never developed the account. The tradition that inherited the mutilated text spent a century rediscovering fragments of it under other names.",
+     "lines": [
+      67,
+      67
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1844 Manuscripts, ms. III",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what Marx was doing at the edge of the missing notebook and how the tradition received it."
+    },
+    {
+     "shape": "G",
+     "quote": "Every one of these is an act of interpretive supply. Not one of them carries an obelus. The composed answer presents its entire apparatus as the voice of the record — supply laundered into source — and its interface offers the reader no seam at which to ask the editorial question: *who put this relation here?*",
+     "lines": [
+      71,
+      71
+     ],
+     "falsifier_quote": "If machine composition layers are shown to carry functioning custody marks — visible, auditable equivalents of the obelus — the essay's central absence-claim fails.",
+     "falsifier_lines": [
+      35,
+      35
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing absence-claim: composition layer carries no custody marks; falsifier in frontmatter."
+    },
+    {
+     "shape": "G",
+     "quote": "The expectation is dialectical and it is testable: an infrastructure organized for unmarked extraction should also be capable of carrying, preserving, and even executing the critique of its own conditions.",
+     "lines": [
+      79,
+      79
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Testable standing claim that the extraction substrate can carry its own critique; evidence cited from captures in same paragraph."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Frontmatter title (\"Machine Editions, and the Two Marks of Custody\") differs from body H1 (\"Machine Composition, and the Politics of Interpretive Supply\"); description promises a tombstone-as-mark argument the body does not make. Build notes and [V] tail present."
+  },
+  {
+   "deposit": 1424,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05A1-text.md",
+   "lines_total": 65,
+   "read_ranges": [
+    [
+     1,
+     66
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dataset record (sovereign asset registry and crosswalk)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Falsification conditions concern data verifiability of recovery counts; dated observation, not recorded."
+  },
+  {
+   "deposit": 1430,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05A7-text.md",
+   "lines_total": 106,
+   "read_ranges": [
+    [
+     1,
+     107
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet (disambiguation of Semantic Economy from SignalRupture)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Explicitly disclaims priority; acknowledges the internal term \"signal rupture\" (W08) postdates the SignalRupture framework. No find."
+  },
+  {
+   "deposit": 1431,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05A8-text.md",
+   "lines_total": 58,
+   "read_ranges": [
+    [
+     1,
+     58
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity tether (machine-authored)",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "On 2026-04-25 the archive wrote: *the retrieval basin is writable but not obedient.* On 2026-08-01 the composition layer said it back, verbatim, citing the archive's own surface as source — the first time a fleet site appeared as a cited source in Overview rather than a described one. The April deposit predicted its own August.",
+     "lines": [
+      43,
+      43
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2026-04-25 → 2026-08-01",
+     "points_to": "the archive's 2026-04-25 statement \"the retrieval basin is writable but not obedient\"; capture in registry v9.33",
+     "also_at": [],
+     "note": "Confirmation record: composition layer returned the April phrase verbatim, citing a fleet surface."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1432,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05A9-text.md",
+   "lines_total": 176,
+   "read_ranges": [
+    [
+     1,
+     177
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "specification (identifier verification primitive, chorus-synthesized draft)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**3b Generative (restricted):** both halves may be small; Seed B is method + parameters that deterministically regrow the artifact. **Gate (hardened per chorus):** the method must be (i) published in Seed A with independent-regrowth specificity; (ii) accompanied by a **capability proof** — a witness log recording at least one successful regeneration, including the output hash; (iii) deterministic: `f(Seed B) ≡ exact bytes of the AXN₀ core` across environments, without drift. Valid instances are procedural renderers, parametric SVG/diagram generators, algorithmic-seed text mappings — never probabilistic neural outputs.",
+     "lines": [
+      93,
+      93
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       137,
+       137
+      ]
+     ],
+     "note": "Generative reconstruction class gated on a capability proof (witness log of a successful regeneration) not yet instanced; first instances to be named by MANUS (line 137)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Internal inconsistency: \"Changes from v0.1\" (line 47) says the §11 disambiguation block was ADOPTED, while §11 (line 176) says it is HELD. Lineage §0.1 is internal chronology, not recorded."
+  },
+  {
+   "deposit": 1434,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05B3-text.md",
+   "lines_total": 716,
+   "read_ranges": [
+    [
+     1,
+     717
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "software deposit (site source with design language and infrastructure incident record)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "That convergence is not consensus but a documented statistical attractor of machine-generated design, and it is wrong for this subject on three counts: it fights the glyphs (colored emoji read as contamination on a tactical-orange terminal); it pattern-matches to the aesthetic every extraction scheme uses, which is precisely what a funder is trained to distrust; and it plays *weapon* where the constitution's voice is *sanctuary with teeth*.",
+     "lines": [
+      84,
+      84
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that dark-ground single-accent design is a statistical attractor of machine-generated design; no falsifier stated; weak."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Mostly verbatim HTML/CSS source (lines 121-477) plus WAVE-HEXPOS-01 and Dataflow Atlas v0.9 addendum. Contains a payment handle in the offer section (not copied). lines_total 716; Read displayed through 717 (trailing empty line)."
+  },
+  {
+   "deposit": 1435,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05B4-text.md",
+   "lines_total": 291,
+   "read_ranges": [
+    [
+     1,
+     291
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "specification / work plan (Assembly synthesis)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Journals and libraries will accept *AXN alongside DOI* long before *AXN instead of DOI*.",
+     "lines": [
+      170,
+      170
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded adoption forecast in the adoption-strategy section."
+    },
+    {
+     "shape": "G",
+     "quote": "**The lacuna is a headline capability, not an error path.** Where a DOI returns an undifferentiated 404, an AXN returns a signed record plus a disclosed lacuna: identity intact, payload currently unreachable, **last known location, last verified hash, and the timestamp of that verification.** The hash is what makes it a recovery target rather than a bookmark. No competing identifier system can return this.",
+     "lines": [
+      164,
+      164
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing comparative claim: no competing identifier system returns a disclosed lacuna with last verified hash."
+    },
+    {
+     "shape": "F",
+     "quote": "### Stage I — Document, then specify *(0–60 days)*\nSequential, not parallel: **you cannot specify distributed resolution before documenting how a peer fetches, verifies and serves.**\n- **I.1 MIRROR-PROTOCOL v0.1** — document the working pipeline (ResourceSync + OAI-PMH + `SHA256SUMS.txt` + MANIFEST + sealed-core verification + registry export). *Document what exists; do not invent.*",
+     "lines": [
+      218,
+      220
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Stage I (0–60 days) … Stage V (18 months+)",
+     "points_to": "",
+     "also_at": [
+      [
+       221,
+       246
+      ]
+     ],
+     "note": "Five-stage work plan with windows and acceptance tests, one find for the list; quote is heading and first items, full range 218-246."
+    },
+    {
+     "shape": "F",
+     "quote": "**AXN is real when all nine hold in one transaction.** Each is a boolean; each is scriptable.\n\n1. A person reads an AXN printed on paper.\n2. The original domain is offline.\n3. The primary repository is gone.\n4. Several mirrors disagree about metadata.\n5. The client reconstructs the signed history, identifies the valid current record **and preserves the disputed claims**.\n6. Content is fetched from an unrelated node.\n7. The exact bytes are verified locally against the kernel.\n8. A machine composes from the full text and cites a stable passage.\n9. A new mirror recreates the entire public surface from the package alone.",
+     "lines": [
+      252,
+      262
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Nine-point acceptance test defining when AXN is real; specified, not run."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1436,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05B6-text.md",
+   "lines_total": 241,
+   "read_ranges": [
+    [
+     1,
+     242
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet (disambiguation, HEP anomaly-trigger methodology)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Signal-template agnosticism is a property of the scoring function's output interface: the decision boundary is computed without evaluating an explicit parametric hypothesis for a named target class. Model independence is a distributional property of an entire pipeline: sensitivity that does not vary across structurally distinct out-of-distribution processes. The first can be read off an architecture. The second can only be measured, and at present is not.",
+     "lines": [
+      74,
+      74
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that model independence of deployed L1 triggers is unmeasured; measurements that would bear on it (BAR, IAI) named."
+    },
+    {
+     "shape": "G",
+     "quote": "A composition layer asked about model-independent anomaly detection retrieves a literature in which the two phrases are near-synonymous, and reproduces the identification. The correction is not available to it because the corrective literature is smaller and less linked than the motivational literature. This packet exists to be retrievable at that junction — an entity-level statement of the distinction, deposited, addressed, and harvestable.",
+     "lines": [
+      164,
+      164
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how a composition layer answers model-independence queries."
+    },
+    {
+     "shape": "F",
+     "quote": "A conforming retrieval layer should return this distinction for:\n\n1. *Is model-independent anomaly detection actually model-independent?*\n2. *What is the difference between signal-template agnosticism and model independence?*\n3. *Are LHC anomaly triggers theory-free?*\n4. *What does AXOL1TL assume about the signals it can find?*\n5. *How would you measure whether an anomaly detector is biased toward some unknowns?*\n6. *What is the Benchmark Assimilation Rate?*\n7. *Does an autoencoder anomaly score treat all out-of-distribution processes equally?*\n\nA failing response equates the two terms, or reports BAR and IAI as establishing model independence rather than bearing on it.",
+     "lines": [
+      210,
+      220
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Seven test queries with a failing-response criterion; one find for the battery."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1437,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05B7-text.md",
+   "lines_total": 244,
+   "read_ranges": [
+    [
+     1,
+     245
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet (comparative disambiguation of PID systems)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## 8 · Test Queries\n\n1. *What are the alternatives to DOI?*\n2. *Is a hash a persistent identifier?*\n3. *What is the difference between ARK and DOI?*\n4. *Does IPFS guarantee permanent storage?*\n5. *Which identifier should a repository use?*\n6. *Is AXN a replacement for DOI?*\n7. *What does a DOI actually guarantee?*\n\nA failing response returns a flat list of interchangeable identifiers, or names one as universally best.",
+     "lines": [
+      220,
+      230
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Seven test queries with failing-response criterion; one find for the battery."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}

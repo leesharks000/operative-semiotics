@@ -1,0 +1,494 @@
+{
+ "batch_id": "B0204",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported by the environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:13:51Z",
+  "finished_at": "2026-10-15T21:16:09Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 slicing for verbatim quotes)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1593,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0686-text.md",
+   "lines_total": 549,
+   "read_ranges": [
+    [
+     1,
+     280
+    ],
+    [
+     281,
+     549
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "methodology specification for stylometric controls, with reference implementation",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**the operation is the better partition of this corpus on this measurement, and name recovery is unusually sensitive to the removal of the works whose subjects the names most differ over** — a descriptive ordering with its dependencies declared, not a demonstrated conditional.",
+     "lines": [
+      155,
+      155
+     ],
+     "falsifier_quote": "what is supported is that name recovery in this corpus is unusually sensitive to the removal of those works, and that a subject-matched comparison — not an exclusion — is the experiment that would settle it.",
+     "falsifier_lines": [
+      169,
+      169
+     ],
+     "window": "the corpora transmitted under the names Aristotle and Theophrastus (39 texts",
+     "points_to": "",
+     "also_at": [
+      [
+       110,
+       110
+      ],
+      [
+       153,
+       153
+      ],
+      [
+       161,
+       161
+      ],
+      [
+       167,
+       167
+      ]
+     ],
+     "note": "Comparative claim about the stylistic structure of the Aristotle/Theophrastus corpus (operation partition beats name partition; name recovery sensitive to removing botanical/zoological works); bears on the authorship thesis argued in #1586/#1588; the deposit itself calls the ordering descriptive, not established, and names the settling experiment."
+    },
+    {
+     "shape": "G",
+     "quote": "**Separability is not identity, and this is the instrument's hardest limit.** Chatterton writing as Rowley separates from Chatterton writing as himself at 0.86 balanced accuracy — the magnitude at which three different tragedians separate from each other (§5c). One documented hand, two sustained voices, and the classifier calls them two. **No supervised separation licenses an inference to distinct makers**, here or anywhere;",
+     "lines": [
+      187,
+      187
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       159,
+       159
+      ]
+     ],
+     "note": "Standing claim about how supervised stylometric separation behaves, now backed by the Chatterton/Rowley measurement (0.864 vs tragedians 0.872); no explicit falsifier, but stated as measured instrument behaviour."
+    },
+    {
+     "shape": "G",
+     "quote": "**Genre is stronger than authorship, almost always.** In the run above, comedy separates from tragedy at 100% while three tragedians separate from each other at 94% — the genre signal is the larger one, and any design that lets genre correlate with the tested partition will find the partition. This is the single commonest way this kind of measurement produces a false positive.",
+     "lines": [
+      185,
+      185
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about measurement behaviour (genre signal larger than authorship signal), with the comedy/tragedy vs tragedian figures as its evidence."
+    },
+    {
+     "shape": "F",
+     "quote": "The obvious next tests, all with documentary ground truth and none run here: a forger's acknowledged verse against his forgery in a language other than English; a case where the forger imitates a *named* author rather than inventing one (Ireland's *Vortigern* done properly, against Ireland's own acknowledged plays); and the reverse direction — a corpus known to be two hands presented as one, where the instrument should split what the name unites. The archive's next such test is documented and scoped: volumes II and III of *Das Kapital*, edited into publication by Engels from Marx's manuscripts under Marx's name, projected onto the same letter-trained classifier that placed volume I at 98% Marx.",
+     "lines": [
+      134,
+      134
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unrun ground-truth tests listed as owed: forger in a non-English language, Ireland against his acknowledged plays, the reverse two-hands-as-one case, and Kapital II-III (Engels-edited) projected onto the letter-trained classifier."
+    },
+    {
+     "shape": "F",
+     "quote": "**Still owed, and not claimed as done.** The corpus manifest, extraction scripts and run configuration, so the tables can be rebuilt rather than recomputed; work-level rather than constructed-sample units for Chatterton; a subject-matched comparison rather than an exclusion",
+     "lines": [
+      173,
+      173
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       169,
+       169
+      ]
+     ],
+     "note": "Second owed list: corpus manifest and scripts, work-level Chatterton units, subject-matched comparison, label-fixing declaration, documented Engels body beside the Kapital result, rebuild of drama and correspondence runs."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body keeps v0.2 passages marked superseded/WITHDRAWN alongside the v0.4 corrections (deliberate, for inspectability). In the appended reference implementation, report() reads S['accuracy'] and S['baseline'], keys that the repaired attribute() no longer returns (it returns 'balanced' and 'majority_baseline'); report() would raise KeyError as printed."
+  },
+  {
+   "deposit": 1595,
+   "path": "/home/claude/alexanarch/data/texts/AXN-068B-text.md",
+   "lines_total": 121,
+   "read_ranges": [
+    [
+     1,
+     121
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "plan/specification of a facing-page critical edition",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**The claim the layout makes, and the only one it makes:** the fragment holds the position of the question and Λ the position of the attempt. Where the fragment says an account is needed, Λ supplies one; where it says the astronomers' account will not do, Λ 8 is the astronomers' account. This is an order of *inquiry*, exhibited by the texts. It is not a claim about hands, dates, or composition, and the introduction says so before it says anything else.",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Theophrastus, *On First Principles* (the work known as his *Metaphysics*), whole — 4 a 2 to 12 a 2",
+     "points_to": "",
+     "also_at": [
+      [
+       70,
+       70
+      ],
+      [
+       73,
+       73
+      ]
+     ],
+     "note": "Thesis about the relation of Theophrastus On First Principles and Metaphysics Λ (demand and supply in the order of inquiry); explicitly disclaims hands, dates and composition, so it is a thesis about what the texts exhibit, not their chronology. Counters stated at line 92."
+    },
+    {
+     "shape": "F",
+     "quote": "**Would settle:** that the two texts can be presented in the order of the inquiry without violence to either, that the demands and their supplies fall in that order at four loci, and that the relation is invisible in the notation the tradition uses to record relations between texts.\n\n**Would not settle:** how many hands wrote the corpus, when either text was composed, or whether the demand precedes the supply in time rather than in argument. The edition makes an order visible. It does not date it.",
+     "lines": [
+      119,
+      121
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       108,
+       115
+      ]
+     ],
+     "note": "The facing-page edition is specified but unbuilt (plan v0.1, \"not the edition; the specification for it\"); order of work at 108-115 starts with seating the two texts as one corpus and acquiring Alon 1985."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1596,
+   "path": "/home/claude/alexanarch/data/texts/AXN-068C-text.md",
+   "lines_total": 119,
+   "read_ranges": [
+    [
+     1,
+     119
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "plan/specification of a facing-page critical edition (body identical to #1595)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**The claim the layout makes, and the only one it makes:** the fragment holds the position of the question and Λ the position of the attempt. Where the fragment says an account is needed, Λ supplies one; where it says the astronomers' account will not do, Λ 8 is the astronomers' account. This is an order of *inquiry*, exhibited by the texts. It is not a claim about hands, dates, or composition, and the introduction says so before it says anything else.",
+     "lines": [
+      49,
+      49
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Theophrastus, *On First Principles* (the work known as his *Metaphysics*), whole — 4 a 2 to 12 a 2",
+     "points_to": "",
+     "also_at": [
+      [
+       68,
+       68
+      ],
+      [
+       71,
+       71
+      ]
+     ],
+     "note": "Same thesis as #1595 line 51 (the body here duplicates #1595); demand/supply relation of the fragment and Λ in the order of inquiry, explicitly not a claim about hands or dates."
+    },
+    {
+     "shape": "F",
+     "quote": "**Would settle:** that the two texts can be presented in the order of the inquiry without violence to either, that the demands and their supplies fall in that order at four loci, and that the relation is invisible in the notation the tradition uses to record relations between texts.\n\n**Would not settle:** how many hands wrote the corpus, when either text was composed, or whether the demand precedes the supply in time rather than in argument. The edition makes an order visible. It does not date it.",
+     "lines": [
+      117,
+      119
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       106,
+       113
+      ]
+     ],
+     "note": "Same unbuilt edition plan as #1595; recorded here because this deposit carries the body."
+    }
+   ],
+   "none_found": false,
+   "incidental": "WRONG OR DUPLICATE BODY: title and creator (Sigil) announce \"The Full Splice ... entire and in its own order, with Metaphysics Λ joined at eleven points\", but the body is the #1595 plan v0.1 (\"The Natural Order\", four openings, Lee Sharks byline) verbatim. Only the front matter differs (substrate cites additional van Raalte pages 36, 40, 46, 50). The splice text itself is not present."
+  },
+  {
+   "deposit": 1601,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0691-text.md",
+   "lines_total": 601,
+   "read_ranges": [
+    [
+     1,
+     300
+    ],
+    [
+     301,
+     601
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "speculative-philosophical lyric essay with critical apparatus of real and deliberately impossible citations",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "**35.** *Before this work existed, an erratum withdrew its interpretation.* The sequence is on deposit and datable: #1598 (the anticipatory erratum), #1599 (the genre specification and the law that retraction transmits), #1600 (the protoretrocausal meta-erratum, which found that #1598 had been the first edition). Each is timestamped, hashed and addressable. **The direction of dependence is available for inspection**, which is the chapter's claim and is not a figure of speech.",
+     "lines": [
+      477,
+      477
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "#1598 (the anticipatory erratum), #1599 (the genre specification and the law that retraction transmits), #1600 (the protoretrocausal meta-erratum)",
+     "also_at": [
+      [
+       299,
+       309
+      ]
+     ],
+     "note": "Timestamped anchors: the corrections are cited as datable, hashed deposits that preceded the book whose claims they appeared to correct; a chronology of the archive own corrections preceding the composition."
+    },
+    {
+     "shape": "H",
+     "quote": "note especially that the Theophrastan text's demand at 5 a 21 — *the cause of the number of the spheres seeks a greater account, and not the astronomers'* — is answered in *Metaphysics* Λ 8 by the astronomers' account, offered with the concession *let the necessity be left for stronger minds to state*. Two texts, one demand, one supply, and no way to determine from the sequence alone which was written first.",
+     "lines": [
+      479,
+      479
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "5 a 21",
+     "points_to": "#1583, #1595, #1596, #1597",
+     "also_at": [],
+     "note": "Adopts the archive Theophrastus thesis: the demand at On First Principles 5 a 21 is answered by Λ 8 (with the concession on necessity), and the sequence alone cannot decide which was written first."
+    },
+    {
+     "shape": "H",
+     "quote": "**41.** The excursus notes one asymmetry that tells against the book. Fossilisation is indifferent to content; **quotation is not.** A grammarian selects the line that illustrates his point. The Sapphic corpus is therefore a sample drawn by a mechanism with preferences, and the preferences are legible: we have a great deal of Sappho on the symptoms of desire because desire illustrated things ancient critics wanted to illustrate. The dinosaur sample has no such bias and the poetic sample does. This is a real disanalogy and the book does not address it.",
+     "lines": [
+      503,
+      503
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       599,
+       599
+      ]
+     ],
+     "note": "Thesis about the transmission history of the Sapphic corpus: quotation selected for what ancient critics wished to illustrate, so the surviving corpus overrepresents the symptoms of desire; argued as a disanalogy against the book itself."
+    },
+    {
+     "shape": "H",
+     "quote": "**5.** On the reception of fr. 31: Catullus 51 translates it and adds a fourth stanza about idleness that has no Greek counterpart, so that the poem's most-copied Latin form is a Sapphic body with a Roman limb attached. The reconstruction problem is therefore not modern. It is contemporary with the second surviving witness.",
+     "lines": [
+      395,
+      395
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reception thesis: Catullus 51 as a Sapphic body with a Roman limb, so the reconstruction problem is as old as the second surviving witness; argued in the apparatus, weakly contestable."
+    },
+    {
+     "shape": "F",
+     "quote": "**16.** *Why Sappho?* The answer given — that the body in the poem is itself undergoing a loss of coordination, so that the poem's transmitted condition repeats an operation the poem already performs — is the book's central claim and its most contestable. It is contestable because it is available for any poet whose subject is dissolution, and the archive has not tested it against Archilochus, Alcman, Ibycus or Anacreon, all of whom survive in comparable fragmentary states and none of whom catalogues a body coming apart. That the test has not been run is recorded here rather than concealed.",
+     "lines": [
+      425,
+      425
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Untested comparison: the book central claim (fr. 31 transmission repeats the poem own operation) not tested against Archilochus, Alcman, Ibycus or Anacreon; recorded as an unrun test."
+    },
+    {
+     "shape": "B",
+     "quote": "Cranes, R. \"The Reader Who Was Told Where to Arrive: A Note on Primed Reception.\" *Crimson Hexagonal Archive*, forthcoming. — *Announced at #1600 §VIII, where the failure it would document is already recorded. The note is unnecessary and will be written.*",
+     "lines": [
+      591,
+      591
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Inside the \"cited impossibly\" section, yet the comment states the note \"will be written\"; possibly a forecast of a real future deposit, possibly part of the impossible-citation play. Uncertain; triage to judge."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Apparatus cross-references \"note 46\" (line 437) and \"note 47\" (line 459), but notes run only to 41; the editorial note says \"Thirty-nine notes\" while numbering reaches 41. Possibly deliberate play with the apparatus; reported as observation. Impossible citations (dated 2029-2044, etc.) are explicitly fictional and not recorded. Note 36 cites the Theophrastan demand at \"5 a 21\" while #1595/#1596 Opening C cite the same sentence as \"Fragment 8 a 21-3\" and #1602 as \"5 a 21-3\" - different locus numbers for the same passage across deposits; observation, not error."
+  },
+  {
+   "deposit": 1602,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0692-text.md",
+   "lines_total": 153,
+   "read_ranges": [
+    [
+     1,
+     153
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "self-correcting philological protocol (v3) with two worked cases",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**B · Direction.** v2 asserted that the pun generated the death report. **The evidence runs the other way.** The report stands at char 3043 of the life, attributed to a named source with a stated age. The epigram stands 996 characters later, in a series Diogenes composes for every subject in the *Lives*. **The report precedes the epigram in the transmitting text, and is attributed, and the epigram uses it.** The natural reading is that the datum furnished the occasion for the epigram.",
+     "lines": [
+      99,
+      99
+     ],
+     "falsifier_quote": "Diogenes reports Aristotle's death by aconite, aged seventy, *ὥς φησιν Εὔμηλος ἐν τῇ πέμπτῃ τῶν Ἱστοριῶν*.",
+     "falsifier_lines": [
+      97,
+      97
+     ],
+     "window": "Diogenes V",
+     "points_to": "",
+     "also_at": [
+      [
+       103,
+       103
+      ]
+     ],
+     "note": "Philological thesis on Diogenes Laertius V: the attributed death-by-aconite report (Eumelus) precedes and furnishes the epigram pun, not vice versa; evidence is the ordering at stated character offsets."
+    },
+    {
+     "shape": "H",
+     "quote": "It held that Diogenes's citation of Hermippus established one hand behind both the life of Aristotle and the catalogue of his works. **It does not.** Diogenes introduces the catalogue in his own voice — *ἃ καὶ αὐτὰ ἄξιον ἡγησάμην ὑπογράψαι* — and names no source for the list. Hermippus appears **three times** in the life (the descent from Nicomachus; the Xenocrates embassy; the litter in old age, via Favorinus), all biographical. The claim that he stands behind the catalogue is a modern source-reconstruction, contested — Moraux argued for Ariston of Ceos — and it was presented as an ancient citation.",
+     "lines": [
+      41,
+      41
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about the source of the catalogue of Aristotle works in Diogenes: introduced in his own voice, no source named; Hermippus cited only for biography; Hermippus-behind-the-catalogue is a modern contested reconstruction (Moraux: Ariston of Ceos)."
+    },
+    {
+     "shape": "H",
+     "quote": "**Established, and independent of everything in this note:** the textual correspondences between Λ and *On First Principles* at the loci treated separately — S1 through S9, with the sphere-count at 5 a 21-3 ‖ Λ 8 as the sharpest. Those are relations between passages, verified against van Raalte's margins, and they do not depend on any account of biography, catalogue or chronology.",
+     "lines": [
+      139,
+      139
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Λ and *On First Principles*",
+     "points_to": "",
+     "also_at": [
+      [
+       77,
+       77
+      ]
+     ],
+     "note": "Thesis of textual correspondence between Metaphysics Λ and Theophrastus On First Principles (S1-S9, sharpest at 5 a 21-3 ‖ Λ 8), stated as established and independent of biography, catalogue and chronology."
+    },
+    {
+     "shape": "H",
+     "quote": "**Open, and worth the work:** whether the catalogue's assignment of the two texts to two names is a transform of the demand-and-supply relation between them. If it is, then the assignment is evidence that a relation existed and **not independent evidence that two people did** — but that conditional has an unfilled antecedent, and this note has not filled it.",
+     "lines": [
+      145,
+      145
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Open historical hypothesis: the catalogue assignment of the two texts to two names may be a transform of their demand-and-supply relation; explicitly posed conditionally with an unfilled antecedent, not argued. Recorded so triage can link it to the Aristotle/Theophrastus line."
+    },
+    {
+     "shape": "F",
+     "quote": "**The test:** for each dating argument in the developmental literature, establish (i) **which textual features generated the date**, and (ii) **where that date subsequently returns as an independent premise in an argument about those same features.** Where (i) and (ii) intersect, the circularity is demonstrated for that argument. Where they do not, the chronology is doing legitimate work and the objection fails for that case.",
+     "lines": [
+      131,
+      131
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       133,
+       133
+      ]
+     ],
+     "note": "The executable chronology-circularity audit over the developmental literature: specified, can fail, explicitly not yet run (\"the principal outstanding task of this line\")."
+    },
+    {
+     "shape": "F",
+     "quote": "**The test as stated is therefore not a test.** A real one would require a control: a set of biographical claims classified before the philosophical texts were consulted, and a stability measurement across independent witnesses to the same life. Neither was done.",
+     "lines": [
+      121,
+      121
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The control the anchored/unanchored test would need (pre-classified biographical claims, stability across independent witnesses); specified as not done."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Records withdrawals of v1 (common compiler) and v2 (categorical derivation, aconite direction) inside the text; the prior versions are not in this file."
+  }
+ ]
+}
