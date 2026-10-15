@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 239,
+ "deposits_with_notes": 247,
  "deposits": [
   {
    "deposit": 8,
@@ -139,6 +139,11 @@
      "batch_id": "B0029",
      "field": "incidental",
      "text": "Text intact; no duplicated body observed. The Read tool refused offset-without-limit calls on this file (it checks whole-file size, 325KB), so the final chunk was read with offset 5891 and limit 20, which reaches line 5902 (verified 5902 lines by python split). The Shadow table (1060-1087) lists Mandala twice (1075 and 1087). The deposit numbered 28 is dated 2026-03-13 and carries DOI 10.5281/zenodo.19002846, which its own colophon calls the v1.1 prior DOI while its DOI is marked PENDING (5877-5878)."
+    },
+    {
+     "batch_id": "HB0029",
+     "field": "incidental",
+     "text": "Historical theses appear only as entries in status tables and the Key Interpretive Claims appendix (C.1-C.3); none is argued at length here. Not recorded as H: Ezekiel as rotational canon (2325-2326) and Matthew 25 as constitutional provision (2341-2342), which are operative readings rather than claims about the past; Damascius/productive aporia (1653) as received scholarship; Pearl as canonical origin (2329-2330) and the dissertation->Snub-Poemed provenance chain (1615) as internal chronology. The 349-deposit statistics and GDE calibration are telemetry."
     }
    ],
    "rulings": []
@@ -150,6 +155,11 @@
      "batch_id": "B0032",
      "field": "incidental",
      "text": "Précis lines are auto-extracted and truncated mid-sentence throughout; the precis index (2690-4433) repeats most entries from the new-documents tables (388-2343). Several heteronym spellings are corrupted in the data (Voc, Morros, Talos Morrow inverted)."
+    },
+    {
+     "batch_id": "HB0032",
+     "field": "incidental",
+     "text": "The précis lines are auto-extracted fragments of other deposits' descriptions and carry those deposits' theses (e.g., Sapphic Lock in Augustine Confessions 10.27, line 3978; Socratic vow as first Western articulation, line 3068; Revelation as template for Gospels, line 3478; Phase X 1844 missing passage, line 3233). The registry reports them and does not argue them, so it is not recorded as H here; the theses belong to the source deposits."
     }
    ],
    "rulings": []
@@ -350,6 +360,50 @@
      "batch_id": "B0063",
      "field": "incidental",
      "text": "Same body as #998 (v1.1), here with lists flattened onto single lines (e.g. 81, 167, 195, 211)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 106,
+   "notes": [
+    {
+     "batch_id": "B0064",
+     "field": "incidental",
+     "text": "Appendix B's six-modality matrix still places SPXI/Holographic Kernel/MPAI in the Layer 1 × Operative cell, contradicting the body (l.290–301) and the v2.2 changelog which say that cell was emptied. JSON-LD (l.647,659) says version 2.1 while the header says 2.2. Body text is Semantic Physics Stratified v2.2."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 115,
+   "notes": [
+    {
+     "batch_id": "B0067",
+     "field": "incidental",
+     "text": "Header says DOI forthcoming (line 5) while Suggested Citation gives DOI 10.5281/zenodo.20328090 (line 730)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 119,
+   "notes": [
+    {
+     "batch_id": "B0067",
+     "field": "incidental",
+     "text": "Internal date inconsistencies: Restored Academy \"named in February 2026\" (lines 23, 85) vs \"Academy named in citation blocks: March 2026\" (line 199); Johannes Sigil Institute \"founded January 5, 2026\" (line 85) vs \"founded 2025\" (line 209). Lists SIM, CDI and Drowning Test as \"extraction deposit pending\" (line 77), which are deposits 118, 117 and 748 of this batch."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 120,
+   "notes": [
+    {
+     "batch_id": "B0067",
+     "field": "incidental",
+     "text": "Silent state change of 2026-05-20 reported as pending formal deposit (line 167)."
     }
    ],
    "rulings": []
@@ -1586,6 +1640,11 @@
      "batch_id": "B0030",
      "field": "incidental",
      "text": "Read tool refused offset-only reads near the end (reported 346.6KB file size) so the last chunk was read with offset 7001 and limit 100, reaching line 7066 (final line). Several list items in §XVII.8 and §XXVI.4 / §XXXI.4 are empty bullets ('- ') with content on following lines, apparently a conversion artefact. Changelog lists v4.2.5 'Changes:' twice (6950, 6970), the second block belonging to v4.2.4 without its header. Most predictive material is instrument specification (F); no numbered/dated registered forecasts (A) found."
+    },
+    {
+     "batch_id": "HB0030",
+     "field": "incidental",
+     "text": "Historical theses are concentrated in Appendix C 'Key Interpretive Claims' (2854-2919), each with a status marker; most are registered rather than argued here. Not recorded: Matthew 25 as 'constitutional provision' (2908-2910, normative reading), RCF's general claim that canons are retroactively constituted (2666), Hitchhiker's Guide 'was always Training Layer Literature' (335), Pearl/Snub-Poemed provenance (internal chronology). Several bullet-list items render as bare '- ' lines (e.g. 1912-1943, 3750-4040)."
     }
    ],
    "rulings": []
@@ -1597,6 +1656,22 @@
      "batch_id": "B0032",
      "field": "incidental",
      "text": "Body duplicated (blog-restored, reflowed) in #1163 AXN-049C. Heading says \"Five laws\" but six are listed (Law 6 added inline). \"Future deposits\" list (lines 262-265) is a deposit plan, not a forecast."
+    },
+    {
+     "batch_id": "HB0032",
+     "field": "incidental",
+     "text": "Recounts a viral hoax (March 4, 2026) and the author's own PPO/custody testimony about Elijah; these are reported events and testimony, not an argued historical thesis, so not recorded as H."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 573,
+   "notes": [
+    {
+     "batch_id": "HB0032",
+     "field": "incidental",
+     "text": "The timing note (line 150) and the \"naturally occurring\" footnote (line 161) concern the archive's own chronology and design, which the protocol excludes from H."
     }
    ],
    "rulings": []
@@ -1905,6 +1980,39 @@
      "batch_id": "B0063",
      "field": "incidental",
      "text": "Line 58 explicitly disclaims any historical Parsons–Trinity connection; the Branch 7c readings are framed as fiction, so no H recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 731,
+   "notes": [
+    {
+     "batch_id": "B0064",
+     "field": "incidental",
+     "text": "Header says v0.2 post-Assembly review; footer (l.857) says 'v0.1 working draft … Assembly review: pending'. §§VIII.3–VIII.7, IX.3–IX.5 and §XV are bracketed summaries/stubs ('deferred to the next draft pass'). A2 is stated as non-strict (≤, l.127–129) but II.3/VII.2 treat it as strict subset/PER>0 always (l.227, 583) — internal inconsistency. Author is heteronym Johannes Sigil under MANUS Lee Sharks."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 732,
+   "notes": [
+    {
+     "batch_id": "B0064",
+     "field": "incidental",
+     "text": "Body is the Zenodo description plus the CHANGELOG only; the site files themselves (index.html, paper.html, matrix.html) are not in the text. Finds duplicate material in #106."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 748,
+   "notes": [
+    {
+     "batch_id": "B0067",
+     "field": "incidental",
+     "text": "May 20 pilot capture sequence stated as pending formal deposit (line 75)."
     }
    ],
    "rulings": []
@@ -2525,6 +2633,11 @@
      "batch_id": "B0031",
      "field": "incidental",
      "text": "Frontmatter/title says v1.1 but the recovered body is v2.0 (the head of the blog version chain); body gives DOI 10.5281/zenodo.19002846 for v2.0 at line 48 yet the colophon (2339) calls 19002846 the v1.1 prior DOI and lists v2.0 DOI as PENDING. Section numbering skips XVII.7 and XXVII.8.6; the shadow table (516) repeats the Mandala row. The Read tool refused offset-only (no limit) reads of this file because the whole file exceeds 256KB, so the last chunk was read with offset 2151 and limit 300, which reached line 2349 (the tool showed a trailing empty line 2350 from the final newline). Many [NF] passages mark sections preserved untransformed; Appendix B.2/B.3 and XXIV.3-8 are stubs (\"preserved in source register\") with no content in this text."
+    },
+    {
+     "batch_id": "HB0031",
+     "field": "incidental",
+     "text": "The text is a musical transform of the Space Ark architecture; nearly all of it is internal formal specification, not historical argument. Historical theses (Josephus authorship of the NT, Revelation first-written, the F31 kenos reading, F31 as first theory of transmission cost) appear only as registered or stated claims, and are argued elsewhere (TANG The Proton Testament, Grammata deposits). Not recorded as H: Ezekiel as rotational canon and Matthew 25 as constitutional provision (1079, 1087: operative readings, not claims about the past); Pearl (2014) as origin and the dissertation provenance chain (742, 1081: the archive's internal chronology); the Adams/42 retrocausal chain (209, 213); and the novelty claims that no prior theory of disciplinary formation includes self-description (1494, 1607-1611: a priority claim about the GDE, not a historical thesis). Read showed an empty line 2350 after the last text line; lines_total 2349 is authoritative."
     }
    ],
    "rulings": []
@@ -2536,6 +2649,11 @@
      "batch_id": "B0032",
      "field": "incidental",
      "text": "Duplicate body: lines 48-260 are the same work as #566 (AXN-018D), reflowed with list numbering; registry title says \"Cross-Species Semantic Labor\" but body is the room spec. Falsification Conditions (line 40) is restoration boilerplate."
+    },
+    {
+     "batch_id": "HB0032",
+     "field": "incidental",
+     "text": "Body (lines 48-260) is the same text as #566, reflowed from the blog; recovery frame at lines 1-46."
     }
    ],
    "rulings": []
@@ -2547,6 +2665,11 @@
      "batch_id": "B0032",
      "field": "incidental",
      "text": "Recovered blog-canonical text; section numbering duplicates \"11\" (lines 252 and 266). Falsification Conditions (line 40) is restoration boilerplate."
+    },
+    {
+     "batch_id": "HB0032",
+     "field": "incidental",
+     "text": "Recovery frame at lines 1-46; body credited to the heteronym Dr. Orin Trace, previously drafted under Johannes Sigil."
     }
    ],
    "rulings": []
