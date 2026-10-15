@@ -17,7 +17,7 @@
   "D": 186,
   "H": 672
  },
- "finds_verified": 2738,
+ "finds_verified": 2772,
  "finds_total": 2772,
  "deposits": [
   {
@@ -34750,7 +34750,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic) assistant, running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:27:17Z",
-      "finished_at": "2026-10-15T20:29:44Z",
+      "finished_at": "2026-10-15T20:29:51Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, line-length check, verbatim quote slicing)"
@@ -34770,10 +34770,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 155,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -34795,7 +34798,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic) assistant, running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:27:17Z",
-      "finished_at": "2026-10-15T20:29:44Z",
+      "finished_at": "2026-10-15T20:29:51Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, line-length check, verbatim quote slicing)"
@@ -34818,10 +34821,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 212,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -34843,7 +34849,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic) assistant, running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:27:17Z",
-      "finished_at": "2026-10-15T20:29:44Z",
+      "finished_at": "2026-10-15T20:29:51Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, line-length check, verbatim quote slicing)"
@@ -34863,10 +34869,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 105,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -34888,7 +34897,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic) assistant, running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:27:17Z",
-      "finished_at": "2026-10-15T20:29:44Z",
+      "finished_at": "2026-10-15T20:29:51Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, line-length check, verbatim quote slicing)"
@@ -34934,10 +34943,13 @@
      },
      "none_found": false,
      "incidental": "Damaged structure: the full paper body (Abstract through Appendix F) sits inside the frontmatter related_ids field on line 11 as one 85k-character escaped string, then a second frontmatter-like block closes at 12-14 and the body is repeated at lines 21-566 (with literal backslash-escaped quotes), closed by a stray quote and a second frontmatter terminator at 567-569; the actual Description is 571-580. Date, content_type and substrate fields are empty. Finds are located in the 21-566 copy; every one is duplicated verbatim within line 11.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 9,
+      "lines_returned": 579,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -34959,7 +34971,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic) assistant, running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:27:17Z",
-      "finished_at": "2026-10-15T20:29:44Z",
+      "finished_at": "2026-10-15T20:29:51Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, line-length check, verbatim quote slicing)"
@@ -34983,10 +34995,13 @@
      },
      "none_found": false,
      "incidental": "Body duplicated in part: Description (31) restates the Abstract (57). No damage.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 188,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -35008,7 +35023,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic) assistant, running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:27:17Z",
-      "finished_at": "2026-10-15T20:29:44Z",
+      "finished_at": "2026-10-15T20:29:51Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, line-length check, verbatim quote slicing)"
@@ -35032,10 +35047,13 @@
      },
      "none_found": false,
      "incidental": "The operative language of the Act is only in the attached images (not transcribed); content of the Act itself unread.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 76,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -35057,7 +35075,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic) assistant, running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:27:17Z",
-      "finished_at": "2026-10-15T20:29:44Z",
+      "finished_at": "2026-10-15T20:29:51Z",
       "tools_used": [
        "Read",
        "Bash (python3 for queue load, line-length check, verbatim quote slicing)"
@@ -35080,10 +35098,13 @@
      },
      "none_found": false,
      "incidental": "The specification body itself (PDF/HTML) is not in this text file; only the deposit record was read.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 48,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
