@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 504,
-  "unread": 1112
+  "read": 511,
+  "unread": 1105
  },
- "h_covered": 504,
+ "h_covered": 511,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 583,
-  "F": 583,
+  "G": 587,
+  "F": 588,
   "E": 126,
   "B": 370,
   "A": 169,
   "C": 186,
   "D": 194,
-  "H": 698
+  "H": 726
  },
- "finds_verified": 2909,
- "finds_total": 2909,
+ "finds_verified": 2946,
+ "finds_total": 2946,
  "deposits": [
   {
    "deposit": 172,
@@ -36477,9 +36477,50 @@
    "tier": 1,
    "words": 1512,
    "batch_id": "B0117",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0117",
+     "run": "R-w20-B0117",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:31:14Z",
+      "finished_at": "2026-10-15T20:34:08Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       165
+      ]
+     ],
+     "lines_total": 165,
+     "genre_observed": "preregistration of a cross-substrate disclosure test",
+     "finds_by_shape": {
+      "F": 1,
+      "G": 2
+     },
+     "none_found": false,
+     "incidental": "§V retrospective six-substrate scoring is explicitly marked as not evidence for the hypothesis; not recorded as C.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 165,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1472,
@@ -36488,9 +36529,49 @@
    "tier": 1,
    "words": 2139,
    "batch_id": "B0117",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0117",
+     "run": "R-w20-B0117",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:31:14Z",
+      "finished_at": "2026-10-15T20:34:08Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       231
+      ]
+     ],
+     "lines_total": 231,
+     "genre_observed": "fleet placement work plan / specification",
+     "finds_by_shape": {
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Records survivethedeletion.org down (W-60) and the bare fleet manifest (W-61) as dated observations; not recorded.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 231,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1474,
@@ -36499,9 +36580,54 @@
    "tier": 1,
    "words": 6938,
    "batch_id": "B0117",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0117",
+     "run": "R-w20-B0117",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:31:14Z",
+      "finished_at": "2026-10-15T20:34:08Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       490
+      ]
+     ],
+     "lines_total": 490,
+     "genre_observed": "philological erratum (Sappho 31 / Longinus chain)",
+     "finds_by_shape": {
+      "H": 6,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Line 245 says counting an 18th marker raises the marker rate and 'slightly raises P(0 in 6)'; arithmetically a higher rate lowers P(0 in 6) (the same slip recurs in #1483 n.7). Line 285 claims the iconicity argument for line 17 has never been made (novelty claim, not recorded as D).",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 490,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1475,
@@ -36510,9 +36636,49 @@
    "tier": 1,
    "words": 4276,
    "batch_id": "B0117",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0117",
+     "run": "R-w20-B0117",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:31:14Z",
+      "finished_at": "2026-10-15T20:34:08Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       309
+      ]
+     ],
+     "lines_total": 309,
+     "genre_observed": "literary essay under heteronym Johannes Sigil, companion to the sixth erratum",
+     "finds_by_shape": {
+      "H": 4
+     },
+     "none_found": false,
+     "incidental": "Essay states at 41 it makes no attribution claim; dialect figures repeat #1474.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 309,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1478,
@@ -36521,9 +36687,50 @@
    "tier": 1,
    "words": 5223,
    "batch_id": "B0117",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0117",
+     "run": "R-w20-B0117",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:31:14Z",
+      "finished_at": "2026-10-15T20:34:08Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       433
+      ]
+     ],
+     "lines_total": 433,
+     "genre_observed": "philological consolidation paper (Sappho 31 / Longinus)",
+     "finds_by_shape": {
+      "H": 6,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Consolidates list names 'eeeeeee' (a seventh erratum) beside #1474. §0 places completion at πὰν τόλματον (line 17) while I.2 cites Bergk's completion at line 16 (φαίνομαι) as 'the terminus'; a later reader may want to reconcile.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 433,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1480,
@@ -36532,9 +36739,50 @@
    "tier": 1,
    "words": 1380,
    "batch_id": "B0117",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0117",
+     "run": "R-w20-B0117",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:31:14Z",
+      "finished_at": "2026-10-15T20:34:08Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       168
+      ]
+     ],
+     "lines_total": 168,
+     "genre_observed": "technical report specifying a measurement operator",
+     "finds_by_shape": {
+      "G": 1,
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Title and description promise Trial OMT-001 pre-registered, but the body text contains no trial specification (arms, dates, domains); it is said to be in the trials file. Sources line says computed 2026-08-14 while deposit dated 2026-08-15.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 168,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1483,
@@ -36543,9 +36791,53 @@
    "tier": 1,
    "words": 7221,
    "batch_id": "B0117",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0117",
+     "run": "R-w20-B0117",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in-session as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:31:14Z",
+      "finished_at": "2026-10-15T20:34:08Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       100
+      ],
+      [
+       101,
+       193
+      ]
+     ],
+     "lines_total": 193,
+     "genre_observed": "terminal paper of the Sappho 31 erratum chain; long-line prose with endnotes",
+     "finds_by_shape": {
+      "H": 12
+     },
+     "none_found": false,
+     "incidental": "Note 13 (line 181) dates D'Angour CQ 56 to 2026 while note 8 (line 176) gives CQ 56 (2006). Note 7 repeats #1474's slip that an 18th marker would raise P(0 in 6).",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 193,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1484,
