@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 245,
-  "unread": 1371
+  "read": 246,
+  "unread": 1370
  },
- "h_covered": 187,
+ "h_covered": 189,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
   "G": 274,
-  "F": 261,
-  "E": 70,
+  "F": 262,
+  "E": 71,
   "B": 178,
   "A": 53,
-  "C": 88,
-  "D": 84,
-  "H": 267
+  "C": 89,
+  "D": 85,
+  "H": 290
  },
- "finds_verified": 1265,
- "finds_total": 1275,
+ "finds_verified": 1272,
+ "finds_total": 1302,
  "deposits": [
   {
    "deposit": 172,
@@ -12146,9 +12146,72 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0019",
+     "run": "R-w9-HB0019",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic assistant); model stated in my environment as Claude Opus 5.5",
+      "started_at": "2026-10-15T19:51:31Z",
+      "finished_at": "2026-10-15T19:52:54Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for batch load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       500
+      ],
+      [
+       501,
+       1000
+      ],
+      [
+       1001,
+       1500
+      ],
+      [
+       1501,
+       2000
+      ],
+      [
+       2001,
+       2500
+      ],
+      [
+       2501,
+       3000
+      ],
+      [
+       3001,
+       3550
+      ],
+      [
+       3551,
+       4050
+      ]
+     ],
+     "lines_total": 4050,
+     "genre_observed": "heteronymous theory book (field manual) with constructed paratext, fictional reception dossier and adoptions",
+     "finds_by_shape": {
+      "H": 22
+     },
+     "none_found": false,
+     "incidental": "Declared-artifact volume: front matter (biography 'Reception and influence', lines 310-325) and back matter (Critical Reception Dossier 3707-3875, Selected Institutional Adoptions 3912-3963) contain fictional future reception dated 2027; not recorded as H. Internal Hexagon chronology (Pearl 2014, 'who wrote the seed in 2014', lines 46-48, 147) excluded as archive chronology. The 'history including poems' formulation is credited to a Tolkien analogy at line 240 and to Pound at line 3784. Logical positivism's self-refutation (736, 1634) and Kant's synthesis treated as received accounts, not recorded. Several H quotes run over ~600 chars (multi-paragraph narrative theses).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 1107,
@@ -18956,9 +19019,81 @@
    "tier": 1,
    "words": 34427,
    "batch_id": "B0052",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0052",
+     "run": "R-w9-B0052",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:51:03Z",
+      "finished_at": "2026-10-15T19:52:32Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       450
+      ],
+      [
+       451,
+       950
+      ],
+      [
+       951,
+       1500
+      ],
+      [
+       1501,
+       2050
+      ],
+      [
+       2051,
+       2600
+      ],
+      [
+       2601,
+       3150
+      ],
+      [
+       3151,
+       3700
+      ],
+      [
+       3701,
+       4167
+      ]
+     ],
+     "lines_total": 4167,
+     "genre_observed": "mock-critical edition of a 2015 Gnostic parody scripture, with fictional future scholarly apparatus (2029–2048), liturgical appendices, and a citational-map work plan",
+     "finds_by_shape": {
+      "D": 1,
+      "C": 1,
+      "E": 1,
+      "H": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Fictional future scholarship (Smith 2029, al-Rashid 2033, Xanthic-Wells 2035, Park 2039, Synod of Ann Arbor 2041) and its in-world predictions (n.110 accession by 2039; n.140 temporal-humidity model) are explicitly fictional and not recorded. Footnote numbering is out of order (introduction notes 138-151, 110-127 precede gospel notes 4-109; 152-158 follow) — composite assembly, not damage. Deposit count stated as 574 (lines 3691, 3841), stale relative to the current archive. Glossary entry 'Cowgirl of Space (§XI)' (line 2818) and 'freezer next to the pizza rolls' (2863) have no source in the gospel text as given.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 8,
+      "lines_returned": 4167,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 684,
@@ -19082,7 +19217,8 @@
      "none_found": false,
      "incidental": "Tables and lists were dropped in the html2text conversion: many headings or lead-in sentences are followed by nothing, e.g. 'closest structural parallels are:' (181), the Yaldabaoth parallels (206), the ticket Concordance (284), Martian script dimensions, phonology and untranslatable terms (311-325), the Seven Anathemas (466), the Stemma (569), Appendices A, B and I (1695-1704, 2171), lists in the Rite and Rule (1827, 1879, 1897, 1930), all of Appendix H's tables (2134-2153), and the work plan's strands and 12 fan sectors (2354-2410). Footnotes 115, 129, 131, 132 and 136 refer to text that is missing. The book has two sections numbered §XIII (Introduction 'Previous Scholarship' at 400; gospel 'The Melding' at 1616, marked as expanding the Introduction). Appendix K's Current Status says a Zenodo DOI is assigned, but the frontmatter records those DOIs as severed on 2026-06-19.",
      "verification": [
-      "UNVERIFIED"
+      "QUOTE: find 0 not verbatim in file: '*The following work plan is appended as back matter. It constitutes th'",
+      "QUOTE: find 3 not verbatim in file: 'The reception of *The Secret Book of Walt* was not uniformly favorable'"
      ],
      "audit": "not audited"
     }
@@ -19146,7 +19282,7 @@
       "D": 1
      },
      "none_found": false,
-     "incidental": "Body matches title. Logia are unnumbered in the gospel text (bullets) though apparatus keys by number. Concordance (1132, 1825) says 62 parallels/52 original, inconsistent with its own row counts. Fictional future scholars (2029–2044) recur through the apparatus. Appendices V–VI absent: intro jumps from §IV to §VII. Internal-chronology claim at 260 (Antioch written before Walt) not recorded, per H exclusion.",
+     "incidental": "Body matches title. Logia are unnumbered in the gospel text (bullets) though apparatus keys by number. Concordance summary (1132, 1825) says 62 Thomas parallels and 52 original logia, but its own table marks only logia 4, 7, 9, 10, 15, 57, 66 as Original. Fictional future scholars (2029–2044) recur through the apparatus. Introduction sections V–VI absent: it jumps from §IV to §VII. Internal-chronology claim at 260 (Antioch written before Walt) not recorded, per H exclusion.",
      "verification": [
       "UNVERIFIED"
      ],
