@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 323,
-  "unread": 1293
+  "read": 337,
+  "unread": 1279
  },
- "h_covered": 323,
+ "h_covered": 337,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 334,
-  "F": 341,
-  "E": 100,
-  "B": 219,
-  "A": 90,
-  "C": 99,
-  "D": 114,
-  "H": 428
+  "G": 366,
+  "F": 352,
+  "E": 106,
+  "B": 226,
+  "A": 98,
+  "C": 108,
+  "D": 116,
+  "H": 433
  },
- "finds_verified": 1725,
- "finds_total": 1725,
+ "finds_verified": 1737,
+ "finds_total": 1805,
  "deposits": [
   {
    "deposit": 172,
@@ -25995,9 +25995,46 @@
    "tier": 1,
    "words": 2623,
    "batch_id": "B0073",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0073",
+     "run": "R-w14-B0073",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:12Z",
+      "finished_at": "2026-10-15T20:08:47Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       83
+      ]
+     ],
+     "lines_total": 83,
+     "genre_observed": "Total Axial Negation Graph: topological arrangement of labor/enclosure/AI literatures around an unstated thesis",
+     "finds_by_shape": {
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Section VI and References have list items run together on single lines (missing line breaks before '- ').",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 779,
@@ -26006,9 +26043,47 @@
    "tier": 1,
    "words": 7967,
    "batch_id": "B0073",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0073",
+     "run": "R-w14-B0073",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:12Z",
+      "finished_at": "2026-10-15T20:08:47Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       296
+      ]
+     ],
+     "lines_total": 296,
+     "genre_observed": "Theoretical dynamical-systems paper with simulation, falsifiers and a research program",
+     "finds_by_shape": {
+      "G": 8,
+      "F": 4
+     },
+     "none_found": false,
+     "incidental": "Earlier version (four contributions, no sections 2.3/2.4) of the paper deposited as #783 (v9.1, six contributions); most text is shared verbatim. Section 1 bullet list and reference lists run together on single lines. Displayed equations show ',' where a thin-space macro was lost (e.g. '(1 - m),g').",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 147,
@@ -26017,9 +26092,48 @@
    "tier": 1,
    "words": 3496,
    "batch_id": "B0073",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0073",
+     "run": "R-w14-B0073",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:12Z",
+      "finished_at": "2026-10-15T20:08:47Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       127
+      ]
+     ],
+     "lines_total": 127,
+     "genre_observed": "Forensic case study of entity substitution (Lee Sharks / Mary Lee) with tagged predictions",
+     "finds_by_shape": {
+      "G": 4,
+      "B": 1,
+      "C": 1
+     },
+     "none_found": false,
+     "incidental": "Line 23 dates the AI Mode substitution to spring 2026 (observation, not recorded as a find). Parents list on line 7 runs together on one line.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 781,
@@ -26028,9 +26142,47 @@
    "tier": 1,
    "words": 4721,
    "batch_id": "B0073",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0073",
+     "run": "R-w14-B0073",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:12Z",
+      "finished_at": "2026-10-15T20:08:47Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       131
+      ]
+     ],
+     "lines_total": 131,
+     "genre_observed": "Theoretical paper extending the Diversity Contraction framework to a cognitive/formation layer",
+     "finds_by_shape": {
+      "G": 2,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Cites Bead Count Study 5 results (line 81) as simulation measurements.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 782,
@@ -26039,9 +26191,49 @@
    "tier": 1,
    "words": 5062,
    "batch_id": "B0073",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0073",
+     "run": "R-w14-B0073",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:12Z",
+      "finished_at": "2026-10-15T20:08:47Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       296
+      ]
+     ],
+     "lines_total": 296,
+     "genre_observed": "Pre-registration document: twelve numbered studies with numerical predictions, falsifiers and receipts",
+     "finds_by_shape": {
+      "A": 7,
+      "C": 5,
+      "D": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Several 'Receipts' lines are rendered as '## Receipts:' headings (lines 151, 167, 183, 203, 219, 235). Study 1-5 'met' predictions are simulations run by the author. Section IV table lists seven rows under 'Five studies'.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 783,
@@ -26050,9 +26242,53 @@
    "tier": 1,
    "words": 10799,
    "batch_id": "B0073",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0073",
+     "run": "R-w14-B0073",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:12Z",
+      "finished_at": "2026-10-15T20:08:47Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       180
+      ],
+      [
+       181,
+       361
+      ]
+     ],
+     "lines_total": 361,
+     "genre_observed": "Theoretical dynamical-systems paper (v9.1) with falsifiers, research program and deposit-as-commitment colophon",
+     "finds_by_shape": {
+      "G": 10,
+      "F": 4,
+      "B": 2,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "v9.1 of the paper whose earlier version is #779; shares most text verbatim, adds sections 2.3, 2.4, Study 5 and the colophon. Equations show ',' for lost thin-space macros; list items and references run together on single lines.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1199,
@@ -26105,9 +26341,63 @@
    "tier": 1,
    "words": 19312,
    "batch_id": "B0075",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0075",
+     "run": "R-w14-B0075",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:21Z",
+      "finished_at": "2026-10-15T20:08:27Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       200
+      ],
+      [
+       201,
+       400
+      ],
+      [
+       401,
+       600
+      ],
+      [
+       601,
+       773
+      ]
+     ],
+     "lines_total": 773,
+     "genre_observed": "polyvocal assembly-chorus effective act: five AI-voice retrocausal fictions plus a spec, with editorial coda",
+     "finds_by_shape": {
+      "E": 6,
+      "G": 2,
+      "C": 2
+     },
+     "none_found": false,
+     "incidental": "Section headings are fused onto the ends of bridge paragraphs (e.g. lines 33, 125, 207, 277, 475, 517: '...*# ARCHIVE — ...'), so voice headings are not on their own lines. List items fused with '- ' inline (lines 71, 89-101, 139-143, 172-176, 751). Coda states Standing Canon §VI.5 amendment in v0.4 and Lexical Engine amendment (procedural, not recorded).",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 773,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 151,
@@ -26116,9 +26406,49 @@
    "tier": 1,
    "words": 2715,
    "batch_id": "B0075",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0075",
+     "run": "R-w14-B0075",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:21Z",
+      "finished_at": "2026-10-15T20:08:27Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       135
+      ]
+     ],
+     "lines_total": 135,
+     "genre_observed": "effective act: canonical-induction declaration",
+     "finds_by_shape": {
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Internal date inconsistencies: line 45 says the Protocol of Effective Acts (October 8, 2025) was formalized 'later that same month' as the Parable (January 3, 2026); line 57 places the substitution search 'in 2024' while line 53 dates the substitution November 2025–March 2026.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 135,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 152,
@@ -26127,9 +26457,53 @@
    "tier": 1,
    "words": 8666,
    "batch_id": "B0075",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0075",
+     "run": "R-w14-B0075",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:21Z",
+      "finished_at": "2026-10-15T20:08:27Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       260
+      ],
+      [
+       261,
+       517
+      ]
+     ],
+     "lines_total": 517,
+     "genre_observed": "canon register / inventory with entity-relation specifications",
+     "finds_by_shape": {
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Entity-relation lists fused inline with '- ' within single lines. Saphuel NT attribution (153, 405) is framed as canonical-layer attribution preserving conventional authorship, so not recorded as H. Many 'DOI to be assigned/confirmed' placeholders (7, 175).",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 517,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 153,
@@ -26138,9 +26512,47 @@
    "tier": 1,
    "words": 7918,
    "batch_id": "B0076",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0076",
+     "run": "R-w14-B0076",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:28Z",
+      "finished_at": "2026-10-15T20:08:42Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       383
+      ]
+     ],
+     "lines_total": 383,
+     "genre_observed": "stabilization protocol / doctrinal theoretical paper",
+     "finds_by_shape": {
+      "G": 1,
+      "H": 3
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 785,
@@ -26149,9 +26561,47 @@
    "tier": 1,
    "words": 3641,
    "batch_id": "B0076",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0076",
+     "run": "R-w14-B0076",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:28Z",
+      "finished_at": "2026-10-15T20:08:42Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       133
+      ]
+     ],
+     "lines_total": 133,
+     "genre_observed": "protocol specification (canonical anchoring revision)",
+     "finds_by_shape": {
+      "A": 1,
+      "G": 2
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 786,
@@ -26160,9 +26610,44 @@
    "tier": 1,
    "words": 3009,
    "batch_id": "B0076",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0076",
+     "run": "R-w14-B0076",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:28Z",
+      "finished_at": "2026-10-15T20:08:42Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       101
+      ]
+     ],
+     "lines_total": 101,
+     "genre_observed": "register / tabular dataset of effective acts",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Damaged: §I \"Coverage includes:\" (line 14) is followed by no list; §XIII (lines 88-90) refers to falsifiers \"from v0.1\" but lists none. Tables are flattened into single lines.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 787,
@@ -26171,9 +26656,48 @@
    "tier": 1,
    "words": 7300,
    "batch_id": "B0076",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0076",
+     "run": "R-w14-B0076",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:28Z",
+      "finished_at": "2026-10-15T20:08:42Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       245
+      ]
+     ],
+     "lines_total": 245,
+     "genre_observed": "governance protocol specification",
+     "finds_by_shape": {
+      "G": 1,
+      "H": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1011,
@@ -26182,9 +26706,52 @@
    "tier": 1,
    "words": 7546,
    "batch_id": "B0076",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0076",
+     "run": "R-w14-B0076",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:28Z",
+      "finished_at": "2026-10-15T20:08:42Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       360
+      ],
+      [
+       361,
+       705
+      ]
+     ],
+     "lines_total": 705,
+     "genre_observed": "forensic packet with screenshots, taxonomy, and political boycott statement, plus DataCite JSON",
+     "finds_by_shape": {
+      "G": 2,
+      "F": 2,
+      "C": 1
+     },
+     "none_found": false,
+     "incidental": "Lines 374-705 are a verbatim DataCite JSON record (captured 2026-07-03); header calls the DOI \"Dead DOI\".",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 154,
