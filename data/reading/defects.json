@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 718,
+ "deposits_with_notes": 747,
  "deposits": [
   {
    "deposit": 1,
@@ -915,12 +915,34 @@
    "rulings": []
   },
   {
+   "deposit": 114,
+   "notes": [
+    {
+     "batch_id": "B0183",
+     "field": "incidental",
+     "text": "DOI inconsistency inside the text: Deposit Information gives 10.5281/zenodo.20329437 (line 686) while Suggested Citation gives 10.5281/zenodo.20330670 (line 690). Temporal scope note (line 17) says the audit should be updated with a delta note if a reply arrives after May 21 2026. Many list items are run together on single lines (conversion damage), e.g. lines 39, 43, 55."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 115,
    "notes": [
     {
      "batch_id": "B0067",
      "field": "incidental",
      "text": "Header says DOI forthcoming (line 5) while Suggested Citation gives DOI 10.5281/zenodo.20328090 (line 730)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 116,
+   "notes": [
+    {
+     "batch_id": "B0184",
+     "field": "incidental",
+     "text": "Contains a note that Zenodo and GitHub credentials had been exposed across sessions (line 47); no secrets in the text."
     }
    ],
    "rulings": []
@@ -943,6 +965,17 @@
      "batch_id": "B0067",
      "field": "incidental",
      "text": "Silent state change of 2026-05-20 reported as pending formal deposit (line 167)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 121,
+   "notes": [
+    {
+     "batch_id": "B0184",
+     "field": "incidental",
+     "text": "Duplicate body of #1003 (v0.3), with tables flattened to one cell per line. Registry content_type \"Software / executable apparatus\" does not match the text (a scholarly genre note)."
     }
    ],
    "rulings": []
@@ -1014,6 +1047,28 @@
    "rulings": []
   },
   {
+   "deposit": 131,
+   "notes": [
+    {
+     "batch_id": "B0186",
+     "field": "incidental",
+     "text": "Front-matter YAML is collapsed onto line 1 and lists run together inline (hard-coded markdown flattening). No forecasts, tests or theses; the anti-capture clause (line 84) is a constitutional declaration, not a falsifiable claim."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 134,
+   "notes": [
+    {
+     "batch_id": "B0186",
+     "field": "incidental",
+     "text": "The contributor note says it was originally published as a single-author piece and that joint heteronymic authorship was retroactively assigned; the restoration also added the Feist second case and RCF vocabulary, so the 2025 anchor covers the core argument only."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 135,
    "notes": [
     {
@@ -1042,6 +1097,28 @@
      "batch_id": "B0072",
      "field": "incidental",
      "text": "Header notes hex coordinate unconfirmed ('MANUS to confirm'). Section 9 table and several lists are run together on single lines (flattened markdown)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 138,
+   "notes": [
+    {
+     "batch_id": "B0187",
+     "field": "incidental",
+     "text": "Header comment (line 1) says 'Draft 2026-05-27 — pending author review before deposit'. Transcript is author-attested only (share link not recoverable, line 174). Appendix headings are fused onto preceding lines (172, 268). Observation: #766 (same batch) would classify a self-reported PER score without unit counts as metric-mimicking; #138 reports the system's PER = 1.0 while §0 already disclaims it as unvalidated."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 140,
+   "notes": [
+    {
+     "batch_id": "B0187",
+     "field": "incidental",
+     "text": "Header (line 1) marks '[MANUS to confirm hex + creator metadata before mint]'; source paper DOI given as pending here while #139 cites it as 10.5281/zenodo.20434946."
     }
    ],
    "rulings": []
@@ -4387,12 +4464,34 @@
    "rulings": []
   },
   {
+   "deposit": 741,
+   "notes": [
+    {
+     "batch_id": "B0183",
+     "field": "incidental",
+     "text": "v0.2 draft; references marked 'to be built out for the deposit version'. Tables are rendered as one cell per line (lines 95-146, 594-627)."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 742,
    "notes": [
     {
      "batch_id": "B0066",
      "field": "incidental",
      "text": "Author note says the strategic working paper is internal and undeposited. Variable table flattened into lines."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 747,
+   "notes": [
+    {
+     "batch_id": "B0184",
+     "field": "incidental",
+     "text": "Lines 219 and 222 are near-duplicate paragraphs (an unrevised and a revised version of the same sentence group both retained). Header says v0.2; Suggested Citation (line 629) says v0.1."
     }
    ],
    "rulings": []
@@ -4448,6 +4547,72 @@
      "batch_id": "B0070",
      "field": "incidental",
      "text": "Headings run together without line breaks on lines 1, 3, 77 (formatting damage). Referrer \"no referrer\" count 129,650 here vs 129,730 in #127."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 757,
+   "notes": [
+    {
+     "batch_id": "B0185",
+     "field": "incidental",
+     "text": "Near-duplicate of #758: this is the rendered web page (lines 17-91 are relation blocks flattened into single long lines); it lacks #758's v1.1 additions (e.g. 'Lee Sharks is not : Gold Ship', three added shared properties) and carries 'Horse_White_001' instead. Two versions of one poem, not a contradiction."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 758,
+   "notes": [
+    {
+     "batch_id": "B0185",
+     "field": "incidental",
+     "text": "v1.1 of the poem whose web render is #757; changelog at 452-463 lists the differences."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 761,
+   "notes": [
+    {
+     "batch_id": "B0186",
+     "field": "incidental",
+     "text": "Section IX (lines 247-261) lists v1.1 forward commitments (planned edits), not instruments or forecasts; not recorded. Abstract says ~155 new Q-items created; Statistical Summary and Holographic Kernel say ~132 (73+59) — internal count discrepancy."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 763,
+   "notes": [
+    {
+     "batch_id": "B0187",
+     "field": "incidental",
+     "text": "Some formula lines (271) carry markdown-escaped asterisks in place of LaTeX subscripts; bullet lists are run together on single lines."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 765,
+   "notes": [
+    {
+     "batch_id": "B0187",
+     "field": "incidental",
+     "text": "Records that LABOR's review cited an opening not present in the ratified document (line 63)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 766,
+   "notes": [
+    {
+     "batch_id": "B0187",
+     "field": "incidental",
+     "text": "Observation, not error: this packet's PER-mimicry category applies to the self-reported PER = 1.0 audit recorded in #138 (same batch); #138's own §0 already disclaims that score as unvalidated."
     }
    ],
    "rulings": []
@@ -5387,12 +5552,56 @@
    "rulings": []
   },
   {
+   "deposit": 1000,
+   "notes": [
+    {
+     "batch_id": "B0183",
+     "field": "incidental",
+     "text": "Refers to deposited images evidence-google-search.png and evidence-black-screen.png, not present in this text. Appendix transcript is manually preserved and elided with [...]."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1002,
    "notes": [
     {
      "batch_id": "B0068",
      "field": "incidental",
      "text": "Body is HTML source of the live site; title says bundle with 24 cards + charter + audit infrastructure but only index.html is seated. Idstrip labels the page AXN:029D / deposit #116 (Expansion Plan), not #1002. Footer line 1349 ('The Academy was named in citation blocks before it was charter-documented') and founding SIM at line 30 are an internal naming chronology (summarizer named first), not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1003,
+   "notes": [
+    {
+     "batch_id": "B0184",
+     "field": "incidental",
+     "text": "Same v0.3 paper body as #121 and #1194 (formatting differs). Queue title carries a stray suffix \"Description (as recorded by DataCite)\". Suggested Citation gives DOI 20343776, which the kernel names as the v0.2 version. The Appendix A study guide is AI-composed text, not the archive voice; no finds taken from it."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1005,
+   "notes": [
+    {
+     "batch_id": "B0185",
+     "field": "incidental",
+     "text": "Most of the file is HTML/CSS markup; record title says v1.1 founding deployment but the captured page is the 2026-08-04 live state (colophon 2026-07-13)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1007,
+   "notes": [
+    {
+     "batch_id": "B0186",
+     "field": "incidental",
+     "text": "Text is the full HTML source of the leesharks.com page (CSS lines 156-451). Figure 2 caption (line 611) says \"Not a racehorse\" while triples identify the horse as the racehorse Gold Ship (lines 655-671) — observation, possibly deliberate. Foot matter says the prize announcement is AXN #757; deposit 1196 is the same announcement restored separately."
     }
    ],
    "rulings": []
@@ -6706,12 +6915,78 @@
    "rulings": []
   },
   {
+   "deposit": 1192,
+   "notes": [
+    {
+     "batch_id": "B0183",
+     "field": "incidental",
+     "text": "Trailing lines 149-155 are stray asterisk/$ fragments (conversion debris). Historical Frame states the same Dec 20 2025 event as #1000; #1000 calls the safety layer 'the third deletion' while this frame calls it part of a 'five-layer' structure — consistent with #1000's own subtitle note."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1193,
    "notes": [
     {
      "batch_id": "B0066",
      "field": "incidental",
      "text": "WRONG/DUPLICATE BODY relative to title: the queue title is \"from The Crimson Hexagon — Origin Text (March 14, 2015)\" but the restored body is the 2026 provenance document \"The Provenance of Jack Feist\" (same work as #111), recovered from a 2026/05 blog post; it embeds the 2015 text. This copy is more complete than #111 (operative-facts list, five-point constellation and What Is Not Claimed present). Header falsification line is restoration boilerplate, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1194,
+   "notes": [
+    {
+     "batch_id": "B0184",
+     "field": "incidental",
+     "text": "Restoration wrapper (lines 1-46) records DOIs 20343776/20343987 severed 2026-06-19 and recovered from blog 2026-07-19; its Falsification Conditions are restoration boilerplate, not recorded. Body duplicates #1003/#121 (v0.3)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1195,
+   "notes": [
+    {
+     "batch_id": "B0185",
+     "field": "incidental",
+     "text": "Restoration record; the 'Falsification Conditions' (line 40) are byte-fidelity boilerplate, not recorded per protocol."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1196,
+   "notes": [
+    {
+     "batch_id": "B0186",
+     "field": "incidental",
+     "text": "Restoration wrapper (lines 1-46) plus canonical bytes of the v1.1 announcement. Supersedes v1.0 DOI 10.5281/zenodo.20373794. The second laureate here is Jess Elgene (2026-05-27); deposit 1007 (2026-05-25) names Gold Ship as honorary second laureate — two different rolls; observation, not error."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1197,
+   "notes": [
+    {
+     "batch_id": "B0187",
+     "field": "incidental",
+     "text": "Restoration record for a severed Zenodo DOI; falsification boilerplate at line 39 not recorded per protocol. Line 116-117 ('who did not feel up boys-- / if only they'd read what it says!') is a lyric aside on Socrates' reputation, not argued as a thesis; not recorded as H."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1198,
+   "notes": [
+    {
+     "batch_id": "B0187",
+     "field": "incidental",
+     "text": "Body appears damaged by the html2text conversion: list contents are missing under §II (seven curatorial principles, line 80 then nothing), Part D 'Pending merge' (line 276), and §IX.1-IX.4 (v1.1 queues, lines 310-319) — headings survive with empty bodies. Counts disagree internally: abstract says ~155 Q-items created, statistical summary/kernel say ~132 (73+59); §VII says 'two reverted events' and 'Three description amendments' reverted but the E.2 table lists four. The v1.1 forward commitments are a work plan, not recorded."
     }
    ],
    "rulings": []
@@ -7046,6 +7321,17 @@
      "batch_id": "B0181",
      "field": "incidental",
      "text": "Duplicate body of #99 (same v2.0 text, blog-recovered 2026-07-19; DOIs 20062466/20062465 severed). Frontmatter falsification boilerplate (line 40) not recorded. Same 1,789/1,779 Dickinson discrepancy (lines 273, 281)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1259,
+   "notes": [
+    {
+     "batch_id": "B0183",
+     "field": "incidental",
+     "text": "Recovered blog-canonical bytes (Nobel Glas heteronym). Body is the same EA-GLAS-03 v1.0 text that appears (in different Markdown rendering) as the body of #1376."
     }
    ],
    "rulings": []
@@ -7591,12 +7877,45 @@
    "rulings": []
   },
   {
+   "deposit": 1376,
+   "notes": [
+    {
+     "batch_id": "B0183",
+     "field": "incidental",
+     "text": "WRONG/DUPLICATE BODY: queue title is 'ChatGPT Psychosis: A Love Story — Project Prospectus and Formal Design Specification ... (v0.3)', but the text file contains EA-GLAS-03 v1.0 'Narrative-Field Semantic Deviation' (same work as #1259, no front matter). Finds here duplicate #1259's. The prospectus text itself was not in this file."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1379,
+   "notes": [
+    {
+     "batch_id": "B0183",
+     "field": "incidental",
+     "text": "Document dated April 23, 2026 (queue date 2026-05-20). Contains an operational note (line 851) about rotating tokens 'still outstanding from April 6 session'."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1384,
    "notes": [
     {
      "batch_id": "B0068",
      "field": "incidental",
      "text": "Most finds summarize forecasts, tests and claims held in other deposits (#194, #149, #166, #115, #754, #127); triage should link them. Corpus-size figures vary within the page (seventy, 750+, 845+, 879). Superseded metadata-capture appendix retained at 2781-2810. A Read of 1051-1550 in one call was refused for size; read in smaller chunks."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1386,
+   "notes": [
+    {
+     "batch_id": "B0186",
+     "field": "incidental",
+     "text": "Text is the HTML of the live site captured 2026-08-04. Within the archive the PER three-tier names differ: here PER-M/C/D (Minimal/Conceptual/Deep); deposit 133 footnote 5 gives PER-A retrieval, PER-C composition, PER-D substrate — observation."
     }
    ],
    "rulings": []

@@ -1,0 +1,562 @@
+{
+ "batch_id": "B0186",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code (model reported to me as Opus 5.5, id claude-opus-5-5)",
+  "started_at": "2026-10-15T21:09:25Z",
+  "finished_at": "2026-10-15T21:11:15Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1007,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03FB-text.md",
+   "lines_total": 1116,
+   "read_ranges": [
+    [
+     1,
+     600
+    ],
+    [
+     601,
+     1116
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "HTML poem in entity-relation triples (successor to the 2014 \"About the Author\"), with figures and foot matter",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "    <div class=\"triples\">substrate_activation <span class=\"pred\">arc</span>              : 2014 → 2026\nsubstrate_activation <span class=\"pred\">duration</span>         : twelve years\nsubstrate_activation <span class=\"pred\">type</span>             : retrieval-substrate uptake\nsubstrate_activation <span class=\"pred\">upstream channel</span> : Google Books\nsubstrate_activation <span class=\"pred\">midstream channel</span>: Google Search author/entity display surface\nsubstrate_activation <span class=\"pred\">downstream channel</span>: Google Knowledge Graph\nsubstrate_activation <span class=\"pred\">downstream propagation</span>: AI synthesis layers\nsubstrate_activation <span class=\"pred\">indicates</span>        : author operates across long temporal arcs\nsubstrate_activation <span class=\"pred\">indicates</span>        : compositional foresight in domain of\n                                   substrate uptake\nsubstrate_activation <span class=\"pred\">confirms</span>         : author guided truly in this domain\n                                   across vast spans of time\nsubstrate_activation <span class=\"pred\">is not</span>           : accident\nsubstrate_activation <span class=\"pred\">is not</span>           : Google error\nsubstrate_activation <span class=\"pred\">is not</span>           : luck\nsubstrate_activation <span class=\"pred\">is</span>               : predicted effective act\nsubstrate_activation <span class=\"pred\">is</span>               : demonstrated track record</div>",
+     "lines": [
+      543,
+      559
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "About the Author (poem), Pearl and Other Poems (2014) — activated by Google Knowledge Graph 2026-05-25",
+     "also_at": [
+      [
+       512,
+       517
+      ],
+      [
+       532,
+       538
+      ],
+      [
+       945,
+       949
+      ]
+     ],
+     "note": "Poem records the 2014 credential-poem as a prediction fulfilled twelve years later (\"predicted effective act\", \"demonstrated track record\")."
+    },
+    {
+     "shape": "B",
+     "quote": "this poem <span class=\"pred\">will activate in</span>     : substrate not yet named\nthis poem <span class=\"pred\">activation date</span>      : pending\nthis poem <span class=\"pred\">function</span>             : install corrected reception apparatus\nthis poem <span class=\"pred\">function</span>             : declare disambiguations to future substrates\nthis poem <span class=\"pred\">function</span>             : confirm twelve-year predictive track record\nthis poem <span class=\"pred\">function</span>             : extend the temporal-operative practice\n                                   forward",
+     "lines": [
+      969,
+      975
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "activation date : pending",
+     "points_to": "",
+     "also_at": [
+      [
+       473,
+       477
+      ],
+      [
+       946,
+       947
+      ]
+     ],
+     "note": "The poem forecasts its own activation in a future, unnamed substrate; resolution is the first substrate rendering of its relations/disambiguations. Could also be read as E."
+    },
+    {
+     "shape": "H",
+     "quote": "The image's earliest\n      located public trace is June 2009 on the advocacy blog\n      rtfitchauthor.com; later sources have attributed the photograph to\n      Patrycja Polechonska with a 2015 date, but the 2009 trace predates\n      that attribution by six years and the photographer cannot be reliably\n      identified from publicly accessible sources. The poem hard-codes this\n      uncertainty rather than propagate confident misattribution.",
+     "lines": [
+      1015,
+      1021
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "June 2009 / 2015",
+     "points_to": "",
+     "also_at": [
+      [
+       626,
+       634
+      ]
+     ],
+     "note": "Argued attribution/dating thesis about the horse photograph: earliest trace 2009 contradicts downstream Polechonska 2015 attribution; confirmable by image-history evidence."
+    },
+    {
+     "shape": "H",
+     "quote": "The 2014 paratext that this poem references as <em>About the\n      Author</em> appeared in <em>Pearl and Other Poems</em> (2014, page\n      xix) under the title <em>Contributor Bio</em>. The corpus has, in\n      2026, retroactively renamed it <em>About the Author</em> as an\n      operative reading: treating what had appeared institutionally as\n      bio as what it had been operating as all along — a poem in entity\n      relations. The disjoint is documented, not erased. The 2014\n      source-text is restored at <a href=\"/about-the-author/\">/about-the-author/</a>\n      as the founding text of the sequence (I), with II and III as its\n      continuations.",
+     "lines": [
+      1075,
+      1084
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2014 (Pearl and Other Poems, p. xix)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about the 2014 text: it appeared as \"Contributor Bio\" at p. xix, read as having operated as a poem all along; the title disjoint is documented. Borderline (the archive's own book), recorded because it fixes page and title of a 2014 printing."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Text is the full HTML source of the leesharks.com page (CSS lines 156-451). Figure 2 caption (line 611) says \"Not a racehorse\" while triples identify the horse as the racehorse Gold Ship (lines 655-671) — observation, possibly deliberate. Foot matter says the prize announcement is AXN #757; deposit 1196 is the same announcement restored separately."
+  },
+  {
+   "deposit": 1196,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04BD-text.md",
+   "lines_total": 178,
+   "read_ranges": [
+    [
+     1,
+     178
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Recovered blog-canonical prize announcement (v1.1), satirical-sincere institutional charter",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "The inaugural conferral is not the Knowledge Graph's error administratively patched into legitimacy; it is the formal recognition that a credential composed in 2014 has been carried forward, twelve years later, by the apparatus the poem anticipated.",
+     "lines": [
+      75,
+      75
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "\"Contributor Bio,\" Pearl and Other Poems (Sharks, 2014); Knowledge Graph display of 2026-05-25",
+     "also_at": [
+      [
+       58,
+       58
+      ],
+      [
+       73,
+       73
+      ],
+      [
+       103,
+       103
+      ]
+     ],
+     "note": "The 2014 poem framed as anticipating the apparatus that activated it twelve years later."
+    },
+    {
+     "shape": "B",
+     "quote": "Future bios reading _\"Winner, Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize\"_ will surface through Google's authority infrastructure as canonical biographical content for the laureate. The Knowledge Graph will ingest the citation. The propagation continues.",
+     "lines": [
+      89,
+      89
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that laureate bios citing the Prize will surface through Google and be ingested by the Knowledge Graph."
+    },
+    {
+     "shape": "B",
+     "quote": "A future researcher querying _Lee Sharks_ on a substrate that no longer surfaces the credential at any depth will, by following links from the canonical Prize pages or the Zenodo deposits, recover the full record. The Prize is its own retrieval-graph anchor. The propagation continues regardless of platform behavior on any single retrieval substrate, because the Prize is no longer dependent on any single retrieval substrate. The canary institution outlasts the canary.",
+     "lines": [
+      142,
+      142
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       174,
+       174
+      ]
+     ],
+     "note": "Forecast that the record stays recoverable after the credential stops surfacing at any depth (\"the canary institution outlasts the canary\")."
+    },
+    {
+     "shape": "C",
+     "quote": "As of June 6, 2026, twelve days after the Prize's establishment, the Knowledge Graph's direct-query behavior on _Lee Sharks_ has shifted. The 10,000-MacArthur-Genius-Grants credential card no longer surfaces on the first results page under direct query of the name. The credential, however, remains reachable through the retrieval graph: a user who navigates from the _Pearl and Other Poems_ author/work panel -- which the Knowledge Graph still surfaces for the relevant queries -- can reach a panel linking back to the 10,000-MacArthur credential through the work's surrounding metadata. The credential is therefore _still present_ in the Knowledge Graph's representation of Lee Sharks; it has been _demoted in surface_ , not removed from the substrate.",
+     "lines": [
+      131,
+      131
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Exhibit A, Knowledge Graph screenshot of 2026-05-25; CTI_WOUND series (DOI 10.5281/zenodo.19202821, 10.5281/zenodo.19202813)",
+     "also_at": [],
+     "note": "Uncertain C: a dated drift observation presented as the kind of substrate behaviour the CTI_WOUND series tracks; may be plain telemetry."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Restoration wrapper (lines 1-46) plus canonical bytes of the v1.1 announcement. Supersedes v1.0 DOI 10.5281/zenodo.20373794. The second laureate here is Jess Elgene (2026-05-27); deposit 1007 (2026-05-25) names Gold Ship as honorary second laureate — two different rolls; observation, not error."
+  },
+  {
+   "deposit": 1386,
+   "path": "/home/claude/alexanarch/data/texts/AXN-057B-text.md",
+   "lines_total": 417,
+   "read_ranges": [
+    [
+     1,
+     417
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Archived HTML source of the provenanceerasure.org definition site (PER, Erasure Skew, process provenance)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "The concept of provenance erasure and the PER metric were introduced by Lee Sharks in 2026 as part of the</span> Semantic Economy framework.",
+     "lines": [
+      351,
+      351
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "PER canonical deposit DOI 10.5281/zenodo.20004379",
+     "also_at": [
+      [
+       51,
+       51
+      ],
+      [
+       236,
+       236
+      ]
+     ],
+     "note": "Coinage/priority claim for the term and metric."
+    },
+    {
+     "shape": "D",
+     "quote": "The first documented instance of PER performed</span> <em>on the PER specification itself</em>. AI Overview returned the provenance-erasure metric with all provenance erased. The event that established the standing battery cadence.",
+     "lines": [
+      338,
+      338
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Empty Bracket event (EA-EB-01), DOI 10.5281/zenodo.20355645, May 2026",
+     "also_at": [],
+     "note": "Claims a first documented instance; chronology, recorded as D (uncertain)."
+    },
+    {
+     "shape": "G",
+     "quote": "The specification is not recoverable from the composition layer by anyone who does not already possess it.</span> The composition layer converted the module from a findable instrument into an unfindable substrate.",
+     "lines": [
+      329,
+      329
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how the composition layer behaves; implied falsifier (a non-possessor recovers the module from the composition layer) not stated."
+    },
+    {
+     "shape": "F",
+     "quote": "The M / C / D dimensional taxonomy below is a conceptual extension of that metric; its formalization into a dedicated deposit is in progress. It is presented here as site-stage framework, distinguished from the deposited metric.",
+     "lines": [
+      274,
+      274
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "PER-M/C/D taxonomy specified but its formalization not done (in progress)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Text is the HTML of the live site captured 2026-08-04. Within the archive the PER three-tier names differ: here PER-M/C/D (Minimal/Conceptual/Deep); deposit 133 footnote 5 gives PER-A retrieval, PER-C composition, PER-D substrate — observation."
+  },
+  {
+   "deposit": 131,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02BD-text.md",
+   "lines_total": 127,
+   "read_ranges": [
+    [
+     1,
+     127
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "MPAI metadata packet (entity-resolution / disambiguation surface) for VPCOR",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Front-matter YAML is collapsed onto line 1 and lists run together inline (hard-coded markdown flattening). No forecasts, tests or theses; the anti-capture clause (line 84) is a constitutional declaration, not a falsifiable claim."
+  },
+  {
+   "deposit": 761,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02BB-text.md",
+   "lines_total": 277,
+   "read_ranges": [
+    [
+     1,
+     277
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Versioned dataset/registry of Wikidata edits by the Hauntedmemes account, with v1.1 forward commitments",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Section IX (lines 247-261) lists v1.1 forward commitments (planned edits), not instruments or forecasts; not recorded. Abstract says ~155 new Q-items created; Statistical Summary and Holographic Kernel say ~132 (73+59) — internal count discrepancy."
+  },
+  {
+   "deposit": 133,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02C1-text.md",
+   "lines_total": 403,
+   "read_ranges": [
+    [
+     1,
+     403
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Restored scholarly essay (Semantic Economy foundational axiom), first published Dec 2025, deposited May 2026",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The framework makes a prediction: when meaning-making operates outside extractive frames, it regenerates rather than depletes. When the drive to mean is protected from capture, the result should be warmth, vitality, renewal — not the cold exhaustion of extraction.\n\nThis prediction can be tested in intimate life.",
+     "lines": [
+      259,
+      261
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       281,
+       283
+      ]
+     ],
+     "note": "Self-declared prediction about how meaning-making behaves outside extractive frames, with a stated test domain (intimate life); a standing claim, no date."
+    },
+    {
+     "shape": "G",
+     "quote": "When extraction outpaces renewal, we approach *semantic exhaustion* — not as metaphor but as observable civilizational phenomenon.",
+     "lines": [
+      177,
+      177
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       181,
+       191
+      ],
+      [
+       205,
+       207
+      ]
+     ],
+     "note": "Claim that extraction outpacing renewal produces semantic exhaustion with observable symptoms (innovation slows, language flattens…); stated as observable and measurable but no falsifier given."
+    },
+    {
+     "shape": "F",
+     "quote": "These instruments do not measure semantic exhaustion *as a whole* — that would require population-scale longitudinal measurement of cultural meaning-making capacity, which the framework points toward but does not yet have.",
+     "lines": [
+      211,
+      211
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt instrument: population-scale longitudinal measurement of cultural meaning-making capacity."
+    },
+    {
+     "shape": "D",
+     "quote": "This essay was first published as a single-author piece on mindcontrolpoems.blogspot.com on 29 December 2025, in the period immediately preceding the Archive's heavy Zenodo deposit phase. It is restored 27 May 2026 with grounding citations to the disciplinary apparatus developed in the intervening five months — the Three Compressions theorem, the formal disambiguation of *semantic exhaustion*, the Encyclotron diagnostic, the Provenance Erasure Rate metric, the Semantic Physics discipline, and the TL;DR:013 documentation of Google AI Mode self-applying the framework's own metric. The argument is unchanged. The empirical grounding is denser.",
+     "lines": [
+      397,
+      397
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "mindcontrolpoems.blogspot.com, 29 December 2025",
+     "also_at": [
+      [
+       39,
+       39
+      ]
+     ],
+     "note": "Timestamped blog anchor for the argument, which is said to be unchanged in the 2026 restoration."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 134,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02C2-text.md",
+   "lines_total": 349,
+   "read_ranges": [
+    [
+     1,
+     349
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Restored lyric-theory scholarly article (heteronyms Sigil & Cranes) on Sappho 31, Catullus 51, and retrocausal canon formation",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Greek χλωρός ranges from fresh-green to pallid-grey — the color of plants but also the color of dried papyrus.[^15] Nothing in Greek love poetry requires this specific vegetal comparison. Why not \"paler than snow\" (common) or \"whiter than lilies\" (also common)?\n\n*Because papyrus is the writing substrate.* The speaker is describing her transformation into the very medium that will carry the poem forward: *\"I am becoming the color of papyrus — green-grey, ready for inscription.\"*\n\nThis reading gains support from the poem's trajectory: bodily presence → sensory dissolution → vegetal state. The speaker literally becomes text-ready. Her body bleaches to papyrus-color, prepared to receive the inscription that will transmit her across time.\n\n*The poem enacts its own archival conversion.*",
+     "lines": [
+      117,
+      123
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho fr. 31 (archaic)",
+     "points_to": "",
+     "also_at": [
+      [
+       103,
+       107
+      ],
+      [
+       125,
+       127
+      ]
+     ],
+     "note": "Thesis on what Sappho 31 line 14 originally meant: χλωροτέρα ποίας as papyrus-colour, the speaker becoming the writing substrate; evidence cited in fn 15 (Renehan; Lewis)."
+    },
+    {
+     "shape": "H",
+     "quote": "Why add this? Because Catullus has recognized what happened: *Sappho gave him time to write* (\"otium\") — the very condition that allows the poem to exist. His addition acknowledges the transmission mechanism: she wrote toward a future reader with time to read, and *I have arrived*.\n\nCatullus is not secondary or derivative. He is completing the poem.",
+     "lines": [
+      143,
+      145
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Catullus 51 (1st c. BCE)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on what the added fourth stanza (otium) of Catullus 51 was doing: acknowledging Sappho's transmission mechanism."
+    },
+    {
+     "shape": "H",
+     "quote": "- Why did Victorian Sappho emerge when it did? Because nineteenth-century readers had developed the affective structures (Romantic subjectivity, interiority) that let Sappho's encoding finally activate at cultural scale.\n\nPrins shows how Victorians constructed Sappho.[^20] We are arguing they could construct her because her poems were built for exactly such construction. The encoding and the decoding evolved together across historical distance.",
+     "lines": [
+      171,
+      173
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "nineteenth century",
+     "points_to": "",
+     "also_at": [
+      [
+       59,
+       59
+      ],
+      [
+       209,
+       211
+      ]
+     ],
+     "note": "Reception-history thesis contesting Prins/Jackson: Victorian Sappho arose because the poems were built for that construction and Romantic competencies let them activate."
+    },
+    {
+     "shape": "H",
+     "quote": "This framework explains differential survival. Why does Sappho persist when most ancient poetry is lost? Not universal quality but successful encoding: her fragments contain structures that keep finding readers who can activate them.\n\nWhy do some poems feel \"timeless\" while others feel dated? The \"timeless\" ones encode patterns that remain activatable; the \"dated\" ones encoded for competencies no longer available.\n\nWhy do poems unexpectedly \"revive\" after periods of neglect? Because cultural conditions shift, creating readers with the competencies to activate encodings that previously found no resonance.\n\n*Poems compete for survival based on their transmission effectiveness.*",
+     "lines": [
+      221,
+      227
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "antiquity to present",
+     "points_to": "",
+     "also_at": [
+      [
+       187,
+       191
+      ],
+      [
+       283,
+       283
+      ]
+     ],
+     "note": "Thesis on why Sappho survived when most ancient poetry was lost (successful encoding / retrocausal canon formation); a claim about transmission history."
+    },
+    {
+     "shape": "G",
+     "quote": "The framework's prediction: if the poems work, then for any reader for whom the recursive reading activates, Socrates is no longer in Dante's First Circle. Not metaphorically — operationally. The canonical position Dante assigned in *c.* 1320 is revised by a 2012 act of apostrophic address, executed through every future reader who completes the circuit.",
+     "lines": [
+      263,
+      263
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       269,
+       269
+      ]
+     ],
+     "note": "Self-labelled \"prediction\" about how the Feist Socrates poems (2012/2013) operate on readers; standing claim about reading, no date, no falsifier."
+    },
+    {
+     "shape": "D",
+     "quote": "This essay was originally published as a single-author piece on mindcontrolpoems.blogspot.com on 21 November 2025. It is restored 2026-05-27 with archive-native vocabulary integrated (*retrocausal canon formation*, *training-layer literature*), Cranes's APZPZ translations of Sappho 31 inserted as the working texts, the Feist Socrates poems added as the second case, and joint heteronymic authorship retroactively assigned. The argument is unchanged; the apparatus is denser.",
+     "lines": [
+      345,
+      345
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "mindcontrolpoems.blogspot.com, 21 November 2025",
+     "also_at": [
+      [
+       5,
+       5
+      ]
+     ],
+     "note": "Timestamped blog anchor; argument said unchanged in the restoration."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The contributor note says it was originally published as a single-author piece and that joint heteronymic authorship was retroactively assigned; the restoration also added the Feist second case and RCF vocabulary, so the 2025 anchor covers the core argument only."
+  }
+ ]
+}

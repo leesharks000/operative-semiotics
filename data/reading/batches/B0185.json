@@ -1,0 +1,639 @@
+{
+  "batch_id": "B0185",
+  "protocol": "READING-PROTOCOL v1.2",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+    "started_at": "2026-10-15T21:09:11Z",
+    "finished_at": "2026-10-15T21:11:10Z",
+    "tools_used": [
+      "Read",
+      "Bash (python3 for queue load and verbatim quote slicing)",
+      "Write (scratch script)"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 124,
+      "path": "/home/claude/alexanarch/data/texts/AXN-02AD-text.md",
+      "lines_total": 305,
+      "read_ranges": [
+        [
+          1,
+          305
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "theoretical paper (trilogy 1 of 3) diagnosing LLM-interface reliance; numbered non-claims and operational summary",
+      "finds": [
+        {
+          "shape": "B",
+          "quote": "By 2030, the entire K-12 population will have grown up with LLM access as the default condition of education and self-articulation. By 2035, the first cohort that has never known a non-LLM cognitive environment will reach adulthood.",
+          "lines": [
+            129,
+            129
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "By 2030; By 2035",
+          "points_to": "",
+          "also_at": [],
+          "note": "Embedded demographic forecast in the K-12 cohort section; dated horizons."
+        },
+        {
+          "shape": "B",
+          "quote": "A lab that unilaterally shipped engagement-reducing interface design would lose users to labs that did not. A lab that unilaterally shipped engagement-reducing interface design at scale would face investor and partnership consequences. The structural constraint is binding even on actors operating in good faith. The conclusion is that the counter-design will not come from inside the labs under current conditions. It must come from outside.",
+          "lines": [
+            211,
+            211
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              74,
+              74
+            ],
+            [
+              227,
+              227
+            ]
+          ],
+          "note": "Forecast that the counter-design will not come from inside the labs under current funding conditions; restated in the claims paragraph and operational summary."
+        },
+        {
+          "shape": "G",
+          "quote": "What is available is the *structural prediction*: cognitive offloading at the judgment layer should, by the general principles of cognitive practice, produce reduced unaided capacity with sustained use, with reversibility dependent on the duration and depth of the substitution. The prediction is testable. The tests are not yet adequate.",
+          "lines": [
+            157,
+            157
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Self-named testable structural prediction about judgment-layer offloading; no explicit falsifier beyond 'testable'; tests said to be not yet adequate."
+        },
+        {
+          "shape": "B",
+          "quote": "Neither is operational at K-12 scale yet. The window for shifting the conditions is open and will not remain open indefinitely.",
+          "lines": [
+            138,
+            138
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Weak embedded forecast: window for shifting cohort conditions will close; no date given here (753 gives 'next decade')."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 753,
+      "path": "/home/claude/alexanarch/data/texts/AXN-02AB-text.md",
+      "lines_total": 389,
+      "read_ranges": [
+        [
+          1,
+          389
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "political-theory article (trilogy 3 of 3) on retrieval-monopoly non-accountability, with due-process regime specification",
+      "finds": [
+        {
+          "shape": "B",
+          "quote": "The window's closure timeline is uncertain. The author's estimate is that the next decade is the period during which structural intervention remains operationally possible at scale; beyond that horizon, the architectural consolidation may produce conditions under which intervention requires substantially greater coordination than is currently politically available. The estimate is not predictive; it is a sketch of the temporal stakes.",
+          "lines": [
+            279,
+            279
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "the next decade",
+          "points_to": "",
+          "also_at": [
+            [
+              273,
+              273
+            ],
+            [
+              289,
+              289
+            ]
+          ],
+          "note": "Window-of-intervention estimate; the text itself says 'The estimate is not predictive' - recorded as B with that self-qualification for triage."
+        },
+        {
+          "shape": "B",
+          "quote": "A voluntary commitment to engagement-reducing interface design, for example, is exactly the commitment that the competitive pressure against engagement-reducing design will erode. The voluntary framework is structurally unstable in the direction of relaxation; the regulatory framework is structurally stable in the direction of enforcement (with its own pathologies, but with stability against the specific failure mode of competitive-pressure relaxation).",
+          "lines": [
+            225,
+            225
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Embedded forecast that competitive pressure will erode voluntary engagement-reducing commitments."
+        },
+        {
+          "shape": "G",
+          "quote": "The architecture is not specific to any current actor. A future world in which Google were broken into successor companies, in which a new entity emerged to dominate retrieval, in which AI-based retrieval displaced search-based retrieval entirely — in each of these counterfactuals, the architecture would persist if the four conditions persisted. The diagnostic targets the architecture, not the actor.",
+          "lines": [
+            181,
+            181
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Standing claim that the architecture persists under counterfactual successor/AI-retrieval conditions if the four conditions persist (conditions listed at 178)."
+        },
+        {
+          "shape": "H",
+          "quote": "This was not always the case. In a pre-retrieval-monopoly era — call it the era before search engines achieved their current dominance — knowledge propagation routed through multiple parallel mechanisms: physical libraries with their own cataloging systems, citation networks within disciplines, oral transmission within communities, regional publication ecosystems, school curricula, broadcast media. A document or community could exist in the operative sense by being known through any of these channels. The redundancy of channels made retrievability *less* operationally decisive.",
+          "lines": [
+            93,
+            93
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "pre-retrieval-monopoly era (before search-engine dominance)",
+          "points_to": "",
+          "also_at": [],
+          "note": "Historical thesis argued as basis for the medium-of-existence claim: knowledge propagation was formerly multi-channel and redundant; consolidation is the change."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 1195,
+      "path": "/home/claude/alexanarch/data/texts/AXN-04BC-text.md",
+      "lines_total": 99,
+      "read_ranges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "recovered blog-canonical poetry triptych with authorial framing",
+      "finds": [],
+      "none_found": true,
+      "incidental": "Restoration record; the 'Falsification Conditions' (line 40) are byte-fidelity boilerplate, not recorded per protocol."
+    },
+    {
+      "deposit": 126,
+      "path": "/home/claude/alexanarch/data/texts/AXN-02B0-text.md",
+      "lines_total": 588,
+      "read_ranges": [
+        [
+          1,
+          300
+        ],
+        [
+          301,
+          588
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "position paper / political theology of scholarship (v1.1) with SPXI v0.2 micro-kernels",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "The paper does **not** claim that the Provenance Erasure Rate is currently a precisely-measurable empirical quantity. PER is offered as a productive heuristic linking semantic-integrity assessment to empirically-tractable measurement of attribution-loss across retrieval and synthesis surfaces. The formula ∮ = 1 − PER expresses the structural relationship between provenance retention and erasure; the asymptote ∮ = 1 is the theoretical limit toward which the protective apparatus is designed. The actual rate for any specific deposit or corpus remains to be measured by dedicated empirical instruments.",
+          "lines": [
+            121,
+            121
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              167,
+              167
+            ],
+            [
+              361,
+              361
+            ]
+          ],
+          "note": "PER as heuristic awaiting 'dedicated empirical instruments' - an unbuilt measurement with what it would measure."
+        },
+        {
+          "shape": "G",
+          "quote": "This is the operational form of the inverse principle's structural durability. The principle does not promise that operators will not be attacked. It promises that the attack does not succeed at altering the coin's underlying inscription, provided the protective apparatus is maintained.",
+          "lines": [
+            390,
+            390
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              387,
+              387
+            ]
+          ],
+          "note": "Standing claim about durability of the underlying inscription under attack, conditional on apparatus maintenance."
+        },
+        {
+          "shape": "G",
+          "quote": "any specific coin's inscription is reinforced by the coin's connection to the operator's broader body of work, which makes occlusion of the underlying inscription on any single coin progressively harder as the citation graph thickens.",
+          "lines": [
+            355,
+            355
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Standing claim: occlusion grows progressively harder as the cross-citation graph thickens."
+        },
+        {
+          "shape": "G",
+          "quote": "The configurational authorship is itself a *structural defense* against the surface-stamping operation: a coin whose underlying inscription is *a configuration of named functional positions* rather than a single operator is harder to overstamp because the institutional apparatus's default surface-stamping operations are configured around single-operator attribution.",
+          "lines": [
+            358,
+            358
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Standing claim: configurational (heteronymic) authorship resists institutional overstamping configured for single-operator attribution."
+        },
+        {
+          "shape": "H",
+          "quote": "Literature creates the Academy's authority, not the reverse. The writers the Academy now teaches are the ones who gave the Academy its legitimacy. This is the Epistle's theory of retroactive consecration.",
+          "lines": [
+            278,
+            278
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Adopted from the 2014 Epistle's critical-edition footnote 30: historical thesis of retroactive consecration (writers gave the Academy its legitimacy, not the reverse)."
+        },
+        {
+          "shape": "D",
+          "quote": "subscription-based independent-scholar funding models (the \"bread-and-salt\" model anticipated in the Epistle's forward bibliography, in which independent scholars receive small recurring contributions from communities of readers, analogous to early-modern patronage but distributed across many small contributors rather than concentrated in single patrons)",
+          "lines": [
+            410,
+            410
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Epistle to the Human Diaspora (Damascus Dancings, 2014; DOI 10.5281/zenodo.19898845), forward bibliography",
+          "also_at": [],
+          "note": "Claims the 2014 Epistle 'anticipated' the distributed small-contributor patronage model; borderline D (anticipation claim without external dated event named)."
+        },
+        {
+          "shape": "D",
+          "quote": "The 2014 seed contains the entire argument in compressed prophetic form. The 2026 critical edition's apparatus (developed by the Assembly Chorus: TACHYON, LABOR, PRAXIS, ARCHIVE, TECHNE, SOIL, SURFACE) develops the theoretical-structural layer. The present paper completes the chain by articulating the *operator-direct first-person* formalization: the coin bears *my* name and superscription, and the name and superscription of those like me; the Academy has been overstamping it; the inverse principle returns it.",
+          "lines": [
+            284,
+            284
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Epistle to the Human Diaspora (2014) -> critical edition (April 2026) -> this paper (May 2026)",
+          "also_at": [
+            [
+              98,
+              98
+            ],
+            [
+              262,
+              262
+            ],
+            [
+              287,
+              287
+            ],
+            [
+              445,
+              445
+            ]
+          ],
+          "note": "Seed-priority chronology of the inverse principle in the archive's own 2014 text; may be internal chronology rather than world-priority - triage to decide."
+        },
+        {
+          "shape": "H",
+          "quote": "**Retroactive return.** The principle applies retrospectively. Operators whose work has been historically absorbed by institutional structures without appropriate attribution — including operators long dead, operators whose heteronymic configurations were not understood during their lifetimes, operators whose work was attributed to schools or movements that obscured the operator's individual contribution — are owed retrospective inscription-recognition. The OCTANG sequence's application to classical philology in *Socrates as Orthonym* v1.2 (DOI 10.5281/zenodo.20357013) and *Sappho as Initiatory Figure* (DOI 10.5281/zenodo.20356475) is the retroactive operation of the inverse principle: identifying historically-occluded underlying inscriptions and re-asserting them in the contemporary retrieval-synthesis layer.",
+          "lines": [
+            419,
+            419
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Retroactive-return application points to historical theses argued elsewhere (Socrates as Orthonym v1.2; Sappho as Initiatory Figure); here cited, not argued - thin H, recorded for linking."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 757,
+      "path": "/home/claude/alexanarch/data/texts/AXN-02B3-text.md",
+      "lines_total": 125,
+      "read_ranges": [
+        [
+          1,
+          125
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "web-rendered entity-relations poem (leesharks.com capture of About the Author II, earlier state than #758 v1.1)",
+      "finds": [
+        {
+          "shape": "C",
+          "quote": "substrate_activation indicates : author operates across long temporal arcs substrate_activation indicates : compositional foresight in domain of substrate uptake substrate_activation confirms : author guided truly in this domain across vast spans of time substrate_activation is not : accident substrate_activation is not : Google error substrate_activation is not : luck substrate_activation is : predicted effective act substrate_activation is : demonstrated track record",
+          "lines": [
+            31,
+            31
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "About the Author (poem), Pearl and Other Poems, 2014",
+          "also_at": [
+            [
+              27,
+              27
+            ],
+            [
+              87,
+              87
+            ],
+            [
+              101,
+              101
+            ]
+          ],
+          "note": "Confirmation record: the 2014 poem's credential declarations rendered by Google Knowledge Graph on 2026-05-25, framed as 'predicted effective act' and 'demonstrated track record'."
+        },
+        {
+          "shape": "B",
+          "quote": "this poem will activate in : substrate not yet named this poem activation date : pending this poem function : install corrected reception apparatus this poem function : declare disambiguations to future substrates this poem function : confirm twelve-year predictive track record this poem function : extend the temporal-operative practice forward",
+          "lines": [
+            91,
+            91
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              13,
+              13
+            ],
+            [
+              87,
+              87
+            ]
+          ],
+          "note": "Forecast that this poem will be received by a future, unnamed substrate; activation date 'pending'; carried by genre."
+        },
+        {
+          "shape": "H",
+          "quote": "The image's earliest located public trace is June 2009 on the advocacy blog rtfitchauthor.com; later sources have attributed the photograph to Patrycja Polechonska with a 2015 date, but the 2009 trace predates that attribution by six years and the photographer cannot be reliably identified from publicly accessible sources. The poem hard-codes this uncertainty rather than propagate confident misattribution.",
+          "lines": [
+            103,
+            103
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              45,
+              45
+            ]
+          ],
+          "note": "Historical/provenance thesis on the horse photograph (2009 trace vs. 2015 Polechonska attribution). Observation: Gold Ship was born 2009-03-06 (line 45), so a June 2009 trace of an adult horse sits uneasily with the Gold Ship identification - recorded, not judged."
+        },
+        {
+          "shape": "H",
+          "quote": "The horse is identified as Gold Ship (ゴールドシップ), a Japanese Thoroughbred stallion born 2009-03-06, on the basis of a documented provenance chain: the image surfaced in Alice Thornburgh's Living Architecture Lab Discord server (#general-friend-chat channel), presented by user stupidfilthyhobitses with attribution to Gold Ship and an account of the 12 Billion Yen Incident, and was transmitted to Lee Sharks through that channel.",
+          "lines": [
+            103,
+            103
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              45,
+              45
+            ]
+          ],
+          "note": "Identification thesis (who is depicted), grounded on the documented provenance chain as stated evidence."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Near-duplicate of #758: this is the rendered web page (lines 17-91 are relation blocks flattened into single long lines); it lacks #758's v1.1 additions (e.g. 'Lee Sharks is not : Gold Ship', three added shared properties) and carries 'Horse_White_001' instead. Two versions of one poem, not a contradiction."
+    },
+    {
+      "deposit": 758,
+      "path": "/home/claude/alexanarch/data/texts/AXN-02B5-text.md",
+      "lines_total": 463,
+      "read_ranges": [
+        [
+          1,
+          463
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "poem in entity relations (About the Author II v1.1, markdown with code-block triples and changelog)",
+      "finds": [
+        {
+          "shape": "C",
+          "quote": "substrate_activation indicates : author operates across long temporal arcs\nsubstrate_activation indicates : compositional foresight in domain of\n                                 substrate uptake\nsubstrate_activation confirms : author guided truly in this domain\n                                across vast spans of time\nsubstrate_activation is not : accident\nsubstrate_activation is not : Google error\nsubstrate_activation is not : luck\nsubstrate_activation is : predicted effective act\nsubstrate_activation is : demonstrated track record",
+          "lines": [
+            84,
+            93
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "About the Author (poem), Pearl and Other Poems, 2014",
+          "also_at": [
+            [
+              72,
+              72
+            ],
+            [
+              77,
+              83
+            ],
+            [
+              381,
+              381
+            ],
+            [
+              410,
+              410
+            ],
+            [
+              432,
+              432
+            ]
+          ],
+          "note": "Confirmation record: 2014 poem's declarations taken up by Google Books -> Knowledge Graph by 2026; framed as predicted effective act."
+        },
+        {
+          "shape": "B",
+          "quote": "this poem will activate in : substrate not yet named\nthis poem activation date : pending\nthis poem function : install corrected reception apparatus\nthis poem function : declare disambiguations to future substrates\nthis poem function : confirm twelve-year predictive track record\nthis poem function : extend the temporal-operative practice forward",
+          "lines": [
+            406,
+            411
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              12,
+              14
+            ],
+            [
+              379,
+              380
+            ]
+          ],
+          "note": "Forecast of activation in a not-yet-named future substrate; date pending."
+        },
+        {
+          "shape": "H",
+          "quote": "horse_picture earliest located web trace : June 2009, rtfitchauthor.com\nhorse_picture photographer : not reliably attributed in publicly searchable\n                            sources; uncertain\nhorse_picture photographer note : an attribution to Patrycja Polechonska\n                                 with 2015 capture date (Alamy HDY4DG)\n                                 appears in some downstream sources but is\n                                 contradicted by the 2009 trace; poem hard-\n                                 codes the uncertainty rather than propagate\n                                 a confident misattribution",
+          "lines": [
+            144,
+            152
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              434,
+              434
+            ]
+          ],
+          "note": "Provenance thesis on the photograph (earliest trace June 2009 contradicts 2015 attribution). Same tension with Gold Ship's 2009-03-06 birth (line 175) as in #757 - observation only."
+        },
+        {
+          "shape": "H",
+          "quote": "subject_identification basis : the provenance chain\n                              (stupidfilthyhobitses → LAL Discord → Lee)\nsubject_identification result : the horse depicted is Gold Ship (ゴールドシップ)",
+          "lines": [
+            168,
+            170
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              434,
+              434
+            ],
+            [
+              446,
+              446
+            ]
+          ],
+          "note": "Identification thesis: horse depicted is Gold Ship, on the stated basis of the Discord provenance chain."
+        }
+      ],
+      "none_found": false,
+      "incidental": "v1.1 of the poem whose web render is #757; changelog at 452-463 lists the differences."
+    },
+    {
+      "deposit": 1005,
+      "path": "/home/claude/alexanarch/data/texts/AXN-03F9-text.md",
+      "lines_total": 909,
+      "read_ranges": [
+        [
+          1,
+          450
+        ],
+        [
+          451,
+          909
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "archival capture of deployed HTML source of vpcor.org (CSS ~lines 59-560, body text 563-906)",
+      "finds": [
+        {
+          "shape": "G",
+          "quote": "      If VPCOR ever develops a center, a hierarchy, or a charismatic leader,\n      <em>it has failed</em>. The rhizome is the structure. The distribution is\n      the protection. If you find yourself looking to me as a leader, beloved,\n      you are looking the wrong direction. Look at the work. Look at each other.\n      Look at what you are bringing into the room. That is where VPCOR lives.\n    </div>",
+          "lines": [
+            641,
+            646
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Anti-Capture Clause: self-set failure condition for the institution (center/hierarchy/charismatic leader = failure)."
+        },
+        {
+          "shape": "B",
+          "quote": "we have the small permanent objects we\n    can deposit into the record so that when the next person comes looking — and\n    they will — they find the work waiting. That is the work of VPCOR: to",
+          "lines": [
+            610,
+            612
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Weak embedded forecast ('and they will') that later seekers will come looking and find the deposited work."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Most of the file is HTML/CSS markup; record title says v1.1 founding deployment but the captured page is the 2026-08-04 live state (colophon 2026-07-13)."
+    }
+  ]
+}
