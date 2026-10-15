@@ -17,7 +17,7 @@
   "D": 67,
   "H": 102
  },
- "finds_verified": 1022,
+ "finds_verified": 1024,
  "finds_total": 1024,
  "deposits": [
   {
@@ -5709,10 +5709,13 @@
      },
      "none_found": false,
      "incidental": "Read tool shows a final line 2123 (closing italic line) beyond lines_total 2122; read through it. Recovered blog-canonical bytes. Provenance chain (ll.1587-1601, e.g. 'The Josephus Thesis and the Revelation First thesis predate Pearl') is internal chronology, not recorded as H. Dickinson (l.902) and Pessoa (l.487) are illustrative reports of established scholarship, not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 2122,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -5797,10 +5800,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 638,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -5893,10 +5899,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Read tool shows a final line 1543 beyond lines_total 1542; read through it. Sappho kenos future-reader mechanism and Marx-completion appear only as room function labels (ll.496, 547, 717), not argued here.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1542,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -5975,10 +5984,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Lineage table states Homer 'Dictated to scribes, never saw final form' (l.112) as a cell in a structural homology; not argued, so not recorded as H.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 369,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -6059,10 +6071,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 445,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
