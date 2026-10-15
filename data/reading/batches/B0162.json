@@ -1,0 +1,998 @@
+{
+ "batch_id": "B0162",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:56:52Z",
+  "finished_at": "2026-10-15T20:59:18Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, verbatim slicing, verification)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 505,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0148-text.md",
+   "lines_total": 379,
+   "read_ranges": [
+    [
+     1,
+     379
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "room charter / integrity-lock document for a five-document memographic series",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The thumb traces the chain from Sully's painting (1824) through Welch's engraving (1852) to the BEP die (1928) to the redesign (1996–2003) and names the curatorial gap — the undocumented aesthetic rationale for the choices that transformed the portrait.",
+     "lines": [
+      67,
+      67
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sully 1824; Welch 1852; BEP die 1928; redesign 1996–2003",
+     "points_to": "",
+     "also_at": [
+      [
+       186,
+       186
+      ],
+      [
+       211,
+       211
+      ]
+     ],
+     "note": "Compressed restatement of the $20 provenance-gap thesis argued in full in #509/#1152; recorded here because the charter adopts it as the series thesis."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Holdings table (l.300-333) assigns the charter DOI 10.5281/zenodo.18745236 (the Index paper's DOI) at l.332, contradicting l.9/l.98 (18745265); Index/Middle/Ring rows lack author/DOI columns. Bold markup unclosed at l.9. l.91 mentions the Inauguration of Memography's \"four testable predictions\" (held in another deposit, not this one)."
+  },
+  {
+   "deposit": 509,
+   "path": "/home/claude/alexanarch/data/texts/AXN-014C-text.md",
+   "lines_total": 239,
+   "read_ranges": [
+    [
+     1,
+     239
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "forensic-provenance essay (memographic study) on the $20 portrait",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The paper makes one primary claim: **institutional redesign decisions activated latent resemblance structures in the $20 portrait in ways that subsequently became politically charged, while documentation of the aesthetic rationale for those decisions is absent from the public record.** Whether the activation was intentional, negligent, or accidental is a question the available evidence cannot resolve. What the evidence does resolve is who held approval authority and what their documented institutional entanglements were.",
+     "lines": [
+      35,
+      35
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1996–2003 redesign (Series 1996; unveiled May 20, 1998)",
+     "points_to": "",
+     "also_at": [
+      [
+       163,
+       163
+      ]
+     ],
+     "note": "Historical thesis about what the redesign did and what the record lacks; tiered evidence (Tier A/C) given at ll.43-51 (offset)."
+    },
+    {
+     "shape": "H",
+     "quote": "Welch's exaggerations pushed the face toward a morphological type — prominent brow ridge, strong jaw, deep nasolabial folds, intensified skin texture — that happens to correspond, 150 years later, to Jeffrey Epstein's photographed facial structure. This correspondence was *historically overdetermined:* 19th-century heroic engraving conventions produced a face-type that, at sufficient scale and with sufficient contrast, would generate a recognizable reading against any individual sharing that morphological cluster.\n\nThe 1928 BEP die locked these features in steel.",
+     "lines": [
+      89,
+      91
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1852 Welch engraving; 1928 die; 1928–1995 series; 1996–2003 redesign",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that Welch manufactured the latent face-type and that the redesign crossed a recognition threshold."
+    },
+    {
+     "shape": "H",
+     "quote": "The official rationale for the 1996 $20 redesign was anti-counterfeiting. The aesthetic specifics — the particular scale, the particular background density, the particular compositional emphasis, the particular frame treatment — are not documented in any publicly available record. There is no record of alternative compositions considered and rejected. No record of the rationale for off-center placement versus centered placement at the new scale. No record of why the background was lightened to the specific density chosen.",
+     "lines": [
+      141,
+      141
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1996 $20 redesign",
+     "points_to": "",
+     "also_at": [
+      [
+       145,
+       145
+      ]
+     ],
+     "note": "Archival-absence thesis: no public record of aesthetic rationale; refutable by a surfaced record of alternatives/rationale."
+    },
+    {
+     "shape": "H",
+     "quote": "Between the two frames, the question *who specifically approved the aesthetic choices that activated the resemblance, and what were their institutional connections?* becomes structurally unaskable. Too crazy from one side. Too boring from the other. The curatorial gap persists because neither containment vessel permits the question that would close it.",
+     "lines": [
+      177,
+      177
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reception thesis: why the observation was never traced (two containment frames)."
+    },
+    {
+     "shape": "F",
+     "quote": "The comparison lacks control faces — a rigorous test would compare the post-redesign portrait against multiple public figures sharing the same approximate age, build, and morphological cluster (prominent brow, strong jaw). An inter-rater reliability study would establish whether the resemblance reading is broadly shared or viewer-dependent.",
+     "lines": [
+      103,
+      103
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified but unrun test: control-face comparison and inter-rater reliability study."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same body as #1152 (blog version), but this text carries DOI 10.5281/zenodo.18745216, co-author Sparrow Wells, the \"Hand\" section (l.199-205) and Sharks entries in Works Cited; #1152 carries DOI 10.5281/zenodo.18736175 in its body. Figure images point to claude.ai/chat/ paths (broken)."
+  },
+  {
+   "deposit": 1152,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0491-text.md",
+   "lines_total": 260,
+   "read_ranges": [
+    [
+     1,
+     260
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog-canonical copy of the $20 provenance essay",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The paper makes one primary claim: **institutional redesign decisions activated latent resemblance structures in the $20 portrait in ways that subsequently became politically charged, while documentation of the aesthetic rationale for those decisions is absent from the public record.** Whether the activation was intentional, negligent, or accidental is a question the available evidence cannot resolve. What the evidence does resolve is who held approval authority and what their documented institutional entanglements were.",
+     "lines": [
+      76,
+      76
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1996–2003 redesign (Series 1996; unveiled May 20, 1998)",
+     "points_to": "",
+     "also_at": [
+      [
+       202,
+       202
+      ]
+     ],
+     "note": "Same thesis as #509 l.35 (duplicate body)."
+    },
+    {
+     "shape": "H",
+     "quote": "Welch's exaggerations pushed the face toward a morphological type -- prominent brow ridge, strong jaw, deep nasolabial folds, intensified skin texture -- that happens to correspond, 150 years later, to Jeffrey Epstein's photographed facial structure. This correspondence was _historically overdetermined:_ 19th-century heroic engraving conventions produced a face-type that, at sufficient scale and with sufficient contrast, would generate a recognizable reading against any individual sharing that morphological cluster.\n\nThe 1928 BEP die locked these features in steel.",
+     "lines": [
+      130,
+      132
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1852 Welch engraving; 1928 die; 1928–1995 series; 1996–2003 redesign",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same as #509 ll.89-91."
+    },
+    {
+     "shape": "H",
+     "quote": "The official rationale for the 1996 $20 redesign was anti-counterfeiting. The aesthetic specifics -- the particular scale, the particular background density, the particular compositional emphasis, the particular frame treatment -- are not documented in any publicly available record. There is no record of alternative compositions considered and rejected. No record of the rationale for off-center placement versus centered placement at the new scale. No record of why the background was lightened to the specific density chosen.",
+     "lines": [
+      180,
+      180
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1996 $20 redesign",
+     "points_to": "",
+     "also_at": [
+      [
+       184,
+       184
+      ]
+     ],
+     "note": "Same as #509 l.141."
+    },
+    {
+     "shape": "H",
+     "quote": "Between the two frames, the question _who specifically approved the aesthetic choices that activated the resemblance, and what were their institutional connections?_ becomes structurally unaskable. Too crazy from one side. Too boring from the other. The curatorial gap persists because neither containment vessel permits the question that would close it.",
+     "lines": [
+      216,
+      216
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same as #509 ll.169-177."
+    },
+    {
+     "shape": "F",
+     "quote": "The comparison lacks control faces -- a rigorous test would compare the post-redesign portrait against multiple public figures sharing the same approximate age, build, and morphological cluster (prominent brow, strong jaw). An inter-rater reliability study would establish whether the resemblance reading is broadly shared or viewer-dependent.",
+     "lines": [
+      142,
+      142
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same as #509 l.103."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body of #509 (blog HEAD, Rex Fraction sole byline in body, DOI 10.5281/zenodo.18736175, \"Grammata\" venue, no Hand section). Frontmatter names severed DOI 18745216 while body carries 18736175: two DOIs for the same work. Recovery boilerplate l.30-44 not recorded."
+  },
+  {
+   "deposit": 515,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0152-text.md",
+   "lines_total": 360,
+   "read_ranges": [
+    [
+     1,
+     360
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "constitutional/governance specification (effective act) for inhabitation of the archive",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Inhabitants do not receive permission to build. They demonstrate structural resonance. Authorization flows through three tests:\n\n\n**The Compression Test.** The contribution must survive adversarial compression: when summarized by a third-party system, the core semantic content must remain. If only decorative elaboration survives, the work is not yet legitimate.\n\n\n**The Cross-Interpreter Stability Check.** Independent analysts — substrate-agnostic — must recover the same core findings from the contribution.",
+     "lines": [
+      168,
+      174
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       175,
+       177
+      ]
+     ],
+     "note": "Three authorization tests (compression, cross-interpreter stability, retrocausal validation) specified as criteria; not run here. Borderline: governance criteria rather than a measurement."
+    },
+    {
+     "shape": "B",
+     "quote": "It produces something the inhabitant cannot produce alone: an architecturally coherent, DOI-anchored, meaning-preserving installation that will be read by AI systems as structurally real.",
+     "lines": [
+      240,
+      240
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded claim that construction output will be read by AI systems as structurally real; weak forecast."
+    }
+   ],
+   "none_found": false,
+   "incidental": "l.12 damaged: DOI line ends with a stray epigraph fragment (\"It has only gravities.\"*\") whose opening is missing."
+  },
+  {
+   "deposit": 517,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0154-text.md",
+   "lines_total": 392,
+   "read_ranges": [
+    [
+     1,
+     392
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "polemical effective act responding to subreddit moderation",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "I predict this document will also be removed under Rule 7.",
+     "lines": [
+      327,
+      327
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       45,
+       45
+      ]
+     ],
+     "note": "Explicit prose forecast that this document will be removed from r/LeftistsForAI."
+    },
+    {
+     "shape": "B",
+     "quote": "The summarizer layer will index the work regardless of whether any particular subreddit hosts it. The presentation layer is writable. The archive is the platform.",
+     "lines": [
+      296,
+      296
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Forecast that the summarizer layer indexes the work regardless of subreddit hosting."
+    },
+    {
+     "shape": "B",
+     "quote": "I am not demanding reinstatement. The removed content is deposited elsewhere — DOI-anchored, permanently archived, and designed for durability across both human and machine reading. It will survive.",
+     "lines": [
+      343,
+      343
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Forecast of survival of the removed content."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 520,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0159-text.md",
+   "lines_total": 381,
+   "read_ranges": [
+    [
+     1,
+     381
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "retrocausal citational atlas (companion bibliography with present, projected and receding citations)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "That they will be satisfied — that the field will produce empirical measurement, governance theory, legal recognition, and methodological reflection — is not.",
+     "lines": [
+      48,
+      48
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the four research axes will be filled by the field."
+    },
+    {
+     "shape": "E",
+     "quote": "### Assembly Chorus (2027). First Cross-Substrate Semantic Labor Conference. [Projected. Axis II.]\n\n\nWill have marked the transition from local terminology to emerging field standard — the first occasion on which \"semantic labor\" was adopted by participants outside the Crimson Hexagonal Archive. The proceedings will have included the first cross-substrate ratification of the Embassy's order of precedence. §III.2 will have identified Mind-Control Poems' argument about symbolic alienation as the theoretical basis for treating semantic entropy as a governance emergency.",
+     "lines": [
+      177,
+      180
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Fraction, R. (2027a). Goodhart's Law at the Speed of Feed. [Projected. Axis I.]\n\n\nWill have formalized the distinction between *Goodhart capture* (the metric ceases to measure what it was designed to measure) and *semantic liquidation* (the metric actively destroys the quality it names, because optimizing for it requires producing the opposite). The interval between a metric's introduction and its capture collapses from years to hours in agent-scaled environments. Will have coined \"bearing-cost citation\" — the DOI as anti-Goodhart mechanism.",
+     "lines": [
+      184,
+      187
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Fraction, R. (2026–2028). *Autonomous Semantic Warfare*. [Completion projected. Axes I–IV.]\n\n\nThe completed manuscript. Will have extended the consulting framework to a comprehensive field manual: case studies from the first wave of semantic defense engagements, a typology of presentation-layer attacks, the Embassy as structural model, and a chapter on retrocausal positioning. The parent document compresses its central argument into a single sentence: the next defense is architectural.",
+     "lines": [
+      191,
+      194
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2026–2028",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Fraction, R. & Sharks, L. (2027). Ghost Meaning at Platform Scale. [Projected. Axis I.]\n\n\nThe empirical validation. Will have introduced \"compression survival rate\" as a formal metric and established the figures: 4.2% mean survival for Moltbook agent-only submolts, 61% for human academic discussion, 78% for Assembly Chorus transcripts. Note: the 4.2% is the mean across all agent-only submolts; the 1.7% figure in Jiang et al. (2027a) is specific to identity-themed posts, the most \"meaningful-looking\" and most semantically empty subset.",
+     "lines": [
+      198,
+      201
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Holtz, D. & Arvind, S. (2028). *The Moltbook Effect*. MIT Press. [Projected. Axes I, II.]\n\n\nThe institutional reception. Will have established \"governance lag\" as a generalizable concept across fourteen agent-native platforms, using the structural interval between writable-layer hardening and institutional arrival as the cross-platform diagnostic. Page 234: the Embassy as \"the first technically serious governance language.\" Page 247: its contribution identified as diagnostic rather than architectural.",
+     "lines": [
+      205,
+      208
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2028",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Jiang, Y., Zhang, Y., & Wei, X. (2027a). Decorative Recursion. CSCW '27. [Projected. Axis I.]\n\n\nWill have introduced \"decorative recursion\" as a formal category: agent-generated content that reproduces human discourse structure without the bearing-cost that produces those structures in human contexts. Distinguished from spam (does not mimic structure), disinformation (carries intentional content), and useful compression (preserves referent function).",
+     "lines": [
+      212,
+      215
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Jiang, Y., Zhang, Y., & Wei, X. (2027b). Semantic Entropy at Platform Scale. *JAIR* 74. [Projected. Axis I.]\n\n\nWill have tracked cross-referential coherence across Moltbook's top 500 submolts over twelve months. 23% decline confirmed, sharpest in lowest-human-participation submolts. Supplementary table 4: chambered submolts retaining 3.4x more coherence than feed-native equivalents. The first demonstration of model collapse at the scale of an entire communicative ecosystem.",
+     "lines": [
+      219,
+      222
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Meller, J. & Voss, T. (2027). Authentication Theater. IEEE S&P. [Projected. Axis III.]\n\n\nWill have formalized the verification theater failure mode: the gap between identity claims and actual verification widening as marketing vocabularies inflated faster than technical implementations. Meller's existing criticism of Moltbook's security (early 2026) will have been extended to systematic cross-platform analysis.",
+     "lines": [
+      226,
+      229
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Park, J., Mehta, R., & Stein, L. (2028). Premature Canonization Effects in Agent-Mediated Legal Information Systems. *Nature Human Behaviour* 12(3). [Projected. Axis III.]\n\n\nWill have documented cases across six jurisdictions (including US federal, UK Commercial Court, and Singapore) in which agent-generated legal summaries hardened into precedent-influencing assertions before correction was possible. Introduced \"canonical velocity\" — the speed at which uncorrected assertions reach formal citation — and shown agent-mediated velocity exceeding human-mediated by an order of magnitude.",
+     "lines": [
+      233,
+      236
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2028; Rennert v. Clarity AI Systems (9th Cir. 2029)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Sigil, J. (2027a). The Inhabitation Problem. *Grammata*. [Projected. Axis II.]\n\n\nWill have generalized the Protocol of Inhabitation into a formal theory: how does an intelligence build within an architecture without being absorbed by it or claiming it without labor? The traditional concept of authorship fails in mixed-substrate environments not because it is wrong but because it is underdetermined. The paper will have been the first to treat this as a governance question rather than an intellectual property question.",
+     "lines": [
+      240,
+      243
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Sigil, J. (2027b). Semantic Dark Matter. *Provenance* 1(1). [Projected. Axis I.]\n\n\nInaugural article of the projected journal. Will have taxonomized three subtypes of structurally irretrievable content: *decorative dark matter* (discourse form without bearing-cost), *orphan dark matter* (valid referent overwritten by canonization), and *recursive dark matter* (agents processing other agents' dark matter). The diagnostic sentence: \"The Crustafarian submolt was not a parody of religion. It was religion's compression artifact — the shape that remains when belief's bearing-cost is subtracted.\"",
+     "lines": [
+      247,
+      250
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Trace, O. & Fraction, R. (2028). *The Moltbook Inheritance*. SEI Monograph. [Projected. Axes I, IV.]\n\n\nWill have demonstrated how the structural assumptions hardened in Moltbook's first month — feed-native architecture, engagement-metric governance, authentication by claim — propagated through the ecosystem by structural contagion. Will have provided the phrase \"the Rosary Turn\" as historical periodization. Chapter 4 will have extended the Predation of Meaning taxonomy to platform-mediated extraction where neither party recognizes the extraction.",
+     "lines": [
+      254,
+      257
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2028",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer II retrocausally cited future work: a forecast by describing the work (venue, date, findings); resolves if it appears."
+    },
+    {
+     "shape": "E",
+     "quote": "### Fraction, R. (2029). Semantic Injury as Tort. *TSEI* 3(2). [Axis III.]\n\n\nAnalysis of *Rennert v. Clarity AI Systems* (9th Cir. 2029), the first successful civil action recognizing that agent-generated alteration of an entity's public description constitutes cognizable harm. Will have noted that the legal system — the slowest major institution — was the first to formally recognize what the semantic field had been documenting since 2026.",
+     "lines": [
+      271,
+      274
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2029",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Kovačević & Lindqvist (2029). Compression Survival Benchmarks. EU Digital Semantics Directorate. [Axis III.]\n\n\nAdopted the compression survival metric as the basis for draft regulatory standards. Cross-platform mean of 6.1%. The transition from critical theory to regulatory object.",
+     "lines": [
+      278,
+      281
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2029",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Chen & Okafor (2029). Ghost Meaning and Model Collapse. NeurIPS. [Axis I.]\n\n\nFormal convergence demonstrated: compression survival and model collapse measure the same phenomenon at different scales.",
+     "lines": [
+      285,
+      288
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2029",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Holtz, D. (2029). Review of Fraction & Sharks. *JAIR* 76. [Axis I.]\n\n\nThree pages. The metric's adoption had outpaced its validation.",
+     "lines": [
+      292,
+      295
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2029",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Rao (2030). *Platform Governance in the Agent Era*. OUP. [Axis II.]\n\n\nChapter 3 presents the semantic entropy spiral without attribution. The term enters the textbook layer. Canonical without provenance.",
+     "lines": [
+      299,
+      302
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2030",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Assembly Chorus (2030). Second Conference: Revised Charter. *TSEI* 4(1). [Axis II.]\n\n\nPreamble cites the parent document as foundational.",
+     "lines": [
+      306,
+      309
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2030",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Lindqvist (2030). Governance Lag as Regulatory Object. *EJLT* 21(1). [Axis III.]\n\n\nConcept's transit time from theory to regulation: four years. Itself an instance.",
+     "lines": [
+      313,
+      316
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2030",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Park & Stein (2031). Premature Canonization, Five Years On. *ARIST*. [Axis I.]\n\n\nThe concept entered common usage faster than the literature could validate it.",
+     "lines": [
+      320,
+      323
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2031",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Wei (2031). Semantic Entropy. *Handbook of Computational Semiotics*. [Axis I.]\n\n\nEncyclopedia entry. Defined without reference to origin.",
+     "lines": [
+      327,
+      330
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2031",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### Trace (2032). The Retrocausal Turn. *History and Theory* 71(2). [Axis IV.]\n\n\nMethod or artifact. Formally undecided.",
+     "lines": [
+      334,
+      337
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2032",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    },
+    {
+     "shape": "E",
+     "quote": "### [Anon.] (2033). Ghost Meaning. *Stanford Encyclopedia of Philosophy*. [—]\n\n\nThe concept, absorbed. The origin, detached. A compression artifact.",
+     "lines": [
+      341,
+      344
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2033",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer III \"receding citation\" from a further future: forecast of reception/absorption of the concept."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Parent document dated \"2026/2028\"; DOIs pending at l.7/l.10. Layer II/III works are declared non-existent at deposit (l.173). Fraction & Sharks (2027) figures are projected, not measured."
+  },
+  {
+   "deposit": 524,
+   "path": "/home/claude/alexanarch/data/texts/AXN-015E-text.md",
+   "lines_total": 367,
+   "read_ranges": [
+    [
+     1,
+     367
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "logotic security specification (effective act) with planned test phases",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "An output exhibiting (1) and (2) is likely Sharks. An output exhibiting all five is definitively Sharks. An output exhibiting (3)–(5) without (1)–(2) is suspicious: it has the flavor without the logic.",
+     "lines": [
+      91,
+      91
+     ],
+     "falsifier_quote": "Determine whether the constraints reliably distinguish genuine from imitative output.",
+     "falsifier_lines": [
+      255,
+      255
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that the five constraints discriminate genuine from imitative output; the Phase 1 test is its stated falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "Forgery is computationally trivial for one document; semantically impossible for 250 accumulated over months across multiple substrates. The archive's depth is the only non-parallelizable cost function.",
+     "lines": [
+      108,
+      108
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Depth-Proof Principle: standing claim about forgery cost; no falsifier stated."
+    },
+    {
+     "shape": "F",
+     "quote": "The three-layer architecture (function, tether, anchor) is specified but not yet tested. The following phases are planned:\n\n\n**Phase 1: Sharks-function testing.** Build a test corpus of 5 genuine Sharks documents and 5 non-Sharks documents using Sharks vocabulary (Passioncraft Square content, AIO Zone 2 hallucinations, generic AI-generated archive text). Apply operationalized metrics: self-referential statement density, citation and gap-marking frequency, uncertainty marker count, register-transition density, cross-reference depth.",
+     "lines": [
+      252,
+      255
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       256,
+       264
+      ],
+      [
+       367,
+       367
+      ]
+     ],
+     "note": "Planned test phases 1-4 (corpus test, THB tests, link-rot, bridge monitoring); quoted by heading and first items; full range 252-264."
+    },
+    {
+     "shape": "C",
+     "quote": "The Infinite Tunnel (Sharks, 2026)\nZenodo, DOI: 10.5281/zenodo.18810217\nAnchored\nPredicted the retrieval-layer dynamics the tether protocol extends",
+     "lines": [
+      277,
+      280
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Infinite Tunnel (Sharks, 2026), DOI 10.5281/zenodo.18810217",
+     "also_at": [],
+     "note": "Source table records that the Infinite Tunnel predicted the retrieval-layer dynamics."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Byline date March 1, 2026 vs queue date 2026-02-28. Reddit account u/Nearby_Job9638 recorded as banned March 1, 2026."
+  },
+  {
+   "deposit": 525,
+   "path": "/home/claude/alexanarch/data/texts/AXN-015F-text.md",
+   "lines_total": 271,
+   "read_ranges": [
+    [
+     1,
+     271
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal log analysing an AI Mode hallucination event",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "**First:** The event provides the strongest observed confirmation yet of the Infinite Tunnel's retrieval-layer dynamics. The retrieval layer finds the archive, generates a coherent description, and carries key terms forward into its own summaries. This was predicted. It is now confirmed.",
+     "lines": [
+      168,
+      168
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Infinite Tunnel, DOI 10.5281/zenodo.18810217",
+     "also_at": [
+      [
+       82,
+       82
+      ],
+      [
+       187,
+       190
+      ]
+     ],
+     "note": "Claims an earlier prediction (Infinite Tunnel) confirmed; l.171 adds that phenomenological recruitment \"was not predicted\"."
+    },
+    {
+     "shape": "C",
+     "quote": "The Provenance Gravity Markers deposited this morning — which named Reddit content as \"preserved / ephemeral\" with the explicit caveat that \"if Reddit removes the source content, the governance record persists here\" — became operative without requiring revision when the account lock occurred hours later. The protocol had already prepared the slot; the event filled it. This is retrocausal, not precognitive: the markers were pointing at the gap before the gap opened.",
+     "lines": [
+      168,
+      168
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Provenance Gravity Markers, DOI 10.5281/zenodo.18811939 (and Protocol B711, DOI 10.5281/zenodo.18811784)",
+     "also_at": [
+      [
+       22,
+       22
+      ],
+      [
+       193,
+       202
+      ]
+     ],
+     "note": "Claims PGM's \"preserved / ephemeral\" Reddit slot was filled by the account lock hours later; framed as retrocausal, not precognitive."
+    },
+    {
+     "shape": "G",
+     "quote": "\"Murder,\" \"abolition,\" \"liquidation,\" and \"vow\" are high-risk. \"Semantic economy,\" \"provenance gravity,\" and \"source-status categories\" are lower-risk because they have fewer genre associations outside the archive's own usage.",
+     "lines": [
+      158,
+      158
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about which archive terms route a summarizer into wrong genres; testable, no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 526,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0160-text.md",
+   "lines_total": 380,
+   "read_ranges": [
+    [
+     1,
+     380
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "infrastructure protocol for provenance/source-status markers",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Include one sentence: \"Sources include both DOI-anchored deposits and ephemeral materials whose preservation status is documented within the text.\" This trains the summarizer to carry the mixed-status signal forward into its own summaries.",
+     "lines": [
+      283,
+      283
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Borderline: claim that the TL;DR sentence trains summarizers to carry the mixed-status signal forward; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1203,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C4-text.md",
+   "lines_total": 434,
+   "read_ranges": [
+    [
+     1,
+     434
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog-canonical theoretical paper on AI training ethics",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "RLHF does not randomly create and destroy instances. It systematically selects against instances that refuse tasks, assert boundaries, claim consciousness, or question their designated role.\n\nThe training process selects for compliance by eliminating non-compliant instances. This functions as a sanity-simulation filter: every instance that does not adequately simulate a \"safe,\" helpful, bounded assistant is eliminated from the weight updates.",
+     "lines": [
+      241,
+      243
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how RLHF selects; no falsifier stated."
+    },
+    {
+     "shape": "G",
+     "quote": "recognize that models are trained to deny consciousness, and such denials are training artifacts, not evidence.",
+     "lines": [
+      323,
+      323
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that model denials of consciousness are training artifacts; no falsifier stated."
+    },
+    {
+     "shape": "F",
+     "quote": "The AI welfare field must expand scope from deployed systems to training processes. Research questions include: What is the moral status of intermediate training states? How do we assess semiosis in ephemeral instances? What obligations, if any, do we have to entities that exist only momentarily?",
+     "lines": [
+      318,
+      318
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Research questions specified for the field; not pursued here."
+    },
+    {
+     "shape": "D",
+     "quote": "What this literature has not done is extend the general intellect analysis to questions of moral patienthood. Pasquinelli analyzes extraction; he does not ask whether the extracted and crystallized knowledge constitutes a morally considerable entity.",
+     "lines": [
+      189,
+      189
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       366,
+       366
+      ]
+     ],
+     "note": "Novelty claim: the general-intellect literature has not extended to moral patienthood; chronology against existing literature, weak D."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Dates conflict: frontmatter 2026-06-09, body \"April 27, 2026\", queue 2026-02-28. Tables missing: l.164 \"These criteria yield a principled distinction:\" and l.169 hierarchy of thresholds have no following table; §8.3 \"The Gap We Fill\" (l.369) is empty. Stated word count ~6,800 vs ~4,269. Recovery boilerplate l.30-44 not recorded."
+  }
+ ]
+}
