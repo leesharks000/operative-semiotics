@@ -5630,7 +5630,33 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; X-batch",
    "output": "data/reading/batches/X0004.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 100533,
+    "tool_uses": 10,
+    "tokens": 177053
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T20:23:59Z",
+    "finished_at": "2026-10-15T20:25:19Z",
+    "self_description": "Claude Code subagent (Anthropic Claude, model claude-opus-5-5 as reported by the environment)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue lookup and verbatim slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 9,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w18-X0005",
