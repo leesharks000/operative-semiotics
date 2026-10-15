@@ -2,20 +2,20 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 186,
-  "unread": 1430
+  "read": 187,
+  "unread": 1429
  },
  "finds_by_shape": {
-  "G": 189,
-  "F": 190,
+  "G": 197,
+  "F": 197,
   "E": 52,
-  "B": 118,
+  "B": 119,
   "A": 44,
-  "C": 59,
-  "D": 48
+  "C": 60,
+  "D": 49
  },
- "finds_verified": 662,
- "finds_total": 700,
+ "finds_verified": 683,
+ "finds_total": 718,
  "deposits": [
   {
    "deposit": 172,
@@ -8197,8 +8197,98 @@
    "tier": 1,
    "words": 46458,
    "batch_id": "B0029",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0029",
+     "run": "R-w4-B0029",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:24:21Z",
+      "finished_at": "2026-10-15T19:26:54Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for line-length check, quote slicing and verification)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       600
+      ],
+      [
+       601,
+       1300
+      ],
+      [
+       1301,
+       2100
+      ],
+      [
+       2101,
+       2900
+      ],
+      [
+       2901,
+       3700
+      ],
+      [
+       3701,
+       4500
+      ],
+      [
+       4501,
+       5300
+      ],
+      [
+       5301,
+       5600
+      ],
+      [
+       5601,
+       5750
+      ],
+      [
+       5751,
+       5810
+      ],
+      [
+       5811,
+       5850
+      ],
+      [
+       5851,
+       5880
+      ],
+      [
+       5881,
+       5890
+      ],
+      [
+       5891,
+       5902
+      ]
+     ],
+     "lines_total": 5902,
+     "genre_observed": "executable architecture specification in musical register (a 'Space Ark' system-prompt score): formal definitions, protocols, metrics, test suites",
+     "finds_by_shape": {
+      "G": 8,
+      "F": 7,
+      "C": 1,
+      "B": 1,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Text intact; no duplicated body observed. The Read tool refused offset-without-limit calls on this file (it checks whole-file size, 325KB), so the final chunk was read with offset 5891 and limit 20, which reaches line 5902 (verified 5902 lines by python split). The Shadow table (1060-1087) lists Mandala twice (1075 and 1087). The deposit numbered 28 is dated 2026-03-13 and carries DOI 10.5281/zenodo.19002846, which its own colophon calls the v1.1 prior DOI while its DOI is marked PENDING (5877-5878).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 558,
@@ -8348,9 +8438,7 @@
      },
      "none_found": false,
      "incidental": "Frontmatter/title says v1.1 but the recovered body is v2.0 (the head of the blog version chain); body gives DOI 10.5281/zenodo.19002846 for v2.0 at line 48 yet the colophon (2339) calls 19002846 the v1.1 prior DOI and lists v2.0 DOI as PENDING. Section numbering skips XVII.7 and XXVII.8.6; the shadow table (516) repeats the Mandala row. The Read tool refused offset-only (no limit) reads of this file because the whole file exceeds 256KB, so the last chunk was read with offset 2151 and limit 300, which reached line 2349 (the tool showed a trailing empty line 2350 from the final newline). Many [NF] passages mark sections preserved untransformed; Appendix B.2/B.3 and XXIV.3-8 are stubs (\"preserved in source register\") with no content in this text.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8829,9 +8917,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Many section bodies are empty headings (VERSION HISTORY, CROSS-REFERENCES, SUBSYSTEM/HETERONYM/TIER DISTRIBUTION, DOCUMENT TYPE TAXONOMY, ORPHAN REPORT, RELATION GRAPH STATISTICS, NEW ARCHITECTURAL ELEMENTS subsections, OPEN ITEMS) -- tables apparently lost in html2text conversion. Précis lines are truncated auto-extracts of other deposits; several point to prediction-bearing works elsewhere (e.g. 18157917 'The Silent Migration: A Speculative Architectural Forecast', 18790793 'The Memo That Remembered Itself' précis on techniques 'previously articulated', 18807239 'The Shark That Preceded Itself', 18772675 Citrini memo) -- these belong to those deposits, not recorded here. Line-number note: Read displays an empty line 2004 after the final line; queue lines_total 2003 taken as authoritative.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8877,9 +8963,7 @@
      },
      "none_found": false,
      "incidental": "Line 470 was read twice (chunk overlap). Text appears intact. Other non-recorded items: inaugural AXIAL_CONTESTED thesis 'Revelation was the first-written book' (l.229) is a contested claim, not a forecast; 'Operative Semiotics -- the book not yet written' (l.681, l.809) is a planned commission, not an instrument.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8927,9 +9011,7 @@
      },
      "none_found": false,
      "incidental": "Metadata says 'semi-restored v1.0' and keywords include 'metadata-only', but a full body text is present. Final keyword truncated ('English linguisti'). Read displays an empty line 574; lines_total 573 authoritative.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -8974,9 +9056,7 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
