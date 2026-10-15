@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 243,
-  "unread": 1373
+  "read": 245,
+  "unread": 1371
  },
- "h_covered": 185,
+ "h_covered": 187,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
   "G": 274,
-  "F": 260,
-  "E": 68,
+  "F": 261,
+  "E": 70,
   "B": 178,
   "A": 53,
-  "C": 87,
-  "D": 82,
-  "H": 263
+  "C": 88,
+  "D": 84,
+  "H": 267
  },
- "finds_verified": 1256,
- "finds_total": 1265,
+ "finds_verified": 1262,
+ "finds_total": 1275,
  "deposits": [
   {
    "deposit": 172,
@@ -11594,10 +11594,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "No historical thesis: Pessoa/Freud/Marx references are glosses of received scholarship; the 'practice underway for years' line is internal chronology. Closing appendix H ends at a bare '---' (line 2813).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 2813,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -11682,10 +11685,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 1026,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -11765,10 +11771,13 @@
      },
      "none_found": false,
      "incidental": "Near-duplicate body of #1321 (AXN-053A), differently formatted.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 396,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -11848,10 +11857,13 @@
      },
      "none_found": false,
      "incidental": "Same text as #489 (AXN-0134) in reformatted markdown (blockquotes, table); the three H finds recur at the corresponding lines.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 377,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -19007,9 +19019,69 @@
    "tier": 1,
    "words": 31162,
    "batch_id": "B0054",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0054",
+     "run": "R-w9-B0054",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:51:11Z",
+      "finished_at": "2026-10-15T19:52:17Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       799
+      ],
+      [
+       800,
+       1199
+      ],
+      [
+       1200,
+       1599
+      ],
+      [
+       1600,
+       2019
+      ],
+      [
+       2020,
+       2419
+      ]
+     ],
+     "lines_total": 2419,
+     "genre_observed": "satirical Gnostic gospel (2015 poem) in a mock critical edition with fictional future scholarly apparatus, liturgy appendices, an afterword in the Jack Feist voice, and a back-matter work plan",
+     "finds_by_shape": {
+      "F": 1,
+      "D": 1,
+      "C": 1,
+      "E": 1
+     },
+     "none_found": false,
+     "incidental": "Tables and lists were dropped in the html2text conversion: many headings or lead-in sentences are followed by nothing, e.g. 'closest structural parallels are:' (181), the Yaldabaoth parallels (206), the ticket Concordance (284), Martian script dimensions, phonology and untranslatable terms (311-325), the Seven Anathemas (466), the Stemma (569), Appendices A, B and I (1695-1704, 2171), lists in the Rite and Rule (1827, 1879, 1897, 1930), all of Appendix H's tables (2134-2153), and the work plan's strands and 12 fan sectors (2354-2410). Footnotes 115, 129, 131, 132 and 136 refer to text that is missing. The book has two sections numbered §XIII (Introduction 'Previous Scholarship' at 400; gospel 'The Melding' at 1616, marked as expanding the Introduction). Appendix K's Current Status says a Zenodo DOI is assigned, but the frontmatter records those DOIs as severed on 2026-06-19.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 71,
@@ -19018,9 +19090,64 @@
    "tier": 1,
    "words": 24672,
    "batch_id": "B0055",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0055",
+     "run": "R-w9-B0055",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:51:18Z",
+      "finished_at": "2026-10-15T19:52:23Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       600
+      ],
+      [
+       601,
+       1200
+      ],
+      [
+       1201,
+       2000
+      ],
+      [
+       2001,
+       2800
+      ],
+      [
+       2801,
+       3464
+      ]
+     ],
+     "lines_total": 3464,
+     "genre_observed": "mock-critical edition of a 114-logion sayings gospel (Thomas parody/rewrite) with fictional future-scholar apparatus, appendices, liturgy",
+     "finds_by_shape": {
+      "E": 1,
+      "H": 4,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Body matches title. Logia are unnumbered in the gospel text (bullets) though apparatus keys by number. Concordance (1132, 1825) says 62 parallels/52 original, inconsistent with its own row counts. Fictional future scholars (2029–2044) recur through the apparatus. Appendices V–VI absent: intro jumps from §IV to §VII. Internal-chronology claim at 260 (Antioch written before Walt) not recorded, per H exclusion.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1185,
