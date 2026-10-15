@@ -13,6 +13,7 @@ verification record, nothing is dropped):
   NONE    none_found consistent with finds
   QUEUED  every queued deposit of the batch has an entry, and no entry is outside the batch
           (S-batches: out-of-queue readings by the launcher; each listed deposit is checked against its queue row)
+          (X-batches: a line range of a derived own-voice reading text, data/reading/xqueue.json; COVER is over the range)
 With --write, the verification is stored beside the batch as <batch>.verified.json.
 """
 import json, pathlib, re, sys, hashlib
@@ -32,6 +33,9 @@ def main():
     if out["batch_id"] == "CAL":
         cal = json.loads((ROOT / "data/reading/calibration-batch.json").read_text())
         queued = {r["deposit"]: r for r in cal["deposits"]}
+    elif out["batch_id"].startswith("X"):
+        xb = next(x for x in json.loads((ROOT / "data/reading/xqueue.json").read_text())["batches"] if x["batch_id"] == out["batch_id"])
+        queued = {xb["deposit"]: xb}
     elif out["batch_id"].startswith("HB"):
         hp = json.loads((ROOT / "data/reading/hpass.json").read_text())
         b = next(x for x in hp["batches"] if x["batch_id"] == out["batch_id"])
@@ -59,9 +63,10 @@ def main():
             covered = set()
             for a, b2 in e.get("read_ranges") or []:
                 covered.update(range(int(a), int(b2) + 1))
-            missing = [i for i in range(1, row["lines_total"] + 1) if i not in covered]
+            lo, hi = row.get("range") or (1, row["lines_total"])
+            missing = [i for i in range(lo, hi + 1) if i not in covered]
             if missing:
-                fails.append(f"COVER: {len(missing)} of {row['lines_total']} lines not in read_ranges (first {missing[:5]})")
+                fails.append(f"COVER: {len(missing)} of {hi - lo + 1} lines not in read_ranges (first {missing[:5]})")
         finds = e.get("finds") or []
         if e.get("none_found") and finds:
             fails.append("NONE: none_found true with finds")

@@ -19,12 +19,15 @@ import hashlib, json, pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 R = ROOT / "data/reading"
 LN = re.compile(r"^\s*(\d+)\t", re.M)
-BID = re.compile(r"batches/((?:HB|B|S)\d{4}|CAL)\.json")
+BID = re.compile(r"batches/((?:HB|B|S|X)\d{4}|CAL)\.json")
 
 
 def batch_rows(bid):
     if bid == "CAL":
         return {r["deposit"]: r for r in json.loads((R / "calibration-batch.json").read_text())["deposits"]}
+    if bid.startswith("X"):
+        xb = next(x for x in json.loads((R / "xqueue.json").read_text())["batches"] if x["batch_id"] == bid)
+        return {xb["deposit"]: xb}
     src = R / ("hpass.json" if bid.startswith("HB") else "queue.json")
     b = next(x for x in json.loads(src.read_text())["batches"] if x["batch_id"] == bid)
     return {r["deposit"]: r for r in b["deposits"]}
@@ -84,7 +87,8 @@ def audit(tp):
     for n, row in rows.items():
         got = set().union(*seen.get(n, [set()]))
         cl = claimed.get(n, set())
-        tot = set(range(1, row["lines_total"] + 1))
+        lo, hi = row.get("range") or (1, row["lines_total"])
+        tot = set(range(lo, hi + 1))
         out.append({"deposit": n, "lines_total": row["lines_total"], "read_calls": len(seen.get(n, [])),
                     "lines_returned": len(got & tot), "lines_claimed": len(cl & tot),
                     "claimed_not_returned": len((cl & tot) - got), "unread_lines": len(tot - got),

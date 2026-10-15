@@ -63,6 +63,21 @@ def main():
                               **{k: f.get(k) for k in ("shape", "quote", "lines", "falsifier_quote", "falsifier_lines",
                                                        "window", "points_to", "note")},
                               "verified": not bad, "verification_fails": bad})
+    xq = json.loads((R / "xqueue.json").read_text())["batches"] if (R / "xqueue.json").exists() else []
+    xneed = {}
+    for b in xq:
+        xneed.setdefault(b["deposit"], set()).add(b["batch_id"])
+    for r in rows.values():
+        if r["deposit"] in xneed:
+            done = {x.get("batch_id") for x in r["readings"] if x.get("batch_id", "").startswith("X")
+                    and x.get("status") == "read" and x.get("verification") == "pass"}
+            r["xpass"] = {"needed": sorted(xneed[r["deposit"]]), "done": sorted(done),
+                          "scope": "own-voice fields read in full from a derived text; transcripts and observations "
+                                   "excluded by protocol (see scripts/reading/derive_voice.py)"}
+            r["readings"] = [dict(x, status=("partial" if x.get("batch_id", "").startswith("X") and xneed[r["deposit"]] - done else x.get("status")))
+                             for x in r["readings"]]
+            if xneed[r["deposit"]] <= done:
+                r["readings"].append({"by": "xpass", "status": "read", "protocol": "READING-PROTOCOL v1.2"})
     for r in rows.values():
         st = [x["status"] for x in r["readings"]]
         r["state"] = "read" if "read" in st else ("partial" if "partial" in st else ("skipped" if "skipped" in st else "unread"))

@@ -95,6 +95,17 @@ H. HISTORICAL THESIS — a claim about the past that the deposit advances as its
 6. QUOTES stay under ~600 characters. For a table, quote the row, not the table.
 7. Add to each find: "also_at": [[first, last], ...] (empty list if none).
 
+## Data deposits read by their own-voice fields (X-batches)
+
+Two deposits are JSON datasets too large for any reader to hold: #3 (the capture registry, ~2.3M words) and #4 (the
+DOI resolution index). Most of their bulk is machine transcript — AI surfaces speaking, excluded above as other
+parties' text — and dated observation or metadata, excluded above. The archive's own voice is in named fields
+(reading, analysis, findings, notes; descriptions; change and correction logs). Those fields are extracted verbatim,
+record by record, into derived reading texts (data/reading/derived/, built by scripts/reading/derive_voice.py, each
+block headed with the record's id and its line in the source file). X-batches are line ranges of those texts; read
+the range IN FULL, as above, all shapes A–H, and quote from the derived text. The deposit counts as read only when
+every X-batch over it has passed.
+
 ## The H back-pass
 
 Deposits read before v1.2 are re-read for shape H alone (batches HB0001…, from data/reading/hpass.json). Read each
