@@ -1,0 +1,398 @@
+{
+ "batch_id": "HB0021",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code; model reported to me as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:54:55Z",
+  "finished_at": "2026-10-15T19:56:13Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for loading batch, slicing quotes, writing JSON)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 503,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0146-text.md",
+   "lines_total": 853,
+   "read_ranges": [
+    [
+     1,
+     300
+    ],
+    [
+     301,
+     600
+    ],
+    [
+     601,
+     853
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "heteronymous theoretical/philological treatise with effective-act declaration (filed as poetry)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**Minimal Claim (philological):** Sappho transforms the Homeric economy of memory by shifting from heroic public action to embodied lyric particularity. Her fragments reorganize preservation as repeatable, participatory, body-indexed enactment rather than singular, monumental, narrative commemoration. This claim requires only standard philological evidence and is consistent with (though stronger than) the existing scholarship of Nagy (1979), duBois (1995), and Stehle (1997).",
+     "lines": [
+      47,
+      47
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "c. 620 BCE; from Homer to Sappho",
+     "points_to": "",
+     "also_at": [
+      [
+       560,
+       560
+      ]
+     ],
+     "note": "Minimal claim of the Claim Stack: a thesis on what Sappho's lyric did to the Homeric economy of memory, offered as contestable and 'stronger than' Nagy/duBois/Stehle."
+    },
+    {
+     "shape": "H",
+     "quote": "**Medium Claim (media-structural):** This shift is not merely thematic but *formal and medial*. Sappho's lyric restructures the preservation apparatus itself: from epic's high-density narrative persistence with low distributive access to lyric's low-span textual fragments with high reenactive portability. The Sapphic stanza functions as a standardized \"mint-mark\" for somatic currency, contemporaneous with and structurally homologous to the Lydian invention of coinage (c. 640–630 BCE). This claim requires the convergence of philological, archaeological, and media-theoretical evidence assembled in Sections III and IV.",
+     "lines": [
+      50,
+      50
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "c. 640–630 BCE",
+     "points_to": "",
+     "also_at": [
+      [
+       255,
+       264
+      ],
+      [
+       485,
+       485
+      ]
+     ],
+     "note": "Medium claim: the Sapphic stanza as mint-mark, structurally homologous and contemporaneous with Lydian coinage; argued at length in IV."
+    },
+    {
+     "shape": "H",
+     "quote": "**Strong Claim (logotic-theological):** Sappho inaugurates the logotic grammar of transmissible particularity that later theological and philosophical \"Logos\" traditions—Heraclitean, Platonic, Philonic, Johannine, Augustinian—apply along vertical axes while inheriting the horizontal structure. She is, in a precise structural sense, the Mother of the Logos: not its metaphorical ancestor but its first operator.",
+     "lines": [
+      53,
+      53
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Heraclitean, Platonic, Philonic, Johannine, Augustinian",
+     "points_to": "",
+     "also_at": [
+      [
+       330,
+       351
+      ],
+      [
+       479,
+       479
+      ],
+      [
+       509,
+       509
+      ]
+     ],
+     "note": "Strong claim: Sappho as originator of the Logos grammar the later traditions inherit; deposit later calls it structural not causal (l.479), so the historical reach is hedged."
+    },
+    {
+     "shape": "H",
+     "quote": "The Aorist Cut explains why Fragment 31 *must* be incomplete. The poem's truncation mid-syntax (φαίνομ᾽—) is not manuscript damage. It is the aorist enacted at the level of form: a *completed incompletion*, an action that is done but refuses temporal closure. The poem performs in its syntax what the aorist performs in its tense. Sappho does not merely *use* the aorist. She *is* the aorist—the poet whose work is finished and never finished, complete and eternally requiring completion.",
+     "lines": [
+      69,
+      69
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Fragment 31",
+     "points_to": "",
+     "also_at": [
+      [
+       120,
+       123
+      ],
+      [
+       184,
+       184
+      ]
+     ],
+     "note": "Thesis about the text's original state: the truncation of Fr. 31 is designed, not manuscript damage; contradicts the received transmission account (the poem continues at l.164 in the Greek given)."
+    },
+    {
+     "shape": "H",
+     "quote": "**The crucial recognition:** Diotima *is* Sappho. The woman who teaches Socrates about eros in the *Symposium* is not a fictional invention from nowhere. She is the *figure of the archaic female erotic wisdom tradition* that Plato inherits, channels, and transforms. Plato does not suppress Sappho. He *initiates into her*—and the dialogue form is itself an acknowledgment that the wisdom comes from *her*, through Diotima, to Socrates, to Plato, to the reader. The chain of transmission is Sapphic all the way down.",
+     "lines": [
+      342,
+      342
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Plato, Symposium",
+     "points_to": "",
+     "also_at": [
+      [
+       513,
+       513
+      ]
+     ],
+     "note": "Thesis on the source/identity of Diotima as the figure of the archaic female erotic wisdom tradition, i.e. Sappho; repeated in the Effective Act."
+    },
+    {
+     "shape": "H",
+     "quote": "The \"Ancient Quarrel\" (Republic 607b) is not a quarrel between poetry and philosophy. It is a **mystery cult's internal disagreement** about the correct axis of the Sapphic operator. Plato argues for the vertical (ascent to Form). Sappho insists on the horizontal (body-to-body transmission).",
+     "lines": [
+      367,
+      367
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Republic 607b",
+     "points_to": "",
+     "also_at": [
+      [
+       330,
+       330
+      ],
+      [
+       513,
+       513
+      ]
+     ],
+     "note": "Thesis on what the 'Ancient Quarrel' historically was: an internal disagreement of a mystery cult, not a quarrel of poetry and philosophy."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 506,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0149-text.md",
+   "lines_total": 378,
+   "read_ranges": [
+    [
+     1,
+     378
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "methodological founding essay (memography)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**The result:** The kernel was confirmed — the observation is materially grounded. The resemblance is supported by documented features whose provenance can be traced. The frame was discarded — no supernatural explanation is needed or offered. The curatorial gap (the undocumented aesthetic rationale for the redesign choices) is the finding. The meme was right that something was there. It was wrong about what.",
+     "lines": [
+      257,
+      257
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the 1852 Welch engraving, the 1928 BEP die, the 1996–2003 redesign",
+     "points_to": "",
+     "also_at": [
+      [
+       248,
+       248
+      ],
+      [
+       254,
+       254
+      ]
+     ],
+     "note": "Historical/provenance thesis about the $20 portrait's redesign: the resemblance is materially grounded and the undocumented rationale of the redesign is the finding; summarized here from the Currency Triptych, adopted as the inaugural case."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1153,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0492-text.md",
+   "lines_total": 320,
+   "read_ranges": [
+    [
+     1,
+     320
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog-canonical text of the memography essay with restoration header",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**The result:** The kernel was confirmed -- the observation is materially grounded. The resemblance is supported by documented features whose provenance can be traced. The frame was discarded -- no supernatural explanation is needed or offered. The curatorial gap (the undocumented aesthetic rationale for the redesign choices) is the finding. The meme was right that something was there. It was wrong about what.",
+     "lines": [
+      232,
+      232
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the 1852 Welch engraving, the 1928 BEP die, the 1996-2003 redesign",
+     "points_to": "",
+     "also_at": [
+      [
+       226,
+       226
+      ],
+      [
+       230,
+       230
+      ]
+     ],
+     "note": "Same $20-portrait provenance thesis as #506 (recovered blog text of the same work)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body duplicates #506 (same work, recovered blog bytes; ASCII hyphens/arrows in place of en dashes)."
+  },
+  {
+   "deposit": 510,
+   "path": "/home/claude/alexanarch/data/texts/AXN-014D-text.md",
+   "lines_total": 477,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     251,
+     477
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical essay with phase model and dated scenario estimates",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Scientific publishing developed peer review, impact metrics, and journal hierarchies as governance mechanisms — and those same mechanisms became the form of the field's capture. Impact factors became gaming targets. Citation networks became rings. Editorial boards became gatekeeping cartels. The replication crisis did not reveal a failure of governance; it revealed that governance had been *installed* — written by the same five-step process the essay describes (deposit in high-impact journals, cross-reference through citation, define the field's terms, bridge via editorial positions, maintain through peer review as quality control).",
+     "lines": [
+      127,
+      127
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about the history of scientific publishing: the replication crisis shows governance was installed by the five-step process, not that governance failed."
+    },
+    {
+     "shape": "H",
+     "quote": "The point is not that statins are ineffective — that is a clinical question outside this essay's scope — but that the *definitions of who needs them* were shaped by an ontology with commercial incentives, and that the shaping was achieved through exactly the five-step process described above: deposit (funded trials), cross-reference (citation networks), define (guideline thresholds), bridge (clinical education), maintain (updated guidelines).",
+     "lines": [
+      140,
+      140
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "over three decades",
+     "points_to": "",
+     "also_at": [],
+     "note": "Borderline: the statin-threshold history is reported as documented, but the reading that it was achieved through the deposit's five-step process is the deposit's own thesis."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 512,
+   "path": "/home/claude/alexanarch/data/texts/AXN-014F-text.md",
+   "lines_total": 568,
+   "read_ranges": [
+    [
+     1,
+     300
+    ],
+    [
+     301,
+     568
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal log with full AI Mode transcript",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Query 3 response is elided in the transcript ('See full text in document index 25/26'), l.305-308."
+  },
+  {
+   "deposit": 513,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0150-text.md",
+   "lines_total": 249,
+   "read_ranges": [
+    [
+     1,
+     249
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "event analysis essay applying the semantic-physics framework",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The Citrini memo followed — precisely, whether by instinct or design — the five-step installation sequence described in the semantic physics framework.",
+     "lines": [
+      36,
+      36
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "February 23, 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       39,
+       54
+      ],
+      [
+       105,
+       111
+      ]
+     ],
+     "note": "Thesis about how a past event happened: the Citrini memo's reception followed the five-step installation sequence; argued step by step through l.54."
+    },
+    {
+     "shape": "H",
+     "quote": "The Citrini memo did not create this condition. It *revealed* it. The anxiety it organized was already present. The distributional concerns were already documented. The capability signals were already legible. What the memo did was provide the compression — the two-word term, the vivid scenario, the structural skeleton — that made the ambient anxiety *actionable*. That is installation.",
+     "lines": [
+      146,
+      146
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the memo revealed rather than created the condition; the anxiety and concerns preceded it."
+    },
+    {
+     "shape": "H",
+     "quote": "But the deeper claim is this: **the market has always been a writable presentation layer.** Shiller's *Narrative Economics* established that viral stories drive economic fluctuations as powerfully as interest rates. MacKenzie's performativity thesis showed that financial models do not merely describe markets — they *construct* them. The market has never been a mirror. It has always been a surface written by the narratives, models, and frameworks that participants install in it.",
+     "lines": [
+      127,
+      127
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis about markets, adopted from Shiller and MacKenzie and advanced as the essay's 'deeper claim'."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}

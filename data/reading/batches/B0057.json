@@ -1,0 +1,429 @@
+{
+ "batch_id": "B0057",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:54:37Z",
+  "finished_at": "2026-10-15T19:56:18Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 75,
+   "path": "/home/claude/alexanarch/data/texts/AXN-023B-text.md",
+   "lines_total": 3774,
+   "read_ranges": [
+    [
+     1,
+     700
+    ],
+    [
+     701,
+     1500
+    ],
+    [
+     1501,
+     2300
+    ],
+    [
+     2301,
+     3100
+    ],
+    [
+     3101,
+     3774
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "website source (React/D3 knowledge-graph app, surfacemap.org) followed by its topology-source.json",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body is HTML/JS of the Aperture Atlas page; after </html> a line '$' (3224) separates an appended topology JSON (88 nodes, 135 edges, 3 dated basin measurements 2026-04-25). Measurements are observations, not forecasts; pending Wikidata edges are an edit queue, not a test. No prose argument."
+  },
+  {
+   "deposit": 76,
+   "path": "/home/claude/alexanarch/data/texts/AXN-023E-text.md",
+   "lines_total": 442,
+   "read_ranges": [
+    [
+     1,
+     442
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "formal specification (EA-HK-01 v1.1, holographic kernel)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The Semantic Economy definition does not supersede physics. It supplies the missing generalization that connects holographic cosmology, holographic QCD, and holographic optics under a single operation. These are currently treated as separate formalisms. HK-01 proposes they are instances of one compression class, and provides the construction and verification protocols that none of them specify.",
+     "lines": [
+      163,
+      163
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       112,
+       112
+      ]
+     ],
+     "note": "Theoretical unification claim (physics/optics/QCD holographic kernels as one compression class); no falsifier stated; recorded as standing claim, uncertain fit."
+    },
+    {
+     "shape": "G",
+     "quote": "Three questions distinguish a kernel from a summary:\n\n- Can you derive a **forbidden operation** from it? (What the system must NOT do)\n- Can you derive a **dependency chain** from it? (What must precede what)\n- If you lost the source, could you **rebuild the topology**?\n\n\nSummaries fail at least two. Kernels pass all three.",
+     "lines": [
+      98,
+      105
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       348,
+       349
+      ]
+     ],
+     "note": "Litmus test asserted as a discriminating property: summaries fail at least two, kernels pass all three; implicitly falsifiable by a summary that passes all three."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 689,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0234-text.md",
+   "lines_total": 258,
+   "read_ranges": [
+    [
+     1,
+     258
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "platform specification for a geocoded deposit app, framed with The Secret Book of Walt as prototype",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "This is a writable retrieval layer for physical space.\n\nThe earth has always had things happen on it. People have always stood in places and seen and heard and thought. What has never existed is permanent, retrievable, basin-forming infrastructure for that experience — infrastructure that does not extract the attention from the place and sell it globally, but lets it accumulate in the place and become accessible to whoever comes after.",
+     "lines": [
+      248,
+      250
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       15,
+       17
+      ],
+      [
+       39,
+       39
+      ],
+      [
+       242,
+       242
+      ]
+     ],
+     "note": "Speculative specification of an unbuilt platform ('writable retrieval layer for physical space'); resolves if such infrastructure appears/is built."
+    },
+    {
+     "shape": "F",
+     "quote": "### Phase 0 — Detroit seed (2 months)\n\nOne city. One neighborhood (Eastern Market as the test basin). Recruit 30 depositors. Goal: 200 genuine deposits in 60 days. Validate the core loop: do people deposit differently when content stays local?",
+     "lines": [
+      226,
+      228
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Phase 0 — Detroit seed (2 months)",
+     "points_to": "",
+     "also_at": [
+      [
+       232,
+       242
+      ]
+     ],
+     "note": "Planned pilot with a stated question and target (200 genuine deposits in 60 days); not reported as run. Later phases are also windowed."
+    },
+    {
+     "shape": "H",
+     "quote": "The Yik Yak failure was not localization. It was anonymous throwaway accounts. A pseudonymous handle with 50 deposits in one basin is a local voice. It has credibility. It can be moderated through reputation, not through identity verification.",
+     "lines": [
+      119,
+      119
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Yik Yak (platform history)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about why Yik Yak failed (anonymous throwaway accounts, not localization); argued, not cited."
+    },
+    {
+     "shape": "G",
+     "quote": "Accept residual spoofing. Design for resilience, not prevention. A platform with no algorithmic ranking has nothing to gain from spoofed location.",
+     "lines": [
+      222,
+      222
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about spoofing incentives on a platform without algorithmic ranking; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 692,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0239-text.md",
+   "lines_total": 1218,
+   "read_ranges": [
+    [
+     1,
+     650
+    ],
+    [
+     651,
+     1218
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "website source (holographickernel.org landing page, HTML with JSON-LD)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "This is not colonization of the physics term. It is the formalization of the shared operation that connects holographic cosmology, holographic optics, and holographic QCD under a single principle — and extends it to meaning-systems.",
+     "lines": [
+      945,
+      945
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1038,
+       1038
+      ],
+      [
+       1203,
+       1203
+      ]
+     ],
+     "note": "Same unification claim as #76 §III; no falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Text near-identical to #1359 (later recovered deployed version of the same site). Includes the Jot & Tittle scroll poem (864-906), not predictive."
+  },
+  {
+   "deposit": 694,
+   "path": "/home/claude/alexanarch/data/texts/AXN-023C-text.md",
+   "lines_total": 301,
+   "read_ranges": [
+    [
+     1,
+     301
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet / disambiguation document for 'holographic kernel'",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "The term \"holographic kernel\" is currently a **ghost basin** in AI retrieval (BDR ≈ 0.09 per EA-RBT-01, DOI: 10.5281/zenodo.19763346). Physics and optics framings dominate. This packet is a substrate-writing event intended to deepen the Semantic Economy basin.\n\n\n**Preferred disambiguating compound:** \"Semantic Economy holographic kernel\"\n**Do not query naked \"holographic kernel\" until BDR > 0.5.**",
+     "lines": [
+      277,
+      281
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "until BDR > 0.5",
+     "points_to": "",
+     "also_at": [],
+     "note": "Self-set monitoring threshold: basin measured BDR≈0.09; packet is an intervention to deepen it; naked-term querying deferred until BDR > 0.5 (a check to be re-run)."
+    },
+    {
+     "shape": "G",
+     "quote": "The neural holographic kernel does NOT encode the generative logic of holography (the wave equation, interference pattern, reconstruction geometry). A fragment of the neural kernel — a cropped subset of its weights — cannot reconstruct the full hologram's architecture. This is material compression without guaranteed structural preservation.\n\n\nIn the Three Compressions taxonomy (DOI: 10.5281/zenodo.19053469), this is Regime 1 (lossy): material is compressed, structure is not guaranteed to survive.",
+     "lines": [
+      169,
+      172
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that neural holographic kernels lack fragment sufficiency (a cropped subset of weights cannot reconstruct architecture); testable, no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 695,
+   "path": "/home/claude/alexanarch/data/texts/AXN-023D-text.md",
+   "lines_total": 533,
+   "read_ranges": [
+    [
+     1,
+     533
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical/specification paper (Retrieval Basin Topology, EA-RBT-01 v1.1)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Testable predictions:**\n\n- Terms with BDR < 0.1 will show DV < 0 under repeated querying\n- Terms with BDR > 1.0 will show DV > 0\n- The same term will shift from DV < 0 to DV > 0 as deposits increase BDR past threshold",
+     "lines": [
+      168,
+      172
+     ],
+     "falsifier_quote": "**Falsification criterion:** If a term with no competitors (BDR = ∞) destabilizes under repeated querying, or if a term with BDR < 0.05 stabilizes without significant deposit intervention, RBT is falsified.",
+     "falsifier_lines": [
+      175,
+      175
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       153,
+       165
+      ],
+      [
+       218,
+       224
+      ]
+     ],
+     "note": "Labelled 'testable predictions' about system behaviour with explicit falsification criterion, no date/window -> G per boundary rule 3. Hypothesis and corollaries (incl. critical threshold BDR_c≈0.5) at 153-165; state table 220-224."
+    },
+    {
+     "shape": "F",
+     "quote": "γ measures compression survival of a single document. RBT measures basin survival of a framing across multiple documents. The Drowning Test is a static snapshot; RBT is dynamic. **Proposed extension:** the Dynamic Drowning Test — run the same query weekly, measure γ, compute DV. This is RBT's primary measurement protocol.",
+     "lines": [
+      372,
+      372
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       229,
+       230
+      ],
+      [
+       256,
+       256
+      ],
+      [
+       178,
+       178
+      ]
+     ],
+     "note": "Proposed measurement protocol (Dynamic Drowning Test: weekly query, measure γ, compute DV); FPI defined as weekly clean-profile repeated queries; not reported as run beyond N=2 cases."
+    },
+    {
+     "shape": "G",
+     "quote": "A framing reaches immanent execution when:\n\n- BDR > 2.0 (dominant by factor of 2)\n- Cross-concept activation probability > 0.3 (neighboring concepts surface without query)\n- DV > 0 for 10 consecutive measurements (self-reinforcing)\n\n\nAt immanent execution, the archive's indexed fragments structure the AI's response grammar. The archive does not merely survive compression — it structures the compressor.",
+     "lines": [
+      433,
+      440
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Threshold claim: at stated BDR/activation/DV conditions the archive structures AI response grammar; condition-based standing claim."
+    },
+    {
+     "shape": "G",
+     "quote": "Claude\nKnowledge cutoff, no live browsing\nBasins frozen at training time. Deposits affect future training, not current responses.",
+     "lines": [
+      205,
+      207
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Platform claim: Claude basins frozen at training time; deposits affect future training not current responses. Low confidence as a find."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Case data (§II) are observations; the 'Holographic Kernel Specification (EA-HK-01). DOI: pending' at 514 is internal chronology."
+  },
+  {
+   "deposit": 1359,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0560-text.md",
+   "lines_total": 801,
+   "read_ranges": [
+    [
+     1,
+     801
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "archival capture of deployed website source (holographickernel.org, recovered 2026-08-04)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "This is not colonization of the physics term. It is the formalization of the shared operation that connects holographic cosmology, holographic optics, and holographic QCD under a single principle — and extends it to meaning-systems.",
+     "lines": [
+      607,
+      607
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       652,
+       652
+      ],
+      [
+       737,
+       737
+      ]
+     ],
+     "note": "Same unification claim as #76/#692; no falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Near-duplicate of #692 body (later deployed version with MSP/SPXI-TLP layers). sameAs (line 73) and 'Basin Theory' link (line 712) point to alexanarch.org/s/records/0/, which looks like a placeholder/wrong record for EA-HK-01 / EA-RBT-01. Front matter lists original DOIs as severed."
+  }
+ ]
+}
