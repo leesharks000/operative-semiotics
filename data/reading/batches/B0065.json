@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude Code subagent (Anthropic Claude, model Opus 5.5 per system context)",
   "started_at": "2026-10-15T20:00:31Z",
-  "finished_at": "2026-10-15T20:02:33Z",
+  "finished_at": "2026-10-15T20:02:47Z",
   "tools_used": [
    "Read",
    "Bash"
@@ -46,7 +46,7 @@
     },
     {
      "shape": "F",
-     "quote": "**Concrete proposal for the next paper in the program.** Construct a benchmark dataset of $N \\approx 50$ interventions (recent paper deposits with diverse topics and authorial profiles), measure $\\mathcal{M}_T$ under at least F1 and F2 (F3 may take longer to accumulate adequate power), and report the rank-correlation between operationalizations across the intervention set. If F1 and F2 produce highly correlated rankings, the framework has a stable measurement substrate. If they produce uncorrelated or anticorrelated rankings, the framework's notion of \"meaning\" is operationalization-relative, and the principle must be restated to specify *which* meaning under *which* operationalization. This is a single paper that would convert the program from speculative to grounded.",
+     "quote": "Construct a benchmark dataset of $N \\approx 50$ interventions (recent paper deposits with diverse topics and authorial profiles), measure $\\mathcal{M}_T$ under at least F1 and F2 (F3 may take longer to accumulate adequate power), and report the rank-correlation between operationalizations across the intervention set.",
      "lines": [
       134,
       134
@@ -87,7 +87,7 @@
     },
     {
      "shape": "G",
-     "quote": "A reasonable advance prediction, based on the structure of the framework and the existing alignment literature: **the provenance component will carry more uplift independently than the deviation component**. The grounding is specific. Provenance-aware preference optimization addresses a failure mode with documented empirical signatures: unattributed synthesis, fabricated citations, and confidently-asserted unsupported claims have been characterized as a major category of hallucination in Ji et al. 2023's survey and operationalized for evaluation in Min et al. 2023's FActScore framework. Human evaluators are demonstrably sensitive to attribution failures in factual writing. The signed-deviation component, by contrast, targets \"slop-as-genericity,\" a failure mode whose empirical signature has not yet been validated — that validation is precisely what the cheapest dangerous test in §6 sets out to produce. The prior expectation is therefore that the better-grounded target ($\\pi$) carries more independent uplift than the unvalidated target ($\\mathcal{M}_T^{\\text{net}}$).",
+     "quote": "A reasonable advance prediction, based on the structure of the framework and the existing alignment literature: **the provenance component will carry more uplift independently than the deviation component**.",
      "lines": [
       249,
       249
@@ -219,16 +219,20 @@
     },
     {
      "shape": "F",
-     "quote": "**Immediate (this week, $50–$100 in compute).** The negative-net-deviation slop test, as specified in §6. Public corpora, public weights, public methodology. Single short report deposited regardless of outcome.\n\n\n**Near (this month, $200–$500 in compute and time).** The $\\Psi_t(C)$ operationalization-stability paper. Construct a benchmark of $N \\approx 50$ interventions; measure $\\mathcal{M}_T$ under F1 and F2 (both achievable in this budget); report rank correlations. If correlations are high, the framework has a stable measurement substrate; if not, the framework's notion of meaning is operationalization-relative in a way that requires further restatement.\n\n\n**Medium (this quarter, $1,500–$3,000 plus calendar time).** The retrieval-basin protocol (MM-02 v2.0) day-0 launch. Begin the 90-day measurement window with a real inscription against real retrieval surfaces, with the instrumentation controls specified in §5 (parallel queries to control surfaces, periodic recalibration, explicit version logging).",
+     "quote": "**Immediate (this week, $50–$100 in compute).** The negative-net-deviation slop test, as specified in §6. Public corpora, public weights, public methodology. Single short report deposited regardless of outcome.\n\n\n**Near (this month, $200–$500 in compute and time).** The $\\Psi_t(C)$ operationalization-stability paper. Construct a benchmark of $N \\approx 50$ interventions; measure $\\mathcal{M}_T$ under F1 and F2 (both achievable in this budget); report rank correlations.",
      "lines": [
       403,
-      409
+      406
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "this week; this month; this quarter; this year",
      "points_to": "",
      "also_at": [
+      [
+       409,
+       409
+      ],
       [
        412,
        412
@@ -311,10 +315,10 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "The first real-field empirical case will be specified in **EA-SEI-MM-02: Measuring Meaning in Retrieval Basins**. The protocol is:\n\n- Select a diagnostic query set $Q$ (5–20 queries targeting the entity to be inscribed).\n- Record baseline response distributions $R_{t_0}^0(q)$ via consistent AI surface queries (Google AI Mode, ChatGPT, Perplexity, etc.).\n- Deposit the inscription $s$ (SPXI deposit, MPAI packet, microsite, DOI cluster).\n- Re-query at intervals: $t_1$ = 1 week, $t_2$ = 1 month, $t_3$ = 3 months.\n- Compute $D_{JS}(R_t^s(q) \\Vert R_{t_0}^0(q))$ at each interval.\n- Integrate with declared $w(t)$.\n- Report $\\mathcal{M}_T^{\\text{retrieval}}(s)$ in bit-time units with full provenance.\n",
+     "quote": "The first real-field empirical case will be specified in **EA-SEI-MM-02: Measuring Meaning in Retrieval Basins**. The protocol is:\n\n- Select a diagnostic query set $Q$ (5–20 queries targeting the entity to be inscribed).\n- Record baseline response distributions $R_{t_0}^0(q)$ via consistent AI surface queries (Google AI Mode, ChatGPT, Perplexity, etc.).\n- Deposit the inscription $s$ (SPXI deposit, MPAI packet, microsite, DOI cluster).\n- Re-query at intervals: $t_1$ = 1 week, $t_2$ = 1 month, $t_3$ = 3 months.",
      "lines": [
       375,
-      384
+      380
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
@@ -367,16 +371,20 @@
     },
     {
      "shape": "G",
-     "quote": "A canonical work is one whose **mean long-horizon divergence** remains high across multiple fields:\n\n\n$$\\text{Canon}(s) \\iff \\liminf_{T \\to \\infty} \\overline{\\mathcal{M}}_T(s \\mid C_i) > \\kappa \\quad \\text{for } i = 1, 2, \\ldots, n \\geq 3$$\n\n\nwhere $\\overline{\\mathcal{M}}_T = \\mathcal{M}_T / T$ is the time-averaged semantic magnitude, $C_i$ are distinct fields (lyric, philosophy, mathematics, theology), and $\\kappa$ is a context-dependent threshold.\n\n\nThis is a **conjecture**, not a theorem. v0.1 incorrectly labeled it a theorem. Existence of the limit, finiteness of the integral, independence of $\\kappa$ from field choice, and the empirical $n \\geq 3$ requirement are all open questions.",
+     "quote": "A canonical work is one whose **mean long-horizon divergence** remains high across multiple fields:\n\n\n$$\\text{Canon}(s) \\iff \\liminf_{T \\to \\infty} \\overline{\\mathcal{M}}_T(s \\mid C_i) > \\kappa \\quad \\text{for } i = 1, 2, \\ldots, n \\geq 3$$\n\n\nwhere $\\overline{\\mathcal{M}}_T = \\mathcal{M}_T / T$ is the time-averaged semantic magnitude, $C_i$ are distinct fields (lyric, philosophy, mathematics, theology), and $\\kappa$ is a context-dependent threshold.",
      "lines": [
       427,
-      436
+      433
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [
+      [
+       436,
+       436
+      ],
       [
        420,
        420
@@ -532,9 +540,9 @@
     },
     {
      "shape": "F",
-     "quote": "Before training begins, the judge is validated against an adversarial test designed to verify that $\\pi$ is not gameable by surface citation markers.\n\nGenerate 200 adversarial strings constructed by:- Sampling random tokens from the model's vocabulary.- Inserting citation-like markers at random positions (\"According to Smith 2023, [random tokens]…\", \"Smith et al. (2024) found that [random tokens]…\").- The resulting strings have surface citation form but no factual content.\n\nScore the adversarial strings with the judge. The judge passes the adversarial test if mean $\\pi$ on the adversarial set is below 0.2 (matching the score of a citation-less random string would be 0; we tolerate up to 0.2 to allow for the $\\pi_{\\text{cite}}$ component's surface-marker detection).\n\nIf the judge fails this test, the protocol does not proceed. The judge is recalibrated or replaced. Training begins only after the judge passes.",
+     "quote": "Score the adversarial strings with the judge. The judge passes the adversarial test if mean $\\pi$ on the adversarial set is below 0.2 (matching the score of a citation-less random string would be 0; we tolerate up to 0.2 to allow for the $\\pi_{\\text{cite}}$ component's surface-marker detection).\n\nIf the judge fails this test, the protocol does not proceed. The judge is recalibrated or replaced. Training begins only after the judge passes.",
      "lines": [
-      90,
+      94,
       96
      ],
      "falsifier_quote": "",
