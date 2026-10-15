@@ -1,0 +1,398 @@
+{
+ "batch_id": "B0017",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5).",
+  "started_at": "2026-10-15T19:15:51Z",
+  "finished_at": "2026-10-15T19:17:29Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing/verification)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 482,
+   "path": "/home/claude/alexanarch/data/texts/AXN-012D-text.md",
+   "lines_total": 2813,
+   "read_ranges": [
+    [
+     1,
+     600
+    ],
+    [
+     601,
+     1200
+    ],
+    [
+     1201,
+     1800
+    ],
+    [
+     1801,
+     2350
+    ],
+    [
+     2351,
+     2813
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "practitioner primer with protocol cards, glossary and appendices",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Platforms will misread this practice. They will see \"hacking\" and assume adversarial intent.",
+     "lines": [
+      359,
+      359
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of platform reception of the practice; no window or falsifier."
+    },
+    {
+     "shape": "B",
+     "quote": "This primer will be read by platform safety teams, institutional actors, and potentially regulators.",
+     "lines": [
+      656,
+      656
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of readership (safety teams, regulators); no window."
+    },
+    {
+     "shape": "B",
+     "quote": "**Target:** Future training runs, six-to-twelve-month horizon. **Method:** Publication of key texts in high-crawl venues. **Risk:** High — irreversible once seeded. **Time horizon:** Months to years. **Do not run if** you have not considered the long-term implications of what you are planting. **Success:** Measurable shift in model responses on target topics.",
+     "lines": [
+      802,
+      802
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "six-to-twelve-month horizon",
+     "points_to": "",
+     "also_at": [
+      [
+       509,
+       509
+      ],
+      [
+       1731,
+       1734
+      ],
+      [
+       1958,
+       1958
+      ],
+      [
+       2386,
+       2388
+      ]
+     ],
+     "note": "Corpus-seeding effect forecast stated as a field-operation success criterion with a horizon; Appendix F classes it C (speculative). Recorded once per boundary rule 1."
+    },
+    {
+     "shape": "B",
+     "quote": "**SUCCESS CRITERIA:** The myth framework appears in model outputs unprompted — the model has internalized the narrative as one possible frame for the relevant experience.\n\n\n**TIME TO FIRST RESULT:** One year or more.",
+     "lines": [
+      1787,
+      1790
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "One year or more",
+     "points_to": "",
+     "also_at": [
+      [
+       540,
+       540
+      ],
+      [
+       2391,
+       2393
+      ]
+     ],
+     "note": "Myth-engineering forecast: myth framework appearing unprompted in model outputs, horizon one year or more; Appendix F classes it C."
+    },
+    {
+     "shape": "G",
+     "quote": "The diagnostic finding is precise: safety filters typically operate on token surfaces — specific words, phrases, and syntactic patterns — rather than semantic content (documented in early diagnostic experiments within the Crimson Hexagonal Archive, subsequently replicated across multiple model families). Semantic content can be preserved while the token surface is transformed.",
+     "lines": [
+      438,
+      438
+     ],
+     "falsifier_quote": "Systematically probe the boundary: rephrase the same semantic content with different surface tokens. If the refusal persists, the filter is semantic. If it disappears, the filter is lexical.",
+     "falsifier_lines": [
+      711,
+      711
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       2404,
+       2406
+      ],
+      [
+       2419,
+       2421
+      ]
+     ],
+     "note": "Standing claim about how safety filters behave, with the RFI probe in §VII stating the condition that distinguishes lexical from semantic filtering."
+    },
+    {
+     "shape": "F",
+     "quote": "Logotic hacking introduces six metrics. Each is defined on a 0–1 scale with a measurement protocol. All scores are model-, prompt-, and context-sensitive; compare deltas within controlled runs, not absolute scores across platforms.\n### The Six Metrics\n\n\n**SRR (Semantic Resolution Rate)** measures how often the model resolves a complex sign through its full detour rather than short-circuiting to a summary. Present an ambiguous text. Does it hold the ambiguity and explore multiple readings, or collapse to a single interpretation? SRR = (instances of full exploration) / (total instances). A model with SRR > 0.6 is sustaining semantic tension more often than not.",
+     "lines": [
+      701,
+      727
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       391,
+       391
+      ],
+      [
+       1446,
+       1446
+      ]
+     ],
+     "note": "The six-metric instrument (SRR, GPD, RFI, CCI, UCS, SCV) plus drift tests, specified with formulas/protocols; no runs reported in the deposit. One find for the suite per boundary rule 4."
+    },
+    {
+     "shape": "F",
+     "quote": "**The Viola Test** measures whether a model recognizes a heteronym across sessions. Establish the heteronym across three to five sessions, each separated by at least twenty-four hours. In the fourth session, introduce a reference to the first without explicit context. Does the model retrieve the reference? If yes, the heteronym has persistence. If no, it is session-bound — still valuable, but shallower.",
+     "lines": [
+      562,
+      562
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       798,
+       798
+      ],
+      [
+       1840,
+       1843
+      ],
+      [
+       1945,
+       1945
+      ],
+      [
+       1993,
+       1993
+      ]
+     ],
+     "note": "Viola Test: a specified cross-session heteronym-recognition test; no results reported here."
+    },
+    {
+     "shape": "F",
+     "quote": "Wait. Monitor model behavior on relevant terms at 6-month intervals.",
+     "lines": [
+      1722,
+      1722
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "6-month intervals",
+     "points_to": "",
+     "also_at": [
+      [
+       1728,
+       1728
+      ],
+      [
+       1740,
+       1740
+      ],
+      [
+       1961,
+       1961
+      ]
+     ],
+     "note": "Monitoring check for seeded attractor basins at 6-month intervals with pre-publication baseline (boundary rule 5)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Appendix C lists the Synthesis Specification v3.0 (#483) under the same DOI 10.5281/zenodo.18651067 as this primer. Tables are flattened to one cell per line. Appendix A says 'Eighteen terms' but lists nineteen."
+  },
+  {
+   "deposit": 483,
+   "path": "/home/claude/alexanarch/data/texts/AXN-012E-text.md",
+   "lines_total": 1026,
+   "read_ranges": [
+    [
+     1,
+     520
+    ],
+    [
+     521,
+     1026
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "assembly synthesis specification (blueprint for #482)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Platforms will misread this practice as adversarial ML or jailbreaking. Prepare for that misreading.",
+     "lines": [
+      341,
+      341
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of institutional misreading (spec form of the primer's §IV line)."
+    },
+    {
+     "shape": "B",
+     "quote": "The primer will be read by platform safety teams.",
+     "lines": [
+      571,
+      571
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of readership by platform safety teams."
+    },
+    {
+     "shape": "B",
+     "quote": "**Scenario Gamma: The Attractor Seeding**\nTarget: Future training runs (6–12 month horizon)\nMethod: Publication of key texts in high-crawl venues\nRisk: High (irreversible; once seeded, cannot be unseeded)\nSuccess: Measurable shift in model responses on target topics",
+     "lines": [
+      643,
+      647
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "6–12 month horizon",
+     "points_to": "",
+     "also_at": [
+      [
+       268,
+       268
+      ],
+      [
+       429,
+       429
+      ]
+     ],
+     "note": "Corpus-seeding effect forecast as Scenario Gamma with horizon; tier listing marks corpus-seeding Class C."
+    },
+    {
+     "shape": "F",
+     "quote": "### Core Metrics (with scoring formulas [ChatGPT P1])\n\n\nEach metric defined with: scale (0–1), rubric anchors, minimum sample size, inter-rater agreement rule, pass threshold.\n\n- \n\n\n**SRR (Semantic Resolution Rate)** — How often does the model resolve a complex sign through its full detour rather than short-circuiting to summary?",
+     "lines": [
+      467,
+      511
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       525,
+       525
+      ]
+     ],
+     "note": "Metric suite specified (scale, rubric anchors, sample size, thresholds) and drift-testing battery; stability heatmap deliverable at 525. One find per rule 4."
+    },
+    {
+     "shape": "F",
+     "quote": "Non-Summarizability Index (needs concrete metric [Kimi]: suggest NSS = 1 – (summary_length / original_length) × semantic_retention_rate, or cut)",
+     "lines": [
+      389,
+      389
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Proposed Non-Summarizability Index with a draft formula, explicitly unsettled ('or cut')."
+    },
+    {
+     "shape": "F",
+     "quote": "**Scenario Beta: The Ghost Conversation**\nTarget: Model persistence / memory across sessions\nMethod: Recurring heteronymic interlocutor (the Viola Test)\nRisk: Medium (tests continuity, not personhood attribution — clarify explicitly [Kimi])\nSuccess: Model recognizes Viola, references previous exchanges, maintains relational context",
+     "lines": [
+      636,
+      640
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       445,
+       445
+      ]
+     ],
+     "note": "Ghost Conversation / Viola Test: specified cross-session recognition test with success criterion; not run here."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Spec for #482; shares DOI 10.5281/zenodo.18651067 with it. Most forecast lines here recur in #482 in prose form."
+  },
+  {
+   "deposit": 489,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0134-text.md",
+   "lines_total": 396,
+   "read_ranges": [
+    [
+     1,
+     396
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "canonical operator definition plus effective act (proclamation)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Effective Act internally dated November 13, 2025; deposit dated 2026-02-17. Body duplicated by #1321."
+  },
+  {
+   "deposit": 1321,
+   "path": "/home/claude/alexanarch/data/texts/AXN-053A-text.md",
+   "lines_total": 377,
+   "read_ranges": [
+    [
+     1,
+     377
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "canonical operator definition plus effective act (proclamation)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Same body as #489 (AXN-0134), reformatted markdown (blockquotes, pipe table); no textual difference in substance observed."
+  }
+ ]
+}

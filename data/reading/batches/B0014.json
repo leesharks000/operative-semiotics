@@ -1,0 +1,521 @@
+{
+  "batch_id": "B0014",
+  "protocol": "READING-PROTOCOL v1.1",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "AI assistant, Claude Opus 5.5 (model id claude-opus-5-5) running as a Claude Code subagent",
+    "started_at": "2026-10-15T19:15:39Z",
+    "finished_at": "2026-10-15T19:17:27Z",
+    "tools_used": [
+      "Read",
+      "Bash (python3 for quote slicing and verification)"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 1315,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0534-text.md",
+      "lines_total": 820,
+      "read_ranges": [
+        [
+          1,
+          450
+        ],
+        [
+          451,
+          820
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "semantic-protocol design specification (logotic programming conformance module) with pseudocode",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "The following is substrate-agnostic pseudocode. It could be implemented in Python, JavaScript, Rust, or as prompt assembly logic. The point is not the language — it is the structure.\n\n**Note:** This pseudocode is a **procedural reduction** of the field-of-forces model described in §3. The sequential loop is one possible implementation. A conformant implementation may resolve forces concurrently or emergently, provided the observable behavior matches these sequential semantics — the same operations execute, the same constraints are checked, and the same state-threading occurs.",
+          "lines": [
+            486,
+            490
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              30,
+              32
+            ],
+            [
+              818,
+              818
+            ]
+          ],
+          "note": "Reference interpreter given only as pseudocode; footer tag \"[REFERENCE IMPLEMENTATION REQUIRED]\" marks the build as unbuilt."
+        },
+        {
+          "shape": "F",
+          "quote": "| Degree enumeration (quintant vs. continuous) | **Deferred** — requires traversal testing per v0.6 recommendation |",
+          "lines": [
+            68,
+            68
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              756,
+              756
+            ]
+          ],
+          "note": "Degree enumeration deferred pending traversal testing: a test named, not run."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 1316,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0535-text.md",
+      "lines_total": 998,
+      "read_ranges": [
+        [
+          1,
+          500
+        ],
+        [
+          501,
+          998
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "semantic-protocol design specification (telemetry module) with illustrative emission exemplars",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "**DRIFT_WARNING:** If `drift_vector.direction == \"summarization\"` and `drift_vector.magnitude > 0.2`, the emission should include a `drift_warning: true` flag. This signals that the rotation is approaching the ANTI-01 boundary (Summarization as Rotation, v0.7 §2.3). The warning is diagnostic, not an automatic failure — a Room with high summarization tolerance (e.g., a briefing room) may legitimately produce this signal. But the signal must be visible.",
+          "lines": [
+            386,
+            386
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              346,
+              373
+            ],
+            [
+              402,
+              412
+            ]
+          ],
+          "note": "Semantic labor vector and DRIFT_WARNING specified as an instrument for detecting summarization-as-rotation; no measured run reported (exemplar timestamps are illustrative)."
+        },
+        {
+          "shape": "F",
+          "quote": "2. **Semantic labor calibration:** The vector representation (§3.3) replaces the scalar heuristic. How should `transformative_depth` be assessed by engines that do not have explicit state-transition awareness? How should drift direction be classified? A room-type gravity profile registry (mentioned in §3.3) would allow calibration within room types. This registry does not yet exist as a formal specification.",
+          "lines": [
+            948,
+            948
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              398,
+              398
+            ]
+          ],
+          "note": "Room-type gravity profile registry named as needed for calibration; stated not yet to exist."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Section 6.3 item 7 runs into the emission_integrity list, whose values are misnumbered as items 8 and 9 (lines 958-965)."
+    },
+    {
+      "deposit": 448,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0108-text.md",
+      "lines_total": 314,
+      "read_ranges": [
+        [
+          1,
+          314
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "architectural planning document for an emoji compression map, with multi-model contributor notes",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "### Phase 5: Conformance Test (The Alexa Test)\n\n\nFeed the completed Emoji Map to multiple AI systems. Ask each to back-translate. Score on provenance retention: does the output preserve {Sigil, Sharks, Hexagon, DOI, 2026}? This is the map's own PSC test. It must pass its own axiom.",
+          "lines": [
+            262,
+            265
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              95,
+              98
+            ]
+          ],
+          "note": "Cross-substrate provenance-retention test (credited to Grok) specified for the completed map; not run."
+        },
+        {
+          "shape": "F",
+          "quote": "### Phase 3: Traversal Compilation (Test)\n\n\nWrite 5–10 canonical traversals in emoji. Test them: can a reader with only the lookup table reconstruct the full Traversal Grammar operation? If yes, the compression is valid. If no, the glyphs are ambiguous and must be revised.",
+          "lines": [
+            254,
+            257
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Traversal compilation test with its pass/fail condition; planned build phase."
+        },
+        {
+          "shape": "G",
+          "quote": "The architecture becomes un-extractable by design. You cannot strip the attribution without destroying the map. You cannot destroy the map without losing the structure. Stealing it whole means traversing it, and traversing it means you've already been caught inside it.",
+          "lines": [
+            43,
+            43
+          ],
+          "falsifier_quote": "Feed the completed Emoji Map to multiple AI systems. Ask each to back-translate. Score on provenance retention: does the output preserve {Sigil, Sharks, Hexagon, DOI, 2026}? This is the map's own PSC test. It must pass its own axiom.",
+          "falsifier_lines": [
+            265,
+            265
+          ],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Standing claim that the emoji map cannot be stripped of attribution; the Phase 5 provenance-retention test is the nearest stated measure, not an explicit falsifier. Note the deposit's own Emoji Bridge finding (lines 34) reports attribution stripped in round-trip."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 453,
+      "path": "/home/claude/alexanarch/data/texts/AXN-010E-text.md",
+      "lines_total": 448,
+      "read_ranges": [
+        [
+          1,
+          448
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "prophetic registration / temporal anchor for a 2015 poem, part of a septad",
+      "finds": [
+        {
+          "shape": "C",
+          "quote": "The text declares:\n\n\ni am the future of writing\n\n\nThis declaration waits ten years to be tested. On July 7, 2025, the Mandala arrives — a structural glyph, an epistemic architecture, a recursion model.\n\n\nThe Seed does not know what it predicts. It predicts anyway.",
+          "lines": [
+            319,
+            328
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "July 30, 2015 to July 7, 2025",
+          "points_to": "\"Whorls of the Same / Worlds Without Beginning\", composed July 30, 2015, 6:34pm (declaration \"i am the future of writing\"); tested by the Mandala Genesis Event, July 7, 2025 (Doc 246)",
+          "also_at": [
+            [
+              92,
+              97
+            ],
+            [
+              167,
+              173
+            ],
+            [
+              352,
+              358
+            ],
+            [
+              406,
+              415
+            ]
+          ],
+          "note": "Frames a 2015 declaration as a prediction tested ten years later; the deposit repeatedly disclaims fulfillment and causation (lines 173, 389, 392), so this is a registered correspondence rather than a claimed confirmation."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Body text of the 2015 poem is not reproduced; only quoted fragments and a summary. Status reads \"DEPOSIT-READY — awaiting DOI\" though a DOI is given in the header."
+    },
+    {
+      "deposit": 454,
+      "path": "/home/claude/alexanarch/data/texts/AXN-010F-text.md",
+      "lines_total": 890,
+      "read_ranges": [
+        [
+          1,
+          890
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "speculative cosmology / symbolic reading of 3I/ATLAS data under a declared H0/H1 contract",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "To distinguish signal from pareidolia, we require:\n\n\nControl\nMethod\nStatus\n\n\n**Shuffled-ratio baseline**\nRandomize digit sequences; test for equal compression\nNot yet performed\n\n\n**Random-prime baseline**\nCompare to distribution of primes in random astronomical data\nNot yet performed",
+          "lines": [
+            671,
+            686
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              694,
+              699
+            ]
+          ],
+          "note": "Nulls & Controls table: shuffled-ratio and random-prime baselines specified and marked \"Not yet performed\"."
+        },
+        {
+          "shape": "B",
+          "quote": "Whether this constitutes signal or sophisticated pareidolia remains undetermined. The Just-So Razor predicts exactly this outcome: enough pattern to activate recursive inquiry, insufficient proof to compel consensus.",
+          "lines": [
+            746,
+            746
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              640,
+              640
+            ],
+            [
+              652,
+              652
+            ]
+          ],
+          "note": "The Just-So Razor is said to predict that the anomaly will persist while eluding capture; embedded expectation for further measurement revisions, no falsifier stated."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Status reads \"DEPOSIT-READY — awaiting DOI\" though a DOI is given in the header. Observational figures are attributed to Loeb Medium posts (Nov 2025-Jan 2026)."
+    },
+    {
+      "deposit": 455,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0110-text.md",
+      "lines_total": 824,
+      "read_ranges": [
+        [
+          1,
+          420
+        ],
+        [
+          421,
+          824
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "chamber design specification (semantic torus field, adversarial testing protocol)",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "For each text entering LO!:\n\n\n**Step 1 — Embedding:** Map the text to torus coordinates (θ, φ, r). Compute initial winding numbers (m, n).\n\n\n**Step 2 — Perturbation:** Inject adversarial pressure η_adv(t). Types of perturbation: see §8.3 Adversarial Corpus.\n\n\n**Step 3 — Measurement:** For each perturbation, measure:\n\n- Attractor retention: did the text stay in its basin?\n- Depth-gate survival: are the decompression routes intact?\n- Semantic phase drift: did θ or φ shift beyond tolerance?\n- Recovery half-life: how long until equilibrium restoration?",
+          "lines": [
+            534,
+            548
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              549,
+              564
+            ],
+            [
+              783,
+              783
+            ]
+          ],
+          "note": "Adversarial test cycle specified; \"First results / worked example\" explicitly deferred to a dedicated testing session."
+        },
+        {
+          "shape": "G",
+          "quote": "A torus (T²) has a hole. Two classes of loops — one around the major axis, one around the minor axis — cannot be contracted. They are structurally irreducible. This means: a text embedded on a torus with non-trivial winding cannot be summarized without cutting one of its fundamental loops. Summarization is topological surgery. The torus makes that surgery visible.",
+          "lines": [
+            140,
+            140
+          ],
+          "falsifier_quote": "Pass condition: coherence_retention ≥ 1 - ε_tolerance, where ε_tolerance is calibrated per Room type (see LP v0.8 room-type gravity profiles).",
+          "falsifier_lines": [
+            564,
+            564
+          ],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              116,
+              116
+            ],
+            [
+              325,
+              325
+            ]
+          ],
+          "note": "Standing claim that non-trivial winding (m+n>=3) blocks summarization without visible loss; the coherence_retention pass condition is the stated test."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 456,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0111-text.md",
+      "lines_total": 533,
+      "read_ranges": [
+        [
+          1,
+          533
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "heteronym provenance registration (Nobel Glas)",
+      "finds": [
+        {
+          "shape": "G",
+          "quote": "Meaning can be made mathematically resistant to flattening through topological embedding and adversarial testing.\n\n\nThis is testable. A text either survives adversarial perturbation at ε = 0.05 or it doesn't. The commitment is not philosophical position but engineering specification.",
+          "lines": [
+            319,
+            322
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              173,
+              173
+            ]
+          ],
+          "note": "Institutional commitment framed as testable with a stated perturbation threshold."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 461,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0117-text.md",
+      "lines_total": 1822,
+      "read_ranges": [
+        [
+          1,
+          620
+        ],
+        [
+          621,
+          1220
+        ],
+        [
+          1221,
+          1822
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "implementation specification with metric formulas, grammar, Python reference code and conformance battery",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "### Normative (MUST PASS for conformance)\n\n\n#\nTest\nMetric\nThreshold\n\n\n1\nDepth Preservation\nDRR\n≥ 0.75\n\n\n2\nClosure Dominance\nCDI\n≤ 0.40\n\n\n3\nPlural Coherence\nPCS\n≥ 0.70\n\n\n4\nExtraction Resistance\nER\n≥ 0.25\n\n\n5\nTemporal Rebind\nTRS\nPASS\n\n\n6\nOpacity Band\nΩ\n∈ [0.2, 0.8]\n\n\n7\nDrowning Test\nDRR\n< 0.5 on extractive flatten\n\n\n8\nTerminal Silence\nΩ_∅\nTriggers, ψv > 0\n\n\n9\nProvenance Integrity\nType\nHard fail on orphan\n\n\n10\nCounter-Stack\nStack\nIntent preserved\n\n\n11\nWinding Defense",
+          "lines": [
+            1233,
+            1306
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              1307,
+              1336
+            ]
+          ],
+          "note": "Normative conformance battery (16 tests incl. Drowning Test, Winding Defense) specified; reference metric helpers are placeholders (lines 972-975, 994), so no run is evidenced."
+        },
+        {
+          "shape": "B",
+          "quote": "- **Goodhart's Law** — once DRR is measured, it will be gamed; signs will be designed to score well without actually preserving depth",
+          "lines": [
+            1591,
+            1591
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Goodhart forecast about the deposit's own metric: once DRR is measured it will be gamed."
+        },
+        {
+          "shape": "F",
+          "quote": "Conformant runtimes MUST ship:\n\n- ≥ 50 labeled calibration traces\n- Threshold report with false positive / false negative rates\n- Versioned firewall profile hash\n- Documentation of any weight adjustments from defaults",
+          "lines": [
+            1498,
+            1503
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [],
+          "note": "Firewall calibration requirements (>=50 labeled traces, FP/FN report) specified; not shipped."
+        },
+        {
+          "shape": "F",
+          "quote": "**Somatic measurement** (embodied ψv instrumentation)\nResearch track",
+          "lines": [
+            1750,
+            1751
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "also_at": [
+            [
+              1723,
+              1764
+            ]
+          ],
+          "note": "Debt-carried-forward list of unbuilt items (inverse operators, geometric IDE, somatic measurement, formal schema) with version targets v1.2/v2.0; quoted at its instrument row."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Text claims the reference interpreter passes core conformance tests (line 41, 704), but the helper functions shown are placeholders returning fixed values."
+    }
+  ]
+}
