@@ -6059,6 +6059,102 @@
     }
    },
    "launcher_note": "audit flagged 1 line claimed-not-returned: line 12374, which does not exist (the derived file has 12373 lines; the queued range ran one past the end, counting the empty position after the final newline). Launcher error in derive_voice.py, corrected 2026-10-15; xqueue ranges now end at lines_total. The reader read every existing line."
+  },
+  {
+   "run": "R-w20-B0113",
+   "batch_id": "B0113",
+   "phase": "wave 20",
+   "launched_at": "2026-10-15T20:30:32Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0113.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w20-B0114",
+   "batch_id": "B0114",
+   "phase": "wave 20",
+   "launched_at": "2026-10-15T20:30:32Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0114.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w20-B0115",
+   "batch_id": "B0115",
+   "phase": "wave 20",
+   "launched_at": "2026-10-15T20:30:32Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0115.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w20-B0116",
+   "batch_id": "B0116",
+   "phase": "wave 20",
+   "launched_at": "2026-10-15T20:30:32Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0116.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w20-B0117",
+   "batch_id": "B0117",
+   "phase": "wave 20",
+   "launched_at": "2026-10-15T20:30:32Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0117.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w20-B0118",
+   "batch_id": "B0118",
+   "phase": "wave 20",
+   "launched_at": "2026-10-15T20:30:32Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
+   "output": "data/reading/batches/B0118.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w20-X0009",
+   "batch_id": "X0009",
+   "phase": "wave 20 (X: derived own-voice text of #4)",
+   "launched_at": "2026-10-15T20:30:32Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled; X-batch",
+   "output": "data/reading/batches/X0009.json",
+   "status": "running"
+  },
+  {
+   "run": "R-w20-X0010",
+   "batch_id": "X0010",
+   "phase": "wave 20 (X: derived own-voice text of #4)",
+   "launched_at": "2026-10-15T20:30:32Z",
+   "reader_kind": "general-purpose subagent (background), spawned by the launcher",
+   "protocol": "READING-PROTOCOL v1.2",
+   "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
+   "instructions": "data/reading/READER-PROMPT.md with <ID> filled; X-batch",
+   "output": "data/reading/batches/X0010.json",
+   "status": "running"
   }
  ],
  "pilot_finding": "Calibration (CAL, blind re-read of the eight in-session readings): every substantive item found; four boundary disagreements of shape (stage text vs embedded forecast; a third-party timestamp left inside a forecast quote; a benchmark folded into its prediction; a monitoring check read as F). The reader found more than the in-session reading (G claims in #914 and #1182) and recorded one forecast several times across stage, table and ledger. Protocol revised to v1.1 with seven boundary rules."
