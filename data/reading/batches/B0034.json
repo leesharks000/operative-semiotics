@@ -1,0 +1,73 @@
+{
+ "batch_id": "B0034",
+ "protocol": "READING-PROTOCOL v1.1",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:24:45Z",
+  "finished_at": "2026-10-15T19:25:37Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing and JSON write; date -u)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1170,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A3-text.md",
+   "lines_total": 1671,
+   "read_ranges": [
+    [
+     1,
+     420
+    ],
+    [
+     421,
+     840
+    ],
+    [
+     841,
+     1260
+    ],
+    [
+     1261,
+     1470
+    ],
+    [
+     1471,
+     1671
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog-canonical DOI registry (Crimson Hexagon / NH-OS DOI Registry v7.0, March 2026): catalogue tables, precis index, orphan report, open items",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "**18790793** | 10.5281/zenodo.18790793 | T2 | position_paper | semantic_economy | E:10 *The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentation Layers, and the * future-perfect narration, definitional compression, institutional bridging, and crawlable deposition -- closely track techniques previously articulated",
+     "lines": [
+      1482,
+      1482
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "10.5281/zenodo.18790793, 'The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentation Layers' (2026-02-26), relative to the Citrini memo",
+     "also_at": [
+      [
+       431,
+       431
+      ],
+      [
+       435,
+       435
+      ]
+     ],
+     "note": "Registry precis fragment (auto-extracted, truncated) of another deposit asserting the memo's techniques track ones previously articulated by the archive; a chronology claim carried second-hand in a catalogue line. Weak: truncated mid-sentence."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body does not match the deposit title. Title and frontmatter name the emoji work 'question-mark 24 calendar = question-mark' (DOI 10.5281/zenodo.18512289, Ichabod Spellings), but the canonical bytes below the rule (lines 46-1671) are the whole CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (DOI 10.5281/zenodo.19055255, Lee Sharks), recovered from the blog post .../crimson-hexagon-nh-os-doi-registry-v70.html. The emoji work itself appears only as a one-line registry precis (lines 173, 177, 810, 1360). The recovery note's body-head gate pass looks mistaken: wrong body for this deposit. The registry also lists, as one-line precis only, deposits that later readers may want for the sweep: 'The Silent Migration: A Speculative Architectural Forecast' (10.5281/zenodo.18157917, line 930); 'The Shark That Preceded Itself' novelty-of-terms claim (10.5281/zenodo.18807239, lines 463, 1498); MRA-2025-1224-STABILIZATION 'validating retrocausal canon formation' (10.5281/zenodo.18369038, line 1222). These are catalogue summaries of other deposits, not this text's own claims, so they are not recorded as finds here. Open items/queued list (lines 1628-1653) is procedural backlog, not recorded."
+  }
+ ]
+}
