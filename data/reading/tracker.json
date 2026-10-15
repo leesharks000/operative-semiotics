@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 582,
-  "unread": 1034
+  "read": 586,
+  "unread": 1030
  },
- "h_covered": 582,
+ "h_covered": 586,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 749,
-  "F": 795,
+  "G": 755,
+  "F": 804,
   "E": 128,
   "B": 404,
-  "A": 209,
-  "C": 239,
-  "D": 209,
-  "H": 982
+  "A": 213,
+  "C": 241,
+  "D": 213,
+  "H": 989
  },
- "finds_verified": 3715,
- "finds_total": 3715,
+ "finds_verified": 3729,
+ "finds_total": 3747,
  "deposits": [
   {
    "deposit": 172,
@@ -41120,9 +41120,59 @@
    "tier": 1,
    "words": 15401,
    "batch_id": "B0143",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0143",
+     "run": "R-w24-B0143",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic), model Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:49:00Z",
+      "finished_at": "2026-10-15T20:50:24Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       300
+      ],
+      [
+       301,
+       600
+      ],
+      [
+       601,
+       891
+      ]
+     ],
+     "lines_total": 891,
+     "genre_observed": "mantle object with metadata packet for AI indexing (institutional disambiguation and evaluation protocol)",
+     "finds_by_shape": {
+      "G": 2,
+      "D": 1,
+      "A": 1,
+      "F": 4
+     },
+     "none_found": false,
+     "incidental": "Title heading duplicated at lines 41 and 43. The §1A.4 comparator table records others' dated works (AlgorithmWatch 2023 etc.) as context, not as archive priority.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 891,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1679,
@@ -41131,9 +41181,50 @@
    "tier": 1,
    "words": 6245,
    "batch_id": "B0143",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0143",
+     "run": "R-w24-B0143",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic), model Opus 5.5 (claude-opus-5-5) as stated in my system context",
+      "started_at": "2026-10-15T20:49:00Z",
+      "finished_at": "2026-10-15T20:50:24Z",
+      "tools_used": [
+       "Read",
+       "Bash"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       277
+      ]
+     ],
+     "lines_total": 277,
+     "genre_observed": "mantle object specifying a transmitted philosophical title, with lineage and source readings",
+     "finds_by_shape": {
+      "H": 4,
+      "D": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Title heading duplicated at lines 48 and 50. One lineage link is deliberately withheld (HELD) at the author's ruling.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 277,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1680,
@@ -41142,9 +41233,61 @@
    "tier": 1,
    "words": 21279,
    "batch_id": "B0144",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0144",
+     "run": "R-w24-B0144",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic); model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:49:02Z",
+      "finished_at": "2026-10-15T20:50:52Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       500
+      ],
+      [
+       501,
+       780
+      ],
+      [
+       781,
+       1059
+      ]
+     ],
+     "lines_total": 1059,
+     "genre_observed": "mantle object with metadata packet for AI indexing (entity evaluation spec, criteria, test battery)",
+     "finds_by_shape": {
+      "G": 2,
+      "D": 1,
+      "F": 3,
+      "A": 2,
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "Title heading duplicated at lines 41 and 43. In the §1A.3 table LC-O13 is listed before LC-O12 (ordering only). Round numbers (R1–R11) and reader-round numbers (RND-0–RND-6) are separate series. §11.1 exhibits are stated as not yet seated captures.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1681,
@@ -41153,9 +41296,50 @@
    "tier": 1,
    "words": 7804,
    "batch_id": "B0144",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0144",
+     "run": "R-w24-B0144",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic); model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:49:02Z",
+      "finished_at": "2026-10-15T20:50:52Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       288
+      ]
+     ],
+     "lines_total": 288,
+     "genre_observed": "theoretical paper with metadata packet (disambiguation SPXI vs AEO, with forecast section)",
+     "finds_by_shape": {
+      "A": 1,
+      "C": 2,
+      "D": 1,
+      "F": 1,
+      "H": 1,
+      "G": 2
+     },
+     "none_found": false,
+     "incidental": "Title appears twice (lines 35, 37). v0.4 of #1654/#1648; the §9 forecast is carried from earlier versions and its confirmation records (9.2.1) are new in v0.4.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1099,
