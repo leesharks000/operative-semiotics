@@ -18,7 +18,7 @@
   "D": 160,
   "H": 627
  },
- "finds_verified": 2500,
+ "finds_verified": 2505,
  "finds_total": 2535,
  "deposits": [
   {
@@ -30904,10 +30904,13 @@
      },
      "none_found": false,
      "incidental": "Range 2938-4610 covers records 190 (header at 2938) through 296 (ends at 4610). Many June-2026 records repeat d_full verbatim in analysis and consist largely of quoted machine composition; nothing was recorded from those quotations. Record 277 carries an erratum (2026-10-12) correcting a false absence claim about the 2014-12-01 joint byline.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 6,
+      "lines_returned": 1673,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -30984,7 +30987,8 @@
     ],
     "done": [
      "X0001",
-     "X0002"
+     "X0002",
+     "X0003"
     ],
     "scope": "own-voice fields read in full from a derived text; transcripts and observations excluded by protocol (see scripts/reading/derive_voice.py)"
    },
