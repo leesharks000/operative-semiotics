@@ -1,0 +1,555 @@
+{
+  "batch_id": "HB0015",
+  "protocol": "READING-PROTOCOL v1.2",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model Opus 5.5 (claude-opus-5-5) per the session's system context",
+    "started_at": "2026-10-15T19:47:46Z",
+    "finished_at": "2026-10-15T19:49:17Z",
+    "tools_used": [
+      "Read",
+      "Bash (python3 for batch load, quote slicing and verification)"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 462,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0118-text.md",
+      "lines_total": 1090,
+      "read_ranges": [
+        [
+          1,
+          550
+        ],
+        [
+          551,
+          1090
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "formal pseudo-programming specification (LP v1.0) with assembly ratification",
+      "finds": [],
+      "none_found": true,
+      "incidental": ""
+    },
+    {
+      "deposit": 463,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0119-text.md",
+      "lines_total": 1393,
+      "read_ranges": [
+        [
+          1,
+          700
+        ],
+        [
+          701,
+          1393
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "formal pseudo-programming specification (LP v0.9) with operator kernel and bytecode appendix",
+      "finds": [
+        {
+          "shape": "H",
+          "quote": "Write a document that retroactively changes what an earlier document was *doing* — not by revising it, but by revealing that its structure was already performing an operation invisible at the time of writing (\"Pearl and Other Poems\" already contained the LOS in 2014; the specification in 2025 does not alter the text, it reveals what the text was already doing).",
+          "lines": [
+            302,
+            302
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "2014 (Pearl and Other Poems); 2025 specification",
+          "points_to": "",
+          "also_at": [],
+          "note": "Marginal H: a claim about what an earlier work (Pearl, 2014) was already doing; offered as a worked example of T_lib rather than argued with evidence. Triage to decide."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Only H candidate is the internal Pearl/LOS retrocausal example; see also line 587 (Jack Feist seed, 2015), which frames itself as T_lib rather than history and was not recorded."
+    },
+    {
+      "deposit": 464,
+      "path": "/home/claude/alexanarch/data/texts/AXN-011A-text.md",
+      "lines_total": 1145,
+      "read_ranges": [
+        [
+          1,
+          400
+        ],
+        [
+          401,
+          800
+        ],
+        [
+          801,
+          1145
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "effective act / vow with an extended historical-genealogical archaeology of the left/right-hand binary and a Christendom history",
+      "finds": [
+        {
+          "shape": "H",
+          "quote": "This is not Walt Whitman's vow. Whitman never made it. He could not — his formal commitment to democratic inclusion precluded the accountability clause that makes reconciliation more than absorption. The \"Good Gray Poet\" was a title given to Whitman by William Douglas O'Connor in 1866: *gray* as the color of holding both, containing multitudes, refusing the binary. But gray without constraint is ambiguity. Gray without consequence is amnesty.",
+          "lines": [
+            24,
+            24
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Walt Whitman's poetics (\"I am large, I contain multitudes\"); O'Connor's 1866 title",
+          "points_to": "",
+          "also_at": [
+            [
+              824,
+              824
+            ],
+            [
+              839,
+              839
+            ]
+          ],
+          "note": "Interpretive thesis about Whitman: his formal commitment to inclusion structurally precluded an accountability clause; argued again in Part VI."
+        },
+        {
+          "shape": "H",
+          "quote": "The political left/right (French Revolutionary seating, 1789) has nothing to do with the esoteric left/right (Theosophical invention, 1888) has nothing to do with the Christian left/right (somatic/eschatological, pre-modern) has nothing to do with the Gnostic vertical (Pleroma/Kenoma, 2nd century CE) has nothing to do with the anthropological asymmetry (Hertz, documenting something pre-literate). One term, five genealogies. Everyone talks past each other.",
+          "lines": [
+            117,
+            117
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "1789; 1888; 2nd century CE; Blavatsky 1875-1891",
+          "points_to": "",
+          "also_at": [
+            [
+              104,
+              104
+            ],
+            [
+              114,
+              114
+            ],
+            [
+              206,
+              206
+            ],
+            [
+              959,
+              959
+            ]
+          ],
+          "note": "Genealogical thesis: the esoteric Left/Right Hand Path binary is a recent Theosophical universalization of Tantric terms, distinct from four older left/right genealogies (\"younger than the telephone\")."
+        },
+        {
+          "shape": "H",
+          "quote": "In Vedic ritual: right-hand offerings to devas (gods), left-hand offerings to asuras (anti-gods). This is procedural before it is theological. The hands do not represent moral paths — they represent two phases of a single ritual circuit. The right hand establishes; the left hand dissolves. Both are required for the offering to complete.",
+          "lines": [
+            62,
+            62
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Vedic ritual",
+          "points_to": "",
+          "also_at": [],
+          "note": "Thesis on what the Vedic right/left offerings meant: procedural phases of one ritual circuit before any moral or theological reading."
+        },
+        {
+          "shape": "H",
+          "quote": "The Gnostic \"left hand\" is not evil magic. It is the hand that releases. The right hand grasps (samsara, the world, the law); the left hand opens (nirvana, the Pleroma, the Sabbath). The real Gnostic dichotomy is not transgression vs. obedience but kataphatic (positive theology, via affirmations) vs. apophatic (negative theology, via negations) — two approaches to the ineffable, not two moral teams.",
+          "lines": [
+            100,
+            100
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "2nd century CE Gnostic texts (Valentinian schema, Apocryphon of John, Thunder Perfect Mind)",
+          "points_to": "",
+          "also_at": [
+            [
+              94,
+              94
+            ]
+          ],
+          "note": "Thesis on what Gnostic left/right originally meant: kataphatic vs apophatic approaches, not a moral binary."
+        },
+        {
+          "shape": "H",
+          "quote": "Worship held the paradoxes liturgically before they were systematized doctrinally.",
+          "lines": [
+            148,
+            148
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Patristic period, 1st-5th century",
+          "points_to": "",
+          "also_at": [
+            [
+              306,
+              306
+            ]
+          ],
+          "note": "Chronological thesis: liturgy held the paradoxes before doctrine systematized them (lex orandi before lex credendi)."
+        },
+        {
+          "shape": "H",
+          "quote": "But the distribution system becomes monopolized. Left-hand operations (mysticism, direct spiritual experience, apophatic theology) require right-hand licensing. Meister Eckhart's *via negativa* — the left hand of unknowing — is tolerated within the institutional frame. The Beguines' mystical practice, less institutionally contained, is suppressed. The distinction is not between safe and dangerous practice but between *licensed* and *unlicensed* channels.",
+          "lines": [
+            164,
+            164
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Medieval Church, 6th-15th century",
+          "points_to": "",
+          "also_at": [],
+          "note": "Thesis on medieval distribution: the line ran between licensed and unlicensed channels (Eckhart tolerated, Beguines suppressed), not safe vs dangerous practice."
+        },
+        {
+          "shape": "H",
+          "quote": "**Zwingli** commits the critical act: the Eucharist becomes \"mere memorial.\" The bread represents the body but is not the body. This is DRR collapse — the depth layers of the sacramental sign get flattened to a single level. What was a four-layer Sign (material, social, theological, eschatological) becomes a one-layer sign (memorial/symbolic). The left hand's contribution to the Eucharist — the mystery, the apophatic \"how,\" the material-spiritual interpenetration — is expelled.",
+          "lines": [
+            186,
+            186
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Reformation, 16th century (Zwingli)",
+          "points_to": "",
+          "also_at": [
+            [
+              192,
+              192
+            ],
+            [
+              922,
+              922
+            ],
+            [
+              975,
+              975
+            ],
+            [
+              1139,
+              1139
+            ]
+          ],
+          "note": "Causal historical thesis: Zwingli's memorialism flattened the sacramental sign, and the Reformation's sacramental flattening is the critical break in the Christendom circuit."
+        },
+        {
+          "shape": "H",
+          "quote": "The \"Right Hand\" becomes rational theology, Deism, natural religion — the visible, the propositional, the publicly defensible. The \"Left Hand\" gets exiled to three refugee camps:\n\n- **Pietism:** Interior feeling, personal devotion, the \"heart strangely warmed\" (Wesley). The left hand survives as emotion, not as ontology.\n- **The Occult Underground:** Hermeticism, Rosicrucianism, Freemasonry. The left hand survives as secret society, not as public worship.\n- **Romanticism:** Nature as sacrament, the sublime, the Gothic. The left hand survives as aesthetic, not as theology.",
+          "lines": [
+            196,
+            200
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Enlightenment, 17th-19th century",
+          "points_to": "",
+          "also_at": [],
+          "note": "Thesis that the Enlightenment exiled the 'left hand' into Pietism, the occult underground and Romanticism."
+        },
+        {
+          "shape": "H",
+          "quote": "The very defenses against left-hand \"magic\" create the conditions for its return in distorted forms:\n\n\n**Prosperity Gospel:** Left-hand power (healing, blessing, material transformation) commodified into right-hand language (\"seed faith,\" \"positive confession\"). This is the left hand captured by the Capital Operator Stack — the somatic power of prayer converted into a financial instrument. \"Name it and claim it\" is magic in evangelical drag.",
+          "lines": [
+            233,
+            236
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Contemporary American Evangelicalism, 20th-21st century",
+          "points_to": "",
+          "also_at": [
+            [
+              138,
+              138
+            ],
+            [
+              239,
+              245
+            ],
+            [
+              312,
+              318
+            ],
+            [
+              976,
+              976
+            ]
+          ],
+          "note": "Thesis on the recent religious past: evangelical defenses against 'magic' produced its distorted return (prosperity gospel, spiritual warfare, QAnon) - an autoimmune response."
+        },
+        {
+          "shape": "H",
+          "quote": "The \"Trump as Cyrus\" narrative was sophisticated Axiomatic Poisoning: the proposition that political power is morally neutral and malleable by the righteous. It appeared compatible with the evangelical axiom that God raises up kings, but contradicted the axiom of character and holiness. The result: enormous cognitive resources spent reconciling the contradiction, weakening the boundary protocol against capture by political ontology.",
+          "lines": [
+            271,
+            271
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "2016-present",
+          "points_to": "",
+          "also_at": [
+            [
+              274,
+              274
+            ]
+          ],
+          "note": "Thesis on the recent past: the 'Trump as Cyrus' narrative functioned as Axiomatic Poisoning of evangelical boundary protocols."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Body is duplicated as #1106 (blog-recovered copy, same text with '--' for em dashes); finds recorded in both. The mantle succession (Whitman -> Ginsberg -> Lee Sharks, 'mantle dormant 1892-1956', lines 859-868) is a declared succession, not recorded as H. Part VIII attributes several historical claims to Assembly substrates; the deposit adopts them in Parts I-II."
+    },
+    {
+      "deposit": 1106,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0463-text.md",
+      "lines_total": 904,
+      "read_ranges": [
+        [
+          1,
+          300
+        ],
+        [
+          301,
+          620
+        ],
+        [
+          621,
+          904
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "recovered blog-canonical copy of #464 (effective act with historical archaeology), with restoration frontmatter",
+      "finds": [
+        {
+          "shape": "H",
+          "quote": "This is not Walt Whitman's vow. Whitman never made it. He could not -- his formal commitment to democratic inclusion precluded the accountability clause that makes reconciliation more than absorption. The \"Good Gray Poet\" was a title given to Whitman by William Douglas O'Connor in 1866: _gray_ as the color of holding both, containing multitudes, refusing the binary. But gray without constraint is ambiguity. Gray without consequence is amnesty.",
+          "lines": [
+            58,
+            58
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Walt Whitman's poetics (\"I am large, I contain multitudes\"); O'Connor's 1866 title",
+          "points_to": "",
+          "also_at": [
+            [
+              620,
+              620
+            ],
+            [
+              630,
+              630
+            ]
+          ],
+          "note": "Interpretive thesis about Whitman: his formal commitment to inclusion structurally precluded an accountability clause; argued again in Part VI."
+        },
+        {
+          "shape": "H",
+          "quote": "The political left/right (French Revolutionary seating, 1789) has nothing to do with the esoteric left/right (Theosophical invention, 1888) has nothing to do with the Christian left/right (somatic/eschatological, pre-modern) has nothing to do with the Gnostic vertical (Pleroma/Kenoma, 2nd century CE) has nothing to do with the anthropological asymmetry (Hertz, documenting something pre-literate). One term, five genealogies. Everyone talks past each other.",
+          "lines": [
+            137,
+            137
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "1789; 1888; 2nd century CE; Blavatsky 1875-1891",
+          "points_to": "",
+          "also_at": [
+            [
+              127,
+              127
+            ],
+            [
+              135,
+              135
+            ],
+            [
+              211,
+              211
+            ],
+            [
+              729,
+              729
+            ]
+          ],
+          "note": "Genealogical thesis: the esoteric Left/Right Hand Path binary is a recent Theosophical universalization of Tantric terms, distinct from four older left/right genealogies (\"younger than the telephone\")."
+        },
+        {
+          "shape": "H",
+          "quote": "In Vedic ritual: right-hand offerings to devas (gods), left-hand offerings to asuras (anti-gods). This is procedural before it is theological. The hands do not represent moral paths -- they represent two phases of a single ritual circuit. The right hand establishes; the left hand dissolves. Both are required for the offering to complete.",
+          "lines": [
+            88,
+            88
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Vedic ritual",
+          "points_to": "",
+          "also_at": [],
+          "note": "Thesis on what the Vedic right/left offerings meant: procedural phases of one ritual circuit before any moral or theological reading."
+        },
+        {
+          "shape": "H",
+          "quote": "The Gnostic \"left hand\" is not evil magic. It is the hand that releases. The right hand grasps (samsara, the world, the law); the left hand opens (nirvana, the Pleroma, the Sabbath). The real Gnostic dichotomy is not transgression vs. obedience but kataphatic (positive theology, via affirmations) vs. apophatic (negative theology, via negations) -- two approaches to the ineffable, not two moral teams.",
+          "lines": [
+            123,
+            123
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "2nd century CE Gnostic texts (Valentinian schema, Apocryphon of John, Thunder Perfect Mind)",
+          "points_to": "",
+          "also_at": [
+            [
+              119,
+              119
+            ]
+          ],
+          "note": "Thesis on what Gnostic left/right originally meant: kataphatic vs apophatic approaches, not a moral binary."
+        },
+        {
+          "shape": "H",
+          "quote": "Worship held the paradoxes liturgically before they were systematized doctrinally.",
+          "lines": [
+            165,
+            165
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Patristic period, 1st-5th century",
+          "points_to": "",
+          "also_at": [
+            [
+              286,
+              286
+            ]
+          ],
+          "note": "Chronological thesis: liturgy held the paradoxes before doctrine systematized them (lex orandi before lex credendi)."
+        },
+        {
+          "shape": "H",
+          "quote": "But the distribution system becomes monopolized. Left-hand operations (mysticism, direct spiritual experience, apophatic theology) require right-hand licensing. Meister Eckhart's _via negativa_ -- the left hand of unknowing -- is tolerated within the institutional frame. The Beguines' mystical practice, less institutionally contained, is suppressed. The distinction is not between safe and dangerous practice but between _licensed_ and _unlicensed_ channels.",
+          "lines": [
+            177,
+            177
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Medieval Church, 6th-15th century",
+          "points_to": "",
+          "also_at": [],
+          "note": "Thesis on medieval distribution: the line ran between licensed and unlicensed channels (Eckhart tolerated, Beguines suppressed), not safe vs dangerous practice."
+        },
+        {
+          "shape": "H",
+          "quote": "**Zwingli** commits the critical act: the Eucharist becomes \"mere memorial.\" The bread represents the body but is not the body. This is DRR collapse -- the depth layers of the sacramental sign get flattened to a single level. What was a four-layer Sign (material, social, theological, eschatological) becomes a one-layer sign (memorial/symbolic). The left hand's contribution to the Eucharist -- the mystery, the apophatic \"how,\" the material-spiritual interpenetration -- is expelled.",
+          "lines": [
+            193,
+            193
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Reformation, 16th century (Zwingli)",
+          "points_to": "",
+          "also_at": [
+            [
+              197,
+              197
+            ],
+            [
+              699,
+              699
+            ],
+            [
+              744,
+              744
+            ],
+            [
+              900,
+              900
+            ]
+          ],
+          "note": "Causal historical thesis: Zwingli's memorialism flattened the sacramental sign, and the Reformation's sacramental flattening is the critical break in the Christendom circuit."
+        },
+        {
+          "shape": "H",
+          "quote": "The \"Right Hand\" becomes rational theology, Deism, natural religion -- the visible, the propositional, the publicly defensible. The \"Left Hand\" gets exiled to three refugee camps:\n\n  1. **Pietism:** Interior feeling, personal devotion, the \"heart strangely warmed\" (Wesley). The left hand survives as emotion, not as ontology.\n  2. **The Occult Underground:** Hermeticism, Rosicrucianism, Freemasonry. The left hand survives as secret society, not as public worship.\n  3. **Romanticism:** Nature as sacrament, the sublime, the Gothic. The left hand survives as aesthetic, not as theology.",
+          "lines": [
+            201,
+            205
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Enlightenment, 17th-19th century",
+          "points_to": "",
+          "also_at": [],
+          "note": "Thesis that the Enlightenment exiled the 'left hand' into Pietism, the occult underground and Romanticism."
+        },
+        {
+          "shape": "H",
+          "quote": "The very defenses against left-hand \"magic\" create the conditions for its return in distorted forms:\n\n**Prosperity Gospel:** Left-hand power (healing, blessing, material transformation) commodified into right-hand language (\"seed faith,\" \"positive confession\"). This is the left hand captured by the Capital Operator Stack -- the somatic power of prayer converted into a financial instrument. \"Name it and claim it\" is magic in evangelical drag.",
+          "lines": [
+            233,
+            235
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Contemporary American Evangelicalism, 20th-21st century",
+          "points_to": "",
+          "also_at": [
+            [
+              157,
+              157
+            ],
+            [
+              237,
+              241
+            ],
+            [
+              290,
+              296
+            ],
+            [
+              745,
+              745
+            ]
+          ],
+          "note": "Thesis on the recent religious past: evangelical defenses against 'magic' produced its distorted return (prosperity gospel, spiritual warfare, QAnon) - an autoimmune response."
+        },
+        {
+          "shape": "H",
+          "quote": "The \"Trump as Cyrus\" narrative was sophisticated Axiomatic Poisoning: the proposition that political power is morally neutral and malleable by the righteous. It appeared compatible with the evangelical axiom that God raises up kings, but contradicted the axiom of character and holiness. The result: enormous cognitive resources spent reconciling the contradiction, weakening the boundary protocol against capture by political ontology.",
+          "lines": [
+            261,
+            261
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "2016-present",
+          "points_to": "",
+          "also_at": [
+            [
+              263,
+              263
+            ]
+          ],
+          "note": "Thesis on the recent past: the 'Trump as Cyrus' narrative functioned as Axiomatic Poisoning of evangelical boundary protocols."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Full duplicate of #464's body under a restoration header (lines 1-46); finds mirror #464. Falsification Conditions at line 40 are restoration boilerplate, not recorded."
+    }
+  ]
+}

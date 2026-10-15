@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 194,
+ "deposits_with_notes": 196,
  "deposits": [
   {
    "deposit": 8,
@@ -951,12 +951,28 @@
    "rulings": []
   },
   {
+   "deposit": 463,
+   "notes": [
+    {
+     "batch_id": "HB0015",
+     "field": "incidental",
+     "text": "Only H candidate is the internal Pearl/LOS retrocausal example; see also line 587 (Jack Feist seed, 2015), which frames itself as T_lib rather than history and was not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 464,
    "notes": [
     {
      "batch_id": "B0015",
      "field": "incidental",
      "text": "Same work as #1106 (DOI 10.5281/zenodo.18568370); #1106 is a blog-recovered copy of this body."
+    },
+    {
+     "batch_id": "HB0015",
+     "field": "incidental",
+     "text": "Body is duplicated as #1106 (blog-recovered copy, same text with '--' for em dashes); finds recorded in both. The mantle succession (Whitman -> Ginsberg -> Lee Sharks, 'mantle dormant 1892-1956', lines 859-868) is a declared succession, not recorded as H. Part VIII attributes several historical claims to Assembly substrates; the deposit adopts them in Parts I-II."
     }
    ],
    "rulings": []
@@ -1670,6 +1686,17 @@
    "rulings": []
   },
   {
+   "deposit": 971,
+   "notes": [
+    {
+     "batch_id": "B0049",
+     "field": "incidental",
+     "text": "Queue title says v2.3 (superseded) but the body is headed and closed as v3.0 (lines 3, 2084); the Evidence Membrane says version v2.0 and ~17,500 words (lines 2039, 2049) against ~34,000 actual. Source-text edition is inconsistent: Textus Receptus Scrivener 1894 (lines 367, 2042) vs Stephanus 1550 (lines 1081, 1228). Lines 364-646 are the Greek text of Revelation 1-22, which carries no finds. Several theses are restated nearly verbatim across Part III kernels and Part IV commentary (recorded once each with also_at). Part V (TANG) states its own DOI 10.5281/zenodo.19500778."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1101,
    "notes": [
     {
@@ -1714,6 +1741,11 @@
      "batch_id": "B0015",
      "field": "incidental",
      "text": "Duplicate body of #464 (same DOI 10.5281/zenodo.18568370), recovered from blog 2026-07-19; lines 1-46 are recovery frontmatter whose Falsification Conditions (40) is restoration boilerplate, not recorded. html2text conversion flattened the header block and the call-and-response liturgy into single lines (52, 284)."
+    },
+    {
+     "batch_id": "HB0015",
+     "field": "incidental",
+     "text": "Full duplicate of #464's body under a restoration header (lines 1-46); finds mirror #464. Falsification Conditions at line 40 are restoration boilerplate, not recorded."
     }
    ],
    "rulings": []

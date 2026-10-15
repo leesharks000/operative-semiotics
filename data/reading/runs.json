@@ -2531,7 +2531,33 @@
    "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; H back-pass",
    "output": "data/reading/batches/HB0015.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 111081,
+    "tool_uses": 14,
+    "tokens": 194617
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:47:46Z",
+    "finished_at": "2026-10-15T19:49:17Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model Opus 5.5 (claude-opus-5-5) per the session's system context",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for batch load, quote slicing and verification)"
+    ]
+   },
+   "verification": {
+    "deposits": 4,
+    "entries": 4,
+    "finds": 21,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 4,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w8-HB0016",
