@@ -8843,7 +8843,34 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled, plus the wave-26 sentence on apparent contradictions",
    "output": "data/reading/batches/B0183.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 138209,
+    "tool_uses": 17,
+    "tokens": 182816
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T21:09:02Z",
+    "finished_at": "2026-10-15T21:10:57Z",
+    "self_description": "Claude Code agent (Anthropic Claude, model reported as Opus 5.5 / claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "python3"
+    ]
+   },
+   "verification": {
+    "deposits": 7,
+    "entries": 7,
+    "finds": 34,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 7,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w29-B0184",
