@@ -17,7 +17,7 @@
   "D": 199,
   "H": 879
  },
- "finds_verified": 3266,
+ "finds_verified": 3291,
  "finds_total": 3318,
  "deposits": [
   {
@@ -38653,10 +38653,13 @@
      },
      "none_found": false,
      "incidental": "Title header duplicated at lines 33 and 35 (packet's own H1 repeated); not damage.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 155,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -38717,10 +38720,13 @@
      },
      "none_found": false,
      "incidental": "Many predictions are set and resolved inside this one deposit (§5→§9/§10; §18.4→§18.5; §18.7→§18.10–11). Erratum box at line 517: 'Topics' and 'SE' in §18.7–18.10 are the Problemata and De coloribus. Title header duplicated at lines 42/44; §11 has a stray second-level 'I. On their own terms' heading.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 761,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
