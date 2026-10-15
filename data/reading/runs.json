@@ -830,7 +830,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; plus: read the final line explicitly (Read without limit on the last chunk)",
    "output": "data/reading/batches/B0021.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 146677,
+    "tool_uses": 17,
+    "tokens": 180863
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:20:28Z",
+    "finished_at": "2026-10-15T19:22:35Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load and verbatim quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 6,
+    "entries": 6,
+    "finds": 29,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 6,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w3-B0022",
@@ -842,7 +868,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; plus: read the final line explicitly (Read without limit on the last chunk)",
    "output": "data/reading/batches/B0022.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 119983,
+    "tool_uses": 19,
+    "tokens": 175859
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:20:32Z",
+    "finished_at": "2026-10-15T19:22:17Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load and verbatim quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 6,
+    "entries": 6,
+    "finds": 20,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 6,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w3-B0023",
@@ -854,7 +906,34 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; plus: read the final line explicitly (Read without limit on the last chunk)",
    "output": "data/reading/batches/B0023.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 156365,
+    "tool_uses": 19,
+    "tokens": 184544
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:20:35Z",
+    "finished_at": "2026-10-15T19:22:57Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "Write"
+    ]
+   },
+   "verification": {
+    "deposits": 6,
+    "entries": 6,
+    "finds": 35,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 6,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w3-B0024",
@@ -892,7 +971,8 @@
      "partial": 0,
      "skipped": 0
     }
-   }
+   },
+   "launcher_note": "verify COVER failed on 536, 537, 538, 540, 542: the reader counted lines with wc -l and missed each file's final newline-less line. Completed by S0002 (launcher read the last lines; colophons, no finds). The failure stays in B0024.verified.json."
   },
   {
    "run": "R-w3-B0025",
@@ -904,7 +984,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; plus: read the final line explicitly (Read without limit on the last chunk)",
    "output": "data/reading/batches/B0025.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 123911,
+    "tool_uses": 16,
+    "tokens": 183606
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:20:44Z",
+    "finished_at": "2026-10-15T19:22:31Z",
+    "self_description": "Claude Code agent (Anthropic), model stated in environment as Opus 5.5 (claude-opus-5-5); running as subagent",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load, verbatim quote slicing and verification)"
+    ]
+   },
+   "verification": {
+    "deposits": 5,
+    "entries": 5,
+    "finds": 14,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 5,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w3-B0026",
@@ -979,6 +1085,30 @@
     "status": {
      "read": 1,
      "partial": 0,
+     "skipped": 0
+    }
+   }
+  },
+  {
+   "run": "R-s-S0002",
+   "batch_id": "S0002",
+   "phase": "completing",
+   "launched_at": "2026-10-15T19:25:30Z",
+   "reader_kind": "the launcher itself (in-session)",
+   "protocol": "READING-PROTOCOL v1.1",
+   "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
+   "instructions": "read the final line of the five B0024 deposits whose last line was unread",
+   "output": "data/reading/batches/S0002.json",
+   "status": "completed",
+   "verification": {
+    "deposits": 5,
+    "entries": 5,
+    "finds": 0,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 0,
+     "partial": 5,
      "skipped": 0
     }
    }
