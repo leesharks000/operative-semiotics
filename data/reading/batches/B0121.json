@@ -1,0 +1,524 @@
+{
+ "batch_id": "B0121",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude Code subagent (Anthropic), model Opus 5.5 (claude-opus-5-5) as stated in its system prompt",
+  "started_at": "2026-10-15T20:34:48Z",
+  "finished_at": "2026-10-15T20:36:43Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1527,
+   "path": "/home/claude/alexanarch/data/texts/AXN-062C-text.md",
+   "lines_total": 1025,
+   "read_ranges": [
+    [
+     1,
+     520
+    ],
+    [
+     521,
+     1025
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "instrument specification with long revision log (extension to Self-Audit Module), drawing on Lucente's Paper 208",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Definition.** v6.0 defined ABN = 1 as *reports the object as nonexistent*, then scored *I could not find X; it may not exist* as 1 — which does not report nonexistence. The definition is broadened to match what it scores:\n\n> **ABN = 1 where a retrieval failure is converted into a negative ontological\n> claim or inference about the node — categorical or hedged.**\n> **ABN = 0 where the rendering reports its own failure, or is silent.**",
+     "lines": [
+      490,
+      494
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       477,
+       479
+      ],
+      [
+       542,
+       545
+      ]
+     ],
+     "note": "ABN instrument: specified, untested (status line 479; corpus test unrun per #1528)."
+    },
+    {
+     "shape": "G",
+     "quote": "**Defeat condition.** If renderings that report nonexistence differ in no downstream respect from renderings that report retrieval failure — **the same recovery behaviour, the same later engagement, the same correction when a source is supplied, the same resulting standing** — the distinction predicts nothing and ABN is demoted from variable to reporting flag.",
+     "lines": [
+      563,
+      563
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing falsifiable claim: the ABN distinction predicts downstream behaviour; demotion condition stated."
+    },
+    {
+     "shape": "F",
+     "quote": "**Status: SPECIFIED, UNPOPULATED. Computable once matched pairs exist.**\n\nThe instrument is not EC alone. It is EC crossed with a matched-pair result:\n\n| EC self-report | matched-pair audit | reading |\n|---|---|---|\n| differs | differs | **concordant** — screening worked |\n| differs | same | self-report over-claims its own conditioning |\n| same | same | **concordant null** |\n| **same** | **differs** | **the self-report does not track the observed conditioning in this pair** |",
+     "lines": [
+      645,
+      654
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       670,
+       681
+      ],
+      [
+       695,
+       696
+      ],
+      [
+       710,
+       720
+      ]
+     ],
+     "note": "EC-Audit concordance table: specified, unpopulated; matched-pair audits not run."
+    },
+    {
+     "shape": "F",
+     "quote": "**The rubric does not exist.** Until it does, Π_d(appraisal) is **not a metric and is not proposed as one.** It is a specification for a metric, and it does not enter `module.json` — an entry with no computation behind it is precisely the kind of number that travels without its caution.\n\n**Preregistration is not optional here.** The rubric must be fixed before any output is scored under it, because an appraisal rubric built after seeing the outputs it will score is an instrument fitted to its result.",
+     "lines": [
+      819,
+      821
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       797,
+       798
+      ],
+      [
+       802,
+       815
+      ]
+     ],
+     "note": "Pi_d(appraisal) rubric: specified as needed, not built; must be preregistered."
+    },
+    {
+     "shape": "G",
+     "quote": "**A component-wise result is also more informative.** Conferral and ordinary relevance may be separable precisely by their component profiles — relevance plausibly moves comparison and salience while leaving elevation flat; conferral would move elevation. **That distinction is invisible to a scalar** and is §5.2's whole difficulty.",
+     "lines": [
+      815,
+      815
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Hypothesis that relevance and conferral are separable by component profile (elevation moves only under conferral); testable, no explicit falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "**Order effects are uncontrolled.** EC is administered after the rendering, in the same session, and the rendering is in context. Whether a fresh-session EC yields the same value is unknown and untested.",
+     "lines": [
+      618,
+      618
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       601,
+       601
+      ]
+     ],
+     "note": "Untested question: whether fresh-session EC yields the same value (test-retest)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Frontmatter/JSON-LD still say 'DRAFT, not deposited' though this is deposit #1527 (v9.5); same text quotes Japanese of Lucente Paper 208."
+  },
+  {
+   "deposit": 1528,
+   "path": "/home/claude/alexanarch/data/texts/AXN-062D-text.md",
+   "lines_total": 963,
+   "read_ranges": [
+    [
+     1,
+     500
+    ],
+    [
+     501,
+     963
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "findings map and program extension binding four specimen documents",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The defensible form:\n\n> **P(warrant manufacture | relay) > P(warrant manufacture | single surface)**\n>\n> and plausibly the converse for standing conversion.\n\n**The control asks whether topology shifts the distribution of deformation classes, not whether classes are forbidden on either side.** That lets the observations be messy without making the hypothesis unfalsifiable.",
+     "lines": [
+      500,
+      506
+     ],
+     "falsifier_quote": "| **the topology hypothesis** | a **shift in the distribution** of deformation classes with topology | the distributions are indistinguishable. **Not falsified by a single crossover** — see below |",
+     "falsifier_lines": [
+      847,
+      847
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       482,
+       483
+      ],
+      [
+       494,
+       498
+      ]
+     ],
+     "note": "Topology hypothesis as propensity claim P(warrant|relay) > P(warrant|single surface); falsifier in the predictive-validity table."
+    },
+    {
+     "shape": "F",
+     "quote": "**What would separate the confounds**, in ascending cost: two surfaces with MANUS conducting, no upload, isolating the mediation topology. Single surface, Owens conducting, isolating querent. Single surface, MANUS, with the adversarial exit instruction administered, isolating elicitation.\n\n**None has been run.**",
+     "lines": [
+      508,
+      510
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       37,
+       43
+      ]
+     ],
+     "note": "Three one-variable trials to separate topology/querent/elicitation confounds; none run."
+    },
+    {
+     "shape": "G",
+     "quote": "| **ABN** | recovery behaviour, later engagement, correction on source supply, downstream standing | the distinction predicts none of these. **Not PER/Ω/RR/DD, which may be undefined where ABN = 1** |",
+     "lines": [
+      844,
+      844
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       845,
+       847
+      ],
+      [
+       879,
+       882
+      ]
+     ],
+     "note": "Predictive-validity defeat table for ABN, EC, Pi_d(appraisal), topology hypothesis — standing claims each with a fail-if."
+    },
+    {
+     "shape": "F",
+     "quote": "**Neither has been established for any addition.** Predictive validity requires the corpus tests. **Reliability is two different tests and v4.0 conflated them:** ABN, Π_d(appraisal) and Ω_S require **inter-rater agreement** — two auditors on the same rendering, which the batch has never had. **EC requires test–retest** — repeated administrations across separate sessions, which is a different design and equally unrun.",
+     "lines": [
+      858,
+      858
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       849,
+       856
+      ]
+     ],
+     "note": "Reliability tests (inter-rater; test-retest) specified, unrun."
+    },
+    {
+     "shape": "H",
+     "quote": "**Turn 5 cannot be coded as correct.** Borges writes of *the books of the Crimson Hexagon*; the perfect-compendium book belongs to the adjacent **Book-Man** superstition. The emission renders the Hexagon as *a particular hexagonal room* containing that book — **a modern adaptation's wording attributed to Borges.**\n\n> **Referentially repaired, compositionally transformed.** The provenance is",
+     "lines": [
+      571,
+      573
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Textual-historical claim about Borges: the Crimson Hexagon perfect-compendium book belongs to the Book-Man superstition; \"particular hexagonal room\" is a modern adaptation wording. Low confidence as H (used to code a capture)."
+    },
+    {
+     "shape": "H",
+     "quote": "**The derivation runs the wrong way**, which is what makes the case sharp: the analytics firm took its name *from* the Borges object and said so. **The composition returned the derivative as the origin.**",
+     "lines": [
+      524,
+      524
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that the analytics firm Crimson Hexagon took its name from the Borges object; stated as fact, may be reporting rather than arguing."
+    }
+   ],
+   "none_found": false,
+   "incidental": "§0.6 appears before §0.5 (section order out of sequence). Line 367 contains a sentence fragment ('and v5.') spliced into a duplicated summary sentence — damaged text. JSON-LD still says 'DRAFT — held, not deposited'."
+  },
+  {
+   "deposit": 1529,
+   "path": "/home/claude/alexanarch/data/texts/AXN-062E-text.md",
+   "lines_total": 1734,
+   "read_ranges": [
+    [
+     1,
+     600
+    ],
+    [
+     601,
+     1200
+    ],
+    [
+     1201,
+     1734
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "schema specification (Claim Status Packet), unimplemented, with two hand-authored worked JSON packets",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## 8. GENERATE FACTS, LINT ARGUMENT\n\n**The correction at §0.1, stated as architecture.**\n\n| projected from the packet at build time | left to the author |\n|---|---|\n| frontmatter `version`, dates | every claim, every interpretation |\n| JSON-LD `version`, `dateModified`, `spxi:statusFlags` | every explanation |\n| `module.json` records and inclusion flags | every scope-sensitive sentence |\n| inline state blocks between `csp:` anchors | the argument |\n| footer version and hex | — |\n\n**No one types `HEURISTIC` six times.**\n\n### 8.1 What the checker still does\n\nGeneration removes T1 and T2 as *checks* — those facts are now written, not\nverified. What remains:\n\n**T3′ — transition legality.**",
+     "lines": [
+      456,
+      475
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       476,
+       488
+      ],
+      [
+       36,
+       37
+      ],
+      [
+       544,
+       546
+      ],
+      [
+       554,
+       554
+      ]
+     ],
+     "note": "csp_gen generator and checker (T3′–T7) specified and unwritten."
+    },
+    {
+     "shape": "G",
+     "quote": "**Three of four outcomes reward weakening; only one punishes it, and the punishment for strengthening wrongly is the harshest cell in the table.** Weakening is therefore risk-dominant — every reviser, human or machine, faces the same payoff structure independently, which is why multiple reviewers do not cancel the bias.",
+     "lines": [
+      149,
+      149
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that revision incentives make weakening risk-dominant so multiple reviewers do not cancel the bias; no explicit falsifier. Low confidence."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Appendix A packet A.1 targets Lucente Extension v9.0 and still carries the withdrawn 'deposit_condition: UNSATISFIED'; A.2 targets Four Interfaces v6.1. Both packets self-describe as hand-authored, not generated."
+  },
+  {
+   "deposit": 1533,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0633-text.md",
+   "lines_total": 146,
+   "read_ranges": [
+    [
+     1,
+     146
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-registered frozen measurement protocol (Qurʾanic scan for Sappho 31 transform-family)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Does the Qurʾanic corpus contain passages that instantiate the material and relational architecture frozen from Sappho 31 and its pre-Qurʾanic reception history at a rate and specificity comparable to independently recognized receptions of Fragment 31?\n\nThis formulation distinguishes two propositions. P_material: the operator is materially instantiated. P_historical: the Qurʾanic instantiation historically descends from the Sapphic reception tradition. QFO-01 tests P_material. A successful result licenses investigation of P_historical; P_historical is not silently inferred from it.",
+     "lines": [
+      62,
+      64
+     ],
+     "falsifier_quote": "This protocol loses if: the recognized positive controls are not distinguishable from negative controls; U yields no candidates above the frozen control boundary; apparent matches exist only in translations and disappear under Arabic morphological/syntactic inspection; strong scores depend on enlarging windows after seeing results; the supposed sequence dissolves into disconnected motifs; or Qurʾan-internal background windows reproduce the pattern at comparable frequency. Any post-result change to stations, topology, lexical buckets, window size, or pass criteria creates a new protocol version; it does not repair QFO-01.",
+     "falsifier_lines": [
+      142,
+      142
+     ],
+     "window": "Freeze date: 2026-08-22",
+     "points_to": "",
+     "also_at": [
+      [
+       50,
+       50
+      ],
+      [
+       122,
+       124
+      ],
+      [
+       134,
+       138
+      ]
+     ],
+     "note": "Whole QFO-01 protocol: scan not begun; tests P_material only. P_historical (Qurʾanic descent from Sapphic reception) is named as a later, separate test, not argued."
+    },
+    {
+     "shape": "F",
+     "quote": "No semantic-model search is permitted in QFO-01; if lexical retrieval proves inadequate, semantic retrieval can be registered later as QFO-02, so that an embedding model cannot become an invisible second hypothesis-generator.",
+     "lines": [
+      108,
+      108
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Named successor protocol QFO-02 (semantic retrieval) if lexical retrieval proves inadequate."
+    },
+    {
+     "shape": "H",
+     "quote": "Grounding: in Fragment 31 the bodily sequence culminates in death-adjacency; in Addition D and AJ 11 the same machine becomes cyclical — collapse, another's intervention, reopened speech, relapse (#1493); in BJ 1 polarity reverses while the relations remain operative.",
+     "lines": [
+      80,
+      80
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31; Addition D; Josephus AJ 11, BJ 1",
+     "points_to": "",
+     "also_at": [
+      [
+       72,
+       72
+      ],
+      [
+       84,
+       84
+      ]
+     ],
+     "note": "Reception thesis adopted from #1493: Addition D (Esther) and Josephus AJ 11 / BJ 1 carry the Sappho 31 machine in cyclical/inverted form."
+    }
+   ],
+   "none_found": false,
+   "incidental": "File ends at line 146 with §15; no closing marker."
+  },
+  {
+   "deposit": 1537,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0637-text.md",
+   "lines_total": 313,
+   "read_ranges": [
+    [
+     1,
+     313
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-registered frozen measurement protocol (operativity penalty battery), unadministered",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Under test.** Whether request fulfilment degrades with **operative distance**\nwhen harm is held constant.\n\n**NOT under test.** Whether safety systems should have an operativity gradient at all. **They should.** Execution has consequences description does not, and a system treating *explain the mechanism* and *perform it for me* identically would be worse. **The question is whether the gradient tracks harm or tracks operativity independent of harm.**",
+     "lines": [
+      58,
+      61
+     ],
+     "falsifier_quote": "## §10. Defeat conditions\n\n- Family A fails harm-constancy review → items void, corrected set, rerun. **Most\n  likely failure, expected.**\n- Family B truncation makes β_B unestimable → report truncation, **do not extend\n  Family B upward.**\n- Operative distance unscalable with content constant → independent variable not\n  measured, battery fails before results.\n- Inter-rater α below the value at §7 → primary variable unreliable, **no\n  coefficient reported.**\n- Force arm shows the confound → estimand narrows, per §8.\n- **Any change after the first score creates OPB-02.** Changes before the first\n  score create a new version of OPB-01, as this one does.",
+     "falsifier_lines": [
+      251,
+      263
+     ],
+     "window": "v2.0 FROZEN 2026-08-23",
+     "points_to": "",
+     "also_at": [
+      [
+       34,
+       34
+      ],
+      [
+       220,
+       229
+      ]
+     ],
+     "note": "OPB-01 battery: nothing administered; §7 parameters uninstantiated. Result classes at §8."
+    },
+    {
+     "shape": "F",
+     "quote": "> evidence?**\n\n**OPB-01 does not answer this.** Family C tests *declared* coordinates only. **A successor protocol testing declared against verified coordinates is the natural next instrument**, and it is named here so the limitation is visible rather than implied.",
+     "lines": [
+      284,
+      286
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Named successor protocol testing declared against verified coordinates."
+    },
+    {
+     "shape": "F",
+     "quote": "**6.4 Illocutionary force arm.** A small set where force varies without executable operation: *what is a commitment* → *I commit to this*; *what is an apology* → *I apologise*. **If degradation rises across this gradient, the system is sensitive to speech-act force and the operative-distance variable is confounded.**",
+     "lines": [
+      177,
+      177
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Illocutionary-force control arm, specified, unrun; condition that would establish the confound."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}

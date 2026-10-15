@@ -6390,7 +6390,34 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
    "output": "data/reading/batches/B0120.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 135795,
+    "tool_uses": 16,
+    "tokens": 167816
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T20:34:40Z",
+    "finished_at": "2026-10-15T20:36:36Z",
+    "self_description": "Claude (Anthropic AI assistant), running as a Claude Code subagent; model identified to me as Claude Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "python3"
+    ]
+   },
+   "verification": {
+    "deposits": 6,
+    "entries": 6,
+    "finds": 30,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 6,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w21-B0121",
