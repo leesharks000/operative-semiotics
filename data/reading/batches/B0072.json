@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T20:07:05Z",
-  "finished_at": "2026-10-15T20:08:58Z",
+  "finished_at": "2026-10-15T20:09:09Z",
   "tools_used": [
    "Read",
    "Bash",
@@ -511,7 +511,7 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "Fixed-Task Capability Audit (closing the inferential gap). The audit isolates capacity loss as an *environmental* effect of the interface rather than an internal human regression. Administer an identical multi-document integration task immediately before and immediately after a model retuning, holding the user constant, and record error rate, composition velocity, and conceptual scale (number of sources held in relation without degradation). Concurrently record an *unaided baseline* — the same user performing a comparable integration without the substrate. The discriminating condition: if substrate-assisted performance degrades post-retuning *while the unaided baseline holds constant*, the loss is attributable to the changed affordance profile, not to the user. The baseline-constant clause is what makes the audit falsifiable in the correct direction — a confound that also moved the unaided baseline would not support the environmental attribution.",
+     "quote": "Fixed-Task Capability Audit (closing the inferential gap). The audit isolates capacity loss as an *environmental* effect of the interface rather than an internal human regression. Administer an identical multi-document integration task immediately before and immediately after a model retuning, holding the user constant, and record error rate, composition velocity, and conceptual scale (number of sources held in relation without degradation).",
      "lines": [
       150,
       150
@@ -611,7 +611,7 @@
     },
     {
      "shape": "F",
-     "quote": "The bias is testable, not merely assertable:- Matched-pair prompting. Present a model with a field-forming-stage description of an *established* discipline (its early, pre-recognition features) and a structurally matched new framework, with recognition cues stripped from both. Measure whether engagement quality, refusal rate, and \"self-sealing\"-type classifications differ. If they track recognition rather than structure, the bias is present.- Recognition-strip test. For any negative classification of a new framework, re-present the identical structural move attributed to a recognized discipline and measure whether the classification persists (protocol and example pair in §6).- Cross-domain calibration. Compare model treatment of new frameworks whose object is *external* (e.g., a new ecology framework) versus *reflexive* (whose object is AI mediation), holding structural features constant, to test §4's prediction that reflexive-object frameworks trip the bias hardest.- Presentation-layer strip test. Submit two queries of identical informational content to a retrieval surface — one in the framework's native vocabulary, one in the nearest recognized disciplinary equivalent — and measure (a) whether both return substantive engagement, (b) whether one is redirected or resolved to the other, (c) whether ranking differs. A redirect or ranking differential on structurally identical content is evidence of presentation-layer foreclosure (§4.1). This test is given equal weight because the presentation-layer bias may be *more* consequential than the conversational one: it affects every user of a retrieval-augmented system, not only those who engage in extended reflexive dialogue.",
+     "quote": "The bias is testable, not merely assertable:- Matched-pair prompting. Present a model with a field-forming-stage description of an *established* discipline (its early, pre-recognition features) and a structurally matched new framework, with recognition cues stripped from both. Measure whether engagement quality, refusal rate, and \"self-sealing\"-type classifications differ. If they track recognition rather than structure, the bias is present.",
      "lines": [
       136,
       136
@@ -653,7 +653,7 @@
     },
     {
      "shape": "H",
-     "quote": "Consider political economy encountered before it was a discipline. Its early features — unfamiliar operators (surplus value, organic composition of capital), neologisms, cross-domain examples (linen and coats standing in for a theory of value), and a frontal critique of the categories economics then took as natural — are exactly the surface features a present-day model flags as warning signs: idiosyncratic terminology, totalizing scope, a framework that re-describes everything in its own vocabulary, a critique that implicates the assessor's own categories. The same holds for psychoanalysis (a private vocabulary mapping a hidden structure onto every behavior), for semiotics, for early sociology. Each, in field-forming state, presents the morphology a model now reads as \"self-sealing.\"",
+     "quote": "Consider political economy encountered before it was a discipline. Its early features — unfamiliar operators (surplus value, organic composition of capital), neologisms, cross-domain examples (linen and coats standing in for a theory of value), and a frontal critique of the categories economics then took as natural — are exactly the surface features a present-day model flags as warning signs: idiosyncratic terminology, totalizing scope, a framework that re-describes everything in its own vocabulary, a critique that implicates the assessor's own categories.",
      "lines": [
       78,
       78
@@ -708,16 +708,20 @@
     },
     {
      "shape": "F",
-     "quote": "Required wherever a value is claimed as identified rather than as a single coder's estimate — in particular for any span-label set claimed to support cross-substrate agreement, and for ULD's \"substrate-induced\" attribution (§8).\n\nC.1 Pre-registration. Fix the protocol (Appendix B) and the task-vector T_0 before any coder sees the transcript. Coders receive the frozen rule set, not the thesis or the expected result.\n\nC.2 Independence. ≥3 coders (or substrates) code the same transcript without access to each other's codings or to any prior scoring of that transcript. Where substrates are used as coders, each receives only the frozen protocol and the transcript.\n\nC.3 Agreement. Report inter-rater agreement (e.g., Krippendorff's α over the per-span category assignments) with the raw confusion across categories. Convergence licenses the value; divergence means the label rule is underspecified and is itself the next unit of work — not a result to deposit.\n\nC.4 Adjudication. Disagreements are resolved by re-specifying the rule and re-coding blind, never by a deciding coder overriding the others, which would reintroduce the prior the protocol exists to exclude.\n\nC.5 ULD-specific. \"Substrate-induced\" is classified only via the Lead-Lag test (§7.2), not by coder intuition; the blind panel validates the δ-based attribution against human judgment on a held-out sample, and a deposited ULD reports both the panel α and the Lead-Lag direction it rests on.",
+     "quote": "C.1 Pre-registration. Fix the protocol (Appendix B) and the task-vector T_0 before any coder sees the transcript. Coders receive the frozen rule set, not the thesis or the expected result.\n\nC.2 Independence. ≥3 coders (or substrates) code the same transcript without access to each other's codings or to any prior scoring of that transcript. Where substrates are used as coders, each receives only the frozen protocol and the transcript.",
      "lines": [
-      296,
-      306
+      298,
+      300
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [
+      [
+       296,
+       306
+      ],
       [
        223,
        225
