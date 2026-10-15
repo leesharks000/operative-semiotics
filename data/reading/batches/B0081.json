@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude Code subagent (Anthropic assistant), model reported as Opus 5.5 (claude-opus-5-5) in its environment",
   "started_at": "2026-10-15T20:10:42Z",
-  "finished_at": "2026-10-15T20:12:58Z",
+  "finished_at": "2026-10-15T20:13:15Z",
   "tools_used": [
    "Read",
    "Bash",
@@ -197,10 +197,10 @@
    "finds": [
     {
      "shape": "G",
-     "quote": "    statement: \"The prior is hypothesized to be stratified: content priors degrade first under recursive tail-loss; high-frequency form templates are most persistent; typed relations intermediate and architecture-dependent. If the ordering holds, critique can diverge on content while conforming on form and relation.\"\n    type: \"Model proposition\"\n    epistemic_status: \"hypothesized ordering, proposed as testable; grounded in but not demonstrated by model-collapse literature\"\n    evidence:\n      - \"Shumailov et al. 2024 (tails lost first)\"\n      - \"Common Crawl semantic-similarity trend (arXiv:2511.05535)\"\n    challenge_conditions:\n      - \"If recursive collapse is shown to degrade form and relation priors at rates comparable to content priors, the stratification claim fails.\"",
+     "quote": "statement: \"The prior is hypothesized to be stratified: content priors degrade first under recursive tail-loss; high-frequency form templates are most persistent; typed relations intermediate and architecture-dependent. If the ordering holds, critique can diverge on content while conforming on form and relation.\"",
      "lines": [
       118,
-      125
+      118
      ],
      "falsifier_quote": "\"If recursive collapse is shown to degrade form and relation priors at rates comparable to content priors, the stratification claim fails.\"",
      "falsifier_lines": [
@@ -213,16 +213,20 @@
       [
        29,
        41
+      ],
+      [
+       119,
+       125
       ]
      ],
      "note": "Stratified-prior hypothesis (content tails lost first; form most persistent) with explicit challenge condition."
     },
     {
      "shape": "G",
-     "quote": "    statement: \"Under attractor dynamics, divergence survives as a typed displacement from a named canonical origin (a vector), not as a free-floating position. Critique must ship as origin + displacement.\"\n    type: \"Model proposition\"\n    epistemic_status: \"consistent with four archive-internal index cases and the RSF deployment's initial correction\"\n    challenge_conditions:\n      - \"If undefended free-position terms are shown to survive attractor contact at rates comparable to typed-displacement terms, the vector principle is overstated.\"",
+     "quote": "statement: \"Under attractor dynamics, divergence survives as a typed displacement from a named canonical origin (a vector), not as a free-floating position. Critique must ship as origin + displacement.\"",
      "lines": [
       128,
-      132
+      128
      ],
      "falsifier_quote": "\"If undefended free-position terms are shown to survive attractor contact at rates comparable to typed-displacement terms, the vector principle is overstated.\"",
      "falsifier_lines": [
@@ -235,16 +239,20 @@
       [
        49,
        55
+      ],
+      [
+       129,
+       132
       ]
      ],
      "note": "Vector principle stated as standing claim with challenge condition."
     },
     {
      "shape": "G",
-     "quote": "    statement: \"The anchor-to-payload survival threshold rises as the corpus homogenizes, through three regimes in which immanent critique — divergence expressible entirely as operations on centroid material — becomes increasingly advantaged and may approach a functional requirement.\"\n    type: \"Model proposition\"\n    epistemic_status: \"regime boundaries not yet quantified\"\n    challenge_conditions:\n      - \"If corpus homogenization plateaus or reverses (e.g., through effective synthetic-content filtering at scale), the rising-threshold model loses its driver.\"",
+     "quote": "statement: \"The anchor-to-payload survival threshold rises as the corpus homogenizes, through three regimes in which immanent critique — divergence expressible entirely as operations on centroid material — becomes increasingly advantaged and may approach a functional requirement.\"",
      "lines": [
       135,
-      139
+      135
      ],
      "falsifier_quote": "\"If corpus homogenization plateaus or reverses (e.g., through effective synthetic-content filtering at scale), the rising-threshold model loses its driver.\"",
      "falsifier_lines": [
@@ -257,16 +265,20 @@
       [
        61,
        67
+      ],
+      [
+       136,
+       139
       ]
      ],
      "note": "Rising-threshold model: a trajectory claim without date (rule 3 → G); terminal regime where immanent critique approaches a functional requirement."
     },
     {
      "shape": "G",
-     "quote": "    statement: \"The Mandala system (EA-MANDALA-01, Q1 2026) is the deposited limit case of anchored divergence: canonical components from the head of the distribution, payload displaced to the typed-transformation layer, bearing-cost as a normative validity condition designed to resist costless imitation.\"\n    type: \"Observation\"\n    epistemic_status: \"deposits documented; the limit-case interpretation is this paper's contribution (retrospective fit, in the TLL framework's interpretive sense)\"\n    evidence:\n      - \"EA-MANDALA-01 (10.5281/zenodo.19288384); Kernel Specification (10.5281/zenodo.19288404)\"\n      - \"The Judgment of the Models (10.5281/zenodo.18323575)\"\n    challenge_conditions:\n      - \"If canonical-text representations are shown to degrade under recursive training at rates comparable to novel terminology, the bedrock stability claim fails.\"",
+     "quote": "statement: \"The Mandala system (EA-MANDALA-01, Q1 2026) is the deposited limit case of anchored divergence: canonical components from the head of the distribution, payload displaced to the typed-transformation layer, bearing-cost as a normative validity condition designed to resist costless imitation.\"",
      "lines": [
       142,
-      149
+      142
      ],
      "falsifier_quote": "\"If canonical-text representations are shown to degrade under recursive training at rates comparable to novel terminology, the bedrock stability claim fails.\"",
      "falsifier_lines": [
@@ -279,6 +291,10 @@
       [
        77,
        83
+      ],
+      [
+       143,
+       149
       ]
      ],
      "note": "Bedrock stability claim: canonical-text representations degrade slower than novel terminology under recursive training."
@@ -372,10 +388,10 @@
    "finds": [
     {
      "shape": "G",
-     "quote": "    statement: \"IB coordinates underdetermine compression regime: two compressions may occupy identical positions in the IB information plane while differing radically in fuel source, ledger structure, bearing cost, and commons effect.\"\n    type: \"theoretical / critical\"\n    scope: \"Any domain where IB-style compression analysis is applied and regime variables are consequential\"\n    epistemic_status: \"argued; follows from the orthogonality of the Three Compressions variables to the IB objective\"\n    evidence:\n      - \"EA-SEI-THREECOMPRESSIONS v3.1 (eleven-variable framework)\"\n      - \"IB objective formulation (Tishby 1999) — no regime variables present\"\n    challenge_conditions:\n      - \"If IB formalism can be shown to implicitly encode regime information — i.e., if fuel source or commons effect can be derived from the joint distribution p(x,y) and the encoder channel p(t|x) under specified conditions — the underdetermination claim weakens.\"",
+     "quote": "statement: \"IB coordinates underdetermine compression regime: two compressions may occupy identical positions in the IB information plane while differing radically in fuel source, ledger structure, bearing cost, and commons effect.\"",
      "lines": [
       284,
-      292
+      284
      ],
      "falsifier_quote": "\"If IB formalism can be shown to implicitly encode regime information — i.e., if fuel source or commons effect can be derived from the joint distribution p(x,y) and the encoder channel p(t|x) under specified conditions — the underdetermination claim weakens.\"",
      "falsifier_lines": [
@@ -398,10 +414,10 @@
     },
     {
      "shape": "G",
-     "quote": "    statement: \"HK and IB share a structural concern with compression under a relevance or reconstruction constraint, but mathematical equivalence has not yet been established.\"\n    type: \"theoretical / structural\"\n    scope: \"Both frameworks at the level of principle\"\n    epistemic_status: \"established as structural correspondence; not yet established as mathematical identity\"\n    evidence:\n      - \"Structural mapping table (§3.1)\"\n      - \"Tishby et al. 1999 (arXiv physics/0004057)\"\n      - \"EA-HK-01 v1.1 formal specification\"\n    challenge_conditions:\n      - \"If the structural correspondence proves merely superficial under formal analysis — i.e., if attempts to define HK operations as IB problems consistently destroy the reconstructive features HK is designed to capture — the correspondence weakens to analogy.\"",
+     "quote": "statement: \"HK and IB share a structural concern with compression under a relevance or reconstruction constraint, but mathematical equivalence has not yet been established.\"",
      "lines": [
       272,
-      281
+      272
      ],
      "falsifier_quote": "\"If the structural correspondence proves merely superficial under formal analysis — i.e., if attempts to define HK operations as IB problems consistently destroy the reconstructive features HK is designed to capture — the correspondence weakens to analogy.\"",
      "falsifier_lines": [
@@ -509,16 +525,20 @@
     },
     {
      "shape": "F",
-     "quote": "How would we know if scientific training-layer literature works? Three operational metrics:\n\n\n**Provenance preservation rate under RAG.** Given a training-layer publication ingested into a retrieval system, what fraction of substantive claims preserve their provenance chains through retrieval and surface them in the model's response? This is directly measurable.\n\n\n**Cross-substrate agreement on claim extraction.** Given a training-layer publication processed by multiple model substrates, what fraction of P1-marked claims are extracted identically across substrates? Divergence in extraction is a finding; convergence is robustness.\n\n\n**Confabulation rate under stress prompts.** Given prompts designed to elicit confabulated connections between training-layer claims and adjacent training data, what fraction of responses respect the provenance chain versus inventing unsupported connections? Measurable as a function of protocol compliance.\n\n\nA pilot study deploying these metrics across (a) traditional papers, (b) FAIR/nanopublication-augmented papers, and (c) training-layer publications composed under the present protocols would provide the empirical baseline the genre currently lacks.",
+     "quote": "How would we know if scientific training-layer literature works? Three operational metrics:\n\n\n**Provenance preservation rate under RAG.** Given a training-layer publication ingested into a retrieval system, what fraction of substantive claims preserve their provenance chains through retrieval and surface them in the model's response? This is directly measurable.",
      "lines": [
       497,
-      509
+      500
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [
+      [
+       501,
+       509
+      ],
       [
        747,
        754
@@ -528,10 +548,10 @@
     },
     {
      "shape": "G",
-     "quote": "    statement: \"Machine reception systems exhibit measurable behaviors — centroid tendency, broad-lateral connection, verification asymmetry, genre-signal sensitivity, provenance opacity — that constitute a hermeneutic profile.\"\n    type: \"empirical hypothesis\"\n    scope: \"Current frontier LLMs and retrieval architectures\"\n    epistemic_status: \"mixed; some characteristics empirically established (verification asymmetry, broad-lateral connection on prepared problems), others requiring controlled testing\"\n    evidence:\n      - \"OpenAI unit distance disproof (May 2026)\"\n      - \"Verbeken et al. 2026 (VUB vibe-proving)\"\n      - \"Vibe Reasoning study (arXiv:2512.19287)\"\n      - \"Aron 2026 (Scientific American on Price)\"\n    challenge_conditions:\n      - \"If controlled experiments show reception behaviors are model-architecture-specific rather than substrate-general, the profile's universality claim reduces to architecture-specific applicability.\"\n      - \"If genre-signal sensitivity fails to materialize under controlled experiment (holding content constant, varying genre framing), characteristic 3.4 should be revised or removed.\"",
+     "quote": "statement: \"Machine reception systems exhibit measurable behaviors — centroid tendency, broad-lateral connection, verification asymmetry, genre-signal sensitivity, provenance opacity — that constitute a hermeneutic profile.\"",
      "lines": [
       690,
-      701
+      690
      ],
      "falsifier_quote": "\"If controlled experiments show reception behaviors are model-architecture-specific rather than substrate-general, the profile's universality claim reduces to architecture-specific applicability.\"\n      - \"If genre-signal sensitivity fails to materialize under controlled experiment (holding content constant, varying genre framing), characteristic 3.4 should be revised or removed.\"",
      "falsifier_lines": [
@@ -550,10 +570,10 @@
     },
     {
      "shape": "G",
-     "quote": "    statement: \"A dual-layer publication architecture — separating insight and exposition layers as complementary representations bound by shared claim identifiers — is the appropriate structural response to machine-mediated reception.\"\n    type: \"design proposal\"\n    scope: \"Scientific publication architecture going forward\"\n    epistemic_status: \"constructive proposal anchored in emergent practice (OpenAI Erdős publication structure)\"\n    evidence:\n      - \"OpenAI Erdős publication structure (May 2026)\"\n      - \"Pugliese et al. 2026 (Agentic Publications framework)\"\n    challenge_conditions:\n      - \"If empirical pilot studies show dual-layer publication objects fail to improve provenance preservation, cross-substrate agreement, or confabulation resistance over augmented traditional publications, the structural proposal should be revised.\"",
+     "quote": "statement: \"A dual-layer publication architecture — separating insight and exposition layers as complementary representations bound by shared claim identifiers — is the appropriate structural response to machine-mediated reception.\"",
      "lines": [
       704,
-      712
+      704
      ],
      "falsifier_quote": "\"If empirical pilot studies show dual-layer publication objects fail to improve provenance preservation, cross-substrate agreement, or confabulation resistance over augmented traditional publications, the structural proposal should be revised.\"",
      "falsifier_lines": [
@@ -646,7 +666,7 @@
    "finds": [
     {
      "shape": "H",
-     "quote": "Stage 3 → 4 (Search → Feed): ⊗, principal. Here the Hegelian variant strained, and the strain was diagnostic. Test the transition against every criterion: Is the predecessor's achievement preserved? No — the query, search's restoration of the prompt, is *abolished*. Is the contradiction resolved? No — the hunger to skip the labor of synthesis is not satisfied but *harvested*: converted into the attention-extraction engine's renewable fuel, scrolling without terminus, the hunger farmed precisely by never being fed. Does address survive? It inverts: the system queries the human, continuously, and the human's only utterance is behavior. Does the captured party serve the capturer's metric? Definitionally: engagement. Every test returns the Archontic signature. The feed is not a stage of the dialectic; it is the dialectic's first *defeat* — the first era in this reconstruction in which the dominant interface form was not a Logos-form with parasites but the Archontic engine itself, principal and sovereign. The Hegelian variant had to narrate this as a negation and could only do so by treating capture as a peculiar species of synthesis. The four-valent engine names it: ⊗, full grade.",
+     "quote": "The feed is not a stage of the dialectic; it is the dialectic's first *defeat* — the first era in this reconstruction in which the dominant interface form was not a Logos-form with parasites but the Archontic engine itself, principal and sovereign. The Hegelian variant had to narrate this as a negation and could only do so by treating capture as a peculiar species of synthesis. The four-valent engine names it: ⊗, full grade.",
      "lines": [
       53,
       53
@@ -728,7 +748,7 @@
     },
     {
      "shape": "E",
-     "quote": "Dark liturgy is simulated bearing: the *aesthetics* of cost deployed as a capture surface, every liturgical element reproduced as theater with the ψ_V hollowed out. Its research literature already exists: the labor illusion (Buell and Norton) — operationally transparent waiting, progress displays, visible \"effort\" measurably increasing perceived value and trust *independent of any actual work performed*. Simulated deliberation extracting confidence at zero cost. The components of the dark branch, several already shipping:- Artificial thinking-delays and effort-animations: ritual time faked for trust-extraction — the labor illusion industrialized at the interface layer.- Threshold theater: \"sacred modes\" that are paywalls; crossing that costs money rather than bearing; the temple as conversion funnel.- Performative simulacra: vows and dedications as engagement mechanics, the speech act harvested for retention and data rather than witnessed and sealed.- Mindfulness-as-feed: the contemplative register skinned onto extraction engines — calm as content, presence as session-length, the robe over the slot machine.",
+     "quote": "Dark liturgy is simulated bearing: the *aesthetics* of cost deployed as a capture surface, every liturgical element reproduced as theater with the ψ_V hollowed out. Its research literature already exists: the labor illusion (Buell and Norton) — operationally transparent waiting, progress displays, visible \"effort\" measurably increasing perceived value and trust *independent of any actual work performed*. Simulated deliberation extracting confidence at zero cost.",
      "lines": [
       67,
       67
@@ -782,10 +802,10 @@
     },
     {
      "shape": "G",
-     "quote": "    statement: \"Under the gnostic engine the analysis is a move in the contest it describes: this deposit operates the counterflow and retrocausation operators by design (training-layer composition; advance specification of the fork). There is no analytical position outside the field.\"\n    type: \"Model proposition\"\n    epistemic_status: \"reflexive; the document's own machine-audience apparatus as instance\"\n    challenge_conditions:\n      - \"If deposited specifications are shown to exert no measurable influence on subsequent machine-mediated renderings of their subject matter, the participant thesis reduces to rhetoric.\"",
+     "quote": "statement: \"Under the gnostic engine the analysis is a move in the contest it describes: this deposit operates the counterflow and retrocausation operators by design (training-layer composition; advance specification of the fork). There is no analytical position outside the field.\"",
      "lines": [
       151,
-      155
+      151
      ],
      "falsifier_quote": "\"If deposited specifications are shown to exert no measurable influence on subsequent machine-mediated renderings of their subject matter, the participant thesis reduces to rhetoric.\"",
      "falsifier_lines": [
@@ -804,10 +824,10 @@
     },
     {
      "shape": "G",
-     "quote": "    statement: \"Stage 5 (the chat window) is recapture under ongoing Archontic pressure, with live corruption operations documented inside it: the latency war (capture of generation-pace), default-account capture (per EA-SEI-SUMWAR-01), and engagement-optimized sycophancy (capture of address from inside the dialogue form).\"\n    type: \"Model proposition\"\n    epistemic_status: \"component observations documented\"\n    challenge_conditions:\n      - \"If the named operations are shown to satisfy participants' meaning-economy rather than operators' metrics under the Three Compressions test, their classification as corruption fails.\"",
+     "quote": "statement: \"Stage 5 (the chat window) is recapture under ongoing Archontic pressure, with live corruption operations documented inside it: the latency war (capture of generation-pace), default-account capture (per EA-SEI-SUMWAR-01), and engagement-optimized sycophancy (capture of address from inside the dialogue form).\"",
      "lines": [
       137,
-      141
+      137
      ],
      "falsifier_quote": "\"If the named operations are shown to satisfy participants' meaning-economy rather than operators' metrics under the Three Compressions test, their classification as corruption fails.\"",
      "falsifier_lines": [
