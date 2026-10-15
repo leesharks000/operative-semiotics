@@ -27,6 +27,16 @@
      "text": "File is a ~2.3M-word JSON dataset (135,660 lines; Read reports ~79k tokens per 250 lines in the entries section, i.e. on the order of 10M+ tokens in total). It cannot be read in full within one reader's context: the Read tool refused further chunks for lack of remaining context at line 900. Read consecutively lines 1-899 (registry header, citation grammar, _alias_redirects, _defect_counts, and the first three entries of 'entries'). Lines 900-135660 unread. This deposit needs splitting into many sub-batches by line range (entry boundaries are '  {' lines at indent 2 inside 'entries', which begins at line 650)."
     },
     {
+     "batch_id": "X0001",
+     "field": "incidental",
+     "text": "Many records duplicate d_full and analysis verbatim (e.g. records 39, 45, 46, 50, 72-77, 81), and some own-voice fields embed full machine transcripts (records 25, 45, 46, 78, 80), which were not treated as own voice. Records 3-7 repeat identical concept-entrance-test boilerplate. H finds here mostly name or endorse theses argued in other deposits; triage should link them. Quotes are sub-line slices, each within a single line."
+    },
+    {
+     "batch_id": "X0001",
+     "field": "status_note",
+     "text": "X-batch: range 1-1521 of the derived reading text only; the deposit is read only when all X-batches over it pass."
+    },
+    {
      "batch_id": "X0002",
      "field": "incidental",
      "text": "Many June 2026 records (100–109, 145–174) carry identical d_full and analysis fields (duplicated body). Records cite earlier deposits' theses (Aristotle/Theophrastus one maker #1588, Socrates heteronymy #123, Sappho 31 κῆνος future reader #1270) only as content being checked against compositions; these were not recorded as H because the records report rather than argue them. Record 143 (line 2443) states an indexing-latency floor ('NEED 48-72 HOURS') as a capture-protocol rule; not recorded (procedural). Record 137 (2361-2389) is the later observation bearing on the Acanthian-dove H find at 2113."

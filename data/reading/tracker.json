@@ -9,17 +9,17 @@
  "h_covered": 436,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 488,
-  "F": 484,
+  "G": 494,
+  "F": 488,
   "E": 118,
   "B": 322,
   "A": 143,
-  "C": 142,
-  "D": 159,
-  "H": 613
+  "C": 146,
+  "D": 160,
+  "H": 620
  },
- "finds_verified": 2442,
- "finds_total": 2469,
+ "finds_verified": 2469,
+ "finds_total": 2491,
  "deposits": [
   {
    "deposit": 172,
@@ -30737,6 +30737,61 @@
     },
     {
      "by": "parallel",
+     "batch_id": "X0001",
+     "run": "R-w17-X0001",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5).",
+      "started_at": "2026-10-15T20:20:39Z",
+      "finished_at": "2026-10-15T20:22:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim line slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "partial",
+     "status_note": "X-batch: range 1-1521 of the derived reading text only; the deposit is read only when all X-batches over it pass.",
+     "read_ranges": [
+      [
+       1,
+       299
+      ],
+      [
+       300,
+       599
+      ],
+      [
+       600,
+       899
+      ],
+      [
+       900,
+       1219
+      ],
+      [
+       1220,
+       1521
+      ]
+     ],
+     "lines_total": 12373,
+     "genre_observed": "capture registry own-voice fields: readings, analyses, findings and notes on machine compositions (records 0-85 plus top-level maxim)",
+     "finds_by_shape": {
+      "C": 4,
+      "G": 6,
+      "H": 7,
+      "F": 4,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Many records duplicate d_full and analysis verbatim (e.g. records 39, 45, 46, 50, 72-77, 81), and some own-voice fields embed full machine transcripts (records 25, 45, 46, 78, 80), which were not treated as own voice. Records 3-7 repeat identical concept-entrance-test boilerplate. H finds here mostly name or endorse theses argued in other deposits; triage should link them. Quotes are sub-line slices, each within a single line.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    },
+    {
+     "by": "parallel",
      "batch_id": "X0002",
      "run": "R-w17-X0002",
      "reader": {
@@ -32136,10 +32191,13 @@
      },
      "none_found": false,
      "incidental": "Read tool displayed a trailing empty line 185; queue lines_total 184 used.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 184,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -32200,10 +32258,13 @@
      },
      "none_found": false,
      "incidental": "§18 notes §3A chronology as 'placeholder pending depositor's completion'; companion metadata (l.24) says termination 'confirmed' the central prediction while §13.1 explicitly declines that claim. Trailing empty line 630 displayed; lines_total 629 used.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 629,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -32258,10 +32319,13 @@
      },
      "none_found": false,
      "incidental": "Text path is data/EA-RFCL-01.md, not data/texts/; no deposit_number frontmatter. §7 refers to 'the protocol-based test described in Section 5' but §5 explicitly declines a benchmark and describes no protocol.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 409,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
