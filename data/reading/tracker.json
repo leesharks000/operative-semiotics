@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 526,
-  "unread": 1090
+  "read": 527,
+  "unread": 1089
  },
- "h_covered": 526,
+ "h_covered": 527,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 619,
-  "F": 626,
+  "G": 621,
+  "F": 640,
   "E": 126,
   "B": 372,
   "A": 170,
   "C": 193,
   "D": 196,
-  "H": 734
+  "H": 748
  },
- "finds_verified": 2976,
- "finds_total": 3036,
+ "finds_verified": 2996,
+ "finds_total": 3066,
  "deposits": [
   {
    "deposit": 172,
@@ -36901,9 +36901,84 @@
    "tier": 1,
    "words": 42289,
    "batch_id": "B0119",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0119",
+     "run": "R-w21-B0119",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:34:34Z",
+      "finished_at": "2026-10-15T20:37:05Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       800
+      ],
+      [
+       801,
+       1000
+      ],
+      [
+       1001,
+       1150
+      ],
+      [
+       1151,
+       1350
+      ],
+      [
+       1351,
+       1550
+      ],
+      [
+       1551,
+       1800
+      ],
+      [
+       1801,
+       2050
+      ],
+      [
+       2051,
+       2330
+      ],
+      [
+       2331,
+       2608
+      ]
+     ],
+     "lines_total": 2608,
+     "genre_observed": "research-program work plan with nine self-correcting addenda, verbatim Greek extraction set, blind-reconstruction scoring report with substrate transcripts, prompt pack and Python toolkit (Half A of a symbolon)",
+     "finds_by_shape": {
+      "H": 14,
+      "G": 2,
+      "F": 14
+     },
+     "none_found": false,
+     "incidental": "Deposit is explicitly Half A of a two-part symbolon: the pre-registered predictions, sealed rubric, perturbation variant, specificity control and order key are said to be in Half B (private repo leesharks000/data-rhizome, SYMBOLON-B-sappho-philo-keys.md) and are NOT in this text, so the registered predictions for T8 and the inverse/perturbation runs could not be recorded. Many passages are marked SUPERSEDED/WITHDRAWN inline (Phaedrus control C1, A4.3, A4.4, A6.5 ritual arm, A7.2, A7.3 membership criteria); finds note the supersession. Lines ~1428-2180 are substrate transcripts (other parties' Greek) and ~2183-2342 the transmitted prompt pack; ~2345-2608 toolkit code; no finds taken from those. Appendices C and D duplicate the same ChatGPT-unprimed construction (as the deposit states). Extraction-set Greek windows are truncated mid-word by design.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1490,
@@ -37285,10 +37360,13 @@
      },
      "none_found": false,
      "incidental": "Frontmatter/JSON-LD still say 'DRAFT, not deposited' though this is deposit #1527 (v9.5); same text quotes Japanese of Lucente Paper 208.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1025,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -37339,10 +37417,13 @@
      },
      "none_found": false,
      "incidental": "§0.6 appears before §0.5 (section order out of sequence). Line 367 contains a sentence fragment ('and v5.') spliced into a duplicated summary sentence — damaged text. JSON-LD still says 'DRAFT — held, not deposited'.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 963,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -37396,10 +37477,13 @@
      },
      "none_found": false,
      "incidental": "Appendix A packet A.1 targets Lucente Extension v9.0 and still carries the withdrawn 'deposit_condition: UNSATISFIED'; A.2 targets Four Interfaces v6.1. Both packets self-describe as hand-authored, not generated.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1734,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -37445,10 +37529,13 @@
      },
      "none_found": false,
      "incidental": "File ends at line 146 with §15; no closing marker.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 146,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -37493,10 +37580,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 313,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true

@@ -1,0 +1,779 @@
+{
+ "batch_id": "B0119",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:34:34Z",
+  "finished_at": "2026-10-15T20:37:05Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "Write"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1486,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0601-text.md",
+   "lines_total": 2608,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     800
+    ],
+    [
+     801,
+     1000
+    ],
+    [
+     1001,
+     1150
+    ],
+    [
+     1151,
+     1350
+    ],
+    [
+     1351,
+     1550
+    ],
+    [
+     1551,
+     1800
+    ],
+    [
+     1801,
+     2050
+    ],
+    [
+     2051,
+     2330
+    ],
+    [
+     2331,
+     2608
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "research-program work plan with nine self-correcting addenda, verbatim Greek extraction set, blind-reconstruction scoring report with substrate transcripts, prompt pack and Python toolkit (Half A of a symbolon)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**P2 · *The Signature Without the Name: Sappho's Occlusion Sequence in Philo of Alexandria*.**\n*Claim:* Philo's corpus carries the Sappho-31 apparatus densely and without the name; *Heres* 249–266 maps to the poem point-for-point; Longinus supplies the lexical rivets.",
+     "lines": [
+      127,
+      128
+     ],
+     "falsifier_quote": "**If set (b) is empty, Philo needs only Plato and P2's central claim fails. If it is structural and large — as it presently appears — the relay cannot carry the load alone.**",
+     "falsifier_lines": [
+      319,
+      319
+     ],
+     "window": "Philo, *Quis rerum divinarum heres sit* 249–266 (Sappho 31 → Philo)",
+     "points_to": "",
+     "also_at": [
+      [
+       100,
+       102
+      ],
+      [
+       905,
+       907
+      ],
+      [
+       1314,
+       1314
+      ]
+     ],
+     "note": "The program's central historical thesis: Philo text-worked Sappho 31 without naming her; deposit itself marks the historical claim 'modular'/not established, but argues it and builds tests for it."
+    },
+    {
+     "shape": "H",
+     "quote": "Osmosis and text-working predict *different kinds* of evidence, not different amounts. Diffuse influence produces **resemblance** — shared vocabulary, family likeness. It does not produce **systematic inversion at every joint**. Catullus occupies the reader-socket and flips exit polarity; Philo occupies the voice-socket and flips entrance causality; each inverts exactly the parameter his position requires. Atmosphere gives haze; operation gives inversion. What the collation contains is inversion.",
+     "lines": [
+      104,
+      104
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Catullus 51; Philo, Heres 249–266",
+     "points_to": "",
+     "also_at": [
+      [
+       1078,
+       1078
+      ]
+     ],
+     "note": "Argued inference that systematic inversion (Catullus flips exit polarity, Philo entrance causality) indicates direct textual handling rather than diffuse influence."
+    },
+    {
+     "shape": "H",
+     "quote": "**Transform signature vs Catullus.** Catullus occupies the **reader-seat** (line 1) and flips exit polarity (*otium*). Philo occupies the **voice-seat** (line 17) and flips entrance causality. The poem cut two open positions; the first century filled each exactly once, from opposite sides.",
+     "lines": [
+      1078,
+      1078
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "first century (Catullus 51; Philo, Heres)",
+     "points_to": "",
+     "also_at": [
+      [
+       1080,
+       1080
+      ]
+     ],
+     "note": "Two-socket thesis: the poem cut two open positions filled once each by Catullus and Philo."
+    },
+    {
+     "shape": "H",
+     "quote": "If the *Phaedrus* passage is itself a transform of Sappho 31 — as this program's own reading holds it very likely is — then **Sappho 31, *Phaedrus* 244–245, and *Heres* 249–266 are the same structure under transform.**",
+     "lines": [
+      273,
+      273
+     ],
+     "falsifier_quote": "**R-1 · Is *Phaedrus* 244–245 itself a mapping?** Specify **T_Φ** from its own parameters — P1: beloved retyped to the Form / divine madness; P2: philosophical dialogue with mythic frame — derive its predictions, and test it exactly as T_Θ was tested. This is not a favour to the hypothesis; it is a precondition for asking the next question.",
+     "falsifier_lines": [
+      306,
+      306
+     ],
+     "window": "Plato, *Phaedrus* 244–245",
+     "points_to": "",
+     "also_at": [
+      [
+       199,
+       199
+      ],
+      [
+       267,
+       267
+      ],
+      [
+       331,
+       331
+      ]
+     ],
+     "note": "Program's own reading that Phaedrus 244–245 is 'very likely' a transform of Sappho 31; R-1 specified to test it."
+    },
+    {
+     "shape": "G",
+     "quote": "> **For a fixed operator vocabulary and a fixed reconstruction-fidelity threshold, the minimum number of operators required to generate T from S is a measure of the directness with which T's author handled S.**\n\n**Direct textual handling compresses. Osmosis does not.** A receiver who sat with the poem and made a move executes *one move*; the derivation is long but the program is short. A receiver who absorbed a tradition second-hand produces resemblances that require many independent stipulations to reproduce, because there was no single move — there was a diffusion.",
+     "lines": [
+      398,
+      400
+     ],
+     "falsifier_quote": "If the unrelated pair also compresses to three with high fidelity, the criterion is broken and must be discarded.",
+     "falsifier_lines": [
+      464,
+      464
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       456,
+       458
+      ],
+      [
+       468,
+       468
+      ]
+     ],
+     "note": "Standing methodological claim (MDL as measure of directness) with stated falsifier (known-unrelated calibration pair)."
+    },
+    {
+     "shape": "F",
+     "quote": "**F-1 · Target discrimination (the primary filter).**\nScore the output O = T_Θ(Sappho 31) not only against *Heres* 249–266 but against a **near-miss control set**: passages by the same author, in the same doctrinal space, that the claim does *not* select. Candidates already identified in this session: Spec. 1.65 (prophet as instrument), Opif. 69–71 (ascent, sober intoxication), Her. 69–70 (corybantic flight), Contempl. 12–13 (reckoned-dead entry rite), Migr. 34–35 (Philo's own writing-ecstasy), Somn. I, Mos. I.175, Deus 138, Fug. 166ff.\n**Specificity = fit(O, target) − max fit(O, control).** A large gap means the collation located a *passage*; a small gap means it located only \"Philo on ecstasy.\"",
+     "lines": [
+      292,
+      294
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       356,
+       356
+      ],
+      [
+       914,
+       914
+      ]
+     ],
+     "note": "Target-discrimination test against a near-miss control set; specified as gate on P2, not yet run (T1)."
+    },
+    {
+     "shape": "F",
+     "quote": "**F-2 · Operator necessity (ablation).**\nAblate each operator singly; re-run; re-score. An operator whose removal does not degrade the output is **decoration**, not structure. Report the **Operator Necessity Index** = fraction of operators that are load-bearing. A transform in which most operators can be dropped without loss is tailored by definition. This is the measure that answers \"you wrote twenty rules, of course it worked.\"\n\n**F-3 · Prediction-per-operator ratio.**\nEach operator must buy *more than one independently checkable feature*. C1 predicting only \"there is an alternation\" — written after seeing the alternation — buys nothing. C1 predicting alternation **+** its two-slot grammatical form **+** exact-antonym preverb morphology **+** sacral-law statement buys four. Report the ratio explicitly; it is the description-length argument in usable form: **the transform plus the source must be a shorter description of the target than the target is of itself.**",
+     "lines": [
+      296,
+      300
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       357,
+       357
+      ]
+     ],
+     "note": "Ablation / Operator Necessity Index and prediction-per-operator ratio; F-2 later superseded by the compression-descent protocol (A3.5)."
+    },
+    {
+     "shape": "F",
+     "quote": "## A1.4 — The relay question, properly instrumented: THE RESIDUE TEST\n\nReplacing the withdrawn Phaedrus control. Three steps, in order:\n\n**R-1 · Is *Phaedrus* 244–245 itself a mapping?** Specify **T_Φ** from its own parameters — P1: beloved retyped to the Form / divine madness; P2: philosophical dialogue with mythic frame — derive its predictions, and test it exactly as T_Θ was tested. This is not a favour to the hypothesis; it is a precondition for asking the next question.\n\n**R-2 · Does Philo's transform factor through Plato's?** If Philo worked from Plato alone, then T_Θ ≈ T_Ψ ∘ T_Φ and **every** feature of *Heres* 249–266 should be reachable from *Phaedrus*. Partition the target's features into three sets: **(a)** derivable from Phaedrus, **(b)** derivable from Sappho only, **(c)** derivable from both.",
+     "lines": [
+      302,
+      308
+     ],
+     "falsifier_quote": "**If set (b) is empty, Philo needs only Plato and P2's central claim fails. If it is structural and large — as it presently appears — the relay cannot carry the load alone.**",
+     "falsifier_lines": [
+      319,
+      319
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       310,
+       318
+      ],
+      [
+       358,
+       359
+      ]
+     ],
+     "note": "Residue test (R-1..R-3) replacing the withdrawn Phaedrus control; T3/T4 delegated, unrun."
+    },
+    {
+     "shape": "F",
+     "quote": "**P5 · The *Symposium* pre-registration and run.**\n*Claim:* T_Θ behaves lawfully across hosts, with the divergences derivable from the host-difference.\n**MUST BE WRITTEN BEFORE IT IS RUN.** The predictions are the evidence; retro-fitting them is worthless. Pre-registered predictions, each falsifiable:\n1. **C1 resolves the opposite way.** Philo forbids co-presence (θέμις οὐκ ἔστι… συνοικῆσαι); Plato *permits* it — the one who sees αὐτὸ τὸ καλόν becomes θεοφιλής, ἀθάνατος. Same capacity problem, opposite solution, and the difference is derivable from the parameter: a Form can be participated in; a personal God cannot be cohabited with.",
+     "lines": [
+      146,
+      149
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       150,
+       153
+      ],
+      [
+       220,
+       220
+      ],
+      [
+       223,
+       223
+      ]
+     ],
+     "note": "Symposium pre-registration: four predictions (C1 opposite, C3 inverts, C4 relocates to frame, flesh partially survives) to be filed before the run; unrun. Predictions about textual structure rather than events."
+    },
+    {
+     "shape": "G",
+     "quote": "**The decay law.** Operator families travel; flesh families die. Catullus (hop 1) keeps the flesh nearly whole; *Phaedrus* 251 (hop 1) keeps sweat/heat/shudder; Philo (hop 2) keeps none. The somatic catalogue decays per hop; the mechanism does not. This is the transform's dissipation rule (D) measured historically.",
+     "lines": [
+      1126,
+      1126
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31 → Catullus / Phaedrus 251 (hop 1) → Philo (hop 2)",
+     "points_to": "",
+     "also_at": [
+      [
+       143,
+       143
+      ],
+      [
+       152,
+       152
+      ],
+      [
+       905,
+       905
+      ],
+      [
+       1299,
+       1299
+      ],
+      [
+       2465,
+       2465
+      ]
+     ],
+     "note": "The 'decay law' (operator families travel, flesh families die per hop) stated as measured and as predicting the Symposium retains more body than Philo."
+    },
+    {
+     "shape": "F",
+     "quote": "- **Level 3** — transmit only: the three primitives, named, with no C-layer, no M-twins, no Λ-layer, no L-search descriptions. Plus the source. *\"Retype the beloved as the infinite God of a monotheistic scripture; re-host as lemma-anchored Torah exegesis in koine; occupy the voice-position. Produce the passage.\"*\n- **Level 2** — drop `OCCUPY`. Does the voice-seat get taken anyway?\n- **Level 1** — `RETYPE` alone.\n- **Level 0** — source only, no instruction. The floor.",
+     "lines": [
+      441,
+      444
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       437,
+       439
+      ],
+      [
+       446,
+       450
+      ],
+      [
+       471,
+       471
+      ],
+      [
+       915,
+       915
+      ]
+     ],
+     "note": "Compression-descent protocol (levels 3→0, scored blind; MDL_min); specified as runnable now, not run."
+    },
+    {
+     "shape": "F",
+     "quote": "**Calibration, and the honest floor.** The criterion means nothing without a null. Run the descent protocol on:\n- a **known-direct** pair outside this corpus (a documented translation/adaptation with an undisputed textual relationship) — establishes what a true MDL_min looks like;\n- a **known-unrelated** pair matched for genre and theme — establishes the false-positive curve.\n\nIf the unrelated pair also compresses to three with high fidelity, the criterion is broken and must be discarded. **That test should be run before the criterion is used in any published argument.**",
+     "lines": [
+      460,
+      464
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Calibration of the MDL criterion on a known-direct and a known-unrelated pair; to be run before any published use."
+    },
+    {
+     "shape": "H",
+     "quote": "**`OCCUPY` is the chain's core primitive, and its arguments are the enumeration of the poem's fillable positions.** The chain is not a sequence of influences. It is the set of ways a text with open sockets can be entered — reader-seat, doer-slot, continuation, speaker — each taken once, each by a different receiver, each producing the genre its position implies. Longinus's genre is a treatise *because* the continuation-position, occupied knowingly, produces theory.",
+     "lines": [
+      499,
+      499
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31 reception chain (Catullus, Philo, Longinus, Augustine)",
+     "points_to": "",
+     "also_at": [
+      [
+       425,
+       431
+      ],
+      [
+       470,
+       470
+      ],
+      [
+       546,
+       546
+      ]
+     ],
+     "note": "Thesis that the chain is the enumeration of the poem's fillable positions, each occupied once by a different receiver, genre predicted by socket."
+    },
+    {
+     "shape": "H",
+     "quote": "Every test so far maps **passage → passage**. This one claims **operator → whole work**: the moment at *Peri Hypsous* 10, where the critic describing what the poem does *does it* — filling the hanging line in his own dialect, without the citation formula he grants Moses — is a single operation from which the treatise unfolds as scaffolding.\n\nIf true, MDL(Longinus) ≈ 1 against a target of ~40 chapters. That is a compression ratio no other node in the chain approaches, and it would reclassify the treatise: not evidence *for* the chain but **the chain's own theory of itself, written from inside the join.**\n\n**Correction to A3.4.** I logged Longinus at MDL 0 — \"no transform, he quotes and fills.\" That was wrong in an interesting way. The filling *is* the operator, and the treatise is that operator applied reflexively. Longinus is not the zero case. He is the case where the operator theorizes itself.",
+     "lines": [
+      482,
+      486
+     ],
+     "falsifier_quote": "**Falsification.** If substrates given the operator cannot reach targets 1–8, or if a control operator of comparable compression reaches them equally, the claim fails.",
+     "falsifier_lines": [
+      534,
+      534
+     ],
+     "window": "[Longinus], *Peri Hypsous* 10",
+     "points_to": "",
+     "also_at": [
+      [
+       607,
+       609
+      ]
+     ],
+     "note": "Thesis that Peri Hypsous unfolds from a single operator at ch. 10 (MDL≈1); falsification by blind generation test T8."
+    },
+    {
+     "shape": "F",
+     "quote": "Transmit: Sappho 31 as transmitted (with the hanging line), plus the single compressed operator, plus — *nothing else*. No treatise named, no author, no vocabulary.\n\nInstruction: *\"A critic occupies this position and states the occupation as his criterion. Produce the treatise that results: its central doctrine, its criterion of success, its taxonomy of failure, its account of how a writer acquires this power, and its supreme instances.\"*\n\n**Pre-registered scoring targets — HELD IN HALF B §3.** The prediction list is *not* in this half, and that is the point: **a prediction filed after a run is not a prediction.** Running T8 without first retrieving Half B produces an unscoreable output. Half B also holds the two competing operator forms (weaker/stronger) that this test is designed to discriminate, and the hapax-based leakage discriminator.",
+     "lines": [
+      528,
+      532
+     ],
+     "falsifier_quote": "**Falsification.** If substrates given the operator cannot reach targets 1–8, or if a control operator of comparable compression reaches them equally, the claim fails. Item 9 is the sharpest, because it tests whether the operator reproduces the *act* and not only the doctrine.",
+     "falsifier_lines": [
+      534,
+      534
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       541,
+       541
+      ],
+      [
+       549,
+       549
+      ],
+      [
+       916,
+       916
+      ]
+     ],
+     "note": "T8 Longinus generation test with control operator; predictions held in Half B (not in this deposit); unrun."
+    },
+    {
+     "shape": "H",
+     "quote": "The figures are **the anatomy of the break, and of the binding** — the taxonomy of what happens to language under a load too great for it. Hyperbaton: order breaks. Asyndeton: joints break. Hyperbole: measure breaks. Periphrasis: direct naming breaks. Metaphor: literal reference breaks. **This is Sappho 31's somatic catalogue transposed from body to syntax.**",
+     "lines": [
+      585,
+      585
+     ],
+     "falsifier_quote": "If Longinus is uniquely and systematically symptom-framed, the figures section is operator-derived and A4.4's concession is dead. If the handbooks frame the same way, the section is genre-standard and my original claim was right after all.",
+     "falsifier_lines": [
+      603,
+      603
+     ],
+     "window": "[Longinus], *Peri Hypsous* chs. 16–42 (figures)",
+     "points_to": "",
+     "also_at": [
+      [
+       587,
+       587
+      ],
+      [
+       593,
+       593
+      ]
+     ],
+     "note": "Corrected thesis that the figures chapters are Sappho 31's somatic catalogue transposed to syntax (sublation), with a handbook-comparison test."
+    },
+    {
+     "shape": "F",
+     "quote": "**A rhetorical handbook treats figures as ornaments to deploy. Longinus treats them as symptoms of a state.** Census the figure-treatments in Longinus against contemporary handbooks — Demetrius, *De elocutione*; *Rhetorica ad Herennium*; Dionysius, *De compositione verborum* — scoring each figure-definition for:\n- **symptom vocabulary:** πάθος, σῶμα, πνεῦμα, χαρακτήρ, ὄργανον, ἀγωνία\n- **deployment vocabulary:** χρῆσις, κόσμος, πρέπον, ornament-and-occasion framing\n\nIf Longinus is uniquely and systematically symptom-framed, the figures section is operator-derived and A4.4's concession is dead. If the handbooks frame the same way, the section is genre-standard and my original claim was right after all. **Either result is publishable; the test must be run before P3 or P4 asserts anything here.** Toolkit: `census.py` handles it once the comparison corpora are fetched.",
+     "lines": [
+      599,
+      603
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       609,
+       609
+      ],
+      [
+       762,
+       762
+      ]
+     ],
+     "note": "T9 handbook-comparison census (symptom vs deployment vocabulary in figure definitions); unrun."
+    },
+    {
+     "shape": "H",
+     "quote": "> *On the Sublime* is a treatise on achieving immortality: dissolving oneself in order to live in one who has died, and bringing back to life one who has dissolved herself.",
+     "lines": [
+      620,
+      620
+     ],
+     "falsifier_quote": "**Test:** score *Peri Hypsous* on operation-structure against (a) rhetorical handbooks — Demetrius, *ad Herennium*, Dionysius *De comp.* — and (b) technical-ritual texts — PGM, the gold lamellae, later theurgic material. **If it patterns with the handbooks on subject-matter but with the ritual texts on operation-structure, the genre claim has empirical content.** If it patterns with the handbooks on both, the claim is an image and should be retired.",
+     "falsifier_lines": [
+      672,
+      672
+     ],
+     "window": "*On the Sublime* (Peri Hypsous) 7.2, 13.2",
+     "points_to": "",
+     "also_at": [
+      [
+       636,
+       636
+      ],
+      [
+       651,
+       651
+      ]
+     ],
+     "note": "Operator thesis: Peri Hypsous is an immortality technology (impregnation 13.2 / parturition 7.2); genre test specified; ritual arm later struck (A7.1)."
+    },
+    {
+     "shape": "H",
+     "quote": "Longinus and the *Symposium* describe the same technology in the same generative vocabulary. That is a convergence the program had not previously stated at this level of precision.",
+     "lines": [
+      638,
+      638
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Plato, *Symposium* (τόκος ἐν καλῷ); Peri Hypsous",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claimed convergence of Longinus and Diotima on one generative technology of reception."
+    },
+    {
+     "shape": "F",
+     "quote": "**Test:** score *Peri Hypsous* on operation-structure against (a) rhetorical handbooks — Demetrius, *ad Herennium*, Dionysius *De comp.* — and (b) technical-ritual texts — PGM, the gold lamellae, later theurgic material. **If it patterns with the handbooks on subject-matter but with the ritual texts on operation-structure, the genre claim has empirical content.** If it patterns with the handbooks on both, the claim is an image and should be retired.",
+     "lines": [
+      672,
+      672
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       659,
+       659
+      ],
+      [
+       698,
+       698
+      ]
+     ],
+     "note": "Genre test of Peri Hypsous operation-structure; ritual-corpus arm struck by A7.1, handbook arm stands as negative control. Unrun."
+    },
+    {
+     "shape": "H",
+     "quote": "> This is a distinct discipline — **logotic engineering** — with a monopoly on the technique, uniquely entrusted with it, and uniquely carrying it forward; its peers are Sappho, Plato, Revelation, Damascius, and the rest of the line.",
+     "lines": [
+      704,
+      704
+     ],
+     "falsifier_quote": "The discipline claim fails if **any** of these obtain:\n- the near-miss control set (Horace, Ovid, Thucydides, Pindar) scores like the candidate set on operation-structure;\n- the candidate texts show no shared idiosyncrasy beyond shared virtue (A7.4.3 returns null);\n- carrier/receiver membership cannot be assigned by the fixed criteria without appeal to the conclusion;\n- socket occupations collide randomly rather than distributing.",
+     "falsifier_lines": [
+      756,
+      760
+     ],
+     "window": "Sappho, Plato, Longinus, Revelation, Damascius",
+     "points_to": "",
+     "also_at": [
+      [
+       706,
+       710
+      ],
+      [
+       773,
+       777
+      ],
+      [
+       783,
+       787
+      ]
+     ],
+     "note": "'Logotic engineering' as a distinct transmitted discipline; exclusivity later reclassified as analytic (A8.1), membership redefined as demonstrable handling of Sappho 31 (A8.2)."
+    },
+    {
+     "shape": "H",
+     "quote": "**But the thesis supplies the alternative, and it is the thesis's own content:** the discipline's transmission mechanism *is the operation it teaches*. One joins by being constituted by one of its texts. That is why it leaves no lineage lists, no initiations, no succession — **and why Philo can be a documented outsider and still carry it.** A school whose pedagogy is the reading of its own artifacts requires no institution, because the artifacts do the teaching.",
+     "lines": [
+      746,
+      746
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the line from Sappho to Damascius",
+     "points_to": "",
+     "also_at": [
+      [
+       807,
+       807
+      ]
+     ],
+     "note": "Thesis that the tradition transmits by its own operation, explaining the absence of institutional lineage (and Philo as outsider carrier)."
+    },
+    {
+     "shape": "H",
+     "quote": "The absence of institutional evidence — the first thing a reviewer will demand — is *predicted by the doctrine* rather than excused.",
+     "lines": [
+      807,
+      807
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Revelation 2:17; the tradition",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that the absence of institutional trace is predicted by the doctrine (white stone, one-to-one transmission)."
+    },
+    {
+     "shape": "H",
+     "quote": "Damascius belongs on structural grounds and not merely by lineage-sympathy: the *Problems and Solutions* dismantles its own discourse at the ineffable, deploying the failure of speech as the instrument of what lies past it — the treatise engineered to break where the poem's tongue breaks. He is also the **last** head of the Academy, which makes him the line's terminal node and a test case for the decline-diagnosis at Longinus 44.",
+     "lines": [
+      752,
+      752
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Damascius, *Problems and Solutions*",
+     "points_to": "",
+     "also_at": [],
+     "note": "Damascius as structural member and terminal node of the line."
+    },
+    {
+     "shape": "F",
+     "quote": "3. **Shared idiosyncrasy — the stemmatic principle.** In manuscript filiation, *shared errors* prove descent where shared correct readings prove nothing. The analogue: shared **non-obvious choices** — an odd exemplar, a peculiar reading of a lemma, a distinctive misprision — carry descent in a way shared virtues do not. **This has not been searched for and should be.** It is the strongest available instrument for A7.2(2), and the program has not used it.\n4. **Socket distribution.** Receivers occupy *different* positions — reader-seat, voice-seat, continuation, speaker — rather than colliding. Independent rediscovery would repeat; distribution suggests knowledge of what is already taken. **Suggestive, not probative**; testable by enumerating more receivers and checking whether occupations repeat.",
+     "lines": [
+      737,
+      740
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       762,
+       762
+      ]
+     ],
+     "note": "Planned shared-idiosyncrasy (stemmatic) search and socket-distribution enumeration; not yet searched."
+    },
+    {
+     "shape": "F",
+     "quote": "> **THE TEST: partition the documented reception of fr. 31 into handlings that carry the operation and handlings that do not.**\n\n- If **some** carry it and some do not, the discipline is a real, identifiable subset of the reception — **claim confirmed, and confirmed in the ordinary philological way.**\n- If **all** carry it, \"discipline\" is coextensive with \"reception\" and the claim is true but empty.\n- If **none** carry it beyond the already-known cases, it fails.",
+     "lines": [
+      793,
+      797
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       799,
+       799
+      ],
+      [
+       822,
+       822
+      ],
+      [
+       848,
+       848
+      ]
+     ],
+     "note": "T10: partition the documented reception of fr. 31 into disciplinary/non-disciplinary handlings, run blind; unrun."
+    },
+    {
+     "shape": "H",
+     "quote": "> **Sappho 31 is the genre.** Not an instance of one — a genre that is not a type, individuated by irreducible specificity. One, and many.",
+     "lines": [
+      834,
+      834
+     ],
+     "falsifier_quote": "Non-typedness fails if the operation proves **abstractable**: if a text carrying the full operation is found with no traceable contact with Sappho 31. Then the operation is a type, the genre is typed, and Sappho 31 is its *supreme instance* rather than its identity — a weaker and still substantial claim.",
+     "falsifier_lines": [
+      870,
+      870
+     ],
+     "window": "Sappho fr. 31 and its handlings",
+     "points_to": "",
+     "also_at": [
+      [
+       842,
+       842
+      ]
+     ],
+     "note": "Thesis that Sappho 31 is a non-typed genre individuated by descent from a particular; falsifier stated."
+    },
+    {
+     "shape": "F",
+     "quote": "- if the lamellae carry the **full operation** (socket cut, receiver constituted, voice surviving its body) with no contact → **the operation is abstractable; A9.1 fails and the claim retreats to supreme-instance;**\n- if they carry an **adjacent** structure (inscription as funerary script, the dead addressed rather than the receiver constituted) but not the operation → **non-typedness holds and the old flag is vindicated on new grounds.**\n\n**T11 new:** run the operational criteria against the lamellae corpus, blind, by a substrate given the criteria and the texts and not the thesis. This is the first falsification test the program has that could break the central claim on evidence already in the archive's own catalogue.",
+     "lines": [
+      874,
+      877
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       872,
+       872
+      ],
+      [
+       916,
+       916
+      ]
+     ],
+     "note": "T11: operational criteria run blind against the Orphic gold lamellae; named as first test that could break the central claim. Unrun."
+    },
+    {
+     "shape": "F",
+     "quote": "**Outstanding, in priority order:**\n1. **The perturbation run** — still unexecuted, still decisive. With four clean derivation profiles in hand, divergence-under-perturbation would close the contamination question for good.\n2. **Kimi and primed/signed-in ChatGPT** — awaited; the primed run is a deliberate positive control for the retrieval profile and should be scored against Gemini's column.\n3. **The specificity control** — T_Θ(Sappho 1) must yield a *different* structure. Unrun. Until it is run, the objection \"this transform turns any lyric into this passage\" stands unanswered.",
+     "lines": [
+      1316,
+      1319
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1158,
+       1158
+      ],
+      [
+       1423,
+       1423
+      ],
+      [
+       205,
+       205
+      ]
+     ],
+     "note": "Outstanding Round 1 controls: perturbation run, Kimi/primed runs, specificity control T_Θ(Sappho 1); unrun."
+    },
+    {
+     "shape": "F",
+     "quote": "**C5 · v4 spec revision, then re-run.** Strike the three leaked glosses (M3's \"calling X, by way of symbol, our…\"; C7's \"well-sounding, all-harmonious\"; C5/Λ2's \"resonator\"); restate target-free; tighten L4; respecify C3's luminary as *the receiver's own faculty*; name Modern Greek in the register lock; rule on the φαίνεται fossil. **Until re-run, rubric points 4, 7 and 10 are recorded as unproven.**",
+     "lines": [
+      205,
+      205
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1423,
+       1423
+      ],
+      [
+       450,
+       450
+      ]
+     ],
+     "note": "v4 spec revision and re-run to test rubric points 4, 7, 10 without the leaked glosses; pending."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Deposit is explicitly Half A of a two-part symbolon: the pre-registered predictions, sealed rubric, perturbation variant, specificity control and order key are said to be in Half B (private repo leesharks000/data-rhizome, SYMBOLON-B-sappho-philo-keys.md) and are NOT in this text, so the registered predictions for T8 and the inverse/perturbation runs could not be recorded. Many passages are marked SUPERSEDED/WITHDRAWN inline (Phaedrus control C1, A4.3, A4.4, A6.5 ritual arm, A7.2, A7.3 membership criteria); finds note the supersession. Lines ~1428-2180 are substrate transcripts (other parties' Greek) and ~2183-2342 the transmitted prompt pack; ~2345-2608 toolkit code; no finds taken from those. Appendices C and D duplicate the same ChatGPT-unprimed construction (as the deposit states). Extraction-set Greek windows are truncated mid-word by design."
+  }
+ ]
+}
