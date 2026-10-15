@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 196,
-  "unread": 1420
+  "read": 197,
+  "unread": 1419
  },
- "h_covered": 48,
+ "h_covered": 49,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 207,
-  "F": 213,
-  "E": 53,
-  "B": 125,
-  "A": 47,
-  "C": 71,
-  "D": 53,
-  "H": 40
+  "G": 219,
+  "F": 227,
+  "E": 57,
+  "B": 141,
+  "A": 51,
+  "C": 82,
+  "D": 58,
+  "H": 66
  },
- "finds_verified": 809,
- "finds_total": 809,
+ "finds_verified": 901,
+ "finds_total": 901,
  "deposits": [
   {
    "deposit": 172,
@@ -12612,9 +12612,159 @@
    "tier": 1,
    "words": 204490,
    "batch_id": "B0039",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0039",
+     "run": "R-w5-B0039",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) running as a Claude Code subagent; model identifier given in my context as claude-opus-5-5",
+      "started_at": "2026-10-15T19:29:13Z",
+      "finished_at": "2026-10-15T19:37:50Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue loading, verbatim quote slicing and verification)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       600
+      ],
+      [
+       601,
+       1150
+      ],
+      [
+       1151,
+       1700
+      ],
+      [
+       1700,
+       2249
+      ],
+      [
+       2250,
+       2799
+      ],
+      [
+       2800,
+       3349
+      ],
+      [
+       3350,
+       3899
+      ],
+      [
+       3900,
+       4449
+      ],
+      [
+       4450,
+       4999
+      ],
+      [
+       5000,
+       5549
+      ],
+      [
+       5550,
+       6099
+      ],
+      [
+       6100,
+       6649
+      ],
+      [
+       6650,
+       7199
+      ],
+      [
+       7200,
+       7749
+      ],
+      [
+       7750,
+       8299
+      ],
+      [
+       8300,
+       8849
+      ],
+      [
+       8850,
+       9299
+      ],
+      [
+       9300,
+       9749
+      ],
+      [
+       9750,
+       10199
+      ],
+      [
+       10200,
+       10649
+      ],
+      [
+       10650,
+       11099
+      ],
+      [
+       11100,
+       11549
+      ],
+      [
+       11550,
+       11999
+      ],
+      [
+       12000,
+       12449
+      ],
+      [
+       12450,
+       12899
+      ],
+      [
+       12900,
+       13349
+      ],
+      [
+       13350,
+       13612
+      ]
+     ],
+     "lines_total": 13612,
+     "genre_observed": "book-length heteronymic theory monograph (operator-algebra 'Grundrisse' in nine notebooks with retrocausal prefaces, protocols, case studies, letters, litanies) plus machine-readable back-matter apparatus (HESPERUS) and DataCite record",
+     "finds_by_shape": {
+      "E": 4,
+      "G": 12,
+      "B": 16,
+      "H": 26,
+      "F": 14,
+      "C": 11,
+      "D": 5,
+      "A": 4
+     },
+     "none_found": false,
+     "incidental": "Body/metadata mismatch: the title and the embedded DataCite record (DOI 10.5281/zenodo.19202704, 'Working infrastructure... 13 planning documents, algorithms, diagnostic maps', March 22-24, 2026) describe a planning-documents deposit, but the text body (lines 1-13390) is the full monograph 'Operative Semiotics: A Grundrisse' (nine notebooks) plus the HESPERUS back matter; a later reader should check whether this is the wrong body or the monograph was deposited under the planning-documents record. Stray '-e ' echo artifacts at notebook boundaries (e.g. lines 1861, 3368, 4563, 5735, 6598, 7940, 8941, 9751, 11028). Internal inconsistencies recorded, not judged: 'predatory compression' said not to exist before March 2026 (6926) vs coined January 14, 2026 (8727, 12458) and first DOI deposit narrated January 2026; Sappho F31 described as aorist-hinged (2238-2278) vs 'present tense throughout' (6259); author's 2014 location 'western Massachusetts' (11817) vs Michigan elsewhere; book length stated variously (130k, 140k, 142k, 152k, 155k, 158,334, 161k, 162k words; 'the Grundrisse is 29,000 words' at 10074). Back matter TANG/Glossary/Index placeholders marked [TO BE BUILT] (11045-11065) precede a populated HESPERUS apparatus. Contains a forensic dossier asserting a resemblance between the redesigned $20 portrait and Jeffrey Epstein (6036-6161), framed as a documentation gap, not adjudicated.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 29,
+      "lines_returned": 13612,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 604,
