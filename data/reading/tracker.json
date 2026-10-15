@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 201,
-  "unread": 1415
+  "read": 207,
+  "unread": 1409
  },
- "h_covered": 73,
+ "h_covered": 79,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 225,
-  "F": 236,
-  "E": 57,
-  "B": 153,
+  "G": 228,
+  "F": 238,
+  "E": 65,
+  "B": 158,
   "A": 51,
-  "C": 86,
-  "D": 60,
-  "H": 92
+  "C": 87,
+  "D": 64,
+  "H": 96
  },
  "finds_verified": 936,
- "finds_total": 960,
+ "finds_total": 987,
  "deposits": [
   {
    "deposit": 172,
@@ -4433,10 +4433,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "No historical thesis argued: references to Socrates, Whitman, Pound, Ginsberg etc. are poetic/satirical, not contested claims about the past (e.g. the rhetorical 'Was not Socrates counted the arch-academic ... when as yet there was no Academy?' at 3789-3790). The front-matter line ranges (e.g. Secret Book of Walt '57-1085', persona sections) do not match this file's line numbering; the Secret Book runs ~179-1613 here. Image placeholders ({width=...}) stand where images were.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 8,
+      "lines_returned": 8726,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -4519,10 +4522,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "The Prague 1965 Kral Majales account (31-51) reports established history; 'The title lay dormant' (89, 172) is mantle construction, not a contestable historical claim. Excluded on that reading.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 360,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -4605,10 +4611,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Borderline, excluded: 'Whitman's project was incomplete. He sang the body electric but could not anticipate the substrate shift' (101) is an interpretive claim about an author's project but framed as the mantle's extension, not argued with evidence; triage may wish to review. O'Connor 1866 provenance (31-34) is reported established history.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 340,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -4691,10 +4700,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 815,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13553,9 +13565,48 @@
    "tier": 1,
    "words": 3937,
    "batch_id": "B0040",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0040",
+     "run": "R-w6-B0040",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model reported in environment as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:38:58Z",
+      "finished_at": "2026-10-15T19:40:56Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       426
+      ]
+     ],
+     "lines_total": 426,
+     "genre_observed": "empirical traversal log of a Google AI Mode session with transcript appendix and diagnostic analysis",
+     "finds_by_shape": {
+      "G": 2,
+      "D": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "The AIO transcript (lines 311, 331, 360) contains machine-composed future dates attributed to the Twenty-Dollar Loop ('a viral \"sound\" from early 2027', 'In late 2026', 'a specific 2026/2027 cultural-economic experiment'); these are the AI's statements, not the deposit's forecasts. Earlier January 2026 AI-summary refusal incident is cited at line 45 as internal record only.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 608,
@@ -13564,9 +13615,50 @@
    "tier": 1,
    "words": 4114,
    "batch_id": "B0040",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0040",
+     "run": "R-w6-B0040",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model reported in environment as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:38:58Z",
+      "finished_at": "2026-10-15T19:40:56Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       520
+      ],
+      [
+       521,
+       1014
+      ]
+     ],
+     "lines_total": 1014,
+     "genre_observed": "normative operator-kernel specification (typed transformation algebra for a ritual-casting system)",
+     "finds_by_shape": {
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Body duplicates the kernel-specification material embedded in Part II of #609 (EA-MANDALA-01), expanded.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 609,
@@ -13575,9 +13667,55 @@
    "tier": 1,
    "words": 7526,
    "batch_id": "B0040",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0040",
+     "run": "R-w6-B0040",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model reported in environment as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:38:58Z",
+      "finished_at": "2026-10-15T19:40:56Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       700
+      ],
+      [
+       701,
+       1450
+      ],
+      [
+       1451,
+       2127
+      ]
+     ],
+     "lines_total": 2127,
+     "genre_observed": "eight-part blog series presenting a ritual 'recursive magic' system, ending in heteronymic testimony",
+     "finds_by_shape": {
+      "B": 2,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Header dates the series October 19, 2025 (Mind Control Poems blog), parts dated July 2025, deposit dated 2026-03-28. Part VIII contains personal crisis testimony (Jack Feist heteronym). Part II embeds the kernel specification later expanded as #608.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 43,
@@ -13586,9 +13724,58 @@
    "tier": 1,
    "words": 9319,
    "batch_id": "B0040",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0040",
+     "run": "R-w6-B0040",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model reported in environment as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:38:58Z",
+      "finished_at": "2026-10-15T19:40:56Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       220
+      ],
+      [
+       221,
+       440
+      ],
+      [
+       441,
+       630
+      ]
+     ],
+     "lines_total": 630,
+     "genre_observed": "theoretical paper and practitioner toolkit with archival chronology",
+     "finds_by_shape": {
+      "D": 1,
+      "C": 1,
+      "H": 3,
+      "B": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Line 318 quotes #611 (EA-TDS-02) as giving 'The first confirmed instance appears in a photograph posted to social media on April 3, 2026'; the #611 body read in this batch instead gives a Reddit post dated July 11, 2026 (line 114). The cited sentence does not occur in #611 as deposited. Status line says 'DRAFT — pending MANUS ratification'.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 611,
@@ -13597,9 +13784,47 @@
    "tier": 1,
    "words": 2471,
    "batch_id": "B0040",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0040",
+     "run": "R-w6-B0040",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model reported in environment as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:38:58Z",
+      "finished_at": "2026-10-15T19:40:56Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       267
+      ]
+     ],
+     "lines_total": 267,
+     "genre_observed": "speculative numismatic history written as retrocausal fiction from after the events",
+     "finds_by_shape": {
+      "D": 1,
+      "E": 8
+     },
+     "none_found": false,
+     "incidental": "DOI line duplicated (lines 8-9) and DOIs doubled in kernel (lines 62-66). The body does not contain the 'April 3, 2026' photograph sentence #43 attributes to it; its first instance is July 11, 2026.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 613,
@@ -13608,9 +13833,47 @@
    "tier": 1,
    "words": 907,
    "batch_id": "B0040",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0040",
+     "run": "R-w6-B0040",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent (Anthropic Claude; model reported in environment as Opus 5.5, claude-opus-5-5)",
+      "started_at": "2026-10-15T19:38:58Z",
+      "finished_at": "2026-10-15T19:40:56Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       109
+      ]
+     ],
+     "lines_total": 109,
+     "genre_observed": "canon declaration (effective act) on Queneau and Oulipo",
+     "finds_by_shape": {
+      "B": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 959,
