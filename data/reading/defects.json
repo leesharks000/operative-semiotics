@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 387,
+ "deposits_with_notes": 391,
  "deposits": [
   {
    "deposit": 1,
@@ -3583,6 +3583,17 @@
    "rulings": []
   },
   {
+   "deposit": 1094,
+   "notes": [
+    {
+     "batch_id": "B0112",
+     "field": "incidental",
+     "text": "Damaged structure: the full paper body (Abstract through Appendix F) sits inside the frontmatter related_ids field on line 11 as one 85k-character escaped string, then a second frontmatter-like block closes at 12-14 and the body is repeated at lines 21-566 (with literal backslash-escaped quotes), closed by a stray quote and a second frontmatter terminator at 567-569; the actual Description is 571-580. Date, content_type and substrate fields are empty. Finds are located in the 21-566 copy; every one is duplicated verbatim within line 11."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1101,
    "notes": [
     {
@@ -4834,6 +4845,39 @@
      "batch_id": "B0096",
      "field": "incidental",
      "text": "Title promises 'Critical Edition with Apparatus (Rebekah Cranes, ed.)' but the body contains no apparatus and no editor attribution: it is the #851 text with headings split onto their own lines and stray asterisks (e.g. line 6 'New Human*', line 17 'Codex*', line 21 'Quelle*'). Likely wrong or incomplete body for this deposit."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1406,
+   "notes": [
+    {
+     "batch_id": "B0112",
+     "field": "incidental",
+     "text": "Body duplicated in part: Description (31) restates the Abstract (57). No damage."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1407,
+   "notes": [
+    {
+     "batch_id": "B0112",
+     "field": "incidental",
+     "text": "The operative language of the Act is only in the attached images (not transcribed); content of the Act itself unread."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1409,
+   "notes": [
+    {
+     "batch_id": "B0112",
+     "field": "incidental",
+     "text": "The specification body itself (PDF/HTML) is not in this text file; only the deposit record was read."
     }
    ],
    "rulings": []
