@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 358,
+ "deposits_with_notes": 362,
  "deposits": [
   {
    "deposit": 1,
@@ -25,6 +25,16 @@
      "batch_id": "B0093",
      "field": "status_note",
      "text": "File is a ~2.3M-word JSON dataset (135,660 lines; Read reports ~79k tokens per 250 lines in the entries section, i.e. on the order of 10M+ tokens in total). It cannot be read in full within one reader's context: the Read tool refused further chunks for lack of remaining context at line 900. Read consecutively lines 1-899 (registry header, citation grammar, _alias_redirects, _defect_counts, and the first three entries of 'entries'). Lines 900-135660 unread. This deposit needs splitting into many sub-batches by line range (entry boundaries are '  {' lines at indent 2 inside 'entries', which begins at line 650)."
+    },
+    {
+     "batch_id": "X0002",
+     "field": "incidental",
+     "text": "Many June 2026 records (100–109, 145–174) carry identical d_full and analysis fields (duplicated body). Records cite earlier deposits' theses (Aristotle/Theophrastus one maker #1588, Socrates heteronymy #123, Sappho 31 κῆνος future reader #1270) only as content being checked against compositions; these were not recorded as H because the records report rather than argue them. Record 143 (line 2443) states an indexing-latency floor ('NEED 48-72 HOURS') as a capture-protocol rule; not recorded (procedural). Record 137 (2361-2389) is the later observation bearing on the Acanthian-dove H find at 2113."
+    },
+    {
+     "batch_id": "X0002",
+     "field": "status_note",
+     "text": "X-batch range 1522–2937 of the derived voice text only; the rest of deposit #3 is covered by other X-batches."
     }
    ],
    "rulings": []
@@ -2924,6 +2934,39 @@
    "rulings": []
   },
   {
+   "deposit": 881,
+   "notes": [
+    {
+     "batch_id": "B0100",
+     "field": "incidental",
+     "text": "Header dates scan 2026-06-22, deposit 2026-06-23."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 883,
+   "notes": [
+    {
+     "batch_id": "B0100",
+     "field": "incidental",
+     "text": "Companion Kimi/Gemini/DeepSeek readings referenced as 'awaiting deposit'."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 884,
+   "notes": [
+    {
+     "batch_id": "B0100",
+     "field": "incidental",
+     "text": "Queue title ends '0. Status declaration' (heading bleed). Body is v1.1.1 of EA-MMRS-SURFACE-VISIBILITY-01, predecessor #882 v1.1."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 886,
    "notes": [
     {
@@ -2951,6 +2994,17 @@
      "batch_id": "HB0013",
      "field": "incidental",
      "text": "Body is the Zenodo description-field text only; the traversal documentation file itself is not present."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 909,
+   "notes": [
+    {
+     "batch_id": "B0100",
+     "field": "incidental",
+     "text": "Frame says assembly feedback EA-ASMBLY-RHIZOME-FBK-01 'pending deposit'; typo 'depositd' line 68."
     }
    ],
    "rulings": []

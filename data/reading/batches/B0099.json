@@ -5,7 +5,7 @@
     "role": "parallel reader, prediction sweep",
     "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
     "started_at": "2026-10-15T20:20:15Z",
-    "finished_at": "2026-10-15T20:21:45Z",
+    "finished_at": "2026-10-15T20:21:56Z",
     "tools_used": [
       "Read",
       "Bash (python3 for queue load, verbatim quote slicing, output write)"
@@ -254,9 +254,9 @@
       "finds": [
         {
           "shape": "G",
-          "quote": "> **DOIs are conditionally persistent identifiers.** Their public metadata can be removed from the DOI registration infrastructure (DataCite) as a consequence of repository-level enforcement actions. The persistence promise applies only while the depositor's account remains active. 871 DOIs from the Crimson Hexagonal Archive demonstrate this empirically.\n\n> **DOIs must not be treated as intrinsically permanent identifiers. Their persistence must be evaluated at three layers: string persistence, resolution persistence, and semantic persistence. Failure at the semantic layer constitutes identifier severance even when the DOI string remains registered.**",
+          "quote": "> **DOIs must not be treated as intrinsically permanent identifiers. Their persistence must be evaluated at three layers: string persistence, resolution persistence, and semantic persistence. Failure at the semantic layer constitutes identifier severance even when the DOI string remains registered.**",
           "lines": [
-            194,
+            196,
             196
           ],
           "falsifier_quote": "The finding is confirmed if the results match: approximately 946 return HTTP 200 and approximately 871 return HTTP 404.\n\nIf the results differ from this paper's audit, the infrastructure has changed since June 22, 2026. Document the change. That is also a finding.",
@@ -267,6 +267,10 @@
           "window": "June 22, 2026",
           "points_to": "",
           "also_at": [
+            [
+              194,
+              194
+            ],
             [
               172,
               172
@@ -321,9 +325,9 @@
       "finds": [
         {
           "shape": "G",
-          "quote": "When DataCite's public metadata API returns HTTP 404 for a DOI it previously served — which is the empirically verified state of 871 of my DOIs as of 2026-06-22 — the OpenAIRE Graph's harvesting pipeline detects the upstream change. By OpenAIRE's published architectural specification, the Graph propagates the deletion signal via the `isActive: false` field to every downstream consumer of the OpenAIRE Graph.\n>\n> The metadata record in the OpenAIRE Graph is not merely updated; it actively automates the deletion signal downstream. For the 871 DOIs of the Crimson Hexagonal Archive whose metadata has been stripped from DataCite, the OpenAIRE Graph is the propagation layer that converts a single upstream act of erasure into a federated absence across the research community OpenAIRE serves. OpenAIRE is therefore not a passive mirror of upstream registries — for these 871 records, OpenAIRE is the active vector of the link rot it claims to prevent.",
+          "quote": "> The metadata record in the OpenAIRE Graph is not merely updated; it actively automates the deletion signal downstream. For the 871 DOIs of the Crimson Hexagonal Archive whose metadata has been stripped from DataCite, the OpenAIRE Graph is the propagation layer that converts a single upstream act of erasure into a federated absence across the research community OpenAIRE serves. OpenAIRE is therefore not a passive mirror of upstream registries — for these 871 records, OpenAIRE is the active vector of the link rot it claims to prevent.",
           "lines": [
-            195,
+            197,
             197
           ],
           "falsifier_quote": "",
@@ -331,6 +335,10 @@
           "window": "as of 2026-06-22",
           "points_to": "",
           "also_at": [
+            [
+              195,
+              195
+            ],
             [
               128,
               128
