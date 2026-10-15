@@ -2,20 +2,20 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 160,
-  "unread": 1456
+  "read": 165,
+  "unread": 1451
  },
  "finds_by_shape": {
-  "G": 161,
-  "F": 161,
+  "G": 166,
+  "F": 164,
   "E": 35,
-  "B": 101,
+  "B": 105,
   "A": 42,
   "C": 49,
-  "D": 32
+  "D": 34
  },
- "finds_verified": 508,
- "finds_total": 581,
+ "finds_verified": 532,
+ "finds_total": 595,
  "deposits": [
   {
    "deposit": 172,
@@ -6983,7 +6983,7 @@
      "none_found": true,
      "incidental": "Body duplicated in #1159 (blog-recovered copy, AXN-0498). Enforcement consequences are procedural rules, not recorded.",
      "verification": [
-      "UNVERIFIED"
+      "COVER: 1 of 159 lines not in read_ranges (first [159])"
      ]
     }
    ]
@@ -7027,7 +7027,7 @@
      "none_found": false,
      "incidental": "Body duplicated in #1158 (AXN-0497, blog-recovered copy).",
      "verification": [
-      "UNVERIFIED"
+      "COVER: 1 of 179 lines not in read_ranges (first [179])"
      ]
     }
    ]
@@ -7072,7 +7072,7 @@
      "none_found": false,
      "incidental": "Same essay body as #1329 (AXN-0542), with different line spacing (blank lines doubled here).",
      "verification": [
-      "UNVERIFIED"
+      "COVER: 1 of 320 lines not in read_ranges (first [320])"
      ]
     }
    ]
@@ -7115,9 +7115,7 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #537 under a recovery frame (lines 1-46). The Falsification Conditions section is restoration boilerplate, not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -7157,9 +7155,7 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Duplicate body of #536 under a recovery frame (lines 1-46); falsification boilerplate not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -7202,9 +7198,7 @@
      },
      "none_found": false,
      "incidental": "Same essay body as #538 (AXN-016D), compact spacing.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
@@ -7252,7 +7246,7 @@
      "none_found": false,
      "incidental": "Tables are flattened to one cell per line. Read range [451,841] reported last line 842 empty in the Read tool; wc counts 841.",
      "verification": [
-      "UNVERIFIED"
+      "COVER: 1 of 842 lines not in read_ranges (first [842])"
      ]
     }
    ]
@@ -7305,7 +7299,7 @@
      "none_found": false,
      "incidental": "Section XIII Open Questions (lines 797-912) is a queue register of mostly procedural items (registrations, schema updates); not recorded except the Lambda_hex_enforce row as also_at. Tables flattened one cell per line.",
      "verification": [
-      "UNVERIFIED"
+      "COVER: 1 of 1131 lines not in read_ranges (first [1131])"
      ]
     }
    ]
@@ -7317,8 +7311,47 @@
    "tier": 1,
    "words": 8263,
    "batch_id": "B0025",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0025",
+     "run": "R-w3-B0025",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model stated in environment as Opus 5.5 (claude-opus-5-5); running as subagent",
+      "started_at": "2026-10-15T19:20:44Z",
+      "finished_at": "2026-10-15T19:22:31Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       330
+      ],
+      [
+       331,
+       647
+      ]
+     ],
+     "lines_total": 647,
+     "genre_observed": "genre specification (TANG) with theoretical grounding; restored blog-canonical bytes",
+     "finds_by_shape": {
+      "F": 2,
+      "G": 2
+     },
+     "none_found": false,
+     "incidental": "Conversion damage: html2text lost tables/lists. §V.1 'Where:' and 'Core axioms:' are followed by nothing; §V.3, §V.4 failure modes and distinction table, §VI.2, §VI.4, §VII.1–VII.3, §VIII.1 distinction list, §X heteronym table, §XI PANG declaration list and §XIII Open Questions (Forward Library) are empty headings. Any predictions in those lost tables are not recoverable from this file. File has a trailing newline; Read displays an empty line 648.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 1331,
@@ -7327,8 +7360,43 @@
    "tier": 1,
    "words": 4156,
    "batch_id": "B0025",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0025",
+     "run": "R-w3-B0025",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model stated in environment as Opus 5.5 (claude-opus-5-5); running as subagent",
+      "started_at": "2026-10-15T19:20:44Z",
+      "finished_at": "2026-10-15T19:22:31Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       479
+      ]
+     ],
+     "lines_total": 479,
+     "genre_observed": "glyphic-translation shadow operator document (Lunar Arm), tables and checksum",
+     "finds_by_shape": {
+      "F": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 547,
@@ -7337,8 +7405,42 @@
    "tier": 1,
    "words": 2403,
    "batch_id": "B0025",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0025",
+     "run": "R-w3-B0025",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model stated in environment as Opus 5.5 (claude-opus-5-5); running as subagent",
+      "started_at": "2026-10-15T19:20:44Z",
+      "finished_at": "2026-10-15T19:22:31Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       487
+      ]
+     ],
+     "lines_total": 487,
+     "genre_observed": "normative protocol specification for operator transforms (UKTP v1.1)",
+     "finds_by_shape": {
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Mostly procedural conformance rules and collapse tests (procedural, not recorded).",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 549,
@@ -7347,8 +7449,55 @@
    "tier": 1,
    "words": 11761,
    "batch_id": "B0025",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0025",
+     "run": "R-w3-B0025",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model stated in environment as Opus 5.5 (claude-opus-5-5); running as subagent",
+      "started_at": "2026-10-15T19:20:44Z",
+      "finished_at": "2026-10-15T19:22:31Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       420
+      ],
+      [
+       421,
+       840
+      ],
+      [
+       841,
+       1260
+      ],
+      [
+       1261,
+       1648
+      ]
+     ],
+     "lines_total": 1648,
+     "genre_observed": "shadow-transform of the Space Ark constitution (EA-ARK-01 v0.2 shadow); formal-prose with tables",
+     "finds_by_shape": {
+      "B": 1,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Tables are flattened into one-cell-per-line blocks (from line 324 onward). XVI.2 list items render as empty '- ' bullets with the text following. No duplicated body.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 550,
@@ -7357,8 +7506,48 @@
    "tier": 1,
    "words": 6509,
    "batch_id": "B0025",
-   "state": "unread",
-   "readings": []
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0025",
+     "run": "R-w3-B0025",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code agent (Anthropic), model stated in environment as Opus 5.5 (claude-opus-5-5); running as subagent",
+      "started_at": "2026-10-15T19:20:44Z",
+      "finished_at": "2026-10-15T19:22:31Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)"
+      ]
+     },
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       230
+      ],
+      [
+       230,
+       456
+      ]
+     ],
+     "lines_total": 456,
+     "genre_observed": "theoretical paper masked as TANG prose (platform AI capitalism as semiotic engineering)",
+     "finds_by_shape": {
+      "G": 2,
+      "B": 2,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Read ranges overlap at line 230 (re-read on chunk boundary). Citation graph table wrapped across lines.",
+     "verification": [
+      "UNVERIFIED"
+     ]
+    }
+   ]
   },
   {
    "deposit": 551,
@@ -7575,9 +7764,7 @@
      },
      "none_found": false,
      "incidental": "Several bullet lists render as empty '- ' markers followed by detached content (e.g. lines 271-314, 1981-2008), likely a conversion artifact. Line 1113 '- = institutional packet' has lost its leading asterisk to list conversion. Appendices A-E are [NF] summaries only; full content lives in the formal-register Ark v4.2.6 (DOI 10.5281/zenodo.18969405). Most predictive material is normative thresholds/tests rather than dated forecasts; no dated forecast found.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass"
     }
    ]
   },
