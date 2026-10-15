@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 345,
+ "deposits_with_notes": 347,
  "deposits": [
   {
    "deposit": 3,
@@ -2803,6 +2803,17 @@
    "rulings": []
   },
   {
+   "deposit": 849,
+   "notes": [
+    {
+     "batch_id": "B0095",
+     "field": "incidental",
+     "text": "Section headings are fused onto the preceding line (\"seam_density=5# PROLOGUE\" at 5; \"∮ = 1# II.\" at 175, 403, 613, 891, 1227; \"without him.# I.\" at 39; \"began.# CODA\" at 1507 etc.) - concatenation seams, not damage to prose. Dagger (†) corruption notes at 217 and 939 are authored, not damage."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 863,
    "notes": [
     {
@@ -3767,6 +3778,17 @@
      "batch_id": "B0094",
      "field": "incidental",
      "text": "Recovered blog-canonical text. Registry title says v1.2 but body header says v7.3 (line 52), Recursive Self-Description says v7.2 (line 1269); in-body DOIs differ (20721839 at lines 63/1269/1275 vs 20686327 in the Self-Audit Block at 1290/1323; severed DOI 20685602 in frontmatter). Read tool showed a trailing empty line 1341 beyond lines_total."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1217,
+   "notes": [
+    {
+     "batch_id": "B0095",
+     "field": "incidental",
+     "text": "Recovered blog-canonical bytes (html2text). Many bulleted lists and tables were lost in conversion: headings followed by nothing at e.g. 78-80 (five deficits), 90 (thematic anchors), 144-148 (dating arguments), 192 (Falsification Conditions heading empty), 198 (papyrus list), 274-280 (TANG coverage), 296, 342, 358, 396, 408-410, 504-510 (Phase 1-4 contents with windows \"within 3/6/12 months\"), 541-554 (query battery), 563, 741-743 (three nested theses), 754, 769, 786, 825, 841, 847, 878. Deposit count inconsistent internally (845+ at 69, 780+ at 474/981). Read display showed a trailing empty line 1047 beyond lines_total."
     }
    ],
    "rulings": []

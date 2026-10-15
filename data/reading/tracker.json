@@ -2,24 +2,24 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 412,
+  "read": 414,
   "partial": 1,
-  "unread": 1203
+  "unread": 1201
  },
- "h_covered": 412,
+ "h_covered": 414,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
   "G": 438,
-  "F": 443,
-  "E": 115,
-  "B": 294,
+  "F": 450,
+  "E": 116,
+  "B": 302,
   "A": 139,
   "C": 133,
   "D": 154,
-  "H": 576
+  "H": 593
  },
- "finds_verified": 2251,
- "finds_total": 2292,
+ "finds_verified": 2292,
+ "finds_total": 2325,
  "deposits": [
   {
    "deposit": 172,
@@ -30781,10 +30781,13 @@
      },
      "none_found": false,
      "incidental": "Line 21 runs the last SPXI marker comment straight into the H1 title (no line break). List items are run together inline with '- ' separators in several places (e.g. lines 57, 65, 127, 139, 171, 197).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 207,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -30850,10 +30853,13 @@
      },
      "none_found": false,
      "incidental": "Recovered blog-canonical text. Registry title says v1.2 but body header says v7.3 (line 52), Recursive Self-Description says v7.2 (line 1269); in-body DOIs differ (20721839 at lines 63/1269/1275 vs 20686327 in the Self-Audit Block at 1290/1323; severed DOI 20685602 in frontmatter). Read tool showed a trailing empty line 1341 beyond lines_total.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 1340,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -30865,9 +30871,60 @@
    "tier": 1,
    "words": 20509,
    "batch_id": "B0095",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0095",
+     "run": "R-w16-B0095",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in system context as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:15:16Z",
+      "finished_at": "X",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       500
+      ],
+      [
+       501,
+       780
+      ],
+      [
+       781,
+       1046
+      ]
+     ],
+     "lines_total": 1046,
+     "genre_observed": "Work plan / research programme for a historical-theological thesis with embedded measurement protocol and future-dated kernel citations",
+     "finds_by_shape": {
+      "H": 16,
+      "B": 6,
+      "F": 6
+     },
+     "none_found": false,
+     "incidental": "Recovered blog-canonical bytes (html2text). Many bulleted lists and tables were lost in conversion: headings followed by nothing at e.g. 78-80 (five deficits), 90 (thematic anchors), 144-148 (dating arguments), 192 (Falsification Conditions heading empty), 198 (papyrus list), 274-280 (TANG coverage), 296, 342, 358, 396, 408-410, 504-510 (Phase 1-4 contents with windows \"within 3/6/12 months\"), 541-554 (query battery), 563, 741-743 (three nested theses), 754, 769, 786, 825, 841, 847, 878. Deposit count inconsistent internally (845+ at 69, 780+ at 474/981). Read display showed a trailing empty line 1047 beyond lines_total.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 849,
@@ -30876,9 +30933,61 @@
    "tier": 1,
    "words": 13108,
    "batch_id": "B0095",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0095",
+     "run": "R-w16-B0095",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in system context as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:15:16Z",
+      "finished_at": "X",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "Write"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       800
+      ],
+      [
+       801,
+       1200
+      ],
+      [
+       1201,
+       1541
+      ]
+     ],
+     "lines_total": 1541,
+     "genre_observed": "Literary sayings-gospel / generated transformed book output (Jack Feist), Run 001",
+     "finds_by_shape": {
+      "B": 2,
+      "E": 1,
+      "F": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Section headings are fused onto the preceding line (\"seam_density=5# PROLOGUE\" at 5; \"∮ = 1# II.\" at 175, 403, 613, 891, 1227; \"without him.# I.\" at 39; \"began.# CODA\" at 1507 etc.) - concatenation seams, not damage to prose. Dagger (†) corruption notes at 217 and 939 are authored, not damage.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 851,
