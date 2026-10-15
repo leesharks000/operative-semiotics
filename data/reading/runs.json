@@ -496,7 +496,34 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "batch entry in queue.json + protocol",
    "output": "data/reading/batches/B0015.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 93011,
+    "tool_uses": 15,
+    "tokens": 191140
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:15:44Z",
+    "finished_at": "2026-10-15T19:17:01Z",
+    "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "python3"
+    ]
+   },
+   "verification": {
+    "deposits": 4,
+    "entries": 4,
+    "finds": 11,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 4,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w2-B0016",
@@ -508,7 +535,33 @@
    "protocol_sha256": "86bc21edb3cda170848e8993119d60fbd0b059df9ed228ac8d640e130d5d9994",
    "instructions": "batch entry in queue.json + protocol",
    "output": "data/reading/batches/B0016.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 87689,
+    "tool_uses": 13,
+    "tokens": 172241
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:15:47Z",
+    "finished_at": "2026-10-15T19:17:00Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in session as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load, quote slicing and verification)"
+    ]
+   },
+   "verification": {
+    "deposits": 5,
+    "entries": 5,
+    "finds": 20,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 5,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w2-B0017",
