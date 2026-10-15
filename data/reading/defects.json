@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 692,
+ "deposits_with_notes": 699,
  "deposits": [
   {
    "deposit": 1,
@@ -673,12 +673,34 @@
    "rulings": []
   },
   {
+   "deposit": 79,
+   "notes": [
+    {
+     "batch_id": "B0178",
+     "field": "incidental",
+     "text": "Case study dates the Yellow Whitepaper deposit (10.5281/zenodo.18322624) to April 2026 (line 173); #703 line 290 gives 'single deposit, January 2026' for the same record; #84 gives the downstream author's first Zenodo deposit as January 11, 2026 -- observation, not adjudicated. Line 176 carries the claimant's self-assigned label 'Germany-Erfurt' (place of residence)."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 83,
    "notes": [
     {
      "batch_id": "B0059",
      "field": "incidental",
      "text": "Read tool displays a line 483 beyond lines_total 482 (final line without newline). STRUCTURAL CROSS-REFERENCES heading (467) has no content."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 84,
+   "notes": [
+    {
+     "batch_id": "B0178",
+     "field": "incidental",
+     "text": "Header says v1.0 (line 13), verification block says Version 1.2 (line 851). Dates internally loose: integrity marker DOI dated 2024-11 and first Zenodo deposit Nov 2024, while the Space Ark root is dated 2025-11-09 and 'Semantic Economy (2024-2026)' cites a 2025-12-14 DOI. Line 39 names the downstream author's city of residence (Erfurt) -- flag for the standing rule on public-exchange redactions (name kept, city removed)."
     }
    ],
    "rulings": []
@@ -4035,6 +4057,17 @@
    "rulings": []
   },
   {
+   "deposit": 698,
+   "notes": [
+    {
+     "batch_id": "B0178",
+     "field": "incidental",
+     "text": "Title in this sidecar reads 'Adversarial AI Agent Architecture' (line 8); queue title says 'Adversarial AI Discourse'."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 699,
    "notes": [
     {
@@ -4046,12 +4079,45 @@
    "rulings": []
   },
   {
+   "deposit": 702,
+   "notes": [
+    {
+     "batch_id": "B0178",
+     "field": "incidental",
+     "text": "Word count line (543) says ~6,800 words; queue gives 4,025 words for the text."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 703,
+   "notes": [
+    {
+     "batch_id": "B0178",
+     "field": "incidental",
+     "text": "Schema JSON in §1.5 (lines 131-178) is malformed (duplicated x-note/description, unbalanced braces). Example packet (line 290) dates the Yellow Whitepaper 'January 2026', against #79's 'April 2026'."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 704,
    "notes": [
     {
      "batch_id": "B0058",
      "field": "incidental",
      "text": "Cite block says DOI assigned at deposit (none in text)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 710,
+   "notes": [
+    {
+     "batch_id": "B0178",
+     "field": "incidental",
+     "text": "Deposit list (line 236) titles the LAL charter 'Living Architecture Lab' while #709 (line 241) and references (line 326) keep 'Arkitecture'."
     }
    ],
    "rulings": []
@@ -5074,6 +5140,17 @@
      "batch_id": "B0177",
      "field": "incidental",
      "text": "Same body as #696 (this one keeps markdown formatting)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 988,
+   "notes": [
+    {
+     "batch_id": "B0178",
+     "field": "incidental",
+     "text": "WRONG/DUPLICATE BODY: title says 'Site Code v0.1.1 (Phase 1 Kernel)', content type 'Software / executable apparatus', but the text is the EA-LAL-WORKPLAN-01 workplan, the same as #707 (AXN-024E) re-rendered with markdown tables. No site code is present."
     }
    ],
    "rulings": []

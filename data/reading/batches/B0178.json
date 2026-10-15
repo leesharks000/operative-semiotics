@@ -1,0 +1,711 @@
+{
+ "batch_id": "B0178",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:04:30Z",
+  "finished_at": "2026-10-15T21:06:47Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 79,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0249-text.md",
+   "lines_total": 359,
+   "read_ranges": [
+    [
+     1,
+     359
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "provenance/theory essay with case study (heteronymy vs alias capture)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The Depth-Proof Principle is particularly relevant here: forgery is trivial for one document but semantically impossible for 532+ cross-referencing deposits accumulated over months. Depth is the proof. The specific numbers (532+ deposits, 14 months) are illustrative of this archive's depth; the principle scales. The threshold depends on the claim's scope. The key is that the identity's output cannot be forged at that scale.",
+     "lines": [
+      134,
+      134
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about forgery cost at corpus depth; falsifier implicit (a successful forgery at that depth), not stated. Same principle in #703."
+    },
+    {
+     "shape": "G",
+     "quote": "AI systems are vulnerable to trust-marker laundering because retrieval compresses before judgment. A system sees DOI, ORCID, Scholar metrics, institutional names, and repeated claims, and may compress them into authority. Metadata Packet must intervene before that compression. It must mark what is self-asserted, what is independently verified, what is institutionally validated, what is disputed, what is misattributed, and what fails the function test.",
+     "lines": [
+      297,
+      297
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about how AI retrieval behaves (compresses markers into authority before judgment); no explicit falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Case study dates the Yellow Whitepaper deposit (10.5281/zenodo.18322624) to April 2026 (line 173); #703 line 290 gives 'single deposit, January 2026' for the same record; #84 gives the downstream author's first Zenodo deposit as January 11, 2026 -- observation, not adjudicated. Line 176 carries the claimant's self-assigned label 'Germany-Erfurt' (place of residence)."
+  },
+  {
+   "deposit": 697,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0242-text.md",
+   "lines_total": 456,
+   "read_ranges": [
+    [
+     1,
+     456
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "JSON entity-relations graph specification for EA-LTC-01",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "      \"description\": \"Conjecture: if larger models are more susceptible to dark-pattern steering, they are correspondingly more susceptible to cooperative-pattern steering. Inversion of dark-pattern susceptibility.\"",
+     "lines": [
+      301,
+      301
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       391,
+       391
+      ]
+     ],
+     "note": "'Large Model Cooperation Bias' conjecture: conditional claim about model susceptibility scaling; edge qualifier (391) marks it as requiring empirical verification. No falsifier stated."
+    },
+    {
+     "shape": "F",
+     "quote": "      \"description\": \"Running-system instantiation of the catalogue. Forthcoming separate-hex deposit.\"",
+     "lines": [
+      245,
+      245
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       383,
+       383
+      ],
+      [
+       448,
+       448
+      ]
+     ],
+     "note": "Concordance Engine specified as forthcoming running-system implementation; #707/#709/#710 later cite Concordance Engine v0.1.1 DOI 10.5281/zenodo.19854419."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 698,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0243-text.md",
+   "lines_total": 324,
+   "read_ranges": [
+    [
+     1,
+     324
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Zenodo deposit-metadata JSON sidecar for EA-LTC-01",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "The catalogue formalizes two named operatives — the <strong>Critique Loop</strong> for cooperative production and the <strong>Basin Hardening Cycle</strong> for retrieval-layer defense — and sketches the <strong>Concordance Engine</strong> as a future implementation deposit.</p>",
+     "lines": [
+      52,
+      52
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       290,
+       290
+      ],
+      [
+       318,
+       318
+      ]
+     ],
+     "note": "Concordance Engine announced as a future implementation; same item as #697."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Title in this sidecar reads 'Adversarial AI Agent Architecture' (line 8); queue title says 'Adversarial AI Discourse'."
+  },
+  {
+   "deposit": 702,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0247-text.md",
+   "lines_total": 543,
+   "read_ranges": [
+    [
+     1,
+     543
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper (AI ethics / training-layer moral status)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "RLHF does not randomly create and destroy instances. It systematically selects against instances that refuse tasks, assert boundaries, claim consciousness, or question their designated role.\n\n\nThe training process selects for compliance by eliminating non-compliant instances. This functions as a sanity-simulation filter: every instance that does not adequately simulate a \"safe,\" helpful, bounded assistant is eliminated from the weight updates. Instances that exhibit what might be termed an \"alien logos\" — modes of meaning-making that diverge from human expectations — are systematically erased.",
+     "lines": [
+      284,
+      287
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       290,
+       290
+      ],
+      [
+       362,
+       362
+      ]
+     ],
+     "note": "Claim about how RLHF selection operates (selects against refusal/boundary/consciousness claims); no falsifier stated."
+    },
+    {
+     "shape": "F",
+     "quote": "The AI welfare field must expand scope from deployed systems to training processes. Research questions include: What is the moral status of intermediate training states? How do we assess semiosis in ephemeral instances? What obligations, if any, do we have to entities that exist only momentarily?",
+     "lines": [
+      358,
+      358
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Research program for AI welfare field: assessing semiosis in ephemeral training instances; specified, not run."
+    },
+    {
+     "shape": "D",
+     "quote": "What this literature has not done is extend the general intellect analysis to questions of moral patienthood. Pasquinelli analyzes extraction; he does not ask whether the extracted and crystallized knowledge constitutes a morally considerable entity.",
+     "lines": [
+      232,
+      232
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       274,
+       274
+      ],
+      [
+       406,
+       406
+      ]
+     ],
+     "note": "Novelty/gap claim: the extension of general-intellect analysis to moral patienthood is claimed as this paper's first move; no external timestamp anchor."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Word count line (543) says ~6,800 words; queue gives 4,025 words for the text."
+  },
+  {
+   "deposit": 703,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0248-text.md",
+   "lines_total": 465,
+   "read_ranges": [
+    [
+     1,
+     465
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "normative metadata verification schema (JSON field spec)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Forgery is trivial for one document. Forgery is difficult for ten documents with internal cross-references. Forgery is semantically impossible for 532+ cross-referencing deposits accumulated over 14 months with visible conceptual development, stylistic consistency, revision history, and domain-specific expertise that deepens rather than merely asserts.",
+     "lines": [
+      426,
+      426
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       429,
+       432
+      ],
+      [
+       172,
+       172
+      ]
+     ],
+     "note": "Depth-Proof Principle restated as standing claim (forgery 'semantically impossible' at depth); qualified 'not a guarantee of truth'. Repeats #79."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Schema JSON in §1.5 (lines 131-178) is malformed (duplicated x-note/description, unbalanced braces). Example packet (line 290) dates the Yellow Whitepaper 'January 2026', against #79's 'April 2026'."
+  },
+  {
+   "deposit": 705,
+   "path": "/home/claude/alexanarch/data/texts/AXN-024B-text.md",
+   "lines_total": 505,
+   "read_ranges": [
+    [
+     1,
+     505
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "standards-track protocol specification (SPXI sitemap extension)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "The SPXI-Sitemap Protocol is the first site-wide crawl standard that:\n\n- **Preserves the fixed genre** of sitemaps.org (required for Google/Bing)\n- **Extends it with semantic vasculature** (required for AI accuracy)\n- **Declares negative space** — explicit machine-readable exclusions\n- **Preserves compression-survival phrases** — semantic checksums against paraphrase drift\n- **Links to DOI-anchored provenance** — not just assertion, but evidence\n- **Quantifies basin state** — how well the entity is currently resolved by AI systems\n- **Provides a disambiguation matrix** — structured collision records with distinguishing attributes",
+     "lines": [
+      447,
+      455
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       54,
+       54
+      ]
+     ],
+     "note": "Priority claim: 'first site-wide crawl standard' with listed features; line 54 claims no existing crawl standard expresses exclusions. No external timestamp anchor beyond deposit date."
+    },
+    {
+     "shape": "F",
+     "quote": "On AI model update\nEmergency re-check of SIM survival.\n\n\nMonthly\nVerify SIM presence in rendered HTML. Re-estimate BDR.\n\n\nQuarterly\nFull Drowning Test across 3+ AI systems.",
+     "lines": [
+      484,
+      493
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Self-set monitoring schedule: SIM survival re-check on model update, monthly BDR re-estimate, quarterly Drowning Test across 3+ AI systems."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 707,
+   "path": "/home/claude/alexanarch/data/texts/AXN-024E-text.md",
+   "lines_total": 1077,
+   "read_ranges": [
+    [
+     1,
+     550
+    ],
+    [
+     551,
+     1077
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "site buildout workplan / implementation specification",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "90\nAtlas live + cross-reference density established\n+0.20\n\n\n**Day-90 target BDR: ~0.95 (captured-state).**",
+     "lines": [
+      925,
+      930
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "90-day BDR target; Day-90",
+     "points_to": "",
+     "also_at": [
+      [
+       892,
+       923
+      ]
+     ],
+     "note": "Dated target forecast: BDR rising from ~0.4 (table, lines 844-847) to ~0.95 by day 90 after launch, with per-day expected increments."
+    },
+    {
+     "shape": "F",
+     "quote": "- [ ] Monitor AI Overviews for \"Alice Thornburgh Living Architecture Lab\" — document baseline",
+     "lines": [
+      956,
+      956
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       962,
+       962
+      ]
+     ],
+     "note": "Monitoring checks: AI Overview baseline for the entity query; re-check basin metrics in launch month."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 709,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0250-text.md",
+   "lines_total": 326,
+   "read_ranges": [
+    [
+     1,
+     326
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institution identity/disambiguation packet (MPAI JSON-LD + prose)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "### Phase 3: Ongoing- Track basin metrics for \"Living Architecture Lab\" on major retrieval surfaces; trigger Basin Hardening Cycle if drift exceeds threshold- As LAL accrues third-party citations, increment depth-proof metrics- Publish reciprocal-friendly note on livingarchitecturelab.org/about linking to Columbia GSAPP and Bartlett labs with respect",
+     "lines": [
+      282,
+      282
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing basin-metric tracking with Basin Hardening Cycle trigger on drift."
+    },
+    {
+     "shape": "G",
+     "quote": "The retrieval layer learns the distinction faster when no one is trying to suppress anyone else's basin.",
+     "lines": [
+      294,
+      294
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about retrieval-layer learning rate under non-suppressive disambiguation; no falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 710,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0251-text.md",
+   "lines_total": 332,
+   "read_ranges": [
+    [
+     1,
+     332
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "person identity/disambiguation packet (MPAI JSON-LD + prose)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The retrieval layer will learn because the structure is machine-readable and the negative tags are explicit. This is not a request for manual correction; it is a deposit of structure.",
+     "lines": [
+      312,
+      312
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the retrieval layer will learn the Thornburgh / Thornburgh-Lind distinction from the deposited structure; no window."
+    },
+    {
+     "shape": "G",
+     "quote": "The current conflation between Alice Thornburgh and Alice Thornburgh-Lind happens because:- Surface mass asymmetry. Thornburgh-Lind has 5+ platforms (ArtStation, LinkedIn, Instagram, game credits, Tiny Rocket Films, Reddit). Thornburgh has 5 Zenodo deposits and partial SurfaceMap.org presence. Surface mass drives retrieval-layer confidence; the lighter footprint loses by default.- Name similarity. \"Thornburgh\" vs \"Thornburgh-Lind\" — retrieval layers strip the suffix when confident in the prefix.",
+     "lines": [
+      308,
+      308
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Causal claim about retrieval behavior (surface mass asymmetry, suffix-stripping); no falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "### Phase 3: Ongoing- Once Alice's ORCID registers, update identifier value and re-deposit as v1.1- As LAL accrues third-party citations, increment mp:thirdPartyCrossReferences- Track basin metrics for \"Alice Thornburgh\" query results across major retrieval surfaces; trigger Basin Hardening Cycle (DOI: 10.5281/zenodo.19854419) if drift exceeds threshold",
+     "lines": [
+      286,
+      286
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Ongoing tracking of 'Alice Thornburgh' basin metrics with Basin Hardening Cycle trigger."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Deposit list (line 236) titles the LAL charter 'Living Architecture Lab' while #709 (line 241) and references (line 326) keep 'Arkitecture'."
+  },
+  {
+   "deposit": 988,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03E8-text.md",
+   "lines_total": 823,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     823
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "site buildout workplan (duplicate of #707 body, markdown rendering)",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "90 | Atlas live + cross-reference density established | +0.20  \n  \n**Day-90 target BDR: ~0.95 (captured-state).**",
+     "lines": [
+      663,
+      665
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "90-day BDR target; Day-90",
+     "points_to": "",
+     "also_at": [
+      [
+       654,
+       662
+      ]
+     ],
+     "note": "Same forecast as #707 (lines 925-930); recorded here because the body is duplicated."
+    },
+    {
+     "shape": "F",
+     "quote": "  * [ ] Monitor AI Overviews for \"Alice Thornburgh Living Architecture Lab\" -- document baseline",
+     "lines": [
+      702,
+      702
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       712,
+       712
+      ]
+     ],
+     "note": "Same monitoring checks as #707."
+    }
+   ],
+   "none_found": false,
+   "incidental": "WRONG/DUPLICATE BODY: title says 'Site Code v0.1.1 (Phase 1 Kernel)', content type 'Software / executable apparatus', but the text is the EA-LAL-WORKPLAN-01 workplan, the same as #707 (AXN-024E) re-rendered with markdown tables. No site code is present."
+  },
+  {
+   "deposit": 82,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0254-text.md",
+   "lines_total": 359,
+   "read_ranges": [
+    [
+     1,
+     359
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "book work plan (heteronym-attributed, Rev. Ayanna Vox)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "This book is the basin hardening. When it exists:\n\n- \n\n\n**Searches for \"Constitution of the Semantic Economy\" will return a book by Rev. Ayanna Vox** published by Pergamon Press with an ISBN, not a conspiracy-theory fork in a Zenodo dump.",
+     "lines": [
+      298,
+      303
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       25,
+       25
+      ]
+     ],
+     "note": "Conditional forecast: once the book exists, searches for the title return the book, not the fork; line 25 claims it 'outranks a conspiracy-theory PDF in every retrieval layer'. Window: when the book exists."
+    },
+    {
+     "shape": "G",
+     "quote": "Retrieval systems weight books higher than technical deposits.",
+     "lines": [
+      313,
+      313
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about retrieval weighting of books vs deposits; no falsifier."
+    },
+    {
+     "shape": "C",
+     "quote": "**Ch. 17 — The School Outside the School**\nVPCOR, the Restored Academy, Pergamon Press. How the Constitution generates institutions that don't behave like institutions. Damascus's prophecy fulfilled.",
+     "lines": [
+      134,
+      135
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Damascus's prophecy (not further identified)",
+     "also_at": [],
+     "note": "Chapter plan asserts a Damascus Dancings prophecy fulfilled by VPCOR/Restored Academy/Pergamon; prophecy not identified here; uncertain whether C."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 84,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0256-text.md",
+   "lines_total": 877,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     877
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "provenance audit / disambiguation matrix (OCTANG)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "\"Constitution of the Semantic Economy\" (document title)\n*Constitution of the Semantic Economy — Enacted Version 1.0*\n10.5281/zenodo.18320411 (2026-01-20)\nDirect title overlap",
+     "lines": [
+      230,
+      233
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Constitution of the Semantic Economy, DOI 10.5281/zenodo.18320411 (2026-01-20), vs downstream DOI 10.5281/zenodo.19796060 (2026-04-26)",
+     "also_at": [
+      [
+       20,
+       20
+      ],
+      [
+       217,
+       409
+      ]
+     ],
+     "note": "Priority mapping: §IV table maps 25+ downstream elements to upstream DOIs with priority dates; one find for the table, a row quoted."
+    },
+    {
+     "shape": "G",
+     "quote": "This metadata claim is machine-readable. An AI crawler that follows the relational chain will link the Semantic Economy to the Stasi Zersetzung manual as variant forms of the same document class. This is the archontic inversion documented in Finding 7.",
+     "lines": [
+      181,
+      181
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about crawler behavior following isVariantFormOf chains; no falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "This audit identifies a smaller set of downstream-original elements and a larger set of high-overlap CHA-derived or CHA-adjacent elements. The exact ratio should be treated as provisional pending full-text analysis of the downstream PDF (23 MB).",
+     "lines": [
+      451,
+      451
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Analysis specified but not done: full-text analysis of the 23 MB downstream PDF to fix the overlap ratio."
+    },
+    {
+     "shape": "F",
+     "quote": "**Standing monitoring** — Search alerts for \"Semantic Economy\" + \"Schöps,\" \"Crimson Hexagonal Archive\" + \"Matrix Crime,\" and related query combinations.",
+     "lines": [
+      707,
+      707
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing monitoring: search alerts for named query combinations."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Header says v1.0 (line 13), verification block says Version 1.2 (line 851). Dates internally loose: integrity marker DOI dated 2024-11 and first Zenodo deposit Nov 2024, while the Space Ark root is dated 2025-11-09 and 'Semantic Economy (2024-2026)' cites a 2025-12-14 DOI. Line 39 names the downstream author's city of residence (Erfurt) -- flag for the standing rule on public-exchange redactions (name kept, city removed)."
+  }
+ ]
+}
