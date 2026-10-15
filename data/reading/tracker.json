@@ -17,7 +17,7 @@
   "D": 92,
   "H": 357
  },
- "finds_verified": 1412,
+ "finds_verified": 1430,
  "finds_total": 1430,
  "deposits": [
   {
@@ -21310,10 +21310,13 @@
      },
      "none_found": false,
      "incidental": "Tables are flattened onto single lines (65, 91, 230); list items run together on lines 17 and 270-284.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 383,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -21364,10 +21367,13 @@
      },
      "none_found": false,
      "incidental": "Read tool displays a line 483 beyond lines_total 482 (final line without newline). STRUCTURAL CROSS-REFERENCES heading (467) has no content.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 482,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -21418,10 +21424,13 @@
      },
      "none_found": false,
      "incidental": "PART II (the Epistle text itself) is absent: lines 203-205 are a placeholder (\"See previous version for full text with markers\"); only front matter, footnotes and forward library survive. Footnote numbering is non-contiguous; fn 40/65 and 46/69 duplicate content. Read tool displays line 465 beyond lines_total 464.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 464,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
