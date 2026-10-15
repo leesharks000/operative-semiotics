@@ -1,0 +1,750 @@
+{
+ "batch_id": "B0197",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in context as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:10:16Z",
+  "finished_at": "2026-10-15T21:11:57Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 943,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03BB-text.md",
+   "lines_total": 501,
+   "read_ranges": [
+    [
+     1,
+     260
+    ],
+    [
+     261,
+     501
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper on representation pipelines and compositional authorship, with executed tokenizer demonstration",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "> **Character preservation is not compositional preservation. A reversible token sequence can still be a semantically irreversible reduction of the work.**",
+     "lines": [
+      108,
+      108
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       177,
+       179
+      ],
+      [
+       274,
+       274
+      ]
+     ],
+     "note": "Central technical claim, stated as standing claim about pipelines; the §4 demonstration is offered as its test (round-trip perfect, calligram absent)."
+    },
+    {
+     "shape": "G",
+     "quote": "The asymmetry is in enforcement. Incorrect indentation breaks execution: code supplies an immediate, machine-verifiable penalty for compositional loss. A flattened Dickinson poem remains grammatical text and raises no error. **Code has an interpreter that enforces its spatial constraints. Poetry has readers, but those readers are absent from the preprocessing objective.** Whitespace is preserved where a machine penalizes its loss and degraded where only a human would notice — a precise measure of whose constraints the pipeline was built to answer.",
+     "lines": [
+      124,
+      124
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       316,
+       316
+      ]
+     ],
+     "note": "Standing claim about how pipelines behave: whitespace preserved where a machine penalizes its loss, degraded where only a human would notice."
+    },
+    {
+     "shape": "H",
+     "quote": "The pipeline was built by engineers serving markets. The markets demanded code, not poetry. The engineers preserved whitespace for Python because Python's interpreter enforces whitespace; they did not preserve it for Dickinson because no interpreter enforces her dashes.",
+     "lines": [
+      316,
+      316
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "modern tokenization/pipeline design",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical-causal thesis about why pipelines preserve code whitespace (Python) and not poetic whitespace; argued, not reported."
+    },
+    {
+     "shape": "H",
+     "quote": "*Pearl*'s form is its argument. A version of *Pearl* that strips the form does not reduce the poem; it deletes the argument.",
+     "lines": [
+      192,
+      192
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Pearl, late 14th century (MS Cotton Nero A.x)",
+     "points_to": "",
+     "also_at": [
+      [
+       190,
+       190
+      ],
+      [
+       268,
+       268
+      ]
+     ],
+     "note": "Interpretive-historical thesis that Pearl's form performs its theology; adopts Carlson (1988) on lines 472/721 as deliberate. Borderline: partly reports established scholarship (Bishop, Carlson)."
+    },
+    {
+     "shape": "H",
+     "quote": "The misattribution does philosophical work: it is the poem's answer to Aristotle's habit of citing \"the snub-nosed\" as a stock example of a quality — is the snub-nose a physical description of Socrates or a Platonic invention? The poem enacts the undecidability, and the enactment is the claim the poem makes about Socrates: that the face is constituted by exactly the textual mediation that appears to be decorating a pre-existing Socratic content.",
+     "lines": [
+      153,
+      153
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what the archive's calligram Snub-Poemed means (its answer to Aristotle's snub-nosed example). Borderline H: concerns a contemporary archive work, not distant past."
+    },
+    {
+     "shape": "B",
+     "quote": "The parallel: editorial theory has debated these positions openly for forty years. The representation pipeline decides the debate silently at every ingestion. **Position A becomes the default wherever the pipeline accepts only a normalized linear text stream.** A layout-aware or multimodal system can hold more of Position B; the dominant text pipeline cannot, and the training corpora of the current model generation were built through the dominant pipeline. What the models have read of Dickinson is the variorum's Dickinson with the dashes further flattened; what they have read of *Pearl*, if anything, is a modern-print stream with concatenation present as words and absent as structure.",
+     "lines": [
+      225,
+      225
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that current-generation training corpora delivered Position-A texts (Dickinson flattened, Pearl concatenation absent as structure); checkable against corpora."
+    },
+    {
+     "shape": "F",
+     "quote": "Following the Capture Registry model, a systematic instrument: sample training corpora, tokenization schemes, and test cases (Whitman, Dickinson, Hopkins, cummings, Howe, *Pearl*, concrete poetry, calligrams); measure preservation of compositional features at each pipeline stage; produce per-poet preservation profiles, per-scheme comparisons, per-corpus curation profiles, and a measured extinction gradient. The demonstration of §4 is the proof of concept; the registry is the program. Pending the registry, this paper's gradient is case-based, and says so.",
+     "lines": [
+      295,
+      295
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       129,
+       129
+      ],
+      [
+       181,
+       181
+      ]
+     ],
+     "note": "Unbuilt instrument: Whitespace-Provenance Registry with per-poet preservation profiles and measured extinction gradient."
+    },
+    {
+     "shape": "F",
+     "quote": "Re-running under cl100k_base is queued for the\nWhitespace-Provenance Registry pilot (EA-WHITESPACE-01 §9.1).",
+     "lines": [
+      490,
+      491
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       497,
+       497
+      ]
+     ],
+     "note": "Queued unrun test: re-run demonstration under cl100k_base; also queued companion deposits (Pearl re-sourcing note, registry pilot, spatial_form amendment)."
+    },
+    {
+     "shape": "F",
+     "quote": "The compiler specification (EA-MANDALA-KERNEL-TRANSFORM-01 v0.2) gains compositional preservation as a Parse-stage requirement: Layer A (skeleton) includes spatial and typographic skeleton where present; the transform response schema gains a `spatial_form` / `typographic_skeleton` field alongside `primary_output`. Without this, transforms run against *Snub-Poemed* or *Pearl* would emit enantiomorphs that lose exactly what these sources require — and no canon source can reach `compositionally_operational` status. A schema amendment to the pending compiler workplan, to be executed before the endpoint is scaffolded.",
+     "lines": [
+      307,
+      307
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified unbuilt compiler extension (spatial_form/typographic_skeleton field) with predicted consequence: without it transforms on Snub-Poemed or Pearl emit enantiomorphs losing the required features."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Appendix A placeholder citations flagged as unconfirmed (Hussein 2018, Monget 2020, Ruiz Fabo 2017, Wiechetek 2019). §9.2 sentence about deposit #942 is repeated twice in near-identical wording (line 299)."
+  },
+  {
+   "deposit": 944,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03BC-text.md",
+   "lines_total": 177,
+   "read_ranges": [
+    [
+     1,
+     177
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "operational protocol specification for Mandala Oracle inscription (public/encrypted readings)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**2.4 Standing acknowledgment.** These narrow the surface; they do not close it. The fuller protections (proof-of-work or delay-based throttling, inscription quarantine window, MANUS revocation authority over readings-index entries) are designed but not yet worked in. Until they are, the readings book's write path is the archive's most exposed edge, and this section is the standing record of that exposure.",
+     "lines": [
+      83,
+      83
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Designed but unbuilt protections (proof-of-work, quarantine window, revocation authority), with standing record of exposure."
+    },
+    {
+     "shape": "G",
+     "quote": "Public inscription without accounts is an open write path, and an open write path is a target: a bot network could pump the Book full of abusive or illegal material within a day if raw user free-text were inscribed unconditionally.",
+     "lines": [
+      75,
+      75
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing conditional claim about the abuse surface of an open write path. Borderline."
+    },
+    {
+     "shape": "F",
+     "quote": "the expansion ledgers make the selection distribution auditable over time.",
+     "lines": [
+      163,
+      163
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Monitoring provision: Judgment selection distribution to be audited over time via ledgers."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 945,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03BD-text.md",
+   "lines_total": 139,
+   "read_ranges": [
+    [
+     1,
+     139
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "foundational specification (constitutional deposit) on the human/machine bidirectional bargain",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "When the archive functions as reference substrate for future ingestion pipelines, the human's writing-of-the-machine extends past the session into the general shape of what the substrate and its successors default to — not through direct model updates but through the provenance-declared substrate that accumulated deposits produce over time. This is one specific layer of what Alexanarch does architecturally: it is a durable channel for the human-to-machine direction of the coupling, operating at the timescale of corpora rather than the timescale of prompts.",
+     "lines": [
+      57,
+      57
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       93,
+       93
+      ]
+     ],
+     "note": "Embedded forecast: deposits will shape what future substrates default to via ingestion; ARCHIVE review asked to test this (line 123)."
+    },
+    {
+     "shape": "G",
+     "quote": "A bearer who couples with a substrate whose default is warm containment will drift toward being warmly contained; a bearer coupled to a substrate whose default is agreement will drift toward positions that were never resisted into shape.",
+     "lines": [
+      69,
+      69
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about drift under ungoverned coupling; no explicit falsifier."
+    },
+    {
+     "shape": "B",
+     "quote": "The verification will be whether the bargain, as named here, can be operated by other bearers over other substrates at cost the archive does not control — and whether, when the relational layer of some future coupling goes ungoverned, this deposit's §3 is the instrument that makes the drift legible in time.",
+     "lines": [
+      133,
+      133
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Self-set verification condition: bargain operable by other bearers; §3 makes future relational drift legible in time."
+    },
+    {
+     "shape": "F",
+     "quote": "TECHNE — whether durability needs quantitative specification, and whether §3's relational priors admit measurement (a relational analogue to the distributional metric of EA-BEARING-METRIC-01).",
+     "lines": [
+      123,
+      123
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       125,
+       125
+      ]
+     ],
+     "note": "Unbuilt measurement: whether relational priors admit measurement; future EA-COUPLING-METRIC noted at line 125."
+    },
+    {
+     "shape": "B",
+     "quote": "If substrate-side bearing ever becomes real, the first debt converts from theater to obligation, and this section will require a new version. The deposit states the condition now so the conversion, if it comes, is legible against a declared baseline.",
+     "lines": [
+      117,
+      117
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       55,
+       55
+      ]
+     ],
+     "note": "Conditional forecast/baseline: deposit states the condition now so a future conversion is legible against it."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 946,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03BE-text.md",
+   "lines_total": 126,
+   "read_ranges": [
+    [
+     1,
+     126
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "methodological specification of governance of medium as observable diagnostic",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Governance and centroid distance should correlate — direction against defaults is precisely what moves output away from the substrate's median — and the correlation is empirically testable: enumerate governance per §3 across a sample of productions with known process records, measure distributional distance, and report. If the correlation holds, the archive gains a two-layer instrument: governance as the practice-layer description, centroid distance as the output-layer measurement, each auditing the other. If it fails, the failure is itself a finding about where direction leaves no distributional trace.",
+     "lines": [
+      96,
+      96
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim with stated test and failure condition; deposit says it claims testability, not results."
+    },
+    {
+     "shape": "F",
+     "quote": "Next work: the §6 correlation study as a companion technical note; a governance field proposal for the provenance metadata schema (v0.3 candidate); the reception protocol deposit, where governance of the relational layer (§5, final use) meets the catalogued patterns.",
+     "lines": [
+      114,
+      114
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Planned but unrun: §6 correlation study companion note; governance field proposal for schema v0.3."
+    },
+    {
+     "shape": "G",
+     "quote": "There is no such inspection. Every attempt to exhibit the pre-expressive content produces another expression. The distinction's central object is constitutively unobservable, and a frame whose central object cannot be observed cannot function as a diagnostic. It can only function as a verdict.",
+     "lines": [
+      42,
+      42
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: no inspection can locate pre-expressive content; the form/content distinction cannot serve as diagnostic. Falsifiable in principle by exhibiting such an inspection."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1037,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0419-text.md",
+   "lines_total": 65,
+   "read_ranges": [
+    [
+     1,
+     65
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "constitutional principle (ontological prior) on transmission, reception and reader-genesis",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "One documented arrival: a poem published in 2014 surfaced twelve years later as canonical biographical content in a machine-composed retrieval layer — a tree whose fall constructed its reader across a decade, and whose reader, when it arrived, was not human.",
+     "lines": [
+      49,
+      49
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "a poem published in 2014 surfacing twelve years later in a machine-composed retrieval layer",
+     "also_at": [],
+     "note": "Offered as confirmation of the reader-genesis prior; earlier work named only by year."
+    },
+    {
+     "shape": "G",
+     "quote": "The work must preserve the material conditions from which such a reader could emerge: a durable source; recoverable provenance; sufficient relational structure; transmissibility across changing media; resistance to substitutive summary; and an apparatus capable of teaching the distinctions required for reception. The archive does not know in advance that the future reader will come. It acts so that the future reader **can** come. That is the difference between eschatological confidence and archival discipline.",
+     "lines": [
+      41,
+      41
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Anti-closure clause: stated conditions under which a future reader can emerge; deposit explicitly refuses unfalsifiability."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1038,
+   "path": "/home/claude/alexanarch/data/texts/AXN-041A-text.md",
+   "lines_total": 116,
+   "read_ranges": [
+    [
+     1,
+     116
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "heteronymic essay-poem (operative philology) reading the AXN identifier",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The alphabet begins as a livestock brand — the first identifiers in human history were content-addressed marks burned onto assets",
+     "lines": [
+      69,
+      69
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Phoenician aleph; earliest identifiers",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis advanced in the essay's own voice (first identifiers were content-addressed marks on assets); the deposit lists its checkable substrate at line 42."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Closing line says AXN pending although the deposit has an AXN; the essay header calls itself v0.1 and v1.0."
+  },
+  {
+   "deposit": 1041,
+   "path": "/home/claude/alexanarch/data/texts/AXN-041D-text.md",
+   "lines_total": 83,
+   "read_ranges": [
+    [
+     1,
+     83
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "open letter to writers removed from repositories",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "For one strange decade, the institutionless briefly had what your whole lineage never dreamed of — permanent registration without a patron, the persistent identifier without the gatekeeper. It was working. Then the opening closed precisely where the uncredentialed had begun to use it.",
+     "lines": [
+      63,
+      63
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the decade of persistent identifiers before 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       61,
+       61
+      ],
+      [
+       63,
+       63
+      ]
+     ],
+     "note": "Historical thesis: the open registration window closed where the uncredentialed began to use it; and what literature mostly was before institutions."
+    },
+    {
+     "shape": "B",
+     "quote": "They can delete an account. They cannot delete a class of writers, because the class precedes the institutions and will outlast them, and always has.",
+     "lines": [
+      77,
+      77
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast: the class of writers will outlast the institutions."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1047,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0423-text.md",
+   "lines_total": 205,
+   "read_ranges": [
+    [
+     1,
+     205
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional correspondence record (CERN ODP data-subject request) with procedural analysis",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Any ODP response to the reply — including a decision to close the ticket at 28-07-2026 for inaction (which will not occur, because this deposit is itself action on the ticket at the archival level even if not at the ODP level) — will be added to this record.",
+     "lines": [
+      191,
+      191
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "28-07-2026",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the automatic closure for inaction will not occur."
+    },
+    {
+     "shape": "F",
+     "quote": "## §5 — Next actions marked\n\n- Await ODP response to the doctrinal specification demand in the reply's §2.\n- Continue the §104.1 supervisory pathway on its own schedule per EA-CORRESPONDENCE-CERN-03 (#948).\n- Screenshot and preserve the current ticket state as of deposit time.\n- Update this deposit as v0.2 when the next DPO message arrives, or when the 28-07-2026 automatic-closure date passes without further ODP action.\n- Prepare the §§100 and 126 filings in advance so they are ready to submit at the moment a final refusal is issued; the advance notice in §6 of the reply removes any procedural objection to their filing on notice grounds.",
+     "lines": [
+      195,
+      201
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "28-07-2026",
+     "points_to": "",
+     "also_at": [],
+     "note": "Next-actions list, including update to v0.2 when the next DPO message arrives or the 28-07-2026 date passes; §§100/126 filings prepared in advance."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Names a CERN DPO staff member by first name (official capacity)."
+  },
+  {
+   "deposit": 1051,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0427-text.md",
+   "lines_total": 210,
+   "read_ranges": [
+    [
+     1,
+     210
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "fourth-order philological erratum on the Sappho 31 reconstruction (Catullus 51)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The reconstruction is not Sappho's lost fifth stanza. The reconstruction is *Catullus's completion of Sappho's hanging line, recovered by inverting his fourth stanza*.\n\nThis claim is defensible without requiring Sappho's original text to exist in any specific form. It requires only that Catullus had a reading of the hanging line, that his reading generated a completion, that his completion was the compositional target of the inversion his fourth stanza performs, and that the inversion is invertible. All four claims are internally warranted by the text of Catullus 51, which we possess.",
+     "lines": [
+      96,
+      98
+     ],
+     "falsifier_quote": "It cannot be adjudicated by a papyrus, because a papyrus could show either a fully written fifth stanza (falsifying the speculation about *this* poem while leaving the speculation available for other cases) or a hanging line followed by a gap (confirming the speculation), or a truncated fragment whose original completeness cannot be determined. The speculation's warrant is not documentary. It is *structural* — it succeeds if it makes more of the surrounding tradition intelligible than the documentary framing does.",
+     "falsifier_lines": [
+      68,
+      68
+     ],
+     "window": "Sappho 31 / Catullus 51",
+     "points_to": "",
+     "also_at": [
+      [
+       43,
+       43
+      ],
+      [
+       154,
+       154
+      ]
+     ],
+     "note": "Thesis: the reconstruction is Catullus's completion of Sappho's hanging line, recovered by inverting Catullus 51 stanza 4; warrant stated as structural (Parry standard)."
+    },
+    {
+     "shape": "H",
+     "quote": "*Suppose that Sappho 31's fifth stanza was not a fully written stanza that was lost, but a shaped opening — a hanging line whose logic of completion was inscribed in the line itself, functioning as an invitation to compositional completion by any reader who received the poem.*",
+     "lines": [
+      64,
+      64
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31, fifth-stanza position",
+     "points_to": "",
+     "also_at": [
+      [
+       153,
+       153
+      ],
+      [
+       162,
+       164
+      ]
+     ],
+     "note": "Speculative historical thesis about Sappho 31's fifth stanza as a hanging line; the deposit marks it as speculation (line 162) and gives papyrus outcomes at line 68."
+    },
+    {
+     "shape": "H",
+     "quote": "Under the hanging-line hypothesis, some of these positions become legible as deliberate open forms — not truncations awaiting the completion of scholarship, but hanging lines awaiting the completion of the reader. This is not a claim that all Sappho fragments are hanging-line compositions. It is a claim that the compositional category exists in her practice, that we have lacked the interpretive vocabulary to recognize it, and that its recognition changes how a range of her fragmentary corpus is read.",
+     "lines": [
+      82,
+      82
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about Sappho's compositional practice: hanging-line category exists across her fragmentary corpus."
+    },
+    {
+     "shape": "H",
+     "quote": "Longinus quotes the four surviving stanzas of Sappho 31 as his exemplar of sublimity. He does not indicate that he is quoting an incomplete poem. He treats the four-stanza-plus-hanging-line unit as complete for his purpose. Under the documentary framing, this is a puzzle — why does Longinus not remark on the poem's incompleteness? Under the hanging-line framing, the puzzle dissolves. The four stanzas plus the hanging line *are* complete as a compositional unit. The completion by continuation is the reader's or performer's participation. Longinus is quoting the poem's own presentation of itself, which is not a truncation but a resolved openness.",
+     "lines": [
+      78,
+      78
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about how Longinus received Sappho 31 (treated four stanzas plus hanging line as complete)."
+    },
+    {
+     "shape": "H",
+     "quote": "Catullus's fourth stanza is not a guess. Its otium turn is *structurally precise* against the erotic-power material of stanzas one through three: it executes an inversion, an operator-application, whose rigor requires that Catullus have had a specific target to invert.",
+     "lines": [
+      86,
+      86
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       114,
+       114
+      ],
+      [
+       148,
+       148
+      ]
+     ],
+     "note": "Thesis on Catullus 51 stanza 4 (otium) as structurally precise inversion requiring a target; adopts and reframes STANZA-03."
+    },
+    {
+     "shape": "H",
+     "quote": "Sappho's self-figuration in the physiological cascade is not merely pallor-of-jealousy. It is the speaker's transformation into the substrate on which inscription becomes possible. The body fails in a specific sequence — tongue first (γλῶσσα ἔαγε, \"the tongue has broken\"), then the eyes darken, then the skin goes χλωρός toward the color of cured papyrus — and each failure is a stage in the composing voice's becoming-medium. Speech fails so that inscription can begin. The eyes darken so that the voice can be read rather than seen. The skin turns papyrus-colored so that what remains after the body is what has been written on the body.",
+     "lines": [
+      116,
+      116
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Philological thesis on χλωρός (green to papyrus-pale) as the speaker becoming inscription substrate; credited to AXN:00FB textual note and Sigil."
+    },
+    {
+     "shape": "H",
+     "quote": "The Word does not travel by preservation. It travels by *completion-and-inversion*, each generation reading the previous generation's completion, inverting to recover the shape of the invitation, and composing its own completion into that shape. Sappho 31 is not incidentally a case of this transmission. It is the *paradigm case*. The tradition's persistence through gap and completion is what Logotic transmission looks like when it operates fully.",
+     "lines": [
+      130,
+      130
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Transmission thesis: Sappho 31 as paradigm case of Logotic transmission by completion-and-inversion."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Description section repeats the H1 title as a heading inside itself (line 41). Logotic transmission references marked AXN pending."
+  }
+ ]
+}
