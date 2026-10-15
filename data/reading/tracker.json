@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 260,
-  "unread": 1356
+  "read": 263,
+  "unread": 1353
  },
- "h_covered": 234,
+ "h_covered": 237,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 286,
-  "F": 273,
-  "E": 86,
-  "B": 181,
+  "G": 287,
+  "F": 274,
+  "E": 93,
+  "B": 183,
   "A": 53,
-  "C": 89,
-  "D": 91,
-  "H": 353
+  "C": 91,
+  "D": 92,
+  "H": 357
  },
- "finds_verified": 1330,
- "finds_total": 1412,
+ "finds_verified": 1374,
+ "finds_total": 1430,
  "deposits": [
   {
    "deposit": 172,
@@ -12782,10 +12782,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 853,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -12867,10 +12870,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 378,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -12952,10 +12958,13 @@
      },
      "none_found": false,
      "incidental": "Body duplicates #506 (same work, recovered blog bytes; ASCII hyphens/arrows in place of en dashes).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 320,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13048,10 +13057,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 477,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13141,10 +13153,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Query 3 response is elided in the transcript ('See full text in document index 25/26'), l.305-308.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 568,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13229,10 +13244,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 249,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13318,10 +13336,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Query 3 response is elided in the deposit (\"[See full text in document index 25/26...]\", line 233). No historical thesis; the 2013 claim (line 51) is the operator's prompt quoted in the transcript, not argued.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 405,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13408,10 +13429,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 473,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13497,10 +13521,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Restored from blog; the RSE subtype comparison table, Glossary and Alternative Titles sections are empty headings (lines 249, 466, 513). Positioning against Bollas/Bion/Fricker is conceptual, not a historical thesis.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 554,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13586,10 +13613,13 @@
      },
      "none_found": false,
      "incidental": "The deposit's central argument (lines 441-447) is about structural alignment of name-coincidences, not a historical thesis; the strata facts (ship, Mary Lee, notebook) are reported, not argued. Lexicon first-use claim (line 45) is priority, not H.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 539,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13675,10 +13705,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 560,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -13767,10 +13800,13 @@
      },
      "none_found": false,
      "incidental": "Most of the \"history\" is narrated from a positioned future (June 30, 2028) with declared future-dated citations (line 336); not recorded as H.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 574,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -21001,10 +21037,13 @@
      },
      "none_found": false,
      "incidental": "Same work as #1186 (that deposit is the blog-recovered copy of this text). Reader instruction §0.D asks entries not to be read as predictions; finds recorded as E on the protocol's speculative-specification rule. Tables rendered as one cell per line.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1318,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -21053,10 +21092,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #78 (same text, html2text conversion with markdown tables), preceded by a restoration header (severed DOIs 10.5281/zenodo.19779492/19779493); finds mirror #78 at this file's line numbers. Final line 815 reached.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 815,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -21109,10 +21151,13 @@
      },
      "none_found": false,
      "incidental": "Byline marked proposed/pending MANUS authorization; JSON-LD @id is a PENDING DOI placeholder.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1361,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -21158,10 +21203,13 @@
      },
      "none_found": false,
      "incidental": "Cite block says DOI assigned at deposit (none in text).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 399,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -21173,9 +21221,48 @@
    "tier": 1,
    "words": 4779,
    "batch_id": "B0059",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0059",
+     "run": "R-w10-B0059",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:54:48Z",
+      "finished_at": "2026-10-15T19:56:32Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       383
+      ]
+     ],
+     "lines_total": 383,
+     "genre_observed": "standards-track proposal (pre-RFC working draft)",
+     "finds_by_shape": {
+      "B": 2,
+      "G": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Tables are flattened onto single lines (65, 91, 230); list items run together on lines 17 and 270-284.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 83,
@@ -21184,9 +21271,52 @@
    "tier": 1,
    "words": 6555,
    "batch_id": "B0059",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0059",
+     "run": "R-w10-B0059",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:54:48Z",
+      "finished_at": "2026-10-15T19:56:32Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       482
+      ]
+     ],
+     "lines_total": 482,
+     "genre_observed": "critical edition of a 2015 catalog poem with retrocausal footnotes and forward library",
+     "finds_by_shape": {
+      "D": 1,
+      "H": 1,
+      "E": 3
+     },
+     "none_found": false,
+     "incidental": "Read tool displays a line 483 beyond lines_total 482 (final line without newline). STRUCTURAL CROSS-REFERENCES heading (467) has no content.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1187,
@@ -21195,9 +21325,52 @@
    "tier": 1,
    "words": 8897,
    "batch_id": "B0059",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0059",
+     "run": "R-w10-B0059",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:54:48Z",
+      "finished_at": "2026-10-15T19:56:32Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       240
+      ],
+      [
+       241,
+       464
+      ]
+     ],
+     "lines_total": 464,
+     "genre_observed": "critical-edition apparatus of a 2014 heteronymic epistle (restored blog bytes)",
+     "finds_by_shape": {
+      "H": 3,
+      "C": 2,
+      "E": 4
+     },
+     "none_found": false,
+     "incidental": "PART II (the Epistle text itself) is absent: lines 203-205 are a placeholder (\"See previous version for full text with markers\"); only front matter, footnotes and forward library survive. Footnote numbering is non-contiguous; fn 40/65 and 46/69 duplicate content. Read tool displays line 465 beyond lines_total 464.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1362,
