@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 182,
+ "deposits_with_notes": 184,
  "deposits": [
   {
    "deposit": 8,
@@ -47,6 +47,11 @@
      "batch_id": "B0012",
      "field": "incidental",
      "text": "Body is v5.0 header and new tables over a v4.0 core: the date-count table totals 159, the Verification section says \"DOI Registry v4.0\", 160 documents, last updated January 24, 2026, and the Queued Documents table (#160-168) collides with numbers already assigned in the v5.0 list (#161-200); #142 is assigned twice (line 449 and 650). Registry lists #62 \"The Silent Migration: A Speculative Architectural Forecast\" (10.5281/zenodo.18157916) — a forecast deposit a later reader may want to check."
+    },
+    {
+     "batch_id": "HB0012",
+     "field": "incidental",
+     "text": "Header says v5.0 / 200 documents but the closing VERIFICATION, REGISTRY NOTES and banner (lines 3301-3380) are carried over from v4.0 (160 documents, last updated January 24, 2026); the document-count table stops at 159. Titles imply historical theses argued elsewhere (e.g. #35 'Sappho 31 and the Inscription of the Future Reader') but the registry argues none."
     }
    ],
    "rulings": []
@@ -662,6 +667,11 @@
      "batch_id": "B0010",
      "field": "incidental",
      "text": "Prose twin of #1105 (blog recovery of the same DOI 10.5281/zenodo.18363773); near-identical text."
+    },
+    {
+     "batch_id": "HB0010",
+     "field": "incidental",
+     "text": "Same body as #1105 (AXN-0462), which is the blog-recovered copy of this text; the Feist passage recurs there at line 374."
     }
    ],
    "rulings": []
@@ -673,6 +683,11 @@
      "batch_id": "B0010",
      "field": "incidental",
      "text": "Line 1224 lists #62 'The Silent Migration: A Speculative Architectural Forecast' (10.5281/zenodo.18157916) by title only - a forecast-genre deposit a later reader may want to check; not a find here. Tables are flattened into one cell per line."
+    },
+    {
+     "batch_id": "HB0010",
+     "field": "incidental",
+     "text": "Titles in the registry name theses argued elsewhere (e.g. Sappho 31, Retrocausal Canon Formation) but the registry itself argues none."
     }
    ],
    "rulings": []
@@ -684,6 +699,11 @@
      "batch_id": "B0010",
      "field": "incidental",
      "text": "Abstract (l.56-58) states the heteronym and room sequences are 'specified but not yet executed'."
+    },
+    {
+     "batch_id": "HB0010",
+     "field": "incidental",
+     "text": "YAML twin of #384; it carries the 'First born, last released' principle (lines 1326-1332) but not the Feist heteronym-recognition explanation found in #384 line 328."
     }
    ],
    "rulings": []
@@ -695,6 +715,17 @@
      "batch_id": "B0010",
      "field": "incidental",
      "text": "Section 6.2 'Works to Come' (l.401-420) lists planned works (case studies, whisper network reports, revised protocols 'Based on field testing'); read as plans, not recorded. Lock table shows this provenance's DOI as [pending] (l.527)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 391,
+   "notes": [
+    {
+     "batch_id": "HB0010",
+     "field": "incidental",
+     "text": "Explicitly frames the fulfillment claim as between two 2026 documents, not a claim on ancient scripture (line 152); the H finds are the hermeneutic claims it nonetheless defends."
     }
    ],
    "rulings": []
@@ -728,6 +759,11 @@
      "batch_id": "B0010",
      "field": "incidental",
      "text": "Claims 'The Ezekiel Engine is operational. It has been operational for months.' (l.829) without evidence in-text. Section numbering skips 10."
+    },
+    {
+     "batch_id": "HB0010",
+     "field": "incidental",
+     "text": "Line 217 asserts 'The Ezekiel vision describes wheels that move without turning' but adopts the reading from #393 without arguing it; not recorded as H."
     }
    ],
    "rulings": []
@@ -739,6 +775,11 @@
      "batch_id": "B0011",
      "field": "incidental",
      "text": "Table rows are rendered one cell per line. Same certificate as #1278 (different formatting)."
+    },
+    {
+     "batch_id": "HB0011",
+     "field": "incidental",
+     "text": "The only dates are the archive's own (Epistle 2015, lock 2026), i.e. internal chronology, which is excluded from H."
     }
    ],
    "rulings": []
@@ -761,6 +802,17 @@
      "batch_id": "B0011",
      "field": "incidental",
      "text": "The essay explicitly disclaims prediction (lines 29, 55, 565-567, 621): fulfillment is 'not prediction come true'. Not recorded as forecasts."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 412,
+   "notes": [
+    {
+     "batch_id": "HB0012",
+     "field": "incidental",
+     "text": "Lists 'liberations' as accomplishments (Marx completed, Sappho resurrected, Revelation unsealed, Josephus named, Socrates lifted from purgatory, lines 41-50, 140, 203-208) but only names them; no historical thesis is argued here, so none recorded. A later reader may judge 'Josephus named — the witness identified' (line 45) a pointer to a thesis argued elsewhere."
     }
    ],
    "rulings": []
@@ -1521,6 +1573,11 @@
      "batch_id": "B0010",
      "field": "incidental",
      "text": "Duplicate body of #384 (same DOI 10.5281/zenodo.18363773) with prose sections collapsed into single lines; lines 1-46 recovery framing, l.38-40 restoration boilerplate not recorded."
+    },
+    {
+     "batch_id": "HB0010",
+     "field": "incidental",
+     "text": "Recovered blog-canonical copy of #384 (same body, paragraphs joined); the Feist passage is #384 line 328."
     }
    ],
    "rulings": []
@@ -1682,6 +1739,11 @@
      "batch_id": "B0011",
      "field": "incidental",
      "text": "Description/frontmatter title the deposit as the VPCOR Integrity Lock Declaration (opening quoted at line 32), but the canonical bytes below the rule (lines 48-855) are FNM-LOGOTIC-6.0 dated 2026-01-28 (DOI 10.5281/zenodo.18404789); the VPCOR declaration body itself is not present. Lines 38-40 carry restoration falsification boilerplate (not recorded)."
+    },
+    {
+     "batch_id": "HB0011",
+     "field": "incidental",
+     "text": "The canonical bytes below the recovery rule are FNM-LOGOTIC-6.0 (Fractal Navigation Map, DOI 10.5281/zenodo.18404789, dated 2026-01-28), not the VPCOR Integrity Lock Declaration the title and Description's opening name; the declaration text itself is absent from the body."
     }
    ],
    "rulings": []
@@ -1693,6 +1755,11 @@
      "batch_id": "B0011",
      "field": "incidental",
      "text": "html2text conversion stripped all tables, lists and code blocks: Psi_V definition, S/F integrals, four-pillar table, trajectory map, metric formulas, FOS table, diagnostic questions and appendices are headings with no body (e.g. lines 121-127, 216-222, 291-299, 343-355). Body duplicates #398 in damaged form. Frontmatter creator is Talos Morrow while body byline is Lee Sharks."
+    },
+    {
+     "batch_id": "HB0011",
+     "field": "incidental",
+     "text": "html2text conversion dropped every table, list, code block and formula of the original, so headings stand over empty sections (e.g. 'The Ψ_V Definition', Appendices A-C); compare #398 for full text. Front matter names the creator as Talos Morrow while the body names Lee Sharks as author."
     }
    ],
    "rulings": []
@@ -1704,6 +1771,11 @@
      "batch_id": "B0011",
      "field": "incidental",
      "text": "html2text conversion stripped lists, tables and code blocks (operator stack table, formal foreclosure mechanism, entry trajectory, integrals, kappa_beta formula, cross-reference table are empty headings, e.g. lines 321-334, 364-371). Body duplicates #397. Frontmatter creator Talos Morrow vs body byline Lee Sharks."
+    },
+    {
+     "batch_id": "HB0011",
+     "field": "incidental",
+     "text": "html2text conversion dropped lists, tables and formal blocks (operator stack, foreclosure mechanism, trajectory, metrics formulas); compare #397. Front matter names the creator as Talos Morrow while the body names Lee Sharks."
     }
    ],
    "rulings": []
@@ -1715,6 +1787,11 @@
      "batch_id": "B0011",
      "field": "incidental",
      "text": "html2text conversion stripped lists and tables (e.g. lines 107-109, 150-152, 447-473 have headings with missing bodies). Body duplicates #410."
+    },
+    {
+     "batch_id": "HB0011",
+     "field": "incidental",
+     "text": "html2text conversion dropped lists, tables and code blocks (transmission chain, formula structure, correspondence tables, appendices); compare #410."
     }
    ],
    "rulings": []
@@ -1726,6 +1803,11 @@
      "batch_id": "B0012",
      "field": "incidental",
      "text": "Recovered from blog 2026-07-19; front matter falsification line (40) is restoration boilerplate, not recorded. Lists FNM 6.1 (Emergency Enforcement) as a dependency (line 57)."
+    },
+    {
+     "batch_id": "HB0012",
+     "field": "incidental",
+     "text": "Recovered from the blog 2026-07-19 (recovery frame lines 1-46); canonical body from line 48."
     }
    ],
    "rulings": []
@@ -2027,6 +2109,11 @@
      "batch_id": "B0011",
      "field": "incidental",
      "text": "Duplicate of #405 with proper markdown tables; the modification-protocol list is misnumbered (lines 152-174)."
+    },
+    {
+     "batch_id": "HB0011",
+     "field": "incidental",
+     "text": "Body is the same ILA-CIT-001 certificate as #405 (tables rendered as markdown, list numbering garbled in V.1); not the 'Seed Text, Heteronym Provenance, and Organizational Charter' the batch title suggests."
     }
    ],
    "rulings": []
