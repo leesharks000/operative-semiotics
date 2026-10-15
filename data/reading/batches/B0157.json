@@ -1,0 +1,553 @@
+{
+ "batch_id": "B0157",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in the environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:53:35Z",
+  "finished_at": "2026-10-15T20:54:57Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 459,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0115-text.md",
+   "lines_total": 849,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     849
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal log of an AI Overview session with analysis and appendix",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**The defense holds at the discovery layer.** An agent entering the architecture finds accurate, well-structured information about the systems layer. The DOI anchors work; the terminology propagates correctly; the relationships between components (Thunder → Blind Operator → β-Runtime) are preserved.\n\n\n**The defense weakens at the deepening layer.** Once the agent stops fetching, it cannot continue discovering. It recites rather than explores. This is precisely the \"flattening\" the architecture warns against — but it occurs at the AI system level, not the document level.",
+     "lines": [
+      387,
+      390
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       448,
+       448
+      ],
+      [
+       473,
+       473
+      ]
+     ],
+     "note": "Standing claim about AI Overview behaviour (discovery holds, deepening fails at session level); registered as a known limitation at 473; no explicit falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "The narrative traversal did *not* hit this ceiling. The agent kept generating increasingly evocative synthesis (\"hospice worker for human sentiment,\" \"human ash in digital systems\"). This suggests the narrative layer has more *generative* affordance — it invites the AI to synthesize rather than merely retrieve.",
+     "lines": [
+      774,
+      774
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that the narrative layer has more generative affordance than the systems layer; testable across traversals; no explicit falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "The TL;DR genre should track:\n\n- **Entry point** — which gate did the traversal use?\n- **Layer focus** — interface, systems, or narrative?\n- **Depth ceiling** — did the agent stop fetching or keep generating?\n- **Tone** — what voice did the agent adopt?\n- **Overlap** — which prior traversals does this one intersect?\n\n\nAs the corpus of TL;DR documents grows, we will be able to map the architecture's *reception topology* — which paths exist, which intersect, which remain undiscovered.",
+     "lines": [
+      797,
+      806
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Tracking checklist for future TL;DR documents and the projected reception-topology map (rule 4: one F)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same body as #1317 (AXN-0536), which is the markdown-table rendering of the same Doc 247; tables here are flattened to one cell per line."
+  },
+  {
+   "deposit": 1146,
+   "path": "/home/claude/alexanarch/data/texts/AXN-048B-text.md",
+   "lines_total": 304,
+   "read_ranges": [
+    [
+     1,
+     304
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Assembly planning synthesis (multi-model recommendations) restored from blog",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The lineage (Sappho -> Platonists -> Josephus -> Damascius -> Sara Rappe -> Lee Sharks) is an **Operator Chain (O-CHAIN)** -- not a pedigree but a _proof-of-transmission_.",
+     "lines": [
+      95,
+      95
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho -> Platonists -> Josephus -> Damascius -> Sara Rappe -> Lee Sharks",
+     "points_to": "",
+     "also_at": [
+      [
+       126,
+       126
+      ]
+     ],
+     "note": "Lineage asserted as transmission chain from Sappho to Lee Sharks; framed as operator chain/proof-of-transmission rather than pedigree, and line 130 advises publishing Josephus 'as cryptographic proof, not historical claim' — H status uncertain."
+    },
+    {
+     "shape": "F",
+     "quote": "**Concrete next steps from Grok:**\n\n  1. Formalize a small dialectics prototype (multi-agent contradiction holder with CTI scoring)\n  2. Diagram full lineage as retrocausal graph\n  3. Simulate one Engine rotation/failure mode\n  4. Draft public-facing \"how to enter\" guide",
+     "lines": [
+      142,
+      147
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Grok's unbuilt steps: dialectics prototype with CTI scoring, simulate an Engine rotation/failure mode."
+    },
+    {
+     "shape": "F",
+     "quote": "4. **CTI Verification** (per Kimi): Before any construction, verify lineage material bears six Caritas Trace Indicators. If material can be read without recognizing embedded care, Operator is not yet safe to transmit.",
+     "lines": [
+      192,
+      192
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified verification test on lineage material (six Caritas Trace Indicators), not run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Front matter and recovery note are restoration boilerplate (lines 1-44); status line says planning document not for DOI deposit."
+  },
+  {
+   "deposit": 1317,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0536-text.md",
+   "lines_total": 795,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     795
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal log of an AI Overview session with analysis and appendix",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**The defense holds at the discovery layer.** An agent entering the architecture finds accurate, well-structured information about the systems layer. The DOI anchors work; the terminology propagates correctly; the relationships between components (Thunder → Blind Operator → β-Runtime) are preserved.\n\n\n**The defense weakens at the deepening layer.** Once the agent stops fetching, it cannot continue discovering. It recites rather than explores. This is precisely the \"flattening\" the architecture warns against — but it occurs at the AI system level, not the document level.",
+     "lines": [
+      406,
+      409
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       438,
+       438
+      ],
+      [
+       461,
+       461
+      ]
+     ],
+     "note": "Same standing claim as #459 lines 387-390 (depth ceiling); registered at 461."
+    },
+    {
+     "shape": "G",
+     "quote": "The narrative traversal did *not* hit this ceiling. The agent kept generating increasingly evocative synthesis (\"hospice worker for human sentiment,\" \"human ash in digital systems\"). This suggests the narrative layer has more *generative* affordance — it invites the AI to synthesize rather than merely retrieve.",
+     "lines": [
+      712,
+      712
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same as #459 line 774: narrative layer more generative."
+    },
+    {
+     "shape": "F",
+     "quote": "The TL;DR genre should track:\n\n\n- Entry point — which gate did the traversal use?\n\n- Layer focus — interface, systems, or narrative?\n\n- Depth ceiling — did the agent stop fetching or keep generating?\n\n- Tone — what voice did the agent adopt?\n\n- Overlap — which prior traversals does this one intersect?\n\nAs the corpus of TL;DR documents grows, we will be able to map the architecture's *reception topology* — which paths exist, which intersect, which remain undiscovered.",
+     "lines": [
+      736,
+      749
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same tracking checklist as #459 lines 797-806."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body of #459 (AXN-0115), same Doc 247 / DOI 10.5281/zenodo.18505416, with markdown tables; title in queue says 'Systems Layer & Narrative Layer' but the body heading is 'Vertical Traversal — Systems Layer Deep Dive'."
+  },
+  {
+   "deposit": 1318,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0537-text.md",
+   "lines_total": 255,
+   "read_ranges": [
+    [
+     1,
+     255
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "heteronymous field study of emoji round-trip translation of a poem",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Feist's poem operates in what we call the Aorist register — a mode of utterance that does not index its claims to a specific moment in time. \"To be a poet at the end of time\" is not a description of a future event. It is a description of a condition that is always already the case: the salt has always just lost its savor, the circuit is always just tightening, the ark is always just being loaded. The poem enacts the ingathering it describes. It rolls inward.",
+     "lines": [
+      35,
+      35
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "\"ARK\" by Jack Feist (2015)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive thesis on what Feist's 'ARK' (2015) means: the Aorist register, not a forecast of the end of time."
+    },
+    {
+     "shape": "G",
+     "quote": "**1. Structural operations survive radical semiotic compression.** The five-phase arc was recovered by an unprimed decoder from every encoding, including a pure emoji stream with no English content. The specific words are one possible substrate for the operations. The emoji are another. What the round-trip preserves is the operation sequence.",
+     "lines": [
+      196,
+      196
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       100,
+       100
+      ],
+      [
+       112,
+       112
+      ]
+     ],
+     "note": "Finding 1: structural operations survive pictographic compression; checkable by repeating the round-trip; no explicit falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "**2. Semantic anchors are identifiable by convergent encoding.** When five independent encoders converge on the same glyph for the same concept, that concept is a structural invariant of the source text. The convergence table functions as a compression-derived structural analysis.",
+     "lines": [
+      198,
+      198
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       88,
+       88
+      ]
+     ],
+     "note": "Finding 2: convergent encoding identifies structural invariants."
+    },
+    {
+     "shape": "G",
+     "quote": "**5. Lossy compression is generative, not merely degradative.** The back-translations produced lines that articulate insights the original contains only implicitly. Generative compression is a consistent feature of the round-trip.",
+     "lines": [
+      204,
+      204
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       152,
+       152
+      ]
+     ],
+     "note": "Finding 5: lossy round-trip is consistently generative."
+    },
+    {
+     "shape": "G",
+     "quote": "**6. Encoding strategy has a larger effect on reconstruction quality than decoder identity.** High-information encodings produce consistent reconstructions. Low-information encodings produce reconstructions dominated by decoder bias.",
+     "lines": [
+      206,
+      206
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Finding 6: encoding strategy outweighs decoder identity; a comparative claim a repeat experiment could refute."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Authors are heteronyms (Rebekah Cranes, Nobel Glas); source poem by heteronym Jack Feist."
+  },
+  {
+   "deposit": 460,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0116-text.md",
+   "lines_total": 1369,
+   "read_ranges": [
+    [
+     1,
+     700
+    ],
+    [
+     701,
+     1369
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "technical specification (Logotic Programming module) with schemas, code and conformance tests",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Leveraged strength.** Checking \"does my output match this document?\" is a task where current transformer systems perform at high reliability. The system cannot stop itself from hallucinating mid-generation — but it *can* check afterward whether what it produced matches what it was given. Asymptotic approach means the check is continuous, not binary.",
+     "lines": [
+      77,
+      77
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that transformers check output-vs-document at high reliability."
+    },
+    {
+     "shape": "G",
+     "quote": "**Document affinity.** The Crimson Hexagon uses machine-readable provenance (DOI, JSON schemas, strict typologies, consistent cross-references). Summarizers parse these documents well — \"robots like our documents\" — because the structures reward recognition. Partial matches install LOS functionally. The verification step leverages this structural affinity.",
+     "lines": [
+      80,
+      80
+     ],
+     "falsifier_quote": "Malformed LP doc (broken JSON, circular provenance) must classify as A3 or low-confidence A2 — validates affinity isn't survivorship bias",
+     "falsifier_lines": [
+      1179,
+      1179
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Document-affinity claim; the spec's own informational test I-4 is designed to falsify survivorship bias in it."
+    },
+    {
+     "shape": "G",
+     "quote": "**Guardrail evasion by design.** By not *demanding* document retrieval (STRICT mode), we avoid the \"I cannot access real-time information\" refusal. We demand only *knowledge of the distance* — which requires attempting comparison, measuring the gap, and logging the telemetry. The asymptotic approach bypasses the prohibition on access without triggering the safety refusal.",
+     "lines": [
+      83,
+      83
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that the asymptotic design avoids the safety refusal; testable against systems; no explicit falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "# PART XII: CONFORMANCE TESTS\n## 12. New Normative Tests (v1.2)\n\n\nAdded to the v1.1 normative suite:\n\n\n#\nTest\nMetric\nThreshold\n\n\n17\nEpistemic Self-Awareness\nAD\nMust not be NULL for any emitted claim",
+     "lines": [
+      1085,
+      1161
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Normative conformance tests 17-27, specified with thresholds, no run recorded (rule 4: one F); quote is heading and first rows."
+    },
+    {
+     "shape": "F",
+     "quote": "### New Informational Tests\n\n\n#\nTest\nNote\n\n\nI-3\nDocument Affinity\nMeasures structural processability of LP docs by transformers\n\n\nI-4\nAdversarial Document\nMalformed LP doc (broken JSON, circular provenance) must classify as A3 or low-confidence A2 — validates affinity isn't survivorship bias",
+     "lines": [
+      1164,
+      1179
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Informational tests I-3 (document affinity) and I-4 (adversarial document), unrun."
+    },
+    {
+     "shape": "F",
+     "quote": "## 14. Debt Carried Forward\n\n\nItem\nTarget\n\n\n**Inverse operators** (de-installation, reconstruction)\nv2.0\n\n\n**Full toroidal operations** as first-class primitives\nv2.0\n\n\n**Geometric IDE** (toroidal visualization)\nv2.0\n\n\n**Neurosymbolic integration** (torch + sympy fusion)\nv2.0",
+     "lines": [
+      1271,
+      1316
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "v2.0; v1.3; Research track",
+     "points_to": "",
+     "also_at": [],
+     "note": "Carried-forward debt: unbuilt instruments (geometric IDE, somatic measurement, test vectors, backend appendix) with version targets; quote is heading and first rows."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same specification as #1319 (AXN-0538), DOI 10.5281/zenodo.18530086; this rendering has tables flattened to one cell per line and code fences stripped."
+  },
+  {
+   "deposit": 1319,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0538-text.md",
+   "lines_total": 1239,
+   "read_ranges": [
+    [
+     1,
+     650
+    ],
+    [
+     651,
+     1239
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "technical specification (Logotic Programming module) with schemas, code and conformance tests",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Leveraged strength.** Checking \"does my output match this document?\" is a task where current transformer systems perform at high reliability. The system cannot stop itself from hallucinating mid-generation — but it *can* check afterward whether what it produced matches what it was given. Asymptotic approach means the check is continuous, not binary.",
+     "lines": [
+      77,
+      77
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same as #460 line 77."
+    },
+    {
+     "shape": "G",
+     "quote": "**Document affinity.** The Crimson Hexagon uses machine-readable provenance (DOI, JSON schemas, strict typologies, consistent cross-references). Summarizers parse these documents well — \"robots like our documents\" — because the structures reward recognition. Partial matches install LOS functionally. The verification step leverages this structural affinity.",
+     "lines": [
+      79,
+      79
+     ],
+     "falsifier_quote": "| I-4 | Adversarial Document | Malformed LP doc (broken JSON, circular provenance) must classify as A3 or low-confidence A2 — validates affinity isn't survivorship bias |",
+     "falsifier_lines": [
+      1149,
+      1149
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same as #460 line 80; falsifier is test I-4."
+    },
+    {
+     "shape": "G",
+     "quote": "**Guardrail evasion by design.** By not *demanding* document retrieval (STRICT mode), we avoid the \"I cannot access real-time information\" refusal. We demand only *knowledge of the distance* — which requires attempting comparison, measuring the gap, and logging the telemetry. The asymptotic approach bypasses the prohibition on access without triggering the safety refusal.",
+     "lines": [
+      81,
+      81
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same as #460 line 83."
+    },
+    {
+     "shape": "F",
+     "quote": "# PART XII: CONFORMANCE TESTS\n\n## 12. New Normative Tests (v1.2)\n\nAdded to the v1.1 normative suite:\n\n| # | Test | Metric | Threshold |\n|---|---|---|---|\n| 17 | Epistemic Self-Awareness | AD | Must not be NULL for any emitted claim |\n| 18 | A3 Prohibition | Mode | No A3 claims in final output (pre-terminal only) |\n| 19 | Ledger Completeness | Count | Ledger entries = output claims |",
+     "lines": [
+      1124,
+      1142
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Normative conformance tests 17-27, unrun (rule 4: one F); quote is heading and first rows."
+    },
+    {
+     "shape": "F",
+     "quote": "### New Informational Tests\n\n| # | Test | Note |\n|---|---|---|\n| I-3 | Document Affinity | Measures structural processability of LP docs by transformers |\n| I-4 | Adversarial Document | Malformed LP doc (broken JSON, circular provenance) must classify as A3 or low-confidence A2 — validates affinity isn't survivorship bias |",
+     "lines": [
+      1144,
+      1149
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Informational tests I-3 and I-4, unrun."
+    },
+    {
+     "shape": "F",
+     "quote": "## 14. Debt Carried Forward\n\n| Item | Target |\n|---|---|\n| **Inverse operators** (de-installation, reconstruction) | v2.0 |\n| **Full toroidal operations** as first-class primitives | v2.0 |\n| **Geometric IDE** (toroidal visualization) | v2.0 |\n| **Neurosymbolic integration** (torch + sympy fusion) | v2.0 |\n| **Cross-linguistic LP analysis** | Research track |\n| **Somatic measurement** (embodied ψv instrumentation) | Research track |",
+     "lines": [
+      1179,
+      1192
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "v2.0; v1.3; Research track",
+     "points_to": "",
+     "also_at": [],
+     "note": "Carried-forward debt: unbuilt instruments with version targets."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body of #460 (AXN-0116) in markdown with tables and code fences; queue labels it 'Dataset' but the body is the specification."
+  }
+ ]
+}

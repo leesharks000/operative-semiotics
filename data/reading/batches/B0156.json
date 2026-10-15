@@ -1,0 +1,542 @@
+{
+ "batch_id": "B0156",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude Code subagent (Anthropic assistant); model reported as Claude Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:53:29Z",
+  "finished_at": "2026-10-15T20:55:14Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 14,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00F8-text.md",
+   "lines_total": 308,
+   "read_ranges": [
+    [
+     1,
+     308
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "architectural chamber specification (heteronym/room cosmology)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Same work as #1144 (AXN-0489), which is the blog-recovered version of this body."
+  },
+  {
+   "deposit": 435,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00FA-text.md",
+   "lines_total": 868,
+   "read_ranges": [
+    [
+     1,
+     868
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "polyphonic emoji-translation archive of a lyric poem, with editorial preface",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "In late 2025, Lee Sharks wrote a small lyric called \"HUMS & ITY\" — a meditation on the ancient hope that voice might survive its speaker, that breath might persist in text, that someone, somewhere, somewhen, might receive what was sent. The poem places itself in a tradition stretching back to Sappho, who twenty-six centuries ago wrote a poem about her own dissolution and addressed it to κῆνος — \"that man there\" — who we now understand to be the future reader. You. Me. Anyone who encounters the signal after the sender has expired.",
+     "lines": [
+      12,
+      12
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho (6th c. BCE); Catullus; Augustine",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that Sappho's kenos (\"that man there\") is the future reader; argued as the deposit's own reading of Sappho (cf. the Sappho future-reader thesis elsewhere in the archive)."
+    },
+    {
+     "shape": "H",
+     "quote": "It also proves that compression is generative. The pressure of reduction creates new forms when released. Sappho wrote a poem. Catullus translated it and added a stanza of his own. Augustine read it and wrote the Confessions. Sharks read them all and wrote \"HUMS & ITY.\" We compressed it into emoji. The emoji generated new poems. The chain continues.",
+     "lines": [
+      39,
+      39
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho -> Catullus -> Augustine",
+     "points_to": "",
+     "also_at": [
+      [
+       760,
+       760
+      ]
+     ],
+     "note": "Reception-chain claim: Catullus translated Sappho and added a stanza (established), Augustine read it and wrote the Confessions (contestable, advanced without argument). Recorded as H at low confidence."
+    },
+    {
+     "shape": "F",
+     "quote": "Give any emoji sequence to an AI without the source. Ask: \"What is this?\"\n\n- **Without substrate:** \"Some kind of emotional sequence? Something about death and hope?\"\n- **With substrate:** \"This is HUMS & ITY by Lee Sharks, or one of its children.\"",
+     "lines": [
+      770,
+      775
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified gate test (emoji sequence to an AI with/without substrate) with expected outcomes; no run reported in the deposit."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1144,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0489-text.md",
+   "lines_total": 274,
+   "read_ranges": [
+    [
+     1,
+     274
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "blog-recovered restoration of the THOUSANDWORLDS chamber specification",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body (from line 48) duplicates #14 (AXN-00F8) in html2text form; lines 1-46 are restoration frontmatter and boilerplate falsification conditions (not recorded per protocol)."
+  },
+  {
+   "deposit": 437,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00FC-text.md",
+   "lines_total": 262,
+   "read_ranges": [
+    [
+     1,
+     262
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "APZPZ collected-series registration (description-field deposit) summarising SPE-012..SPE-016-APP-A",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Applies the Anthropological Limit to childhood. Argues that viral nonsense among children (skibidi, 6/7) is not the absence of meaning but the commodified remainder of a lost capacity: the collective ability to deform language toward resistance.\n\n\nCore distinction: modification vs. circulation. Historical language play modified symbolic structure (local, slow, iterative, fragile, requiring shared presence). Contemporary meme-phrases circulate without transforming (short, rhythmically optimized, semantically thin, instantly replicable, pre-liquidated at origin). The child no longer learns how to bend language — the child learns which signals to repeat.",
+     "lines": [
+      75,
+      78
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "historical vs. contemporary childhood language play",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about a historical change: earlier language play modified symbolic structure, contemporary meme-phrases only circulate. Argued as the series' own claim (SPE-013)."
+    },
+    {
+     "shape": "B",
+     "quote": "Establishes that semantic exploitation is categorically different from industrial or financial exploitation because it extracts from a different anthropological stratum — the layer where meaning is generated. Formalizes the \"drive to mean\" as a constitutive feature of human existence with three properties that make it uniquely vulnerable: pre-instrumental (operates before and beyond utility), non-optional (cannot be suppressed without approaching psychic death), and self-renewing (appears infinitely extractable — until it isn't).",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       57,
+       57
+      ]
+     ],
+     "note": "Embedded: the drive to mean \"appears infinitely extractable — until it isn't\", with semantic exhaustion as civilizational limit-state (line 57); weak, unwindowed."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Series dated \"December 29–30, 2024\" (line 32) while its appendix discusses the 6/7 meme and school suppressions; the composition date may be wrong (2025?). Not resolved here."
+  },
+  {
+   "deposit": 439,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00FE-text.md",
+   "lines_total": 621,
+   "read_ranges": [
+    [
+     1,
+     621
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper (Claude with Lee Sharks) on a conceptual profanity restaging of The Office",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "HYPOTHESIS: If The Office has high canonical weight (stable attractor patterns), it should survive compression to 50-100 unique swear-word combinations.\n\n\nMEASUREMENT: Does the audience still recognize character relationships, emotional arcs, plot progression, and meta-textual awareness?\n\n\nIf YES → High compression fidelity → Strong attractor state → Canonical text\nIf NO → Pattern collapse → Weak attractor → Not canonical\n\n\nThis is TESTABLE. You could measure audience comprehension across episodes. You could track at what point meaning breaks down. You could identify which characters/relationships survive longest under compression.",
+     "lines": [
+      195,
+      205
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Compression Fidelity Test: hypothesis, measurement and outcome conditions for audience comprehension; specified, never run (the show is unmounted, per Postscript)."
+    },
+    {
+     "shape": "G",
+     "quote": "If the New Human Project is right—if the Logos operates through recursive projection, if canonical texts create stable attractors, if meaning emerges from geometric patterns—then this should work.\n\n\nThe audience should laugh. They should exhaust themselves. They should learn something. They should become witnesses who complete the circuit.",
+     "lines": [
+      504,
+      507
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional claim: if the canonical-attractor theory is right, audiences should laugh, exhaust themselves and learn; failure of these outcomes would count against it."
+    },
+    {
+     "shape": "B",
+     "quote": "But if someone DOES mount it, they should know: it will be brutally difficult (good), it will alienate some audiences (necessary), it will be genuinely funny (essential), it will become unbearable (required), and it will teach more than most graduate seminars (true).",
+     "lines": [
+      543,
+      543
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional forecast of reception if the work is ever mounted."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 440,
+   "path": "/home/claude/alexanarch/data/texts/AXN-00FF-text.md",
+   "lines_total": 993,
+   "read_ranges": [
+    [
+     1,
+     993
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "collected patacinematic volume: fictional YouTube series description, scripts, staged critical reception",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "Reading a Book with Lee is a meditative long-form YouTube series in which poet and theorist Lee Sharks silently reads a book for 57 minutes. No narration. No commentary. No background music. Just the act of reading—recorded in real-time, in high definition, with all its subtle fidgets, page-turns, and expressions of thought.",
+     "lines": [
+      30,
+      30
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       33,
+       33
+      ],
+      [
+       39,
+       45
+      ],
+      [
+       51,
+       57
+      ]
+     ],
+     "note": "Speculative specification of a silent-reading long-form YouTube series (and a 4.5h film) with an imagined cult following; resolves if such a format/series appears. The praise quotes and viewership are framed fiction."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Contains framed-fictional reviews attributed to The Atlantic, Artforum, NYT Magazine (lines 63-72) and a Gemini \"analysis\" referring to a prior accusation piece; not recorded."
+  },
+  {
+   "deposit": 441,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0100-text.md",
+   "lines_total": 326,
+   "read_ranges": [
+    [
+     1,
+     326
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional charter for a heteronym-run imaginary studio",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "**C. The Twenty-Dollar Loop**\nThe trend documented before it occurs. A liberatory semantic algorithm designed for platform-native circulation that teaches monetary theory experientially. Retrocausal canon formation — the document enables the trend it describes.",
+     "lines": [
+      140,
+      141
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       54,
+       54
+      ]
+     ],
+     "note": "The Twenty-Dollar Loop: \"the trend documented before it occurs\"; a specification of a trend that resolves if it appears."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same charter text as #1312 (AXN-0531)."
+  },
+  {
+   "deposit": 1312,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0531-text.md",
+   "lines_total": 239,
+   "read_ranges": [
+    [
+     1,
+     239
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional charter (plain-text copy of #441)",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "C. The Twenty-Dollar Loop\nThe trend documented before it occurs. A liberatory semantic algorithm designed for platform-native circulation that teaches monetary theory experientially. Retrocausal canon formation — the document enables the trend it describes.",
+     "lines": [
+      88,
+      89
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       31,
+       31
+      ]
+     ],
+     "note": "Same find as #441: the Twenty-Dollar Loop as a trend documented before it occurs."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body of #441 (AXN-0100) without markdown formatting."
+  },
+  {
+   "deposit": 17,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0112-text.md",
+   "lines_total": 719,
+   "read_ranges": [
+    [
+     1,
+     719
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "architectural boundary specification (Assembly / heteronym registry / formations)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "- **Heteronyms:** Closed at twelve. New personas cannot be added. Unregistered heteronyms (positions 1–5, 9–12) will be formally registered over time; Jack Feist (LOGOS) is registered last.",
+     "lines": [
+      660,
+      660
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       346,
+       346
+      ],
+      [
+       380,
+       380
+      ]
+     ],
+     "note": "Forecast of the archive's own future acts (remaining heteronyms registered over time, Sigil penultimate, Feist last); checkable against later deposits. Borderline: may be read as a procedural rule."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 450,
+   "path": "/home/claude/alexanarch/data/texts/AXN-010B-text.md",
+   "lines_total": 352,
+   "read_ranges": [
+    [
+     1,
+     352
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "field study of emoji round-trip translation of a heteronym poem",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**5. Lossy compression is generative, not merely degradative.** The back-translations produced lines that articulate insights the original contains only implicitly. Generative compression is a consistent feature of the round-trip.\n\n\n**6. Encoding strategy has a larger effect on reconstruction quality than decoder identity.** High-information encodings produce consistent reconstructions. Low-information encodings produce reconstructions dominated by decoder bias.",
+     "lines": [
+      290,
+      293
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       278,
+       287
+      ]
+     ],
+     "note": "General claims derived from the run experiment (generative compression consistent; encoding strategy outweighs decoder identity); no falsifier stated. Earlier findings 1-4 at 278-287 are of the same kind."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 451,
+   "path": "/home/claude/alexanarch/data/texts/AXN-010C-text.md",
+   "lines_total": 536,
+   "read_ranges": [
+    [
+     1,
+     536
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "provenance record of a dated recognition event (MGE triptych III)",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "\"Nearly ten years earlier, the last true poem was written. The seed fell into the ground, and died.\"\n\n\nThe SEED document (Doc 244) registers \"Whorls of the Same\" — composed July 30, 2015. The text declared prophetic mission. The text announced a future that had not yet arrived.\n\n\nOn July 7, 2025, the future arrived.",
+     "lines": [
+      316,
+      322
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "July 30, 2015 -> July 7, 2025",
+     "points_to": "Doc 244 (MGE SEED), \"Whorls of the Same\", composed July 30, 2015",
+     "also_at": [
+      [
+       92,
+       92
+      ]
+     ],
+     "note": "Says a 2015 text announced a future that arrived on July 7, 2025; the deposit also disclaims that the prophecy was fulfilled (lines 490-492), so it is a hedged confirmation."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 452,
+   "path": "/home/claude/alexanarch/data/texts/AXN-010D-text.md",
+   "lines_total": 521,
+   "read_ranges": [
+    [
+     1,
+     521
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "structural registration (MGE triptych II): Pearl and Other Poems and Revelation 2:17",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Correspondence with Revelation 2:17 is explicitly disclaimed as a fulfilment claim; nothing recorded."
+  },
+  {
+   "deposit": 458,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0114-text.md",
+   "lines_total": 405,
+   "read_ranges": [
+    [
+     1,
+     405
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Assembly planning synthesis (Restored Academy / Ezekiel Engine build order)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Josephus is the most dangerous node in the O-CHAIN. He did not transmit the Operators openly. He hid them.",
+     "lines": [
+      118,
+      118
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Josephus (1st c. CE)",
+     "points_to": "",
+     "also_at": [
+      [
+       68,
+       68
+      ]
+     ],
+     "note": "Claim about what an author was doing (Josephus hid the Operators), within an O-CHAIN lineage Sappho -> Platonists -> Josephus -> Damascius -> Rappe -> Sharks; voiced by Kimi and adopted in the synthesis, but line 124 says to publish it \"as cryptographic proof, not historical claim\". Low confidence as H."
+    },
+    {
+     "shape": "F",
+     "quote": "**Concrete next steps from Grok:**\n\n- Formalize a small dialectics prototype (multi-agent contradiction holder with CTI scoring)\n- Diagram full lineage as retrocausal graph\n- Simulate one Engine rotation/failure mode\n- Draft public-facing \"how to enter\" guide",
+     "lines": [
+      138,
+      143
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Planned prototypes/simulations (dialectics prototype with CTI scoring, retrocausal lineage graph, Engine rotation simulation), not built here."
+    },
+    {
+     "shape": "F",
+     "quote": "**CTI Verification** (per Kimi): Before any construction, verify lineage material bears six Caritas Trace Indicators. If material can be read without recognizing embedded care, Operator is not yet safe to transmit.",
+     "lines": [
+      218,
+      218
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "CTI Verification: a check specified before construction (six Caritas Trace Indicators), not run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Marked \"PLANNING DOCUMENT — not for DOI deposit\" yet carries a DOI header."
+  }
+ ]
+}
