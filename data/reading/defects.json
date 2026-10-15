@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 459,
+ "deposits_with_notes": 461,
  "deposits": [
   {
    "deposit": 1,
@@ -5608,6 +5608,28 @@
      "batch_id": "B0138",
      "field": "incidental",
      "text": "Body is the ingested staged v0.12 Markdown; organic-results surface for the specimen is reported, not captured (§24.3, v0.3 source note). Dollar signs in several salary figures render as LaTeX-escaped backslashes (e.g. \\262,000). Last chunk read through line 5401 (blank)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1635,
+   "notes": [
+    {
+     "batch_id": "B0139",
+     "field": "incidental",
+     "text": "Body is cut off at line 818, the heading '## 36.3 Persistence tests', with no text after it: §§36.3–38, Appendices A–C, References and Notes are missing (footnote markers in the body have no targets). #1637 states it supersedes this deposit ('its text cut at §36.3'). Lines 31–818 are byte-identical to #1637 lines 31–818."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1637,
+   "notes": [
+    {
+     "batch_id": "B0139",
+     "field": "incidental",
+     "text": "Complete re-seating of #1635 (front matter says it supersedes #1635, whose text was cut at §36.3). Lines 31–818 identical to #1635; lines 819–1069 are new to this deposit (§36.3–38, Appendices A–C, references, notes). Finds in the shared range are recorded in both deposits."
     }
    ],
    "rulings": []

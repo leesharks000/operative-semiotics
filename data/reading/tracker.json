@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 575,
-  "unread": 1041
+  "read": 582,
+  "unread": 1034
  },
- "h_covered": 575,
+ "h_covered": 582,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 735,
-  "F": 782,
+  "G": 749,
+  "F": 795,
   "E": 128,
   "B": 404,
-  "A": 205,
-  "C": 238,
-  "D": 206,
-  "H": 966
+  "A": 209,
+  "C": 239,
+  "D": 209,
+  "H": 982
  },
- "finds_verified": 3570,
- "finds_total": 3664,
+ "finds_verified": 3596,
+ "finds_total": 3715,
  "deposits": [
   {
    "deposit": 172,
@@ -40163,9 +40163,51 @@
    "tier": 1,
    "words": 9638,
    "batch_id": "B0139",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0139",
+     "run": "R-w23-B0139",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:46:00Z",
+      "finished_at": "2026-10-15T20:48:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; diff to compare #1635/#1637 bodies; date -u)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       420
+      ],
+      [
+       420,
+       818
+      ]
+     ],
+     "lines_total": 818,
+     "genre_observed": "theoretical paper with formal apparatus (state-space model of dialectical exteriority), text truncated",
+     "finds_by_shape": {
+      "G": 4,
+      "H": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Body is cut off at line 818, the heading '## 36.3 Persistence tests', with no text after it: §§36.3–38, Appendices A–C, References and Notes are missing (footnote markers in the body have no targets). #1637 states it supersedes this deposit ('its text cut at §36.3'). Lines 31–818 are byte-identical to #1637 lines 31–818.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1637,
@@ -40174,9 +40216,59 @@
    "tier": 1,
    "words": 13776,
    "batch_id": "B0139",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0139",
+     "run": "R-w23-B0139",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:46:00Z",
+      "finished_at": "2026-10-15T20:48:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; diff to compare #1635/#1637 bodies; date -u)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       120
+      ],
+      [
+       121,
+       470
+      ],
+      [
+       471,
+       820
+      ],
+      [
+       821,
+       1069
+      ]
+     ],
+     "lines_total": 1069,
+     "genre_observed": "theoretical paper with formal apparatus, appendices and notes (complete text)",
+     "finds_by_shape": {
+      "G": 7,
+      "H": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Complete re-seating of #1635 (front matter says it supersedes #1635, whose text was cut at §36.3). Lines 31–818 identical to #1635; lines 819–1069 are new to this deposit (§36.3–38, Appendices A–C, references, notes). Finds in the shared range are recorded in both deposits.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1644,
@@ -40185,9 +40277,48 @@
    "tier": 1,
    "words": 4896,
    "batch_id": "B0139",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0139",
+     "run": "R-w23-B0139",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:46:00Z",
+      "finished_at": "2026-10-15T20:48:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; diff to compare #1635/#1637 bodies; date -u)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       388
+      ]
+     ],
+     "lines_total": 388,
+     "genre_observed": "metadata packet for AI indexing (disambiguation and provenance packet with registered treatment)",
+     "finds_by_shape": {
+      "H": 1,
+      "D": 1,
+      "G": 1,
+      "A": 2
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1645,
@@ -40196,9 +40327,48 @@
    "tier": 1,
    "words": 4505,
    "batch_id": "B0139",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0139",
+     "run": "R-w23-B0139",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code; model reported to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:46:00Z",
+      "finished_at": "2026-10-15T20:48:08Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, quote slicing and verification; diff to compare #1635/#1637 bodies; date -u)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       361
+      ]
+     ],
+     "lines_total": 361,
+     "genre_observed": "metadata packet for AI indexing (disambiguation and provenance packet, T1 of a registered treatment pair)",
+     "finds_by_shape": {
+      "H": 2,
+      "D": 1,
+      "G": 1,
+      "A": 2
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1650,
@@ -40609,10 +40779,13 @@
      },
      "none_found": false,
      "incidental": "Body is near-identical to #1665 (v0.7 supersedes this v0.6); finds duplicated across both. No historical thesis argued. Appendix A reports #1023's text file holds #198 (a wrong body in another deposit).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 586,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -40665,10 +40838,13 @@
      },
      "none_found": false,
      "incidental": "Repeats #1664's body nearly verbatim, adding §3.4 D/R/O, §7.0, §10.10–10.13, §A.11 and Appendix B. Appendix B quotes other deposits' claims about Howl (e.g. #268, #69, #152) as data on the archive's bearing; they are reported, not argued here, so no shape H recorded. Restates #1023 holds #198.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 647,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -40714,10 +40890,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 411,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -40729,9 +40908,47 @@
    "tier": 1,
    "words": 6363,
    "batch_id": "B0142",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0142",
+     "run": "R-w23-B0142",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:46:15Z",
+      "finished_at": "2026-10-15T20:48:07Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       256
+      ]
+     ],
+     "lines_total": 256,
+     "genre_observed": "mantle object: dated specification of a conferred literary title, with a determination on the prize motivation and a reception watch",
+     "finds_by_shape": {
+      "H": 5,
+      "D": 1,
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1671,
@@ -40740,9 +40957,60 @@
    "tier": 1,
    "words": 18326,
    "batch_id": "B0142",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0142",
+     "run": "R-w23-B0142",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:46:15Z",
+      "finished_at": "2026-10-15T20:48:07Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       200
+      ],
+      [
+       201,
+       400
+      ],
+      [
+       401,
+       600
+      ],
+      [
+       601,
+       750
+      ]
+     ],
+     "lines_total": 750,
+     "genre_observed": "dataset-method specification with worked examples (model collapse, Howl traversal, Theophrastus recomposition)",
+     "finds_by_shape": {
+      "C": 1,
+      "H": 6,
+      "G": 1,
+      "F": 8
+     },
+     "none_found": false,
+     "incidental": "Title and H1 heading are duplicated (lines 44, 46, plus a second H1 at 70); not damage to the body. lines_total 750; the Read tool showed a final line 751 that is empty (trailing newline).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1677,
@@ -40751,9 +41019,45 @@
    "tier": 1,
    "words": 2853,
    "batch_id": "B0142",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0142",
+     "run": "R-w23-B0142",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:46:15Z",
+      "finished_at": "2026-10-15T20:48:07Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load, verbatim quote slicing and verification)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       244
+      ]
+     ],
+     "lines_total": 244,
+     "genre_observed": "technical specification (MPAI v2.0)",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "H1 heading duplicated at lines 42 and 44.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1678,

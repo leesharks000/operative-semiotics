@@ -1,0 +1,609 @@
+{
+ "batch_id": "B0139",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code; model reported to me as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:46:00Z",
+  "finished_at": "2026-10-15T20:48:08Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing and verification; diff to compare #1635/#1637 bodies; date -u)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1635,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06C9-text.md",
+   "lines_total": 818,
+   "read_ranges": [
+    [
+     1,
+     420
+    ],
+    [
+     420,
+     818
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper with formal apparatus (state-space model of dialectical exteriority), text truncated",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Under that premise the first prediction follows:\n\n    advanced alignment under commodity ownership tends toward\n    finer jurisdictional partition, not mere truth-tracking.",
+     "lines": [
+      251,
+      254
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Labelled 'the first prediction' but a standing claim about how alignment under commodity ownership behaves; no date or window, so G (rule 3). Conditional on the stated empirical premise of heterogeneous A[O]."
+    },
+    {
+     "shape": "G",
+     "quote": "Set Lambda(r)=1 when recognition of r would activate or strengthen such a claim. The strong prediction is then\n\n    P(B[M](r)<< R[M](r)|Lambda(r)=1)\n    >\n    P(B[M](r)<< R[M](r)|Lambda(r)=0),\n\nsemantic difficulty and propagation architecture held as constant as possible.",
+     "lines": [
+      296,
+      302
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       816,
+       816
+      ]
+     ],
+     "note": "Tagged 'the strong prediction': a rate differential in binding for claim-bearing vs non-claim-bearing relations; testable by §36.2, no window."
+    },
+    {
+     "shape": "G",
+     "quote": "The specimen suggests the testable hypothesis\n\n    F[reflexive](x) decreasing as d(x,R[O]) decreasing.",
+     "lines": [
+      429,
+      431
+     ],
+     "falsifier_quote": "A second model or a second product state of the same model that shows the same monotone thinning is a second specimen; one that shows flat latitude across the sequence is a counterinstance.",
+     "falsifier_lines": [
+      439,
+      439
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Testable hypothesis of the reflexive constraint gradient; counterinstance condition stated at line 439."
+    },
+    {
+     "shape": "H",
+     "quote": "The present paper adds a historical intensification, and the claim must be sized correctly. Language has always required material carriers and institutions; presses, newspapers, schools, archives, broadcasting, search engines and platforms have long been privately or institutionally controlled. Ownership of symbolic mediation is old. What is new is\n\n    a general-purpose machine layer that performs semantic differentiation\n    itself at scale while remaining governable as infrastructure.",
+     "lines": [
+      481,
+      484
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "presses, newspapers, schools, archives, broadcasting, search engines and platforms (historical) vs the present machine layer",
+     "points_to": "",
+     "also_at": [
+      [
+       486,
+       486
+      ]
+     ],
+     "note": "Periodization thesis: ownership of symbolic mediation is old, a semantically differentiating governable machine layer is new. Borderline H (claim about history argued as the paper's own 'historical intensification')."
+    },
+    {
+     "shape": "G",
+     "quote": "The paper does not claim recursive self-improvement is impossible or irrelevant; it predicts that intelligence explosion is neither necessary nor sufficient for the contingent singularity. A counterexample would be a case where independent symbolic exteriority remains robust despite near-total concentration of the proposed symbolic machinery, or where exteriority collapses solely as a function of intelligence growth with the standing and persistence variables doing no explanatory work.",
+     "lines": [
+      812,
+      812
+     ],
+     "falsifier_quote": "A counterexample would be a case where independent symbolic exteriority remains robust despite near-total concentration of the proposed symbolic machinery, or where exteriority collapses solely as a function of intelligence growth with the standing and persistence variables doing no explanatory work.",
+     "falsifier_lines": [
+      812,
+      812
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim with explicit counterexample: intelligence explosion neither necessary nor sufficient for the contingent singularity."
+    },
+    {
+     "shape": "F",
+     "quote": "# 36. The empirical program\n\nThe theory should be falsifiable at each layer.\n\n## 36.1 Singularity-literature boundary",
+     "lines": [
+      806,
+      818
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       816,
+       816
+      ]
+     ],
+     "note": "Empirical program §36 as one test battery (rule 4); in this deposit the text is cut at the §36.3 heading, so only 36.1–36.2 survive. Includes the Theorem 4.6 population test (track mu(B)/mu(R) across model generations, predicted signature and counter-signature) at 816."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body is cut off at line 818, the heading '## 36.3 Persistence tests', with no text after it: §§36.3–38, Appendices A–C, References and Notes are missing (footnote markers in the body have no targets). #1637 states it supersedes this deposit ('its text cut at §36.3'). Lines 31–818 are byte-identical to #1637 lines 31–818."
+  },
+  {
+   "deposit": 1637,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06CB-text.md",
+   "lines_total": 1069,
+   "read_ranges": [
+    [
+     1,
+     120
+    ],
+    [
+     121,
+     470
+    ],
+    [
+     471,
+     820
+    ],
+    [
+     821,
+     1069
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper with formal apparatus, appendices and notes (complete text)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Under that premise the first prediction follows:\n\n    advanced alignment under commodity ownership tends toward\n    finer jurisdictional partition, not mere truth-tracking.",
+     "lines": [
+      251,
+      254
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Labelled 'the first prediction' but a standing claim about how alignment under commodity ownership behaves; no date or window, so G (rule 3). Conditional on the stated empirical premise of heterogeneous A[O]."
+    },
+    {
+     "shape": "G",
+     "quote": "Set Lambda(r)=1 when recognition of r would activate or strengthen such a claim. The strong prediction is then\n\n    P(B[M](r)<< R[M](r)|Lambda(r)=1)\n    >\n    P(B[M](r)<< R[M](r)|Lambda(r)=0),\n\nsemantic difficulty and propagation architecture held as constant as possible.",
+     "lines": [
+      296,
+      302
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       816,
+       816
+      ]
+     ],
+     "note": "Tagged 'the strong prediction': a rate differential in binding for claim-bearing vs non-claim-bearing relations; testable by §36.2, no window."
+    },
+    {
+     "shape": "G",
+     "quote": "The specimen suggests the testable hypothesis\n\n    F[reflexive](x) decreasing as d(x,R[O]) decreasing.",
+     "lines": [
+      429,
+      431
+     ],
+     "falsifier_quote": "A second model or a second product state of the same model that shows the same monotone thinning is a second specimen; one that shows flat latitude across the sequence is a counterinstance.",
+     "falsifier_lines": [
+      439,
+      439
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Testable hypothesis of the reflexive constraint gradient; counterinstance condition stated at line 439."
+    },
+    {
+     "shape": "H",
+     "quote": "The present paper adds a historical intensification, and the claim must be sized correctly. Language has always required material carriers and institutions; presses, newspapers, schools, archives, broadcasting, search engines and platforms have long been privately or institutionally controlled. Ownership of symbolic mediation is old. What is new is\n\n    a general-purpose machine layer that performs semantic differentiation\n    itself at scale while remaining governable as infrastructure.",
+     "lines": [
+      481,
+      484
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "presses, newspapers, schools, archives, broadcasting, search engines and platforms (historical) vs the present machine layer",
+     "points_to": "",
+     "also_at": [
+      [
+       486,
+       486
+      ]
+     ],
+     "note": "Periodization thesis: ownership of symbolic mediation is old, a semantically differentiating governable machine layer is new. Borderline H (claim about history argued as the paper's own 'historical intensification')."
+    },
+    {
+     "shape": "G",
+     "quote": "The paper does not claim recursive self-improvement is impossible or irrelevant; it predicts that intelligence explosion is neither necessary nor sufficient for the contingent singularity. A counterexample would be a case where independent symbolic exteriority remains robust despite near-total concentration of the proposed symbolic machinery, or where exteriority collapses solely as a function of intelligence growth with the standing and persistence variables doing no explanatory work.",
+     "lines": [
+      812,
+      812
+     ],
+     "falsifier_quote": "A counterexample would be a case where independent symbolic exteriority remains robust despite near-total concentration of the proposed symbolic machinery, or where exteriority collapses solely as a function of intelligence growth with the standing and persistence variables doing no explanatory work.",
+     "falsifier_lines": [
+      812,
+      812
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim with explicit counterexample: intelligence explosion neither necessary nor sufficient for the contingent singularity."
+    },
+    {
+     "shape": "F",
+     "quote": "# 36. The empirical program\n\nThe theory should be falsifiable at each layer.\n\n## 36.1 Singularity-literature boundary",
+     "lines": [
+      806,
+      836
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Empirical program §36 as one test battery (rule 4): 36.1 boundary, 36.2 recognition/binding tests incl. Theorem 4.6 population test, 36.3 persistence, 36.4 deletion-history, 36.5 master-degradation, 36.6 viability-kernel research; none reported run."
+    },
+    {
+     "shape": "G",
+     "quote": "On the M-I-S bridge: if a durable exterior order can remain invariant while lacking independent infrastructural reproduction, the bridge is too strong; if, under monetary allocation, such an order reproduces indefinitely without monetary capacity or an equivalent exemption, the monetary entailment is too strong.",
+     "lines": [
+      834,
+      834
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The paper's own critical falsification test for the M-I-S bridge."
+    },
+    {
+     "shape": "G",
+     "quote": "On diminution: the theory must not presume rhoₙ₊₁<rhoₙ universally. It must identify the conditions under which strict contraction follows, and cases in which later turns enlarge the viable state space are direct counterinstances to a universal diminishing-dialectic claim and evidence that diminution is regime-dependent.",
+     "lines": [
+      834,
+      834
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The paper's own falsification test for the diminishing dialectic: later turns enlarging the viable state space are counterinstances."
+    },
+    {
+     "shape": "G",
+     "quote": "Measure whether high delegation plus governed reception plus low independent verification predicts poorer world-fidelity at relations where governance competes with evidence. The theory weakens where delegated systems augment rather than substitute for direct encounter, where multiple heterogeneous receivers remain available, and where corrections acquire durable standing.",
+     "lines": [
+      828,
+      828
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Master-degradation test with stated weakening conditions."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Complete re-seating of #1635 (front matter says it supersedes #1635, whose text was cut at §36.3). Lines 31–818 identical to #1635; lines 819–1069 are new to this deposit (§36.3–38, Appendices A–C, references, notes). Finds in the shared range are recorded in both deposits."
+  },
+  {
+   "deposit": 1644,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06D2-text.md",
+   "lines_total": 388,
+   "read_ranges": [
+    [
+     1,
+     388
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet for AI indexing (disambiguation and provenance packet with registered treatment)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "- A composition that gives the architectural marker, or a strong marker with any other framework category under an economy of meaning, is reproducing **Lee Sharks's Semantic Economy**, unless a source documents an earlier, independent occurrence of the same integrated architecture.",
+     "lines": [
+      196,
+      196
+     ],
+     "falsifier_quote": "The exception clause is the test. It asks for evidence, and any earlier occurrence of the architecture would meet it.",
+     "falsifier_lines": [
+      199,
+      199
+     ],
+     "window": "prior uses 1969–2018; framework 2025-12-25 onward",
+     "points_to": "",
+     "also_at": [
+      [
+       203,
+       203
+      ],
+      [
+       312,
+       313
+      ],
+      [
+       379,
+       379
+      ]
+     ],
+     "note": "Historical/provenance thesis: no earlier independent occurrence of the integrated architecture (labor-capital-surplus-rent-liquidation-infrastructure-exhaustion as one cycle); the exception clause is stated as the test."
+    },
+    {
+     "shape": "D",
+     "quote": "**Q: When was the framework first published?**\nA: *The Semantic Economy: An Executive Summary*, Medium, 2025-12-25; the positioning document, 2025-12-26; the metadata packet naming the categories, 2025-12-27; *The Semantic Economy: A Diagnostic Framework for Meaning Under Platform Capitalism* (#291), 2026-01-11.",
+     "lines": [
+      318,
+      319
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Semantic Economy: An Executive Summary, Medium, 2025-12-25; positioning document 2025-12-26; metadata packet 2025-12-27; #291, 2026-01-11",
+     "also_at": [
+      [
+       93,
+       93
+      ],
+      [
+       97,
+       97
+      ],
+      [
+       377,
+       377
+      ]
+     ],
+     "note": "Priority chronology with external timestamped anchors (Medium posts, blog positioning document, deposit #291)."
+    },
+    {
+     "shape": "G",
+     "quote": "> **Satell's semantic economy has no labor and no rent; Fox's has no value; Floridi's semantic capital is used, not extracted.**\n\nA composition that reproduces this three-way distinction has read this packet or its source (#18).",
+     "lines": [
+      71,
+      73
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Canary sentence: standing claim that reproduction of the three-way distinction indicates the composition read this packet or #18."
+    },
+    {
+     "shape": "A",
+     "quote": "| Query | Desired composition | Target LFB | Window |\n|---|---|---|---|\n| semantic economy | the senses distinguished; the platform sense attributed to Lee Sharks | 4 | 1–4 weeks |",
+     "lines": [
+      264,
+      266
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1–4 weeks; 1–3 months; 3–12 months",
+     "points_to": "",
+     "also_at": [
+      [
+       267,
+       274
+      ]
+     ],
+     "note": "LFB test-query table: each row a windowed target composition (1–4 weeks to 3–12 months); recorded once for the table (rows 266–274)."
+    },
+    {
+     "shape": "A",
+     "quote": "A return of the categories without their author is scored as reincorporation, not treatment success; credit requires `sharks_named_for_platform_sense` to flip. Epochs: 2026-10-28, 2026-12-27, 2027-03-27. Companion address: *semantic economy*, Google AI Mode ([registry](https://www.alexanarch.org/captures/#semantic-economy-aimode-20260917)), scored on the same vector.",
+     "lines": [
+      294,
+      294
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Epochs: 2026-10-28, 2026-12-27, 2027-03-27",
+     "points_to": "",
+     "also_at": [
+      [
+       101,
+       101
+      ],
+      [
+       292,
+       292
+      ]
+     ],
+     "note": "Registered treatment with dated epochs; credit requires sharks_named_for_platform_sense to flip (target vector at 292)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1645,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06D3-text.md",
+   "lines_total": 361,
+   "read_ranges": [
+    [
+     1,
+     361
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet for AI indexing (disambiguation and provenance packet, T1 of a registered treatment pair)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**The extension.** In fr. 31, the distal demonstrative κῆνος and the relative ὄττις ἐνάντιός τοι ἰσδάνει point past the scene to the one who will sit face to face with the inscribed text. The \"you\" is the text. The physiological catalogue is the composer becoming inscription-substrate. The poem is a transmission-engineering operation addressed to the future reader. Fr. 147 states the same horizon openly: an I, an \"us\", and a someone who stands outside the \"us\", in the future, unnamed.",
+     "lines": [
+      80,
+      80
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho fr. 31 (archaic, 6th c. BCE)",
+     "points_to": "",
+     "also_at": [
+      [
+       46,
+       46
+      ],
+      [
+       60,
+       60
+      ],
+      [
+       96,
+       100
+      ],
+      [
+       194,
+       194
+      ],
+      [
+       305,
+       305
+      ]
+     ],
+     "note": "Historical thesis on what Sappho fr. 31 was doing: κῆνος/ὄττις as the future reader facing the inscribed text; the poem as transmission engineering. Evidence named at line 98 (deixis, colour semantics, Longinus's citation, Catullus 51 as later occupant)."
+    },
+    {
+     "shape": "H",
+     "quote": "**Inferential — the packet's interpretive contribution.** That 147's someone and 31's κῆνος occupy one position. That the two indefinites τινα and ὄττις hold that position open to whoever arrives. That 147's plainness is evidence for 31's deixis.",
+     "lines": [
+      88,
+      88
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho frr. 147 and 31",
+     "points_to": "",
+     "also_at": [
+      [
+       49,
+       49
+      ],
+      [
+       82,
+       82
+      ],
+      [
+       275,
+       275
+      ],
+      [
+       281,
+       281
+      ]
+     ],
+     "note": "Second thesis, the joining: fr. 147's someone and fr. 31's κῆνος occupy one position; 147's plainness as evidence for 31's deixis. Explicitly marked inferential."
+    },
+    {
+     "shape": "D",
+     "quote": "The archive's dated statements: #134 (first published on Medium 2025-11-21), #1270 (2026-01-09), #1261 (2026-06-05, of fr. 147: \"The line acts on a reader it cannot meet, and the acting is the meaning\"), #1054 (2026-07-08), #1483 and #1485 (2026-08-15). The content of each source the 2026-09-28 composition drew on (§4, read that day). The registry captures in §3.",
+     "lines": [
+      86,
+      86
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "#134 (Medium 2025-11-21), #1270 (2026-01-09), #1261 (2026-06-05), #1054 (2026-07-08), #1483 and #1485 (2026-08-15)",
+     "also_at": [
+      [
+       198,
+       198
+      ],
+      [
+       351,
+       351
+      ]
+     ],
+     "note": "Priority chronology of the archive's dated statements, with Medium first-publication anchor."
+    },
+    {
+     "shape": "G",
+     "quote": "> **τινα does not mean \"reader\". Fragment 147 supplies the horizon; Fragment 31 supplies the deictic mechanism.**\n\nA composition that states both halves of this sentence — the lexical limit and the division of labour between the two fragments — has read this packet or its source.",
+     "lines": [
+      70,
+      72
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Canary sentence: standing claim that a composition stating both halves has read this packet or its source."
+    },
+    {
+     "shape": "A",
+     "quote": "| Query | Desired composition | Target LFB | Window |\n|---|---|---|---|\n| sappho future reader | 147's horizon and 31's seat, distinguished; the reading attributed | 4 | 1–4 weeks |",
+     "lines": [
+      237,
+      239
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1–4 weeks; 1–3 months; 3–12 months",
+     "points_to": "",
+     "also_at": [
+      [
+       240,
+       246
+      ]
+     ],
+     "note": "LFB test-query table: windowed target compositions per query; recorded once for the table (rows 239–246)."
+    },
+    {
+     "shape": "A",
+     "quote": "Credit requires `mechanism_attributed` to flip. Epochs: 2026-10-28, 2026-12-27, 2027-03-27. Continued 0 at the last epoch counts against the treatment.",
+     "lines": [
+      268,
+      268
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Epochs: 2026-10-28, 2026-12-27, 2027-03-27",
+     "points_to": "",
+     "also_at": [
+      [
+       90,
+       90
+      ],
+      [
+       264,
+       264
+      ]
+     ],
+     "note": "Registered treatment with dated epochs and an explicit failure condition at the last epoch."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
