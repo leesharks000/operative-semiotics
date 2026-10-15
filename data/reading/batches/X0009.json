@@ -1,0 +1,53 @@
+{
+  "batch_id": "X0009",
+  "protocol": "READING-PROTOCOL v1.2",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "started_at": "2026-10-15T20:31:25Z",
+    "finished_at": "2026-10-15T20:32:14Z",
+    "tools_used": [
+      "Read",
+      "Bash"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 4,
+      "path": "/home/claude/operative-semiotics/data/reading/derived/0004-voice.md",
+      "lines_total": 8056,
+      "read_ranges": [
+        [
+          1,
+          600
+        ],
+        [
+          601,
+          1400
+        ],
+        [
+          1401,
+          2300
+        ],
+        [
+          2301,
+          3300
+        ],
+        [
+          3301,
+          4100
+        ],
+        [
+          4101,
+          4763
+        ]
+      ],
+      "status": "read",
+      "status_note": "X-batch X0009 covers lines 1-4763 of the derived text only; the deposit counts as read when every X-batch over it has passed.",
+      "genre_observed": "DOI resolution index own-voice fields: top-level description, changelog and correction log of recovery passes, then per-record templated notes (concept-DOI severance note, provisional-recovery notes, audit status codes)",
+      "finds": [],
+      "none_found": true,
+      "incidental": "No prediction-bearing or historical-thesis passages in lines 1-4763: the text is dated operational record (recovery phases, corrections, audit statuses) and repeated template notes. Changelog v3.5 (2026-07-19) entry is duplicated 12 times verbatim (lines 47-105). Records from 0 to 1196 appear in this range; record indices skip (only records with own-voice fields are emitted). Correction log 2026-08-30 (lines 235-242) carries an operating warning that enrich_resolver_evidence.py must not be run blind on the index (procedural, not recorded). The recurring concept-DOI note (e.g. line 560) and the 'structural fact' about heteronym-authored works appearing as no-creator to DataCite (line 208) were considered and judged dated observation/explanation of the archive's own record, not shape G or H."
+    }
+  ]
+}

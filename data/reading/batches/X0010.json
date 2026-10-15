@@ -1,0 +1,25 @@
+{
+  "batch_id": "X0010",
+  "protocol": "READING-PROTOCOL v1.2",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+    "started_at": "2026-10-15T20:31:31Z",
+    "finished_at": "2026-10-15T20:31:53Z",
+    "tools_used": ["Read", "Bash", "Write"]
+  },
+  "deposits": [
+    {
+      "deposit": 4,
+      "path": "/home/claude/operative-semiotics/data/reading/derived/0004-voice.md",
+      "lines_total": 8056,
+      "read_ranges": [[4764, 5363], [5364, 6063], [6064, 6763], [6764, 7463], [7464, 8056]],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "DOI resolution index own-voice fields: per-record recovery logs (methods A-N, Phases 6-9), concept-DOI boilerplate notes, and audit status codes for severed Zenodo DOIs",
+      "finds": [],
+      "none_found": true,
+      "incidental": "Range covers records 1197-1941. Every block is a dated recovery or audit observation, a mapping-method log, or repeated boilerplate (the concept-DOI note 'Its severance destroyed the structure binding versions together...' recurs on most concept DOIs; the provisional-recovery and FINAL-classification paragraphs are templated). Conjectures such as 'This DOI likely represents a specific version or subsidiary work' are inferences about what a severed DOI pointed to, archive-internal provenance, not historical theses. Phase 8 records quote Lee Sharks's testimony on DOI targets; Phase 9 records cite past-chat dates (e.g. record 1914 'publication-date-tagged 2014-12-25'). That is internal chronology, recorded neither as D nor as H. No passage frames anything as confirming an earlier prediction or as priority. started_at/finished_at are the two `date -u` readings as the shell returned them."
+    }
+  ]
+}

@@ -1,0 +1,1005 @@
+{
+ "batch_id": "B0115",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model given in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:31:03Z",
+  "finished_at": "2026-10-15T20:33:09Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1449,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05DA-text.md",
+   "lines_total": 122,
+   "read_ranges": [
+    [
+     1,
+     122
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "empirical battery record and three-paper work plan",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "(2) Direction-dependence is systematic: every background-vs-signal pair shows the signal-trained direction outperforming the background-trained direction across all three families, and the density family — the principled alternative of the comparison literature — posts the largest IAI at α = 10⁻².",
+     "lines": [
+      106,
+      106
+     ],
+     "falsifier_quote": "Multi-seed replication (battery v0.2) showing IAI spreads comparable to the single-seed point values would reduce the asymmetry findings to noise.",
+     "falsifier_lines": [
+      51,
+      51
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       43,
+       43
+      ]
+     ],
+     "note": "Measured finding stated as standing claim about learned-normality scores, with its own falsifier (multi-seed replication)."
+    },
+    {
+     "shape": "G",
+     "quote": "(1) The Finke asymmetry replicates in an independent implementation and extends beyond reconstruction loss: on constituents, QCD-trained systems detect top jets at AUC 0.84–0.87 while top-trained systems rate QCD more ordinary than top itself (AUC 0.24–0.30) — for the autoencoder and the density family. The failure is a property of the learned-normality score class, not of one architecture.",
+     "lines": [
+      106,
+      106
+     ],
+     "falsifier_quote": "Demonstration of comparable AUCs in both training directions for these pairs under matched architectures and budgets would contradict finding (1).",
+     "falsifier_lines": [
+      51,
+      51
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       43,
+       43
+      ]
+     ],
+     "note": "Standing claim that the failure belongs to the score class, falsifier stated."
+    },
+    {
+     "shape": "B",
+     "quote": "with two collaboration papers announced in the DPF-2026 programme, including a model-independent search on AXOL1TL-triggered data. P1 is the metrology those papers will not contain, landing alongside them.",
+     "lines": [
+      81,
+      81
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the announced CMS AXOL1TL papers will not contain the battery-style metrology; P1 to land alongside them."
+    },
+    {
+     "shape": "D",
+     "quote": "What does not exist, and is the program's contribution: (i) the estimand framework with the no-bounds discipline; (ii) a systematic pre-registered multi-pair, multi-architecture inversion battery at matched operating points; (iii) the deployed-model BAR audit as institutional metrology; (iv) per-stage retention maps as a documentation standard.",
+     "lines": [
+      81,
+      81
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Novelty/priority claim dated 2026-08-11 against verified literature; uncertain D (chronology of contribution, not of world uptake)."
+    },
+    {
+     "shape": "F",
+     "quote": "## 4 · Battery v0.2 requirements (before any submission)\n\nMulti-seed (≥5) with bootstrap confidence intervals on IAI and assimilation; panel expansion toward SM-like pairs (additional public sets or Delphes generation; the Olympics black boxes as a harder withheld panel); an AXOL1TL-faithful object-level surrogate (10 jets + 4 e/γ + 4 μ + MET) on LHCO raw events;",
+     "lines": [
+      110,
+      112
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt test battery v0.2 requirements as one checklist find (later run in #1455)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1450,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05DB-text.md",
+   "lines_total": 293,
+   "read_ranges": [
+    [
+     1,
+     293
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "speculative risk framework with layered confidence tiers and historical survival table",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "> **LCBH.** For anomaly scores exhibiting directional complexity bias, out-of-distribution classes lying *below* the training distribution along an operationally defined representation-complexity axis will receive systematically lower anomaly scores than comparably separated classes lying *above* it.",
+     "lines": [
+      150,
+      150
+     ],
+     "falsifier_quote": "LCBH fails if multi-seed batteries ordered on a measured representation-complexity axis show no directional score deficit below the training distribution;",
+     "falsifier_lines": [
+      56,
+      56
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       44,
+       44
+      ],
+      [
+       273,
+       273
+      ]
+     ],
+     "note": "Named hypothesis with its falsifier in the Falsification Conditions block."
+    },
+    {
+     "shape": "F",
+     "quote": "Test design (queued for battery v0.2; phenomenological mapping contingent on axis-level survival): build the v0.2+ panel ordered by *measured* representation complexity (e.g., compressibility under the deployed representation, constituent sparsity, effective dimensionality), not by phenomenological label. Only if LCBH survives on that axis does the mapping back to detector-level phenomenology begin.",
+     "lines": [
+      152,
+      152
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified LCBH test on a measured complexity axis, not yet run."
+    },
+    {
+     "shape": "G",
+     "quote": "**The convergence finding, stated at its correct strength.** Across six fields: the same architecture (learned normality, deployed at scale, validated within its own support), the same failure mode independently discovered and independently named (complexity bias; reference bias; underdiagnosis bias; template dependence), the same partial mitigations independently evolved (Zero Bias; public alert streams; burst searches and injection maps; pangenome graphs; pLDDT curation), and *no shared metrology*.",
+     "lines": [
+      225,
+      225
+     ],
+     "falsifier_quote": "the convergence claim fails if the named per-field pathologies prove non-homologous under the common estimands;",
+     "falsifier_lines": [
+      56,
+      56
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       44,
+       44
+      ]
+     ],
+     "note": "Cross-field convergence claim with stated falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "where that literature asks whether the same job applicant is rejected by every screener, we ask whether the same anomaly class is assimilated by every scientific instrument.",
+     "lines": [
+      130,
+      130
+     ],
+     "falsifier_quote": "RII's premise fails if measured Δ_miss across paired frontier pipelines is consistently near zero or negative.",
+     "falsifier_lines": [
+      56,
+      56
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Premise of positively correlated blind spots across instruments; falsifier given for the premise."
+    },
+    {
+     "shape": "D",
+     "quote": "The transposition this document makes — and it appears to be novel — is from decision subjects to *phenomena*",
+     "lines": [
+      130,
+      130
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "algorithmic monoculture / outcome homogenization literature (Kleinberg & Raghavan 2021; Bommasani et al. 2022)",
+     "also_at": [],
+     "note": "Novelty claim of a transposition dated 2026-08-11."
+    },
+    {
+     "shape": "G",
+     "quote": "> **Rigorous form.** A null result constrains only those hypotheses for which the end-to-end acceptance of the acquisition and analysis chain is sufficiently characterized. For representation-incompatible alternatives, the absence of an event and the failure to retain the event are observationally confounded until retention is measured.",
+     "lines": [
+      158,
+      158
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Instrument-conditioned nullity, Layer III standing claim; no explicit falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "and the brokers, if they converge on shared training sets and architectures, are an RII test case waiting to be run",
+     "lines": [
+      213,
+      213
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       138,
+       138
+      ]
+     ],
+     "note": "Unrun RII measurement on Rubin brokers."
+    },
+    {
+     "shape": "F",
+     "quote": "Structural biology is the field where a longitudinal contraction audit (a frozen experimental anchor replayed against successive predictor generations — Protocol II verbatim) is most urgently and most easily run.",
+     "lines": [
+      219,
+      219
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified, unrun longitudinal contraction audit."
+    },
+    {
+     "shape": "B",
+     "quote": "The prediction to hold the future to: if and where embedding-based novelty scoring deploys in triage, proposals maximally distant from the existing literature's representational space will experience elevated assimilation-to-unfundable, and the effect will be measurable by exactly a BAR design.",
+     "lines": [
+      223,
+      223
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "if and where embedding-based novelty scoring deploys in triage",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional forecast on funding/review triage, \"concern registered in advance\"; no date."
+    },
+    {
+     "shape": "B",
+     "quote": "the assimilation mechanism predicts declining disruption under increasing prior-correlation and front-end selection",
+     "lines": [
+      235,
+      235
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer IV (fenced) mechanism prediction; Park-Leahey-Funk named as consistency check only."
+    },
+    {
+     "shape": "H",
+     "quote": "**The Kuhnian presupposition.** Kuhn's mechanism — anomaly accumulation → crisis → revolution — silently presupposes an *anomaly-retention infrastructure*. Anomalies could accumulate because stubborn residuals persisted: on charts, in drawers, on plates, in the peripheral vision of practitioners, available to become irritating.",
+     "lines": [
+      235,
+      235
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Kuhn's account of scientific revolutions; pre-pipeline science",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what Kuhn's mechanism historically presupposed; Layer IV."
+    },
+    {
+     "shape": "B",
+     "quote": "as representational priors correlate across instruments, fields, archives, and review layers — shared architectures, shared corpora, shared benchmarks, shared foundation models, classifier-gated archiving deciding what enters the training commons — the effective redundancy of nominally independent discovery channels decreases, and the error-correction mechanism that saved the ozone hole (an independent channel with *different* failure modes) erodes on every axis at once. This is now a measurable trajectory (RII over time), not only a fear.",
+     "lines": [
+      237,
+      237
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Layer IV forecast of eroding effective redundancy, made measurable by RII over time."
+    },
+    {
+     "shape": "H",
+     "quote": "Every element of the framework is present in the true version: the physics-vs-fault fork resolving under prior, a *correlated* validation channel (the comparison data shared the wrong assumption), the save by an independent low-tech channel, and the redemption by what was in effect a replay bank. The myth says \"software deleted it\"; the truth says \"the priors nearly did, correlation nearly sealed it, independence and preservation broke it.\" The truth is the stronger exhibit.",
+     "lines": [
+      166,
+      166
+     ],
+     "falsifier_quote": "the TOMS team's own account (Bhartia & McPeters, C.R. Geoscience 2018) states the anomalies were tracked and analyzed within days",
+     "falsifier_lines": [
+      166,
+      166
+     ],
+     "window": "Antarctic ozone hole discovery, 1983-1986",
+     "points_to": "",
+     "also_at": [
+      [
+       172,
+       177
+      ],
+      [
+       274,
+       274
+      ]
+     ],
+     "note": "Contested historical account against the popular \"software deleted it\" version; evidence named (Bhartia & McPeters 2018; Stolarski 1986). Evidence clause quoted as falsifier_quote; the full account runs the whole of line 166."
+    },
+    {
+     "shape": "H",
+     "quote": "The corrected induction: every save operated through **independence plus preservation** — a channel with different failure modes, or durable residue available for replay, usually both. The base rate of what had neither is invisible by construction. The table does not prove assimilation losses; it proves the discovery channel now being closed or narrowed is the one through which the documented saves came.",
+     "lines": [
+      205,
+      205
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "six decades of discovery saves (1965-2015 table)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical induction from the survival table: saves came through independence plus preservation."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1454,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05DF-text.md",
+   "lines_total": 759,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     759
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-registered methodological specification (heteronym Nobel Glas)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "The Accelerator Classifier Retention Battery proposes a common experiment: reverse the normal/anomalous direction where meaningful; calibrate each model at matched own-background operating points; measure the fraction of a withheld class that is assimilated as ordinary; repeat across representations and architectures; follow the score through quantization, distillation, and firmware transformation; and measure whether different models miss the same events.",
+     "lines": [
+      711,
+      711
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       49,
+       49
+      ],
+      [
+       757,
+       759
+      ]
+     ],
+     "note": "ACRB specified but not run; draft-status note says cross-family claims remain prospective."
+    },
+    {
+     "shape": "G",
+     "quote": "### H1 — Reconstruction-specific hypothesis\n\nDirectional assimilation will be large for standard reconstruction autoencoders but substantially reduced for non-reconstruction families.\n\nA result supporting H1 localizes the pathology and weakens any general selection-system claim.",
+     "lines": [
+      554,
+      558
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered hypothesis H1 about system behaviour, no date; its supporting/undermining result stated."
+    },
+    {
+     "shape": "G",
+     "quote": "### H2 — Cross-family assimilation hypothesis\n\nDirectional assimilation will remain detectable across reconstruction, latent-score, and density-based families at matched operating points.\n\nA result supporting H2 indicates that outlier reconstruction is not a sufficient explanation.",
+     "lines": [
+      560,
+      564
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered hypothesis H2."
+    },
+    {
+     "shape": "G",
+     "quote": "### H3 — Normalization-remedy hypothesis\n\nNAE and WNAE will significantly reduce bidirectional retention gaps relative to standard AEs on the preregistered pair set.\n\nThis is the constructive test of the remedy literature.[2,3]",
+     "lines": [
+      566,
+      570
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered hypothesis H3 (normalization remedy)."
+    },
+    {
+     "shape": "G",
+     "quote": "### H4 — Complexity-direction hypothesis\n\nAssimilation will increase as withheld classes move below the reference class on an independently measured representation-complexity axis.\n\nThis is the operational form of the Low-Complexity Blind-Spot Hypothesis.",
+     "lines": [
+      572,
+      576
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       480,
+       484
+      ]
+     ],
+     "note": "Registered H4, operational LCBH."
+    },
+    {
+     "shape": "G",
+     "quote": "### H5 — Blind-spot inheritance hypothesis\n\nDistilled students will preserve a substantial fraction of teacher misses even where aggregate teacher/student performance is closely matched.",
+     "lines": [
+      578,
+      580
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered H5 blind-spot inheritance."
+    },
+    {
+     "shape": "G",
+     "quote": "### H6 — Deployment-drift hypothesis\n\nQuantization and firmware transformation will change partner-class retention at severe operating points by amounts not fully captured by changes in aggregate AUC.",
+     "lines": [
+      582,
+      584
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered H6 deployment drift."
+    },
+    {
+     "shape": "G",
+     "quote": "### H7 — Architectural-plurality hypothesis\n\nAt least some cross-family model pairs will exhibit materially lower miss overlap than same-family model pairs, establishing measurable value for heterogeneous shadow selectors.",
+     "lines": [
+      586,
+      588
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered H7 architectural plurality."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Creator field is the heteronym Nobel Glas; SPXI packet inside says version 0.2 / DRAFT NOT MINTED while header says v1.0."
+  },
+  {
+   "deposit": 1455,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05E0-text.md",
+   "lines_total": 160,
+   "read_ranges": [
+    [
+     1,
+     160
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "multi-seed battery results with correction ledger",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The top/QCD inversion reproduces across five independent trainings: the reconstruction autoencoder detects top jets from a QCD-trained system at AUC 0.838 and, reversed, rates QCD as more ordinary than its own training class at AUC 0.243. The density family inverts too (0.873 / 0.319), so the failure is not a property of reconstruction loss.\n\nDirection-dependence appears across all tested families on the LHCO background/signal pairs, with seed-stable intervals. The near-structure control pair stays an order of magnitude quieter.",
+     "lines": [
+      88,
+      90
+     ],
+     "falsifier_quote": "The direction-dependence findings fail if larger multi-seed runs at matched operating points show intervals overlapping symmetry.",
+     "falsifier_lines": [
+      47,
+      47
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       160,
+       160
+      ]
+     ],
+     "note": "Measured findings stated with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "Global rank agreement is moderate while only 36 to 47 percent of the teacher's top one percent survives into the student's top one percent. Quantization costs almost nothing further: the loss is in distillation, not in the deployment bit-width. Reported on the withheld partner class, not on background — see deviation D3.",
+     "lines": [
+      107,
+      107
+     ],
+     "falsifier_quote": "The distillation finding fails if faithful fixed-point deployment restores tail rank survival.",
+     "falsifier_lines": [
+      47,
+      47
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: global agreement is not tail retention."
+    },
+    {
+     "shape": "G",
+     "quote": "Architectures are not uniformly redundant. Miss coincidence runs from near-maximal between the autoencoder and its energy-normalized variant, which is expected because they are the same model family, down to essentially independent between the autoencoder and the encoder-side latent score. This is a seed-0 pilot at one operating point — see deviation D5.",
+     "lines": [
+      122,
+      122
+     ],
+     "falsifier_quote": "The miss-overlap finding fails if normalized association across seeds and operating points proves near zero throughout.",
+     "falsifier_lines": [
+      47,
+      47
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim on non-uniform redundancy; seed-0 pilot."
+    },
+    {
+     "shape": "G",
+     "quote": "The failure is not universally oriented. The encoder-side latent score alone escapes the T1 inversion (0.535 / 0.739) while carrying the largest T1 asymmetry. Architecture changes the orientation of the blind spot — which is the strongest available argument for a cross-family battery rather than a single-model critique.",
+     "lines": [
+      94,
+      94
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       160,
+       160
+      ]
+     ],
+     "note": "Claim later falsified by #1456 T5."
+    },
+    {
+     "shape": "C",
+     "quote": "LCBH is INCONCLUSIVE from this run: not confirmed, not falsified.",
+     "lines": [
+      130,
+      130
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Low-Complexity Blind-Spot Hypothesis (#1450, registered R3)",
+     "also_at": [
+      [
+       148,
+       148
+      ]
+     ],
+     "note": "Verdict on an earlier hypothesis: neither confirmed nor failed."
+    },
+    {
+     "shape": "C",
+     "quote": "Consequence: the registered NAE prediction is untested. Row frozen and relabeled pNAE-surrogate. Faithful port deferred to v0.3.",
+     "lines": [
+      128,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "registered prediction R2 (normalized-autoencoder remedy) in battery_v02.py header",
+     "also_at": [
+      [
+       152,
+       152
+      ]
+     ],
+     "note": "Records that a registered prediction went untested."
+    },
+    {
+     "shape": "F",
+     "quote": "## 8. What is deferred to v0.3\n\nA faithful normalized-autoencoder and Wasserstein variant port; a pooled complexity axis with common standardization and quantization, and a distance-matched panel, before any hypothesis test on complexity; hierarchical uncertainty over events as well as seeds, with a larger calibration split so the severe operating point is not set by roughly twenty tail events; the full miss-overlap measurement across seeds and operating points; and a GPU pass at scale.",
+     "lines": [
+      154,
+      156
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Deferred v0.3 test list as one F."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Superseded by #1456."
+  },
+  {
+   "deposit": 1456,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05E1-text.md",
+   "lines_total": 303,
+   "read_ranges": [
+    [
+     1,
+     303
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "ten-test battery results with deviations and negative results",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "After v0.2 this program wrote: *architecture changes the orientation of the blind spot*. That sentence is **falsified**. v0.2 compared an autoencoder against a VAE, which differ in architecture and readout together; holding architecture fixed reproduces the entire effect. The claim the design supports:",
+     "lines": [
+      114,
+      114
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "#1455 (v0.2) published sentence \"architecture changes the orientation of the blind spot\"",
+     "also_at": [],
+     "note": "Program's own earlier claim recorded as falsified."
+    },
+    {
+     "shape": "C",
+     "quote": "Successor to deposit #1455. Ten pre-registered tests, each with its prediction committed before its run, clearing the seven-item correction ledger of v0.2 and generating four further tests in response to results. Two predictions confirmed, two partially confirmed, six missed, one registered panel not run, one line closed with a specific handoff, and seventeen deviations between registration and execution enumerated in the record.",
+     "lines": [
+      37,
+      37
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "ten tests pre-registered in battery_v03.py header (commit c7e5b4e7)",
+     "also_at": [
+      [
+       66,
+       74
+      ],
+      [
+       89,
+       89
+      ],
+      [
+       135,
+       135
+      ],
+      [
+       146,
+       146
+      ],
+      [
+       178,
+       178
+      ],
+      [
+       195,
+       197
+      ],
+      [
+       207,
+       207
+      ],
+      [
+       225,
+       225
+      ],
+      [
+       229,
+       229
+      ]
+     ],
+     "note": "Tally of registered predictions confirmed/missed; per-test verdicts at also_at."
+    },
+    {
+     "shape": "C",
+     "quote": "**No formal LCBH verdict is defensible and an earlier SUPPORTED is withdrawn**, because the hypothesis was registered specifically at matched representational separation and the registered distance-matched panel was **not run** — this data contains no pairs that would match separations. Two further gaps: the registered separation measure included a divergence term that was not computed, and the compressed-length measure gives zero discrimination on the LHCO classes, so the corrected ordering rests on participation ratio alone.",
+     "lines": [
+      245,
+      245
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "earlier draft verdict \"SUPPORTED\" on LCBH (#1450)",
+     "also_at": [
+      [
+       267,
+       267
+      ]
+     ],
+     "note": "Earlier verdict on LCBH withdrawn."
+    },
+    {
+     "shape": "D",
+     "quote": "Implemented 2026-08-12 in a separate commit that states the prediction and estimands are unchanged from commit c7e5b4e7, which stands unedited.",
+     "lines": [
+      277,
+      277
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "commit c7e5b4e7",
+     "also_at": [],
+     "note": "Commit hash named as anchor that registration predates the T3 implementation."
+    },
+    {
+     "shape": "G",
+     "quote": "> **With model weights fixed, changing the score function is sufficient to reverse the directional ordering of the anomaly relation.**\n\nThis falsifies architecture *alone* as the explanation. It does not show that architecture and training can never affect orientation.",
+     "lines": [
+      116,
+      118
+     ],
+     "falsifier_quote": "The score-ablation result fails if reading multiple scores off fixed weights at matched operating points shows consistent orientation across readouts on other pairs.",
+     "falsifier_lines": [
+      51,
+      51
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       289,
+       289
+      ]
+     ],
+     "note": "Standing claim with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "> **Global teacher–student agreement does not guarantee preservation of the operational tail.**",
+     "lines": [
+      150,
+      150
+     ],
+     "falsifier_quote": "The distillation result fails if faithful fixed-point deployment restores tail rank survival.",
+     "falsifier_lines": [
+      51,
+      51
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       291,
+       291
+      ]
+     ],
+     "note": "Standing claim with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "And the AUC ordering **inverts across encodings of the same events**: constituents give AE 0.838 / VAE 0.535 / GMM 0.873; engineered features of those same events give AE 0.528 / VAE 0.799 / GMM 0.748. **An architecture's detection behaviour is not transportable across representations of the same events.**",
+     "lines": [
+      182,
+      182
+     ],
+     "falsifier_quote": "The transportability result fails if architecture orderings prove stable across encodings on other datasets.",
+     "falsifier_lines": [
+      51,
+      51
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       295,
+       295
+      ]
+     ],
+     "note": "Standing claim with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "> **Miss correlation is not a stable property of an architecture pair, and the variation across panels is not explained by representation alone.**",
+     "lines": [
+      180,
+      180
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       293,
+       293
+      ]
+     ],
+     "note": "Standing claim, no explicit falsifier."
+    },
+    {
+     "shape": "B",
+     "quote": "Extrapolated to a ratio of 1.0, AUC Q→P sits near or above 0.5. That is an extrapolation from an out-of-band grid, recorded as such — and it points away from what this program predicted.",
+     "lines": [
+      227,
+      227
+     ],
+     "falsifier_quote": "The NAE handoff resolves either way: a converged normalized autoencoder reaching AUC 0.5 on the constituent pair would bound every inversion claim in this program to non-normalized scores.",
+     "falsifier_lines": [
+      51,
+      51
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       231,
+       231
+      ]
+     ],
+     "note": "Embedded forecast that a converged NAE lands near or above AUC 0.5; handoff sweep specified at 231."
+    },
+    {
+     "shape": "F",
+     "quote": "**The handoff is specific.** Noise scale governs the ratio; the band is bracketed between sigma 0.05 and 0.2; the 0.94 correlation predicts a converged run lands near the inversion boundary. A finer noise sweep between those bounds would settle it",
+     "lines": [
+      231,
+      231
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unrun sweep handed off with parameters."
+    },
+    {
+     "shape": "F",
+     "quote": "distinguishing noise from real tail reconvergence needs a larger EVALUATION sample, which is a v0.4 item.",
+     "lines": [
+      257,
+      257
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       135,
+       135
+      ],
+      [
+       263,
+       263
+      ]
+     ],
+     "note": "v0.4 items: larger evaluation sample; same pair encoded two ways."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1457,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05E2-text.md",
+   "lines_total": 362,
+   "read_ranges": [
+    [
+     1,
+     362
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "work plan written as poem/manifesto for the capture registry",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Falsification, stated in advance:** if a term shows adoption at ρ ≥ 2 and shows none at ρ = 0 on any surface the archive never wrote to, the adoption is the instrument's echo and not the layer's reception. **That is checkable, and it is the condition under which this work is wrong.**\n",
+     "lines": [
+      122,
+      123
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       111,
+       113
+      ]
+     ],
+     "note": "Falsification condition for the registry's reception claims, stated in advance."
+    },
+    {
+     "shape": "F",
+     "quote": "**A → F3 → B ‖ C → D → E → F1/F2/F4 → G → H → I → J**",
+     "lines": [
+      186,
+      186
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       188,
+       293
+      ],
+      [
+       215,
+       215
+      ],
+      [
+       277,
+       280
+      ]
+     ],
+     "note": "Phased work plan with planned probes (heteronym-blind sample of 30, Retrieval Capital monthly metrics) as one F."
+    },
+    {
+     "shape": "H",
+     "quote": "Sappho 31 already said it: the address to the future reader *is* the transmission engineering.",
+     "lines": [
+      94,
+      94
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho fr. 31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Asserted thesis on what Sappho 31 does (future-reader address as transmission); brief, argued elsewhere in the archive."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Creator ORCID given as 0009-0000-1000-0000 (Assembly Chorus), not Lee's."
+  }
+ ]
+}
