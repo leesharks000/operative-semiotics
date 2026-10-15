@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 358,
-  "unread": 1258
+  "read": 363,
+  "unread": 1253
  },
- "h_covered": 358,
+ "h_covered": 363,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 388,
-  "F": 371,
-  "E": 109,
-  "B": 242,
+  "G": 392,
+  "F": 374,
+  "E": 110,
+  "B": 254,
   "A": 111,
-  "C": 114,
-  "D": 120,
-  "H": 444
+  "C": 116,
+  "D": 121,
+  "H": 445
  },
- "finds_verified": 1840,
- "finds_total": 1899,
+ "finds_verified": 1874,
+ "finds_total": 1923,
  "deposits": [
   {
    "deposit": 172,
@@ -25958,10 +25958,13 @@
      },
      "none_found": false,
      "incidental": "Header notes hex coordinate unconfirmed ('MANUS to confirm'). Section 9 table and several lists are run together on single lines (flattened markdown).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 305,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -26008,10 +26011,13 @@
      },
      "none_found": false,
      "incidental": "Tables are flattened onto single lines; test-query table is all on line 107.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 127,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -26058,10 +26064,13 @@
      },
      "none_found": false,
      "incidental": "Tables flattened onto single lines; test-query table all on line 99.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 117,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -26107,10 +26116,13 @@
      },
      "none_found": false,
      "incidental": "§8 list and roadmap table are flattened onto single lines.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 263,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -26156,10 +26168,13 @@
      },
      "none_found": false,
      "incidental": "Packet header runs into paper body ('∮ = 1# Induced-Obsolescence Dependence', line 58).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 171,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -26206,10 +26221,13 @@
      },
      "none_found": false,
      "incidental": "Packet header runs into paper body at line 58.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 153,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -26259,10 +26277,13 @@
      },
      "none_found": false,
      "incidental": "Header flags its hex address 06.SEI.MPAI.DSL.01 as substrate-generated and non-authoritative ('Address-Generation Retraction', Claude Opus 4.8 workflow, 2026-05-30). Λ standalone-packet decision left bracketed (line 133).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 322,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -27421,7 +27442,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
       "started_at": "2026-10-15T20:07:36Z",
-      "finished_at": "2026-10-15T20:09:17Z",
+      "finished_at": "2026-10-15T20:09:29Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -27472,7 +27493,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
       "started_at": "2026-10-15T20:07:36Z",
-      "finished_at": "2026-10-15T20:09:17Z",
+      "finished_at": "2026-10-15T20:09:29Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -27522,7 +27543,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
       "started_at": "2026-10-15T20:07:36Z",
-      "finished_at": "2026-10-15T20:09:17Z",
+      "finished_at": "2026-10-15T20:09:29Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -27570,7 +27591,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
       "started_at": "2026-10-15T20:07:36Z",
-      "finished_at": "2026-10-15T20:09:17Z",
+      "finished_at": "2026-10-15T20:09:29Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -27623,7 +27644,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
       "started_at": "2026-10-15T20:07:36Z",
-      "finished_at": "2026-10-15T20:09:17Z",
+      "finished_at": "2026-10-15T20:09:29Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -27672,7 +27693,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
       "started_at": "2026-10-15T20:07:36Z",
-      "finished_at": "2026-10-15T20:09:17Z",
+      "finished_at": "2026-10-15T20:09:29Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -27721,7 +27742,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude Code agent (Anthropic), model Claude Opus 5.5 (claude-opus-5-5) as stated in my system context",
       "started_at": "2026-10-15T20:07:36Z",
-      "finished_at": "2026-10-15T20:09:17Z",
+      "finished_at": "2026-10-15T20:09:29Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -27763,9 +27784,47 @@
    "tier": 1,
    "words": 2676,
    "batch_id": "B0079",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0079",
+     "run": "R-w14-B0079",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:42Z",
+      "finished_at": "2026-10-15T20:09:25Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       123
+      ]
+     ],
+     "lines_total": 123,
+     "genre_observed": "effective act: satirical-real prize announcement (v1.1)",
+     "finds_by_shape": {
+      "B": 2,
+      "C": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1393,
@@ -27774,9 +27833,47 @@
    "tier": 1,
    "words": 2679,
    "batch_id": "B0079",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0079",
+     "run": "R-w14-B0079",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:42Z",
+      "finished_at": "2026-10-15T20:09:25Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       137
+      ]
+     ],
+     "lines_total": 137,
+     "genre_observed": "effective act: prize announcement (body is the #160 announcement, not the Elgene certificate)",
+     "finds_by_shape": {
+      "B": 2,
+      "C": 1
+     },
+     "none_found": false,
+     "incidental": "WRONG/DUPLICATE BODY: the queue title is the Jess Elgene Certificate of Conferral and Honorary Laureate License, but the text file contains the v1.1 Announcement of Establishment and Inaugural Conferral, i.e. the same body as #160 (AXN-02F6), re-formatted with stray asterisks. Finds duplicate #160.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 161,
@@ -27785,9 +27882,53 @@
    "tier": 1,
    "words": 11485,
    "batch_id": "B0079",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0079",
+     "run": "R-w14-B0079",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:42Z",
+      "finished_at": "2026-10-15T20:09:25Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       259
+      ],
+      [
+       260,
+       513
+      ]
+     ],
+     "lines_total": 513,
+     "genre_observed": "methodological specification / pre-registration candidate (v1.2)",
+     "finds_by_shape": {
+      "F": 1,
+      "G": 2,
+      "B": 2,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Text file is v1.2 (supersedes v1.1, DOI 10.5281/zenodo.20586831) though queue title says v1.1. Extraction damage: many list/table/graph bodies are missing; headings like \"Lexical features:\", \"Syntactic features:\", \"Falsifiability:\", \"Primary outcomes:\", \"Predictions:\", the causal-model graph (§4.3), MDI subscale list, Stage 2B conditions, Stage 3 corpora, collapse benchmarks, §6.4 natural experiments and §8.2 metadata list are followed by nothing. The abstract also ends with a colon and no stage list (line 32). Stage-level falsifiers may have been lost.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 790,
@@ -27796,9 +27937,53 @@
    "tier": 1,
    "words": 8688,
    "batch_id": "B0079",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0079",
+     "run": "R-w14-B0079",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:42Z",
+      "finished_at": "2026-10-15T20:09:25Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       219
+      ],
+      [
+       220,
+       439
+      ]
+     ],
+     "lines_total": 439,
+     "genre_observed": "design specification / political-economic analysis",
+     "finds_by_shape": {
+      "G": 2,
+      "E": 1,
+      "F": 1,
+      "B": 2
+     },
+     "none_found": false,
+     "incidental": "Some bulleted lists are run together onto single lines (e.g. lines 185, 257, 315, 319). Cites the Dodecad and \"738+ deposits\" as cognitive proof of concept.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 791,
@@ -27807,9 +27992,52 @@
    "tier": 1,
    "words": 7961,
    "batch_id": "B0079",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0079",
+     "run": "R-w14-B0079",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:07:42Z",
+      "finished_at": "2026-10-15T20:09:25Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       240
+      ],
+      [
+       240,
+       466
+      ]
+     ],
+     "lines_total": 466,
+     "genre_observed": "semantic-economic critique / jurisdictional analysis of Google SEO guidance",
+     "finds_by_shape": {
+      "B": 4,
+      "D": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 163,
