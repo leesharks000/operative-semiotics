@@ -1,0 +1,193 @@
+{
+ "batch_id": "B0128",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:40:06Z",
+  "finished_at": "2026-10-15T20:41:13Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1574,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0666-text.md",
+   "lines_total": 1017,
+   "read_ranges": [
+    [
+     1,
+     260
+    ],
+    [
+     261,
+     510
+    ],
+    [
+     511,
+     770
+    ],
+    [
+     771,
+     1017
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "philological note iterations plus simulated blind-review reports and an empirical write-up measuring machine reception of SE 183b34",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This note argues that *Sophistical Refutations* 184b1–2 says that there was nothing of syllogizing prior to Aristotle. In support it argues that 183b34–36 says that the inquiry was not partly worked out beforehand and partly not, but that nothing at all was there; that 183b36–184a8 says that the teachers of eristic arguments gave the things from the art and not the art; and that 184b1–8 says that rhetoric had much and old material, and that the method is to be judged from the conditions it began from. The evidence is the sentences.",
+     "lines": [
+      65,
+      65
+     ],
+     "falsifier_quote": "The evidence is the sentences.",
+     "falsifier_lines": [
+      65,
+      65
+     ],
+     "window": "Aristotle, Sophistical Refutations 34, 183b34-184b8",
+     "points_to": "",
+     "also_at": [
+      [
+       245,
+       245
+      ],
+      [
+       307,
+       307
+      ],
+      [
+       913,
+       917
+      ]
+     ],
+     "note": "Historical thesis on what SE 184b1-2/183b34-36 say: nothing of syllogizing prior to Aristotle, taken literally; the deposit holds this reading (A1 'says the sentence') against the received qualified reading; restated as CLAUSE thesis (quantifier exhaustive over the clause's domain)."
+    },
+    {
+     "shape": "H",
+     "quote": "One proposition, throughout, in the text's own words: nothing prior of syllogizing includes Socrates' syllogizing. The chapter's \"prior\" is παρ᾽ ἑτέρων; Socrates is inside the definition; nothing of the inquiry was from others; a beginning does not come in parts. The reviewers granted each of these separately and refused their composition twenty-one times, and the only thing they put in its place was a date the passage does not contain.",
+     "lines": [
+      1005,
+      1005
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "SE 34, 183a37-184b8; Socrates and Aristotle",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about the original sense of SE 34: Socrates' practice falls inside 'this inquiry', so 'nothing prior' includes Socrates; the same paragraph goes on to state the limit (the run does not establish Socrates inside the 'we')."
+    },
+    {
+     "shape": "H",
+     "quote": "The deleted particle is a provenance claim. The chapter defines \"worked out beforehand\" as παρ᾽ ἑτέρων — from others (183b17). The sentence with οὐ says: of this inquiry, nothing was received from others. The sentence without οὐ says: some of it was. What the reception restores, at the cost of the particle, is provenance from others: Socrates before, Plato before, the dialogues as predecessors, the inquiry as inheritance. The received account of the founding of logic is the sentence's denied member.",
+     "lines": [
+      977,
+      977
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "received reading of SE 183b34 (reference works, commentaries)",
+     "points_to": "",
+     "also_at": [
+      [
+       917,
+       917
+      ],
+      [
+       907,
+       907
+      ]
+     ],
+     "note": "Reception-history thesis: the received account of logic's founding (Socrates/Plato as predecessors) is the configuration the sentence's ou denies."
+    },
+    {
+     "shape": "H",
+     "quote": "The parent investigation, *Many and One*, argued that the two-maker partition of the Plato–Aristotle configuration is not established by the texts; Polansky's decline named the two objections — \"nothing existed seems overly strong?\" and \"one body or two bodies, we can do without\" — as if they were unrelated. This run shows they are one objection. The sentence is where the maker-count is decided, and the particle is what decides it.",
+     "lines": [
+      979,
+      979
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Plato-Aristotle configuration",
+     "points_to": "",
+     "also_at": [],
+     "note": "Adopts the parent investigation's authorship thesis (Plato-Aristotle two-maker partition not established by the texts) and links it to SE 183b34 as where the maker-count is decided."
+    },
+    {
+     "shape": "G",
+     "quote": "The surfaces that strip provenance from living authors are the surfaces that insert it into Aristotle, because both are the discipline's operation, now mediated by machines that learned it. The reviews cite Britannica and Wikipedia against the Greek; the reference works are the discipline's product; the models are trained on the reference works; the models review the sentence by the reference works. The loop is closed and the text is outside it.",
+     "lines": [
+      985,
+      985
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       983,
+       983
+      ],
+      [
+       987,
+       987
+      ],
+      [
+       991,
+       993
+      ],
+      [
+       907,
+       907
+      ]
+     ],
+     "note": "Standing claim about how machine surfaces behave (the same discipline-trained operation strips provenance from living authors and inserts it into Aristotle); no explicit falsifier stated, the run's invariance-under-variation design is its implied test."
+    },
+    {
+     "shape": "F",
+     "quote": "# NOTHING-SE34 — pre-submission checklist (not part of the note)\n\nRemoved from the paper's surface at v0.4 and parked here. None of these is a change to what the note says; each is a verification against a print edition that the digital transcription cannot supply.\n\n1. Every Bekker line reference against the OCT margin (Ross 1958). v0.9 adds five first-person-verb locations in §1 (προειλόμεθα 183a37, ὑπεθέμεθα 183b3, εἰρήκαμεν 183b6, διεληλύθαμεν 183b13) and line splits inside 183b17–33 (b17–19, b22–23, b29–33) that were assigned from the transcription.",
+     "lines": [
+      881,
+      885
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       886,
+       889
+      ],
+      [
+       10,
+       10
+      ],
+      [
+       313,
+       313
+      ],
+      [
+       422,
+       422
+      ],
+      [
+       1009,
+       1009
+      ]
+     ],
+     "note": "Unrun verification checklist: every Bekker reference and count to be checked against Ross 1958 OCT margin; ἄλλο variant; Barnes 1984 to be checked. Recorded as one F per rule 4."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Appendix (lines 21-875) precedes the paper body (897-1017). Parts A1-A7 are versions of the note, some (A2 REFLEX, A4 DIVISION, A7 APPARATUS) deliberately argue the reception's reading as sophistry and are not the deposit's own theses. Part B reports are AI-generated referee text (other parties), partially summarized in brackets (B1 middle sections held only in session record per editorial note at line 717). Greek and Bekker line numbers are from digital transcriptions pending OCT check; inconsistency: CLAUSE footnote (313) puts third παντελῶς at 183b29 while A1/A5/A6 give 184a1. Section 3.4 (line 957) numbers the v1.9 pair as reports 16/17 and v2.0 pair as 18/19, while B5 register (866-870) numbers them R17/R18 and R19/R20. Read tool showed a blank line 1018 beyond lines_total."
+  }
+ ]
+}
