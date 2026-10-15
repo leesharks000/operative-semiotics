@@ -7535,7 +7535,34 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled",
    "output": "data/reading/batches/B0149.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 165445,
+    "tool_uses": 18,
+    "tokens": 219217
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T20:49:27Z",
+    "finished_at": "2026-10-15T20:51:57Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "python3"
+    ]
+   },
+   "verification": {
+    "deposits": 10,
+    "entries": 10,
+    "finds": 36,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 10,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w24-B0150",
