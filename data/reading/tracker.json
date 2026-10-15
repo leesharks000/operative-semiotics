@@ -2,11 +2,10 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 495,
-  "partial": 1,
+  "read": 496,
   "unread": 1120
  },
- "h_covered": 495,
+ "h_covered": 496,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
   "G": 572,
@@ -31863,7 +31862,7 @@
    "tier": 1,
    "words": 390369,
    "batch_id": "B0098",
-   "state": "partial",
+   "state": "read",
    "readings": [
     {
      "by": "parallel",
@@ -31880,7 +31879,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "X-batch X0009 covers lines 1-4763 of the derived text only; the deposit counts as read when every X-batch over it has passed.",
      "read_ranges": [
       [
@@ -31913,10 +31912,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "No prediction-bearing or historical-thesis passages in lines 1-4763: the text is dated operational record (recovery phases, corrections, audit statuses) and repeated template notes. Changelog v3.5 (2026-07-19) entry is duplicated 12 times verbatim (lines 47-105). Records from 0 to 1196 appear in this range; record indices skip (only records with own-voice fields are emitted). Correction log 2026-08-30 (lines 235-242) carries an operating warning that enrich_resolver_evidence.py must not be run blind on the index (procedural, not recorded). The recurring concept-DOI note (e.g. line 560) and the 'structural fact' about heteronym-authored works appearing as no-creator to DataCite (line 208) were considered and judged dated observation/explanation of the archive's own record, not shape G or H.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 6,
+      "lines_returned": 4763,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -31934,7 +31936,7 @@
       ]
      },
      "protocol": "READING-PROTOCOL v1.2",
-     "status": "partial",
+     "status": "read",
      "status_note": "",
      "read_ranges": [
       [
@@ -31970,6 +31972,11 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "xpass",
+     "status": "read",
+     "protocol": "READING-PROTOCOL v1.2"
     }
    ],
    "xpass": {
@@ -31978,11 +31985,12 @@
      "X0010"
     ],
     "done": [
+     "X0009",
      "X0010"
     ],
     "scope": "own-voice fields read in full from a derived text; transcripts and observations excluded by protocol (see scripts/reading/derive_voice.py)"
    },
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 864,
