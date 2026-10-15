@@ -11,6 +11,7 @@ verification record, nothing is dropped):
   FALSI   same for falsifier_quote
   SHAPE   shape in A–H (H from protocol v1.2)
   NONE    none_found consistent with finds
+  STATUS  status is one of read | partial | skipped (added after B0145, whose entries carried none)
   QUEUED  every queued deposit of the batch has an entry, and no entry is outside the batch
           (S-batches: out-of-queue readings by the launcher; each listed deposit is checked against its queue row)
           (X-batches: a line range of a derived own-voice reading text, data/reading/xqueue.json; COVER is over the range)
@@ -59,6 +60,8 @@ def main():
         lines = t.split("\n")
         if hashlib.sha256(raw).hexdigest() != row["sha256"]:
             fails.append("HASH: file changed since queued")
+        if e.get("status") not in ("read", "partial", "skipped"):
+            fails.append(f"STATUS: status {e.get('status')!r} is not read|partial|skipped")
         if e.get("status") == "read":
             covered = set()
             for a, b2 in e.get("read_ranges") or []:

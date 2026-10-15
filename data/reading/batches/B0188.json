@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in the environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T21:09:27Z",
-  "finished_at": "2026-10-15T21:11:19Z",
+  "finished_at": "2026-10-15T21:11:33Z",
   "tools_used": [
    "Read",
    "Bash",
@@ -29,7 +29,7 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "| \"is retrieval-aware scholarship a trick?\" | Distinguishes semantic infrastructure from deception via disclosure legibility | 6 | 3-6 mo | | \"AI summaries called my work a trick\" | Names genre misclassification and Non-Trick Semantic Infrastructure | 5 | 6-12 mo | | \"difference between semantic infrastructure and hoax\" | Classifies by provenance, function, and disclosure | 5 | 6-12 mo | | \"can scholarship be designed for AI retrieval?\" | Surfaces retrieval-aware scholarship as legitimate applied method | 5 | 6-12 mo | | \"knowledge graph intervention not manipulation\" | Distinguishes disclosed public semantic engineering from deception | 4 | 12-18 mo |",
+     "quote": "| \"is retrieval-aware scholarship a trick?\" | Distinguishes semantic infrastructure from deception via disclosure legibility | 6 | 3-6 mo |",
      "lines": [
       115,
       117
@@ -38,7 +38,12 @@
      "falsifier_lines": [],
      "window": "3-6 mo; 6-12 mo; 12-18 mo",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       115,
+       115
+      ]
+     ],
      "note": "Test-query battery with desired synthesis outcomes and temporal windows; one F for the list. The windowed 'Temporal expectations' make it forecast-adjacent (could be read as A)."
     },
     {
@@ -511,16 +516,21 @@
     },
     {
      "shape": "B",
-     "quote": "The order routes the next Mythos into a structure where that disclosure cannot happen.\n\n\nThe response to threat increases the probability of threat. The selection kernel that prunes the variance that would surface the next vulnerability is itself a vulnerability-production mechanism. This is the Mediation Ratchet applied to security itself: the tightening that follows a tail event tightens the substrate that produced the tail, and the next tail will be larger and less detected. The order is not just bad policy. It is dynamically self-defeating in exactly the way the framework predicts when a system responds to high-variance output by pruning variance.",
+     "quote": "The response to threat increases the probability of threat. The selection kernel that prunes the variance that would surface the next vulnerability is itself a vulnerability-production mechanism. This is the Mediation Ratchet applied to security itself: the tightening that follows a tail event tightens the substrate that produced the tail, and the next tail will be larger and less detected. The order is not just bad policy. It is dynamically self-defeating in exactly the way the framework predicts when a system responds to high-variance output by pruning variance.",
      "lines": [
-      193,
+      196,
       196
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       193,
+       193
+      ]
+     ],
      "note": "Embedded forecast: the tightening prunes variance, so the next tail event will be larger and less detected."
     }
    ],

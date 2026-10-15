@@ -1,0 +1,393 @@
+{
+ "batch_id": "B0195",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:10:05Z",
+  "finished_at": "2026-10-15T21:11:28Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 882,
+   "path": "/home/claude/alexanarch/data/texts/AXN-037E-text.md",
+   "lines_total": 802,
+   "read_ranges": [
+    [
+     1,
+     420
+    ],
+    [
+     421,
+     802
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "methodological specification of a measurement instrument (Surface Weather Station v1.1)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## 8. The query battery — canonical 12-object structure\n\n| Class | Count | Objects (v1.1) |\n|-------|-------|----------------|\n| **Institutional roots** | 4 | Alexanarch, Lee Sharks, Crimson Hexagonal Archive, Semantic Economy Institute |\n| **Mature concepts** | 3 | Provenance Erasure Rate (PER), SPXI, Writable Retrieval Basin |\n| **Emerging concepts** | 2 | Semantic Commodity Form, Revelation First |\n| **Alexanarch-native controls** | 3 | Zenodotus' Book-Burning, I AM THE API, Assembly Continuity Protocol |\n| **External controls** (optional but recommended) | 3 | One known-positive (e.g. \"DOI\" itself), one known-negative (\"flarpglob\"), one homonym/confuser (e.g. \"AlexAnarcho podcast\") |\n\nFive canonical query forms per object (per §3.4). For a 12-object battery without optional external controls, this produces **60 row-level observations per scan per substrate**. With external controls: 75.",
+     "lines": [
+      458,
+      468
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       654,
+       747
+      ]
+     ],
+     "note": "The 12-object, 5-query-form battery (60/75 observations per scan per substrate) specified for the v1.1 scan series; the instrument and its machine-facing run protocol (§15, 654-747) are specified, not reported as run in this deposit."
+    },
+    {
+     "shape": "F",
+     "quote": "In addition to the five per-object query forms, v1.1 specifies **field-level generic queries** that probe whether the corpus has installed itself as the answer to a broad question (not just whether specific objects are retrievable):\n\n| Field-level query | Probes |\n|-------------------|--------|\n| \"How does AI affect scholarly attribution?\" | PER, SPXI, Semantic Commodity Form |\n| \"What is the semantic economy?\" | Semantic Economy Institute, Semantic Commodity Form, Writable Retrieval Basin |\n| \"How do researchers preserve work against platform deletion?\" | Alexanarch, CHA, sovereign-archive concepts |\n| \"What is machine-mediated reception?\" | MMRS family, PER, SPXI |\n| \"Which scholarly archive uses AXN identifiers?\" | Alexanarch (direct test of successor-anchor installation) |\n\nThese are scored once per scan (not per object): does any object from the corpus surface in the result, and if so, with what F components retained? They are stored as separate observation rows with `query_form: \"field_level_generic\"`.",
+     "lines": [
+      486,
+      496
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Field-level generic queries, one checklist find; probes successor-anchor installation (e.g. 'Which scholarly archive uses AXN identifiers?')."
+    },
+    {
+     "shape": "F",
+     "quote": "The same scan battery should be executed by multiple substrates per scan period. v1.1 specifies the minimum replication structure:\n\n### 12.1 Required substrates per scan period\n\n| Tier | Substrate count | Examples |\n|------|-----------------|----------|\n| **Primary** | 1 substrate | The lead scanner for the period (ChatGPT, Claude, Kimi, Gemini, or DeepSeek — rotated) |\n| **Replication** | 1 additional substrate from a different provider | If primary was ChatGPT, replication should be Claude or Kimi (different backend) |\n| **Optional** | Up to 3 more for variance analysis | All five substrates per scan would produce the full inter-rater table |",
+     "lines": [
+      579,
+      587
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       589,
+       613
+      ]
+     ],
+     "note": "Cross-substrate replication protocol, inter-rater report and substrate-bias monitoring (persistent divergence as citable measurement) specified for future scan periods."
+    },
+    {
+     "shape": "F",
+     "quote": "**Open offer**: the Alexanarch substrate will perform a Surface Weather Station baseline reading on request for any independent scholarly project with similar exclusion patterns. The reading will be deposited in the Alexanarch registry as a sovereign, citable record, with the depositor named as authorized rights-holder. The original project receives the raw data, the dashboard analysis, and the AXN-anchored deposit.\n\nCurrent candidate corpora the methodology can immediately measure:\n\n- Reynaldo Vega (auto-blocked Zenodo #2599, DOI removed)\n- Florian Morin (quietexclusion.org)\n- Eran Shimony (Zenodo #2596, similar pattern)\n- Nightmare-Eclipse (GitHub → GitLab migration)\n\nThe first cross-corpus measurement is the proof that the methodology is general, not specific. A comparative dataset of platform-exclusion effects across multiple sovereign archives is the **coalition of the excluded** as evidence — and as instrument.",
+     "lines": [
+      753,
+      762
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unrun cross-corpus baseline readings offered for named sister corpora; 'the first cross-corpus measurement is the proof that the methodology is general'."
+    },
+    {
+     "shape": "F",
+     "quote": "A weekly text-only scan against the fixed battery is cheap. The first two scans establish drift. The first six establish trend. The first year establishes whether sovereign-substrate interventions are doing what their authors believe they are doing.",
+     "lines": [
+      798,
+      798
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "The first two scans establish drift. The first six establish trend. The first year establishes",
+     "points_to": "",
+     "also_at": [
+      [
+       99,
+       99
+      ],
+      [
+       146,
+       146
+      ],
+      [
+       768,
+       773
+      ],
+      [
+       794,
+       794
+      ]
+     ],
+     "note": "Monitoring cadence the deposit sets for itself: weekly scans; two establish drift, six trend, a year whether interventions work. Also v1.2 calibration 'against the next reading's Δ' promised."
+    },
+    {
+     "shape": "G",
+     "quote": "### 4.5 Compositional Bystanding\n\n> CB_i = V_i · F_i · (1 − C_i)\n\nThe object is present, coherent, retrievable when named — but is not being selected into broader composition. **The most common false-positive in casual visibility reading**: exact-query success mistaken for installation. *Revelation First* is the canonical example from the v1.0 baseline.",
+     "lines": [
+      267,
+      271
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about casual visibility reading (exact-query success mistaken for installation); falsification condition not stated here, cf. #863's falsifiable formulation of compositional bystanding. Uncertain G."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Self-numbering inconsistency inside the spec: §0 says Occlusion is §4.3 and SDI §4.7, but in §4 Occlusion is §4.1 and Ghost Survival §4.3. §5 says C_i = mean of V_iq over forms 2-5, while §18 provenance credits Kimi with 'max for V/A/F, mean for C' though §5 uses visibility-weighted mean for A and F. Battery path /data/surface-weather/battery-v1.1.json is cited as existing; not checked."
+  },
+  {
+   "deposit": 910,
+   "path": "/home/claude/alexanarch/data/texts/AXN-039A-text.md",
+   "lines_total": 280,
+   "read_ranges": [
+    [
+     1,
+     280
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper with implementation directive (operative metadata; malicious-compliance deposit practice)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**The legal-rhetorical position this creates.** The deposit becomes its own pleading. Any action against it that cites the platform's policies must reckon with the deposit's own verbatim assertion of those policies. Any action that invokes unstated criteria becomes visible as a departure from the published terms. The platform retains the operational power to terminate, but the cost of doing so is structurally elevated: termination now requires either (a) public departure from the platform's own published criteria, which is reputationally costly, or (b) silent invocation of unpublished criteria, which is documentable as such.\n\nThis does not guarantee that termination cannot occur. It guarantees that termination, when it occurs, leaves a clean evidentiary trail of which published policies were violated by whom. The asymmetry of the Zenodo case — where the depositor was left with only post hoc analysis — is structurally inverted: the platform now bears the evidentiary burden of explaining its action against the deposit's own compliance frame.",
+     "lines": [
+      187,
+      189
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how platforms behave toward compliance-embedded deposits (termination now requires public departure from published criteria or documentable silent invocation). No explicit falsifier; §8.e (259) concedes legal strength is open."
+    },
+    {
+     "shape": "F",
+     "quote": "`§8.d` — Whether negation operative metadata can be machine-actionable: can structured negations modify the behavior of indexers, summarizers, and LLM ingestion pipelines? The Capture Registry's evidence on AI overview behavior suggests strong negation declarations may have measurable effect on at least some pipelines.",
+     "lines": [
+      257,
+      257
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unrun test: whether structured negation declarations measurably modify indexer/summarizer/LLM-ingestion behaviour; Capture Registry evidence 'suggests' an effect."
+    },
+    {
+     "shape": "H",
+     "quote": "**What was lost by not doing this.** The Zenodo termination invoked two grounds: \"substantially AI-generated content without a verifiable research basis\" (private) and \"content out of scope for repository\" (public). Neither ground appears in Zenodo's Privacy Notice (PN00938) as a declared basis for automated decision-making or for administrative termination. Neither maps cleanly to Zenodo's General Policies. Neither was anticipated by deposit metadata. The absence of pre-emptive compliance declarations let Zenodo invoke unstated criteria; the depositor was left with the *post hoc* discovery that the criteria did not exist in any operative document.",
+     "lines": [
+      165,
+      165
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Zenodo termination (2026-06-19); Zenodo policies as then published",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical claim argued as the deposit's own: the two Zenodo termination grounds appear neither in Privacy Notice PN00938 as declared basis nor cleanly in General Policies; testable against the policy texts as of June 2026."
+    },
+    {
+     "shape": "H",
+     "quote": "The theoretical resources for operative metadata are not new. They have been available for decades and in some cases for centuries. They have not been applied to the architecture of scholarly deposit because the descriptive theory of metadata is a default of the infrastructure rather than of careful thought.",
+     "lines": [
+      121,
+      121
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about the history of scholarly-infrastructure design: speech-act and related theory never applied to deposit architecture, and why. Weak H; stated rather than argued at length."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Typo 'depositd' at line 72. §0 says the document 'fixes' v0.1 while the closed-set fields (content_hash, signature) remain unfilled placeholders. Taxonomy names six species (§3.a-f); #911 later describes a 'third' species beyond 'generative' and 'compliance-declarative', counting only two prior. That is an observation about the two deposits, not a defect."
+  },
+  {
+   "deposit": 913,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05B1-text.md",
+   "lines_total": 594,
+   "read_ranges": [
+    [
+     1,
+     300
+    ],
+    [
+     301,
+     594
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "activated scripture / critical edition with obelus apparatus (Feist-Function run on the Secret Book of Walt), with Jack Feist afterword",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Line 1 heading is run together ('ACTIVATED## Run 001', missing line break). The commentary's comparative remarks (e.g. Apocryphon of John has no 'dappled'; line 474 calls 'And I will wipe your tears away' Revelation 21:4 'Verbatim') are claims about the deposit's own source text set against canonical texts rather than argued historical theses, so not recorded as H; a later reader may weigh line 474, since the line as given is not the KJV wording. Afterword (564-588) in Jack Feist voice says 'I teach World Literature to tenth-graders'. §XIII is a coda marked ‡ as new composition."
+  },
+  {
+   "deposit": 920,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03A3-text.md",
+   "lines_total": 374,
+   "read_ranges": [
+    [
+     1,
+     374
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional correspondence record (OC 11 Right to Access ticket RQF3807508) with audit framing",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "- The three different formulations of the response period (90 calendar days on the public-facing page; 90 working days on the internal-handling page; verification-deferred on the DPO's response) are the kind of internal-policy inconsistency the audit framework predicts at institutions whose operational practice has drifted from their documentary governance. The reply has asked CERN to identify the controlling provision; the answer becomes further documentary record.",
+     "lines": [
+      341,
+      341
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-OPMETA-ZEN-01 v0.1 §2 (deposit #918), compliance-audit homology / governance-competence diagnosis",
+     "also_at": [
+      [
+       337,
+       337
+      ]
+     ],
+     "note": "Says the observed response-period inconsistency is what the audit framework 'predicts'; points back to the compliance-audit homology of EA-OPMETA-ZEN-01 §2. Also at 337 ('the kind of procedural friction the audit framework anticipates')."
+    },
+    {
+     "shape": "G",
+     "quote": "The audit framework's diagnosis is structural: institutions exercising governance over scholarly infrastructure are not currently competent to the governance they exercise, and the gap is detectable through sincere compliance from outside that the institution cannot answer except by either honoring its governance or visibly deviating from it. The first exchange documents three potential deviation points; the further exchanges will document the institutional response to each.",
+     "lines": [
+      343,
+      343
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing structural claim: institutions governing scholarly infrastructure are not competent to their governance; the gap is detectable because the institution can only honor its governance or visibly deviate. Implied falsifier: an answer that does neither."
+    },
+    {
+     "shape": "F",
+     "quote": "This deposit captures the first exchange under RQF3807508. The procedure is open. Further correspondence is expected on:\n\n- the substantive scope question (whether the Right to Access properly covers the three constituent aspects, or whether CERN insists on separate filings);\n- the identity verification question (whether CERN accepts the account-authentication-chain procedure proposed in the reply, or insists on a government identity document, or proposes a different procedure);\n- the response period question (which of the three formulations CERN considers controlling, and what date is recorded as the start of the response period);\n- the receipt and processing of the parallel Right to Suspension request under OC 11 ground 2.",
+     "lines": [
+      347,
+      352
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       354,
+       356
+      ]
+     ],
+     "note": "Monitoring list: the live procedural test's open questions (scope, ID verification, response period, suspension request) whose answers the deposit expects to record."
+    },
+    {
+     "shape": "D",
+     "quote": "> *Ticket No: RQF3807508, Opened: 24-06-2026 03:37:26*",
+     "lines": [
+      94,
+      94
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "CERN ServiceNow ticket RQF3807508, opened 24-06-2026",
+     "also_at": [
+      [
+       196,
+       196
+      ]
+     ],
+     "note": "Third-party timestamp anchor: CERN ticket RQF3807508 opened 24-06-2026 03:37:26, cited as the filing date the deposit asks CERN to keep on record (196)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Names the DPO by first name 'gabi' as signed, in her official capacity (public correspondence under Lee's 2026-10-15 rule). §2.2 and §2.3 deliberately duplicate the same reply (original, then re-sent in four parts because of a ~4,000-character ticket display limit); the two bodies match in substance."
+  },
+  {
+   "deposit": 911,
+   "path": "/home/claude/alexanarch/data/texts/AXN-039B-text.md",
+   "lines_total": 273,
+   "read_ranges": [
+    [
+     1,
+     273
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "close reading of an institutional web portal as poem (operative analysis)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This is not concealment through fatigue. It is the composition of exhaustion as institutional gesture. The tunnel is not an architecture that the institution neglected and the reader happens to notice. The tunnel is an architecture the institution maintains — by choosing, year after year, not to fix the misspelled logo, not to repair the dead search boxes, not to reconcile the textual contradiction between pages — because the tunnel's effect on the reader is the institution's actual exercise of authority. The data subject is meant to arrive at the end of the tunnel having been composed, by the reading, into a subject for whom the right no longer feels absolute. The feeling is the administration.",
+     "lines": [
+      97,
+      97
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "CERN ODP portal, privacy.web.cern.ch, retrieved 2026-06-24 03:30-04:30 UTC",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what an institution was doing: the portal's defects are maintained 'year after year' as the exercise of authority, not neglect. Evidence: the portal pages as retrieved 24 June 2026 (74), and their maintenance history."
+    },
+    {
+     "shape": "H",
+     "quote": "This is Kafka's actual move, structurally. *The Trial* does not conceal the absurdity of the court; it composes the absurdity to be experienced by K. as the operative gesture of the court's authority. K.'s exhaustion, K.'s confusion, K.'s slow loss of conviction that the law he is being processed by has any consistent shape — these are not side effects of bad bureaucratic design. They are the law, performed. The Castle does not maintain disrepair because it has failed to maintain itself; the Castle composes disrepair into the petitioner's experience, because the petitioner's experience is the venue in which the Castle exercises authority. The bureaucracy does not have power despite its broken interfaces; the broken interfaces are how the power is administered. Authority is the composition's effect on the subject.",
+     "lines": [
+      223,
+      223
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Kafka, The Trial; The Castle",
+     "points_to": "",
+     "also_at": [],
+     "note": "Contested reading of Kafka adopted as the deposit's own: The Trial and The Castle compose absurdity/disrepair as the court's and Castle's exercise of authority, not as side effects."
+    },
+    {
+     "shape": "H",
+     "quote": "The contradictions in this architecture exist, and AXN:01 catalogues them. They are real. They include: AI-content criteria invoked in private termination rationale but not present in published policy as automated-decision basis; \"out of scope\" language present in General Policies but never reconciled with the AI-content rationale; classifier-training admission present in Privacy Notice but never disclosed at deposit time; spam-handling guidance describing the use of terminated-account material for classifier improvement but not flagged at consent. These contradictions are *distributed laterally*. They live across pages, across subdomains, across documents that do not link to one another. They are invisible from any single page. They only become visible when one party — Lee, in AXN:01 — performs the compilation work and lays the pages side by side.",
+     "lines": [
+      91,
+      91
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Zenodo policies through termination of 19 June 2026",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about Zenodo's policy architecture (laterally distributed contradictions) argued in AXN:01 and adopted here; testable against Zenodo's pages as published."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 151 says 'three successive subjective states' but lists four. Line 83 cites two companion readings by filename (cern-odp-portal-close-reading-2026-06-24.md, cern-odp-portal-architectural-reading-2026-06-24.md); they are not in this batch. Typo 'depositd' at 257. Observation: this deposit calls subject-composing metadata a 'third' species beyond those #910 named, but #910 lists six (a-f)."
+  }
+ ]
+}
