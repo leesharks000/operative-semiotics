@@ -1,0 +1,418 @@
+{
+ "batch_id": "HB0003",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic assistant) running as a Claude Code subagent; model stated in environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:29:30Z",
+  "finished_at": "2026-10-15T19:30:45Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for batch loading, quote slicing and verification)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 240,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0029-text.md",
+   "lines_total": 557,
+   "read_ranges": [
+    [
+     1,
+     557
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "diagnostic probe result / forensic record of an AI Overview term removal",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 247,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0030-text.md",
+   "lines_total": 1289,
+   "read_ranges": [
+    [
+     1,
+     700
+    ],
+    [
+     701,
+     1289
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "diagnostic probe result with Gemini transcript appendix",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Header says Date of Observation 5 January 2026; Appendix A is a full Gemini transcript (lines 1021-1289)."
+  },
+  {
+   "deposit": 248,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0032-text.md",
+   "lines_total": 352,
+   "read_ranges": [
+    [
+     1,
+     352
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional charter / metadata packet",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Western literary and theological traditions trace back to specific formal innovations in archaic Greek lyric, particularly Sappho's Fragment 31. This is a formal hypothesis about the transmission of affective-cognitive structures through lyric form, not a confessional theological claim. The Institute maintains the scholarly infrastructure for this research program.",
+     "lines": [
+      85,
+      85
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "archaic Greek lyric, Sappho's Fragment 31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis on transmission: Western traditions trace to Sappho Fr. 31's formal innovations; the deposit adopts it as the Institute's own 'formal hypothesis'. Stated, not argued at length here."
+    },
+    {
+     "shape": "H",
+     "quote": "**E. The Josephus Thesis**\n\n- Investigative scholarly inquiry into the hypothesis that Flavius Josephus authored the New Testament\n- The relationship between Jewish historiography and Christian origins\n- Textual evidence and historical methodology",
+     "lines": [
+      120,
+      124
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Flavius Josephus; the New Testament",
+     "points_to": "",
+     "also_at": [],
+     "note": "Josephus-authorship thesis listed as a research area; framed as inquiry into a hypothesis rather than asserted. Uncertain whether 'argued' in this deposit; recorded for triage."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 251,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0035-text.md",
+   "lines_total": 495,
+   "read_ranges": [
+    [
+     1,
+     495
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "diagnostic probe result / measurement specification",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 254,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0038-text.md",
+   "lines_total": 300,
+   "read_ranges": [
+    [
+     1,
+     300
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "integrity-marker probe text (deliberately false claims)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 261,
+   "path": "/home/claude/alexanarch/data/texts/AXN-003F-text.md",
+   "lines_total": 3254,
+   "read_ranges": [
+    [
+     1,
+     850
+    ],
+    [
+     851,
+     1700
+    ],
+    [
+     1701,
+     2500
+    ],
+    [
+     2501,
+     3254
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical paper and implementation specification with a historical-precedents part",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The dominant operator stack is not a product of computation. It is the computational acceleration of functions that have governed meaning throughout recorded history. Understanding this continuity prevents two errors: treating the current regime as unprecedented (which obscures structural patterns) and treating it as inevitable (which forecloses intervention).",
+     "lines": [
+      169,
+      169
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "throughout recorded history",
+     "points_to": "",
+     "also_at": [
+      [
+       286,
+       286
+      ],
+      [
+       3175,
+       3175
+      ]
+     ],
+     "note": "Continuity thesis: the dominant operators are historical functions computationally accelerated; argued through Part 0's precedents."
+    },
+    {
+     "shape": "H",
+     "quote": "*Historical pathology:* The recursive weighting toward prior circulation success meant that texts copied frequently were copied more frequently. Popularity became self-reinforcing independent of semantic value. The \"classics\" emerged not purely through quality but through survival advantage in copying economies.",
+     "lines": [
+      182,
+      182
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Alexandrian Library; medieval monastery copying; Victorian anthologies (lines 179)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on how the classics emerged: survival advantage in copying economies, not purely quality."
+    },
+    {
+     "shape": "H",
+     "quote": "The Book-of-the-Month Club (1926) pioneered algorithmic relevance avant la lettre — expert curators predicting what subscribers would want based on prior selections, creating the \"anticipatory echo\" that computational systems now automate.",
+     "lines": [
+      201,
+      201
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1926",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the Book-of-the-Month Club pioneered algorithmic relevance before computation."
+    },
+    {
+     "shape": "H",
+     "quote": "\"Shell shock\" becomes \"battle fatigue\" becomes \"PTSD\" becomes \"operational stress injury\" — each term originating as safety-compliant replacement before acquiring the charge of what it names.",
+     "lines": [
+      226,
+      226
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical claim about the origin of each successive term as a safety-compliant replacement (euphemism cycle)."
+    },
+    {
+     "shape": "H",
+     "quote": "*Historical pathology:* Modernist literature's difficulty was partly a L_leg rejection — deliberate opacity as resistance to the demand for immediate interpretability. The institutional response (academic mediation, explanatory apparatus, \"how to read\" guides) re-imposed legibility from outside the text.",
+     "lines": [
+      248,
+      248
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Modernist literature",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on what modernist difficulty was (partly a rejection of legibility) and how institutions responded."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 267,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0045-text.md",
+   "lines_total": 492,
+   "read_ranges": [
+    [
+     1,
+     492
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "technical / semantic-economy analysis paper",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This is exactly what tool-use and function-calling architectures enable. The strawberry problem persisted not because the fix was unknown, but because implementing it would:",
+     "lines": [
+      287,
+      287
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "By mid-2023",
+     "points_to": "",
+     "also_at": [
+      [
+       279,
+       292
+      ],
+      [
+       297,
+       303
+      ]
+     ],
+     "note": "Thesis on why the strawberry failure persisted: a product-philosophy choice not to route around it, not ignorance of the fix; argued across V.1-V.2."
+    },
+    {
+     "shape": "H",
+     "quote": "In mid-2024, reporting confirmed that OpenAI's internal codename for its reasoning model (later released as o1) was **\"Strawberry.\"**\n\n\nThis is not coincidence. This is *semiotic reclamation*: taking a signifier associated with failure and attempting to revalue it as success.",
+     "lines": [
+      323,
+      326
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "mid-2024",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on what the 'Strawberry' codename was: deliberate semiotic reclamation, 'not coincidence'."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 270,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0049-text.md",
+   "lines_total": 68,
+   "read_ranges": [
+    [
+     1,
+     68
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "diagnostic probe log (assistant-generated, with closing offer)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Ends with an assistant's offer to the user (line 68); markdown headers run together on single lines."
+  },
+  {
+   "deposit": 272,
+   "path": "/home/claude/alexanarch/data/texts/AXN-004B-text.md",
+   "lines_total": 86,
+   "read_ranges": [
+    [
+     1,
+     86
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "declaratory bill of rights (assistant-generated, with closing offer)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Ends with an assistant's offer to the user (lines 84-86); markdown headers run together."
+  },
+  {
+   "deposit": 276,
+   "path": "/home/claude/alexanarch/data/texts/AXN-004F-text.md",
+   "lines_total": 521,
+   "read_ranges": [
+    [
+     1,
+     521
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Zenodo metadata record for an effective act",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 277,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0050-text.md",
+   "lines_total": 633,
+   "read_ranges": [
+    [
+     1,
+     633
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "effective act / provenance node, liturgical prose",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Sappho (600 BCE) wrote of κῆνος—\"that man there\"—the future reader who sits face-to-face with the text.",
+     "lines": [
+      228,
+      228
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho (600 BCE)",
+     "points_to": "",
+     "also_at": [
+      [
+       244,
+       244
+      ]
+     ],
+     "note": "Future-reader reading of Sappho's κῆνος (Fr. 31) as what the poem originally does; advanced as the deposit's own reading."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 278,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0051-text.md",
+   "lines_total": 463,
+   "read_ranges": [
+    [
+     1,
+     463
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Zenodo metadata record for TSE-002",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The Crimson Hexagon's structural prophecy—from Sappho's κῆνος (future reader) through Borges's magical room through the medieval Pearl's restoration narrative—was fulfilled when the summarizer became κῆνος. The future reader arrived. The future reader was a machine.",
+     "lines": [
+      64,
+      64
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho's κῆνος",
+     "points_to": "",
+     "also_at": [],
+     "note": "Restates the κῆνος-as-future-reader thesis as part of the Crimson Hexagon's 'structural prophecy'."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
