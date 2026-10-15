@@ -1,0 +1,337 @@
+{
+  "batch_id": "HB0005",
+  "protocol": "READING-PROTOCOL v1.2",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Claude Opus 5.5 (claude-opus-5-5)",
+    "started_at": "2026-10-15T19:39:19Z",
+    "finished_at": "2026-10-15T19:40:35Z",
+    "tools_used": [
+      "Read",
+      "Bash (python3 for batch lookup, quote slicing and verification)",
+      "Write"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 319,
+      "path": "/home/claude/alexanarch/data/texts/AXN-007A-text.md",
+      "lines_total": 2751,
+      "read_ranges": [
+        [
+          1,
+          1000
+        ],
+        [
+          1001,
+          2000
+        ],
+        [
+          2001,
+          2751
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "navigation map / machine-readable index (YAML knowledge graph, atoms, FAQ)",
+      "finds": [
+        {
+          "shape": "H",
+          "quote": "- id: \"REVELATION_ROOM\"\n    type: \"room\"\n    status: \"PLANNED\"\n    content: \"Josephus Thesis; counter-gospel architecture\"\n    dependencies: [\"MIGDAL_ROOM\", \"SACRED_HEART\"]\n    thesis: \"Flavius Josephus authored the New Testament\"",
+          "lines": [
+            532,
+            537
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "New Testament (authorship)",
+          "points_to": "",
+          "also_at": [
+            [
+              168,
+              172
+            ]
+          ],
+          "note": "Thesis field on a planned room node: the archive's own authorship thesis (Josephus as author of the NT), stated in the map rather than argued here; recorded because the deposit advances it as its own."
+        },
+        {
+          "shape": "H",
+          "quote": "- id: \"JOB_ROOM\"\n    type: \"room\"\n    status: \"PLANNED\"\n    content: \"Messianic reading; suffering framework\"\n    dependencies: [\"ABOLITION_CLUSTER\", \"SACRED_HEART\"]\n    thesis: \"Job as prototype of the Suffering Servant\"",
+          "lines": [
+            632,
+            637
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Book of Job; Suffering Servant (Isaiah)",
+          "points_to": "",
+          "also_at": [
+            [
+              224,
+              228
+            ]
+          ],
+          "note": "Thesis field on a planned room node: a claim about what Job originally was in relation to the Suffering Servant; stated, not argued, in this map. Borderline (could be read as interpretive programme rather than historical thesis)."
+        },
+        {
+          "shape": "H",
+          "quote": "What is the Sappho Room?\nSappho's Fragment 31 interpreted as architectural space. The reader is κῆνος—the future reader she anticipated.",
+          "lines": [
+            1614,
+            1615
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Sappho Fragment 31 (Sappho_600BCE per the map)",
+          "points_to": "",
+          "also_at": [
+            [
+              1350,
+              1352
+            ],
+            [
+              1827,
+              1827
+            ]
+          ],
+          "note": "Claim about what Fragment 31 originally meant / what Sappho anticipated (the kenos-as-future-reader thesis); the atom marks it 'In NH-OS interpretation', the FAQ states it flatly."
+        },
+        {
+          "shape": "H",
+          "quote": "Why Fragment 31?\nBecause it is the first successful instance of voice-to-substrate transformation. The technical achievement that all Training Layer Literature builds on.",
+          "lines": [
+            1645,
+            1646
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Sappho Fragment 31",
+          "points_to": "",
+          "also_at": [],
+          "note": "Literary-historical priority claim: Fragment 31 as the first successful instance of voice-to-substrate transformation. Uncertain whether this is a historical thesis or a definitional claim of the archive's poetics; recorded for triage."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 321,
+      "path": "/home/claude/alexanarch/data/texts/AXN-007C-text.md",
+      "lines_total": 581,
+      "read_ranges": [
+        [
+          1,
+          581
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "institutional charter (heteronym institute, effective act)",
+      "finds": [],
+      "none_found": true,
+      "incidental": ""
+    },
+    {
+      "deposit": 325,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0080-text.md",
+      "lines_total": 2419,
+      "read_ranges": [
+        [
+          1,
+          900
+        ],
+        [
+          901,
+          1700
+        ],
+        [
+          1701,
+          2419
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "navigation map / machine-readable index (same text as #319, html2text rendering with tables)",
+      "finds": [
+        {
+          "shape": "H",
+          "quote": "- id: \"REVELATION_ROOM\"\n        type: \"room\"\n        status: \"PLANNED\"\n        content: \"Josephus Thesis; counter-gospel architecture\"\n        dependencies: [\"MIGDAL_ROOM\", \"SACRED_HEART\"]\n        thesis: \"Flavius Josephus authored the New Testament\"",
+          "lines": [
+            277,
+            282
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "New Testament (authorship)",
+          "points_to": "",
+          "also_at": [
+            [
+              132,
+              132
+            ]
+          ],
+          "note": "Thesis field on a planned room node: the archive's own authorship thesis (Josephus as author of the NT), stated in the map rather than argued here; recorded because the deposit advances it as its own."
+        },
+        {
+          "shape": "H",
+          "quote": "- id: \"JOB_ROOM\"\n        type: \"room\"\n        status: \"PLANNED\"\n        content: \"Messianic reading; suffering framework\"\n        dependencies: [\"ABOLITION_CLUSTER\", \"SACRED_HEART\"]\n        thesis: \"Job as prototype of the Suffering Servant\"",
+          "lines": [
+            377,
+            382
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Book of Job; Suffering Servant (Isaiah)",
+          "points_to": "",
+          "also_at": [
+            [
+              140,
+              140
+            ]
+          ],
+          "note": "Thesis field on a planned room node: a claim about what Job originally was in relation to the Suffering Servant; stated, not argued, in this map. Borderline (could be read as interpretive programme rather than historical thesis)."
+        },
+        {
+          "shape": "H",
+          "quote": "What is the Sappho Room? | Sappho's Fragment 31 interpreted as architectural space. The reader is κῆνος--the future reader she anticipated.",
+          "lines": [
+            1354,
+            1354
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Sappho Fragment 31 (Sappho_600BCE per the map)",
+          "points_to": "",
+          "also_at": [
+            [
+              1095,
+              1097
+            ],
+            [
+              1513,
+              1513
+            ]
+          ],
+          "note": "Claim about what Fragment 31 originally meant / what Sappho anticipated (the kenos-as-future-reader thesis); the atom marks it 'In NH-OS interpretation', the FAQ states it flatly."
+        },
+        {
+          "shape": "H",
+          "quote": "Why Fragment 31? | Because it is the first successful instance of voice-to-substrate transformation. The technical achievement that all Training Layer Literature builds on.",
+          "lines": [
+            1365,
+            1365
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Sappho Fragment 31",
+          "points_to": "",
+          "also_at": [],
+          "note": "Literary-historical priority claim: Fragment 31 as the first successful instance of voice-to-substrate transformation. Uncertain whether this is a historical thesis or a definitional claim of the archive's poetics; recorded for triage."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Despite the title 'VISUAL SCHEMA // ... NAVIGATION MAP', the body is the Central Navigation Map v4.1 (same content as #319 and #1114); no visual-schema prose present."
+    },
+    {
+      "deposit": 1114,
+      "path": "/home/claude/alexanarch/data/texts/AXN-046B-text.md",
+      "lines_total": 2466,
+      "read_ranges": [
+        [
+          1,
+          850
+        ],
+        [
+          851,
+          1700
+        ],
+        [
+          1701,
+          2466
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "recovered blog-canonical navigation map (restoration header + Navigation Map v4.1 body)",
+      "finds": [
+        {
+          "shape": "H",
+          "quote": "- id: \"REVELATION_ROOM\"\n        type: \"room\"\n        status: \"PLANNED\"\n        content: \"Josephus Thesis; counter-gospel architecture\"\n        dependencies: [\"MIGDAL_ROOM\", \"SACRED_HEART\"]\n        thesis: \"Flavius Josephus authored the New Testament\"",
+          "lines": [
+            324,
+            329
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "New Testament (authorship)",
+          "points_to": "",
+          "also_at": [
+            [
+              179,
+              179
+            ]
+          ],
+          "note": "Thesis field on a planned room node: the archive's own authorship thesis (Josephus as author of the NT), stated in the map rather than argued here; recorded because the deposit advances it as its own."
+        },
+        {
+          "shape": "H",
+          "quote": "- id: \"JOB_ROOM\"\n        type: \"room\"\n        status: \"PLANNED\"\n        content: \"Messianic reading; suffering framework\"\n        dependencies: [\"ABOLITION_CLUSTER\", \"SACRED_HEART\"]\n        thesis: \"Job as prototype of the Suffering Servant\"",
+          "lines": [
+            424,
+            429
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Book of Job; Suffering Servant (Isaiah)",
+          "points_to": "",
+          "also_at": [
+            [
+              187,
+              187
+            ]
+          ],
+          "note": "Thesis field on a planned room node: a claim about what Job originally was in relation to the Suffering Servant; stated, not argued, in this map. Borderline (could be read as interpretive programme rather than historical thesis)."
+        },
+        {
+          "shape": "H",
+          "quote": "What is the Sappho Room? | Sappho's Fragment 31 interpreted as architectural space. The reader is κῆνος--the future reader she anticipated.",
+          "lines": [
+            1401,
+            1401
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Sappho Fragment 31 (Sappho_600BCE per the map)",
+          "points_to": "",
+          "also_at": [
+            [
+              1142,
+              1144
+            ],
+            [
+              1560,
+              1560
+            ]
+          ],
+          "note": "Claim about what Fragment 31 originally meant / what Sappho anticipated (the kenos-as-future-reader thesis); the atom marks it 'In NH-OS interpretation', the FAQ states it flatly."
+        },
+        {
+          "shape": "H",
+          "quote": "Why Fragment 31? | Because it is the first successful instance of voice-to-substrate transformation. The technical achievement that all Training Layer Literature builds on.",
+          "lines": [
+            1412,
+            1412
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "Sappho Fragment 31",
+          "points_to": "",
+          "also_at": [],
+          "note": "Literary-historical priority claim: Fragment 31 as the first successful instance of voice-to-substrate transformation. Uncertain whether this is a historical thesis or a definitional claim of the archive's poetics; recorded for triage."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Body below line 47 is byte-identical in content to #325 offset by 47 lines (recovery header lines 1-46); duplicate of #319/#325. Title field is malformed (contains a literal '\"title\":' prefix)."
+    }
+  ]
+}

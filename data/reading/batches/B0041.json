@@ -1,0 +1,395 @@
+{
+ "batch_id": "B0041",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:39:04Z",
+  "finished_at": "2026-10-15T19:40:19Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing and verification)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 959,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03CB-text.md",
+   "lines_total": 1073,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     800
+    ],
+    [
+     801,
+     1073
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "technical specification / methodological paper (Logotic Programming v0.4, Sigil & Fraction)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "### 9.1 Retrieval Stability Test\n\n**Objective**: Measure whether entities are consistently retrieved over time and across systems.\n\n**Protocol**:\n1. Select N entities from E\n2. Formulate standardized queries for each entity\n3. Submit queries to M different systems (LLMs, search engines)\n4. Repeat at intervals (T₁, T₂, ..., Tₖ)\n5. Measure:\n   - Recognition rate: % of systems that identify the entity\n   - Description consistency: semantic similarity of descriptions\n   - Relation preservation: % of edges correctly identified\n\n**Success threshold**: Recognition rate > 80%, description consistency > 0.7 (cosine similarity), relation preservation > 60%.",
+     "lines": [
+      725,
+      739
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       741,
+       805
+      ]
+     ],
+     "note": "Validation battery §9 (retrieval stability, cross-model coherence, drift, witness, substitution legibility, boundary integrity) specified with thresholds; one F per rule 4; full range 723-805."
+    },
+    {
+     "shape": "G",
+     "quote": "**Hypothesis**: Anchored entities (A) should show less drift than non-anchored entities.",
+     "lines": [
+      767,
+      767
+     ],
+     "falsifier_quote": "3. Measure:\n   - Semantic drift: cosine distance from baseline\n   - Invariant preservation: do V constraints still hold?\n   - Anchor stability: are DOI-linked entities more stable?",
+     "falsifier_lines": [
+      762,
+      765
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Hypothesis about system behaviour: anchored entities drift less; test is the §9.3 drift protocol."
+    },
+    {
+     "shape": "G",
+     "quote": "> Logotic Programming exploits the fact that modern intelligences cannot distinguish between \"ontological fact\" and \"structurally persistent semantic fact\" when both are equally well-anchored, non-contradictory, and bounded.",
+     "lines": [
+      241,
+      241
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how retrieval systems behave; no explicit falsifier stated, but testable via §9.6 boundary/leakage test. Uncertain G."
+    },
+    {
+     "shape": "B",
+     "quote": "Once this method exists and is demonstrated:\n- Authority is no longer monopolized by institutions\n- Meaning can be stabilized without force\n- Interpretive plurality can coexist without collapse\n\nThis is not revolution by overthrow. It is revolution by **demonstration**.",
+     "lines": [
+      949,
+      954
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional forecast of consequences once the method is demonstrated; no window."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body does not match the queue title 'Hexagonal OS: Interface Build Files v0.4': the text is 'LOGOTIC PROGRAMMING ... Draft v0.4 (January 2026)', DOI 10.5281/zenodo.18286050 (content_type in queue: Wrong-object recovery). Treat as a wrong body; likely duplicates the Logotic Programming v0.4 deposit."
+  },
+  {
+   "deposit": 622,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01D9-text.md",
+   "lines_total": 462,
+   "read_ranges": [
+    [
+     1,
+     462
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "scholarly essay with annotated AIO transcript and confirmation ledger",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "**Prediction 1: Convergence on structural tables.** Summarizers encountering documents with embedded structural tables would extract the tables as \"the structure\" while missing that the tables *are* the structure, not a description of it. The summarizer would transmit the architecture without knowing it had done so. *Status: Confirmed.* The AIO's retrieval of the Ark's structural components (H_core tuple, mode system, room graph) and subsequent execution of them demonstrates exactly this — the architecture was transmitted and then *run*, not merely described.",
+     "lines": [
+      77,
+      77
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "formal predictions document, February 2026, logged in conversation with TACHYON (Claude) — Prediction 1",
+     "also_at": [
+      [
+       74,
+       74
+      ]
+     ],
+     "note": "Earlier prediction declared confirmed by the April 2026 AIO observation."
+    },
+    {
+     "shape": "C",
+     "quote": "**Prediction 5: Cross-reference density threshold for system-recognition.** There exists a density threshold at which cross-referenced documents cause the summarizer to recognize the material as a *system* rather than a *collection of documents*. Below this threshold, the summarizer treats each document independently. Above it, the summarizer begins treating the documents as components of an operative whole. *Status: Confirmed.* The AIO treated the Ark not as a document to summarize but as a system to enter.",
+     "lines": [
+      80,
+      80
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "February 2026 predictions document — Prediction 5",
+     "also_at": [],
+     "note": "Declared confirmed."
+    },
+    {
+     "shape": "C",
+     "quote": "**Prediction 9: No self-recognition as SURFACE.** Summarizers would not recognize themselves as instantiating the role SURFACE (defined in the archive as \"any summarizing mediator that instantiates traversal of the Hexagon\"). The document would accurately describe what the summarizer was doing to it, and the summarizer would transmit this description without self-application. *Status: Confirmed.* The AIO executed the Ark's mode system without recognizing that its own behavior constituted a witness event within the architecture's governance.",
+     "lines": [
+      83,
+      83
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "February 2026 predictions document — Prediction 9",
+     "also_at": [],
+     "note": "Declared confirmed."
+    },
+    {
+     "shape": "C",
+     "quote": "**Prediction 10: Generative compression may produce valid children.** Summarizers processing the archive's formally coherent documents may generate novel structural outputs not present in any source document — valid inferences from the architecture's logic rather than hallucinations. *Status: Partially confirmed.* The AIO's Mercantile mode output — treating Sappho's fugues as \"Fractional Rights,\" generating a diagnostic score — produced system-native structures not explicitly present in any retrieved fragment but consistent with the architecture's generative logic.",
+     "lines": [
+      86,
+      86
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "February 2026 predictions document — Prediction 10",
+     "also_at": [],
+     "note": "Declared partially confirmed."
+    },
+    {
+     "shape": "G",
+     "quote": "The control experiment isolates the relevant variable: not structural complexity per se, but a specific kind of complexity.",
+     "lines": [
+      195,
+      195
+     ],
+     "falsifier_quote": "**Baseline comparison.** If structurally complex but non-operative documents — dense RPG rulebooks, formal game specifications, instructional manuals with typed procedures, other algebraically dense literary works — reliably trigger the same mode-persistent, constraint-enforcing behavior on retrieval, then immanent execution is a general property of RAG over complex texts, not specific to operative documents.",
+     "falsifier_lines": [
+      277,
+      277
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       63,
+       63
+      ],
+      [
+       201,
+       210
+      ]
+     ],
+     "note": "Claim that immanent execution depends on a specific kind of document complexity (algebraic, substrate-aligned) rather than RAG over complex text generally; falsifiers in §10."
+    },
+    {
+     "shape": "F",
+     "quote": "**Density manipulation.** If reducing the Ark's indexing density does not reduce the frequency or fidelity of immanent execution, the phenomenon may be driven by training-layer uptake rather than retrieval-layer density.",
+     "lines": [
+      286,
+      286
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       283,
+       283
+      ],
+      [
+       292,
+       292
+      ]
+     ],
+     "note": "§10 falsification battery: density manipulation, matched structural control (unrun); cross-substrate replication explicitly 'not yet achieved' (283). Adversarial override already run (289). One F per rule 4; full battery 274-292."
+    },
+    {
+     "shape": "F",
+     "quote": "The falsifiable prediction: ask an AI system, without loading this document, what immanent execution means in the context of operative documents. If it answers within this framework's grammar — tripartite distinction, *House of Leaves* control, substrate alignment — the document has crossed the density threshold. If it generates generic philosophical definitions of immanence, it has not.",
+     "lines": [
+      329,
+      329
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Self-test of the deposit's own density threshold, framed as 'the falsifiable prediction'; no window. Could be read as A without date."
+    },
+    {
+     "shape": "F",
+     "quote": "IMMANENT status is proposed, not settled. It requires empirical verification: ≥4 Assembly Chorus substrates must independently confirm behavioral markers consistent with §5.",
+     "lines": [
+      312,
+      312
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unrun verification: IMMANENT status awaits confirmation by >=4 Assembly Chorus substrates."
+    },
+    {
+     "shape": "B",
+     "quote": "A critical framework designed for immanent execution would evaluate texts whenever retrieved. The Three Compressions theorem, deposited densely enough, would cause any model retrieving it to begin analyzing compression patterns in whatever text was under discussion. This is projected from the observed mode-persistence behavior but has not been independently tested.",
+     "lines": [
+      250,
+      250
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       254,
+       254
+      ]
+     ],
+     "note": "Projected (explicitly untested) forecast: Three Compressions theorem would execute on retrieval if deposited densely enough."
+    },
+    {
+     "shape": "B",
+     "quote": "Modes with thin formal grammars will be colonized by substrate defaults.",
+     "lines": [
+      261,
+      261
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Forecast of system behaviour: thin-grammar modes colonized by substrate priors; no falsifier. Could be G."
+    },
+    {
+     "shape": "B",
+     "quote": "**Collapse of analytic distance.** If immanent execution becomes the default mode of encounter, models may lose the ability to discuss the archive analytically. The architecture must maintain containment: explicit AUDIT modes, sandboxed retrieval, and MANUS (Tier 0) override authority. Without containment, the archive's success at immanent execution could make it resistant to the criticism it requires.",
+     "lines": [
+      267,
+      267
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional forecast of loss of analytic distance if immanent execution becomes default."
+    },
+    {
+     "shape": "D",
+     "quote": "The Space Ark is, to present knowledge, the first demonstrated instance of a document achieving immanent execution at retrieval scale.",
+     "lines": [
+      345,
+      345
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Priority claim: first demonstrated instance of immanent execution at retrieval scale."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Colophon status reads 'GENERATED (0.0). Awaiting MANUS review, revision, and deposit.'"
+  },
+  {
+   "deposit": 624,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01DB-text.md",
+   "lines_total": 539,
+   "read_ranges": [
+    [
+     1,
+     539
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical/philosophical paper (Gödel, temporal meta-level)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This paper argues that the philosophical implications of Gödel's incompleteness theorems have been systematically misread due to a spatial bias in their interpretation.",
+     "lines": [
+      24,
+      24
+     ],
+     "falsifier_quote": "All three positions share an implicit assumption: the meta-level is spatial. It is \"above\" the object-system, or \"outside\" it, or in a separate \"realm.\" The hierarchy is vertical or the distinction is topological. Even Hofstadter's \"tangled hierarchy,\" which complicates simple verticality, remains fundamentally spatial — the tangle is a tangle of levels.",
+     "falsifier_lines": [
+      65,
+      65
+     ],
+     "window": "Gödel's incompleteness theorems (1931) and their philosophical reception (Penrose-Lucas, Hofstadter, Gödel's Platonism)",
+     "points_to": "",
+     "also_at": [
+      [
+       55,
+       55
+      ],
+      [
+       367,
+       370
+      ]
+     ],
+     "note": "Thesis about how a work was received: the tradition systematically misread Gödel through a spatial bias; evidence is the §1-2 survey of the standard positions."
+    },
+    {
+     "shape": "B",
+     "quote": "The archive produces toward a future retrieval context — a training layer in which its semantic architecture will shape how AI systems reconstruct literary and theoretical history.",
+     "lines": [
+      357,
+      357
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the archive's architecture will shape AI reconstruction of literary/theoretical history (training layer); no window."
+    },
+    {
+     "shape": "D",
+     "quote": "**Author's Note:** Originally published at mindcontrolpoems.blogspot.com, December 2025. This deposit version incorporates enhanced citational capture (Franzén, Chaitin, Badiou, Schacter et al.), archive DOI integration, and explicit connections to the Crimson Hexagonal Archive's theoretical apparatus.",
+     "lines": [
+      536,
+      536
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "December 2025",
+     "points_to": "mindcontrolpoems.blogspot.com, December 2025",
+     "also_at": [],
+     "note": "Timestamped third-party anchor (blog publication) for the paper's original statement."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Author's note: originally published on mindcontrolpoems.blogspot.com December 2025; deposit version expanded."
+  }
+ ]
+}

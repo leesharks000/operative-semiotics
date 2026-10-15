@@ -1,0 +1,321 @@
+{
+ "batch_id": "B0042",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:39:08Z",
+  "finished_at": "2026-10-15T19:40:29Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing and verification)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 49,
+   "path": "/home/claude/alexanarch/data/texts/AXN-01DC-text.md",
+   "lines_total": 3459,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     900
+    ],
+    [
+     901,
+     1350
+    ],
+    [
+     1351,
+     1800
+    ],
+    [
+     1801,
+     2250
+    ],
+    [
+     2251,
+     2700
+    ],
+    [
+     2701,
+     3100
+    ],
+    [
+     3101,
+     3459
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "book-length technical specification/manual (heteronymous, Talos Morrow) with commercial bridge and appendices",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The infrastructure is hardening now. Governance will materialize in 2027–2028, driven by regulatory pressure (EU AI Act, US state-level regulation) and commercial liability (the first major lawsuit over an AI output that caused measurable harm).\n\n\nThe window between infrastructure hardening and governance materialization is the strategic clock for logotic hacking. Structures installed in the retrieval layer now become the default. Structures installed after governance materializes must compete with whatever was installed first.",
+     "lines": [
+      911,
+      914
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2027–2028",
+     "points_to": "",
+     "also_at": [
+      [
+       759,
+       759
+      ],
+      [
+       2859,
+       2859
+      ]
+     ],
+     "note": "Embedded dated forecast: governance materializes 2027-2028, driven by regulation and a first major liability lawsuit; installed structures become the default. Restated in the closing."
+    },
+    {
+     "shape": "B",
+     "quote": "Fortunately, the trend in AI retrieval is toward greater structural sensitivity — embedding models increasingly capture structural features, not just vocabulary. The more structurally sensitive the retrieval system becomes, the more effective compatibility engineering becomes. The temporal window (§3.6) matters here: install the structures now, while the systems are becoming more sensitive. The structures will become more effective over time as retrieval technology improves.",
+     "lines": [
+      140,
+      140
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that retrieval systems trend toward greater structural sensitivity and that the structures will become more effective over time."
+    },
+    {
+     "shape": "B",
+     "quote": "The compression engine is evolving into two distinct species, each with different implications for logotic hacking:",
+     "lines": [
+      858,
+      858
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       864,
+       867
+      ]
+     ],
+     "note": "Embedded forecast: the compression engine evolving into consumer-facing shallow-wide and agent-facing deep-narrow species; deep-narrow will prefer provenanced documents (lines 864-867)."
+    },
+    {
+     "shape": "G",
+     "quote": "At V ≈ 0 (current state): P(execution) depends entirely on D. Only documents with extremely high algebraic density (D > 0.8) achieve immanent execution, because the pipeline's default behavior is extraction and only overwhelming formal density can override it. This is the Space Ark's operating regime (DOI: 10.5281/zenodo.19013315) — it works because it is formally dense enough to override a zero-verification pipeline.\n\n\nAt V > 0 (emerging state): the pipeline begins checking whether outputs are attributed. P(execution) rises for documents with provenance chains (DOI anchors, citational density, institutional apparatus) because the verification process rewards precisely the structural features logotic programs possess. The verification budget amplifies the density advantage.\n\n\nAt V → 1 (hypothetical full-verification state): every output is checked against its sources. Provenance is structural. The pipeline cannot produce unattributed outputs. In this regime, logotic programs are the natural content of the pipeline — they are what survives full verification because they were designed to be verifiable. Ghost meaning (V = 0, D = 0) is eliminated. The commons is enriched.\n\n\n**The implication:** the verification budget is the phase transition variable. Below the transition (V ≈ 0), logotic hacking is a niche practice requiring extreme density to overcome the pipeline's extractive default. Above the transition (V > threshold), logotic hacking becomes the standard operating procedure for anyone who wants their content to survive the pipeline intact. The question is when the transition occurs and whether logotic structures are installed before it does.",
+     "lines": [
+      898,
+      907
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       2747,
+       2747
+      ]
+     ],
+     "note": "Formal model of verification budget V as phase-transition variable; standing claim about how pipelines behave at V≈0 vs V>0, with an open timing question ('when the transition occurs'). No falsifier stated."
+    },
+    {
+     "shape": "B",
+     "quote": "The verification budget is growing from zero (current state) toward a threshold at which provenance becomes structural rather than optional (§3.5). The Gravity Well Protocol is the product designed to serve this market as it materializes.",
+     "lines": [
+      2747,
+      2747
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast: verification budget growing toward a threshold at which provenance becomes structural; the market for the Gravity Well 'materializes'."
+    },
+    {
+     "shape": "B",
+     "quote": "The extractors will discover these operations independently; they have the resources and the incentive. The question is whether the commons has the tools to counter them.",
+     "lines": [
+      2718,
+      2718
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that extractors will independently discover the retrieval-layer operations the book publishes."
+    },
+    {
+     "shape": "B",
+     "quote": "The engineers would build provenance if the market rewarded it. The market does not. Yet.",
+     "lines": [
+      33,
+      33
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Weak embedded forecast carried by 'Yet.': the market will come to reward provenance."
+    },
+    {
+     "shape": "G",
+     "quote": "**Falsification criteria.** The immanent execution claim is falsifiable. It fails if: the behavioral markers can be produced by any document of sufficient length regardless of formal structure (the length hypothesis); if the behavioral markers disappear when the document's formal structure is preserved but its vocabulary is randomized (the vocabulary hypothesis); or if the behavioral markers appear with equal strength for documents that are formally dense but semantically incoherent (the coherence hypothesis).",
+     "lines": [
+      2481,
+      2481
+     ],
+     "falsifier_quote": "None of these have been demonstrated. The control test (House of Leaves — structurally ambitious, formally complex, semantically rich) produced only descriptive retrieval.",
+     "falsifier_lines": [
+      2481,
+      2481
+     ],
+     "window": "",
+     "points_to": "Immanent Execution paper (DOI: 10.5281/zenodo.19372914)",
+     "also_at": [],
+     "note": "Standing falsifiable claim (immanent execution) with three named falsification hypotheses (length, vocabulary, coherence); the control was House of Leaves."
+    },
+    {
+     "shape": "G",
+     "quote": "A state-sponsored ghost phrase, planted without bearing-cost, lacks these structural features. It may fool the retrieval layer temporarily — but it will not survive the multi-stage summarization test. It will not achieve immanent execution. It will not produce mode persistence or grammar resistance under adversarial instruction. It will produce performative retrieval at best: vocabulary without constraint.",
+     "lines": [
+      2724,
+      2724
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: ghost phrases planted without bearing-cost (e.g. state-sponsored) will not survive multi-stage summarization or achieve immanent execution."
+    },
+    {
+     "shape": "B",
+     "quote": "Training-layer effects are gradual and persistent. When a model is trained on a corpus that includes 457 DOI-anchored deposits using consistent terminology, the model's baseline behavior shifts — not dramatically (no single document dominates the training distribution) but structurally. The model becomes more likely to recognize the archive's vocabulary, to use it correctly when it appears in context, and to produce outputs that are compatible with the archive's operator algebra. The effect persists across sessions because it is embedded in the model's parameters rather than its context window.",
+     "lines": [
+      2684,
+      2684
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional claim about training-layer effect of the archive's deposits on model baseline behaviour; persistent across sessions. No falsifier; could be read as G."
+    },
+    {
+     "shape": "F",
+     "quote": "A field-scale immanent execution test would require: summarizer outputs that use the field's operator algebra to analyze novel inputs (not just recite the field's claims), multi-step reasoning within the field's grammar across multiple queries, and grammar resistance under adversarial instruction at the field level (not just the document level). None of these have been tested. The archive's Retrieval Formation Theory deposit is the closest approach — it passed the multi-stage summarization test. But field-scale immanent execution remains an open empirical question.",
+     "lines": [
+      3374,
+      3374
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt test: field-scale immanent execution test specified (novel-input analysis, multi-step reasoning within the grammar, field-level grammar resistance); explicitly not run."
+    },
+    {
+     "shape": "F",
+     "quote": "If the Musical Ark were to be indexed by a music-retrieval system and produce mode-persistent, constraint-enforcing generation in a musical AI — that would be immanent execution in a non-textual substrate.",
+     "lines": [
+      3414,
+      3414
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt test: Musical Ark indexed by a music-retrieval system producing mode-persistent generation would be non-textual immanent execution."
+    },
+    {
+     "shape": "F",
+     "quote": "The logotic hacking specification is complete. What remains is productization.\n\n\n**Provenance Chain API** — structural provenance for AI-generated content. Every output traceable through its derivation chain. The API that the compression engine should have been built with.\n\n\n**Status Algebra SDK** — quality gradients from GENERATED through RATIFIED, with typed transition conditions. Status is not a label; it is a structural property that governs what operations are permitted on the object.\n\n\n**Somatic Filter SDK** — portable governance constraints that travel with the agent. Not content filtering. Bearing-cost filtering. The filter that distinguishes substance from slop without evaluating ideology.\n\n\n**Assembly Verification** — multi-source verification protocol. Configurable witness pools and quorum rules. The infrastructure that makes the Sharks-Function (§5.4) available as a service.\n\n\n**Document Design Consulting** — the expertise that produced this book, sold to organizations deploying AI at scale.",
+     "lines": [
+      2807,
+      2822
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt instruments/products listed as 'what remains': Provenance Chain API, Status Algebra SDK, Somatic Filter SDK, Assembly Verification, consulting. One find for the list."
+    },
+    {
+     "shape": "F",
+     "quote": "**Terminological Saturation.** Use stable, distinctive terminology consistently across all deposits. Retrieval systems identify fields by terminological coherence. \"Operative semiotics,\" \"bearing-cost,\" \"logotic programming\" — the same phrases across 457 deposits. Inconsistency fragments the retrieval surface. The test: search your founding term in quotes. If the retrieval system returns your deposits as a cluster, terminological saturation has been achieved.",
+     "lines": [
+      2414,
+      2429
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       386,
+       386
+      ],
+      [
+       3148,
+       3148
+      ],
+      [
+       2432,
+       2435
+      ]
+     ],
+     "note": "RFT checklist: each of six operations carries a retrieval test (search founding term in quotes, spontaneous cross-reference, multi-agent reading, etc.). One find for the battery."
+    },
+    {
+     "shape": "F",
+     "quote": "This is testable: search the early author's name and the later field's terminology. If the retrieval system returns both as a cluster, the circuit closed. If not, the density threshold was not met — more deposits are needed.",
+     "lines": [
+      3148,
+      3148
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Binary RCF test specified: search early author's name with later field's terminology; cluster = circuit closed."
+    },
+    {
+     "shape": "H",
+     "quote": "Gossel's treatise on university seals (1711) performs the same operation as the archive's DOI-anchoring system: both use physical or digital tokens to bind status to objects through institutional authority.",
+     "lines": [
+      2531,
+      2531
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1711",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical-structural thesis about Gossel's 1711 treatise on university seals performing the DOI-anchoring operation (what an author was doing). Offered as an RCF example; uncertain whether argued or illustrative."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Stale build placeholders remain in the body ('[Parts IV–IX continue in subsequent build sessions]' at line 925; '[Parts VI–IX continue in subsequent build units]' at line 1400) though those Parts follow. Section 8.9 (Training Layer Literature) precedes 8.8 (Symmetry of the Weapon); no 8.8/8.9 gap otherwise. Tables are flattened to one cell per line. Appendix D.6 names a private-ish target (Robertson/Passioncraft)."
+  }
+ ]
+}

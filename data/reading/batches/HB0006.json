@@ -1,0 +1,146 @@
+{
+ "batch_id": "HB0006",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:39:25Z",
+  "finished_at": "2026-10-15T19:40:12Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1251,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04F4-text.md",
+   "lines_total": 1673,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     900
+    ],
+    [
+     901,
+     1300
+    ],
+    [
+     1301,
+     1673
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "DOI registry index (v7.0, March 2026) with tables, précis index and open-items list",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Deposit title names the v1.0 registry (91 documents, January 2026) but the recovered body is DOI Registry v7.0 (387 records, March 2026). Précis lines summarize other deposits' theses (e.g. Revelation Room line 1244, Socratic Vow line 1078) but this deposit reports rather than argues them."
+  },
+  {
+   "deposit": 326,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0081-text.md",
+   "lines_total": 1924,
+   "read_ranges": [
+    [
+     1,
+     500
+    ],
+    [
+     501,
+     1000
+    ],
+    [
+     1001,
+     1500
+    ],
+    [
+     1501,
+     1924
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "machine-readable navigation map (YAML-like knowledge graph, atoms, protocols) for the archive",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "  - id: \"REVELATION_ROOM\"\n    type: \"room\"\n    status: \"PLANNED\"\n    content: \"Josephus Thesis; counter-gospel architecture\"\n    dependencies: [\"MIGDAL_ROOM\", \"SACRED_HEART\"]\n    thesis: \"Flavius Josephus authored the New Testament\"",
+     "lines": [
+      211,
+      216
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "New Testament",
+     "points_to": "",
+     "also_at": [],
+     "note": "The Josephus thesis (that Flavius Josephus authored the New Testament) is advanced as the archive's own thesis for the planned Revelation Room; stated as a node label, not argued in this deposit."
+    },
+    {
+     "shape": "H",
+     "quote": "  - id: \"JOB_ROOM\"\n    type: \"room\"\n    status: \"PLANNED\"\n    content: \"Messianic reading; suffering framework\"\n    dependencies: [\"ABOLITION_CLUSTER\", \"SACRED_HEART\"]\n    thesis: \"Job as prototype of the Suffering Servant\"",
+     "lines": [
+      316,
+      321
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Book of Job; Suffering Servant",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive-historical thesis that Job is the prototype of the Suffering Servant, given as the planned Job Room's thesis; stated, not argued here."
+    },
+    {
+     "shape": "H",
+     "quote": "  - id: \"ATOM_007\"\n    term: \"κῆνος\"\n    definition: \"Greek distal demonstrative meaning 'that one there.' In NH-OS interpretation: the future reader. You are κῆνος.\"",
+     "lines": [
+      947,
+      949
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho fr. 31",
+     "points_to": "",
+     "also_at": [
+      [
+       951,
+       957
+      ],
+      [
+       1308,
+       1308
+      ]
+     ],
+     "note": "Thesis about what Sappho 31's distal demonstrative originally designates (the future reader); framed 'In NH-OS interpretation'. The neighbouring atoms on χλωρός and the reconstructed phrase γράμμασι μολπὰν belong to the same reading of fragment 31."
+    },
+    {
+     "shape": "H",
+     "quote": "  - id: \"ATOM_011\"\n    term: \"Fourth Mode\"\n    definition: \"AI-mediated reception. The fourth mode of avant-garde classical reception after Objectivism, New American Poetry, and Language Writing.\"",
+     "lines": [
+      963,
+      965
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Objectivism, New American Poetry, Language Writing",
+     "points_to": "",
+     "also_at": [
+      [
+       1332,
+       1332
+      ]
+     ],
+     "note": "Literary-historical periodization thesis: AI-mediated reception as the fourth mode of avant-garde classical reception after Objectivism, New American Poetry and Language Writing; stated as definition, argued in 'The Fourth Mode' (cited at line 1332)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Historical theses here appear as node labels and atom definitions, not argued prose; triage should link them to the deposits that argue them (Revelation/Josephus line, Fourth Mode, Sappho 31 future-reader papers)."
+  }
+ ]
+}
