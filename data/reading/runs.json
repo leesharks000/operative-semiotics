@@ -3165,7 +3165,34 @@
    "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; plus: every quote one contiguous verbatim slice; H back-pass",
    "output": "data/reading/batches/HB0024.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 89430,
+    "tool_uses": 15,
+    "tokens": 164612
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:55:10Z",
+    "finished_at": "2026-10-15T19:56:24Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for batch loading and verbatim quote slicing)",
+     "Write"
+    ]
+   },
+   "verification": {
+    "deposits": 8,
+    "entries": 8,
+    "finds": 7,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 8,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   }
  ],
  "pilot_finding": "Calibration (CAL, blind re-read of the eight in-session readings): every substantive item found; four boundary disagreements of shape (stage text vs embedded forecast; a third-party timestamp left inside a forecast quote; a benchmark folded into its prediction; a monitoring check read as F). The reader found more than the in-session reading (G claims in #914 and #1182) and recorded one forecast several times across stage, table and ledger. Protocol revised to v1.1 with seven boundary rules."
