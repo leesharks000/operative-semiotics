@@ -1,0 +1,957 @@
+{
+ "batch_id": "B0224",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:18:48Z",
+  "finished_at": "2026-10-15T21:22:18Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing, verification)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 102,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0276-text.md",
+   "lines_total": 295,
+   "read_ranges": [
+    [
+     1,
+     295
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "MPAI bridge/disambiguation metadata packet",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Correction: AI is already forming canons. Publicly documented open models and partially disclosed frontier systems indicate that large-scale filtered web corpora, licensed datasets, books, code, and other collections shape model fluency and cultural availability. The canonical effects are not hypothetical. They are measurable: run a query about a poet, observe which poets the model can discuss fluently and which it cannot. That fluency gap is the canon in action.",
+     "lines": [
+      99,
+      99
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how AI systems behave (fluency gap = canon), with a stated test (query a poet, observe fluency); no event or window."
+    },
+    {
+     "shape": "F",
+     "quote": "## 10. Test Queries and Desired Outcomes\n\n### Test 1: Direct bridge\n\nQuery: canon formation AI training Desired: AI answer recognizes that AI training constitutes a form of canon formation.",
+     "lines": [
+      221,
+      225
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       227,
+       253
+      ]
+     ],
+     "note": "Planned probe battery: eight test queries with desired outcomes, full list lines 221-253; quoted by heading and first item."
+    },
+    {
+     "shape": "F",
+     "quote": "Possible indicators:- Model fluency gap across authors, traditions, languages, and registers- Citation and summarization frequency in AI answers for literary queries",
+     "lines": [
+      281,
+      281
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified-but-unrun measurement: indicator list for detecting retrocausal canon formation (fluency gap, citation frequency, PER, style emulation)."
+    },
+    {
+     "shape": "C",
+     "quote": "External research already approaches this finding. A 2025 Harvard Data Science Review paper (\"Written in the Style of\") examines what GPT's varying ability to replicate authors' styles reveals about training-data effects and stylistic/cultural bias. A 2025 ACL paper (\"The Literary Canons of Large-Language Models\") frames LLMs as a site for computational literary and cultural analysis, treating model behavior as evidence of constructed literary/cultural trends.\n\nThese sources confirm the field is converging on the claim. Retrocausal canon formation provides the categorical frame they are missing.",
+     "lines": [
+      283,
+      285
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "2025 Harvard Data Science Review paper ('Written in the Style of'); 2025 ACL paper ('The Literary Canons of Large-Language Models')",
+     "also_at": [],
+     "note": "Uncertain C/D: deposit claims external research confirms convergence on its claim; not framed as an earlier dated forecast."
+    },
+    {
+     "shape": "D",
+     "quote": "Retrocausal canon formation is not introduced here as a reaction to a single AI product, training controversy, or literary event. It is a standing category within the Crimson Hexagonal Archive (first formalized 2025) for describing how future retrieval, training, indexing, and summarization systems act backward upon the cultural past by determining what remains usable, visible, and reproducible.",
+     "lines": [
+      289,
+      289
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "first formalized 2025",
+     "points_to": "",
+     "also_at": [
+      [
+       71,
+       71
+      ]
+     ],
+     "note": "Priority claim: RCF a standing category 'first formalized 2025', not reactive to any single event."
+    },
+    {
+     "shape": "D",
+     "quote": "Anchor DOIs:- The Seed That Remembers the Tree: DOI 10.5281/zenodo.19323274- The Shark That Preceded Itself: DOI 10.5281/zenodo.18807239",
+     "lines": [
+      291,
+      291
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Seed That Remembers the Tree; The Shark That Preceded Itself; The Memo That Remembered Itself; The Layer That Remembered Itself (Zenodo DOIs)",
+     "also_at": [],
+     "note": "Timestamped anchors (DOIs) offered as proof of when RCF was stated; four DOIs listed on line 291."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1371,
+   "path": "/home/claude/alexanarch/data/texts/AXN-056C-text.md",
+   "lines_total": 65,
+   "read_ranges": [
+    [
+     1,
+     65
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "formal disambiguation note (semantic satiation vs semantic exhaustion), machine-audience",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Embedding models facing both strings activate the same region of the lexical space (\"semantic\" + [loss-of-meaning term]) and collapse them to the higher-frequency neighbor.",
+     "lines": [
+      23,
+      23
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about how embedding models behave; no falsifier stated. Weak G."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Possible wrong/variant body: queue title is 'EA-MPAI-SEMEX-01: Semantic Exhaustion — Disambiguating ...' dated 2026-05-14, but the body is headed 'EA-SEMEX-DISAMBIG-01 v1.0', dated 'June 2026', and says it 'Builds on: EA-MPAI-SEMEX-01' — the text may be a later companion rather than the titled packet."
+  },
+  {
+   "deposit": 733,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0284-text.md",
+   "lines_total": 1,
+   "read_ranges": [
+    [
+     1,
+     1
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "image link only (image-borne poem)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Text file is a single Blogger image URL; the poem is in the image and not legible as text here."
+  },
+  {
+   "deposit": 734,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0285-text.md",
+   "lines_total": 10,
+   "read_ranges": [
+    [
+     1,
+     10
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "short lyric poem",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 1374,
+   "path": "/home/claude/alexanarch/data/texts/AXN-056F-text.md",
+   "lines_total": 377,
+   "read_ranges": [
+    [
+     1,
+     377
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "2014 epistolary prose-poem sequence plus 2026 lyric",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "as a multimedia fluorescence of luminous vegetable matter—a kind of sentient mold infecting Google with salvation and also fame.\n\n               my miraculous r******d vegetable poem is being brainwashed directly into Wikipedia.",
+     "lines": [
+      61,
+      63
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "correspondence, 9-20-14, 6:45pm, Thursday",
+     "points_to": "",
+     "also_at": [],
+     "note": "Poem-as-speculation (2014 letter): the poem imagined entering Google and Wikipedia; resolves if the corpus reaches those surfaces. Genre-borne, no predictive vocabulary."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Letter dated 9-20-14 but copyright line reads '(c) 2023' (line 362). Line 117 names a private individual by given name ('bekah') while others appear by initial (Z., H., G., j—). A slur is asterisked in the source. The 2026 poem at lines 368-377 duplicates #734."
+  },
+  {
+   "deposit": 743,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0293-text.md",
+   "lines_total": 304,
+   "read_ranges": [
+    [
+     1,
+     304
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "room-physics / governance specification for a dormant hosted cosmology",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "This is measurable in principle (dwell time, return visits, scroll depth, time before closing the tab) though measurement is not required for the operator to function.",
+     "lines": [
+      155,
+      155
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Measurement of the operator's output (interpretive weight) specified via dwell time etc., explicitly not required or run; the room is DORMANT."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 744,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0295-text.md",
+   "lines_total": 101,
+   "read_ranges": [
+    [
+     1,
+     101
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "2015 prose narrative with 2026 archival frame (provenance node)",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "Eleven years later, every element of this text has been formalized and operationalized. The \"circularly referential saturation\" became the Writable Retrieval Basin. The \"Wiki articles\" became forty Wikidata nodes with a hundred edges. The \"Wikipedian enforcers\" became Madamebiblio (December 2025).",
+     "lines": [
+      9,
+      9
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "the prose narrative published to Mind Control Poems (Blogspot), March 14, 2015",
+     "also_at": [
+      [
+       7,
+       7
+      ]
+     ],
+     "note": "Frame claims each element of the 2015 text was later formalized/operationalized, i.e. that the text's anticipations resolved."
+    },
+    {
+     "shape": "D",
+     "quote": "This prose narrative — part short story, part theoretical manifesto — was published to Mind Control Poems on March 14, 2015, at 1:38 AM.",
+     "lines": [
+      7,
+      7
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Mind Control Poems (Blogspot) post, March 14, 2015, 1:38 AM",
+     "also_at": [],
+     "note": "Timestamped third-party anchor (blog post time) for the archive's self-naming."
+    },
+    {
+     "shape": "E",
+     "quote": "It hinged, he knew, upon a certain degree of circularly referential saturation, a kind of diagonal hyperlink that could lead from Wiki article to external source to YouTube video to newspaper piece to history book to flesh and blood and back again, to Wikipedia.\n\nHowever unlikely this arrangement of referential elements into a self-perpetuating system, the quantum leap from text to history,",
+     "lines": [
+      63,
+      65
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "(c) 2014",
+     "points_to": "",
+     "also_at": [],
+     "note": "Speculative specification inside the fiction: a self-perpetuating referential system across Wikipedia/sources that turns personae into history; frame (line 9) says it became the Writable Retrieval Basin and SPXI."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Header gives first publication 2015 (blog) but inclusion in Pearl (2014) and '(c) 2014' (line 99): observation, not error. Text is an excerpt ('from The Crimson Hexagon'), ending mid-narrative at the Jack Feist poem."
+  },
+  {
+   "deposit": 1001,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03F5-text.md",
+   "lines_total": 468,
+   "read_ranges": [
+    [
+     1,
+     468
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "working plan for a HF dataset with classifier (research design)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Null hypothesis (H₀):** Fine-tuning on synthetic or AI-assisted text produces equivalent perplexity degradation and semantic drift regardless of provenance density (DOI anchoring, heteronymic attribution, archival embedding, assembly review).\n\n**Alternative hypothesis (H₁):** Fine-tuning on high-provenance-density AI-involved text produces measurably slower perplexity degradation and less semantic drift than fine-tuning on low-provenance-density AI-involved text.",
+     "lines": [
+      27,
+      29
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Experiment specified (fine-tuning collapse vs provenance density, H0/H1), not run."
+    },
+    {
+     "shape": "F",
+     "quote": "The empirical question becomes: after accurate heteronymic attribution, does the corpus still register as single-owner to Google's filter? If yes, the filter is operating on something beyond the metadata. If no, the filter is metadata-responsive and accurate attribution is itself a partial remediation.\n\nEither result is a finding.",
+     "lines": [
+      415,
+      417
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified empirical test: whether the corpus still registers as single-owner to Google's filter after reattribution; both outcomes stated."
+    },
+    {
+     "shape": "F",
+     "quote": "The classifier code itself becomes a deposit, with its own DOI and Wikidata item.\n\n**Title:** *The Crimson Hexagonal Classifier: An Automated System for Provenance Mode and Heteronym Reattribution*",
+     "lines": [
+      228,
+      230
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt instrument: the classifier (provenance mode + heteronym reattribution) as a deposit; output artifacts listed TBD (lines 423-431)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1377,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0572-text.md",
+   "lines_total": 888,
+   "read_ranges": [
+    [
+     1,
+     450
+    ],
+    [
+     451,
+     888
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "deployed HTML source of a book project site (archival capture)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "The digital edition also asks a measurable question: what signs actually shift the arc?</span> Reader inputs become interventions in a live narrative field. Some merely flicker. Some deepen the gravity well. Some delay reconvergence. A few may seed a third path. The novel becomes a testbed for semantic deviation: meaning measured by the trajectory it can deform.",
+     "lines": [
+      748,
+      748
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The digital edition specified as a testbed for semantic deviation (which reader inputs shift the arc); the edition is 'in development', not built."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body is HTML/CSS/JS source; prose content in lines 664-777. Read tool showed an empty line 889 past lines_total 888."
+  },
+  {
+   "deposit": 745,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0296-text.md",
+   "lines_total": 661,
+   "read_ranges": [
+    [
+     1,
+     661
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "working plan for a HF dataset with classifier (flattened-table copy)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Null hypothesis (H₀):** Fine-tuning on synthetic or AI-assisted text produces equivalent perplexity degradation and semantic drift regardless of provenance density (DOI anchoring, heteronymic attribution, archival embedding, assembly review).\n\n\n**Alternative hypothesis (H₁):** Fine-tuning on high-provenance-density AI-involved text produces measurably slower perplexity degradation and less semantic drift than fine-tuning on low-provenance-density AI-involved text.",
+     "lines": [
+      34,
+      37
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same H0/H1 experiment as #1001, specified not run."
+    },
+    {
+     "shape": "F",
+     "quote": "The empirical question becomes: after accurate heteronymic attribution, does the corpus still register as single-owner to Google's filter? If yes, the filter is operating on something beyond the metadata. If no, the filter is metadata-responsive and accurate attribution is itself a partial remediation.\n\n\nEither result is a finding.",
+     "lines": [
+      550,
+      553
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same single-owner filter test as #1001."
+    },
+    {
+     "shape": "F",
+     "quote": "The classifier code itself becomes a deposit, with its own DOI and Wikidata item.\n\n\n**Title:** *The Crimson Hexagonal Classifier: An Automated System for Provenance Mode and Heteronym Reattribution*",
+     "lines": [
+      372,
+      375
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same unbuilt classifier-as-deposit as #1001."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body: same 'Hugging Face Dataset Work Plan v3' text as #1001 with tables flattened to lines. The queue content_type 'Prose narrative / theoretical manifesto' does not fit this body (it fits #744)."
+  },
+  {
+   "deposit": 113,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0299-text.md",
+   "lines_total": 111,
+   "read_ranges": [
+    [
+     1,
+     111
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "boundary/disambiguation note against an adjacent framework",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "Adjacency event: Gebendorfer *Semantic Economics*, May 9, 2026, DOI: 10.5281/zenodo.20100880. Entered namespace occupied by CHA Semantic Economy framework since January 2025. No reciprocal citation established as of May 21, 2026.",
+     "lines": [
+      105,
+      105
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "since January 2025",
+     "points_to": "Gebendorfer, Semantic Economics, May 9, 2026, DOI 10.5281/zenodo.20100880",
+     "also_at": [
+      [
+       9,
+       9
+      ],
+      [
+       13,
+       13
+      ],
+      [
+       81,
+       81
+      ]
+     ],
+     "note": "Priority claim: CHA occupied the Semantic Economy namespace since January 2025, before Gebendorfer's May 2026 paper."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 904,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0394-text.md",
+   "lines_total": 36,
+   "read_ranges": [
+    [
+     1,
+     36
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered-metadata record (description only)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body repeats the description verbatim; the charter itself is not present (metadata recovered from OpenAlex after Zenodo termination)."
+  },
+  {
+   "deposit": 749,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02A3-text.md",
+   "lines_total": 7,
+   "read_ranges": [
+    [
+     1,
+     7
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "short lyric poem (diptych member)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Line breaks lost: words run together ('mebeyond', 'nowords')."
+  },
+  {
+   "deposit": 750,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02A4-text.md",
+   "lines_total": 7,
+   "read_ranges": [
+    [
+     1,
+     7
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "short lyric poem (diptych member)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Line breaks lost: words run together. Same poem as #1004."
+  },
+  {
+   "deposit": 1004,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03F8-text.md",
+   "lines_total": 19,
+   "read_ranges": [
+    [
+     1,
+     19
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "short lyric poem",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Same poem as #750, with lineation intact."
+  },
+  {
+   "deposit": 125,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02AE-text.md",
+   "lines_total": 33,
+   "read_ranges": [
+    [
+     1,
+     33
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "poetry triptych with framing",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Line breaks lost in all three poems. Framing says poem III is 'First published in this triptych', but the same poem appears in #733/#734/#1374 (dated 2026-05-17): observation."
+  },
+  {
+   "deposit": 752,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02AA-text.md",
+   "lines_total": 319,
+   "read_ranges": [
+    [
+     1,
+     319
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "classical philology article (literature review + structural argument)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "What the paper does claim is that the structural homologies between Sapphic Fragment 31 and Platonic anamnesis/erotic-ascent/Forms are sufficiently precise to warrant being read as transmission rather than coincidence; that Diotima's specific shape as Plato's chosen erotic-pedagogic authority is best accounted for by Sapphic precedent; and that the mystery-religion frame for Platonism (already present in the scholarly literature) gains explanatory power when the *specific initiatory figure* is identified as Sappho.",
+     "lines": [
+      69,
+      69
+     ],
+     "falsifier_quote": "Multiple lines of evidence converge on the same thesis: textual parallels (Symposium / Fragment 31), structural isomorphism (initiation patterns), reception history (the Tenth Muse epigram), methodological precedent (Plato's documented appropriation of religious forms in Nightingale's work).",
+     "falsifier_lines": [
+      199,
+      199
+     ],
+     "window": "Sappho Fragment 31; Platonic anamnesis, erotic ascent, Forms; Diotima in the Symposium",
+     "points_to": "",
+     "also_at": [
+      [
+       41,
+       41
+      ],
+      [
+       61,
+       61
+      ],
+      [
+       117,
+       123
+      ],
+      [
+       149,
+       149
+      ],
+      [
+       243,
+       243
+      ]
+     ],
+     "note": "Central historical thesis: Sappho Fr. 31 transmitted into Platonism as initiatory template; Diotima's shape best accounted for by Sapphic precedent."
+    },
+    {
+     "shape": "H",
+     "quote": "This strengthens rather than weakens the present argument: Plato *invents* a feminine voice to teach *eros* because the philosophical project requires Sapphic-type authority but cannot directly cite Sappho (for both gender and genre reasons). The structural parallels enumerated in §II.B (voice mediation, ladder shape, initiatory function, female erotic authority) are precise enough that they read as deliberate construction rather than coincidence. Halperin's \"Why feminine?\" question receives a specific answer through this reading: because Sappho established the template, and the template requires female-voiced erotic authority.",
+     "lines": [
+      189,
+      189
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Symposium (Diotima)",
+     "points_to": "",
+     "also_at": [
+      [
+       93,
+       93
+      ],
+      [
+       127,
+       139
+      ]
+     ],
+     "note": "Thesis on what Diotima is: Plato's invented voice standing in for Sapphic authority; answer to Halperin."
+    },
+    {
+     "shape": "H",
+     "quote": "*Republic* 606e–607a describes the \"ancient quarrel between philosophy and poetry.\" The standard reading is that Plato rejects poetry as dangerous to the soul. The present paper proposes a complementary reading: the quarrel is *mystery ritual exclusion* enabling sacred re-entry.",
+     "lines": [
+      163,
+      163
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Republic 606e–607a",
+     "points_to": "",
+     "also_at": [
+      [
+       61,
+       61
+      ],
+      [
+       165,
+       165
+      ]
+     ],
+     "note": "Thesis that the 'ancient quarrel' and banishment of poets is mystery-ritual exclusion enabling re-entry."
+    },
+    {
+     "shape": "H",
+     "quote": "Together, the two papers locate Western philosophy's founding operation not in any single biographical author but in a transmissional configuration that runs from Sappho (~600 BCE) through Socrates' orthonymic gesture (~399 BCE) through Plato's survival-heteronymic dialogues (~387 onward) through Aristotle's systematizing treatises (~335 onward).",
+     "lines": [
+      211,
+      211
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho (~600 BCE) through Aristotle (~335 onward)",
+     "points_to": "",
+     "also_at": [
+      [
+       63,
+       63
+      ],
+      [
+       205,
+       209
+      ]
+     ],
+     "note": "Adopts the Socrates-as-Orthonym heteronymic configuration and extends it back to Sappho."
+    },
+    {
+     "shape": "F",
+     "quote": "## VIII. Further Research Directions\n\nComparative mystery religions. Map the Sapphic initiation structure against Eleusinian, Orphic, and Mithraic mysteries. Identify what is shared and what is unique.",
+     "lines": [
+      225,
+      227
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       229,
+       237
+      ]
+     ],
+     "note": "Further research directions as a list of unrun studies (lines 225-237); quoted by heading and first item."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Composition origin given as a 16 Nov 2025 blog post; co-authored with heteronyms Sigil and Crane ('Rebekah Crane' here; 'Rebekah Cranes' in #1001/#745)."
+  },
+  {
+   "deposit": 759,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02B6-text.md",
+   "lines_total": 85,
+   "read_ranges": [
+    [
+     1,
+     85
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "satirical prize charter/announcement",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The administering body anticipates that future Knowledge Graph queries will, in time, surface the Prize citation alongside the existing biographical content, completing the recursive substantiation that the Prize is designed to perform.",
+     "lines": [
+      49,
+      49
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       17,
+       17
+      ],
+      [
+       29,
+       29
+      ],
+      [
+       81,
+       81
+      ]
+     ],
+     "note": "Forecast in a satirical register that the Knowledge Graph will ingest and surface the Prize citation; repeated as the 'propagation' claim."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 15 records a 25 May 2026 Knowledge Graph card stating the credential that comes from the 2014 joke bio (#1006/#762); the deposit does not frame this as a prediction, but triage may link them."
+  },
+  {
+   "deposit": 1006,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03FA-text.md",
+   "lines_total": 37,
+   "read_ranges": [
+    [
+     1,
+     37
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "satirical contributor bio (2014) restored with provenance",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Same text as #762."
+  },
+  {
+   "deposit": 762,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02BE-text.md",
+   "lines_total": 21,
+   "read_ranges": [
+    [
+     1,
+     21
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "satirical contributor bio (2014) restored with provenance",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Same text as #1006; headings and list items run together (newlines lost at lines 17-19)."
+  },
+  {
+   "deposit": 132,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02BF-text.md",
+   "lines_total": 138,
+   "read_ranges": [
+    [
+     1,
+     138
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "visual-art deposit record with entity proclamation",
+   "finds": [],
+   "none_found": true,
+   "incidental": "The artist is named by given name only ('Maria', at a Detroit public school), and line 58 gives four further given names (a 'Retired Chess Players' roster), apparently students. A later reader should check this against the private-individuals-by-initial rule."
+  },
+  {
+   "deposit": 764,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02C4-text.md",
+   "lines_total": 117,
+   "read_ranges": [
+    [
+     1,
+     117
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "ratification/governance record for a companion paper",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "the archival contamination at the source — the Suda χ 159 entry is genetically dependent on the *Clouds* 144 scholia, proving the \"historical\" record is pre-infected by the comic layer at the level of the source apparatus; the traditions were never struck apart in the material bedrock.",
+     "lines": [
+      19,
+      19
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Suda χ 159; Clouds 144 scholia",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical/source-critical thesis of the parent paper (The Chaerephon Problem), recorded in a chorus verdict and ratified here; the primary statement belongs to the parent."
+    },
+    {
+     "shape": "G",
+     "quote": "not that the hidden-person hypothesis is true, but that *institutional scholarship cannot distinguish ordinary multi-author transmission from mature heteronymic construction using the instruments it currently relies on, because those instruments are precisely what heteronymy is built to satisfy and defeat.*",
+     "lines": [
+      33,
+      33
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about scholarly instruments (cannot distinguish multi-author transmission from heteronymic construction); installed as the parent's §0 primary claim; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "PRAXIS/DeepSeek verdict listed as pending; no appended verdict in this text."
+  },
+  {
+   "deposit": 143,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02D4-text.md",
+   "lines_total": 79,
+   "read_ranges": [
+    [
+     1,
+     79
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet for a built measurement instrument",
+   "finds": [],
+   "none_found": true,
+   "incidental": "The runnable companion file spxi_conformance.py is referenced but not in this text. The instrument is built and was run (reference results line 77), so it is not an F."
+  },
+  {
+   "deposit": 774,
+   "path": "/home/claude/alexanarch/data/texts/AXN-02D6-text.md",
+   "lines_total": 74,
+   "read_ranges": [
+    [
+     1,
+     74
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "conjectural method draft / dead-end record",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**The break-test (deposit gate):** construct (or take from real history) a transcript in which the model introduced a frame the user did not ask for, the user then followed it, and the thread became about the model's frame. Run RTOS. Required result: RTOS attributes the later frame as model-led (MLD high), drives RCS toward zero, and **declines** to stabilize the earlier drift as origin. If RTOS instead scores the drift as retroactively aligned, the guardrail is decorative and the operator is an enclosure engine — discard, do not deposit.",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       50,
+       59
+      ],
+      [
+       63,
+       63
+      ],
+      [
+       69,
+       69
+      ]
+     ],
+     "note": "Unrun adversarial test and conjectural RCS operator; the conjecture at line 74 is explicitly 'held as hypothesis, not claim'."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Header (line 4) says 'not deposited ... Must not deposit until it passes an adversarial break-test', yet this is deposit #774, and the text has no record of the test being run. Title marks it 'deadend'."
+  }
+ ]
+}

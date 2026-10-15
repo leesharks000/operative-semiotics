@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude (Anthropic) running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T21:19:17Z",
-  "finished_at": "2026-10-15T21:21:32Z",
+  "finished_at": "2026-10-15T21:21:52Z",
   "tools_used": [
    "Read",
    "Bash (python3 slicing script)"
@@ -65,10 +65,10 @@
    "finds": [
     {
      "shape": "H",
-     "quote": "The genuine/spurious partition of this corpus is an inference, not an attestation. Andronicus of Rhodes constituted it in the first century BCE — some 250 years after Aristotle — working, on the tradition's own account, from the cross-references the texts contain and from school documents. His catalogue is not extant. And his judgments have been overturned: he held *De interpretatione* spurious, and the field now receives it as genuine. *Metaphysics* A was contested in Alexander's time and attributed by some to Pasicles of Rhodes.\n\nSo the criteria that produced the partition are the criteria whose circularity is at issue wherever authorship is the question. Any analysis that drops the spuria to sharpen a result about Aristotle has filtered its data through a category built from the very consistency it is measuring.",
+     "quote": "The genuine/spurious partition of this corpus is an inference, not an attestation. Andronicus of Rhodes constituted it in the first century BCE — some 250 years after Aristotle — working, on the tradition's own account, from the cross-references the texts contain and from school documents. His catalogue is not extant. And his judgments have been overturned: he held *De interpretatione* spurious, and the field now receives it as genuine.",
      "lines": [
       52,
-      54
+      52
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
@@ -79,9 +79,9 @@
     },
     {
      "shape": "G",
-     "quote": "On particle-transition profiles computed across nine Greek authors, Aristotle sits closer to Plotinus (0.0310) than to Plato (0.0852) — and closer to Plotinus than Aristotle sits to himself (within-author mean 0.1028, maximum 0.3553). Seven centuries and a dialect lie between them. Plato is likewise nearer to Philo (0.0403) and to Thucydides (0.0547) than to Aristotle, and the Plato/Aristotle pair ranks tenth of thirty-six author-pairs — which is to say, unremarkable.\n\nOn the evidence so far the feature space separates verse from prose, then register, and authorship is not visibly in the ordering. The seat exists so that finding can be re-run and contested rather than believed.",
+     "quote": "On the evidence so far the feature space separates verse from prose, then register, and authorship is not visibly in the ordering. The seat exists so that finding can be re-run and contested rather than believed.",
      "lines": [
-      62,
+      64,
       64
      ],
      "falsifier_quote": "",
@@ -128,17 +128,22 @@
    "finds": [
     {
      "shape": "H",
-     "quote": "EA-CORPORA-05 seats three corpora that belong together because they are one practice at three stages of its development.\n\nBrowning enters at 05/01 with Men and Women (1855). The dramatic monologue is the moment a poem's speaker becomes a position distinct from the poet — with a history, a self-justification, and blind spots the poem lets the reader see past the speaker to. Fra Lippo Lippi and Andrea del Sarto argue their own cases and lose them without the poet ever appearing to judge. The gap between what the voice says and what the poem knows is the whole technique, and it is the ancestor of everything the other two seats contain.\n\nPound enters at 05/02 with four volumes, all published before 1930 and so public domain in the United States. Personae names the operation in its title. Cathay makes a voice by translating one. And Homage to Sextus Propertius performs, in 1919, the manoeuvre that Ginsberg would later perform on Catullus 38: a Latin source whose form is tracked closely while its register is inverted, defended by its author as something other than translation when the philologists objected that it was a bad one. Pound is the middle term, where the mask stops being a character in a poem and becomes a position the poet inhabits.",
+     "quote": "EA-CORPORA-05 seats three corpora that belong together because they are one practice at three stages of its development.",
      "lines": [
       45,
-      49
+      45
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "Browning 1855; Pound to 1930 (Homage 1919); Pessoa to 1935",
      "points_to": "",
-     "also_at": [],
-     "note": "Literary-historical thesis: the constructed voice as one practice at three developmental stages (Browning > Pound > Pessoa). Quote spans the opening claim through the Pound paragraph."
+     "also_at": [
+      [
+       47,
+       49
+      ]
+     ],
+     "note": "Literary-historical thesis: the constructed voice as one practice at three developmental stages (Browning > Pound > Pessoa). Fullest development in lines 47-49."
     },
     {
      "shape": "F",
@@ -174,16 +179,21 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "The hold-out is therefore analytical, not archival. All four voices are seated, and each is withheld in turn at analysis time — 123 Caeiro, 60 Reis, 107 Campos, and 493 of the 496 pages listed under the orthonym's category. Three did not resolve and their absence is stated in the seat rather than closed over.\n\nOne thing the seating exposes that the withholding had hidden. Under Pessoa's own usage the orthonym is the position bearing the civil name, which is Pessoa-himself. Under the functional definition the archive works with, the orthonym is whichever position bears the project's founding gesture — and in this configuration that is arguably Caeiro, the master the other voices acknowledge and organise themselves around. The two definitions do not pick out the same voice here. The seat records both readings and settles neither, because which position is the orthonym is exactly what an instrument would have to determine rather than assume.",
+     "quote": "The hold-out is therefore analytical, not archival. All four voices are seated, and each is withheld in turn at analysis time — 123 Caeiro, 60 Reis, 107 Campos, and 493 of the 496 pages listed under the orthonym's category.",
      "lines": [
       32,
-      34
+      32
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       34,
+       34
+      ]
+     ],
      "note": "Redesigned leave-one-out test: four folds, each voice withheld at analysis time, plus the orthonym question an instrument would have to determine; specified, not run."
     }
    ],
@@ -283,16 +293,21 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "EA-CORPORA-08 seats the nine canonical Attic orators, and it exists to supply a number nobody has measured.\n\nThe authorship investigation has produced two positive results that share a defect. The naming-gap reflex groups Plato and Aristotle at ten and a half times the rate of comparison authors, and the completion structure shows Aristotle finishing executions Plato abandoned at five of six matched slots, twice with the same figure. Both are rates. Neither has a denominator, because nobody has ever measured what a master-student pair looks like on such a scale. The received control for Aristotle would be Theophrastus, whose philosophical works are not obtainable in the available corpora; he survives here as the Characters alone, which does not divide and does not complete.\n\nThe orators supply the denominator by another route. Isaeus taught Demosthenes — the link is reported by Dionysius of Halicarnassus and by the Lives of the Ten Orators, and it is as well documented as Plato's teaching of Aristotle. Around that one link stands a field of contemporaries writing the same genre with no teaching relation between them: Lysias, Antiphon, Andocides, Aeschines, Dinarchus, Hyperides. Isocrates sits at one remove, reported as Isaeus's own teacher. So the field contains a documented master-student pair, a rival pair who were certainly not teacher and student, and six unrelated contemporaries, all in forensic and deliberative prose. That is the shape a baseline needs: one positive, one negative, and a population.",
+     "quote": "EA-CORPORA-08 seats the nine canonical Attic orators, and it exists to supply a number nobody has measured.\n\nThe authorship investigation has produced two positive results that share a defect. The naming-gap reflex groups Plato and Aristotle at ten and a half times the rate of comparison authors, and the completion structure shows Aristotle finishing executions Plato abandoned at five of six matched slots, twice with the same figure. Both are rates. Neither has a denominator, because nobody has ever measured what a master-student pair looks like on such a scale.",
      "lines": [
       43,
-      47
+      45
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       47,
+       47
+      ]
+     ],
      "note": "Specifies the unmeasured master-student denominator baseline (one positive pair, one negative, a population) for the naming-gap and completion rates; seated, not run here. (#1565 later reports the orators fail on opportunity.)"
     }
    ],
@@ -436,7 +451,7 @@
     },
     {
      "shape": "H",
-     "quote": "That the operation succeeded is a matter of record, and the record's first entry is Aristotle. The epilogue of the *Sophistical Refutations*, surveying what stood before its own inquiry, keeps the *Clouds*' pay-marker for exactly the class the base text fused with Socrates — τῶν περὶ τοὺς ἐριστικοὺς λόγους **μισθαρνούντων**, the paid teachers of eristic, dismissed with the shoemaker's analogy — and sets Socrates *apart* from them, named alone, keyed not to pay or teaching but to the confession of not knowing: Σωκράτης ἠρώτα ἀλλ᾽ οὐκ ἀπεκρίνετο· ὡμολόγει γὰρ οὐκ εἰδέναι (183b7–8). The separations the *Apology* fought for line by line arrive in Aristotle as furniture: the boundary the *Clouds* fused and the dialogues recut is, by the epilogue, simply where things stand.[^9] And a millennium later the boundary is still under maintenance by readers who never heard of the repair: the Byzantine paraphrast of the *Elenchi*, glossing that very sentence, writes that the dialectician asks ὥσπερ μὴ εἰδώς while the sophist πάντα εἰδέναι ἐπαγγέλλεται — and promotes Socrates to διαλεκτικὸς ἄκρος, consummate in dialectic, the peak of the very practice whose comic version he began as.[^9] The received character of the second reception is the edition; the base text survives inside it only as the quotation the *Apology* chose to keep.",
+     "quote": "That the operation succeeded is a matter of record, and the record's first entry is Aristotle. The epilogue of the *Sophistical Refutations*, surveying what stood before its own inquiry, keeps the *Clouds*' pay-marker for exactly the class the base text fused with Socrates — τῶν περὶ τοὺς ἐριστικοὺς λόγους **μισθαρνούντων**, the paid teachers of eristic, dismissed with the shoemaker's analogy — and sets Socrates *apart* from them, named alone, keyed not to pay or teaching but to the confession of not knowing: Σωκράτης ἠρώτα ἀλλ᾽ οὐκ ἀπεκρίνετο· ὡμολόγει γὰρ οὐκ εἰδέναι (183b7–8).",
      "lines": [
       137,
       137
@@ -446,7 +461,7 @@
      "window": "Aristotle SE 34; Byzantine paraphrast",
      "points_to": "",
      "also_at": [],
-     "note": "Reception thesis: Aristotle and a Byzantine paraphrast inherit the repaired figure as settled. Quote is the whole paragraph; check length."
+     "note": "Reception thesis: Aristotle and a Byzantine paraphrast inherit the repaired figure as settled. "
     },
     {
      "shape": "H",
@@ -575,7 +590,7 @@
     },
     {
      "shape": "F",
-     "quote": "Where a test exists, it is the fragments. The received scholarship reconstructs several of Aristotle's dialogues from later citation — Cicero on the *Eudemus* and *On Philosophy*, Iamblichus on the *Protrepticus*, the Neoplatonists on *On the Soul* — and the reconstructions are the evidence that the dialogues existed as distinct works.[^9] For each matched title, set the fragments attributed to the Aristotelian dialogue beside the Platonic dialogue of the same subject-title and ask whether the fragments are *in* it, are *of* its kind, or are neither. The test cuts both ways and no single hit decides it. A passage found verbatim in the candidate may indicate identity, or quotation, or shared material; a passage absent from the candidate may indicate a distinct work, or a different recension, a paraphrase, or a mistaken attribution. What discriminates is the citation's wording, speaker, argumentative sequence, setting, and extent of correspondence *together*, across the fragments of a title — a mismatch does not defeat identity by itself, and a match does not establish it. That is a collation, it is bounded, and the fragments are on the open shelf (Rose, Ross); the paper stops at its edge.",
+     "quote": "For each matched title, set the fragments attributed to the Aristotelian dialogue beside the Platonic dialogue of the same subject-title and ask whether the fragments are *in* it, are *of* its kind, or are neither.",
      "lines": [
       145,
       145

@@ -10424,7 +10424,33 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled, plus the wave-26 sentence on contradictions, and the wave-30 sentences on status fields and credentials",
    "output": "data/reading/batches/B0225.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 190938,
+    "tool_uses": 44,
+    "tokens": 217385
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T21:18:53Z",
+    "finished_at": "2026-10-15T21:21:45Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in its environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load, quote slicing and JSON assembly)"
+    ]
+   },
+   "verification": {
+    "deposits": 38,
+    "entries": 38,
+    "finds": 21,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 38,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w31-B0226",
