@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 527,
-  "unread": 1089
+  "read": 532,
+  "unread": 1084
  },
- "h_covered": 527,
+ "h_covered": 532,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 621,
-  "F": 640,
+  "G": 629,
+  "F": 658,
   "E": 126,
-  "B": 372,
-  "A": 170,
-  "C": 193,
-  "D": 196,
-  "H": 748
+  "B": 377,
+  "A": 171,
+  "C": 194,
+  "D": 198,
+  "H": 769
  },
- "finds_verified": 2996,
- "finds_total": 3066,
+ "finds_verified": 3036,
+ "finds_total": 3122,
  "deposits": [
   {
    "deposit": 172,
@@ -36911,7 +36911,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T20:34:34Z",
-      "finished_at": "2026-10-15T20:37:05Z",
+      "finished_at": "2026-10-15T20:37:31Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -37598,9 +37598,53 @@
    "tier": 1,
    "words": 12902,
    "batch_id": "B0122",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0122",
+     "run": "R-w21-B0122",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:34:51Z",
+      "finished_at": "2026-10-15T20:37:36Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       200
+      ],
+      [
+       201,
+       405
+      ]
+     ],
+     "lines_total": 405,
+     "genre_observed": "Theoretical paper with deposited simulation code (policy critique of P&PA AI ban)",
+     "finds_by_shape": {
+      "B": 4,
+      "G": 4,
+      "F": 4,
+      "A": 1,
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1543,
@@ -37609,9 +37653,47 @@
    "tier": 1,
    "words": 4863,
    "batch_id": "B0122",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0122",
+     "run": "R-w21-B0122",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:34:51Z",
+      "finished_at": "2026-10-15T20:37:36Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       283
+      ]
+     ],
+     "lines_total": 283,
+     "genre_observed": "Theory and apparatus paper with nine-round review record (genre extension)",
+     "finds_by_shape": {
+      "F": 2,
+      "G": 1,
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "Stanza carried at second remove; the capture transcript was refused transport and is unseated, as the deposit itself declares.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1551,
@@ -37620,9 +37702,52 @@
    "tier": 1,
    "words": 7994,
    "batch_id": "B0122",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0122",
+     "run": "R-w21-B0122",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:34:51Z",
+      "finished_at": "2026-10-15T20:37:36Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       225
+      ],
+      [
+       226,
+       441
+      ]
+     ],
+     "lines_total": 441,
+     "genre_observed": "Theoretical paper with worked capture case and review appendices (v1.2)",
+     "finds_by_shape": {
+      "G": 1,
+      "F": 3,
+      "D": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Appendix C (lines 405-417) is the description that #1552 (v1.3, Appendix D lines 474) states was a manufactured evidentiary object written from a transcript of the substrate's own prior description, claiming operator-captured provenance it did not have. Lines 1-406 are otherwise identical to #1552. §11.2/§XII zero-inclusion claim is corrected in #1552 C.4. Appendix D refers to 'the identity kernel of #1546' (likely an earlier deposit number for this paper).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1552,
@@ -37631,9 +37756,53 @@
    "tier": 1,
    "words": 9092,
    "batch_id": "B0122",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0122",
+     "run": "R-w21-B0122",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in its environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:34:51Z",
+      "finished_at": "2026-10-15T20:37:36Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       250
+      ],
+      [
+       251,
+       490
+      ]
+     ],
+     "lines_total": 490,
+     "genre_observed": "Theoretical paper with worked capture case, screenshot-frame appendix and process record (v1.3)",
+     "finds_by_shape": {
+      "G": 1,
+      "F": 3,
+      "D": 1,
+      "H": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Lines 1-406 duplicate #1551 v1.2 verbatim; v1.3 replaces Appendix C with a transcription of four recovered screenshot frames (two frames and two attachments not recovered), corrects the zero-composition-inclusion claim (C.4, lines 446-456), and records at line 480 that by 27 August 2026 the card no longer carried the Fragment 2 error or 'self-archiving'.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1549,
@@ -37676,10 +37845,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 197,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -37738,10 +37910,13 @@
      },
      "none_found": false,
      "incidental": "X-016 and X-044 seated truncated mid-sentence as received (X-016's remainder seated as X-047); no X-008 or X-052 plate; seam S-04 referenced but absent from the cut.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 1039,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -37787,10 +37962,13 @@
      },
      "none_found": false,
      "incidental": "Body lines 40-50 repeat a YAML-like status block inside the text; attachment is shared with #1556.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 171,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -37837,10 +38015,13 @@
      },
      "none_found": false,
      "incidental": "Companion to #1555; shares the evidentiary-basis attachment.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 295,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -37885,9 +38066,81 @@
    "tier": 1,
    "words": 45055,
    "batch_id": "B0126",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0126",
+     "run": "R-w21-B0126",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:35:09Z",
+      "finished_at": "2026-10-15T20:37:32Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       350
+      ],
+      [
+       351,
+       750
+      ],
+      [
+       751,
+       1150
+      ],
+      [
+       1151,
+       1550
+      ],
+      [
+       1551,
+       1950
+      ],
+      [
+       1951,
+       2350
+      ],
+      [
+       2351,
+       2750
+      ],
+      [
+       2751,
+       3150
+      ],
+      [
+       3151,
+       3458
+      ]
+     ],
+     "lines_total": 3458,
+     "genre_observed": "theoretical paper on Plato–Aristotle authorship (reading copy) with attached pass registers and measurement apparatus",
+     "finds_by_shape": {
+      "H": 15,
+      "C": 1,
+      "G": 1,
+      "F": 6
+     },
+     "none_found": false,
+     "incidental": "Front ~710 lines are attached pass registers (seating ledger, citation pass, notebook reread, incorporation pass) that restate the paper's material; their duplicates are carried in also_at. [V.A2] carries a correction dated 2026-09-01 inside a v2.5.1 copy dated 2026-08-31. Section V's notes key §VIII/§IX apparatus with reused [VIII.n] keys under §IX (namespace collision: [VIII.1]-[VIII.6] defined twice, once under §VIII and once under §IX).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1572,

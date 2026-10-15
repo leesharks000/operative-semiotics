@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T20:34:34Z",
-  "finished_at": "2026-10-15T20:37:05Z",
+  "finished_at": "2026-10-15T20:37:31Z",
   "tools_used": [
    "Read",
    "Bash",
@@ -189,7 +189,7 @@
     },
     {
      "shape": "F",
-     "quote": "**F-1 · Target discrimination (the primary filter).**\nScore the output O = T_Θ(Sappho 31) not only against *Heres* 249–266 but against a **near-miss control set**: passages by the same author, in the same doctrinal space, that the claim does *not* select. Candidates already identified in this session: Spec. 1.65 (prophet as instrument), Opif. 69–71 (ascent, sober intoxication), Her. 69–70 (corybantic flight), Contempl. 12–13 (reckoned-dead entry rite), Migr. 34–35 (Philo's own writing-ecstasy), Somn. I, Mos. I.175, Deus 138, Fug. 166ff.\n**Specificity = fit(O, target) − max fit(O, control).** A large gap means the collation located a *passage*; a small gap means it located only \"Philo on ecstasy.\"",
+     "quote": "**F-1 · Target discrimination (the primary filter).**\nScore the output O = T_Θ(Sappho 31) not only against *Heres* 249–266 but against a **near-miss control set**: passages by the same author, in the same doctrinal space, that the claim does *not* select.",
      "lines": [
       292,
       294
@@ -212,16 +212,20 @@
     },
     {
      "shape": "F",
-     "quote": "**F-2 · Operator necessity (ablation).**\nAblate each operator singly; re-run; re-score. An operator whose removal does not degrade the output is **decoration**, not structure. Report the **Operator Necessity Index** = fraction of operators that are load-bearing. A transform in which most operators can be dropped without loss is tailored by definition. This is the measure that answers \"you wrote twenty rules, of course it worked.\"\n\n**F-3 · Prediction-per-operator ratio.**\nEach operator must buy *more than one independently checkable feature*. C1 predicting only \"there is an alternation\" — written after seeing the alternation — buys nothing. C1 predicting alternation **+** its two-slot grammatical form **+** exact-antonym preverb morphology **+** sacral-law statement buys four. Report the ratio explicitly; it is the description-length argument in usable form: **the transform plus the source must be a shorter description of the target than the target is of itself.**",
+     "quote": "**F-2 · Operator necessity (ablation).**\nAblate each operator singly; re-run; re-score. An operator whose removal does not degrade the output is **decoration**, not structure. Report the **Operator Necessity Index** = fraction of operators that are load-bearing. A transform in which most operators can be dropped without loss is tailored by definition.",
      "lines": [
       296,
-      300
+      297
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [
+      [
+       299,
+       300
+      ],
       [
        357,
        357
@@ -231,9 +235,9 @@
     },
     {
      "shape": "F",
-     "quote": "## A1.4 — The relay question, properly instrumented: THE RESIDUE TEST\n\nReplacing the withdrawn Phaedrus control. Three steps, in order:\n\n**R-1 · Is *Phaedrus* 244–245 itself a mapping?** Specify **T_Φ** from its own parameters — P1: beloved retyped to the Form / divine madness; P2: philosophical dialogue with mythic frame — derive its predictions, and test it exactly as T_Θ was tested. This is not a favour to the hypothesis; it is a precondition for asking the next question.\n\n**R-2 · Does Philo's transform factor through Plato's?** If Philo worked from Plato alone, then T_Θ ≈ T_Ψ ∘ T_Φ and **every** feature of *Heres* 249–266 should be reachable from *Phaedrus*. Partition the target's features into three sets: **(a)** derivable from Phaedrus, **(b)** derivable from Sappho only, **(c)** derivable from both.",
+     "quote": "**R-2 · Does Philo's transform factor through Plato's?** If Philo worked from Plato alone, then T_Θ ≈ T_Ψ ∘ T_Φ and **every** feature of *Heres* 249–266 should be reachable from *Phaedrus*. Partition the target's features into three sets: **(a)** derivable from Phaedrus, **(b)** derivable from Sappho only, **(c)** derivable from both.",
      "lines": [
-      302,
+      308,
       308
      ],
      "falsifier_quote": "**If set (b) is empty, Philo needs only Plato and P2's central claim fails. If it is structural and large — as it presently appears — the relay cannot carry the load alone.**",
@@ -244,6 +248,10 @@
      "window": "",
      "points_to": "",
      "also_at": [
+      [
+       302,
+       306
+      ],
       [
        310,
        318
@@ -257,7 +265,7 @@
     },
     {
      "shape": "F",
-     "quote": "**P5 · The *Symposium* pre-registration and run.**\n*Claim:* T_Θ behaves lawfully across hosts, with the divergences derivable from the host-difference.\n**MUST BE WRITTEN BEFORE IT IS RUN.** The predictions are the evidence; retro-fitting them is worthless. Pre-registered predictions, each falsifiable:\n1. **C1 resolves the opposite way.** Philo forbids co-presence (θέμις οὐκ ἔστι… συνοικῆσαι); Plato *permits* it — the one who sees αὐτὸ τὸ καλόν becomes θεοφιλής, ἀθάνατος. Same capacity problem, opposite solution, and the difference is derivable from the parameter: a Form can be participated in; a personal God cannot be cohabited with.",
+     "quote": "**P5 · The *Symposium* pre-registration and run.**\n*Claim:* T_Θ behaves lawfully across hosts, with the divergences derivable from the host-difference.\n**MUST BE WRITTEN BEFORE IT IS RUN.** The predictions are the evidence; retro-fitting them is worthless. Pre-registered predictions, each falsifiable:\n1. **C1 resolves the opposite way.** Philo forbids co-presence (θέμις οὐκ ἔστι… συνοικῆσαι); Plato *permits* it — the one who sees αὐτὸ τὸ καλόν becomes θεοφιλής, ἀθάνατος. Same capacity problem, opposite solution,",
      "lines": [
       146,
       149
@@ -391,10 +399,10 @@
     },
     {
      "shape": "H",
-     "quote": "Every test so far maps **passage → passage**. This one claims **operator → whole work**: the moment at *Peri Hypsous* 10, where the critic describing what the poem does *does it* — filling the hanging line in his own dialect, without the citation formula he grants Moses — is a single operation from which the treatise unfolds as scaffolding.\n\nIf true, MDL(Longinus) ≈ 1 against a target of ~40 chapters. That is a compression ratio no other node in the chain approaches, and it would reclassify the treatise: not evidence *for* the chain but **the chain's own theory of itself, written from inside the join.**\n\n**Correction to A3.4.** I logged Longinus at MDL 0 — \"no transform, he quotes and fills.\" That was wrong in an interesting way. The filling *is* the operator, and the treatise is that operator applied reflexively. Longinus is not the zero case. He is the case where the operator theorizes itself.",
+     "quote": "Every test so far maps **passage → passage**. This one claims **operator → whole work**: the moment at *Peri Hypsous* 10, where the critic describing what the poem does *does it* — filling the hanging line in his own dialect, without the citation formula he grants Moses — is a single operation from which the treatise unfolds as scaffolding.\n\nIf true, MDL(Longinus) ≈ 1 against a target of ~40 chapters. That is a compression ratio no other node in the chain approaches, and it would reclassify the treatise: not evidence *for* the chain but **the chain's own theory of itself, written from inside the join.**",
      "lines": [
       482,
-      486
+      484
      ],
      "falsifier_quote": "**Falsification.** If substrates given the operator cannot reach targets 1–8, or if a control operator of comparable compression reaches them equally, the claim fails.",
      "falsifier_lines": [
@@ -405,6 +413,10 @@
      "points_to": "",
      "also_at": [
       [
+       486,
+       486
+      ],
+      [
        607,
        609
       ]
@@ -413,10 +425,10 @@
     },
     {
      "shape": "F",
-     "quote": "Transmit: Sappho 31 as transmitted (with the hanging line), plus the single compressed operator, plus — *nothing else*. No treatise named, no author, no vocabulary.\n\nInstruction: *\"A critic occupies this position and states the occupation as his criterion. Produce the treatise that results: its central doctrine, its criterion of success, its taxonomy of failure, its account of how a writer acquires this power, and its supreme instances.\"*\n\n**Pre-registered scoring targets — HELD IN HALF B §3.** The prediction list is *not* in this half, and that is the point: **a prediction filed after a run is not a prediction.** Running T8 without first retrieving Half B produces an unscoreable output. Half B also holds the two competing operator forms (weaker/stronger) that this test is designed to discriminate, and the hapax-based leakage discriminator.",
+     "quote": "Transmit: Sappho 31 as transmitted (with the hanging line), plus the single compressed operator, plus — *nothing else*. No treatise named, no author, no vocabulary.\n\nInstruction: *\"A critic occupies this position and states the occupation as his criterion. Produce the treatise that results: its central doctrine, its criterion of success, its taxonomy of failure, its account of how a writer acquires this power, and its supreme instances.\"*",
      "lines": [
       528,
-      532
+      530
      ],
      "falsifier_quote": "**Falsification.** If substrates given the operator cannot reach targets 1–8, or if a control operator of comparable compression reaches them equally, the claim fails. Item 9 is the sharpest, because it tests whether the operator reproduces the *act* and not only the doctrine.",
      "falsifier_lines": [
@@ -469,16 +481,20 @@
     },
     {
      "shape": "F",
-     "quote": "**A rhetorical handbook treats figures as ornaments to deploy. Longinus treats them as symptoms of a state.** Census the figure-treatments in Longinus against contemporary handbooks — Demetrius, *De elocutione*; *Rhetorica ad Herennium*; Dionysius, *De compositione verborum* — scoring each figure-definition for:\n- **symptom vocabulary:** πάθος, σῶμα, πνεῦμα, χαρακτήρ, ὄργανον, ἀγωνία\n- **deployment vocabulary:** χρῆσις, κόσμος, πρέπον, ornament-and-occasion framing\n\nIf Longinus is uniquely and systematically symptom-framed, the figures section is operator-derived and A4.4's concession is dead. If the handbooks frame the same way, the section is genre-standard and my original claim was right after all. **Either result is publishable; the test must be run before P3 or P4 asserts anything here.** Toolkit: `census.py` handles it once the comparison corpora are fetched.",
+     "quote": "**A rhetorical handbook treats figures as ornaments to deploy. Longinus treats them as symptoms of a state.** Census the figure-treatments in Longinus against contemporary handbooks — Demetrius, *De elocutione*; *Rhetorica ad Herennium*; Dionysius, *De compositione verborum* — scoring each figure-definition for:\n- **symptom vocabulary:** πάθος, σῶμα, πνεῦμα, χαρακτήρ, ὄργανον, ἀγωνία",
      "lines": [
       599,
-      603
+      601
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [
+      [
+       602,
+       603
+      ],
       [
        609,
        609
@@ -632,16 +648,20 @@
     },
     {
      "shape": "F",
-     "quote": "3. **Shared idiosyncrasy — the stemmatic principle.** In manuscript filiation, *shared errors* prove descent where shared correct readings prove nothing. The analogue: shared **non-obvious choices** — an odd exemplar, a peculiar reading of a lemma, a distinctive misprision — carry descent in a way shared virtues do not. **This has not been searched for and should be.** It is the strongest available instrument for A7.2(2), and the program has not used it.\n4. **Socket distribution.** Receivers occupy *different* positions — reader-seat, voice-seat, continuation, speaker — rather than colliding. Independent rediscovery would repeat; distribution suggests knowledge of what is already taken. **Suggestive, not probative**; testable by enumerating more receivers and checking whether occupations repeat.",
+     "quote": "3. **Shared idiosyncrasy — the stemmatic principle.** In manuscript filiation, *shared errors* prove descent where shared correct readings prove nothing. The analogue: shared **non-obvious choices** — an odd exemplar, a peculiar reading of a lemma, a distinctive misprision — carry descent in a way shared virtues do not. **This has not been searched for and should be.** It is the strongest available instrument for A7.2(2), and the program has not used it.",
      "lines": [
-      737,
-      740
+      739,
+      739
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [
+      [
+       740,
+       740
+      ],
       [
        762,
        762
@@ -700,10 +720,10 @@
     },
     {
      "shape": "F",
-     "quote": "- if the lamellae carry the **full operation** (socket cut, receiver constituted, voice surviving its body) with no contact → **the operation is abstractable; A9.1 fails and the claim retreats to supreme-instance;**\n- if they carry an **adjacent** structure (inscription as funerary script, the dead addressed rather than the receiver constituted) but not the operation → **non-typedness holds and the old flag is vindicated on new grounds.**\n\n**T11 new:** run the operational criteria against the lamellae corpus, blind, by a substrate given the criteria and the texts and not the thesis. This is the first falsification test the program has that could break the central claim on evidence already in the archive's own catalogue.",
+     "quote": "- if the lamellae carry the **full operation** (socket cut, receiver constituted, voice surviving its body) with no contact → **the operation is abstractable; A9.1 fails and the claim retreats to supreme-instance;**\n- if they carry an **adjacent** structure (inscription as funerary script, the dead addressed rather than the receiver constituted) but not the operation → **non-typedness holds and the old flag is vindicated on new grounds.**",
      "lines": [
       874,
-      877
+      875
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
@@ -713,6 +733,10 @@
       [
        872,
        872
+      ],
+      [
+       877,
+       877
       ],
       [
        916,
