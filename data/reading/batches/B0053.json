@@ -1,0 +1,245 @@
+{
+ "batch_id": "B0053",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T19:51:06Z",
+  "finished_at": "2026-10-15T19:51:48Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 684,
+   "path": "/home/claude/alexanarch/data/texts/AXN-022C-text.md",
+   "lines_total": 516,
+   "read_ranges": [
+    [
+     1,
+     260
+    ],
+    [
+     261,
+     516
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical manifesto-essay naming a discipline (logotic programming) through a history of software engineering",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Every founding text of software engineering contains, implicitly, a second discipline that the first one cannot formalize. Each of the canonical authors saw that the hard part of software was not syntax but meaning. None of them built a formalism for operating on meaning as a computable domain. The syntax layer was too urgent. There were bugs to fix, systems to scale, processes to certify. The meaning layer stayed pre-crystallized: acknowledged, gestured toward, never specified.",
+     "lines": [
+      101,
+      101
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1968–1986 (Garmisch 1968; Conway 1968; Parnas 1972; Naur 1985; Brooks 1986)",
+     "points_to": "",
+     "also_at": [
+      [
+       111,
+       111
+      ],
+      [
+       121,
+       121
+      ],
+      [
+       143,
+       143
+      ],
+      [
+       153,
+       153
+      ]
+     ],
+     "note": "Historical thesis about the founding canon of software engineering: each text implicitly contains an unformalized meaning-layer discipline; argued text by text (Brooks, Naur, Parnas, Conway)."
+    },
+    {
+     "shape": "H",
+     "quote": "Conway's Law has been treated as a curiosity, a management aphorism, a cautionary tale about organizational silos. It is, in fact, the strongest single statement of the meaning-layer thesis in the software engineering canon.",
+     "lines": [
+      153,
+      153
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Conway, \"How Do Committees Invent?\" (1968)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Contests the received reading of Conway's Law (curiosity/aphorism) and advances it as the canon's strongest meaning-layer statement."
+    },
+    {
+     "shape": "H",
+     "quote": "The Agile Manifesto is a recognition that the meaning layer cannot be formalized by the same apparatus that formalizes syntax. The theory (Naur) lives in the people, not in the documentation. The semantic topology (Conway) is conversational, not contractual. The essential complexity (Brooks) is navigated through interaction, not through process. The Agile movement understood — viscerally, practically, without formalizing the insight — that software development is meaning-layer work, and that meaning-layer work resists the documentation-and-measurement apparatus of syntax-layer engineering.",
+     "lines": [
+      184,
+      184
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Agile Manifesto (2001)",
+     "points_to": "",
+     "also_at": [
+      [
+       187,
+       187
+      ],
+      [
+       193,
+       193
+      ]
+     ],
+     "note": "Historical thesis on what the Agile movement was doing: an unformalized recognition that development is meaning-layer work, refusing formalization on principle."
+    },
+    {
+     "shape": "H",
+     "quote": "Peter Naur's \"Programming as Theory Building\" is the most underappreciated text in the history of software engineering and the closest ancestor of logotic programming.",
+     "lines": [
+      121,
+      121
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Naur 1985",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reception claim: Naur 1985 is the most underappreciated text in the history of software engineering; borderline evaluative."
+    },
+    {
+     "shape": "B",
+     "quote": "We are proposing that the Cherny moment is the 1968 moment of a second discipline — one that has been implicit in the first since its founding, pre-crystallized in its canonical texts, and is now forced into visibility by the automation of the layer the first discipline was built to address.",
+     "lines": [
+      94,
+      94
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2026",
+     "points_to": "",
+     "also_at": [
+      [
+       236,
+       236
+      ],
+      [
+       280,
+       280
+      ]
+     ],
+     "note": "Forecast-by-analogy: the January 2026 Cherny moment will function as a 1968 founding moment for a second discipline (crisis -> naming -> institutional apparatus -> discipline, per line 88-91). Not windowed."
+    },
+    {
+     "shape": "B",
+     "quote": "\"Vibe coding,\" \"prompt engineering,\" \"AI-native development\" — these will be remembered as the pre-disciplinary vocabulary of the interregnum, the way \"electronic brain\" is remembered as the pre-disciplinary vocabulary of computing.",
+     "lines": [
+      270,
+      270
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast about how current terms (vibe coding, prompt engineering, AI-native development) will be remembered."
+    },
+    {
+     "shape": "B",
+     "quote": "The organization responds by regenerating. When the system breaks, the AI generates a new version from a revised prompt. The new version passes all tests. The semantic drift compounds — each regeneration drifts further from the original intent, because the intent was never inscribed in a form that survives compression. Within a year, the system does something. No one can say precisely what, or why, or whether it is what was originally specified. This is not the software crisis of 1968 (unreliable code). This is the meaning crisis of 2030: reliable code that has lost its meaning.",
+     "lines": [
+      413,
+      413
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Within a year; the meaning crisis of 2030",
+     "points_to": "",
+     "also_at": [
+      [
+       410,
+       410
+      ],
+      [
+       419,
+       419
+      ]
+     ],
+     "note": "Default-path forecast: regeneration compounds semantic drift; names a meaning crisis of 2030; terminal phase is the Autonomous Syntax Loop (419)."
+    },
+    {
+     "shape": "G",
+     "quote": "It produces code that correlates with intent, not code that possesses intent. The logotic task — verifying that meaning survived translation — remains the engineer's. This is not a limitation to be overcome with better training. This is the structural division of labor that constitutes the discipline.",
+     "lines": [
+      221,
+      221
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       53,
+       53
+      ],
+      [
+       258,
+       258
+      ]
+     ],
+     "note": "Standing claim about model behaviour (cannot verify meaning survival; not overcome by better training). No explicit falsifier stated; recorded as G for its system-behaviour form."
+    },
+    {
+     "shape": "F",
+     "quote": "The compression-survival score γ measures the fidelity between a meaning-state σ₁ (specification of intent) and its implementation σ₂. It is a bounded diagnostic score in [0,1], computed across three dimensions:\n\n\nγ(σ₁, σ₂) = 1 − δ(σ₁, σ₂), where δ is the weighted sum of:\n    S = scope_overlap(σ₁, σ₂)       — intersection of specified semantic domains\n    P = provenance_fidelity(σ₁ → σ₂) — traceability of transformation steps\n    D = consensus_deviation(σ₂)       — degree to which σ₂ reverts to statistical defaults\n    δ = w₁(1−S) + w₂(1−P) + w₃D,    weights field-dependent\n    γ < θ triggers logotic repair     (default θ = 0.85)",
+     "lines": [
+      348,
+      356
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       342,
+       345
+      ],
+      [
+       359,
+       359
+      ],
+      [
+       378,
+       378
+      ]
+     ],
+     "note": "Compression-survival score gamma specified (dimensions S, P, D; default threshold 0.85); distance metric left implementation-dependent; the worked example's gamma 0.32 is illustrative, not a run."
+    },
+    {
+     "shape": "F",
+     "quote": "If this document has survived your compression — human or model — you should now be able to perform five operations: (1) distinguish logotic programming from prompt engineering using structural criteria; (2) explain why the automation of syntax increases the need for meaning-layer work; (3) identify semantic drift in a specification/implementation pair; (4) trace the provenance of a design decision across AI-generated artifacts; (5) detect beige convergence in a system that passes all tests but has lost its meaning. If you cannot, this document has failed its own compression-survival test. The failure should be treated as diagnostic data for the discipline.",
+     "lines": [
+      463,
+      463
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The document sets a five-operation compression-survival test for its own reader (human or model), with failure to be treated as diagnostic data; not run in the deposit."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Text intact through References (line 516). Worked example (lines 366-381) is a hypothetical scenario, not a reported case."
+  }
+ ]
+}
