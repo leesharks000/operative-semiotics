@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 172,
+ "deposits_with_notes": 179,
  "deposits": [
   {
    "deposit": 8,
@@ -163,6 +163,17 @@
      "batch_id": "B0042",
      "field": "incidental",
      "text": "Stale build placeholders remain in the body ('[Parts IV–IX continue in subsequent build sessions]' at line 925; '[Parts VI–IX continue in subsequent build units]' at line 1400) though those Parts follow. Section 8.9 (Training Layer Literature) precedes 8.8 (Symmetry of the Weapon); no 8.8/8.9 gap otherwise. Tables are flattened to one cell per line. Appendix D.6 names a private-ish target (Robertson/Passioncraft)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 53,
+   "notes": [
+    {
+     "batch_id": "B0043",
+     "field": "incidental",
+     "text": "Section order irregular: §1.6 precedes §1.5. Line 14 and line 12 give companion spec as v1.0 and v1.1."
     }
    ],
    "rulings": []
@@ -1335,6 +1346,17 @@
    "rulings": []
   },
   {
+   "deposit": 634,
+   "notes": [
+    {
+     "batch_id": "B0043",
+     "field": "incidental",
+     "text": "Section numbering irregular (§7.4, 7.5 before 7.3; §14 subsections numbered 15.x; §15.5)."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 713,
    "notes": [
     {
@@ -1428,6 +1450,17 @@
      "batch_id": "B0041",
      "field": "incidental",
      "text": "Body does not match the queue title 'Hexagonal OS: Interface Build Files v0.4': the text is 'LOGOTIC PROGRAMMING ... Draft v0.4 (January 2026)', DOI 10.5281/zenodo.18286050 (content_type in queue: Wrong-object recovery). Treat as a wrong body; likely duplicates the Logotic Programming v0.4 deposit."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 960,
+   "notes": [
+    {
+     "batch_id": "B0043",
+     "field": "incidental",
+     "text": "Body is byte-identical to #1347 (same sha256)."
     }
    ],
    "rulings": []
@@ -1804,6 +1837,28 @@
    "rulings": []
   },
   {
+   "deposit": 1174,
+   "notes": [
+    {
+     "batch_id": "B0043",
+     "field": "incidental",
+     "text": "Restored record: TACHYON recovery frame (lines 1-46) precedes canonical bytes; falsification boilerplate at line 40 not recorded. §12 Operative Philology measurement (March 11, 2026) is dated telemetry, not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1177,
+   "notes": [
+    {
+     "batch_id": "B0043",
+     "field": "incidental",
+     "text": "Restored record with TACHYON recovery frame (lines 1-46). Many sections (IV atoms 1-60, V-VII, XI-XIV) are placeholders saying \"preserved from v4.2\" with no content. Registry tables carry truncated titles/précis."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1182,
    "notes": [
     {
@@ -2023,6 +2078,28 @@
      "batch_id": "B0035",
      "field": "incidental",
      "text": "Metadata says 'semi-restored v1.0' and keywords include 'metadata-only', but a full body text is present. Final keyword truncated ('English linguisti'). Read displays an empty line 574; lines_total 573 authoritative."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1347,
+   "notes": [
+    {
+     "batch_id": "B0043",
+     "field": "incidental",
+     "text": "Possible wrong body: titled \"Gravity Well Codebase v0.4.1\" but the body is the v0.4.0 protocol document, byte-identical to #960 (same sha256). No code present."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1348,
+   "notes": [
+    {
+     "batch_id": "B0043",
+     "field": "incidental",
+     "text": "Damaged/partial capture of the same work as #52: declaration box, tables, code blocks and many section bodies are missing (§2.1, 2.2, 2.5, 5.3, 6.1, 10.1 lists, 12 empty); Appendix A ends after its first sentence; keywords truncated (\"isR\")."
     }
    ],
    "rulings": []

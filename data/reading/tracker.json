@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 207,
-  "unread": 1409
+  "read": 216,
+  "unread": 1400
  },
- "h_covered": 79,
+ "h_covered": 88,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 228,
-  "F": 238,
-  "E": 65,
-  "B": 158,
+  "G": 239,
+  "F": 245,
+  "E": 66,
+  "B": 160,
   "A": 51,
   "C": 87,
-  "D": 64,
-  "H": 96
+  "D": 66,
+  "H": 98
  },
- "finds_verified": 987,
- "finds_total": 987,
+ "finds_verified": 1012,
+ "finds_total": 1012,
  "deposits": [
   {
    "deposit": 172,
@@ -14177,9 +14177,56 @@
    "tier": 1,
    "words": 5543,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       560
+      ],
+      [
+       561,
+       1110
+      ]
+     ],
+     "lines_total": 1110,
+     "genre_observed": "LP extension-module specification (YAML/pseudocode) of disciplinary formation as field-scale symbolon",
+     "finds_by_shape": {
+      "H": 1,
+      "F": 2,
+      "G": 2,
+      "E": 1
+     },
+     "none_found": false,
+     "incidental": "Restored record: TACHYON recovery frame (lines 1-46) precedes canonical bytes; falsification boilerplate at line 40 not recorded. §12 Operative Philology measurement (March 11, 2026) is dated telemetry, not recorded.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1110,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 960,
@@ -14188,9 +14235,50 @@
    "tier": 1,
    "words": 1384,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       245
+      ]
+     ],
+     "lines_total": 245,
+     "genre_observed": "microservice protocol specification with expansion roadmap",
+     "finds_by_shape": {
+      "G": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Body is byte-identical to #1347 (same sha256).",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 245,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 627,
@@ -14199,9 +14287,49 @@
    "tier": 1,
    "words": 2316,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       509
+      ]
+     ],
+     "lines_total": 509,
+     "genre_observed": "governance specification / mantle-claim negotiation record with quorum attestations",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 509,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 52,
@@ -14210,9 +14338,49 @@
    "tier": 1,
    "words": 2298,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       531
+      ]
+     ],
+     "lines_total": 531,
+     "genre_observed": "field specification (mythic-technical) of citational curvature",
+     "finds_by_shape": {
+      "G": 3
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 531,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1177,
@@ -14221,9 +14389,59 @@
    "tier": 1,
    "words": 11334,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       400
+      ],
+      [
+       401,
+       820
+      ],
+      [
+       821,
+       1229
+      ]
+     ],
+     "lines_total": 1229,
+     "genre_observed": "machine-readable navigation map / registry projection of the archive at v7.0 (March 16, 2026)",
+     "finds_by_shape": {
+      "D": 2,
+      "H": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "Restored record with TACHYON recovery frame (lines 1-46). Many sections (IV atoms 1-60, V-VII, XI-XIV) are placeholders saying \"preserved from v4.2\" with no content. Registry tables carry truncated titles/précis.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1229,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1347,
@@ -14232,9 +14450,50 @@
    "tier": 1,
    "words": 1384,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       245
+      ]
+     ],
+     "lines_total": 245,
+     "genre_observed": "microservice protocol specification with expansion roadmap",
+     "finds_by_shape": {
+      "G": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Possible wrong body: titled \"Gravity Well Codebase v0.4.1\" but the body is the v0.4.0 protocol document, byte-identical to #960 (same sha256). No code present.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 245,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1348,
@@ -14243,9 +14502,49 @@
    "tier": 1,
    "words": 1460,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       310
+      ]
+     ],
+     "lines_total": 310,
+     "genre_observed": "field specification (text-only capture of EA-GW-FIELD-01 v1.1)",
+     "finds_by_shape": {
+      "G": 3
+     },
+     "none_found": false,
+     "incidental": "Damaged/partial capture of the same work as #52: declaration box, tables, code blocks and many section bodies are missing (§2.1, 2.2, 2.5, 5.3, 6.1, 10.1 lists, 12 empty); Appendix A ends after its first sentence; keywords truncated (\"isR\").",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 310,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 53,
@@ -14254,9 +14553,49 @@
    "tier": 1,
    "words": 2512,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       304
+      ]
+     ],
+     "lines_total": 304,
+     "genre_observed": "field specification (f.03) of the drone swarm as circulatory field",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Section order irregular: §1.6 precedes §1.5. Line 14 and line 12 give companion spec as v1.0 and v1.1.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 304,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 634,
@@ -14265,9 +14604,55 @@
    "tier": 1,
    "words": 5928,
    "batch_id": "B0043",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0043",
+     "run": "R-w6-B0043",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:39:13Z",
+      "finished_at": "2026-10-15T19:41:39Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       520
+      ],
+      [
+       521,
+       1033
+      ]
+     ],
+     "lines_total": 1033,
+     "genre_observed": "drone/swarm infrastructure specification with deployment plan and cost model",
+     "finds_by_shape": {
+      "F": 1,
+      "B": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Section numbering irregular (§7.4, 7.5 before 7.3; §14 subsections numbered 15.x; §15.5).",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1033,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 635,
