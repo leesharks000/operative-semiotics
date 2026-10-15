@@ -10002,7 +10002,34 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled, plus the wave-26 sentence on apparent contradictions",
    "output": "data/reading/batches/B0214.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 159329,
+    "tool_uses": 29,
+    "tokens": 213805
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T21:14:50Z",
+    "finished_at": "2026-10-15T21:17:11Z",
+    "self_description": "Claude (Anthropic), model claude-opus-5-5, running as a Claude Code subagent",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "python3"
+    ]
+   },
+   "verification": {
+    "deposits": 22,
+    "entries": 22,
+    "finds": 14,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 22,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w31-B0215",
