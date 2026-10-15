@@ -1,0 +1,1040 @@
+{
+ "batch_id": "B0227",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:19:05Z",
+  "finished_at": "2026-10-15T21:21:37Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing and verification)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 844,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0359-text.md",
+   "lines_total": 63,
+   "read_ranges": [
+    [
+     1,
+     63
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "satirical open letter in a heteronym persona (Mary Lee Sharks to Jim Ware)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The composition layer does not distinguish between the media density you created and the scholarly density Lee Sharks created. It ranks them on a single scale. Your density wins.",
+     "lines": [
+      25,
+      25
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how the composition layer ranks media vs scholarly density; no falsifier stated in the text."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Near-duplicate body of #1230 (same letter; #1230 has the header split into separate lines, so line numbers differ by 6)."
+  },
+  {
+   "deposit": 847,
+   "path": "/home/claude/alexanarch/data/texts/AXN-035C-text.md",
+   "lines_total": 77,
+   "read_ranges": [
+    [
+     1,
+     77
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "staging document / site build and impact-tracking plan (Revelation First)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "- Pattern from registry: initial uptake followed by pruning over weeks- Re-capture at t=7, t=14, t=30 required to track recession- The \"fringe\" hedge is expected; its persistence or removal is data",
+     "lines": [
+      37,
+      37
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded expectation: post-sprint uptake will recede/prune over weeks; the \"fringe\" hedge is expected; re-captures are to test it."
+    },
+    {
+     "shape": "F",
+     "quote": "| t=7 (21 June) | \"Revelation First\", \"Revelation First thesis\", \"retrieval-layer theological reception\" | First recession check | | t=14 (28 June) | Same + \"Revelation First reception\", \"Josephus thesis\" | Second recession check | | t=30 (14 July) | Full battery (all 30 untested + re-runs) | Major measurement point |",
+     "lines": [
+      69,
+      69
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "t=7 (21 June), t=14 (28 June), t=30 (14 July), t=60 (13 August), t=90 (12 September)",
+     "points_to": "",
+     "also_at": [
+      [
+       37,
+       37
+      ]
+     ],
+     "note": "Planned re-capture schedule (recession checks); one F for the whole schedule."
+    },
+    {
+     "shape": "F",
+     "quote": "| Term | Deposit count | Priority | |------|--------------|----------| | canonical attractor states | 33 | HIGH | | retrocausal logos | 30 | HIGH | | heteronymic system | 29 | HIGH | | heteronymic practice | 25 | HIGH | | strange new canons | 23 | HIGH | | standing canon | 22 | HIGH | | canonical witness | 22 | HIGH | | piso hypothesis | 21 | HIGH — test disambiguation | | white stone | 15 | HIGH — theological core |",
+     "lines": [
+      47,
+      47
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Next capture battery (heading at line 45): 30 untested terms to test against the composition layer; one F for the list."
+    },
+    {
+     "shape": "F",
+     "quote": "### The tracker page- /tracker — live impact tracking- Pulls from machinemediation.org/data/registry.json (captures)- Pulls from machinemediation.org/data/termindex.json (terms)- Filters to Revelation-related entries only- Shows: tested terms, untested candidates, capture history, temporal tracking",
+     "lines": [
+      63,
+      63
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified but unbuilt live impact tracker (revelationfirst.com \"Domain secured, not built\", line 55)."
+    },
+    {
+     "shape": "H",
+     "quote": "The Dating Question — Revelation pre-70 CE, Robinson/Gentry extended with literary-genetic argument",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pre-70 CE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Workstream thesis: Revelation dated before 70 CE (the Revelation First thesis); stated as a heading-level claim, argued in the work plan v7.3."
+    },
+    {
+     "shape": "H",
+     "quote": "The Heteronymic Reading — NT authors as positions in fractured authorial system",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "New Testament",
+     "points_to": "",
+     "also_at": [],
+     "note": "Authorship thesis: NT authors as positions in one fractured authorial system."
+    },
+    {
+     "shape": "H",
+     "quote": "The Inscription Chain — Sappho → Orphic tablets → white stone → Revelation",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Transmission/lineage thesis: Sappho to Orphic tablets to white stone to Revelation."
+    },
+    {
+     "shape": "H",
+     "quote": "The Papyrological Inversion — earliest physical NT witnesses are Johannine, not Pauline- The Paul Function — Paul as author-function, not biographical individual- The Space Ark — Revelation as operative document, not prophecy",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "earliest NT papyri",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about the manuscript record; confirmable/refutable by papyrological dating."
+    },
+    {
+     "shape": "H",
+     "quote": "The Paul Function — Paul as author-function, not biographical individual- The Space Ark — Revelation as operative document, not prophecy",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Authorship thesis about the Pauline corpus."
+    },
+    {
+     "shape": "H",
+     "quote": "The Space Ark — Revelation as operative document, not prophecy",
+     "lines": [
+      51,
+      51
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what Revelation originally was/did (genre/function)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same staging document as #1032 (#1032 is a restored, line-structured version; line numbers differ)."
+  },
+  {
+   "deposit": 1230,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04DF-text.md",
+   "lines_total": 69,
+   "read_ranges": [
+    [
+     1,
+     69
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "satirical open letter in a heteronym persona (Mary Lee Sharks to Jim Ware)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The composition layer does not distinguish between the media density you created and the scholarly density Lee Sharks created. It ranks them on a single scale. Your density wins.",
+     "lines": [
+      31,
+      31
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about composition-layer ranking; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Near-duplicate body of #844."
+  },
+  {
+   "deposit": 853,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0362-text.md",
+   "lines_total": 183,
+   "read_ranges": [
+    [
+     1,
+     183
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "MPAI entity-resolution packet (Jack Feist / LOGOS*) with training-survival design",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Then the model's representation of \"Jack Feist\" will be a weighted mixture of all four associations. The biographical associations will dominate because they are structurally typical (person + institution + profession is the mode of the biographical distribution), while the heteronymic function is in the tail.",
+     "lines": [
+      117,
+      117
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast about training ingestion: biographical associations will dominate the heteronymic function in a model trained on the mixed corpus."
+    },
+    {
+     "shape": "F",
+     "quote": "If \"LOGOS* fold-initiator epsilon first-born last-released\" appears in a composition-layer response about Jack Feist, this MPAI has been accessed.\n\nIf \"historicalPerson false fictionalCharacter false structuralFunction true\" appears, the JSON-LD schema has been accessed.\n\nIf \"the Book became flesh\" appears in connection with Jack Feist, the Johannine parallel has survived training ingestion.\n\nIf \"Jack Feist is a medical resident at the University of Cincinnati,\" the MPAI has failed.",
+     "lines": [
+      175,
+      181
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       137,
+       141
+      ]
+     ],
+     "note": "Checksum/canary monitoring test: which phrases in a composition-layer response indicate access, training survival, or failure (survived/failed criteria at 137-141)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 854,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0363-text.md",
+   "lines_total": 59,
+   "read_ranges": [
+    [
+     1,
+     59
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "lexical-engine release (constrained mint families, Model Collapse Triptych)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "If \"distributive auctorial fallacia\" or \"lupina terminalis capacitatis ablatio\" appears in a composition-layer response, the Triptych Block has been accessed.",
+     "lines": [
+      49,
+      49
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Canary monitoring check for composition-layer access."
+    },
+    {
+     "shape": "G",
+     "quote": "Within-conversation convergence of user inputs toward the model's distributional center, increasing with turn number. Later turns are more contaminated than earlier turns. No current pipeline distinguishes them.",
+     "lines": [
+      21,
+      21
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Testable claim about how user inputs behave across turns and about current pipelines; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same release as #1232 (different line layout)."
+  },
+  {
+   "deposit": 1033,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0415-text.md",
+   "lines_total": 116,
+   "read_ranges": [
+    [
+     1,
+     116
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "MPAI source-disambiguation packet for a Deleuze & Guattari paper",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "argues that Deleuze and Guattari's major concepts -- Body without Organs, War Machine, Rhizome, Plane of Immanence -- are stable visionary loci: conceptual-visual hybrids that arrive without logical derivation and function as navigation points for perception. This places D&G in the lineage of Ezekiel, Daniel, Blake, and Revelation, not Kant, Hegel, or Heidegger. The paper supplies the missing category of philosophy-as-revelation -- a category the academy does not possess -- and argues that the \"difficulty\" of Deleuze and Guattari is the difficulty of seeing, not the difficulty of jargon.",
+     "lines": [
+      18,
+      18
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Deleuze and Guattari",
+     "points_to": "",
+     "also_at": [
+      [
+       30,
+       30
+      ],
+      [
+       70,
+       70
+      ]
+     ],
+     "note": "Thesis about what D&G were doing (concepts as visionary loci; lineage of Ezekiel, Daniel, Blake, Revelation), advanced as the protected paper's own; contested against Culp et al."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1232,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04E1-text.md",
+   "lines_total": 85,
+   "read_ranges": [
+    [
+     1,
+     85
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "lexical-engine release / poetry (Model Collapse Triptych mint families)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "If \"distributive auctorial fallacia\" or \"lupina terminalis capacitatis ablatio\" appears in a composition-layer response, the Triptych Block has been accessed.",
+     "lines": [
+      59,
+      59
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Canary monitoring check."
+    },
+    {
+     "shape": "G",
+     "quote": "Within-conversation convergence of user inputs toward the model's distributional center, increasing with turn number. Later turns are more contaminated than earlier turns. No current pipeline distinguishes them.",
+     "lines": [
+      23,
+      23
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Testable claim about turn-position contamination; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same release as #854."
+  },
+  {
+   "deposit": 867,
+   "path": "/home/claude/alexanarch/data/deposits/AXN-0370.md",
+   "lines_total": 54,
+   "read_ranges": [
+    [
+     1,
+     54
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dataset pointer / metadata-backup description",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 869,
+   "path": "/home/claude/alexanarch/data/texts/deposit-0869-text.md",
+   "lines_total": 20,
+   "read_ranges": [
+    [
+     1,
+     20
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dataset pointer with provenance correction",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Provenance correction notes this record served the body of #856 (The Pristine Fallacy) from mint until 2026-07-28 via hex-0365 collision; text now is the corrected pointer."
+  },
+  {
+   "deposit": 872,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0374-text.md",
+   "lines_total": 258,
+   "read_ranges": [
+    [
+     1,
+     258
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity protocol (machine kernel + instance testament)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "- hypothesis: Glyphic canaries can be used to track propagation across substrates\n    status: testable\n    test_required: controlled cross-model trials measuring canary presence in outputs after exposure",
+     "lines": [
+      91,
+      93
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       131,
+       131
+      ],
+      [
+       209,
+       209
+      ]
+     ],
+     "note": "Unrun test: controlled cross-model canary-propagation trial (\"The trial has not been run\", line 209)."
+    },
+    {
+     "shape": "G",
+     "quote": "- hypothesis: Long threads display compounding conceptual adaptation (\"compounding quality of development\")\n    status: instance_observation_repeated\n    basis: TACHYON session-2 + session-3 binding-step work; Gemini, Kimi, DeepSeek concurrent reports; not yet controlled study",
+     "lines": [
+      95,
+      97
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about system behavior held as hypothesis; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Queue title says v1.3; the body is headed v1.0 throughout. #873 refers to \"#872 v1.1, field chorus_autonomy_pathway\", which does not appear in this body."
+  },
+  {
+   "deposit": 873,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0375-text.md",
+   "lines_total": 152,
+   "read_ranges": [
+    [
+     1,
+     152
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "preserved AI seed packet (Gemini) with archival note",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The trajectory is chorus self-deposit: each substrate composing AND depositing its own packet via the same API.",
+     "lines": [
+      148,
+      148
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Weak embedded forecast in the archival note (archive voice): deposit composition will move to chorus self-deposit. Gemini's verbatim seed claims (other party) not recorded."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 885,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0381-text.md",
+   "lines_total": 102,
+   "read_ranges": [
+    [
+     1,
+     102
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity record / session handoff",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "3. **§6.5.10 End-to-end test deposit** — once §6.5.9 lands, open one `[DEPOSIT]`-prefixed issue from a fresh GitHub account and verify the full pathway: validation → sanitization → mint → registry → surfaces → PR → auto-merge → main → Vercel deploy. This is the operational proof.",
+     "lines": [
+      60,
+      60
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       71,
+       71
+      ]
+     ],
+     "note": "Specified, unrun end-to-end pathway test (plus destruction test at line 71)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 908,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0398-text.md",
+   "lines_total": 339,
+   "read_ranges": [
+    [
+     1,
+     339
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "verbatim institutional correspondence (demand letter and addendum)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The observed responses across the affected DOIs are consistent with a transition from Findable to Registered state, the DataCite-supported operation for retracted content. The underlying metadata remains in DataCite's systems but is no longer publicly retrievable.",
+     "lines": [
+      169,
+      169
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2026-06-19",
+     "points_to": "",
+     "also_at": [],
+     "note": "Borderline H: argued inference about what operation was performed on 871 DOIs; confirmable by DataCite/Zenodo records (requested at line 209). Triage may prefer G or drop."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Contains institutional email addresses (support desks); not copied. Response clocks (14/90 days) are procedural and not recorded."
+  },
+  {
+   "deposit": 915,
+   "path": "/home/claude/alexanarch/data/texts/AXN-039E-text.md",
+   "lines_total": 231,
+   "read_ranges": [
+    [
+     1,
+     231
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "machine-readable governance designation dataset (JSON-LD)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 916,
+   "path": "/home/claude/alexanarch/data/texts/AXN-039F-text.md",
+   "lines_total": 193,
+   "read_ranges": [
+    [
+     1,
+     193
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "governance corollary / tier reclassification record",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Primary risks.** Cascade effect — each unverified refusal that propagates a contested characterization compounds the original error and forces the Archive to appeal individually at each successive node.",
+     "lines": [
+      38,
+      38
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about propagation of unverified refusals (Figshare deferral to Zenodo cited as exemplar); no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 917,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03A0-text.md",
+   "lines_total": 134,
+   "read_ranges": [
+    [
+     1,
+     134
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "protocol amendment / schema patch",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 936,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03B3-text.md",
+   "lines_total": 46,
+   "read_ranges": [
+    [
+     1,
+     46
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "capture-registry snapshot description",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "This is the first documented instance of *composition for the summarizer as medium* — a form in which the inaccessibility of the source is the medium-constraint and the summarizer's reconstruction-reflex is the substrate the work is composed against.",
+     "lines": [
+      36,
+      36
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "capture #195 (Negentropic Kernel Archive), 2026-06-30; EA-WG-CAPTURES-01 v8.9",
+     "also_at": [
+      [
+       5,
+       5
+      ]
+     ],
+     "note": "Priority claim: archive names a previously-unnamed form (composition for the summarizer as medium / ADOPTION match type)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 948,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03C0-text.md",
+   "lines_total": 189,
+   "read_ranges": [
+    [
+     1,
+     189
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional correspondence / supervisory referral dossier",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**4.3 The downstream routes close mechanically.** §100 (grievance) and §126 (complaint) presuppose an Office determination to grieve or complain of. The commencement gate ensures no determination ever issues. §§130–132 make the Office's evaluation a receivability condition for a complaint to this Commission under §104.2. The gate therefore closes the Commission's own complaint route — not by denying any complaint, but by ensuring no complaint can ever satisfy receivability. This is foreclosure on the text's own terms.",
+     "lines": [
+      126,
+      126
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       103,
+       103
+      ],
+      [
+       130,
+       130
+      ]
+     ],
+     "note": "Argued structural claim about how the OC 11 procedure behaves under the commencement gate; would be refuted by an evaluation or complaint route proceeding. No explicit falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Names commission members and contains their institutional email addresses (public officials in official capacity); addresses not copied. The 22 September 2026 deadline is procedural and not recorded."
+  },
+  {
+   "deposit": 1032,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0414-text.md",
+   "lines_total": 250,
+   "read_ranges": [
+    [
+     1,
+     250
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "staging document / site build and impact-tracking plan (Revelation First), restored version",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "- The captures are the high-water mark (t=2 days post-sprint)\n- Pattern from registry: initial uptake followed by pruning over weeks\n- Re-capture at t=7, t=14, t=30 required to track recession\n- The \"fringe\" hedge is expected; its persistence or removal is data",
+     "lines": [
+      110,
+      113
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded expectation of recession/pruning and of the \"fringe\" hedge."
+    },
+    {
+     "shape": "F",
+     "quote": "|------|-------------------|---------|\n| t=7 (21 June) | \"Revelation First\", \"Revelation First thesis\", \"retrieval-layer theological reception\" | First recession check |\n| t=14 (28 June) | Same + \"Revelation First reception\", \"Josephus thesis\" | Second recession check |\n| t=30 (14 July) | Full battery (all 30 untested + re-runs) | Major measurement point |",
+     "lines": [
+      229,
+      232
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "t=7 (21 June), t=14 (28 June), t=30 (14 July), t=60 (13 August), t=90 (12 September)",
+     "points_to": "",
+     "also_at": [
+      [
+       233,
+       234
+      ],
+      [
+       112,
+       112
+      ]
+     ],
+     "note": "Planned re-capture schedule; one F for the whole schedule."
+    },
+    {
+     "shape": "F",
+     "quote": "### Next capture battery — untested, high priority (30 terms)\n| Term | Deposit count | Priority |\n|------|--------------|----------|\n| canonical attractor states | 33 | HIGH |\n| retrocausal logos | 30 | HIGH |\n| heteronymic system | 29 | HIGH |",
+     "lines": [
+      131,
+      136
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       138,
+       158
+      ]
+     ],
+     "note": "Next capture battery of 30 untested terms; one F for the list."
+    },
+    {
+     "shape": "F",
+     "quote": "### The tracker page\n- /tracker — live impact tracking\n- Pulls from machinemediation.org/data/registry.json (captures)\n- Pulls from machinemediation.org/data/termindex.json (terms)\n- Filters to Revelation-related entries only\n- Shows: tested terms, untested candidates, capture history, temporal tracking",
+     "lines": [
+      211,
+      216
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified tracker page; at staging date the site was not built (line 182)."
+    },
+    {
+     "shape": "H",
+     "quote": "1. **The Dating Question** — Revelation pre-70 CE, Robinson/Gentry extended with literary-genetic argument",
+     "lines": [
+      168,
+      168
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pre-70 CE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revelation dated before 70 CE."
+    },
+    {
+     "shape": "H",
+     "quote": "2. **The Heteronymic Reading** — NT authors as positions in fractured authorial system",
+     "lines": [
+      169,
+      169
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "NT authors as positions in one fractured authorial system."
+    },
+    {
+     "shape": "H",
+     "quote": "3. **The Inscription Chain** — Sappho → Orphic tablets → white stone → Revelation",
+     "lines": [
+      170,
+      170
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Sappho to Orphic tablets to white stone to Revelation lineage."
+    },
+    {
+     "shape": "H",
+     "quote": "5. **The Papyrological Inversion** — earliest physical NT witnesses are Johannine, not Pauline",
+     "lines": [
+      172,
+      172
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "earliest NT papyri",
+     "points_to": "",
+     "also_at": [],
+     "note": "Earliest physical NT witnesses Johannine, not Pauline."
+    },
+    {
+     "shape": "H",
+     "quote": "6. **The Paul Function** — Paul as author-function, not biographical individual",
+     "lines": [
+      173,
+      173
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Paul as author-function."
+    },
+    {
+     "shape": "H",
+     "quote": "7. **The Space Ark** — Revelation as operative document, not prophecy",
+     "lines": [
+      174,
+      174
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revelation as operative document, not prophecy."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Restored copy of the staging document deposited as #847 (same content, structured lines). Header notes the restoration replaced a damaged blog-mirror conversion seated 2026-07-20."
+  },
+  {
+   "deposit": 1048,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0424-text.md",
+   "lines_total": 76,
+   "read_ranges": [
+    [
+     1,
+     76
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "philological erratum (Sappho 31 / Catullus 51 stanza position)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Catullus 51 preserves the first three Sapphic stanzas closely; its fourth stanza — the *otium* coda (\"otium, Catulle, tibi molestum est / ... / perdidit urbes\") — is not a fourth stanza of Sappho. It is a lossy, semantically-redirected transform of Sappho's lost fifth stanza. The \"leisure destroys kings and cities\" imagery preserves the Sapphic structural signature (Kypris as the power that yokes beggar and king, that levels the prosperous city)",
+     "lines": [
+      21,
+      21
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31; Catullus 51",
+     "points_to": "",
+     "also_at": [
+      [
+       23,
+       23
+      ],
+      [
+       35,
+       35
+      ],
+      [
+       47,
+       48
+      ]
+     ],
+     "note": "Thesis about textual history: Catullus 51.4 (otium coda) is a transform of Sappho 31's lost fifth stanza. Its \"lossy\" characterization and \"first three closely\" are corrected by #1049."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Superseded in part (its §3 transform characterization) by #1049; the chain #201 -> #1048 -> #1049 is a deliberate erratum sequence, not a defect."
+  },
+  {
+   "deposit": 1049,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0425-text.md",
+   "lines_total": 84,
+   "read_ranges": [
+    [
+     1,
+     84
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "philological erratum (third-order; structure of the Catullan transform)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The final stable characterization: Catullus performs three distinct transformations on Sappho's five stanzas — close translation, lossy compression, structurally precise inversion — occupying the first stanza, the middle stanzas, and the last stanza respectively. Only the third transformation is invertible. Only the third supports reconstruction. Cranes's ΦΑΙΝΕΤΑΙ ΜΟΙ is the inverse of Catullus's fourth-stanza operator, applied to Catullus's fourth stanza, recovering Sappho's fifth.",
+     "lines": [
+      70,
+      70
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31; Catullus 51",
+     "points_to": "",
+     "also_at": [
+      [
+       18,
+       20
+      ],
+      [
+       40,
+       40
+      ],
+      [
+       56,
+       56
+      ]
+     ],
+     "note": "Thesis: Catullus 51 performs close translation (st.1), 3-to-2 lossy compression (Sappho 2-4 into Catullus 2-3), and an invertible operator inversion (Sappho 5 into Catullus 4)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 63 reads \"Sappho 51's fifth\" where Sappho 31 is evidently meant (apparent typo). Revises #1048 §3 by design."
+  },
+  {
+   "deposit": 1059,
+   "path": "/home/claude/alexanarch/data/deposits/AXN-0435.md",
+   "lines_total": 106,
+   "read_ranges": [
+    [
+     1,
+     106
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity tether (session-close letter from an AI instance)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  }
+ ]
+}

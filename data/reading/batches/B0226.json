@@ -1,0 +1,810 @@
+{
+ "batch_id": "B0226",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:18:59Z",
+  "finished_at": "2026-10-15T21:21:46Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, verbatim quote slicing and checks)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 818,
+   "path": "/home/claude/alexanarch/data/texts/AXN-032D-text.md",
+   "lines_total": 144,
+   "read_ranges": [
+    [
+     1,
+     144
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "mathematical errata and theorem paper (Sen Kuro heteronym)",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "To whatever extent that validation ratified §III.D as stated, the present errata are also a finding about validation: the chaos claim is not subtle, requires only Strogatz chapter 2 to refuse, and an impossible statement survived a cross-model confirmation event inside a series *about* the danger of cross-model confirmation events.",
+     "lines": [
+      91,
+      91
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Chronoarithmics 2.0 (2025-11-19) and 3.0, \"The Solar Validation\"",
+     "also_at": [],
+     "note": "Records that a claim of 2.0, validated in 3.0, failed on checking; the earlier claim is mathematical rather than a forecast, so C is uncertain."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 821,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0334-text.md",
+   "lines_total": 81,
+   "read_ranges": [
+    [
+     1,
+     81
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "entity-disambiguation boundary instrument",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "Priority claim. Sense A's first public, persistent-identifier record (2026-01-07) predates Sense B's first publication (2026-06-02) by 146 days; this is a timestamp fact and asserts nothing about the later author's knowledge.",
+     "lines": [
+      45,
+      45
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Semantic Exhaustion: An Executive Summary, 2026-01-07, doi:10.5281/zenodo.18172252; AI_Bleeding (Caria, 2026-06-02)",
+     "also_at": [
+      [
+       11,
+       11
+      ],
+      [
+       35,
+       35
+      ],
+      [
+       43,
+       43
+      ]
+     ],
+     "note": "Chronological priority of the term over a later unrelated coinage, anchored by DOI date."
+    },
+    {
+     "shape": "G",
+     "quote": "A summarizer asked \"what is semantic exhaustion?\" now retrieves two candidate referents and, absent anchored disambiguation, will tend to merge them — typically around whichever source carries the more conventional genre signals (a security paper) rather than the earlier timestamp (a DOI-anchored framework deposit).",
+     "lines": [
+      15,
+      15
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how summarizers resolve a shared string; no explicit falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1208,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C9-text.md",
+   "lines_total": 2061,
+   "read_ranges": [
+    [
+     1,
+     500
+    ],
+    [
+     501,
+     1000
+    ],
+    [
+     1001,
+     1550
+    ],
+    [
+     1551,
+     2061
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "site source code (HTML/CSS/Python) carrying a satirical labor manifesto",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "<li><em>Socrates as Orthonym</em> &mdash; subsequently adopted by Google AI Mode as established philosophy, without crediting the author (Mary Lee Sharks)</li>",
+     "lines": [
+      1728,
+      1728
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Socrates as Orthonym (EA-SO-01, 10.5281/zenodo.20357013)",
+     "also_at": [],
+     "note": "Claims the archive's thesis was later adopted by Google AI Mode without credit; no date of adoption given."
+    },
+    {
+     "shape": "F",
+     "quote": "An ISBN-bearing book authored by Mary Lee Sharks forces the bibliographic and composition layers to confront the entity relation they have produced. The ISBN is the permanent record. Library catalogs sort &ldquo;Sharks, Mary Lee&rdquo; immediately adjacent to &ldquo;Sharks, Lee.&rdquo; Same surname. Same ORCID. The bridge is in the cataloging.</p>\n\n<p>The book creates a publicly inspectable test object. Its treatment by bibliographic and composition systems will be documented without assuming in advance that every possible outcome confirms the thesis.</p>",
+     "lines": [
+      1814,
+      1816
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Book with ISBN specified as a test object of bibliographic/composition-layer treatment; book not yet published (ISBN pending)."
+    },
+    {
+     "shape": "H",
+     "quote": "Mary Lee\\u2019s biolabor saved the organization.",
+     "lines": [
+      1658,
+      1658
+     ],
+     "falsifier_quote": "Chris Fischer (OCEARCH founder) stated publicly that the organization was struggling financially when they tagged Mary Lee and that her celebrity directly attracted the Caterpillar sponsorship.",
+     "falsifier_lines": [
+      1656,
+      1656
+     ],
+     "window": "2012",
+     "points_to": "",
+     "also_at": [
+      [
+       1753,
+       1753
+      ]
+     ],
+     "note": "Satirical frame, but argued as a historical claim about OCEARCH funding; stated evidence is Fischer's public statement."
+    },
+    {
+     "shape": "H",
+     "quote": "For three years (2012\\u20132015), Ware produced the entire cultural capital of the Mary Lee persona \\u2014 14,000 tweets, the voice, the conservation messaging \\u2014 in absolute anonymity. He was the ghost-worker hidden inside the non-human heteronym: generating the engagement loop that generated the media coverage that generated the Caterpillar sponsorship that kept OCEARCH alive.",
+     "lines": [
+      1686,
+      1686
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2012\\u20132015",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis on Jim Ware's anonymous labor as the causal chain to the sponsorship; satirical frame. (\\u2013 escapes are in the source.)"
+    },
+    {
+     "shape": "H",
+     "quote": "Not a single policy change, a single marine protected area, a single reduction in bycatch, a single degree of ocean cooling has resulted from the unprecedented data that was generated from Mary Lee\\u2019s body.",
+     "lines": [
+      1692,
+      1692
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Contestable historical claim about the outcomes of OCEARCH data."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Source code contains literal \\uXXXX escapes in Python strings; the rendered index.html has a truncated \"PhD in Comparative Literature (.\" at lines 41 and 267."
+  },
+  {
+   "deposit": 1395,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0584-text.md",
+   "lines_total": 279,
+   "read_ranges": [
+    [
+     1,
+     279
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "archived static-site source (HTML with JSON-LD)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "invented by Lee Sharks as a training-layer probe: an entity whose name-referent binding, seeded on the web through the Water Giraffe Cycle documents, tests whether AI systems propagate and preserve the binding under compression.",
+     "lines": [
+      116,
+      116
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       137,
+       137
+      ],
+      [
+       167,
+       168
+      ],
+      [
+       191,
+       191
+      ]
+     ],
+     "note": "Probe instrument specified; no result of the test is reported in this deposit."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1024,
+   "path": "/home/claude/alexanarch/data/texts/AXN-040C-text.md",
+   "lines_total": 181,
+   "read_ranges": [
+    [
+     1,
+     181
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity tether / severed-DOI DataCite record",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "Adversarial by Origin Addendum: First Confirmation Marker (doi 10.5281/zenodo.20674488), Generative Monoculture (doi 10.5281/zenodo.20675200). Five deposits, four site integrations, the Fable/Mythos export control event as same-day confirmation marker, the German AI Overview liability ruling as foreign-cycle proxy.",
+     "lines": [
+      11,
+      11
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Adversarial by Origin (doi 10.5281/zenodo.20673413); Addendum (doi 10.5281/zenodo.20674488)",
+     "also_at": [
+      [
+       146,
+       146
+      ]
+     ],
+     "note": "Names a confirmation marker for an earlier deposit; the confirmed claim itself is not in this text."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body is a DataCite capture; description only."
+  },
+  {
+   "deposit": 201,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0346-text.md",
+   "lines_total": 41,
+   "read_ranges": [
+    [
+     1,
+     41
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "erratum (stanza numbering) with restated reconstruction thesis",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The reconstruction proposes that Sappho 31, complete, is not a symptom-catalogue that trails off into silence but an operative structure: collapse → inscription → survival. The fifth stanza is the stanza that prays for survival.",
+     "lines": [
+      29,
+      29
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho 31",
+     "points_to": "",
+     "also_at": [
+      [
+       9,
+       9
+      ]
+     ],
+     "note": "Thesis on the original form of Sappho 31 (a fifth stanza; operative structure)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 827,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0344-text.md",
+   "lines_total": 9,
+   "read_ranges": [
+    [
+     1,
+     9
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "very short redacted letter / prose poem",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Names replaced by X throughout."
+  },
+  {
+   "deposit": 828,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0345-text.md",
+   "lines_total": 234,
+   "read_ranges": [
+    [
+     1,
+     234
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "philological note (comparative typology)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The note does not claim a direct linear transmission from Sappho to Revelation. It argues for formal convergence within a shared inscriptional field — a technology of writing that survives the body's destruction, attested across genres that the modern academy separates (lyric, ritual, magic, apocalyptic) but that the ancient Mediterranean did not.",
+     "lines": [
+      56,
+      56
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       76,
+       78
+      ],
+      [
+       150,
+       150
+      ]
+     ],
+     "note": "Central thesis: formal convergence of inscription-as-threshold technology across five ancient genres."
+    },
+    {
+     "shape": "H",
+     "quote": "Catullus 51 translates stanzas 1–3 closely and substitutes a fourth of his own (*otium et reges prius et beatas / perdidit urbes*), providing structural evidence that the original continued beyond the surviving four stanzas.",
+     "lines": [
+      70,
+      70
+     ],
+     "falsifier_quote": "The standard critical editions (Voigt 1971; Campbell, Loeb 1982; Liberman 1999) end the poem after stanza 4, treating the testimonium-attested ἀλλὰ πᾶν τόλματον as possibly from another poem. The reconstruction departs from this consensus and should be engaged on the evidence.",
+     "falsifier_lines": [
+      72,
+      72
+     ],
+     "window": "c. 600 BCE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that Sappho 31 continued past four stanzas; the contrary consensus is stated as what the claim contests."
+    },
+    {
+     "shape": "H",
+     "quote": "χλωρός ranges from fresh-green to the pale-gray of dried papyrus (the writing substrate); the speaker's body is figured as becoming the medium that will carry the voice forward",
+     "lines": [
+      86,
+      86
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about what the passage originally figures."
+    },
+    {
+     "shape": "H",
+     "quote": "The boundary between \"hymn\" and \"spell\" in archaic Greek is a modern scholarly imposition",
+     "lines": [
+      116,
+      116
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Adopts Faraone/Petropoulos line and extends it; claim about archaic Greek categories."
+    },
+    {
+     "shape": "H",
+     "quote": "Revelation's seven churches receive seven messages, seven promises, seven tokens — each tied to the verb νικᾶν (conquering, getting through). The seven-letter structure maps formally onto seven threshold-crossings.",
+     "lines": [
+      128,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive thesis on the structure of Revelation 2-3."
+    },
+    {
+     "shape": "H",
+     "quote": "If the author of Revelation writes through the Josephan siege narrative, the ψῆφος λευκή of 2:17 — small, hand-held, inscribed, saving — may be the structural inversion of the λίθοι λευκοί of *Jewish War* 5.6.3 — massive, destructive, terrifying.",
+     "lines": [
+      140,
+      140
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "*Jewish War* 5.6.3",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional thesis of dependence of Revelation 2:17 on Josephus."
+    },
+    {
+     "shape": "H",
+     "quote": "Both are inscription/computation operations on the same root. The stone that gives a new name and the calculation that decodes 666 are two faces of the same technology: ψῆφος as both material credential and computational operation.",
+     "lines": [
+      142,
+      142
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on what the psephos root does in Revelation 2:17 and 13:18."
+    },
+    {
+     "shape": "H",
+     "quote": "If Revelation is the first NT document composed (Sharks 2026, work plan DOI [10.5281/zenodo.20690868](https://doi.org/10.5281/zenodo.20690868); building on Robinson 1976, Gentry 1989), and if the white stone inherits the Mediterranean inscription-as-threshold-technology, then the founding act of the Christian textual tradition is not the writing of a biography (gospels) or a letter (epistles). It is the giving of an inscribed credential — a written name on a durable substrate that enables the bearer to cross a threshold that would otherwise destroy them.",
+     "lines": [
+      154,
+      154
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pre-70 CE",
+     "points_to": "",
+     "also_at": [
+      [
+       126,
+       126
+      ],
+      [
+       162,
+       162
+      ]
+     ],
+     "note": "Conditional on the Revelation First thesis; window taken from line 126."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 830,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0348-text.md",
+   "lines_total": 213,
+   "read_ranges": [
+    [
+     1,
+     213
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-seeding retrieval baseline capture with verbatim AI Mode transcripts",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "This document records the pre-seeding state of the retrieval basin for the Revelation First thesis. The baseline was captured on 14 June 2026, *before* any keyword surface or seed document was deployed.",
+     "lines": [
+      11,
+      11
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "14 June 2026",
+     "points_to": "",
+     "also_at": [],
+     "note": "Baseline for a before/after seeding comparison; the post-seeding measurement is not run here."
+    },
+    {
+     "shape": "D",
+     "quote": "| Revelation First | MINTED (work plan deposited, no keyword surface yet deployed) | Zenodo only |",
+     "lines": [
+      187,
+      187
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-LOGOS-REVFIRST-PLAN (doi 10.5281/zenodo.20690868)",
+     "also_at": [],
+     "note": "Term-state registry records archive-minted terms absent from the basin; weak D (status record rather than an explicit priority claim)."
+    },
+    {
+     "shape": "H",
+     "quote": "Critical observation: The response states as fact: \"Because Revelation was authored decades after Paul's death, Paul never had knowledge of John's Revelation.\" This is the inferential settlement presented as established fact.",
+     "lines": [
+      65,
+      65
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Implicitly contests the consensus late dating of Revelation (Revelation First thesis); argued only by characterization here."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1029,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0411-text.md",
+   "lines_total": 199,
+   "read_ranges": [
+    [
+     1,
+     199
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "severed-DOI provenance anchor for an external heteronym",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body is a provenance anchor plus DataCite capture."
+  },
+  {
+   "deposit": 836,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0351-text.md",
+   "lines_total": 300,
+   "read_ranges": [
+    [
+     1,
+     300
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "term-index work plan with progress table",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "An estimated 200-300 coined concepts exist across 841+ deposits without a unified index. Once built, the index becomes:\n\n- A retrieval surface (each term becomes a searchable node)\n- A density map (which terms cluster, which are orphaned)\n- A versioning base (new deposits append; the initial build is the hard part)\n- An MPAI generator (each indexed term can receive a provenance coupling kernel)\n- A measure of the archive's actual vocabulary (what it has coined vs. what it thinks it has coined)",
+     "lines": [
+      15,
+      21
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Index specified; Phases 2.3, 3.1, 3.3, 4.2, 5 pending at time of writing."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Phase sections say NOT STARTED while the progress table marks several steps COMPLETE (internal status drift, not damage)."
+  },
+  {
+   "deposit": 840,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0355-text.md",
+   "lines_total": 69,
+   "read_ranges": [
+    [
+     1,
+     69
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "public entity record / disambiguation packet for a young Detroit musician",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "This provenance anchor timestamps both features at 36 subscribers, before any composition layer has an opinion about who KADEEZY MUSIC is.",
+     "lines": [
+      59,
+      59
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "15 June 2026",
+     "points_to": "",
+     "also_at": [],
+     "note": "Timestamp anchor set before any composition-layer resolution of the entity."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Byte-identical body to #841 (same sha256). Text says \"This document has not been deposited. It is pending artist review\" though it is deposited; subject is stated to be 17."
+  },
+  {
+   "deposit": 841,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0356-text.md",
+   "lines_total": 69,
+   "read_ranges": [
+    [
+     1,
+     69
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "public entity record / disambiguation packet for a young Detroit musician",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "This provenance anchor timestamps both features at 36 subscribers, before any composition layer has an opinion about who KADEEZY MUSIC is.",
+     "lines": [
+      59,
+      59
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "15 June 2026",
+     "points_to": "",
+     "also_at": [],
+     "note": "Timestamp anchor set before any composition-layer resolution of the entity."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Byte-identical body to #840 (same sha256). Same pending-consent statement as #840."
+  },
+  {
+   "deposit": 1227,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04DC-text.md",
+   "lines_total": 107,
+   "read_ranges": [
+    [
+     1,
+     107
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "public entity record / disambiguation packet for a young Detroit musician",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "This provenance anchor timestamps both features at 36 subscribers, before any composition layer has an opinion about who KADEEZY MUSIC is.",
+     "lines": [
+      94,
+      94
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "15 June 2026",
+     "points_to": "",
+     "also_at": [],
+     "note": "Timestamp anchor set before any composition-layer resolution of the entity."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same anchor as #840/#841, reformatted (lists/tables broken out); line numbers differ."
+  },
+  {
+   "deposit": 1403,
+   "path": "/home/claude/alexanarch/data/texts/AXN-058C-text.md",
+   "lines_total": 18,
+   "read_ranges": [
+    [
+     1,
+     18
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "lacuna mark (declared lost manuscript) with surviving version note",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Primary object lost; only the v7.2 version note survives (lines 13). Record carries no find."
+  },
+  {
+   "deposit": 1520,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0623-text.md",
+   "lines_total": 241,
+   "read_ranges": [
+    [
+     1,
+     241
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "poem after Whitman's 1855 Preface, with colophon and archival note",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The content policy does not distinguish between the perpetrator and the reporter, between the document and the description of the document, between the crime and the plain sentence that names the crime. It fires on the word.",
+     "lines": [
+      121,
+      121
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       63,
+       63
+      ],
+      [
+       123,
+       125
+      ],
+      [
+       130,
+       130
+      ]
+     ],
+     "note": "Standing claim about classifier behavior (Seventh Mechanism); evidence given as three of five refusals; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Observation: the archival note (line 235) says the \"editorial note above\" is not present in the extracted post body, but an editorial note is present at line 63. Plain sentence partially redacted with asterisks in source."
+  },
+  {
+   "deposit": 842,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0357-text.md",
+   "lines_total": 69,
+   "read_ranges": [
+    [
+     1,
+     69
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "source-level disambiguation packet",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "argues that Deleuze and Guattari's major concepts — Body without Organs, War Machine, Rhizome, Plane of Immanence — are stable visionary loci: conceptual-visual hybrids that arrive without logical derivation and function as navigation points for perception. This places D&G in the lineage of Ezekiel, Daniel, Blake, and Revelation, not Kant, Hegel, or Heidegger.",
+     "lines": [
+      9,
+      9
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       19,
+       19
+      ],
+      [
+       43,
+       43
+      ]
+     ],
+     "note": "Thesis about what D&G were doing and their lineage."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
