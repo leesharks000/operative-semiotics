@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 328,
+ "deposits_with_notes": 331,
  "deposits": [
   {
    "deposit": 8,
@@ -844,6 +844,28 @@
      "batch_id": "B0083",
      "field": "incidental",
      "text": "Same report as #1394 (AXN-0583), which carries a variant rendering with damaged italics (stray asterisks) and merged list lines."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 194,
+   "notes": [
+    {
+     "batch_id": "B0084",
+     "field": "incidental",
+     "text": "Body duplicated in #1209 (blog-recovered bytes of the same v1.0 work; html2text punctuation differs)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 197,
+   "notes": [
+    {
+     "batch_id": "B0084",
+     "field": "incidental",
+     "text": "Queue title says v1.2; the body is v1.3 (header line 5 and version notes 11-15)."
     }
    ],
    "rulings": []
@@ -3608,6 +3630,17 @@
      "batch_id": "B0083",
      "field": "incidental",
      "text": "Duplicate body: lines 50-408 are the same v2.0 text as #188 (AXN-0330), recovered from the blog after the Zenodo DOIs were severed; finds duplicate #188's. Lines 1-46 are recovery framing (boilerplate falsification line not recorded)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1209,
+   "notes": [
+    {
+     "batch_id": "B0084",
+     "field": "incidental",
+     "text": "Lines 1-46 are restoration frontmatter (TACHYON recovery note, falsification boilerplate at 40 not recorded); lines 48-268 duplicate the body of #194 (offset +54 lines; \"--\" for em dashes, \"_\" for italics). Finds are the same as #194."
     }
    ],
    "rulings": []

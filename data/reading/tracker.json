@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 394,
-  "unread": 1222
+  "read": 399,
+  "unread": 1217
  },
- "h_covered": 394,
+ "h_covered": 399,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 427,
-  "F": 399,
+  "G": 432,
+  "F": 406,
   "E": 111,
-  "B": 263,
-  "A": 126,
-  "C": 128,
-  "D": 136,
-  "H": 472
+  "B": 275,
+  "A": 132,
+  "C": 132,
+  "D": 139,
+  "H": 479
  },
- "finds_verified": 2004,
- "finds_total": 2062,
+ "finds_verified": 2028,
+ "finds_total": 2106,
  "deposits": [
   {
    "deposit": 172,
@@ -29022,10 +29022,13 @@
      },
      "none_found": false,
      "incidental": "Same body as #1205 (AXN-04C6), which is the blog-recovered copy of this v2.0 text; finds are duplicated there.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 341,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29069,10 +29072,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 57,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29118,10 +29124,13 @@
      },
      "none_found": false,
      "incidental": "Same report as #1394 (AXN-0583), which carries a variant rendering with damaged italics (stray asterisks) and merged list lines.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 117,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29170,10 +29179,13 @@
      },
      "none_found": false,
      "incidental": "Edition note says the Guillory 1993 page references are carried over and unverified against print.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 260,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29224,10 +29236,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body: lines 50-408 are the same v2.0 text as #188 (AXN-0330), recovered from the blog after the Zenodo DOIs were severed; finds duplicate #188's. Lines 1-46 are recovery framing (boilerplate falsification line not recorded).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 408,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29273,10 +29288,13 @@
      },
      "none_found": false,
      "incidental": "Same report as #192 (AXN-0336). This rendering has damaged markup: italics lost and replaced by stray trailing asterisks, and some list items merged with the following paragraph (e.g. lines 28, 58, 144).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 150,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29323,10 +29341,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 131,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29338,9 +29359,49 @@
    "tier": 1,
    "words": 7101,
    "batch_id": "B0084",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0084",
+     "run": "R-w15-B0084",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic AI assistant) running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:10:57Z",
+      "finished_at": "2026-10-15T20:13:09Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       169
+      ]
+     ],
+     "lines_total": 169,
+     "genre_observed": "legal-theoretical paper (security law and machine speech) with registered falsification conditions",
+     "finds_by_shape": {
+      "A": 1,
+      "B": 6,
+      "F": 1,
+      "H": 1,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Body duplicated in #1209 (blog-recovered bytes of the same v1.0 work; html2text punctuation differs).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 197,
@@ -29349,9 +29410,48 @@
    "tier": 1,
    "words": 6455,
    "batch_id": "B0084",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0084",
+     "run": "R-w15-B0084",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic AI assistant) running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:10:57Z",
+      "finished_at": "2026-10-15T20:13:09Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       115
+      ]
+     ],
+     "lines_total": 115,
+     "genre_observed": "semantic-economic stratigraphy paper with numbered predictions and evidence audit",
+     "finds_by_shape": {
+      "A": 2,
+      "G": 2,
+      "F": 2,
+      "H": 5
+     },
+     "none_found": false,
+     "incidental": "Queue title says v1.2; the body is v1.3 (header line 5 and version notes 11-15).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1209,
@@ -29360,9 +29460,49 @@
    "tier": 1,
    "words": 7572,
    "batch_id": "B0084",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0084",
+     "run": "R-w15-B0084",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic AI assistant) running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:10:57Z",
+      "finished_at": "2026-10-15T20:13:09Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       268
+      ]
+     ],
+     "lines_total": 268,
+     "genre_observed": "recovered blog-canonical copy of the same legal-theoretical paper as #194, with restoration frontmatter",
+     "finds_by_shape": {
+      "A": 1,
+      "B": 6,
+      "F": 1,
+      "H": 1,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Lines 1-46 are restoration frontmatter (TACHYON recovery note, falsification boilerplate at 40 not recorded); lines 48-268 duplicate the body of #194 (offset +54 lines; \"--\" for em dashes, \"_\" for italics). Finds are the same as #194.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 198,
@@ -29371,9 +29511,46 @@
    "tier": 1,
    "words": 2377,
    "batch_id": "B0084",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0084",
+     "run": "R-w15-B0084",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic AI assistant) running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:10:57Z",
+      "finished_at": "2026-10-15T20:13:09Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       125
+      ]
+     ],
+     "lines_total": 125,
+     "genre_observed": "wound gauge entry: dated five-round AI Overview battery report with transcript",
+     "finds_by_shape": {
+      "D": 1,
+      "C": 3
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 199,
@@ -29382,9 +29559,48 @@
    "tier": 1,
    "words": 5214,
    "batch_id": "B0084",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0084",
+     "run": "R-w15-B0084",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic AI assistant) running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:10:57Z",
+      "finished_at": "2026-10-15T20:13:09Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       292
+      ]
+     ],
+     "lines_total": 292,
+     "genre_observed": "security-theory paper specifying an unrun measurement framework (SSDI/VCC) with falsification conditions",
+     "finds_by_shape": {
+      "A": 2,
+      "G": 3,
+      "F": 3,
+      "C": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 825,
