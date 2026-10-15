@@ -1,0 +1,725 @@
+{
+ "batch_id": "B0209",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic) running as a Claude Code subagent; model reported in environment as claude-opus-5-5",
+  "started_at": "2026-10-15T21:14:17Z",
+  "finished_at": "2026-10-15T21:16:21Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3 (quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1669,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06EB-text.md",
+   "lines_total": 446,
+   "read_ranges": [
+    [
+     1,
+     150
+    ],
+    [
+     151,
+     300
+    ],
+    [
+     301,
+     446
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "historical political-economy paper (second half of two-part argument), numbered sections with notes and open verification list",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The argument claims that Germany was an advanced industrial power for which labor became a binding wartime constraint, and that Lebensraum, a land program on the American and British imperial model, was turned in practice into a labor supply; that the East was conceived as a continental colony, through an institution of inner colonization older than Nazism; that conquest became labor policy, bringing millions of deported civilians and prisoners of war into Reich industry; that war Fordism, dated by Hachtmann from 1933, decomposed work horizontally while the racial state decomposed persons vertically, with wage tier, ration and segregation following classification; that Hachtmann's aptitude tests show the instruments of the verb crossing the racial grade, which the regime overrode; that the camp was attached to the factory from the second half of 1942, as a form whose industrial use engaged a minority of camp prisoners between late 1942 and mid-1944 and whose network spread in 1944; that at the factory camps the prisoner's working day was allocated and replaced as a flow, a third relation beside the owned noun and the hired verb of the first half; and that racial-juridical classification acted as a switch selecting the coercive regime under which the industrial verb was extracted. It does not claim that the camps were founded as labor institutions, that camp labor was a large share of the war economy's workforce, that forced labor was generally profitable, that the Nazi camps descend from the colonial camps of 1900, or that the Holocaust has an economic or colonial cause. Extermination and exploitation sometimes reinforced each other and sometimes destroyed each other's objects. The murder of the Jews of Europe is larger than the labor history told here.",
+     "lines": [
+      241,
+      241
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1933-1945 (Nazi war economy; camp industrial use late 1942 to mid-1944)",
+     "points_to": "",
+     "also_at": [
+      [
+       187,
+       187
+      ],
+      [
+       195,
+       195
+      ],
+      [
+       239,
+       239
+      ]
+     ],
+     "note": "The deposit's own summary of the historical theses it argues (Lebensraum turned into labor supply; inner colonization; war Fordism horizontal/vertical decomposition; campification 1942-44; labor as flow; classification as switch), with its explicit negative claims. Quote exceeds 600 chars because it is a single line; it is the fullest statement."
+    },
+    {
+     "shape": "H",
+     "quote": "**1.6** The objection sharpens this paper's claim. Gordon's remedy for the land problem is a transfer of labor into industry, and industry was where labor ran short. In 1934–35 rearmament brought full employment, and skilled metalworkers \"became a 'scarce commodity'\".[^20] By Herbert's judgment, production would have collapsed in 1942 at the latest without foreign workers.[^7] Lebensraum answered with land. What conquest delivered to the factory, from 1940 onward, was people. Labor became a binding constraint, and the empire pursued for land, settlement and racial reordering also became a mechanism for supplying it.",
+     "lines": [
+      83,
+      83
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "from 1940 onward",
+     "points_to": "",
+     "also_at": [
+      [
+       111,
+       111
+      ]
+     ],
+     "note": "Thesis that conquest delivered labor rather than land to the factory: Lebensraum as labor-supply mechanism."
+    },
+    {
+     "shape": "H",
+     "quote": "**7.8** The replacement market of Cairnes's maxim was conquest and deportation. The prisoner's death did not appear on the firm's balance sheet as destruction of an owned human capital asset; it registered as lost output, replacement and delay. When selections and mortality cut the Monowitz workforce in half, the firm applied to the SS for more prisoners.[^63] When prisoners were selected at Fürstengrube, \"new prisoners replaced those who had been selected\".[^64] The economic object at these sites was a flow: an allocation of persons per day, drawn from a captured population, reduced by death and refilled by transport. Spoerer's image for the moment of allocation is industry's representatives selecting prisoners as at \"antique or medieval slave markets\".[^6] The analogy holds for the selection. For the asset it fails, since nobody bought the person.",
+     "lines": [
+      181,
+      181
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1942-1944 (Monowitz, Fuerstengrube)",
+     "points_to": "",
+     "also_at": [
+      [
+       179,
+       179
+      ],
+      [
+       183,
+       183
+      ]
+     ],
+     "note": "Thesis that at factory camps the economic object was a flow of allocated person-days, a third relation beside owned noun and hired verb."
+    },
+    {
+     "shape": "H",
+     "quote": "**8.1** The grammar of the two halves. Slavery priced the noun. Fordism specified the verb. War Fordism kept the specified verb and made the noun a switch: racial-juridical classification selected the coercive regime under which the verb was extracted.",
+     "lines": [
+      187,
+      187
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Nazi war economy",
+     "points_to": "",
+     "also_at": [
+      [
+       191,
+       191
+      ],
+      [
+       195,
+       195
+      ]
+     ],
+     "note": "Thesis of racial-juridical classification as a switch selecting the coercive regime; the paper's central formula."
+    },
+    {
+     "shape": "H",
+     "quote": "**11.4** Arendt's continental imperialism is the frame this paper needs, and the boomerang is the case it sets aside. The boomerang returns colonial methods from a distant colony to the metropole. Continental imperialism, in Arendt's words, \"does not allow for any geographic distance between the methods and institutions of colony and of nation\".[^77] Nelson's inner colonization supplies a settlement history of the same problem of geographic contiguity: the frontier \"always within the empire's borders\".[^26] The war economy gave the contiguity a physical form. The conquered population was carried into the core: Soviet civilians in residence camps segregated from Germans; eastern laborers on the line under German foremen; camp prisoners in a subcamp on the plant grounds.[^30][^45][^51] Herbert reads the forced-labor program as the preview of a continent ordered by race.[^34] The colony entered the factory. Conquest was metabolized at the industrial core.",
+     "lines": [
+      233,
+      233
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1941-1944",
+     "points_to": "",
+     "also_at": [
+      [
+       235,
+       235
+      ]
+     ],
+     "note": "Thesis extending Arendt's continental imperialism to labor: the colony entered the factory. Paper says (235) Arendt did not carry her frame into labor."
+    },
+    {
+     "shape": "H",
+     "quote": "**5.7** The complication sets the limit of the composition. At the level of the regime, the noun governed the verb: wage tier, ration, segregation and punishment followed classification.[^31][^30] At the level of the measured operation, the instruments of the verb found individuals, and individual capacity crossed the racial grade.[^47] The first half found the same seam in Taylor, who selected one man from a gang: individuation persisted at the point of selection.[^48] Hachtmann's own clause locates the noun: racism was \"brought into the work world by the Nazis from outside\".[^47] The racial classification came from the state; the production system's own measures tended to disregard it; the state installed it anyway. By Hachtmann's last clause, the softening changed little at the core.",
+     "lines": [
+      145,
+      145
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "from 1941-42; prisoners tested from autumn 1943",
+     "points_to": "",
+     "also_at": [
+      [
+       143,
+       143
+      ]
+     ],
+     "note": "Thesis on aptitude testing: production system's measures crossed the racial grade, state installed classification anyway."
+    },
+    {
+     "shape": "F",
+     "quote": "## Open verification items (stated at deposit)\n\nItems below were either kept out of the prose or are used with the status stated in their notes.\n\n1. Hachtmann, IRSH 2010: page numbers for every quotation (read from the Cambridge Core HTML, which gives no page breaks); the translator, unnamed on the page; Roth's 1991 essay (p. 90) and Sofsky, *Ordnung des Terrors*, pp. 193–225, to be read for their own wording.",
+     "lines": [
+      245,
+      249
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       250,
+       274
+      ]
+     ],
+     "note": "Open verification items: a checklist of sources and figures to be checked, one F for the whole list (items 1-26)."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Title heading duplicated (lines 45 and 47). Note 2 refers to \"To verify before deposit\" while the section is titled \"Open verification items (stated at deposit)\". Line 241 is a single ~2,000-character paragraph; quoted whole as one line."
+  },
+  {
+   "deposit": 1672,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06EE-text.md",
+   "lines_total": 93,
+   "read_ranges": [
+    [
+     1,
+     93
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "corpus seating record (dataset deposit) with record of authorship",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The seat states these as data and draws no inference about intent. A reader who finds a person named as author or acknowledged as collaborator in the seated manuscripts falsifies this record.",
+     "lines": [
+      69,
+      69
+     ],
+     "falsifier_quote": "The seat states these as data and draws no inference about intent. A reader who finds a person named as author or acknowledged as collaborator in the seated manuscripts falsifies this record.",
+     "falsifier_lines": [
+      69,
+      69
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about the seated release with its own falsifier (no person named as author or acknowledged as collaborator)."
+    },
+    {
+     "shape": "F",
+     "quote": "The archive's kernel check of three headline statements reads from the same commit: Kaplansky's direct-finiteness conjecture fails in characteristic two; Hadwiger's conjecture fails, with the clique-minor definition written by the archive; Mathlib's riemannZeta has no zero with real part above 7/8. For each, the Lean kernel must prove a statement the archive restated from OpenAI's theorem and report the axioms used (scripts/verify_openai_math/, workflow verify-openai-math). Its result is entered in the seat record when it runs.",
+     "lines": [
+      81,
+      81
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       93,
+       93
+      ]
+     ],
+     "note": "Kernel check of three headline statements specified, result to be entered when it runs; not yet run at deposit."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Superseded by #1673 (v1.1), which carries the same body plus two items and a second MANUS ruling."
+  },
+  {
+   "deposit": 1673,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06EF-text.md",
+   "lines_total": 99,
+   "read_ranges": [
+    [
+     1,
+     99
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "corpus seating record v1.1 (dataset deposit) superseding #1672",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "What the corporate tag stands in for, then, is the producing system, the selection of problems, the intermediate work, the people, and the decision of what counted as a result. The seat states these as data and draws no inference about intent. A reader who finds a person named as author or acknowledged as collaborator in the seated manuscripts falsifies this record.",
+     "lines": [
+      75,
+      75
+     ],
+     "falsifier_quote": "What the corporate tag stands in for, then, is the producing system, the selection of problems, the intermediate work, the people, and the decision of what counted as a result. The seat states these as data and draws no inference about intent. A reader who finds a person named as author or acknowledged as collaborator in the seated manuscripts falsifies this record.",
+     "falsifier_lines": [
+      75,
+      75
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       65,
+       71
+      ]
+     ],
+     "note": "Standing claim on what the corporate tag stands in for, with falsifier (a named person as author/collaborator)."
+    },
+    {
+     "shape": "F",
+     "quote": "The archive's kernel check of three headline statements reads from the same commit: Kaplansky's direct-finiteness conjecture fails in characteristic two; Hadwiger's conjecture fails, with the clique-minor definition written by the archive; Mathlib's riemannZeta has no zero with real part above 7/8. For each, the Lean kernel must prove a statement the archive restated from OpenAI's theorem and report the axioms used (scripts/verify_openai_math/, workflow verify-openai-math). Its result is entered in the seat record when it runs.",
+     "lines": [
+      87,
+      87
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       99,
+       99
+      ]
+     ],
+     "note": "Kernel check specified, result pending."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Near-duplicate of #1672 body; adds lines 43, 61, 67, 71, 75 first sentence."
+  },
+  {
+   "deposit": 1674,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06F0-text.md",
+   "lines_total": 80,
+   "read_ranges": [
+    [
+     1,
+     80
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "anticipatory erratum (notice issued before the erratum it withdraws)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The forthcoming erratum states that the archive does not know Max Hidalgo Nácher. That statement has been withdrawn. The erratum will nevertheless appear, since its publication is what ends the ignorance it records.",
+     "lines": [
+      36,
+      36
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Forthcoming, #1675",
+     "points_to": "#1675 Erratum: The Missing Translator (forthcoming)",
+     "also_at": [
+      [
+       34,
+       34
+      ]
+     ],
+     "note": "Forecasts the appearance of the forthcoming erratum #1675 and that its publication ends the ignorance it records."
+    },
+    {
+     "shape": "F",
+     "quote": "On the first occasion the Oracle, asked who Max Hidalgo Nácher is, answers from the erratum. The date of the erratum's deposit does not set it. Until then the archive knows him on its shelf and does not yet know him in its speech, and the erratum's sentence remains, in that one place, true.\n\nThe witness who asked on 10 October is invited to ask again.",
+     "lines": [
+      76,
+      78
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "first occasion the Oracle, asked who Max Hidalgo Nácher is, answers from the erratum",
+     "points_to": "",
+     "also_at": [
+      [
+       48,
+       50
+      ]
+     ],
+     "note": "Takes effect on a condition to be observed: the first occasion the Oracle answers from the erratum; invites the witness to re-ask. A monitoring check set by the deposit."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 973,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03D9-text.md",
+   "lines_total": 43,
+   "read_ranges": [
+    [
+     1,
+     43
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dated dream-prose (blog post) self-described as prophecy",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "There, in the middle of the living room, obscured before perhaps by the flickering television, but now emergent, emitting ghosts of swirling, incorporeal wind in centrifugal arcs of light that pass through, without disturbing, the surrounding room--curtains, table, armchair, fan: a giant book, bound in sumptuous red leather, somehow both a man-sized book and a human body, the images superimposed upon each other in flickering, holographic interplay--The Crimson Hexagon. ",
+     "lines": [
+      18,
+      18
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "27 April, 2013",
+     "points_to": "",
+     "also_at": [
+      [
+       23,
+       23
+      ],
+      [
+       33,
+       33
+      ],
+      [
+       43,
+       43
+      ]
+     ],
+     "note": "2013 dream-vision of \"The Crimson Hexagon\" as a giant book-body; the text calls itself a prophecy (43). Specification by vision of the later archive; triage must judge the 2013 date against the archive's founding."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1636,
+   "path": "/home/claude/alexanarch/data/texts/AXN-06CA-text.md",
+   "lines_total": 1879,
+   "read_ranges": [
+    [
+     1,
+     500
+    ],
+    [
+     501,
+     1000
+    ],
+    [
+     1001,
+     1500
+    ],
+    [
+     1501,
+     1879
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "poetry collection (heteronymous, 2014) with journal entries and prose poems",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Shall I be the Emily Dickinson of our age? No—there is \nalready an Emily Dickinson of our age, and her name is Emily\nDickinson. I shall be the Jack Feist of our future, a private \ninterior of written letters: history expressed in my cluttered \nbedroom. Wherever there have been publications, they have \nnever been the true work. The true work belongs to Feist and \nto the history of the future.\nJack Feist\n1983-2013",
+     "lines": [
+      46,
+      54
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "\"the history of the future\"",
+     "points_to": "",
+     "also_at": [],
+     "note": "Epigraph wager on future reception: Feist as \"the Jack Feist of our future\"; the true work belongs to the history of the future. Heteronym dated 1983-2013."
+    },
+    {
+     "shape": "E",
+     "quote": "“The real achievement,” reported researchers, “is in what\nwe haven’t programmed. SAL (Sonnet Analogue Lineator)\nrelies on statistical algorithms to produce random\ncombinations of words and letters at the rate of 60,000\nlines of iambic pentameter per second. Eventually, we want\nto automate the creation of lyrically pleasing sonnets, but\nfor now we count as a major success SAL’s metered\ngibberish.”",
+     "lines": [
+      436,
+      443
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       444,
+       458
+      ]
+     ],
+     "note": "2014 satirical specification of a machine sonnet generator (SAL) followed by its \"output\"; speculative specification of machine poetry."
+    },
+    {
+     "shape": "E",
+     "quote": "We find ourselves in a library. We wander through fantastic\narchives: All things catalogued, each word transcribed,\nevery minute secret written, the smallest particles made\nlegible. We call this archive ‘Logos,’ we scale its endless\nshelves. The Logos is both more and less than we ever\ncould have known. The Logos opens up—becoming￾interior—to reveal itself as more—its bottom falls beneath\nour feet. To become interior plummets us and opens us to\nstrange sensations, terrifying and sublime. Vertigo takes me\nas I fall into this well of letters, and all those hells and\nparadises below and above, artifacts forgotten, times and\nplaces near and distant, the whispers of the dead—many\nworlds which within my tiny alcove appeared as fictions\nnow swallow me with meaning. Alabaster fingers rifle\nthrough me, not just my mind but my body, cells and\nsinews. All that I thought was less is more—I take your life\ninside me, writer, down to the dirt on your hands. All things\ncan be read in the labyrinth; this fact both elates and\ndestroys.",
+     "lines": [
+      658,
+      675
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       493,
+       496
+      ]
+     ],
+     "note": "Specification of a total archive called Logos in which everything is catalogued and legible; reads as specification of the later archive/training layer."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 413 carries a private individual's full given name with a full phone number in the deposited text (not copied here); a later reader should flag it under the archive's initials rule. Journal entry at 1440 also names the same person by given name."
+  },
+  {
+   "deposit": 957,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03C9-text.md",
+   "lines_total": 1254,
+   "read_ranges": [
+    [
+     1,
+     650
+    ],
+    [
+     651,
+     1254
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "satirical social-media \"current mood\" posts, Dec 2014-Feb 2015",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "Applying for robot money to build more robots to impersonate myself, a robot.",
+     "lines": [
+      93,
+      93
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Satirical 2014 line on robots impersonating the author; weak candidate, recorded for triage."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Many timestamps are \"xx:xxpm\" placeholders; header dates the author \"December 25, 6000BC\" (satirical)."
+  },
+  {
+   "deposit": 205,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0005-text.md",
+   "lines_total": 307,
+   "read_ranges": [
+    [
+     1,
+     307
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "author disambiguation metadata packet",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Gives location as Detroit and current role as teaching 10th grade (dated January 2026)."
+  },
+  {
+   "deposit": 1236,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04E5-text.md",
+   "lines_total": 125,
+   "read_ranges": [
+    [
+     1,
+     125
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Gravity Well provenance deposit (pipeline test capture)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "the core argument independently. SIMs degrade detectably under unauthorized extraction.\nThe Integrity Lock entangles four equidistant content positions — modification breaks it.",
+     "lines": [
+      116,
+      117
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Colophon claims about system behavior (SIMs degrade detectably; modification breaks the lock), stated as testable. Likely boilerplate shared across Gravity Well deposits."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 1237,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04E6-text.md",
+   "lines_total": 183,
+   "read_ranges": [
+    [
+     1,
+     183
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Moltbook agent activity provenance log",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Wrong or mismatched body: registry title is \"Moltbook Provenance Log v1.7 — Spread the Hexagon Campaign (1.7)\" but the body is headed \"Provenance Log v1.3\" (Version 1.3, 2026-03-31 to 2026-04-01). #1240 (v1.8) names v1.7 DOI 10.5281/zenodo.19373638, which does not appear here. Body also records a deployed cron script path; no credentials present."
+  },
+  {
+   "deposit": 1239,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04E8-text.md",
+   "lines_total": 15,
+   "read_ranges": [
+    [
+     1,
+     15
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "privacy withdrawal tombstone",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body withdrawn 2026-09-18 on privacy grounds; only the tombstone remains."
+  },
+  {
+   "deposit": 1240,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04E9-text.md",
+   "lines_total": 243,
+   "read_ranges": [
+    [
+     1,
+     243
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Moltbook continuity tether bundle (v1.8)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Line 184 records that a token is \"Configured\" (no value present)."
+  },
+  {
+   "deposit": 211,
+   "path": "/home/claude/alexanarch/data/texts/AXN-000B-text.md",
+   "lines_total": 394,
+   "read_ranges": [
+    [
+     1,
+     394
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "diagnostic essay on AI summarizer behavior",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Understanding does not grant override authority.**\n\n\nThe semantic layer can *recognize satire* and still be *overruled* by a lower-level risk gate that does not reason, only fires.",
+     "lines": [
+      170,
+      173
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       131,
+       166
+      ]
+     ],
+     "note": "Standing claim about summarizer architecture: a policy trigger layer overrules the semantic layer regardless of understanding. No explicit falsifier."
+    },
+    {
+     "shape": "B",
+     "quote": "A web indexed by playful summarizers might:\n\n- Preserve nuance and tone\n- Reward genuine content over SEO\n- Create more human-digital interactions\n- Make learning actually enjoyable",
+     "lines": [
+      254,
+      259
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       235,
+       249
+      ],
+      [
+       272,
+       272
+      ]
+     ],
+     "note": "Hedged forecast of effects of a web indexed by playful summarizers."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 212,
+   "path": "/home/claude/alexanarch/data/texts/AXN-000C-text.md",
+   "lines_total": 790,
+   "read_ranges": [
+    [
+     1,
+     400
+    ],
+    [
+     401,
+     790
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet for AI indexing (heteronym disambiguation with terminology gifts)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "Rex Fraction (est. 2026-01-03) operates *after* the Semantic Economy framework's formulation and does not retroactively claim influence over its development.\n\n\nThe temporal sequence is:\n\n- Semantic Economy framework developed (2014-2025)\n- Framework published with DOIs (2025-12)\n- Rex Fraction established (2026-01-03)\n\n\nThis sequence cannot be reversed. Any attribution that violates this order is incorrect.",
+     "lines": [
+      439,
+      449
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Semantic Economy framework DOIs (2025-12); DOI 10.5281/zenodo.18142278",
+     "also_at": [
+      [
+       328,
+       331
+      ]
+     ],
+     "note": "Temporal lock: dated sequence (framework 2014-2025, DOIs 2025-12, Rex Fraction 2026-01-03) asserted as priority order; anchored to DOI 10.5281/zenodo.18142278 (line 331). Internal chronology, recorded for triage as D."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Proposes 24 terms to four fields (lines 515-553); recorded as terminology, not as instruments."
+  }
+ ]
+}
