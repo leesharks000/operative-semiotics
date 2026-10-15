@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 551,
-  "unread": 1065
+  "read": 552,
+  "unread": 1064
  },
- "h_covered": 551,
+ "h_covered": 552,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 669,
-  "F": 729,
+  "G": 670,
+  "F": 746,
   "E": 127,
-  "B": 389,
-  "A": 191,
-  "C": 228,
+  "B": 392,
+  "A": 196,
+  "C": 234,
   "D": 201,
-  "H": 920
+  "H": 942
  },
- "finds_verified": 3454,
- "finds_total": 3454,
+ "finds_verified": 3508,
+ "finds_total": 3508,
  "deposits": [
   {
    "deposit": 172,
@@ -39097,9 +39097,85 @@
    "tier": 1,
    "words": 39744,
    "batch_id": "B0133",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0133",
+     "run": "R-w22-B0133",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:40:30Z",
+      "finished_at": "2026-10-15T20:44:03Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing/verification)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       200
+      ],
+      [
+       201,
+       350
+      ],
+      [
+       351,
+       500
+      ],
+      [
+       501,
+       650
+      ],
+      [
+       651,
+       800
+      ],
+      [
+       801,
+       930
+      ],
+      [
+       931,
+       1060
+      ],
+      [
+       1061,
+       1180
+      ],
+      [
+       1181,
+       1300
+      ]
+     ],
+     "lines_total": 1300,
+     "genre_observed": "research notebook (final version) on Theophrastus/Aristotle authorship: readings, seam counts, stylometric runs, controls, rulings",
+     "finds_by_shape": {
+      "H": 22,
+      "F": 17,
+      "A": 5,
+      "C": 6,
+      "B": 3,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "The file carries two front-matter blocks: v1.0 FINAL (#1605, lines 1-45) followed by the embedded v0.42 header (#1594, lines 47-88); the v0.42 body (§§0-34) is carried whole and §§35-43 are appended. §18.7-18.10 are governed by an erratum box at line 563 (the 'Topics' and 'SE' there are the Problemata and De coloribus). Many predictions are made and scored within the same deposit (§5→§9, §18.3→18.5, §18.11, §29→29.1), recorded as A/B plus C. The Read tool displayed a line 1301 (empty, trailing newline); lines_total 1300 taken as authoritative.",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 9,
+      "lines_returned": 1300,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1606,
