@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 765,
+ "deposits_with_notes": 769,
  "deposits": [
   {
    "deposit": 1,
@@ -5151,6 +5151,17 @@
    "rulings": []
   },
   {
+   "deposit": 912,
+   "notes": [
+    {
+     "batch_id": "B0196",
+     "field": "incidental",
+     "text": "Frame says the two companion supplements are not included in the body. Section 16 lists partial credential strings (truncated tokens). The file is 1238 lines; the Read display shows a trailing empty line 1239."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 913,
    "notes": [
     {
@@ -5288,6 +5299,17 @@
    "rulings": []
   },
   {
+   "deposit": 931,
+   "notes": [
+    {
+     "batch_id": "B0196",
+     "field": "incidental",
+     "text": "The text has no Appendices C to G (it goes from Appendix B to Appendix H, \"Holographic Kernels\"). This looks deliberate, not damage."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 932,
    "notes": [
     {
@@ -5332,12 +5354,34 @@
    "rulings": []
   },
   {
+   "deposit": 937,
+   "notes": [
+    {
+     "batch_id": "B0196",
+     "field": "incidental",
+     "text": "The wrapper frontmatter (deposit 937, hex 03B5) contains an inner frontmatter with deposit_number \"TBD-at-mint\". Section 3.4 was redacted on 2026-07-03, and the redaction note is in the text. Line 267 says \"AXN hex offset: +11 ... operational reality is +11\", but #912 (§4.3, §6.5) says +12, and this deposit's own hex (937 -> 03B5 = 949) fits +12. Recorded as an observation, not a correction. The file ends with an empty \"## Files\" section."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 938,
    "notes": [
     {
      "batch_id": "B0106",
      "field": "incidental",
      "text": "Reserved AXN in body (#939 / hex 03B7) differs from the deposit's actual number 938 / hex 03B6."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 940,
+   "notes": [
+    {
+     "batch_id": "B0196",
+     "field": "incidental",
+     "text": "The body is marked \"DRAFT v0.2 ... Not yet minted\" and \"Reserved AXN: pending mint\", but it is seated as #940 (03B8). Its triad companions are cited as AXN:03B6 and 03B7."
     }
    ],
    "rulings": []
