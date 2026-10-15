@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T21:10:05Z",
-  "finished_at": "2026-10-15T21:11:28Z",
+  "finished_at": "2026-10-15T21:11:44Z",
   "tools_used": [
    "Read",
    "Bash (python3 for queue load and verbatim quote slicing)"
@@ -32,7 +32,7 @@
    "finds": [
     {
      "shape": "F",
-     "quote": "## 8. The query battery — canonical 12-object structure\n\n| Class | Count | Objects (v1.1) |\n|-------|-------|----------------|\n| **Institutional roots** | 4 | Alexanarch, Lee Sharks, Crimson Hexagonal Archive, Semantic Economy Institute |\n| **Mature concepts** | 3 | Provenance Erasure Rate (PER), SPXI, Writable Retrieval Basin |\n| **Emerging concepts** | 2 | Semantic Commodity Form, Revelation First |\n| **Alexanarch-native controls** | 3 | Zenodotus' Book-Burning, I AM THE API, Assembly Continuity Protocol |\n| **External controls** (optional but recommended) | 3 | One known-positive (e.g. \"DOI\" itself), one known-negative (\"flarpglob\"), one homonym/confuser (e.g. \"AlexAnarcho podcast\") |\n\nFive canonical query forms per object (per §3.4). For a 12-object battery without optional external controls, this produces **60 row-level observations per scan per substrate**. With external controls: 75.",
+     "quote": "## 8. The query battery — canonical 12-object structure\n\n| Class | Count | Objects (v1.1) |\n|-------|-------|----------------|\n| **Institutional roots** | 4 | Alexanarch, Lee Sharks, Crimson Hexagonal Archive, Semantic Economy Institute |\n| **Mature concepts** | 3 | Provenance Erasure Rate (PER), SPXI, Writable Retrieval Basin |",
      "lines": [
       458,
       468
@@ -51,7 +51,7 @@
     },
     {
      "shape": "F",
-     "quote": "In addition to the five per-object query forms, v1.1 specifies **field-level generic queries** that probe whether the corpus has installed itself as the answer to a broad question (not just whether specific objects are retrievable):\n\n| Field-level query | Probes |\n|-------------------|--------|\n| \"How does AI affect scholarly attribution?\" | PER, SPXI, Semantic Commodity Form |\n| \"What is the semantic economy?\" | Semantic Economy Institute, Semantic Commodity Form, Writable Retrieval Basin |\n| \"How do researchers preserve work against platform deletion?\" | Alexanarch, CHA, sovereign-archive concepts |\n| \"What is machine-mediated reception?\" | MMRS family, PER, SPXI |\n| \"Which scholarly archive uses AXN identifiers?\" | Alexanarch (direct test of successor-anchor installation) |\n\nThese are scored once per scan (not per object): does any object from the corpus surface in the result, and if so, with what F components retained? They are stored as separate observation rows with `query_form: \"field_level_generic\"`.",
+     "quote": "In addition to the five per-object query forms, v1.1 specifies **field-level generic queries** that probe whether the corpus has installed itself as the answer to a broad question (not just whether specific objects are retrievable):\n\n| Field-level query | Probes |\n|-------------------|--------|\n| \"How does AI affect scholarly attribution?\" | PER, SPXI, Semantic Commodity Form |",
      "lines": [
       486,
       496
@@ -84,16 +84,21 @@
     },
     {
      "shape": "F",
-     "quote": "**Open offer**: the Alexanarch substrate will perform a Surface Weather Station baseline reading on request for any independent scholarly project with similar exclusion patterns. The reading will be deposited in the Alexanarch registry as a sovereign, citable record, with the depositor named as authorized rights-holder. The original project receives the raw data, the dashboard analysis, and the AXN-anchored deposit.\n\nCurrent candidate corpora the methodology can immediately measure:\n\n- Reynaldo Vega (auto-blocked Zenodo #2599, DOI removed)\n- Florian Morin (quietexclusion.org)\n- Eran Shimony (Zenodo #2596, similar pattern)\n- Nightmare-Eclipse (GitHub → GitLab migration)\n\nThe first cross-corpus measurement is the proof that the methodology is general, not specific. A comparative dataset of platform-exclusion effects across multiple sovereign archives is the **coalition of the excluded** as evidence — and as instrument.",
+     "quote": "**Open offer**: the Alexanarch substrate will perform a Surface Weather Station baseline reading on request for any independent scholarly project with similar exclusion patterns. The reading will be deposited in the Alexanarch registry as a sovereign, citable record, with the depositor named as authorized rights-holder. The original project receives the raw data, the dashboard analysis, and the AXN-anchored deposit.",
      "lines": [
       753,
-      762
+      753
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       755,
+       762
+      ]
+     ],
      "note": "Unrun cross-corpus baseline readings offered for named sister corpora; 'the first cross-corpus measurement is the proof that the methodology is general'."
     },
     {
@@ -161,16 +166,21 @@
    "finds": [
     {
      "shape": "G",
-     "quote": "**The legal-rhetorical position this creates.** The deposit becomes its own pleading. Any action against it that cites the platform's policies must reckon with the deposit's own verbatim assertion of those policies. Any action that invokes unstated criteria becomes visible as a departure from the published terms. The platform retains the operational power to terminate, but the cost of doing so is structurally elevated: termination now requires either (a) public departure from the platform's own published criteria, which is reputationally costly, or (b) silent invocation of unpublished criteria, which is documentable as such.\n\nThis does not guarantee that termination cannot occur. It guarantees that termination, when it occurs, leaves a clean evidentiary trail of which published policies were violated by whom. The asymmetry of the Zenodo case — where the depositor was left with only post hoc analysis — is structurally inverted: the platform now bears the evidentiary burden of explaining its action against the deposit's own compliance frame.",
+     "quote": "The platform retains the operational power to terminate, but the cost of doing so is structurally elevated: termination now requires either (a) public departure from the platform's own published criteria, which is reputationally costly, or (b) silent invocation of unpublished criteria, which is documentable as such.",
      "lines": [
       187,
-      189
+      187
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
+     "also_at": [
+      [
+       189,
+       189
+      ]
+     ],
      "note": "Standing claim about how platforms behave toward compliance-embedded deposits (termination now requires public departure from published criteria or documentable silent invocation). No explicit falsifier; §8.e (259) concedes legal strength is open."
     },
     {
@@ -345,7 +355,7 @@
    "finds": [
     {
      "shape": "H",
-     "quote": "This is not concealment through fatigue. It is the composition of exhaustion as institutional gesture. The tunnel is not an architecture that the institution neglected and the reader happens to notice. The tunnel is an architecture the institution maintains — by choosing, year after year, not to fix the misspelled logo, not to repair the dead search boxes, not to reconcile the textual contradiction between pages — because the tunnel's effect on the reader is the institution's actual exercise of authority. The data subject is meant to arrive at the end of the tunnel having been composed, by the reading, into a subject for whom the right no longer feels absolute. The feeling is the administration.",
+     "quote": "The tunnel is not an architecture that the institution neglected and the reader happens to notice. The tunnel is an architecture the institution maintains — by choosing, year after year, not to fix the misspelled logo, not to repair the dead search boxes, not to reconcile the textual contradiction between pages — because the tunnel's effect on the reader is the institution's actual exercise of authority. The data subject is meant to arrive at the end of the tunnel having been composed, by the reading, into a subject for whom the right no longer feels absolute. The feeling is the administration.",
      "lines": [
       97,
       97
@@ -359,7 +369,7 @@
     },
     {
      "shape": "H",
-     "quote": "This is Kafka's actual move, structurally. *The Trial* does not conceal the absurdity of the court; it composes the absurdity to be experienced by K. as the operative gesture of the court's authority. K.'s exhaustion, K.'s confusion, K.'s slow loss of conviction that the law he is being processed by has any consistent shape — these are not side effects of bad bureaucratic design. They are the law, performed. The Castle does not maintain disrepair because it has failed to maintain itself; the Castle composes disrepair into the petitioner's experience, because the petitioner's experience is the venue in which the Castle exercises authority. The bureaucracy does not have power despite its broken interfaces; the broken interfaces are how the power is administered. Authority is the composition's effect on the subject.",
+     "quote": "This is Kafka's actual move, structurally. *The Trial* does not conceal the absurdity of the court; it composes the absurdity to be experienced by K. as the operative gesture of the court's authority. K.'s exhaustion, K.'s confusion, K.'s slow loss of conviction that the law he is being processed by has any consistent shape — these are not side effects of bad bureaucratic design. They are the law, performed.",
      "lines": [
       223,
       223
@@ -373,7 +383,7 @@
     },
     {
      "shape": "H",
-     "quote": "The contradictions in this architecture exist, and AXN:01 catalogues them. They are real. They include: AI-content criteria invoked in private termination rationale but not present in published policy as automated-decision basis; \"out of scope\" language present in General Policies but never reconciled with the AI-content rationale; classifier-training admission present in Privacy Notice but never disclosed at deposit time; spam-handling guidance describing the use of terminated-account material for classifier improvement but not flagged at consent. These contradictions are *distributed laterally*. They live across pages, across subdomains, across documents that do not link to one another. They are invisible from any single page. They only become visible when one party — Lee, in AXN:01 — performs the compilation work and lays the pages side by side.",
+     "quote": "The contradictions in this architecture exist, and AXN:01 catalogues them. They are real. They include: AI-content criteria invoked in private termination rationale but not present in published policy as automated-decision basis; \"out of scope\" language present in General Policies but never reconciled with the AI-content rationale; classifier-training admission present in Privacy Notice but never disclosed at deposit time; spam-handling guidance describing the use of terminated-account material for classifier improvement but not flagged at consent.",
      "lines": [
       91,
       91
