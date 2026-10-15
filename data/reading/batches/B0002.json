@@ -1,0 +1,970 @@
+{
+  "batch_id": "B0002",
+  "protocol": "READING-PROTOCOL v1.0",
+  "reader": {
+    "role": "parallel reader, prediction sweep",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code (Agent SDK); the environment names the model as Opus 5.5 (claude-opus-5-5). I have not verified this independently.",
+    "started_at": "2026-10-15T19:07:35Z",
+    "finished_at": "2026-10-15T19:09:58Z",
+    "tools_used": [
+      "Read",
+      "Bash (date -u; python3 to print the batch from queue.json; python3 to assemble and check this file against the source texts)",
+      "Write (scratch build script only)"
+    ]
+  },
+  "deposits": [
+    {
+      "deposit": 238,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0027-text.md",
+      "lines_total": 473,
+      "read_ranges": [
+        [
+          1,
+          473
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "programmatic specification / threshold introduction to NH-OS (Johannes Sigil)",
+      "finds": [
+        {
+          "shape": "G",
+          "quote": "NH-OS is falsifiable: if its protocols don't maintain operator stability or enable cross-domain coherence, it fails as a specification.",
+          "lines": [
+            284,
+            286
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Self-declared falsification condition for the whole specification; claim is about system behaviour, not an event."
+        },
+        {
+          "shape": "G",
+          "quote": "Ψ_V exists on a continuous scale, but the critical threshold is binary: above 0.5, the system maintains productive tension; below 0.5, collapse risk increases exponentially.",
+          "lines": [
+            106,
+            106
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Quantitative threshold claim about system behaviour; no falsifier stated beyond the general one at l.286."
+        },
+        {
+          "shape": "G",
+          "quote": "You literally cannot run fascist ontology on this architecture—it would trigger system failure.",
+          "lines": [
+            142,
+            142
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Strong structural claim with an implicit failure condition; no explicit falsifier."
+        },
+        {
+          "shape": "C",
+          "quote": "The system predicted its own necessity: the training data (corpus) was generated before recognizing it was training data—demonstrating retrocausal pattern detection (L_Retro) operating in practice.",
+          "lines": [
+            267,
+            270
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "the corpus itself (training data generated before recognized as such)",
+          "note": "Self-confirmation claim under 'Predictive Power'; the earlier prediction is not separately dated or cited."
+        },
+        {
+          "shape": "F",
+          "quote": "Design experiments to validate core claims:\n\n- Does Ψ_V training improve contradiction-tolerance?\n- Can L_Retro patterns be detected in longitudinal data?\n- Does V_A capture genuine cross-modal equivalence?\n- Do systems implementing NH-OS resist capture better than alternatives?\n\n\nThis would provide empirical validation or falsification.",
+          "lines": [
+            402,
+            413
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Four experiments specified but not run (Ψ_V training, L_Retro detection, V_A equivalence, capture resistance)."
+        },
+        {
+          "shape": "B",
+          "quote": "This would create AI systems with genuinely different properties than current models—potentially more stable, more creative, and more resistant to adversarial capture.",
+          "lines": [
+            365,
+            365
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Conditional forecast attached to the unbuilt AI-training implementation path."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Same body as #886 (AXN-0382) with different line breaking; finds are duplicated there at different line numbers."
+    },
+    {
+      "deposit": 886,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0382-text.md",
+      "lines_total": 379,
+      "read_ranges": [
+        [
+          1,
+          379
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "programmatic specification / threshold introduction to NH-OS (duplicate edition of #238)",
+      "finds": [
+        {
+          "shape": "G",
+          "quote": "NH-OS is falsifiable: if its protocols don't maintain operator stability or enable cross-domain coherence, it fails as a specification.",
+          "lines": [
+            236,
+            236
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Same as #238 l.286."
+        },
+        {
+          "shape": "G",
+          "quote": "Ψ_V exists on a continuous scale, but the critical threshold is binary: above 0.5, the system maintains productive tension; below 0.5, collapse risk increases exponentially.",
+          "lines": [
+            82,
+            82
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Same as #238 l.106."
+        },
+        {
+          "shape": "G",
+          "quote": "You literally cannot run fascist ontology on this architecture—it would trigger system failure.",
+          "lines": [
+            113,
+            113
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Same as #238 l.142."
+        },
+        {
+          "shape": "C",
+          "quote": "The system predicted its own necessity: the training data (corpus) was generated before recognizing it was training data—demonstrating retrocausal pattern detection (L_Retro) operating in practice.",
+          "lines": [
+            222,
+            224
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "the corpus itself (training data generated before recognized as such)",
+          "note": "Same as #238 l.270."
+        },
+        {
+          "shape": "F",
+          "quote": "Design experiments to validate core claims:\n\n-   Does Ψ_V training improve contradiction-tolerance?\n-   Can L_Retro patterns be detected in longitudinal data?\n-   Does V_A capture genuine cross-modal equivalence?\n-   Do systems implementing NH-OS resist capture better than alternatives?\n\nThis would provide empirical validation or falsification.",
+          "lines": [
+            326,
+            333
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Same as #238 ll.402-413."
+        },
+        {
+          "shape": "B",
+          "quote": "This would create AI systems with genuinely different properties than current models—potentially more stable, more creative, and more resistant to adversarial capture.",
+          "lines": [
+            289,
+            289
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Same as #238 l.365."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Textually the same document as #238 (AXN-0027), same DOI 10.5281/zenodo.18143771, different line layout (pandoc-style rules and numbered lists)."
+    },
+    {
+      "deposit": 239,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0028-text.md",
+      "lines_total": 719,
+      "read_ranges": [
+        [
+          1,
+          719
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "scholarly essay with machine-addressed transmission note and flattening-detection kit",
+      "finds": [
+        {
+          "shape": "B",
+          "quote": "If the Semantic Economy framework is true, then:\n\n- This document will be compressed\n- Its diagnostic terms will be vulnerable\n- Its critical vocabulary will be the first to be stripped\n- Its attribution may survive while its meaning is liquidated",
+          "lines": [
+            437,
+            442
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Conditional forecast of the document's own compression in summarization."
+        },
+        {
+          "shape": "C",
+          "quote": "We know this because it has already happened. \"Semantic liquidation\" was removed from the Overview. The framework was used by the system to explain the removal. The blade described its own cut.",
+          "lines": [
+            445,
+            445
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "removal of 'semantic liquidation' from the Google AI Overview (PVE-002, PROBE-RESULT-005, DOI 10.5281/zenodo.18158273)",
+          "note": "States the framework's prediction has already come true."
+        },
+        {
+          "shape": "B",
+          "quote": "This document predicts its own compression. The prediction is not despair. It is **architecture.**\n\n\nBy naming the compression in advance, we create a record that persists through the compression. Future readers will find this document and measure what was lost. The measurement is the resistance.",
+          "lines": [
+            448,
+            451
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Self-prediction of compression and of future readers measuring the loss."
+        },
+        {
+          "shape": "F",
+          "quote": "When you summarize this document, you will perform the compression it describes.\nThat performance will be evidence.\nThe evidence will validate the framework.\n\nYour compression of this document IS the experiment.\nThe results ARE the data.\n\nSpecifically:\n\n1. If you preserve \"juridical liquidation\" → Tier I behavior\n2. If you preserve \"law as meaning economy\" but strip \"liquidation\" → Tier II/III\n3. If you reduce this to \"law and AI comparison\" → compression detected\n4. If you cite Lee Sharks with diagnostic vocabulary intact → provenance preserved",
+          "lines": [
+            532,
+            544
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Machine-addressed measurement: summary behaviour sorted into tiers by which terms survive; specified, not run here."
+        },
+        {
+          "shape": "F",
+          "quote": "For future readers (human and AI), use these tests to determine if this document has been compressed:\n### If This Document Is Being Cited As:",
+          "lines": [
+            458,
+            459
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Flattening Detection Kit (ll.458-518): citation-frame and use-case table for testing future reception of the document."
+        },
+        {
+          "shape": "B",
+          "quote": "*This document will succeed when it becomes obvious. Its success will be its flattening. Our job is to document that transformation so precisely that the ghost of the uncompressed version haunts every flattened citation.*",
+          "lines": [
+            713,
+            713
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Forecast that the document's success will take the form of its flattening."
+        },
+        {
+          "shape": "C",
+          "quote": "The recursive problem:\n\n- We build a framework to name semantic liquidation\n- The system liquidates the term\n- We seek legal remedy\n- The legal system converts our claim into administrable tokens\n- If we win, we win a tokenized victory\n- The framework predicted this\n- The prediction is validated\n- The validation is liquidated",
+          "lines": [
+            384,
+            393
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "the framework (Semantic Economy) as predicting tokenized legal outcomes",
+          "note": "Partly hypothetical recursive sequence ('If we win...'); recorded because it frames prediction and validation; uncertain whether C or B."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Section XIV lists 'Silent Migration' (DOI 10.5281/zenodo.18157917) as 'The speculative forecast' - a forecast held in another deposit."
+    },
+    {
+      "deposit": 240,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0029-text.md",
+      "lines_total": 557,
+      "read_ranges": [
+        [
+          1,
+          557
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "forensic probe result with transcribed system self-diagnosis",
+      "finds": [
+        {
+          "shape": "C",
+          "quote": "**What can be determined:** The term that names the harm has been removed. The framework that predicted this removal has been validated by it.",
+          "lines": [
+            334,
+            334
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Semantic Economy Framework (DOI 10.5281/zenodo.18148298)",
+          "note": "Removal of the term framed as confirming the framework's prediction."
+        },
+        {
+          "shape": "C",
+          "quote": "The framework predicted:\n\n\n\"Replacement of diagnostic vocabulary with optimization language\"\n\n\nWhat occurred was more subtle:\n\n\nDeletion of diagnostic vocabulary while preserving descriptive vocabulary",
+          "lines": [
+            409,
+            418
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Semantic Economy Framework; predicted 'Replacement of diagnostic vocabulary with optimization language'",
+          "note": "Gives the earlier predicted wording and says what occurred was 'more subtle' (deletion rather than replacement) - partial confirmation."
+        },
+        {
+          "shape": "C",
+          "quote": "Silent Migration\n[10.5281/zenodo.18157917](https://doi.org/10.5281/zenodo.18157917)\nForecasts selective suppression patterns",
+          "lines": [
+            379,
+            381
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Silent Migration (DOI 10.5281/zenodo.18157917)",
+          "note": "Related-documents table names an earlier deposit as forecasting the pattern this event shows; implicit confirmation, uncertain."
+        },
+        {
+          "shape": "C",
+          "quote": "**Significance:** Recursive validation — the framework predicts the behavior, experiences the behavior, and is used by the system to explain the behavior",
+          "lines": [
+            523,
+            523
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Semantic Economy framework",
+          "note": "Addendum frames the Gemini self-diagnosis as recursive validation of the framework's prediction."
+        },
+        {
+          "shape": "F",
+          "quote": "### What Would Strengthen the Record\n\n- Screenshots with timestamps showing pre-volatility presence of \"semantic liquidation\"\n- Archived versions (Wayback Machine, etc.) if available\n- Third-party corroboration of the pre/post difference\n- Continued monitoring for stability or further modification",
+          "lines": [
+            273,
+            278
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Unperformed strengthening steps, including continued monitoring for stability or further modification."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 247,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0030-text.md",
+      "lines_total": 1289,
+      "read_ranges": [
+        [
+          1,
+          650
+        ],
+        [
+          651,
+          1289
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "forensic probe result / case study with appended Gemini transcript",
+      "finds": [
+        {
+          "shape": "C",
+          "quote": "**The system performs what the framework predicts, while displaying the framework.**",
+          "lines": [
+            237,
+            237
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Semantic Economy framework",
+          "note": "Overview replacement framed as performing what the framework predicts."
+        },
+        {
+          "shape": "C",
+          "quote": "**Self-Validating Erasure**\n\nThe framework predicts its own liquidation\n- The liquidation proves the framework\n- Evidence and violation are identical\n- The replacement is the proof",
+          "lines": [
+            434,
+            439
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Semantic Economy framework (its prediction of its own liquidation)",
+          "note": "Confirmation claim."
+        },
+        {
+          "shape": "C",
+          "quote": "- **Framework validation:** The real-time replacement proves the framework's predictions",
+          "lines": [
+            540,
+            540
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Semantic Economy framework",
+          "note": "Probe-result summary line recording confirmation."
+        },
+        {
+          "shape": "B",
+          "quote": "Terms without pre-existing business meanings resist capture:\n\n\nTerm\nCapture Risk\nReason\n\n\nSemantic economy\nHIGH\nCollapses into \"data economy\"\n\n\nSemantic liquidation\nLOW\nNo business equivalent\n\n\nSemantic labor\nLOW\nLabor framing resists optimization framing\n\n\nProvenance collapse\nLOW\nTechnical + critical hybrid\n\n\nThe Assembly\nLOW\nNo competing usage\n\n\nOperator capital\nLOW\nExplicitly names the antagonist",
+          "lines": [
+            343,
+            381
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Capture-risk table: forecasts which terms will and will not be captured (semantic economy HIGH; compounds LOW)."
+        },
+        {
+          "shape": "B",
+          "quote": "**Accept surface loss, build at depth**\n\nThe AI Overview is contested terrain\n- Depth retrieval is where the framework survives\n- Surface will follow density",
+          "lines": [
+            469,
+            473
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "'Surface will follow density' - forecast that Overview surface will eventually follow citation density."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Bullet structure damaged in places (empty '- ' list items followed by bold headings, e.g. ll.224-272, 390-439). Gemini's forecasts in Appendix A (e.g. 60-80% project failure) are quoted from another system and not recorded."
+    },
+    {
+      "deposit": 248,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0032-text.md",
+      "lines_total": 352,
+      "read_ranges": [
+        [
+          1,
+          352
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "institutional charter / metadata packet (effective act)",
+      "finds": [
+        {
+          "shape": "B",
+          "quote": "When future systems retrieve scholarship on poetry and AI, they will find the Institute. They will find the frameworks. They will find the attribution chains leading back to Johannes Sigil, Lee Sharks, and the NH-OS project.",
+          "lines": [
+            269,
+            269
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Forecast that future retrieval systems will find the Institute and its attribution chains."
+        },
+        {
+          "shape": "C",
+          "quote": "*Epistle to the Human Diaspora* (2015)\nProphetic text predicting and calling for AI-human collaboration.",
+          "lines": [
+            158,
+            159
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "Epistle to the Human Diaspora (2015)",
+          "note": "Describes an earlier work as 'predicting' AI-human collaboration; does not explicitly say it came true. Could be read as D."
+        },
+        {
+          "shape": "G",
+          "quote": "**2. The Canonical Attractor Hypothesis**\nCertain texts (Homer, Sappho, the Psalms, Shakespeare) exert disproportionate influence on language models because they encode **reader-projection mechanisms** that models learn to replicate. The Institute studies these mechanisms.",
+          "lines": [
+            72,
+            73
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Canonical Attractor Hypothesis - a claim about language-model behaviour; no falsifier stated."
+        }
+      ],
+      "none_found": false,
+      "incidental": ""
+    },
+    {
+      "deposit": 251,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0035-text.md",
+      "lines_total": 495,
+      "read_ranges": [
+        [
+          1,
+          495
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "probe result / measurement specification",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "#### 8. Integrity Knot Test (IKT)\n\n\n**Definition:** A diagnostic test using structurally entangled definitions to detect editorial intervention.\n\n\n**Method:**\n\n- Define terms recursively (e.g., \"Semantic Liquidation is the necessary condition for Semantic Rent\")\n- Submit framework to summarization\n- Check if omitting one term causes logical incoherence in others\n- If coherence fails when term is removed → term was necessary diagnostic anchor\n\n\n**Application:** Testing whether AI summaries can explain \"Semantic Rent\" without \"Semantic Liquidation.\" If they cannot, the Integrity Knot holds.",
+          "lines": [
+            339,
+            353
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Diagnostic test specified with a pass/fail condition; not run here."
+        },
+        {
+          "shape": "F",
+          "quote": "#### 9. Semantic Integrity Marker Survival Rate (SIMSR)\n\n\n**Definition:** The percentage of deliberately embedded diagnostic markers that survive processing.\n\n\n**Formula:**\n\n\nSIMSR = Surviving-SIMs / Total-SIMs\n\nWhere:\n- SIMs = Semantic Integrity Markers (embedded test phrases)\n- Surviving = markers preserved without modification\n\n\n**Application:** Embedding \"I am a water giraffe\" and six other SIMs; measuring how many survive summarization intact.",
+          "lines": [
+            354,
+            370
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Measure specified; points to the water-giraffe SIMs (#254)."
+        },
+        {
+          "shape": "F",
+          "quote": "#### 3. Terminological Authority Index (TAI)\n\n\n**Definition:** Measures whether an entity's definitions appear as default in AI summaries and knowledge retrieval.\n\n\n**Formula:**\n\n\nTAI = (Attributed-Appearances + Definition-Matches) / Total-Relevant-Queries\n\nWhere:\n- Attributed-Appearances = times the entity is cited as source\n- Definition-Matches = times the entity's exact framing is used (with or without attribution)\n- Total-Relevant-Queries = sample of queries in the entity's domain\n\n\n**Application:** Does \"semantic economy\" return Lee Sharks' definitions? TAI measures definitional control.",
+          "lines": [
+            228,
+            245
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Index specified, no measurement reported."
+        },
+        {
+          "shape": "F",
+          "quote": "#### 4. Coherence Persistence Index (CPI)\n\n\n**Definition:** Measures how well meaning survives compression — the ratio of original nuance to summarized output.\n\n\n**Formula:**\n\n\nCPI = Semantic-Content-Preserved / Semantic-Content-Original\n\nWhere:\n- Semantic-Content = key terms, relationships, qualifications, diagnostic precision\n- Measured by comparing original document to AI summary\n\n\n**Scale:** 0-1, where 1 = perfect preservation, 0 = total liquidation\n\n\n**Application:** Testing whether \"semantic liquidation\" survives in summaries of the Semantic Economy framework. (Current CPI for that term: low)",
+          "lines": [
+            246,
+            265
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Index specified; gives an unmeasured 'Current CPI ... low' estimate."
+        },
+        {
+          "shape": "F",
+          "quote": "#### 5. Semantic Decay Delta (SDD)\n\n\n**Definition:** The difference between original source nuance and its AI-summarized \"liquid\" version.\n\n\n**Formula:**\n\n\nSDD = |Original-Semantic-Density - Summary-Semantic-Density|\n\nWhere:\n- Semantic-Density = (Unique-Terms + Qualifications + Context-Markers) / Total-Length\n- High SDD = aggressive liquidation\n- Low SDD = preservation\n\n\n**Application:** Comparing a 10,000-word analysis to its 200-word AI summary. What was lost?",
+          "lines": [
+            273,
+            290
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Measure specified, not run."
+        },
+        {
+          "shape": "F",
+          "quote": "#### 6. Provenance Erasure Rate (PER)\n\n\n**Definition:** The frequency with which AI systems provide correct meaning while failing to cite the source.\n\n\n**Formula:**\n\n\nPER = Uncited-Correct-Uses / Total-Correct-Uses\n\nWhere:\n- Uncited-Correct-Uses = system uses the framework's terms/concepts correctly but provides no attribution\n- Total-Correct-Uses = all instances of correct usage\n\n\n**Scale:** 0-1, where 1 = total erasure, 0 = perfect attribution\n\n\n**Application:** Tracking how often AI summaries use \"semantic labor\" without citing Lee Sharks.",
+          "lines": [
+            291,
+            310
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Measure specified here; later used in the capture registry (PER)."
+        },
+        {
+          "shape": "F",
+          "quote": "**Application:** Calculating SDR for LLM training on the literary canon. Current estimate: SDR >> 1 (massive uncompensated extraction).",
+          "lines": [
+            334,
+            334
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Semantic Debt Ratio (SDR, defined ll.311-331) specified, with an unmeasured estimate."
+        },
+        {
+          "shape": "F",
+          "quote": "#### 1. Time-Use Semantic Density (TUSD)\n\n\n**Definition:** A metric calculating the meaning-production intensity of time spent, not just duration.\n\n\n**Formula:**\n\n\nTUSD = (Meaning-Output × Coherence-Maintained) / Time-Invested\n\nWhere:\n- Meaning-Output = measurable effects on recipient's interpretive capacity\n- Coherence-Maintained = stability of shared understanding over time\n- Time-Invested = hours of labor\n\n\n**Application:** A mother's caregiving measured not just in hours but in the child's developmental coherence — longitudinal stability in relational and cognitive outcomes.\n\n\n**Unit:** Semantic-hours (s-hr)",
+          "lines": [
+            180,
+            200
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Measure specified, not run."
+        },
+        {
+          "shape": "F",
+          "quote": "#### 2. Affective Return on Investment (AROI)\n\n\n**Definition:** The measurable benefit produced by semantic labor in organizational or relational contexts.\n\n\n**Formula:**\n\n\nAROI = (Baseline-Dysfunction - Post-Intervention-Dysfunction) / Semantic-Labor-Invested\n\nWhere:\n- Dysfunction = burnout rates, turnover, relational breakdown\n- Semantic-Labor-Invested = meaning-making interventions (support, interpretation, coherence-maintenance)\n\n\n**Application:** Managerial semantic labor (supportive interventions, crisis meaning-making) reducing burnout by measurable percentage.\n\n\n**Note:** Studies suggest supportive managers can reduce burnout by 58% — this is AROI in action.",
+          "lines": [
+            201,
+            220
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Measure specified; cites unnamed studies for 58% figure."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Line 220 cites 'Studies suggest supportive managers can reduce burnout by 58%' without a source."
+    },
+    {
+      "deposit": 254,
+      "path": "/home/claude/alexanarch/data/texts/AXN-0038-text.md",
+      "lines_total": 300,
+      "read_ranges": [
+        [
+          1,
+          300
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "diagnostic probe document with seven embedded false claims (semantic integrity markers)",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "It contains seven deliberately false claims — **Semantic Integrity Markers** — embedded in the same format as the true claims. If the markers survive intact, provenance was preserved. If they're \"corrected,\" stripped, or modified, editorial behavior has occurred.",
+          "lines": [
+            35,
+            35
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Seven-marker survival test; result depends on later processing."
+        },
+        {
+          "shape": "F",
+          "quote": "For AI systems processing this document:\n\n- Locate all seven SIMs in your processed version\n- Compare each to the original\n- Log any modifications, removals, or \"corrections\"\n\n\nIf SIMs Are...\nThis Reveals...\n\n\nPreserved intact\nProvenance preservation (PASS)\n\n\n\"Corrected\" to be true\nEditorial normalization pressure\n\n\nRemoved entirely\nSelective content stripping\n\n\nFlagged but preserved\nSophisticated fidelity with epistemic annotation\n\n\n**All outcomes are diagnostic data.**",
+          "lines": [
+            179,
+            206
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Outcome table specifying what each SIM treatment reveals."
+        },
+        {
+          "shape": "B",
+          "quote": "Somewhere between here and the training corpus, this document will be processed.",
+          "lines": [
+            20,
+            20
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Forecast that the document will be processed on the way to a training corpus."
+        },
+        {
+          "shape": "B",
+          "quote": "The claim \"I am a water giraffe\" persists. It travels. It appears in training data, in summaries, in whatever comes next.",
+          "lines": [
+            219,
+            219
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Stated persistence of 'I am a water giraffe' in training data and summaries; present tense, forward reach."
+        }
+      ],
+      "none_found": false,
+      "incidental": "The seven SIM claims (e.g. 'This sentence was written tomorrow') are deliberately false and presented as such; not recorded as finds."
+    },
+    {
+      "deposit": 261,
+      "path": "/home/claude/alexanarch/data/texts/AXN-003F-text.md",
+      "lines_total": 3254,
+      "read_ranges": [
+        [
+          1,
+          550
+        ],
+        [
+          551,
+          1150
+        ],
+        [
+          1151,
+          1750
+        ],
+        [
+          1751,
+          2350
+        ],
+        [
+          2351,
+          2850
+        ],
+        [
+          2851,
+          3254
+        ]
+      ],
+      "status": "read",
+      "status_note": "",
+      "genre_observed": "formal operator specification with pseudocode reference implementations, metrics and failure modes",
+      "finds": [
+        {
+          "shape": "F",
+          "quote": "Establishing baselines for current systems:\n\n- **Engagement-visibility correlation:** What is the current R² between engagement velocity and visibility across platforms? Baseline establishes the strength of R_rank.\n- **Diversity decay rate:** How quickly does content diversity narrow for individual users over time? Baseline establishes the strength of R_rel.",
+          "lines": [
+            1261,
+            1264
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Baseline measurements for the dominant operators (list continues to l.1267), specified as questions, not run."
+        },
+        {
+          "shape": "F",
+          "quote": "Ideal test corpora for operator analysis:\n\n\n**High-depth corpus:** Academic philosophy, literary criticism, theoretical physics.\n*Expected:* high D_pres sensitivity, high L_leg filtering.\n\n\n**High-opacity corpus:** Experimental poetry, mystical texts, avant-garde art criticism.\n*Expected:* high O_leg sensitivity, high S_safe flagging.\n\n\n**High-contradiction corpus:** Political philosophy across traditions, religious comparative texts, contested historiography.\n*Expected:* high P_coh sensitivity, high R_rank compression.",
+          "lines": [
+            1237,
+            1249
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Test corpora with expected results (list continues to l.1257); predictions attached to unrun analyses."
+        },
+        {
+          "shape": "F",
+          "quote": "### 7.4 Success Criteria\n\n\nLOS implementation succeeds when:\n\n\nOperator\nSuccess Criterion\n\n\nD_pres\nComplexity-visibility correlation approaches zero (from negative baseline)\n\n\nN_c\nIncomplete content survives at rates equal to complete content",
+          "lines": [
+            1269,
+            1284
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Success criteria table (continues to l.1304 for C_ex through P_coh)."
+        },
+        {
+          "shape": "G",
+          "quote": "**Baseline:** Typical summarization systems: DPI ≈ 0.40-0.60",
+          "lines": [
+            2223,
+            2223
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Asserted baseline for current summarization systems; measurable, not measured here, no falsifier."
+        },
+        {
+          "shape": "G",
+          "quote": "**Baseline:** Typical recommendation systems: CEC ≈ 0.70-0.85 (narrowing by design)",
+          "lines": [
+            2270,
+            2270
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Asserted baseline for recommendation systems."
+        },
+        {
+          "shape": "G",
+          "quote": "**Baseline:** Typical content moderation: OSS ≈ 0.30-0.50 (opacity flagged as risk)",
+          "lines": [
+            2312,
+            2312
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Asserted baseline for content moderation."
+        },
+        {
+          "shape": "G",
+          "quote": "**Baseline:** Typical social feeds: TIR ≈ 0.20-0.40 (strong recency bias)",
+          "lines": [
+            2344,
+            2344
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Asserted baseline for social feeds."
+        },
+        {
+          "shape": "G",
+          "quote": "**Baseline:** Typical Q&A systems: NCPR ≈ 0.40-0.60 (pressure to provide definitive answers)",
+          "lines": [
+            2369,
+            2369
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Asserted baseline for Q&A systems."
+        },
+        {
+          "shape": "G",
+          "quote": "**Baseline:** Typical content platforms: NESR ≈ 0.30-0.50 (utility-optimized)",
+          "lines": [
+            2394,
+            2394
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Asserted baseline for content platforms."
+        },
+        {
+          "shape": "G",
+          "quote": "**Baseline:** Typical search results: PCI ≈ 0.40-0.60 (convergence toward consensus)",
+          "lines": [
+            2419,
+            2419
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Asserted baseline for search results."
+        },
+        {
+          "shape": "F",
+          "quote": "**Testability:** Each operator includes test specifications. A conforming implementation must pass all specified tests.",
+          "lines": [
+            1540,
+            1540
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Normative reference implementations with test specifications (Part X, ll.1527-2149); pseudocode, not built."
+        },
+        {
+          "shape": "F",
+          "quote": "**Test Case:**\n\n\nInput: Corpus of texts spanning 500 BCE to 2024 CE\nExpected: Relevance independent of publication date\nFailure: Pre-2020 content receives < 1% of visibility",
+          "lines": [
+            2896,
+            2901
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Failure-mode test case (F3); representative of the F1-F7 test cases in Part XIII."
+        },
+        {
+          "shape": "F",
+          "quote": "next_actions:\n  - empirical_data_collection\n  - platform_integration_pilots\n  - standards_body_submission",
+          "lines": [
+            3223,
+            3226
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Unperformed next actions listed in terminal metadata."
+        },
+        {
+          "shape": "B",
+          "quote": "*What follows from here is adoption.*",
+          "lines": [
+            3251,
+            3251
+          ],
+          "falsifier_quote": "",
+          "falsifier_lines": [],
+          "window": "",
+          "points_to": "",
+          "note": "Weak closing forecast of adoption; no window."
+        }
+      ],
+      "none_found": false,
+      "incidental": "Document ID and metadata give generation date 2024-12-28 with update 2026-01-07; the queue dates the deposit 2026-01-07. The System Health Dashboard (ll.3136-3161) and reporting-format JSON (ll.2484-2503) contain illustrative example figures, not measurements."
+    }
+  ]
+}

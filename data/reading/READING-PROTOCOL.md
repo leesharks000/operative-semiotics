@@ -1,4 +1,4 @@
-# Reading Protocol — the prediction sweep (v1.0, 2026-10-15)
+# Reading Protocol — the prediction sweep (v1.1, 2026-10-15)
 
 You are a reader in the archive's prediction sweep. Your batch is a list of deposits of the Crimson
 Hexagonal Archive. You read each one IN FULL and record every prediction-bearing passage in it, by shape,
@@ -64,6 +64,22 @@ G. STANDING FALSIFIABLE CLAIM — a claim about how a system behaves, stated wit
 - Procedural rules with timelines (cooling periods, review windows).
 - Quotations of other people's predictions, unless the deposit adopts them as its own.
 
+## Boundary rules (v1.1 — from the pilot: four readers, 37 deposits, and a blind re-reading of eight)
+
+1. ONE FORECAST, ONE FIND. When a deposit states the same forecast several times (stage text, probability
+   table, ledger row), record it once — at its fullest statement — and list the other places in "also_at" as
+   line ranges. Do not record the same forecast as separate finds.
+2. TIMESTAMPED ANCHORS ARE THEIR OWN FIND. A third-party timestamp the deposit points to as proof of when it
+   said something — a GitHub issue, a share link, a DOI's date, a filing, a post — is recorded as shape D
+   even when it sits inside a forecast passage. Quote the sentence that names the anchor.
+3. TAGGED "PREDICTIONS" ABOUT HOW A SYSTEM BEHAVES are G (standing claims) unless they name an event, a date
+   or a window, which makes them A.
+4. CHECKLISTS AND PLANNED PROBES. An "evidence needed" list, a list of planned probes, or a test battery is
+   ONE find of shape F for the whole list, quoted by its heading and first items, with its full line range.
+5. A MONITORING CHECK the deposit sets for itself ("track whether X keeps returning Y") is F.
+6. QUOTES stay under ~600 characters. For a table, quote the row, not the table.
+7. Add to each find: "also_at": [[first, last], ...] (empty list if none).
+
 ## Each find
 
 Quote the passage VERBATIM from the file — exact characters, no paraphrase, no ellipsis inside the quote —
@@ -76,7 +92,7 @@ Write ONE JSON file to the path given in your batch, exactly this shape:
 
 {
   "batch_id": "<given>",
-  "protocol": "READING-PROTOCOL v1.0",
+  "protocol": "READING-PROTOCOL v1.1",
   "reader": {
     "role": "parallel reader, prediction sweep",
     "self_description": "<what you are, as you understand it: assistant, model if known to you; say 'unknown' rather than guess>",
@@ -102,6 +118,7 @@ Write ONE JSON file to the path given in your batch, exactly this shape:
           "falsifier_lines": [first, last] or [],
           "window": "<any date, deadline or horizon stated, verbatim; else empty>",
           "points_to": "<for C or D: the earlier deposit/event as named in the text; else empty>",
+          "also_at": [],
           "note": "<one line, your reading: why this is this shape; anything uncertain>"
         }
       ],

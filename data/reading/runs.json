@@ -16,7 +16,29 @@
    "protocol_sha256": "25b5135afc4b806aaa941c7042742e0a792c95402029bb032258a5567f5918bd",
    "instructions": "batch file + protocol; blind for CAL (in-session readings withheld)",
    "output": "data/reading/batches/CAL.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 164270,
+    "tool_uses": 19,
+    "tokens": 165456
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:07:29Z",
+    "finished_at": "2026-10-15T19:09:54Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5). Quotes were extracted programmatically from the files by line range and start/end markers chosen after reading, to guarantee verbatim text."
+   },
+   "verification": {
+    "deposits": 8,
+    "entries": 8,
+    "finds": 85,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 8,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-pilot-B0001",
@@ -28,7 +50,29 @@
    "protocol_sha256": "25b5135afc4b806aaa941c7042742e0a792c95402029bb032258a5567f5918bd",
    "instructions": "batch file + protocol; blind for CAL (in-session readings withheld)",
    "output": "data/reading/batches/B0001.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 126013,
+    "tool_uses": 17,
+    "tokens": 183408
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:07:32Z",
+    "finished_at": "2026-10-15T19:09:32Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)."
+   },
+   "verification": {
+    "deposits": 8,
+    "entries": 8,
+    "finds": 37,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 8,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-pilot-B0002",
@@ -40,7 +84,29 @@
    "protocol_sha256": "25b5135afc4b806aaa941c7042742e0a792c95402029bb032258a5567f5918bd",
    "instructions": "batch file + protocol; blind for CAL (in-session readings withheld)",
    "output": "data/reading/batches/B0002.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 154339,
+    "tool_uses": 24,
+    "tokens": 214679
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:07:35Z",
+    "finished_at": "2026-10-15T19:09:58Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code (Agent SDK); the environment names the model as Opus 5.5 (claude-opus-5-5). I have not verified this independently."
+   },
+   "verification": {
+    "deposits": 9,
+    "entries": 9,
+    "finds": 59,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 9,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-pilot-B0003",
@@ -52,7 +118,30 @@
    "protocol_sha256": "25b5135afc4b806aaa941c7042742e0a792c95402029bb032258a5567f5918bd",
    "instructions": "batch file + protocol; blind for CAL (in-session readings withheld)",
    "output": "data/reading/batches/B0003.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 152517,
+    "tool_uses": 22,
+    "tokens": 213689
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:07:39Z",
+    "finished_at": "2026-10-15T19:10:01Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code (model reported to me as Opus 5.5, id claude-opus-5-5)"
+   },
+   "verification": {
+    "deposits": 12,
+    "entries": 12,
+    "finds": 38,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 12,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   }
- ]
+ ],
+ "pilot_finding": "Calibration (CAL, blind re-read of the eight in-session readings): every substantive item found; four boundary disagreements of shape (stage text vs embedded forecast; a third-party timestamp left inside a forecast quote; a benchmark folded into its prediction; a monitoring check read as F). The reader found more than the in-session reading (G claims in #914 and #1182) and recorded one forecast several times across stage, table and ledger. Protocol revised to v1.1 with seven boundary rules."
 }

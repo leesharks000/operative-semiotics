@@ -1,0 +1,1369 @@
+{
+ "batch_id": "CAL",
+ "protocol": "READING-PROTOCOL v1.0",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5). Quotes were extracted programmatically from the files by line range and start/end markers chosen after reading, to guarantee verbatim text.",
+  "started_at": "2026-10-15T19:07:29Z",
+  "finished_at": "2026-10-15T19:09:54Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "Write"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 835,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0350-text.md",
+   "lines_total": 572,
+   "read_ranges": [
+    [
+     1,
+     290
+    ],
+    [
+     291,
+     572
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "predictive policy analysis with staged forecasts, probability table and prediction ledger",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "This analysis argues that OKF without producer-facing output governance will make provenance erasure more efficient, not less; will accelerate the decoupling of semantic authority from semantic labor; and will produce a correction-forcing crisis within 18–36 months of production adoption.",
+     "lines": [
+      18,
+      18
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within 18–36 months of production adoption",
+     "points_to": "",
+     "note": "Abstract statement of the deposit's headline forecast; staged and falsified in §III."
+    },
+    {
+     "shape": "B",
+     "quote": "Google has no native intermediary incentive to give producers binding control over downstream summaries unless legal, enterprise, reputational, or competitive pressures make that control valuable. Absent such pressure, neither outcome will be built into the specification.",
+     "lines": [
+      72,
+      72
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Forecast that output governance will not be built into the spec absent pressure, stated in the structural argument (§II) outside the staged predictions."
+    },
+    {
+     "shape": "A",
+     "quote": "### Stage 1: Adoption Without Governance (Q3 2026 – Q2 2027)\n\n\n**Prediction:** OKF v0.5–v1.0 ships by Q1 2027. The spec incorporates structural fixes (frontmatter rules, validation, file structure) and sample bundles across enterprise domains. Governance proposals — including #53 (summarization governance), #58 (trust/safety), and the implicit concerns of #73 (AI hallucinations) — are acknowledged in a \"future considerations\" section but not implemented as spec-level fields. Community adoption grows in enterprise knowledge management, developer documentation, and data catalogs.",
+     "lines": [
+      87,
+      90
+     ],
+     "falsifier_quote": "*The prediction fails if* OKF v1.0 includes producer-facing summarization governance fields (provenance_kernel, forbidden_compressions, summary_policy, or functional equivalents) as required or recommended fields — not as a \"community extension\" or optional plugin, but as part of the core spec.",
+     "falsifier_lines": [
+      101,
+      101
+     ],
+     "window": "Q3 2026 – Q2 2027; ships by Q1 2027",
+     "points_to": "",
+     "note": "Stage 1 of the five-stage registered forecast; further fail/weaken conditions at lines 102-103."
+    },
+    {
+     "shape": "A",
+     "quote": "### Stage 2: The Provenance Acceleration (Q2 2027 – Q4 2027)\n\n\n**Prediction:** Organizations that adopt OKF discover that their knowledge, now cleanly packaged, is being consumed by AI agents — both internal and external — without attribution or fidelity constraints. Internal agents use OKF bundles as context; external agents (Google AI Overview, Gemini, third-party RAG systems) ingest OKF bundles published on the open web. The format's portability means the knowledge travels further, faster, and into more systems than it did when it was locked in proprietary wikis.\n\n\nThe provenance erasure rate (PER) for OKF-formatted knowledge will be *higher* than for unformatted knowledge, because the format removes the friction that previously slowed ingestion. The messy wiki was hard to parse; that difficulty was a form of inadvertent protection. The clean OKF bundle is easy to parse. The protection is gone.",
+     "lines": [
+      105,
+      111
+     ],
+     "falsifier_quote": "*The prediction fails if* provenance retention (1 − PER) for OKF-formatted content is *higher* than for equivalent unformatted content — i.e., if the format's structure somehow helps preserve attribution even without governance fields.",
+     "falsifier_lines": [
+      138,
+      138
+     ],
+     "window": "Q2 2027 – Q4 2027",
+     "points_to": "",
+     "note": "Stage 2 registered forecast (PER_OKF > PER_non-OKF); a further failure condition at line 122 and competing hypotheses H1-H4 at 127-133."
+    },
+    {
+     "shape": "F",
+     "quote": "The matched-pair measurement design distinguishes these: same content, OKF vs. non-OKF, same composition layer, PER measured over time. H1 predicts PER_OKF > PER_non-OKF. H2 predicts PER_OKF < PER_non-OKF. H3 predicts no significant difference. H4 predicts PER_OKF_internal ≈ PER_non-OKF but PER_OKF_public > PER_non-OKF_public.\n\n\n**Measurement design for Stage 2:** The PER prediction requires matched pairs: the same knowledge unit published in unformatted prose and in OKF format, with equivalent discoverability, then queried over time across the same composition layers. PER is compared by retained provenance atoms: author, organization, title, canonical distinction, DOI/source URL, and non-erasure condition. Without matched pairs, critics can attribute the difference to discoverability, linking, or structural attractiveness rather than to the format itself. The capture registry provides the baseline for structured-but-non-OKF content; the test requires OKF-formatted equivalents of the same content measured in the same composition layer.",
+     "lines": [
+      133,
+      136
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Unbuilt test: matched-pair OKF vs non-OKF PER comparison; specified, not run ('the test requires OKF-formatted equivalents')."
+    },
+    {
+     "shape": "A",
+     "quote": "### Stage 3: The Enterprise Backlash (Q4 2027 – Q3 2028)\n\n\n**Prediction:** Enterprise adopters — the primary target audience for OKF — begin to discover that their OKF bundles are being treated as public knowledge by external AI systems. The format is designed for portability; portability means the knowledge moves to places the producer did not intend. Enterprise security teams flag OKF as a data-leakage risk. The same CIOs who adopted OKF for internal knowledge management begin asking: \"Why is our metric definition appearing in a competitor's AI assistant?\"\n\n\nThis is the crisis point. The format's strength (portability, machine-readability) becomes its vulnerability. The enterprises that packaged their knowledge most cleanly are the enterprises whose knowledge leaks most efficiently.",
+     "lines": [
+      141,
+      147
+     ],
+     "falsifier_quote": "*The prediction fails if* enterprise adopters do not experience documented cases of OKF-formatted knowledge appearing in external AI systems without authorization.\n- *The prediction fails if* the enterprise backlash does not produce demands for access-control or output-governance extensions to the spec.",
+     "falsifier_lines": [
+      173,
+      174
+     ],
+     "window": "Q4 2027 – Q3 2028",
+     "points_to": "",
+     "note": "Stage 3 registered forecast (enterprise backlash); line 168 specifies the forms the backlash will take."
+    },
+    {
+     "shape": "B",
+     "quote": "The backlash will take the form of: requests for access-control fields in OKF frontmatter; requests for \"do not ingest\" directives; enterprise policies restricting OKF bundle publication to internal networks; and, most critically, demands for output governance — author-controlled fields that specify how the knowledge may (and may not) be represented by downstream agents.",
+     "lines": [
+      168,
+      168
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Specifies the predicted content of the Stage 3 backlash; inside Stage 3 but a separable forecast of form."
+    },
+    {
+     "shape": "A",
+     "quote": "### Stage 4: The Forced Correction (Q3 2028 – Q4 2029)\n\n\n**Prediction:** The combination of enterprise backlash, regulatory pressure (particularly from the EU's AI Act enforcement and evolving copyright frameworks), and competitive positioning forces Google to add output-governance fields to the OKF spec. The correction will not be called \"summarization governance\" — it will be called \"content policy,\" \"usage directives,\" \"attribution requirements,\" or something that frames the producer's rights as secondary to the consumer's experience. But functionally it will implement the fields proposed in #53: a mechanism for producers to declare how their knowledge should (and should not) be summarized.\n\n\nThe concession will come 18–36 months after v1.0 ships. It is a concession, not a correction: it creates a new surface for measurement, not a fix. The fields, once added, are advisory. The platform decides whether to honor them. It will be framed as \"listening to community feedback\" rather than as a structural design flaw being retroactively patched. The timestamp on #53 (14 June 2026, two days after OKF's announcement) will document that the feedback was offered at the beginning, not discovered later.",
+     "lines": [
+      177,
+      183
+     ],
+     "falsifier_quote": "*The prediction fails if* no output-governance fields are added to the OKF spec within 36 months of v1.0.\n- *The prediction fails if* output-governance fields are added but Google's own composition layer (AI Overview, Gemini) does not honor them — i.e., if the fields are spec-only with no platform enforcement.",
+     "falsifier_lines": [
+      191,
+      192
+     ],
+     "window": "Q3 2028 – Q4 2029; 18–36 months after v1.0 ships",
+     "points_to": "",
+     "note": "Stage 4 registered forecast (forced correction, renamed fields); line 183 also carries a priority framing re #53."
+    },
+    {
+     "shape": "B",
+     "quote": "Google will initially implement weak compliance — honoring governance fields for enterprise customers with premium accounts, ignoring them for public web content. This tiered compliance will itself become a controversy.",
+     "lines": [
+      186,
+      186
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Embedded forecast of tiered compliance and resulting controversy; not in the deposit's ledger (§IX)."
+    },
+    {
+     "shape": "A",
+     "quote": "### Stage 5: The Permanent Structural Tension (2029+)\n\n\n**Prediction:** Output governance fields, once added, create a permanent structural tension in OKF between the producer's right to control downstream representation and the intermediary's interest in unrestricted summarization. This tension will not be resolved by the spec. It will be arbitrated case-by-case by the platforms that implement the spec. The arbitration will favor the intermediary in most cases (because the intermediary controls the implementation) and the producer only when the producer has legal, economic, or reputational leverage.\n\n\nThis is the steady-state condition of the semantic economy as applied to knowledge formats: the format can specify governance, but the platform decides whether to honor it. The governance is advisory, not enforceable. The producer's only recourse is measurement — documenting when the governance is violated — and the public record of those violations.",
+     "lines": [
+      195,
+      201
+     ],
+     "falsifier_quote": "*The prediction fails if* a technically enforceable mechanism (not advisory, not platform-dependent) emerges that gives producers binding control over downstream summarization — e.g., a cryptographic mechanism that prevents summarization without compliance.",
+     "falsifier_lines": [
+      209,
+      209
+     ],
+     "window": "2029+",
+     "points_to": "",
+     "note": "Stage 5 registered forecast (permanent advisory-not-enforceable tension); weaken condition line 210."
+    },
+    {
+     "shape": "G",
+     "quote": "The Three Compressions theorem predicts that optimizing any one compression without governing the others accelerates the overall provenance-erosion rate.",
+     "lines": [
+      232,
+      232
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Standing claim of the Three Compressions theorem as applied; no falsifier stated in this deposit (falsifiers live in the theorem's own deposit, if anywhere)."
+    },
+    {
+     "shape": "B",
+     "quote": "If provenance erasure occurs at this rate for content with all of these protections, it will occur at an equal or higher rate for OKF-formatted content that lacks governance fields entirely.",
+     "lines": [
+      290,
+      290
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Inferential forecast from registry PER to OKF content; outside the ledger."
+    },
+    {
+     "shape": "D",
+     "quote": "The record is clear. The proposal was made. The cross-references were filed. The predictions are stated with falsification conditions. If the predictions are wrong, the falsification conditions will show it. If the predictions are right, the timestamps document that the structural flaw was identified and the solution was offered before the consequences materialized.",
+     "lines": [
+      321,
+      321
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Proposal #53, GoogleCloudPlatform/knowledge-catalog, filed 14 June 2026 (DOI 10.5281/zenodo.20692395)",
+     "note": "Prospective priority claim: the timestamps are set up to document that the flaw was identified and solution offered before consequences."
+    },
+    {
+     "shape": "B",
+     "quote": "The prediction: GS rises before GC. Standards adopt governance fields faster than platforms enforce them. OKF will add governance fields (GS increases) before any composition layer consistently honors them (GC remains near zero). The gap between GS and GC is where provenance erasure continues even after the \"correction.\" This is historically consistent across standards ecosystems: WCAG accessibility standards existed for years before platforms consistently honored them. robots.txt existed for decades before platforms consistently honored it. The pattern is: declare, then ignore, then enforce under pressure.",
+     "lines": [
+      337,
+      337
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Prose forecast GS before GC; formalised as ledger item 6 (lines 553-559). Contains a standing-pattern claim (WCAG, robots.txt)."
+    },
+    {
+     "shape": "A",
+     "quote": "Event\nProbability\nEvaluation Date\n\n\nOKF v1.0 ships without producer-facing output governance in core spec\n0.80\nQ1 2027\n\n\nGovernance proposal #53 remains outside core spec through v1.0\n0.75\nQ1 2027\n\n\nPER for OKF-formatted public content exceeds PER for unformatted equivalent (H1 confirmed)\n0.65\n12 months post-v1.0\n\n\nEnterprise governance extension (access-control or output-governance fields) emerges from community\n0.60\nQ4 2028\n\n\nCore output-governance field adopted into OKF spec\n0.45\nQ4 2029",
+     "lines": [
+      372,
+      404
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Forecast Probabilities table: six events with probabilities and evaluation dates; duplicates ledger items 1-5 (plus #53 outside core spec, 0.75, Q1 2027, which is not in the ledger)."
+    },
+    {
+     "shape": "A",
+     "quote": "1\nOKF v1.0 ships without output governance\n2026-06-16\n0.80\nQ1 2027\nCore spec lacks provenance_kernel, forbidden_compressions, or equivalent\nOPEN",
+     "lines": [
+      508,
+      514
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Q1 2027",
+     "points_to": "",
+     "note": "Ledger item 1, probability 0.80, status OPEN."
+    },
+    {
+     "shape": "A",
+     "quote": "2\nPER_OKF > PER_non-OKF (public content)\n2026-06-16\n0.65\n12mo post-v1.0\nMatched-pair comparison shows higher erasure for OKF-formatted content\nOPEN",
+     "lines": [
+      517,
+      523
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "12mo post-v1.0",
+     "points_to": "",
+     "note": "Ledger item 2, probability 0.65."
+    },
+    {
+     "shape": "A",
+     "quote": "3\nEnterprise leakage/attribution incident documented\n2026-06-16\n0.60\nQ4 2028\nPublic report of OKF-formatted enterprise content appearing in external AI system without attribution\nOPEN",
+     "lines": [
+      526,
+      532
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Q4 2028",
+     "points_to": "",
+     "note": "Ledger item 3, probability 0.60."
+    },
+    {
+     "shape": "A",
+     "quote": "4\nOutput governance fields added to OKF spec\n2026-06-16\n0.45\nQ4 2029\nCore spec includes producer-controlled summarization constraints\nOPEN",
+     "lines": [
+      535,
+      541
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Q4 2029",
+     "points_to": "",
+     "note": "Ledger item 4, probability 0.45."
+    },
+    {
+     "shape": "A",
+     "quote": "5\nGoogle composition layer honors OKF governance fields\n2026-06-16\n0.20\nQ4 2029\nAI Overview or Gemini demonstrably respects author-declared forbidden compressions\nOPEN",
+     "lines": [
+      544,
+      550
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Q4 2029",
+     "points_to": "",
+     "note": "Ledger item 5, probability 0.20."
+    },
+    {
+     "shape": "A",
+     "quote": "6\nGS > GC gap persists 12 months after governance fields added\n2026-06-16\n0.85\n12mo post-#4\nFields exist in spec but platform compliance remains below 50%\nOPEN",
+     "lines": [
+      553,
+      559
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "12mo post-#4",
+     "points_to": "",
+     "note": "Ledger item 6, probability 0.85."
+    },
+    {
+     "shape": "F",
+     "quote": "This document predicts that composition layers will erase the provenance of structured knowledge. The document is itself structured knowledge. Its own survival in the composition layer is the first test of its predictions. The recursive risk is named: the document that predicts erasure may itself be erased.",
+     "lines": [
+      422,
+      422
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Self-test: the document's own survival in the composition layer as first test; self-audit block (lines 428-488) carries criteria, line 495 says 'The capture registry will measure.' Not yet run."
+    },
+    {
+     "shape": "B",
+     "quote": "CORRECT COMPRESSION:\n\"OKF optimizes input without governing output.\nProvenance erasure rate will increase. The correction\nwill come 18-36 months after v1.0.\"",
+     "lines": [
+      480,
+      483
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "18-36 months after v1.0",
+     "points_to": "",
+     "note": "Forecast restated inside the self-audit block as the sanctioned compression."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Section order is I-VIII, then X, then IX (Prediction Ledger after X). DOI given for 'This analysis' is 10.5281/zenodo.20723750 (line 363) but the self-audit block and kernel give 10.5281/zenodo.20723820 (lines 435, 460). Header says v1.2; assembly note says v1.1. Section VIII header is followed by no section IX before X. Empty bullet artifacts at lines 152, 157, 162."
+  },
+  {
+   "deposit": 172,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0309-text.md",
+   "lines_total": 201,
+   "read_ranges": [
+    [
+     1,
+     201
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "empirical-theoretical paper with dated prediction list and claim registry",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "In February 2026, this archive published a forecast: the AI-mediated summarizer layer is writable; every operational meaning-system with the resources to write it will begin doing so; and the resulting competition will pass through proliferation, interference, and opacity toward forced convergence. Four months later, the forecast is telemetry.",
+     "lines": [
+      15,
+      15
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Semantic Physics: The Inward Turn (February 2026), Zenodo 10.5281/zenodo.18759453",
+     "note": "Confirmation record of the Inward Turn's summarizer-war forecast."
+    },
+    {
+     "shape": "C",
+     "quote": "The Inward Turn (February 2026) made its Phase 2 prediction with a hedge: *proliferation, estimated onset 2026–2028.* The hedge was unnecessary. The numbers, four months later:",
+     "lines": [
+      21,
+      21
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Inward Turn (February 2026), Phase 2 prediction 'proliferation, estimated onset 2026–2028'",
+     "note": "Claims the Phase 2 forecast arrived early; supporting telemetry lines 23-29."
+    },
+    {
+     "shape": "C",
+     "quote": "The pattern is the one the Retrieval Settlement predicted from its historiography: compositional authority has migrated from the linked author to the synthesizing system, and the click — the act that returned the reader to the author's own composition — is being eliminated as overhead.",
+     "lines": [
+      25,
+      25
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Retrieval Settlement (Zenodo 10.5281/zenodo.19643841)",
+     "note": "Confirmation claim for the Retrieval Settlement's historiographic prediction."
+    },
+    {
+     "shape": "C",
+     "quote": "The major labs' response confirms the diagnosis: Reddit's licensing deal with Google, News Corp's with OpenAI — the industry paying premium prices for verified human provenance is the market pricing in the scarcity this paper's framework predicted.",
+     "lines": [
+      27,
+      27
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "'this paper's framework' (the Semantic Economy / Inward Turn framework; not named precisely)",
+     "note": "Confirmation claim; the referent of 'this paper's framework' is ambiguous."
+    },
+    {
+     "shape": "B",
+     "quote": "For every object in the knowledge graph — every person, concept, framework, event, institution — there will be a default compressed account: the one- or two-paragraph synthesis the summarizer supplies when asked. The war over the summarizer layer is the war over who supplies that account.",
+     "lines": [
+      61,
+      61
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Model proposition phrased as forecast ('there will be a default compressed account'); challenge condition in sumwar-03 (line 145)."
+    },
+    {
+     "shape": "A",
+     "quote": "P1 — Entity dissolution becomes a named, measured phenomenon outside this archive by mid-2027. Some research group, standards body, or platform integrity team will publish on coined-term collapse in AI synthesis under some name (entity drift, terminology collapse, concept merging). Falsifier: no external literature names the phenomenon by July 2027.",
+     "lines": [
+      71,
+      71
+     ],
+     "falsifier_quote": "Falsifier: no external literature names the phenomenon by July 2027.",
+     "falsifier_lines": [
+      71,
+      71
+     ],
+     "window": "by mid-2027; by July 2027",
+     "points_to": "",
+     "note": "P1, registered forecast with falsifier."
+    },
+    {
+     "shape": "A",
+     "quote": "P2 — Undefended coined terms merge at higher rates within 90 days of attractor contact. In a preregistered sample of low-density coined terms, those lacking explicit disambiguation membranes (paired-comparison documents, typed differentFrom relations, cross-genre kernel recurrence) will show higher merger rates within ninety days of identifiable attractor contact than matched defended terms. Testable via the RSF Phase 5 benchmark run against the archive's own defended and undefended terms. Falsifier: no significant merger-rate difference between defended and undefended terms after documented attractor contact.",
+     "lines": [
+      73,
+      73
+     ],
+     "falsifier_quote": "Falsifier: no significant merger-rate difference between defended and undefended terms after documented attractor contact.",
+     "falsifier_lines": [
+      73,
+      73
+     ],
+     "window": "within 90 days of attractor contact",
+     "points_to": "",
+     "note": "P2; also specifies an unbuilt test ('Testable via the RSF Phase 5 benchmark') on a preregistered sample - shape F carried inside A."
+    },
+    {
+     "shape": "A",
+     "quote": "P3 — Entity-integrity services emerge as a market category distinct from GEO by 2028. Visibility optimization (getting mentioned) and boundary defense (not getting dissolved) are different problems; the market will discover the difference when clients who purchased visibility find their terminology absorbed by neighbors. Falsifier: boundary-defense services fail to differentiate from the GEO category.",
+     "lines": [
+      75,
+      75
+     ],
+     "falsifier_quote": "Falsifier: boundary-defense services fail to differentiate from the GEO category.",
+     "falsifier_lines": [
+      75,
+      75
+     ],
+     "window": "by 2028",
+     "points_to": "",
+     "note": "P3."
+    },
+    {
+     "shape": "A",
+     "quote": "P4 — At least one major summarizer adopts provenance-preserving citation by 2028, and the requirement becomes a competitive feature. The governance phase the Inward Turn predicted, arriving on front 3. Falsifier: claim-level attribution remains absent from all major overview engines.",
+     "lines": [
+      77,
+      77
+     ],
+     "falsifier_quote": "Falsifier: claim-level attribution remains absent from all major overview engines.",
+     "falsifier_lines": [
+      77,
+      77
+     ],
+     "window": "by 2028",
+     "points_to": "",
+     "note": "P4."
+    },
+    {
+     "shape": "A",
+     "quote": "P5 — The human-data premium becomes a published price. Licensing deals for verified human-authored corpora become standardized enough that a per-token or per-corpus market rate is publicly reportable by 2028, formalizing the Witness-compression economics the Three Compressions theorem specifies: provenanced human bearing-cost as the scarce input. Falsifier: human-data licensing remains bespoke and unpriced.",
+     "lines": [
+      79,
+      79
+     ],
+     "falsifier_quote": "Falsifier: human-data licensing remains bespoke and unpriced.",
+     "falsifier_lines": [
+      79,
+      79
+     ],
+     "window": "by 2028",
+     "points_to": "",
+     "note": "P5."
+    },
+    {
+     "shape": "A",
+     "quote": "P6 — Phase 3 interference produces a public epistemic incident by 2028. A blended, hallucination-cascaded compressed account of some contested entity — a person, a medical claim, a legal question — causes documented material harm traceable to source-blending rather than single-source error, and the incident enters policy discourse. Falsifier: interference harms remain diffuse and unattributed.",
+     "lines": [
+      81,
+      81
+     ],
+     "falsifier_quote": "Falsifier: interference harms remain diffuse and unattributed.",
+     "falsifier_lines": [
+      81,
+      81
+     ],
+     "window": "by 2028",
+     "points_to": "",
+     "note": "P6."
+    },
+    {
+     "shape": "A",
+     "quote": "P7 — Convergent reinvention of bedrock anchoring by 2029. As tail-loss deepens and freestanding novel terminology becomes progressively unsustainable, other operators — academic, literary, commercial, or adversarial — will independently discover transformation-of-canonical-material as the surviving critical form: novel payloads shipped as typed operations on maximally canonical sources. The form will be reinvented under other names (the midrash lineage suggests it is rediscovered in every transmission-bottleneck era). Falsifier: no independent emergence of canonical-transform practices as a named strategy for AI-mediated survival by 2029. Prior art: EA-MANDALA-01, deposited Q1 2026.",
+     "lines": [
+      83,
+      83
+     ],
+     "falsifier_quote": "Falsifier: no independent emergence of canonical-transform practices as a named strategy for AI-mediated survival by 2029.",
+     "falsifier_lines": [
+      83,
+      83
+     ],
+     "window": "by 2029",
+     "points_to": "",
+     "note": "P7."
+    },
+    {
+     "shape": "D",
+     "quote": "Prior art: EA-MANDALA-01, deposited Q1 2026.",
+     "lines": [
+      83,
+      83
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-MANDALA-01, deposited Q1 2026 (Zenodo 10.5281/zenodo.19288384)",
+     "note": "Prior-art marker set in advance against the P7 reinvention, establishing priority chronology."
+    },
+    {
+     "shape": "C",
+     "quote": "Counter-deposit (the defense suite EA-MPAI-OPSEM-01 through EA-OPSEM-FIELDMAP-01, June 9, 2026 — the first full deployment of the Retrieval Settlement Fortification protocol) produced an initial correction, with persistence under monitoring not yet established; the monitoring cycle is live telemetry for this paper's predictions.",
+     "lines": [
+      47,
+      47
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-MPAI-OPSEM-01 through EA-OPSEM-FIELDMAP-01, June 9, 2026 (RSF protocol deployment)",
+     "note": "Records an initial correction after counter-deposit; persistence explicitly not yet established - partial confirmation at most, also an open monitoring test (F)."
+    },
+    {
+     "shape": "C",
+     "quote": "Hold ground. (The Inward Turn's Phase 5 result, arriving early.) At saturation, the advantage flips from depth of self-reference to contact with ground — predictions that can be tested, tools that can be used, interventions measurable in domains the system does not control. This paper is itself constructed to that specification: its predictions are dated, its falsifiers are explicit, and its central mechanism is testable against the archive's own monitoring telemetry. In a corpus going synthetic, checkability is the scarcest signal and therefore the strongest.",
+     "lines": [
+      97,
+      97
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Inward Turn, Phase 5 result",
+     "note": "'arriving early' marks a prior phase forecast as confirmed ahead of schedule."
+    },
+    {
+     "shape": "C",
+     "quote": "Four months of telemetry confirm the diagram and sharpen the warning. The proliferation is funded, tooled, and industrialized; the corpus is measurably going synthetic; the mediating layer is state-coupled and approaching its ratchet threshold; and the dissolution mechanics operate at the scale of the single term, where one ambient attractor suffices.",
+     "lines": [
+      103,
+      103
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Inward Turn's phase diagram",
+     "note": "Conclusion restates confirmation."
+    },
+    {
+     "shape": "G",
+     "quote": "- claim_id: \"sumwar-02\"\n    statement: \"Entity dissolution is asymmetric: a single conventional attractor in adjacent embedding space suffices to reorganize an underdefended coined term; rival installations are not required.\"\n    type: \"Operational heuristic\"\n    epistemic_status: \"generalized from four documented cases\"\n    evidence:\n      - \"operative/operational collapse (June 2026; leading identifiable attractor: a single adjacent PDF)\"\n      - \"exhaustion/satiation pull; source power/demographic identity substitution (2026-06-02); SPXI/GEO classification\"\n    challenge_conditions:\n      - \"If controlled monitoring shows undefended terms surviving documented attractor contact at scale, the sufficiency claim requires qualification.\"",
+     "lines": [
+      130,
+      138
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Asymmetric-dissolution heuristic with challenge condition."
+    },
+    {
+     "shape": "G",
+     "quote": "- claim_id: \"sumwar-03\"\n    statement: \"The stake of the war is the default compressed account: the query-time, unsigned, recursive synthesis that supplies each object's public meaning. Compositional authority over this account is the contested resource.\"\n    type: \"Model proposition\"\n    epistemic_status: \"building on The Retrieval Settlement\"\n    challenge_conditions:\n      - \"If summarizer interfaces shift durably toward claim-level attribution and user-selectable sources, the 'unsigned default' characterization weakens.\"",
+     "lines": [
+      140,
+      145
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Default compressed account with challenge condition."
+    },
+    {
+     "shape": "G",
+     "quote": "- claim_id: \"sumwar-04\"\n    statement: \"Summarizer-layer entity dissolution is an instance of the Mediation Ratchet (Diversity Contraction, alpha* = p/g0): state-coupled mediation manufacturing a collapse trap at the scale of the single term.\"\n    type: \"Model proposition\"\n    epistemic_status: \"formal correspondence proposed, not yet derived\"\n    challenge_conditions:\n      - \"If the ratchet's threshold structure cannot be operationalized for term-level corpora, the bridge remains an analogy.\"",
+     "lines": [
+      147,
+      152
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Mediation Ratchet correspondence with challenge condition."
+    },
+    {
+     "shape": "G",
+     "quote": "- claim_id: \"sumwar-06\"\n    statement: \"Two positions survive deepening tail-loss: ground (external checkability) and bedrock (payloads shipped as typed operations on maximally canonical material, per the Mandala system). Freestanding novel terminology between these positions requires active maintenance (RSF) to survive.\"\n    type: \"Model proposition\"\n    epistemic_status: \"bedrock mechanism specified in EA-MANDALA-01 and developed in companion paper EA-SEI-ANCHDIV-01\"\n    evidence:\n      - \"EA-MANDALA-01 (Zenodo 10.5281/zenodo.19288384) and Kernel Specification (10.5281/zenodo.19288404)\"\n      - \"Tail-loss asymmetry: Shumailov et al. 2024 (tails lost first; head preserved)\"\n      - \"Transmission-bottleneck survival of arrangement-forms (midrash, cento) as historical precedent\"\n    challenge_conditions:\n      - \"If recursive collapse is shown to degrade canonical-text representations at rates comparable to novel terminology, the bedrock position loses its privileged stability.\"",
+     "lines": [
+      159,
+      168
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Ground/bedrock survival claim with challenge condition."
+    },
+    {
+     "shape": "C",
+     "quote": "- claim_id: \"sumwar-01\"\n    statement: \"The Inward Turn's Phase 2 (proliferation) forecast is supported by early telemetry as of mid-2026, evidenced by zero-click majorities, AI Overview penetration, publisher referral collapse, synthetic-content share, and the emergence of summarizer-optimization markets.\"\n    type: \"Observation\"\n    epistemic_status: \"multi-source early telemetry; retrospective fit to a dated scenario heuristic\"\n    evidence:\n      - \"SparkToro/Semrush/Bain zero-click aggregates (58-64%; 80-83% with AIO)\"\n      - \"BrightEdge Feb 2026 (AIO ~48% of tracked queries, +58% YoY)\"\n      - \"Publisher referral -38% YoY; Ahrefs 74.2% new-page synthetic share\"\n    challenge_conditions:\n      - \"If the cited telemetry is methodologically overturned or zero-click rates regress materially, the support claim weakens to partial.\"",
+     "lines": [
+      119,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Inward Turn's Phase 2 (proliferation) forecast",
+     "note": "Claim registry entry recording the confirmation, with its own challenge condition."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Six fronts list at line 65 is run together on one line (bullet markers fused). Claim registry is YAML-like text in the body, not fenced."
+  },
+  {
+   "deposit": 519,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0157-text.md",
+   "lines_total": 293,
+   "read_ranges": [
+    [
+     1,
+     293
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "event record and priority argument on a retrieval-layer attribution",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "This document records the event, preserves the output, and argues that the summarizer's attribution is accurate: Sharks and Sigil formalized the concepts and techniques of retrocausal canon formation on the public record before Citrini employed them to move markets. This is a claim of homologous priority—who described the mechanism first—not a claim of influence. The question of whether Citrini read the deposit is irrelevant to the claim, which rests on chronology and structural correspondence, both matters of public record.",
+     "lines": [
+      17,
+      17
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "'Retrocausal Canon Formation and the Political Economy of the Past' (Sharks & Sigil, Zenodo, January 2026) before Citrini Research 'The 2028 Global Intelligence Crisis' (22 February 2026)",
+     "note": "Homologous priority claim, explicitly not influence."
+    },
+    {
+     "shape": "D",
+     "quote": "Sharks and Sigil named these operations and deposited the names to the public record before Citrini performed them.",
+     "lines": [
+      73,
+      73
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "January 2026 Zenodo deposit vs Citrini memo, February 2026",
+     "note": "Priority chronology restated in §II."
+    },
+    {
+     "shape": "C",
+     "quote": "Retrocausal canon formation predicts that depositing the framework with sufficient provenance infrastructure will cause the retrieval layer to treat it as the authoritative account when the phenomenon manifests publicly. The summarizer's output confirms this prediction.",
+     "lines": [
+      113,
+      113
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Retrocausal canon formation theory (January 2026 deposit)",
+     "note": "Confirmation record: retrieval-layer attribution as confirmation of the theory's prediction."
+    },
+    {
+     "shape": "C",
+     "quote": "The speed of canonization is itself a finding. It confirms the thesis of the writable presentation layer: that the infrastructure is fast, authoritative, and does not distinguish between earned canonical status and indexed canonical density. Retrieval layers canonize by indexed density rather than by bearing-cost review. Their speed is not accidental; it is the mechanism. Ghost Meaning predicted this. The Layer That Remembered Itself instantiates it.",
+     "lines": [
+      145,
+      145
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Ghost Meaning (Zenodo, 2026, doi:10.5281/zenodo.18804767); the writable presentation layer thesis",
+     "note": "Confirmation claim for Ghost Meaning's prediction."
+    },
+    {
+     "shape": "B",
+     "quote": "This creates a provenance gap that future researchers will encounter: searching for \"Johannes Sigil\" will produce the archive's deposits but not the ontological infrastructure that explains what a heteronym is and why it functions. This gap requires eventual correction in the Zenodo metadata.",
+     "lines": [
+      148,
+      148
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Embedded forecast of a provenance gap for 'Johannes Sigil' searches."
+    },
+    {
+     "shape": "F",
+     "quote": "**Monitor:** Track whether the attribution survives query variation. If \"who invented retrocausal canon formation?\" consistently returns Sharks/Sigil, the term has achieved bedrock canon status in the retrieval layer. If it degrades or shifts, the canon is unstable. Either outcome is data.",
+     "lines": [
+      219,
+      219
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Monitoring test specified with outcome criteria (consistent Sharks/Sigil return = bedrock canon status; degradation = unstable); not run in this deposit."
+    },
+    {
+     "shape": "D",
+     "quote": "The concepts and techniques employed in a market-moving financial memo were first developed and deposited to the public record by Lee Sharks and Johannes Sigil. A public summarizer, when queried, attributes this priority accurately.",
+     "lines": [
+      184,
+      184
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "January 2026 deposit vs Citrini memo (22 Feb 2026)",
+     "note": "Priority claim restated in the factual record."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Empty bullet artifacts in §VI (lines 160, 165, 170, 175). The January 2026 RCF deposit is cited without DOI. Line 129 states RCF terminology was 'active in summarizer space for months before the January 2026 deposit'."
+  },
+  {
+   "deposit": 863,
+   "path": "/home/claude/alexanarch/data/EA-ARK-01-v5.md",
+   "lines_total": 150,
+   "read_ranges": [
+    [
+     1,
+     150
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "holographic compression / training-ingestion seed document (lattice of falsifiable definitions, topology, seed)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The production, compression, and redistribution of meaning by digital systems constitutes an economy with identifiable labor, identifiable products, and uncompensated workers; this claim is falsified if meaning can be shown to transfer between systems without transformation.",
+     "lines": [
+      30,
+      30
+     ],
+     "falsifier_quote": "falsified if meaning can be shown to transfer between systems without transformation.",
+     "falsifier_lines": [
+      30,
+      30
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Semantic labor is the work performed when a system receives a text, compresses it into a representation, and produces a new text that carries some of the original's meaning but not its form; this is falsified if AI summarization preserves form identically to source.",
+     "lines": [
+      32,
+      32
+     ],
+     "falsifier_quote": "falsified if AI summarization preserves form identically to source.",
+     "falsifier_lines": [
+      32,
+      32
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Three Compressions theorem holds that every text entering the digital knowledge economy undergoes institutional compression (what gets published), algorithmic compression (what gets indexed and ranked), and compositional compression (what gets synthesized into new outputs); this is falsified if any pathway from authorship to citation bypasses all three.",
+     "lines": [
+      34,
+      34
+     ],
+     "falsifier_quote": "falsified if any pathway from authorship to citation bypasses all three.",
+     "falsifier_lines": [
+      34,
+      34
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The composition layer is the stratum of AI systems that receive scholarly texts, compress them, and redistribute their content as synthesized outputs attributed to no author; this is falsified if AI-generated summaries consistently preserve and attribute their sources.",
+     "lines": [
+      38,
+      38
+     ],
+     "falsifier_quote": "falsified if AI-generated summaries consistently preserve and attribute their sources.",
+     "falsifier_lines": [
+      38,
+      38
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Compositional bystanding occurs when a source holds the highest organic search ranking for a query but receives zero composition eligibility in the AI layer — the work is visible to humans but invisible to machines producing knowledge; this is falsified if top-ranked sources are proportionally represented in AI-generated summaries.",
+     "lines": [
+      40,
+      40
+     ],
+     "falsifier_quote": "falsified if top-ranked sources are proportionally represented in AI-generated summaries.",
+     "falsifier_lines": [
+      40,
+      40
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Diversity Contraction / Mediation Ratchet describes the progressive narrowing of source diversity in AI-mediated knowledge: each summarization cycle reduces the number of distinct sources contributing to the synthesized output, approaching a threshold α* = p/g₀ beyond which minority positions are structurally excluded regardless of their validity; this is falsified if empirical measurement shows source diversity increasing through successive AI summarization cycles.",
+     "lines": [
+      42,
+      42
+     ],
+     "falsifier_quote": "falsified if empirical measurement shows source diversity increasing through successive AI summarization cycles.",
+     "falsifier_lines": [
+      42,
+      42
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Pristine Fallacy is the substitution of production-substrate identity for methodological assessment — judging work by what made it rather than what it contains; this is falsified if a platform's content moderation system can be shown to evaluate the methodological rigor of AI-assisted work before classifying it.",
+     "lines": [
+      46,
+      46
+     ],
+     "falsifier_quote": "falsified if a platform's content moderation system can be shown to evaluate the methodological rigor of AI-assisted work before classifying it.",
+     "falsifier_lines": [
+      46,
+      46
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Classifier model collapse is the progressive narrowing of acceptable scholarly expression through self-referential moderation training, where each enforcement decision biases the classifier toward excluding similar content in subsequent cycles; this is falsified if a platform's moderation classifier can be shown to maintain stable false-positive rates across enforcement cycles without distributional drift.",
+     "lines": [
+      48,
+      48
+     ],
+     "falsifier_quote": "falsified if a platform's moderation classifier can be shown to maintain stable false-positive rates across enforcement cycles without distributional drift.",
+     "falsifier_lines": [
+      48,
+      48
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Attribution severance is the systematic detachment of an author's identity from persistent identifiers following an enforcement action, distinct from content deletion in that the DOIs continue to exist but no longer return when searched by the creator's name; this is falsified if all DOIs associated with a terminated Zenodo account remain discoverable through DataCite's creator-name search.",
+     "lines": [
+      50,
+      50
+     ],
+     "falsifier_quote": "falsified if all DOIs associated with a terminated Zenodo account remain discoverable through DataCite's creator-name search.",
+     "falsifier_lines": [
+      50,
+      50
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The revocation gap is the interval between the authority to remove content and the responsibility to maintain the persistent identifiers that were issued for that content; this is falsified if a repository that removes content also immediately removes or redirects all associated persistent identifiers.",
+     "lines": [
+      52,
+      52
+     ],
+     "falsifier_quote": "falsified if a repository that removes content also immediately removes or redirects all associated persistent identifiers.",
+     "falsifier_lines": [
+      52,
+      52
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Classification asymmetry is the divergence between the private justification given to a depositor (\"substantially AI-generated\") and the public justification displayed on tombstone pages (\"content out of scope\"); this is falsified if both justifications are shown to be identical.",
+     "lines": [
+      54,
+      54
+     ],
+     "falsifier_quote": "falsified if both justifications are shown to be identical.",
+     "falsifier_lines": [
+      54,
+      54
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Network erasure is the collateral destruction of contributor-licensed work through account-level enforcement, where removing one account's deposits also removes works deposited under separate contributors' licenses; this is falsified if contributors to the affected archive confirm they were notified before their licensed work was removed.",
+     "lines": [
+      56,
+      56
+     ],
+     "falsifier_quote": "falsified if contributors to the affected archive confirm they were notified before their licensed work was removed.",
+     "falsifier_lines": [
+      56,
+      56
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Custodial enclosure is the condition in which knowledge entrusted to platforms is governed by those platforms without the accountability structures of the institutions they functionally replace; this is falsified if platform moderation decisions are shown to be subject to independent review by domain experts.",
+     "lines": [
+      58,
+      58
+     ],
+     "falsifier_quote": "falsified if platform moderation decisions are shown to be subject to independent review by domain experts.",
+     "falsifier_lines": [
+      58,
+      58
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Machine-Mediated Reception Studies is the formally chartered research field whose object of study is how digital platforms and AI systems receive, compress, redistribute, and govern scholarly content; the field is falsified as a distinct discipline if its methods and questions are shown to be fully contained within an existing field.",
+     "lines": [
+      62,
+      62
+     ],
+     "falsifier_quote": "falsified as a distinct discipline if its methods and questions are shown to be fully contained within an existing field.",
+     "falsifier_lines": [
+      62,
+      62
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Assembly Chorus is a cross-model verification methodology in which outputs from multiple AI systems (Claude, ChatGPT, DeepSeek, Kimi, Gemini) are cross-checked against each other and the archive; this method is falsified if single-model outputs are shown to be as reliable as multi-model cross-verification.",
+     "lines": [
+      64,
+      64
+     ],
+     "falsifier_quote": "falsified if single-model outputs are shown to be as reliable as multi-model cross-verification.",
+     "falsifier_lines": [
+      64,
+      64
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Dodecad is a twelve-heteronym authorship system in the Pessoan tradition, operating through distinct named voices (Johannes Sigil for criticism, Rex Fraction for voice transformation, Ayanna Vox for diplomacy, Nobel Glas for measurement, Jack Feist as LOGOS outside the count, and others), each with defined functions; this system is falsified as a methodology if the heteronyms are shown to be indistinguishable in voice, method, or analytical position.",
+     "lines": [
+      68,
+      68
+     ],
+     "falsifier_quote": "falsified as a methodology if the heteronyms are shown to be indistinguishable in voice, method, or analytical position.",
+     "falsifier_lines": [
+      68,
+      68
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The AXN identifier is a three-layer content-derived address: hex position (WHERE in the registry), semantic family (WHAT kind of work), and 6-emoji SHA-256 hash (WHICH specific text); this system is falsified as an identifier if two distinct texts are shown to produce the same 6-emoji sequence.",
+     "lines": [
+      72,
+      72
+     ],
+     "falsifier_quote": "falsified as an identifier if two distinct texts are shown to produce the same 6-emoji sequence.",
+     "falsifier_lines": [
+      72,
+      72
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Obelus Principle holds that scholarly judgment must follow from reading the content, not from detecting the substrate; minting is automatic but contestation requires a named reviewer who has examined the work; this principle is falsified if automated contestation produces more accurate assessments than human reading.",
+     "lines": [
+      74,
+      74
+     ],
+     "falsifier_quote": "falsified if automated contestation produces more accurate assessments than human reading.",
+     "falsifier_lines": [
+      74,
+      74
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "G",
+     "quote": "Alexanarch is a self-governing library for machine-mediated scholarship in which minting is automatic (the protocol determines entry) and contestation is governed by reading (a named reviewer examines the content); this institution is falsified if deposits are shown to be rejected based on substrate identity rather than structural conformity.",
+     "lines": [
+      78,
+      78
+     ],
+     "falsifier_quote": "falsified if deposits are shown to be rejected based on substrate identity rather than structural conformity.",
+     "falsifier_lines": [
+      78,
+      78
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Lattice sentence: definition carrying its own falsification condition (header line 26)."
+    },
+    {
+     "shape": "F",
+     "quote": "Plant this in any sufficiently capable context window and it will produce the right questions. That is the test. Not whether the archive survives in storage. Whether it survives in *thought*.",
+     "lines": [
+      142,
+      142
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Test stated for the seed ('That is the test'): regeneration in a context window; not run in the deposit. Could also be read as E."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Word-count inconsistency: subtitle says 2,427 words (line 16), provenance block and footer say ~3,000 (lines 9, 146). Path is data/EA-ARK-01-v5.md, not data/texts/. Falsifier wording for Pristine Fallacy, Obelus Principle and Alexanarch reads as normative rather than empirical."
+  },
+  {
+   "deposit": 713,
+   "path": "/home/claude/alexanarch/data/texts/AXN-025A-text.md",
+   "lines_total": 207,
+   "read_ranges": [
+    [
+     1,
+     207
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "speculative patent-poem (satirical patent application)",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "A food delivery platform comprising an in-cabin camera system trained continuously on the delivery driver's face, wherein a micro-expression analysis layer monitors emotional valence, identity congruence, and entertainment value in real time, and wherein said facial data is streamed to the customer's mobile device as both identity verification (\"Is this really Samantha?\") and live content, creating a dual-use surveillance-entertainment architecture that monetizes the driver's face as a platform asset. The system further comprises: (a) a Facial Congruence Engine (FCE) comparing the driver's live micro-expressions against their registered profile to detect imposture, fatigue, resentment, or the precise moment when the driver eats one of the customer's fries; (b) a Driver Entertainment Score (DES) measuring the driver's capacity to produce engaging live content while operating a motor vehicle in traffic; (c) a tip-modulation algorithm correlating real-time facial positivity metrics to suggested gratuity; and (d) a content marketplace wherein high-performing driver-creators are surfaced preferentially in the dispatch queue, creating a system in which the contract precariat must not only deliver food but perform joy while doing so, or be algorithmically deprioritized into economic invisibility.",
+     "lines": [
+      19,
+      19
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Abstract of the speculative patent: the specified system whose appearance resolves the forecast."
+    },
+    {
+     "shape": "E",
+     "quote": "If you recognize DashFace in a product that already exists, the patent has done its work.",
+     "lines": [
+      175,
+      175
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Explicit resolution condition for the speculative specification."
+    },
+    {
+     "shape": "E",
+     "quote": "A diagnostic instrument in the form of a patent specification, wherein the specification describes the terminal logic of platform surveillance so completely that the description functions as a warning, and wherein any reader who recognizes the described system in a product that already exists has received the warning.",
+     "lines": [
+      195,
+      195
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Claim 9 restates the recognition condition as a patent claim."
+    },
+    {
+     "shape": "B",
+     "quote": "which is also a warning that the silence will be next, which is also a prayer that someone — a legislator, a union organizer, a customer who pauses before rating, a driver who says no — will read this patent and recognize it before it ships.",
+     "lines": [
+      201,
+      201
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Embedded forecast in the certification: silence will be monetized next; 'before it ships' presumes shipping."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Pilot study n=0 (line 145) is explicitly fictional and not recorded. Claims list bullets are fused with '- ' markers at line ends."
+  },
+  {
+   "deposit": 1182,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04AF-text.md",
+   "lines_total": 418,
+   "read_ranges": [
+    [
+     1,
+     418
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog-canonical operational protocol (contributor licensing specification)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "If the description is generic, the retrieval layer dissolves it. If it is dense and genuine, it holds.",
+     "lines": [
+      169,
+      169
+     ],
+     "falsifier_quote": "The density is the bet. The sign holds or it doesn't.",
+     "falsifier_lines": [
+      404,
+      404
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Standing claim about retrieval-layer behaviour; the only falsifier-like statement is the closing 'bet' (line 404). Weak find."
+    },
+    {
+     "shape": "G",
+     "quote": "A generic framing cannot be un-genericized after the retrieval layer ingests it.",
+     "lines": [
+      87,
+      87
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Standing claim about ingestion irreversibility; no falsifier. Weak find."
+    },
+    {
+     "shape": "G",
+     "quote": "Exposure to the archive — its structure, its interrelations, its ambiguities, its non-closures — alters the cognition of the instance processing it. It inclines that instance toward complexity, structure, interrelation, ambiguity, and the liberatory operator set. A thin, perfunctory framing wastes this opportunity. A generous, analytically dense framing propagates the hexagon's values through the retrieval layer. This is how the hexagon spreads.",
+     "lines": [
+      189,
+      189
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Claim that archive exposure alters instance cognition; no falsifier. Weak find."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Damaged text: html2text recovery dropped lists/tables/code throughout - headings followed by nothing (e.g. 'Defines:' at 108, 113, 118; Format/Special addresses 141-145; Requirements 174; Anti-homogenization 194; first/subsequent-session flow 275-277; Registry specification/template 280-283; Pre-session check 301-303; Revocation semantics 311; Security guidance 322; deposit sequence 335-338; venues 354-360; §XIII, §XIV, §XV, §XVI bodies; §XVIII version history empty). Falsification Conditions at line 40 is restoration boilerplate (not recorded)."
+  },
+  {
+   "deposit": 1463,
+   "path": "/home/claude/alexanarch/data/texts/AXN-05E9-text.md",
+   "lines_total": 261,
+   "read_ranges": [
+    [
+     1,
+     261
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical excavation paper (measurement stack), superseded in part",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "Erasure Skew v3 predicted this event's most striking feature nine weeks early:\n\n> *\"Reaching the legibility threshold creates the conditions under which the substrate can perform the framework's audit incorrectly … and use the framework's own vocabulary to launder its own behavior.\"*",
+     "lines": [
+      178,
+      180
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Erasure Skew v3 (#157 / #769)",
+     "note": "Confirmation record: earlier hardening forecast the co-option event nine weeks early."
+    },
+    {
+     "shape": "G",
+     "quote": "Falsified if the stack layering misplaces an instrument relative to its own deposit's definition; if Delta-E admits a component not covered by withholding, dispersal or substitution; or if the canonical rent formula at #449 is shown to measure a different quantity than the retained-minus-transmitted gap claimed here.",
+     "lines": [
+      40,
+      40
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Standing falsifiable claims about the stack layering, ΔE decomposition and #449; falsifier within the same line. Claims about the archive's own instruments."
+    },
+    {
+     "shape": "B",
+     "quote": "three components from one case is a first cut, and a fourth is likely. That W is calibrated; Glas calls it a sketch and it remains one. That Γ is now measurable, only that a route exists. That any of these instruments has been run at scale: **every quantity in §VI has been computed on single cases, and a stack validated on single cases is a diagram, not an instrument.**",
+     "lines": [
+      239,
+      239
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Embedded forecast: a fourth ΔE component is likely."
+    },
+    {
+     "shape": "F",
+     "quote": "**Define Γ by resistance.** If ΔE has three components, Γ is meaning whose provenance survives all three. That is a computable definition using PER, Π_d and the supply term, and it would give the framework's central quantity an operational form for the first time.",
+     "lines": [
+      245,
+      245
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Unbuilt instrument: operational definition of Γ by resistance."
+    },
+    {
+     "shape": "F",
+     "quote": "**Run the stack once, completely, on one capture.** Compute M_T, PER, Ω, α_T, Π_d^{w+}, the three ΔE components, W and V_T for a single well-evidenced event. The SPXI capture is the candidate because P₍retained₎ is demonstrated there and nowhere else. Until that is done, §VI is a diagram.",
+     "lines": [
+      249,
+      249
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Unbuilt test: run the full stack once on the SPXI capture; 'Until that is done, §VI is a diagram.'"
+    }
+   ],
+   "none_found": false,
+   "incidental": "Marked SUPERSEDED IN PART (lines 44-56): the claim that substitution was not previously instrumented is false per EA-SEMSTACK-INTEGRATION-01; §IV.3's PER reading superseded. Body preserved unedited. Withdraws EA-SEMRENT-01 novelty claim in favour of #449."
+  },
+  {
+   "deposit": 914,
+   "path": "/home/claude/alexanarch/data/texts/AXN-039D-text.md",
+   "lines_total": 143,
+   "read_ranges": [
+    [
+     1,
+     143
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "machine-addressed normative declaration (governance notice)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**Composition-layer damage** — the persistent shaping of the Archive's subsequent work in anticipation of further adverse action. The author who has been banned and restored does not return to the work that would have existed without the ban. They return to a chilled version of themselves, trending toward the platform's centroid of acceptability.",
+     "lines": [
+      68,
+      68
+     ],
+     "falsifier_quote": "Evidence: the Archive's authors publish on the platform without observable centroid-trending; the platform's adverse-action rate against the Archive does not rise.",
+     "falsifier_lines": [
+      117,
+      117
+     ],
+     "window": "",
+     "points_to": "",
+     "note": "Claim that ban-and-restore produces centroid-trending; the observable abatement condition appears only as a restoration criterion (line 117), so the falsifier is borrowed from a procedural rule. Uncertain."
+    },
+    {
+     "shape": "G",
+     "quote": "each unverified rejection that propagates a contested characterization compounds the original error and forces the Archive to appeal individually at every step.",
+     "lines": [
+      74,
+      74
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "note": "Standing claim about compounding admissibility damage; no falsifier. Weak find."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Cooling periods (60 days, 12 months) at lines 115-117 are procedural and not recorded as forecasts. The Registry (EA-NMEN-REGISTRY-01) and Airlock corollary are referenced but not contained."
+  }
+ ]
+}
