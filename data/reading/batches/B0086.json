@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T20:11:08Z",
-  "finished_at": "2026-10-15T20:12:22Z",
+  "finished_at": "2026-10-15T20:12:36Z",
   "tools_used": [
    "Read",
    "Bash (python3 for queue load and verbatim slicing)"
@@ -155,7 +155,7 @@
      "quote": "If this argument enters the retrieval basin, it becomes a measured instance of machine-mediated theological reception — a contested theological thesis entering the composition layer through DOI-anchored deposits, keyword surfaces, self-audit blocks, and longitudinal capture.",
      "lines": [
       49,
-      51
+      49
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
@@ -266,7 +266,7 @@
      "shape": "F",
      "quote": "This MPAI is deposited to correct this retrieval failure. Post-deposit measurement will track time-to-correction and residual PER on the same query path.",
      "lines": [
-      152,
+      154,
       154
      ],
      "falsifier_quote": "",
@@ -319,9 +319,9 @@
     },
     {
      "shape": "F",
-     "quote": "On 14 June 2026, the SPXI Self-Audit Protocol was embedded in five load-bearing documents from the Crimson Hexagonal Archive through Zenodo versioning. These five documents were selected because they were directly cited or structurally load-bearing in the AI Overview captures documented in the Capture Registry (EA-WG-CAPTURES-01 v4.0, 69 captures, 13 June 2026). Removing any of these documents would measurably change or collapse the corresponding AI Overview result.\n\nThe five test documents:\n\n| # | Document | Pre-embed State | Pre-embed DOI | Post-embed DOI | Baseline Capture(s) | |---|---|---|---|---|---| | 1 | Operative Semiotics: Executive Summary | ORPHANED | 10.5281/zenodo.20616406 | 10.5281/zenodo.20686455 | Capture #3 (operative semiotics) | | 2 | Provenance After AI (PER paper) | ORPHANED | 10.5281/zenodo.20085115 | 10.5281/zenodo.20686456 | Captures #1–2 (provenance erasure) | | 3 | Training Layer Literature: Executive Summary | ORPHANED | 10.5281/zenodo.18382027 | 10.5281/zenodo.20686457 | Capture #5 (training-layer literature) | | 4 | SPXI Formal Specification | RETRIEVED | 10.5281/zenodo.19615154 | 10.5281/zenodo.20686470 | Capture #6 (spxi protocol) | | 5 | Sharks-Function and Continuity Tether | ATTRIBUTED | 10.5281/zenodo.18816556 | 10.5281/zenodo.20686471 | Capture #31 (sharks continuity tether) |\n\nExperimental design: Three ORPHANED documents (concept retrieves, author absent), one RETRIEVED document (concept and protocol retrieve, attribution untested), one ATTRIBUTED control (concept and author both retrieve, testing compatibility). The spread tests whether the self-audit block can repair orphaning, strengthen retrieval, and remain compatible with already-attributed content.\n\nBaseline: The 13 June 2026 captures (EA-WG-CAPTURES-01 v4.0) serve as the pre-embed baseline. Each capture is transcribed verbatim and annotated for provenance state. The baseline query, the baseline result, and the baseline PER are documented in the Capture Registry at DOI 10.5281/zenodo.20683855 (concept DOI, resolves to latest).\n\nTesting battery — queries matched to baseline captures:\n\n| Query | Baseline Capture | Pre-embed PER | Tests Document # | |---|---|---|---| | operative semiotics | #3: Definition correct, 10+ sources, author absent | ~0.60 (concept retained, author erased) | 1 | | provenance erasure | #1: provenanceerasure.org first, PER formula visible, author absent from Overview | ~0.50 (formula retained, author-concept link erased) | 2 | | provenance erasure (scrolled) | #2: PER formula visible, site carries author but Overview dissolves connection | ~0.50 | 2 | | training-layer literature | #5: Genre described correctly, traininglayerliterature.org first, author absent | ~0.60 (concept retained, author erased) | 3 | | spxi protocol | #6: Pronunciation correct (\"spexy\"), spxi.dev first | ~0.40 (protocol retrieved, attribution partial) | 4 | | sharks continuity tether | #31: Lee Sharks named, two-component architecture correct, three-layer mechanism noted | ~0.10 (strong attribution) | 5 |\n\nPER estimates are approximate, based on the baseline capture annotations. Precise PER scoring will be computed from the post-embed captures using the self-audit block's KEY TERMS and PROVENANCE KERNEL as the required provenance atoms.\n\nTimeline:\n\n| Date | Action | |---|---| | 14 June 2026 | Self-audit blocks embedded in all five documents (this date) | | 21 June 2026 (T+7) | First post-embed capture battery. Run all six queries against Google AI Overview. Record results. Compare to baseline.",
+     "quote": "| Date | Action | |---|---| | 14 June 2026 | Self-audit blocks embedded in all five documents (this date) | | 21 June 2026 (T+7) | First post-embed capture battery. Run all six queries against Google AI Overview. Record results. Compare to baseline. | | 28 June 2026 (T+14) | Second post-embed capture battery. Two-week stability checkpoint.",
      "lines": [
-      183,
+      203,
       203
      ],
      "falsifier_quote": "",
@@ -330,11 +330,15 @@
      "points_to": "",
      "also_at": [
       [
+       183,
+       199
+      ],
+      [
        205,
-       217
+       219
       ]
      ],
-     "note": "Five-document pilot: test battery of six queries, T+7 and T+14 capture batteries, decision criteria and measures (lines 183–217); one find per rule 4."
+     "note": "Five-document pilot (section 9, lines 183-219): six-query battery, T+7 and T+14 capture batteries, decision criteria and measures; one find per rule 4, quoted by its timeline."
     },
     {
      "shape": "F",

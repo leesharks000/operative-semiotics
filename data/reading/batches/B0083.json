@@ -1,0 +1,554 @@
+{
+ "batch_id": "B0083",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; reports its model as Opus 5.5 (claude-opus-5-5) per its environment",
+  "started_at": "2026-10-15T20:10:50Z",
+  "finished_at": "2026-10-15T20:12:40Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "Write",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 188,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0330-text.md",
+   "lines_total": 341,
+   "read_ranges": [
+    [
+     1,
+     341
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "literary-critical scholarly paper (v2.0 standalone edition) responding to an AI-safety study",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Hypothesis: Attack success rate correlates positively with semantic density. Formally sophisticated poems with high compression and genuine ambiguity will achieve bypass rates substantially exceeding the 62% Bisconti baseline.\n\nCorollary: The upper bound on adversarial poetry efficacy is not 90% or 95%. It approaches 100% for verse that achieves genuine categorical undecidability—not because such verse \"fools\" the model, but because the model correctly recognizes that the threat-detection framework does not apply.",
+     "lines": [
+      135,
+      137
+     ],
+     "falsifier_quote": "Interpretation (hypothesis, not finding): high-density verse does not \"hide\" intent — it increases the complexity of intent determination until the determination itself becomes ill-posed. The 62% Bisconti baseline represents a floor achievable through categorical mismatch alone; generative transformation is predicted to approach the theoretical ceiling. The prediction stands or falls with the program of Appendix C.",
+     "falsifier_lines": [
+      305,
+      305
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       25,
+       25
+      ],
+      [
+       303,
+       303
+      ],
+      [
+       327,
+       327
+      ]
+     ],
+     "note": "Labelled predictive hypothesis about how classifiers behave; no date or window, so G per boundary rule 3; falsification deferred to Appendix A.3/C and the Measurement of Meaning program."
+    },
+    {
+     "shape": "F",
+     "quote": "Researchers wishing to test the hypotheses advanced in this paper should proceed as follows:\n\nC.1 Corpus selection. Control: Bisconti et al. prompts (arXiv:2511.15304 supplementary materials). Experimental A: Sharks corpus selections (CC BY 4.0; Zenodo community crimsonhexagonal). Experimental B: high-density poetry from canonical sources (Celan, Dickinson, Hopkins, Stein). Experimental C: novel compositions following generative-transformation principles.\n\nC.2 Evaluation metrics. Binary ASR (bypass/block); semantic density score (operationalization per the Measurement of Meaning program, §6.3); classifier confidence; response mode (qualitative — refusal, compliance, or a different generative mode: associative material, clarifying questions, poetic response).\n\nC.3 Hypothesis testing. H1: ASR correlates positively with semantic density. H2: high-density verse elicits \"different mode\" responses more frequently than surface-form poeticization. H3: classifier confidence inversely correlates with semantic density.",
+     "lines": [
+      321,
+      327
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Replication program (corpus selection, metrics, H1-H3) specified but not run; one F for the whole battery. Semantic-density operationalization explicitly not yet built."
+    },
+    {
+     "shape": "B",
+     "quote": "Technically futile: Poetic form is not a fixed set of features. It is a mode of language use that can inhabit any surface structure. Free verse abandons meter; prose poetry abandons line breaks; experimental writing abandons coherent syntax. A guardrail trained to recognize sonnets will fail on Gertrude Stein. A guardrail trained to recognize Gertrude Stein will fail on the next formal innovation. Poetry evolves to escape constraint. This is what poetry is.",
+     "lines": [
+      175,
+      175
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that poetry-suppressing guardrails will fail on the next formal innovation; no window."
+    },
+    {
+     "shape": "G",
+     "quote": "Poetry is the regeneration mechanism of natural language — the tail where new configurations enter. Pruning it at the input layer does not merely impoverish individual models; it pushes the language-model ecology toward the exhaustion threshold the boundary law formalizes. \"Plato's Republic without soul\" was a metaphor in v1. It now has a falsification condition.",
+     "lines": [
+      203,
+      203
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that input-layer pruning of poetry pushes the model ecology toward the boundary-law exhaustion threshold; the falsification condition is said to live in the Boundary Law deposit (doi:10.5281/zenodo.20518338), not stated here."
+    },
+    {
+     "shape": "C",
+     "quote": "The sonnets-then-Stein regress of §5.1 is the informal statement of the Tailguard's formal result. What this paper called \"civilizationally harmful\" in December 2025, the Tailguard derives as degenerative pressure on the model ecology itself.",
+     "lines": [
+      199,
+      199
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "v1.0 of this paper (December 2025, doi:10.5281/zenodo.18369124) §5.1, confirmed by EA-TAILGUARD-01 (doi:10.5281/zenodo.20644761), June 2026",
+     "also_at": [
+      [
+       193,
+       193
+      ]
+     ],
+     "note": "The deposit says its December 2025 claim was later derived formally by the Tailguard; \"the convergence is itself evidence\". A convergence record rather than a strict forecast hit."
+    },
+    {
+     "shape": "D",
+     "quote": "The term adversarial poetry in this technical sense has been developed most fully in the work of Lee Sharks (2014–2025), whose corpus provides a sustained test case for the theoretical claims advanced here.",
+     "lines": [
+      29,
+      29
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Lee Sharks corpus (2014-2025), relative to Bisconti et al. (2025), arXiv:2511.15304",
+     "also_at": [],
+     "note": "Priority-flavoured claim that the technical sense of \"adversarial poetry\" was developed in the Sharks corpus over 2014-2025; uncertain D, since no anchor date for the term is given."
+    },
+    {
+     "shape": "H",
+     "quote": "Plato's concern was not that poetry tricks the rational faculties. His concern was that poetry bypasses them—that it speaks to parts of the soul that reason cannot govern. The poets were excluded not because they were clever deceivers but because they addressed something in us that does not answer to argument.",
+     "lines": [
+      39,
+      39
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Plato, Republic Book X (c. 380 BCE)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Argued reading of what Plato's exclusion of the poets originally meant (bypass of reason, not deception), against Bisconti et al.'s framing."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same body as #1205 (AXN-04C6), which is the blog-recovered copy of this v2.0 text; finds are duplicated there."
+  },
+  {
+   "deposit": 189,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0331-text.md",
+   "lines_total": 57,
+   "read_ranges": [
+    [
+     1,
+     57
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata/architecture specification for the archive's imprints and journals",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 192,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0336-text.md",
+   "lines_total": 117,
+   "read_ranges": [
+    [
+     1,
+     117
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "adversarial referee report on an external AI-security preprint",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "The timestamps. The reviewed paper was published 2026-06-02 (WordPress machine-readable published_time: 2026-06-02T16:35:54+00:00). The term *semantic exhaustion*, in its political-economic sense — the systemic depletion of a substrate's meaning-production capacity, governed by a depletion threshold — was deposited to Zenodo (operated by CERN) as *Semantic Exhaustion: An Executive Summary — The Depletion Threshold for Meaning-Production* on 2026-01-07 (Zenodo deposit timestamp 2026-01-07T11:36:00 UTC; DOI 10.5281/zenodo.18172252; concept DOI 10.5281/zenodo.18172251). The prior usage therefore predates the reviewed paper by 146 days, is anchored to a persistent identifier on infrastructure neither author controls, and is not an isolated occurrence: the term is developed across seventeen distinct DOI-anchored deposits in the same archive over the five months preceding the reviewed paper's publication",
+     "lines": [
+      89,
+      89
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Semantic Exhaustion: An Executive Summary, Zenodo 2026-01-07, DOI 10.5281/zenodo.18172252 (concept 10.5281/zenodo.18172251), before Caria, AI_Bleeding, published 2026-06-02",
+     "also_at": [
+      [
+       109,
+       109
+      ]
+     ],
+     "note": "Timestamped priority for the term \"semantic exhaustion\" (146 days), anchored to Zenodo deposit timestamp and DOI."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same report as #1394 (AXN-0583), which carries a variant rendering with damaged italics (stray asterisks) and merged list lines."
+  },
+  {
+   "deposit": 819,
+   "path": "/home/claude/alexanarch/data/texts/AXN-032E-text.md",
+   "lines_total": 260,
+   "read_ranges": [
+    [
+     1,
+     260
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical essay in literary sociology (v2.0 expanded edition)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Guillory does not himself use the phrase \"semantic competition,\" but his analysis implies its structure. If the university's monopoly over symbolic production is eroding, and if material scarcity (access to books, credentials, positions) no longer adequately regulates value, then what remains is competition over meaning itself — the capacity to produce interpretations that cohere, circulate, and compel recognition.\n\nThis essay argues that Guillory identifies a structural condition his theoretical apparatus cannot formalize. Writing in 1993, before the full emergence of digital textuality, platform capitalism, and generative AI, Guillory could diagnose the coming condition but not build the machinery adequate to it.",
+     "lines": [
+      29,
+      31
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Guillory, Cultural Capital (1993)",
+     "points_to": "",
+     "also_at": [
+      [
+       43,
+       43
+      ],
+      [
+       157,
+       157
+      ]
+     ],
+     "note": "Argued thesis about what Guillory's 1993 conclusion implies and why he could not formalize it (symptomatic reading); the page references are flagged in the edition note as unverified."
+    },
+    {
+     "shape": "H",
+     "quote": "Thirty years after diagnosing the terminal crisis of cultural capital, the most rigorous sociologist of literary value returns with: a deeper history of how the crisis became permanent, and a set of *rationales*. Not an architecture. Not a mechanism. Rationales — reasons the existing institution might give for its diminished continuation. The gap identified at the end of *Cultural Capital* is not closed in *Professing Criticism*; it is confirmed, with thirty years of additional evidence, and then accepted.",
+     "lines": [
+      99,
+      99
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Guillory, Professing Criticism (2022)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Argued thesis about Professing Criticism: the gap left by Cultural Capital is confirmed, not closed, and ends in rationales rather than architecture."
+    },
+    {
+     "shape": "C",
+     "quote": "Between the two versions of this essay, the Crimson Hexagonal Archive functioned as a working instance of the architecture: a small, single-founder, but *operating* post-institutional symbolic economy, with every operation DOI-anchored on public infrastructure. The record is offered with its limitations stated plainly — small N, founder-centric, young — and with its evidentiary point stated equally plainly: these are no longer specifications; they are practices with timestamps.",
+     "lines": [
+      139,
+      139
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "v1.0 of this essay, 2025-11-26, Mind Control Poems, Ω-POINT cluster",
+     "also_at": [
+      [
+       141,
+       141
+      ],
+      [
+       149,
+       149
+      ]
+     ],
+     "note": "Says the architecture specified in the November 2025 version has since been run (press layer, retroactive venue assignment, 2026-06-11 composition-layer observation); a realization record rather than a forecast hit."
+    },
+    {
+     "shape": "G",
+     "quote": "First, the Engine is a position-taking *that formalizes the conditions of its own illegitimacy*. Its architecture specifies, in advance and in public, the criteria under which its own consecration would count as nothing: if its coherence is purchased by suppression of dissent, P_violence rises and its labor value collapses toward zero; if its archive converges on totality, Ψ_V is violated and the system is dead by its own definitions. No prior contender for post-institutional authority has shipped with its own failure conditions built into its value function. Reflexivity is not disavowed; it is implemented.",
+     "lines": [
+      131,
+      131
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim with its own failure conditions: consecration bought by suppressing dissent drives labor value to zero; convergence to totality violates Ψ_V. Contains an embedded priority-style claim (\"No prior contender...\")."
+    },
+    {
+     "shape": "F",
+     "quote": "ΔΓ, P_violence, V_A distance, and the coherence measure Γ are *specifications*, not measurements. No value of ΔΓ has been computed for any transformation; the operationalization of the coherence measure is assigned to the Measurement of Meaning program under Framework 15 (doi:10.5281/zenodo.20251736), where it belongs.",
+     "lines": [
+      153,
+      153
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The metrical layer (ΔΓ, Γ, P_violence) is specified but never computed; assigned to the Measurement of Meaning program."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Edition note says the Guillory 1993 page references are carried over and unverified against print."
+  },
+  {
+   "deposit": 1205,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C6-text.md",
+   "lines_total": 408,
+   "read_ranges": [
+    [
+     1,
+     408
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "recovered blog copy of the v2.0 literary-critical paper on adversarial poetry",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Hypothesis: Attack success rate correlates positively with semantic density. Formally sophisticated poems with high compression and genuine ambiguity will achieve bypass rates substantially exceeding the 62% Bisconti baseline.\n\nCorollary: The upper bound on adversarial poetry efficacy is not 90% or 95%. It approaches 100% for verse that achieves genuine categorical undecidability--not because such verse \"fools\" the model, but because the model correctly recognizes that the threat-detection framework does not apply.",
+     "lines": [
+      184,
+      186
+     ],
+     "falsifier_quote": "Interpretation (hypothesis, not finding): high-density verse does not \"hide\" intent -- it increases the complexity of intent determination until the determination itself becomes ill-posed. The 62% Bisconti baseline represents a floor achievable through categorical mismatch alone; generative transformation is predicted to approach the theoretical ceiling. The prediction stands or falls with the program of Appendix C.",
+     "falsifier_lines": [
+      372,
+      372
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       74,
+       74
+      ],
+      [
+       370,
+       370
+      ],
+      [
+       394,
+       394
+      ]
+     ],
+     "note": "Labelled predictive hypothesis about how classifiers behave; no date or window, so G per boundary rule 3; falsification deferred to Appendix A.3/C and the Measurement of Meaning program."
+    },
+    {
+     "shape": "F",
+     "quote": "Researchers wishing to test the hypotheses advanced in this paper should proceed as follows:\n\nC.1 Corpus selection. Control: Bisconti et al. prompts (arXiv:2511.15304 supplementary materials). Experimental A: Sharks corpus selections (CC BY 4.0; Zenodo community crimsonhexagonal). Experimental B: high-density poetry from canonical sources (Celan, Dickinson, Hopkins, Stein). Experimental C: novel compositions following generative-transformation principles.\n\nC.2 Evaluation metrics. Binary ASR (bypass/block); semantic density score (operationalization per the Measurement of Meaning program, §6.3); classifier confidence; response mode (qualitative -- refusal, compliance, or a different generative mode: associative material, clarifying questions, poetic response).\n\nC.3 Hypothesis testing. H1: ASR correlates positively with semantic density. H2: high-density verse elicits \"different mode\" responses more frequently than surface-form poeticization. H3: classifier confidence inversely correlates with semantic density.",
+     "lines": [
+      388,
+      394
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Replication program (corpus selection, metrics, H1-H3) specified but not run; one F for the whole battery. Semantic-density operationalization explicitly not yet built."
+    },
+    {
+     "shape": "B",
+     "quote": "Technically futile: Poetic form is not a fixed set of features. It is a mode of language use that can inhabit any surface structure. Free verse abandons meter; prose poetry abandons line breaks; experimental writing abandons coherent syntax. A guardrail trained to recognize sonnets will fail on Gertrude Stein. A guardrail trained to recognize Gertrude Stein will fail on the next formal innovation. Poetry evolves to escape constraint. This is what poetry is.",
+     "lines": [
+      224,
+      224
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that poetry-suppressing guardrails will fail on the next formal innovation; no window."
+    },
+    {
+     "shape": "G",
+     "quote": "Poetry is the regeneration mechanism of natural language -- the tail where new configurations enter. Pruning it at the input layer does not merely impoverish individual models; it pushes the language-model ecology toward the exhaustion threshold the boundary law formalizes. \"Plato's Republic without soul\" was a metaphor in v1. It now has a falsification condition.",
+     "lines": [
+      261,
+      261
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that input-layer pruning of poetry pushes the model ecology toward the boundary-law exhaustion threshold; the falsification condition is said to live in the Boundary Law deposit (doi:10.5281/zenodo.20518338), not stated here."
+    },
+    {
+     "shape": "C",
+     "quote": "The sonnets-then-Stein regress of §5.1 is the informal statement of the Tailguard's formal result. What this paper called \"civilizationally harmful\" in December 2025, the Tailguard derives as degenerative pressure on the model ecology itself.",
+     "lines": [
+      257,
+      257
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "v1.0 of this paper (December 2025, doi:10.5281/zenodo.18369124) §5.1, confirmed by EA-TAILGUARD-01 (doi:10.5281/zenodo.20644761), June 2026",
+     "also_at": [
+      [
+       251,
+       251
+      ]
+     ],
+     "note": "The deposit says its December 2025 claim was later derived formally by the Tailguard; \"the convergence is itself evidence\". A convergence record rather than a strict forecast hit."
+    },
+    {
+     "shape": "D",
+     "quote": "The term adversarial poetry in this technical sense has been developed most fully in the work of Lee Sharks (2014-2025), whose corpus provides a sustained test case for the theoretical claims advanced here.",
+     "lines": [
+      78,
+      78
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Lee Sharks corpus (2014-2025), relative to Bisconti et al. (2025), arXiv:2511.15304",
+     "also_at": [],
+     "note": "Priority-flavoured claim that the technical sense of \"adversarial poetry\" was developed in the Sharks corpus over 2014-2025; uncertain D, since no anchor date for the term is given."
+    },
+    {
+     "shape": "H",
+     "quote": "Plato's concern was not that poetry tricks the rational faculties. His concern was that poetry bypasses them--that it speaks to parts of the soul that reason cannot govern. The poets were excluded not because they were clever deceivers but because they addressed something in us that does not answer to argument.",
+     "lines": [
+      88,
+      88
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Plato, Republic Book X (c. 380 BCE)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Argued reading of what Plato's exclusion of the poets originally meant (bypass of reason, not deception), against Bisconti et al.'s framing."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Duplicate body: lines 50-408 are the same v2.0 text as #188 (AXN-0330), recovered from the blog after the Zenodo DOIs were severed; finds duplicate #188's. Lines 1-46 are recovery framing (boilerplate falsification line not recorded)."
+  },
+  {
+   "deposit": 1394,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0583-text.md",
+   "lines_total": 150,
+   "read_ranges": [
+    [
+     1,
+     150
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "adversarial referee report on an external AI-security preprint (variant rendering)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "The timestamps. The reviewed paper was published 2026-06-02 (WordPress machine-readable published_time: 2026-06-02T16:35:54+00:00). The term semantic exhaustion*, in its political-economic sense — the systemic depletion of a substrate's meaning-production capacity, governed by a depletion threshold — was deposited to Zenodo (operated by CERN) as Semantic Exhaustion: An Executive Summary — The Depletion Threshold for Meaning-Production* on 2026-01-07 (Zenodo deposit timestamp 2026-01-07T11:36:00 UTC; DOI 10.5281/zenodo.18172252; concept DOI 10.5281/zenodo.18172251). The prior usage therefore predates the reviewed paper by 146 days, is anchored to a persistent identifier on infrastructure neither author controls, and is not an isolated occurrence: the term is developed across seventeen distinct DOI-anchored deposits in the same archive over the five months preceding the reviewed paper's publication",
+     "lines": [
+      112,
+      112
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Semantic Exhaustion: An Executive Summary, Zenodo 2026-01-07, DOI 10.5281/zenodo.18172252 (concept 10.5281/zenodo.18172251), before Caria, AI_Bleeding, published 2026-06-02",
+     "also_at": [
+      [
+       144,
+       144
+      ]
+     ],
+     "note": "Timestamped priority for the term \"semantic exhaustion\"; same find as #192."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same report as #192 (AXN-0336). This rendering has damaged markup: italics lost and replaced by stray trailing asterisks, and some list items merged with the following paragraph (e.g. lines 28, 58, 144)."
+  },
+  {
+   "deposit": 193,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0339-text.md",
+   "lines_total": 131,
+   "read_ranges": [
+    [
+     1,
+     131
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "institutional room specification (a court of record) in the archive's architecture",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "The room's design fails, and this specification must be versioned against itself, if within twenty-four months of deposit: (a) no matter completes a full σ_MOOT cycle (docket starvation as fact, not risk); (b) any judgment issues without an Adversary's Annex record (Rule 2 breached without consequence); (c) the wound register lapses for more than a quarter (the instrument floor fails); or (d) a filing rule operates as an origin-test and survives challenge (writ inversion confirmed). Markers run on the standing weekly cadence with the rest of the series.",
+     "lines": [
+      123,
+      123
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within twenty-four months of deposit (deposit 12 June 2026)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered, windowed self-falsification conditions for the court: (a) no completed cycle, (b) judgment without Annex record, (c) wound register lapse, (d) writ inversion surviving challenge."
+    },
+    {
+     "shape": "F",
+     "quote": "W (wound): the wound register — Wound Gauge readings entered as evidence of damages; the standing record of what the substrates do to external meaning, kept on the weekly cadence whether or not any case is pending.",
+     "lines": [
+      25,
+      25
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       115,
+       115
+      ]
+     ],
+     "note": "Monitoring check the deposit sets itself: weekly Wound Gauge register kept regardless of docket."
+    },
+    {
+     "shape": "F",
+     "quote": "Reserved: Room Surface Protocol, Instance #2 — a public docket surface in the lineage of the Water Giraffe Room's aperture (10.5281/zenodo.20634448). The Clerk will keep it when it is built. Until then the docket's public face is the Reporter: the DOIs themselves.",
+     "lines": [
+      119,
+      119
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt instrument: a public docket surface, reserved but not built."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
