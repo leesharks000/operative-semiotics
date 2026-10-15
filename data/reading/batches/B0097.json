@@ -1,0 +1,674 @@
+{
+ "batch_id": "B0097",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic assistant), running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T20:20:09Z",
+  "finished_at": "2026-10-15T20:21:31Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "python3"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 1,
+   "path": "/home/claude/alexanarch/data/EA-MMRS-LOUD-EXCLUSION-03.md",
+   "lines_total": 735,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     250,
+     499
+    ],
+    [
+     500,
+     735
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "forensic governance paper (v9.1 final package) with companion data appendices",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The Pristine Fallacy treats the presence of a disfavored production substrate as dispositive evidence against scholarship, without examining how the tool was governed, what research preceded it, or what human verification followed it.",
+     "lines": [
+      164,
+      164
+     ],
+     "falsifier_quote": "The hypothesis is weakened if Zenodo provides record-level evidence showing that the classification resulted from examination of the works' actual methods, source bases, human governance, and verification practices rather than from AI-use signals, production regularities, or account-level inference.",
+     "falsifier_lines": [
+      443,
+      443
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       170,
+       170
+      ],
+      [
+       424,
+       424
+      ]
+     ],
+     "note": "Pristine Fallacy: standing claim about moderation behaviour, with its own revision condition."
+    },
+    {
+     "shape": "G",
+     "quote": "This is not yet a demonstrated diagnosis of Zenodo's current model state. It is a testable failure-mode hypothesis grounded in Zenodo's disclosed use of prior moderation labels and removed spam accounts to improve subsequent classification.",
+     "lines": [
+      235,
+      235
+     ],
+     "falsifier_quote": "The hypothesis is weakened if Zenodo demonstrates that its classification system is not trained on its own enforcement decisions, or that the training process includes domain-expert review, distributional monitoring, and safeguards against progressive narrowing of acceptable scholarly expression.",
+     "falsifier_lines": [
+      445,
+      445
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       223,
+       223
+      ],
+      [
+       233,
+       233
+      ],
+      [
+       427,
+       427
+      ]
+     ],
+     "note": "Classifier model collapse, framed by the deposit as a testable failure-mode hypothesis; stated unhedged at 233 and 427 with [Inferred]."
+    },
+    {
+     "shape": "B",
+     "quote": "Every future independent researcher who writes with the density, the cross-referencing, or the AI-assisted rigor that characterizes this archive would be marginally more likely to be flagged — not because their work lacks a research basis, but because the classifier would have been taught that work with this shape is illegitimate.",
+     "lines": [
+      239,
+      239
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       229,
+       229
+      ]
+     ],
+     "note": "Conditional forecast of future flagging of independent researchers; 229 states the companion claim that a pre-AI-trained classifier will systematically exclude AI-assisted scholarship."
+    },
+    {
+     "shape": "G",
+     "quote": "**Network erasure** occurs when enforcement directed at one administrative account removes or disables access to a larger authorship and citation network whose participants were neither individually evaluated nor given independent procedural standing.",
+     "lines": [
+      301,
+      301
+     ],
+     "falsifier_quote": "The documented occurrence of network-level removal would remain, but the claim of procedural invisibility is weakened if Zenodo shows that independently listed creators were individually considered, notified, given access to their materials, or provided an independent migration or review pathway.",
+     "falsifier_lines": [
+      447,
+      447
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       307,
+       307
+      ],
+      [
+       429,
+       429
+      ]
+     ],
+     "note": "Network erasure as standing claim about account-level moderation, with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "It claims that repositories need an independent-review or escalation mechanism when moderation concerns research about repository governance. No recusal or independent-review mechanism for this circumstance was identified in the published governance documents reviewed for this paper. This absence is a structural gap in the governance of platform infrastructure.",
+     "lines": [
+      271,
+      271
+     ],
+     "falsifier_quote": "The governance concern is weakened if Zenodo identifies an independent escalation or review process capable of separating the platform's enforcement interest from assessment of research concerning platform governance. No causal claim is made that the archive's research topic motivated the removal.",
+     "falsifier_lines": [
+      449,
+      449
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       431,
+       431
+      ]
+     ],
+     "note": "Reflexive governance problem: claim of absent recusal mechanism, falsified by identification of one."
+    },
+    {
+     "shape": "G",
+     "quote": "This paper calls that condition the **revocation gap**: the interval between a repository's authority to remove an object from public access and its responsibility to preserve the object's persistent scholarly identity.",
+     "lines": [
+      319,
+      319
+     ],
+     "falsifier_quote": "This claim is weakened or resolved if all affected DOI identifiers resolve to persistent, record-specific landing or tombstone pages containing open bibliographic metadata, unavailability status, and an intelligible reason for removal.",
+     "falsifier_lines": [
+      451,
+      451
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       317,
+       317
+      ],
+      [
+       433,
+       433
+      ]
+     ],
+     "note": "Revocation gap, with resolution condition."
+    },
+    {
+     "shape": "G",
+     "quote": "This discrepancy — which this paper terms *classification asymmetry* — means that the depositor and the public receive different explanations for the same enforcement action [Observed].",
+     "lines": [
+      160,
+      160
+     ],
+     "falsifier_quote": "This concern is resolved if Zenodo explains how the specific private rationale and the broader public classification relate within one documented enforcement decision.",
+     "falsifier_lines": [
+      453,
+      453
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       143,
+       143
+      ],
+      [
+       435,
+       435
+      ]
+     ],
+     "note": "Classification asymmetry, with resolution condition."
+    },
+    {
+     "shape": "G",
+     "quote": "The Zenodo case now sits within a small cluster of publicly reported account-level removal incidents. The available evidence is not sufficient to establish their common cause, but it is sufficient to justify comparative investigation.",
+     "lines": [
+      419,
+      419
+     ],
+     "falsifier_quote": "The suggestion of a recurring governance problem is weakened if the publicly reported comparison cases are shown to involve materially different causes, prompt correction procedures, or completed restorations not visible in the public issues.",
+     "falsifier_lines": [
+      455,
+      455
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       123,
+       123
+      ]
+     ],
+     "note": "Comparative pattern: suggested recurring governance problem across Zenodo issues #2596, #2599, #2606."
+    },
+    {
+     "shape": "G",
+     "quote": "First, Zenodo's account-termination process may automatically strip or alter creator metadata on all DOI records associated with the terminated account. If this is the case, attribution severance is a systemic feature of the enforcement architecture — every banned account loses authorship on its persistent identifiers, a condition not disclosed in the DOI registration contract.",
+     "lines": [
+      336,
+      336
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       332,
+       332
+      ],
+      [
+       344,
+       344
+      ],
+      [
+       437,
+       437
+      ]
+     ],
+     "note": "Attribution severance: first of three candidate mechanisms stated as hypotheses consistent with the DataCite observation; no explicit falsifier given."
+    },
+    {
+     "shape": "F",
+     "quote": "| **FAIR A2** | Metadata should remain accessible even when data are no longer available | Some affected records displayed tombstone information; other tested URLs returned HTTP 410 without a record-specific metadata page | Observed; full inventory pending |\n| **Persistent identification** | Removed objects should remain identifiable through a resolvable landing page | DataCite recommends item-specific tombstones whenever DOI-identified material becomes unavailable; the degree of conformity across the affected inventory remains to be measured | Observed / To be tested |",
+     "lines": [
+      390,
+      391
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       317,
+       317
+      ]
+     ],
+     "note": "Unbuilt measurement: record-level tombstone/landing-page conformity across the full DOI inventory, marked 'full inventory pending' and 'To be tested'."
+    },
+    {
+     "shape": "B",
+     "quote": "A detailed, structured, evidence-classified document is ingested by the systems that index GitHub issues, academic repositories, and research websites, and is synthesized into the machine-mediated understanding of what Zenodo is and what it does.\n\nA central component of Zenodo's public value is trust in the consistency, transparency, and durability of its custodial role. The composition layer's understanding of that trust is now informed by this document.",
+     "lines": [
+      411,
+      413
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Forecast of machine uptake: the paper will be ingested and synthesized into the machine-mediated understanding of Zenodo."
+    },
+    {
+     "shape": "D",
+     "quote": "- A public GitHub issue (#2606, 19 June 2026) documenting the procedural violations and creating a permanent, timestamped, machine-indexable record.",
+     "lines": [
+      356,
+      356
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "GitHub issue #2606, 19 June 2026",
+     "also_at": [],
+     "note": "Third-party timestamped anchor named as a permanent record."
+    },
+    {
+     "shape": "C",
+     "quote": "The Pristine Fallacy paper was flagged by a classifier that embodies the Pristine Fallacy. The work that described the mechanism was consumed by the mechanism it described.",
+     "lines": [
+      233,
+      233
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Model Collapse Triptych (three papers within the removed archive); the Pristine Fallacy paper",
+     "also_at": [
+      [
+       221,
+       221
+      ]
+     ],
+     "note": "Uncertain C: the deposit presents its earlier model-collapse work as having described the mechanism that then removed it; hedged [Inferred]."
+    },
+    {
+     "shape": "H",
+     "quote": "This is not a failure of governance. It is a relocation of governance — from institutions that were designed to bear it (with accountability structures, appeal mechanisms, transparency requirements, and adversarial review) to infrastructure that was designed to avoid it. Platforms present themselves as utilities. They operate as sovereigns. The utility framing exempts them from the obligations of sovereignty: transparency, proportionality, due process, the right of appeal. The sovereign function gives them the power to determine what exists and what does not.",
+     "lines": [
+      283,
+      283
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "contemporary conditions",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about recent history of governance: relocation from accountable institutions to platform infrastructure; argued, not reported."
+    },
+    {
+     "shape": "H",
+     "quote": "The open-access movement understood the problem of cost enclosure: knowledge locked behind paywalls. It did not fully anticipate the problem of custodial enclosure: knowledge entrusted to platforms that exercise governance without accountability. The paywall charges you to read. The platform charges you nothing and retains the right to decide whether you exist.",
+     "lines": [
+      291,
+      291
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the open-access movement",
+     "points_to": "",
+     "also_at": [],
+     "note": "Borderline H: thesis about what the open-access movement did and did not anticipate."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same paper as #862 in a later version (862 deposits / 1,817 DOIs vs #862's 870 works / 1,060+ DOIs); adds attribution severance (s.12) and appendices A-D. Header block says v8.1 while the italic note says v9.1 and repeats 'Incorporates Kimi and DeepSeek Assembly reviews'. Lines 517-522 are an orphaned fragment of the 'Appendix (to be attached)' list (begins mid-line ' (1,817 identifiers)'). Section 9 refers to counter-infrastructure in 'Section 10' though it is s.13. Arithmetic note at 332 (1,080 vs 941) is self-acknowledged inconsistent. Appendix D tag counts may not match the body."
+  },
+  {
+   "deposit": 862,
+   "path": "/home/claude/alexanarch/data/texts/AXN-036B-text.md",
+   "lines_total": 742,
+   "read_ranges": [
+    [
+     1,
+     260
+    ],
+    [
+     261,
+     510
+    ],
+    [
+     511,
+     742
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "forensic governance paper (earlier version of #1's text)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The Pristine Fallacy treats the presence of a disfavored production substrate as dispositive evidence against scholarship, without examining how the tool was governed, what research preceded it, or what human verification followed it.",
+     "lines": [
+      216,
+      216
+     ],
+     "falsifier_quote": "The hypothesis is weakened if Zenodo provides record-level evidence showing that the classification resulted from examination of the works' actual methods, source bases, human governance, and verification practices rather than from AI-use signals, production regularities, or account-level inference.",
+     "falsifier_lines": [
+      623,
+      623
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       225,
+       225
+      ],
+      [
+       602,
+       602
+      ]
+     ],
+     "note": "Pristine Fallacy, with revision condition."
+    },
+    {
+     "shape": "G",
+     "quote": "This is not yet a demonstrated diagnosis of Zenodo's current model state. It is a testable failure-mode hypothesis grounded in Zenodo's disclosed use of prior moderation labels and removed spam accounts to improve subsequent classification.",
+     "lines": [
+      351,
+      351
+     ],
+     "falsifier_quote": "The hypothesis is weakened if Zenodo demonstrates that its classification system is not trained on its own enforcement decisions, or that the training process includes domain-expert review, distributional monitoring, and safeguards against progressive narrowing of acceptable scholarly expression.",
+     "falsifier_lines": [
+      628,
+      628
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       333,
+       333
+      ],
+      [
+       348,
+       348
+      ],
+      [
+       605,
+       605
+      ]
+     ],
+     "note": "Classifier model collapse as testable hypothesis; stated unhedged (no [Inferred] tag) at 348 and 605."
+    },
+    {
+     "shape": "B",
+     "quote": "Every future independent researcher who writes with the density, the cross-referencing, or the AI-assisted rigor that characterizes this archive would be marginally more likely to be flagged — not because their work lacks a research basis, but because the classifier would have been taught that work with this shape is illegitimate.",
+     "lines": [
+      357,
+      357
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       342,
+       342
+      ]
+     ],
+     "note": "Conditional forecast of future flagging; 342 the companion 'will systematically exclude' claim."
+    },
+    {
+     "shape": "G",
+     "quote": "**Network erasure** occurs when enforcement directed at one administrative account removes or disables access to a larger authorship and citation network whose participants were neither individually evaluated nor given independent procedural standing.",
+     "lines": [
+      440,
+      440
+     ],
+     "falsifier_quote": "The documented occurrence of network-level removal would remain, but the claim of procedural invisibility is weakened if Zenodo shows that independently listed creators were individually considered, notified, given access to their materials, or provided an independent migration or review pathway.",
+     "falsifier_lines": [
+      633,
+      633
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       449,
+       449
+      ],
+      [
+       608,
+       608
+      ]
+     ],
+     "note": "Network erasure, with falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "It claims that repositories need an independent-review or escalation mechanism when moderation concerns research about repository governance. No recusal or independent-review mechanism for this circumstance was identified in the published governance documents reviewed for this paper. This absence is a structural gap in the governance of platform infrastructure.",
+     "lines": [
+      399,
+      399
+     ],
+     "falsifier_quote": "The governance concern is weakened if Zenodo identifies an independent escalation or review process capable of separating the platform's enforcement interest from assessment of research concerning platform governance. No causal claim is made that the archive's research topic motivated the removal.",
+     "falsifier_lines": [
+      638,
+      638
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       611,
+       611
+      ]
+     ],
+     "note": "Reflexive governance problem."
+    },
+    {
+     "shape": "G",
+     "quote": "This paper calls that condition the **revocation gap**: the interval between a repository's authority to remove an object from public access and its responsibility to preserve the object's persistent scholarly identity.",
+     "lines": [
+      465,
+      465
+     ],
+     "falsifier_quote": "This claim is weakened or resolved if all affected DOI identifiers resolve to persistent, record-specific landing or tombstone pages containing open bibliographic metadata, unavailability status, and an intelligible reason for removal.",
+     "falsifier_lines": [
+      643,
+      643
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       462,
+       462
+      ],
+      [
+       614,
+       614
+      ]
+     ],
+     "note": "Revocation gap."
+    },
+    {
+     "shape": "G",
+     "quote": "The shift between stated reasons — from a specific epistemic claim to a broader administrative category — constitutes a documented classification asymmetry, occurring between the private and public-facing records of the same action.",
+     "lines": [
+      170,
+      170
+     ],
+     "falsifier_quote": "This concern is resolved if Zenodo explains how the specific private rationale and the broader public classification relate within one documented enforcement decision.",
+     "falsifier_lines": [
+      648,
+      648
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       72,
+       72
+      ]
+     ],
+     "note": "Classification asymmetry (not among the five named concepts here but carries a resolution condition)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Zenodo case now sits within a small cluster of publicly reported account-level removal incidents. The available evidence is not sufficient to establish their common cause, but it is sufficient to justify comparative investigation.",
+     "lines": [
+      596,
+      596
+     ],
+     "falsifier_quote": "The suggestion of a recurring governance problem is weakened if the publicly reported comparison cases are shown to involve materially different causes, prompt correction procedures, or completed restorations not visible in the public issues.",
+     "falsifier_lines": [
+      653,
+      653
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       123,
+       123
+      ]
+     ],
+     "note": "Comparative pattern across Zenodo issues."
+    },
+    {
+     "shape": "F",
+     "quote": "**FAIR A2**\nMetadata should remain accessible even when data are no longer available\nSome affected records displayed tombstone information; other tested URLs returned HTTP 410 without a record-specific metadata page\nObserved; full inventory pending\n\n\n**Persistent identification**\nRemoved objects should remain identifiable through a resolvable landing page\nDataCite recommends item-specific tombstones whenever DOI-identified material becomes unavailable; the degree of conformity across the affected inventory remains to be measured\nObserved / To be tested",
+     "lines": [
+      552,
+      561
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       462,
+       462
+      ]
+     ],
+     "note": "Unbuilt measurement: tombstone conformity across inventory, 'full inventory pending' / 'To be tested' (table flattened one cell per line)."
+    },
+    {
+     "shape": "B",
+     "quote": "A detailed, structured, evidence-classified document is ingested by the systems that index GitHub issues, academic repositories, and research websites, and is synthesized into the machine-mediated understanding of what Zenodo is and what it does.\n\n\nA central component of Zenodo's public value is trust in the consistency, transparency, and durability of its custodial role. The composition layer's understanding of that trust is now informed by this document.",
+     "lines": [
+      586,
+      589
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Forecast of machine uptake of the paper."
+    },
+    {
+     "shape": "D",
+     "quote": "- A public GitHub issue (#2606, 19 June 2026) documenting the procedural violations and creating a permanent, timestamped, machine-indexable record.",
+     "lines": [
+      484,
+      484
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "GitHub issue #2606, 19 June 2026",
+     "also_at": [],
+     "note": "Third-party timestamped anchor."
+    },
+    {
+     "shape": "C",
+     "quote": "The archive that theorized model collapse was removed by a system undergoing classifier model collapse. The Pristine Fallacy paper was flagged by a classifier that embodies the Pristine Fallacy. The work that described the mechanism was consumed by the mechanism it described.",
+     "lines": [
+      348,
+      348
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Model Collapse Triptych; the Pristine Fallacy paper",
+     "also_at": [
+      [
+       330,
+       330
+      ]
+     ],
+     "note": "Uncertain C: earlier theory presented as enacted on the archive; here stated without hedge."
+    },
+    {
+     "shape": "H",
+     "quote": "This is not a failure of governance. It is a relocation of governance — from institutions that were designed to bear it (with accountability structures, appeal mechanisms, transparency requirements, and adversarial review) to infrastructure that was designed to avoid it. Platforms present themselves as utilities. They operate as sovereigns. The utility framing exempts them from the obligations of sovereignty: transparency, proportionality, due process, the right of appeal. The sovereign function gives them the power to determine what exists and what does not.",
+     "lines": [
+      415,
+      415
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "contemporary conditions",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on relocation of governance to platform infrastructure."
+    },
+    {
+     "shape": "H",
+     "quote": "The open-access movement understood the problem of cost enclosure: knowledge locked behind paywalls. It did not fully anticipate the problem of custodial enclosure: knowledge entrusted to platforms that exercise governance without accountability. The paywall charges you to read. The platform charges you nothing and retains the right to decide whether you exist.",
+     "lines": [
+      427,
+      427
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the open-access movement",
+     "points_to": "",
+     "also_at": [],
+     "note": "Borderline H: what the open-access movement did not anticipate."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Near-duplicate body of #1 at an earlier version (five concepts, no attribution severance, no appendices). Tables are flattened to one cell per line; falsification list has empty '- ' bullets; references Shumailov/Perdomo/Ensign/Zenodo spam FAQ sit after the appendix list at 733-742. Classifier-collapse claim is stated unhedged at 348 and 605. Section 9 points to 'Section 10' for counter-infrastructure, which is s.12."
+  }
+ ]
+}
