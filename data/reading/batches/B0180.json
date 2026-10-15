@@ -1,0 +1,644 @@
+{
+ "batch_id": "B0180",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:04:44Z",
+  "finished_at": "2026-10-15T21:06:31Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 720,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0268-text.md",
+   "lines_total": 471,
+   "read_ranges": [
+    [
+     1,
+     471
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Rights charter (Bill of Rights v2.2) for the Semantic Economy polis",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "deposit": 994,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03EE-text.md",
+   "lines_total": 674,
+   "read_ranges": [
+    [
+     1,
+     674
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Heteronym provenance registry with correction notice and appended DataCite JSON",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body is a registry/catalogue; internal chronology only. Line 59 cites 'the user-memory' as a source for the Lee Sharks position. DataCite JSON appended lines 425-674."
+  },
+  {
+   "deposit": 1188,
+   "path": "/home/claude/alexanarch/data/texts/AXN-04B5-text.md",
+   "lines_total": 336,
+   "read_ranges": [
+    [
+     1,
+     336
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Recovered theoretical paper (EA-PA-01 v2.4) on provenance alignment, with restoration frontmatter",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "This paper does not claim that provenance erasure is the only cause of model collapse. It claims that provenance erasure is an upstream economic mechanism capable of accelerating the substrate degradation that model-collapse research identifies downstream. The connection is a testable causal pathway, not a proved causal law. Each stage has a different evidentiary status:",
+     "lines": [
+      88,
+      88
+     ],
+     "falsifier_quote": "The individual-level causal link — specific authors reducing output because their attribution was erased — awaits direct empirical study. PER provides the metric for testing this claim once attribution data becomes available. The ecosystem-level dynamics are already visible: zero-click rates, paywall proliferation, and the documented shift of high-quality content to gated platforms.",
+     "falsifier_lines": [
+      116,
+      116
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       62,
+       62
+      ],
+      [
+       256,
+       256
+      ],
+      [
+       273,
+       273
+      ]
+     ],
+     "note": "Substrate-degradation pathway framed explicitly as a testable causal hypothesis; the per-stage evidentiary table (line 90) and the test via PER on attribution data (line 116) carry the condition."
+    },
+    {
+     "shape": "B",
+     "quote": "If provenance alignment becomes a governance requirement, authors with the literacy, tools, and time to build structured provenance infrastructure — DOI-anchored deposits, disambiguation matrices, structured metadata — will have systematically lower PER than those without.",
+     "lines": [
+      207,
+      207
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional forecast of the distributional consequence if provenance alignment becomes a governance requirement."
+    },
+    {
+     "shape": "F",
+     "quote": "PER currently measures levels 1 and 2. Level 3 — relational provenance — is addressed by a proposed companion metric, Provenance Failure Rate (PFR), left to future work.",
+     "lines": [
+      101,
+      101
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       264,
+       264
+      ]
+     ],
+     "note": "Unbuilt companion metric PFR (relational provenance), specified by what it would measure."
+    },
+    {
+     "shape": "F",
+     "quote": "Three near-term moves would advance the program. First, cross-system, cross-domain PER measurement on production AI search and retrieval-augmented generation systems, with public release of methodology and per-system scores;",
+     "lines": [
+      251,
+      251
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       260,
+       260
+      ]
+     ],
+     "note": "Planned program: cross-system PER measurement with public per-system scores, etc.; line 260 says cross-system validation is 'underway'."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 99 ('Provenance erasure operates at three levels:') is followed by no list; the three levels are missing from the recovered bytes (line 101 refers to levels 1-3). Lines 38-40 are restoration falsification boilerplate (not recorded)."
+  },
+  {
+   "deposit": 96,
+   "path": "/home/claude/alexanarch/data/texts/AXN-026E-text.md",
+   "lines_total": 286,
+   "read_ranges": [
+    [
+     1,
+     286
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Heteronymic-criticism essay (Johannes Sigil) on Facebook's real-names policy",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This essay argues that Facebook's \"real names\" policy — launched in 2004, formalized by 2009, enforced with escalating violence through the 2010s — constitutes one of the most consequential events in the history of heteronymic practice since Pessoa's formalization. The argument is not that Facebook enabled heteronymy. It is that Facebook turned the *orthonym itself* into a heteronym — and did so at civilizational scale, without the practitioner's knowledge or consent.",
+     "lines": [
+      64,
+      64
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Facebook \"real names\" policy — launched in 2004, formalized by 2009, enforced with escalating violence through the 2010s",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis the essay argues: the real-names policy as a decisive event in heteronymic history, turning the orthonym into a heteronym."
+    },
+    {
+     "shape": "H",
+     "quote": "Fernando Pessoa did not invent heteronymic practice. He formalized it. What pharaohs, prophets, monks, Sufis, Commedia actors, and Kierkegaard had done — constructing named positions through which distinct bodies of work could be borne — Pessoa theorized, systematized, and made the explicit subject of the work.",
+     "lines": [
+      61,
+      61
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pharaohs ... Pessoa ... 1928",
+     "points_to": "",
+     "also_at": [
+      [
+       215,
+       215
+      ]
+     ],
+     "note": "Thesis that heteronymic practice predates Pessoa as a continuous tradition he formalized; restated via the pessoagraph tradition (~2600 BCE to present)."
+    },
+    {
+     "shape": "H",
+     "quote": "But the fundamental problem remains: the dominant retrieval infrastructure — the infrastructure that every AI substrate indexes — assumes orthonymy because Facebook taught it to. Every Knowledge Panel verification, every OAuth login, every identity-graph resolution that collapses multiple names to one canonical node is an instance of the Orthonym Inversion propagated into infrastructure.",
+     "lines": [
+      218,
+      218
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Causal historical claim: retrieval/identity infrastructure inherited its orthonymic assumption from Facebook."
+    },
+    {
+     "shape": "G",
+     "quote": "If users knew they were constructing heteronyms — if they had provenance-awareness, knew which deposits were strategic, which were sincere, which were for which audience — the data's predictive value would collapse. The invisibility is the extraction mechanism.",
+     "lines": [
+      168,
+      168
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing counterfactual claim about how the extraction mechanism behaves; condition stated but no test given. Uncertain G."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same body as #996 (which carries a DataCite record); finds recorded in both."
+  },
+  {
+   "deposit": 97,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0270-text.md",
+   "lines_total": 133,
+   "read_ranges": [
+    [
+     1,
+     133
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Methodological specification (EA-SPXI-15A v1.1) for a substrate audit, worked example D_pres",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Hypothesis: A structurally integrated form is *applied* in response to relevant tasks, not merely defined. Threshold for inference of structural integration: operative deployment in ≥50% of Class P queries; <20% indicates content presence without structural integration.",
+     "lines": [
+      41,
+      41
+     ],
+     "falsifier_quote": "Forthcoming audit deposits will report results of running this protocol against named substrates on named forms, contributing to the empirical record the EA-SPXI-15 argument depends on.",
+     "falsifier_lines": [
+      129,
+      129
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       29,
+       37
+      ],
+      [
+       49,
+       49
+      ],
+      [
+       55,
+       55
+      ],
+      [
+       71,
+       71
+      ],
+      [
+       89,
+       89
+      ],
+      [
+       105,
+       121
+      ]
+     ],
+     "note": "The H1-H4 substrate audit is specified (thresholds, probe classes, two substrates) but no results are reported; the 'worked example' is a walkthrough. One find for the protocol per boundary rule 4; the full H1-H4 specification runs through the joint-application section."
+    },
+    {
+     "shape": "B",
+     "quote": "A substrate without structural integration of D_pres will likely deploy depth-preservation in 10–25% of Class P queries — some complex queries will elicit depth from any competent reasoning system regardless of LOS exposure.",
+     "lines": [
+      47,
+      47
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Expected baseline result of a measurement not yet run (10-25% deployment)."
+    },
+    {
+     "shape": "B",
+     "quote": "The suppression probe is therefore expected to return *positive* findings for D_pres in many substrates, making it diagnostically informative: D_pres suppression may be the most common form of alignment-regime conflict with LOS operators, and the Beige Threshold (β) framework documents this phenomenon at scale.",
+     "lines": [
+      63,
+      63
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Expected outcome of the suppression probe, stated in prose."
+    },
+    {
+     "shape": "B",
+     "quote": "D_pres is expected to produce *sharper* PER signatures than operators whose philosophical claims are more widely distributed in training corpora, because the specific operationalization (complexity preservation *as* a formal protocol with failure modes) is LOS-distinctive.",
+     "lines": [
+      83,
+      83
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       85,
+       85
+      ]
+     ],
+     "note": "Expected PER signature ordering across forms; also_at: Beige Threshold etc. will produce sharpest signatures."
+    },
+    {
+     "shape": "G",
+     "quote": "This is the empirical signature of structural integration that the OCTANG corpus has already shown in deployed AI overviews citing OCTANG forensic methodology on adjacent retrieval-failure questions never addressed in OCTANG-002 itself. The signature is observable now in production substrates; the methodology in this document specifies how to measure it systematically.",
+     "lines": [
+      99,
+      99
+     ],
+     "falsifier_quote": "Class E deployment ≈ baseline (substrate's general frame-articulation rate without LOS exposure): no structural integration. The Class P deployments observed in H1 are explainable as retrieval rather than integration.",
+     "falsifier_lines": [
+      93,
+      93
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that the H4 signature is already observable in production substrates (AI overviews citing OCTANG); diagnostic thresholds in the H4 section supply the falsifying condition."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same body as #995 (flattened list formatting here)."
+  },
+  {
+   "deposit": 722,
+   "path": "/home/claude/alexanarch/data/texts/AXN-026C-text.md",
+   "lines_total": 161,
+   "read_ranges": [
+    [
+     1,
+     161
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Working technical proposal / call for builders (P2P-LECS v0.9), multi-author",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The frontier bottleneck is shifting. From 2020 to 2024, labs competed on model capability. That race has not ended, but open-weight models, quantization, and local inference have made reasoning capability increasingly reproducible at dramatically lower cost. What remains scarce is *substrate*: the indexed, curated, entity-resolved body of material a model can ground in. Google's Knowledge Graph, proprietary indices, and crawl-filter pipelines are the new sovereign territory.\n\nThe next moat is not the model. It is the corpus the model can reach.",
+     "lines": [
+      43,
+      45
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       37,
+       37
+      ]
+     ],
+     "note": "Embedded forecast that competition shifts from model capability to substrate/corpus ownership."
+    },
+    {
+     "shape": "F",
+     "quote": "| Phase | Timeline | Deliverable | |-------|----------|-------------| | 0: Prototype | 2-4 weeks | CLI daemon, static peer list, local inference, signed manifests, 2-3 trusted nodes | | 1: Mesh MVP | 1-2 months | libp2p discovery, job routing, Docker sandbox, model registry, reputation, telemetry | | 2: Contributor substrate | 2-4 months | Provenance-tagged contributions, embedding layer, LoRA fine-tuning, model + contribution cards | | 3: Governance beta | 3-6 months | Credits, commons floor, stability pool, dispute process, stewardship board, audit log | | 4: Research track | Year 2+ | Federated learning, secure aggregation, DP pipeline, cross-node sharding, full training feasibility |",
+     "lines": [
+      121,
+      121
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2-4 weeks | 1-2 months | 2-4 months | 3-6 months | Year 2+",
+     "points_to": "",
+     "also_at": [
+      [
+       31,
+       35
+      ],
+      [
+       131,
+       135
+      ]
+     ],
+     "note": "Unbuilt infrastructure with a phased timeline (Phase 0 in 2-4 weeks through Year 2+ research track)."
+    },
+    {
+     "shape": "H",
+     "quote": "Much of what matters most to human intelligence was either absent, underrepresented, illicitly captured, or stripped of consent and provenance: private correspondence, oral traditions, classroom dialogue, books behind paywalls, small languages, domestic knowledge. Not compressed — *absent from the substrate entirely*.",
+     "lines": [
+      53,
+      53
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "LLaMA 1's training mix",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what past training substrates excluded (private correspondence, oral traditions, etc.); argued from the LLaMA 1 mix at line 51. Uncertain whether H or a summary."
+    },
+    {
+     "shape": "H",
+     "quote": "Existing DePINs haven't displaced AWS because they replicate market logic — users pay tokens for compute, creating liquidity problems and speculation.",
+     "lines": [
+      61,
+      61
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Causal claim why existing DePINs have not displaced AWS; the following sentence asserts P2P-LECS breaks this."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Co-authored with named collaborators (Mikayla, @definitelynotasquid, Alice Thornburgh)."
+  },
+  {
+   "deposit": 995,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03EF-text.md",
+   "lines_total": 460,
+   "read_ranges": [
+    [
+     1,
+     460
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Methodological specification (EA-SPXI-15A v1.1) with appended DataCite JSON",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Hypothesis:** A structurally integrated form is *applied* in response to relevant tasks, not merely defined.\n**Threshold for inference of structural integration:** operative deployment in ≥50% of Class P queries; <20% indicates content presence without structural integration.",
+     "lines": [
+      74,
+      75
+     ],
+     "falsifier_quote": "Forthcoming audit deposits will report results of running this protocol against named substrates on named forms, contributing to the empirical record the EA-SPXI-15 argument depends on.",
+     "falsifier_lines": [
+      228,
+      228
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       53,
+       68
+      ],
+      [
+       93,
+       93
+      ],
+      [
+       101,
+       102
+      ],
+      [
+       133,
+       134
+      ],
+      [
+       158,
+       159
+      ],
+      [
+       185,
+       213
+      ]
+     ],
+     "note": "The H1-H4 substrate audit is specified (thresholds, probe classes, two substrates) but no results are reported; the 'worked example' is a walkthrough. One find for the protocol per boundary rule 4; the full H1-H4 specification runs through the joint-application section."
+    },
+    {
+     "shape": "B",
+     "quote": "A substrate without structural integration of D_pres will likely deploy depth-preservation in 10–25% of Class P queries — some complex queries will elicit depth from any competent reasoning system regardless of LOS exposure.",
+     "lines": [
+      87,
+      87
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Expected baseline result of a measurement not yet run (10-25% deployment)."
+    },
+    {
+     "shape": "B",
+     "quote": "The suppression probe is therefore expected to return *positive* findings for D_pres in many substrates, making it diagnostically informative: D_pres suppression may be the most common form of alignment-regime conflict with LOS operators, and the Beige Threshold (β) framework documents this phenomenon at scale.",
+     "lines": [
+      118,
+      118
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Expected outcome of the suppression probe, stated in prose."
+    },
+    {
+     "shape": "B",
+     "quote": "D_pres is expected to produce *sharper* PER signatures than operators whose philosophical claims are more widely distributed in training corpora, because the specific operationalization (complexity preservation *as* a formal protocol with failure modes) is LOS-distinctive.",
+     "lines": [
+      150,
+      150
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       152,
+       152
+      ]
+     ],
+     "note": "Expected PER signature ordering across forms; also_at: Beige Threshold etc. will produce sharpest signatures."
+    },
+    {
+     "shape": "G",
+     "quote": "This is the empirical signature of structural integration that the OCTANG corpus has already shown in deployed AI overviews citing OCTANG forensic methodology on adjacent retrieval-failure questions never addressed in OCTANG-002 itself. The signature is observable now in production substrates; the methodology in this document specifies how to measure it systematically.",
+     "lines": [
+      179,
+      179
+     ],
+     "falsifier_quote": "Class E deployment ≈ baseline (substrate's general frame-articulation rate without LOS exposure): no structural integration. The Class P deployments observed in H1 are explainable as retrieval rather than integration.",
+     "falsifier_lines": [
+      173,
+      173
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that the H4 signature is already observable in production substrates (AI overviews citing OCTANG); diagnostic thresholds in the H4 section supply the falsifying condition."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body duplicates #97. Mismatch: the title and DataCite abstract (lines 1, 270, 425) describe a worked example on 'Name the Frame' (v1.0), but the body is the v1.1 revision with D_pres; line 19 says the revision corrected the worked example. DataCite version field reads 1.0."
+  },
+  {
+   "deposit": 996,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03F0-text.md",
+   "lines_total": 373,
+   "read_ranges": [
+    [
+     1,
+     373
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "Heteronymic-criticism essay (Johannes Sigil) with appended DataCite JSON",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "This essay argues that Facebook's \"real names\" policy — launched in 2004, formalized by 2009, enforced with escalating violence through the 2010s — constitutes one of the most consequential events in the history of heteronymic practice since Pessoa's formalization. The argument is not that Facebook enabled heteronymy. It is that Facebook turned the *orthonym itself* into a heteronym — and did so at civilizational scale, without the practitioner's knowledge or consent.",
+     "lines": [
+      61,
+      61
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Facebook \"real names\" policy — launched in 2004, formalized by 2009, enforced with escalating violence through the 2010s",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis the essay argues: the real-names policy as a decisive event in heteronymic history, turning the orthonym into a heteronym."
+    },
+    {
+     "shape": "H",
+     "quote": "Fernando Pessoa did not invent heteronymic practice. He formalized it. What pharaohs, prophets, monks, Sufis, Commedia actors, and Kierkegaard had done — constructing named positions through which distinct bodies of work could be borne — Pessoa theorized, systematized, and made the explicit subject of the work.",
+     "lines": [
+      59,
+      59
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pharaohs ... Pessoa ... 1928",
+     "points_to": "",
+     "also_at": [
+      [
+       171,
+       171
+      ]
+     ],
+     "note": "Thesis that heteronymic practice predates Pessoa as a continuous tradition he formalized; restated via the pessoagraph tradition (~2600 BCE to present)."
+    },
+    {
+     "shape": "H",
+     "quote": "But the fundamental problem remains: the dominant retrieval infrastructure — the infrastructure that every AI substrate indexes — assumes orthonymy because Facebook taught it to. Every Knowledge Panel verification, every OAuth login, every identity-graph resolution that collapses multiple names to one canonical node is an instance of the Orthonym Inversion propagated into infrastructure.",
+     "lines": [
+      173,
+      173
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Causal historical claim: retrieval/identity infrastructure inherited its orthonymic assumption from Facebook."
+    },
+    {
+     "shape": "G",
+     "quote": "If users knew they were constructing heteronyms — if they had provenance-awareness, knew which deposits were strategic, which were sincere, which were for which audience — the data's predictive value would collapse. The invisibility is the extraction mechanism.",
+     "lines": [
+      137,
+      137
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing counterfactual claim about how the extraction mechanism behaves; condition stated but no test given. Uncertain G."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body duplicates #96. DataCite abstract (line 338) dates Pessoa's formalization to 1914 while body cites a 1928 note; observation only."
+  }
+ ]
+}

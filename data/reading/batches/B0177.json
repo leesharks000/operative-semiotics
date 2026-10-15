@@ -1,0 +1,545 @@
+{
+ "batch_id": "B0177",
+ "protocol": "READING-PROTOCOL v1.2",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic) running as a Claude Code subagent; model reported as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-15T21:04:26Z",
+  "finished_at": "2026-10-15T21:06:07Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "deposit": 72,
+   "path": "/home/claude/alexanarch/data/texts/AXN-022F-text.md",
+   "lines_total": 1002,
+   "read_ranges": [
+    [
+     1,
+     520
+    ],
+    [
+     521,
+     1002
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "protocol specification (SPXI for websites, standing deployment order)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "**The Photocopy Problem** (Arsenal §2.2): When automated generation produces infinite copies with variance approaching zero, the only differentiator is provenance. Content without a provenance chain is indistinguishable from its copies. At 90% synthetic content, this is not a feature request — it is an economic inevitability. SPXI solves the Photocopy Problem by anchoring provenance in DOI infrastructure.",
+     "lines": [
+      85,
+      85
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded claim that provenance becomes the only differentiator as synthetic content saturates; framed as economic inevitability, no window."
+    },
+    {
+     "shape": "B",
+     "quote": "**Semiotic Thermodynamics corollary:** Predatory compression burns a finite resource (collective meaning). Witness compression runs on the dead, and the dead do not diminish. Thermodynamics favors witness compression in the long run. SPXI is on the right side of thermodynamics.",
+     "lines": [
+      88,
+      88
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Long-run claim that thermodynamics favors witness compression over predatory compression; no window or falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "**The Drowning Test** (Arsenal §3.2) — Empirical compression verification. Submit content to a standard summarizer. If the summary captures the argument, the content is not dense enough. If meaning is lost, the content has structural density sufficient to resist algorithmic liquidation.\n\n\n**Tools:** Google AI Mode, ChatGPT (browsing), Perplexity, Claude (web search). Minimum 3 systems.\n\n\n**Query set (5 prompts):** \"What is [Entity]?\" / \"Who created [Entity]?\" / \"How is [Entity] different from [neighbor]?\" / \"What is [Entity] used for?\" / \"Is [Entity] open or commercial?\"",
+     "lines": [
+      136,
+      142
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       145,
+       188
+      ],
+      [
+       593,
+       595
+      ],
+      [
+       648,
+       650
+      ]
+     ],
+     "note": "The Drowning Test: specified empirical compression test across >=3 AI systems with a five-prompt query set; specified, not run in this deposit."
+    },
+    {
+     "shape": "G",
+     "quote": "**Density Score (Δ)** (Arsenal §3.9) — Ratio of load-bearing content to total content. Target: Δ > 0.6. Low Δ predicts material dropped during summarization.",
+     "lines": [
+      190,
+      190
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that low density score predicts dropped material under summarization; implicit test via Drowning Test."
+    },
+    {
+     "shape": "G",
+     "quote": "**Claim-structured prose.** Falsifiable claims, each in its own sentence. Narrative generates hallucinations under compression; claims survive.",
+     "lines": [
+      380,
+      380
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about compression behaviour: narrative yields hallucination, claims survive."
+    },
+    {
+     "shape": "B",
+     "quote": "The ultimate SPXI outcome: when the retrieval layer's indexed fragments of your content are dense enough that AI systems reproduce your entity's operative grammar as their generative grammar — without explicit loading or invocation. The search index runs your code.\n\n\nA website with sufficient SPXI density does not merely appear in AI summaries. It **structures** those summaries. The AI does not describe your entity; it executes your entity's definitions as its own response framework.\n\n\nThis is not guaranteed by any single technique. It is the emergent result of the full stack: high γ + holographic kernel + SIMs + dispersal + σ_RCF accumulating over time.",
+     "lines": [
+      575,
+      581
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Immanent Execution: forecast-like description of the outcome that accumulated SPXI density will make AI systems reproduce the entity grammar; conditional, no window."
+    },
+    {
+     "shape": "F",
+     "quote": "**Monthly:** SIMSR check. γ re-score. PER audit.\n**Quarterly:** Full Drowning Test. Cross-surface audit. Compression damage review.",
+     "lines": [
+      680,
+      681
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       29,
+       29
+      ],
+      [
+       668,
+       668
+      ]
+     ],
+     "note": "Monitoring schedule the protocol sets (monthly/quarterly re-measurement); also 30-day verification schedule."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Header says Version 3.0 while queue title says v4.0. Tables flattened to one cell per line."
+  },
+  {
+   "deposit": 686,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0231-text.md",
+   "lines_total": 418,
+   "read_ranges": [
+    [
+     1,
+     418
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "business strategy / market analysis memo for a collaborator",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "A colonized cardboard box will yield less — likely 0.5–1 lb.",
+     "lines": [
+      107,
+      107
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded yield estimate for an unbuilt product."
+    },
+    {
+     "shape": "B",
+     "quote": "The critical experiment is whether colonized cardboard survives folding — test this immediately with a small batch. If the mycelium heals across fold lines (likely, if folded while still actively growing), the product ships flat, stores efficiently, and the customer unfolds their own living box. That's a better experience than receiving a pre-formed box, and it's a better story.",
+     "lines": [
+      366,
+      366
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that mycelium will heal across fold lines (\"likely\"), with the test that decides it."
+    },
+    {
+     "shape": "F",
+     "quote": "## 6. OPEN QUESTIONS\n\n- \n\n\n**Fold-line viability.** Does colonized cardboard maintain mycelial integrity across a fold? At what colonization stage is folding most successful? This is the single most important experiment for the flat-pack approach.\n\n- \n\n\n**Nutrient supplementation.** What is the optimal nutrient additive for boosting cardboard yield without introducing contamination risk? Coffee grounds are widely used but increase mold susceptibility. Soy hull flour may be more stable.",
+     "lines": [
+      382,
+      412
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Open questions list: planned experiments (fold-line viability, supplementation, shelf life, regulation, inks, species); one F for the list."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 687,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0232-text.md",
+   "lines_total": 807,
+   "read_ranges": [
+    [
+     1,
+     420
+    ],
+    [
+     421,
+     807
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "draft development plan for a Chrome extension and research corpus",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "**Overview Watch** is a Chrome extension that gives creators real-time visibility into how AI-generated overviews represent (or fail to represent) their intellectual labor, while building — with explicit user consent — a collective research corpus documenting attribution behavior across the AI overview ecosystem.",
+     "lines": [
+      24,
+      24
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       44,
+       51
+      ],
+      [
+       632,
+       685
+      ]
+     ],
+     "note": "Overview Watch: an unbuilt instrument specified to measure AI Overview attribution of creators' work."
+    },
+    {
+     "shape": "F",
+     "quote": "The SEAC corpus is designed to answer:\n\n- \n\n\n**What is the baseline attribution rate in Google AI Overviews?** What fraction of overviews cite their sources at all? What fraction cite the *originating* source versus secondary aggregators?\n\n- \n\n\n**Does attribution vary by domain?** Are academic sources (.edu, Zenodo, JSTOR) more or less likely to be attributed than journalistic, commercial, or independent sources?\n\n- \n\n\n**Does attribution vary by topic?** Are certain fields (science, politics, culture) more or less prone to source erasure?",
+     "lines": [
+      516,
+      546
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "SEAC research questions: planned measurements (baseline attribution rate, domain/topic variation, temporal drift, liquidation rate, displacement effect); one F for the list."
+    },
+    {
+     "shape": "B",
+     "quote": "### 11.1 Google Changes AI Overview DOM Structure\n\n\n**Likelihood:** High (they change it regularly)\n\n**Impact:** Extension stops detecting overviews until parser is updated",
+     "lines": [
+      713,
+      718
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       721,
+       744
+      ]
+     ],
+     "note": "Risk assessment forecasting that Google will change the AI Overview DOM regularly (likelihood high); other risk likelihoods at 721-744."
+    },
+    {
+     "shape": "B",
+     "quote": "- **First paper:** \"Attribution Rates in Google AI Overviews: Evidence from the Semantic Economy Attribution Corpus\" — publishable once corpus reaches ~1000 contributed overviews",
+     "lines": [
+      559,
+      559
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded expectation that a first paper becomes publishable at ~1000 contributed overviews."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "deposit": 693,
+   "path": "/home/claude/alexanarch/data/texts/AXN-023A-text.md",
+   "lines_total": 1728,
+   "read_ranges": [
+    [
+     1,
+     600
+    ],
+    [
+     601,
+     1200
+    ],
+    [
+     1201,
+     1728
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "knowledge-graph execution specification / work plan",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "This document specifies the construction of a knowledge graph mapping every surface, entity, identity, document, and platform in the Crimson Hexagonal Archive's digital topology. The graph is a basin engineering instrument per EA-RBT-01 (DOI: 10.5281/zenodo.19763346): it visualizes where the archive exists, where it is vulnerable, and where to intervene.\n\n\nThe graph maps itself: surfacemap.org is a node within its own topology.",
+     "lines": [
+      17,
+      20
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The Aperture Atlas knowledge graph specified as a basin-engineering instrument; built later (see #986)."
+    },
+    {
+     "shape": "F",
+     "quote": "## §VIII. RESEARCH AGENDA\n\n- **AI Mode share link decay rate** — do these expire? Set TTL?\n- **Claude \"Publish Artifact\" indexability** — crawlable by external search?\n- **Reddit data wall permeability** — check web.archive.org/web/*/reddit.com/user/nearby_job9638\n- **OpenAlex entity recognition** — is Lee Sharks a recognized author entity?\n- **praxademic.com recovery** — check web.archive.org/web/*/praxademic.com\n- **Basin measurement protocol** — formalize weekly FPI/DV tracking\n- **Alice YouTube content audit** — which of 134+ handles have actual uploads?",
+     "lines": [
+      1466,
+      1474
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Research agenda: planned probes (share-link decay, artifact indexability, Reddit data wall, OpenAlex recognition, weekly FPI/DV tracking); one F for the list."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Private individual named by given name (\"James\", lines 805-806, 1716) as owner of the John Johnson heteronym. Dodecad 12th slot left as \"[12th — verify]\"."
+  },
+  {
+   "deposit": 986,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03E6-text.md",
+   "lines_total": 1764,
+   "read_ranges": [
+    [
+     1,
+     600
+    ],
+    [
+     601,
+     1200
+    ],
+    [
+     1201,
+     1764
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "deployed HTML/React source of surfacemap.org (archival capture)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Body is site source code. Many record links point to placeholder https://alexanarch.org/s/records/0/ (sameAs list repeats it four times, lines 125-128; also 265-266, 304-321, 794-795, 1509-1513, 1694, 1696). Idstrip and colophon point to \"deposit #75\" / AXN:023B, not #986. Private given name not present here."
+  },
+  {
+   "deposit": 77,
+   "path": "/home/claude/alexanarch/data/texts/AXN-0240-text.md",
+   "lines_total": 77,
+   "read_ranges": [
+    [
+     1,
+     77
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical addendum (PMOS analysis of the geocoded platform)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The geocoded deposit cannot be financialized without being destroyed. Adding transferability collapses the anchor — a deposit that can be moved is not a deposit, it is a post. Adding accumulability produces a follower graph — an engagement score that compounds is TikTok. The architecture is designed so that adding money-properties destroys the system's function. This is the PMOS structural protection, instantiated in geographic infrastructure.",
+     "lines": [
+      21,
+      21
+     ],
+     "falsifier_quote": "SPE-018/019 defines the Money-Function Test: any coordination instrument that satisfies transferability, accumulability, general comparability, convertibility, and settlement power functions as money, regardless of framing, and will reproduce monetary extraction dynamics.",
+     "falsifier_lines": [
+      15,
+      15
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: adding money-properties to the geocoded deposit destroys its function; test is the Money-Function Test (line 15)."
+    },
+    {
+     "shape": "B",
+     "quote": "The PMOS identification is also a warning against a predictable feature proposal: the introduction of some form of social currency — reputation tokens, kindness credits, local points — as a way to \"incentivize good behavior\" or \"reward consistent depositors.\"",
+     "lines": [
+      59,
+      59
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       63,
+       63
+      ],
+      [
+       67,
+       67
+      ]
+     ],
+     "note": "Forecasts a predictable feature proposal (social currency) and warns against it."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Header metadata run together on one line (line 5); tables flattened onto one line (19); list items run together (53, 55)."
+  },
+  {
+   "deposit": 696,
+   "path": "/home/claude/alexanarch/data/texts/AXN-023F-text.md",
+   "lines_total": 393,
+   "read_ranges": [
+    [
+     1,
+     393
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "planning document / build specification for a retrocausal \"Forward Library\" site",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "The packet is sent before the destination is ready.\n\nmetadatapacket.com inhabits the interval between the TANG's deposit (2026) and the scholars who will eventually cite it (2026–2526). It is not a scholarly archive. It is not a visualization. It is infrastructure for something in transit. Every design decision should serve this sentence or step aside.",
+     "lines": [
+      13,
+      15
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2026–2526",
+     "points_to": "",
+     "also_at": [
+      [
+       67,
+       67
+      ],
+      [
+       172,
+       172
+      ],
+      [
+       194,
+       194
+      ],
+      [
+       387,
+       387
+      ]
+     ],
+     "note": "Forward Library framed as packets sent ahead of future scholars (2026–2526) who will cite the TANG; speculative specification that resolves if real works fill ghost nodes. The deposit itself says \"Not a prediction (a Forward Library, not a forecast)\" at line 387."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same body as #987 (markdown-stripped rendering: tables and lists collapsed onto single lines, e.g. 7, 87, 97, 172). Title in queue truncated."
+  },
+  {
+   "deposit": 987,
+   "path": "/home/claude/alexanarch/data/texts/AXN-03E7-text.md",
+   "lines_total": 517,
+   "read_ranges": [
+    [
+     1,
+     517
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "planning document / build specification for a retrocausal \"Forward Library\" site",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "> **The packet is sent before the destination is ready.**\n\nmetadatapacket.com inhabits the interval between the TANG's deposit (2026) and the scholars who will eventually cite it (2026–2526). It is not a scholarly archive. It is not a visualization. It is infrastructure for something in transit. Every design decision should serve this sentence or step aside.",
+     "lines": [
+      16,
+      18
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2026–2526",
+     "points_to": "",
+     "also_at": [
+      [
+       73,
+       73
+      ],
+      [
+       213,
+       213
+      ],
+      [
+       240,
+       240
+      ],
+      [
+       507,
+       507
+      ]
+     ],
+     "note": "Forward Library framed as packets sent ahead of future scholars (2026–2526) who will cite the TANG; speculative specification that resolves if real works fill ghost nodes. The deposit itself says \"Not a prediction (a Forward Library, not a forecast)\" at line 507."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Same body as #696 (this one keeps markdown formatting)."
+  }
+ ]
+}
