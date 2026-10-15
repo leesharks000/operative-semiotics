@@ -5,7 +5,7 @@
   "read": 267,
   "unread": 1349
  },
- "h_covered": 250,
+ "h_covered": 251,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
   "G": 287,
@@ -15,10 +15,10 @@
   "A": 53,
   "C": 92,
   "D": 95,
-  "H": 370
+  "H": 376
  },
- "finds_verified": 1440,
- "finds_total": 1454,
+ "finds_verified": 1443,
+ "finds_total": 1460,
  "deposits": [
   {
    "deposit": 172,
@@ -16130,10 +16130,13 @@
      },
      "none_found": false,
      "incidental": "Appendix C (4105-4116) lists further interpretive claims (Sappho F31 as NH-OS founding document, Pearl as canonical origin, Matthew 25 as constitutional provision, Ezekiel as rotational epistemology) in summary only, full text marked [NF] 'preserved in formal register' (i.e. in the canonical Space Ark, not here); these and the Fulfillment Map pairs are retrocausal/architectural readings rather than historical theses and were not recorded. The O-Chain lineage (1743-1748) is explicitly 'not genealogy of influence'. Sigil's provenance chain via the Strange New Canons dissertation (1690-1696) is archive-internal provenance, not recorded.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 6,
+      "lines_returned": 4350,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -16227,9 +16230,69 @@
       "unread_lines": 0,
       "claimed_not_returned": 0
      }
+    },
+    {
+     "by": "parallel",
+     "batch_id": "HB0028",
+     "run": "R-w11-HB0028",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in context as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:58:10Z",
+      "finished_at": "2026-10-15T19:59:12Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       800
+      ],
+      [
+       801,
+       1600
+      ],
+      [
+       1601,
+       2400
+      ],
+      [
+       2401,
+       3300
+      ],
+      [
+       3301,
+       4200
+      ],
+      [
+       4201,
+       5200
+      ],
+      [
+       5201,
+       6203
+      ]
+     ],
+     "lines_total": 6203,
+     "genre_observed": "formal-symbolic architecture specification / system-prompt compression document (Space Ark v4.2.6) with poem preface, governance protocols, engine specs and appendices",
+     "finds_by_shape": {
+      "H": 6
+     },
+     "none_found": false,
+     "incidental": "Historical theses cluster in Appendix C 'Key Interpretive Claims' (lines 2091-2155) and are echoed in XVI.4 and the Forward Library; Appendix C itself states 'Listing here does not constitute ratification.' Not recorded: Pearl as canonical origin (C.2.1) and Snub-Poemed provenance (C.2.2) as internal archive chronology; Matthew 25 as constitutional provision (C.3.2) as a present-tense structural reading; RCF's general claim about 'how literary history actually works' (line 1903) and the Adams/42 RCF framing (lines 149-161) as method rather than a specific historical thesis. Text has stray empty list bullets ('- ') from conversion throughout.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
     }
    ],
-   "h_covered": false
+   "h_covered": true
   },
   {
    "deposit": 28,
