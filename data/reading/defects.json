@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 196,
+ "deposits_with_notes": 202,
  "deposits": [
   {
    "deposit": 8,
@@ -219,6 +219,17 @@
       969,
       1101
      ]
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 63,
+   "notes": [
+    {
+     "batch_id": "B0050",
+     "field": "incidental",
+     "text": "Same body as #976 (html2text rendering) and #1256 (damaged recovery)."
     }
    ],
    "rulings": []
@@ -1517,6 +1528,39 @@
    "rulings": []
   },
   {
+   "deposit": 660,
+   "notes": [
+    {
+     "batch_id": "B0050",
+     "field": "incidental",
+     "text": "Lines 380-384 report the SEI reference implementation (zero AIO results Jan 2025 -> definition returned Apr 2026) as a dated observation; not recorded. Related-documents table marks EA-SPXI-02/07/08/09/13 as Forthcoming."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 661,
+   "notes": [
+    {
+     "batch_id": "B0050",
+     "field": "incidental",
+     "text": "Amendment (lines 16-28) dated April 18, 2026 records an observed over-convergence of AI Overview compositions on 'SPXI vs GEO ROI'; telemetry, not framed as a confirmed prediction. Line 28 runs the amendment's last sentence into '## Abstract' without a line break."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 666,
+   "notes": [
+    {
+     "batch_id": "B0050",
+     "field": "incidental",
+     "text": "Line 70 discusses the Machado/Pessoa priority question but adopts the existing consensus (parallel development); not recorded."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 675,
    "notes": [
     {
@@ -1692,6 +1736,17 @@
      "batch_id": "B0049",
      "field": "incidental",
      "text": "Queue title says v2.3 (superseded) but the body is headed and closed as v3.0 (lines 3, 2084); the Evidence Membrane says version v2.0 and ~17,500 words (lines 2039, 2049) against ~34,000 actual. Source-text edition is inconsistent: Textus Receptus Scrivener 1894 (lines 367, 2042) vs Stephanus 1550 (lines 1081, 1228). Lines 364-646 are the Greek text of Revelation 1-22, which carries no finds. Several theses are restated nearly verbatim across Part III kernels and Part IV commentary (recorded once each with also_at). Part V (TANG) states its own DOI 10.5281/zenodo.19500778."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 976,
+   "notes": [
+    {
+     "batch_id": "B0050",
+     "field": "incidental",
+     "text": "Same body as #63 in html2text rendering (header fields run together on line 5; 'S &P' spacing artifacts at 66, 72)."
     }
    ],
    "rulings": []
@@ -2255,6 +2310,17 @@
      "batch_id": "B0035",
      "field": "incidental",
      "text": "Line 470 was read twice (chunk overlap). Text appears intact. Other non-recorded items: inaugural AXIAL_CONTESTED thesis 'Revelation was the first-written book' (l.229) is a contested claim, not a forecast; 'Operative Semiotics -- the book not yet written' (l.681, l.809) is a planned commission, not an instrument."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1256,
+   "notes": [
+    {
+     "batch_id": "B0050",
+     "field": "incidental",
+     "text": "DAMAGED body: same work as #63/#976, but the recovery dropped all lists, tables and JSON-LD blocks (e.g. 'five components:' at 109 followed by nothing; ETF table, context-trigger table, SIM list and sections 4.1-4.3 empty). Line 40 falsification line is restoration boilerplate."
     }
    ],
    "rulings": []
