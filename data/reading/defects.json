@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 797,
+ "deposits_with_notes": 806,
  "deposits": [
   {
    "deposit": 1,
@@ -4926,6 +4926,17 @@
    "rulings": []
   },
   {
+   "deposit": 834,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Header and body are v1.1 although the queue lists this as the v1.0-era deposit; body is substantively identical to #1228 (same v1.1 text, different markdown formatting). Cites 845 deposits, 134 captures."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 835,
    "notes": [
     {
@@ -4948,12 +4959,67 @@
    "rulings": []
   },
   {
+   "deposit": 838,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Header reads v1.4 while queue title says v1.3 and the closing (line 249) calls itself v1.0. Internal counts differ as observations, not errors: line 169 says \"five-level\" propagation vs seven levels elsewhere; Level 7 names ChatGPT, Muse Spark, Gemini (line 285) while the preamble names ChatGPT, Meta AI, Gemini (line 15); line 241 says 131 captures where sibling deposits #834/#845 say 134."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 839,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Consent record table is blank (template, not activated)."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 843,
    "notes": [
     {
      "batch_id": "B0094",
      "field": "incidental",
      "text": "Line 21 runs the last SPXI marker comment straight into the H1 title (no line break). List items are run together inline with '- ' separators in several places (e.g. lines 57, 65, 127, 139, 171, 197)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 845,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Body substantively identical to #1229 (same v0.2 text, different formatting)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 846,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Status says pre-deposit draft v0.3; provenance kernel gives DOI 10.5281/zenodo.20735736. Three-mode table rendered as loose lines (76-97)."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 848,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Manifest current_count 131 captures; sibling deposits say 134."
     }
    ],
    "rulings": []
@@ -7564,6 +7630,17 @@
    "rulings": []
   },
   {
+   "deposit": 1214,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Wrong-body risk: title says \"Term Index v0.1 ... Systematic Extraction of Coined Terms\" but the recovered body is the TERM INDEX WORK PLAN (EA-REGISTRY-TERMINDEX-PLAN v1.0), not an index dataset. Restoration falsification boilerplate (line 40) not recorded per protocol. Session log says API paginates at size=25 / 34 pages while Phase 1.1 says size=200 / 5 pages."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 1215,
    "notes": [
     {
@@ -7647,6 +7724,28 @@
      "batch_id": "B0001",
      "field": "incidental",
      "text": "Queue date 2026-01-01; the text's own date is 14 June 2026. Heading says v1.1 while the packet line says Version: 1.0."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1228,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Duplicate body of #834 with degraded markdown (italic markers broken, e.g. \"Threshold:*\"; list item fused with following paragraph at line 126 and 178). Finds mirror #834."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1229,
+   "notes": [
+    {
+     "batch_id": "B0192",
+     "field": "incidental",
+     "text": "Duplicate body of #845 with reformatting; several list items fused with the next paragraph (e.g. lines 43, 57, 91, 230, 372, 431). Finds mirror #845."
     }
    ],
    "rulings": []
