@@ -17,7 +17,7 @@
   "D": 320,
   "H": 1430
  },
- "finds_verified": 5073,
+ "finds_verified": 5093,
  "finds_total": 5220,
  "deposits": [
   {
@@ -66626,10 +66626,13 @@
      },
      "none_found": false,
      "incidental": "Frame says the two companion supplements are not included in the body. Section 16 lists partial credential strings (truncated tokens). The file is 1238 lines; the Read display shows a trailing empty line 1239.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1238,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -66676,10 +66679,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 179,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -66723,10 +66729,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 244,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -66775,10 +66784,13 @@
      },
      "none_found": false,
      "incidental": "The text has no Appendices C to G (it goes from Appendix B to Appendix H, \"Holographic Kernels\"). This looks deliberate, not damage.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 616,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -66822,10 +66834,13 @@
      },
      "none_found": false,
      "incidental": "The wrapper frontmatter (deposit 937, hex 03B5) contains an inner frontmatter with deposit_number \"TBD-at-mint\". Section 3.4 was redacted on 2026-07-03, and the redaction note is in the text. Line 267 says \"AXN hex offset: +11 ... operational reality is +11\", but #912 (§4.3, §6.5) says +12, and this deposit's own hex (937 -> 03B5 = 949) fits +12. Recorded as an observation, not a correction. The file ends with an empty \"## Files\" section.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 351,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -66870,10 +66885,13 @@
      },
      "none_found": false,
      "incidental": "The body is marked \"DRAFT v0.2 ... Not yet minted\" and \"Reserved AXN: pending mint\", but it is seated as #940 (03B8). Its triad companions are cited as AXN:03B6 and 03B7.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 293,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
