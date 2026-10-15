@@ -2864,7 +2864,33 @@
    "protocol_sha256": "b2ea09e3cbb240dee2f2127fea421df3346559c0cffe19dd61abd0ec00b98600",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled; H back-pass",
    "output": "data/reading/batches/HB0019.json",
-   "status": "running"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 128234,
+    "tool_uses": 14,
+    "tokens": 250353
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T19:51:31Z",
+    "finished_at": "2026-10-15T19:53:12Z",
+    "self_description": "Claude Code agent (Anthropic assistant); model stated in my environment as Claude Opus 5.5",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for batch load and verbatim quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 1,
+    "entries": 1,
+    "finds": 22,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 1,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w9-HB0020",
