@@ -2,24 +2,24 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 433,
+  "read": 436,
   "partial": 1,
-  "unread": 1182
+  "unread": 1179
  },
- "h_covered": 433,
+ "h_covered": 436,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 476,
-  "F": 479,
+  "G": 488,
+  "F": 484,
   "E": 118,
-  "B": 319,
+  "B": 322,
   "A": 143,
-  "C": 141,
-  "D": 158,
-  "H": 608
+  "C": 142,
+  "D": 159,
+  "H": 613
  },
- "finds_verified": 2405,
- "finds_total": 2442,
+ "finds_verified": 2442,
+ "finds_total": 2469,
  "deposits": [
   {
    "deposit": 172,
@@ -31751,10 +31751,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 331,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -31801,10 +31804,13 @@
      },
      "none_found": false,
      "incidental": "Header dates scan 2026-06-22, deposit 2026-06-23.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 250,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -31851,10 +31857,13 @@
      },
      "none_found": false,
      "incidental": "Companion Kimi/Gemini/DeepSeek readings referenced as 'awaiting deposit'.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 195,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -31908,10 +31917,13 @@
      },
      "none_found": false,
      "incidental": "Queue title ends '0. Status declaration' (heading bleed). Body is v1.1.1 of EA-MMRS-SURFACE-VISIBILITY-01, predecessor #882 v1.1.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1149,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -31965,10 +31977,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1251,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -32015,10 +32030,13 @@
      },
      "none_found": false,
      "incidental": "Frame says assembly feedback EA-ASMBLY-RHIZOME-FBK-01 'pending deposit'; typo 'depositd' line 68.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 369,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -32066,10 +32084,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 289,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -32081,9 +32102,47 @@
    "tier": 1,
    "words": 3026,
    "batch_id": "B0101",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0101",
+     "run": "R-w17-B0101",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:20:30Z",
+      "finished_at": "2026-10-15T20:22:27Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       184
+      ]
+     ],
+     "lines_total": 184,
+     "genre_observed": "governance-competence precedent argument (Berners-Lee originator-critique applied to CERN)",
+     "finds_by_shape": {
+      "H": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Read tool displayed a trailing empty line 185; queue lines_total 184 used.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 921,
@@ -32092,9 +32151,62 @@
    "tier": 1,
    "words": 11944,
    "batch_id": "B0101",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0101",
+     "run": "R-w17-B0101",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:20:30Z",
+      "finished_at": "2026-10-15T20:22:27Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       160
+      ],
+      [
+       161,
+       320
+      ],
+      [
+       321,
+       480
+      ],
+      [
+       481,
+       629
+      ]
+     ],
+     "lines_total": 629,
+     "genre_observed": "research-basis statement with hypotheses, falsifiers and documentary chronology",
+     "finds_by_shape": {
+      "C": 1,
+      "H": 4,
+      "G": 9,
+      "D": 1,
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "§18 notes §3A chronology as 'placeholder pending depositor's completion'; companion metadata (l.24) says termination 'confirmed' the central prediction while §13.1 explicitly declines that claim. Trailing empty line 630 displayed; lines_total 629 used.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 923,
@@ -32103,9 +32215,56 @@
    "tier": 1,
    "words": 11357,
    "batch_id": "B0101",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0101",
+     "run": "R-w17-B0101",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified to me as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:20:30Z",
+      "finished_at": "2026-10-15T20:22:27Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       140
+      ],
+      [
+       141,
+       280
+      ],
+      [
+       281,
+       409
+      ]
+     ],
+     "lines_total": 409,
+     "genre_observed": "theoretical alignment-critique paper (incentive-structural hypothesis)",
+     "finds_by_shape": {
+      "B": 3,
+      "G": 3,
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Text path is data/EA-RFCL-01.md, not data/texts/; no deposit_number frontmatter. §7 refers to 'the protocol-based test described in Section 5' but §5 explicitly declines a benchmark and describes no protocol.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 926,
