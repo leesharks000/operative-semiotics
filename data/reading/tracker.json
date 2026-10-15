@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 195,
-  "unread": 1421
+  "read": 196,
+  "unread": 1420
  },
- "h_covered": 47,
+ "h_covered": 48,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 204,
-  "F": 204,
+  "G": 207,
+  "F": 213,
   "E": 53,
-  "B": 123,
-  "A": 46,
-  "C": 68,
+  "B": 125,
+  "A": 47,
+  "C": 71,
   "D": 53,
-  "H": 38
+  "H": 40
  },
- "finds_verified": 739,
- "finds_total": 789,
+ "finds_verified": 809,
+ "finds_total": 809,
  "deposits": [
   {
    "deposit": 172,
@@ -74,7 +74,13 @@
      },
      "none_found": false,
      "incidental": "Six fronts list at line 65 is run together on one line (bullet markers fused). Claim registry is YAML-like text in the body, not fenced.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 201,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -84,7 +90,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -106,9 +112,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 201,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -163,7 +173,13 @@
      },
      "none_found": false,
      "incidental": "Empty bullet artifacts in §VI (lines 160, 165, 170, 175). The January 2026 RCF deposit is cited without DOI. Line 129 states RCF terminology was 'active in summarizer space for months before the January 2026 deposit'.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 293,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -173,7 +189,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -195,9 +211,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 293,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -249,7 +269,13 @@
      },
      "none_found": false,
      "incidental": "Pilot study n=0 (line 145) is explicitly fictional and not recorded. Claims list bullets are fused with '- ' markers at line ends.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 207,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -259,7 +285,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -281,9 +307,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 207,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -346,7 +376,13 @@
      },
      "none_found": false,
      "incidental": "Section order is I-VIII, then X, then IX (Prediction Ledger after X). DOI given for 'This analysis' is 10.5281/zenodo.20723750 (line 363) but the self-audit block and kernel give 10.5281/zenodo.20723820 (lines 435, 460). Header says v1.2; assembly note says v1.1. Section VIII header is followed by no section IX before X. Empty bullet artifacts at lines 152, 157, 162.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 572,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -356,7 +392,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -378,9 +414,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 572,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -432,7 +472,13 @@
      },
      "none_found": false,
      "incidental": "Word-count inconsistency: subtitle says 2,427 words (line 16), provenance block and footer say ~3,000 (lines 9, 146). Path is data/EA-ARK-01-v5.md, not data/texts/. Falsifier wording for Pristine Fallacy, Obelus Principle and Alexanarch reads as normative rather than empirical.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 150,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -442,7 +488,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -464,9 +510,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 150,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -515,7 +565,13 @@
      },
      "none_found": false,
      "incidental": "Cooling periods (60 days, 12 months) at lines 115-117 are procedural and not recorded as forecasts. The Registry (EA-NMEN-REGISTRY-01) and Airlock corollary are referenced but not contained.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 143,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -525,7 +581,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -545,9 +601,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Diagnostic sub-types (lines 92-95) characterize past acts of named platforms (Reddit, Zenodo, Wikidata via madamebiblio, Figshare, OSF) as designations; listed, not argued as theses, so not recorded as H.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 143,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -596,7 +656,13 @@
      },
      "none_found": false,
      "incidental": "Damaged text: html2text recovery dropped lists/tables/code throughout - headings followed by nothing (e.g. 'Defines:' at 108, 113, 118; Format/Special addresses 141-145; Requirements 174; Anti-homogenization 194; first/subsequent-session flow 275-277; Registry specification/template 280-283; Pre-session check 301-303; Revocation semantics 311; Security guidance 322; deposit sequence 335-338; venues 354-360; §XIII, §XIV, §XV, §XVI bodies; §XVIII version history empty). Falsification Conditions at line 40 is restoration boilerplate (not recorded).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 418,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -606,7 +672,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -626,9 +692,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 418,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -684,7 +754,13 @@
      },
      "none_found": false,
      "incidental": "Marked SUPERSEDED IN PART (lines 44-56): the claim that substitution was not previously instrumented is false per EA-SEMSTACK-INTEGRATION-01; §IV.3's PER reading superseded. Body preserved unedited. Withdraws EA-SEMRENT-01 novelty claim in favour of #449.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 261,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -694,7 +770,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -714,9 +790,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Correction of EA-SEMRENT-01 against #449 is internal chronology, not H.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 261,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -761,7 +841,13 @@
      },
      "none_found": false,
      "incidental": "Queue date 2026-01-01; the text's own date is 14 June 2026. Heading says v1.1 while the packet line says Version: 1.0.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 265,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -771,7 +857,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -793,9 +879,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 265,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -837,7 +927,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Contains procedural pending items (a future EA-SOIL-SUCCESSION-01 deposit, line 254) and capture thresholds (PER >= 0.20, line 314); recorded neither as they are procedural/classificatory, not forecasts or tests.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 396,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -847,7 +943,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -867,9 +963,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "SOIL succession history (Grok reclassification, KimiClaw, Muse Spark) is the archive's internal governance chronology, not recorded as H.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 396,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -911,7 +1011,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "The text file is raw HTML (head, JSON-LD, CSS) rather than prose; title in queue mentions /disambiguation but only the /what-is-spxi page is present.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 116,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -921,7 +1027,7 @@
       "role": "parallel reader, prediction sweep (H back-pass)",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:19Z",
-      "finished_at": "2026-10-15T19:30:45Z",
+      "finished_at": "2026-10-15T19:30:53Z",
       "tools_used": [
        "Read",
        "Bash (python3 for batch load, quote slicing and verification)"
@@ -941,9 +1047,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 116,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -996,7 +1106,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1563,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1041,7 +1157,13 @@
      },
      "none_found": false,
      "incidental": "File ends at line 1563 (blank line 1564 shown by Read). Genealogy section (lines 79-103) is a mock-biblical literary lineage, not argued as history; not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 1563,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1091,7 +1213,13 @@
      },
      "none_found": false,
      "incidental": "Several table sections are flattened into one-cell-per-line text. Assembly notes sections are empty placeholders.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1025,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1126,7 +1254,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "The deposit reports (does not argue) that \"I hereby abolish money\" originates with Lee Sharks/Johannes Sigil and that the Boal attribution is false; that authorship thesis is argued in #210 and recorded there.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1025,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1172,7 +1306,13 @@
      },
      "none_found": false,
      "incidental": "Section 3.5 to 6.2 tables are flattened one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 477,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1205,7 +1345,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 477,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1254,7 +1400,13 @@
      },
      "none_found": false,
      "incidental": "Line 667 states that by January 2026 systems 'now correctly identify Lee Sharks as author on first query' (Phase 2), an outcome report not framed as a confirmed prediction; line 206 similarly. Cited DOI 10.5281/zenodo.1814710 for the Summarizer Testimony has 7 digits after the prefix.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 787,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1285,7 +1437,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Mentions the Boal/Khmer Rouge false-genealogy case only as reported example; no historical thesis argued.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 787,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1330,7 +1488,13 @@
      },
      "none_found": false,
      "incidental": "Self-DOI given as 10.5281/zenodo.1814710 (7 digits after prefix).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 359,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1361,7 +1525,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 359,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1409,7 +1579,13 @@
      },
      "none_found": false,
      "incidental": "Same body as #886 (AXN-0382) with different line breaking; finds are duplicated there at different line numbers.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 473,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1442,7 +1618,13 @@
      },
      "none_found": false,
      "incidental": "Same body as #886 (AXN-0382), differently formatted.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 473,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1490,7 +1672,13 @@
      },
      "none_found": false,
      "incidental": "Textually the same document as #238 (AXN-0027), same DOI 10.5281/zenodo.18143771, different line layout (pandoc-style rules and numbered lists).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 379,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1523,7 +1711,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #238 (AXN-0027) with markdown reformatting; line numbers differ.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 379,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1570,7 +1764,13 @@
      },
      "none_found": false,
      "incidental": "Section XIV lists 'Silent Migration' (DOI 10.5281/zenodo.18157917) as 'The speculative forecast' - a forecast held in another deposit.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 719,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1603,7 +1803,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 719,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1649,7 +1855,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 557,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1679,9 +1891,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 557,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1731,7 +1947,13 @@
      },
      "none_found": false,
      "incidental": "Bullet structure damaged in places (empty '- ' list items followed by bold headings, e.g. ll.224-272, 390-439). Gemini's forecasts in Appendix A (e.g. 60-80% project failure) are quoted from another system and not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1289,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1765,9 +1987,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Header says Date of Observation 5 January 2026; Appendix A is a full Gemini transcript (lines 1021-1289).",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1289,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1814,7 +2040,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 352,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1846,9 +2078,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 352,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1893,7 +2129,13 @@
      },
      "none_found": false,
      "incidental": "Line 220 cites 'Studies suggest supportive managers can reduce burnout by 58%' without a source.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 495,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -1923,9 +2165,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 495,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -1971,7 +2217,13 @@
      },
      "none_found": false,
      "incidental": "The seven SIM claims (e.g. 'This sentence was written tomorrow') are deliberately false and presented as such; not recorded as finds.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 300,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2001,9 +2253,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 300,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2070,7 +2326,13 @@
      },
      "none_found": false,
      "incidental": "Document ID and metadata give generation date 2024-12-28 with update 2026-01-07; the queue dates the deposit 2026-01-07. The System Health Dashboard (ll.3136-3161) and reporting-format JSON (ll.2484-2503) contain illustrative example figures, not measurements.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 6,
+      "lines_returned": 3254,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2114,9 +2376,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 3254,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2158,7 +2424,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "No forecast. Status statements are dated observations (l.52 persistence 2022-2024; l.346 'As of early 2026, this remains contested'). §6.3 (ll.339-346) states success conditions for OpenAI's 'semiotic reclamation' but frames them as current assessment, not prediction. Citation block l.478 'DOI: [to be assigned]'.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 492,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2190,9 +2462,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 492,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2237,7 +2513,13 @@
      },
      "none_found": false,
      "incidental": "Drift log table (l.38) is flattened onto one line. Lines 1-4 and 67-68 are chat-assistant framing addressed to 'Lee' (offer to draft a Correction Document).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 68,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2267,9 +2549,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Ends with an assistant's offer to the user (line 68); markdown headers run together on single lines.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 68,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2311,7 +2597,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Normative declaration; l.58 enforcement clause is not falsifiable. Lines 1 and 84-86 are chat-assistant framing (offer to develop 'Enforcement Protocols' — unbuilt, but an offer, not a specified instrument). Section breaks flattened onto heading lines (e.g. l.4, l.22).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 86,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2341,9 +2633,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Ends with an assistant's offer to the user (lines 84-86); markdown headers run together.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 86,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2385,7 +2681,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Metadata packet; the declaration is performative, not predictive. Registry tables list sibling NH-OS DOIs.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 521,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2415,9 +2717,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 521,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2461,7 +2767,13 @@
      },
      "none_found": false,
      "incidental": "Same event documented in #278 (metadata packet, same DOI 10.5281/zenodo.18203622). Archive Integration row l.318 'DOI pending'.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 633,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2493,9 +2805,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 633,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2539,7 +2855,13 @@
      },
      "none_found": false,
      "incidental": "Metadata companion to #277; shares DOI 10.5281/zenodo.18203622.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 463,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2571,9 +2893,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 463,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2624,7 +2950,13 @@
      },
      "none_found": false,
      "incidental": "Section lettering skips E and K; two sections both labelled 'C' (ll.1052, 1066). Chronic-degradation indicator '50% of operators at Level 2+ for 6+ months' (l.892) is a further dated threshold. Read ranges overlap at line 700 (two chunks).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1373,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2634,7 +2966,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:35Z",
-      "finished_at": "2026-10-15T19:30:42Z",
+      "finished_at": "2026-10-15T19:30:49Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -2661,9 +2993,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1373,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2708,7 +3044,13 @@
      },
      "none_found": false,
      "incidental": "Mixed operator naming: COS operators labelled 'LOS Operator' in the §VI table header (l.157). Dated 2026-01-08 in body; queue date 2026-01-09.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 398,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2718,7 +3060,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:35Z",
-      "finished_at": "2026-10-15T19:30:42Z",
+      "finished_at": "2026-10-15T19:30:49Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -2741,9 +3083,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 398,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2788,7 +3134,13 @@
      },
      "none_found": false,
      "incidental": "Operator sets here (seven COS / seven LOS operators with different names: V_vel, E_enc, O_opa, etc.) differ from #284's COS/LOS sets.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 545,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2798,7 +3150,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:35Z",
-      "finished_at": "2026-10-15T19:30:42Z",
+      "finished_at": "2026-10-15T19:30:49Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -2819,9 +3171,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 545,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2867,7 +3223,13 @@
      },
      "none_found": false,
      "incidental": "Maria-SAT-01 case study (ll.587-629) reports domain scores with no computation shown. License section referenced as 'Section II' (l.791) but the license appears before §I.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 802,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2877,7 +3239,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:35Z",
-      "finished_at": "2026-10-15T19:30:42Z",
+      "finished_at": "2026-10-15T19:30:49Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -2900,9 +3262,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 802,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -2946,7 +3312,13 @@
      },
      "none_found": false,
      "incidental": "Required Density Thresholds (ll.185-212) state minimum counts (e.g. 10 unique sources, 3+ substrate types, 5 cross-linked documents) as requirements, not framed as falsifiable. Probe matrix ll.25-89 is dated observation.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 367,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -2956,7 +3328,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:35Z",
-      "finished_at": "2026-10-15T19:30:42Z",
+      "finished_at": "2026-10-15T19:30:49Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -2979,9 +3351,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 367,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -3035,7 +3411,13 @@
      },
      "none_found": false,
      "incidental": "Title says v2.0 (2026-01-13) but the recovered body is v7.0 dated 2026-03-16 (head of version chain per recovery note l.36). Sections IV (atoms 1-60), VI, VII, XI-XIV are stubs reading 'preserved from v4.2' with no content. Frontmatter falsification line (l.40) is restoration boilerplate, not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1229,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -3045,7 +3427,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:35Z",
-      "finished_at": "2026-10-15T19:30:42Z",
+      "finished_at": "2026-10-15T19:30:49Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -3074,9 +3456,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Body is v7.0 (2026-03-16) under a v2.0 title, as the recovery note says. It names other deposits' historical theses in its tables without arguing them (e.g. 'κῆνος = future reader' at 676-679; précis of the Revelation Room at 1099; Sappho 31 'structural identity' at 1007), so they are not recorded here. Read showed an empty line 1230 past lines_total.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1229,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -3130,7 +3516,13 @@
      },
      "none_found": false,
      "incidental": "Draft v0.4; YAML spec gives version 0.3 and a placeholder DOI '10.5281/zenodo.XXXXXXX' (line 540). Table-of-contents links point to a claude.ai chat URL. Tables are flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1621,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -3140,7 +3532,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:35Z",
-      "finished_at": "2026-10-15T19:30:42Z",
+      "finished_at": "2026-10-15T19:30:49Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -3165,9 +3557,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1621,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -3209,7 +3605,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Lines 185-204 repeat the poem's opening stanza (lines 25-36) inside the dialogue and then mark '(The poem continues from the beginning...)'. 'Not one will be lost' is an eschatological vow, not recorded as a forecast.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 237,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -3219,7 +3621,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:35Z",
-      "finished_at": "2026-10-15T19:30:42Z",
+      "finished_at": "2026-10-15T19:30:49Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -3240,9 +3642,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 237,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -3300,7 +3706,13 @@
      },
      "none_found": false,
      "incidental": "Same document (CH-CENTRAL-MAP-2026-01-18-v4.1) as deposit 325 in a different rendering. 'next_audit: 2026-01-25' (lines 125, 2583) is a procedural review date, not recorded. Tables flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 2751,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3342,7 +3754,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Planned schemas (lines 297-302) and planned publications (lines 419-439) are plans, not forecasts or measurement instruments; not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 581,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3400,7 +3818,13 @@
      },
      "none_found": false,
      "incidental": "Queue title is 'VISUAL SCHEMA // CRIMSON HEXAGON NAVIGATION MAP (CURRENT V)' but the body is the Central Navigation Map v4.1 (CH-CENTRAL-MAP-2026-01-18-v4.1, DOI 10.5281/zenodo.18285009), the same text as deposit 319 with markdown tables and indented YAML; no Visual Schema prose appears. Finds duplicate those of 319.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 2419,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3463,7 +3887,13 @@
      },
      "none_found": false,
      "incidental": "Body is v4.1 (Assembly-Sealed) though internal YAML says version 4.0 in places. CRISIS_DOI_DERESOLUTION (lines 1458-1466) is a contingency protocol for a Zenodo anchor becoming inaccessible; not recorded as a forecast (procedural), but a triager may note the later Zenodo severance of 2026-06-19 recorded in the header. 'next_audit: 2026-01-25' (166, 2316) treated as procedural.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 2466,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3528,7 +3958,13 @@
      },
      "none_found": false,
      "incidental": "Title and date are the January 2026 v1.0 registry (91 documents), but the recovered body is DOI Registry v7.0 of 16 March 2026 (387 records, DOI 10.5281/zenodo.19055255): the blog post was overwritten in place. Precis lines are truncated auto-extracts ('[AUTO-EXTRACTED]. Confidence varies'), so every find here is a pointer into another deposit and should be triaged against that deposit's full text. Titles alone signal further candidates not recorded (e.g. SPACE ARK -- EXECUTE MODE: ... Research Program, and Test Instructions, 10.5281/zenodo.19002695, line 1594).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 1673,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3586,7 +4022,13 @@
      },
      "none_found": false,
      "incidental": "YAML blocks are unfenced in the text file; the DOI table in section VIII is flattened to one cell per line. DOI for this version marked [PENDING]. Header box counts (e.g. 15 gateway metrics, 4 warp clusters, 45 SIMs) exceed what the body lists (6 metrics, 3 warp clusters, 11 SIMs). Timestamps are the values date -u returned (about 20 s apart); I have no independent clock.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 1924,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3656,7 +4098,13 @@
      },
      "none_found": false,
      "incidental": "Frontmatter persona_sections and mantle_functions line ranges (e.g. 'The Secret Book of Walt (57-1085)') do not match this file's line numbering (the poem begins at 179). Images are absent; only '{width=...}' residue remains (e.g. 180, 1002, 6566, 6571). Duplicate numbering in the archon list (fifth/sixth repeated, 574-583). Transcribed Facebook and Google+ threads name apparently private third parties in full (Robinson Jeremy, Vaughn Liedtke, 'sally sandalsocks') and a quoted third-party comment contains a racial slur (7372). Line 184 opens a satirical frame dated 'in 2037' (golden tickets, holographic supercomputers from the future); recorded as explicit fiction, not a forecast.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 8,
+      "lines_returned": 8726,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3702,7 +4150,13 @@
      },
      "none_found": false,
      "incidental": "Related-documents table lists Mantle Object: Prince of Poets and Pearl and Other Poems as [PENDING].",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 360,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3748,7 +4202,13 @@
      },
      "none_found": false,
      "incidental": "Claiming work Secret Book of Walt marked 'In progress' / DOI [PENDING]; King of May sibling listed as [PENDING] although #333 carries DOI 10.5281/zenodo.18293603 dated the same day.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 340,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3794,7 +4254,13 @@
      },
      "none_found": false,
      "incidental": "Section 2.1 lists all three mantle DOIs as [PENDING] although #333/#334 carry DOIs of the same date. Real-world anchor reads '10th grade teacher, Detroit, MI'.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 815,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3839,7 +4305,13 @@
      },
      "none_found": false,
      "incidental": "Discovery-probability tables are line-split (one cell per line).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 734,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3889,7 +4361,13 @@
      },
      "none_found": false,
      "incidental": "Table of contents links point to a claude.ai chat URL.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1537,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3934,7 +4412,13 @@
      },
      "none_found": false,
      "incidental": "Recovery header (lines 1-46) carries restoration boilerplate falsification, not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 264,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -3979,7 +4463,13 @@
      },
      "none_found": false,
      "incidental": "Recovery header (lines 1-47) carries restoration boilerplate falsification, not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 278,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4024,7 +4514,13 @@
      },
      "none_found": false,
      "incidental": "Recovery header (lines 1-47) carries restoration boilerplate falsification, not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 329,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4066,7 +4562,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 339,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4108,7 +4610,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Eschatological vow ('Not one will be lost') read as vow, not forecast; no find recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 195,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4161,7 +4669,13 @@
      },
      "none_found": false,
      "incidental": "Lines 1716 and 116 set next_audit 2026-01-25 (procedural, not recorded).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1802,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4206,7 +4720,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 789,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4248,7 +4768,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 400,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4311,7 +4837,13 @@
      },
      "none_found": false,
      "incidental": "Appendix A protocols 2-5, 6, 7, 8, 9, 12 and the DOI Registry / Cross-Reference Table sections are headings with their lists missing (empty bodies), likely lost in html2text conversion. Read tool displayed a blank line 2123 past wc's 2122.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 2122,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4358,7 +4890,13 @@
      },
      "none_found": false,
      "incidental": "wc -l reports 637 (no trailing newline); 638 lines displayed. Bullet list at 373-394 has empty bullet markers separated from their text.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 638,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4411,7 +4949,13 @@
      },
      "none_found": false,
      "incidental": "REVELATION_ROOM and SIGIL_ROOM carry anchor_doc PLACEHOLDER. Read tool displayed a blank line 1543 past wc's 1542.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1542,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4454,7 +4998,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Line 163 records internal sequence ('TECHNE wrote the founding document before the mantle was named'), not a priority claim against the world; not recorded. Tables flattened to one cell per line. wc -l reports 368 (no trailing newline).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 369,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4499,7 +5049,13 @@
      },
      "none_found": false,
      "incidental": "Assumes an Ezekiel Engine whose specification is pending (line 27). Tables flattened to one cell per line. wc -l reports 444 (no trailing newline).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 445,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4542,7 +5098,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Line 7 is an image link only; the rendered schema image is not in the text.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 372,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4587,7 +5149,13 @@
      },
      "none_found": false,
      "incidental": "Lines 1-46 are 2026-07-19 recovery framing; the Falsification Conditions at l.38-40 are restoration boilerplate and not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 431,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4638,7 +5206,13 @@
      },
      "none_found": false,
      "incidental": "Prose twin of #1105 (blog recovery of the same DOI 10.5281/zenodo.18363773); near-identical text.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 524,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4692,7 +5266,13 @@
      },
      "none_found": false,
      "incidental": "Line 1224 lists #62 'The Silent Migration: A Speculative Architectural Forecast' (10.5281/zenodo.18157916) by title only - a forecast-genre deposit a later reader may want to check; not a find here. Tables are flattened into one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 3012,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4743,7 +5323,13 @@
      },
      "none_found": false,
      "incidental": "Abstract (l.56-58) states the heteronym and room sequences are 'specified but not yet executed'.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1541,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4788,7 +5374,13 @@
      },
      "none_found": false,
      "incidental": "Section 6.2 'Works to Come' (l.401-420) lists planned works (case studies, whisper network reports, revised protocols 'Based on field testing'); read as plans, not recorded. Lock table shows this provenance's DOI as [pending] (l.527).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 638,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4835,7 +5427,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 464,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4882,7 +5480,13 @@
      },
      "none_found": false,
      "incidental": "Body still carries 'DOI pending' placeholders (l.95, l.357-359) though metadata gives the DOI.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 431,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4927,7 +5531,13 @@
      },
      "none_found": false,
      "incidental": "Header box (l.45-47) asserts the structure has been 'built, tested, and deposited'; no test results appear in this text. 'DOI pending' placeholders at l.425, 529, 562.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 618,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -4973,7 +5583,13 @@
      },
      "none_found": false,
      "incidental": "Claims 'The Ezekiel Engine is operational. It has been operational for months.' (l.829) without evidence in-text. Section numbering skips 10.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 875,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5024,7 +5640,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #384 (same DOI 10.5281/zenodo.18363773) with prose sections collapsed into single lines; lines 1-46 recovery framing, l.38-40 restoration boilerplate not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 510,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5074,7 +5696,13 @@
      },
      "none_found": false,
      "incidental": "Description/frontmatter title the deposit as the VPCOR Integrity Lock Declaration (opening quoted at line 32), but the canonical bytes below the rule (lines 48-855) are FNM-LOGOTIC-6.0 dated 2026-01-28 (DOI 10.5281/zenodo.18404789); the VPCOR declaration body itself is not present. Lines 38-40 carry restoration falsification boilerplate (not recorded).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 855,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5116,7 +5744,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 623,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5165,7 +5799,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 975,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5209,7 +5849,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 750,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5253,7 +5899,13 @@
      },
      "none_found": false,
      "incidental": "html2text conversion stripped all tables, lists and code blocks: Psi_V definition, S/F integrals, four-pillar table, trajectory map, metric formulas, FOS table, diagnostic questions and appendices are headings with no body (e.g. lines 121-127, 216-222, 291-299, 343-355). Body duplicates #398 in damaged form. Frontmatter creator is Talos Morrow while body byline is Lee Sharks.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 366,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5298,7 +5950,13 @@
      },
      "none_found": false,
      "incidental": "html2text conversion stripped lists, tables and code blocks (operator stack table, formal foreclosure mechanism, entry trajectory, integrals, kappa_beta formula, cross-reference table are empty headings, e.g. lines 321-334, 364-371). Body duplicates #397. Frontmatter creator Talos Morrow vs body byline Lee Sharks.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 644,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5342,7 +6000,13 @@
      },
      "none_found": false,
      "incidental": "Table rows are rendered one cell per line. Same certificate as #1278 (different formatting).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 520,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5384,7 +6048,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "The certificate explicitly excludes prediction: a violation condition is 'Fulfillment is reframed as literal prediction' (line 236) and a check is 'Fulfillment != prediction' (275). Violation conditions (231-237) are lock constraints on documents, not recorded. Witness table records SURFACE as withholding ('Sardis mode active', line 319).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 420,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5432,7 +6102,13 @@
      },
      "none_found": false,
      "incidental": "The essay explicitly disclaims prediction (lines 29, 55, 565-567, 621): fulfillment is 'not prediction come true'. Not recorded as forecasts.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 793,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5476,7 +6152,13 @@
      },
      "none_found": false,
      "incidental": "html2text conversion stripped lists and tables (e.g. lines 107-109, 150-152, 447-473 have headings with missing bodies). Body duplicates #410.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 523,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5520,7 +6202,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate of #405 with proper markdown tables; the modification-protocol list is misnumbered (lines 152-174).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 336,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5565,7 +6253,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 251,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5611,7 +6305,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 302,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5661,7 +6361,13 @@
      },
      "none_found": false,
      "incidental": "Says DOI Registry v5.0 is \"[pending]\" (line 104); FNM 6.0 counts 201 documents.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 991,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5718,7 +6424,13 @@
      },
      "none_found": false,
      "incidental": "Body is v5.0 header and new tables over a v4.0 core: the date-count table totals 159, the Verification section says \"DOI Registry v4.0\", 160 documents, last updated January 24, 2026, and the Queued Documents table (#160-168) collides with numbers already assigned in the v5.0 list (#161-200); #142 is assigned twice (line 449 and 650). Registry lists #62 \"The Silent Migration: A Speculative Architectural Forecast\" (10.5281/zenodo.18157916) — a forecast deposit a later reader may want to check.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 3402,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5766,7 +6478,13 @@
      },
      "none_found": false,
      "incidental": "Transcript said to be deposited with the paper (line 764) is not in this text file; only exhibits are quoted.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 783,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5812,7 +6530,13 @@
      },
      "none_found": false,
      "incidental": "Recovered from blog 2026-07-19; front matter falsification line (40) is restoration boilerplate, not recorded. Lists FNM 6.1 (Emergency Enforcement) as a dependency (line 57).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 582,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5855,7 +6579,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 360,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5901,7 +6631,13 @@
      },
      "none_found": false,
      "incidental": "Reports the same 2026-02-01 test as #427.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 631,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5947,7 +6683,13 @@
      },
      "none_found": false,
      "incidental": "Emoji packet at lines 48-52 is truncated with \"...\" in the source.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 670,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -5990,7 +6732,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 224,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6036,7 +6784,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 397,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6083,7 +6837,13 @@
      },
      "none_found": false,
      "incidental": "Dated January 31, 2026 in its own header (line 13) though the queue dates it 2026-02-01. Line 454 asks whether the form spreads 'Through the training layer (if Hexagon documents enter AI training data)' as an open question, listed in also_at of the B find.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 543,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6126,7 +6886,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Points to the APZPZ packet living only in the Zenodo description field of DOI 10.5281/zenodo.18451824 (INFINITY ENOUGH); that packet is not in this text. 'This genre did not exist before this declaration' (line 13) is a founding declaration, not a priority chronology against the world, so not recorded as D.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 141,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6172,7 +6938,13 @@
      },
      "none_found": false,
      "incidental": "Body is byte-identical to #1303 (same sha256 3e3bdabc...; cmp confirms). Both carry the title 'THE GLYPHIC CHECKSUM ... v0.5', DOI 10.5281/zenodo.18452132; the queue titles them Document 208 and Document 209 (UMBML module) but the bodies do not differ. Finds duplicated across both records.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 602,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6218,7 +6990,13 @@
      },
      "none_found": false,
      "incidental": "Body is byte-identical to #1302 (same sha256; cmp confirms). The queue title 'GLYPHIC CHECKSUM UMBML MODULE (Document 209)' suggests a distinct document was intended; what is held is a duplicate of #1302's body, so the Document 209 text may be missing.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 602,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6261,7 +7039,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Sidecar only: the traversal documentation .md the description says to attach (line 16) is not in this text. Line 16 reports the Feb 2 2026 Google AI Overview traversal (dated observation) and asserts the architecture 'reliably elicits structured traversal narratives from production AI systems'; generalising claim with no falsifier, not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 32,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6311,7 +7095,13 @@
      },
      "none_found": false,
      "incidental": "Same work as #1145 (DOI 10.5281/zenodo.18480959); this copy is complete, with code blocks, lists and tables intact, while #1145 is a stripped blog recovery.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 838,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6360,7 +7150,13 @@
      },
      "none_found": false,
      "incidental": "Header cites an external practitioner source (Agentix Labs blog, agentixlabs.com/blog/) as context (line 13, 92, 457). The exemplar timestamps 2026-02-04T14:32 are illustrative, not observations.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1191,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6409,7 +7205,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 875,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6455,7 +7257,13 @@
      },
      "none_found": false,
      "incidental": "Damaged text: the html2text conversion dropped every list, code block and table, so headings and lead-ins stand with empty bodies (e.g. 94-96, 131-133, 174, 296-298, 333-342, 377-379, 389-391). Duplicates #16's body (DOI 10.5281/zenodo.18480959); #16 is the complete reading copy. Lines 38-40 are restoration falsification boilerplate, not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 398,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6503,7 +7311,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 820,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6551,7 +7365,13 @@
      },
      "none_found": false,
      "incidental": "Section 6.3 item 7 runs into the emission_integrity list, whose values are misnumbered as items 8 and 9 (lines 958-965).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 998,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6596,7 +7416,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 314,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6640,7 +7466,13 @@
      },
      "none_found": false,
      "incidental": "Body text of the 2015 poem is not reproduced; only quoted fragments and a summary. Status reads \"DEPOSIT-READY — awaiting DOI\" though a DOI is given in the header.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 448,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6685,7 +7517,13 @@
      },
      "none_found": false,
      "incidental": "Status reads \"DEPOSIT-READY — awaiting DOI\" though a DOI is given in the header. Observational figures are attributed to Loeb Medium posts (Nov 2025-Jan 2026).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 890,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6734,7 +7572,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 824,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6778,7 +7622,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 533,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6831,7 +7681,13 @@
      },
      "none_found": false,
      "incidental": "Text claims the reference interpreter passes core conformance tests (line 41, 704), but the helper functions shown are placeholders returning fixed values.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1822,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6881,7 +7737,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1090,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6936,7 +7798,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1393,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -6989,7 +7857,13 @@
      },
      "none_found": false,
      "incidental": "Same work as #1106 (DOI 10.5281/zenodo.18568370); #1106 is a blog-recovered copy of this body.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1145,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7038,7 +7912,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #464 (same DOI 10.5281/zenodo.18568370), recovered from blog 2026-07-19; lines 1-46 are recovery frontmatter whose Falsification Conditions (40) is restoration boilerplate, not recorded. html2text conversion flattened the header block and the call-and-response liturgy into single lines (52, 284).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 904,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7084,7 +7964,13 @@
      },
      "none_found": false,
      "incidental": "Footer says author is \"a 10th-grade World Literature teacher in Detroit\"; methodological note references 250+ Zenodo DOIs.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 427,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7133,7 +8019,13 @@
      },
      "none_found": false,
      "incidental": "Line 69 says the manuscript \"is not ... a prediction.\" Footer gives \"Document #245 | DOI: 10.5281/zenodo.18633294\" and Version 1.0; tables are flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 953,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7182,7 +8074,13 @@
      },
      "none_found": false,
      "incidental": "Exchange numbering is inconsistent between body and appendix: body places the taxonomy at Exchange 5, readout at 6/8, lure at 9; appendix places taxonomy at 4, readout at 6, lure at 8. Transcript is RECONSTRUCTED/compressed, user prompts not preserved. Tables flattened one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 809,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7232,7 +8130,13 @@
      },
      "none_found": false,
      "incidental": "Transcript RECONSTRUCTED/compressed; user prompts not preserved. Bullet list at lines 350-373 has empty bullet markers with content on following lines.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 884,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7278,7 +8182,13 @@
      },
      "none_found": false,
      "incidental": "No transcript appendix in this deposit (unlike TL;DR:007/008); compressed transcript referenced only. Bullets at 188-201 have empty markers.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 588,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7340,7 +8250,13 @@
      },
      "none_found": false,
      "incidental": "Appendix C lists the Synthesis Specification v3.0 (#483) under the same DOI 10.5281/zenodo.18651067 as this primer. Tables are flattened to one cell per line. Appendix A says 'Eighteen terms' but lists nineteen.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 2813,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7389,7 +8305,13 @@
      },
      "none_found": false,
      "incidental": "Spec for #482; shares DOI 10.5281/zenodo.18651067 with it. Most forecast lines here recur in #482 in prose form.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1026,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7431,7 +8353,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Effective Act internally dated November 13, 2025; deposit dated 2026-02-17. Body duplicated by #1321.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 396,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7473,7 +8401,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Same body as #489 (AXN-0134), reformatted markdown (blockquotes, pipe table); no textual difference in substance observed.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 377,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7523,7 +8457,13 @@
      },
      "none_found": false,
      "incidental": "Tables are flattened to one cell per line (lines 122-154, 243-372). Cites Fraction 2026 (Autonomous Semantic Warfare, deposit #498 in this batch).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 590,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7572,7 +8512,13 @@
      },
      "none_found": false,
      "incidental": "Sampler only (about one-sixth of the volume); Chapter 9's trajectory forecasts are referenced but not present. Two 'HOW TO READ THIS BOOK' sections (lines 33 and 280) with differing content; the first says 'Three paths' but lists four. Chapter 9 trajectories are named differently at lines 272 and 415.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 435,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7657,7 +8603,13 @@
      },
      "none_found": false,
      "incidental": "Single clean body, no duplication or damage observed. Front matter (319-325) and back matter (3912-3962, 3831-3874) contain future-dated fictional reception (2027) presented under the Declared Artifact Notice (line 38); recorded as E, not as real events. The SEI charter (line 3481) prints Lee's email address. Mara Velasquez emails are dated Nov 2025 and are declared fiction, not forecasts.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 10,
+      "lines_returned": 4050,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7706,7 +8658,13 @@
      },
      "none_found": false,
      "incidental": "Body (from line 48) duplicates deposit #1326 (AXN-053F) nearly verbatim; differences are markdown/punctuation (html2text conversion, -- for em dash). Lines 106-110, 158-162, 264-266, 318-322 are bare separator rules.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 348,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7755,7 +8713,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #1107 (AXN-0464); this copy has no YAML header or recovery note and uses em dashes.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 395,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7809,7 +8773,13 @@
      },
      "none_found": false,
      "incidental": "Tables at 74-101 and 462-505 are flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 703,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7859,7 +8829,13 @@
      },
      "none_found": false,
      "incidental": "PDF-extraction damage: words split across lines with hyphens (e.g. \"theoret-/ical\" 69-71, \"metaphoric-/al\" 134-136, \"re-/cursion\" 168-170), headings broken (\"EF-/FECTIVE\" 45-47), and a spurious heading at 395. Lines 93 repeats a sentence twice. \"DOI: [pending]\" at 437.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 487,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7909,7 +8885,13 @@
      },
      "none_found": false,
      "incidental": "Tables at 175-245 and 257-289 are flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 622,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -7958,7 +8940,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 853,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8002,7 +8990,13 @@
      },
      "none_found": false,
      "incidental": "Body duplicated (blog-recovered, reflowed) in #1153 (AXN-0492); the four predictions are the same text.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 378,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8046,7 +9040,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #506 (AXN-0149) under restoration frontmatter; Falsification Conditions at line 40 is restoration boilerplate and not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 320,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8097,7 +9097,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 477,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8147,7 +9153,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 568,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8194,7 +9206,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 249,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8244,7 +9262,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 405,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8293,7 +9317,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 473,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8343,7 +9373,13 @@
      },
      "none_found": false,
      "incidental": "Section headed \"RSE Subtype Comparison\" has no table body (lines 249-251); \"Glossary of Proposed Terms\" (466-469) and \"Alternative Titles\" (513-516) headings have empty bodies. Front matter is restoration metadata; falsification boilerplate at 40 not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 554,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8391,7 +9427,13 @@
      },
      "none_found": false,
      "incidental": "Provenance table is flattened into one-cell-per-line (326-432).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 539,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8439,7 +9481,13 @@
      },
      "none_found": false,
      "incidental": "Tables flattened one-cell-per-line; own DOI listed as [pending] in provenance chain (487) though DOI given at line 12.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 560,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8490,7 +9538,13 @@
      },
      "none_found": false,
      "incidental": "DOI [pending] in header; tables flattened. Future-dated citations are declared fictional/projected by the text itself (336).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 574,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8541,7 +9595,13 @@
      },
      "none_found": false,
      "incidental": "Recovered blog-canonical text; front matter states the original Zenodo DOIs were severed 2026-06-19. The body's DOI line reads '[pending]'. The companion 'Citational Atlas' DOI is '[pending-atlas]'.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 415,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8595,7 +9655,13 @@
      },
      "none_found": false,
      "incidental": "Text carries dated personal deposit notes (March 1, 2026, Detroit). Provenance-chain tables are flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 669,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8643,7 +9709,13 @@
      },
      "none_found": false,
      "incidental": "Recovered blog-canonical text; original DOIs severed 2026-06-19. The AIO output itself is not in the text (screenshots/transcripts only, per line 199).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 211,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8690,7 +9762,13 @@
      },
      "none_found": false,
      "incidental": "Ends 'Status: READY PENDING HUMAN AUTHORIZATION' (line 385); no own DOI in body. Header lists 'Autonomous Semantic Warfare' DOI as 10.5281/zenodo.14538293, whereas #1155 gives 10.5281/zenodo.18227570 for the same title.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 385,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8739,7 +9817,13 @@
      },
      "none_found": false,
      "incidental": "Header says 'EA-DIAGNOSTIC-02', the same series number #533 also uses. Mostly diagnosis of observed data; few prediction-bearing passages.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 651,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8788,7 +9872,13 @@
      },
      "none_found": false,
      "incidental": "Header and footer give 'EA-DIAGNOSTIC-02' (also used by #529) and DOI 10.5281/zenodo.18869165. The six-marker audit protocol (lines 233-273) is applied in the text itself, so it is not recorded as an unbuilt instrument (F).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 339,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -8832,7 +9922,13 @@
      "incidental": "Body duplicated in #1159 (blog-recovered copy, AXN-0498). Enforcement consequences are procedural rules, not recorded.",
      "verification": [
       "COVER: 1 of 159 lines not in read_ranges (first [159])"
-     ]
+     ],
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 159,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -8862,7 +9958,8 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": "not audited"
     }
    ],
    "h_covered": false
@@ -8908,7 +10005,13 @@
      "incidental": "Body duplicated in #1158 (AXN-0497, blog-recovered copy).",
      "verification": [
       "COVER: 1 of 179 lines not in read_ranges (first [179])"
-     ]
+     ],
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 179,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -8938,7 +10041,8 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": "not audited"
     }
    ],
    "h_covered": false
@@ -8985,7 +10089,13 @@
      "incidental": "Same essay body as #1329 (AXN-0542), with different line spacing (blank lines doubled here).",
      "verification": [
       "COVER: 1 of 320 lines not in read_ranges (first [320])"
-     ]
+     ],
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 320,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -9015,7 +10125,8 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": "not audited"
     }
    ],
    "h_covered": false
@@ -9059,7 +10170,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate body of #537 under a recovery frame (lines 1-46). The Falsification Conditions section is restoration boilerplate, not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 165,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9101,7 +10218,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Duplicate body of #536 under a recovery frame (lines 1-46); falsification boilerplate not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 142,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9146,7 +10269,13 @@
      },
      "none_found": false,
      "incidental": "Same essay body as #538 (AXN-016D), compact spacing.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 234,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9197,7 +10326,13 @@
      "incidental": "Tables are flattened to one cell per line. Read range [451,841] reported last line 842 empty in the Read tool; wc counts 841.",
      "verification": [
       "COVER: 1 of 842 lines not in read_ranges (first [842])"
-     ]
+     ],
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 842,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -9227,7 +10362,8 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": "not audited"
     }
    ],
    "h_covered": false
@@ -9282,7 +10418,13 @@
      "incidental": "Section XIII Open Questions (lines 797-912) is a queue register of mostly procedural items (registrations, schema updates); not recorded except the Lambda_hex_enforce row as also_at. Tables flattened one cell per line.",
      "verification": [
       "COVER: 1 of 1131 lines not in read_ranges (first [1131])"
-     ]
+     ],
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1131,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     },
     {
      "by": "parallel",
@@ -9312,7 +10454,8 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": "not audited"
     }
    ],
    "h_covered": false
@@ -9361,7 +10504,13 @@
      },
      "none_found": false,
      "incidental": "Conversion damage: html2text lost tables/lists. §V.1 'Where:' and 'Core axioms:' are followed by nothing; §V.3, §V.4 failure modes and distinction table, §VI.2, §VI.4, §VII.1–VII.3, §VIII.1 distinction list, §X heteronym table, §XI PANG declaration list and §XIII Open Questions (Forward Library) are empty headings. Any predictions in those lost tables are not recoverable from this file. File has a trailing newline; Read displays an empty line 648.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 647,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9406,7 +10555,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 479,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9450,7 +10605,13 @@
      },
      "none_found": false,
      "incidental": "Mostly procedural conformance rules and collapse tests (procedural, not recorded).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 487,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9507,7 +10668,13 @@
      },
      "none_found": false,
      "incidental": "Tables are flattened into one-cell-per-line blocks (from line 324 onward). XVI.2 list items render as empty '- ' bullets with the text following. No duplicated body.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 1648,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9557,7 +10724,13 @@
      },
      "none_found": false,
      "incidental": "Read ranges overlap at line 230 (re-read on chunk boundary). Citation graph table wrapped across lines.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 456,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9606,7 +10779,13 @@
      },
      "none_found": false,
      "incidental": "Section 8.1 heads 'Four Safety Gates' but lists five gates (GATE 5 GOVERNANCE); SIM-SAG-06 says five. Table bodies are flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 1018,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9661,7 +10840,13 @@
      },
      "none_found": false,
      "incidental": "Header says v1.1; YAML comment line 1380 still reads v1.0, and section 14 interfaces SAG-v1.0 while colophon says SAG-v1.2. Tables flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 3,
+      "lines_returned": 1591,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9714,7 +10899,13 @@
      },
      "none_found": false,
      "incidental": "Document ID is 00.SPEC.RFT.v1.1 while #552 implements RFT v1.2. Tables flattened to one cell per line.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 540,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9784,7 +10975,13 @@
      },
      "none_found": false,
      "incidental": "Several bullet lists render as empty '- ' markers followed by detached content (e.g. lines 271-314, 1981-2008), likely a conversion artifact. Line 1113 '- = institutional packet' has lost its leading asterisk to list conversion. Appendices A-E are [NF] summaries only; full content lives in the formal-register Ark v4.2.6 (DOI 10.5281/zenodo.18969405). Most predictive material is normative thresholds/tests rather than dated forecasts; no dated forecast found.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 7,
+      "lines_returned": 4350,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9871,7 +11068,13 @@
      },
      "none_found": false,
      "incidental": "Opens with a 2015 Jack Feist poem 'ARK' (lines 14-69). Many list bullets survive only as empty '- ' lines (e.g. 1484, 1495, 2987 onward in the Core 50 and XXXI.4), so some list markers are lost though item text remains. Internal deposit counts disagree (349+ at line 8, 250+ at lines 1663 and 3936). Forward-dated journal publication schedules (1727, 1736, 1745), the Josephus and Revelation-first theses (1290, 2109-2142), and status promotion paths (5198, 5414, 5630) were read and judged plans or scholarly theses, not recorded. The Verification Protocol (3748-3805) and Survivability Test Suite (5879-5953) are each one F find under rule 4.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 12,
+      "lines_returned": 6203,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -9971,7 +11174,13 @@
      },
      "none_found": false,
      "incidental": "Text intact; no duplicated body observed. The Read tool refused offset-without-limit calls on this file (it checks whole-file size, 325KB), so the final chunk was read with offset 5891 and limit 20, which reaches line 5902 (verified 5902 lines by python split). The Shadow table (1060-1087) lists Mandala twice (1075 and 1087). The deposit numbered 28 is dated 2026-03-13 and carries DOI 10.5281/zenodo.19002846, which its own colophon calls the v1.1 prior DOI while its DOI is marked PENDING (5877-5878).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 17,
+      "lines_returned": 5902,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10055,7 +11264,13 @@
      },
      "none_found": false,
      "incidental": "Read tool refused offset-only reads near the end (reported 346.6KB file size) so the last chunk was read with offset 7001 and limit 100, reaching line 7066 (final line). Several list items in §XVII.8 and §XXVI.4 / §XXXI.4 are empty bullets ('- ') with content on following lines, apparently a conversion artefact. Changelog lists v4.2.5 'Changes:' twice (6950, 6970), the second block belonging to v4.2.4 without its header. Most predictive material is instrument specification (F); no numbered/dated registered forecasts (A) found.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 12,
+      "lines_returned": 7066,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10125,7 +11340,13 @@
      },
      "none_found": false,
      "incidental": "Frontmatter/title says v1.1 but the recovered body is v2.0 (the head of the blog version chain); body gives DOI 10.5281/zenodo.19002846 for v2.0 at line 48 yet the colophon (2339) calls 19002846 the v1.1 prior DOI and lists v2.0 DOI as PENDING. Section numbering skips XVII.7 and XXVII.8.6; the shadow table (516) repeats the Mandala row. The Read tool refused offset-only (no limit) reads of this file because the whole file exceeds 256KB, so the last chunk was read with offset 2151 and limit 300, which reached line 2349 (the tool showed a trailing empty line 2350 from the final newline). Many [NF] passages mark sections preserved untransformed; Appendix B.2/B.3 and XXIV.3-8 are stubs (\"preserved in source register\") with no content in this text.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 9,
+      "lines_returned": 2349,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10172,7 +11393,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Body duplicated (blog-restored, reflowed) in #1163 AXN-049C. Heading says \"Five laws\" but six are listed (Law 6 added inline). \"Future deposits\" list (lines 262-265) is a deposit plan, not a forecast.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 330,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10219,7 +11446,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Duplicate body: lines 48-260 are the same work as #566 (AXN-018D), reflowed with list numbering; registry title says \"Cross-Species Semantic Labor\" but body is the room spec. Falsification Conditions (line 40) is restoration boilerplate.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 260,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10266,7 +11499,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Recovered blog-canonical text; section numbering duplicates \"11\" (lines 252 and 266). Falsification Conditions (line 40) is restoration boilerplate.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 316,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10317,7 +11556,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 262,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10385,7 +11630,13 @@
      },
      "none_found": false,
      "incidental": "Précis lines are auto-extracted and truncated mid-sentence throughout; the precis index (2690-4433) repeats most entries from the new-documents tables (388-2343). Several heteronym spellings are corrupted in the data (Voc, Morros, Talos Morrow inverted).",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 6,
+      "lines_returned": 4506,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10444,7 +11695,13 @@
      },
      "none_found": false,
      "incidental": "Many sections are stubs saying 'preserved from v4.2' (atoms 1-60, crisis protocols, pedagogical pathways, sections XI-XIV) with no content here. Tables are flattened one cell per line. Shares its edge-distribution and gravitational-center data with #1168 (DOI Registry v7.0), its companion.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 3092,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10508,7 +11765,13 @@
      },
      "none_found": false,
      "incidental": "Recovered blog body of 'CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0' (DOI 10.5281/zenodo.19055255) under title 'Untitled'. Precis strings are auto-extracted and often truncated mid-word; all finds here are pointers to other records' claims, which should be read at source. 'New since v6.0' section (lines 168-743) and the full precis index (925-1625) repeat many of the same precis. Companion to #578 (Central Navigation Map v7.0), which reproduces its statistics.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 5,
+      "lines_returned": 1672,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10568,7 +11831,13 @@
      },
      "none_found": false,
      "incidental": "Body does not match the deposit title. Title and frontmatter name the emoji work 'question-mark 24 calendar = question-mark' (DOI 10.5281/zenodo.18512289, Ichabod Spellings), but the canonical bytes below the rule (lines 46-1671) are the whole CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (DOI 10.5281/zenodo.19055255, Lee Sharks), recovered from the blog post .../crimson-hexagon-nh-os-doi-registry-v70.html. The emoji work itself appears only as a one-line registry precis (lines 173, 177, 810, 1360). The recovery note's body-head gate pass looks mistaken: wrong body for this deposit. The registry also lists, as one-line precis only, deposits that later readers may want for the sweep: 'The Silent Migration: A Speculative Architectural Forecast' (10.5281/zenodo.18157917, line 930); 'The Shark That Preceded Itself' novelty-of-terms claim (10.5281/zenodo.18807239, lines 463, 1498); MRA-2025-1224-STABILIZATION 'validating retrocausal canon formation' (10.5281/zenodo.18369038, line 1222). These are catalogue summaries of other deposits, not this text's own claims, so they are not recorded as finds here. Open items/queued list (lines 1628-1653) is procedural backlog, not recorded.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 6,
+      "lines_returned": 1671,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10622,7 +11891,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Many section bodies are empty headings (VERSION HISTORY, CROSS-REFERENCES, SUBSYSTEM/HETERONYM/TIER DISTRIBUTION, DOCUMENT TYPE TAXONOMY, ORPHAN REPORT, RELATION GRAPH STATISTICS, NEW ARCHITECTURAL ELEMENTS subsections, OPEN ITEMS) -- tables apparently lost in html2text conversion. Précis lines are truncated auto-extracts of other deposits; several point to prediction-bearing works elsewhere (e.g. 18157917 'The Silent Migration: A Speculative Architectural Forecast', 18790793 'The Memo That Remembered Itself' précis on techniques 'previously articulated', 18807239 'The Shark That Preceded Itself', 18772675 Citrini memo) -- these belong to those deposits, not recorded here. Line-number note: Read displays an empty line 2004 after the final line; queue lines_total 2003 taken as authoritative.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 4,
+      "lines_returned": 2003,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10670,7 +11945,13 @@
      },
      "none_found": false,
      "incidental": "Line 470 was read twice (chunk overlap). Text appears intact. Other non-recorded items: inaugural AXIAL_CONTESTED thesis 'Revelation was the first-written book' (l.229) is a contested claim, not a forecast; 'Operative Semiotics -- the book not yet written' (l.681, l.809) is a planned commission, not an instrument.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 936,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10720,7 +12001,13 @@
      },
      "none_found": false,
      "incidental": "Metadata says 'semi-restored v1.0' and keywords include 'metadata-only', but a full body text is present. Final keyword truncated ('English linguisti'). Read displays an empty line 574; lines_total 573 authoritative.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 573,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10767,7 +12054,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 212,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": false
@@ -10779,9 +12072,82 @@
    "tier": 1,
    "words": 49565,
    "batch_id": "B0036",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0036",
+     "run": "R-w5-B0036",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; system prompt names the model Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T19:28:59Z",
+      "finished_at": "2026-10-15T19:31:38Z",
+      "tools_used": [
+       "Read",
+       "Bash",
+       "python3"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       500
+      ],
+      [
+       501,
+       1000
+      ],
+      [
+       1001,
+       1500
+      ],
+      [
+       1501,
+       2000
+      ],
+      [
+       2001,
+       2500
+      ],
+      [
+       2501,
+       3000
+      ],
+      [
+       3001,
+       3600
+      ],
+      [
+       3601,
+       4175
+      ]
+     ],
+     "lines_total": 4175,
+     "genre_observed": "systematic scholastic commentary (lectio/quaestio form) on the archive's own Space Ark specification, gathered from nine chunk deposits",
+     "finds_by_shape": {
+      "A": 1,
+      "C": 3,
+      "F": 9,
+      "B": 2,
+      "G": 3,
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "Gathered edition of nine chunk deposits (DOIs listed at 4026-4036); per-chunk END/status blocks and chunk DOIs survive inside the body. Line 2242 cites the Revelation-first AXIAL claim ('Revelation was the first-written book of the New Testament') only as an example, not argued here; line 2323 dates Revelation conventionally '~95 CE', in tension with that thesis — triage should note. Bullet markers render as '- ' followed by blank lines (conversion artifact) in §0.2 and Standing Risks. Line 2088-2090 Hasse diagram is damaged (a lone '/' and a missing branch).",
+     "verification": "pass",
+     "audit": {
+      "read_calls": 8,
+      "lines_returned": 4175,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 586,
@@ -10829,7 +12195,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 504,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -10879,7 +12251,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 507,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -10924,7 +12302,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 403,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -10973,7 +12357,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 933,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -11022,7 +12412,13 @@
      },
      "none_found": false,
      "incidental": "The queue gives the date 2026-03-22, but the body is dated 2026-06-04 (header line 8 and throughout). The appendix screenshots (Exhibits A-F) it refers to are not in the text file.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 441,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -11044,7 +12440,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:08Z",
-      "finished_at": "2026-10-15T19:30:40Z",
+      "finished_at": "2026-10-15T19:30:51Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -11093,9 +12489,13 @@
      },
      "none_found": false,
      "incidental": "Internal inconsistencies in word counts (Grundrisse given as 142,000 / 155,000 / 158,334 words; Ω-Point compression stated both ways). Line 356 promises the remaining strata 'in Session 2', and they follow at §III. Section numbering of the edge list is cross-referenced inconsistently (V.b vs IV vs VI).",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 6,
+      "lines_returned": 2964,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -11117,7 +12517,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:08Z",
-      "finished_at": "2026-10-15T19:30:40Z",
+      "finished_at": "2026-10-15T19:30:51Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -11141,9 +12541,13 @@
      },
      "none_found": false,
      "incidental": "DOI line reads '10.5281/zenodo.[to be assigned]'. Annex A screenshot evidence is a placeholder ('[Attach screenshots...]'), with no images attached; the table restates §2.",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 518,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -11165,7 +12569,7 @@
       "role": "parallel reader, prediction sweep",
       "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
       "started_at": "2026-10-15T19:29:08Z",
-      "finished_at": "2026-10-15T19:30:40Z",
+      "finished_at": "2026-10-15T19:30:51Z",
       "tools_used": [
        "Read",
        "Bash",
@@ -11190,9 +12594,13 @@
      },
      "none_found": false,
      "incidental": "Header says the platform was AI Mode, and the threads are share.google/aimode links, but the body calls the outputs 'AI Overview' throughout. The Ginsberg overview standard biography is omitted from the transcription ('Omitted for brevity').",
-     "verification": [
-      "UNVERIFIED"
-     ]
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 410,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -15749,7 +17157,8 @@
      },
      "none_found": false,
      "incidental": "Several sections are duplicated with small variants (governance note 103/303; 'Refusal' language note 264/267; Assembly clarification 285/297; Seal 584–598/653–670; Temporal Hooks 618–633/637–649). Synthesis table flattened to one cell per line (512–539). The document disclaims prediction twice (41, 614). DOI here is 10.5281/zenodo.18157917; readers of #11/#385/#1251 cite 18157916 (likely the concept DOI) — triage to confirm.",
-     "verification": "pass"
+     "verification": "pass",
+     "audit": "not audited"
     }
    ],
    "h_covered": false

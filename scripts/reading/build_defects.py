@@ -17,7 +17,7 @@ def main():
     rulings = json.loads((R / "rulings.json").read_text())["rulings"] if (R / "rulings.json").exists() else []
     rows = {}
     for bp in sorted((R / "batches").glob("*.json")):
-        if bp.name.endswith(".verified.json"):
+        if bp.name.endswith((".verified.json", ".audit.json")):
             continue
         out = json.loads(bp.read_text())
         for e in out.get("deposits", []):

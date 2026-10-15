@@ -36,12 +36,14 @@ def main():
                                                "shapes": sorted(r.get("shapes", {})), "none_found": bool(r.get("none_found"))})
     finds = []
     for bp in sorted((R / "batches").glob("*.json")):
-        if bp.name.endswith(".verified.json"):
+        if bp.name.endswith((".verified.json", ".audit.json")):
             continue
         out = json.loads(bp.read_text())
         vp = bp.with_suffix(".verified.json")
         ver = {c["deposit"]: c for c in json.loads(vp.read_text())["checks"]} if vp.exists() else {}
         run = runs.get(out["batch_id"], {})
+        ap = bp.with_name(bp.stem + ".audit.json")
+        aud = {a["deposit"]: a for a in json.loads(ap.read_text())["deposits"]} if ap.exists() else {}
         for e in out.get("deposits", []):
             n = e["deposit"]; v = ver.get(n)
             fails = v["fails"] if v else ["UNVERIFIED"]
@@ -52,7 +54,9 @@ def main():
                                         "read_ranges": e.get("read_ranges"), "lines_total": e.get("lines_total"),
                                         "genre_observed": e.get("genre_observed"), "finds_by_shape": dict(sc),
                                         "none_found": e.get("none_found"), "incidental": e.get("incidental"),
-                                        "verification": "pass" if not fails else fails})
+                                        "verification": "pass" if not fails else fails,
+                                        "audit": ({k: aud[n][k] for k in ("read_calls", "lines_returned", "unread_lines", "claimed_not_returned")}
+                                                  if n in aud else "not audited")})
             for i, f in enumerate(e.get("finds") or []):
                 bad = [x for x in fails if f"find {i} " in x or x == "UNVERIFIED"]
                 finds.append({"deposit": n, "date": rows[n].get("date"), "batch_id": out["batch_id"], "run": run.get("run"),

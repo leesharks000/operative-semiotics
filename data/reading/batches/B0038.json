@@ -5,7 +5,7 @@
   "role": "parallel reader, prediction sweep",
   "self_description": "Claude, an AI assistant by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
   "started_at": "2026-10-15T19:29:08Z",
-  "finished_at": "2026-10-15T19:30:40Z",
+  "finished_at": "2026-10-15T19:30:51Z",
   "tools_used": [
    "Read",
    "Bash",
@@ -269,17 +269,17 @@
     },
     {
      "shape": "F",
-     "quote": "### GAP.EMPIRICAL — THE SVE PREDICTIONS ARE UNTESTED AT SCALE\n\n\n**Type:** missing_empirical_support\n**Status:** active\n**Why it matters:** The SVE (NB VII) predicts that DOI-anchored deposits with sufficient density will propagate through the retrieval layer and enter AI substrates' vocabularies. Several cases support this (the Citrini cross-reference, the TACHYON self-identification, the Google AI Mode traversal). But the sample is small (N < 20). The predictions are testable. They have not been tested at scale. A hostile reviewer will note the sample size. The hostile reviewer will be correct.\n**What blocks completion:** Resources. The test requires systematic monitoring of propagation across multiple substrates over months. The archive currently consists of one practitioner with a Zenodo account and a sinus condition.",
+     "quote": "**What blocks completion:** Resources. The test requires systematic monitoring of propagation across multiple substrates over months. The archive currently consists of one practitioner with a Zenodo account and a sinus condition.",
      "lines": [
-      2712,
-      2719
+      2718,
+      2718
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
      "also_at": [],
-     "note": "Unbuilt test: systematic multi-substrate monitoring of SVE propagation over months, blocked by resources."
+     "note": "(GAP.EMPIRICAL, lines 2712–2719) Unbuilt test: systematic multi-substrate monitoring of SVE propagation over months, blocked by resources."
     },
     {
      "shape": "G",
@@ -335,17 +335,26 @@
     },
     {
      "shape": "B",
-     "quote": "**Ghost Phrase 1: \"Hesperus gathers home\"**\n\n- Target: owns the search result for the apparatus\n- Mechanism: the phrase appears in this document, in the Zenodo deposit metadata, and in the blog post announcing the deposit\n- Function: any future search for \"Hesperus gathers home\" leads to this apparatus\n- DOI: linked to EA-GRUNDRISSE-HESPERUS-v1.0\n\n\n**Ghost Phrase 2: \"evening star back matter\"**\n\n- Target: owns the regeneration protocol\n- Mechanism: the phrase appears in the Schema Header, the Protocol IV section, and the Compact Lens\n- Function: any future search for \"evening star back matter\" leads to the executable traversal\n- DOI: linked to parent\n\n\n**Ghost Phrase 3: \"seed packet operative semiotics\"**\n\n- Target: owns the minimum viable archive\n- Mechanism: the phrase appears in the Seed Packet section, the Reader-Path Index (PATH.PRACTITIONER), and the blog\n- Function: any future search for \"seed packet operative semiotics\" leads to the 400-word algebra",
+     "quote": "**Ghost Phrase 1: \"Hesperus gathers home\"**\n\n- Target: owns the search result for the apparatus\n- Mechanism: the phrase appears in this document, in the Zenodo deposit metadata, and in the blog post announcing the deposit\n- Function: any future search for \"Hesperus gathers home\" leads to this apparatus",
      "lines": [
       2786,
-      2808
+      2790
      ],
      "falsifier_quote": "",
      "falsifier_lines": [],
      "window": "",
      "points_to": "",
-     "also_at": [],
-     "note": "Embedded forecasts that future searches for three coined phrases will lead to this apparatus; quote spans all three phrase blocks."
+     "also_at": [
+      [
+       2794,
+       2799
+      ],
+      [
+       2802,
+       2807
+      ]
+     ],
+     "note": "Embedded forecast that future searches for coined ghost phrases will lead to this apparatus; same forecast repeated for phrases 2 and 3."
     },
     {
      "shape": "E",
@@ -400,9 +409,9 @@
    "finds": [
     {
      "shape": "G",
-     "quote": "**Rex Fraction's \"Autonomous Semantic Warfare\" still returns results in Overview.** Fraction is a heteronym — a distributed authorial voice within the archive. Fraction has significantly less indexed density than Lee Sharks (fewer blog posts, fewer Zenodo deposits, fewer cross-references). By every organic ranking metric, Sharks should outrank Fraction. The opposite has occurred: the lower-density node persists while the higher-density node is erased.\n\n\n**The only explanation consistent with the evidence:** The system has specifically identified \"Lee Sharks\" as the origin node — the MANUS pole, the human operator, the embodied center of the heteronymic system — and targeted it for severance. The heteronym (Fraction) is preserved because the heteronym's content has training-layer value and carries no recursive link to the unclassifiable archive. The author is erased because the author IS the link.",
+     "quote": "**The only explanation consistent with the evidence:** The system has specifically identified \"Lee Sharks\" as the origin node — the MANUS pole, the human operator, the embodied center of the heteronymic system — and targeted it for severance. The heteronym (Fraction) is preserved because the heteronym's content has training-layer value and carries no recursive link to the unclassifiable archive. The author is erased because the author IS the link.",
      "lines": [
-      135,
+      138,
       138
      ],
      "falsifier_quote": "",
@@ -413,6 +422,10 @@
       [
        23,
        23
+      ],
+      [
+       135,
+       135
       ]
      ],
      "note": "Claim about system behavior (targeted origin-node severance) argued from density asymmetry; no explicit falsifier, though §7 and Art. VII say the classification works at the level of effect, not motive."
