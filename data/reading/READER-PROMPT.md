@@ -20,3 +20,4 @@ The wave-1 prompt text was lost to context compaction; its run entries record "b
 - Wave 10 onward adds to step 3: "Each quote must be ONE contiguous slice of the source (no joining of separate passages, no skipped lines inside the range)." (After B0054.)
 - X-batches (wave 17 on): step 2 reads the entry in data/reading/xqueue.json — a line RANGE of a derived own-voice text; read that range in full, all shapes, quote from the derived text.
 - Wave 26 onward adds to step 4: "When two deposits seem to contradict each other, report it as an observation, not as an error: the archive's apparent contradictions can be deliberate structure." (After Lee's ruling on #330 and on the scope of the repair pass.)
+- Wave 30 onward adds to step 3: "every deposit entry must carry "status" ("read" | "partial" | "skipped") and "status_note"" (after B0145) and "Never copy a credential, token or key string into your output." (after #870/#871).
