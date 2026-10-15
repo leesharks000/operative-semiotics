@@ -9170,7 +9170,33 @@
    "protocol_sha256": "d17379e8d53dd5a1d1f765e6de170e048e06c94d5d93f42b898fb74f11f8037a",
    "instructions": "data/reading/READER-PROMPT.md with <ID> filled, plus the wave-26 sentence on apparent contradictions",
    "output": "data/reading/batches/B0191.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 168817,
+    "tool_uses": 22,
+    "tokens": 189856
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-15T21:09:44Z",
+    "finished_at": "2026-10-15T21:12:06Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Claude Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load, quote slicing, diff orientation between duplicate bodies)"
+    ]
+   },
+   "verification": {
+    "deposits": 15,
+    "entries": 15,
+    "finds": 31,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 15,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-w29-B0192",
