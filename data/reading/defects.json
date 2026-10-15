@@ -1,6 +1,6 @@
 {
  "what": "Record defects noted by the sweep's readers (damaged text, wrong or duplicate bodies, version and DOI conflicts), collected for the repair pass. Rebuilt by scripts/reading/build_defects.py.",
- "deposits_with_notes": 331,
+ "deposits_with_notes": 333,
  "deposits": [
   {
    "deposit": 8,
@@ -2732,6 +2732,17 @@
    "rulings": []
   },
   {
+   "deposit": 832,
+   "notes": [
+    {
+     "batch_id": "B0087",
+     "field": "incidental",
+     "text": "Header says v7.1 (13/14 June 2026); #1025 cites the plan as v1.2 (DOI 10.5281/zenodo.20690868) while this text's self-audit block gives DOI 10.5281/zenodo.20686327. Many list items are run together on single lines ('Structure:- ', ':- ') from lost line breaks. Line 85 has typo 'contradiciton'. The text names 780+ deposits on Zenodo (l.389)."
+    }
+   ],
+   "rulings": []
+  },
+  {
    "deposit": 835,
    "notes": [
     {
@@ -2995,6 +3006,17 @@
      "batch_id": "B0085",
      "field": "incidental",
      "text": "WRONG BODY: queue title is \"Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.1)\", but the file AXN-040B-text.md holds \"The Self-Audit Module Dissolved\" (EA-WG-SELF-AUDIT-01 v1.0, DOI 10.5281/zenodo.20682278). The Generative Monoculture text was not read in this batch. The self-audit body may duplicate another deposit's text."
+    }
+   ],
+   "rulings": []
+  },
+  {
+   "deposit": 1025,
+   "notes": [
+    {
+     "batch_id": "B0087",
+     "field": "incidental",
+     "text": "Queue title names 'Keyword Surface and Pre-Seeding Baseline' (SURFACE v1.0 + BASELINE), but the text body holds only EA-LOGOS-REVFIRST-BASELINE v1.1; the keyword surface is listed as a file (l.308) but its text is absent. Markdown tables are flattened onto single lines (l.35, l.303). Self-audit DOI reads '[assigned at deposit]'."
     }
    ],
    "rulings": []

@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 399,
-  "unread": 1217
+  "read": 401,
+  "unread": 1215
  },
- "h_covered": 399,
+ "h_covered": 401,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 432,
-  "F": 406,
-  "E": 111,
-  "B": 275,
+  "G": 433,
+  "F": 415,
+  "E": 112,
+  "B": 281,
   "A": 132,
   "C": 132,
-  "D": 139,
-  "H": 479
+  "D": 146,
+  "H": 500
  },
- "finds_verified": 2062,
- "finds_total": 2106,
+ "finds_verified": 2106,
+ "finds_total": 2151,
  "deposits": [
   {
    "deposit": 172,
@@ -29416,10 +29416,13 @@
      },
      "none_found": false,
      "incidental": "Body duplicated in #1209 (blog-recovered bytes of the same v1.0 work; html2text punctuation differs).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 169,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29466,10 +29469,13 @@
      },
      "none_found": false,
      "incidental": "Queue title says v1.2; the body is v1.3 (header line 5 and version notes 11-15).",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 115,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29517,10 +29523,13 @@
      },
      "none_found": false,
      "incidental": "Lines 1-46 are restoration frontmatter (TACHYON recovery note, falsification boilerplate at 40 not recorded); lines 48-268 duplicate the body of #194 (offset +54 lines; \"--\" for em dashes, \"_\" for italics). Finds are the same as #194.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 268,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29565,10 +29574,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 125,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -29615,10 +29627,13 @@
      },
      "none_found": false,
      "incidental": "",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 292,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -30016,9 +30031,62 @@
    "tier": 1,
    "words": 20413,
    "batch_id": "B0087",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0087",
+     "run": "R-w15-B0087",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent; model reported in its environment as Claude Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:11:12Z",
+      "finished_at": "2026-10-15T20:13:44Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for verbatim slicing and verification)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       200
+      ],
+      [
+       201,
+       400
+      ],
+      [
+       401,
+       600
+      ],
+      [
+       601,
+       790
+      ]
+     ],
+     "lines_total": 790,
+     "genre_observed": "research work plan with embedded thesis monograph outline, measurement protocol and future-dated holographic citation kernels",
+     "finds_by_shape": {
+      "H": 20,
+      "D": 6,
+      "B": 6,
+      "F": 9,
+      "E": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Header says v7.1 (13/14 June 2026); #1025 cites the plan as v1.2 (DOI 10.5281/zenodo.20690868) while this text's self-audit block gives DOI 10.5281/zenodo.20686327. Many list items are run together on single lines ('Structure:- ', ':- ') from lost line breaks. Line 85 has typo 'contradiciton'. The text names 780+ deposits on Zenodo (l.389).",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1025,
@@ -30027,9 +30095,46 @@
    "tier": 1,
    "words": 3882,
    "batch_id": "B0087",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0087",
+     "run": "R-w15-B0087",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude Code subagent; model reported in its environment as Claude Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T20:11:12Z",
+      "finished_at": "2026-10-15T20:13:44Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for verbatim slicing and verification)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       339
+      ]
+     ],
+     "lines_total": 339,
+     "genre_observed": "pre-seeding baseline capture record (eight Google AI Mode transcripts)",
+     "finds_by_shape": {
+      "H": 1,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Queue title names 'Keyword Surface and Pre-Seeding Baseline' (SURFACE v1.0 + BASELINE), but the text body holds only EA-LOGOS-REVFIRST-BASELINE v1.1; the keyword surface is listed as a file (l.308) but its text is absent. Markdown tables are flattened onto single lines (l.35, l.303). Self-audit DOI reads '[assigned at deposit]'.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1211,
