@@ -2,23 +2,23 @@
  "what": "The reading tracker of the prediction sweep: every readable alexanarch deposit, whether it has been read, how, by which reader under which run, and what it yielded. Rebuilt by scripts/reading/build_tracker.py.",
  "alexanarch_commit": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
  "counts": {
-  "read": 1361,
-  "unread": 255
+  "read": 1385,
+  "unread": 231
  },
- "h_covered": 1361,
+ "h_covered": 1385,
  "h_note": "shape H (historical thesis) entered at protocol v1.2; deposits read under v1.0/v1.1 are not yet swept for H",
  "finds_by_shape": {
-  "G": 1126,
-  "F": 1209,
-  "E": 218,
-  "B": 696,
+  "G": 1132,
+  "F": 1216,
+  "E": 219,
+  "B": 704,
   "A": 253,
-  "C": 329,
-  "D": 357,
-  "H": 1623
+  "C": 330,
+  "D": 363,
+  "H": 1633
  },
- "finds_verified": 5770,
- "finds_total": 5811,
+ "finds_verified": 5792,
+ "finds_total": 5850,
  "deposits": [
   {
    "deposit": 172,
@@ -80347,10 +80347,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Body title reads \"THE MINI MACRO-MAQUETTE MAQUETTE: SEED\"; same seed body as #1325 (AXN-053E), which is the table-rendered copy; here the OP.ROUTE and DOI tables are flattened to one cell per line.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 163,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80393,10 +80396,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Body headed \"THE MINI MACRO-MAQUETTE: COMPRESSED CHARTER\" while registry title lacks \"MINI\". Sections AXIOM 0 (l.22), Router Lookup Table (l.32) and GRAFT MATRIX (l.233) are headings with no content: tables lost in conversion. Germination triggers (G1-G5) are conditions, not forecasts.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 269,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80439,10 +80445,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Duplicate of #493 body (same DOI 10.5281/zenodo.18683024, same text, Markdown tables intact). Body heading reads \"THE MINI MACRO-MAQUETTE MAQUETTE: SEED\" though registry title is \"THE MACRO-MAQUETTE: SEED\".",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 91,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80487,10 +80496,13 @@
      },
      "none_found": false,
      "incidental": "Near-duplicate of #895 (AXN-038B): same paper; here the Operator Transform Table (sec. III) survives as one-cell-per-line text, in #895 it is collapsed to \"[TABLE]\".",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 382,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80535,10 +80547,13 @@
      },
      "none_found": false,
      "incidental": "Duplicate of #496 body; the Operator Transform Table at l.91 is reduced to the placeholder \"[TABLE]\" - the node-by-node table is missing here.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 238,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80583,10 +80598,13 @@
      },
      "none_found": false,
      "incidental": "Body is a pasted Zenodo deposit-instruction block run together on one line (instructions, poem, note, keywords, related identifiers). Author field reads \"Nobody\" though the block names Lee Sharks.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 32,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80632,10 +80650,13 @@
      },
      "none_found": false,
      "incidental": "Body is a pasted Zenodo deposit-instruction block on one line with literal <br> tags. Author field reads \"Nobody\".",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 32,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80678,10 +80699,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Body heading says \"MOVING STATUES MADE OF RUBIES MINT\" where registry title says \"MIND\"; caption (l.312) also says \"Mind\" while companion deposits say \"Mint\". Image link at l.5 is an empty-text markdown link. Bullet markers rendered as trailing \"- \".",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 324,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80726,10 +80750,13 @@
      },
      "none_found": false,
      "incidental": "Figure images point at claude.ai/chat/ paths (l.26, l.32) that will not resolve. Companion \"Whose Face Is on the Twenty?\" is cited as 10.5281/zenodo.18745216 here and in #508, but as 10.5281/zenodo.18736175 in #516 - observation, not judged.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 216,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80774,10 +80801,13 @@
      },
      "none_found": false,
      "incidental": "Figure 1 is referenced (l.33) but the image link at l.13 is empty-text.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 192,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80822,10 +80852,13 @@
      },
      "none_found": false,
      "incidental": "Sigma count in the reconstructed Greek stanza lines checked by this reader with a script: 0, as the deposit claims. Commentary on d.2 (l.356) says the final -ῆς of Ἡρακλῆς \"conceals no sigma\", which contradicts the vocabulary note (l.325) and the table (l.414) - an internal inconsistency, recorded not judged. Tables are flattened one cell per line.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 568,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80870,10 +80903,13 @@
      },
      "none_found": false,
      "incidental": "Line 13 runs the DOI line together with the opening italic sentence (stray asterisk). Translation-layer table flattened one cell per line.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 489,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80916,10 +80952,13 @@
      "finds_by_shape": {},
      "none_found": true,
      "incidental": "Contains editorial contact email addresses (not copied here). Lists \"Whose Face Is on the Twenty?\" at DOI 10.5281/zenodo.18736175, where #507/#508 give 10.5281/zenodo.18745216 - observation. Semantic Economy Institute Charter DOI marked \"[reconcile]\".",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 1,
+      "lines_returned": 480,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80966,10 +81005,13 @@
      },
      "none_found": false,
      "incidental": "DOI marked [pending] in header. Layer-summary table flattened one cell per line.",
-     "verification": [
-      "UNVERIFIED"
-     ],
-     "audit": "not audited"
+     "verification": "pass",
+     "audit": {
+      "read_calls": 2,
+      "lines_returned": 392,
+      "unread_lines": 0,
+      "claimed_not_returned": 0
+     }
     }
    ],
    "h_covered": true
@@ -80981,9 +81023,43 @@
    "tier": 3,
    "words": 3254,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       548
+      ]
+     ],
+     "lines_total": 548,
+     "genre_observed": "governance doctrine / infrastructure tier classification",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "States the Reddit account u/Nearby_Job9638 was locked February 28, 2026 and banned March 1, 2026 (line 310); deposit #26 gives suspension February 27, restoration March 1, deletion March 6. Observation only: the two deposits record different sequences. Line 532 carries a share link string.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 527,
@@ -80992,9 +81068,46 @@
    "tier": 3,
    "words": 2484,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       304
+      ]
+     ],
+     "lines_total": 304,
+     "genre_observed": "governance protocol / effective act recording a Reddit exchange",
+     "finds_by_shape": {
+      "B": 1,
+      "D": 1
+     },
+     "none_found": false,
+     "incidental": "Line 288 anticipates Reddit removing the source content; deposits #523 and #26 record the account ban/deletion.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 531,
@@ -81003,9 +81116,52 @@
    "tier": 3,
    "words": 7427,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       360
+      ],
+      [
+       361,
+       715
+      ]
+     ],
+     "lines_total": 715,
+     "genre_observed": "foundation theoretical paper (transcendental deduction) with deposit notes and positioned date",
+     "finds_by_shape": {
+      "H": 2,
+      "C": 1,
+      "B": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 535,
@@ -81014,9 +81170,45 @@
    "tier": 3,
    "words": 4208,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       345
+      ]
+     ],
+     "lines_total": 345,
+     "genre_observed": "istiftāʾ (formal juristic query) on the Federal Reserve Note",
+     "finds_by_shape": {
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "Names living public officials in an evidentiary dossier (lines 126); recorded as found.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 26,
@@ -81025,9 +81217,46 @@
    "tier": 3,
    "words": 3185,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       208
+      ]
+     ],
+     "lines_total": 208,
+     "genre_observed": "formal legal demand letter with forensic appendix",
+     "finds_by_shape": {
+      "H": 1,
+      "G": 1
+     },
+     "none_found": false,
+     "incidental": "Sequence differs from #523 (locked Feb 28/banned Mar 1 there; suspended Feb 27/restored Mar 1/deleted Mar 6 here): observation only. Letter body carries placeholders for name, email, phone, and a mailing-address city; none copied.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 539,
@@ -81036,9 +81265,45 @@
    "tier": 3,
    "words": 1323,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       74
+      ]
+     ],
+     "lines_total": 74,
+     "genre_observed": "theory of operative captioning; installation text",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Text ends at line 74 with the image link of Installation 1; the abstract promises seven installations but no captions or later installations are present — body appears truncated.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 545,
@@ -81047,9 +81312,51 @@
    "tier": 3,
    "words": 1693,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       500
+      ],
+      [
+       501,
+       959
+      ]
+     ],
+     "lines_total": 959,
+     "genre_observed": "archive diptych / ZPZP relational deposit",
+     "finds_by_shape": {
+      "G": 1,
+      "B": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "Base-pair table (lines ~158-321) is damaged: Damascus and Fraction column text is interleaved character by character and unreadable; the DOIs of children are listed as [pending].",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 555,
@@ -81058,9 +81365,43 @@
    "tier": 3,
    "words": 1505,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       428
+      ]
+     ],
+     "lines_total": 428,
+     "genre_observed": "visual design schema / image-generation prompt",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 29,
@@ -81069,9 +81410,52 @@
    "tier": 3,
    "words": 7730,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       340
+      ],
+      [
+       341,
+       665
+      ]
+     ],
+     "lines_total": 665,
+     "genre_observed": "scholarly article founding Compression Studies; archival forensics of a destroyed manuscript",
+     "finds_by_shape": {
+      "D": 4,
+      "H": 1,
+      "G": 1,
+      "F": 2
+     },
+     "none_found": false,
+     "incidental": "Plates 1-10 are placeholders (lines 21-30), images not in text. Line 422 refers to court proceedings about the manuscript's burning; recorded as stated, not quoted.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 560,
@@ -81080,9 +81464,45 @@
    "tier": 3,
    "words": 1706,
    "batch_id": "B0218",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0218",
+     "run": "R-w31-B0218",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic), running as a Claude Code subagent; model identified in my environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:13Z",
+      "finished_at": "2026-10-15T21:20:37Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       242
+      ]
+     ],
+     "lines_total": 242,
+     "genre_observed": "counter-captions (operative captioning) applied to war propaganda videos",
+     "finds_by_shape": {
+      "G": 2
+     },
+     "none_found": false,
+     "incidental": "Companion to THE SPLICE (EA-SEI-DIAGNOSTIC-EPICFURY v1.1); casualty figures are reported events, not recorded.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 563,
@@ -82120,9 +82540,43 @@
    "tier": 3,
    "words": 1388,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       338
+      ]
+     ],
+     "lines_total": 338,
+     "genre_observed": "software maintenance specification (footnote rendering architecture for The Secret Book of Walt site)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Footnote map example assigns '¹' section 'introduction'; #712 (THE BOOK OF LIFE) gives '¹' sectionKey 'manuscripts'. #706 says Antioch gospel chapters currently carry no footnotes; #712 says antioch data has 19 footnotes. Observations, not errors; the two documents are companion specs written the same day.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 708,
@@ -82131,9 +82585,45 @@
    "tier": 3,
    "words": 2510,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       473
+      ]
+     ],
+     "lines_total": 473,
+     "genre_observed": "site blueprint / specification for livingarchitecturelab.org",
+     "finds_by_shape": {
+      "E": 1
+     },
+     "none_found": false,
+     "incidental": "v1.1 note says 'The Great Work' renamed 'The Whole Weave', but the site map at line 43 still lists /principles/the-great-work. Vault-Map reference marked 'pending deposit'.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 989,
@@ -82142,9 +82632,43 @@
    "tier": 3,
    "words": 2574,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       604
+      ]
+     ],
+     "lines_total": 604,
+     "genre_observed": "poetry collection with editorial headnote, relations list and verbatim DataCite record",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Same poems as #86 (AXN-0258), here with line breaks preserved plus DataCite capture. Dead DOI given as 10.5281/zenodo.19889972; #990 registry lists the collection under 10.5281/zenodo.19890261.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 990,
@@ -82153,9 +82677,43 @@
    "tier": 3,
    "words": 109,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       21
+      ]
+     ],
+     "lines_total": 21,
+     "genre_observed": "author DOI registry table (one entry)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Registry DOI 10.5281/zenodo.19890261 differs from the dead DOI 10.5281/zenodo.19889972 recorded in #989 for the same collection (possibly concept vs version DOI); observation only.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1361,
@@ -82164,9 +82722,43 @@
    "tier": 3,
    "words": 2197,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       87
+      ]
+     ],
+     "lines_total": 87,
+     "genre_observed": "archived deployed HTML source of a website (SPXI-compliant landing page)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Body is one minified HTML capture (lines 44-86 very long). The FAQ text states Alice Thornburgh's ORCID as 0009-0000-1599-0703, which is the ORCID the archive gives for Lee Sharks; observation on the captured page, not altered.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 86,
@@ -82175,9 +82767,43 @@
    "tier": 3,
    "words": 2013,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       213
+      ]
+     ],
+     "lines_total": 213,
+     "genre_observed": "poetry collection (reflowed text, line breaks collapsed into paragraphs)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Duplicate body of #989 (Screenrooms and Silver Bullets) with verse line breaks flattened into prose paragraphs; no DataCite block. Hexagonal Relations list has stray '- ' list markers at line ends.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 712,
@@ -82186,9 +82812,43 @@
    "tier": 3,
    "words": 2328,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       584
+      ]
+     ],
+     "lines_total": 584,
+     "genre_observed": "software maintenance specification (three-layer text rendering, SBoW site)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Companion to #706; see #706 incidental for differing footnote-map example and Antioch footnote count.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 1365,
@@ -82197,9 +82857,43 @@
    "tier": 3,
    "words": 735,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       49
+      ]
+     ],
+     "lines_total": 49,
+     "genre_observed": "restored dataset provenance record (blog corpus mirror)",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "States the blog 'predates every Zenodo deposit of the archive by more than a decade' while also recording that the earliest post visible in the July 2026 mirror is December 2014 (the April feed claimed a 2013 start). Internal chronology/provenance, not recorded as a find.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 716,
@@ -82208,9 +82902,46 @@
    "tier": 3,
    "words": 3023,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       323
+      ]
+     ],
+     "lines_total": 323,
+     "genre_observed": "research note / metric proposal with motivating case study",
+     "finds_by_shape": {
+      "F": 1,
+      "B": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 93,
@@ -82219,9 +82950,45 @@
    "tier": 3,
    "words": 2495,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       175
+      ]
+     ],
+     "lines_total": 175,
+     "genre_observed": "governance protocol (draft for Assembly review)",
+     "finds_by_shape": {
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Header says Version 1.1; closing footer (line 173) says Version: 1.0. Procedural rules (30-day challenge period) not recorded per protocol.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 718,
@@ -82230,9 +82997,43 @@
    "tier": 3,
    "words": 2296,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       171
+      ]
+     ],
+     "lines_total": 171,
+     "genre_observed": "constitutional casebook / case-brief index",
+     "finds_by_shape": {},
+     "none_found": true,
+     "incidental": "Case dockets point to deposits (Doc 157, 10.5281/zenodo.18827344, 19218861, OCTANG-001/-002); holdings are normative rulings, not historical or predictive claims.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 721,
@@ -82241,9 +83042,51 @@
    "tier": 3,
    "words": 4976,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       370
+      ],
+      [
+       371,
+       733
+      ]
+     ],
+     "lines_total": 733,
+     "genre_observed": "hermeneutic protocol / reading guide with genealogy of interpretation theory",
+     "finds_by_shape": {
+      "D": 1,
+      "B": 1,
+      "H": 1
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 723,
@@ -82252,9 +83095,45 @@
    "tier": 3,
    "words": 1266,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       302
+      ]
+     ],
+     "lines_total": 302,
+     "genre_observed": "knowledge-graph expansion workplan (pessoagraph.org)",
+     "finds_by_shape": {
+      "H": 2
+     },
+     "none_found": false,
+     "incidental": "",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 98,
@@ -82263,9 +83142,47 @@
    "tier": 3,
    "words": 4732,
    "batch_id": "B0223",
-   "state": "unread",
-   "readings": [],
-   "h_covered": false
+   "state": "read",
+   "readings": [
+    {
+     "by": "parallel",
+     "batch_id": "B0223",
+     "run": "R-w31-B0223",
+     "reader": {
+      "role": "parallel reader, prediction sweep",
+      "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in environment as Opus 5.5 (claude-opus-5-5)",
+      "started_at": "2026-10-15T21:18:41Z",
+      "finished_at": "2026-10-15T21:20:32Z",
+      "tools_used": [
+       "Read",
+       "Bash (python3 for queue load and verbatim quote slicing)"
+      ]
+     },
+     "protocol": "READING-PROTOCOL v1.2",
+     "status": "read",
+     "status_note": "",
+     "read_ranges": [
+      [
+       1,
+       273
+      ]
+     ],
+     "lines_total": 273,
+     "genre_observed": "theoretical paper / competitive landscape analysis with build plan",
+     "finds_by_shape": {
+      "B": 3,
+      "G": 1,
+      "F": 1
+     },
+     "none_found": false,
+     "incidental": "Project metrics are self-described as approximate 2025-26 snapshots. Acknowledgments state Luna does not endorse the thesis.",
+     "verification": [
+      "UNVERIFIED"
+     ],
+     "audit": "not audited"
+    }
+   ],
+   "h_covered": true
   },
   {
    "deposit": 102,
