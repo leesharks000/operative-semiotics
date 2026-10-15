@@ -43,7 +43,13 @@ def text_of(c):
 
 def audit(tp):
     raw = pathlib.Path(tp).read_bytes()
-    recs = [json.loads(l) for l in raw.decode("utf-8", "replace").splitlines() if l.strip().startswith("{")]
+    recs, bad = [], 0
+    for l in raw.decode("utf-8", "replace").splitlines():
+        if l.strip().startswith("{"):
+            try:
+                recs.append(json.loads(l))
+            except json.JSONDecodeError:
+                bad += 1
     first = next((text_of(r["message"].get("content")) for r in recs if r.get("type") == "user"), "")
     m = BID.search(first)
     if not m:
@@ -95,7 +101,8 @@ def audit(tp):
                     "first_unread": sorted(tot - got)[:5], "other_tool_access": sorted(set(other.get(n, [])))})
     summ = {"deposits": len(out), "fully_returned": sum(1 for o in out if o["unread_lines"] == 0),
             "claimed_not_returned_total": sum(o["claimed_not_returned"] for o in out),
-            "unread_lines_total": sum(o["unread_lines"] for o in out)}
+            "unread_lines_total": sum(o["unread_lines"] for o in out),
+            "transcript_lines_unparsed": bad}
     return {"batch_id": bid, "transcript_sha256": hashlib.sha256(raw).hexdigest(), "summary": summ, "deposits": out}
 
 
