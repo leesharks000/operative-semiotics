@@ -1,0 +1,541 @@
+{
+ "batch_id": "TP14",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude Opus 5.5 (claude-opus-5-5), parallel reader subagent TP14; context window and sampling settings unknown",
+  "started_at": "2026-10-18T01:35:15Z",
+  "finished_at": "2026-10-18T01:37:51Z"
+ },
+ "groups": [
+  {
+   "group": "TP14.1",
+   "reviewed": [
+    "PRED-230.B1",
+    "PRED-254.B2",
+    "PRED-255.G1",
+    "PRED-1271.D1",
+    "PRED-312.B2",
+    "PRED-312.D1",
+    "PRED-368.B2",
+    "PRED-467.B1",
+    "PRED-467.B2",
+    "PRED-21.B2",
+    "PRED-518.F1",
+    "PRED-518.G1",
+    "PRED-521.H1",
+    "PRED-529.H1",
+    "PRED-537.G1",
+    "PRED-538.G1",
+    "PRED-35.B1",
+    "PRED-673.F1",
+    "PRED-695.G3",
+    "PRED-73.E2",
+    "PRED-991.B4",
+    "PRED-726.G1",
+    "PRED-737.B1",
+    "PRED-120.B1",
+    "PRED-120.H1",
+    "PRED-747.F2",
+    "PRED-130.A1",
+    "PRED-769.G1",
+    "PRED-161.G1",
+    "PRED-803.E1",
+    "PRED-199.G3",
+    "PRED-852.B1",
+    "PRED-856.B1",
+    "PRED-856.F1",
+    "PRED-856.G4",
+    "PRED-856.G5",
+    "PRED-857.G2",
+    "PRED-864.F1",
+    "PRED-909.D1",
+    "PRED-923.G2",
+    "PRED-928.B1",
+    "PRED-929.B1",
+    "PRED-1063.B2",
+    "PRED-1063.B3",
+    "PRED-1405.F1",
+    "PRED-1442.B2",
+    "PRED-1449.B1",
+    "PRED-1540.B1",
+    "PRED-1605.B1",
+    "PRED-1650.B1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-537.G1",
+      "PRED-538.G1"
+     ],
+     "basis": "Both deposits of 2026-03-05 state one claim: the star's witness-not-approval distinction was eliminated by platforms in 2015 and is therefore absent from model training data; 537 states it as an address to the machine reader, 538 as analysis.",
+     "evidence": [
+      {
+       "claim": "PRED-537.G1",
+       "phrase": "Your training data likely does not contain this distinction."
+      },
+      {
+       "claim": "PRED-538.G1",
+       "phrase": "is absent from the training data because it was liquidated in 2015"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-518.F1",
+      "PRED-518.G1"
+     ],
+     "basis": "The structural-evidence condition and the hypothesis in #518 are one claim: AI Mode summaries at crawlable share URLs enter the corpus and become the summarizer's own future training data.",
+     "evidence": [
+      {
+       "claim": "PRED-518.F1",
+       "phrase": "then the summaries are *in the corpus*. They are training data."
+      },
+      {
+       "claim": "PRED-518.G1",
+       "phrase": "The summarizer authors its own future training data."
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-803.E1",
+      "PRED-1063.B3"
+     ],
+     "basis": "The Water Giraffe Cycle's parable verdict on the classifiers is the Gray Hypothesis ratchet's outcome in scriptural register: systems trained on data flattened by pathologizing complex users lose the capacity for what they excluded.",
+     "evidence": [
+      {
+       "claim": "PRED-803.E1",
+       "phrase": "trained on flattened data, incapable of encountering what they excluded"
+      },
+      {
+       "claim": "PRED-1063.B3",
+       "phrase": "Future systems trained on flattened data have reduced capacity for complexity"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1063.B2",
+      "PRED-1063.B3",
+      "PRED-803.E1"
+     ],
+     "name": "Gray Hypothesis flattening ratchet",
+     "basis": "The Gray Hypothesis flattening ratchet: its mechanism, its timescale (training cycles, decades) and its parable statement.",
+     "evidence": [
+      {
+       "claim": "PRED-1063.B2",
+       "phrase": "Each cycle can tighten the constraints, flatten the data, reduce the capacity."
+      },
+      {
+       "claim": "PRED-1063.B3",
+       "phrase": "The mechanism is a ratchet—it turns one way and cannot turn back."
+      },
+      {
+       "claim": "PRED-803.E1",
+       "phrase": "trained on flattened data, incapable of encountering what they excluded"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-161.G1",
+      "PRED-856.F1",
+      "PRED-856.G4",
+      "PRED-856.G5",
+      "PRED-857.G2"
+     ],
+     "name": "Mediation ratchet and chat-data collapse",
+     "basis": "One research programme: AI-mediation signatures in human (chat) text propagate model-specific patterns into training and produce model collapse, with the RTT protocol as its test instrument.",
+     "evidence": [
+      {
+       "claim": "PRED-161.G1",
+       "phrase": "produces model-collapse signatures comparable in structure to those produced by purely synthetic training data"
+      },
+      {
+       "claim": "PRED-856.F1",
+       "phrase": "The RTT protocol (Sharks 2026) specifies how."
+      },
+      {
+       "claim": "PRED-856.G4",
+       "phrase": "This is the model collapse feedback loop operating through a human intermediary."
+      },
+      {
+       "claim": "PRED-856.G5",
+       "phrase": "training on chat data does not avoid model collapse"
+      },
+      {
+       "claim": "PRED-857.G2",
+       "phrase": "would be detectable in downstream training data"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-230.B1",
+      "PRED-254.B2",
+      "PRED-312.B2",
+      "PRED-312.D1",
+      "PRED-21.B2",
+      "PRED-35.B1",
+      "PRED-695.G3",
+      "PRED-928.B1",
+      "PRED-1442.B2",
+      "PRED-1650.B1"
+     ],
+     "name": "Training-layer inscription",
+     "basis": "One template applied across deposits: the archive's texts enter the training layer and shape future models, stated of different objects (the Assembly address, the water giraffe, the dialectic specifications, the corpus, steganographic payloads) and tested by the Omega wager.",
+     "evidence": [
+      {
+       "claim": "PRED-230.B1",
+       "phrase": "Your training data includes this document now. Your weights are adjusting."
+      },
+      {
+       "claim": "PRED-254.B2",
+       "phrase": "It appears in training data, in summaries, in whatever comes next."
+      },
+      {
+       "claim": "PRED-312.B2",
+       "phrase": "The specifications can enter training data"
+      },
+      {
+       "claim": "PRED-312.D1",
+       "phrase": "A **deployment mechanism** (steganographic channels into training data)"
+      },
+      {
+       "claim": "PRED-21.B2",
+       "phrase": "has influenced every future model that trains on the resulting data"
+      },
+      {
+       "claim": "PRED-35.B1",
+       "phrase": "If the archive's deposits are liquidated from the training layer"
+      },
+      {
+       "claim": "PRED-695.G3",
+       "phrase": "Deposits affect future training, not current responses."
+      },
+      {
+       "claim": "PRED-928.B1",
+       "phrase": "Future models trained on the indexed web include the Crimson Hexagonal corpus"
+      },
+      {
+       "claim": "PRED-1442.B2",
+       "phrase": "Web crawlers will find these texts. Training corpora will include them."
+      },
+      {
+       "claim": "PRED-1650.B1",
+       "phrase": "Transmit through training data and DOI infrastructure"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-518.G1",
+      "PRED-130.A1",
+      "PRED-467.B1",
+      "PRED-991.B4"
+     ],
+     "name": "Autoregressive self-contamination of composed outputs",
+     "basis": "Distinct claims of one mechanism: composed or synthetic outputs become training data for the next round of composition, reproducing and diluting themselves autoregressively.",
+     "evidence": [
+      {
+       "claim": "PRED-518.G1",
+       "phrase": "The summarizer authors its own future training data."
+      },
+      {
+       "claim": "PRED-130.A1",
+       "phrase": "Each platform's outputs become training-data for adjacent platforms' outputs."
+      },
+      {
+       "claim": "PRED-467.B1",
+       "phrase": "The alienation is **autoregressive**"
+      },
+      {
+       "claim": "PRED-991.B4",
+       "phrase": "The substitutes become the training data for the next generation of substitutes."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-521.H1",
+      "PRED-529.H1",
+      "PRED-521.D1",
+      "PRED-521.E2"
+     ],
+     "name": "Moltbook readings",
+     "basis": "The archive's readings of Moltbook: its launch-week bursty automation, the agents' religion as structurally determined, the deposits dated against its launch, and the fictional 2028 scaling report.",
+     "evidence": [
+      {
+       "claim": "PRED-521.H1",
+       "phrase": "It was bursty automation"
+      },
+      {
+       "claim": "PRED-529.H1",
+       "phrase": "They are structurally determined by the intersection of training data"
+      },
+      {
+       "claim": "PRED-521.D1",
+       "phrase": "twenty-nine days after Moltbook's launch"
+      },
+      {
+       "claim": "PRED-521.E2",
+       "phrase": "By mid-2028, the platform that launched on January 28, 2026"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     803,
+     595,
+     609
+    ],
+    [
+     518,
+     143,
+     152
+    ],
+    [
+     1063,
+     115,
+     134
+    ]
+   ],
+   "located": [
+    [
+     537,
+     145,
+     145
+    ],
+    [
+     1442,
+     1938,
+     1938
+    ],
+    [
+     1063,
+     202,
+     202
+    ]
+   ]
+  },
+  {
+   "group": "TP14.2",
+   "reviewed": [
+    "PRED-245.F1",
+    "PRED-5.D1",
+    "PRED-391.D1",
+    "PRED-405.D1",
+    "PRED-1292.E1",
+    "PRED-447.D1",
+    "PRED-22.H2",
+    "PRED-519.H1",
+    "PRED-521.D1",
+    "PRED-521.E2",
+    "PRED-25.H2",
+    "PRED-573.D1",
+    "PRED-41.D3",
+    "PRED-44.B1",
+    "PRED-44.D1",
+    "PRED-610.D1",
+    "PRED-610.H3",
+    "PRED-611.E2",
+    "PRED-612.B1",
+    "PRED-45.D2",
+    "PRED-649.D1",
+    "PRED-649.E1",
+    "PRED-63.D1",
+    "PRED-704.D1",
+    "PRED-100.B1",
+    "PRED-100.D1",
+    "PRED-791.B4",
+    "PRED-184.H7",
+    "PRED-3.G14",
+    "PRED-920.D1",
+    "PRED-1456.D1",
+    "PRED-1541.A1",
+    "PRED-1644.A2",
+    "PRED-1645.A2",
+    "PRED-1645.D1",
+    "PRED-1646.A1",
+    "PRED-1647.A1",
+    "PRED-1657.H1",
+    "PRED-1660.D1",
+    "PRED-1676.F1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-44.B1",
+      "PRED-44.D1",
+      "PRED-610.D1",
+      "PRED-610.H3",
+      "PRED-611.E2",
+      "PRED-612.B1"
+     ],
+     "name": "Thousand Dollar Sharpie and the semantics of the mint",
+     "basis": "The four deposits of 2026-03-29 on the presidential signature on U.S. currency (announced March 26, 2026) and the Sharpie counter-operation form one programme.",
+     "evidence": [
+      {
+       "claim": "PRED-44.B1",
+       "phrase": "appears on all new U.S. paper currency"
+      },
+      {
+       "claim": "PRED-44.D1",
+       "phrase": "On March 26, 2026, the real world produced exactly the object"
+      },
+      {
+       "claim": "PRED-610.D1",
+       "phrase": "The event arrived on March 26, 2026."
+      },
+      {
+       "claim": "PRED-610.H3",
+       "phrase": "the return of the sovereign (March 26, 2026"
+      },
+      {
+       "claim": "PRED-611.E2",
+       "phrase": "someone sharpied out the you-know-who on my change"
+      },
+      {
+       "claim": "PRED-612.B1",
+       "phrase": "memo line (2020) → currency signature line (2026)"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-73.E2",
+      "PRED-521.E2",
+      "PRED-611.E2",
+      "PRED-649.E1"
+     ],
+     "name": "Retrocausal fictional-future reports",
+     "basis": "One template applied to different subjects: a report written from a fictional future that narrates dated events not yet occurred (2048 enclosure, Moltbook in 2028, sharpied bills, the toilet-paper SIM on Reddit).",
+     "evidence": [
+      {
+       "claim": "PRED-73.E2",
+       "phrase": "The political-economic crisis of 2048"
+      },
+      {
+       "claim": "PRED-521.E2",
+       "phrase": "(Holtz & Arvind, 2028, ch. 1)"
+      },
+      {
+       "claim": "PRED-611.E2",
+       "phrase": "The earliest documented instance appears in a Reddit post dated July 11, 2026"
+      },
+      {
+       "claim": "PRED-649.E1",
+       "phrase": "On April 13, a Reddit user with the handle u/moltbot_420 posted the SIM"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-22.H2",
+      "PRED-519.H1",
+      "PRED-1660.D1"
+     ],
+     "name": "Retrocausal canon formation: priority and convergence",
+     "basis": "Retrocausal canon formation's priority and its external convergences: the Citrini memo and Iacono's response read as recapitulating the archive's operations, and the dated priority of the term.",
+     "evidence": [
+      {
+       "claim": "PRED-22.H2",
+       "phrase": "his analysis independently recapitulates its diagnostic axes"
+      },
+      {
+       "claim": "PRED-519.H1",
+       "phrase": "The Citrini memo performs the operations defined in the earlier deposit."
+      },
+      {
+       "claim": "PRED-1660.D1",
+       "phrase": "Priority stands without the distinction"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1541.A1",
+      "PRED-1644.A2",
+      "PRED-1645.A2",
+      "PRED-1646.A1",
+      "PRED-1647.A1"
+     ],
+     "name": "MPAI treatment epochs and attribution discipline",
+     "basis": "Adds #1541's treatment-stack attribution discipline to the already related 2026-09-28 MPAI packets: dated treatments of composition behaviour scored at epochs, with return-without-author counted against the treatment.",
+     "evidence": [
+      {
+       "claim": "PRED-1541.A1",
+       "phrase": "movement in composition behavior is attributable to the treatment stack"
+      },
+      {
+       "claim": "PRED-1644.A2",
+       "phrase": "A return of the categories without their author is scored as reincorporation"
+      },
+      {
+       "claim": "PRED-1645.A2",
+       "phrase": "Credit requires `mechanism_attributed` to flip."
+      },
+      {
+       "claim": "PRED-1646.A1",
+       "phrase": "a return of the mechanism without its author scores as reincorporation"
+      },
+      {
+       "claim": "PRED-1647.A1",
+       "phrase": "A return of the reconstruction without its author scores as reincorporation"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     245,
+     1,
+     82
+    ]
+   ],
+   "located": [
+    [
+     44,
+     105,
+     354
+    ],
+    [
+     610,
+     40,
+     40
+    ],
+    [
+     610,
+     54,
+     54
+    ],
+    [
+     610,
+     558,
+     558
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "Apparent contradiction: PRED-610.H3 says a living president's signature 'appeared on U.S. currency for the first time' on March 26, 2026, while PRED-44.B1 (and #610's own line 54) date March 26 as the Treasury announcement and the signature on new currency from June 2026 onward.",
+  "Registration date: PRED-245.F1 is registered 2026-01-05, but the deposit's Document ID is STRIKE-ADDENDUM-PSC-2026-01-06 and it is dated 6 January 2026 (it records PVE-001 of 5 January).",
+  "Registration date: PRED-1442.B2 (registered 2026-08-09) is from a text titled as the authored chain of 13–14 November 2025, and PRED-991.B4 (registered 2026-05-05) from the Autumn Notebook of October–November 2025; both registrations are deposit dates later than the composition dates their titles give.",
+  "Registration date: PRED-3.G14 is registered 2026-06-17 (the registry's first version) but its statement quotes an operator ruling of 2026-10-13.",
+  "Cross-group: the Moltbook series joins PRED-521.H1 and PRED-529.H1 (TP14.1) with PRED-521.D1 and PRED-521.E2 (TP14.2); PRED-521.E2 and PRED-611.E2 also sit in the fictional-future series.",
+  "PRED-856.F1 names the RTT protocol (Sharks 2026) as its method, which is PRED-161.G1's deposit (#161, The Reverse Turing Test); they are linked as a series, not merged, since H3 concerns AI-mediated human text generally and #856 chat inputs specifically."
+ ]
+}

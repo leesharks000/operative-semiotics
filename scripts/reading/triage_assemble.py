@@ -98,6 +98,10 @@ def main():
     byid = {f['id']: f for f in F}
     titles = {d['deposit']: d.get('title') for d in json.load(open(T / 'deposit-titles.json'))}
     dates = {d['deposit']: d.get('date') for d in json.load(open(T / 'deposit-titles.json'))}
+    ed = (json.load(open(T / 'entry-dates.json'))['dates'] if (T / 'entry-dates.json').exists() else {})
+    for f in F:  # a find in a data deposit (#3, #4) is dated by its record, not by the file (triage_entry_dates.py)
+        if f['id'] in ed:
+            f['date'] = ed[f['id']]['date']; f['record'] = ed[f['id']]['record']
     for f in F:  # finds of deposits read outside the queue carry no date: the registry's
         if not f.get('date'):
             f['date'] = dates.get(f['deposit'])

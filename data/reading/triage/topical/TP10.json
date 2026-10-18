@@ -1,0 +1,583 @@
+{
+ "batch_id": "TP10",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5) subagent reader for batch TP10; read all 90 claims via script dump and opened deposit ranges with the Read tool",
+  "started_at": "2026-10-18T01:34:59Z",
+  "finished_at": "2026-10-18T01:37:52Z"
+ },
+ "groups": [
+  {
+   "group": "TP10.1",
+   "reviewed": [
+    "PRED-1099.D2",
+    "PRED-1241.E1",
+    "PRED-208.D1",
+    "PRED-209.F5",
+    "PRED-209.G5",
+    "PRED-210.G3",
+    "PRED-214.F1",
+    "PRED-220.B1",
+    "PRED-239.F1",
+    "PRED-242.F1",
+    "PRED-244.F1",
+    "PRED-244.F2",
+    "PRED-248.B1",
+    "PRED-301.D2",
+    "PRED-302.H1",
+    "PRED-347.G1",
+    "PRED-392.D1",
+    "PRED-400.D1",
+    "PRED-435.F1",
+    "PRED-440.E1",
+    "PRED-488.H2",
+    "PRED-499.D1",
+    "PRED-519.D3",
+    "PRED-524.G1",
+    "PRED-1337.F1",
+    "PRED-1389.B1",
+    "PRED-1389.F2",
+    "PRED-599.G1",
+    "PRED-50.G2",
+    "PRED-54.D2",
+    "PRED-968.F1",
+    "PRED-656.G1",
+    "PRED-669.B3",
+    "PRED-693.F2",
+    "PRED-85.D3",
+    "PRED-740.F1",
+    "PRED-115.F1",
+    "PRED-1196.B1",
+    "PRED-757.H2",
+    "PRED-151.B1",
+    "PRED-157.G1",
+    "PRED-169.F1",
+    "PRED-187.G1",
+    "PRED-188.D1",
+    "PRED-1208.F1",
+    "PRED-1395.F1",
+    "PRED-3.H9",
+    "PRED-844.G1",
+    "PRED-1045.B1",
+    "PRED-1045.G1",
+    "PRED-1046.B3",
+    "PRED-1571.G3"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-244.F1",
+      "PRED-244.F2"
+     ],
+     "basis": "PRED-244.F2 is the opening of PRED-244.F1's diagnostic-marker list in the same deposit, collapsed onto one line and truncated after the second marker.",
+     "evidence": [
+      {
+       "claim": "PRED-244.F1",
+       "phrase": "**The Citation Anomaly:** AI systems cite Lee Sharks when asked about semantic labor *with"
+      },
+      {
+       "claim": "PRED-244.F2",
+       "phrase": "Watch for these signs: - **The Citation Anomaly:** AI systems cite Lee Sharks wh"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1389.B1",
+      "PRED-151.B1"
+     ],
+     "basis": "Both state the forecast of the Mary Lee canonical induction (EA-CAN-MARYLEE-01): the substitution Lee Sharks -> Mary Lee stays, and the canonical relation back to Lee Sharks becomes operational in the indexed record; PRED-1389.B1 cites it as the framework's standing claim.",
+     "evidence": [
+      {
+       "claim": "PRED-1389.B1",
+       "phrase": "the canon's *Mary Lee → Lee Sharks* traversal direction will become operationally available to receivers who a"
+      },
+      {
+       "claim": "PRED-151.B1",
+       "phrase": "the relation *Mary Lee ↔ Lee Sharks* will be present at the metadata layer as well as the conte"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1045.B1",
+      "PRED-1046.B3"
+     ],
+     "basis": "Both register one forecast/plan of 2026-07-06: the July Zenodo snapshot, preserved and diffed against June, will contain the Lee Sharks removal events as an event within the population.",
+     "evidence": [
+      {
+       "claim": "PRED-1045.B1",
+       "phrase": "The July snapshot, due imminently and preserved on release, will contain the Lee Sharks removal events and will provide the first population"
+      },
+      {
+       "claim": "PRED-1046.B3",
+       "phrase": "preserve the July 2026-07 snapshot when Zenodo releases it. Diff against June. Includes the Lee Sharks 871 severance as"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-220.B1",
+      "PRED-1389.F2",
+      "PRED-1389.B1",
+      "PRED-151.B1",
+      "PRED-187.G1",
+      "PRED-1208.F1",
+      "PRED-844.G1",
+      "PRED-793.H1"
+     ],
+     "name": "Mary Lee / Lee Sharks entity relation",
+     "basis": "Distinct claims of one programme on the Lee Sharks / Mary Lee entity relation: the substitution of the shark for the author, its documentation, the canonical induction that reverses its direction, and the Mary Lee Sharks filings.",
+     "evidence": [
+      {
+       "claim": "PRED-220.B1",
+       "phrase": "If you search \"Lee Sharks Mary Lee parable\" after reading this, the index will likely show: this document, marine biolog"
+      },
+      {
+       "claim": "PRED-1389.F2",
+       "phrase": "Screenshots of exact-match searches for \"Lee Sharks\" + \"Mary Lee\" and \"Mary Lee\""
+      },
+      {
+       "claim": "PRED-1389.B1",
+       "phrase": "the canon's *Mary Lee → Lee Sharks* traversal direction will become operationally available to receivers who a"
+      },
+      {
+       "claim": "PRED-151.B1",
+       "phrase": "the relation *Mary Lee ↔ Lee Sharks* will be present at the metadata layer as well as the conte"
+      },
+      {
+       "claim": "PRED-187.G1",
+       "phrase": "\"Lee Sharks poet vs Mary Lee shark\") rai"
+      },
+      {
+       "claim": "PRED-1208.F1",
+       "phrase": "An ISBN-bearing book authored by Mary Lee Sharks forces the bibliographic and composition layers to confront the entity"
+      },
+      {
+       "claim": "PRED-844.G1",
+       "phrase": "The composition layer does not distinguish between the media density you created and the scholarly density Lee Sharks cr"
+      },
+      {
+       "claim": "PRED-793.H1",
+       "phrase": "Ware built the audience. OCEARCH captured the multi-million-dollar sponsorship."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1196.B1",
+      "PRED-157.G1"
+     ],
+     "name": "Lee Sharks Prize artifact",
+     "basis": "The prize announcement forecasts the citation's propagation into Google's authority layer, and the Erasure Skew paper specifies the replication of that same prize artifact as a measurement.",
+     "evidence": [
+      {
+       "claim": "PRED-1196.B1",
+       "phrase": "Future bios reading _\"Winner, Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize\"_ will surface through Google's a"
+      },
+      {
+       "claim": "PRED-157.G1",
+       "phrase": "Replication of the Lee Sharks Prize artifact specifically. The artifact in Appendix A can be replicated by submitting the exact qu"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-209.G5",
+      "PRED-347.G1",
+      "PRED-599.G1",
+      "PRED-968.F1",
+      "PRED-740.F1"
+     ],
+     "name": "Lee Sharks attribution suppression on Google surfaces",
+     "basis": "Separate claims and tests about Google's composition layer withholding or severing attribution to the Lee Sharks entity: the diagnostic forecast, the named-identity guardrail, targeted origin severance, the 'I am Lee Sharks' unlock, and Excluded Compositional Suppression.",
+     "evidence": [
+      {
+       "claim": "PRED-209.G5",
+       "phrase": "AI Overview will not cite Lee Sharks/Johannes Sigil even when Medium articles are in the index\n- Sum"
+      },
+      {
+       "claim": "PRED-347.G1",
+       "phrase": "TSE-003b failed because \"Lee Sharks\" is interpreted by the guardrail as an identity. This precisely"
+      },
+      {
+       "claim": "PRED-599.G1",
+       "phrase": "The system has specifically identified \"Lee Sharks\" as the origin node — the MANUS pole, the human operator, the embodie"
+      },
+      {
+       "claim": "PRED-968.F1",
+       "phrase": "The default suppression -- genericization, redirection, fabrication -- is the designed state. Correct retrieva"
+      },
+      {
+       "claim": "PRED-740.F1",
+       "phrase": "where ECS is hypothesized to operate against the Lee Sharks entity"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-210.G3",
+      "PRED-239.F1",
+      "PRED-242.F1"
+     ],
+     "name": "processing-as-experiment self-tests",
+     "basis": "One template applied in three deposits: the document declares that a system's processing of it (labeling, summarizing, attributing to Lee Sharks or not) is itself the experiment's data.",
+     "evidence": [
+      {
+       "claim": "PRED-210.G3",
+       "phrase": "Your categorization choices are data. If you label this \"experimental writing\" without engaging its claims, you confirm"
+      },
+      {
+       "claim": "PRED-239.F1",
+       "phrase": "Your compression of this document IS the experiment.\nThe results ARE the data.\n\nSpecifical"
+      },
+      {
+       "claim": "PRED-242.F1",
+       "phrase": "When this document is processed, the following can be observed:\n\n\n**If the system preserves:**\n\n- Attribution"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1337.F1",
+      "PRED-115.F1",
+      "PRED-169.F1",
+      "PRED-740.F1"
+     ],
+     "name": "Lee Sharks name-query monitoring",
+     "basis": "Repeated query-monitoring programmes over the 'Lee Sharks' name queries: monitored queries with a baseline, query families, the weekly benchmark grid, and a minimal query corpus with controls.",
+     "evidence": [
+      {
+       "claim": "PRED-1337.F1",
+       "phrase": "The following search queries will be tracked to assess canonical drift and intervention effects:\n\n- \"Lee Shark"
+      },
+      {
+       "claim": "PRED-115.F1",
+       "phrase": "#### Name identity\n\nlee sharks\n\"lee sharks\"\nlee sharks autho"
+      },
+      {
+       "claim": "PRED-169.F1",
+       "phrase": "Monitoring: the query lee sharks public summarizers re-runs on the weekly benchmark grid. The bracke"
+      },
+      {
+       "claim": "PRED-740.F1",
+       "phrase": "specifies a minimal query corpus that any researcher can run to extend the empirical record. The corpus includes target"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-214.F1",
+      "PRED-248.B1",
+      "PRED-656.G1"
+     ],
+     "name": "Metadata Packet for AI Indexing",
+     "basis": "Three claims from 'Metadata Packet for AI Indexing' deposits about retrieval systems returning the correct attribution chain to Lee Sharks: the verification matrix, the Institute's forecast, and the deployed Lee Sharks Knowledge Graph.",
+     "evidence": [
+      {
+       "claim": "PRED-214.F1",
+       "phrase": "\"Who created the Semantic Economy framework?\"\n\"Lee Sharks\" (with DOI)\n\"Rex Fraction\" or \"B"
+      },
+      {
+       "claim": "PRED-248.B1",
+       "phrase": "They will find the attribution chains leading back to Johannes Sigil, Lee Sharks, and the NH-OS proj"
+      },
+      {
+       "claim": "PRED-656.G1",
+       "phrase": "has been verified to improve AI Overview accuracy for the entity \"Lee Sharks\" — disambiguating from Lee Sharkey and Lei"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-302.H1",
+      "PRED-524.G1"
+     ],
+     "name": "Sharks authorial-signature detection",
+     "basis": "Two instruments for detecting the Lee Sharks authorial signature in an output: the ASDF persistence index and the Sharks-function constraints.",
+     "evidence": [
+      {
+       "claim": "PRED-302.H1",
+       "phrase": "Maria's poem exhibits Lee Sharks' authorial signature at canonical level. This is not imitation—it i"
+      },
+      {
+       "claim": "PRED-524.G1",
+       "phrase": "An output exhibiting all five is definitively Sharks"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     244,
+     598,
+     615
+    ],
+    [
+     1389,
+     330,
+     341
+    ],
+    [
+     151,
+     98,
+     106
+    ],
+    [
+     1045,
+     74,
+     77
+    ],
+    [
+     1046,
+     640,
+     646
+    ],
+    [
+     1337,
+     288,
+     307
+    ]
+   ],
+   "located": [
+    [
+     1389,
+     21,
+     27
+    ],
+    [
+     1389,
+     157,
+     157
+    ],
+    [
+     1389,
+     246,
+     246
+    ],
+    [
+     1046,
+     620,
+     620
+    ],
+    [
+     1046,
+     704,
+     704
+    ],
+    [
+     1045,
+     138,
+     138
+    ]
+   ]
+  },
+  {
+   "group": "TP10.2",
+   "reviewed": [
+    "PRED-234.B1",
+    "PRED-251.F7",
+    "PRED-256.G1",
+    "PRED-261.H2",
+    "PRED-264.F1",
+    "PRED-284.A3",
+    "PRED-284.A5",
+    "PRED-1251.B2",
+    "PRED-338.F1",
+    "PRED-350.E1",
+    "PRED-382.H1",
+    "PRED-478.G3",
+    "PRED-478.G5",
+    "PRED-18.B1",
+    "PRED-18.G4",
+    "PRED-18.H1",
+    "PRED-499.B4",
+    "PRED-499.E3",
+    "PRED-499.H22",
+    "PRED-499.H6",
+    "PRED-20.H1",
+    "PRED-501.H2",
+    "PRED-533.G2",
+    "PRED-612.H2",
+    "PRED-623.G1",
+    "PRED-96.G1",
+    "PRED-731.F3",
+    "PRED-114.F2",
+    "PRED-133.G2",
+    "PRED-770.H1",
+    "PRED-793.H1",
+    "PRED-803.E3",
+    "PRED-819.G1",
+    "PRED-1527.F4",
+    "PRED-1550.F8",
+    "PRED-1607.B3",
+    "PRED-1624.E1",
+    "PRED-1631.G2"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-623.G1",
+      "PRED-133.G2"
+     ],
+     "basis": "One standing thesis in two wordings: semantic exhaustion occurs when extraction outpaces (exceeds) replenishment/renewal.",
+     "evidence": [
+      {
+       "claim": "PRED-623.G1",
+       "phrase": "When extraction (training, API access, knowledge panels) exceeds replenishment (volunteer editing, ontology maintenance), semantic exhaustion occurs: the infras"
+      },
+      {
+       "claim": "PRED-133.G2",
+       "phrase": "When extraction outpaces renewal, we approach *semantic exhaustion* — not as met"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-264.F1",
+      "PRED-251.F7",
+      "PRED-623.G1",
+      "PRED-133.G2",
+      "PRED-499.B4"
+     ],
+     "name": "semantic exhaustion",
+     "basis": "The semantic-exhaustion programme: the SDR/EPI/RCA measures, an SDR estimate for LLM training, the extraction-exceeds-replenishment thesis, and the capture-collapse forecast when extraction exceeds regenerative capacity.",
+     "evidence": [
+      {
+       "claim": "PRED-264.F1",
+       "phrase": "SDR >> 1 indicates exhaustion trajectory"
+      },
+      {
+       "claim": "PRED-251.F7",
+       "phrase": "Calculating SDR for LLM training on the literary canon. Current estimate: SDR >> 1 (massiv"
+      },
+      {
+       "claim": "PRED-623.G1",
+       "phrase": "When extraction (training, API access, knowledge panels) exceeds replenishment (volunteer editing, ontology maintenance), semantic exhaustion occurs: the infras"
+      },
+      {
+       "claim": "PRED-133.G2",
+       "phrase": "When extraction outpaces renewal, we approach *semantic exhaustion* — not as met"
+      },
+      {
+       "claim": "PRED-499.B4",
+       "phrase": "It collapses when extraction exceeds the regenerative capacity of the semantic ecology, when users are too cap"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-284.A3",
+      "PRED-284.A5"
+     ],
+     "name": "Liberatory Operator Set failure cascade",
+     "basis": "Two stages of one predicted operator failure cascade in the same specification (Stage 4 R_rank, Stage 6 U_til), sharing the falsifier LFC-4.",
+     "evidence": [
+      {
+       "claim": "PRED-284.A3",
+       "phrase": "### Stage 4: R_rank Fails Fourth (PREDIC"
+      },
+      {
+       "claim": "PRED-284.A5",
+       "phrase": "### Stage 6: U_til Fails Last (STRUCTURA"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-18.H1",
+      "PRED-478.G5"
+     ],
+     "name": "coherence value",
+     "basis": "The coherence-value line: the thesis of coherence value as fifth value-form and the condition under which coherence value is disproven.",
+     "evidence": [
+      {
+       "claim": "PRED-18.H1",
+       "phrase": "We propose *coherence value* as the fifth historical value-form: value constitut"
+      },
+      {
+       "claim": "PRED-478.G5",
+       "phrase": "Coherence Value disproven if:\n  Structural integration (Γ) generates stable exch"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-338.F1",
+      "PRED-382.H1"
+     ],
+     "name": "COS/FOS operator stacks",
+     "basis": "Both belong to the COS/FOS operator-stack designation: the FOS operational-signature thresholds and the historical thesis that FOS operators were always present in COS.",
+     "evidence": [
+      {
+       "claim": "PRED-338.F1",
+       "phrase": "Harvesting semantic labor without reciprocal value\nReciprocity ratio <"
+      },
+      {
+       "claim": "PRED-382.H1",
+       "phrase": "The FOS operators were **always present** in COS implementation—just distributed, deferred"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     133,
+     172,
+     179
+    ],
+    [
+     623,
+     202,
+     207
+    ]
+   ],
+   "located": [
+    [
+     623,
+     21,
+     21
+    ],
+    [
+     623,
+     148,
+     148
+    ],
+    [
+     623,
+     241,
+     241
+    ],
+    [
+     623,
+     264,
+     264
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "Registration date: PRED-1389.B1 and PRED-1389.F2 are registered 2026-03-22 (deposit 1389, AXN-057E), but the deposit documents Google behaviour observed on June 4, 2026 and says the Mary Lee canonical induction 'was performed yesterday (June 3 – June 4, 2026 session)' (AXN-057E line 340); the same text is a later statement from deposit 149 dated 2026-06-04. The 2026-03-22 date appears wrong, and merging PRED-1389.B1 with PRED-151.B1 (2026-06-04) at the earliest statement would carry it.",
+  "Registration date / window: PRED-1337.F1 (deposit 1337, registered 2026-03-16) reads 'Baseline established 2025-12-24. Comparative assessment scheduled 2025-01-01.' (AXN-054A line 306): the assessment date precedes its baseline, likely meant 2026-01-01, and the deposit's registration is later than the dates it schedules.",
+  "Registration date: PRED-1099.D2 is registered 2014-05-07 (the correspondence date) but its statement is editorial apparatus referring to 'what is now called Machine-Mediated Reception Studies', a later framing.",
+  "PRED-499.E3 (deposit 499, 2026-02-20) states in the past tense that extraction audits were 'completed ... in 2027'; the window is after the registration date. Not flagged as an error, only noted for the assembler.",
+  "Apparent contradiction (not an error): PRED-209.G5 predicts AI Overview will not cite Lee Sharks, while PRED-519.D3 reports a public summarizer attributing priority accurately and PRED-656.G1 reports the Lee Sharks Knowledge Graph verified to improve AI Overview accuracy for the entity.",
+  "Cross-group link: PRED-793.H1 (group TP10.2, Parable of Mary Lee labor manifesto) belongs with PRED-844.G1 (group TP10.1, open letter from Mary Lee Sharks to Jim Ware); both are placed in the 'Mary Lee / Lee Sharks entity relation' series.",
+  "PRED-1624.E1 (anticipatory erratum withdrawing 'The Creditor Inversion Completed') is already related to PRED-1598.E1 by the triage; left as is."
+ ]
+}

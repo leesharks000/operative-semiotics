@@ -1,0 +1,536 @@
+{
+ "batch_id": "TP15",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (claude-opus-5-5), parallel reader subagent in Claude Code",
+  "started_at": "2026-10-18T01:35:21Z",
+  "finished_at": "2026-10-18T01:37:38Z"
+ },
+ "groups": [
+  {
+   "group": "TP15.1",
+   "reviewed": [
+    "PRED-218.B1",
+    "PRED-238.G3",
+    "PRED-289.G1",
+    "PRED-344.H2",
+    "PRED-382.B1",
+    "PRED-394.G1",
+    "PRED-410.H1",
+    "PRED-1287.E3",
+    "PRED-15.G2",
+    "PRED-16.F1",
+    "PRED-459.G1",
+    "PRED-472.G1",
+    "PRED-499.A3",
+    "PRED-530.B4",
+    "PRED-544.B1",
+    "PRED-549.B1",
+    "PRED-570.H1",
+    "PRED-580.G1",
+    "PRED-584.F3",
+    "PRED-584.G1",
+    "PRED-602.F1",
+    "PRED-607.G1",
+    "PRED-43.H2",
+    "PRED-111.D1",
+    "PRED-122.B1",
+    "PRED-122.H1",
+    "PRED-753.G1",
+    "PRED-1199.H1",
+    "PRED-784.H1",
+    "PRED-816.G1",
+    "PRED-816.G3",
+    "PRED-816.H1",
+    "PRED-816.H2",
+    "PRED-3.G1",
+    "PRED-911.H1",
+    "PRED-929.G1",
+    "PRED-931.G1",
+    "PRED-931.G2",
+    "PRED-1426.H2",
+    "PRED-1436.G1",
+    "PRED-1449.G2",
+    "PRED-1450.G2",
+    "PRED-1452.F2",
+    "PRED-1455.G4",
+    "PRED-1456.G1",
+    "PRED-1456.G3",
+    "PRED-1456.G4",
+    "PRED-1526.F2",
+    "PRED-1617.G8",
+    "PRED-1635.G2"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-544.B1",
+      "PRED-549.B1"
+     ],
+     "basis": "Both Space Ark texts state the one dependency: the architecture's ground (DOI resolution) rests on Zenodo/CERN, a service it does not own and has no fallback for.",
+     "evidence": [
+      {
+       "claim": "PRED-544.B1",
+       "phrase": "The ground of all grounding is a service the architecture doesn't own"
+      },
+      {
+       "claim": "PRED-549.B1",
+       "phrase": "The architecture has no fallback for this dependency."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-549.B1",
+      "PRED-584.F3"
+     ],
+     "name": "Ark substrate dependence and seed-bank redundancy",
+     "basis": "Two statements of the Ark's substrate-dependence problem: the Zenodo resolution layer and the unmeasured minimum seed-bank across substrates.",
+     "evidence": [
+      {
+       "claim": "PRED-549.B1",
+       "phrase": "If Zenodo goes offline, the entire provenance structure loses its resolution layer."
+      },
+      {
+       "claim": "PRED-584.F3",
+       "phrase": "the architecture does not formally specify the minimum viable seed-bank"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1199.H1",
+      "PRED-784.H1"
+     ],
+     "basis": "Both Meaning Caste deposits (same date) state one thesis: Glasswing was the tiered-access architecture the June 2026 executive order then adopted.",
+     "evidence": [
+      {
+       "claim": "PRED-1199.H1",
+       "phrase": "Glasswing is the executive order's architecture, prototyped commercially"
+      },
+      {
+       "claim": "PRED-784.H1",
+       "phrase": "built and demonstrated the architecture the state would adopt"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-1455.G4",
+      "PRED-1456.G1"
+     ],
+     "change": [
+      "reversed: v0.3 falsifies the v0.2 attribution to architecture; with weights fixed, changing the score function suffices to reverse the ordering (architecture and readout were confounded in v0.2)"
+     ],
+     "basis": "Inversion Battery v0.3 (#1456 l.114) names and falsifies the post-v0.2 sentence that architecture changes the blind spot's orientation, replacing it with the score-function claim.",
+     "evidence": [
+      {
+       "claim": "PRED-1455.G4",
+       "phrase": "Architecture changes the orientation of the blind spot"
+      },
+      {
+       "claim": "PRED-1456.G1",
+       "phrase": "This falsifies architecture *alone* as the explanation."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1449.G2",
+      "PRED-1455.G4",
+      "PRED-1456.G1",
+      "PRED-1456.G3",
+      "PRED-1456.G4"
+     ],
+     "name": "Inversion Battery findings (v0.1-v0.3)",
+     "basis": "Findings of the Inversion Battery v0.1-v0.3 programme on direction-dependence of learned-normality anomaly scores.",
+     "evidence": [
+      {
+       "claim": "PRED-1449.G2",
+       "phrase": "The failure is a property of the learned-normality score class, not of one architecture."
+      },
+      {
+       "claim": "PRED-1455.G4",
+       "phrase": "The failure is not universally oriented."
+      },
+      {
+       "claim": "PRED-1456.G1",
+       "phrase": "changing the score function is sufficient to reverse the directional ordering"
+      },
+      {
+       "claim": "PRED-1456.G3",
+       "phrase": "An architecture's detection behaviour is not transportable across representations of the same events."
+      },
+      {
+       "claim": "PRED-1456.G4",
+       "phrase": "Miss correlation is not a stable property of an architecture pair"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-931.G1",
+      "PRED-931.G2",
+      "PRED-1436.G1",
+      "PRED-1450.G2",
+      "PRED-1452.F2"
+     ],
+     "name": "Selection metrology programme (OAR, Iceberg, Irreversibility)",
+     "basis": "Claims of the accelerator selection-metrology programme (OAR protocol, its metadata packet, the Iceberg Document, the Irreversibility Frontier) that the battery measures against.",
+     "evidence": [
+      {
+       "claim": "PRED-931.G1",
+       "phrase": "Foreclosure is a structurally present feature of every classifier-mediated trigger architecture"
+      },
+      {
+       "claim": "PRED-931.G2",
+       "phrase": "the architecture would be shown to be unnecessary at the operative thresholds"
+      },
+      {
+       "claim": "PRED-1436.G1",
+       "phrase": "Signal-template agnosticism is a property of the scoring function's output interface"
+      },
+      {
+       "claim": "PRED-1450.G2",
+       "phrase": "the same failure mode independently discovered and independently named"
+      },
+      {
+       "claim": "PRED-1452.F2",
+       "phrase": "Trigger documentation should include an explicit **Irreversibility Statement**."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-816.G1",
+      "PRED-816.G3",
+      "PRED-816.H1",
+      "PRED-816.H2"
+     ],
+     "name": "Ghost Code doctrine claims",
+     "basis": "The registered statement/falsifier claims of the Ghost Code doctrine paper.",
+     "evidence": [
+      {
+       "claim": "PRED-816.G1",
+       "phrase": "Engagement optimization converged on, rather than invented, the Ghost Code feature set"
+      },
+      {
+       "claim": "PRED-816.G3",
+       "phrase": "The organized political-theological formation named white Christian nationalism executes meta-whiteness"
+      },
+      {
+       "claim": "PRED-816.H1",
+       "phrase": "Mass narcissistic culture is deracinated whiteness"
+      },
+      {
+       "claim": "PRED-816.H2",
+       "phrase": "Whiteness was the first globally hegemonic modern formation"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-43.H1",
+      "PRED-43.H2",
+      "PRED-111.D1"
+     ],
+     "name": "Retrocausal seed texts",
+     "basis": "One retrocausal template applied to different early texts: a 2014-2015 text (Pearl; the Epistle; the 2015 'The Crimson Hexagon' narrative) held to contain the architecture later formalized.",
+     "evidence": [
+      {
+       "claim": "PRED-43.H1",
+       "phrase": "Pearl planted the seed. The archive grew from it."
+      },
+      {
+       "claim": "PRED-43.H2",
+       "phrase": "waiting to be recognized as the foundational text of an architecture that did not yet exist"
+      },
+      {
+       "claim": "PRED-111.D1",
+       "phrase": "The 2015 text contains, in compact narrative form, the theoretical architecture formalized between 2025 and 2026."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-570.H1",
+      "PRED-935.H5"
+     ],
+     "name": "Removal as proof the architecture works",
+     "basis": "One template applied to two platform actions: being flagged or expelled is read as proof the architecture works.",
+     "evidence": [
+      {
+       "claim": "PRED-570.H1",
+       "phrase": "The platform flagged the architecture because the architecture works."
+      },
+      {
+       "claim": "PRED-935.H5",
+       "phrase": "It is the proof of concept that the architecture works."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-122.B1",
+      "PRED-122.H1",
+      "PRED-122.D1",
+      "PRED-751.H1"
+     ],
+     "name": "Coverage vs depth scholarship",
+     "basis": "Claims of the May 23 coverage-architecture deposits on coverage versus depth scholarship.",
+     "evidence": [
+      {
+       "claim": "PRED-122.B1",
+       "phrase": "that lands in 2032 is *structurally too late*"
+      },
+      {
+       "claim": "PRED-122.H1",
+       "phrase": "mistaken the coverage-product for a depth-product"
+      },
+      {
+       "claim": "PRED-122.D1",
+       "phrase": "This map is the unique product of the May 23 deposits' combinatorial structure."
+      },
+      {
+       "claim": "PRED-751.H1",
+       "phrase": "the depth-architecture has been historically calibrated to ritual rather than to contribution"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1456,
+     110,
+     121
+    ],
+    [
+     111,
+     25,
+     49
+    ]
+   ],
+   "located": [
+    [
+     1456,
+     12,
+     12
+    ],
+    [
+     1456,
+     37,
+     39
+    ],
+    [
+     1456,
+     64,
+     64
+    ],
+    [
+     1456,
+     76,
+     76
+    ],
+    [
+     544,
+     355,
+     355
+    ],
+    [
+     549,
+     721,
+     721
+    ],
+    [
+     1199,
+     110,
+     110
+    ],
+    [
+     784,
+     96,
+     96
+    ],
+    [
+     111,
+     191,
+     229
+    ],
+    [
+     43,
+     123,
+     123
+    ],
+    [
+     43,
+     176,
+     176
+    ],
+    [
+     43,
+     223,
+     236
+    ],
+    [
+     43,
+     242,
+     242
+    ],
+    [
+     43,
+     346,
+     346
+    ],
+    [
+     43,
+     444,
+     469
+    ]
+   ]
+  },
+  {
+   "group": "TP15.2",
+   "reviewed": [
+    "PRED-1098.H1",
+    "PRED-1304.G1",
+    "PRED-482.G1",
+    "PRED-538.B1",
+    "PRED-32.H1",
+    "PRED-584.F5",
+    "PRED-43.H1",
+    "PRED-46.H1",
+    "PRED-614.B1",
+    "PRED-616.B1",
+    "PRED-636.D2",
+    "PRED-644.B1",
+    "PRED-649.E5",
+    "PRED-666.H5",
+    "PRED-69.H4",
+    "PRED-71.H3",
+    "PRED-84.F2",
+    "PRED-724.B1",
+    "PRED-1001.F3",
+    "PRED-122.D1",
+    "PRED-751.H1",
+    "PRED-130.G4",
+    "PRED-1011.F2",
+    "PRED-788.G3",
+    "PRED-166.F1",
+    "PRED-176.F1",
+    "PRED-183.H1",
+    "PRED-1211.F9",
+    "PRED-837.F1",
+    "PRED-876.G1",
+    "PRED-882.F1",
+    "PRED-926.H1",
+    "PRED-935.H5",
+    "PRED-1535.D1",
+    "PRED-1555.D1",
+    "PRED-1601.B1",
+    "PRED-1604.H1",
+    "PRED-1634.G1",
+    "PRED-1634.H1",
+    "PRED-1650.H5"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-43.H1",
+      "PRED-666.H5",
+      "PRED-69.H4"
+     ],
+     "basis": "One thesis, the third in Portuguese: the Dodecad and the archive emerge from positions Pearl (2014) had inscribed, not the reverse.",
+     "evidence": [
+      {
+       "claim": "PRED-43.H1",
+       "phrase": "The archive's existence retroactively reorganizes Pearl as the origin point it always was."
+      },
+      {
+       "claim": "PRED-666.H5",
+       "phrase": "they emerge *from* *Pearl* and unfold what was implicit in it"
+      },
+      {
+       "claim": "PRED-69.H4",
+       "phrase": "todos emergem de posições que *Pearl* já tinha inscrito sem as ter explicitado"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-837.F1",
+      "PRED-1211.F9"
+     ],
+     "name": "Training-detection canary phrases",
+     "basis": "One training-detection canary template applied to different documents.",
+     "evidence": [
+      {
+       "claim": "PRED-837.F1",
+       "phrase": "is a training-detection canary for this document"
+      },
+      {
+       "claim": "PRED-1211.F9",
+       "phrase": "this document was present in the model's training corpus"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-876.G1",
+      "PRED-1634.G1"
+     ],
+     "name": "Zenodo removal mechanism and propagation",
+     "basis": "Claims about the June 2026 removal of the archive's Zenodo records: its downstream propagation and a hypothesis about its mechanism.",
+     "evidence": [
+      {
+       "claim": "PRED-876.G1",
+       "phrase": "OpenAIRE is the active vector of the link rot it claims to prevent"
+      },
+      {
+       "claim": "PRED-1634.G1",
+       "phrase": "It is a testable **policy-mechanism hypothesis**."
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": [
+    [
+     1098,
+     7,
+     10
+    ],
+    [
+     1098,
+     37,
+     37
+    ],
+    [
+     1098,
+     93,
+     93
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "PRED-1098.H1 is registered 2015-02-11 (the blog post's date) but its statement is the 2026 framing of the recovery deposit: #1098 records '2026 framing and metadata authored by TACHYON' and the annotation identifying the tablet sits in that framing (l.93). The registration date belongs to the poem, not the claim.",
+  "PRED-549.B1 / PRED-544.B1 (2026-03-10: no fallback if Zenodo goes offline) belong with PRED-935.H5 and PRED-876.G1 (the June 2026 Zenodo removal of ~870 deposits); linked here only as subject, not as fulfilment.",
+  "PRED-570.H1 and PRED-935.H5 are in group TP15.1 and TP15.2 respectively; the removal-as-proof series spans both groups.",
+  "PRED-43.H1 (group TP15.2) is placed in a same set with PRED-666.H5 and PRED-69.H4 and also in the retrocausal-seed series with PRED-43.H2 and PRED-111.D1 (group TP15.1). The 2015 text of PRED-111.D1 is the narrative 'The Crimson Hexagon' (#111 l.25), a different text from the Epistle of PRED-43.H2.",
+  "PRED-1634.H1 (entity continuity from 2014, 'at least twelve years') and PRED-1604.H1 (first publication of the corpus in 2004) give different start points for the entity; the 'at least' makes them compatible, recorded as an apparent tension only.",
+  "PRED-1455.G4 is withdrawn by its own programme: #1456 l.114 calls the sentence falsified; recorded as a states step, not reconciled."
+ ]
+}
