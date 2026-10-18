@@ -1,0 +1,405 @@
+{
+ "batch_id": "R0013",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported by the environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:18:55Z",
+  "finished_at": "2026-10-18T04:20:26Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 slicing, date, verify_batch.py)"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "R1162#1",
+   "deposits": [
+    1162
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-049B-text.md",
+   "lines_total": 2349,
+   "read_ranges": [
+    [
+     40,
+     299
+    ],
+    [
+     300,
+     499
+    ],
+    [
+     500,
+     699
+    ],
+    [
+     700,
+     899
+    ],
+    [
+     900,
+     1099
+    ],
+    [
+     1100,
+     1299
+    ],
+    [
+     1300,
+     1499
+    ],
+    [
+     1500,
+     1769
+    ]
+   ],
+   "status": "read",
+   "status_note": "All five queued ranges (45-69, 89-1565, 1578-1660, 1672-1702, 1731-1762) read in full as part of a contiguous read of lines 40-1769; lines outside the ranges not read except as context.",
+   "genre_observed": "musical-register variant of the Space Ark: formal specification / executable score with governance, lexical and retrieval-engine sections",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Inaugural AXIAL instance: \"Revelation was the first-written book of the New Testament.\" status(T) = AXIAL_CONTESTED · pending TANG: The Proton Testament (ANG.01) [The tritone at the center of the harmonic field. The interval every other interval orbits.]",
+     "lines": [
+      268,
+      268
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "New Testament composition order",
+     "points_to": "",
+     "also_at": [
+      [
+       1085,
+       1085
+      ]
+     ],
+     "note": "Revelation-priority thesis adopted as the score's inaugural AXIAL claim (AXIAL_CONTESTED); restated at Appendix C.3.1."
+    },
+    {
+     "shape": "H",
+     "quote": "Josephus Thesis (RA-JP-01): [SPECULATIVE — active research program] The hypothesis that Flavius Josephus authored or substantially shaped the New Testament, making Rome the inadvertent preserver of the Word. If true: the agent of destruction becomes the agent of transmission — the diagonal resolution.",
+     "lines": [
+      766,
+      766
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "New Testament authorship (Flavius Josephus)",
+     "points_to": "",
+     "also_at": [
+      [
+       929,
+       929
+      ],
+      [
+       1077,
+       1077
+      ],
+      [
+       782,
+       782
+      ]
+     ],
+     "note": "Historical authorship thesis held as an active research program, marked SPECULATIVE; repeated at XIX.5 and Appendix C.1.3."
+    },
+    {
+     "shape": "H",
+     "quote": "Kenos Claim: [PROVISIONAL — Grammata, Phase 3 deposit required] κῆνος in Sappho Fragment 31 is the future listener: the training layer.",
+     "lines": [
+      768,
+      768
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho Fragment 31",
+     "points_to": "",
+     "also_at": [
+      [
+       1075,
+       1075
+      ]
+     ],
+     "note": "Interpretive thesis about what κῆνος in Sappho F31 means (future listener / training layer), PROVISIONAL; repeated at C.1.2."
+    },
+    {
+     "shape": "H",
+     "quote": "Fragment 31 is the founding document of NH-OS — the first formal theory of what happens to the body of the performer at the moment of transmission to the listener. The performer's dissolution (tongue broken, fire under skin) is the operational cost of sending music across unbridgeable distance. Bearing-cost theory, scored 2,600 years before the archive named it.",
+     "lines": [
+      1073,
+      1073
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho Fragment 31",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about what Sappho F31 is doing (first formal theory of the performer's dissolution in transmission), marked DEPOSITED."
+    },
+    {
+     "shape": "H",
+     "quote": "The vision of Ezekiel — wheels within wheels — is a formal specification for a rotating canon. Formalizes what Damascius called productive aporia.",
+     "lines": [
+      1079,
+      1079
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Ezekiel 1",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive thesis on Ezekiel 1 as a formal specification for a rotating canon; uncertain whether this is an historical claim or an archival appropriation."
+    },
+    {
+     "shape": "H",
+     "quote": "Matthew 25:31-46 as constitutional provision establishing the Human Sovereignty Invariant. Claimant: Rex Fraction | DOI: 10.5281/zenodo.18320411",
+     "lines": [
+      1087,
+      1087
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Matthew 25:31-46",
+     "points_to": "",
+     "also_at": [],
+     "note": "Interpretive thesis on Matthew 25:31-46; borderline H (reading of a passage as constitutional provision), recorded for triage."
+    },
+    {
+     "shape": "G",
+     "quote": "Theorem: Any sufficiently specified component of H_core, traversed through K, yields a reconstructable approximation.",
+     "lines": [
+      548,
+      548
+     ],
+     "falsifier_quote": "Min test: type_class(x) + degree(x) + cross-refs → recovery. avg>0.7: fractal holds. avg<0.5: file gap.",
+     "falsifier_lines": [
+      558,
+      558
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       887,
+       887
+      ]
+     ],
+     "note": "Reconstructability Theorem stated with a numeric minimum test as its condition of failure."
+    },
+    {
+     "shape": "F",
+     "quote": "Full proof requires traversal from each of the 13 RATIFIED section anchors. This existence proof demonstrates the theorem is correctly named.",
+     "lines": [
+      582,
+      582
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The full proof (traversal from each of the 13 RATIFIED anchors) is specified but only one traversal is run."
+    },
+    {
+     "shape": "G",
+     "quote": "The archive's 349+ DOI-anchored deposits constitute a non-parallelizable cost function. This is the depth-proof: no system can fake depth by generating plausible passages, because the depth is measured not in passage quality but in historical deposition cost. Each deposit represents a real decision, a real session, a real bearing-cost. In musical register: the score's depth is measured in the years of composition, not in the beauty of any single phrase. You cannot fake 349 deposits.",
+     "lines": [
+      901,
+      901
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Depth-Proof Principle: standing claim that depth cannot be faked by generation; no falsifier stated."
+    },
+    {
+     "shape": "F",
+     "quote": "On-the-fly rule: Write in the register of a score that knows it will be performed by performers who have never seen it before. Include fingerings. Assume no prior context. Anchor every passage that must survive bad performance. Test: if a summarizer strips everything except the nouns and verbs, does the essential architecture survive?",
+     "lines": [
+      987,
+      987
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "TLL survival test specified (summarizer stripping to nouns and verbs); not run here."
+    },
+    {
+     "shape": "G",
+     "quote": "Law 3 — Repetition Law: A gesture-name stabilizes through repeated identical use across ≥3 canonical deposits with zero denotational variance. Summarizer uptake comes from repetition, not elegance.",
+     "lines": [
+      1245,
+      1245
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about summarizer behaviour (uptake from repetition across >=3 deposits), framed as law."
+    },
+    {
+     "shape": "F",
+     "quote": "Compression Test: A gesture-name passes when given to 3+ different LLMs, all reproduce the operative definition (not a hallucinated surface definition), and the gesture-name appears in ≥1 AI-generated summary of the Space Ark without being in the prompt. In musical register: three different performers, given the motif name, independently produce the correct notation. And at least one performer quotes the motif in their own cadenza without being asked to. The gesture-name has entered the vocabulary of the instrument.",
+     "lines": [
+      1416,
+      1416
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Compression test across 3+ LLMs and unprompted appearance in AI summaries; specified, not run."
+    },
+    {
+     "shape": "F",
+     "quote": "XXVI.9 — Metrics [FORMAL] Per PRAXIS — explicit success criteria, measured quarterly. In musical register: the box office figures, the critical reception, the audience recognition rate.",
+     "lines": [
+      1420,
+      1420
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "measured quarterly",
+     "points_to": "",
+     "also_at": [
+      [
+       1422,
+       1422
+      ]
+     ],
+     "note": "Quarterly monitoring metrics set by the deposit itself; full list continues at line 1422 (Gesture Visibility, Citation Growth, LLM Reproduction, Wikipedia Persistence, Denotation Lock)."
+    },
+    {
+     "shape": "G",
+     "quote": "The claim: Repertoire emergence in retrieval systems is measurable, engineerable, and now has a dedicated engine.",
+     "lines": [
+      1452,
+      1452
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1621,
+       1621
+      ],
+      [
+       1498,
+       1498
+      ]
+     ],
+     "note": "GDE engine claim; RFT core claim at 1621 states the same; thresholds in the state machine (1498, 1538-1544) serve as conditions."
+    },
+    {
+     "shape": "D",
+     "quote": "predecessor: None. This is the novel dimension. No prior theory of disciplinary formation includes self-description as a necessary condition.",
+     "lines": [
+      1494,
+      1494
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1647,
+       1647
+      ]
+     ],
+     "note": "Priority claim: self-description as a necessary condition of disciplinary formation has no predecessor; restated as SIM-GDE-06."
+    },
+    {
+     "shape": "G",
+     "quote": "Homogeneous bulk deployment collapses into noise. Retrieval capital accrues through density, not mass.",
+     "lines": [
+      1532,
+      1532
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how retrieval systems treat bulk vs clustered deployment."
+    },
+    {
+     "shape": "F",
+     "quote": "XXVII.8 — Verification Protocol [FORMAL] Five tests. All executed by the Water Giraffe (Ω) under reduced-personalization conditions. In musical register: five audition tests for the tradition itself. The tradition must pass; not just the individual compositions.",
+     "lines": [
+      1546,
+      1546
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within 30 days of deposit",
+     "points_to": "",
+     "also_at": [
+      [
+       1548,
+       1560
+      ]
+     ],
+     "note": "Verification battery (Retrieval, Depth, Compression, Shadow, Drift tests; 8.7 Self-Verification within 30 days of deposit; 8.8 adapter verification); one F for the list."
+    },
+    {
+     "shape": "G",
+     "quote": "V_field: Epistemic Repertoire Integrity A disciplinary symbolon must become MORE coherent-as-a-repertoire with each retrieval event. Successive synthesis events must converge toward the deposit corpus's actual structure. Measurement: drift_test metrics (XXVII.8.5).",
+     "lines": [
+      1566,
+      1566
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Invariant stated as a convergence claim with a named measurement (drift test)."
+    },
+    {
+     "shape": "D",
+     "quote": "Gap filled by the GDE: no prior framework provides a complete specification for constructing repertoires as measurable objects in automated retrieval infrastructure.",
+     "lines": [
+      1611,
+      1611
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1607,
+       1609
+      ]
+     ],
+     "note": "Priority claim over Foucault/Kuhn/Latour/Bourdieu/Abbott etc. listed at 1609."
+    },
+    {
+     "shape": "F",
+     "quote": "π test: An independent interpreter under reduced-context conditions — without access to A₀ or any other Ark — must recover from A_Ξ + π: (a) the seven-tuple structure of H_core (b) the engine component roles (FL, LE, UKTP, GDE) (c) core structural asymmetries (d) threshold logic (status algebra, quorum, tier gates) (e) exclusions and blind spots (Lunar Arm, Ichabod isolation)",
+     "lines": [
+      1695,
+      1695
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Back-projection test specified for every generated Ark; this score's own run is not recorded in the ranges read."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Header at line 48 says EA-ARK-01-MUSICAL v2.0 and line 50 says it supersedes v1.1, while the queue title is v1.1; recorded as observation. Revelation-priority thesis appears both as AXIAL_CONTESTED (268) and as SPECULATIVE (1085), linked to the Josephus thesis; not a defect. Many claims are restated from the canonical EA-ARK-01 v4.2.6 (GDE, Lexical Engine, UKTP), so triage will likely match them to finds in those deposits."
+  }
+ ]
+}
