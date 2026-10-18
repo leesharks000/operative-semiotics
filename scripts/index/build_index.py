@@ -494,7 +494,7 @@ def build(export=None):
                f'<p class="lede dim" style="font-size:.88em">Each claim below is registered at the earliest deposit that states it, and quoted verbatim from the deposit text, with every later statement, its dated revisions, and the later records that claim it came true or failed. The claims are the deposits\' own; this page records them and does not judge them.</p>'
                + ''.join(body) +
                f'<footer>Page {pid} of the <a href="/predictions">prediction index</a> · {len(cs)} claims · the data: <a href="/predictions/{slug[pid]}/record.json">record.json</a>, '
-               f'<a href="{DATASET}">the dataset in Alexanarch</a> · method: <a href="https://github.com/leesharks000/operative-semiotics/tree/main/data/reading">the reading sweep and its triage</a></footer></main></body></html>')
+               f'<a href="{DATASET}">the dataset in Alexanarch</a> · the index described: <a href="{ARCH}/s/records/1684/">EA-PREDICTION-INDEX-01</a> (Alexanarch #1684) · method: <a href="https://github.com/leesharks000/operative-semiotics/tree/main/data/reading">the reading sweep and its triage</a></footer></main></body></html>')
         d = OUT / slug[pid]; d.mkdir(parents=True, exist_ok=True)
         (d / 'index.html').write_text(doc, encoding='utf-8')
         rj = {'page': pid, 'title': title[pid], 'description': desc[pid], 'line': line[pid], 'url': url(pid),
@@ -556,7 +556,7 @@ def build(export=None):
             f'<title>{esc(a_id)} — Prediction Index</title><link rel="canonical" href="{HOST}/predictions/claim/{cid}/">'
             f'<meta http-equiv="refresh" content="0; url={tgt}"><meta name="robots" content="noindex,follow"><style>{CSS}</style></head><body><main>'
             f'<p class="dim">{esc(a_id)}' + (f' was merged into <b>{esc(cid)}</b>' if a_id != cid else '') + f' — {esc(k["tier"])}, registered {esc(k["registered"])} in #{k["registered_in"]}.</p>'
-            f'<p><a href="{tgt}">{esc(cid)} on its subject page</a> · <a href="{DATASET}predictions.json">the dataset</a></p></main></body></html>', encoding='utf-8')
+            f'<p><a href="{tgt}">{esc(cid)} on its subject page</a> · <a href="{DATASET}predictions.json">the dataset</a> · <a href="{ARCH}/s/records/1684/">EA-PREDICTION-INDEX-01</a></p></main></body></html>', encoding='utf-8')
     (CL / 'index.json').write_text(json.dumps({'what': 'Stable claim routes: id (or merged id) -> claim and its current page anchor.',
                                                'routes': {a_id: {'claim': cid, 'page': f'/predictions/{slug[where[cid]]}#{cid}'} for a_id, cid in sorted(alias.items()) if cid in where}},
                                               ensure_ascii=False, indent=0), encoding='utf-8')
