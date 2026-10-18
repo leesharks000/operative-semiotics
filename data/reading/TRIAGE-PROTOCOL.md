@@ -1,0 +1,113 @@
+# Triage Protocol: the prediction sweep's second pass (v1.0, 2026-10-17)
+
+The ruling (Lee Sharks, 2026-10-17): "lets do the triage pass."
+
+The sweep (READING-PROTOCOL.md v1.2) read all 1,616 readable deposits and recorded 6,162 verified finds in eight shapes.
+It left two things to triage:
+
+- "A thesis repeated across deposits is recorded in each deposit that argues it (triage links them)."
+- A confirmation record (shape C) records "what it points back to".
+
+Triage links. It does not judge whether a prediction came true, and it does not re-read deposits for new finds. Every
+link it makes is checked mechanically against the finds and the source texts.
+
+## What is already done mechanically
+
+Built by `scripts/reading/triage_base.py`, `triage_cluster.py` and `triage_queue.py`, in `data/reading/triage/`:
+
+- **Find ids.** `F<deposit>.<shape><n>`, where n is the find's order among that deposit's finds of that shape (`finds.ids.jsonl`).
+- **Pointers.** For each C find, the deposits its `points_to` names: by number, DOI, AXN or quoted title, or "self" for
+  "this deposit". Each comes with up to six candidate finds in the target, ranked by word overlap (`pointers.json`).
+- **Restatements.** Finds in different deposits whose quotes are near-verbatim (TF-IDF cosine ≥ 0.85) are joined
+  without judgment, each join recorded with its score (`restatements.json`).
+- **Candidate pairs.** Pairs with cosine from 0.35 to below 0.85 are left for judgment (`candidate-pairs.json`).
+
+## Your batch
+
+Your batch is the entry with your `batch_id` in `data/reading/triage/queue.json`. Each item quotes every find in full,
+with its deposit, date, title and the path of the deposit's text. Read each item whole. Where a judgment needs context
+the quote does not carry, open the deposit's text at the find's lines and read around them, then record the range you
+read. You may look up deposits by title in `data/reading/triage/deposit-titles.json` and look up finds in
+`data/reading/finds.jsonl` joined with `triage/finds.ids.jsonl`. A lookup finds a record; it is not a reading of it.
+
+## TC: a confirmation record
+
+The question is what the deposit says came true or failed, and where that earlier statement is. For each item, record:
+
+- `target_kind`, one of:
+  - `find`: one or more finds state the earlier prediction or claim
+  - `deposit`: an archive deposit with no find that states it, because it was not a prediction-bearing passage under the
+    sweep's protocol (a poem, a book, a capture)
+  - `self`: the same deposit, earlier in it
+  - `external`: outside the archive (a book's ISBN, a third-party post)
+  - `unlocated`: you looked and could not find it
+- `links`: a list of `{"find": <id>, "claimed": "came_true" | "partly" | "failed" | "pending"}`. The `claimed` value is
+  what the C deposit claims, not your verdict. `pending` means the deposit says the matter is still running.
+- `deposit`: the deposit number, when `target_kind` is `deposit` or `self`.
+- `external`: a short description, when `target_kind` is `external`.
+- `evidence`: for each link, a verbatim phrase (8 to 200 characters) from the linked find's quote that carries the
+  earlier claim. For `deposit` and `self`, give a phrase from the deposit's text with its lines.
+- `basis`: one sentence.
+- `read`: any text ranges you opened, as `[[deposit, first, last], ...]`.
+
+A C find can name several earlier things. Link each one.
+
+## TE: a candidate pair
+
+Decide one of:
+
+- `same`: one claim, stated twice. A reader of the index should see it as one prediction with two statements.
+- `variant`: the same claim changed in a way that matters for checking it: the window moved, the scope narrowed or
+  widened, the falsifier changed, or the claim was reversed. Say what changed in `change`.
+- `related`: distinct claims on one subject, such as two predictions in one series or a claim and its test.
+- `distinct`: the shared words are boilerplate or a common phrase, and the claims are not related.
+
+Give `basis` in one sentence. Where it decides the call, quote the differing phrase from each side as `evidence_a` and
+`evidence_b`, verbatim. When in doubt between `same` and `variant`, choose `variant`: the index keeps both statements
+either way, and a variant also keeps the change.
+
+## TR: a register card or an intake item
+
+The question is which finds state this card's prediction. Record:
+
+- `match`, one of:
+  - `found`: one or more finds state it
+  - `partial`: a find states part of it, or a weaker form
+  - `not_found`: the source deposit was read and no find states it
+  - `excluded`: the text exists, but the reading protocol's "What NOT to record" rules leave it out. Name the rule in `rule`.
+  - `no_source`: the card gives no archive deposit
+- `finds`: the matching find ids.
+- `evidence`: for each find, a verbatim phrase from its quote.
+- `basis`: one sentence.
+- `read`: any ranges you opened.
+
+Where a card's deposit is not given, or its finds are capped at 40 in the queue, search `finds.jsonl` by deposit.
+
+Register cards also carry `cls`, `status` and the rest. Do not change them. Record only the crosswalk.
+
+## Output
+
+Write `data/reading/triage/batches/<ID>.json`:
+
+```
+{"batch_id": "<ID>", "kind": "TC|TE|TR", "protocol": "TRIAGE-PROTOCOL v1.0",
+ "reader": {"self_description": "...", "started_at": "...", "finished_at": "..."},
+ "decisions": [{"item": "<item>", ...fields above...}],
+ "observations": ["anything a later pass must know"]}
+```
+
+Make exactly one decision for every item in the batch, in order. Take every evidence phrase by copying it out of the
+quote with a script, so it is exact. Use `date -u` for the times. Use "unknown" rather than guess. Do not edit any other
+file. When two deposits seem to contradict each other, record it as an observation, not an error: the archive's apparent
+contradictions can be deliberate structure. Never copy a credential, token or key string into your output.
+
+## What follows
+
+`scripts/reading/triage_verify.py` checks each batch. Then `scripts/reading/triage_assemble.py` builds the claims:
+
+- each group of `same` finds and restatements becomes one claim, registered at its earliest statement;
+- variants are kept as dated states of that claim;
+- C and D finds are attached as evidence.
+
+Lexical candidates miss a claim restated in different words. A topical pass, by subject within each shape, is the next
+pass after this one.
