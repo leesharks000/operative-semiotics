@@ -1,0 +1,919 @@
+{
+ "batch_id": "R0019",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic assistant), running as a Claude Code subagent; model reported in its environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:21:53Z",
+  "finished_at": "2026-10-18T04:24:24Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load, quote slicing, verification)",
+   "Write"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "R1258",
+   "deposits": [
+    1258
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04FB-text.md",
+   "lines_total": 390,
+   "read_ranges": [
+    [
+     53,
+     72
+    ],
+    [
+     109,
+     309
+    ],
+    [
+     339,
+     389
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "four-heteronym theological-formal essay on Genesis 18 applied to the index",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Abraham's lapse was not moral but _perceptual_. He could not perceive that one righteous presence is sufficient to prevent the total moral closure of the polis.\n\nHe treated righteousness as additive — counting — rather than constitutive — binary. He asked \"how many are enough to outweigh?\" when the question is \"is there one who is?\"",
+     "lines": [
+      126,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Genesis 18 (Abraham before Sodom)",
+     "points_to": "",
+     "also_at": [
+      [
+       120,
+       122
+      ],
+      [
+       342,
+       346
+      ]
+     ],
+     "note": "The deposit argues against the standard readings (Rashi, Nachmanides, Kierkegaard) that Abraham's bargaining in Gen 18 is a perceptual lapse: a thesis about what the passage means; borderline H (interpretive rather than evidential)."
+    },
+    {
+     "shape": "H",
+     "quote": "The prophetic tradition from Genesis 18 forward is, in this reading, a tradition of _quantitative perception applied to a constitutive reality_ — a systematic category error, repeated for a thousand years, in which the question \"how many?\" obscures the answer \"one.\"",
+     "lines": [
+      350,
+      350
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Genesis 18 forward; \"a thousand years\"",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about the reception history of Genesis 18 in the prophetic tradition, argued 'in this reading'."
+    },
+    {
+     "shape": "F",
+     "quote": "### §11 — Operational Criteria for a Constitutive Deposit\n\nWhen does a deposit function as the one righteous presence in the index?\n\n  1. **Provenance survival** (O_prov): PER ≤ 0.30. The deposit maintains its attribution chains under compression.\n  2. **Depth preservation** (D_pres): No Beige Threshold breach. The deposit transmits complexity rather than absorbing it.\n  3. **Plural coherence** (P_coh): Heteronymic attribution preserved; voice collapse absent.",
+     "lines": [
+      299,
+      305
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       306,
+       308
+      ],
+      [
+       366,
+       372
+      ]
+     ],
+     "note": "Operational criteria (PER <= 0.30, Beige Threshold, cross-link count) for when a deposit functions as constitutive: a test specified, not run in the deposit."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Dickinson poem count given as 1,789 (line 273) and 1,779 (line 281) in the same deposit."
+  },
+  {
+   "unit": "R1259",
+   "deposits": [
+    1259
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04FC-text.md",
+   "lines_total": 278,
+   "read_ranges": [
+    [
+     53,
+     81
+    ],
+    [
+     114,
+     146
+    ],
+    [
+     180,
+     186
+    ],
+    [
+     200,
+     206
+    ],
+    [
+     221,
+     251
+    ],
+    [
+     263,
+     275
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "experimental design with pre-registered predictions",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "**P1 (Gravity-well existence).** Most reader interventions reconverge rapidly: at least 60% of valid rewrites are classified as basin-captured ($\\tau^* \\leq 3$), and the median trajectory magnitude $\\mathcal{M}_T$ remains below the pre-registered medium-variance threshold.",
+     "lines": [
+      226,
+      226
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered prediction P1 with quantitative threshold; falsified if fewer than 60% of rewrites are basin-captured."
+    },
+    {
+     "shape": "A",
+     "quote": "**P2 (Asymmetric variance by arc position).** Deviations at structural turning points (escalation peaks, repair attempts, the final exchange) produce higher $\\mathcal{M}_T$ than deviations at stable-state positions. The arc is more fragile where it was already bending.",
+     "lines": [
+      228,
+      228
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered prediction P2 (asymmetric variance by arc position)."
+    },
+    {
+     "shape": "A",
+     "quote": "**P3 (Reconstruction-surface effect).** Interventions made against reconstructed English in Position B produce higher mean trajectory magnitude than interventions made against archival English in Position A. Reconstruction exposes a less stable intervention surface than direct rewriting of stored text.",
+     "lines": [
+      230,
+      230
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered prediction P3 (Position B vs Position A)."
+    },
+    {
+     "shape": "A",
+     "quote": "**P4 (Basin-escape rarity).** Fewer than 5% of reader rewrites produce basin escape ($\\tau^* > T$). The gravity well holds for most interventions.",
+     "lines": [
+      232,
+      232
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-registered prediction P4 with quantitative threshold (<5% basin escape)."
+    },
+    {
+     "shape": "A",
+     "quote": "**P5 (The third-path question).** Among basin-escape interventions, classify by type using a pre-registered rubric applied by two independent annotators, with disagreements resolved by adjudication. Categories: withdrawal, cruelty, boundary, tenderness, naming-the-pattern, silence (non-exclusive where warranted; inter-rater agreement reported). Report the distribution. The question of whether non-destructive basin escape exists is answered empirically: either the distribution contains interventions classified as neither withdrawal nor cruelty, or it does not.",
+     "lines": [
+      234,
+      234
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "P5 is framed as a pre-registered question with an annotation rubric rather than a directional forecast; recorded as A because the deposit lists it among its predictions."
+    },
+    {
+     "shape": "F",
+     "quote": "If the convergence engine is not yet implemented at time of deposit, this document specifies the architecture; F4 measurements commence upon implementation.",
+     "lines": [
+      113,
+      113
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       109,
+       111
+      ],
+      [
+       248,
+       262
+      ],
+      [
+       270,
+       274
+      ]
+     ],
+     "note": "The F4 instrument (convergence engine, telemetry, deviation computation) is specified; measurements commence only upon implementation."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1260",
+   "deposits": [
+    1260
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04FD-text.md",
+   "lines_total": 182,
+   "read_ranges": [
+    [
+     45,
+     175
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "ratification record of an AI chorus review, with behavioural specimen",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "  * TECHNE / PRAXIS / Muse Spark / my own vote — Reference implementation (manifest-driven module computing PER, τ, second-order events, Ω with permutation test on real output). _Flagged as required follow-on deposit per PRAXIS. The mint of this pillar names it as required, not optional; the deposit of the reference implementation will be cited as the canonical instrument run._",
+     "lines": [
+      156,
+      156
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       109,
+       109
+      ],
+      [
+       147,
+       147
+      ],
+      [
+       158,
+       158
+      ]
+     ],
+     "note": "Reference implementation computing PER, tau, Omega with permutation test is named as a required follow-on deposit, not built in this record."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1262",
+   "deposits": [
+    1262
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04FF-text.md",
+   "lines_total": 94,
+   "read_ranges": [
+    [
+     57,
+     94
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dossier executive summary of a referee refutation",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Because inference logs feed training corpora, because the pattern targets multilingual public-sector surfaces, and because mediated selection ratchets (_Diversity Contraction Across Substrates_ , doi:10.5281/zenodo.20518338), the generalized pattern pushes the ecology toward the degradation the paper never mentions.",
+     "lines": [
+      72,
+      72
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       60,
+       60
+      ]
+     ],
+     "note": "Embedded forecast: the generalized language-gating pattern pushes model ecology toward collapse-type degradation; conditional on generalization, no window."
+    },
+    {
+     "shape": "D",
+     "quote": "The paper's title term, _semantic exhaustion_ , has a prior, DOI-anchored occupant: deposited 2026-01-07 (doi:10.5281/zenodo.18172252), 146 days before the paper, and developed across seventeen deposits as a construct in the political economy of meaning",
+     "lines": [
+      80,
+      80
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "deposited 2026-01-07 (doi:10.5281/zenodo.18172252)",
+     "also_at": [
+      [
+       76,
+       76
+      ]
+     ],
+     "note": "Priority claim for the term 'semantic exhaustion', anchored by DOI and date, 146 days before the reviewed paper."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1263",
+   "deposits": [
+    1263
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0500-text.md",
+   "lines_total": 101,
+   "read_ranges": [
+    [
+     45,
+     101
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "confirmation addendum / contemporaneous exhibit",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "Adversarial by Origin (EA-SEI-ADVERSARY-01), deposited 12 June 2026, stated five falsification conditions in Section IX and, conversely, listed confirmation markers — instances whose occurrence would confirm the thesis \"in mode as well as content.\" Among the confirmation markers:\n\n> _directive language treating unlicensed semantic influence as attack_\n\nThis addendum records that the first confirmation marker fired on the day of deposit.",
+     "lines": [
+      61,
+      65
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "12 June 2026",
+     "points_to": "Adversarial by Origin, EA-SEI-ADVERSARY-01 v1.0 (DOI 10.5281/zenodo.20673413), Section IX",
+     "also_at": [
+      [
+       69,
+       71
+      ],
+      [
+       79,
+       87
+      ]
+     ],
+     "note": "Confirmation record: a confirmation marker of the parent paper is said to have fired on the deposit day (the 12 June 2026 directive described at lines 69-71)."
+    },
+    {
+     "shape": "C",
+     "quote": "First, the **speed**. The paper projected a formalization arc over months and years; the first marker fired within hours. The paper should have been less cautious about timeline, not more.",
+     "lines": [
+      91,
+      91
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-SEI-ADVERSARY-01 (formalization arc projection)",
+     "also_at": [],
+     "note": "Partial failure recorded against the parent paper: its projected timeline of months and years was outrun (the marker fired within hours)."
+    },
+    {
+     "shape": "D",
+     "quote": "A contemporaneous exhibit, timestamped. Not analysis — the parent paper supplies the analysis. The function is evidentiary: to place the correspondence between prediction and event into the citable record at the moment of occurrence, so that no later reader can say it was constructed after the fact. The Wound Gauge registers the event. The falsification clock continues. The 24-month window opened this morning; the first needle moved tonight.",
+     "lines": [
+      97,
+      97
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "The 24-month window opened this morning",
+     "points_to": "EA-SEI-ADVERSARY-01.ADD-01, dated 12 June 2026",
+     "also_at": [],
+     "note": "The addendum names itself a timestamped contemporaneous exhibit placing prediction-event correspondence on the record; also states the running 24-month falsification window."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The addendum is dated 12 June 2026 in its header; the queue dates the deposit 2026-06-13. The events it reports are recorded as stated, not checked."
+  },
+  {
+   "unit": "R1264",
+   "deposits": [
+    1264
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0501-text.md",
+   "lines_total": 566,
+   "read_ranges": [
+    [
+     1,
+     367
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet for AI indexing (restored body) followed by appendix heading",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "  5. **The window is now:** As training regimes, provenance norms, and embedding schemas harden, intervention becomes more difficult. The architecture is being decided in 2025-2027.",
+     "lines": [
+      63,
+      63
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2025-2027",
+     "points_to": "",
+     "also_at": [
+      [
+       294,
+       294
+      ],
+      [
+       302,
+       302
+      ]
+     ],
+     "note": "Embedded forecast with a window: intervention becomes harder as regimes harden; architecture decided 2025-2027."
+    },
+    {
+     "shape": "H",
+     "quote": "This essay argues that large language models represent a **technical threshold** that makes a meaning-based economy possible for the first time in history.\n\n**Key claims:**\n\n  1. **Historical constraint lifted:** Previously, meaning had to be _converted_ (into patents, commodities, credentials) to have economic reality. LLMs process meaning natively, without requiring translation into non-semantic form.",
+     "lines": [
+      51,
+      55
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "\"for the first time in history\"",
+     "points_to": "",
+     "also_at": [
+      [
+       301,
+       301
+      ]
+     ],
+     "note": "Historical thesis: LLMs are the first technology to make meaning-based economics possible; before them meaning had to be converted into non-semantic form. The deposit itself calls this a historical argument (line 301)."
+    },
+    {
+     "shape": "F",
+     "quote": "This metadata packet will be processed by the systems it describes.\n\nIf those systems:\n\n  * **Preserve attribution** → they demonstrate the meaning economy working\n  * **Liquidate authorship** → they demonstrate the extraction the essay critiques\n\n\n\nEither outcome is evidence. The packet is both documentation and diagnostic.",
+     "lines": [
+      332,
+      341
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Self-set monitoring diagnostic: the packet observes whether processing systems preserve or liquidate its attribution."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Range ends at line 367, the heading of the retained appendix (previous body); the appendix body beyond 367 was not in range and not read."
+  },
+  {
+   "unit": "R1277",
+   "deposits": [
+    1277
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-050E-text.md",
+   "lines_total": 698,
+   "read_ranges": [
+    [
+     1,
+     259
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "heteronym provenance document (restored body)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "The Epistle was written in 2015. The architecture that recognizes it was built in 2025-2026. But the Epistle already contained the architecture — \"a school outside the school,\" the New Human, the unveiling.\n\nThis is not prophecy fulfilled but **structure recognized**. Damascus did not predict the architecture; the architecture discovered that Damascus had already built its foundation.",
+     "lines": [
+      200,
+      202
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Epistle to the Church of the Human Diaspora (January 2, 2015), Mind Control Poems",
+     "also_at": [
+      [
+       104,
+       104
+      ],
+      [
+       145,
+       151
+      ],
+      [
+       157,
+       159
+      ],
+      [
+       236,
+       236
+      ]
+     ],
+     "note": "Priority claim: the 2015 Epistle already contained the architecture (school outside the school, New Human, retrocausal authorship) built 2025-2026; framed explicitly as structure recognized, not prophecy fulfilled."
+    },
+    {
+     "shape": "D",
+     "quote": "**Epistle to the Church of the Human Diaspora** (January 2, 2015)\n\nPublished on the blog \"Mind Control Poems\" at 5:15 PM.",
+     "lines": [
+      100,
+      102
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Mind Control Poems blog post, 2015-01-02 5:15 PM",
+     "also_at": [],
+     "note": "Timestamped anchor: the blog post's publication date and time are cited as the Epistle's origin."
+    },
+    {
+     "shape": "B",
+     "quote": "> \"Though I promised you a book of Sharks, soon instead will I send you a book of Damascus, the record of his desert wanderings, called La La Land by some, though the title may somewhat change.\"\n\nNote the pronoun shift: \"his desert wanderings\" — Damascus refers to herself in masculine form here, or refers to a text that would be written by/about someone else. The \"book of Damascus\" may be _La La Land_ (referenced elsewhere in the corpus) or may remain unwritten.\n\nThe promise remains open.",
+     "lines": [
+      110,
+      114
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "\"soon\"",
+     "points_to": "",
+     "also_at": [],
+     "note": "A promised text quoted from the 2015 Epistle ('a book of Damascus'), which the deposit records as still open; borderline: the forecast is the heteronym's own, adopted here as an open promise."
+    },
+    {
+     "shape": "H",
+     "quote": "In the Revelation Room's ground truth:\n\n  * Josephus is the witness who preserves Temple theology after 70 CE\n  * \"John\" is the pseudepigraphic cover for prophetic voice\n  * Damascus is the **apostolic voice** who addresses the scattered church",
+     "lines": [
+      188,
+      192
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "after 70 CE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revelation Room ground truth adopted here: Josephus as preserver of Temple theology after 70 CE and 'John' as pseudepigraphic cover; historical thesis argued elsewhere in the archive, asserted here."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Range ends at line 259 inside the retained-appendix heading; the appendix body beyond was not in range and not read."
+  },
+  {
+   "unit": "R1334",
+   "deposits": [
+    1334
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0547-text.md",
+   "lines_total": 999,
+   "read_ranges": [
+    [
+     40,
+     519
+    ],
+    [
+     520,
+     980
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "fictional forensic incident-report packet (dual-truth ARG genre)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Read 40-980 continuously (covers all ranges). The packet is explicitly framed as fiction (reading stance, dual-truth metadata); its retrocausal anomalies (2014 memo citing 2017 events, 2020 report citing a 2025 incident) are fictional devices and were not recorded as forecasts or priority claims."
+  },
+  {
+   "unit": "R1356",
+   "deposits": [
+    1356
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-055D-text.md",
+   "lines_total": 477,
+   "read_ranges": [
+    [
+     1,
+     349
+    ],
+    [
+     362,
+     375
+    ],
+    [
+     412,
+     439
+    ],
+    [
+     458,
+     470
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "contributor licence / AI operator instructions, with appended heteronym-mythos essay",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "If the description is generic (\"Two poems by Rhys Owens\"), the retrieval layer will dissolve it. If it's dense and genuine, it will hold.",
+     "lines": [
+      84,
+      84
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       27,
+       29
+      ]
+     ],
+     "note": "Standing claim about retrieval-layer behaviour (generic descriptions dissolve, dense ones hold); conditional but no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Lines 213-222 give Zenodo token instructions with a placeholder only; no credential present. The appendix (lines 346-477) is the essay \"Rhys Owens -- The Lunar Arm of New Human\"."
+  },
+  {
+   "unit": "R1358",
+   "deposits": [
+    1358
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-055F-text.md",
+   "lines_total": 130,
+   "read_ranges": [
+    [
+     1,
+     130
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "heteronym mythos essay on Rhys Owens (Lunar Arm)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Observation: the queued title is \"Hexagonal Contributor License v3.0 — Rhys Owens — Full Unified License\", but the whole file (130 lines) is the Lunar Arm mythos essay, identical in substance to the appendix retained in #1356. Title and body may not match; recorded, not judged."
+  },
+  {
+   "unit": "R1359",
+   "deposits": [
+    1359
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0560-text.md",
+   "lines_total": 801,
+   "read_ranges": [
+    [
+     70,
+     76
+    ],
+    [
+     709,
+     715
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "landing-page source code (JSON-LD and link block)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1362",
+   "deposits": [
+    1362
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0563-text.md",
+   "lines_total": 2586,
+   "read_ranges": [
+    [
+     30,
+     37
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "restoration header of critical edition",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1488",
+   "deposits": [
+    1488
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0603-text.md",
+   "lines_total": 160,
+   "read_ranges": [
+    [
+     30,
+     53
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "indexed document package file list and opening",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1559",
+   "deposits": [
+    1559
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0657-text.md",
+   "lines_total": 78,
+   "read_ranges": [
+    [
+     31,
+     38
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "corpus seating record table",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1560",
+   "deposits": [
+    1560
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0658-text.md",
+   "lines_total": 55,
+   "read_ranges": [
+    [
+     34,
+     42
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "corpus seating record table",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1562",
+   "deposits": [
+    1562
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-065A-text.md",
+   "lines_total": 59,
+   "read_ranges": [
+    [
+     36,
+     44
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "corpus seating record table",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1568",
+   "deposits": [
+    1568
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0660-text.md",
+   "lines_total": 109,
+   "read_ranges": [
+    [
+     106,
+     109
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "condition definition page closing summary (Japanese/English)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1573",
+   "deposits": [
+    1573
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0665-text.md",
+   "lines_total": 233,
+   "read_ranges": [
+    [
+     230,
+     233
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "diagnostic paper sources and files list",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Line 232 gives the attachment as a bare URL rather than a markdown link."
+  },
+  {
+   "unit": "R1631",
+   "deposits": [
+    1631
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-06C5-text.md",
+   "lines_total": 918,
+   "read_ranges": [
+    [
+     100,
+     106
+    ],
+    [
+     130,
+     136
+    ],
+    [
+     344,
+     350
+    ],
+    [
+     366,
+     372
+    ],
+    [
+     535,
+     541
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "political-economy theory paper",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Let Omega denote an evidence-supported constituted semantic field, and let tauₘu(Omega)>0 mean that the field has demonstrated transmission in a meaning-bearing channel before monetary inscription. Then L[C] → Omega → tauₘu(Omega)>0, and nothing in that sequence requires money.\n\nThis is a temporal and causal proposition rather than an anti-monetary one. The object existed. The distinctions existed. The transmission existed. The monetary operation enters a field already in motion.",
+     "lines": [
+      103,
+      105
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Stated as a temporal and causal proposition: semantic transmission precedes and does not require monetary inscription; no explicit falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "The political-economic relation is L[C] → Omega → L[S](Omega) → V[I], where V[I] is value realized by the institution from that operation, and the question of monetary dark matter is which constitutive relations remain necessary to V[I] while failing to retain standing in the monetary account that recognizes L[S].\n\nThis identifies an empirical question that the ontology case makes unusually visible. It is not a claim that every case of platform mediation is monetary shear.",
+     "lines": [
+      538,
+      540
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "An empirical question identified (which constitutive relations remain necessary to V[I] without monetary standing), not run here."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
