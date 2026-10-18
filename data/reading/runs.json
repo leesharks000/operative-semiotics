@@ -10936,7 +10936,34 @@
    "protocol_sha256": "f45397c87384e67d77f0bf5cc86e3171aa92564081b8b81b7f9301971985a902",
    "instructions": "data/reading/READER-PROMPT.md, 'Pass 2', with <ID> filled",
    "output": "data/reading/batches/R0006.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 401066,
+    "tool_uses": 108,
+    "tokens": 268061
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-18T04:18:19Z",
+    "finished_at": "2026-10-18T04:24:29Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a subagent in Claude Code; model reported by the environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "python3 (quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 57,
+    "entries": 57,
+    "finds": 41,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 57,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-p2-R0007",
@@ -11292,7 +11319,34 @@
    "protocol_sha256": "f45397c87384e67d77f0bf5cc86e3171aa92564081b8b81b7f9301971985a902",
    "instructions": "data/reading/READER-PROMPT.md, 'Pass 2', with <ID> filled",
    "output": "data/reading/batches/R0016.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 225669,
+    "tool_uses": 36,
+    "tokens": 209747
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-18T04:21:34Z",
+    "finished_at": "2026-10-18T04:24:57Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; the model was given to me as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue loading, quote slicing and output)",
+     "Bash (diff of 1196/1201 bodies)"
+    ]
+   },
+   "verification": {
+    "deposits": 12,
+    "entries": 12,
+    "finds": 35,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 12,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-p2-R0017",
@@ -11354,7 +11408,34 @@
    "protocol_sha256": "f45397c87384e67d77f0bf5cc86e3171aa92564081b8b81b7f9301971985a902",
    "instructions": "data/reading/READER-PROMPT.md, 'Pass 2', with <ID> filled",
    "output": "data/reading/batches/R0019.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 181296,
+    "tool_uses": 34,
+    "tokens": 179334
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-18T04:21:53Z",
+    "finished_at": "2026-10-18T04:24:24Z",
+    "self_description": "Claude (Anthropic assistant), running as a Claude Code subagent; model reported in its environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue load, quote slicing, verification)",
+     "Write"
+    ]
+   },
+   "verification": {
+    "deposits": 19,
+    "entries": 19,
+    "finds": 25,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 19,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-p2-A0001",
@@ -11378,7 +11459,33 @@
    "protocol_sha256": "f45397c87384e67d77f0bf5cc86e3171aa92564081b8b81b7f9301971985a902",
    "instructions": "data/reading/READER-PROMPT.md, 'Pass 2', with <ID> filled",
    "output": "data/reading/batches/A0002.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 175056,
+    "tool_uses": 17,
+    "tokens": 205617
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-18T04:21:58Z",
+    "finished_at": "2026-10-18T04:24:34Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in session context as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 slicing for quotes, date -u, verify_batch.py)"
+    ]
+   },
+   "verification": {
+    "deposits": 4,
+    "entries": 4,
+    "finds": 19,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 4,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-p2-A0003",
@@ -11390,7 +11497,33 @@
    "protocol_sha256": "f45397c87384e67d77f0bf5cc86e3171aa92564081b8b81b7f9301971985a902",
    "instructions": "data/reading/READER-PROMPT.md, 'Pass 2', with <ID> filled",
    "output": "data/reading/batches/A0003.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 172293,
+    "tool_uses": 17,
+    "tokens": 198335
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-18T04:22:04Z",
+    "finished_at": "2026-10-18T04:24:38Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue loading and verbatim quote slicing; date)"
+    ]
+   },
+   "verification": {
+    "deposits": 5,
+    "entries": 5,
+    "finds": 40,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 5,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-p2-A0004",
@@ -11414,7 +11547,33 @@
    "protocol_sha256": "f45397c87384e67d77f0bf5cc86e3171aa92564081b8b81b7f9301971985a902",
    "instructions": "data/reading/READER-PROMPT.md, 'Pass 2', with <ID> filled",
    "output": "data/reading/batches/A0005.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 167242,
+    "tool_uses": 35,
+    "tokens": 302877
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-18T04:22:14Z",
+    "finished_at": "2026-10-18T04:24:37Z",
+    "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash (python3 for queue loading, quote slicing, output build; date -u)"
+    ]
+   },
+   "verification": {
+    "deposits": 23,
+    "entries": 23,
+    "finds": 23,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 23,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-p2-A0006",
@@ -11450,7 +11609,34 @@
    "protocol_sha256": "f45397c87384e67d77f0bf5cc86e3171aa92564081b8b81b7f9301971985a902",
    "instructions": "data/reading/READER-PROMPT.md, 'Pass 2', with <ID> filled",
    "output": "data/reading/batches/A0008.json",
-   "status": "launched"
+   "status": "completed",
+   "observed_by_launcher": {
+    "duration_ms": 130737,
+    "tool_uses": 20,
+    "tokens": 193949
+   },
+   "reader_self_reported": {
+    "started_at": "2026-10-18T04:23:29Z",
+    "finished_at": "2026-10-18T04:25:20Z",
+    "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in session as Opus 5.5 (claude-opus-5-5)",
+    "tools_used": [
+     "Read",
+     "Bash",
+     "python3 (quote slicing)"
+    ]
+   },
+   "verification": {
+    "deposits": 11,
+    "entries": 11,
+    "finds": 11,
+    "quotes_failed": 0,
+    "deposits_with_fails": 0,
+    "status": {
+     "read": 11,
+     "partial": 0,
+     "skipped": 0
+    }
+   }
   },
   {
    "run": "R-p2-A0009",

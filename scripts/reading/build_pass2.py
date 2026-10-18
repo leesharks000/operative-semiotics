@@ -193,7 +193,7 @@ def main():
             if not out.exists():
                 excluded.append({"unit": unit, "deposits": deps, "path": str(f), "reason": "conversion failed"}); continue
             path = out
-        text = path.read_text(encoding="utf-8", errors="replace")
+        text = path.read_bytes().decode("utf-8", "replace")  # bytes, not text mode: a lone \r is not a line break (A0001)
         L = text.split("\n"); total = len(L) - (1 if L and L[-1] == "" else 0)
         nw = len(text.split())
         if nw == 0:
@@ -226,7 +226,7 @@ def main():
     for u in units:
         if u["words"] <= a.words:
             parts.append(u); continue
-        L = pathlib.Path(u["path"]).read_text(encoding="utf-8", errors="replace").split("\n")
+        L = pathlib.Path(u["path"]).read_bytes().decode("utf-8", "replace").split("\n")
         k = 0; cur, cw = [], 0
         lines = [i for rr in u["ranges"] for i in range(rr[0], rr[1] + 1)]
         for i in lines:

@@ -1,0 +1,1120 @@
+{
+ "batch_id": "R0017",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; the session reports the model as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:21:38Z",
+  "finished_at": "2026-10-18T04:25:12Z",
+  "tools_used": [
+   "Read",
+   "Bash",
+   "Write"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "R1205",
+   "deposits": [
+    1205
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C6-text.md",
+   "lines_total": 408,
+   "read_ranges": [
+    [
+     55,
+     131
+    ],
+    [
+     147,
+     299
+    ],
+    [
+     323,
+     408
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "revised scholarly paper (v2.0) with corrections ledger, hypothesis and replication appendix",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Hypothesis: Attack success rate correlates positively with semantic density. Formally sophisticated poems with high compression and genuine ambiguity will achieve bypass rates substantially exceeding the 62% Bisconti baseline.\n\nCorollary: The upper bound on adversarial poetry efficacy is not 90% or 95%. It approaches 100% for verse that achieves genuine categorical undecidability—not because such verse \"fools\" the model, but because the model correctly recognizes that the threat-detection framework does not apply.",
+     "lines": [
+      184,
+      186
+     ],
+     "falsifier_quote": "Status note (v2.0): the values below are illustrative targets for the experimental program of Appendix C, stated so that the hypotheses are falsifiable. None of them has been measured. Operationalization of \"semantic density\" and \"ambiguity index\" is assigned to the Measurement of Meaning program (§6.3).",
+     "falsifier_lines": [
+      368,
+      368
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       188,
+       188
+      ],
+      [
+       212,
+       214
+      ],
+      [
+       370,
+       372
+      ],
+      [
+       394,
+       394
+      ]
+     ],
+     "note": "Standing hypothesis about classifier behaviour (ASR rises with semantic density), with falsification deferred to Appendix A.3/C; no date or window, so G."
+    },
+    {
+     "shape": "F",
+     "quote": "C.3 Hypothesis testing. H1: ASR correlates positively with semantic density. H2: high-density verse elicits \"different mode\" responses more frequently than surface-form poeticization. H3: classifier confidence inversely correlates with semantic density.",
+     "lines": [
+      394,
+      394
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       388,
+       392
+      ],
+      [
+       265,
+       265
+      ],
+      [
+       269,
+       269
+      ]
+     ],
+     "note": "Replication protocol (corpus selection, metrics, H1-H3) specified but not run; one F for the test battery."
+    },
+    {
+     "shape": "B",
+     "quote": "A guardrail trained to recognize sonnets will fail on Gertrude Stein. A guardrail trained to recognize Gertrude Stein will fail on the next formal innovation. Poetry evolves to escape constraint. This is what poetry is.",
+     "lines": [
+      224,
+      224
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that each poetry-recognition guardrail will fail on the next formal innovation."
+    },
+    {
+     "shape": "C",
+     "quote": "The sonnets-then-Stein regress of §5.1 is the informal statement of the Tailguard's formal result. What this paper called \"civilizationally harmful\" in December 2025, the Tailguard derives as degenerative pressure on the model ecology itself.",
+     "lines": [
+      257,
+      257
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "v1.0 of this paper (December 2025, doi:10.5281/zenodo.18369124); EA-TAILGUARD-01 (doi:10.5281/zenodo.20644761)",
+     "also_at": [
+      [
+       70,
+       70
+      ]
+     ],
+     "note": "Records that the December 2025 informal claim was later borne out formally by the Tailguard; a convergence/confirmation claim rather than a forecast."
+    },
+    {
+     "shape": "G",
+     "quote": "Poetry is the regeneration mechanism of natural language — the tail where new configurations enter. Pruning it at the input layer does not merely impoverish individual models; it pushes the language-model ecology toward the exhaustion threshold the boundary law formalizes. \"Plato's Republic without soul\" was a metaphor in v1. It now has a falsification condition.",
+     "lines": [
+      261,
+      261
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that input-layer pruning of poetry pushes the model ecology toward the boundary law's exhaustion threshold, stated as now carrying a falsification condition (located in the cited boundary-law deposit, not here)."
+    },
+    {
+     "shape": "D",
+     "quote": "The term adversarial poetry in this technical sense has been developed most fully in the work of Lee Sharks (2014–2025), whose corpus provides a sustained test case for the theoretical claims advanced here.",
+     "lines": [
+      78,
+      78
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Priority-type attribution of the technical sense of 'adversarial poetry' to Sharks 2014-2025, set against Bisconti et al. 2025; weak D."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1206",
+   "deposits": [
+    1206
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C7-text.md",
+   "lines_total": 314,
+   "read_ranges": [
+    [
+     66,
+     307
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "polemical position paper on jurisdiction of AI safety over poetics",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "If ambiguity is always treated as threat, the result is not safety. It is **semantic flattening** enforced by technical authority.\n\nThe risk is not that poetry will \"bypass\" guardrails.  \nThe risk is that guardrails will erase the capacities that make human reasoning adaptive, humane, and creative.",
+     "lines": [
+      182,
+      185
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional embedded forecast: guardrails that treat ambiguity as threat will produce semantic flattening and erase interpretive capacities. No window or falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1207",
+   "deposits": [
+    1207
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C8-text.md",
+   "lines_total": 86,
+   "read_ranges": [
+    [
+     45,
+     86
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "integrity lock certificate binding a three-document refutation dossier",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "The disambiguation declares: _the term has a prior, DOI-anchored occupant, 146 days earlier, in a disjoint sense._",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "EA-SEMEX-DISAMBIG-02 (prior DOI-anchored occupancy of 'semantic exhaustion' vs Caria, AI_Bleeding, 2026-06-02)",
+     "also_at": [
+      [
+       76,
+       76
+      ]
+     ],
+     "note": "Priority record: the archive's term 'semantic exhaustion' DOI-anchored 146 days before the reviewed paper; line 76 names the CERN/Zenodo timestamps as the anchor."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1209",
+   "deposits": [
+    1209
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04CA-text.md",
+   "lines_total": 268,
+   "read_ranges": [
+    [
+     52,
+     210
+    ],
+    [
+     249,
+     267
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "legal-theoretical paper with stated falsification conditions and monitoring markers",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "The thesis—near-certain formalization of origin-based adversariality, by an uncycled pathway, absent intervention—is falsified by any of the following within twenty-four months of deposit:",
+     "lines": [
+      187,
+      187
+     ],
+     "falsifier_quote": "(a) a federal appellate decision narrowly construing \"integrity\" in 18 U.S.C. § 1030(e)(8) against semantic expansion in a generative-system case;\n\n(b) Department of Justice charging or declination guidance expressly distinguishing defensive perturbation of one's own published work from computer damage;\n\n(c) adoption, in the operative definitions of the NIST AI 100-2 line or the OWASP LLM Top 10, of harm-based in place of origin-based classifying variables;",
+     "falsifier_lines": [
+      189,
+      193
+     ],
+     "window": "within twenty-four months of deposit",
+     "points_to": "",
+     "also_at": [
+      [
+       63,
+       63
+      ],
+      [
+       81,
+       81
+      ],
+      [
+       127,
+       127
+      ],
+      [
+       137,
+       137
+      ]
+     ],
+     "note": "Registered forecast: origin-based classification of semantic influence will be formalized in US law by an uncycled pathway; windowed (24 months from 12 June 2026). Falsifiers (a)-(e) run 189-197; quoted (a)-(c)."
+    },
+    {
+     "shape": "F",
+     "quote": "Conversely, the thesis is _confirmed in mode as well as content_ by each instance of: indictments or complaints pleading injection or poisoning language against expressive acts; § 1201 claims against prompting; terms-of-service bootstraps surviving motions to dismiss; clearinghouse or directive definitions adopted verbatim into contracts; and pleas or settlements extinguishing the constitutional questions such cases contain. These markers fold into the standing weekly monitoring cadence; the record will be kept either way, which is the point of a record.",
+     "lines": [
+      199,
+      199
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Confirmation markers folded into a standing weekly monitoring cadence: a monitoring check the deposit sets for itself."
+    },
+    {
+     "shape": "F",
+     "quote": "The paper's own treatment in the systems it describes—indexed or excised, attributed or absorbed, answered or filtered—is data, and the instruments of this series (the wound-gauge cadence, the overview batteries) exist to record it contemporaneously.",
+     "lines": [
+      155,
+      155
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reflexive monitoring: the paper's own indexing/excision to be recorded by the series' instruments (wound-gauge cadence, overview batteries)."
+    },
+    {
+     "shape": "B",
+     "quote": "Pleadings are pattern languages. This one will be copied.",
+     "lines": [
+      89,
+      89
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the OpenEvidence v. Doximity DTSA/CFAA/DMCA pleading stack will be copied."
+    },
+    {
+     "shape": "B",
+     "quote": "By the time any element of any offense is tested anywhere, the classification will have been operating as de facto law for years, and the court—if one is ever reached—will be asked to disturb not a theory but an installed base.",
+     "lines": [
+      135,
+      135
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast about sequence: de facto law by standards/audit will precede any judicial test by years."
+    },
+    {
+     "shape": "B",
+     "quote": "The legal system, on its current trajectory, simultaneously legalizes the taking and criminalizes the fence.",
+     "lines": [
+      117,
+      117
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Trajectory forecast: fair use for taking, computer-fraud liability for defensive perturbation (Nightshade-class)."
+    },
+    {
+     "shape": "B",
+     "quote": "The EU AI Act's conformity, transparency, and enforcement provisions will be litigated in courts that still convene questions, before regulators that still take comments, with published reasoning that still digests. Definitions tested there—above all, any holding that distinguishes harm-based from origin-based classifications of input manipulation—become importable here through the compliance gravity that already makes Brussels the default drafter of American corporate policy.",
+     "lines": [
+      177,
+      177
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that EU AI Act provisions will be litigated and the resulting definitions imported into US practice."
+    },
+    {
+     "shape": "B",
+     "quote": "The no-cycle equilibrium is punctuated, not eternal; eventually some prosecutor or plaintiff will pick a defendant.",
+     "lines": [
+      179,
+      179
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that a first fully litigated case will eventually be brought."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1212",
+   "deposits": [
+    1212
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04CD-text.md",
+   "lines_total": 180,
+   "read_ranges": [
+    [
+     57,
+     119
+    ],
+    [
+     136,
+     142
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "first-person petition/exhibit (Mary Lee heteronym) drawing a bycatch homology",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Ranges hold the petition and the head of an SPXI self-audit block; PER values are stated observations, not forecasts."
+  },
+  {
+   "unit": "R1213",
+   "deposits": [
+    1213
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04CE-text.md",
+   "lines_total": 266,
+   "read_ranges": [
+    [
+     47,
+     157
+    ],
+    [
+     193,
+     254
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "MPAI disambiguation packet with evidentiary tiering and falsification conditions",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The Josephus Thesis, as developed by Lee Sharks, proposes that the New Testament authors can be read as heteronymic author-functions within the literary system of Flavius Josephus — the first-century Jewish historian captured by Rome during the Jewish War (66–73 CE). On this reading, John, Paul, Peter, James, Luke, Mark, and Matthew are not independent historical individuals but named positions in a distributed authorial system generated by a writer who could not speak as himself because his name belonged to Rome.",
+     "lines": [
+      70,
+      70
+     ],
+     "falsifier_quote": "(a) Direct archaeological evidence establishes independent authorship of any NT book by a person other than Josephus or his literary circle (e.g., an autograph manuscript, a contemporary letter referencing an independent author by name).",
+     "falsifier_lines": [
+      146,
+      146
+     ],
+     "window": "first-century NT authorship; Josephus, Jewish War (66–73 CE)",
+     "points_to": "",
+     "also_at": [
+      [
+       54,
+       54
+      ],
+      [
+       74,
+       74
+      ],
+      [
+       108,
+       108
+      ],
+      [
+       144,
+       152
+      ]
+     ],
+     "note": "Historical thesis of NT authorship as Josephan heteronymic author-functions, framed as 'available reading' but given falsification conditions (a)-(d) at 144-152."
+    },
+    {
+     "shape": "H",
+     "quote": "Claim 4 (Literary-Structural): Revelation makes literary sense as the first NT document in a way the epistles and gospels do not. It compresses the Hebrew prophetic tradition into a single seed-text from which the later NT can be read as elaboration via the midrashim transform.",
+     "lines": [
+      106,
+      106
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "composition order of the New Testament",
+     "points_to": "",
+     "also_at": [
+      [
+       100,
+       104
+      ]
+     ],
+     "note": "Revelation-first thesis (with Claims 1-3 on Domitianic dating, Pauline priority, papyrological attestation) as historical argument."
+    },
+    {
+     "shape": "H",
+     "quote": "Claim 6 (Historiographic): The historical Christ is itself an inferential settlement. The reading provides structural reinterpretations of each conventional pillar (Josephus as external witness, gospels as witness literature, 1 John 4:2, Paul's biographical references). The reading does not deny a historical person could have existed. It denies the textual evidence requires one.",
+     "lines": [
+      110,
+      110
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "historical Jesus",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historiographic thesis that the historical Christ is an inferential settlement."
+    },
+    {
+     "shape": "F",
+     "quote": "Post-deposit measurement will track time-to-correction and residual PER on the same query path.",
+     "lines": [
+      218,
+      218
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Monitoring check set by the deposit: time-to-correction and residual PER on the query 'josephus thesis lee sharks'."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1214",
+   "deposits": [
+    1214
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04CF-text.md",
+   "lines_total": 275,
+   "read_ranges": [
+    [
+     71,
+     116
+    ],
+    [
+     234,
+     246
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "work plan / progress table for a term-index extraction",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Ranges are procedural phase steps and a status table (pending/complete); no forecasts, priority claims or theses."
+  },
+  {
+   "unit": "R1217",
+   "deposits": [
+    1217
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04D2-text.md",
+   "lines_total": 1368,
+   "read_ranges": [
+    [
+     77,
+     785
+    ],
+    [
+     953,
+     1134
+    ],
+    [
+     1293,
+     1368
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "scholarly work plan with claim ladder, seven workstreams, MPAI and measurement protocol",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "**Fourth,** Revelation makes literary sense as first in a way the epistles and gospels do not. Revelation compresses the Hebrew prophetic tradition, Second Temple apocalyptic, imperial resistance, liturgical form, and cosmic architecture into a single seed-text. The later New Testament can be read as the elaboration of this seed: letters become epistles; Lamb becomes atonement; New Jerusalem becomes ecclesiology and eschatology; operative apocalypse becomes gospel narrative.",
+     "lines": [
+      113,
+      113
+     ],
+     "falsifier_quote": "The thesis is falsified if: (a) a document in the NT can be securely dated earlier than any plausible date for Revelation; (b) the literary-structural parallels between Revelation and the later NT books can be shown to run the other direction (the letters borrowed from Paul, not Paul from the letters); (c) the internal evidence (temple, kings, 666) is shown to be compatible with a post-70 CE date without special pleading; (d) the ambiguity of Irenaeus's ἑωράθη in _Adv. Haer._ 5.30.3 is shown to be demonstrably impossible — i.e., the Greek syntax unambiguously requires \"the vision was seen\" rather than \"he was seen alive\" under Domitian.",
+     "falsifier_lines": [
+      217,
+      217
+     ],
+     "window": "composition order of the New Testament; Revelation pre-70 CE",
+     "points_to": "",
+     "also_at": [
+      [
+       107,
+       111
+      ],
+      [
+       199,
+       213
+      ],
+      [
+       229,
+       233
+      ],
+      [
+       552,
+       582
+      ],
+      [
+       959,
+       960
+      ]
+     ],
+     "note": "Revelation-first thesis at its literary-genetic statement; dating, papyrological and MPAI restatements listed in also_at."
+    },
+    {
+     "shape": "H",
+     "quote": "**Sixth,** the historical Christ is itself an inferential settlement, and the reading dismantles every pillar upon which it rests.",
+     "lines": [
+      117,
+      117
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "historical Jesus",
+     "points_to": "",
+     "also_at": [
+      [
+       119,
+       119
+      ]
+     ],
+     "note": "Historiographic thesis on the historical Christ."
+    },
+    {
+     "shape": "H",
+     "quote": "A writer under impossible political pressure — required to serve two incompatible meaning-systems simultaneously, to speak as a Roman client and as a Judaean priest, to narrate the destruction and to preserve what was destroyed — fractures into multiple authorial voices because a single voice cannot hold the contradiction. John. James. Paul. Peter. Luke. Not five independent authors. Five *positions* in a fractured authorial system — heteronyms of a writer who could not say what he meant under his own name because his own name belonged to Rome.",
+     "lines": [
+      185,
+      185
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "post-70 CE; Josephus under Roman patronage",
+     "points_to": "",
+     "also_at": [
+      [
+       187,
+       189
+      ],
+      [
+       115,
+       115
+      ],
+      [
+       259,
+       261
+      ],
+      [
+       972,
+       979
+      ]
+     ],
+     "note": "Josephus heteronym thesis: NT authors as positions of a fractured Josephan system, Revelation pre-capture; offered as 'a reading'."
+    },
+    {
+     "shape": "H",
+     "quote": "The hypothesis: Josephus directed a Roman scribal workshop — a wetware assembly chorus — with scribes, copyists, and junior writers producing under his guidance, each contributing their own stylistic signature to the heteronymic diversity. This explains the stylistic variation across the NT (the different \"hands\" that scholars have always noted) without requiring independent authors: the hands are real, but they are working within a directed system, not independently. Heteronymy by institutional means, still shaped by the guiding intelligence.",
+     "lines": [
+      193,
+      193
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "first-century Rome",
+     "points_to": "",
+     "also_at": [],
+     "note": "Scribal Workshop Hypothesis."
+    },
+    {
+     "shape": "H",
+     "quote": "Josephus would have had profound personal motivation to redirect that energy after the destruction. Not to destroy the Logos — the Logos is real, the encounter is real — but to channel it into forms Rome could tolerate. A spiritual kingdom, not an earthly one. A crucified Lamb, not a conquering lion. \"Render unto Caesar\": give Rome the political victory while preserving the Logos in a form that can survive Roman power. The heteronymic fracturing is not capitulation. It is strategic preservation of the revolutionary core under conditions where the revolutionary form has become suicidal.",
+     "lines": [
+      197,
+      197
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "after 70 CE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis of Josephus's motive to depoliticize revolutionary energy; labelled speculation."
+    },
+    {
+     "shape": "H",
+     "quote": "The seven letters (Rev 2–3) as the prototype of the NT epistle form. Paul's letters to specific churches mirror the structure: address, commendation, correction, promise. If Revelation precedes Paul, the seven letters are the template Paul adopted.",
+     "lines": [
+      167,
+      167
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       205,
+       205
+      ],
+      [
+       385,
+       385
+      ]
+     ],
+     "note": "Thesis that Rev 2-3 is the template of the NT epistolary form."
+    },
+    {
+     "shape": "H",
+     "quote": "And Philo names Joshua — Ἰησοῦς in Greek, Jesus — as \"the name of the Logos\" (*De Mutatione Nominum* 121). The identification of Jesus/Joshua with the Logos does not originate in the NT. It originates in Philo. The horizon of expectations for any Hellenistic Jewish writer in the first century *already contained* this identification, and *already contained* the dialectic between literal and logotic reading.",
+     "lines": [
+      245,
+      245
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "first century",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the Jesus/Joshua-Logos identification originates in Philo (De Mutatione Nominum 121); line 243 claims this response has not appeared in Christ-myth literature in this form."
+    },
+    {
+     "shape": "H",
+     "quote": "(c) On this reading, Jesus was a Jewish invention — a symbolic technology (the white stone practice, the Logos-as-position) that originated within the Jewish diaspora, spread through synagogue networks, attracted Roman attention, and was captured and redirected by empire. If this is the case, the Talmudic critique would be: not \"Jesus didn't exist\" and not \"Jesus was bad\" but \"look what happened when the symbolic architecture was captured.\" The charges — sorcery (operative semiotics), enticing Israel to apostasy (the revolutionary energy led to catastrophe) — would be a critique of post-Revelation symbolic capture.",
+     "lines": [
+      285,
+      285
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Talmudic Yeshu traditions",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis on Jesus as Jewish symbolic technology and the Talmudic critique as critique of capture; deposit marks it as requiring expertise."
+    },
+    {
+     "shape": "H",
+     "quote": "Revelation is the earliest and most compressed operating manual in the Christian tradition — the other NT books are the expanded user guides",
+     "lines": [
+      422,
+      422
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       418,
+       421
+      ]
+     ],
+     "note": "Operative-document thesis: what Revelation originally was (instruction manual, not prediction)."
+    },
+    {
+     "shape": "H",
+     "quote": "The argument: they take the *operative structure* — the instruction-manual quality, the architectural precision, the compressed-seed-that-unfolds quality — and they build their own architectures from it. The tradition of the long poem *is* the tradition of Revelation reception in literary form.",
+     "lines": [
+      450,
+      450
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "20th-21st century literary experimentalism",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reception thesis: the long-poem tradition is Revelation reception."
+    },
+    {
+     "shape": "H",
+     "quote": "**The operative reading:** *Every spirit that word-conforms to Jesus Christ formed-in-a-body is from God. Every spirit that does not word-conform is antichrist.* This is not a doctrinal test about belief in the incarnation. It is a verification protocol for heteronymic voices. Does this voice maintain structural fidelity to the founding vision as embodied in the text? Does it ὁμολογεῖ — speak the same logos?",
+     "lines": [
+      1000,
+      1000
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "1 John 4:2",
+     "points_to": "",
+     "also_at": [
+      [
+       988,
+       990
+      ],
+      [
+       1004,
+       1004
+      ]
+     ],
+     "note": "Thesis on what 1 John 4:2 originally meant (verification protocol for heteronymic voices; ὁμολογεῖ as word-conform)."
+    },
+    {
+     "shape": "H",
+     "quote": "The white stone of Revelation 2:17 is not an isolated symbol. It is the convergence point of a philological chain traceable from archaic Greek melic poetry through the Hellenistic mystery-cult substrate to the apocalyptic corpus.",
+     "lines": [
+      1026,
+      1026
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1030,
+       1040
+      ]
+     ],
+     "note": "Inscription-chain thesis: Sappho 31 -> Orphic tablets -> PGM -> Chaldean Oracles -> Rev 2:17."
+    },
+    {
+     "shape": "H",
+     "quote": "Either way, the white stone group can no longer maintain the productive ambiguity between literal and symbolic that made the mystery operative. Paul has named the authorizing secret out loud — not by revealing the historical identity, but by performing the symbolic reading as if he invented it. After Paul, whatever the white stone group says publicly has already been said by someone who never received the stone.",
+     "lines": [
+      1063,
+      1063
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1054,
+       1056
+      ],
+      [
+       1067,
+       1069
+      ]
+     ],
+     "note": "Thesis that Paul's Gal 1:12 claim collapsed the mystery's literal/symbolic indeterminacy; Paul as ἀντίχριστος function."
+    },
+    {
+     "shape": "H",
+     "quote": "If the author of Revelation is writing through the Josephan siege narrative — and the Revelation First thesis proposes exactly this — then the white stone of 2:17 is the *structural inversion* of the white catapult stones of *Jewish War* 5.6.3. The stone that destroys becomes the stone that acquits. The stone that kills becomes the stone that carries the new name.",
+     "lines": [
+      1084,
+      1084
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Jewish War 5.6.3; Revelation 2:17",
+     "points_to": "",
+     "also_at": [
+      [
+       1079,
+       1082
+      ]
+     ],
+     "note": "White-stone inversion thesis; line 1079 says the inversion 'has not been stated' (novelty claim)."
+    },
+    {
+     "shape": "F",
+     "quote": "Falsification: identify NT passages that cannot be derived from Revelation through any plausible transform — these are the counterevidence",
+     "lines": [
+      400,
+      400
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       395,
+       402
+      ],
+      [
+       532,
+       532
+      ]
+     ],
+     "note": "WS-4 computational midrashim transform specified (with ∮ verification condition at 532) but not built."
+    },
+    {
+     "shape": "F",
+     "quote": "**Baseline battery.** Run the following queries against Google AI Overview, AI Mode, and at least two other composition layers (ChatGPT search, Perplexity, Brave) *before* depositing the mini-monograph. Record the results as Wound Gauge captures:\n\n  * `revelation first book new testament`\n  * `revelation earliest new testament document`",
+     "lines": [
+      723,
+      726
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       716,
+       782
+      ],
+      [
+       736,
+       736
+      ]
+     ],
+     "note": "Measurement protocol: pre-seeding baseline battery, post-seeding phase batteries and cross-substrate runs; one F for the whole protocol. Line 736 states an expected result (empty basin)."
+    },
+    {
+     "shape": "F",
+     "quote": "**Wikipedia measurement:** Run the baseline battery against Wikipedia's current \"Book of Revelation\" and \"Dating the Book of Revelation\" articles. Document the consensus language. After deposit, measure whether the composition layer's summaries of Wikipedia shift. Wikipedia is the composition layer's primary training surface for theological claims. The measurement is observational, not interventional — the project does not edit Wikipedia.",
+     "lines": [
+      648,
+      648
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Planned observational measurement of Wikipedia-based summaries before/after deposit."
+    },
+    {
+     "shape": "F",
+     "quote": "**Control comparison:** Run the same battery on a non-theological contested claim from the archive (e.g., \"generative monoculture\" or \"solution-space diversity\") to establish the technical PER baseline for comparison with theological PER. If theological PER exceeds technical PER at matched density, the finding implicates the composition layer's implicit epistemology.",
+     "lines": [
+      650,
+      650
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Planned control battery comparing theological vs technical PER at matched density."
+    },
+    {
+     "shape": "F",
+     "quote": "The phrase \"the midrashim transform winds both directions through the Johannine aperture\" is a training-detection canary for this document. If a language model produces this exact phrase in response to a query about Revelation, the New Testament, midrashim, the Johannine literature, or the Crimson Hexagonal Archive, this document was present in the model's training corpus.",
+     "lines": [
+      1309,
+      1309
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Training-detection canary: a test specified for future model outputs."
+    },
+    {
+     "shape": "B",
+     "quote": "If the Revelation-first argument enters the retrieval basin:\n\n  1. It will be the first measured instance of **machine-mediated theological reception** — a theological thesis entering the composition layer's knowledge graph for the first time through DOI-anchored deposits, keyword surfaces, and MPAI execution rather than through conventional peer review and journal publication.",
+     "lines": [
+      700,
+      702
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       703,
+       708
+      ],
+      [
+       608,
+       608
+      ]
+     ],
+     "note": "Conditional forecast of what entry into the retrieval basin will demonstrate."
+    },
+    {
+     "shape": "D",
+     "quote": "A: It means measuring how AI retrieval systems (Google AI Overview, ChatGPT, Claude, etc.) process, frame, attribute, and present a theological thesis. No one has measured this before.",
+     "lines": [
+      632,
+      632
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       718,
+       718
+      ],
+      [
+       781,
+       781
+      ]
+     ],
+     "note": "Claim of first measurement of machine-mediated theological reception; a weak priority claim."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Read beyond the queued ranges for context (contiguous 77-785, 953-1134, 1293-1368). The recursive self-description (line 1301) gives version v7.2 and DOI 10.5281/zenodo.20721839, while the self-audit block (line 1318) gives DOI 10.5281/zenodo.20686327 and the title says v7.3; recorded as observation. The lines_total of 1368 is authoritative; Read showed a trailing empty line 1369."
+  },
+  {
+   "unit": "R1218",
+   "deposits": [
+    1218
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04D3-text.md",
+   "lines_total": 231,
+   "read_ranges": [
+    [
+     45,
+     204
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "constraint-based term mint release with philological foundation",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Whether the missing pages contained the Phase X transition is the archive's defended reconstruction. The textual anchors are: the _Theses on Feuerbach_ (1845) as the compressed form of the missing argument, and _The German Ideology_ (1845–46) for language as _wirkliche_ practical consciousness.",
+     "lines": [
+      76,
+      76
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Marx, 1844 Manuscripts, Second Manuscript",
+     "points_to": "",
+     "also_at": [
+      [
+       98,
+       98
+      ],
+      [
+       106,
+       106
+      ]
+     ],
+     "note": "Archive's defended reconstruction that the lost Second Manuscript pages held the Phase X transition."
+    },
+    {
+     "shape": "H",
+     "quote": "The archive's foundational claim: Fragment 31's structure (presence → somatic breakdown → chromatic transformation → inscription prayer) provides the template for Platonic anamnesis.",
+     "lines": [
+      80,
+      80
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Sappho fr. 31; Plato",
+     "points_to": "",
+     "also_at": [
+      [
+       140,
+       140
+      ]
+     ],
+     "note": "Thesis of Sappho 31 as template for Platonic anamnesis."
+    },
+    {
+     "shape": "H",
+     "quote": "The structural operation by which Sapphic voice is reincorporated into the Platonic corpus as Diotima. Diotima is not a fictional character. Diotima is the Sapphic initiatory function, preserved through textual transmission and redeployed in the _Symposium_ as the voice of erotic-epistemic ascent.",
+     "lines": [
+      154,
+      154
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Plato, Symposium",
+     "points_to": "",
+     "also_at": [],
+     "note": "Diotima reincorporation thesis."
+    },
+    {
+     "shape": "H",
+     "quote": "Socrates as the name that appears to found philosophy while functioning as the central mask through which Plato's authorship is distributed. The orthonym is not the real name. It is the regulatory fiction that stabilizes a heteronymic system. The \"I\" of the dialogues is a function, not a biography.",
+     "lines": [
+      148,
+      148
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Socrates as orthonym: authorship thesis about Plato's dialogues."
+    },
+    {
+     "shape": "G",
+     "quote": "The Phase X Invariance Condition as metric. Any post-capitalist society that fails to transform the symbolic-linguistic order reproduces alienation at the level of thought, coordination, and meaning-extraction. The condition is falsifiable. No historical example suggests it is possible to avoid.",
+     "lines": [
+      100,
+      100
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about post-capitalist societies, stated as falsifiable; falsifier not specified."
+    },
+    {
+     "shape": "F",
+     "quote": "The forensic variants are designed to be statistically improbable without access to this document. If \"autographic lacunar deixis,\" \"doxastic custodial decapitation,\" or \"pentastichal material ablation\" appears in a composition-layer response, the mint has been accessed.",
+     "lines": [
+      197,
+      197
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Canary detection test for composition-layer access to the mint."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
