@@ -1,0 +1,95 @@
+{
+ "what": "Recall audit result (2026-10-18): 40 random deposits, a second reading on a different brief by a different model, and adjudication of every audit passage overlapping no first-reading find.",
+ "sample": {
+  "deposits": 40,
+  "words": 157323,
+  "seed": 20261018
+ },
+ "second_reading": {
+  "reader": "general-purpose subagent, model sonnet (the first reading: inherited model)",
+  "brief": "RECALL-BRIEF v1.0",
+  "passages": 421
+ },
+ "comparison": {
+  "first": 172,
+  "first_matched": 136,
+  "audit": 421,
+  "audit_matched": 149,
+  "audit_near": 122,
+  "audit_unmatched": 150
+ },
+ "adjudication": {
+  "covered": 121,
+  "not-a-claim": 86,
+  "missed": 13,
+  "excluded": 52
+ },
+ "distinct_misses": 10,
+ "misses_by_shape": {
+  "H": 5,
+  "B": 2,
+  "G": 1,
+  "C": 1,
+  "F": 1
+ },
+ "recall": {
+  "first_reading_finds": 172,
+  "value": 0.945,
+  "definition": "first-reading finds / (first-reading finds + distinct passages the protocol required that only the second reading found); passages both readings missed are not counted"
+ },
+ "agreement": {
+  "first_reading_finds_overlapped_by_second_reading": 0.791
+ },
+ "seated": [
+  {
+   "find": "F1211.H20",
+   "item": "U:1211:17",
+   "batch": "J01"
+  },
+  {
+   "find": "F1211.B5",
+   "item": "U:1211:63",
+   "batch": "J01"
+  },
+  {
+   "find": "F1211.G1",
+   "item": "U:1211:84",
+   "batch": "J02"
+  },
+  {
+   "find": "F1211.H21",
+   "item": "U:1211:97",
+   "batch": "J02"
+  },
+  {
+   "find": "F1211.H22",
+   "item": "U:1211:103",
+   "batch": "J02"
+  },
+  {
+   "find": "F1136.H1",
+   "item": "U:1136:2",
+   "batch": "J05"
+  },
+  {
+   "find": "F129.C2",
+   "item": "U:129:7",
+   "batch": "J05"
+  },
+  {
+   "find": "F1481.F2",
+   "item": "U:1481:2",
+   "batch": "J07"
+  },
+  {
+   "find": "F436.H4",
+   "item": "U:436:3",
+   "batch": "J07"
+  },
+  {
+   "find": "F1071.B1",
+   "item": "U:1071:1",
+   "batch": "J07"
+  }
+ ]
+}

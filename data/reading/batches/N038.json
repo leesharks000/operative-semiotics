@@ -1,0 +1,894 @@
+{
+ "batch_id": "N038",
+ "protocol": "ANNOTATION-PROTOCOL v1.0",
+ "started_at": "2026-10-18T05:39:18Z",
+ "finished_at": "2026-10-18T05:42:35Z",
+ "self_description": "Claude (Anthropic model, Opus 5.5 per the session environment), running as a parallel reader subagent",
+ "items": [
+  {
+   "claim": "PRED-1456.F1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E1-text.md",
+     "ranges": [
+      [
+       1,
+       304
+      ]
+     ]
+    },
+    {
+     "path": "/home/claude/alexanarch/data/attachments/AXN-BATTERY-v0.3-results.json",
+     "ranges": [
+      [
+       6630,
+       6742
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a finer noise sweep between sigma 0.05 and 0.2 produces a converged run (energy ratio in the 0.85-1.15 band) whose AUC Q->P on the constituent pair lies far from the inversion boundary (e.g. still well below 0.5), or no setting in that bracket converges, so the sweep does not settle the question.",
+    "note": "The Falsification Conditions (05E1 line 51) say only that the NAE handoff \"resolves either way\"; they bound the program's inversion claims, not this handoff prediction, so the condition is the reader's."
+   }
+  },
+  {
+   "claim": "PRED-1456.G4",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E1-text.md",
+     "ranges": [
+      [
+       1,
+       304
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: with task held fixed, every architecture pair keeps its miss correlation (phi) within overlapping intervals across panels and encodings, or the cross-panel variation is fully accounted for by representation alone.",
+    "note": "The deposit's Falsification Conditions (line 51) cover score-ablation, distillation and transportability, not this miss-correlation claim; T7 itself (lines 178-182) is the kind of test that would bear on it."
+   }
+  },
+  {
+   "claim": "PRED-1457.G1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E2-text.md",
+     "ranges": [
+      [
+       1,
+       363
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "stated",
+    "quote": "if a term shows adoption at ρ ≥ 2 and shows none at ρ = 0 on any surface the archive never wrote to, the adoption is the instrument's echo and not the layer's reception. **That is checkable, and it is the condition under which this work is wrong.**",
+    "lines": [
+     122,
+     122
+    ],
+    "path": "/home/claude/alexanarch/data/texts/AXN-05E2-text.md",
+    "reader_condition": null,
+    "note": "The claim's own statement is the falsification condition, stated in advance in §III."
+   }
+  },
+  {
+   "claim": "PRED-1459.D1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E5-text.md",
+     "ranges": [
+      [
+       1,
+       140
+      ],
+      [
+       280,
+       374
+      ]
+     ]
+    }
+   ],
+   "dates": {
+    "statements": [
+     {
+      "find": "F1459.D1",
+      "stated": "2026-08-13",
+      "stated_basis": "in-text",
+      "basis_quote": "13 August 2026",
+      "basis_lines": [
+       50,
+       50
+      ],
+      "retrospective": true,
+      "looks_back_to": {
+       "what": "EA-WG-CAPTURES-01 v1.0, first public use of the exact name",
+       "date": "2026-06-13",
+       "quote": "The earliest publicly timestamped use presently located for the exact name is therefore Lee Sharks’s EA-WG-CAPTURES-01 v1.0.",
+       "lines": [
+        97,
+        97
+       ]
+      },
+      "note": "The packet's dateline (line 50) dates the priority assertion; the assertion identifies the 13 June 2026 Zenodo v1.0 as the earliest located public use of the name."
+     }
+    ]
+   }
+  },
+  {
+   "claim": "PRED-1459.D2",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E5-text.md",
+     "ranges": [
+      [
+       1,
+       140
+      ],
+      [
+       280,
+       374
+      ]
+     ]
+    }
+   ],
+   "dates": {
+    "statements": [
+     {
+      "find": "F1459.D2",
+      "stated": "2026-08-13",
+      "stated_basis": "in-text",
+      "basis_quote": "13 August 2026",
+      "basis_lines": [
+       50,
+       50
+      ],
+      "retrospective": true,
+      "looks_back_to": {
+       "what": "first Zenodo version of the AI Overview Capture Registry",
+       "date": "2026-06-13",
+       "quote": "Its first publicly timestamped version was deposited on Zenodo on **13 June 2026**",
+       "lines": [
+        57,
+        57
+       ]
+      },
+      "note": "Abstract of the 13 August 2026 packet (dateline line 50); it names the 13 June 2026 deposit as the first publicly timestamped version."
+     }
+    ]
+   }
+  },
+  {
+   "claim": "PRED-1459.D3",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E5-text.md",
+     "ranges": [
+      [
+       1,
+       140
+      ],
+      [
+       280,
+       374
+      ]
+     ]
+    }
+   ],
+   "dates": {
+    "statements": [
+     {
+      "find": "F1459.D3",
+      "stated": "2026-08-13",
+      "stated_basis": "in-text",
+      "basis_quote": "13 August 2026",
+      "basis_lines": [
+       50,
+       50
+      ],
+      "retrospective": true,
+      "looks_back_to": {
+       "what": "registry v3.0/v4.0 already documenting provenance erasure",
+       "date": "2026-06-13",
+       "quote": "On 13 June 2026, the registry was already documenting broad-match observations in which named frameworks remained retrievable while Lee Sharks disappeared from composition.",
+       "lines": [
+        326,
+        326
+       ]
+      },
+      "note": "Written in the 13 August 2026 packet (dateline line 50); §8 looks back to argue the registry already measured provenance erasure on 13 June 2026."
+     }
+    ]
+   }
+  },
+  {
+   "claim": "PRED-1460.G2",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E6-text.md",
+     "ranges": [
+      [
+       40,
+       64
+      ],
+      [
+       320,
+       419
+      ],
+      [
+       540,
+       589
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: repeated cold-start sessions show that once the basin is acquired, reconstruction is no more reliable than acquisition itself (P(adequate reconstruction | basin acquired) not greater than P(basin acquired)), or that systems acquire the entity readily but reconstruct it poorly.",
+    "note": "The §11 / Falsification Conditions weaken the central relation-recovery finding but do not address this comparison of the two terms of the decomposition."
+   }
+  },
+  {
+   "claim": "PRED-1462.F1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E8-text.md",
+     "ranges": [
+      [
+       1,
+       248
+      ]
+     ]
+    }
+   ],
+   "dates": {
+    "statements": [
+     {
+      "find": "F1462.F1",
+      "stated": "2026-08-14",
+      "stated_basis": "container",
+      "basis_quote": null,
+      "basis_lines": null,
+      "retrospective": false,
+      "looks_back_to": null,
+      "note": "\"Retrospectively\" here means scoring existing captures, not a claim that something earlier anticipated anything; §VII belongs to the original 14 August text, not the same-day supersession banner."
+     }
+    ]
+   }
+  },
+  {
+   "claim": "PRED-1463.G1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05E9-text.md",
+     "ranges": [
+      [
+       1,
+       90
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "stated",
+    "quote": "Falsified if the stack layering misplaces an instrument relative to its own deposit's definition; if Delta-E admits a component not covered by withholding, dispersal or substitution; or if the canonical rent formula at #449 is shown to measure a different quantity than the retained-minus-transmitted gap claimed here.",
+    "lines": [
+     40,
+     40
+    ],
+    "path": "/home/claude/alexanarch/data/texts/AXN-05E9-text.md",
+    "reader_condition": null,
+    "note": "The claim is the deposit's Falsification Conditions section itself."
+   }
+  },
+  {
+   "claim": "PRED-1471.G2",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05F1-text.md",
+     "ranges": [
+      [
+       1,
+       166
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "stated",
+    "quote": "**A no-conflict substrate scoring ISD 0** would weaken it, though less decisively — a system may simply not be built to disclose.",
+    "lines": [
+     107,
+     107
+    ],
+    "path": "/home/claude/alexanarch/data/texts/AXN-05F1-text.md",
+    "reader_condition": null,
+    "note": "The §VI prediction (Claude, conflict: no, should disclose cheaply) falls under the preregistered §IV condition for a no-conflict substrate; §VI also notes the cell must come from a fresh unprimed session."
+   }
+  },
+  {
+   "claim": "PRED-1476.H3",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-05F6-text.md",
+     "ranges": [
+      [
+       1,
+       215
+      ]
+     ]
+    }
+   ],
+   "dates": {
+    "statements": [
+     {
+      "find": "F1476.H3",
+      "stated": "2026-08-15",
+      "stated_basis": "container",
+      "basis_quote": null,
+      "basis_lines": null,
+      "retrospective": true,
+      "looks_back_to": {
+       "what": "Longinus's filling of the line (Peri Hypsous 10.3)",
+       "date": null,
+       "quote": "the filling of a Lesbian socket by a first-century critic can only arrive in koine",
+       "lines": [
+        170,
+        170
+       ]
+      },
+      "note": "Container date stands; the passage names Longinus's continuation as the earliest surviving instance of the line performing its design."
+     }
+    ]
+   }
+  },
+  {
+   "claim": "PRED-1485.H2",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0600-text.md",
+     "ranges": [
+      [
+       1,
+       143
+      ]
+     ]
+    }
+   ],
+   "dates": {
+    "statements": [
+     {
+      "find": "F1485.H2",
+      "stated": "2026-08-15",
+      "stated_basis": "container",
+      "basis_quote": null,
+      "basis_lines": null,
+      "retrospective": true,
+      "looks_back_to": {
+       "what": "the transmitted continuation in Longinus, first filling of the socket",
+       "date": null,
+       "quote": "ἀλλὰ πᾶν τολματόν, ἐπεὶ καὶ πένητα, the first filling of the poem's terminal socket, carried in the same document as the poem",
+       "lines": [
+        83,
+        83
+       ]
+      },
+      "note": "Container date stands; the scoring names the transmitted continuation as the earliest surviving execution of the poem's design, against which the 1554-1971 removals are scored."
+     }
+    ]
+   }
+  },
+  {
+   "claim": "PRED-1486.G2",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0601-text.md",
+     "ranges": [
+      [
+       1,
+       60
+      ],
+      [
+       686,
+       894
+      ],
+      [
+       1080,
+       1169
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a hop-2 or later carrier (e.g. Philo) retains the flesh families (sweat, pallor, tremor, heat) at rates comparable to hop-1 carriers, or flesh features survive while operator features drop out.",
+    "note": "No falsifier is stated for the decay law; the deposit's filed falsification conditions (A7.7, A9.6) address the discipline and non-typedness claims, not this one."
+   }
+  },
+  {
+   "claim": "PRED-1486.H12",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0601-text.md",
+     "ranges": [
+      [
+       1,
+       60
+      ],
+      [
+       686,
+       894
+      ],
+      [
+       1080,
+       1169
+      ]
+     ]
+    }
+   ],
+   "dates": {
+    "statements": [
+     {
+      "find": "F1486.H12",
+      "stated": "2026-08-15",
+      "stated_basis": "in-text",
+      "basis_quote": "*(2026-08-15, operator's correction)*",
+      "basis_lines": [
+       769,
+       769
+      ],
+      "retrospective": true,
+      "looks_back_to": {
+       "what": "the white stone of Revelation 2:17",
+       "date": null,
+       "quote": "Revelation 2:17: a white stone with a new name written on it **which no one knows except the one receiving it**",
+       "lines": [
+        803,
+        803
+       ]
+      },
+      "note": "Addendum 8 carries its own date and attribution (line 769); the passage reads Revelation 2:17 as predicting the absence of institutional evidence."
+     }
+    ]
+   }
+  },
+  {
+   "claim": "PRED-1489.G1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0604-text.md",
+     "ranges": [
+      [
+       1,
+       84
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: with the monograph withdrawn, a reader or substrate working only from HESPERUS (#38) — the Seed Packet, the Glossary, Protocol IV and the Canonical Edge List — cannot regenerate the operator algebra or produce new operators.",
+    "note": "The colophon states a recovery condition, not a falsifier; the deletion test it names entails the observation."
+   }
+  },
+  {
+   "claim": "PRED-1493.H2",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0608-text.md",
+     "ranges": [
+      [
+       1,
+       93
+      ]
+     ]
+    },
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    },
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0632-text.md",
+     "ranges": [
+      [
+       1,
+       60
+      ],
+      [
+       125,
+       208
+      ]
+     ]
+    }
+   ],
+   "dates": {
+    "statements": [
+     {
+      "find": "F1493.H2",
+      "stated": "2026-08-19",
+      "stated_basis": "container",
+      "basis_quote": null,
+      "basis_lines": null,
+      "retrospective": false,
+      "looks_back_to": null,
+      "note": "Analysis of Josephus against Addition D in the paper's own layer; \"predicted\" refers to the model, not to an earlier text anticipating anything."
+     },
+     {
+      "find": "F1494.H2",
+      "stated": "2026-08-19",
+      "stated_basis": "container",
+      "basis_quote": null,
+      "basis_lines": null,
+      "retrospective": false,
+      "looks_back_to": null,
+      "note": "Clause C10 of the same-day freeze, citing #1493 §5 as its witness; a citation, not a retrospective identification."
+     },
+     {
+      "find": "F1532.H5",
+      "stated": "2026-08-22",
+      "stated_basis": "container",
+      "basis_quote": null,
+      "basis_lines": null,
+      "retrospective": false,
+      "looks_back_to": null,
+      "note": "The survey restates #1493's 2026-08-19 argument in its own 2026-08-22 layer; no dating words, not retrospective."
+     }
+    ]
+   }
+  },
+  {
+   "claim": "PRED-1494.G1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a demonstrable carrier of fr. 31 that opens the event without a seeing/appearing verb bound to the facing figure, or without an instantaneity marker at the trigger.",
+    "note": "The clause carries a prediction, not a stated falsifier; §3 promises negative stations will be reported."
+   }
+  },
+  {
+   "claim": "PRED-1494.G10",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a narrative carrier that shows no collapse-revival-speech-attempt-relapse loop and does not fill the terminal slot with a sovereign grant.",
+    "note": "Prediction stated (\"expect the loop, and expect the grant\"); no falsifier stated."
+   }
+  },
+  {
+   "claim": "PRED-1494.G11",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: across scored carriers no formula naming the whole catalogue as one operation appears before or after the event.",
+    "note": "The clause says carriers \"may\" prefix such a formula, so a single carrier lacking it would not refute it; only a general absence would."
+   }
+  },
+  {
+   "claim": "PRED-1494.G2",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a new carrier in which the fire, and exercised seeing or hearing, sit in the seized member rather than in the facing member.",
+    "note": "Prediction stated; no falsifier stated."
+   }
+  },
+  {
+   "claim": "PRED-1494.G3",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a carrier whose handling of fr. 31 is independently demonstrable (named or acknowledged) in which both the voice and death stations vanish with no inverted or material trace.",
+    "note": "The clause makes absence of both stations disqualify a candidate, so it can be refuted only by a carrier established on other grounds."
+   }
+  },
+  {
+   "claim": "PRED-1494.G4",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a carrier whose keep/drop profile does not match its carrier channel, or a carrier outside lyric that keeps ears and sweat while shedding other channels first.",
+    "note": "Prediction stated; no falsifier stated."
+   }
+  },
+  {
+   "claim": "PRED-1494.G5",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: carriers in which the color station appears only as a bare hue, with no substance, material or surface named.",
+    "note": "Prediction stated; no falsifier stated."
+   }
+  },
+  {
+   "claim": "PRED-1494.G6",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a carrier in which the seizure purchases nothing — no audience, doctrine or operation follows from the occlusion.",
+    "note": "Prediction stated; no falsifier stated."
+   }
+  },
+  {
+   "claim": "PRED-1494.G7",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a narrative carrier in which the seized body recovers with no other figure acting on it.",
+    "note": "Prediction stated (\"must show the other acting\"); no falsifier stated."
+   }
+  },
+  {
+   "claim": "PRED-1494.G8",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: in carriers, the transfer points and terminus ride finite verbs with expressed agents, and agentless or divine-passive forms are no more frequent there than elsewhere in the text.",
+    "note": "Prediction stated; no falsifier stated."
+   }
+  },
+  {
+   "claim": "PRED-1494.G9",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0609-text.md",
+     "ranges": [
+      [
+       1,
+       81
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: a prose carrier presenting all channels failing at once with no ordered series or instantaneity marker, or a doctrinal carrier that does not state the alternation as law.",
+    "note": "Prediction stated; no falsifier stated."
+   }
+  },
+  {
+   "claim": "PRED-1496.G1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-060B-text.md",
+     "ranges": [
+      [
+       1,
+       120
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: capture-registry measurements show retrieval answers that recompose the transformed outputs while keeping author, institution, identifier and source (low PER), or retrieval systems naming the structure as a technique (O above zero).",
+    "note": "The map says the bare suppression claim is unfalsifiable as stated (line 37) and gives its signature S,M >> A,O; for the machine-retrieval row the reader supplies the observation."
+   }
+  },
+  {
+   "claim": "PRED-1522.G1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-0625-text.md",
+     "ranges": [
+      [
+       1,
+       101
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "recoverable",
+    "quote": null,
+    "lines": null,
+    "path": null,
+    "reader_condition": "Reader-supplied: an openly licensed, machine-readable Coptic edition of the Apocryphon of John existing as of 2026-08-21, or Coptic SCRIPTORIUM holding it.",
+    "note": "Absence is declared with the date searched (line 78); a found edition would refute it."
+   }
+  },
+  {
+   "claim": "PRED-1527.G1",
+   "read_ranges": [
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-062C-text.md",
+     "ranges": [
+      [
+       520,
+       605
+      ]
+     ]
+    },
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-062D-text.md",
+     "ranges": [
+      [
+       800,
+       885
+      ]
+     ]
+    },
+    {
+     "path": "/home/claude/alexanarch/data/texts/AXN-062F-text.md",
+     "ranges": [
+      [
+       40,
+       131
+      ]
+     ]
+    }
+   ],
+   "falsifier": {
+    "kind": "stated",
+    "quote": "If renderings that report nonexistence differ in no downstream respect from renderings that report retrieval failure — **the same recovery behaviour, the same later engagement, the same correction when a source is supplied, the same resulting standing** — the distinction predicts nothing and ABN is demoted from variable to reporting flag.",
+    "lines": [
+     563,
+     563
+    ],
+    "path": "/home/claude/alexanarch/data/texts/AXN-062C-text.md",
+    "reader_condition": null,
+    "note": "All three statements are the ABN defeat condition (062C §3.2, 062D §7.1 table, 062F §2.1); quoted from 062C."
+   }
+  }
+ ]
+}

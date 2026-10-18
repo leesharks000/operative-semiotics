@@ -31,3 +31,44 @@ The wave-1 prompt text was lost to context compaction; its run entries record "b
 > 3. Write your output JSON to /home/claude/operative-semiotics/data/reading/batches/<ID>.json in the protocol's shape, each entry keyed by "unit" (copied exactly) with "deposits" copied from the queue. Take every quote by slicing the source lines with a scratch python script in the session scratchpad, so it is verbatim and ONE contiguous slice, and check it lies within its stated lines. Every entry carries "status" ("read" | "partial" | "skipped") and "status_note". Record started_at/finished_at from `date -u`, and your self_description honestly ('unknown' rather than guess). Never copy a credential, token or key string into your output.
 > 4. Run `python3.12 /home/claude/operative-semiotics/scripts/reading/verify_batch.py /home/claude/operative-semiotics/data/reading/batches/<ID>.json` and fix every failure it reports in your output. Do not edit any other project file and do not run git.
 > 5. When done, reply with one short paragraph: the output path, units read, finds by shape, and anything a later reader must know. When two deposits seem to contradict each other, report it as an observation, not as an error.
+
+## Annotation pass (N-batches, 2026-10-18)
+
+> You are a parallel reader in an annotation pass over a prediction index. Your batch id is <ID>.
+>
+> 1. Read the protocol in full first: /home/claude/operative-semiotics/data/reading/ANNOTATION-PROTOCOL.md (v1.0). Follow it exactly.
+> 2. Your batch is the entry with "batch_id": "<ID>" in /home/claude/operative-semiotics/data/reading/annotate-queue.json (load it with a short python3 snippet). For every item, read with the Read tool what the protocol requires for its tasks, recording the ranges. Do not substitute search for reading.
+> 3. Write your output JSON to /home/claude/operative-semiotics/data/reading/batches/<ID>.json in the protocol's shape. Take every quote by slicing the source lines with a scratch python script in the session scratchpad, so it is verbatim and ONE contiguous slice inside its stated lines. Record started_at/finished_at from `date -u`, and your self_description honestly ('unknown' rather than guess). Never copy a credential, token or key string into your output.
+> 4. Run `python3.12 /home/claude/operative-semiotics/scripts/reading/verify_annotate.py /home/claude/operative-semiotics/data/reading/batches/<ID>.json` and fix every failure it reports in your output. Do not edit any other project file and do not run git.
+> 5. When done, reply with one short paragraph: the output path, items answered, counts by answer (bases, retrospective, modes, falsifier kinds), and anything a later reader must know.
+
+## Recall audit (K-batches, 2026-10-18)
+
+Launched with model override `sonnet`, so the second reading is by a different model from the first.
+
+> You are a reader in a second, independent reading of a few texts. Your batch id is <ID>.
+>
+> 1. Read the brief in full first: /home/claude/operative-semiotics/data/reading/RECALL-BRIEF.md. Follow it exactly. Do not open any other file under /home/claude/operative-semiotics/data/reading except recall-queue.json, and do not read anything under /home/claude/operative-semiotics/data/index, /home/claude/operative-semiotics/predictions or data/reading/batches other than your own output.
+> 2. Your batch is the entry with "batch_id": "<ID>" in /home/claude/operative-semiotics/data/reading/recall-queue.json. Read every deposit's file IN FULL with the Read tool in consecutive chunks; for the last chunk call Read with offset and NO limit. lines_total in the queue is authoritative.
+> 3. Write /home/claude/operative-semiotics/data/reading/batches/<ID>.json in the brief's shape, every quote sliced verbatim with a scratch python script in the session scratchpad.
+> 4. Run `python3.12 /home/claude/operative-semiotics/scripts/reading/verify_recall.py /home/claude/operative-semiotics/data/reading/batches/<ID>.json` and fix every failure. Do not edit any other file and do not run git.
+> 5. Reply with one short paragraph: output path, deposits read, passages marked.
+
+## Recall adjudication (J-batches, 2026-10-18)
+
+> You are an adjudicator in the recall audit of a prediction sweep. Your batch id is <ID>.
+>
+> 1. Read /home/claude/operative-semiotics/data/reading/RECALL-ADJUDICATE.md, then /home/claude/operative-semiotics/data/reading/READING-PROTOCOL.md (v1.3), both in full. Follow the first exactly; the second is the standard.
+> 2. Your batch is the entry with "batch_id": "<ID>" in /home/claude/operative-semiotics/data/reading/recall-adjudicate-queue.json. For every item read the passage and the lines around it with the Read tool, recording the ranges.
+> 3. Write /home/claude/operative-semiotics/data/reading/batches/<ID>.json in the shape given. Record started_at/finished_at from `date -u`, self_description honestly.
+> 4. Run `python3.12 /home/claude/operative-semiotics/scripts/reading/verify_adjudicate.py /home/claude/operative-semiotics/data/reading/batches/<ID>.json` and fix every failure. Do not edit any other file and do not run git.
+> 5. Reply with one short paragraph: output path, verdict counts, anything a later reader must know.
+
+## Describe pass (DS-batches, 2026-10-18)
+
+> You are a reader rewriting subject-page descriptions of a prediction index. Your batch id is <ID>.
+>
+> 1. Read /home/claude/operative-semiotics/data/index/DESCRIBE-PROTOCOL.md in full and follow it exactly.
+> 2. Your batch is the entry with "batch_id": "<ID>" in /home/claude/operative-semiotics/data/index/describe-queue.json (load it with a short python3 snippet). Read every page's claims before writing its description.
+> 3. Write /home/claude/operative-semiotics/data/index/describe/<ID>.json in the protocol's shape, then run `python3.12 /home/claude/operative-semiotics/scripts/index/verify_describe.py /home/claude/operative-semiotics/data/index/describe/<ID>.json` and fix every failure. Keep scratch files in your own folder of the session scratchpad. Do not edit any other file and do not run git.
+> 4. Reply with one short paragraph: output path, pages rewritten, pages with residue, anything a later reader must know.

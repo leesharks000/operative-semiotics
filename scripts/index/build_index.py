@@ -41,10 +41,18 @@ md = lambda s: re.sub(r'\*([^*\n]{1,200})\*', r'<i>\1</i>', re.sub(r'\*\*([^*\n]
 TIERS = ['forecast', 'standing claim', 'unbuilt test', 'historical thesis', 'priority record']
 TIER_NOTE = {
     'forecast': 'a forecast of an event, a state or a reception — registered (A), embedded in prose (B), or made by specifying the thing (E)',
-    'standing claim': 'a claim about how a system behaves, stated with the condition that would falsify it (G)',
+    'standing claim': 'a claim about how a system behaves, not a forecast of an event (G); each carries its falsifier kind — stated in the source, recoverable from the claim (a reader-supplied condition, shown as the reader\'s), or none recorded',
     'unbuilt test': 'a measurement, test or instrument specified and not yet run or built (F)',
     'historical thesis': 'a claim about the past the deposit argues as its own, which evidence could confirm or refute (H)',
-    'priority record': 'a record that the archive named or formalized something before the world did (D)'}
+    'priority record': 'a record that the archive claims to have named or formalized something before the world did, with its dated evidence (D); membership records the claim and does not settle the comparison'}
+DATE_NOTE = {'stated': 'the date the text gives the passage', 'no later than (attested)': 'no later than: a later layer with no date of its own, dated by the earliest public witness',
+             'container (undated layer)': 'a later layer with no date of its own', 'container (in-text date is a narrative anchor)': 'the deposit\'s date; its in-text date is a narrative anchor'}
+RESOLVES = {
+    'forecast': 'by dated observation of the event, state or reception forecast, inside its window if it names one; for a speculative specification (E), by the outcome its mode names — the thing appearing, built by anyone (design specification); the conditions it names coming to hold (scenario); present uptake or retrieval (performative anticipation); a fictional report or a vision is recorded, not scored',
+    'standing claim': 'by observation of the system: the stated falsifier where the source gives one; otherwise the condition its wording entails, which is the reader\'s',
+    'unbuilt test': 'by being built or run: the test then yields its own result, which resolves the claims it was specified to test',
+    'historical thesis': 'by evidence about the past — documentary, philological, archaeological, or a corpus finding — adjudicated in the relevant scholarship; nothing dates it, and it stays open until such evidence is brought',
+    'priority record': 'by comparison of dated public witnesses: the archive\'s attestation against the earliest independent statement of the same thing; the index records the claim and its witnesses and does not make the comparison'}
 CSS = """:root{--bg:#faf8f4;--fg:#1a1a1a;--dim:#6b6560;--line:#ddd6cc;--acc:#8a6a20;--teal:#1f6f5b}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,'Times New Roman',serif;padding:0 16px}
 main{max-width:980px;margin:0 auto;padding:18px 0 60px}a{color:var(--acc)}.dim{color:var(--dim);font-weight:400}
@@ -64,6 +72,7 @@ details{margin:.4em 0}summary{cursor:pointer;font-size:.88em;color:var(--dim)}
 .later{white-space:pre-wrap;font-size:.88em;border-left:3px solid var(--line);padding-left:10px;margin:.5em 0}
 ol.states{font-size:.9em;padding-left:1.3em}.links{font-size:.86em;color:var(--dim)}
 .pages{list-style:none;padding:0}.pages li{margin:.7em 0}.pages .d{font-size:.9em;color:var(--dim);max-width:80ch}
+.perma{margin-left:auto;font-size:.95em}.fals.dim{color:var(--dim);font-style:italic}
 footer{margin-top:40px;font-size:.85em;color:var(--dim);border-top:1px solid var(--line);padding-top:10px}
 @media(max-width:520px){.tiles{grid-template-columns:repeat(2,1fr)}}"""
 
@@ -76,12 +85,109 @@ def load():
     S = json.load(open(T / 'series.json'))['series']
     conf = json.load(open(T / 'confirmations.json'))['confirmations']
     P = json.load(open(I / 'categories.json'))['pages']
+    annotate(C, F, reg)
     names = {}
     for f in sorted(glob.glob(str(I / 'naming/NM*.verified.json'))):
         if json.load(open(f)).get('verified'):
             for p in json.load(open(f.replace('.verified.json', '.json')))['pages']:
                 names[p['page']] = p
     return reg, C, F, S, conf, P, names
+
+
+FIRST_BUILD = {1: '2026-10-17', 2: '2026-10-18'}  # the build that first held a find of reading pass 1 / pass 2
+
+
+def attested(d):
+    """The public witnesses the archive records for a deposit: its alexanarch record (minted), a blog mirror's month, DOIs."""
+    if not d:
+        return {}
+    w = {}
+    if d.get('minted_at'):
+        w['record_minted'] = str(d['minted_at'])[:10]
+    m = d.get('mirrors')
+    blog = m.get('blog') if isinstance(m, dict) else None
+    if not blog and isinstance(m, str):
+        mm = re.search(r"https?://mindcontrolpoems\.blogspot\.com/\d{4}/\d{2}/[^'\" ,}]+", m); blog = mm.group(0) if mm else None
+    if blog:
+        mm = re.search(r'/(\d{4})/(\d{2})/', blog)
+        w['blog'] = blog; w['blog_month'] = f'{mm.group(1)}-{mm.group(2)}' if mm else None
+    dois = d.get('zenodo_dois') or ([d['original_doi']] if d.get('original_doi') else [])
+    if dois:
+        w['dois'] = dois
+    ds = [x for x in (w.get('blog_month'), w.get('record_minted')) if x]
+    w['date'] = min(ds) if ds else None
+    return w
+
+
+def annotate(C, F, reg):
+    """The review fixes of 2026-10-18 (ChatGPT and Kimi on the draft deposit; Lee Sharks: "adopted on all"), applied to the
+    claims before grouping. Each statement carries four dates, kept apart:
+      stated       when the quoted words were written — the annotation reader's finding (ANNOTATION-PROTOCOL), a record
+                   heading in a derived text, or, where neither was asked, the deposit's recorded date ('container')
+      attested     the public witnesses the archive records for the deposit (record mint, blog month, DOIs)
+      interpreted  for a retrospective statement — one that names the significance of something earlier — its own date,
+                   with what it looks back to
+      indexed      the build that first held the statement's find
+    A claim is registered at its earliest stated statement. A statement in a later framing layer with no date of its own
+    counts at its deposit's earliest attestation, as 'no later than'. Claim ids do not change."""
+    A = json.load(open(T / 'annotations.json')) if (T / 'annotations.json').exists() else {'annotations': {}, 'record_dates': {}}
+    ann, rec = A['annotations'], A.get('record_dates') or {}
+    for c in C:
+        a = ann.get(c['id'], {}); da = a.get('dates') or {}
+        for s in c['statements']:
+            f = F.get(s['find'], {}); d = reg.get(s['deposit'])
+            s['container_date'] = s.get('date')
+            r = da.get(s['find']) or rec.get(s['find'])
+            att = attested(d)
+            s['attested'] = att
+            s['indexed'] = FIRST_BUILD[2 if f.get('pass') == 2 else 1]
+            if r:
+                s['stated_basis'] = r['stated_basis']; s['dating'] = 'annotation reader' if s['find'] in da else r.get('basis')
+                s['retrospective'] = r.get('retrospective')
+                if r.get('looks_back_to'):
+                    s['looks_back_to'] = r['looks_back_to']
+                if r.get('basis_quote'):
+                    s['dating_quote'] = r['basis_quote']
+                if r.get('stated') and (a.get('mode') or {}).get('mode') == 'fictional-report' and r['stated'] < (s['container_date'] or '0'):
+                    # a dateline inside a fictional report is a narrative anchor, not when the words were written
+                    s['date_basis'] = 'container (in-text date is a narrative anchor)'; s['narrative_date'] = r['stated']
+                elif r.get('stated'):
+                    s['date'] = r['stated']; s['date_basis'] = 'stated'
+                elif r['stated_basis'] in ('framing', 'unknown') and att.get('date'):
+                    s['date'] = att['date']; s['date_basis'] = 'no later than (attested)'
+                elif r['stated_basis'] in ('framing', 'unknown'):
+                    s['date_basis'] = 'container (undated layer)'
+                else:
+                    s['date_basis'] = 'container'
+            else:
+                s['stated_basis'] = 'container'; s['date_basis'] = 'container (not asked)'
+        was = c['statements'][0]['find']
+        c['statements'].sort(key=lambda s: (s.get('date') or '9999', s['find']))
+        first = c['statements'][0]
+        if first['find'] != was:  # registration moved to another statement: the claim is stated in its words
+            c['statement'] = F.get(first['find'], {}).get('quote') or c['statement']
+            c['registration_moved'] = {'from': was, 'to': first['find']}
+        c['registered'] = first.get('date'); c['registered_in'] = first['deposit']
+        c['registered_basis'] = first.get('date_basis')
+        c['dates'] = {'registered': c['registered'], 'registered_basis': c['registered_basis'],
+                      'attested': min((s['attested'].get('date') for s in c['statements'] if s['attested'].get('date')), default=None),
+                      # a historical thesis is about the past by nature: its "earliest" is the thesis, not a look back
+                      'interpreted': [{'find': s['find'], 'date': s.get('date'), 'looks_back_to': s.get('looks_back_to')}
+                                      for s in c['statements'] if s.get('retrospective') and s.get('shape') != 'H'],
+                      'indexed': min(s['indexed'] for s in c['statements'])}
+        if 'mode' in a:
+            c['mode'] = a['mode']
+        elif 'E' not in c['shapes'] and c['tier'] == 'forecast':
+            c['mode'] = {'mode': 'empirical-forecast', 'basis': 'shape A or B: a forecast the deposit frames as one'}
+        fq = c.get('falsifier') or next((F.get(s['find'], {}).get('falsifier_quote') for s in c['statements'] if F.get(s['find'], {}).get('falsifier_quote')), None)
+        if fq:
+            c['falsifier_kind'] = {'kind': 'stated', 'source': 'first reading (falsifier_quote)'}
+        elif 'falsifier' in a:
+            x = a['falsifier']
+            c['falsifier_kind'] = {k: v for k, v in (('kind', x['kind']), ('quote', x.get('quote')), ('reader_condition', x.get('reader_condition')),
+                                                     ('source', 'annotation reader'), ('note', x.get('note'))) if v}
+        elif c['tier'] == 'standing claim':
+            c['falsifier_kind'] = {'kind': 'not yet read'}
 
 
 def resolver(C):
@@ -127,7 +233,7 @@ def page_members(P, names, C):
     return {k: sorted(v, key=lambda c: (reg.get(c, '9999'), c)) for k, v in mem.items()}
 
 
-def place(mem, C):
+def place(mem, C, avoid=None):
     """Claims no page holds — the new claims of reading pass 2 — go to the page that holds most of the claims they are
     linked to (related, contains, in, series); a claim with no placed link goes to the page whose statements it is
     nearest (TF-IDF centroid). Logged in data/index/placed.json."""
@@ -151,15 +257,18 @@ def place(mem, C):
         links = set(c.get('related') or []) | set(c.get('contains') or []) | set(c.get('in') or [])
         for n in c.get('series') or []:
             links |= ser[n]
-        votes = collections.Counter(where[x] for x in sorted(links) if x in where)
+        ban = (avoid or {}).get(c['id'])
+        votes = collections.Counter(where[x] for x in sorted(links) if x in where and where[x] != ban)
         if votes:  # ties go to the page first in order, so the build is deterministic
             dest, how = max(sorted(votes), key=lambda p: votes[p]), 'links'
         else:
             sims = (cent @ normalize(vec.transform([st[c['id']]])).T.toarray()).ravel()
+            if ban in order:
+                sims[order.index(ban)] = -1
             dest, how = order[int(np.argmax(sims))], 'nearest'
         mem[dest].append(c['id']); where[c['id']] = dest
-        log.append({'claim': c['id'], 'page': dest, 'by': how})
-    json.dump({'what': 'Claims placed by build_index.py: claims no page held (reading pass 2), placed by their links or by wording.',
+        log.append({'claim': c['id'], 'page': dest, 'by': how, **({'left_as_residue': ban} if ban else {})})
+    json.dump({'what': 'Claims placed by build_index.py: claims no page held (reading pass 2, the recall audit) or that a describe reader found off its page\'s subject (residue), placed by their links or by wording.',
                'placed': log}, open(I / 'placed.json', 'w'), ensure_ascii=False, indent=1)
 
 
@@ -198,11 +307,29 @@ def build(export=None):
             mem[m['into']].append(cm)
     gone = {m['from'] for m in mg['merges']}
     P = [p for p in P if p['page'] not in gone]
+    # the describe pass (DESCRIBE-PROTOCOL): descriptions that attribute every claim to its deposit, and the claims a
+    # reader found off the page's subject (residue); data/index/describe/editor.json holds the editor's
+    # descriptions where a page needs a correction its own claims do not carry.
+    residue = {}
+    for f in sorted(glob.glob(str(I / 'describe/DS*.verified.json'))):
+        v = json.load(open(f))
+        ok = {c['page'] for c in v['checks'] if not c['fails']}
+        for p in json.load(open(f.replace('.verified.json', '.json')))['pages']:
+            if p['page'] in ok:
+                names[p['page']] = {**names.get(p['page'], {}), 'description': p['description']}
+                for cid in p.get('residue') or []:
+                    residue[res(cid) or cid] = p['page']
+    if (I / 'describe/editor.json').exists():
+        for p in json.load(open(I / 'describe/editor.json'))['pages']:
+            names[p['page']] = {**names.get(p['page'], {}), 'description': p['description']}
+    # residue claims stay where they are: the page's description says so, and pages.json lists them (residue), so the
+    # caveat travels with the data. Moving them by wording would only make new residue on other pages.
     # each claim on exactly one page: two claims joined by pass 2 keep the page of the first
     seen_c = set()
     for p in sorted(mem):
         mem[p] = [c for c in mem[p] if not (c in seen_c or seen_c.add(c))]
     place(mem, C)
+    placed_how = {x['claim']: x['by'] for x in json.load(open(I / 'placed.json'))['placed']}
     rg = {c['id']: c['registered'] or '9999' for c in C}
     mem = {k: sorted(v, key=lambda c: (rg.get(c, '9999'), c)) for k, v in mem.items()}
     P.sort(key=lambda p: p['page'])
@@ -231,13 +358,26 @@ def build(export=None):
     for c in C:
         st = [{'find': s['find'], 'deposit': s['deposit'], 'date': s['date'], 'lines': s['lines'], 'shape': s['shape'],
                'record': rec_url(s['deposit']), 'quote': F[s['find']]['quote'],
-               'falsifier': F[s['find']].get('falsifier_quote') or None, **({'variant': s['variant']} if 'variant' in s else {})}
+               'falsifier': F[s['find']].get('falsifier_quote') or None, **({'variant': s['variant']} if 'variant' in s else {}),
+               'dates': {k: s[k] for k in ('date_basis', 'stated_basis', 'dating', 'dating_quote', 'container_date', 'narrative_date',
+                                           'retrospective', 'looks_back_to', 'attested', 'indexed') if s.get(k) not in (None, {}, [])},
+               **({'attachment': s['attachment']} if s.get('attachment') else {})}
               for s in c['statements']]
-        data_claims.append({'id': c['id'], 'tier': c['tier'], 'shapes': c['shapes'], 'registered': c['registered'],
+        sdeps = {s['deposit'] for s in c['statements']}
+        lineage = {n for s in c['statements'] for n in (reg.get(s['deposit'], {}).get('companion_deposits') or []) + (reg.get(s['deposit'], {}).get('related_deposits') or []) if isinstance(n, int)}
+        evid = [{**e, 'first_party': e['deposit'] in sdeps or e['deposit'] in lineage,
+                 'first_party_basis': ('the confirming deposit also states the claim' if e['deposit'] in sdeps else
+                                       'the confirming deposit is a companion or related deposit of one that states it' if e['deposit'] in lineage else
+                                       'another deposit of the archive (no statement or recorded lineage shared)')}
+                for e in c.get('evidence', [])]
+        data_claims.append({'id': c['id'], 'url': f'{HOST}/predictions/claim/{c["id"]}/', 'tier': c['tier'], 'shapes': c['shapes'], 'registered': c['registered'],
+                            'registered_basis': c.get('registered_basis'), 'dates': c.get('dates'), 'mode': c.get('mode'),
+                            'falsifier_kind': c.get('falsifier_kind'), 'resolves_by': RESOLVES[c['tier']],
+                            **({'registration_moved': c['registration_moved']} if c.get('registration_moved') else {}),
                             'registered_in': c['registered_in'], 'registered_title': reg.get(c['registered_in'], {}).get('title'),
                             'record': rec_url(c['registered_in']), 'page': url(where[c['id']]) + '#' + c['id'] if c['id'] in where else None,
                             'statement': c['statement'], 'falsifier': c.get('falsifier'), 'window': c.get('window'),
-                            'statements': st, 'states': c.get('states', []), 'evidence': c.get('evidence', []),
+                            'statements': st, 'states': c.get('states', []), 'evidence': evid,
                             'series': c.get('series', []), 'related': c.get('related', []), 'contains': c.get('contains', []),
                             'in': c.get('in', []), 'register_aliases': c.get('aliases', []), 'flags': c.get('flags', []),
                             'merged': c.get('merged', [])})
@@ -260,11 +400,28 @@ def build(export=None):
         for c in cs:
             k = dc[c]; cc = byid[c]
             h = [f'<article class="claim" id="{esc(c)}"><header><code>{esc(c)}</code><span class="chip">{esc(k["tier"])}</span>'
-                 f'<span>registered {esc(k["registered"])} in <a href="{rec_url(k["registered_in"])}">#{k["registered_in"]}</a>'
-                 f' · {esc((k["registered_title"] or "")[:110])}</span></header>']
+                 f'<span>registered {esc(k["registered"])}{" (" + esc(DATE_NOTE.get(k["registered_basis"], k["registered_basis"])) + ")" if k["registered_basis"] and k["registered_basis"] not in ("container (not asked)", "container") else ""}'
+                 f' in <a href="{rec_url(k["registered_in"])}">#{k["registered_in"]}</a>'
+                 f' · {esc((k["registered_title"] or "")[:110])}</span><a class="perma" href="/predictions/claim/{esc(c)}/">link</a></header>']
             h.append(f'<div class="stmt">{md(k["statement"])}</div>')
+            s0 = k['statements'][0]['dates'] if k['statements'] else {}
+            if s0.get('retrospective') and s0.get('looks_back_to'):
+                lb = s0['looks_back_to']
+                h.append(f'<div class="links"><span class="lbl">looks back</span> this statement, of {esc(k["registered"])}, names the significance of {esc(lb.get("what"))}'
+                         + (f' ({esc(lb["date"])})' if lb.get('date') else '') + ' — the earlier text keeps its own date</div>')
             if k['falsifier']:
-                h.append(f'<div class="lbl">falsifier</div><div class="fals">{esc(k["falsifier"])}</div>')
+                h.append(f'<div class="lbl">falsifier — stated in the source</div><div class="fals">{esc(k["falsifier"])}</div>')
+            fk = k.get('falsifier_kind') or {}
+            if not k['falsifier'] and fk.get('kind') == 'stated' and fk.get('quote'):
+                h.append(f'<div class="lbl">falsifier — stated in the source (found by the annotation pass)</div><div class="fals">{esc(fk["quote"])}</div>')
+            elif fk.get('kind') == 'recoverable':
+                h.append(f'<div class="lbl">falsifier — none stated; a reader\'s condition, not the source\'s</div><div class="fals dim">{esc(fk.get("reader_condition", "")[len("Reader-supplied: "):])}</div>')
+            elif fk.get('kind') == 'none':
+                h.append('<div class="links"><span class="lbl">falsifier</span> none stated, and none follows from the wording</div>')
+            md_ = k.get('mode') or {}
+            if md_ and 'E' in k['shapes']:
+                h.append(f'<div class="links"><span class="lbl">mode</span> {esc(md_.get("mode", "").replace("-", " "))}'
+                         + (f' — fulfilment (reader\'s): {esc(md_["fulfilment"])}' if md_.get('fulfilment') else '') + '</div>')
             if k['window']:
                 h.append(f'<div class="links"><span class="lbl">window</span> {esc(k["window"])}</div>')
             for fl in k['flags']:
@@ -281,13 +438,18 @@ def build(export=None):
                 h.append(f'<details><summary>{len(later)} later statement{"s" if len(later) > 1 else ""}</summary>')
                 for s in later:
                     h.append(f'<div class="later"><span class="lbl"><a href="{s["record"]}">#{s["deposit"]}</a> · {esc(s["date"])}'
+                             + (' · looks back' if s['dates'].get('retrospective') else '')
                              + (f' · changed: {esc(s["variant"].get("change"))}' if s.get('variant') else '') + f'</span>\n{md(s["quote"])}</div>')
                 h.append('</details>')
             evs = [e for s in cc['statements'] for e in ev.get(s['find'], [])]
             if evs:
                 h.append(f'<details><summary>{len(evs)} confirmation record{"s" if len(evs) > 1 else ""} — what later deposits claim of it</summary>')
+                fp = {e['confirmation']: e['first_party'] for e in k['evidence']}
+                sd = {s['deposit'] for s in k['statements']}
                 for e in sorted(evs, key=lambda e: e['date'] or ''):
-                    h.append(f'<div class="later"><span class="lbl"><a href="{rec_url(e["deposit"])}">#{e["deposit"]}</a> · {esc(e["date"])} · claims: {esc(e["claimed"])}</span>\n{esc(e["quote"][:900])}</div>')
+                    first_p = fp.get(e['confirmation'], e['deposit'] in sd)
+                    h.append(f'<div class="later"><span class="lbl"><a href="{rec_url(e["deposit"])}">#{e["deposit"]}</a> · {esc(e["date"])} · claims: {esc(e["claimed"])}'
+                             + (' · first-party (a deposit that states the claim, or its companion)' if first_p else '') + f'</span>\n{esc(e["quote"][:900])}</div>')
                 h.append('</details>')
             lk = []
             if k['series']:
@@ -303,14 +465,14 @@ def build(export=None):
             h.append('</article>')
             body.append(''.join(h))
         ld = {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': title[pid], 'description': desc[pid],
-              'url': url(pid), 'datePublished': first, 'dateModified': today, 'inLanguage': 'en',
+              'url': url(pid), 'datePublished': '2026-10-17', 'dateModified': today, 'inLanguage': 'en',
               'author': {'@type': 'Person', 'name': 'Lee Sharks', 'identifier': 'https://orcid.org/0009-0000-1599-0703'},
               'isPartOf': {'@type': 'Dataset', 'name': 'Operative Semiotics — Prediction Index', 'url': f'{HOST}/predictions',
                            'distribution': {'@type': 'DataDownload', 'contentUrl': DATASET + 'predictions.json', 'encodingFormat': 'application/json'}},
               'about': line[pid], 'citation': [rec_url(d) for d in deps[:40]],
               'mainEntity': {'@type': 'ItemList', 'numberOfItems': len(cs), 'itemListElement': [
-                  {'@type': 'ListItem', 'position': n + 1, 'item': {'@type': 'Claim', '@id': url(pid) + '#' + c, 'name': c,
-                   'text': (byid[c]['statement'] or '')[:500], 'datePublished': byid[c]['registered'],
+                  {'@type': 'ListItem', 'position': n + 1, 'item': {'@type': 'Claim', '@id': f'{HOST}/predictions/claim/{c}/', 'name': c,
+                   'url': url(pid) + '#' + c, 'text': (byid[c]['statement'] or '')[:500], 'dateCreated': byid[c]['registered'],
                    'firstAppearance': {'@type': 'CreativeWork', 'url': rec_url(byid[c]['registered_in']),
                                        'name': reg.get(byid[c]['registered_in'], {}).get('title')}}}
                   for n, c in enumerate(cs)]}}
@@ -321,7 +483,7 @@ def build(export=None):
                f'<link rel="canonical" href="{url(pid)}"><meta property="og:title" content="{esc(title[pid])}">'
                f'<meta property="og:description" content="{esc(desc[pid][:300])}"><meta property="og:url" content="{url(pid)}"><meta property="og:type" content="article">'
                f'<meta name="citation_title" content="{esc(title[pid])}"><meta name="citation_author" content="Sharks, Lee">'
-               f'<meta name="citation_date" content="{first}"><meta name="citation_public_url" content="{url(pid)}">'
+               f'<meta name="citation_date" content="2026-10-17"><meta name="citation_public_url" content="{url(pid)}">'
                f'<link rel="alternate" type="application/json" href="/predictions/{slug[pid]}/record.json">'
                f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script><style>{CSS}</style></head><body><main>'
                f'<nav class="topnav"><a class="home" href="/">Operative Semiotics</a><a href="/predictions">Prediction index</a>'
@@ -341,7 +503,10 @@ def build(export=None):
         toc.append({'page': pid, 'slug': slug[pid], 'title': title[pid], 'description': desc[pid], 'line': line[pid],
                     'url': url(pid), 'record': f'{HOST}/predictions/{slug[pid]}/record.json', 'claims': len(cs),
                     'tiers': dict(tiers), 'earliest': first, 'bytes': len(doc.encode()),
-                    'claim_ids': cs})
+                    'claim_ids': cs,
+                    'residue': sorted(c for c in cs if residue.get(c) == pid),
+                    'placed_by_wording': sorted(c for c in cs if placed_how.get(c) == 'nearest'),
+                    'placed_by_links': sorted(c for c in cs if placed_how.get(c) == 'links')})
     # the index page
     tot = collections.Counter(c['tier'] for c in C)
     bl = collections.defaultdict(list)
@@ -366,12 +531,35 @@ def build(export=None):
            f'<link rel="canonical" href="{HOST}/predictions"><link rel="alternate" type="application/json" href="/predictions/index.json">'
            f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script><style>{CSS}</style></head><body><main>'
            f'<nav class="topnav"><a class="home" href="/">Operative Semiotics</a><a href="/open">Predictions &amp; builds register</a><a class="data" href="/predictions/index.json">index.json</a></nav>'
-           f'<h1>Prediction Index</h1><p class="lede">Every prediction-bearing passage in the Crimson Hexagonal Archive, read out of its deposits in full and verified against the texts, then grouped: the same claim stated in several deposits is one claim, registered at the earliest; a claim revised over time keeps its dated states. '
+           f'<h1>Prediction Index</h1><p class="lede">The prediction-bearing passages of the Crimson Hexagonal Archive, read out of a defined corpus — the seated text in full, text of every deposit in full, the own-voice fields of its two large datasets, the text its repairs added and its attachments, with every exclusion recorded — quoted verbatim and checked against the texts, then grouped: the same claim stated in several deposits is one claim, registered at its earliest statement (the date the text gives the passage, where a reader established one); a claim revised over time keeps its dated states. A second reading of 40 random deposits measured the sweep\'s recall. '
            f'{len(C)} claims in {len(toc)} subject pages, under the archive\'s own lines.</p><div class="tiles">{tiles}</div><ul style="font-size:.9em">{defs}</ul>'
            + ''.join(secs) + f'<footer>The data: <a href="/predictions/index.json">index.json</a> (table of contents) · <a href="{DATASET}">the dataset in Alexanarch</a> (every claim, every statement quoted) · the curated register of open commitments: <a href="/open">/open</a>.</footer></main></body></html>')
     (OUT / 'index.html').write_text(idx, encoding='utf-8')
     (OUT / 'index.json').write_text(json.dumps({'what': 'Table of contents of the prediction index. Built by scripts/index/build_index.py.',
                                                 'generated': today, 'claims': len(C), 'pages': toc}, ensure_ascii=False, indent=1), encoding='utf-8')
+    # stable claim routes: /predictions/claim/<id>/ for every claim and every id merged into one — independent of page
+    # grouping and slugs, which a rebuild may change
+    CL = OUT / 'claim'
+    if CL.exists():
+        shutil.rmtree(CL)
+    alias = {c['id']: c['id'] for c in C}
+    for c in C:
+        for m in c.get('merged') or []:
+            alias.setdefault(m, c['id'])
+    for a_id, cid in sorted(alias.items()):
+        if cid not in where:
+            continue
+        tgt = f'/predictions/{slug[where[cid]]}#{cid}'; k = dc[cid]
+        d = CL / a_id; d.mkdir(parents=True, exist_ok=True)
+        (d / 'index.html').write_text(
+            f'<!doctype html><html lang="en"><head><meta charset="utf-8">{MARK}\n<meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<title>{esc(a_id)} — Prediction Index</title><link rel="canonical" href="{HOST}/predictions/claim/{cid}/">'
+            f'<meta http-equiv="refresh" content="0; url={tgt}"><meta name="robots" content="noindex,follow"><style>{CSS}</style></head><body><main>'
+            f'<p class="dim">{esc(a_id)}' + (f' was merged into <b>{esc(cid)}</b>' if a_id != cid else '') + f' — {esc(k["tier"])}, registered {esc(k["registered"])} in #{k["registered_in"]}.</p>'
+            f'<p><a href="{tgt}">{esc(cid)} on its subject page</a> · <a href="{DATASET}predictions.json">the dataset</a></p></main></body></html>', encoding='utf-8')
+    (CL / 'index.json').write_text(json.dumps({'what': 'Stable claim routes: id (or merged id) -> claim and its current page anchor.',
+                                               'routes': {a_id: {'claim': cid, 'page': f'/predictions/{slug[where[cid]]}#{cid}'} for a_id, cid in sorted(alias.items()) if cid in where}},
+                                              ensure_ascii=False, indent=0), encoding='utf-8')
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
           f'  <url><loc>{HOST}/predictions</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>']
     sm += [f'  <url><loc>{t["url"]}</loc><lastmod>{today}</lastmod><priority>0.6</priority></url>' for t in toc]
@@ -390,7 +578,29 @@ def build(export=None):
             b = json.dumps(o, ensure_ascii=False, indent=1).encode()
             (E / n).write_bytes(b)
             recs.append({'name': n, 'path': f'/datasets/prediction-index/{n}', 'size_bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()})
+        import subprocess
+        git = lambda d: subprocess.run(['git', '-C', str(d), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip() or None
+        dirty = lambda d: bool(subprocess.run(['git', '-C', str(d), 'status', '--porcelain', '--untracked-files=no'], capture_output=True, text=True).stdout.strip())
+        content = hashlib.sha256(b''.join(bytes.fromhex(r['sha256']) for r in recs)).hexdigest()
+        build_id = f'PI-{today}-{content[:10]}'
+        qa = json.load(open(ROOT / 'data/reading/queue.json'))
+        rr = json.load(open(ROOT / 'data/reading/recall-result.json')) if (ROOT / 'data/reading/recall-result.json').exists() else None
+        summ = json.load(open(T / 'claims.json'))['summary']
+        build = {'build_id': build_id, 'built': today, 'content_sha256': content, 'records': {r['name']: r['sha256'] for r in recs},
+                 'sources': {'operative-semiotics': {'commit': git(ROOT), 'uncommitted_changes': dirty(ROOT)},
+                             'alexanarch_read_by_pass_1': qa.get('alexanarch_commit'),
+                             'alexanarch_at_build': {'commit': git(ROOT.parent / 'alexanarch'), 'uncommitted_changes': dirty(ROOT.parent / 'alexanarch')}}}
+        bp_ = E / 'builds.json'
+        hist = json.loads(bp_.read_text()) if bp_.exists() else {'what': 'Every build of the prediction index, newest last. A build id names one byte-state of the four data files; the hashes belong to that build.', 'builds': []}
+        if not hist['builds'] or hist['builds'][-1]['build_id'] != build_id:
+            hist['builds'].append(build)
+        bp_.write_text(json.dumps(hist, ensure_ascii=False, indent=1), encoding='utf-8')
         man = {'dataset': 'prediction-index', 'title': 'Prediction Index — forecasts, standing claims, tests, historical theses and priority records',
+               'build_id': build_id, 'builds': '/datasets/prediction-index/builds.json', 'sources': build['sources'],
+               'claim_form': f'{HOST}/predictions/claim/{{id}}/', 'claim_routes': f'{HOST}/predictions/claim/index.json',
+               'recall': rr and {'value': rr['recall']['value'], 'definition': rr['recall']['definition'], 'sample_deposits': rr['sample']['deposits'],
+                                 'record': 'operative-semiotics data/reading/recall-result.json'},
+               'counts': summ.get('bridge'),
                'date': today, 'description': f'{len(C)} claims read out of the archive\'s deposits by the prediction sweep (2026-10-15) and its second reading pass over repaired text and attachments (2026-10-18), and grouped by its triage, topical and join passes (2026-10-17, 2026-10-18): each registered at its earliest statement, every statement quoted. Generated from operative-semiotics data/reading/; never hand-edit.',
                'canonical_home': f'{HOST}/predictions', 'table_of_contents': f'{HOST}/predictions/index.json',
                'record_form': f'{HOST}/predictions/{{slug}}', 'record_json_form': f'{HOST}/predictions/{{slug}}/record.json',
