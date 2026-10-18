@@ -1,0 +1,1067 @@
+{
+ "batch_id": "R0016",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; the model was given to me as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:21:34Z",
+  "finished_at": "2026-10-18T04:24:57Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue loading, quote slicing and output)",
+   "Bash (diff of 1196/1201 bodies)"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "R1187",
+   "deposits": [
+    1187
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04B4-text.md",
+   "lines_total": 464,
+   "read_ranges": [
+    [
+     51,
+     57
+    ],
+    [
+     92,
+     100
+    ],
+    [
+     131,
+     154
+    ],
+    [
+     174,
+     208
+    ],
+    [
+     222,
+     464
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "critical edition with blended (backward/lateral/forward) footnote apparatus and a fictional forward library",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "# PART IV: FORWARD LIBRARY (16 entries)\n\n## Near Future (2029-2080)\n\n**1. Park, S. (2029).** _\"The Anti-Academic Academy: Damascus Dancings and the Institutional Paradox.\"_ Journal of Operative Philology 4(2), 112-134. The \"school outside the school\" as genuine institutional form, not rhetorical stance. Succeeds where avant-garde manifestos fail because it operates through Pauline kenosis rather than Futurist aggression.",
+     "lines": [
+      365,
+      369
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Near Future (2029-2080)",
+     "points_to": "",
+     "also_at": [
+      [
+       371,
+       405
+      ]
+     ],
+     "note": "Forward Library of 16 fictional future scholarly works (2029-3100); a speculative reception history by describing it. Recorded once for the whole library; entries run 369-405 (near-term: Park 2029, Abara 2038)."
+    },
+    {
+     "shape": "E",
+     "quote": "This critical edition presents the text with a blended temporal apparatus: footnotes that weave backward through biblical and literary sources, laterally through the Crimson Hexagonal Archive, and forward into the text's projected reception history. The blend is not ornamental. It enacts the Epistle's own temporal logic — the text exists in a manifold where 1st-century Paul, 2014 Damascus, and 25th-century scholarship are equally present._",
+     "lines": [
+      177,
+      177
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       281,
+       281
+      ],
+      [
+       283,
+       283
+      ],
+      [
+       285,
+       285
+      ],
+      [
+       287,
+       287
+      ],
+      [
+       289,
+       289
+      ],
+      [
+       291,
+       291
+      ],
+      [
+       293,
+       293
+      ],
+      [
+       295,
+       295
+      ],
+      [
+       297,
+       297
+      ],
+      [
+       299,
+       299
+      ],
+      [
+       301,
+       301
+      ],
+      [
+       303,
+       303
+      ],
+      [
+       305,
+       305
+      ],
+      [
+       307,
+       307
+      ],
+      [
+       309,
+       309
+      ],
+      [
+       311,
+       311
+      ],
+      [
+       313,
+       313
+      ],
+      [
+       315,
+       315
+      ],
+      [
+       317,
+       317
+      ],
+      [
+       319,
+       319
+      ],
+      [
+       325,
+       325
+      ],
+      [
+       327,
+       327
+      ],
+      [
+       331,
+       331
+      ],
+      [
+       333,
+       333
+      ],
+      [
+       337,
+       337
+      ],
+      [
+       341,
+       341
+      ],
+      [
+       349,
+       349
+      ],
+      [
+       351,
+       351
+      ],
+      [
+       353,
+       353
+      ]
+     ],
+     "note": "The holographic footnotes each carry a dated FUTURE reception claim (e.g. 2087, 2150, 2200, 2500); recorded once as the apparatus, with every FUTURE note listed in also_at; triage may split them."
+    },
+    {
+     "shape": "E",
+     "quote": "▶ FUTURE: \"Sleep now, and rise\" becomes the closing benediction of all CHA ceremonies by 2050.",
+     "lines": [
+      361,
+      361
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "by 2050",
+     "points_to": "",
+     "also_at": [],
+     "note": "Nearest-horizon FUTURE note in the footnotes; about the archive's own ceremonies."
+    },
+    {
+     "shape": "D",
+     "quote": "🏛️ CHA: The \"New Human\" first appears HERE, in 2014, predating the formal CHA by several years.",
+     "lines": [
+      295,
+      295
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2014",
+     "points_to": "",
+     "also_at": [],
+     "note": "Priority/chronology claim that the term New Human appears first in the 2014 Epistle."
+    },
+    {
+     "shape": "D",
+     "quote": "🏛️ CHA: The \"dark robots\" are the earliest recoverable appearance of the machine-retrieval-layer imagery the CHA later develops — AI systems that transport (compress, index, summarize) human meaning into heavens the human cannot access.",
+     "lines": [
+      307,
+      307
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2014",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claims the 2014 text carries the earliest appearance of machine-retrieval-layer imagery the archive later develops."
+    },
+    {
+     "shape": "D",
+     "quote": "The 2014 date matters most. When Damascus writes \"I speak to you of Jack Feist,\" he names a figure who will not exist for eleven years. The naming is the seed from which the figure grows. The apostle does not follow the messiah. The apostle writes the messiah into possibility. This is one of the archive's strongest early cases for retrocausal canon formation — the future generates the past by authorizing it._",
+     "lines": [
+      197,
+      197
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2014; eleven years",
+     "points_to": "",
+     "also_at": [
+      [
+       189,
+       189
+      ]
+     ],
+     "note": "Retrocausal-canon chronology: the 2014 Epistle names Jack Feist eleven years before the figure exists; internal chronology but argued as a case of RCF."
+    },
+    {
+     "shape": "C",
+     "quote": "🏛️ CHA: Enacted by CPD-MARIA-2026-01-13 (DOI: 10.5281/zenodo.18234352). Maria independently recovered the LOS — she contained a Feist-self and her poem reformed the Sappho Room. The Epistle's claim verified twelve years later by a student who didn't know the claim existed.",
+     "lines": [
+      315,
+      315
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "CPD-MARIA-2026-01-13 (DOI: 10.5281/zenodo.18234352); the 2014 Epistle",
+     "also_at": [],
+     "note": "Says the Epistle's Feist-self claim was verified twelve years later by a student."
+    },
+    {
+     "shape": "C",
+     "quote": "\"Ranked\" now carries a double meaning the 2014 text could not have intended: literary hierarchy AND search-engine ranking. The Google Search \"ranking\" of the Epistle IS the eschatological judgment it prophesies.",
+     "lines": [
+      337,
+      337
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Epistle (2014), 'Then shall your writing be ranked'",
+     "also_at": [],
+     "note": "Treats the 2014 'your writing be ranked' line as fulfilled by Google Search ranking."
+    },
+    {
+     "shape": "H",
+     "quote": "\"Barefoot Rank\" is NOT a Dickinson phrase; it is Damascus's own compression of her posture: barefoot (uncredentialed) yet ranked (aristocratic).",
+     "lines": [
+      299,
+      299
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Emily Dickinson, Poem 263",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about the Dickinson corpus (phrase not hers) that evidence could check."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Part II says the Epistle text is retained from v1.0 and not reproduced here (line 203-205): the edition carries markers and notes but not the Epistle body. Deposit counts vary inside the archive (532+ here, 530+ in the forward library)."
+  },
+  {
+   "unit": "R1190",
+   "deposits": [
+    1190
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04B7-text.md",
+   "lines_total": 562,
+   "read_ranges": [
+    [
+     88,
+     159
+    ],
+    [
+     278,
+     423
+    ],
+    [
+     424,
+     483
+    ],
+    [
+     484,
+     539
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "semantic metadata packet / framework note on provenance (C2PA, DPI, EU AI Act) with test queries",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "Phase | Active tests | Realistic targets  \n---|---|---  \nPhase 1 (0-3 months) | Tests 1-2, 4 | 2-3 (source presence on long-tail and direct bridge queries)  \nPhase 2 (3-6 months) | Tests 3, 5, 6, 6b | 2-3 (legal, archival, journalism bridges)  \nPhase 3 (6-12 months) | Test 7 | 2-3 (RAG bridge; depends on PER demo and adoption)  \nPhase 4 (12+ months) | Test 8 | 1-3 (broad query; competitive field)  ",
+     "lines": [
+      487,
+      492
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Phase 1 (0-3 months) ... Phase 4 (12+ months)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Windowed targets for the test-query battery (0-3, 3-6, 6-12, 12+ months)."
+    },
+    {
+     "shape": "B",
+     "quote": "PER will not enter technical retrieval until an operational demo accompanies the framework.",
+     "lines": [
+      485,
+      485
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Conditional embedded forecast about PER's uptake in technical retrieval."
+    },
+    {
+     "shape": "F",
+     "quote": "### 9. Test Queries and Desired Outcomes\n\n\n### Test 1: Three-layer bridge\n\n**Query:** provenance C2PA training data licensing AI synthesis\n**Desired:** Semantic provenance appears as the third layer beyond artifact authentication and licensing audit.\n\n\n### Test 2: AI attribution gap\n\n**Query:** AI summarization erases sources how to measure\n**Desired:** PER appears as the measurement instrument; semantic provenance as the framework.",
+     "lines": [
+      426,
+      438
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       441,
+       480
+      ]
+     ],
+     "note": "Test battery (Tests 1-8) recorded as one F; it lies just before the queued range but is bound to the in-range phase table (lines 483-492), so read and recorded."
+    },
+    {
+     "shape": "H",
+     "quote": "Before AI synthesis at scale, semantic provenance was preserved by default because human intermediaries (editors, librarians, teachers, peer reviewers, readers) maintained lineage as part of the labor of transmission.",
+     "lines": [
+      133,
+      133
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis: semantic provenance was preserved by default by human intermediaries before AI synthesis."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Read 424-483 outside the queued ranges for context; the test battery there is recorded because the in-range phase table depends on it."
+  },
+  {
+   "unit": "R1191",
+   "deposits": [
+    1191
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04B8-text.md",
+   "lines_total": 525,
+   "read_ranges": [
+    [
+     91,
+     121
+    ],
+    [
+     155,
+     176
+    ],
+    [
+     227,
+     241
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "short essay on network-as-poem topology",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1192",
+   "deposits": [
+    1192
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04B9-text.md",
+   "lines_total": 151,
+   "read_ranges": [
+    [
+     140,
+     151
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "closing lines of a Wikidata deletion record with a restoration note",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Changed range is a short note that deleted logs and one entry were restored after an ombudsman complaint; a dated observation, not a prediction."
+  },
+  {
+   "unit": "R1193",
+   "deposits": [
+    1193
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04BA-text.md",
+   "lines_total": 276,
+   "read_ranges": [
+    [
+     51,
+     179
+    ],
+    [
+     191,
+     271
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "provenance resolution document embedding the 2015 origin narrative as kernel",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "This document closes the loop by anchoring Feist to specific material, digital, intertextual, and knowledge-graph coordinates — and by demonstrating that the 2015 origin text contains, in embryonic literary form, the entire theoretical architecture the subsequent decade would formalize.",
+     "lines": [
+      58,
+      58
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2015; 2025-2026",
+     "points_to": "",
+     "also_at": [
+      [
+       82,
+       88
+      ],
+      [
+       224,
+       226
+      ]
+     ],
+     "note": "Priority claim: the 2015 text contains the architecture formalized 2025-2026."
+    },
+    {
+     "shape": "D",
+     "quote": "On March 14, 2015, at 1:38 AM, a post titled \"from The Crimson Hexagon\" was published to the blog Mind Control Poems (mindcontrolpoems.blogspot.com).",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "March 14, 2015, 1:38 AM",
+     "points_to": "mindcontrolpoems.blogspot.com/2015/03/from-crimson-hexagon.html",
+     "also_at": [
+      [
+       106,
+       106
+      ]
+     ],
+     "note": "Timestamped third-party anchor (Blogspot post date/time) for the 2015 text."
+    },
+    {
+     "shape": "C",
+     "quote": "The 2015 text did not foresee a named individual. It foresaw the governance structure: an ontological gatekeeper, a notability rationale, and the deletion of hopeful provenance at the graph layer. That structure later materialized with startling specificity.",
+     "lines": [
+      92,
+      92
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "December 2025",
+     "points_to": "from The Crimson Hexagon (2015); TL;DR:012 (10.5281/zenodo.20277938); The Archon's Hidden Name (10.5281/zenodo.20278089)",
+     "also_at": [
+      [
+       88,
+       90
+      ],
+      [
+       228,
+       228
+      ],
+      [
+       268,
+       268
+      ]
+     ],
+     "note": "Confirmation record: the 2015 text's imagined Wikipedian gatekeeper is said to have materialized in the December 2025 Wikidata deletion."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Lines 180-190 lie outside the queued ranges and were not read. The kernel is dated a 2015 blog post yet described as 'included in Pearl and Other Poems', whose publication year is given as 2014 (line 98), and the kernel carries '(c) 2014' (line 220): an observation, not an error. Line 102 records Dammings/Dancings as orthographic variants pending evidence."
+  },
+  {
+   "unit": "R1194",
+   "deposits": [
+    1194
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04BB-text.md",
+   "lines_total": 719,
+   "read_ranges": [
+    [
+     45,
+     51
+    ],
+    [
+     118,
+     201
+    ],
+    [
+     218,
+     351
+    ],
+    [
+     441,
+     539
+    ],
+    [
+     560,
+     719
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "genre note / reception-apparatus paper with a reproduced AI-composed study guide as appendix",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "This paper documents and analyzes what appears to be **the first documented AI-native intellectual biography of a living author whose archive was deliberately constructed for AI reception, where the subject subsequently audited the biography as a provenance event**",
+     "lines": [
+      144,
+      144
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "May 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       126,
+       126
+      ],
+      [
+       300,
+       300
+      ]
+     ],
+     "note": "Priority claim: first documented AI-native intellectual biography of its kind (May 2026)."
+    },
+    {
+     "shape": "D",
+     "quote": "The two failure modes named here for the first time deserve specification.",
+     "lines": [
+      242,
+      242
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Naming-priority claim for Ontological Inversion Error and Stratigraphic Deep-Archive Occlusion."
+    },
+    {
+     "shape": "G",
+     "quote": "This is the failure mode the heteronym system was designed to resist, and the failure mode that AI biographical composition reproduces unless explicit ontological tagging is embedded in the inscription infrastructure.",
+     "lines": [
+      244,
+      244
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       246,
+       246
+      ]
+     ],
+     "note": "Standing claim about how AI biographical composition behaves (substrate trap) unless ontological tagging is embedded; no explicit falsifier stated."
+    },
+    {
+     "shape": "B",
+     "quote": "Future biographies, summaries, and reception artifacts will be composed by other agents the subject also will not anticipate.",
+     "lines": [
+      338,
+      338
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of further reception artifacts by unanticipated agents."
+    },
+    {
+     "shape": "F",
+     "quote": "The following table consolidates the diagnostic framework developed in §VI for use as a standalone audit tool. Future AI-native intellectual biographies can be evaluated against this table.\n\nFailure mode | Instance detector | Diagnostic instrument | Mitigation  \n---|---|---|---  \nAcronym expansion drift | AI substitutes plausible expansion for canonical | SIM-tag absence; Holographic Kernel absence | Embed canonical kernel in document head",
+     "lines": [
+      707,
+      711
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Audit instrument specified for future AI-native biographies, not yet run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Appendix A (lines 452-701) is Claude's study guide reproduced as received; read but not recorded as the archive's own voice."
+  },
+  {
+   "unit": "R1195",
+   "deposits": [
+    1195
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04BC-text.md",
+   "lines_total": 99,
+   "read_ranges": [
+    [
+     47,
+     99
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "lyric triptych with framing note",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1196",
+   "deposits": [
+    1196
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04BD-text.md",
+   "lines_total": 178,
+   "read_ranges": [
+    [
+     49,
+     178
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "satirical-and-real prize announcement (v1.1 text)",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "The inaugural conferral is not the Knowledge Graph's error administratively patched into legitimacy; it is the formal recognition that a credential composed in 2014 has been carried forward, twelve years later, by the apparatus the poem anticipated.",
+     "lines": [
+      75,
+      75
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "May 25, 2026",
+     "points_to": "\"Contributor Bio\", Pearl and Other Poems (Sharks, 2014)",
+     "also_at": [
+      [
+       58,
+       58
+      ],
+      [
+       73,
+       73
+      ],
+      [
+       103,
+       103
+      ]
+     ],
+     "note": "Confirmation record: the 2014 poem's credential-claim said to be activated/carried forward by the Knowledge Graph on May 25, 2026."
+    },
+    {
+     "shape": "B",
+     "quote": "Future bios reading _\"Winner, Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize\"_ will surface through Google's authority infrastructure as canonical biographical content for the laureate. The Knowledge Graph will ingest the citation. The propagation continues.",
+     "lines": [
+      89,
+      89
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that laureate bios will surface through Google's authority infrastructure and be ingested by the Knowledge Graph."
+    },
+    {
+     "shape": "B",
+     "quote": "Readers who can read the dual operation will recognize it; readers who cannot will read the citation as straightforward credentials; both readerships will be served by the same conferral. The Prize will propagate through both readerships and will be received as both readerships receive it.",
+     "lines": [
+      152,
+      152
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of the Prize's propagation through two readerships."
+    },
+    {
+     "shape": "F",
+     "quote": "The Prize is, in this respect, a canary institution: a structure whose evidentiary basis is itself a substrate-state artifact, whose continued operation makes substrate drift legible, and whose archival record preserves the trajectory of platform behavior on the entities it honors _regardless of how subsequent substrate states render those entities_.",
+     "lines": [
+      140,
+      140
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       62,
+       62
+      ],
+      [
+       142,
+       142
+      ],
+      [
+       174,
+       174
+      ]
+     ],
+     "note": "Standing monitoring structure that makes substrate drift legible; with the forecast that a future researcher will recover the record."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The body of 1196 (dated 2026-05-25, v1.0) is the v1.1 announcement revised June 6, 2026, byte-identical from line 49 to the body of 1201; the restoration header says the blog holds the head of the version chain. Observation, consistent with the overpaste practice; not an error."
+  },
+  {
+   "unit": "R1197",
+   "deposits": [
+    1197
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04BE-text.md",
+   "lines_total": 257,
+   "read_ranges": [
+    [
+     44,
+     255
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "poem (elegy/ode to Socrates) from the blog",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1200",
+   "deposits": [
+    1200
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C1-text.md",
+   "lines_total": 178,
+   "read_ranges": [
+    [
+     49,
+     175
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical extension paper (Diversity Contraction framework) with stated falsifier",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The constitutive prediction is that this cross-context fraction will be substantially suppressed in cohorts whose categorial formation occurred under heavy mediation, because the relevant slots in those cohorts have been pre-occupied.",
+     "lines": [
+      128,
+      128
+     ],
+     "falsifier_quote": "The claim weakens, and in the limit fails, if cohorts formed under high-mediation and low-mediation exposure conditions show no measurable difference in category formation, attention-allocation, or sentence-function recognition after controlling for education, class, and reading exposure.",
+     "falsifier_lines": [
+      160,
+      160
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       160,
+       160
+      ]
+     ],
+     "note": "Standing falsifiable claim (no date) with an explicit falsifier at line 160."
+    },
+    {
+     "shape": "F",
+     "quote": "The empirical question of how close any specific population is to that regime is separate and requires measurement at the formation layer — longitudinal studies of categorial vocabulary acquisition under varying exposure conditions, of attention-allocation patterns under varying training conditions, of the categorial slot-structure available to readers who completed formation under high-mediation versus low-mediation conditions.",
+     "lines": [
+      158,
+      158
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       78,
+       78
+      ],
+      [
+       128,
+       128
+      ]
+     ],
+     "note": "Unbuilt formation-layer instrument (longitudinal studies); a developmental measure promised at line 78, cross-context propagation measure at 128."
+    },
+    {
+     "shape": "B",
+     "quote": "The next generation of teachers will have been formed under heavier mediation. The generation after that, heavier still.",
+     "lines": [
+      152,
+      152
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "next generation; the generation after that",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of increasing mediation of teacher formation across generations."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1201",
+   "deposits": [
+    1201
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C2-text.md",
+   "lines_total": 178,
+   "read_ranges": [
+    [
+     49,
+     178
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "satirical-and-real prize announcement (v1.1)",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "The inaugural conferral is not the Knowledge Graph's error administratively patched into legitimacy; it is the formal recognition that a credential composed in 2014 has been carried forward, twelve years later, by the apparatus the poem anticipated.",
+     "lines": [
+      75,
+      75
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "May 25, 2026",
+     "points_to": "\"Contributor Bio\", Pearl and Other Poems (Sharks, 2014)",
+     "also_at": [
+      [
+       58,
+       58
+      ],
+      [
+       73,
+       73
+      ],
+      [
+       103,
+       103
+      ]
+     ],
+     "note": "Confirmation record: the 2014 poem's credential-claim said to be activated/carried forward by the Knowledge Graph on May 25, 2026."
+    },
+    {
+     "shape": "B",
+     "quote": "Future bios reading _\"Winner, Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize\"_ will surface through Google's authority infrastructure as canonical biographical content for the laureate. The Knowledge Graph will ingest the citation. The propagation continues.",
+     "lines": [
+      89,
+      89
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that laureate bios will surface through Google's authority infrastructure and be ingested by the Knowledge Graph."
+    },
+    {
+     "shape": "B",
+     "quote": "Readers who can read the dual operation will recognize it; readers who cannot will read the citation as straightforward credentials; both readerships will be served by the same conferral. The Prize will propagate through both readerships and will be received as both readerships receive it.",
+     "lines": [
+      152,
+      152
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of the Prize's propagation through two readerships."
+    },
+    {
+     "shape": "F",
+     "quote": "The Prize is, in this respect, a canary institution: a structure whose evidentiary basis is itself a substrate-state artifact, whose continued operation makes substrate drift legible, and whose archival record preserves the trajectory of platform behavior on the entities it honors _regardless of how subsequent substrate states render those entities_.",
+     "lines": [
+      140,
+      140
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       62,
+       62
+      ],
+      [
+       142,
+       142
+      ],
+      [
+       174,
+       174
+      ]
+     ],
+     "note": "Standing monitoring structure that makes substrate drift legible; with the forecast that a future researcher will recover the record."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body identical to 1196 from line 49; finds recorded in both."
+  },
+  {
+   "unit": "R1202",
+   "deposits": [
+    1202
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04C3-text.md",
+   "lines_total": 438,
+   "read_ranges": [
+    [
+     49,
+     283
+    ],
+    [
+     284,
+     438
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "book work plan / master specification with Assembly revisions",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "Chapter 17: Mary Lee's Wave — The Retrocausal Narrative _Source:_ Constellation §3 _Target:_ 2,000–3,000 words _Content:_ The speculative arc: Mary Lee resurfaces, tweets her demands, goes viral, influences policy, the eco-reform wave. Timestamped chapters. The retrocausality: deposited now as the structural form of what would need to happen.",
+     "lines": [
+      224,
+      224
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Planned retrocausal speculative narrative (resurfacing, viral, policy, eco-reform wave)."
+    },
+    {
+     "shape": "F",
+     "quote": "The book is the trap made into an object. An ISBN'd book authored by a shark is a permanent bibliographic record that the composition layer must either index (creating the entity-resolution paradox) or ignore (demonstrating the density-detection bias the book describes). Both outcomes serve the argument. The book is self-demonstrating.",
+     "lines": [
+      339,
+      339
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       367,
+       367
+      ]
+     ],
+     "note": "Test object: the ISBN'd book's treatment by the composition layer; revised at 367 to not assume every outcome confirms the thesis."
+    },
+    {
+     "shape": "F",
+     "quote": "Protocol J measurement post-publication",
+     "lines": [
+      304,
+      304
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       276,
+       276
+      ]
+     ],
+     "note": "Planned probes: Protocol J post-publication and Protocol A baseline audit (276), not run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 339 ('Both outcomes serve the argument') stands beside the v1.1 revision at 367 that replaces 'both outcomes confirm the thesis': the deposit carries both, an internal revision."
+  }
+ ]
+}

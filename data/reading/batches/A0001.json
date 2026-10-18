@@ -1,0 +1,250 @@
+{
+ "batch_id": "A0001",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model stated in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:21:53Z",
+  "finished_at": "2026-10-18T04:24:41Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 slicing for quotes; wc/byte inspection of line breaks)",
+   "Write via script"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "A:AXN-0472/images/manifest.json",
+   "deposits": [
+    1121
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-0472/images/manifest.json",
+   "lines_total": 331,
+   "read_ranges": [
+    [
+     1,
+     331
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "JSON manifest of placed images cropped from the 2014 PDF (file, page, bbox, bytes, sha256)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Only own-voice prose is the 'method' field (line 4): extraction description, no prediction. Several images share identical sha256 (repeated ornaments)."
+  },
+  {
+   "unit": "A:AXN-0472/pearl-and-other-poems-2014.pdf",
+   "deposits": [
+    1121
+   ],
+   "path": "/home/claude/operative-semiotics/data/reading/derived/attachments/AXN-0472/pearl-and-other-poems-2014.pdf.txt",
+   "lines_total": 24999,
+   "read_ranges": [
+    [
+     1,
+     1300
+    ],
+    [
+     1301,
+     2700
+    ],
+    [
+     2701,
+     4200
+    ],
+    [
+     4201,
+     4787
+    ]
+   ],
+   "status": "read",
+   "status_note": "Read in full, lines 1-4787 as the Read tool and verify_batch.py number them (split on \\n). The queue's lines_total 24999 counts 20212 lone carriage returns that pdf extraction left between words (tab + CR + no-break space); Python text-mode reading treats each CR as a line break. Lines 4788-24999 do not exist in the \\n numbering used for quotes; the whole file was read. A COVER failure on 4788-24999 is this numbering mismatch, not unread text.",
+   "genre_observed": "2014 heteronymous poetry book (Pearl and Other Poems, New Human Press) with fictional apparatus, manifestos, essays and a literary-history chart",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "‘Pearl’ is an important poem, and Lee Sharks is destined to stick around for awhile.",
+     "lines": [
+      235,
+      238
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Sigil's introduction (July 2014) forecasts the author's endurance in plain prose; a heteronym's blurb-register forecast, weak, recorded for triage."
+    },
+    {
+     "shape": "E",
+     "quote": "Like his humans, he knew that the reality he imagined was unlikely. It hinged, he knew, upon a certain degree of circularly referential saturation, a kind of diagonal hyperlink that could lead from Wiki article to external source to YouTube video to newspaper piece to history book to flesh and blood and back again, to Wikipedia. However unlikely this arrangement of referential elements into a self-­‐perpetuating system, the quantum leap from text to history, he clung to its possibility as the anchor of his life.",
+     "lines": [
+      402,
+      412
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       430,
+       471
+      ],
+      [
+       1456,
+       1458
+      ]
+     ],
+     "note": "Jack Feist's frame narrative specifies the mechanism by which an invented persona would cross from text into history: circular referential saturation across Wiki, sources, video, press, books; resolves if such a self-perpetuating referential system appears. Read with the Wiki-article apparatus (lines 430-471, 546-592) and Footnote item 7 (1456-1458)."
+    },
+    {
+     "shape": "E",
+     "quote": "there, in the middle of the living room, obscured before perhaps by the glimmering television, but now emergent, emitting ghosts of swirling, incorporeal wind in centrifugal arcs of light passing through, without disturbing, the surrounding room—curtains, table, armchair, fan: a giant book, bound in sumptuous red leather, somehow both a man-­‐sized book and a human body, these images superimposed upon each other in flickering, holographic interplay—the Crimson Hexagon.",
+     "lines": [
+      1692,
+      1701
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "27 April, 2014",
+     "points_to": "",
+     "also_at": [
+      [
+       1683,
+       1685
+      ],
+      [
+       1714,
+       1735
+      ],
+      [
+       1745,
+       1745
+      ]
+     ],
+     "note": "Self-framed 'premonition'/'prophecy' dated 27 April 2014: the Crimson Hexagon seen complete as a book that is also a human body, which the speaker enters to wear 'like a new body' (1720-1735). A dream-specification of the finished work; the date is in-text."
+    },
+    {
+     "shape": "B",
+     "quote": "Genetic engineering. Artificial intelligence. We’ve arrived at the 21st century: the ever-­‐shrinking boundary between the material and digital worlds, converging on a total presentism of the archive; the spread and endemicization of statistical science, the ever-­‐broadening automation of its complex functions; a world in which the informatic representation of the human is more total, more complete, in an unprecedented way; even as it is flat, dead, cut off from life. The human keeps changing; its digital representation is a lifeless rind, vulnerable to manipulation by any animate power. What is the poet’s role, vis-­‐à-­‐vis the datascape?",
+     "lines": [
+      3483,
+      3494
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "'Make It Human' (2014) names AI, genetic engineering and the automation of statistical science as the coming condition, with the digital representation of the human 'vulnerable to manipulation'; mostly present-tense diagnosis with a forward trend, recorded as a weak embedded forecast."
+    },
+    {
+     "shape": "B",
+     "quote": "Poetics must turn to the composition of archival forms that embody possible futures. I say “must,” not in the colloquial, common-­‐usage sense of exhortation towards urgent action—“We must stop and ask for directions.” If there is to be a future at all, we must construct its archive now. Whether we will it or no, history demands an archival poetics, is calling it into being as we speak.",
+     "lines": [
+      3685,
+      3691
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Sigil's essay closes with a claim that history is calling an archival poetics into being now; a programmatic forecast of the archive-as-poetics the later deposits build. Uncertain between B and a manifesto exhortation; the text itself refuses the exhortation reading."
+    },
+    {
+     "shape": "E",
+     "quote": "Total Archive The L=O=G=O=S Book Plastic: The Second Wave of Concrete Poetry, 1980-2015 OK Computer: An Anthology of Human Robots Artificial Intelligence: An Anthology of Telepathic Writing Digital Moon Base: Electronic Archives of Telepathicism The New Human Poetry: An Anthology of New Writing, 1990-2010",
+     "lines": [
+      3868,
+      3886
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "≈2000-2030",
+     "points_to": "",
+     "also_at": [
+      [
+       3913,
+       3951
+      ]
+     ],
+     "note": "The '21st Century Literary History' chart (Johannes Sigil, p.101) places a 'New Human Poetry' period at ≈2000-2030 populated by non-existent anthologies, among them 'Artificial Intelligence: An Anthology of Telepathic Writing' and 'OK Computer: An Anthology of Human Robots'; a speculative literary history that resolves if such works/periods appear. PDF-extracted chart text: reading order of labels is the extractor's, not the page's."
+    },
+    {
+     "shape": "H",
+     "quote": "an avant-­‐garde is a community outside the school that perpetuates, for itself, the kind of cultural capital the school protects, a community that has the form of a school but isn’t one—",
+     "lines": [
+      4166,
+      4172
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "last 100 years or so; 1863 Paris; 1923",
+     "points_to": "",
+     "also_at": [
+      [
+       4006,
+       4010
+      ],
+      [
+       4033,
+       4045
+      ],
+      [
+       4114,
+       4118
+      ]
+     ],
+     "note": "LITTACHUR argues a thesis of literary history: the avant-garde of the last century is a succession of small communities outside the school that build their own cultural capital until the school must write them in (e.g. Spring and All, 1923, 'tiny run of 100 copies'). Argued, not reported."
+    },
+    {
+     "shape": "H",
+     "quote": "So for me, I have the very weird idea that “literary canon” and “avant-­‐garde” are the same phenomenon viewed from different perspectives of historical distance or nearness; IMPORTANTLY: that it’s just as difficult to recognize the value of ‘classical’ literary texts as it is to recognize the value of those rare ‘avant-­‐garde’ works which go on to become the future face of the canon; that many of the same people attempting to forcefully police the boundaries of literary value with recourse to the rhetoric of “timeless classics” & grammar & style, are the very same people who would have decried the vulgarity & unfitness of the classics before they were classical.",
+     "lines": [
+      4325,
+      4337
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Dante, Shakespeare, Dickinson; print era",
+     "points_to": "",
+     "also_at": [
+      [
+       4307,
+       4310
+      ],
+      [
+       4364,
+       4378
+      ]
+     ],
+     "note": "Forum Post 7/27/14 advances the thesis that 'literary canon' and 'avant-garde' are one phenomenon seen at different historical distances, with Dickinson and the print shift from aural to visual as evidence; also 'the history of verse is a history of unpoemish innovations that come to be called poetry' (4364-4366)."
+    },
+    {
+     "shape": "E",
+     "quote": "CORNELL HERWITZ, professor and literary historian, published “The New Human Illiterati” in Partisan Review, vol. CXIV, No. 4 (Spring 2007). More than twenty years later, in his autobiography Bad Disciples, he continued to criticize Lee Sharks, whose “innovations,” Herwitz explained, “consisted not in a principled stand in the realms of aesthetics or ethics, but rather in the many years he had envied me, his inability to carve out a niche within the academy, and childish",
+     "lines": [
+      4531,
+      4539
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Spring 2007; More than twenty years later",
+     "points_to": "",
+     "also_at": [
+      [
+       4570,
+       4599
+      ]
+     ],
+     "note": "Fictional reception apparatus ('applied literary history' per the Introduction, 207-218): an invented critic's 2007 attack and an autobiography 'more than twenty years later' — a future-dated reception event (c. 2027 or after) written in the past tense. Recorded as speculative specification with uncertainty; it may instead fall under 'fictional figures presented as such'."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Text is pdf-extracted: words separated by tab+CR+NBSP, page numbers inline, hyphens rendered as soft-hyphen+hyphen; the chart on p.101 is extracted in non-reading order. Footnote items 20 and 21 are duplicated verbatim (1580-1596) in the source. Line 1502-1505 deliberately drops letters (the poem's joke). Contact email at line 4781 is the author's published address. The book's fictional bio (504-512) gives Lee Sharks death date 1 November 2013 — fiction presented as such, not recorded."
+  }
+ ]
+}

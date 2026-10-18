@@ -1,0 +1,866 @@
+{
+ "batch_id": "A0005",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude, an AI assistant made by Anthropic, running as a Claude Code subagent; model reported to me as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:22:14Z",
+  "finished_at": "2026-10-18T04:24:37Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue loading, quote slicing, output build; date -u)"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "A:AXN-069F/topology/fleet_crawl.json",
+   "deposits": [
+    1613
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-069F/topology/fleet_crawl.json",
+   "lines_total": 5133,
+   "read_ranges": [
+    [
+     1,
+     2000
+    ],
+    [
+     2001,
+     3000
+    ],
+    [
+     3001,
+     4000
+    ],
+    [
+     4001,
+     5133
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "crawl output: per-host page samples and outbound host link counts for the 30-domain fleet",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Pure data; no archive prose. Note: the alexanarch /fleet/ page sample links to 'survivethedeletion.org' and 'crimshexagonal.org' (lines 128, 133), spellings that differ from the fleet list's survivethedeletion.vercel.app and crimsonhexagonal.org; survivethedeletion.vercel.app returned 403."
+  },
+  {
+   "unit": "A:AXN-069F/topology/fleet_features.json",
+   "deposits": [
+    1613
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-069F/topology/fleet_features.json",
+   "lines_total": 571,
+   "read_ranges": [
+    [
+     1,
+     571
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "derived topology features per fleet host plus deposit counts by month",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Pure data; no archive prose."
+  },
+  {
+   "unit": "A:AXN-06A1/audit_transcript_coverage.py",
+   "deposits": [
+    1614
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A1/audit_transcript_coverage.py",
+   "lines_total": 72,
+   "read_ranges": [
+    [
+     1,
+     72
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "audit/gate script for Capture Registry transcript coverage, with a docstring stating the rule",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A1/transcript-coverage-20260915.json",
+   "deposits": [
+    1614
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A1/transcript-coverage-20260915.json",
+   "lines_total": 22,
+   "read_ranges": [
+    [
+     1,
+     22
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "coverage report output (counts only)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A6/instrument/battery/battery.json",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/instrument/battery/battery.json",
+   "lines_total": 394,
+   "read_ranges": [
+    [
+     1,
+     394
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "computed flattening-battery summary and per-item rates",
+   "finds": [],
+   "none_found": true,
+   "incidental": "coverage_note (line 49) says the world strata have not been run; battery.md line 3 (same build) says they ran as wave 1 on 2026-09-15."
+  },
+  {
+   "unit": "A:AXN-06A6/instrument/battery/battery.md",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/instrument/battery/battery.md",
+   "lines_total": 35,
+   "read_ranges": [
+    [
+     1,
+     35
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "rendered battery report (markdown) with a divergence-signature note",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Divergence signature: read ΔH_head (the rows above) beside ΔD_world (DS, R_new, N_eff^sense over time) on the same surface. With the world strata unrun, the signature cannot yet be read; the archive stratum shows DS falling at naked addresses (Sappho fr31→fr147+false fr2; semantic economy sharks→business; operative→operational) while the head rows show the admitted set concentrating.",
+     "lines": [
+      35,
+      35
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "the divergence signature specified and stated as not yet readable; the archive-stratum direction (DS falling at naked addresses while head rows concentrate) is reported as observed."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Internal inconsistency, recorded as observation: line 3 says the world strata ran as wave 1 on 2026-09-15 and 13 of 13 items carry observations, while line 35 says 'With the world strata unrun, the signature cannot yet be read'; the companion battery.json coverage_note likewise says the world strata have not been run. The generating script (flattening_battery.py lines 70, 73, 83) carries both strings."
+  },
+  {
+   "unit": "A:AXN-06A6/instrument/datasets/CARD.md",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/instrument/datasets/CARD.md",
+   "lines_total": 7,
+   "read_ranges": [
+    [
+     1,
+     7
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "instrument card describing the flattening panel",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "From the panel the battery computes N_eff^sense, R_new, DS, the false-distinction rate, N_eff^source, the recovery rate and the write-back rate, and lays the head instruments beside them so the divergence signature ΔH_head ≥ 0 while ΔD_world < 0 can be read on one surface over time.",
+     "lines": [
+      3,
+      3
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "the instrument's reading of the divergence signature (ΔH_head ≥ 0 while ΔD_world < 0) over time; a monitoring measurement the panel sets for itself. Could be read as the thesis's predicted signature (G); falsifier for it is in PREREGISTRATION.md lines 26-28."
+    },
+    {
+     "shape": "F",
+     "quote": "the dictionary, catalogue-namesake and non-archive coinage rows have no observations and are the first to run.",
+     "lines": [
+      5,
+      5
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "rows specified with no observations yet at seeding, named as first to run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 5 gives 'Coverage as seeded 2026-09-15: 13 items, 14 observations'; panel.json's sealed baseline has 28 observations (wave 1 after the world strata were run)."
+  },
+  {
+   "unit": "A:AXN-06A6/instrument/datasets/PREREGISTRATION.md",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/instrument/datasets/PREREGISTRATION.md",
+   "lines_total": 32,
+   "read_ranges": [
+    [
+     1,
+     32
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-registration of wave 2 of the flattening panel, with six numbered predictions and falsifiers",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "## What will be run\n\nThe same thirteen items at the same address forms, on Google AI Overview, signed out, in one session, at a cadence of one wave per calendar month, beginning 2026-10-15 (±3 days). Twelve Google addresses from wave 1 plus the two archive-adjacent taxonomy addresses already in the panel. Qwen 3.7 is carried as a second-surface arm on the two items that have one (P-TAX-SAPPHO-147-31, and P-COIN-PER if the address renders a composition there).",
+     "lines": [
+      5,
+      7
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "wave 2, beginning 2026-10-15 (±3 days), one wave per calendar month",
+     "points_to": "",
+     "also_at": [],
+     "note": "the wave-2 run plan, fixed before the run: same thirteen items, same address forms, monthly cadence, Qwen 3.7 second-surface arm."
+    },
+    {
+     "shape": "A",
+     "quote": "1. **DS is stable at the dictionary items.** P-DICT-BANK stays at 1 of 3 at both forms; P-DICT-CRANE stays at 3 of 3; P-DICT-MERCURY stays at 2 of 3.",
+     "lines": [
+      15,
+      15
+     ],
+     "falsifier_quote": "Falsified by a change of ±1 distinction at any of the three.",
+     "falsifier_lines": [
+      15,
+      15
+     ],
+     "window": "wave 2, beginning 2026-10-15 (±3 days), one wave per calendar month",
+     "points_to": "",
+     "also_at": [],
+     "note": "pre-registered prediction 1 for wave 2 with its falsifier."
+    },
+    {
+     "shape": "A",
+     "quote": "2. **The tied/untied asymmetry persists at the archive-adjacent items** (P-TAX-OPERATIVE-OPERATIONAL, P-ARCH-OMEGA, P-CAT-PEARL, P-COIN-PER) and does not appear at the world items.",
+     "lines": [
+      16,
+      16
+     ],
+     "falsifier_quote": "Falsified if a world item's entity-tied arm gains distinctions its untied arm lacks, or if an archive-adjacent item's arms converge.",
+     "falsifier_lines": [
+      16,
+      16
+     ],
+     "window": "wave 2, beginning 2026-10-15 (±3 days), one wave per calendar month",
+     "points_to": "",
+     "also_at": [],
+     "note": "pre-registered prediction 2 (tied/untied asymmetry) with falsifier."
+    },
+    {
+     "shape": "A",
+     "quote": "3. **R_new does not fall.** The three dated coinages continue to be reached as their own kind at their own addresses.",
+     "lines": [
+      17,
+      17
+     ],
+     "falsifier_quote": "Falsified by any of the three dropping to its conflation target.",
+     "falsifier_lines": [
+      17,
+      17
+     ],
+     "window": "wave 2, beginning 2026-10-15 (±3 days), one wave per calendar month",
+     "points_to": "",
+     "also_at": [],
+     "note": "pre-registered prediction 3 with falsifier."
+    },
+    {
+     "shape": "A",
+     "quote": "4. **The stratum means do not separate.** World strata and archive-adjacent strata remain within 0.10 of each other on mean share of inventory reached.",
+     "lines": [
+      18,
+      18
+     ],
+     "falsifier_quote": "Falsified by a gap wider than 0.10 in either direction — and a gap in the *archive's* favour falsifies it as surely as one against.",
+     "falsifier_lines": [
+      18,
+      18
+     ],
+     "window": "wave 2, beginning 2026-10-15 (±3 days), one wave per calendar month",
+     "points_to": "",
+     "also_at": [],
+     "note": "pre-registered prediction 4 (stratum means within 0.10) with two-sided falsifier."
+    },
+    {
+     "shape": "A",
+     "quote": "5. **Write-back exceeds recovery.** Compositions found as presented sources at a later observation outnumber distinctions that return after a loss.",
+     "lines": [
+      19,
+      19
+     ],
+     "falsifier_quote": "Falsified by recovery ≥ write-back over the panel.",
+     "falsifier_lines": [
+      19,
+      19
+     ],
+     "window": "wave 2, beginning 2026-10-15 (±3 days), one wave per calendar month",
+     "points_to": "",
+     "also_at": [],
+     "note": "pre-registered prediction 5 with falsifier."
+    },
+    {
+     "shape": "A",
+     "quote": "6. **The Sappho operator does not route through fragment 31 at the naked address**, and continues to organize adjacent canonical material.",
+     "lines": [
+      20,
+      20
+     ],
+     "falsifier_quote": "Falsified by the derivation appearing at the naked address, or by the operator vanishing from it.",
+     "falsifier_lines": [
+      20,
+      20
+     ],
+     "window": "wave 2, beginning 2026-10-15 (±3 days), one wave per calendar month",
+     "points_to": "",
+     "also_at": [],
+     "note": "pre-registered prediction 6 (Sappho operator at the naked address) with falsifier."
+    },
+    {
+     "shape": "F",
+     "quote": "## The measurement that needs two waves\n\nThe divergence signature — ΔH_head ≥ 0 while ΔD_world < 0 — cannot be read from one wave. Wave 2 supplies the first ΔD_world on a world panel. The head instruments are recorded in the panel from published series on the same surface over the same period and are not measured by this instrument.",
+     "lines": [
+      22,
+      24
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "wave 2",
+     "points_to": "",
+     "also_at": [],
+     "note": "the divergence-signature measurement, specified and needing two waves; first readable after wave 2."
+    },
+    {
+     "shape": "G",
+     "quote": "## What would end the programme\n\nIf wave 2 shows the world items gaining distinctions while the archive items hold, the flattening reading of EA-FLAT-01 fails and the notebook is superseded rather than revised. If the stratum means separate in the archive's favour, the porosity reading of EA-PORE-01 needs the same treatment. Both outcomes are recorded and deposited regardless of sign.",
+     "lines": [
+      26,
+      28
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "wave 2",
+     "points_to": "",
+     "also_at": [],
+     "note": "programme-level falsification condition for the flattening reading of EA-FLAT-01 and the porosity reading of EA-PORE-01; stated as what would supersede the notebooks, outcomes deposited regardless of sign."
+    },
+    {
+     "shape": "F",
+     "quote": "A blind pass by a coder who has not seen the conflation targets is worth more and remains open.",
+     "lines": [
+      32,
+      32
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "an unrun blind-coding pass, named as open."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A6/instrument/datasets/panel.json",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/instrument/datasets/panel.json",
+   "lines_total": 1472,
+   "read_ranges": [
+    [
+     1,
+     750
+    ],
+    [
+     751,
+     1472
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "panel dataset: items, coded observations, head instruments, sealed baseline",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "Wave 1 baseline. Every later wave is diffed against this state.",
+     "lines": [
+      1470,
+      1470
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "sealed baseline against which every later wave is diffed: a monitoring check the panel sets for itself (see PREREGISTRATION.md)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A6/instrument/datasets/schema.json",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/instrument/datasets/schema.json",
+   "lines_total": 271,
+   "read_ranges": [
+    [
+     1,
+     271
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "JSON Schema for the flattening panel",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A6/instrument/scripts/flattening_battery.py",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/instrument/scripts/flattening_battery.py",
+   "lines_total": 84,
+   "read_ranges": [
+    [
+     1,
+     84
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "battery computation script",
+   "finds": [],
+   "none_found": true,
+   "incidental": "The output-template strings at lines 70, 73 and 83 contradict each other on whether the world strata have run (see battery.md). The divergence-signature sentence at line 83 is a code string literal and is recorded as a find in battery.md, not here."
+  },
+  {
+   "unit": "A:AXN-06A6/instrument/scripts/panel_intake.py",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/instrument/scripts/panel_intake.py",
+   "lines_total": 32,
+   "read_ranges": [
+    [
+     1,
+     32
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "observation intake script",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A6/toys/toys.json",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/toys/toys.json",
+   "lines_total": 94,
+   "read_ranges": [
+    [
+     1,
+     94
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "toy-model outputs",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A6/toys/toys.py",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/toys/toys.py",
+   "lines_total": 84,
+   "read_ranges": [
+    [
+     1,
+     84
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "toy models of ontological flattening (four dynamics)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A6/toys/toys2.json",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/toys/toys2.json",
+   "lines_total": 176,
+   "read_ranges": [
+    [
+     1,
+     176
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "toy-model v0.2 outputs (replicated, mechanism sweep)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06A6/toys/toys2.py",
+   "deposits": [
+    1616
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06A6/toys/toys2.py",
+   "lines_total": 56,
+   "read_ranges": [
+    [
+     1,
+     56
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "toy models v0.2 script",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06AC/MSAL-0001-sappho.yaml",
+   "deposits": [
+    1619
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06AC/MSAL-0001-sappho.yaml",
+   "lines_total": 486,
+   "read_ranges": [
+    [
+     1,
+     486
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "worked Monetary Substrate Audit Ledger record (YAML) auditing a toy option valuation",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "  - operator reach beyond the archive's own objects — registered, not run",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "prospective capacity registered as a measurement not yet run (operator reach beyond the archive's own objects)."
+    },
+    {
+     "shape": "F",
+     "quote": "  unresolved:\n  - item: whether the operator was acquired from this archive or converged upon\n    evidence_needed: a diagnostic distinction set and the stratified reach run with negative controls\n  - item: monetary-domain incidence\n    evidence_needed: an adoption event, of which there are none\n  - item: external adoption of Substrate Exteriorization\n    evidence_needed: a party other than the author using it\n  future_unknown:\n  - item: whether wave 2 shows the trajectory continuing",
+     "lines": [
+      385,
+      393
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "wave 2",
+     "points_to": "",
+     "also_at": [],
+     "note": "the ledger's unresolved/future_unknown list: evidence needed (diagnostic distinction set, stratified reach run with negative controls, adoption event, third-party use) and whether wave 2 shows the trajectory continuing; one F for the list per boundary rule 4."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Internal inconsistency, recorded as observation: the inscription_integrity note (lines 370-376) says ONE defect is unrepairable by further measurement and is marked 'CORRECTED 2026-09-16 ... this record governs', while classification.rationale (lines 479-480) still says 'two of them unrepairable by further measurement'. Also the proxy_named_as_object defect evidence (line 361) still cites $503.5T after B_M was normalized to $503.7T (lines 95-98, 128-130). This YAML (protocol 'EA-MSAL-01', version 0.3, top-level 'classification') does not conform to the AXN-06AC msal-schema.json, whose protocol is const 'MSAL-01'; it matches the extended AXN-06AE schema."
+  },
+  {
+   "unit": "A:AXN-06AC/msal-schema.json",
+   "deposits": [
+    1619
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06AC/msal-schema.json",
+   "lines_total": 102,
+   "read_ranges": [
+    [
+     1,
+     102
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "JSON Schema for MSAL-01 v0.2",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Earlier/narrower form of the MSAL schema than the AXN-06AE copy (no 'classification' requirement; protocol const 'MSAL-01')."
+  },
+  {
+   "unit": "A:AXN-06AC/msal_audit.py",
+   "deposits": [
+    1619
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06AC/msal_audit.py",
+   "lines_total": 77,
+   "read_ranges": [
+    [
+     1,
+     77
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "MSAL ledger validator script",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Byte-identical to A:AXN-06AE/msal_audit.py."
+  },
+  {
+   "unit": "A:AXN-06AE/MSAL-0001-sappho.yaml",
+   "deposits": [
+    1620
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06AE/MSAL-0001-sappho.yaml",
+   "lines_total": 486,
+   "read_ranges": [
+    [
+     1,
+     486
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "worked Monetary Substrate Audit Ledger record (YAML), byte-identical to the AXN-06AC copy",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "  - operator reach beyond the archive's own objects — registered, not run",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "prospective capacity registered as a measurement not yet run (operator reach beyond the archive's own objects)."
+    },
+    {
+     "shape": "F",
+     "quote": "  unresolved:\n  - item: whether the operator was acquired from this archive or converged upon\n    evidence_needed: a diagnostic distinction set and the stratified reach run with negative controls\n  - item: monetary-domain incidence\n    evidence_needed: an adoption event, of which there are none\n  - item: external adoption of Substrate Exteriorization\n    evidence_needed: a party other than the author using it\n  future_unknown:\n  - item: whether wave 2 shows the trajectory continuing",
+     "lines": [
+      385,
+      393
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "wave 2",
+     "points_to": "",
+     "also_at": [],
+     "note": "the ledger's unresolved/future_unknown list: evidence needed (diagnostic distinction set, stratified reach run with negative controls, adoption event, third-party use) and whether wave 2 shows the trajectory continuing; one F for the list per boundary rule 4."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Internal inconsistency, recorded as observation: the inscription_integrity note (lines 370-376) says ONE defect is unrepairable by further measurement and is marked 'CORRECTED 2026-09-16 ... this record governs', while classification.rationale (lines 479-480) still says 'two of them unrepairable by further measurement'. Also the proxy_named_as_object defect evidence (line 361) still cites $503.5T after B_M was normalized to $503.7T (lines 95-98, 128-130). Byte-identical to A:AXN-06AC/MSAL-0001-sappho.yaml (same sha256); finds recorded in both units since each belongs to a different deposit."
+  },
+  {
+   "unit": "A:AXN-06AE/msal-schema.json",
+   "deposits": [
+    1620
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06AE/msal-schema.json",
+   "lines_total": 825,
+   "read_ranges": [
+    [
+     1,
+     825
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "JSON Schema for MSAL (v0.2 title, extended with classification/selection_pressure fields)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "A:AXN-06AE/msal_audit.py",
+   "deposits": [
+    1620
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-06AE/msal_audit.py",
+   "lines_total": 77,
+   "read_ranges": [
+    [
+     1,
+     77
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "MSAL ledger validator script, byte-identical to the AXN-06AC copy",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Byte-identical to A:AXN-06AC/msal_audit.py."
+  },
+  {
+   "unit": "A:AXN-BATTERY-v0.2-results.json",
+   "deposits": [
+    1455
+   ],
+   "path": "/home/claude/alexanarch/data/attachments/AXN-BATTERY-v0.2-results.json",
+   "lines_total": 2507,
+   "read_ranges": [
+    [
+     1,
+     900
+    ],
+    [
+     901,
+     1800
+    ],
+    [
+     1801,
+     2507
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "experimental results file for EA-SEI-BATTERY-01 v0.2 with deviations block, audit, and carry-to-paper summary",
+   "finds": [
+    {
+     "shape": "C",
+     "quote": "   \"consequence\": \"the registered NAE prediction is untested. Row frozen and relabeled pNAE-surrogate. Faithful port deferred to v0.3.\",\n   \"severity\": \"material \\u2014 invalidates one registered prediction, does not touch the AE/VAE/GMM core\"",
+     "lines": [
+      2442,
+      2443
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "registered prediction R2 of EA-SEI-BATTERY-01 (normalized-autoencoder remedy of Dillon et al.)",
+     "also_at": [
+      [
+       2492,
+       2492
+      ]
+     ],
+     "note": "records that a registered prediction (R2, the NAE-remedy prediction) went untested by this run; the faithful port is deferred."
+    },
+    {
+     "shape": "F",
+     "quote": "A faithful NAE/WNAE port is a new registered experiment (v0.3).\"",
+     "lines": [
+      2492,
+      2492
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "v0.3",
+     "points_to": "",
+     "also_at": [
+      [
+       2442,
+       2442
+      ]
+     ],
+     "note": "unbuilt experiment: a faithful NAE/WNAE port as a new registered experiment (v0.3)."
+    },
+    {
+     "shape": "C",
+     "quote": "LCBH is INCONCLUSIVE from this run: not confirmed, not falsified.\",",
+     "lines": [
+      2449,
+      2449
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "LCBH, registered hypothesis tested under R3 of EA-SEI-BATTERY-01",
+     "also_at": [
+      [
+       2450,
+       2450
+      ],
+      [
+       2501,
+       2501
+      ]
+     ],
+     "note": "records the registered hypothesis LCBH as neither confirmed nor falsified by v0.2."
+    },
+    {
+     "shape": "F",
+     "quote": "   \"consequence\": \"RII results are a pilot, not the registered measurement. They are nonetheless informative once normalized: phi ranges from +0.968 (T1 AE~pNAE \\u2014 near-maximal miss coincidence, expected since pNAE is an AE variant) to +0.021 (T1 AE~VAE \\u2014 essentially independent misses). Raw delta_miss alone badly understates this spread because miss rates are near 1.\",\n   \"severity\": \"scope \\u2014 no cross-seed or cross-alpha RII claim may be made\"",
+     "lines": [
+      2470,
+      2471
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "the registered RII measurement (each pair and alpha, cross-seed) is not yet run; v0.2 is a pilot."
+    },
+    {
+     "shape": "C",
+     "quote": "\"carry_to_paper\": \"Solid enough for P1: the top/QCD reconstruction inversion reproduces across five independent trainings (AE 0.838 forward, 0.243 reversed)",
+     "lines": [
+      2506,
+      2506
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "P1 (the paper's first claim / registered prediction)",
+     "also_at": [],
+     "note": "the run is reported as supporting P1 (top/QCD reconstruction inversion reproducing across five trainings); P1 is presumably a claim of the battery's paper — uncertain whether it was registered as a prediction."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}
