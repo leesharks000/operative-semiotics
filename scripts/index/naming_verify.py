@@ -6,7 +6,7 @@ USAGE  python3 scripts/index/naming_verify.py <ID> [...]
 """
 import json, sys, re, pathlib, glob
 ROOT = pathlib.Path(__file__).resolve().parents[2]; I = ROOT / 'data/index'
-GENERIC = re.compile(r'(?i)^(assorted|misc|various|other|general|retrieval|claims?)\b')
+GENERIC = re.compile(r'(?i)^((assorted|misc|various|other|general)\b|(retrieval|claims?)$)')
 
 
 def main():
