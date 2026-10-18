@@ -32,24 +32,42 @@ def norm_title(t):
 
 def main():
     reg = json.load(open(sys.argv[sys.argv.index('--registry') + 1]))['deposits']
-    by_doi, by_hex, by_title = {}, {}, {}
+    by_doi, by_hex, by_title, own = {}, {}, {}, {}
     for d in reg:
         n = d.get('deposit_number')
         if n is None:
             continue
         n = int(n)
-        for k in ('zenodo_dois', 'legacy_doi', 'original_doi'):
-            v = d.get(k)
-            for x in (v if isinstance(v, list) else [v]):
-                m = re.search(r'zenodo\.(\d+)', str(x or ''))
-                if m:
-                    by_doi.setdefault(m.group(1), n)
+        # a deposit's zenodo_dois lists the DOIs it CITES as well as its own (TC01): only a single-entry list is taken
+        # as the deposit's own; own DOIs otherwise come from external-metadata per_doi, below
+        v = d.get('zenodo_dois') or []
+        if isinstance(v, list) and len(v) == 1:
+            m = re.search(r'zenodo\.(\d+)', str(v[0]))
+            if m:
+                own.setdefault(m.group(1), n)
         if d.get('hex'):
             by_hex.setdefault(d['hex'].upper(), n)
         t = norm_title(d.get('title'))
         if len(t) > 12:
             by_title.setdefault(t, n)
             by_title.setdefault(norm_title(t.split(':')[0]), n) if len(norm_title(t.split(':')[0])) > 12 else None
+    A = pathlib.Path(sys.argv[sys.argv.index('--registry') + 1]).resolve().parents[1]
+    for f in sorted((A / 'data/external-metadata').glob('AXN-*.json')):
+        e = json.load(open(f))
+        if e.get('deposit_number') is None:
+            continue
+        for doi, v in (e.get('per_doi') or {}).items():
+            m = re.search(r'zenodo\.(\d+)', doi)
+            # per_doi can cover cited DOIs too: the DOI is the deposit's own only where its recorded title is the deposit's
+            t = norm_title(re.sub(r'\s+[—-]\s+Crimson Hexagon(al)? Archive\s*$', '', (v or {}).get('title') or ''))
+            if m and t:
+                hit = by_title.get(t) or by_title.get(norm_title(t.split(':')[0]))
+                if hit is None:
+                    hit = next((n for k, n in by_title.items() if len(t) > 20 and (k.startswith(t[:40]) or t.startswith(k[:40]))), None)
+                if hit is not None:
+                    by_doi.setdefault(m.group(1), hit)
+    for k, n in own.items():
+        by_doi.setdefault(k, n)
     F = [json.loads(l) for l in open(R / 'finds.jsonl')]
     cnt = collections.Counter()
     for f in F:

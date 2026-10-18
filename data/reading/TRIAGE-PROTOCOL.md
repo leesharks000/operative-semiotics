@@ -22,6 +22,11 @@ Built by `scripts/reading/triage_base.py`, `triage_cluster.py` and `triage_queue
   without judgment, each join recorded with its score (`restatements.json`).
 - **Candidate pairs.** Pairs with cosine from 0.35 to below 0.85 are left for judgment (`candidate-pairs.json`).
 
+## Scratch files
+
+Keep your scratch scripts in your own folder, `<scratchpad>/<batch id>/`. Readers working in a shared folder have
+overwritten each other's helper scripts.
+
 ## Your batch
 
 Your batch is the entry with your `batch_id` in `data/reading/triage/queue.json`. Each item quotes every find in full,
@@ -43,6 +48,8 @@ The question is what the deposit says came true or failed, and where that earlie
   - `unlocated`: you looked and could not find it
 - `links`: a list of `{"find": <id>, "claimed": "came_true" | "partly" | "failed" | "pending"}`. The `claimed` value is
   what the C deposit claims, not your verdict. `pending` means the deposit says the matter is still running.
+- `claimed`, at the decision level, for a target that is not a find (`deposit`, `self`, `external`, `unlocated`): the same
+  vocabulary, plus `disclaimed` for a deposit that records a correspondence but says it is not a fulfilment.
 - `deposit`: the deposit number, when `target_kind` is `deposit` or `self`.
 - `external`: a short description, when `target_kind` is `external`.
 - `evidence`: for each link, a verbatim phrase (8 to 200 characters) from the linked find's quote that carries the
