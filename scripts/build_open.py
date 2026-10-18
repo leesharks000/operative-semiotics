@@ -188,7 +188,7 @@ details.dep ul{{margin:4px 0 8px;padding-left:20px}}details.dep li{{margin:3px 0
 footer{{margin-top:56px;border-top:1px solid var(--line);padding-top:14px;font-size:.85em;color:var(--dim)}}
 .honesty{{border-left:3px solid var(--line);padding:2px 12px;margin:26px 0;font-size:.9em;color:#3a3630}}
 </style></head><body><main id="all">
-<nav class="topnav">{'<a class="home" href="/">Operative Semiotics</a>'}{nav_tabs}<a class="data" href="/data/predictions.json">predictions.json</a></nav>
+<nav class="topnav">{'<a class="home" href="/">Operative Semiotics</a>'}{nav_tabs}<a class="tab" href="/predictions">Prediction index</a><a class="data" href="/data/predictions.json">predictions.json</a></nav>
 <div class="top">
 <h1>Predictions &amp; Builds</h1>
 <div class="tiles">{tiles_html}</div>
