@@ -85,12 +85,33 @@ def load():
 
 
 def page_members(P, names, C):
-    """Pages with the readers' moves applied; a claim moved to null stays where it is."""
+    """Pages with the readers' moves applied. A reader judged a claim out of place by reading its page; the page it
+    named was often chosen before the other pages had titles. So a move goes to the named page when the reader read that
+    page too (same naming batch), or when it is among the three whose statements the claim is nearest (TF-IDF centroid), and otherwise to the nearest page other than the
+    one it leaves; a move with no page named goes to the nearest other page."""
+    import numpy as np
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.preprocessing import normalize
     mem = {p['page']: list(p['claims']) for p in P}
+    st = {c['id']: c['statement'] or '' for c in C}
+    order = [p['page'] for p in P]
+    vec = TfidfVectorizer(sublinear_tf=True, min_df=2, max_df=0.3, stop_words='english', ngram_range=(1, 2)).fit(list(st.values()))
+    cent = normalize(np.vstack([np.asarray(vec.transform([st[c] for c in mem[p]]).mean(axis=0)) for p in order]))
+    batch = {p['page']: b['batch_id'] for b in json.load(open(I / 'naming-queue.json'))['batches'] for p in b['pages']}
+    moves = []
     for pid, n in names.items():
         for m in n.get('moves') or []:
-            if m.get('to') and m['claim'] in mem.get(pid, []) and m['to'] in mem:
-                mem[pid].remove(m['claim']); mem[m['to']].append(m['claim'])
+            if m['claim'] in mem.get(pid, []):
+                moves.append((pid, m['claim'], m.get('to')))
+    log = []
+    for src, cid, to in moves:
+        sims = (cent @ normalize(vec.transform([st[cid]])).T.toarray()).ravel()
+        rank = [order[i] for i in np.argsort(-sims) if order[i] != src]
+        dest = to if (to in rank[:3] or (to and batch.get(to) == batch.get(src))) else rank[0]
+        mem[src].remove(cid); mem[dest].append(cid)
+        log.append({'claim': cid, 'from': src, 'named': to, 'to': dest})
+    json.dump({'what': 'Moves applied by build_index.py: the readers\' moves, placed as its docstring says.', 'moves': log},
+              open(I / 'moves-applied.json', 'w'), indent=1)
     reg = {c['id']: c['registered'] or '9999' for c in C}
     return {k: sorted(v, key=lambda c: (reg.get(c, '9999'), c)) for k, v in mem.items()}
 
