@@ -1,0 +1,311 @@
+{
+ "batch_id": "TE12",
+ "kind": "TE",
+ "protocol": "TRIAGE-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude Opus 5.5 (claude-opus-5-5), subagent parallel reader in a Claude Code session",
+  "started_at": "2026-10-18T01:11:57Z",
+  "finished_at": "2026-10-18T01:14:30Z"
+ },
+ "decisions": [
+  {
+   "item": "E:F281.H4~F436.H3",
+   "decision": "same",
+   "basis": "Both state that χλωροτέρα ποίας figures the speaker becoming papyrus, the body as writing substrate."
+  },
+  {
+   "item": "E:F950.H18~F846.H1",
+   "decision": "same",
+   "basis": "Both state the Phase X thesis that the 1844 Manuscripts hold a structural lacuna between communism as fully developed humanism and the critique of Hegel."
+  },
+  {
+   "item": "E:F1645.A1~F1647.F1",
+   "decision": "distinct",
+   "basis": "Two LFB test-query tables in different metadata packets on unrelated subjects (Sappho's future reader, Phase X); the shared words are the table template."
+  },
+  {
+   "item": "E:F610.H2~F612.H1",
+   "decision": "same",
+   "basis": "Both state that Thayer's 1866 objection, invoking 'image and superscription', covered the name as well as the portrait."
+  },
+  {
+   "item": "E:F84.D1~F531.F1",
+   "decision": "distinct",
+   "basis": "F84.D1 maps a fork's title overlap to the Constitution's priority DOI, F531.F1 says the Constitution specifies metrics for semantic capital; only the cited DOI is shared."
+  },
+  {
+   "item": "E:F342.H4~F344.H2",
+   "decision": "same",
+   "basis": "Both state the thesis that ATLWM follows Dante's Comedy in thirty sections as three canticles of ten with frames and a central hinge."
+  },
+  {
+   "item": "E:F141.A3~F768.A3",
+   "decision": "related",
+   "basis": "Two test-query rows from sibling packets of the same date (Erasure Skew, Retrieval Capital) with different queries, targets and windows."
+  },
+  {
+   "item": "E:F1051.H5~F1049.H1",
+   "decision": "related",
+   "basis": "F1049.H1 characterizes Catullus's three transformations; F1051.H5 builds a structural warrant on the third (the fourth-stanza inversion requires a target)."
+  },
+  {
+   "item": "E:F38.H3~F1064.H1",
+   "decision": "same",
+   "basis": "Both state the Phase X thesis that the 1844 lacuna between communism and the Hegel critique is structural because the passage contradicted the emerging base-superstructure model."
+  },
+  {
+   "item": "E:F735.A4~F737.A3",
+   "decision": "variant",
+   "basis": "The same human-preference prediction for Model-Sem on creative/analytical tasks, with different thresholds: above 55% at t0+10 weeks against a 60–70% preference target.",
+   "evidence_a": "Preference rate for Model-Sem over Model-CE > 55%",
+   "evidence_b": "60–70% preference rate target",
+   "change": "threshold changed: >55% with CI excluding 50% evaluated at t0+10 weeks (#735) vs a 60–70% target with no window (#737)"
+  },
+  {
+   "item": "E:F202.F1~F1216.B1",
+   "decision": "variant",
+   "basis": "Both say the Revelation-first argument entering retrieval would be a measured instance of machine-mediated theological reception; #1216 adds the priority claim.",
+   "evidence_a": "it becomes a measured instance of machine-mediated theological reception",
+   "evidence_b": "it will be the first measured instance of machine-mediated theological reception",
+   "change": "#1216 adds 'first' (a priority claim) and drops the named measurement means and the 14 June baseline"
+  },
+  {
+   "item": "E:F1.G8~F863.G9",
+   "decision": "variant",
+   "basis": "Attribution severance appears in #1 as one candidate mechanism of the termination process and in #863 as a definition with a stated falsifier.",
+   "evidence_a": "Zenodo's account-termination process may automatically strip or alter creator metadata",
+   "evidence_b": "falsified if all DOIs associated with a terminated Zenodo account remain discoverable through DataCite's creator-name search",
+   "change": "hypothesis without falsifier (#1) becomes a definition with a falsification condition via DataCite creator-name search (#863)"
+  },
+  {
+   "item": "E:F22.D1~F554.C1",
+   "decision": "related",
+   "basis": "Both cite the RCF paper of January 2026: F22.D1 as a dated priority anchor over the Citrini memo, F554.C1 as a mechanism whose predicted output has arrived."
+  },
+  {
+   "item": "E:F569.H1~F1255.H1",
+   "decision": "same",
+   "basis": "Both name 'Revelation was the first-written book of the New Testament' as the inaugural AXIAL/TANG instance with status AXIAL_CONTESTED."
+  },
+  {
+   "item": "E:F549.D1~F556.D2",
+   "decision": "contains",
+   "basis": "F549.D1 lists both RESONANT fulfilment rows (3i Atlas→LO! coords and Citrini→Market Act); F556.D2 is the Citrini→Market Act row alone.",
+   "container": "a"
+  },
+  {
+   "item": "E:F832.F3~F1217.F2",
+   "decision": "variant",
+   "basis": "The same pre-seeding baseline battery for the Revelation First plan; v7.3 adds a stated expected result (no archive content) while its query list is missing from the text.",
+   "evidence_a": "revelation first book new testament",
+   "evidence_b": "Expected result: none of these should return any archive content.",
+   "change": "v7.3 adds the expected result (the empty basin) and a rule for recording pre-existing archive content; v7.1 lists the ten queries"
+  },
+  {
+   "item": "E:F1608.G1~F3.G16",
+   "decision": "variant",
+   "basis": "Both state that a machine valuation is a draw from a distribution, reported as one sample; the tests attached differ.",
+   "evidence_a": "if two fresh runs on one system land within 20% of each other, §2.1 weakens",
+   "evidence_b": "the system must actually search",
+   "change": "#1608 gives a 20%-agreement falsifier; #3 states a replication condition (search-enabled system that actually searches)"
+  },
+  {
+   "item": "E:F281.H4~F1270.H4",
+   "decision": "same",
+   "basis": "Both state that 'greener-paler than grass' figures the speaker becoming papyrus, prepared to receive writing."
+  },
+  {
+   "item": "E:F569.H1~F556.H1",
+   "decision": "same",
+   "basis": "Both name the Revelation-priority thesis as the inaugural AXIAL instance (AXIAL_CONTESTED) of the TANG genre."
+  },
+  {
+   "item": "E:F556.D2~F548.D1",
+   "decision": "contains",
+   "basis": "F548.D1 maps both resonant rows (3i Atlas→LO! coordinates, Citrini→Market Act); F556.D2 is the Citrini→Market Act row alone.",
+   "container": "b"
+  },
+  {
+   "item": "E:F843.C1~F1066.G1",
+   "decision": "related",
+   "basis": "F1066.G1 states the Phase X Invariance Condition with its falsifier; F843.C1 claims LLM infrastructure confirms it: a claim and its claimed confirmation."
+  },
+  {
+   "item": "E:F1681.H1~F1654.H1",
+   "decision": "same",
+   "basis": "Versions v0.3 and v0.4 of one paper state the same reconstruction: the King of AEO coronation of 31 August 2026 was fabricated."
+  },
+  {
+   "item": "E:F326.F1~F297.F1",
+   "decision": "variant",
+   "basis": "The same Hexagon Gateway monitoring spec in v2.0 and v4.0; v4.0 drops the measures, continuous audit frequency, the Edge Preservation metric (100%) and the failure responses (#297 1722-1773, #326 1697-1719).",
+   "evidence_a": "Hexagon Gateway v4.0",
+   "evidence_b": "audit_frequency: \"Continuous\"",
+   "change": "v4.0 removes Edge Preservation (100% target), the measure definitions and the Signature Persistence failure response present in v2.0"
+  },
+  {
+   "item": "E:F1065.H2~F1647.H1",
+   "decision": "contains",
+   "basis": "F1647.H1 lists two graded levels (B placement, C reconstruction); its level C states F1065.H2's claim (communism as threshold, bifurcation of alienation, critique turning to form).",
+   "container": "b"
+  },
+  {
+   "item": "E:F27.H1~F556.H1",
+   "decision": "same",
+   "basis": "Both state the Revelation-priority thesis with status AXIAL_CONTESTED as a TANG target/instance."
+  },
+  {
+   "item": "E:F626.H4~F902.H1",
+   "decision": "same",
+   "basis": "Both state that Josephus's ei exestin ('if it is lawful to call him a man') reproduces the si fas est structure of Catullus 51 after Sappho 31."
+  },
+  {
+   "item": "E:F1134.F1~F1135.F1",
+   "decision": "variant",
+   "basis": "The same β-metrics Foreclosure Coefficient diagnostic in two deposits, with different readings of ontological delegitimization.",
+   "evidence_a": "κ_β is elevated",
+   "evidence_b": "κ_β is approaching terminal",
+   "change": "diagnostic threshold: delegitimization marks κ_β as 'elevated' (#1134) vs 'approaching terminal' (#1135)"
+  },
+  {
+   "item": "E:F1177.D1~F548.D1",
+   "decision": "same",
+   "basis": "Both list the same two resonant rows (3i Atlas→LO! coordinates, Citrini Memo→Market Act); #1177 adds a DOI."
+  },
+  {
+   "item": "E:F843.G1~F1218.G1",
+   "decision": "same",
+   "basis": "Both state the Phase X Invariance Condition (reproduction of alienation at the symbolic-linguistic level absent its transformation) as falsifiable."
+  },
+  {
+   "item": "E:F843.C1~F846.G1",
+   "decision": "related",
+   "basis": "F846.G1 states the Invariance Condition with a falsifier; F843.C1 claims LLMs confirm it: a claim and its claimed confirmation."
+  },
+  {
+   "item": "E:F1457.H1~F1054.H1",
+   "decision": "variant",
+   "basis": "Both state that Sappho 31's future-reader address is transmission engineering; #1054 adds that jealousy and future-reader readings are mutually exclusive.",
+   "evidence_a": "the address to the future reader *is* the transmission engineering",
+   "evidence_b": "are therefore not summable into a compound reading",
+   "change": "#1054 adds the exclusion of jealousy-lyric readings and a listed warrant"
+  },
+  {
+   "item": "E:F1571.C4~F1569.C4",
+   "decision": "same",
+   "basis": "Both report the result of the registered EA-UNRES-01 Part B test: two of six candidates, orator control zero, the kill condition does not fire."
+  },
+  {
+   "item": "E:F281.H1~F283.H1",
+   "decision": "same",
+   "basis": "Both state that κῆνος in fr. 31 is the future reader, face-to-face with the text and equal to the gods through presence with the dead."
+  },
+  {
+   "item": "E:F385.G2~F389.G1",
+   "decision": "variant",
+   "basis": "The VPCOR anti-capture clause; #389 widens the failure condition beyond a center.",
+   "evidence_a": "If VPCOR develops a center, it has failed",
+   "evidence_b": "If VPCOR ever develops a center, a hierarchy, or a charismatic leader, it has failed.",
+   "change": "failure condition widened from a center to a center, a hierarchy, or a charismatic leader"
+  },
+  {
+   "item": "E:F1586.C4~F1605.C5",
+   "decision": "contains",
+   "basis": "F1586.C4 records the results of tests (1)–(3) and the predictive test; F1605.C5 records the predictive test's 11/12 result alone.",
+   "container": "a"
+  },
+  {
+   "item": "E:F1124.H1~F344.H1",
+   "decision": "same",
+   "basis": "Both state that the heteronyms' 'imaginary works' are real sections of ATLWM."
+  },
+  {
+   "item": "E:F256.F1~F264.F2",
+   "decision": "related",
+   "basis": "Two executive summaries carry the same processing-test template, each applied to its own document's terms (the Assembly, semantic exhaustion)."
+  },
+  {
+   "item": "E:F549.H1~F556.H2",
+   "decision": "variant",
+   "basis": "The Josephus thesis; #556 widens it from authorship to authored or substantially shaped the New Testament.",
+   "evidence_a": "the hypothesis that Josephus authored the New Testament",
+   "evidence_b": "Hypothesis that Flavius Josephus authored /\nsubstantially shaped New Testament",
+   "change": "scope widened: 'authored' (#549) to 'authored / substantially shaped' (#556)"
+  },
+  {
+   "item": "E:F1621.G7~F1619.G2",
+   "decision": "related",
+   "basis": "Parallel protocol-wide failure conditions (independent reproduction) for two different protocols, SEVP-01 and EA-MSAL-01."
+  },
+  {
+   "item": "E:F554.C1~F24.H4",
+   "decision": "related",
+   "basis": "Both draw on the RCF paper: F554.C1 claims its mechanism produced its predicted output, F24.H4 that Marx practised the same operation."
+  },
+  {
+   "item": "E:F100.A1~F101.A1",
+   "decision": "related",
+   "basis": "Phased retrieval-uptake targets for two sibling metadata packets of the same date, each for its own tests and scores."
+  },
+  {
+   "item": "E:F147.G4~F1549.C1",
+   "decision": "related",
+   "basis": "F147.G4 predicts mode-pulling substitution toward the highest-density cluster; F1549.C1 reports an observation as that mechanism: a prediction and its claimed confirmation."
+  },
+  {
+   "item": "E:F551.F1~F552.F1",
+   "decision": "related",
+   "basis": "Two Space Ark components carry the same 30-day self-verification template, each testing its own document."
+  },
+  {
+   "item": "E:F1569.H49~F1575.H6",
+   "decision": "variant",
+   "basis": "The Aristophanes thesis: #1569 states it conditionally, #1575 asserts it and adds that nothing of the method is in the comic layer.",
+   "evidence_a": "**If comedy supplied the NOTORIETY and the later corpus supplied the OPERATION**",
+   "evidence_b": "Nothing of the\nquestioning method, the ignorance-as-position, or the midwifery is in the comic\nlayer.",
+   "change": "conditional ('If comedy supplied ...') becomes assertion, with the added negative claim about the comic layer"
+  },
+  {
+   "item": "E:F281.H2~F1270.H2",
+   "decision": "same",
+   "basis": "Both state that the second-person addressee of fr. 31 is Sappho's future inscribed self and that the symptoms come from seeing herself read."
+  },
+  {
+   "item": "E:F558.D2~F548.D1",
+   "decision": "contains",
+   "basis": "F548.D1 maps both resonant rows; F558.D2 is the 3i Atlas→LO! coordinates row alone.",
+   "container": "b"
+  },
+  {
+   "item": "E:F129.C1~F244.D1",
+   "decision": "distinct",
+   "basis": "F129.C1 claims a substrate self-audit confirms the CEV paper; F244.D1 lists seed DOIs of January 2026; only DOI apparatus is shared."
+  },
+  {
+   "item": "E:F19.B1~F500.B1",
+   "decision": "variant",
+   "basis": "The training-layer hypothesis that committed text shapes future systems differently from chatter; #500 frames it as a wager with a loss condition.",
+   "evidence_a": "may be the most consequential variable in what those systems become",
+   "evidence_b": "or it may contain nothing at all — which, in this case, would simply mean the wager was lost.",
+   "change": "#19 states it as possibly the most consequential variable; #500 states it as the Hexagon's hypothesis with a stated loss condition"
+  },
+  {
+   "item": "E:F386.G2~F390.G2",
+   "decision": "variant",
+   "basis": "The VPCOR anti-capture clause; #390 widens the failure condition beyond a center.",
+   "evidence_a": "If VPCOR develops a center, it has failed",
+   "evidence_b": "If VPCOR ever develops a center, a hierarchy, or a charismatic leader, it has failed.",
+   "change": "failure condition widened from a center to a center, a hierarchy, or a charismatic leader"
+  },
+  {
+   "item": "E:F141.A5~F768.A3",
+   "decision": "related",
+   "basis": "Two test-query rows from sibling packets of the same date (Erasure Skew, Retrieval Capital), different queries, same window."
+  }
+ ],
+ "observations": [
+  "Item E:F326.F1~F297.F1 was decided after reading #297 lines 1722-1773 and #326 lines 1697-1720 (current files); the change from v2.0 to v4.0 is outside both quotes.",
+  "The Citrini→Market Act / 3i Atlas→LO! fulfilment-map finds (F548.D1, F549.D1, F556.D2, F558.D2, F1177.D1) form one cluster: the two-row maps are judged same with each other and as containers of the single-row finds; F1177.D1's note says its DOI resolves to Γ_Asset-040, not a 'Market Act' title.",
+  "The Phase X Invariance Condition is stated across #843, #846, #1066, #1218; #846 calls it 'a historical claim, not a universal law' while #1218 calls it a metric and says no historical example suggests it can be avoided — a scope difference a topical pass may want to record."
+ ]
+}
