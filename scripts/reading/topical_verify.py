@@ -14,6 +14,8 @@ T = ROOT / 'data/reading/triage'
 
 def main():
     Q = {b['batch_id']: b for b in json.load(open(T / 'topical-queue.json'))['batches']}
+    if (T / 'join-queue.json').exists():  # the join pass (JOIN-PROTOCOL.md) uses the same shape
+        Q.update({b['batch_id']: b for b in json.load(open(T / 'join-queue.json'))['batches']})
     paths = {d['deposit']: d.get('path') for d in json.load(open(T / 'deposit-titles.json'))}
     bad = False
     for bid in sys.argv[1:]:

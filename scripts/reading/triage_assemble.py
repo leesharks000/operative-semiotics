@@ -27,12 +27,18 @@ def topical(claims, C, T, byid):
     """The topical pass (TOPICAL-PROTOCOL v1.0): 'same' and 'states' sets merge claims into one, registered at the
     earliest; 'states' keeps the claims' order and changes as dated states; 'series' links distinct claims by name."""
     sets = []
-    for v in sorted(glob.glob(str(T / 'topical/TP*.verified.json'))):
+    for v in sorted(glob.glob(str(T / 'topical/T[PJ]*.verified.json'))):
         if json.load(open(v)).get('verified'):
             out = json.load(open(v.replace('.verified.json', '.json')))
             for g in out['groups']:
                 for st in g.get('sets') or []:
                     sets.append(dict(st, batch=out['batch_id']))
+    # a topical set names claims by the id they had when the topical queue was built: PRED-<find id of the earliest
+    # statement>. Re-dating can make another statement earliest, so a member is resolved through its find.
+    by_find = {st['find']: c['id'] for c in claims for st in c['statements']}
+    res = lambda i: by_find.get('F' + i[5:], i) if i.startswith('PRED-') else i
+    for st in sets:
+        st['claims'] = list(dict.fromkeys(res(i) for i in st['claims']))
     par = {c['id']: c['id'] for c in claims}
 
     def g(i):
@@ -69,8 +75,11 @@ def topical(claims, C, T, byid):
         if st['kind'] == 'states':
             b = next(c for c in new if c['id'] == to[st['claims'][0]])
             ch = st.get('change') or []
-            b['states'] = [{'claim': i, 'registered': reg.get(i), 'change': ch[n - 1] if n and n - 1 < len(ch) else None}
-                           for n, i in enumerate(st['claims'])]
+            rows = [{'claim': i, 'registered': reg.get(i), 'read_order': n + 1,
+                     'change': ch[n - 1] if n and n - 1 < len(ch) else None} for n, i in enumerate(st['claims'])]
+            # states are ordered by registration date (Lee Sharks, 2026-10-17: "we go by registration date"); each
+            # claim keeps the change the reader wrote for the step into it, and the reader's order as read_order
+            b['states'] = sorted(rows, key=lambda r: (r['registered'] or '9999', r['read_order']))
     series = []
     for st in sets:
         if st['kind'] == 'series':
@@ -99,6 +108,16 @@ def main():
     titles = {d['deposit']: d.get('title') for d in json.load(open(T / 'deposit-titles.json'))}
     dates = {d['deposit']: d.get('date') for d in json.load(open(T / 'deposit-titles.json'))}
     ed = (json.load(open(T / 'entry-dates.json'))['dates'] if (T / 'entry-dates.json').exists() else {})
+    # a deposit's date is the registry's current date (dates repaired 2026-10-17 to the date the text states:
+    # alexanarch scripts/repair_dates_from_text_20261017.py); the sweep recorded the dates of 2026-10-15
+    A = ROOT.parent / 'alexanarch/data/registry.json'
+    if A.exists():
+        cur = {int(d['deposit_number']): d.get('date') for d in json.load(open(A))['deposits'] if d.get('deposit_number') is not None}
+        for f in F:
+            if cur.get(f['deposit']):
+                f['date'] = cur[f['deposit']]
+        for k in list(dates):
+            dates[k] = cur.get(k) or dates[k]
     for f in F:  # a find in a data deposit (#3, #4) is dated by its record, not by the file (triage_entry_dates.py)
         if f['id'] in ed:
             f['date'] = ed[f['id']]['date']; f['record'] = ed[f['id']]['record']
