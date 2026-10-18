@@ -275,10 +275,17 @@ def main():
             if k not in seen_ev:
                 seen_ev.add(k); ev.append(e)
         c['evidence'] = ev
+    pre_topical = len(claims)
     claims, series = topical(claims, C, T, byid)
     claims.sort(key=lambda c: (c['registered'] or '9999', c['registered_in'], c['id']))
     by_tier = collections.Counter(c['tier'] for c in claims)
-    summ = {'claims': len(claims), 'merged_by_topical': sum(len(c.get('merged') or []) for c in claims),
+    bridge = {'finds': len(F), 'confirmation_records_C': sum(1 for f in F if f['shape'] == 'C'),
+              'held_out_gone': len(gone), 'held_out_superseded': len(superseded), 'pass2_duplicates': len(dups),
+              'finds_in_claims': len(par), 'claims_after_triage': pre_topical, 'merged_by_topical_and_join': pre_topical - len(claims),
+              'claims': len(claims),
+              'by_shape': {sh: {'finds': sum(1 for f in F if f['shape'] == sh), 'in_claims': sum(1 for i in par if byid[i]['shape'] == sh)}
+                           for sh in 'ABCDEFGH'}}
+    summ = {'bridge': bridge, 'claims': len(claims), 'merged_by_topical': sum(len(c.get('merged') or []) for c in claims),
             'with_states': sum(bool(c.get('states')) for c in claims), 'series': len(series), 'by_tier': dict(by_tier), 'multi_statement': sum(len(c['statements']) > 1 for c in claims),
             'with_evidence': sum(bool(c['evidence']) for c in claims), 'with_register_alias': sum(bool(c['aliases']) for c in claims),
             'confirmations': len(conf), 'held_out_gone': len(gone), 'held_out_superseded': len(superseded),

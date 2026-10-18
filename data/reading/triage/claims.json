@@ -1,6 +1,51 @@
 {
  "what": "Claims of the prediction triage: the sweep's 6162 finds grouped into claims, each registered at its earliest statement. Built by scripts/reading/triage_assemble.py from finds.jsonl, restatements.json and the verified judgment batches; protocol data/reading/TRIAGE-PROTOCOL.md.",
  "summary": {
+  "bridge": {
+   "finds": 6929,
+   "confirmation_records_C": 411,
+   "held_out_gone": 142,
+   "held_out_superseded": 30,
+   "pass2_duplicates": 69,
+   "finds_in_claims": 6296,
+   "claims_after_triage": 4695,
+   "merged_by_topical_and_join": 310,
+   "claims": 4385,
+   "by_shape": {
+    "A": {
+     "finds": 306,
+     "in_claims": 290
+    },
+    "B": {
+     "finds": 817,
+     "in_claims": 794
+    },
+    "C": {
+     "finds": 411,
+     "in_claims": 0
+    },
+    "D": {
+     "finds": 463,
+     "in_claims": 448
+    },
+    "E": {
+     "finds": 267,
+     "in_claims": 254
+    },
+    "F": {
+     "finds": 1432,
+     "in_claims": 1387
+    },
+    "G": {
+     "finds": 1299,
+     "in_claims": 1265
+    },
+    "H": {
+     "finds": 1934,
+     "in_claims": 1858
+    }
+   }
+  },
   "claims": 4385,
   "merged_by_topical": 310,
   "with_states": 58,
