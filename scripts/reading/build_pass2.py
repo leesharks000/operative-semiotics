@@ -17,7 +17,8 @@ Two kinds of text were never read under READING-PROTOCOL:
      converted to plain text (pdftotext; pandoc) into derived/attachments/. Excluded, and listed with the reason:
      images and binary data (png, jpg, parquet, gz); a file whose text already stands in a deposit text the sweep
      read, or in a derived own-voice text (30 sampled 10-word runs, 27 or more found there); JSON over 15,000 words
-     (machine-written data rows); a file of machine transcripts (other parties' speech, as for #3).
+     (machine-written data rows); a file of machine transcripts (other parties' speech, as for #3); the edition of the
+     capture registry's commentary (words-no-good), which is #3's own-voice fields, read through its derived texts.
      Each attachment is tied to the deposits that link it (registry fields, deposit texts, the AXN-<hex> folder).
 
 Rows are units (a deposit's new text, or one attachment) with the line ranges to read; batches are cut at 35,000
@@ -197,6 +198,11 @@ def main():
         nw = len(text.split())
         if nw == 0:
             excluded.append({"unit": unit, "deposits": deps, "path": str(path), "reason": "no text extracted"}); continue
+        if rel.startswith("words-no-good/capture-registry-") and "commentary" in rel:
+            excluded.append({"unit": unit, "deposits": deps, "path": str(path), "words": nw,
+                             "reason": "an edition of the capture registry (#3) commentary: its readings, analyses and findings are "
+                                       "read through #3's derived own-voice texts (38 of 60 sampled runs verbatim there; the rest are "
+                                       "the edition's headings and the records' one-line descriptions)"}); continue
         if "transcripts" in pathlib.Path(rel).name.lower():
             excluded.append({"unit": unit, "deposits": deps, "path": str(path), "words": nw,
                              "reason": "machine transcripts (other parties' speech: What NOT to record)"}); continue
