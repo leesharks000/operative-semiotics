@@ -533,7 +533,7 @@ def build(export=None):
            f'<nav class="topnav"><a class="home" href="/">Operative Semiotics</a><a href="/open">Predictions &amp; builds register</a><a class="data" href="/predictions/index.json">index.json</a></nav>'
            f'<h1>Prediction Index</h1><p class="lede">The prediction-bearing passages of the Crimson Hexagonal Archive, read out of a defined corpus — the seated text in full, text of every deposit in full, the own-voice fields of its two large datasets, the text its repairs added and its attachments, with every exclusion recorded — quoted verbatim and checked against the texts, then grouped: the same claim stated in several deposits is one claim, registered at its earliest statement (the date the text gives the passage, where a reader established one); a claim revised over time keeps its dated states. A second reading of 40 random deposits measured the sweep\'s recall. '
            f'{len(C)} claims in {len(toc)} subject pages, under the archive\'s own lines.</p><div class="tiles">{tiles}</div><ul style="font-size:.9em">{defs}</ul>'
-           + ''.join(secs) + f'<footer>The data: <a href="/predictions/index.json">index.json</a> (table of contents) · <a href="{DATASET}">the dataset in Alexanarch</a> (every claim, every statement quoted) · the curated register of open commitments: <a href="/open">/open</a>.</footer></main></body></html>')
+           + ''.join(secs) + f'<footer>The method, locations and organization: <a href="{ARCH}/s/records/1684/">EA-PREDICTION-INDEX-01</a> (Alexanarch #1684) · the data: <a href="/predictions/index.json">index.json</a> (table of contents) · <a href="{DATASET}">the dataset in Alexanarch</a> (every claim, every statement quoted) · the curated register of open commitments: <a href="/open">/open</a>.</footer></main></body></html>')
     (OUT / 'index.html').write_text(idx, encoding='utf-8')
     (OUT / 'index.json').write_text(json.dumps({'what': 'Table of contents of the prediction index. Built by scripts/index/build_index.py.',
                                                 'generated': today, 'claims': len(C), 'pages': toc}, ensure_ascii=False, indent=1), encoding='utf-8')
@@ -602,6 +602,7 @@ def build(export=None):
                                  'record': 'operative-semiotics data/reading/recall-result.json'},
                'counts': summ.get('bridge'),
                'date': today, 'description': f'{len(C)} claims read out of the archive\'s deposits by the prediction sweep (2026-10-15) and its second reading pass over repaired text and attachments (2026-10-18), and grouped by its triage, topical and join passes (2026-10-17, 2026-10-18): each registered at its earliest statement, every statement quoted. Generated from operative-semiotics data/reading/; never hand-edit.',
+               'described_by': {'deposit': 1684, 'id': 'EA-PREDICTION-INDEX-01', 'record': f'{ARCH}/s/records/1684/', 'anchors_build': 'PI-2026-10-18-9b0e16492f'},
                'canonical_home': f'{HOST}/predictions', 'table_of_contents': f'{HOST}/predictions/index.json',
                'record_form': f'{HOST}/predictions/{{slug}}', 'record_json_form': f'{HOST}/predictions/{{slug}}/record.json',
                'source_of_truth': 'operative-semiotics — data/reading/ (finds.jsonl; triage/claims.json)',
