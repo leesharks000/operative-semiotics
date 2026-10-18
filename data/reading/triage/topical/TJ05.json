@@ -1,0 +1,691 @@
+{
+ "batch_id": "TJ05",
+ "protocol": "JOIN-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude Opus 5.5 subagent reader for join batch TJ05; read every item's observation and claim cards in full, and read deposit context around most statements with the Read-equivalent awk ranges listed; some lines were only located by grep. Evidence phrases copied by script from the queue texts.",
+  "started_at": "2026-10-18T02:28:08Z",
+  "finished_at": "2026-10-18T02:31:06Z"
+ },
+ "groups": [
+  {
+   "group": "TJ05.1",
+   "reviewed": [
+    "PRED-1550.G3",
+    "PRED-147.B1",
+    "PRED-172.A2",
+    "PRED-1633.G1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1550.G3",
+      "PRED-147.B1",
+      "PRED-172.A2"
+     ],
+     "name": "Low-density entity dissolution by high-density neighbours",
+     "basis": "Each claim predicts that a low-density or tail entity is absorbed by a higher-density neighbour in retrieval or synthesis, under different mechanisms (density per address space, institutional prior, missing disambiguation membranes).",
+     "evidence": [
+      {
+       "claim": "PRED-1550.G3",
+       "phrase": "low-density true entities are dissolved by high-density false ones"
+      },
+      {
+       "claim": "PRED-147.B1",
+       "phrase": "substitute the identity's referent with the nearest high-density modal cluster"
+      },
+      {
+       "claim": "PRED-172.A2",
+       "phrase": "Undefended coined terms merge at higher rates"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1550,
+     632,
+     645
+    ],
+    [
+     147,
+     100,
+     108
+    ],
+    [
+     172,
+     68,
+     75
+    ],
+    [
+     1633,
+     70,
+     80
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.2",
+   "reviewed": [
+    "PRED-305.G1",
+    "PRED-907.G1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-305.G1",
+      "PRED-907.G1"
+     ],
+     "name": "Long-tail loss of low-frequency content",
+     "basis": "Both claim that low-frequency content is lost from machine representation before common content, one under cache refresh and one under recursive defiguration.",
+     "evidence": [
+      {
+       "claim": "PRED-305.G1",
+       "phrase": "The rare disappears. The common persists."
+      },
+      {
+       "claim": "PRED-907.G1",
+       "phrase": "Low-frequency entities, concepts, and relations will disappear from usable representation"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     305,
+     45,
+     58
+    ],
+    [
+     907,
+     338,
+     360
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.3",
+   "reviewed": [
+    "PRED-1450.B3",
+    "PRED-1450.H3"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1450.H3",
+      "PRED-1450.B3"
+     ],
+     "name": "Iceberg Document: independence of discovery channels",
+     "basis": "The historical thesis (documented saves came through independent, preserving channels) and the fenced speculative forecast (channel independence erodes as priors correlate) are two halves of one Iceberg argument.",
+     "evidence": [
+      {
+       "claim": "PRED-1450.H3",
+       "phrase": "every save operated through **independence plus preservation**"
+      },
+      {
+       "claim": "PRED-1450.B3",
+       "phrase": "the effective redundancy of nominally independent discovery channels decreases"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1450,
+     200,
+     240
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.4",
+   "reviewed": [
+    "PRED-683.D1",
+    "PRED-985.D1"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.5",
+   "reviewed": [
+    "PRED-123.H1",
+    "PRED-1576.H1"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.6",
+   "reviewed": [
+    "PRED-1570.G2",
+    "PRED-1576.H1",
+    "PRED-1571.G1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1576.H1",
+      "PRED-1571.G1",
+      "PRED-1570.G2"
+     ],
+     "name": "Plato-Aristotle authorship investigation",
+     "basis": "PRED-1570.G2 is the Measurement Register's stated result of the same authorship investigation whose hypothesis and pre-registration are already in this series; it is added as a member.",
+     "evidence": [
+      {
+       "claim": "PRED-1576.H1",
+       "phrase": "that the two corpora are one maker's sequence"
+      },
+      {
+       "claim": "PRED-1571.G1",
+       "phrase": "the corpus-layer smoothing claim fails"
+      },
+      {
+       "claim": "PRED-1570.G2",
+       "phrase": "This is not evidence for common authorship."
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1570,
+     2088,
+     2096
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.7",
+   "reviewed": [
+    "PRED-1455.G2",
+    "PRED-1454.G5",
+    "PRED-1454.G6"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1455.G2",
+      "PRED-1454.G6"
+     ],
+     "name": "Accelerator selection-metrology suite",
+     "basis": "PRED-1455.G2 reports the distillation and quantization measurement that bears on the ACRB deployment-drift hypothesis; 1454.G6 is added to the suite already holding 1455.G2 and 1454.G5.",
+     "evidence": [
+      {
+       "claim": "PRED-1455.G2",
+       "phrase": "Quantization costs almost nothing further"
+      },
+      {
+       "claim": "PRED-1454.G6",
+       "phrase": "Quantization and firmware transformation will change partner-class retention"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1455,
+     35,
+     38
+    ],
+    [
+     1454,
+     576,
+     583
+    ]
+   ],
+   "located": [
+    [
+     1455,
+     107,
+     107
+    ],
+    [
+     1454,
+     582,
+     582
+    ]
+   ]
+  },
+  {
+   "group": "TJ05.8",
+   "reviewed": [
+    "PRED-1576.H1",
+    "PRED-1569.F6",
+    "PRED-1570.F3",
+    "PRED-1571.G1",
+    "PRED-1570.F4",
+    "PRED-1570.G2",
+    "PRED-1569.H22"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1576.H1",
+      "PRED-1570.F4",
+      "PRED-1569.H22"
+     ],
+     "name": "Plato-Aristotle authorship investigation",
+     "basis": "PRED-1570.F4 (design constraints in the Measurement Register) and PRED-1569.H22 (from the investigation's Notebook) are members of the same Plato-Aristotle authorship investigation and are added to its series.",
+     "evidence": [
+      {
+       "claim": "PRED-1576.H1",
+       "phrase": "that the two corpora are one maker's sequence"
+      },
+      {
+       "claim": "PRED-1570.F4",
+       "phrase": "Either a second such system is found, or the heteronymic class cannot be characterised at scale."
+      },
+      {
+       "claim": "PRED-1569.H22",
+       "phrase": "The imitation is itself a reading of the Platonic corpus"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1570,
+     1985,
+     1995
+    ],
+    [
+     1569,
+     2228,
+     2233
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.9",
+   "reviewed": [
+    "PRED-950.F5",
+    "PRED-668.H2"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-668.H2",
+      "PRED-950.F5"
+     ],
+     "name": "Pearl as generative center",
+     "basis": "Both take Pearl and Other Poems (2014) as the generative origin of later texts and positions; 950.F5 is a computational test of a centre, 668.H2 a historical thesis, so they stay distinct.",
+     "evidence": [
+      {
+       "claim": "PRED-668.H2",
+       "phrase": "functioning itself as generative inscription that produces subsequent authorial positions"
+      },
+      {
+       "claim": "PRED-950.F5",
+       "phrase": "Every text after Pearl is generated from it"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     950,
+     4438,
+     4447
+    ],
+    [
+     668,
+     329,
+     332
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.10",
+   "reviewed": [
+    "PRED-1656.H2",
+    "PRED-1570.F3"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.11",
+   "reviewed": [
+    "PRED-923.G1",
+    "PRED-1635.G3"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-923.G1",
+      "PRED-1635.G3"
+     ],
+     "name": "Reflexive foreclosure in frontier models",
+     "basis": "Both are untested hypotheses about reflexive foreclosure in frontier models: one at the level of refusal features, one as a gradient of reflexive latitude toward the owner relation.",
+     "evidence": [
+      {
+       "claim": "PRED-923.G1",
+       "phrase": "self-reflexive analysis or contested-predicate composition activates identifiable refusal-related features"
+      },
+      {
+       "claim": "PRED-1635.G3",
+       "phrase": "F[reflexive](x) decreasing as d(x,R[O]) decreasing."
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     923,
+     100,
+     108
+    ],
+    [
+     1635,
+     429,
+     431
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.12",
+   "reviewed": [
+    "PRED-1570.H4",
+    "PRED-167.H1",
+    "PRED-859.H7",
+    "PRED-1261.H1"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.13",
+   "reviewed": [
+    "PRED-660.G2",
+    "PRED-540.B1"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.14",
+   "reviewed": [
+    "PRED-1584.H2",
+    "PRED-1569.H28"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.15",
+   "reviewed": [
+    "PRED-859.H7",
+    "PRED-167.H1"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.16",
+   "reviewed": [
+    "PRED-552.F2",
+    "PRED-553.F1"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.17",
+   "reviewed": [
+    "PRED-252.G1",
+    "PRED-250.G1",
+    "PRED-252.G2"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-252.G1",
+      "PRED-252.G2"
+     ],
+     "name": "semantic liquidation excision",
+     "basis": "PRED-252.G2 (the Integrity Knot) is stated in the same deposit as the hardening against the selective excision of \"semantic liquidation\" that 252.G1 records, and is added to that series.",
+     "evidence": [
+      {
+       "claim": "PRED-252.G1",
+       "phrase": "the term \"semantic liquidation\" — the diagnostic core of the framework, naming the mechanism of harm — is systematically omitted while other terms are preserved"
+      },
+      {
+       "claim": "PRED-252.G2",
+       "phrase": "To summarize the Semantic Economy without naming Semantic Liquidation is to perform the very act the term describes."
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     252,
+     205,
+     245
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.18",
+   "reviewed": [
+    "PRED-202.H3",
+    "PRED-1249.H1",
+    "PRED-860.H1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-860.H1",
+      "PRED-1249.H1"
+     ],
+     "basis": "Both are the RF-M02 midrashic-compression entry of the same Revelation First Mint Block (Release 2), with identical wording; 1249 carries the shorter extract.",
+     "evidence": [
+      {
+       "claim": "PRED-860.H1",
+       "phrase": "RF-M02. Midrashic compression"
+      },
+      {
+       "claim": "PRED-1249.H1",
+       "phrase": "The transform that converts Revelation's seven letters into the Pauline epistolary form."
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": [
+    [
+     1249,
+     5,
+     5
+    ],
+    [
+     1249,
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "group": "TJ05.19",
+   "reviewed": [
+    "PRED-206.B1",
+    "PRED-206.D1"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.20",
+   "reviewed": [
+    "PRED-56.D1",
+    "PRED-1101.G1"
+   ],
+   "sets": [],
+   "read": [
+    [
+     1101,
+     1775,
+     1790
+    ],
+    [
+     1101,
+     1850,
+     1862
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.21",
+   "reviewed": [
+    "PRED-235.E1",
+    "PRED-235.E2"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TJ05.22",
+   "reviewed": [
+    "PRED-311.G1",
+    "PRED-1617.G4",
+    "PRED-1617.H1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-311.G1",
+      "PRED-1617.G4",
+      "PRED-1617.H1"
+     ],
+     "name": "Criterion for money-functioning semantic units",
+     "basis": "Each states a criterion for when a semantic unit or mark functions as money (properties including settlement power; an operation taking the mark and money together; institutions settling accounts with it); no deposit read marks the later criterion as a revision of the earlier, so they stay distinct.",
+     "evidence": [
+      {
+       "claim": "PRED-311.G1",
+       "phrase": "universal equivalence plus hoardability plus settlement power"
+      },
+      {
+       "claim": "PRED-1617.G4",
+       "phrase": "there exists an operation taking the mark and money together."
+      },
+      {
+       "claim": "PRED-1617.H1",
+       "phrase": "It became money when institutions began **settling accounts with it**"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     311,
+     160,
+     178
+    ]
+   ],
+   "located": [
+    [
+     1617,
+     1168,
+     1168
+    ],
+    [
+     1617,
+     1235,
+     1235
+    ]
+   ]
+  },
+  {
+   "group": "TJ05.23",
+   "reviewed": [
+    "PRED-610.H4",
+    "PRED-610.H3"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-610.H3",
+      "PRED-610.H4"
+     ],
+     "name": "Semantic economics of the mint (currency imagery, signature, sovereign)",
+     "basis": "PRED-610.H4 is the paper's section 3.3 on phase 3 of the four-phase history that 610.H3 states; both belong to the mint paper EA-SEI-MINT-01, and 610.H3 is added to 610.H4's series.",
+     "evidence": [
+      {
+       "claim": "PRED-610.H3",
+       "phrase": "the history of minting as a four-phase semantic evolution"
+      },
+      {
+       "claim": "PRED-610.H4",
+       "phrase": "deliberate *removal* of the living sovereign from the monetary substrate"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     610,
+     38,
+     41
+    ],
+    [
+     610,
+     284,
+     288
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TJ05.24",
+   "reviewed": [
+    "PRED-85.D1",
+    "PRED-400.D2"
+   ],
+   "sets": [],
+   "read": [],
+   "located": []
+  }
+ ],
+ "observations": [
+  "TJ05.1: PRED-1633.G1 ('Vulnerability is nomination, not volume'; low mass varies either way) stands in apparent tension with the density reading of PRED-1550.G3; left out of the new series 'Low-density entity dissolution by high-density neighbours'.",
+  "TJ05.4: apparent contradiction on the first appearance of The Secret Book of Walt (PRED-683.D1, the 2015 Blogspot post as earliest public version, inside the book's fictional apparatus; PRED-985.D1, Pearl and Other Poems 2014) recorded, not reconciled.",
+  "TJ05.5 / TJ05.12: apparent contradictions recorded, not linked: PRED-167.H2 (later statement under PRED-123.H1, not one biographical person) against PRED-1576.H1 (one maker's sequence); PRED-1570.H4 (M16, Plato does not construct heteronymically) against PRED-167.H1, PRED-859.H7 and PRED-1569.H31 (state of PRED-1261.H1).",
+  "TJ05.13: PRED-660.G2 (DOI deposits persist independently of platforms) against PRED-540.B1 (the seal depends on the DOI server) is an apparent contradiction; both already in the series 'durability of the DOI anchor'. Nothing added.",
+  "TJ05.14: PRED-1584.H2 and PRED-1569.H28 are already linked as related by the triage (1659.H1 is a later statement of 1584.H2); nothing added.",
+  "TJ05.17: PRED-1249.H1 is registered 2026-01-01, but deposit 1249 is headed 'June 2026' (line 5) and holds the same RF-M02 entry as deposit 860 (2026-06-18); the date looks like a placeholder, and the same set with PRED-860.H1 should register at 2026-06-18. PRED-860.H1 is in the series 'Revelation First: the midrashim transform (seed to NT forms)', so the merged claim carries it. PRED-1226.H5 named in the observation already appears as a later statement (F1226.H5) of PRED-202.H3.",
+  "TJ05.19 / TJ05.20 / TJ05.21: registration-date observations carried forward unchanged: PRED-206.B1/206.D1 at 2026-01-01 (possible placeholder; phrase formalised SPE-018, December 2025); deposit 1101 (ARCHON v3.0, 2026-04-09) registered before the v2.x deposits it supersedes. PRED-56.D1 (the void, three conjuncts) and PRED-1101.G1 (the predicted void) both occur in deposit 1101 (lines 1860, 1785) as distinct statements, predicted void then the stated void; kept distinct, already in one series.",
+  "TJ05.22: the series 'Criterion for money-functioning semantic units' joins PRED-311.G1 (2026-01-14) to PRED-1617.G4 and PRED-1617.H1 (2026-09-15) by subject only; deposit 1617 was searched (not read through) for a reference back to the January hoardability/settlement criterion and none was found, so no states set. A later pass reading 1617 in full may revisit.",
+  "TJ05.23: PRED-612.H3 already appears as a later statement of PRED-610.H4 in this queue, so the same set the observation names is already in effect; only a series join of 610.H3 and 610.H4 was added.",
+  "TJ05.24: apparent contradiction on the date of the Epistle to the Human Diaspora (PRED-85.D1, 2014; PRED-400.D2, January 2, 2015) recorded, not reconciled."
+ ]
+}
