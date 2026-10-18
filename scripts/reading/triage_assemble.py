@@ -23,6 +23,74 @@ TIER = [('A', 'forecast'), ('B', 'forecast'), ('E', 'forecast'), ('G', 'standing
         ('H', 'historical thesis'), ('D', 'priority record')]
 
 
+def topical(claims, C, T, byid):
+    """The topical pass (TOPICAL-PROTOCOL v1.0): 'same' and 'states' sets merge claims into one, registered at the
+    earliest; 'states' keeps the claims' order and changes as dated states; 'series' links distinct claims by name."""
+    sets = []
+    for v in sorted(glob.glob(str(T / 'topical/TP*.verified.json'))):
+        if json.load(open(v)).get('verified'):
+            out = json.load(open(v.replace('.verified.json', '.json')))
+            for g in out['groups']:
+                for st in g.get('sets') or []:
+                    sets.append(dict(st, batch=out['batch_id']))
+    par = {c['id']: c['id'] for c in claims}
+
+    def g(i):
+        while par[i] != i:
+            par[i] = par[par[i]]; i = par[i]
+        return i
+    for st in sets:
+        if st['kind'] in ('same', 'states'):
+            ids = [i for i in st['claims'] if i in par]
+            for i in ids[1:]:
+                par[g(i)] = g(ids[0])
+    comp = collections.defaultdict(list)
+    for c in claims:
+        comp[g(c['id'])].append(c)
+    key = lambda c: (c['registered'] or '9999', c['registered_in'], c['id'])
+    new, to = [], {}
+    for mem in comp.values():
+        mem.sort(key=key); base = mem[0]
+        for m in mem:
+            to[m['id']] = base['id']
+        if len(mem) > 1:
+            base = dict(base)
+            base['merged'] = [m['id'] for m in mem[1:]]
+            base['statements'] = sorted([s for m in mem for s in m['statements']], key=lambda s: (s['date'] or '9999', s['deposit']))
+            base['shapes'] = sorted({x for m in mem for x in m['shapes']})
+            base['tier'] = next(t for sh, t in TIER if sh in base['shapes'])
+            for k in ('aliases', 'flags'):
+                base[k] = sorted({x for m in mem for x in m.get(k) or []})
+            for k in ('evidence', 'related', 'contains', 'in'):
+                base[k] = [x for m in mem for x in m.get(k) or []]
+        new.append(base)
+    reg = {c['id']: c['registered'] for c in claims}
+    for st in sets:
+        if st['kind'] == 'states':
+            b = next(c for c in new if c['id'] == to[st['claims'][0]])
+            ch = st.get('change') or []
+            b['states'] = [{'claim': i, 'registered': reg.get(i), 'change': ch[n - 1] if n and n - 1 < len(ch) else None}
+                           for n, i in enumerate(st['claims'])]
+    series = []
+    for st in sets:
+        if st['kind'] == 'series':
+            mem = sorted({to.get(i, i) for i in st['claims']})
+            series.append({'name': st.get('name'), 'claims': mem, 'basis': st.get('basis'), 'batch': st['batch']})
+    names = collections.defaultdict(list)
+    for x in series:
+        for i in x['claims']:
+            names[i].append(x['name'])
+    for c in new:
+        for k in ('related', 'contains', 'in'):
+            if c.get(k):
+                c[k] = sorted({to.get(i, i) for i in c[k]} - {c['id']})
+        if names.get(c['id']):
+            c['series'] = sorted(set(names[c['id']]))
+    json.dump({'what': 'Series of the topical pass: distinct claims linked as one programme, battery or template.',
+               'series': series}, open(T / 'series.json', 'w'), ensure_ascii=False, indent=1)
+    return new, series
+
+
 def main():
     F = [json.loads(l) for l in open(R / 'finds.jsonl')]
     for f, l in zip(F, open(T / 'finds.ids.jsonl')):
@@ -136,9 +204,11 @@ def main():
     for c in claims:
         c['related'] = sorted(set(c['related']))
         c['evidence'].sort(key=lambda e: e['date'] or '')
+    claims, series = topical(claims, C, T, byid)
     claims.sort(key=lambda c: (c['registered'] or '9999', c['registered_in'], c['id']))
     by_tier = collections.Counter(c['tier'] for c in claims)
-    summ = {'claims': len(claims), 'by_tier': dict(by_tier), 'multi_statement': sum(len(c['statements']) > 1 for c in claims),
+    summ = {'claims': len(claims), 'merged_by_topical': sum(len(c.get('merged') or []) for c in claims),
+            'with_states': sum(bool(c.get('states')) for c in claims), 'series': len(series), 'by_tier': dict(by_tier), 'multi_statement': sum(len(c['statements']) > 1 for c in claims),
             'with_evidence': sum(bool(c['evidence']) for c in claims), 'with_register_alias': sum(bool(c['aliases']) for c in claims),
             'confirmations': len(conf), 'held_out_gone': len(gone), 'batches_verified': sorted(done), 'batches_pending': pending}
     json.dump({'what': 'Claims of the prediction triage: the sweep\'s 6162 finds grouped into claims, each registered at its '
