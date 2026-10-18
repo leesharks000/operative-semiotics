@@ -29,6 +29,10 @@ def main():
         f['id'] = json.loads(l)['id']
     byid = {f['id']: f for f in F}
     titles = {d['deposit']: d.get('title') for d in json.load(open(T / 'deposit-titles.json'))}
+    dates = {d['deposit']: d.get('date') for d in json.load(open(T / 'deposit-titles.json'))}
+    for f in F:  # finds of deposits read outside the queue carry no date: the registry's
+        if not f.get('date'):
+            f['date'] = dates.get(f['deposit'])
     q = json.load(open(T / 'queue.json'))
     done, pending = {}, []
     for b in q['batches']:
@@ -104,7 +108,10 @@ def main():
         cid = 'PRED-' + mem[0][1:]
         for i in mem:
             of[i] = cid
-        claims.append({'id': cid, 'tier': tier, 'shapes': sorted(shapes), 'registered': first.get('date'),
+        flags = []
+        if first.get('date') == '2026-01-01':
+            flags.append('registered on 2026-01-01, a date several readers found to be a placeholder (#1238, #1242, #1243, #1249)')
+        claims.append({'id': cid, 'tier': tier, 'flags': flags, 'shapes': sorted(shapes), 'registered': first.get('date'),
                        'registered_in': first['deposit'], 'title': titles.get(first['deposit']),
                        'statement': first['quote'], 'falsifier': first.get('falsifier_quote') or None,
                        'window': first.get('window') or None,
