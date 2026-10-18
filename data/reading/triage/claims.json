@@ -1,18 +1,18 @@
 {
  "what": "Claims of the prediction triage: the sweep's 6162 finds grouped into claims, each registered at its earliest statement. Built by scripts/reading/triage_assemble.py from finds.jsonl, restatements.json and the verified judgment batches; protocol data/reading/TRIAGE-PROTOCOL.md.",
  "summary": {
-  "claims": 4137,
-  "merged_by_topical": 309,
+  "claims": 4134,
+  "merged_by_topical": 312,
   "with_states": 58,
   "series": 550,
   "by_tier": {
    "forecast": 955,
    "priority record": 273,
-   "historical thesis": 1039,
+   "historical thesis": 1036,
    "standing claim": 912,
    "unbuilt test": 958
   },
-  "multi_statement": 928,
+  "multi_statement": 927,
   "with_evidence": 113,
   "with_register_alias": 157,
   "confirmations": 339,
@@ -5031,9 +5031,10 @@
   },
   {
    "id": "PRED-248.H2",
-   "tier": "historical thesis",
+   "tier": "standing claim",
    "flags": [],
    "shapes": [
+    "G",
     "H"
    ],
    "registered": "2026-01-05",
@@ -5229,6 +5230,16 @@
      "shape": "H"
     },
     {
+     "find": "F1226.G1",
+     "deposit": 1226,
+     "date": "2026-06-14",
+     "lines": [
+      135,
+      139
+     ],
+     "shape": "G"
+    },
+    {
      "find": "F837.H1",
      "deposit": 837,
      "date": "2026-06-16",
@@ -5259,6 +5270,7 @@
     "PRED-645.H2",
     "PRED-202.H4",
     "PRED-203.H1",
+    "PRED-1226.G1",
     "PRED-837.H1"
    ],
    "contains": [
@@ -8986,6 +8998,16 @@
      "shape": "H"
     },
     {
+     "find": "F283.H7",
+     "deposit": 283,
+     "date": "2026-01-09",
+     "lines": [
+      531,
+      531
+     ],
+     "shape": "H"
+    },
+    {
      "find": "F1270.H7",
      "deposit": 1270,
      "date": "2026-01-09",
@@ -9001,12 +9023,32 @@
      }
     },
     {
+     "find": "F1270.H6",
+     "deposit": 1270,
+     "date": "2026-01-09",
+     "lines": [
+      142,
+      142
+     ],
+     "shape": "H"
+    },
+    {
      "find": "F576.H5",
      "deposit": 576,
      "date": "2026-03-16",
      "lines": [
       326,
       326
+     ],
+     "shape": "H"
+    },
+    {
+     "find": "F1167.H2",
+     "deposit": 1167,
+     "date": "2026-03-16",
+     "lines": [
+      468,
+      468
      ],
      "shape": "H"
     },
@@ -9019,19 +9061,44 @@
       145
      ],
      "shape": "H"
+    },
+    {
+     "find": "F1483.H4",
+     "deposit": 1483,
+     "date": "2026-08-15",
+     "lines": [
+      85,
+      85
+     ],
+     "shape": "H"
+    },
+    {
+     "find": "F1484.H5",
+     "deposit": 1484,
+     "date": "2026-08-15",
+     "lines": [
+      85,
+      85
+     ],
+     "shape": "H"
     }
    ],
    "aliases": [],
    "evidence": [],
    "related": [],
    "merged": [
+    "PRED-283.H7",
     "PRED-576.H5",
-    "PRED-134.H2"
+    "PRED-1167.H2",
+    "PRED-134.H2",
+    "PRED-1483.H4"
    ],
    "contains": [],
    "in": [],
    "series": [
-    "Future-reader reading applied (Sappho 31 lineage)"
+    "Future-reader reading applied (Sappho 31 lineage)",
+    "RCF anticipation instances",
+    "Sappho 31's open positions taken by receivers"
    ]
   },
   {
@@ -9208,73 +9275,6 @@
    "in": [],
    "series": [
     "The Sapphic operator and its receivers"
-   ]
-  },
-  {
-   "id": "PRED-283.H7",
-   "tier": "historical thesis",
-   "flags": [],
-   "shapes": [
-    "H"
-   ],
-   "registered": "2026-01-09",
-   "registered_in": 283,
-   "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving",
-   "statement": "Catullus 51 is not imitation but instantiation. Catullus **is** κῆνος—\"that man\" who sits face-to-face with Sappho's text, hears her voice across six centuries, and experiences the impossible presence of the dead.",
-   "falsifier": null,
-   "window": "Catullus 51",
-   "statements": [
-    {
-     "find": "F283.H7",
-     "deposit": 283,
-     "date": "2026-01-09",
-     "lines": [
-      531,
-      531
-     ],
-     "shape": "H"
-    },
-    {
-     "find": "F1270.H6",
-     "deposit": 1270,
-     "date": "2026-01-09",
-     "lines": [
-      142,
-      142
-     ],
-     "shape": "H"
-    },
-    {
-     "find": "F1483.H4",
-     "deposit": 1483,
-     "date": "2026-08-15",
-     "lines": [
-      85,
-      85
-     ],
-     "shape": "H"
-    },
-    {
-     "find": "F1484.H5",
-     "deposit": 1484,
-     "date": "2026-08-15",
-     "lines": [
-      85,
-      85
-     ],
-     "shape": "H"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [],
-   "merged": [
-    "PRED-1483.H4"
-   ],
-   "contains": [],
-   "in": [],
-   "series": [
-    "Sappho 31's open positions taken by receivers"
    ]
   },
   {
@@ -27762,7 +27762,8 @@
    "evidence": [],
    "related": [],
    "series": [
-    "Sappho 31 transmitted into Augustine's Confessions"
+    "Sappho 31 transmitted into Augustine's Confessions",
+    "Sappho 31's open positions taken by receivers"
    ]
   },
   {
@@ -41453,38 +41454,6 @@
    "aliases": [],
    "evidence": [],
    "related": []
-  },
-  {
-   "id": "PRED-1167.H2",
-   "tier": "historical thesis",
-   "flags": [],
-   "shapes": [
-    "H"
-   ],
-   "registered": "2026-03-16",
-   "registered_in": 1167,
-   "title": "Day and Night: Conversations with Sapphic Desire",
-   "statement": "[SEMANTIC ANCHOR: First recorded activation of σ_S. Catullus as κῆνος. Proof of retrocausal canon formation.]",
-   "falsifier": null,
-   "window": "Catullus 51",
-   "statements": [
-    {
-     "find": "F1167.H2",
-     "deposit": 1167,
-     "date": "2026-03-16",
-     "lines": [
-      468,
-      468
-     ],
-     "shape": "H"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [],
-   "series": [
-    "RCF anticipation instances"
-   ]
   },
   {
    "id": "PRED-1168.B1",
@@ -75274,7 +75243,8 @@
    "in": [],
    "series": [
     "Sappho 31 erratum chain",
-    "Sappho 31 transmission programme"
+    "Sappho 31 transmission programme",
+    "Sappho 31's open positions taken by receivers"
    ]
   },
   {
@@ -94290,38 +94260,6 @@
    ]
   },
   {
-   "id": "PRED-1226.G1",
-   "tier": "standing claim",
-   "flags": [],
-   "shapes": [
-    "G"
-   ],
-   "registered": "2026-06-14",
-   "registered_in": 1226,
-   "title": "The Josephus Thesis Is Not the Piso Hypothesis: Heteronymic Authorship, Available Reading, and Evidentiary Tiering (EA-MPAI-JOSEPHUS-01 v1.1)",
-   "statement": "The Josephus Thesis is falsified if:\n\n(a) Direct archaeological evidence establishes independent authorship of any NT book by a person other than Josephus or his literary circle (e.g., an autograph manuscript, a contemporary letter referencing an independent author by name).\n\n(b) The heteronymic theory is shown to be inapplicable to ancient texts — i.e., the concept of heteronymy requires modern conditions that did not obtain in the first century.",
-   "falsifier": "(c) The Slavonic Josephus is conclusively dated to a period incompatible with NT composition.\n\n(d) The literary-structural parallels between the NT books can be fully explained by shared Second Temple background without any genetic relationship to Revelation — i.e., the midrashim transform is trivial (the ∮ verification condition fails to close).",
-   "window": null,
-   "statements": [
-    {
-     "find": "F1226.G1",
-     "deposit": 1226,
-     "date": "2026-06-14",
-     "lines": [
-      135,
-      139
-     ],
-     "shape": "G"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [],
-   "series": [
-    "The Josephus Thesis"
-   ]
-  },
-  {
    "id": "PRED-1400.D1",
    "tier": "priority record",
    "flags": [],
@@ -94591,7 +94529,10 @@
    ],
    "aliases": [],
    "evidence": [],
-   "related": []
+   "related": [],
+   "series": [
+    "Sappho 31's open positions taken by receivers"
+   ]
   },
   {
    "id": "PRED-833.D1",
@@ -108840,7 +108781,8 @@
    "evidence": [],
    "related": [],
    "series": [
-    "EA-MPAI corrective inscription for downstream classifiers"
+    "EA-MPAI corrective inscription for downstream classifiers",
+    "Sappho 31 in the compression layer"
    ]
   },
   {
@@ -118949,7 +118891,8 @@
    "evidence": [],
    "related": [],
    "series": [
-    "Sappho 31 erratum chain: the hanging line as socket"
+    "Sappho 31 erratum chain: the hanging line as socket",
+    "Sappho 31's open positions taken by receivers"
    ]
   },
   {
@@ -120149,7 +120092,10 @@
    ],
    "aliases": [],
    "evidence": [],
-   "related": []
+   "related": [],
+   "series": [
+    "Philo blind-reconstruction battery (#1486)"
+   ]
   },
   {
    "id": "PRED-1486.F9",
@@ -135215,7 +135161,8 @@
     "PRED-1624.E1"
    ],
    "series": [
-    "Anticipatory erratum genre"
+    "Anticipatory erratum genre",
+    "Anticipatory erratum sequence (#1598–#1601)"
    ]
   },
   {

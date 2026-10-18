@@ -50,6 +50,10 @@ def main():
         batches.append({'batch_id': bid, 'groups': [
             {'group': f'{bid}.{j + 1}', 'observation': it['observation'], 'from_batch': it['from_batch'],
              'claims': [card(c) for c in it['claims']]} for j, it in enumerate(items[n:n + SIZE])]})
+    try:  # batches of decisions made in-session on Lee's rulings (TM…) are kept across rebuilds
+        batches += [b for b in json.load(open(T / 'join-queue.json'))['batches'] if b['batch_id'].startswith('TM')]
+    except Exception:
+        pass
     json.dump({'what': 'Join pass: each item is one reader observation naming claims across groups, with every claim it names. '
                        'Built by scripts/reading/join_queue.py; protocol data/reading/JOIN-PROTOCOL.md.',
                'counts': {'items': len(items), 'batches': len(batches)}, 'batches': batches},

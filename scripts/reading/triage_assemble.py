@@ -27,7 +27,7 @@ def topical(claims, C, T, byid):
     """The topical pass (TOPICAL-PROTOCOL v1.0): 'same' and 'states' sets merge claims into one, registered at the
     earliest; 'states' keeps the claims' order and changes as dated states; 'series' links distinct claims by name."""
     sets = []
-    for v in sorted(glob.glob(str(T / 'topical/T[PJ]*.verified.json'))):
+    for v in sorted(glob.glob(str(T / 'topical/T[PJM]*.verified.json'))):
         if json.load(open(v)).get('verified'):
             out = json.load(open(v.replace('.verified.json', '.json')))
             for g in out['groups']:
