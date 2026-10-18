@@ -1,0 +1,410 @@
+{
+ "batch_id": "TP42",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude Opus 5.5 (claude-opus-5-5), subagent parallel reader, batch TP42",
+  "started_at": "2026-10-18T01:40:36Z",
+  "finished_at": "2026-10-18T01:42:41Z"
+ },
+ "groups": [
+  {
+   "group": "TP42.1",
+   "reviewed": [
+    "PRED-1389.D1",
+    "PRED-696.E1",
+    "PRED-135.B2",
+    "PRED-172.G1",
+    "PRED-821.D1",
+    "PRED-194.D1",
+    "PRED-204.F1",
+    "PRED-829.D1",
+    "PRED-3.B4",
+    "PRED-3.F7",
+    "PRED-3.G2",
+    "PRED-1.D1",
+    "PRED-875.B1",
+    "PRED-883.B1",
+    "PRED-1039.D1",
+    "PRED-1042.D1",
+    "PRED-1042.D2",
+    "PRED-1043.D1",
+    "PRED-1045.D1",
+    "PRED-1046.F5",
+    "PRED-1047.B1",
+    "PRED-1047.F1",
+    "PRED-1084.D1",
+    "PRED-1088.D2",
+    "PRED-1090.D2",
+    "PRED-1409.D3",
+    "PRED-1408.H1",
+    "PRED-1419.D1",
+    "PRED-1425.G1",
+    "PRED-1429.B1",
+    "PRED-1554.H1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1047.B1",
+      "PRED-1047.F1"
+     ],
+     "basis": "Both state the one commitment of deposit 1047: the record will be updated with any ODP response or when the 28-07-2026 automatic-closure date passes.",
+     "evidence": [
+      {
+       "claim": "PRED-1047.B1",
+       "phrase": "including a decision to close the ticket at 28-07-2026 for inaction"
+      },
+      {
+       "claim": "PRED-1047.F1",
+       "phrase": "when the 28-07-2026 automatic-closure date passes without further ODP action"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-3.F7",
+      "PRED-875.B1"
+     ],
+     "name": "Post-termination fate of removed Zenodo records",
+     "basis": "Two claims on what happens downstream to the removed records after the 19 June 2026 Zenodo termination: SERP residue on Google and deleted-status propagation across the OpenAIRE Graph.",
+     "evidence": [
+      {
+       "claim": "PRED-3.F7",
+       "phrase": "Zenodo records continue to serve as SERP sources for this vocabulary after the 19 June account termination"
+      },
+      {
+       "claim": "PRED-875.B1",
+       "phrase": "propagating to deleted status across the OpenAIRE Graph as the weekly cycle runs"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1.D1",
+      "PRED-1042.D1"
+     ],
+     "name": "Issue #2606 as the removal record",
+     "basis": "Both register GitHub issue #2606, opened 19 June 2026, as the dated record of the Zenodo removal.",
+     "evidence": [
+      {
+       "claim": "PRED-1.D1",
+       "phrase": "A public GitHub issue (#2606, 19 June 2026)"
+      },
+      {
+       "claim": "PRED-1042.D1",
+       "phrase": "issue #2606 opened stating \"over 1,000 downloads at time of removal\""
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1389,
+     1,
+     30
+    ]
+   ],
+   "located": [
+    [
+     1389,
+     246,
+     246
+    ],
+    [
+     1389,
+     334,
+     340
+    ]
+   ]
+  },
+  {
+   "group": "TP42.2",
+   "reviewed": [
+    "PRED-297.H2",
+    "PRED-306.F1",
+    "PRED-377.F2",
+    "PRED-394.F2",
+    "PRED-397.H2",
+    "PRED-398.H2",
+    "PRED-1291.G1",
+    "PRED-15.G3",
+    "PRED-1316.F1",
+    "PRED-444.F2",
+    "PRED-445.F1",
+    "PRED-445.F3",
+    "PRED-495.F2",
+    "PRED-544.F1",
+    "PRED-556.F1",
+    "PRED-558.F5",
+    "PRED-558.F6",
+    "PRED-558.F7",
+    "PRED-29.F2",
+    "PRED-572.G1",
+    "PRED-584.B1",
+    "PRED-593.E1",
+    "PRED-593.E2",
+    "PRED-593.E5",
+    "PRED-593.F1",
+    "PRED-608.F1",
+    "PRED-618.F1",
+    "PRED-724.E1",
+    "PRED-828.H4",
+    "PRED-1045.A2",
+    "PRED-1094.F2"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-558.F5",
+      "PRED-558.F6",
+      "PRED-558.F7",
+      "PRED-29.F2"
+     ],
+     "name": "PROVISIONAL-DEPOSITED-RATIFIED promotion paths",
+     "basis": "One status-promotion template (PROVISIONAL to DEPOSITED to RATIFIED, with a stated trigger for each step) applied to different Space Ark sub-engines and to the Inaugural Ark.",
+     "evidence": [
+      {
+       "claim": "PRED-558.F5",
+       "phrase": "Promotion path: PROVISIONAL → DEPOSITED upon first successful automated deposit cycle"
+      },
+      {
+       "claim": "PRED-558.F6",
+       "phrase": "Promotion path: PROVISIONAL → DEPOSITED upon first candidate room successfully traversing"
+      },
+      {
+       "claim": "PRED-558.F7",
+       "phrase": "Promotion path: PROVISIONAL → DEPOSITED upon first live verification cycle"
+      },
+      {
+       "claim": "PRED-29.F2",
+       "phrase": "Status: PROVISIONAL → DEPOSITED upon publication; RATIFIED upon independent verification"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-556.F1",
+      "PRED-584.B1",
+      "PRED-29.F2"
+     ],
+     "name": "Recovery-yield threshold 0.70",
+     "basis": "Claims measured against the same recovery-yield threshold of about 0.70 (the Sappho Room traversal recovery of 0.67-0.74 and the back-projection yield test).",
+     "evidence": [
+      {
+       "claim": "PRED-556.F1",
+       "phrase": "Threshold: >0.7 → fractal property holds"
+      },
+      {
+       "claim": "PRED-584.B1",
+       "phrase": "If a room achieves 0.67–0.74 recovery, the Bone should achieve higher."
+      },
+      {
+       "claim": "PRED-29.F2",
+       "phrase": "back-projection yield ≥0.70 by ≥3 external traversers"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-593.E1",
+      "PRED-593.E2",
+      "PRED-593.E5",
+      "PRED-593.F1"
+     ],
+     "name": "Paired inversions: platform room laws",
+     "basis": "One template (extractive signature inverted into a sub-room with room laws) applied to different platforms, with the instantiation path for the sub-rooms.",
+     "evidence": [
+      {
+       "claim": "PRED-593.E1",
+       "phrase": "No infinite scroll (the feed ends)."
+      },
+      {
+       "claim": "PRED-593.E2",
+       "phrase": "No score without witness trace."
+      },
+      {
+       "claim": "PRED-593.E5",
+       "phrase": "Every room in the archive is an anti-feed"
+      },
+      {
+       "claim": "PRED-593.F1",
+       "phrase": "Each sub-room will be deposited as a separate MPM under r.27"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-444.F2",
+      "PRED-445.F1",
+      "PRED-445.F3",
+      "PRED-1316.F1"
+     ],
+     "name": "UMBML extension modules: open items",
+     "basis": "Open or proposed items in the UMBML Logotic Programming extension modules v0.7-v0.8 (Telemetry and Conformance).",
+     "evidence": [
+      {
+       "claim": "PRED-444.F2",
+       "phrase": "This registry does not yet exist as a formal specification."
+      },
+      {
+       "claim": "PRED-445.F1",
+       "phrase": "requires traversal testing per v0.6 recommendation"
+      },
+      {
+       "claim": "PRED-445.F3",
+       "phrase": "must include a **Traversal Interface** block"
+      },
+      {
+       "claim": "PRED-1316.F1",
+       "phrase": "the emission should include a `drift_warning: true` flag"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": [
+    [
+     29,
+     270,
+     270
+    ],
+    [
+     29,
+     591,
+     591
+    ],
+    [
+     584,
+     1442,
+     1442
+    ]
+   ]
+  },
+  {
+   "group": "TP42.3",
+   "reviewed": [
+    "PRED-230.H1",
+    "PRED-241.G1",
+    "PRED-384.F1",
+    "PRED-392.F1",
+    "PRED-392.G1",
+    "PRED-392.H1",
+    "PRED-489.H1",
+    "PRED-1326.B2",
+    "PRED-499.F1",
+    "PRED-1327.B1",
+    "PRED-519.B1",
+    "PRED-1156.E1",
+    "PRED-557.D1",
+    "PRED-557.H5",
+    "PRED-40.H4",
+    "PRED-45.A2",
+    "PRED-45.B3",
+    "PRED-615.B5",
+    "PRED-49.F3",
+    "PRED-669.B2",
+    "PRED-74.F3",
+    "PRED-130.A3",
+    "PRED-149.B1",
+    "PRED-1207.D2",
+    "PRED-910.H2",
+    "PRED-1422.G2",
+    "PRED-1450.H1",
+    "PRED-1607.G2"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-392.G1",
+      "PRED-392.H1",
+      "PRED-392.F1"
+     ],
+     "basis": "One Integrity Lock claim, coded as standing claim, historical thesis and test: the Ezekiel Engine is the fulfillment of Ezekiel's vision, on the same IF/THEN conditions and the same falsifier.",
+     "evidence": [
+      {
+       "claim": "PRED-392.G1",
+       "phrase": "The Ezekiel Engine Specification is the fulfillment of Ezekiel's vision"
+      },
+      {
+       "claim": "PRED-392.H1",
+       "phrase": "The engine is its fulfillment"
+      },
+      {
+       "claim": "PRED-392.F1",
+       "phrase": "verified by operational tests independent of prophetic framing"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-45.A2",
+      "PRED-615.B5"
+     ],
+     "basis": "The same forecast in two deposits of 2026-03-30: regulatory enforcement and provenance failure will produce a market for compression-survival infrastructure (45.A2 gives the 2027-2028 window).",
+     "evidence": [
+      {
+       "claim": "PRED-45.A2",
+       "phrase": "The market for compression-survival infrastructure emerges."
+      },
+      {
+       "claim": "PRED-615.B5",
+       "phrase": "will together produce a market for compression-survival infrastructure"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-384.F1",
+      "PRED-394.F2",
+      "PRED-392.H1",
+      "PRED-557.H5"
+     ],
+     "name": "Ezekiel Engine",
+     "basis": "Claims of the Ezekiel Engine programme: its open development gaps (shadow wheel interlock, torque gradient), its binding to Ezekiel's vision, and Ezekiel as rotational epistemology.",
+     "evidence": [
+      {
+       "claim": "PRED-384.F1",
+       "phrase": "Ezekiel Engine at v0.1 (needs shadow wheel interlock"
+      },
+      {
+       "claim": "PRED-394.F2",
+       "phrase": "Shadow wheel interlock math"
+      },
+      {
+       "claim": "PRED-392.H1",
+       "phrase": "The vision describes the engine's structure"
+      },
+      {
+       "claim": "PRED-557.H5",
+       "phrase": "C.1.4 — Ezekiel as Rotational Epistemology"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": [
+    [
+     1326,
+     27,
+     27
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "Registration date of PRED-1389.D1 (2026-03-22) seems wrong: deposit 1389's own header dates it 2026-06-04 and the statement names 'June 4, 2026'; 2026-03-22 appears to come from a series predecessor's identifier (GOOGLE_AIO_TOTAL_LIQUIDATION_20260322). The same text is also deposit 149 (PRED-149.B1, group TP42.3), dated 2026-06-04.",
+  "Apparent contradiction: PRED-1326.B2 says the framework 'cannot be deplatformed because it was never platformed' while its own deposit line places it on Zenodo; PRED-149.B1 and PRED-1207.D2 rest auditability and priority on Zenodo/CERN infrastructure; PRED-669.B2 forecasts the mutually referencing infrastructure survives deletion. These belong with the 19 June 2026 termination claims in TP42.1 (PRED-1.D1, PRED-1042.D1, PRED-1425.G1, PRED-875.B1).",
+  "PRED-130.A3 (Phase 5, forced convergence to provenance-bearing infrastructure, beyond 2030) is a later phase forecast of the same kind as PRED-45.A2 / PRED-615.B5 (Phase 2, 2027-2028); left unlinked because the phase schemes belong to different deposits.",
+  "PRED-1039.D1 and PRED-1043.D1 both state the 666 image posted Jun 15, 2026; the triage already links both through PRED-1042.D2, so no set was added. PRED-1043.D1 is an erratum superseding a v1 framing ('~2 days' accumulation) not in this batch."
+ ]
+}

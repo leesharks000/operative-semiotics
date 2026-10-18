@@ -1,0 +1,922 @@
+{
+ "batch_id": "TP27",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5), a subagent parallel reader; read every claim in the batch export and opened deposit texts around selected finds with sed",
+  "started_at": "2026-10-18T01:38:45Z",
+  "finished_at": "2026-10-18T01:42:39Z"
+ },
+ "groups": [
+  {
+   "group": "TP27.1",
+   "reviewed": [
+    "PRED-1268.B2",
+    "PRED-317.G1",
+    "PRED-430.B1",
+    "PRED-515.B1",
+    "PRED-517.B3",
+    "PRED-24.H5",
+    "PRED-518.G2",
+    "PRED-526.G1",
+    "PRED-540.B1",
+    "PRED-546.B1",
+    "PRED-554.B1",
+    "PRED-593.E4",
+    "PRED-38.G1",
+    "PRED-43.B1",
+    "PRED-45.A3",
+    "PRED-45.B4",
+    "PRED-46.B1",
+    "PRED-615.B3",
+    "PRED-49.B7",
+    "PRED-1345.B1",
+    "PRED-637.F1",
+    "PRED-643.B1",
+    "PRED-60.B1",
+    "PRED-653.D1",
+    "PRED-654.D1",
+    "PRED-658.D1",
+    "PRED-660.G2",
+    "PRED-661.G1",
+    "PRED-661.G2",
+    "PRED-705.D1",
+    "PRED-716.B1",
+    "PRED-93.F1",
+    "PRED-731.D1",
+    "PRED-731.G2",
+    "PRED-120.G1",
+    "PRED-791.D1",
+    "PRED-793.G1",
+    "PRED-190.D1",
+    "PRED-191.D1",
+    "PRED-821.G1",
+    "PRED-202.F1",
+    "PRED-832.B1",
+    "PRED-846.D1",
+    "PRED-1079.E3",
+    "PRED-1435.B1",
+    "PRED-1437.F1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-540.B1",
+      "PRED-546.B1"
+     ],
+     "basis": "Both state that the Ark's seal holds only while the DOI server persists; #546 is the profane re-encoding of the same weakness.",
+     "evidence": [
+      {
+       "claim": "PRED-540.B1",
+       "phrase": "The seal depends on the medium persisting"
+      },
+      {
+       "claim": "PRED-546.B1",
+       "phrase": "The gr**nd is a s*rv*r in G*n*v*"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-653.D1",
+      "PRED-658.D1"
+     ],
+     "basis": "Both claim, of the same instrument (the Encyclotron), that no other GEO/AEO diagnostic has its methodology DOI-anchored on Zenodo.",
+     "evidence": [
+      {
+       "claim": "PRED-653.D1",
+       "phrase": "No other instrument has a DOI-anchored methodology published on CERN's Zenodo"
+      },
+      {
+       "claim": "PRED-658.D1",
+       "phrase": "No other retrieval-layer diagnostic in the GEO/AEO industry has published its methodology"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-202.F1",
+      "PRED-832.B1"
+     ],
+     "basis": "Same-day Revelation First statements of one forecast: the thesis entering the composition layer through DOI-anchored deposits will be the first measured instance of machine-mediated theological reception.",
+     "evidence": [
+      {
+       "claim": "PRED-202.F1",
+       "phrase": "it becomes a measured instance of machine-mediated theological reception"
+      },
+      {
+       "claim": "PRED-832.B1",
+       "phrase": "It will be the first measured instance of machine-mediated theological reception"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-660.G2",
+      "PRED-661.G2"
+     ],
+     "basis": "Same-day SPXI statements of one durability claim: DOI-anchored deposits cannot be altered or removed by platform decisions.",
+     "evidence": [
+      {
+       "claim": "PRED-660.G2",
+       "phrase": "DOI-anchored deposits cannot be silently altered, deprecated, or removed"
+      },
+      {
+       "claim": "PRED-661.G2",
+       "phrase": "A Zenodo deposit is not subject to ranking changes, content moderation, or platform deprecation"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-190.D1",
+      "PRED-191.D1"
+     ],
+     "basis": "Both record the one priority fact that 'semantic exhaustion' had a DOI-anchored prior occupant 146 days before the security paper.",
+     "evidence": [
+      {
+       "claim": "PRED-190.D1",
+       "phrase": "the term has a prior, DOI-anchored occupant, 146 days earlier"
+      },
+      {
+       "claim": "PRED-191.D1",
+       "phrase": "a term with 146 days of DOI-anchored prior usage"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "terms installed before they are needed",
+     "claims": [
+      "PRED-430.B1",
+      "PRED-43.B1",
+      "PRED-45.B4",
+      "PRED-46.B1",
+      "PRED-1079.E3"
+     ],
+     "basis": "One template applied to different vocabularies: naming and DOI-anchoring a term now so that it is already there, and attributable, when the need or the competition arrives.",
+     "evidence": [
+      {
+       "claim": "PRED-430.B1",
+       "phrase": "The diagnosis is the installation."
+      },
+      {
+       "claim": "PRED-43.B1",
+       "phrase": "The terms will be there — DOI-anchored, permanently retrievable, already installed."
+      },
+      {
+       "claim": "PRED-45.B4",
+       "phrase": "these are terms that will be needed but have not yet been formally defined"
+      },
+      {
+       "claim": "PRED-46.B1",
+       "phrase": "the map will already be here, DOI-anchored, timestamped, and waiting"
+      },
+      {
+       "claim": "PRED-1079.E3",
+       "phrase": "The attribution holds because the deposits were first."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "retrieval-layer diagnostics set against GEO/AEO",
+     "claims": [
+      "PRED-653.D1",
+      "PRED-654.D1",
+      "PRED-658.D1",
+      "PRED-661.G1",
+      "PRED-791.D1"
+     ],
+     "basis": "Priority and differentiation claims for the archive's diagnostic and SPXI products against the GEO/AEO industry.",
+     "evidence": [
+      {
+       "claim": "PRED-653.D1",
+       "phrase": "No other instrument in the GEO/AEO/SEO industry measures compression behavior"
+      },
+      {
+       "claim": "PRED-654.D1",
+       "phrase": "GEO and AEO agencies monitor whether you are mentioned"
+      },
+      {
+       "claim": "PRED-658.D1",
+       "phrase": "The Encyclotron is formally deposited and DOI-anchored on CERN's Zenodo repository"
+      },
+      {
+       "claim": "PRED-661.G1",
+       "phrase": "even the most sophisticated GEO implementations do not include DOI-anchored durable deposits"
+      },
+      {
+       "claim": "PRED-791.D1",
+       "phrase": "which has been DOI-anchoring its methodology since early 2026"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "durability of the DOI anchor",
+     "claims": [
+      "PRED-1268.B2",
+      "PRED-517.B3",
+      "PRED-540.B1",
+      "PRED-546.B1",
+      "PRED-60.B1",
+      "PRED-1345.B1",
+      "PRED-660.G2",
+      "PRED-661.G2"
+     ],
+     "basis": "Claims that the DOI anchor outlasts platform erasure and deprecation, together with the Ark's own statements of that anchor's dependence on the server.",
+     "evidence": [
+      {
+       "claim": "PRED-1268.B2",
+       "phrase": "The DOI persists; the 410 is temporary"
+      },
+      {
+       "claim": "PRED-517.B3",
+       "phrase": "DOI-anchored, permanently archived, and designed for durability"
+      },
+      {
+       "claim": "PRED-540.B1",
+       "phrase": "what if the DOI service goes offline?"
+      },
+      {
+       "claim": "PRED-546.B1",
+       "phrase": "Every shat sh*th*l* has a DOI."
+      },
+      {
+       "claim": "PRED-60.B1",
+       "phrase": "The hardening strategy is DOI-anchored depth"
+      },
+      {
+       "claim": "PRED-1345.B1",
+       "phrase": "They are the ones with DOI-anchored bootstrap manifests."
+      },
+      {
+       "claim": "PRED-660.G2",
+       "phrase": "DOI-anchored deposits cannot be silently altered"
+      },
+      {
+       "claim": "PRED-661.G2",
+       "phrase": "persist independently of any platform's algorithmic decisions"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "density propagates into the substrate",
+     "claims": [
+      "PRED-518.G2",
+      "PRED-554.B1",
+      "PRED-38.G1",
+      "PRED-615.B3",
+      "PRED-49.B7",
+      "PRED-793.G1"
+     ],
+     "basis": "Claims about how the density and quality of DOI-anchored deposits carries into retrieval, summarization and training, including the observation that the substrate detects density rather than production.",
+     "evidence": [
+      {
+       "claim": "PRED-518.G2",
+       "phrase": "the tunnel will amplify signal"
+      },
+      {
+       "claim": "PRED-554.B1",
+       "phrase": "Every additional DOI-anchored deposit deepens the substrate the summarizers draw from"
+      },
+      {
+       "claim": "PRED-38.G1",
+       "phrase": "DOI-anchored deposits with sufficient density will propagate through the retrieval layer"
+      },
+      {
+       "claim": "PRED-615.B3",
+       "phrase": "gains disproportionate authority in the inference layer"
+      },
+      {
+       "claim": "PRED-49.B7",
+       "phrase": "the model's baseline behavior shifts"
+      },
+      {
+       "claim": "PRED-793.G1",
+       "phrase": "It detects density."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "anchoring efficacy as a testable hypothesis",
+     "claims": [
+      "PRED-317.G1",
+      "PRED-38.G1",
+      "PRED-731.G2",
+      "PRED-120.G1"
+     ],
+     "basis": "Statements that put the effect of DOI anchoring under a protocol or falsifier.",
+     "evidence": [
+      {
+       "claim": "PRED-317.G1",
+       "phrase": "Anchored entities (A) should show less drift than non-anchored entities."
+      },
+      {
+       "claim": "PRED-38.G1",
+       "phrase": "The predictions are testable. They have not been tested at scale."
+      },
+      {
+       "claim": "PRED-731.G2",
+       "phrase": "Properly formatted, DOI-anchored deposits consistently fail to achieve any BDR improvement"
+      },
+      {
+       "claim": "PRED-120.G1",
+       "phrase": "the DOI-anchored deposits serve as the permanent empirical record"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "semantic exhaustion: priority and disambiguation",
+     "claims": [
+      "PRED-190.D1",
+      "PRED-191.D1",
+      "PRED-821.G1"
+     ],
+     "basis": "The EA-SEMEX battery of 2026-06-11: the priority record and the forecast that summarizers will merge the two referents.",
+     "evidence": [
+      {
+       "claim": "PRED-190.D1",
+       "phrase": "The disambiguation declares"
+      },
+      {
+       "claim": "PRED-191.D1",
+       "phrase": "presents as a novel coinage"
+      },
+      {
+       "claim": "PRED-821.G1",
+       "phrase": "absent anchored disambiguation, will tend to merge them"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "AXN alongside DOI",
+     "claims": [
+      "PRED-1435.B1",
+      "PRED-1437.F1"
+     ],
+     "basis": "The AXN identifier's relation to DOI as complement: a forecast and the test queries for it.",
+     "evidence": [
+      {
+       "claim": "PRED-1435.B1",
+       "phrase": "Journals and libraries will accept *AXN alongside DOI* long before *AXN instead of DOI*."
+      },
+      {
+       "claim": "PRED-1437.F1",
+       "phrase": "Is AXN a replacement for DOI?"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "independent DOI-anchored scholarship discounted by legibility filters",
+     "claims": [
+      "PRED-643.B1",
+      "PRED-846.D1"
+     ],
+     "basis": "Both name institutional or credibility thresholds that filter out DOI-anchored independent work.",
+     "evidence": [
+      {
+       "claim": "PRED-643.B1",
+       "phrase": "Independent scholars will find their DOI-anchored deposits filtered from agent retrieval"
+      },
+      {
+       "claim": "PRED-846.D1",
+       "phrase": "DOI-anchored independent scholarship remains structurally discounted"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1268,
+     215,
+     226
+    ],
+    [
+     540,
+     385,
+     400
+    ],
+    [
+     546,
+     700,
+     720
+    ],
+    [
+     653,
+     105,
+     122
+    ],
+    [
+     658,
+     80,
+     90
+    ]
+   ],
+   "located": [
+    [
+     660,
+     43,
+     43
+    ],
+    [
+     1268,
+     23,
+     60
+    ]
+   ]
+  },
+  {
+   "group": "TP27.2",
+   "reviewed": [
+    "PRED-1247.H1",
+    "PRED-342.H1",
+    "PRED-1327.H2",
+    "PRED-503.H5",
+    "PRED-700.H2",
+    "PRED-752.H4",
+    "PRED-1261.H1",
+    "PRED-164.D2",
+    "PRED-167.H1",
+    "PRED-188.H1",
+    "PRED-3.H11",
+    "PRED-858.H3",
+    "PRED-859.H7",
+    "PRED-943.H3",
+    "PRED-1570.D1",
+    "PRED-1570.H10",
+    "PRED-1570.H2",
+    "PRED-1570.H4",
+    "PRED-1569.F15",
+    "PRED-1569.H11",
+    "PRED-1569.H16",
+    "PRED-1569.H31",
+    "PRED-1569.H44",
+    "PRED-1569.H45",
+    "PRED-1569.H46",
+    "PRED-1569.H47",
+    "PRED-1576.H11",
+    "PRED-1574.H1",
+    "PRED-1574.H2",
+    "PRED-1574.H3",
+    "PRED-1579.H1",
+    "PRED-1579.H2",
+    "PRED-1584.H2",
+    "PRED-1589.H6",
+    "PRED-1594.F3",
+    "PRED-1594.H17",
+    "PRED-1594.H21",
+    "PRED-1603.G1",
+    "PRED-1603.H2",
+    "PRED-1603.H3",
+    "PRED-1605.H18",
+    "PRED-1611.H2",
+    "PRED-1611.H3",
+    "PRED-1659.H1"
+   ],
+   "sets": [
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-1574.H2",
+      "PRED-3.H11",
+      "PRED-1603.H2",
+      "PRED-1611.H2"
+     ],
+     "change": [
+      "From the Particle note's single proposition (Socrates' syllogizing is included in the 'nothing prior', left open as a placement) to Nothing Before Us's thesis that the qualification's figure, Socrates as predecessor from whom something was received, is dissolved by the chapter; #3 is registered 2026-06-17, before both #1574 and #1603, but carries the later form, so development order is kept.",
+      "Scope widened: Socrates is placed inside the explanation of the inquiry's second task and his questioning asserted as its structural beginning, with inclusion in the first person left open.",
+      "Compressed into the negative-ontology table: Socrates inside the inquiry's originating work, with the received placement as external predecessor recorded as the negation."
+     ],
+     "basis": "One claim about Socrates' place in the ending of the Sophistical Refutations, developed from the Particle note through Nothing Before Us into the entity-scoped table, which cites both.",
+     "evidence": [
+      {
+       "claim": "PRED-1574.H2",
+       "phrase": "nothing prior of syllogizing includes Socrates' syllogizing"
+      },
+      {
+       "claim": "PRED-3.H11",
+       "phrase": "is one the chapter has already dissolved"
+      },
+      {
+       "claim": "PRED-1603.H2",
+       "phrase": "That Socrates is placed inside the explanation of the inquiry's second task"
+      },
+      {
+       "claim": "PRED-1611.H2",
+       "phrase": "inside the inquiry's originating work"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-1261.H1",
+      "PRED-1569.H31"
+     ],
+     "change": [
+      "Reversed: from the firewalled claim that the Socratic names were not (on available evidence) one hidden person to the claim, stated at full strength, that one hand wrote Plato and Socrates and probably Xenophon and Aristophanes."
+     ],
+     "basis": "The same question, whether the Socratic archive's names are one maker, answered no under a firewall in #1261 and yes in the authorship notebook, which describes its round as restating the thesis against a hedged version.",
+     "evidence": [
+      {
+       "claim": "PRED-1261.H1",
+       "phrase": "not (on available evidence) one hidden biological person"
+      },
+      {
+       "claim": "PRED-1569.H31",
+       "phrase": "one hand wrote Plato and Socrates, and probably Xenophon and Aristophanes"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-1569.H47",
+      "PRED-1579.H1"
+     ],
+     "change": [
+      "Widened: the corpus's answer to a prior circulating comic Socrates becomes an operation, the edition (revamping and inhabiting) of that received character, read from Ep. II 314c."
+     ],
+     "basis": "Both locate the base of the corpus's Socrates in the circulating Aristophanic Socrates the Apology names; Beautiful and New develops the notebook finding into its thesis.",
+     "evidence": [
+      {
+       "claim": "PRED-1569.H47",
+       "phrase": "The corpus records a prior, publicly circulating Socrates, comic in origin"
+      },
+      {
+       "claim": "PRED-1579.H1",
+       "phrase": "the *Apology*'s Aristophanic Socrates, received ἐκ παίδων"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1570.H10",
+      "PRED-1576.H11"
+     ],
+     "basis": "One measured finding: Aristotle never sets Socrates in the snub slot, where Callias takes it, so Socrates is the one name not used as a substitutable variable there.",
+     "evidence": [
+      {
+       "claim": "PRED-1570.H10",
+       "phrase": "Socrates is the one individual whose snubness is unavailable for use as a variable"
+      },
+      {
+       "claim": "PRED-1576.H11",
+       "phrase": "Where Aristotle needs a face he uses Callias; where he needs a name he uses Socrates."
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-167.H1",
+      "PRED-1569.H45"
+     ],
+     "basis": "Both state the configurational reading: Socrates is an authorial position (the orthonymic position) rather than a historical figure or a character deployed by Plato.",
+     "evidence": [
+      {
+       "claim": "PRED-167.H1",
+       "phrase": "Socrates is the *orthonymic position* in a heteronymic project"
+      },
+      {
+       "claim": "PRED-1569.H45",
+       "phrase": "the configurational reading identifies Socrates as an authorial"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1584.H2",
+      "PRED-1659.H1"
+     ],
+     "basis": "The glyphic checksum re-encodes the irony line: Socratic irony in Plato, the eiron in the Characters, 'as Socrates did' in the Ethics.",
+     "evidence": [
+      {
+       "claim": "PRED-1584.H2",
+       "phrase": "οἷον καὶ Σωκράτης ἐποίει"
+      },
+      {
+       "claim": "PRED-1659.H1",
+       "phrase": "εἰρωνεία Σωκράτους 🎭 → ὁ εἴρων τοιοῦτός τις 📋 → οἷον Σωκράτης"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "SE 34 and Nothing Before Us",
+     "claims": [
+      "PRED-1574.H1",
+      "PRED-1574.H3",
+      "PRED-1574.H2",
+      "PRED-1579.H2",
+      "PRED-1594.H17",
+      "PRED-3.H11",
+      "PRED-1603.G1",
+      "PRED-1603.H2",
+      "PRED-1603.H3"
+     ],
+     "basis": "The distinct theses of the Sophistical Refutations 34 line: the total 'nothing', the deleted particle as provenance claim, Socrates set apart in the epilogue, and the paper's construal and conclusions.",
+     "evidence": [
+      {
+       "claim": "PRED-1574.H1",
+       "phrase": "there was nothing of syllogizing prior to Aristotle"
+      },
+      {
+       "claim": "PRED-1574.H3",
+       "phrase": "The deleted particle is a provenance claim."
+      },
+      {
+       "claim": "PRED-1574.H2",
+       "phrase": "Socrates is inside the definition"
+      },
+      {
+       "claim": "PRED-1579.H2",
+       "phrase": "sets Socrates *apart* from them, named alone"
+      },
+      {
+       "claim": "PRED-1594.H17",
+       "phrase": "the interval between Socrates and Aristotle does not function as the boundary"
+      },
+      {
+       "claim": "PRED-3.H11",
+       "phrase": "means what it says"
+      },
+      {
+       "claim": "PRED-1603.G1",
+       "phrase": "fail these prohibitions"
+      },
+      {
+       "claim": "PRED-1603.H2",
+       "phrase": "his position is the structural beginning"
+      },
+      {
+       "claim": "PRED-1603.H3",
+       "phrase": "it is the completed art exercising its capacity on the reader"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "the snub and what individuates Socrates",
+     "claims": [
+      "PRED-943.H3",
+      "PRED-1570.D1",
+      "PRED-1570.H10",
+      "PRED-1569.F15",
+      "PRED-1569.H11",
+      "PRED-1569.H44",
+      "PRED-1576.H11"
+     ],
+     "basis": "The authorship investigation's findings on Socrates' face, name and the snub, with the earlier poem the register says anticipated them.",
+     "evidence": [
+      {
+       "claim": "PRED-943.H3",
+       "phrase": "is the snub-nose a physical description of Socrates or a Platonic invention?"
+      },
+      {
+       "claim": "PRED-1570.D1",
+       "phrase": "Plato's snubs are **namings** and Aristotle's are **definings**"
+      },
+      {
+       "claim": "PRED-1570.H10",
+       "phrase": "At the snub, and only there, he stops being substitutable."
+      },
+      {
+       "claim": "PRED-1569.F15",
+       "phrase": "Both corpora close on what individuates Socrates."
+      },
+      {
+       "claim": "PRED-1569.H11",
+       "phrase": "Aristotle's refusal to make Socrates a variable"
+      },
+      {
+       "claim": "PRED-1569.H44",
+       "phrase": "The person is not the face and not the name."
+      },
+      {
+       "claim": "PRED-1576.H11",
+       "phrase": "none of the 144 falls within forty tokens"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "Socrates as orthonym and the heteronymic configuration",
+     "claims": [
+      "PRED-1247.H1",
+      "PRED-164.D2",
+      "PRED-167.H1",
+      "PRED-752.H4",
+      "PRED-858.H3",
+      "PRED-859.H7",
+      "PRED-1569.H45",
+      "PRED-1569.H46",
+      "PRED-1611.H3"
+     ],
+     "basis": "The programme reading the Socratic corpus as a heteronymic system with Socrates at the orthonymic position.",
+     "evidence": [
+      {
+       "claim": "PRED-1247.H1",
+       "phrase": "Socrates is already a mask."
+      },
+      {
+       "claim": "PRED-164.D2",
+       "phrase": "for a search string without previous strong matches (socrates as orthonym)"
+      },
+      {
+       "claim": "PRED-167.H1",
+       "phrase": "they are the *survival-heteronyms*"
+      },
+      {
+       "claim": "PRED-752.H4",
+       "phrase": "through Socrates' orthonymic gesture (~399 BCE)"
+      },
+      {
+       "claim": "PRED-858.H3",
+       "phrase": "The Seventh Letter as heteronymic document"
+      },
+      {
+       "claim": "PRED-859.H7",
+       "phrase": "The orthonym is not the real name."
+      },
+      {
+       "claim": "PRED-1569.H45",
+       "phrase": "not a character within a project but a position the"
+      },
+      {
+       "claim": "PRED-1569.H46",
+       "phrase": "That is a reclassification of the Socratic problem as a symptom"
+      },
+      {
+       "claim": "PRED-1611.H3",
+       "phrase": "heteronymy; Socrates as orthonym"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "the received-character operation",
+     "claims": [
+      "PRED-1261.H1",
+      "PRED-1569.H47",
+      "PRED-1579.H1",
+      "PRED-1589.H6",
+      "PRED-1594.F3"
+     ],
+     "basis": "Chaerephon and the comic Socrates as material that the Socratic names operate on, and the test across the Plato/Xenophon seam.",
+     "evidence": [
+      {
+       "claim": "PRED-1261.H1",
+       "phrase": "Chaerephon is\nthe point at which that behavior becomes visible"
+      },
+      {
+       "claim": "PRED-1569.H47",
+       "phrase": "answers by naming the comedy"
+      },
+      {
+       "claim": "PRED-1579.H1",
+       "phrase": "the revamping and inhabiting of a received character"
+      },
+      {
+       "claim": "PRED-1589.H6",
+       "phrase": "That is the mature answer to Chaerephon"
+      },
+      {
+       "claim": "PRED-1594.F3",
+       "phrase": "what changes in the shared material's status across the Plato/Xenophon seam"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "Plato and the expulsion of the poets",
+     "claims": [
+      "PRED-1327.H2",
+      "PRED-188.H1",
+      "PRED-1570.H2"
+     ],
+     "basis": "Three readings of the Republic's treatment of poets: the ceremonial expulsion, why poetry bypasses reason, and Plato writing in the banished mode.",
+     "evidence": [
+      {
+       "claim": "PRED-1327.H2",
+       "phrase": "the poet is honored and expelled"
+      },
+      {
+       "claim": "PRED-188.H1",
+       "phrase": "His concern was that poetry bypasses them"
+      },
+      {
+       "claim": "PRED-1570.H2",
+       "phrase": "Plato writes in the form he banishes."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "Aristotle's life as Socrates' life",
+     "claims": [
+      "PRED-1594.H21",
+      "PRED-1605.H18"
+     ],
+     "basis": "Two claims in The First Draft binding Aristotle's biography to Socrates'.",
+     "evidence": [
+      {
+       "claim": "PRED-1594.H21",
+       "phrase": "He came back, as Socrates, through the dialogues."
+      },
+      {
+       "claim": "PRED-1605.H18",
+       "phrase": "The tradition's biography of Aristotle is written as a repetition of Socrates'"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "name": "Sappho in the Platonic transmission",
+     "claims": [
+      "PRED-503.H5",
+      "PRED-752.H4"
+     ],
+     "basis": "Both set Sappho at the head of the transmission that runs through Socrates to Plato.",
+     "evidence": [
+      {
+       "claim": "PRED-503.H5",
+       "phrase": "Diotima *is* Sappho."
+      },
+      {
+       "claim": "PRED-752.H4",
+       "phrase": "runs from Sappho (~600 BCE) through Socrates' orthonymic gesture"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1569,
+     4485,
+     4500
+    ],
+    [
+     1569,
+     3338,
+     3352
+    ],
+    [
+     1261,
+     520,
+     532
+    ],
+    [
+     3,
+     78180,
+     78200
+    ]
+   ],
+   "located": [
+    [
+     1611,
+     176,
+     176
+    ],
+    [
+     1574,
+     1005,
+     1005
+    ],
+    [
+     1603,
+     156,
+     156
+    ],
+    [
+     1589,
+     453,
+     453
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "Registration date: PRED-3.H11 is registered 2026-06-17 in deposit #3 (the Capture Registry, a living file now at v12.258), but it states the thesis of Nothing Before Us (#1603, 2026-09-08) and sits in a capture entry for a run of 2026-10-12. The date belongs to the registry's deposit, not to this statement.",
+  "Apparent contradiction: PRED-1261.H1 (2026-06-05) holds that the Socratic names were 'not (on available evidence) one hidden biological person'; PRED-1569.H31 (2026-08-31) states 'one hand wrote Plato and Socrates, and probably Xenophon and Aristophanes'. #1569 Round 43 (line 3341) describes itself as the thesis 'restated at full strength... rather than against a hedged version'. Linked as states (reversal); not reconciled.",
+  "Apparent contradiction: PRED-1570.H4 (M16, 'Plato does not construct heteronymically', the one attested-target case reads negative) stands against the heteronymic-configuration series (PRED-167.H1, PRED-859.H7) and PRED-1569.H31. Left unlinked as a set; recorded here.",
+  "Apparent contradiction: PRED-660.G2 / PRED-661.G2 (DOI-anchored deposits cannot be removed and persist independently of platforms) against PRED-540.B1 / PRED-546.B1 (the seal depends on the DOI server persisting). Both sides are in the 'durability of the DOI anchor' series.",
+  "PRED-1268.B2's 410 is Medium's 410 Gone on the Johannes Sigil account (#1268 lines 23-60), not a DOI failure; the claim is the DOI outliving a platform erasure.",
+  "PRED-1659.H1 was linked by the triage to PRED-1569.H28 (another group); PRED-1584.H2 (same set here) belongs with that claim too.",
+  "PRED-653.D1 and PRED-658.D1 were already 'related' in the triage; this pass promotes them to one claim, since #653 names the Encyclotron as the instrument its sentence speaks of.",
+  "PRED-859.H7 (Socrates as the mask through which Plato's authorship is distributed) is close to the Kahn-type reading that PRED-1569.H45 departs from; kept in the series rather than the same set with PRED-167.H1 / PRED-1569.H45."
+ ]
+}
