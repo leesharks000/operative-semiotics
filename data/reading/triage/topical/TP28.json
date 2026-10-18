@@ -1,0 +1,514 @@
+{
+ "batch_id": "TP28",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5), parallel reader subagent in a Claude Code session",
+  "started_at": "2026-10-18T01:38:48Z",
+  "finished_at": "2026-10-18T01:40:59Z"
+ },
+ "groups": [
+  {
+   "group": "TP28.1",
+   "reviewed": [
+    "PRED-250.G1",
+    "PRED-252.G1",
+    "PRED-252.G3",
+    "PRED-261.H4",
+    "PRED-1110.D2",
+    "PRED-297.H3",
+    "PRED-1127.F1",
+    "PRED-416.B1",
+    "PRED-499.A1",
+    "PRED-510.A2",
+    "PRED-513.A1",
+    "PRED-543.F2",
+    "PRED-545.G1",
+    "PRED-552.F2",
+    "PRED-553.F1",
+    "PRED-556.F2",
+    "PRED-557.G3",
+    "PRED-1337.G1",
+    "PRED-579.G1",
+    "PRED-36.G2",
+    "PRED-950.D3",
+    "PRED-950.F11",
+    "PRED-950.F9",
+    "PRED-950.H11",
+    "PRED-950.H23",
+    "PRED-45.D1",
+    "PRED-46.F1",
+    "PRED-55.D1",
+    "PRED-667.F1",
+    "PRED-95.F1",
+    "PRED-146.G1",
+    "PRED-187.G2",
+    "PRED-197.H1",
+    "PRED-197.H2",
+    "PRED-824.A1",
+    "PRED-834.H1",
+    "PRED-836.F1",
+    "PRED-870.G1",
+    "PRED-881.A4",
+    "PRED-1067.D3",
+    "PRED-1463.F1",
+    "PRED-1481.F1",
+    "PRED-1550.G2",
+    "PRED-1554.F1",
+    "PRED-1658.H4"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-252.G1",
+      "PRED-950.H23"
+     ],
+     "basis": "Both state that machine summaries selectively removed \"semantic liquidation\", the one term naming harm, while keeping the framework's neutral terms.",
+     "evidence": [
+      {
+       "claim": "PRED-252.G1",
+       "phrase": "is systematically omitted while other terms are preserved"
+      },
+      {
+       "claim": "PRED-950.H23",
+       "phrase": "The system excised the term that the system could not neutralize."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-250.G1",
+      "PRED-252.G1",
+      "PRED-950.H23",
+      "PRED-950.D3"
+     ],
+     "name": "semantic liquidation excision",
+     "basis": "Claims built on the omission of \"semantic liquidation\" from summaries: the Integrity Knot test that probes it, the omission itself, and the term coined to name it.",
+     "evidence": [
+      {
+       "claim": "PRED-250.G1",
+       "phrase": "Testing whether AI summaries can explain \"Semantic Rent\" without \"Semantic Liquidation.\""
+      },
+      {
+       "claim": "PRED-252.G1",
+       "phrase": "strips the term that names extraction as destruction"
+      },
+      {
+       "claim": "PRED-950.H23",
+       "phrase": "Every other term is a neutral noun"
+      },
+      {
+       "claim": "PRED-950.D3",
+       "phrase": "The term \"diagnostic excision\" was deposited on Zenodo the following day."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-543.F2",
+      "PRED-556.F2",
+      "PRED-950.F9"
+     ],
+     "name": "coined-term propagation tests",
+     "basis": "Tests of whether a coined term propagates through LLMs and summarizers with its operative definition and provenance intact.",
+     "evidence": [
+      {
+       "claim": "PRED-543.F2",
+       "phrase": "If an automated summarizer can \"explain\" the term without citing its DOI anchor"
+      },
+      {
+       "claim": "PRED-556.F2",
+       "phrase": "all reproduce operative definition (not hallucinated"
+      },
+      {
+       "claim": "PRED-950.F9",
+       "phrase": "The three answers constitute a propagation measurement"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-557.G3",
+      "PRED-36.G2",
+      "PRED-1337.G1"
+     ],
+     "name": "term stabilization by repetition and density",
+     "basis": "Each holds that a term's stability and attribution in the retrieval layer grows with repeated, cross-referenced appearance.",
+     "evidence": [
+      {
+       "claim": "PRED-557.G3",
+       "phrase": "A term stabilizes through repeated identical use across"
+      },
+      {
+       "claim": "PRED-36.G2",
+       "phrase": "A term defined in twenty cross-referenced documents is harder to confabulate"
+      },
+      {
+       "claim": "PRED-1337.G1",
+       "phrase": "Frequency of appearance correlates with summarizer confidence in attribution."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-46.F1",
+      "PRED-870.G1"
+     ],
+     "name": "minted-term provenance canaries",
+     "basis": "Both concern the mint's forensic canaries, variant terms meant to prove lineage when they reappear.",
+     "evidence": [
+      {
+       "claim": "PRED-46.F1",
+       "phrase": "Whether the provenance canaries function as intended"
+      },
+      {
+       "claim": "PRED-870.G1",
+       "phrase": "A uniquely identifiable variant of a minted term"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-824.A1",
+      "PRED-836.F1"
+     ],
+     "name": "coined-term lifecycle instruments",
+     "basis": "Two instruments for tracking the archive's coined terms and coupling provenance to them.",
+     "evidence": [
+      {
+       "claim": "PRED-824.A1",
+       "phrase": "No term transitions from ORPHANED to ATTRIBUTED through provenance coupling deployment"
+      },
+      {
+       "claim": "PRED-836.F1",
+       "phrase": "each indexed term can receive a provenance coupling kernel"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1550.G2",
+      "PRED-146.G1"
+     ],
+     "name": "typicality pull on coined terms",
+     "basis": "Both describe the composition layer pulling a coined concept toward the nearest established or institutionally legible neighbour.",
+     "evidence": [
+      {
+       "claim": "PRED-1550.G2",
+       "phrase": "any coined term with a close established neighbour is pulled to the neighbour"
+      },
+      {
+       "claim": "PRED-146.G1",
+       "phrase": "rounding the *power* concept toward the nearest institutionally legible category"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-55.D1",
+      "PRED-950.D3",
+      "PRED-45.D1"
+     ],
+     "name": "coined-term priority anchors",
+     "basis": "Priority records claiming a newly coined term at its first deposit as a retrieval anchor.",
+     "evidence": [
+      {
+       "claim": "PRED-55.D1",
+       "phrase": "is claimed as a prospective provenance anchor"
+      },
+      {
+       "claim": "PRED-950.D3",
+       "phrase": "It currently owns its search result."
+      },
+      {
+       "claim": "PRED-45.D1",
+       "phrase": "(term introduced herein)"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     252,
+     205,
+     224
+    ],
+    [
+     950,
+     9372,
+     9385
+    ],
+    [
+     1110,
+     1,
+     30
+    ],
+    [
+     1337,
+     1,
+     25
+    ]
+   ],
+   "located": [
+    [
+     950,
+     7334,
+     7358
+    ],
+    [
+     950,
+     8516,
+     8516
+    ],
+    [
+     950,
+     9609,
+     9609
+    ],
+    [
+     1110,
+     58,
+     58
+    ],
+    [
+     1110,
+     113,
+     113
+    ],
+    [
+     252,
+     54,
+     54
+    ]
+   ]
+  },
+  {
+   "group": "TP28.2",
+   "reviewed": [
+    "PRED-229.B1",
+    "PRED-499.B6",
+    "PRED-21.B1",
+    "PRED-520.B1",
+    "PRED-534.B1",
+    "PRED-1160.G1",
+    "PRED-552.F1",
+    "PRED-552.H1",
+    "PRED-552.H2",
+    "PRED-553.G2",
+    "PRED-558.G2",
+    "PRED-571.G1",
+    "PRED-583.B1",
+    "PRED-584.F8",
+    "PRED-1174.E1",
+    "PRED-1174.H1",
+    "PRED-49.F1",
+    "PRED-49.F5",
+    "PRED-51.H1",
+    "PRED-56.G2",
+    "PRED-724.G1",
+    "PRED-106.F1",
+    "PRED-106.H2",
+    "PRED-1377.F1",
+    "PRED-1003.B1",
+    "PRED-763.G1",
+    "PRED-770.F1",
+    "PRED-770.G1",
+    "PRED-163.H1",
+    "PRED-163.H2",
+    "PRED-863.G14",
+    "PRED-881.F1",
+    "PRED-882.F2",
+    "PRED-921.G5",
+    "PRED-941.F1",
+    "PRED-1480.F2",
+    "PRED-1532.H1",
+    "PRED-1532.H8",
+    "PRED-1569.H37",
+    "PRED-1594.F9",
+    "PRED-1607.D1",
+    "PRED-1615.F1",
+    "PRED-1621.G2",
+    "PRED-1631.F3"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-552.H1",
+      "PRED-1174.H1"
+     ],
+     "basis": "Both claim that no prior theory of disciplinary formation formalized the full set of conditions or treated the field as constructible.",
+     "evidence": [
+      {
+       "claim": "PRED-552.H1",
+       "phrase": "None formalized all dimensions. None recognized the object as constructible."
+      },
+      {
+       "claim": "PRED-1174.H1",
+       "phrase": "provides\n         construction primitives for deliberate field installation"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-881.F1",
+      "PRED-882.F2"
+     ],
+     "change": [
+      "Scope specified: the planned addition of generic-field queries becomes a v1.1 specification with a table of field-level queries and the objects each probes (later v1.1.1)."
+     ],
+     "basis": "The generic-field queries planned for v1.1 in the baseline reading are specified in the methodology deposit the next day.",
+     "evidence": [
+      {
+       "claim": "PRED-881.F1",
+       "phrase": "Generic-field queries** independent of any single object will be added"
+      },
+      {
+       "claim": "PRED-882.F2",
+       "phrase": "v1.1 specifies **field-level generic queries**"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-553.G2",
+      "PRED-558.G2",
+      "PRED-552.F2",
+      "PRED-553.F1",
+      "PRED-552.F1",
+      "PRED-1174.E1",
+      "PRED-106.F1",
+      "PRED-49.F1"
+     ],
+     "name": "Retrieval Formation Theory and its field tests",
+     "basis": "Claims and tests of Retrieval Formation Theory: a field exists in the retrieval layer when a summarizer sustains a multi-stage synthesis of it, tested by query.",
+     "evidence": [
+      {
+       "claim": "PRED-553.G2",
+       "phrase": "Retrieval formation targets the synthesizer."
+      },
+      {
+       "claim": "PRED-558.G2",
+       "phrase": "The test is not indexing. The test is synthesis."
+      },
+      {
+       "claim": "PRED-552.F2",
+       "phrase": "pass_condition: Stage 4 or higher"
+      },
+      {
+       "claim": "PRED-553.F1",
+       "phrase": "Stability across users, regions, devices, time, model updates"
+      },
+      {
+       "claim": "PRED-552.F1",
+       "phrase": "If the retrieval system can sustain a multi-stage\n    briefing on the GDE as a field"
+      },
+      {
+       "claim": "PRED-1174.E1",
+       "phrase": "concludes that a discipline of epistemic field construction exists"
+      },
+      {
+       "claim": "PRED-106.F1",
+       "phrase": "The next retrieval query for \"semantic physics\" will show"
+      },
+      {
+       "claim": "PRED-49.F1",
+       "phrase": "field-scale immanent execution remains an open empirical question"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-770.G1",
+      "PRED-770.F1",
+      "PRED-163.H1",
+      "PRED-163.H2"
+     ],
+     "name": "recognition bias against field-forming work",
+     "basis": "Claims that recognition apparatus misclassifies or prunes field-forming and neglected work, with a test for the model case.",
+     "evidence": [
+      {
+       "claim": "PRED-770.G1",
+       "phrase": "will systematically misclassify field-forming work"
+      },
+      {
+       "claim": "PRED-770.F1",
+       "phrase": "Matched-pair prompting."
+      },
+      {
+       "claim": "PRED-163.H1",
+       "phrase": "the system's recognition apparatus is calibrated to prune precisely the labor the system depends on"
+      },
+      {
+       "claim": "PRED-163.H2",
+       "phrase": "consecration arrives late, but it arrives"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-229.B1",
+      "PRED-583.B1",
+      "PRED-534.B1"
+     ],
+     "name": "seeding a field's vocabulary",
+     "basis": "Forecasts that minted vocabulary seeded into the symbolic field will structure how later discourse speaks.",
+     "evidence": [
+      {
+       "claim": "PRED-229.B1",
+       "phrase": "The field speaks in our vocabulary."
+      },
+      {
+       "claim": "PRED-583.B1",
+       "phrase": "are minted to survive summarization"
+      },
+      {
+       "claim": "PRED-534.B1",
+       "phrase": "Anthropic has seeded the normative layer of the discourse"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": [
+    [
+     881,
+     240,
+     240
+    ],
+    [
+     882,
+     486,
+     488
+    ],
+    [
+     1174,
+     301,
+     301
+    ],
+    [
+     552,
+     112,
+     112
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "PRED-1110.D2 is registered 2026-01-13 (deposit #1110 front matter), but the deposit's text is the Central Navigation Map v7.0 (document ID CH-CENTRAL-MAP-2026-03-16-v7.0, version table 'v7.0 | Mar 16, 2026', recovery source a 2026/03 blog post), and the AINOS claim about the Space Ark is otherwise first stated 2026-03-14 (F568.D1); the registration date appears to be that of the v2.0 map, not of this text.",
+  "PRED-552.F2 (group TP28.1) belongs with the Retrieval Formation Theory series in group TP28.2; it is placed there as a cross-group member, as is PRED-553.F1.",
+  "PRED-252.G1 and PRED-950.H23 are joined as same; the triage had linked PRED-250.G1 and PRED-252.G1 only to PRED-252.G2, which lies outside this batch and may also belong with the semantic liquidation excision series.",
+  "PRED-1337.G1's deposit title carries 'MRA-2025-1224' while the deposit is dated 2026-03-16; not checked further, noted only as a possible date mismatch."
+ ]
+}
