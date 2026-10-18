@@ -126,3 +126,73 @@ These are recorded and nothing has been changed:
 - The re-reading of the text the record repair added, about 348,000 words.
 - The attachments.
 - The index's home, which waits on Lee's ruling.
+
+## Rulings applied and the join pass (2026-10-17)
+
+Lee Sharks, 2026-10-17:
+- "go with the in text date and repair the dates"
+- "we go by registration date"
+- "lets join the pairs"
+
+### Dates
+
+Twelve alexanarch records now carry the date their own text states. The repair is alexanarch
+`scripts/repair_dates_from_text_20261017.py`, which records each record's `date_basis` and its prior value.
+
+| Record | Date now |
+|---|---|
+| #1226 | 2026-06-14 |
+| #1234 | 2026-04-16 |
+| #1235 | 2026-04-04 |
+| #1236 | 2026-04-05 |
+| #1237 | 2026-04-01 |
+| #1238, #1242, #1243 | 2026-04-17 |
+| #1240 | 2026-04-02 |
+| #1241 | 2026-04-07 |
+| #1246 | 2026-06-19 |
+| #1389 | 2026-06-04 |
+
+The claims take their dates from the current registry. The Josephus Thesis now registers at #203 (2026-06-14).
+
+Left unchanged:
+- #1110 and #1251: their own front matter states the registry date.
+- #1247, #1249, #1233, #206 and #1239: the text gives no date.
+
+### Order of states
+
+A claim's states are ordered by registration date. Each state keeps the change the reader wrote for it, and the reader's
+order is kept beside it as `read_order`. #1601 is last in the otium chain.
+
+### The join pass
+
+The 206 observations that named claims across groups were read in nine batches under `data/reading/JOIN-PROTOCOL.md`:
+
+- 5 `same` sets;
+- 2 `states` sets: #1570 → #1671 (the library channel, where the will premise is corrected) and #1497 → #1514 (the
+  build list revised after the build);
+- 86 series, many of them extending series by name.
+
+Series with one name are now one series. The index now holds:
+
+| | Count |
+|---|---|
+| Claims | 4,137 |
+| Revised over time (states) | 58 |
+| Series | 550 |
+| Claims stated more than once | 928 |
+
+### Still open, from the join readers
+
+- **Two `same` sets to join.** #283.H7 + #1483.H4 (Catullus is κῆνος) state the same thesis as #281.H6 + #134.H2.
+- **Links the batches could not make**, because a claim was not in the batch:
+  - #1598.E1 belongs in the anticipatory-erratum sequence with #1601.H3.
+  - #1226.G1 and #1249.H3 belong in the Josephus Thesis chain.
+  - #1054.G1 belongs in "Sappho 31 in the compression layer".
+  - #1486.F8 belongs in the Philo blind-reconstruction series.
+- **Near-duplicate series names**, such as the Sappho 31 and diversity-contraction variants. These are left as named.
+- **Registry dates not covered by the ruling**, because the text states no other date for itself:
+  - #1249 is headed "June 2026" with no day.
+  - #1384 (05-21) summarizes #194, which says it was deposited 12 June 2026.
+  - #1118 is registered 2026-01-18 for a July deposit.
+- **Duplicates:** #467 = #892; #498 is a shorter version of #499.
+- **#402** still carries the superseded "Render unto the Operator" body as an appendix. This has not been ruled on.

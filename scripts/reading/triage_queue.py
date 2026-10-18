@@ -39,6 +39,10 @@ def main():
         if n is not None and int(n) not in meta and d.get('full_text_path'):
             meta[int(n)] = {'title': d.get('title'), 'date': d.get('date'), 'path': str(A / d['full_text_path'].lstrip('/')),
                             'lines_total': None, 'from': 'registry'}
+    for d in json.load(open(A / 'data/registry.json'))['deposits']:  # dates as the registry now has them (repaired 2026-10-17)
+        n = d.get('deposit_number')
+        if n is not None and int(n) in meta and d.get('date'):
+            meta[int(n)]['date'] = d['date']
     json.dump([{'deposit': k, **v} for k, v in sorted(meta.items())], open(T / 'deposit-titles.json', 'w'), ensure_ascii=False, indent=0)
 
     def card(i):

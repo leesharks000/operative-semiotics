@@ -85,6 +85,11 @@ def topical(claims, C, T, byid):
         if st['kind'] == 'series':
             mem = sorted({to.get(i, i) for i in st['claims']})
             series.append({'name': st.get('name'), 'claims': mem, 'basis': st.get('basis'), 'batch': st['batch']})
+    merged = {}  # one series per name: a later pass extends a series by reusing its name (JOIN-PROTOCOL)
+    for x in series:
+        m = merged.setdefault(x['name'], {'name': x['name'], 'claims': [], 'basis': [], 'batches': []})
+        m['claims'] = sorted(set(m['claims']) | set(x['claims'])); m['basis'].append(x['basis']); m['batches'].append(x['batch'])
+    series = sorted(merged.values(), key=lambda x: x['name'] or '')
     names = collections.defaultdict(list)
     for x in series:
         for i in x['claims']:
