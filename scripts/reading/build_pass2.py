@@ -16,7 +16,8 @@ Two kinds of text were never read under READING-PROTOCOL:
   A  ATTACHMENTS. The files under alexanarch data/attachments/. Text files are read as they are; PDF and DOCX are
      converted to plain text (pdftotext; pandoc) into derived/attachments/. Excluded, and listed with the reason:
      images and binary data (png, jpg, parquet, gz); a file whose text already stands in a deposit text the sweep
-     read (30 sampled 10-word runs, 27 or more found there); JSON over 15,000 words (machine-written data rows).
+     read, or in a derived own-voice text (30 sampled 10-word runs, 27 or more found there); JSON over 15,000 words
+     (machine-written data rows); a file of machine transcripts (other parties' speech, as for #3).
      Each attachment is tied to the deposits that link it (registry fields, deposit texts, the AXN-<hex> folder).
 
 Rows are units (a deposit's new text, or one attachment) with the line ranges to read; batches are cut at 35,000
@@ -31,6 +32,17 @@ sys.path.insert(0, str(ROOT / "scripts/reading"))
 TEXT = {".md", ".txt", ".py", ".yaml", ".yml", ".sh", ".html", ".json", ".jsonl", ".csv", ".tex", ".sha256"}
 CONV = {".pdf", ".docx"}
 CTX, JOIN = 3, 10
+# attachments no registry field or deposit text links, tied by title to the deposit whose text they are a source of
+# (the earliest of a same-title pair); New Human Compiled names no deposit and is read with none
+DEPOSIT_OF = {"recovered-sources/EA-LOGOS-01_The_Word_That_Became_Text.md": 626,
+              "recovered-sources/EA-LOGOS-02_Prolegomena_to_the_Historical_Logos.md": 625,
+              "recovered-sources/THE-SEALED-ROOM-v1.2.md": 466, "recovered-sources/cleis.md": 1165,
+              "recovered-sources/The-Magistrate-Refuses-the-Mirror.md": 772,
+              "recovered-sources/botanical-effective-act-academic.md": 37,
+              "recovered-sources/f01-FBDP-v1.2-academic.md": 571,
+              "recovered-sources/ASW_Kindle_RexFraction_2026.md": 498,
+              "ea-lo-collapse-diagnostic-01/EA-LO-COLLAPSE-DIAGNOSTIC-01.pdf": 1573,
+              "ea-measures-report-01/collapse_diagnostic.py": 1573}
 norm = lambda s: " ".join(s.split())
 
 
@@ -150,6 +162,8 @@ def main():
             seated.append(norm(pathlib.Path(d["path"]).read_text(encoding="utf-8", errors="replace")))
         except Exception:
             pass
+    for dp in sorted((R / "derived").glob("*-voice*.md")):
+        seated.append(norm(dp.read_text(encoding="utf-8", errors="replace")))
     big = "\n".join(seated)
     conv = R / "derived" / "attachments"
     att = sorted(x for x in (ax / "data/attachments").rglob("*") if x.is_file())
@@ -162,6 +176,8 @@ def main():
         hx = re.match(r"AXN-([0-9A-F]{4})", rel)
         if hx and hx.group(1) in hexmap:
             deps.add(hexmap[hx.group(1)])
+        if rel in DEPOSIT_OF:
+            deps.add(DEPOSIT_OF[rel])
         deps = sorted(x for x in deps if x)
         unit = "A:" + rel
         if ext not in TEXT and ext not in CONV:
@@ -181,6 +197,9 @@ def main():
         nw = len(text.split())
         if nw == 0:
             excluded.append({"unit": unit, "deposits": deps, "path": str(path), "reason": "no text extracted"}); continue
+        if "transcripts" in pathlib.Path(rel).name.lower():
+            excluded.append({"unit": unit, "deposits": deps, "path": str(path), "words": nw,
+                             "reason": "machine transcripts (other parties' speech: What NOT to record)"}); continue
         if ext in (".json", ".jsonl", ".csv") and nw > 15000:
             excluded.append({"unit": unit, "deposits": deps, "path": str(path), "words": nw,
                              "reason": "data file over 15,000 words (machine-written rows)"}); continue
