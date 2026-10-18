@@ -28,7 +28,9 @@ groups. Each group was formed by clustering the claims' statements, and carries 
 - what the triage already linked: `contains`, `in` and `related`.
 
 Read every claim in every group in full. Where you need context the statement does not carry, open the deposit's text
-(the `path` field) around the find's lines, and record the range you read.
+(the `path` field) around the find's lines, and record the range you read. Lines you only saw as search hits are not a
+reading: list them under `located` (same shape as `read`), not under `read`. Some statements contain non-breaking
+spaces, so copy phrases by script rather than retyping them.
 
 ## What to record, per group
 
@@ -70,7 +72,7 @@ Write `data/reading/triage/topical/<ID>.json`:
  "groups": [{"group": "<group id>", "reviewed": ["<every claim id in the group>"],
              "sets": [{"kind": "same|states|series", "claims": [...], "name": "...", "change": ["...", ...],
                        "basis": "...", "evidence": [{"claim": "...", "phrase": "..."}]}],
-             "read": [[deposit, first, last], ...]}],
+             "read": [[deposit, first, last], ...], "located": [[deposit, first, last], ...]}],
  "observations": ["..."]}
 ```
 
