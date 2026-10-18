@@ -9,3 +9,7 @@
 > 3. Write /home/claude/operative-semiotics/data/reading/triage/batches/<ID>.json in exactly the protocol's shape: one decision per item, in queue order. Copy every evidence phrase out of the quote or text with a script so it is verbatim. Record started_at/finished_at from `date -u` and your self_description honestly ('unknown' rather than guess).
 > 4. Run `python3.12 /home/claude/operative-semiotics/scripts/reading/triage_verify.py <ID>` and fix every failure it reports until it prints VERIFIED.
 > 5. Do not edit any other project file and do not run git. When done, reply with one short paragraph: the output path, the decisions by value, and anything a later pass must know.
+
+## Pass 2 (TN and TCP batches, 2026-10-18)
+
+The same prompt, with step 1 reading "(v1.1)" and, for TN batches, "with particular care for 'TN: a find of reading pass 2'".

@@ -1,4 +1,4 @@
-# Triage Protocol: the prediction sweep's second pass (v1.0, 2026-10-17)
+# Triage Protocol: the prediction sweep's second pass (v1.1, 2026-10-18)
 
 The ruling (Lee Sharks, 2026-10-17): "lets do the triage pass."
 
@@ -103,12 +103,42 @@ The record repair changed some deposit texts after the sweep read them, so a fin
 match the current file. Locate the quote in the current text, and record your read ranges in current-file lines.
 `triage/currency.json` records, for each find, whether its quote is still at its lines, at other lines, or gone.
 
+## TN: a find of reading pass 2 (v1.1)
+
+The ruling (Lee Sharks, 2026-10-18): "lets fo that triage pass". Reading pass 2 read the text the record repair added
+and the deposits' attachments (READING-PROTOCOL v1.3). Its finds now join an index that already holds about 4,100
+claims, grouped and joined by the triage, topical and join passes. Each TN item is one pass-2 find (`find`, quoted in
+full; `path` is the file it was read from) and the six existing claims nearest it in wording (`candidates`: the claim's
+id, tier, registration, title, first statement and falsifier, and how many statements it has). Read the find, and the
+candidates, and decide:
+
+- `same`: the find states one of these claims. Give `claim`.
+- `variant`: it states one of them, changed in a way that matters for checking it (window, scope, falsifier, reversal).
+  Give `claim` and `change`.
+- `in`: the claim is a list, ledger or battery and the find is one of its members. Give `claim`.
+- `contains`: the find is a list, ledger or battery and the claim is one of its members. Give `claim`.
+- `related`: distinct, but on the same subject: a claim and its test, or two of one series. Give `claims` (a list).
+- `new`: none of these. The find becomes a claim of its own.
+
+For `same`, `variant`, `in` and `contains`, give `evidence_find` (a verbatim phrase of 8 to 400 characters from the
+find's quote or falsifier) and `evidence_claim` (a verbatim phrase from the claim's statement or falsifier as given
+in the candidate; the verifier also accepts a phrase from any of the claim's other statements). When in doubt between
+`same` and `variant`, choose `variant`; between `same` and `new`, choose `new` unless the find plainly states the claim.
+
+The nearest claims are found by wording; a claim restated in other words may not be among them. If you know the claim
+it states from elsewhere in the index, you may give a `claim` that is not a candidate. Look claims up in
+`data/reading/triage/claims.json`.
+
+Give `basis` in one sentence. `read` may name an attachment by its path: `[["/path/to/file", first, last]]`.
+
+Pass-2 confirmation records come as TC items (batches TCP…), exactly as above.
+
 ## Output
 
 Write `data/reading/triage/batches/<ID>.json`:
 
 ```
-{"batch_id": "<ID>", "kind": "TC|TE|TR", "protocol": "TRIAGE-PROTOCOL v1.0",
+{"batch_id": "<ID>", "kind": "TC|TE|TR|TN", "protocol": "TRIAGE-PROTOCOL v1.1",
  "reader": {"self_description": "...", "started_at": "...", "finished_at": "..."},
  "decisions": [{"item": "<item>", ...fields above...}],
  "observations": ["anything a later pass must know"]}

@@ -12,7 +12,8 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 R = ROOT / 'data/reading'; T = R / 'triage'
 V = {'TC': {'target_kind': {'find', 'deposit', 'self', 'external', 'unlocated'}},
      'TE': {'decision': {'same', 'variant', 'contains', 'related', 'distinct'}},
-     'TR': {'match': {'found', 'partial', 'not_found', 'excluded', 'no_source'}}}
+     'TR': {'match': {'found', 'partial', 'not_found', 'excluded', 'no_source'}},
+     'TN': {'decision': {'same', 'variant', 'in', 'contains', 'related', 'new'}}}
 CLAIMED = {'came_true', 'partly', 'failed', 'pending', 'disclaimed'}
 
 
@@ -21,6 +22,10 @@ def main():
     ids = [json.loads(l)['id'] for l in open(T / 'finds.ids.jsonl')]
     Q = dict(zip(ids, (f['quote'] + '\n' + (f.get('falsifier_quote') or '') for f in F)))  # quote or falsifier
     paths = {d['deposit']: d.get('path') for d in json.load(open(T / 'deposit-titles.json'))}
+    # TN (pass 2): a claim's text is all its statements' quotes and falsifiers
+    CL = {}
+    for c in json.load(open(T / 'claims.json'))['claims']:
+        CL[c['id']] = '\n'.join(Q.get(st['find'], '') for st in c['statements'])
     q = {b['batch_id']: b for b in json.load(open(T / 'queue.json'))['batches']}
     bad_any = False
     for bid in sys.argv[1:]:
@@ -53,7 +58,9 @@ def main():
                     fails.append(f'{w}: {field}={d.get(field)!r}')
             for r in d.get('read') or []:
                 try:
-                    dep, a, z = r; p = paths.get(int(dep)); n = len(pathlib.Path(p).read_text(encoding='utf-8').split('\n'))
+                    dep, a, z = r
+                    p = dep if isinstance(dep, str) and dep.startswith('/') else paths.get(int(dep))  # a path: an attachment
+                    n = len(pathlib.Path(p).read_bytes().decode('utf-8', 'replace').split('\n'))
                     if not (1 <= a <= z <= n + 1):
                         fails.append(f'{w}: read range {r} outside 1..{n}')
                 except Exception as e:
@@ -93,6 +100,22 @@ def main():
                         ev_in(e, fid, w)
                 if d.get('match') == 'excluded' and not d.get('rule'):
                     fails.append(f'{w}: excluded without rule')
+            if k == 'TN':
+                fid = it[2:]
+                dec = d.get('decision')
+                cl = d.get('claims') if dec == 'related' else ([d.get('claim')] if dec != 'new' else [])
+                for c in cl or []:
+                    if c not in CL:
+                        fails.append(f'{w}: unknown claim {c!r}')
+                if dec != 'new' and not cl:
+                    fails.append(f'{w}: {dec} names no claim')
+                if dec == 'variant' and not d.get('change'):
+                    fails.append(f'{w}: variant without change')
+                if dec in ('same', 'variant', 'in', 'contains'):
+                    ef, ec = d.get('evidence_find'), d.get('evidence_claim')
+                    ev_in(ef, fid, w)
+                    if not isinstance(ec, str) or not (8 <= len(ec) <= 400) or (cl and cl[0] in CL and ec not in CL[cl[0]]):
+                        fails.append(f'{w}: evidence_claim not verbatim in {cl[0] if cl else None}: {str(ec)[:60]!r}')
             if not d.get('basis'):
                 fails.append(f'{w}: no basis')
         res = {'batch_id': bid, 'decisions': len(out.get('decisions', [])), 'fails': fails, 'verified': not fails}
