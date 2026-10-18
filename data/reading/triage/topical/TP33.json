@@ -1,0 +1,589 @@
+{
+ "batch_id": "TP33",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude Opus 5.5 (claude-opus-5-5), subagent parallel reader in Claude Code",
+  "started_at": "2026-10-18T01:39:12Z",
+  "finished_at": "2026-10-18T01:41:44Z"
+ },
+ "groups": [
+  {
+   "group": "TP33.1",
+   "reviewed": [
+    "PRED-209.F2",
+    "PRED-1337.B1",
+    "PRED-64.H3",
+    "PRED-1362.E1",
+    "PRED-1000.G1",
+    "PRED-1384.D1",
+    "PRED-1.F1",
+    "PRED-1.G5",
+    "PRED-1.G8",
+    "PRED-863.G10",
+    "PRED-863.G11",
+    "PRED-863.G17",
+    "PRED-868.G1",
+    "PRED-868.H1",
+    "PRED-881.A2",
+    "PRED-881.B1",
+    "PRED-907.F3",
+    "PRED-907.G2",
+    "PRED-908.H1",
+    "PRED-910.H1",
+    "PRED-918.B1",
+    "PRED-918.F1",
+    "PRED-911.H3",
+    "PRED-921.G9",
+    "PRED-1041.H1",
+    "PRED-1044.F2",
+    "PRED-1044.F3",
+    "PRED-1044.F4",
+    "PRED-1045.F1",
+    "PRED-1046.B2",
+    "PRED-1094.F5",
+    "PRED-1094.H6",
+    "PRED-1407.G1",
+    "PRED-1473.G1",
+    "PRED-1529.F1",
+    "PRED-1550.F7",
+    "PRED-1609.G2",
+    "PRED-1611.H1",
+    "PRED-1678.F3"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1.G5",
+      "PRED-863.G10"
+     ],
+     "basis": "Both define the revocation gap as the interval between a repository's authority to remove content and its responsibility for the persistent identifiers issued for it; #863 restates #1's term with its own falsifier.",
+     "evidence": [
+      {
+       "claim": "PRED-1.G5",
+       "phrase": "calls that condition the **revocation gap**"
+      },
+      {
+       "claim": "PRED-863.G10",
+       "phrase": "The revocation gap is the interval between the authority to remove content"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1.G5",
+      "PRED-1.G8",
+      "PRED-863.G11"
+     ],
+     "name": "Loud-exclusion concepts (revocation gap, attribution severance, classification asymmetry)",
+     "basis": "Three of the six concepts the loud-exclusion paper (#1, line 58) develops, each stated with its own falsifier and carried into the #863 glossary.",
+     "evidence": [
+      {
+       "claim": "PRED-1.G5",
+       "phrase": "revocation gap"
+      },
+      {
+       "claim": "PRED-1.G8",
+       "phrase": "Attribution severance is the systematic detachment"
+      },
+      {
+       "claim": "PRED-863.G11",
+       "phrase": "Classification asymmetry is the divergence"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1044.F2",
+      "PRED-1044.F3",
+      "PRED-1044.F4",
+      "PRED-1045.F1"
+     ],
+     "name": "Severance and erosion observatory instruments",
+     "basis": "Specified-but-unbuilt instruments of one programme that monitors DataCite/Zenodo identifier severance and decay longitudinally, beginning from the archive's own records and generalizing outward.",
+     "evidence": [
+      {
+       "claim": "PRED-1044.F2",
+       "phrase": "query each concept DOI against the DataCite live API"
+      },
+      {
+       "claim": "PRED-1044.F3",
+       "phrase": "The staleness log itself is a publishable artifact"
+      },
+      {
+       "claim": "PRED-1044.F4",
+       "phrase": "The DataCite Severance Observatory is a generalization of the 871 work"
+      },
+      {
+       "claim": "PRED-1045.F1",
+       "phrase": "Monthly re-probe against the same query to detect DOIs that have transitioned from findable to registered"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-868.G1",
+      "PRED-868.H1",
+      "PRED-908.H1",
+      "PRED-1.F1"
+     ],
+     "name": "June 2026 DOI metadata-loss findings",
+     "basis": "Findings and open tests about what happened to the DOI metadata of the terminated account in June 2026: identifier severance, selective stripping by DOI role, the Findable-to-Registered transition, and tombstone conformity.",
+     "evidence": [
+      {
+       "claim": "PRED-868.G1",
+       "phrase": "Failure at the semantic layer constitutes identifier severance"
+      },
+      {
+       "claim": "PRED-868.H1",
+       "phrase": "The selective stripping of one DOI type indicates an automated process"
+      },
+      {
+       "claim": "PRED-908.H1",
+       "phrase": "consistent with a transition from Findable to Registered state"
+      },
+      {
+       "claim": "PRED-1.F1",
+       "phrase": "the degree of conformity across the affected inventory remains to be measured"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-863.G17",
+      "PRED-1473.G1"
+     ],
+     "name": "AXN identifier collision falsifiers",
+     "basis": "One falsifier template applied to two content-derived identifier schemes: the AXN and the concept AXN each fail if two distinct inputs yield the same identifier.",
+     "evidence": [
+      {
+       "claim": "PRED-863.G17",
+       "phrase": "falsified as an identifier if two distinct texts are shown to produce the same 6-emoji sequence"
+      },
+      {
+       "claim": "PRED-1473.G1",
+       "phrase": "If two distinct works can produce the same work id, the derivation collides and the scheme fails"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": [
+    [
+     863,
+     52,
+     54
+    ],
+    [
+     1,
+     58,
+     58
+    ],
+    [
+     1,
+     319,
+     319
+    ]
+   ]
+  },
+  {
+   "group": "TP33.2",
+   "reviewed": [
+    "PRED-283.H3",
+    "PRED-490.H1",
+    "PRED-571.E1",
+    "PRED-42.H1",
+    "PRED-49.H1",
+    "PRED-1415.H1",
+    "PRED-1458.H1",
+    "PRED-1458.H4",
+    "PRED-1474.H6",
+    "PRED-1475.H4",
+    "PRED-1476.H1",
+    "PRED-1476.H6",
+    "PRED-1477.H1",
+    "PRED-1483.H9",
+    "PRED-1484.H8",
+    "PRED-1486.H13",
+    "PRED-1486.H6",
+    "PRED-1486.H8",
+    "PRED-1486.H9",
+    "PRED-1532.H3",
+    "PRED-1570.H3",
+    "PRED-1584.F1",
+    "PRED-1585.F1",
+    "PRED-1585.F3",
+    "PRED-1585.H2",
+    "PRED-1585.H3",
+    "PRED-1585.H4",
+    "PRED-1585.H6",
+    "PRED-1585.H9",
+    "PRED-1586.H1",
+    "PRED-1589.H3",
+    "PRED-1594.A3",
+    "PRED-1594.G2",
+    "PRED-1594.H22",
+    "PRED-1594.H6",
+    "PRED-1597.H1",
+    "PRED-1668.H7",
+    "PRED-1671.H4"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-42.H1",
+      "PRED-49.H1"
+     ],
+     "basis": "Both read Gossel's 1711 treatise on university seals as a theory of binding status to documents through an institutional token; #42 itself draws the DOI analogy that #49 states (AXN-01C3 line 62).",
+     "evidence": [
+      {
+       "claim": "PRED-42.H1",
+       "phrase": "Gossel's entire treatise is a theory of status promotion in juridical form"
+      },
+      {
+       "claim": "PRED-49.H1",
+       "phrase": "Gossel's treatise on university seals (1711) performs the same operation as the archive's DOI-anchoring system"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-1474.H6",
+      "PRED-1476.H6",
+      "PRED-1486.H6"
+     ],
+     "change": [
+      "Locus fixed and argued in morphology: the stamping verb at 10.6 precedes the naming noun at 13.4; the claim moves from a constraint on reconstructing the lost pathos section to a thesis that doctrine is downstream of the act.",
+      "Scope widened from performance-before-naming to operator-to-whole-work (MDL ≈ 1 against ~40 chapters), and a falsifier added: failure of substrates given the operator, or a control operator reaching the targets equally."
+     ],
+     "basis": "One claim about Peri Hypsous ch. 10: the treatise performs the transmission operation before it names it as doctrine, then widened to the operator from which the whole treatise unfolds.",
+     "evidence": [
+      {
+       "claim": "PRED-1474.H6",
+       "phrase": "If the mechanism is already distributed through the surviving treatise and demonstrated on Homer's words before it is named as doctrine"
+      },
+      {
+       "claim": "PRED-1476.H6",
+       "phrase": "ἐνετύπωσε at 10.6 precedes ἀποτύπωσις at 13.4 by three chapters"
+      },
+      {
+       "claim": "PRED-1486.H6",
+       "phrase": "is a single operation from which the treatise unfolds as scaffolding"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1458.H1",
+      "PRED-1458.H4",
+      "PRED-1484.H8",
+      "PRED-1486.H8",
+      "PRED-1486.H13"
+     ],
+     "name": "Peri Hypsous as a theory of transmissional inscription",
+     "basis": "Distinct theses of one line reading Peri Hypsous as a theory of transmissional inscription: the theory itself, ch. 44 as the circuit's failure, survival across languages as the test, the treatise's genre, and the ch. 44 decline-diagnosis as a test case.",
+     "evidence": [
+      {
+       "claim": "PRED-1458.H1",
+       "phrase": "the treatise contains a theory of transmissional inscription is a fact about the text"
+      },
+      {
+       "claim": "PRED-1458.H4",
+       "phrase": "the report that the circuit has stopped turning"
+      },
+      {
+       "claim": "PRED-1484.H8",
+       "phrase": "The sublime is defined as what survives cross-language transmission"
+      },
+      {
+       "claim": "PRED-1486.H8",
+       "phrase": "is a treatise on achieving immortality"
+      },
+      {
+       "claim": "PRED-1486.H13",
+       "phrase": "a test case for the decline-diagnosis at Longinus 44"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1475.H4",
+      "PRED-1476.H1",
+      "PRED-1477.H1",
+      "PRED-1483.H9",
+      "PRED-1532.H3"
+     ],
+     "name": "Sappho 31 erratum chain: the hanging line as socket",
+     "basis": "Members of the Sappho 31 erratum chain on the hanging line as a socket: the missing citation formula, the transmitted configuration as the object, Augustine's generalization, the Philo/Mosaic junction, and the second-person turn.",
+     "evidence": [
+      {
+       "claim": "PRED-1475.H4",
+       "phrase": "At Sappho: **none.**"
+      },
+      {
+       "claim": "PRED-1476.H1",
+       "phrase": "is not damage but **the object itself**"
+      },
+      {
+       "claim": "PRED-1477.H1",
+       "phrase": "The socket is generalized from a terminal line to a compositional method"
+      },
+      {
+       "claim": "PRED-1483.H9",
+       "phrase": "The junction itself is not the conjecture."
+      },
+      {
+       "claim": "PRED-1532.H3",
+       "phrase": "the immediate second-person turn after the Sappho quotation belongs to a rare pattern in the treatise"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1584.F1",
+      "PRED-1585.F1"
+     ],
+     "basis": "#1584 defers the recurrence of the transformation at further seams under the name-boundary to the notebook's programme; #1585 is that programme, listing the same seams (De sensibus vs De anima I, botany vs zoology, doublet titles).",
+     "evidence": [
+      {
+       "claim": "PRED-1584.F1",
+       "phrase": "is the notebook's program, not this paper's claim"
+      },
+      {
+       "claim": "PRED-1585.F1",
+       "phrase": "The transformations recurring at further seams under the same name-boundary, with the within-name controls each time"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1586.H1",
+      "PRED-1585.H9",
+      "PRED-1594.G2"
+     ],
+     "basis": "One thesis in three registers: the first stylometric axis of the Aristotle/Theophrastus corpora is an operation, not an author, found by an instrument that never sees the names.",
+     "evidence": [
+      {
+       "claim": "PRED-1586.H1",
+       "phrase": "an operation, not an author; and an instrument that never sees the names finds that line as the first axis of the corpus"
+      },
+      {
+       "claim": "PRED-1585.H9",
+       "phrase": "It is the voice of an operation — decomposition of the world into register"
+      },
+      {
+       "claim": "PRED-1594.G2",
+       "phrase": "never finds the name at any of them"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1585.H6",
+      "PRED-1594.H6"
+     ],
+     "basis": "Both state that the Theophrastan texts stand at both edges of the Aristotelian treatise and that 'first draft' therefore describes a state, not a position.",
+     "evidence": [
+      {
+       "claim": "PRED-1585.H6",
+       "phrase": "why \"first draft\" describes a state and not a position"
+      },
+      {
+       "claim": "PRED-1594.H6",
+       "phrase": "\"First draft of Aristotle\" survives as a description of *state*"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-1585.H2",
+      "PRED-1589.H3",
+      "PRED-1597.H1",
+      "PRED-1671.H4"
+     ],
+     "change": [
+      "Refined: the fragment no longer stands in for a Λ 10 that does not exist; its questions are read as landing on Λ 10's own closing aporiai, a Β written after Λ in Β's register with Λ's vocabulary.",
+      "Direction reopened: corrected loci put the demand-cluster in ch. II, read as a specification that precedes Λ 8's supply rather than a pupil objecting to a master's book; reversal of the master-successor relation is offered as one of three answers.",
+      "Order withdrawn: the seam and the directed rare-term edge (fragment to Λ ranked first of 1,482) are kept, but which was written first is declared undecidable by the sequence."
+     ],
+     "basis": "One claim about the order of Theophrastus's Metaphysics fragment and Aristotle's Λ, revised from 'draft after Λ' through 'specification stated early' to 'the sequence cannot decide'.",
+     "evidence": [
+      {
+       "claim": "PRED-1585.H2",
+       "phrase": "it is the draft *after* it"
+      },
+      {
+       "claim": "PRED-1589.H3",
+       "phrase": "The fragment is a Β written *after* Λ"
+      },
+      {
+       "claim": "PRED-1597.H1",
+       "phrase": "It is a specification stated early, compactly, and once."
+      },
+      {
+       "claim": "PRED-1671.H4",
+       "phrase": "which was written first, the sequence cannot decide"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1597,
+     450,
+     489
+    ]
+   ],
+   "located": [
+    [
+     42,
+     53,
+     53
+    ],
+    [
+     42,
+     62,
+     62
+    ],
+    [
+     49,
+     2312,
+     2312
+    ],
+    [
+     1597,
+     467,
+     469
+    ],
+    [
+     1671,
+     717,
+     717
+    ],
+    [
+     1585,
+     274,
+     274
+    ],
+    [
+     1589,
+     272,
+     272
+    ]
+   ]
+  },
+  {
+   "group": "TP33.3",
+   "reviewed": [
+    "PRED-107.B1",
+    "PRED-107.F1",
+    "PRED-107.F2",
+    "PRED-107.F6",
+    "PRED-107.G3",
+    "PRED-109.B1",
+    "PRED-109.G1",
+    "PRED-736.A1",
+    "PRED-736.A2",
+    "PRED-736.A3",
+    "PRED-739.G1",
+    "PRED-739.G2",
+    "PRED-1457.F1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-107.G3",
+      "PRED-107.F1",
+      "PRED-107.F2",
+      "PRED-107.F6"
+     ],
+     "name": "Semantic Deviation research programme (#107)",
+     "basis": "Tests of one research programme in #107: the slop prediction, the ten-year prospective study, the operationalization-stability benchmark and the dated roadmap that schedules them.",
+     "evidence": [
+      {
+       "claim": "PRED-107.G3",
+       "phrase": "outputs that human raters consistently identify as \"AI slop\" exhibit statistically significant negative mean per-token signed deviation"
+      },
+      {
+       "claim": "PRED-107.F1",
+       "phrase": "A Tier 1 prospective study can begin from the moment of any paper deposit"
+      },
+      {
+       "claim": "PRED-107.F2",
+       "phrase": "Construct a benchmark dataset of $N \\approx 50$ interventions"
+      },
+      {
+       "claim": "PRED-107.F6",
+       "phrase": "The negative-net-deviation slop test, as specified in §6."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-736.A1",
+      "PRED-736.A2",
+      "PRED-736.A3"
+     ],
+     "name": "90-day winding-number protocol predictions P1–P3",
+     "basis": "The three pre-registered predictions P1–P3 of the 90-day winding-number protocol, each with its own falsifier and the same t3 window.",
+     "evidence": [
+      {
+       "claim": "PRED-736.A1",
+       "phrase": "P1 — Content effect."
+      },
+      {
+       "claim": "PRED-736.A2",
+       "phrase": "P2 — Structural selectivity."
+      },
+      {
+       "claim": "PRED-736.A3",
+       "phrase": "P3 — Provenance differential."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-739.G1",
+      "PRED-739.G2"
+     ],
+     "name": "Narrative-field test bed predictions",
+     "basis": "Pre-registered predictions P1 and P2 of the narrative-field literary test bed.",
+     "evidence": [
+      {
+       "claim": "PRED-739.G1",
+       "phrase": "**P1 (Gravity-well existence).**"
+      },
+      {
+       "claim": "PRED-739.G2",
+       "phrase": "**P2 (Asymmetric variance by arc position).**"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": []
+  }
+ ],
+ "observations": [
+  "PRED-863.G11 (classification asymmetry: private vs public justification diverge) and PRED-910.H1 / PRED-911.H3 (neither ground appears in published policy) describe the same two termination grounds from different angles; left unjoined as distinct claims.",
+  "PRED-1594.H6's statement already stands in #1585 (AXN-0677 line 274) in the same paragraph as PRED-1585.H2; the triage registered it at #1594.",
+  "PRED-1597.H1 and PRED-1671.H4 move away from PRED-1585.H2 / PRED-1589.H3's 'fragment after Λ' toward an open or reversed order; recorded as states without reconciling, and the apparent contradiction may be deliberate structure of the notebook line.",
+  "PRED-1585.H2 as statement says Λ 10 'does not exist' while PRED-1589.H3 reads the fragment's questions as landing on Λ 10's closing aporiai; recorded as a step of states.",
+  "PRED-1362.E1 has a window of 2041 (Acts of the Synod of Ann Arbor) in a 2026 deposit; this is a retrocausal/fictional dating, not a registration-date error."
+ ]
+}
