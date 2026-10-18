@@ -1,0 +1,647 @@
+{
+ "batch_id": "TP40",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude Opus 5.5 (claude-opus-5-5), parallel reader subagent in a Claude Code session",
+  "started_at": "2026-10-18T01:39:50Z",
+  "finished_at": "2026-10-18T01:42:21Z"
+ },
+ "groups": [
+  {
+   "group": "TP40.1",
+   "reviewed": [
+    "PRED-241.F1",
+    "PRED-251.F3",
+    "PRED-317.F1",
+    "PRED-339.F2",
+    "PRED-1203.D1",
+    "PRED-597.G2",
+    "PRED-598.G1",
+    "PRED-1353.G1",
+    "PRED-660.F1",
+    "PRED-661.G3",
+    "PRED-61.B1",
+    "PRED-63.F1",
+    "PRED-72.B3",
+    "PRED-106.A10",
+    "PRED-109.F1",
+    "PRED-736.A4",
+    "PRED-112.F1",
+    "PRED-115.G1",
+    "PRED-754.B2",
+    "PRED-127.G2",
+    "PRED-1011.G1",
+    "PRED-187.F1",
+    "PRED-187.G5",
+    "PRED-3.F14",
+    "PRED-3.F15",
+    "PRED-3.G17",
+    "PRED-3.G4",
+    "PRED-3.G6",
+    "PRED-1549.F2",
+    "PRED-1550.F3",
+    "PRED-1632.F1",
+    "PRED-1632.F2",
+    "PRED-1666.B1",
+    "PRED-1666.G1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-661.G3",
+      "PRED-1353.G1"
+     ],
+     "basis": "Both state that SPXI does not replace GEO but preserves GEO returns across model updates by anchoring the referenced entity; 055A (1353) restates 020C (661) in its abstract.",
+     "evidence": [
+      {
+       "claim": "PRED-661.G3",
+       "phrase": "SPXI preserves GEO ROI across model updates"
+      },
+      {
+       "claim": "PRED-1353.G1",
+       "phrase": "A GEO deployment without an SPXI entity decays"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-61.B1",
+      "PRED-661.G3",
+      "PRED-1353.G1"
+     ],
+     "name": "SPXI-over-GEO nested-layer relation",
+     "basis": "Three claims of the EA-SPXI-09/09.1/14 line stating the nested-layer relation SPXI over GEO, each for a different return (persistence, ROI, agent callability).",
+     "evidence": [
+      {
+       "claim": "PRED-61.B1",
+       "phrase": "SPXI is the infrastructure for agent-addressable commerce"
+      },
+      {
+       "claim": "PRED-661.G3",
+       "phrase": "SPXI does not replace GEO ROI"
+      },
+      {
+       "claim": "PRED-1353.G1",
+       "phrase": "A GEO deployment with an SPXI entity inherits persistence"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-3.F14",
+      "PRED-3.F15",
+      "PRED-1549.F2"
+     ],
+     "name": "Entity-probe discrimination battery",
+     "basis": "Each names a new probe instrument for entity resolution (nullification, frame, path-dependent) joining the near-neighbour probe in one discrimination battery.",
+     "evidence": [
+      {
+       "claim": "PRED-3.F14",
+       "phrase": "a NULLIFICATION PROBE"
+      },
+      {
+       "claim": "PRED-3.F15",
+       "phrase": "a FRAME PROBE, in which the same entity is queried"
+      },
+      {
+       "claim": "PRED-1549.F2",
+       "phrase": "PDEP entries join the discrimination battery"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-241.F1",
+      "PRED-317.F1",
+      "PRED-660.F1",
+      "PRED-109.F1",
+      "PRED-736.A4"
+     ],
+     "name": "Longitudinal re-query of inscribed entities",
+     "basis": "Each specifies repeated re-querying of an inscribed entity's representation at fixed intervals after deposit; one longitudinal re-query template applied across successive instruments.",
+     "evidence": [
+      {
+       "claim": "PRED-241.F1",
+       "phrase": "Weekly:** Volatility monitoring (Probe 5) on all registered entities"
+      },
+      {
+       "claim": "PRED-317.F1",
+       "phrase": "Repeat at intervals (T₁, T₂, ..., Tₖ)"
+      },
+      {
+       "claim": "PRED-660.F1",
+       "phrase": "Run the Encyclotron audit again after deployment and at regular intervals (30, 60, 90 days)"
+      },
+      {
+       "claim": "PRED-109.F1",
+       "phrase": "Re-query at intervals"
+      },
+      {
+       "claim": "PRED-736.A4",
+       "phrase": "Deformation does not deepen over the 90-day horizon"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1353,
+     11,
+     16
+    ]
+   ],
+   "located": [
+    [
+     661,
+     24,
+     24
+    ],
+    [
+     1353,
+     13,
+     15
+    ]
+   ]
+  },
+  {
+   "group": "TP40.2",
+   "reviewed": [
+    "PRED-1249.G1",
+    "PRED-1091.B1",
+    "PRED-740.D1",
+    "PRED-130.G2",
+    "PRED-135.G1",
+    "PRED-150.E2",
+    "PRED-162.F1",
+    "PRED-162.G1",
+    "PRED-166.A1",
+    "PRED-166.B1",
+    "PRED-794.G1",
+    "PRED-170.F1",
+    "PRED-197.G1",
+    "PRED-1211.F7",
+    "PRED-832.B3",
+    "PRED-832.B6",
+    "PRED-832.F5",
+    "PRED-832.F6",
+    "PRED-832.F8",
+    "PRED-1216.G1",
+    "PRED-846.B1",
+    "PRED-858.H4",
+    "PRED-1.B2",
+    "PRED-881.A1",
+    "PRED-1046.F2",
+    "PRED-1054.B1",
+    "PRED-1055.B1",
+    "PRED-1436.G2",
+    "PRED-1470.G2",
+    "PRED-1485.H4",
+    "PRED-1531.H1",
+    "PRED-1543.H2",
+    "PRED-1550.H1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-794.G1",
+      "PRED-846.B1",
+      "PRED-1216.G1",
+      "PRED-1249.G1"
+     ],
+     "name": "Composition layer resolves by retrieval density",
+     "basis": "Each states or applies the thesis that the composition layer resolves names and readings by retrieval density rather than authorship or correctness.",
+     "evidence": [
+      {
+       "claim": "PRED-794.G1",
+       "phrase": "It is a density-detection function"
+      },
+      {
+       "claim": "PRED-846.B1",
+       "phrase": "because the shark has higher retrieval density"
+      },
+      {
+       "claim": "PRED-1216.G1",
+       "phrase": "It serves whatever misreading is densest in the basin"
+      },
+      {
+       "claim": "PRED-1249.G1",
+       "phrase": "once revelatory density crosses a critical concentration"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1054.B1",
+      "PRED-1055.B1",
+      "PRED-1436.G2"
+     ],
+     "name": "MPAI corrective-disambiguation packets",
+     "basis": "One MPAI-packet template (a deposited disambiguation installed at the retrieval substrate ahead of the default composed summary) applied to Sappho 31, SPXI and signal-template agnosticism; extends the triage's related link between 1054 and 1055.",
+     "evidence": [
+      {
+       "claim": "PRED-1054.B1",
+       "phrase": "install a corrective disambiguation at the retrieval-substrate layer"
+      },
+      {
+       "claim": "PRED-1055.B1",
+       "phrase": "install a corrective disambiguation at the retrieval-substrate layer"
+      },
+      {
+       "claim": "PRED-1436.G2",
+       "phrase": "This packet exists to be retrievable at that junction"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1211.F7",
+      "PRED-832.B3",
+      "PRED-832.B6",
+      "PRED-832.F5",
+      "PRED-832.F6",
+      "PRED-832.F8",
+      "PRED-1216.G1"
+     ],
+     "name": "Revelation First reception work plan",
+     "basis": "Members of the Revelation First retrieval-layer reception work plan (v1.2, v7.1 and the self-audited v1.2): its campaigns, batteries, controls and expected composition-layer behaviour.",
+     "evidence": [
+      {
+       "claim": "PRED-1211.F7",
+       "phrase": "The Provenance Coupling Campaign"
+      },
+      {
+       "claim": "PRED-832.B3",
+       "phrase": "whether the composition layer is *extending* the argument"
+      },
+      {
+       "claim": "PRED-832.B6",
+       "phrase": "the composition layer will frame the project as fringe"
+      },
+      {
+       "claim": "PRED-832.F5",
+       "phrase": "Run the baseline battery against Wikipedia"
+      },
+      {
+       "claim": "PRED-832.F6",
+       "phrase": "If theological PER exceeds technical PER at matched density"
+      },
+      {
+       "claim": "PRED-832.F8",
+       "phrase": "Machine-Mediated Theological Reception: The First Measured Instance"
+      },
+      {
+       "claim": "PRED-1216.G1",
+       "phrase": "The composition layer does not misread Revelation"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-858.H4",
+      "PRED-1485.H4",
+      "PRED-1531.H1",
+      "PRED-1543.H2",
+      "PRED-1550.H1"
+     ],
+     "name": "Pre-machine composition layers",
+     "basis": "Each reads a pre-machine transmission practice (writing in the Phaedrus, quotation, doxography and versification, scribal redaction, transmission crossings) as an earlier composition or summary layer.",
+     "evidence": [
+      {
+       "claim": "PRED-858.H4",
+       "phrase": "Plato's critique of writing is the *earliest composition-layer theory*"
+      },
+      {
+       "claim": "PRED-1485.H4",
+       "phrase": "already downstream of a summary layer called quotation"
+      },
+      {
+       "claim": "PRED-1531.H1",
+       "phrase": "Lucretius is a composition layer"
+      },
+      {
+       "claim": "PRED-1543.H2",
+       "phrase": "redaction as composition"
+      },
+      {
+       "claim": "PRED-1550.H1",
+       "phrase": "The composition layer is the newest crossing"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     846,
+     205,
+     216
+    ],
+    [
+     1216,
+     920,
+     927
+    ]
+   ],
+   "located": [
+    [
+     794,
+     41,
+     53
+    ],
+    [
+     1249,
+     55,
+     55
+    ]
+   ]
+  },
+  {
+   "group": "TP40.3",
+   "reviewed": [
+    "PRED-417.H1",
+    "PRED-422.H1",
+    "PRED-430.H1",
+    "PRED-432.F1",
+    "PRED-432.H1",
+    "PRED-432.H2",
+    "PRED-432.H3",
+    "PRED-432.H4",
+    "PRED-433.B1",
+    "PRED-433.H1",
+    "PRED-433.H2",
+    "PRED-433.H3",
+    "PRED-434.F1",
+    "PRED-434.G1",
+    "PRED-434.G2",
+    "PRED-434.G3",
+    "PRED-434.G4",
+    "PRED-434.H1",
+    "PRED-434.H2",
+    "PRED-467.H1",
+    "PRED-467.H3",
+    "PRED-467.H4",
+    "PRED-892.H1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-417.H1",
+      "PRED-430.H1"
+     ],
+     "basis": "Both state that the Germanic drift collapsed the aspectual system of English's ancestors into a present/past binary, losing the aorist.",
+     "evidence": [
+      {
+       "claim": "PRED-417.H1",
+       "phrase": "They collapsed the rich aspectual variety into a binary"
+      },
+      {
+       "claim": "PRED-430.H1",
+       "phrase": "The Germanic drift collapsed aspectual richness into tense poverty"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-422.H1",
+      "PRED-434.H1",
+      "PRED-433.H1",
+      "PRED-433.H2"
+     ],
+     "basis": "One thesis in four wordings: English lacks a non-indexed perfective, and the absence is not accidental but produced by administration, labour discipline, colonial record-keeping and capital.",
+     "evidence": [
+      {
+       "claim": "PRED-422.H1",
+       "phrase": "This absence is not neutral but constitutes temporal alienation"
+      },
+      {
+       "claim": "PRED-434.H1",
+       "phrase": "This absence is not accidental. It was produced by the material conditions"
+      },
+      {
+       "claim": "PRED-433.H1",
+       "phrase": "It is a *selection effect*"
+      },
+      {
+       "claim": "PRED-433.H2",
+       "phrase": "English has been wounded. The wound has a history"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-432.H2",
+      "PRED-434.H2"
+     ],
+     "basis": "Both state that Latin merged aorist into perfect under the temporal-precision needs of Roman legal and bureaucratic record.",
+     "evidence": [
+      {
+       "claim": "PRED-432.H2",
+       "phrase": "The aorist's temporal vagueness—its refusal to locate the action on a timeline—was dysfunctional for legal record-keeping"
+      },
+      {
+       "claim": "PRED-434.H2",
+       "phrase": "The aorist's temporal vagueness was a liability in legal contexts"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-430.H1",
+      "PRED-434.H2",
+      "PRED-432.H1",
+      "PRED-432.H3",
+      "PRED-433.H3",
+      "PRED-432.H4"
+     ],
+     "name": "Non-indexed perfective: stages of the etiology",
+     "basis": "Distinct historical stages of the non-indexed-perfective etiology: Germanic drift, Latin merger, Norman administration, enclosure, colonial standardization, algorithmic governance.",
+     "evidence": [
+      {
+       "claim": "PRED-430.H1",
+       "phrase": "English lost the aorist"
+      },
+      {
+       "claim": "PRED-434.H2",
+       "phrase": "Why did Latin do this?"
+      },
+      {
+       "claim": "PRED-432.H1",
+       "phrase": "The Norman administrative apparatus required dated records"
+      },
+      {
+       "claim": "PRED-432.H3",
+       "phrase": "The burning of the \"grammar-keepers\""
+      },
+      {
+       "claim": "PRED-433.H3",
+       "phrase": "The suppression of these dialects was also the suppression"
+      },
+      {
+       "claim": "PRED-432.H4",
+       "phrase": "precondition for algorithmic content governance"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-432.F1",
+      "PRED-434.F1",
+      "PRED-434.G1",
+      "PRED-434.G2",
+      "PRED-434.G3",
+      "PRED-434.G4"
+     ],
+     "name": "Non-indexed perfective diagnostic battery",
+     "basis": "The diagnostic battery operationalizing the claim that English lacks a non-indexed perfective: leakage metrics, translation test, speaker hedging, AI indexing.",
+     "evidence": [
+      {
+       "claim": "PRED-432.F1",
+       "phrase": "The claim that English lacks a non-indexed perfective is testable"
+      },
+      {
+       "claim": "PRED-434.F1",
+       "phrase": "Quantify information loss as translation entropy"
+      },
+      {
+       "claim": "PRED-434.G1",
+       "phrase": "English should show significantly higher variance"
+      },
+      {
+       "claim": "PRED-434.G2",
+       "phrase": "significantly more hedging, circumlocution, and strategy-switching"
+      },
+      {
+       "claim": "PRED-434.G3",
+       "phrase": "Significant clustering of hedging strategies"
+      },
+      {
+       "claim": "PRED-434.G4",
+       "phrase": "AI systems will systematically add temporal indexing"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-892.H1",
+      "PRED-467.H1",
+      "PRED-467.H3",
+      "PRED-467.H4"
+     ],
+     "name": "Prepositional Alienation",
+     "basis": "The Prepositional Alienation thesis and its evidentiary sub-claims (ME calque, the 1540s legal phrase, Thucydides' prophasis/aitiai), from one essay deposited twice (467, 892).",
+     "evidence": [
+      {
+       "claim": "PRED-892.H1",
+       "phrase": "Modern English \"for\" cannot stably encode structural function"
+      },
+      {
+       "claim": "PRED-467.H1",
+       "phrase": "is a direct calque of the Anglo-Norman prepositional logic"
+      },
+      {
+       "claim": "PRED-467.H3",
+       "phrase": "for all intents and purposes"
+      },
+      {
+       "claim": "PRED-467.H4",
+       "phrase": "Thucydides distinguishes the *truest cause*"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-434.H1",
+      "PRED-892.H1"
+     ],
+     "name": "Phase X liberation philology: grammatical gaps in English",
+     "basis": "Two Phase X liberation-philology theses applying one template (an English grammatical gap produced by administrative and institutional history); 0388 states the parallel to the aorist finding as exact.",
+     "evidence": [
+      {
+       "claim": "PRED-434.H1",
+       "phrase": "English has operated for centuries without a true non-indexed perfective"
+      },
+      {
+       "claim": "PRED-892.H1",
+       "phrase": "collapsed distinct semantic fields into a single fused preposition"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     433,
+     286,
+     299
+    ],
+    [
+     434,
+     466,
+     475
+    ]
+   ],
+   "located": [
+    [
+     467,
+     11,
+     11
+    ],
+    [
+     892,
+     23,
+     23
+    ],
+    [
+     892,
+     608,
+     608
+    ],
+    [
+     432,
+     227,
+     227
+    ],
+    [
+     432,
+     305,
+     305
+    ],
+    [
+     433,
+     94,
+     94
+    ],
+    [
+     434,
+     205,
+     205
+    ],
+    [
+     430,
+     115,
+     115
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "PRED-1249.G1 is registered 2026-01-01 in deposit 1249, a Revelation First Mint Block (Release 2) whose work plan (1211, 832, 1216) dates from June 2026 and whose later statements (860, 1231) are dated 2026-06-18; 2026-01-01 looks like a placeholder date.",
+  "PRED-3.F14 is registered 2026-06-17 (Capture Registry v8.3) but cites 'the Cranes battery of 2026-09-09'; the registry's registration date predates an event it discusses (the registry is a living file).",
+  "PRED-417.H1 and PRED-430.H1 attribute the loss of the aorist to the Germanic drift, while PRED-432.H1 and PRED-434.H1 attribute the absence of the non-indexed perfective to Norman administration and later material conditions; the texts present these as layered stages, recorded here as an apparent tension, not reconciled.",
+  "PRED-892.H1 (group TP40.3) and PRED-467.H1/H3/H4 come from the same essay deposited twice on 2026-02-11 (467 and 892 share the abstract verbatim); 892.H1's later statement from deposit 18 (circumlocution tax as semantic rent) belongs with the Prepositional Alienation thesis.",
+  "PRED-846.B1 and PRED-162.F1 (TP40.2) apply the density-detection thesis of PRED-794.G1 to the shark-authorship trap; 162.F1 is the book plan built on it and was left as is."
+ ]
+}
