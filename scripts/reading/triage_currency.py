@@ -26,7 +26,7 @@ def main():
     F = [json.loads(l) for l in open(R / 'finds.jsonl')]
     ids = [json.loads(l)['id'] for l in open(T / 'finds.ids.jsonl')]
     texts = {}
-    out, dep = {}, collections.defaultdict(collections.Counter)
+    out, dep, jtexts = {}, collections.defaultdict(collections.Counter), {}
     for f, i in zip(F, ids):
         m = meta.get(f['deposit'])
         if not m or not pathlib.Path(m['path']).exists():
@@ -34,6 +34,20 @@ def main():
         if m['path'] not in texts:
             texts[m['path']] = pathlib.Path(m['path']).read_text(encoding='utf-8').split('\n')
         L = texts[m['path']]; q = norm(f['quote'])
+        if m['path'].endswith('.json'):
+            # #3 and #4 were read through their own-voice fields (derived texts); a quote is current if it is still in
+            # one of the dataset's string values (TC12: F3.C19 and F3.C22 were wrongly marked gone)
+            if m['path'] not in jtexts:
+                vals = []
+                def walk(x):
+                    if isinstance(x, str): vals.append(x)
+                    elif isinstance(x, dict): [walk(v) for v in x.values()]
+                    elif isinstance(x, list): [walk(v) for v in x]
+                walk(json.load(open(m['path'])))
+                jtexts[m['path']] = norm('\n'.join(vals))
+            st = {'state': 'current' if q in jtexts[m['path']] else 'gone', 'basis': 'dataset string values'}
+            out[i] = st; dep[f['deposit']][st['state']] += 1
+            continue
         a, z = f['lines']
         if q in norm('\n'.join(L[a - 1:z])):
             st = {'state': 'current'}
