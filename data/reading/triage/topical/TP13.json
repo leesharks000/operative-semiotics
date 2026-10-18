@@ -1,0 +1,426 @@
+{
+ "batch_id": "TP13",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5) parallel reader in a Claude Code subagent; model version as reported in the session prompt",
+  "started_at": "2026-10-18T01:35:15Z",
+  "finished_at": "2026-10-18T01:38:07Z"
+ },
+ "groups": [
+  {
+   "group": "TP13.1",
+   "reviewed": [
+    "PRED-28.G7",
+    "PRED-97.G1",
+    "PRED-731.F1",
+    "PRED-1379.B3",
+    "PRED-1384.H1",
+    "PRED-127.H1",
+    "PRED-136.H4",
+    "PRED-769.G4",
+    "PRED-779.G3",
+    "PRED-787.F1",
+    "PRED-163.F1",
+    "PRED-925.F1",
+    "PRED-817.F2",
+    "PRED-188.F1",
+    "PRED-3.G15",
+    "PRED-859.H8",
+    "PRED-921.F1",
+    "PRED-921.G1",
+    "PRED-921.G6",
+    "PRED-1426.F1",
+    "PRED-1443.H1",
+    "PRED-1444.B2",
+    "PRED-1467.B1",
+    "PRED-1493.H1",
+    "PRED-1493.H3",
+    "PRED-1496.H4",
+    "PRED-1515.H1",
+    "PRED-1540.F3",
+    "PRED-1542.F1",
+    "PRED-1556.F2",
+    "PRED-1570.G1",
+    "PRED-1570.H11",
+    "PRED-1570.H9",
+    "PRED-1569.F2",
+    "PRED-1569.H20",
+    "PRED-1569.H7",
+    "PRED-1569.H8",
+    "PRED-1575.H8",
+    "PRED-1583.H3",
+    "PRED-1587.H2",
+    "PRED-1594.G3",
+    "PRED-1594.H23",
+    "PRED-1593.H1",
+    "PRED-1605.H13",
+    "PRED-1605.H20",
+    "PRED-1605.H9",
+    "PRED-1658.H1",
+    "PRED-1658.H2",
+    "PRED-1658.H5",
+    "PRED-1666.B3",
+    "PRED-1666.F1"
+   ],
+   "sets": [
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-1570.H9",
+      "PRED-1569.F2",
+      "PRED-1569.H7"
+     ],
+     "change": [
+      "falsifier sharpened: the overfitting prediction stated as a two-sided test, criteria fitting this corpus anomalously well against performing no better here than elsewhere",
+      "reversed: the registered prediction is called backwards; an adversarial object is said to predict criteria that fail to converge, which the record is said to show"
+     ],
+     "basis": "The calibration-object hypothesis registers an overfitting prediction, the notebook states it as a two-sided discriminating test, and the notebook's same-day correction declares that registered prediction backwards.",
+     "evidence": [
+      {
+       "claim": "PRED-1570.H9",
+       "phrase": "The one asymmetric prediction:"
+      },
+      {
+       "claim": "PRED-1569.F2",
+       "phrase": "they should fit that corpus anomalously well"
+      },
+      {
+       "claim": "PRED-1569.H7",
+       "phrase": "The registered prediction was backwards."
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1583.H3",
+      "PRED-1587.H2"
+     ],
+     "basis": "Both state that the receiving texts (Strabo, Plutarch) describe one lot of books reaching Rome, divided into two names by Andronicus's pinakes.",
+     "evidence": [
+      {
+       "claim": "PRED-1583.H3",
+       "phrase": "The division of the one lot into two names is, on the receiving texts' own account, the editor's πίναξ."
+      },
+      {
+       "claim": "PRED-1587.H2",
+       "phrase": "the corpus reaching Rome as one lot (Strabo, Plutarch) and divided into two names by Andronicus's πίνακες"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1594.G3",
+      "PRED-1593.H1"
+     ],
+     "basis": "Both state the stylometric finding that the operation is the better partition of the Aristotle/Theophrastus corpus than the names, with name recovery dependent on subject.",
+     "evidence": [
+      {
+       "claim": "PRED-1594.G3",
+       "phrase": "on this corpus the operation is the better partition"
+      },
+      {
+       "claim": "PRED-1593.H1",
+       "phrase": "the operation is the better partition of this corpus on this measurement"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1583.H3",
+      "PRED-1587.H2",
+      "PRED-1593.H1",
+      "PRED-1594.G3",
+      "PRED-1605.H9",
+      "PRED-1605.H20",
+      "PRED-1658.H1",
+      "PRED-1658.H2",
+      "PRED-1658.H5"
+     ],
+     "name": "One corpus divided by name (Aristotle/Theophrastus)",
+     "basis": "Members of the Theophrastus line arguing that the Aristotelian and Theophrastan texts are one corpus divided by name, through transmission, catalogue, stylometry and De anima III.5.",
+     "evidence": [
+      {
+       "claim": "PRED-1583.H3",
+       "phrase": "The division of the one lot into two names is, on the receiving texts' own account, the editor's πίναξ."
+      },
+      {
+       "claim": "PRED-1587.H2",
+       "phrase": "divided into two names by Andronicus's πίνακες"
+      },
+      {
+       "claim": "PRED-1593.H1",
+       "phrase": "name recovery is unusually sensitive to the removal of the works whose subjects the names most differ over"
+      },
+      {
+       "claim": "PRED-1594.G3",
+       "phrase": "the received partition behaves like an arbitrary split of the same texts"
+      },
+      {
+       "claim": "PRED-1605.H9",
+       "phrase": "shows he received an already-editorialized corpus"
+      },
+      {
+       "claim": "PRED-1605.H20",
+       "phrase": "The esoteric/exoteric partition of the corpus"
+      },
+      {
+       "claim": "PRED-1658.H1",
+       "phrase": "the finding that the corpus divides by name exactly where III.5 divides mind"
+      },
+      {
+       "claim": "PRED-1658.H2",
+       "phrase": "So the corpus divides by name at the divine"
+      },
+      {
+       "claim": "PRED-1658.H5",
+       "phrase": "under the two names this corpus is divided into"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1493.H1",
+      "PRED-1493.H3",
+      "PRED-1496.H4",
+      "PRED-1515.H1"
+     ],
+     "name": "Sappho 31 in canonical Josephus",
+     "basis": "Members of the Sappho 31 programme locating the fr. 31 apparatus in canonical Josephus and Esther Addition D as the uncontested carrier.",
+     "evidence": [
+      {
+       "claim": "PRED-1493.H1",
+       "phrase": "This paper moves the claim onto the uncontested Greek corpus."
+      },
+      {
+       "claim": "PRED-1493.H3",
+       "phrase": "Josephus, who names Sappho nowhere, transmits her syntax"
+      },
+      {
+       "claim": "PRED-1496.H4",
+       "phrase": "JOSEPHUS, the Flavian client, is the licensed carrier"
+      },
+      {
+       "claim": "PRED-1515.H1",
+       "phrase": "the queen seized in the open text"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-921.G6",
+      "PRED-1605.H13"
+     ],
+     "name": "A corpus generates its own reception",
+     "basis": "One template applied to two corpora (the archive, the Aristotelian corpus): a corpus that contains or generates its own reception.",
+     "evidence": [
+      {
+       "claim": "PRED-921.G6",
+       "phrase": "A corpus can generate elements of its own reception apparatus contemporaneously"
+      },
+      {
+       "claim": "PRED-1605.H13",
+       "phrase": "The corpus contains its own reception."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-921.F1",
+      "PRED-1426.F1",
+      "PRED-1480.F1"
+     ],
+     "name": "Control-corpus tests for archive-specific effects",
+     "basis": "One template applied to different archive effects: rerun the measurement on a control corpus or address family lacking the archive's anchors to separate an archive-specific effect from a general one.",
+     "evidence": [
+      {
+       "claim": "PRED-921.F1",
+       "phrase": "compare CHA recognition behavior to recognition of a size-matched, randomly assembled heterogeneous corpus"
+      },
+      {
+       "claim": "PRED-1426.F1",
+       "phrase": "rerunning the battery against a control corpus whose anchors were never deleted"
+      },
+      {
+       "claim": "PRED-1480.F1",
+       "phrase": "addresses that are *not* archive-anchored"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1569,
+     690,
+     799
+    ],
+    [
+     1570,
+     822,
+     841
+    ],
+    [
+     1593,
+     1,
+     175
+    ],
+    [
+     1594,
+     1085,
+     1112
+    ]
+   ],
+   "located": []
+  },
+  {
+   "group": "TP13.2",
+   "reviewed": [
+    "PRED-219.D1",
+    "PRED-1271.H2",
+    "PRED-413.H2",
+    "PRED-423.B1",
+    "PRED-458.H1",
+    "PRED-459.F1",
+    "PRED-477.B1",
+    "PRED-513.H2",
+    "PRED-528.H1",
+    "PRED-534.H1",
+    "PRED-535.H2",
+    "PRED-950.E2",
+    "PRED-647.F1",
+    "PRED-657.D1",
+    "PRED-663.H2",
+    "PRED-666.H1",
+    "PRED-666.H7",
+    "PRED-65.H7",
+    "PRED-674.H3",
+    "PRED-674.H5",
+    "PRED-674.H6",
+    "PRED-134.H3",
+    "PRED-776.B2",
+    "PRED-148.H1",
+    "PRED-153.H1",
+    "PRED-153.H2",
+    "PRED-791.B1",
+    "PRED-167.D1",
+    "PRED-186.H1",
+    "PRED-197.H4",
+    "PRED-3.H8",
+    "PRED-861.H5",
+    "PRED-943.H1",
+    "PRED-1480.F1",
+    "PRED-1536.F1",
+    "PRED-1540.H1",
+    "PRED-1570.H1",
+    "PRED-1570.H16",
+    "PRED-1629.G1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-65.H7",
+      "PRED-674.H6"
+     ],
+     "basis": "Both state that at Nicaea in 325 the losing positions (Arius, the Arians) lost the enforcement rather than the argument.",
+     "evidence": [
+      {
+       "claim": "PRED-65.H7",
+       "phrase": "did not lose the argument. They lost the enforcement."
+      },
+      {
+       "claim": "PRED-674.H6",
+       "phrase": "Arius lost not the debate but the enforcement."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-65.H7",
+      "PRED-674.H3",
+      "PRED-674.H5",
+      "PRED-674.H6"
+     ],
+     "name": "Counterfeit Orthodoxies: closure by enforcement and disposal",
+     "basis": "Members of the Counterfeit Orthodoxies programme: closure in a religious tradition is won by enforcement, disposal or relocation, not by argument.",
+     "evidence": [
+      {
+       "claim": "PRED-65.H7",
+       "phrase": "The creed that emerged is a regulatory document."
+      },
+      {
+       "claim": "PRED-674.H3",
+       "phrase": "The winners did not win the argument. They won the disposal."
+      },
+      {
+       "claim": "PRED-674.H5",
+       "phrase": "the priestly operations did not stop. They changed address."
+      },
+      {
+       "claim": "PRED-674.H6",
+       "phrase": "The creed did not discover truth. It produced unity."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-413.H2",
+      "PRED-153.H1",
+      "PRED-153.H2"
+     ],
+     "name": "Ginsberg's declaration as effective act",
+     "basis": "Members of the effective-acts discipline treating Ginsberg's Wichita Vortex Sutra declaration as its founding modern act.",
+     "evidence": [
+      {
+       "claim": "PRED-413.H2",
+       "phrase": "He meant the war ended."
+      },
+      {
+       "claim": "PRED-153.H1",
+       "phrase": "His act worked, not geopolitically but *structurally*"
+      },
+      {
+       "claim": "PRED-153.H2",
+       "phrase": "Ginsberg as mage. Allen Ginsberg did not write to describe. He wrote to summon."
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     458,
+     105,
+     129
+    ],
+    [
+     413,
+     112,
+     133
+    ],
+    [
+     153,
+     45,
+     52
+    ]
+   ],
+   "located": []
+  }
+ ],
+ "observations": [
+  "Registration date: PRED-1569.F2 and PRED-1569.H7 are registered 2026-08-31 (deposit 1569's date), but the notebook dates the correction in its section 7 '2026-08-29, same day', the same day deposit 1570 (registered 2026-08-29) adds its pointer to the hypothesis; the three states are in fact same-day.",
+  "Registration date: PRED-1594.G3 (registered 2026-09-06) is stated in the notebook's section 33 'Stocktaking after the referee rounds' dated 2026-09-07, and it runs the subject-matched comparison that PRED-1593.H1 (registered 2026-09-07) names as the experiment still owed; the notebook's registration date precedes the protocol's though its statement is the later one. Recorded as same rather than states for that reason.",
+  "Apparent contradiction: PRED-413.H2 says Ginsberg 'meant the war ended' and denies metaphor; PRED-153.H1 says the act 'worked, not geopolitically but structurally' and 'the war did not end in 1966 by his declaration'. One concerns intent, the other effect; left unreconciled.",
+  "Cross-group: PRED-458.H1 (TP13.2, 2026-02-06, 'Josephus ... did not transmit the Operators openly. He hid them') belongs with the Sappho-in-Josephus series in TP13.1 (PRED-1493.H3, 'Josephus, who names Sappho nowhere, transmits her syntax'); not added to the series because the O-CHAIN Operators of deposit 458 were not shown to be the fr. 31 apparatus.",
+  "Cross-group: PRED-1570.H16 (TP13.2, the reputational mechanism 'manufactured' Hicetas, Ecphantus and Timaeus of Locri) belongs with the calibration-object line PRED-1570.H9 / PRED-1569.H7 (TP13.1), the apparatus as output of the corpus.",
+  "Cross-group: PRED-1570.H1 (TP13.2, the earlier position did not know the range of its own operation, same maker) belongs with PRED-1658.H1 (TP13.1, one self-dividing maker).",
+  "Cross-group: PRED-1540.H1 (TP13.2, Alexandrian athetesis as a resemblance classifier) bears on the authenticity-apparatus claims PRED-1570.H9 and PRED-1569.F2 (TP13.1).",
+  "Related within TP13.1, not linked: PRED-136.H4 (the philological failure is the transmission) and PRED-1569.H8 (the corpus survived with its disputes intact) both treat the preservation of unresolved disputes as the transmission mechanism."
+ ]
+}
