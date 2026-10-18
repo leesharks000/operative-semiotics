@@ -19,7 +19,7 @@ CLAIMED = {'came_true', 'partly', 'failed', 'pending'}
 def main():
     F = [json.loads(l) for l in open(R / 'finds.jsonl')]
     ids = [json.loads(l)['id'] for l in open(T / 'finds.ids.jsonl')]
-    Q = dict(zip(ids, (f['quote'] for f in F)))
+    Q = dict(zip(ids, (f['quote'] + '\n' + (f.get('falsifier_quote') or '') for f in F)))  # quote or falsifier
     paths = {d['deposit']: d.get('path') for d in json.load(open(T / 'deposit-titles.json'))}
     q = {b['batch_id']: b for b in json.load(open(T / 'queue.json'))['batches']}
     bad_any = False

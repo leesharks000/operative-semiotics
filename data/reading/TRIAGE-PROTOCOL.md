@@ -63,7 +63,7 @@ Decide one of:
 - `distinct`: the shared words are boilerplate or a common phrase, and the claims are not related.
 
 Give `basis` in one sentence. Where it decides the call, quote the differing phrase from each side as `evidence_a` and
-`evidence_b`, verbatim. When in doubt between `same` and `variant`, choose `variant`: the index keeps both statements
+`evidence_b`, verbatim, from the find's quote or its falsifier quote. A `same` needs no evidence. When in doubt between `same` and `variant`, choose `variant`: the index keeps both statements
 either way, and a variant also keeps the change.
 
 ## TR: a register card or an intake item
@@ -75,7 +75,9 @@ The question is which finds state this card's prediction. Record:
   - `partial`: a find states part of it, or a weaker form
   - `not_found`: the source deposit was read and no find states it
   - `excluded`: the text exists, but the reading protocol's "What NOT to record" rules leave it out. Name the rule in `rule`.
-  - `no_source`: the card gives no archive deposit
+  - `no_source`: the card gives no archive deposit, and a search of the finds turns up none that states it. When the
+    card gives no deposit but a search finds the claim, record `found` or `partial` and say in `basis` that the card
+    names no deposit.
 - `finds`: the matching find ids.
 - `evidence`: for each find, a verbatim phrase from its quote.
 - `basis`: one sentence.
@@ -84,6 +86,12 @@ The question is which finds state this card's prediction. Record:
 Where a card's deposit is not given, or its finds are capped at 40 in the queue, search `finds.jsonl` by deposit.
 
 Register cards also carry `cls`, `status` and the rest. Do not change them. Record only the crosswalk.
+
+## Texts changed since the reading
+
+The record repair changed some deposit texts after the sweep read them, so a find's recorded lines may no longer
+match the current file. Locate the quote in the current text, and record your read ranges in current-file lines.
+`triage/currency.json` records, for each find, whether its quote is still at its lines, at other lines, or gone.
 
 ## Output
 

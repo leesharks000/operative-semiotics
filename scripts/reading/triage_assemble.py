@@ -11,6 +11,7 @@ One CLAIM per group of finds that state the same thing:
   evidence   confirmation records (C) that link to any statement: who claims what came true or failed, and when
   related    claims a TE decision called 'related'
   aliases    register cards (data/predictions.json) and intake items (data/archive-intake.json) that a TR decision matched
+Finds whose quote is no longer in the current text (currency.json 'gone') are held out and listed.
 C finds are evidence, not claims; a C that links to nothing in the archive stays in confirmations.json with its target.
 Only batches whose .verified.json says verified are used; the rest are listed as pending.
 USAGE  python3 scripts/reading/triage_assemble.py
@@ -36,7 +37,9 @@ def main():
             done[b['batch_id']] = json.load(open(T / f"batches/{b['batch_id']}.json"))
         else:
             pending.append(b['batch_id'])
-    par = {f['id']: f['id'] for f in F if f['shape'] != 'C'}
+    cur = json.load(open(T / 'currency.json'))['finds']
+    gone = sorted(i for i, v in cur.items() if v['state'] == 'gone')  # read from a body since replaced: held out, listed
+    par = {f['id']: f['id'] for f in F if f['shape'] != 'C' and f['id'] not in set(gone)}
 
     def g(i):
         while par[i] != i:
@@ -88,7 +91,7 @@ def main():
                        'statement': first['quote'], 'falsifier': first.get('falsifier_quote') or None,
                        'window': first.get('window') or None,
                        'statements': [{'find': i, 'deposit': byid[i]['deposit'], 'date': byid[i].get('date'),
-                                       'lines': byid[i]['lines'], 'shape': byid[i]['shape'],
+                                       'lines': cur.get(i, {}).get('lines_now') or byid[i]['lines'], 'shape': byid[i]['shape'],
                                        **({'variant': variants[i]} if i in variants else {})} for i in mem],
                        'aliases': sorted({a['item'] for i in mem for a in alias.get(i, [])}),
                        'evidence': [], 'related': []})
@@ -109,11 +112,11 @@ def main():
     by_tier = collections.Counter(c['tier'] for c in claims)
     summ = {'claims': len(claims), 'by_tier': dict(by_tier), 'multi_statement': sum(len(c['statements']) > 1 for c in claims),
             'with_evidence': sum(bool(c['evidence']) for c in claims), 'with_register_alias': sum(bool(c['aliases']) for c in claims),
-            'confirmations': len(conf), 'batches_verified': sorted(done), 'batches_pending': pending}
+            'confirmations': len(conf), 'held_out_gone': len(gone), 'batches_verified': sorted(done), 'batches_pending': pending}
     json.dump({'what': 'Claims of the prediction triage: the sweep\'s 6162 finds grouped into claims, each registered at its '
                        'earliest statement. Built by scripts/reading/triage_assemble.py from finds.jsonl, restatements.json '
                        'and the verified judgment batches; protocol data/reading/TRIAGE-PROTOCOL.md.',
-               'summary': summ, 'claims': claims}, open(T / 'claims.json', 'w'), ensure_ascii=False, indent=1)
+               'summary': summ, 'held_out': gone, 'claims': claims}, open(T / 'claims.json', 'w'), ensure_ascii=False, indent=1)
     json.dump({'what': 'Confirmation records (shape C) and what each points back to, as judged in the TC batches.',
                'confirmations': conf}, open(T / 'confirmations.json', 'w'), ensure_ascii=False, indent=1)
     print(json.dumps(summ))

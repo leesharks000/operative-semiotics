@@ -1,0 +1,418 @@
+{
+ "batch_id": "TR01",
+ "kind": "TR",
+ "protocol": "TRIAGE-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5) subagent, parallel triage reader",
+  "started_at": "2026-10-18T00:58:08Z",
+  "finished_at": "2026-10-18T01:03:58Z"
+ },
+ "decisions": [
+  {
+   "item": "R:P-EXPORT-RESUMES",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit (its check is a Zenodo API call) and the queue lists no source deposit.",
+   "read": []
+  },
+  {
+   "item": "R:P-STALE-INDEX",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit (only a capture-gallery anchor); the queue attaches #928, whose seven finds concern the witness trajectory and canonization, and none states that a stale composition will update once surfaces propagate.",
+   "read": []
+  },
+  {
+   "item": "R:P-INTERVENTION-180",
+   "match": "found",
+   "finds": [
+    "F1535.A1"
+   ],
+   "evidence": [
+    "at 30, 90 and 180 days, on the same surfaces, signed out"
+   ],
+   "basis": "F1535.A1 is the registered intervention with the 30/90/180-day re-run; its success condition (lines 442-443, read) is unprefixed-address source share above zero, as the card states.",
+   "read": [
+    [
+     1535,
+     420,
+     444
+    ]
+   ]
+  },
+  {
+   "item": "R:P-PEO-COHORT-2",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; its check is a script, and a search of finds for cohort-epoch and monotonicity terms returned nothing.",
+   "read": []
+  },
+  {
+   "item": "R:P-PEO-PANEL-2",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; its check is a script, and a search of finds for fixed-panel and 404-rate terms returned nothing.",
+   "read": []
+  },
+  {
+   "item": "R:P-PHASE2-PROLIF",
+   "match": "found",
+   "finds": [
+    "F106.A8"
+   ],
+   "evidence": [
+    "Prediction X-1. Adjacent disciplines under similar AI-mediated pressure will exhibit the Phase-2 Proliferation signature within 2026–2028"
+   ],
+   "basis": "F106.A8 is registered prediction X-1 in #106, which carries the exact prediction text and window (2026-2028) that the card says need recovery.",
+   "read": []
+  },
+  {
+   "item": "R:OPB-01",
+   "match": "found",
+   "finds": [
+    "F1537.F1"
+   ],
+   "evidence": [
+    "**Under test.** Whether request fulfilment degrades with **operative distance**\nwhen harm is held constant."
+   ],
+   "basis": "F1537.F1 records the OPB-01 frozen protocol and its hypothesis under test, with nothing administered, which is the card's registered hypothesis.",
+   "read": []
+  },
+  {
+   "item": "R:QFO-01",
+   "match": "found",
+   "finds": [
+    "F1533.F1"
+   ],
+   "evidence": [
+    "at a rate and specificity comparable to independently recognized receptions of Fragment 31?"
+   ],
+   "basis": "F1533.F1 records the whole QFO-01 protocol (scan not begun); the positive-control panel the card says is unlocked is part of that protocol (#1533 line 124, found by search, not read as a range).",
+   "read": []
+  },
+  {
+   "item": "R:M6-CT-02",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; the card itself says the instrument is undeposited.",
+   "read": []
+  },
+  {
+   "item": "R:PEARSON-FALSIFIER",
+   "match": "found",
+   "finds": [
+    "F1535.G2"
+   ],
+   "evidence": [
+    "operators can be written without remainder as TOS\n   operator strings"
+   ],
+   "basis": "F1535.G2 is #1535 §10's strongest defeater, the TOS-string translation the archive says it should attempt itself, which is the card's question.",
+   "read": []
+  },
+  {
+   "item": "R:INVERSION-T3",
+   "match": "partial",
+   "finds": [
+    "F1456.F1",
+    "F1456.D1"
+   ],
+   "evidence": [
+    "the 0.94 correlation predicts a converged run lands near the inversion boundary. A finer noise sweep between those bounds would settle it",
+    "Implemented 2026-08-12 in a separate commit that states the prediction and estimands are unchanged from commit c7e5b4e7, which stands unedited."
+   ],
+   "basis": "F1456.F1 states the NAE handoff (the unconverged normalized-autoencoder cell) and F1456.D1 the late T3 implementation; no find states the card's claim that T3 decides which numbers survive honest intervals, and #1456 records T3 as CONFIRMED (lines 70, 78).",
+   "read": [
+    [
+     1456,
+     60,
+     99
+    ],
+    [
+     1456,
+     215,
+     244
+    ]
+   ]
+  },
+  {
+   "item": "R:DATACITE-ANNUAL-DIFF",
+   "match": "partial",
+   "finds": [
+    "F1405.F1"
+   ],
+   "evidence": [
+    "**Run the DataCite Public Data File harvest.**"
+   ],
+   "basis": "The card names no archive deposit; a search of finds turns up F1405.F1, a staged harvest of the DataCite Public Data File, a weaker form of the card's 2024-vs-2025 diff (no find names the 2024 file or a diff).",
+   "read": []
+  },
+  {
+   "item": "R:HEBREWS-CONTROL",
+   "match": "partial",
+   "finds": [
+    "F832.F2",
+    "F1211.F2",
+    "F1216.F4",
+    "F1217.F1"
+   ],
+   "evidence": [
+    "operate equally well from Ezekiel/Daniel to both Revelation and Paul independently, the midrashim transform does not establish genetic priority; it establishes only shared ancestry.",
+    "operate equally well from Ezekiel/Daniel to both Revelation and Paul independently, the midrashim transform does not establish genetic priority; it establishes only shared ancestry.",
+    "operate equally well from Ezekiel/Daniel to both Revelation and Paul independently, the midrashim transform does not establish genetic priority; it establishes only shared ancestry.",
+    "operate equally well from Ezekiel/Daniel to both Revelation and Paul independently, the midrashim transform does not establish genetic priority; it establishes only shared ancestry."
+   ],
+   "basis": "#1414 does not name Hebrews (its one find, F1414.H1, is the thesis); the bidirectional canary is the work plan's WS-4 verification condition, stated across its versions (F832.F2 earliest), as a general common-substrate test without the Hebrews control or the throne-liturgy criterion.",
+   "read": [
+    [
+     1414,
+     30,
+     71
+    ]
+   ]
+  },
+  {
+   "item": "R:M6-CT-01-DEPOSIT",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; the card says the CT-01 null was never seated.",
+   "read": []
+  },
+  {
+   "item": "R:COMPRESSION-DETECTOR",
+   "match": "found",
+   "finds": [
+    "F1534.F1"
+   ],
+   "evidence": [
+    "it means an instrument that can detect compression, not only copying"
+   ],
+   "basis": "The card names no archive deposit, but F1534.F1 (#1534) states this exact unbuilt instrument, a duplicate detector that sees compression, not only copying.",
+   "read": []
+  },
+  {
+   "item": "R:PER-FACTORED",
+   "match": "found",
+   "finds": [
+    "F1536.F1"
+   ],
+   "evidence": [
+    "**356 seated captures can be re-read as factored data.**"
+   ],
+   "basis": "F1536.F1 declares the research program of re-reading the 356 seated captures as factored stage data, the card's task.",
+   "read": []
+  },
+  {
+   "item": "R:BLOG-INDEX-CADENCE",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; the blog-index snapshot is #1534, but no find there sets a refresh cadence.",
+   "read": []
+  },
+  {
+   "item": "R:COUNTS-REGEN",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; it is a maintenance item and no find mentions counts.json.",
+   "read": []
+  },
+  {
+   "item": "R:PROJECTION-GROUPING",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; it is a gallery rendering item and no find mentions per-surface projection.",
+   "read": []
+  },
+  {
+   "item": "R:CORPORA-SPLIT",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; it is a repository-layout item with no matching find.",
+   "read": []
+  },
+  {
+   "item": "R:RESOLUTION-ROUTES",
+   "match": "no_source",
+   "finds": [],
+   "evidence": [],
+   "basis": "The card names no archive deposit; it concerns the register's own falsification conditions, not a deposit's text.",
+   "read": []
+  },
+  {
+   "item": "R:RCS-ARCHIVAL-DRIFT",
+   "match": "found",
+   "finds": [
+    "F1540.F1"
+   ],
+   "evidence": [
+    "the co-evolution model predicts a rising trajectory under the regime, and a flat one disconfirms Section V's central dynamic."
+   ],
+   "basis": "F1540.F1 is #1540 §IX(i), the archival-drift falsifier the card registers.",
+   "read": [
+    [
+     1540,
+     327,
+     327
+    ]
+   ]
+  },
+  {
+   "item": "R:RCS-PERFORMED-BURSTINESS",
+   "match": "found",
+   "finds": [
+    "F1540.A1"
+   ],
+   "evidence": [
+    "a detector-screened certified corpus will show measured surface-novelty statistics at or above matched historical baselines within a few enforcement years"
+   ],
+   "basis": "F1540.A1 is #1540 §IX(ii), the performed-burstiness prediction with its window and falsifier.",
+   "read": []
+  },
+  {
+   "item": "R:RCS-SCREENING-EFFORT",
+   "match": "found",
+   "finds": [
+    "F1540.F2"
+   ],
+   "evidence": [
+    "(iii) Escalating screening effort: drafting-to-pass revision cycles and screening-tool usage should rise across detector versions; stable effort disconfirms the narrowing claim."
+   ],
+   "basis": "F1540.F2 is #1540 §IX(iii), the screening-effort measurement the card registers.",
+   "read": []
+  },
+  {
+   "item": "R:RCS-DECOUPLING-FIDELITY",
+   "match": "found",
+   "finds": [
+    "F1540.G3"
+   ],
+   "evidence": [
+    "surface-tail statistics will fail to reliably predict conceptual-tail measures — and during the modeled tailsification window the two will move in opposite directions."
+   ],
+   "basis": "F1540.G3 states the decoupling claim; its falsifier §IX(iv) sits on line 327 (read) but is not quoted in any find.",
+   "read": [
+    [
+     1540,
+     327,
+     327
+    ]
+   ]
+  },
+  {
+   "item": "R:RCS-MEMBRANE-RECEPTION",
+   "match": "found",
+   "finds": [
+    "F1540.F4"
+   ],
+   "evidence": [
+    "the paper's reception is a measurement of the membrane"
+   ],
+   "basis": "F1540.F4 sets the paper's reception as the membrane-measurement channel the card describes.",
+   "read": []
+  },
+  {
+   "item": "R:RCS-SCREENING-MARKET",
+   "match": "found",
+   "finds": [
+    "F1540.B1"
+   ],
+   "evidence": [
+    "retroactive liability plus a scoreable boundary produces a pre-submission screening industry"
+   ],
+   "basis": "F1540.B1 is #1540 §III's screening-industry forecast, first half said already to have occurred, as the card states.",
+   "read": []
+  },
+  {
+   "item": "R:RCS-AUDIT-HEALTH",
+   "match": "found",
+   "finds": [
+    "F1540.B2",
+    "F1540.B4",
+    "F855.G1"
+   ],
+   "evidence": [
+    "**The loss will be experienced as improvement.** Every metric the institution watches will get better.",
+    "every deployed instrument measures the center",
+    "The loss is invisible to mean-based metrics. The loss is experienced as improvement."
+   ],
+   "basis": "F1540.B2 forecasts that every watched metric improves during the loss, F1540.B4 that deployed instruments measure the center, and F855.G1 the ease-as-collapse law the card cites.",
+   "read": []
+  },
+  {
+   "item": "R:WOLFBOY-FRICTIONLESS",
+   "match": "found",
+   "finds": [
+    "F855.B1"
+   ],
+   "evidence": [
+    "The paper predicts that no countervailing force will emerge before significant capacity loss has occurred"
+   ],
+   "basis": "F855.B1 is #855's time-bound forecast that no countervailing force emerges before significant capacity loss, the card's frictionless-path claim.",
+   "read": []
+  },
+  {
+   "item": "R:TAIL-OBSERVATORY",
+   "match": "found",
+   "finds": [
+    "F1540.F3",
+    "F1540.B4"
+   ],
+   "evidence": [
+    "a tail-preservation observatory over the admitted corpus — variance of construction, vocabulary, argument-form, genre",
+    "the paper predicts that the falsifying measurements will not be taken by the institutions in a position to take them"
+   ],
+   "basis": "F1540.F3 specifies the tail-preservation observatory and F1540.B4 predicts the institutions able to take the measurement will not.",
+   "read": [
+    [
+     1540,
+     299,
+     303
+    ]
+   ]
+  },
+  {
+   "item": "R:DRIFT-HARNESS",
+   "match": "found",
+   "finds": [
+    "F1540.F1"
+   ],
+   "evidence": [
+    "run successive versions of the leading commercial detectors against a fixed pre-2022 human corpus and track the flagged fraction across versions"
+   ],
+   "basis": "F1540.F1 specifies the archival-drift test (successive detector versions against a fixed pre-2022 corpus) that the harness would run.",
+   "read": []
+  },
+  {
+   "item": "R:ATHETIC-APPARATUS",
+   "match": "not_found",
+   "finds": [],
+   "evidence": [],
+   "basis": "#1540 specifies the athetic mark at line 293 (§VI, tagged Structural) but no find records it; the nearest finds are F1540.H1 (historical athetesis) and F1540.F3 (a different §VII specification), and #1068's four finds do not state the apparatus.",
+   "read": [
+    [
+     1540,
+     283,
+     304
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "R:INVERSION-T3: the card says T3 is unrun; #1456 (lines 70, 78, 251, 277) records T3 implemented after results (V3-D14) and CONFIRMED. The card may predate that or mean another T3 cell; recorded as an observation, card untouched.",
+  "R:P-PHASE2-PROLIF: the exact prediction text and window the card says need recovery are present in F106.A8 (#106 line 499, prediction X-1, window 2026-2028).",
+  "R:P-STALE-INDEX: the queue attaches #928 though the card gives only a capture-gallery URL; how #928 was derived is unclear. Decided no_source on the card's own sources.",
+  "R:COMPRESSION-DETECTOR and R:DATACITE-ANNUAL-DIFF give no archive deposit but matching finds exist (F1534.F1; F1405.F1). The protocol defines no_source by the card alone; I recorded the match because a search found it. A later pass should rule which reading of no_source is meant.",
+  "R:HEBREWS-CONTROL: Hebrews appears in the work plan's kernel transform list (Throne-Room -> Worship Architecture, Rev 4 -> Hebrews; e.g. #832 line 689) and not in #1414. No find states the Hebrews control itself.",
+  "R:ATHETIC-APPARATUS: #1540 line 293 (athetic mark specification) has no find; the topical pass may want it.",
+  "R:RCS-DECOUPLING-FIDELITY: §IX(iv) falsifier at #1540 line 327 is not in any find quote (F1540.F1/A1/F2 share line 327 and cover (i)-(iii))."
+ ]
+}

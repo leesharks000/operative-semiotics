@@ -32,6 +32,13 @@ def main():
                     meta.setdefault(d['deposit'], {'title': d.get('title'), 'path': d.get('path')})
     except Exception:
         pass
+    # deposits read outside the queue (the calibration pilot, in-session): title, date and text from the registry
+    A = ROOT.parent / 'alexanarch'
+    for d in json.load(open(A / 'data/registry.json'))['deposits']:
+        n = d.get('deposit_number')
+        if n is not None and int(n) not in meta and d.get('full_text_path'):
+            meta[int(n)] = {'title': d.get('title'), 'date': d.get('date'), 'path': str(A / d['full_text_path'].lstrip('/')),
+                            'lines_total': None, 'from': 'registry'}
     json.dump([{'deposit': k, **v} for k, v in sorted(meta.items())], open(T / 'deposit-titles.json', 'w'), ensure_ascii=False, indent=0)
 
     def card(i):
@@ -51,7 +58,13 @@ def main():
         items['TE'].append({'item': f"E:{p['a']}~{p['b']}", 'score': p['score'], 'a': card(p['a']), 'b': card(p['b'])})
     reg = json.load(open(ROOT / 'data/predictions.json'))['entries']
     for e in reg:
-        srcs = sorted({int(x) for s in (e.get('sources') or []) for x in re.findall(r'#?(\d{1,4})\b', str(s)) if int(x) in meta})
+        srcs = set()
+        for x in e.get('sources') or []:
+            if isinstance(x, dict) and str(x.get('deposit') or '').isdigit():
+                srcs.add(int(x['deposit']))
+            for m in re.findall(r'(?:^|[\s(\[,;])#(\d{1,4})\b|/records/(\d{1,4})/', str(x)):
+                srcs.add(int(m[0] or m[1]))
+        srcs = sorted(n for n in srcs if n in meta)
         items['TR'].append({'item': 'R:' + e['id'], 'kind': 'register card', 'card': e, 'source_deposits': srcs,
                             'finds_in_sources': [card(f['id']) for f in F if f['deposit'] in srcs][:40]})
     intake = json.load(open(ROOT / 'data/archive-intake.json'))['predictions']
