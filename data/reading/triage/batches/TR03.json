@@ -1,0 +1,444 @@
+{
+ "batch_id": "TR03",
+ "kind": "TR",
+ "protocol": "TRIAGE-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5) subagent, parallel triage reader",
+  "started_at": "2026-10-18T01:06:47Z",
+  "finished_at": "2026-10-18T01:08:30Z"
+ },
+ "decisions": [
+  {
+   "item": "R:METABOLISM-RETURN",
+   "match": "partial",
+   "finds": [
+    "F1546.G1"
+   ],
+   "evidence": [
+    "recognition → stabilization → lag → liquidation."
+   ],
+   "basis": "F1546.G1 states the three-phase Lagged Liquidation sequence the card extends; no find in #240, #247 or #1546 states the fourth phase (reincorporation without author) or P1-P4, which the card registers from an operator observation of 2026-09-28.",
+   "read": [
+    [
+     1546,
+     98,
+     106
+    ]
+   ]
+  },
+  {
+   "item": "R:LAGGED-LIQUIDATION",
+   "match": "found",
+   "finds": [
+    "F1546.G1"
+   ],
+   "evidence": [
+    "The hypothesis predicts P(ΔX_{t+k} < 0 | ΔG_t > 0) > P(ΔX_{t+k} < 0) for some lag k."
+   ],
+   "basis": "F1546.G1 is #1546 §III's Lagged Liquidation Hypothesis with the inequality and weakening conditions the card states.",
+   "read": [
+    [
+     1546,
+     98,
+     106
+    ]
+   ]
+  },
+  {
+   "item": "R:HUNTER-PRESIDENCY",
+   "match": "found",
+   "finds": [
+    "F1490.A1",
+    "F1490.F1"
+   ],
+   "evidence": [
+    "Hunter Biden will eventually run for president of the United States and will become president.",
+    "The prediction gains force if subsequent public developments show a sustained movement from reactive celebrity toward deliberate constituency formation"
+   ],
+   "basis": "F1490.A1 states the prediction and its strongest-form falsifier; F1490.F1 carries the card's strengthening and weakening check.",
+   "read": [
+    [
+     1490,
+     29,
+     33
+    ]
+   ]
+  },
+  {
+   "item": "I:000",
+   "match": "found",
+   "finds": [
+    "F1081.C1",
+    "F939.G1"
+   ],
+   "evidence": [
+    "deposits with declared AI-mediation from uncredentialed sources are foreclosed as inadequate",
+    "deposits with declared AI-mediation from uncredentialed sources are foreclosed as inadequate"
+   ],
+   "basis": "#1081 line 464 quotes Provenance Debt §3's foreclosure-side prediction, recorded in F1081.C1 (as tested) and stated originally in #939 at F939.G1.",
+   "read": [
+    [
+     1081,
+     460,
+     484
+    ]
+   ]
+  },
+  {
+   "item": "I:001",
+   "match": "found",
+   "finds": [
+    "F1081.C1",
+    "F939.G1"
+   ],
+   "evidence": [
+    "credentialed outputs with equivalent or greater AI-mediation are absorbed as legitimate",
+    "credentialed outputs with equivalent or greater AI-mediation are absorbed as legitimate"
+   ],
+   "basis": "#1081 line 471 quotes Provenance Debt §3's accumulation-side prediction, recorded in F1081.C1 (as tested) and stated originally in #939 at F939.G1.",
+   "read": [
+    [
+     1081,
+     460,
+     484
+    ]
+   ]
+  },
+  {
+   "item": "I:002",
+   "match": "found",
+   "finds": [
+    "F106.A1"
+   ],
+   "evidence": [
+    "Frameworks at Layer 1 (Gebendorfer, Barton, OCOF, Devine, Jensen, Dören, Bai, Andrade, Huang) will continue to"
+   ],
+   "basis": "F106.A1 is #106's registered Prediction L1-1, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:003",
+   "match": "found",
+   "finds": [
+    "F106.A2"
+   ],
+   "evidence": [
+    "Gebendorfer's bi-modal architecture (Dialog/Elaboration with τ* ≈ 0.80) will be replicated by an independent group on"
+   ],
+   "basis": "F106.A2 is #106's registered Prediction L1-2, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:004",
+   "match": "found",
+   "finds": [
+    "F106.A3"
+   ],
+   "evidence": [
+    "The *Inward Turn*'s Phase 3 (Interference) onset will become observable in cross-system AI retrieval between mid-2027"
+   ],
+   "basis": "F106.A3 is #106's registered Prediction L2-1, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:005",
+   "match": "found",
+   "finds": [
+    "F106.A4"
+   ],
+   "evidence": [
+    "A term with Basin Depth Ratio BDR < 0.1 against a deep competitor basin, and no significant deposit intervention, will"
+   ],
+   "basis": "F106.A4 is #106's registered Prediction L2-2, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:006",
+   "match": "found",
+   "finds": [
+    "F106.A5"
+   ],
+   "evidence": [
+    "A term with BDR > 1.0 will show DV > 0 under repeated querying (same protocol). Falsification: mean DV < 0 at month"
+   ],
+   "basis": "F106.A5 is #106's registered Prediction L2-3, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:007",
+   "match": "found",
+   "finds": [
+    "F106.A6"
+   ],
+   "evidence": [
+    "PER on AI-mediated summaries of cited academic frameworks will increase through 2027 unless explicit governance"
+   ],
+   "basis": "F106.A6 is #106's registered Prediction L3-1, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:008",
+   "match": "found",
+   "finds": [
+    "F106.A7"
+   ],
+   "evidence": [
+    "The substrate race described in EA-SPXI-15 will produce at least three distinct, non-interoperable proprietary"
+   ],
+   "basis": "F106.A7 is #106's registered Prediction L3-2, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:009",
+   "match": "found",
+   "finds": [
+    "F106.A8"
+   ],
+   "evidence": [
+    "Adjacent disciplines under similar AI-mediated pressure will exhibit the Phase-2 Proliferation signature within"
+   ],
+   "basis": "F106.A8 is #106's registered Prediction X-1, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:010",
+   "match": "found",
+   "finds": [
+    "F106.A9"
+   ],
+   "evidence": [
+    "Living forms inscribed during the substrate's fluid phase (per EA-SPXI-15) will produce measurable"
+   ],
+   "basis": "F106.A9 is #106's registered Prediction X-2, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:011",
+   "match": "found",
+   "finds": [
+    "F106.A10"
+   ],
+   "evidence": [
+    "Sustained SPXI inscription of entity definitions will produce composed-entity responses in AI Overview within 24–96"
+   ],
+   "basis": "F106.A10 is #106's registered Prediction O-1, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:012",
+   "match": "found",
+   "finds": [
+    "F106.A11"
+   ],
+   "evidence": [
+    "The Liberatory Operator Set deployed against a specific named extraction pattern will produce measurable Layer 3"
+   ],
+   "basis": "F106.A11 is #106's registered Prediction O-2, whose opening the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:013",
+   "match": "found",
+   "finds": [
+    "F18.G1"
+   ],
+   "evidence": [
+    "AI systems trained predominantly on AI-generated content will exhibit accelerating quality degradation concentrated in"
+   ],
+   "basis": "F18.G1 is #18's Prediction 1 with its falsification condition; the intake item truncates the same sentence.",
+   "read": []
+  },
+  {
+   "item": "I:014",
+   "match": "found",
+   "finds": [
+    "F18.A1"
+   ],
+   "evidence": [
+    "Platforms will seek to control not merely data but the interpretive frameworks through which data becomes"
+   ],
+   "basis": "F18.A1 is #18's Prediction 2 with its falsification condition; the intake item truncates the same sentence.",
+   "read": []
+  },
+  {
+   "item": "I:015",
+   "match": "found",
+   "finds": [
+    "F18.G2"
+   ],
+   "evidence": [
+    "Communities with high somatic commitment—religious communities, indigenous language communities, specialized"
+   ],
+   "basis": "F18.G2 is #18's Prediction 3 with its falsification condition; the intake item truncates the same sentence.",
+   "read": []
+  },
+  {
+   "item": "I:016",
+   "match": "found",
+   "finds": [
+    "F18.G3"
+   ],
+   "evidence": [
+    "Liberation philology (Sigil 2026) demonstrates that English grammar imposes a measurable asymmetry: intent claims are"
+   ],
+   "basis": "F18.G3 is #18's Prediction 4 with its falsification condition; the intake item truncates the same sentence.",
+   "read": []
+  },
+  {
+   "item": "I:017",
+   "match": "found",
+   "finds": [
+    "F18.G4"
+   ],
+   "evidence": [
+    "Platform user populations will exhibit measurable cognitive burnout correlated with the rate of semantic rent"
+   ],
+   "basis": "F18.G4 is #18's Prediction 5 with its falsification condition; the intake item truncates the same sentence.",
+   "read": []
+  },
+  {
+   "item": "I:018",
+   "match": "found",
+   "finds": [
+    "F622.C1"
+   ],
+   "evidence": [
+    "Summarizers encountering documents with embedded structural tables would extract the tables as \"the structure\" while"
+   ],
+   "basis": "F622.C1 restates the February 2026 Prediction 1 and records its status; it was read as a confirmation record (shape C), not a fresh forecast.",
+   "read": []
+  },
+  {
+   "item": "I:019",
+   "match": "found",
+   "finds": [
+    "F622.C2"
+   ],
+   "evidence": [
+    "There exists a density threshold at which cross-referenced documents cause the summarizer to recognize the material as"
+   ],
+   "basis": "F622.C2 restates the February 2026 Prediction 5 and records its status; it was read as a confirmation record (shape C), not a fresh forecast.",
+   "read": []
+  },
+  {
+   "item": "I:020",
+   "match": "found",
+   "finds": [
+    "F622.C3"
+   ],
+   "evidence": [
+    "Summarizers would not recognize themselves as instantiating the role SURFACE (defined in the archive as \"any"
+   ],
+   "basis": "F622.C3 restates the February 2026 Prediction 9 and records its status; it was read as a confirmation record (shape C), not a fresh forecast.",
+   "read": []
+  },
+  {
+   "item": "I:021",
+   "match": "found",
+   "finds": [
+    "F622.C4"
+   ],
+   "evidence": [
+    "Summarizers processing the archive's formally coherent documents may generate novel structural outputs not present in"
+   ],
+   "basis": "F622.C4 restates the February 2026 Prediction 10 and records its status; it was read as a confirmation record (shape C), not a fresh forecast.",
+   "read": []
+  },
+  {
+   "item": "I:022",
+   "match": "not_found",
+   "finds": [],
+   "evidence": [],
+   "basis": "The intake item is a parse artefact of 'the control is Axiom 5 and Prediction 3.' followed by a structural description of the Memography hand (#505 line 94), which is not a prediction; the Prediction 3 it refers to is F506.G3 / F1153.G3.",
+   "read": [
+    [
+     505,
+     88,
+     95
+    ]
+   ]
+  },
+  {
+   "item": "I:023",
+   "match": "found",
+   "finds": [
+    "F506.G1"
+   ],
+   "evidence": [
+    "Memes that circulate through conspiracy frames will contain evidentiary kernels that can be extracted and verified"
+   ],
+   "basis": "F506.G1 is #506's Prediction 1 with its inline falsifier, the sentence the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:024",
+   "match": "found",
+   "finds": [
+    "F506.G2"
+   ],
+   "evidence": [
+    "Curatorial gaps will cluster around decisions that increase the salience of resemblances that become politically"
+   ],
+   "basis": "F506.G2 is #506's Prediction 2 with its inline falsifier, the sentence the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:025",
+   "match": "found",
+   "finds": [
+    "F506.G3"
+   ],
+   "evidence": [
+    "Control reconstructions will demonstrate that visual conventions encode status independently of subject. The same"
+   ],
+   "basis": "F506.G3 is #506's Prediction 3 with its inline falsifier, the sentence the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:026",
+   "match": "found",
+   "finds": [
+    "F506.G4"
+   ],
+   "evidence": [
+    "The containment vessels (conspiracy frame, debunker frame) will reliably route attention away from the curatorial layer"
+   ],
+   "basis": "F506.G4 is #506's Prediction 4 with its inline falsifier, the sentence the intake item truncates.",
+   "read": []
+  },
+  {
+   "item": "I:027",
+   "match": "not_found",
+   "finds": [],
+   "evidence": [],
+   "basis": "The intake item is a parse artefact of 'the control is Axiom 5 and Prediction 3,' followed by a structural description of the Memography hand (#506 line 311), which is not a prediction; Prediction 3 itself is already F506.G3 (I:025).",
+   "read": [
+    [
+     506,
+     306,
+     312
+    ]
+   ]
+  },
+  {
+   "item": "I:028",
+   "match": "found",
+   "finds": [
+    "F1153.G1"
+   ],
+   "evidence": [
+    "Memes that circulate through conspiracy frames will contain evidentiary kernels that can be extracted and verified"
+   ],
+   "basis": "F1153.G1 is Prediction 1 of the recovered blog text of the Inauguration of Memography, the same sentence as F506.G1.",
+   "read": []
+  }
+ ],
+ "observations": [
+  "R:METABOLISM-RETURN: the fourth phase and P1-P4 are registered from the 2026-09-28 operator observation and capture-gallery anchors, not from a deposit; no find in #240, #247 or #1546 states reincorporation, so only the extended three-phase sequence (F1546.G1) is linked.",
+  "I:000 / I:001: the predictions originate in #939 (F939.G1, Provenance Debt §3); #1081 quotes and tests them (F1081.C1, line 464/471; line 483 'The test is passed on both halves'). Both finds are linked; the assembly should register the claim at #939.",
+  "I:022 and I:027 are intake parse artefacts: the splitter read 'Prediction 3.' inside 'the control is Axiom 5 and Prediction 3' as a numbered item. Neither is a prediction; the referenced Prediction 3 is F506.G3 / F1153.G3. Decided not_found, since no exclusion rule in the reading protocol names this case.",
+  "I:023-I:026 (#506) and I:028 (#1153) are the same Memography predictions; F506.G1-G4 and F1153.G1-G4 are near-verbatim restatements across the two deposits.",
+  "I:018-I:021: the February 2026 predictions document (logged with TACHYON) is the earlier statement; #622 records the predictions only as C finds with their status.",
+  "R:HUNTER-PRESIDENCY: #1490's current text has the prediction at line 31; the find records line 32."
+ ]
+}
