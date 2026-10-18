@@ -1,0 +1,748 @@
+{
+ "batch_id": "TP39",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5) running as a Claude Code subagent parallel reader; batch read in full from topical-queue.json via script",
+  "started_at": "2026-10-18T01:39:52Z",
+  "finished_at": "2026-10-18T01:42:59Z"
+ },
+ "groups": [
+  {
+   "group": "TP39.1",
+   "reviewed": [
+    "PRED-238.H2",
+    "PRED-253.H1",
+    "PRED-488.H1",
+    "PRED-501.F2",
+    "PRED-501.H1",
+    "PRED-501.H3",
+    "PRED-501.H5",
+    "PRED-501.H7",
+    "PRED-501.H9",
+    "PRED-577.H1",
+    "PRED-577.H2",
+    "PRED-595.F1",
+    "PRED-38.H1",
+    "PRED-601.H3",
+    "PRED-602.H2",
+    "PRED-950.F6",
+    "PRED-950.G6",
+    "PRED-950.G9",
+    "PRED-950.H12",
+    "PRED-950.H14",
+    "PRED-950.H16",
+    "PRED-950.H2",
+    "PRED-950.H3",
+    "PRED-51.H3",
+    "PRED-633.H1",
+    "PRED-859.H4",
+    "PRED-1070.H2",
+    "PRED-1594.F12",
+    "PRED-1631.H1",
+    "PRED-1631.H3",
+    "PRED-1631.H5",
+    "PRED-1631.H6",
+    "PRED-1631.H7",
+    "PRED-1679.H4"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-238.H2",
+      "PRED-253.H1"
+     ],
+     "basis": "Both state that the framework completes Marx's implicit, undeveloped linguistics of language as material force.",
+     "evidence": [
+      {
+       "claim": "PRED-238.H2",
+       "phrase": "The kernel (Ω) completes Marx's implicit but undeveloped linguistics"
+      },
+      {
+       "claim": "PRED-253.H1",
+       "phrase": "The completion of Marx's implicit linguistics."
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-501.H1",
+      "PRED-633.H1"
+     ],
+     "basis": "Both state one thesis: Marx offered an analytical method, and that method was liquidated into political content.",
+     "evidence": [
+      {
+       "claim": "PRED-501.H1",
+       "phrase": "Marx was offering a method. An analytical intervention."
+      },
+      {
+       "claim": "PRED-633.H1",
+       "phrase": "was liquidated into political content"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-501.H5",
+      "PRED-950.H16"
+     ],
+     "basis": "Both state that Piketty inherits Marx's name and conclusion about inequality while stripping the method.",
+     "evidence": [
+      {
+       "claim": "PRED-501.H5",
+       "phrase": "uses Marx's name, borrows some of his data concerns, strips the method entirely"
+      },
+      {
+       "claim": "PRED-950.H16",
+       "phrase": "But the inheritance is of content, not of method."
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-595.F1",
+      "PRED-950.F6"
+     ],
+     "basis": "Both name the same unbuilt test: a full side-by-side philological comparison of the 1867, second and French editions of the value-form section.",
+     "evidence": [
+      {
+       "claim": "PRED-595.F1",
+       "phrase": "The edition history is sketched (NB IV §1b) but not completed."
+      },
+      {
+       "claim": "PRED-950.F6",
+       "phrase": "A full philological comparison of the three editions' value-form sections has not been completed"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-38.H1",
+      "PRED-1631.H1"
+     ],
+     "change": [
+      "Scope widened and evidenced: the removal, stated for the second edition alone, is collated against MEGA² across five editions (1872 DE, French, 1883 DE, 1887 EN); the form is redescribed as the main-text reflexive form (distinct from the appendix's Form IV), motive is set aside, the scope is narrowed to the circulating textual tradition rather than scholarship, and a falsifier is added (the II/6 apparatus recording the form as displaced)."
+     ],
+     "basis": "The claim that the first edition's Form IV was removed from later editions is restated in 1631 after a collation that extends it across the whole descent line and redefines the form.",
+     "evidence": [
+      {
+       "claim": "PRED-38.H1",
+       "phrase": "The first edition's paradoxical Form IV (where the universal equivalent attempts to value itself and fails) was removed in the second edition."
+      },
+      {
+       "claim": "PRED-1631.H1",
+       "phrase": "It appears once, in 1867, and in no subsequent edition of the line."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-577.H2",
+      "PRED-950.H12",
+      "PRED-38.H1",
+      "PRED-1631.H1",
+      "PRED-1631.H3",
+      "PRED-1631.H7",
+      "PRED-595.F1",
+      "PRED-950.F6"
+     ],
+     "name": "Capital I value-form edition history",
+     "basis": "Each is a claim or an open test about the edition history of Capital I.1.3's value-form derivation (1867 main text and appendix, 1872, French, Engels's editions).",
+     "evidence": [
+      {
+       "claim": "PRED-577.H2",
+       "phrase": "initiated by Engels's editorial interventions"
+      },
+      {
+       "claim": "PRED-950.H12",
+       "phrase": "with an explicitness that the later editions smooth over"
+      },
+      {
+       "claim": "PRED-38.H1",
+       "phrase": "The failure was edited out."
+      },
+      {
+       "claim": "PRED-1631.H1",
+       "phrase": "The reflexive form is absent from the second German edition"
+      },
+      {
+       "claim": "PRED-1631.H3",
+       "phrase": "what it drops is the only form in which the system-level consequence was written"
+      },
+      {
+       "claim": "PRED-1631.H7",
+       "phrase": "On the present reading, Form IV resolves into the fetish."
+      },
+      {
+       "claim": "PRED-595.F1",
+       "phrase": "The French edition (1875) has not been compared."
+      },
+      {
+       "claim": "PRED-950.F6",
+       "phrase": "This gap is the most significant unfinished philological task in the project."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-501.H1",
+      "PRED-501.H3",
+      "PRED-501.H5",
+      "PRED-501.H7",
+      "PRED-501.H9",
+      "PRED-501.F2",
+      "PRED-633.H1",
+      "PRED-950.H16"
+     ],
+     "name": "Liquidation of the method 'Marx'",
+     "basis": "Members of one programme: the liquidation of Marx's method into content, traced through its mediators, receptions and an operational contrast test.",
+     "evidence": [
+      {
+       "claim": "PRED-501.H1",
+       "phrase": "these are not content. They are tools."
+      },
+      {
+       "claim": "PRED-501.H3",
+       "phrase": "Engels was the first mediator."
+      },
+      {
+       "claim": "PRED-501.H5",
+       "phrase": "The sign is rehabilitated. The method remains buried."
+      },
+      {
+       "claim": "PRED-501.H7",
+       "phrase": "The English reception of Marx is systematically organized by the \"for/against\" structure."
+      },
+      {
+       "claim": "PRED-501.H9",
+       "phrase": "Because it is pure method and has no \"content\" to extract."
+      },
+      {
+       "claim": "PRED-501.F2",
+       "phrase": "The strongest proof is operational contrast."
+      },
+      {
+       "claim": "PRED-633.H1",
+       "phrase": "Marx's analytical intervention"
+      },
+      {
+       "claim": "PRED-950.H16",
+       "phrase": "The subsumption is the four-stage capture mechanism"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-501.H3",
+      "PRED-577.H2",
+      "PRED-859.H4",
+      "PRED-1631.H5",
+      "PRED-1631.H6",
+      "PRED-1594.F12"
+     ],
+     "name": "Editors in Marx's name",
+     "basis": "Each concerns an editor's or edition's intervention conditioning what circulates under Marx's name: Engels's mediation and volumes, the quarantine of the 1844 and German Ideology drafts, Landshut–Mayer 1932, and the 1844 lacuna.",
+     "evidence": [
+      {
+       "claim": "PRED-501.H3",
+       "phrase": "Engels speaks *for* Marx after Marx's death."
+      },
+      {
+       "claim": "PRED-577.H2",
+       "phrase": "a \"pre-monetary\" misinterpretation initiated by Engels's editorial interventions"
+      },
+      {
+       "claim": "PRED-859.H4",
+       "phrase": "are quarantined from the canonical Marx"
+      },
+      {
+       "claim": "PRED-1631.H5",
+       "phrase": "printed as Marx's a manuscript that does not exist, carried no mark"
+      },
+      {
+       "claim": "PRED-1631.H6",
+       "phrase": "The theory of the medium is at the cut in both cases."
+      },
+      {
+       "claim": "PRED-1594.F12",
+       "phrase": "the volumes Engels edited from Marx's manuscripts and published under Marx's name"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-601.H3",
+      "PRED-602.H2"
+     ],
+     "name": "Grundrisse prosodic algorithm",
+     "basis": "Both belong to the prosodic algorithm mapping the Grundrisse's moves (the self-correction among them).",
+     "evidence": [
+      {
+       "claim": "PRED-601.H3",
+       "phrase": "The Grundrisse is saturated with"
+      },
+      {
+       "claim": "PRED-602.H2",
+       "phrase": "The CORRECTION fires when Marx catches himself"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1631,
+     161,
+     216
+    ],
+    [
+     950,
+     4634,
+     4643
+    ],
+    [
+     950,
+     5700,
+     5706
+    ]
+   ],
+   "located": [
+    [
+     1631,
+     582,
+     590
+    ],
+    [
+     1631,
+     611,
+     621
+    ],
+    [
+     1631,
+     873,
+     873
+    ],
+    [
+     1631,
+     908,
+     908
+    ],
+    [
+     38,
+     406,
+     406
+    ],
+    [
+     950,
+     5007,
+     5007
+    ],
+    [
+     950,
+     5484,
+     5484
+    ],
+    [
+     577,
+     236,
+     236
+    ],
+    [
+     501,
+     231,
+     231
+    ],
+    [
+     595,
+     274,
+     276
+    ]
+   ]
+  },
+  {
+   "group": "TP39.2",
+   "reviewed": [
+    "PRED-284.F2",
+    "PRED-317.F2",
+    "PRED-339.A1",
+    "PRED-359.F1",
+    "PRED-376.F1",
+    "PRED-1288.F1",
+    "PRED-415.B1",
+    "PRED-1302.F1",
+    "PRED-1319.F1",
+    "PRED-461.B1",
+    "PRED-461.F1",
+    "PRED-461.F2",
+    "PRED-462.F1",
+    "PRED-463.E1",
+    "PRED-463.F1",
+    "PRED-495.F1",
+    "PRED-552.G1",
+    "PRED-28.G6",
+    "PRED-29.G1",
+    "PRED-1335.G1",
+    "PRED-1174.F2",
+    "PRED-960.F1",
+    "PRED-668.F2",
+    "PRED-689.H1",
+    "PRED-695.G1",
+    "PRED-74.F2",
+    "PRED-709.F1",
+    "PRED-106.A4",
+    "PRED-766.D1",
+    "PRED-927.B3",
+    "PRED-1569.F5",
+    "PRED-1664.F5",
+    "PRED-1665.F6",
+    "PRED-1665.F7"
+   ],
+   "sets": [
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-359.F1",
+      "PRED-28.G6"
+     ],
+     "change": [
+      "Criterion restated and falsifier added: the three metrics (recurrence > 0.75, clustering > 0.70, drift variance < 0.15) become one Vₛ ≥ 0.75 across ≥3 traversal events, with failure at Vₛ < 0.50 ('an inkblot'), later used to answer the unfalsifiability charge."
+     ],
+     "basis": "The symbolon verification criterion Vₛ, first a three-metric threshold table, is restated as a single convergence threshold with a failure condition.",
+     "evidence": [
+      {
+       "claim": "PRED-359.F1",
+       "phrase": "Does the entity re-emerge across multiple traversals?"
+      },
+      {
+       "claim": "PRED-28.G6",
+       "phrase": "Threshold: Vₛ ≥ 0.75 across ≥3 traversal events"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-359.F1",
+      "PRED-376.F1",
+      "PRED-28.G6",
+      "PRED-1174.F2"
+     ],
+     "name": "Vₛ symbolon verification",
+     "basis": "The Vₛ symbolon verification template, applied to the symbolon module, to The Blind Operator as a document, and extended to the epistemic field module's retrieval-event consistency metrics.",
+     "evidence": [
+      {
+       "claim": "PRED-359.F1",
+       "phrase": "Vₛ is measurable via:"
+      },
+      {
+       "claim": "PRED-376.F1",
+       "phrase": "If this document becomes less clear on re-reading, it is not functioning as symbolon."
+      },
+      {
+       "claim": "PRED-28.G6",
+       "phrase": "A symbolon must become MORE coherent with each traversal event."
+      },
+      {
+       "claim": "PRED-1174.F2",
+       "phrase": "Does the summarizer attribute the same genealogy across"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-463.F1",
+      "PRED-462.F1",
+      "PRED-461.F1",
+      "PRED-1319.F1"
+     ],
+     "change": [
+      "LP 0.9 → 1.0: the five acceptance thresholds become eight mandatory tests, each with a protocol (DRR by two-channel transfer), adding Opacity Band, Drowning Test and Terminal Silence.",
+      "LP 1.0 → 1.1: the suite is reclassed as normative; Closure Suppression (CSI) becomes Closure Dominance (CDI ≤ 0.40), ER becomes ≥ 0.25, and Provenance Integrity, Counter-Stack and Winding Defense are added.",
+      "LP 1.1 → 1.2: tests 17–19 (Epistemic Self-Awareness, A3 Prohibition, Ledger Completeness) are added to the v1.1 normative suite."
+     ],
+     "basis": "The Logotic Programming conformance suite, headed by Depth Retention/Preservation at DRR ≥ 0.75, revised across LP 0.9, 1.0, 1.1 and 1.2.",
+     "evidence": [
+      {
+       "claim": "PRED-463.F1",
+       "phrase": "A conformant LP 0.9 implementation must pass:"
+      },
+      {
+       "claim": "PRED-462.F1",
+       "phrase": "A v1.0 implementation MUST pass all of the following:"
+      },
+      {
+       "claim": "PRED-461.F1",
+       "phrase": "Normative (MUST PASS for conformance)"
+      },
+      {
+       "claim": "PRED-1319.F1",
+       "phrase": "Added to the v1.1 normative suite:"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-463.F1",
+      "PRED-462.F1",
+      "PRED-461.F1",
+      "PRED-1319.F1",
+      "PRED-461.F2",
+      "PRED-461.B1",
+      "PRED-317.F2"
+     ],
+     "name": "Logotic Programming conformance",
+     "basis": "Members of the Logotic Programming specification's verification programme: its conformance suites, calibration requirement, Goodhart forecast on DRR, and the witness-protocol agreement threshold.",
+     "evidence": [
+      {
+       "claim": "PRED-463.F1",
+       "phrase": "Φ preserved after 2 substrate transfers"
+      },
+      {
+       "claim": "PRED-462.F1",
+       "phrase": "Two-channel transfer"
+      },
+      {
+       "claim": "PRED-461.F1",
+       "phrase": "Depth Preservation"
+      },
+      {
+       "claim": "PRED-1319.F1",
+       "phrase": "Epistemic Self-Awareness"
+      },
+      {
+       "claim": "PRED-461.F2",
+       "phrase": "≥ 50 labeled calibration traces"
+      },
+      {
+       "claim": "PRED-461.B1",
+       "phrase": "once DRR is measured, it will be gamed"
+      },
+      {
+       "claim": "PRED-317.F2",
+       "phrase": "agreement_threshold: 0.75"
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-695.G1",
+      "PRED-106.A4"
+     ],
+     "change": [
+      "Scope narrowed to the BDR < 0.1 prediction against a deep competitor basin; an operational protocol (N=10 terms, monthly for six months) and a six-month window are added; the falsifier changes from a single counter-case (BDR < 0.05 stabilizing without intervention) to cohort mean DV ≥ 0 at month six."
+     ],
+     "basis": "The first of RBT's testable predictions (BDR < 0.1 → DV < 0) is restated in Semantic Physics as Prediction L2-2 with a protocol, window and cohort falsifier.",
+     "evidence": [
+      {
+       "claim": "PRED-695.G1",
+       "phrase": "Terms with BDR < 0.1 will show DV < 0 under repeated querying"
+      },
+      {
+       "claim": "PRED-106.A4",
+       "phrase": "Falsification: mean DV across the cohort is ≥ 0 at month six."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1664.F5",
+      "PRED-1665.F6",
+      "PRED-1665.F7"
+     ],
+     "name": "Negative of the Negative v2 open passes",
+     "basis": "The open next passes of The Negative of the Negative v2: composing the two arms, re-assembling the uncapped control arm, and reading its 97 new candidates.",
+     "evidence": [
+      {
+       "claim": "PRED-1664.F5",
+       "phrase": "The next pass composes L(B ∪ A_naive) and L(B ∪ A′)."
+      },
+      {
+       "claim": "PRED-1665.F6",
+       "phrase": "A′ has not yet been re-assembled without it"
+      },
+      {
+       "claim": "PRED-1665.F7",
+       "phrase": "97 candidates S1–S3 never considered, which are unread"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     463,
+     1040,
+     1075
+    ],
+    [
+     462,
+     695,
+     760
+    ],
+    [
+     461,
+     1225,
+     1235
+    ]
+   ],
+   "located": [
+    [
+     461,
+     63,
+     89
+    ],
+    [
+     1319,
+     1126,
+     1128
+    ],
+    [
+     463,
+     185,
+     185
+    ]
+   ]
+  },
+  {
+   "group": "TP39.3",
+   "reviewed": [
+    "PRED-261.F1",
+    "PRED-261.F3",
+    "PRED-261.G1",
+    "PRED-261.G2",
+    "PRED-261.G3",
+    "PRED-261.G4",
+    "PRED-261.G5",
+    "PRED-261.G6",
+    "PRED-261.G7",
+    "PRED-454.F1",
+    "PRED-543.F1",
+    "PRED-28.F3",
+    "PRED-635.G1",
+    "PRED-55.G1",
+    "PRED-756.H1",
+    "PRED-167.F1",
+    "PRED-856.G3",
+    "PRED-1046.F1",
+    "PRED-1081.F1",
+    "PRED-1083.F2",
+    "PRED-1540.B3"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-261.G1",
+      "PRED-261.G2",
+      "PRED-261.G3",
+      "PRED-261.G4",
+      "PRED-261.G5",
+      "PRED-261.G6",
+      "PRED-261.G7",
+      "PRED-261.F1",
+      "PRED-261.F3",
+      "PRED-284.F2"
+     ],
+     "name": "Liberatory Operator Set baselines",
+     "basis": "One battery: the Liberatory Operator Set's typical-system baselines for each operator metric, the baselines still to be established, the success criteria measured against them, and the hardening specification's monitoring schedule.",
+     "evidence": [
+      {
+       "claim": "PRED-261.G1",
+       "phrase": "Typical summarization systems: DPI ≈ 0.40-0.60"
+      },
+      {
+       "claim": "PRED-261.G2",
+       "phrase": "Typical recommendation systems: CEC ≈ 0.70-0.85"
+      },
+      {
+       "claim": "PRED-261.G3",
+       "phrase": "Typical content moderation: OSS ≈ 0.30-0.50"
+      },
+      {
+       "claim": "PRED-261.G4",
+       "phrase": "Typical social feeds: TIR ≈ 0.20-0.40"
+      },
+      {
+       "claim": "PRED-261.G5",
+       "phrase": "Typical Q&A systems: NCPR ≈ 0.40-0.60"
+      },
+      {
+       "claim": "PRED-261.G6",
+       "phrase": "Typical content platforms: NESR ≈ 0.30-0.50"
+      },
+      {
+       "claim": "PRED-261.G7",
+       "phrase": "Typical search results: PCI ≈ 0.40-0.60"
+      },
+      {
+       "claim": "PRED-261.F1",
+       "phrase": "Establishing baselines for current systems:"
+      },
+      {
+       "claim": "PRED-261.F3",
+       "phrase": "LOS implementation succeeds when:"
+      },
+      {
+       "claim": "PRED-284.F2",
+       "phrase": "Scan for beige saturation patterns"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-543.F1",
+      "PRED-28.F3"
+     ],
+     "basis": "The Space Ark musical register restates the Lexical Engine's quarterly metrics (term visibility, citation growth) in musical vocabulary.",
+     "evidence": [
+      {
+       "claim": "PRED-543.F1",
+       "phrase": "Google search results for each Core 50 term + \"Crimson Hexagon\""
+      },
+      {
+       "claim": "PRED-28.F3",
+       "phrase": "≥10 Google results per Core 50 gesture-name + \"Crimson Hexagon\""
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-635.G1",
+      "PRED-55.G1"
+     ],
+     "basis": "Both state the collapse-resistance hypothesis with its success criterion of a collapse generation at least 2× baseline.",
+     "evidence": [
+      {
+       "claim": "PRED-635.G1",
+       "phrase": "is at least 2× higher for FSA conditions than for baseline B1"
+      },
+      {
+       "claim": "PRED-55.G1",
+       "phrase": "Collapse resistance is a falsifiable hypothesis, not a proven theorem."
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": []
+  }
+ ],
+ "observations": [
+  "Apparent contradiction: PRED-950.H12 places the explicit four-form derivation (I–IV) in the 1867 appendix Die Werthform, and PRED-38.H1 / PRED-950.F6 describe the removed Form IV as the universal equivalent attempting to value itself; PRED-1631.H1's deposit (1631 §3.3, lines 165–186) says the appendix's Form IV is simply the money-form and that the removed Form IV is a different, main-text object (the expanded form run for every commodity at once). Recorded as states 38.H1 → 1631.H1, not reconciled.",
+  "PRED-284.F2 (group TP39.2) is placed in the 'Liberatory Operator Set baselines' series of group TP39.3 with PRED-261.*: deposit 284 is the LOS technical hardening specification.",
+  "PRED-415.B1 and PRED-463.E1 (group TP39.2, D_pres running through summarizer outputs) bear on the same operator as PRED-261.F3 (group TP39.3, D_pres success criterion) and PRED-261.G1 (DPI baseline for summarization); left unlinked as different claims about one operator.",
+  "PRED-1081.F1 and PRED-1083.F2 (group TP39.3) both call for a deletion/presence baseline in the erosion work; left unlinked for want of a reading that they are one programme."
+ ]
+}
