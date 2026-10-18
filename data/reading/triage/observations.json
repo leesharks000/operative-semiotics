@@ -1,0 +1,197 @@
+{
+ "what": "Observations the triage readers recorded for a later pass, by batch.",
+ "observations": [
+  {
+   "batch": "TC01",
+   "observation": "Same-deposit targets that a find already states (F239.C1 -> F239.B1, F510.C1 -> F510.A1) are recorded as target_kind 'find', not 'self'; 'self' is used only where the earlier statement in the same deposit is not a find (F239.C2, F453.C1)."
+  },
+  {
+   "batch": "TC01",
+   "observation": "For target_kind deposit/self/external/unlocated the protocol gives no place for the claimed value; each such decision carries a decision-level 'claimed' field (extra to the protocol shape)."
+  },
+  {
+   "batch": "TC01",
+   "observation": "The 'claimed' vocabulary has no value for a registered correspondence that disclaims fulfilment (F453.C1); 'partly' was used, and the basis states the disclaimer."
+  },
+  {
+   "batch": "TC01",
+   "observation": "DOI resolution in pointers.json maps a DOI to the first registry deposit whose zenodo_dois list contains it, and those lists include cited DOIs; several resolutions in this batch were wrong (10.5281/zenodo.18141735 -> #87, actually #219; 18148298 -> #229; 18157917 -> #31, actually #244; 18202475 -> #11, actually #283; 18772675 -> #22, actually #513; 18369038 -> #31, actually #1337; 18808402 -> #31, actually #519). Own DOIs were identified from the per_doi titles in alexanarch/data/external-metadata."
+  },
+  {
+   "batch": "TC01",
+   "observation": "#1251 is dated 2026-01-17 but indexes deposits from February 2026 (#513, 2026-02-25; #519, 2026-02-27), so its date is earlier than items it lists."
+  },
+  {
+   "batch": "TC01",
+   "observation": "#510 ('Semantic Physics: The Inward Turn', 2026-02-24), whose writable-layer thesis #513 says the Citrini memo (2026-02-22) proves, is dated after the memo; #22 instead places the prior formalization in the RCF paper (#234, 2026-01-04)."
+  },
+  {
+   "batch": "TC01",
+   "observation": "F247.B1 (PROBE-RESULT-004, 2026-01-05) rates 'Semantic liquidation' LOW capture risk, while PROBE-RESULT-005 (#240, same day) records that term's removal from the Overview as the framework's prediction validated. Recorded as observation, not error."
+  },
+  {
+   "batch": "TC01",
+   "observation": "F480.C1 is recorded at lines [459,459] but its quote sits at line 342 of the current text of #480 (AXN-012B-text.md)."
+  },
+  {
+   "batch": "TC01",
+   "observation": "F1251.C1: the mechanism MRA-2025-1224 says was validated (observation 2025-12-22) has no archive find predating it; an earlier statement, if any, would be on the blog (mindcontrolpoems), which this pass did not search."
+  },
+  {
+   "batch": "TC01",
+   "observation": "F240.C3: no find in #244 forecasts 'selective' suppression; the link to F244.E4 (total Mass Liquidation) is the nearest content and may be reconsidered by the topical pass."
+  },
+  {
+   "batch": "TE01",
+   "observation": "Deposit 835 has no date, title or path in the queue or in deposit-titles.json; its finds come from the calibration run (batch_id CAL, run R-pilot-CAL). It pairs with #1215 (OKF analysis v1.3) in items 36 and 43, so #835 appears to be an earlier version of that analysis; its text could not be opened from the queue."
+  },
+  {
+   "batch": "TE01",
+   "observation": "Item 44: the find lines for #725 (594-639) and #1190 (349-403) do not match the current text files (Test 1 is at line 379 of AXN-0273-text.md and line 429 of AXN-04B7-text.md), and deposit-titles.json gives lines_total 745 and 448 against current wc counts of 511 and 562. The texts may have changed since the sweep, or the paths may be crossed; the read ranges recorded are in current-file lines."
+  },
+  {
+   "batch": "TE01",
+   "observation": "Items 9 and 45 pair finds of different roles (a C refutation record with its H thesis; a priority thesis with a workshop thesis sharing one sentence); marked related, and a topical pass may want to join F1585.C2 to the prediction 1 it refutes."
+  },
+  {
+   "batch": "TE01",
+   "observation": "Items 21 and 41 pair truncated auto-extracted registry précis (#1251, #1170, #31) of one deposit's priority claim; the claim itself lives in The Memo That Remembered Itself, not in these catalogue lines."
+  },
+  {
+   "batch": "TE03",
+   "observation": "Items 5 and 37 pair the formal-register Space Ark (#557) with the musical-register Ark (#28). The tests are the same, recast for the score, so they are marked variant; the topical pass should decide whether register variants of the Ark form one claim with dated states or parallel claims."
+  },
+  {
+   "batch": "TE03",
+   "observation": "Item 43: the quote of F334.G1 (lines 180-192) is cut after two trigger rows; the current text of AXN-008A-text.md carries all five rows at 180-205, the same as #1653 at 222-246."
+  },
+  {
+   "batch": "TE03",
+   "observation": "Item 28: F1605.A2 is one numbered prediction of the §5 list that F1585.A1 quotes as a whole (#1585 and #1605 are versions of The First Draft); the A find of #1585 groups predictions 1-2 and more under one find, so the join links a list to one of its members."
+  },
+  {
+   "batch": "TE03",
+   "observation": "Item 44 pairs a priority claim (F22.D1) with an unrelated Marx thesis (F24.H4) through a shared DOI citation; item 47 is the true same-claim partner of F22.D1 (F43.D1)."
+  },
+  {
+   "batch": "TE04",
+   "observation": "E:F1570.H9~F1569.H6: #1569 §7 (lines 780-805, 'CORRECTED AND SUPERSEDED — 2026-08-29, same day') records the registered calibration-object prediction as backwards (an adversarial object predicts criteria that fail to converge), the test as DEFERRED on unavailable sources, and the framing superseded by EA-FLOOD-01; both finds state the pre-correction form, so the assembled claim should carry that reversal as a later state."
+  },
+  {
+   "batch": "TE04",
+   "observation": "E:F1588.G1~F1671.C1: F1671.C1 cites the prediction as #1587 (T1587-07) while the queued find sits in #1588; the same sentence is probably in both deposits, and the TC pass should link the confirmation to whichever holds it."
+  },
+  {
+   "batch": "TE04",
+   "observation": "Items 3, 12, 13, 15, 36 are variants by small wording changes (hedge condition, object noun, test input, threshold reading); 34 is a variant by row scope within the same fulfillment map."
+  },
+  {
+   "batch": "TE05",
+   "observation": "Find granularity differs across versions of The First Draft: F1585.A1 and F1589.A1 quote several numbered §5 predictions as one find, while F1605.A1 and F1605.A3 are single predictions; items 22 and 46 are marked same on the shared prediction, so the assembler may need to split the multi-prediction finds."
+  },
+  {
+   "batch": "TE05",
+   "observation": "F450.G1 carries findings 5 and 6 of The Flood and the Vessel as one find; item 7 is marked same on finding 5 only."
+  },
+  {
+   "batch": "TE05",
+   "observation": "Items 10, 28 and 31 pair three treatments of the 2026-09-28 MPAI series (#1644, #1645, #1647) that share epochs 2026-10-28, 2026-12-27, 2027-03-27 and a reincorporation rule; they are related as one series, not one claim. #1645 and #1646 (item 4) are T1 and T2 of a stack at the same address, sappho future reader."
+  },
+  {
+   "batch": "TE05",
+   "observation": "Item 13: #846 calls the Invariance Condition 'a historical claim, not a universal law' and words its falsifier differently from #843; recorded as a variant, not a contradiction."
+  },
+  {
+   "batch": "TE06",
+   "observation": "Items 5, 24, 40, 45, 47 and 49 pair D finds that are only Google AI Mode share-link anchors for different captures; the lexical match is the share.google/aimode URL boilerplate, and a later pass may want to exclude share-link D finds from candidate pairing."
+  },
+  {
+   "batch": "TE06",
+   "observation": "Items 19 and 38 join a single claim to a find that bundles a list (F1589.A1 bundles seam predictions 1-3; F1572.F1 bundles seven unrun tests). The same-join is to one member of the list; assembly should not let it absorb the list's other members into one claim."
+  },
+  {
+   "batch": "TE06",
+   "observation": "Item 4: the later deposit (#1065, 2026-07-11) states the Phase X Invariance Condition without the earlier deposit's (#846, 2026-06-17) 'historical claim, not a universal law' scope limit; recorded as a variant, not a contradiction."
+  },
+  {
+   "batch": "TE06",
+   "observation": "Items 9 and 28 pair a claim with its confirmation record (F1671.C1) or its preregistered test (F1471.F1); marked related."
+  },
+  {
+   "batch": "TE06",
+   "observation": "No deposit texts were opened; every decision was made from the quotes, falsifier quotes and notes carried in the queue."
+  },
+  {
+   "batch": "TE08",
+   "observation": "F548.D1 is a single find holding two Fulfillment Map rows (3i Atlas -> LO! coordinates and Citrini -> Market Act). Its pairs with F556.D3 (3i Atlas) and F1255.C1 (Citrini) were marked related, not same, so assembly does not merge the two rows into one claim; F558.D2, F1255.C2 and F556.D3 are the same 3i Atlas row across Ark versions (only F558.D2~F1255.C2 was in this batch as same)."
+  },
+  {
+   "batch": "TE08",
+   "observation": "F1589.A1 bundles predictions 1-3 of The First Draft §5 in one find while F1605 splits them into A1-A5; F1589.A1 was linked to F1605.A1 as a variant. A later pass may want F1605.A2 and A3 joined to F1589.A1 too."
+  },
+  {
+   "batch": "TE08",
+   "observation": "F1249.H1 (dated 2026-01-01) and F860.H1 (2026-06-18) are the same Revelation First Mint Block Release 2 line; the 2026-01-01 date on #1249 looks like a placeholder, which would make it the earliest statement if assembly registers by date."
+  },
+  {
+   "batch": "TE08",
+   "observation": "Eleven pairs in this batch were D-shape share-link anchors joined only by link boilerplate (distinct); the lexical candidate generator over-pairs these."
+  },
+  {
+   "batch": "TE08",
+   "observation": "Item 42 read #167 lines 155-166 (current file) to confirm F167.D2 is an incognito control of the same query; whether that query is exactly #164's 'socrates as orthonym' was not confirmed."
+  },
+  {
+   "batch": "TR01",
+   "observation": "R:INVERSION-T3: the card says T3 is unrun; #1456 (lines 70, 78, 251, 277) records T3 implemented after results (V3-D14) and CONFIRMED. The card may predate that or mean another T3 cell; recorded as an observation, card untouched."
+  },
+  {
+   "batch": "TR01",
+   "observation": "R:P-PHASE2-PROLIF: the exact prediction text and window the card says need recovery are present in F106.A8 (#106 line 499, prediction X-1, window 2026-2028)."
+  },
+  {
+   "batch": "TR01",
+   "observation": "R:P-STALE-INDEX: the queue attaches #928 though the card gives only a capture-gallery URL; how #928 was derived is unclear. Decided no_source on the card's own sources."
+  },
+  {
+   "batch": "TR01",
+   "observation": "R:COMPRESSION-DETECTOR and R:DATACITE-ANNUAL-DIFF give no archive deposit but matching finds exist (F1534.F1; F1405.F1). The protocol defines no_source by the card alone; I recorded the match because a search found it. A later pass should rule which reading of no_source is meant."
+  },
+  {
+   "batch": "TR01",
+   "observation": "R:HEBREWS-CONTROL: Hebrews appears in the work plan's kernel transform list (Throne-Room -> Worship Architecture, Rev 4 -> Hebrews; e.g. #832 line 689) and not in #1414. No find states the Hebrews control itself."
+  },
+  {
+   "batch": "TR01",
+   "observation": "R:ATHETIC-APPARATUS: #1540 line 293 (athetic mark specification) has no find; the topical pass may want it."
+  },
+  {
+   "batch": "TR01",
+   "observation": "R:RCS-DECOUPLING-FIDELITY: §IX(iv) falsifier at #1540 line 327 is not in any find quote (F1540.F1/A1/F2 share line 327 and cover (i)-(iii))."
+  },
+  {
+   "batch": "TR03",
+   "observation": "R:METABOLISM-RETURN: the fourth phase and P1-P4 are registered from the 2026-09-28 operator observation and capture-gallery anchors, not from a deposit; no find in #240, #247 or #1546 states reincorporation, so only the extended three-phase sequence (F1546.G1) is linked."
+  },
+  {
+   "batch": "TR03",
+   "observation": "I:000 / I:001: the predictions originate in #939 (F939.G1, Provenance Debt §3); #1081 quotes and tests them (F1081.C1, line 464/471; line 483 'The test is passed on both halves'). Both finds are linked; the assembly should register the claim at #939."
+  },
+  {
+   "batch": "TR03",
+   "observation": "I:022 and I:027 are intake parse artefacts: the splitter read 'Prediction 3.' inside 'the control is Axiom 5 and Prediction 3' as a numbered item. Neither is a prediction; the referenced Prediction 3 is F506.G3 / F1153.G3. Decided not_found, since no exclusion rule in the reading protocol names this case."
+  },
+  {
+   "batch": "TR03",
+   "observation": "I:023-I:026 (#506) and I:028 (#1153) are the same Memography predictions; F506.G1-G4 and F1153.G1-G4 are near-verbatim restatements across the two deposits."
+  },
+  {
+   "batch": "TR03",
+   "observation": "I:018-I:021: the February 2026 predictions document (logged with TACHYON) is the earlier statement; #622 records the predictions only as C finds with their status."
+  },
+  {
+   "batch": "TR03",
+   "observation": "R:HUNTER-PRESIDENCY: #1490's current text has the prediction at line 31; the find records line 32."
+  }
+ ]
+}

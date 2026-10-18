@@ -51,13 +51,31 @@ def main():
             par[g(a)] = g(b)
     for a, b, s in json.load(open(T / 'restatements.json'))['joins']:
         join(a, b)
-    variants, related, conf, alias = {}, [], [], collections.defaultdict(list)
+    variants, related, conf, alias, contains = {}, [], [], collections.defaultdict(list), []
+    # a find linked 'same'/'variant' to two or more finds of one other deposit is a list holding them: its links are
+    # 'contains', not joins (TE03 item 28, TE06 items 19 and 38: a ledger joined to one of its members)
+    links = collections.defaultdict(set)
+    for bid, out in done.items():
+        if bid.startswith('TE'):
+            for d in out['decisions']:
+                if d['decision'] in ('same', 'variant'):
+                    a, b = d['item'][2:].split('~'); links[a].add(b); links[b].add(a)
+    hub = set()
+    for x, ys in links.items():
+        per = collections.Counter(byid[y]['deposit'] for y in ys)
+        if any(v >= 2 for v in per.values()):
+            hub.add(x)
     for bid, out in done.items():
         for d in out['decisions']:
             it = d['item']
             if bid.startswith('TE'):
                 a, b = it[2:].split('~')
-                if d['decision'] in ('same', 'variant'):
+                la, lb = len(byid[a]['quote']), len(byid[b]['quote'])
+                if (d['decision'] in ('same', 'variant') and max(la, lb) > 3 * min(la, lb)):
+                    d = dict(d, container='a' if la > lb else 'b'); hub.add(a if la > lb else b)  # a long list joined to one short member
+                if d['decision'] == 'contains' or (d['decision'] in ('same', 'variant') and (a in hub or b in hub)):
+                    contains.append((a, b) if (d.get('container') == 'a' or (d.get('container') != 'b' and a in hub)) else (b, a))
+                elif d['decision'] in ('same', 'variant'):
                     join(a, b)
                     if d['decision'] == 'variant':
                         later = max((a, b), key=lambda x: (byid[x].get('date') or '', byid[x]['deposit']))
@@ -99,6 +117,9 @@ def main():
     for a, b in related:
         if a in of and b in of and of[a] != of[b]:
             C[of[a]]['related'].append(of[b]); C[of[b]]['related'].append(of[a])
+    for a, b in contains:
+        if a in of and b in of and of[a] != of[b]:
+            C[of[a]].setdefault('contains', []).append(of[b]); C[of[b]].setdefault('in', []).append(of[a])
     for c in conf:
         for l in c['links']:
             t = of.get(l.get('find'))
@@ -117,6 +138,9 @@ def main():
                        'earliest statement. Built by scripts/reading/triage_assemble.py from finds.jsonl, restatements.json '
                        'and the verified judgment batches; protocol data/reading/TRIAGE-PROTOCOL.md.',
                'summary': summ, 'held_out': gone, 'claims': claims}, open(T / 'claims.json', 'w'), ensure_ascii=False, indent=1)
+    obs = [{'batch': bid, 'observation': o} for bid, out in sorted(done.items()) for o in out.get('observations') or []]
+    json.dump({'what': 'Observations the triage readers recorded for a later pass, by batch.', 'observations': obs},
+              open(T / 'observations.json', 'w'), ensure_ascii=False, indent=1)
     json.dump({'what': 'Confirmation records (shape C) and what each points back to, as judged in the TC batches.',
                'confirmations': conf}, open(T / 'confirmations.json', 'w'), ensure_ascii=False, indent=1)
     print(json.dumps(summ))

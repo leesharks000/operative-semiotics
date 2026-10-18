@@ -11,7 +11,7 @@ import json, sys, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 R = ROOT / 'data/reading'; T = R / 'triage'
 V = {'TC': {'target_kind': {'find', 'deposit', 'self', 'external', 'unlocated'}},
-     'TE': {'decision': {'same', 'variant', 'related', 'distinct'}},
+     'TE': {'decision': {'same', 'variant', 'contains', 'related', 'distinct'}},
      'TR': {'match': {'found', 'partial', 'not_found', 'excluded', 'no_source'}}}
 CLAIMED = {'came_true', 'partly', 'failed', 'pending'}
 

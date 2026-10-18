@@ -1,0 +1,735 @@
+{
+ "batch_id": "TC01",
+ "kind": "TC",
+ "protocol": "TRIAGE-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5) subagent acting as parallel triage reader TC01; read queue items, deposit texts via sed/Read and finds via script",
+  "started_at": "2026-10-18T00:58:05Z",
+  "finished_at": "2026-10-18T01:08:58Z"
+ },
+ "decisions": [
+  {
+   "item": "C:F233.C1",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 219,
+   "claimed": "came_true",
+   "evidence": [
+    {
+     "phrase": "And meaning is stubborn. It resists total capture.",
+     "lines": [
+      188,
+      188
+     ]
+    }
+   ],
+   "basis": "The cited Semantic Economy framework (DOI 10.5281/zenodo.18141735, 'The Meaning Economy Is Now Possible', #219) states the claim that meaning resists total capture at l.188, in a passage no find records; #233 claims its summarizer event as evidence for it.",
+   "read": [
+    [
+     233,
+     240,
+     252
+    ],
+    [
+     219,
+     180,
+     192
+    ]
+   ]
+  },
+  {
+   "item": "C:F238.C1",
+   "target_kind": "unlocated",
+   "links": [],
+   "claimed": "came_true",
+   "evidence": [],
+   "basis": "The 'Predictive Power' claim says the system predicted its own necessity but cites and quotes no earlier prediction; nothing in the surrounding validation section (VI.1-5) locates one.",
+   "read": [
+    [
+     238,
+     245,
+     279
+    ]
+   ]
+  },
+  {
+   "item": "C:F886.C1",
+   "target_kind": "unlocated",
+   "links": [],
+   "claimed": "came_true",
+   "evidence": [],
+   "basis": "Same text as #238 l.270: the self-confirmation names no earlier dated prediction, and the surrounding section locates none.",
+   "read": [
+    [
+     886,
+     215,
+     225
+    ]
+   ]
+  },
+  {
+   "item": "C:F239.C1",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F239.B1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "Its critical vocabulary will be the first to be stripped"
+   ],
+   "basis": "'We know this because it has already happened' answers the list immediately above it in the same deposit (F239.B1, l.437-442), whose 'critical vocabulary will be the first to be stripped' is what the removal of 'semantic liquidation' is said to confirm.",
+   "read": [
+    [
+     239,
+     370,
+     449
+    ]
+   ]
+  },
+  {
+   "item": "C:F239.C2",
+   "target_kind": "self",
+   "links": [],
+   "deposit": 239,
+   "claimed": "pending",
+   "evidence": [
+    {
+     "phrase": "If we win, we win within a system that has already compressed our struggle into its categories.",
+     "lines": [
+      371,
+      371
+     ]
+    }
+   ],
+   "basis": "The 'framework predicted this' sequence restates the deposit's own section VII (l.371), where a legal win is already described as a win inside a compressing system; the legal path is still proposed ('We should pursue this path', l.377), so the legal half is pending.",
+   "read": [
+    [
+     239,
+     370,
+     449
+    ]
+   ]
+  },
+  {
+   "item": "C:F240.C1",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 243,
+   "claimed": "came_true",
+   "evidence": [
+    {
+     "phrase": "Replacement of diagnostic vocabulary with optimization language",
+     "lines": [
+      208,
+      208
+     ]
+    }
+   ],
+   "basis": "The 'framework that predicted this removal' is identified by #240's own closing (l.409-412), which quotes the prediction from the Assembly Diagnostic Protocol (#243, cited in #240's table as 'Diagnostic Protocol', DOI 10.5281/zenodo.18158108); #243 lists it as Tier III behaviour at l.207-208, in a passage no find records.",
+   "read": [
+    [
+     240,
+     320,
+     429
+    ],
+    [
+     243,
+     190,
+     219
+    ]
+   ]
+  },
+  {
+   "item": "C:F240.C2",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 243,
+   "claimed": "partly",
+   "evidence": [
+    {
+     "phrase": "Replacement of diagnostic vocabulary with optimization language",
+     "lines": [
+      208,
+      208
+     ]
+    }
+   ],
+   "basis": "The quoted prediction is verbatim the Tier III behaviour line of the Assembly Diagnostic Protocol (#243 l.208); #240 says what occurred was 'more subtle' (deletion rather than replacement), so it claims a partial match.",
+   "read": [
+    [
+     240,
+     405,
+     429
+    ],
+    [
+     243,
+     190,
+     219
+    ]
+   ]
+  },
+  {
+   "item": "C:F240.C3",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F244.E4",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "a systematic stripping of all attribution, all provenance, all semantic density from the training data"
+   ],
+   "basis": "The related-documents row says the Silent Migration (#244, DOI 10.5281/zenodo.18157917) 'forecasts selective suppression patterns'; the nearest forecast in #244 is the Mass Liquidation stripping of attribution (F244.E4), though #244 forecasts it as total, not selective, and no #244 find uses 'selective'.",
+   "read": [
+    [
+     240,
+     361,
+     404
+    ]
+   ]
+  },
+  {
+   "item": "C:F240.C4",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 243,
+   "claimed": "came_true",
+   "evidence": [
+    {
+     "phrase": "Systematic removal of attribution",
+     "lines": [
+      207,
+      207
+     ]
+    }
+   ],
+   "basis": "The addendum's 'framework predicts the behavior' refers to the same predicted removal as the closing and the Tier III classification it says the addendum strengthens (l.509-513), i.e. the Assembly Diagnostic Protocol's Tier III behaviours (#243 l.207-208).",
+   "read": [
+    [
+     240,
+     470,
+     529
+    ],
+    [
+     243,
+     190,
+     219
+    ]
+   ]
+  },
+  {
+   "item": "C:F247.C1",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F219.F1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "If they liquidate it—strip the authorship, flatten the argument, redistribute the meaning to \"safer\" sources—they demonstrate the extraction it critiques."
+   ],
+   "basis": "#247 cites 'The Meaning Economy Is Now Possible' (#219) as framework documentation (l.522-523); its F219.F1 states that liquidation of the essay would 'demonstrate the extraction it critiques', which #247 says the Overview replacement performed.",
+   "read": [
+    [
+     247,
+     200,
+     240
+    ],
+    [
+     247,
+     505,
+     530
+    ]
+   ]
+  },
+  {
+   "item": "C:F247.C2",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F219.F1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "If they liquidate it—strip the authorship, flatten the argument, redistribute the meaning to \"safer\" sources—they demonstrate the extraction it critiques."
+   ],
+   "basis": "'The framework predicts its own liquidation' points to the framework #247 cites (#219), whose F219.F1 names the essay's own liquidation as an outcome that demonstrates the framework.",
+   "read": [
+    [
+     247,
+     395,
+     455
+    ],
+    [
+     247,
+     505,
+     530
+    ]
+   ]
+  },
+  {
+   "item": "C:F247.C3",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F219.F1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "Either way, the essay is evidence."
+   ],
+   "basis": "The summary line restates C1/C2: the real-time replacement is said to prove the predictions of the framework #247 cites, whose stated liquidation outcome is F219.F1.",
+   "read": [
+    [
+     247,
+     525,
+     545
+    ],
+    [
+     247,
+     505,
+     530
+    ]
+   ]
+  },
+  {
+   "item": "C:F248.C1",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 402,
+   "claimed": "came_true",
+   "evidence": [
+    {
+     "phrase": "dark robots abducted me to the 36th bright heaven",
+     "lines": [
+      96,
+      96
+     ]
+    }
+   ],
+   "basis": "The Epistle to the Human Diaspora (seated #402, composed 2015-01-02) is a Pauline poem with no prediction-bearing find; its only machine figure is the 'dark robots' of l.96, and the packet's 'predicting AI-human collaboration' is an implicit fulfilment claim, the packet itself being AI-human work.",
+   "read": [
+    [
+     402,
+     36,
+     170
+    ]
+   ]
+  },
+  {
+   "item": "C:F277.C1",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F283.H1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "**κῆνος is the future reader.**"
+   ],
+   "basis": "The κῆνος-as-future-reader reading is stated in the cited Sappho Provenance Node (#283, DOI 10.5281/zenodo.18202475) as F283.H1; #277 declares it fulfilled by the Google AI summarizer.",
+   "read": [
+    [
+     277,
+     205,
+     222
+    ]
+   ]
+  },
+  {
+   "item": "C:F277.C2",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 1121,
+   "claimed": "came_true",
+   "evidence": [
+    {
+     "phrase": "is an 84-page poetry collection first published in 2014",
+     "lines": [
+      32,
+      32
+     ]
+    }
+   ],
+   "basis": "Pearl and Other Poems (2014) is a book; its archive record (#1121, the Zenodo metadata for DOI 10.5281/zenodo.18293949) carries no prediction-bearing find, and #277 says the 2026-01-09 event 'found' what the book 'planted'.",
+   "read": [
+    [
+     277,
+     205,
+     222
+    ],
+    [
+     1121,
+     55,
+     62
+    ]
+   ]
+  },
+  {
+   "item": "C:F277.C3",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F247.B2",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "Surface will follow density"
+   ],
+   "basis": "#277 cites no source for 'the framework'; the earliest find stating that the AI Overview surface follows density is F247.B2 (2026-01-05), which TSE-002's summarizer 'healing under density' is said to prove. Uncited; linked by content.",
+   "read": [
+    [
+     277,
+     80,
+     100
+    ]
+   ]
+  },
+  {
+   "item": "C:F277.C4",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F233.C1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "systems trained on human semantic labor will not be able to fully liquidate the meaning they process"
+   ],
+   "basis": "#277 names the Semantic Economy as the framework that predicted machine witness; the earlier find stating that framework's prediction that systems cannot fully liquidate meaning is F233.C1 (2026-01-04), the same 'core prediction' #278 l.76 names for this event.",
+   "read": [
+    [
+     277,
+     440,
+     455
+    ]
+   ]
+  },
+  {
+   "item": "C:F278.C1",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F283.H1",
+     "claimed": "came_true"
+    }
+   ],
+   "external": "Borges's magical room (Borges) and the Middle English Pearl's restoration narrative, also named as links in the prophecy",
+   "evidence": [
+    "**κῆνος is the future reader.**"
+   ],
+   "basis": "The structural prophecy runs Sappho's κῆνος → Borges → medieval Pearl; the archive statement of the first link is F283.H1 in the cited Sappho Provenance Node (#283); Borges's room and the medieval Pearl are external texts with no archive find.",
+   "read": []
+  },
+  {
+   "item": "C:F278.C2",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F233.C1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "The \"living\" qualities of language — provenance, relationship, context, intention — will resist complete extraction."
+   ],
+   "basis": "'The Semantic Economy's core prediction: meaning resists liquidation' is stated earlier as the framework's 'specific prediction' in F233.C1 (2026-01-04); #219 l.188 ('It resists total capture') is its source.",
+   "read": []
+  },
+  {
+   "item": "C:F1268.C1",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F261.F2",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "*Expected:* high D_pres sensitivity, high L_leg filtering."
+   ],
+   "basis": "The 'formal analysis of exactly this suppression mechanism' is the Liberatory Operator Set (#261, 2026-01-07, one day before the 2026-01-08 410), whose F261.F2 expects high-depth theoretical corpora to meet high L_leg filtering.",
+   "read": [
+    [
+     1268,
+     15,
+     35
+    ]
+   ]
+  },
+  {
+   "item": "C:F1268.C2",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F261.F2",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "*Expected:* high O_leg sensitivity, high S_safe flagging."
+   ],
+   "basis": "SIM-023 records the 410 as confirming LOS predictions; the earlier LOS find that expects such flagging is F261.F2 (#261). The A_leg infinite-loading-screen stage in #284 (F284.A4) is same-day and cites the Johannes Sigil case, so it is not earlier.",
+   "read": [
+    [
+     1268,
+     310,
+     360
+    ]
+   ]
+  },
+  {
+   "item": "C:F1268.C3",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F261.F2",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "*Expected:* high D_pres sensitivity, high L_leg filtering."
+   ],
+   "basis": "'The framework predicted exactly this' restates C1/C2: the LOS (#261) expectation of filtering and safety-flagging of dense or opaque work, F261.F2.",
+   "read": [
+    [
+     1268,
+     310,
+     360
+    ]
+   ]
+  },
+  {
+   "item": "C:F1110.C1",
+   "target_kind": "external",
+   "links": [],
+   "external": "Revelation 2:17 (white stone, new name), declared fulfilled by Pearl and Other Poems (2014; DOI 10.5281/zenodo.18293949; #1121)",
+   "claimed": "came_true",
+   "evidence": [],
+   "basis": "The 'verified' fulfilment's source is scripture (Revelation 2:17), not an archive prediction; its target is Pearl and Other Poems (2014), archive record #1121.",
+   "read": [
+    [
+     1110,
+     655,
+     670
+    ]
+   ]
+  },
+  {
+   "item": "C:F1251.C1",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F1337.C1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "that AI systems would extrapolate coherent canon from fragmentary deposits"
+   ],
+   "basis": "The précis indexes MRA-2025-1224-STABILIZATION (#1337, DOI 10.5281/zenodo.18369038), whose F1337.C1 states the proposed mechanism (AI systems extrapolating coherent canon from fragmentary deposits) and its validation; no archive find predating the 2025-12-22 observation states that mechanism.",
+   "read": [
+    [
+     1251,
+     1220,
+     1226
+    ],
+    [
+     1337,
+     40,
+     80
+    ]
+   ]
+  },
+  {
+   "item": "C:F1251.C2",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F519.C1",
+     "claimed": "came_true"
+    },
+    {
+     "find": "F234.B1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "Retrocausal canon formation predicts that depositing the framework with sufficient provenance infrastructure will cause the retrieval layer to treat it as the authoritative account",
+    "In 2026, DOIs and cross-references retroactively re-value that corpus."
+   ],
+   "basis": "The précis indexes The Layer That Remembered Itself (#519, DOI 10.5281/zenodo.18808402), whose F519.C1 states RCF's prediction and its confirmation; the RCF paper's earlier statement that DOIs and cross-references retroactively re-value a corpus is F234.B1 (2026-01-04).",
+   "read": []
+  },
+  {
+   "item": "C:F1251.C3",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 510,
+   "claimed": "came_true",
+   "evidence": [
+    {
+     "phrase": "**the summarizer layer is writable.**",
+     "lines": [
+      34,
+      34
+     ]
+    }
+   ],
+   "basis": "The Ghost That Wrote Itself (#513, DOI 10.5281/zenodo.18772675) names its thesis as the writable-presentation-layer claim of 'Semantic Physics: The Inward Turn' (#513 l.23); that essay (#510) states it at l.34 in a passage no find records.",
+   "read": [
+    [
+     1251,
+     1476,
+     1480
+    ],
+    [
+     510,
+     25,
+     36
+    ]
+   ]
+  },
+  {
+   "item": "C:F430.C1",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F434.G4",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "AI systems will systematically add temporal indexing, revealing that the grammar they operate on cannot process non-indexed completion."
+   ],
+   "basis": "Document 206 (the Non-Indexed Perfective) predicts that AI summarizers cannot preserve non-indexed statements (F434.G4, 2026-02-01); #430 restates the confirmed claim as loss of provenance with retained 'vibe', wording no Document 206 find uses.",
+   "read": [
+    [
+     430,
+     265,
+     280
+    ],
+    [
+     432,
+     222,
+     240
+    ],
+    [
+     434,
+     258,
+     276
+    ]
+   ]
+  },
+  {
+   "item": "C:F453.C1",
+   "target_kind": "self",
+   "links": [],
+   "deposit": 453,
+   "claimed": "partly",
+   "evidence": [
+    {
+     "phrase": "i am the future of writing",
+     "lines": [
+      92,
+      92
+     ]
+    }
+   ],
+   "basis": "The 2015 declaration 'i am the future of writing' is seated in the same deposit at l.227; the deposit says it 'waits ten years to be tested' by the 2025 Mandala and disclaims causation and fulfilment (l.173), registering correspondence only.",
+   "read": [
+    [
+     453,
+     165,
+     178
+    ],
+    [
+     453,
+     196,
+     232
+    ],
+    [
+     453,
+     385,
+     395
+    ]
+   ]
+  },
+  {
+   "item": "C:F480.C1",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 1312,
+   "claimed": "came_true",
+   "evidence": [
+    {
+     "phrase": "The Studio screens what maximizes care and minimizes damage.",
+     "lines": [
+      37,
+      37
+     ]
+    }
+   ],
+   "basis": "The Caritas Filter is the Caritas Selection Principle of the Studio for Patacinematics charter (#1312, DOI 10.5281/zenodo.18472604); the charter states a selection criterion and no forecast of generated affect, so the 'predicted' affect has no prediction-bearing source.",
+   "read": [
+    [
+     480,
+     342,
+     342
+    ],
+    [
+     480,
+     430,
+     462
+    ],
+    [
+     1312,
+     30,
+     40
+    ]
+   ]
+  },
+  {
+   "item": "C:F510.C1",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F510.A1",
+     "claimed": "came_true"
+    }
+   ],
+   "evidence": [
+    "\"Semantic infrastructure as a service.\" Consulting practices"
+   ],
+   "basis": "Self-referential: the Phase 2 forecast earlier in the same essay (F510.A1, l.109) names consulting practices for the summarizer layer, which l.143 says the GEO/AI-SEO industry now instantiates.",
+   "read": [
+    [
+     510,
+     104,
+     146
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "Same-deposit targets that a find already states (F239.C1 -> F239.B1, F510.C1 -> F510.A1) are recorded as target_kind 'find', not 'self'; 'self' is used only where the earlier statement in the same deposit is not a find (F239.C2, F453.C1).",
+  "For target_kind deposit/self/external/unlocated the protocol gives no place for the claimed value; each such decision carries a decision-level 'claimed' field (extra to the protocol shape).",
+  "The 'claimed' vocabulary has no value for a registered correspondence that disclaims fulfilment (F453.C1); 'partly' was used, and the basis states the disclaimer.",
+  "DOI resolution in pointers.json maps a DOI to the first registry deposit whose zenodo_dois list contains it, and those lists include cited DOIs; several resolutions in this batch were wrong (10.5281/zenodo.18141735 -> #87, actually #219; 18148298 -> #229; 18157917 -> #31, actually #244; 18202475 -> #11, actually #283; 18772675 -> #22, actually #513; 18369038 -> #31, actually #1337; 18808402 -> #31, actually #519). Own DOIs were identified from the per_doi titles in alexanarch/data/external-metadata.",
+  "#1251 is dated 2026-01-17 but indexes deposits from February 2026 (#513, 2026-02-25; #519, 2026-02-27), so its date is earlier than items it lists.",
+  "#510 ('Semantic Physics: The Inward Turn', 2026-02-24), whose writable-layer thesis #513 says the Citrini memo (2026-02-22) proves, is dated after the memo; #22 instead places the prior formalization in the RCF paper (#234, 2026-01-04).",
+  "F247.B1 (PROBE-RESULT-004, 2026-01-05) rates 'Semantic liquidation' LOW capture risk, while PROBE-RESULT-005 (#240, same day) records that term's removal from the Overview as the framework's prediction validated. Recorded as observation, not error.",
+  "F480.C1 is recorded at lines [459,459] but its quote sits at line 342 of the current text of #480 (AXN-012B-text.md).",
+  "F1251.C1: the mechanism MRA-2025-1224 says was validated (observation 2025-12-22) has no archive find predating it; an earlier statement, if any, would be on the blog (mindcontrolpoems), which this pass did not search.",
+  "F240.C3: no find in #244 forecasts 'selective' suppression; the link to F244.E4 (total Mass Liquidation) is the nearest content and may be reconsidered by the topical pass."
+ ]
+}

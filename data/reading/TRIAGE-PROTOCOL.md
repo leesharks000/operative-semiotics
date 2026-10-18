@@ -59,6 +59,9 @@ Decide one of:
 - `same`: one claim, stated twice. A reader of the index should see it as one prediction with two statements.
 - `variant`: the same claim changed in a way that matters for checking it: the window moved, the scope narrowed or
   widened, the falsifier changed, or the claim was reversed. Say what changed in `change`.
+- `contains`: one find is a list, a ledger or a battery that includes the other's claim as one of its members. Say
+  which in `container` ("a" or "b"). The member is not merged with the list, because that would pull the list's
+  other members into one claim.
 - `related`: distinct claims on one subject, such as two predictions in one series or a claim and its test.
 - `distinct`: the shared words are boilerplate or a common phrase, and the claims are not related.
 
