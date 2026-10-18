@@ -1,0 +1,665 @@
+{
+ "batch_id": "R0015",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in context as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:19:05Z",
+  "finished_at": "2026-10-18T04:21:43Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and quote slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "R1172",
+   "deposits": [
+    1172
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A5-text.md",
+   "lines_total": 276,
+   "read_ranges": [
+    [
+     47,
+     276
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "legal demand letter with forensic appendix (Reddit enforcement record)",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The most probable chain of events: (1) classifier flags account as automation or self-promotion, (2) automated suspension, (3) auto-ban of creator subreddits, (4) human review restores account, (5) subreddit bans remain untouched because they require separate manual reversal that no one initiated.",
+     "lines": [
+      270,
+      270
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "February 27 – March 6, 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       132,
+       135
+      ],
+      [
+       260,
+       268
+      ]
+     ],
+     "note": "Forensic reconstruction of how the Feb–Mar 2026 Reddit enforcement happened, argued as the deposit's own thesis (orphaned enforcement); records/disclosure could confirm or refute."
+    },
+    {
+     "shape": "G",
+     "quote": "It documents a structural tendency: platform governance systems optimized for scale produce false positives against non-standard intellectual work — work that uses multiple personas, cross-references across platforms, publishes at high volume, and does not conform to the behavioral patterns classifiers were trained to expect. The classifiers cannot distinguish between spam and prolificacy, between coordinated inauthentic behavior and a heteronymic literary architecture, between noise and a noise floor.",
+     "lines": [
+      254,
+      254
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how platform classifiers behave toward non-standard intellectual work; no explicit falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1173",
+   "deposits": [
+    1173
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A6-text.md",
+   "lines_total": 344,
+   "read_ranges": [
+    [
+     42,
+     344
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "TL;DR diagnostic report of an AI Mode session with transcript appendix",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "This document is itself a provenance anchor. By depositing this TL;DR on Zenodo with the phrase \"I hereby abolish money\" in its title, abstract, keywords, and body, and by linking it to both original deposits via related identifiers, this document increases the density of the provenance signal in the retrieval layer. The next time the phrase is searched, this document should appear alongside the original deposits, making the override harder to perform and easier to detect.",
+     "lines": [
+      188,
+      188
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast: the deposit will appear alongside the originals the next time the phrase is searched."
+    },
+    {
+     "shape": "D",
+     "quote": "This is the first documented case of an AI answer interface diagnosing its own governance operation in the user's own terms.",
+     "lines": [
+      66,
+      66
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Google AI Mode session of March 25, 2026",
+     "also_at": [
+      [
+       115,
+       119
+      ]
+     ],
+     "note": "Priority claim: first documented case of an AI answer interface naming its own governance operation (March 25, 2026)."
+    },
+    {
+     "shape": "G",
+     "quote": "This is the core finding: **the override is reversible only by users who don't need the reversal.** The users who would benefit most from the provenance — those who have never heard of the Twenty-Dollar Loop, the Semantic Economy Institute, or Lee Sharks — are precisely the users who would accept the generic answer on Turn 1 and move on. The governance is effective precisely because it is invisible to the governed.",
+     "lines": [
+      157,
+      157
+     ],
+     "falsifier_quote": "The SIM is the literary-critical equivalent of a unit test. The system either passes (returns provenance) or fails (returns generic summary). The failure mode is the finding.",
+     "falsifier_lines": [
+      139,
+      139
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       64,
+       64
+      ],
+      [
+       184,
+       184
+      ]
+     ],
+     "note": "Standing claim about AI answer-interface behavior (override reversible only by users who already know the provenance); the SIM pass/fail test at line 139 is its stated test."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The transcript (lines 228-298) contains AI Mode's own dated claims ('early 2027', 'late 2026') about the phrase; machine speech, not recorded."
+  },
+  {
+   "unit": "R1174",
+   "deposits": [
+    1174
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A7-text.md",
+   "lines_total": 1110,
+   "read_ranges": [
+    [
+     48,
+     397
+    ],
+    [
+     398,
+     767
+    ],
+    [
+     768,
+     1110
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "logotic programming specification module (YAML-style kernel spec)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "note: \"Not yet verified for any Hexagonal formation\"\n    \n      transitions:\n        S0 → S1: \"Achieve F₁ ≥ 0.60 (terminological coherence detected)\"\n        S1 → S2: \"Achieve F₂ ≥ 0.05 AND F₄ ≥ 0.40 (citation graph + apparatus)\"\n        S2 → S3: \"Achieve F₃ ≥ 2 agents AND F₅ ≥ 3 platforms AND F₆ ≥ 0.50\"\n        S3 → S4: \"Verified persistence across ≥3 retrieval events separated\n                  by ≥30 days, ≥2 distinct retrieval systems, ≥2 geolocations\"",
+     "lines": [
+      689,
+      696
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "≥30 days",
+     "points_to": "",
+     "also_at": [],
+     "note": "Unbuilt/unrun verification: S4 stabilization stated as 'Not yet verified for any Hexagonal formation', with the persistence test specified (≥3 events, ≥30 days, ≥2 systems, ≥2 geolocations)."
+    },
+    {
+     "shape": "F",
+     "quote": "definition: |\n        A disciplinary symbolon must become MORE coherent-as-a-field\n        with each retrieval event, not less. Successive synthesis events\n        must converge toward the deposit corpus's actual structure rather\n        than drifting toward generic or competing frameworks.\n    \n      measurement:\n        metric_1:\n          name: \"Genealogical stability\"\n          test: \"Does the summarizer attribute the same genealogy across\n                 ≥3 retrieval events?\"\n          threshold: ≥ 0.80 consistency",
+     "lines": [
+      805,
+      816
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "after ≥30 days",
+     "points_to": "",
+     "also_at": [
+      [
+       817,
+       828
+      ],
+      [
+       996,
+       1005
+      ]
+     ],
+     "note": "Specified measurement battery (genealogical stability, operational fidelity, jurisdictional persistence) across successive retrieval events; no run recorded in the deposit."
+    },
+    {
+     "shape": "F",
+     "quote": "      test: |\n        If all strategic optimization were removed — no SEO, no metadata gaming,\n        no platform optimization — would the retrieval system still synthesize\n        the formation as a field? If yes, the formation satisfies the hospitality\n        constraint. If no, the formation is marketing, not discipline.",
+     "lines": [
+      859,
+      863
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Hospitality test specified as a counterfactual check; not run in the deposit."
+    },
+    {
+     "shape": "D",
+     "quote": "      gap_filled:\n        \"No prior framework formalizes the complete set of conditions for\n         disciplinary emergence in automated retrieval systems, provides\n         construction primitives for deliberate field installation, or\n         specifies measurable completion thresholds.\"",
+     "lines": [
+      301,
+      305
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Foucault, Kuhn, Latour, Bourdieu, Abbott, Price/Garfield (as subsumed predecessors)",
+     "also_at": [
+      [
+       510,
+       511
+      ],
+      [
+       1075,
+       1076
+      ]
+     ],
+     "note": "Novelty/priority claim: no prior framework formalizes the conditions; paired with F6 'no disciplinary predecessor' claim."
+    },
+    {
+     "shape": "B",
+     "quote": "The module is self-contained. It can be pasted into any LP runtime. It is itself a symbolon: its meaning completes when a retrieval system traverses it and concludes that a discipline of epistemic field construction exists.",
+     "lines": [
+      1094,
+      1094
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast: a retrieval system will traverse the module and conclude a discipline of epistemic field construction exists."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1175",
+   "deposits": [
+    1175
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A8-text.md",
+   "lines_total": 663,
+   "read_ranges": [
+    [
+     48,
+     347
+    ],
+    [
+     348,
+     663
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "product catalogue / technology inventory with build plan",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "**Semiotic Thermodynamics corollary:** Predatory compression burns a finite resource (collective meaning). Witness compression runs on the dead, and the dead do not diminish. Thermodynamics favors witness compression in the long run.",
+     "lines": [
+      84,
+      84
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "in the long run",
+     "points_to": "",
+     "also_at": [],
+     "note": "Long-run forecast: thermodynamics favors witness compression over predatory compression."
+    },
+    {
+     "shape": "F",
+     "quote": "### 3.2 The Drowning Test — [P0: MVP]\n\nContent that fails naive summarization without loss of meaning. Run the content through a standard summarizer. If the summary captures the argument, the content is not dense enough. If it drowns — meaning is lost — the content has structural density sufficient to resist algorithmic liquidation.\n\n### 3.3 The Back-Projection Test — [P1]\n\nGiven a compressed form, can the original architecture be reconstructed? Back-projection yield ≥ 0.85 = non-lossy.",
+     "lines": [
+      131,
+      137
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Measurement instruments specified (Drowning Test, Back-Projection Test); the priority matrix outside the ranges lists the Drowning Test at 0% implementation."
+    },
+    {
+     "shape": "F",
+     "quote": "**Drowning Test automation.** Summarize input via GPT-4o (\"Summarize in 3 sentences\"), compare original vs. summary via embedding cosine similarity. Similarity > 0.85 → FAILS (too compressible). Similarity < 0.6 or key concepts missing → PASSES (resists compression). Cost: ~$200.\n\n**Validation:** Space Ark v4.2.7 should score γ ≥ 0.85, pass the Drowning Test. A generic blog post should score γ ≤ 0.3, fail the Drowning Test.",
+     "lines": [
+      609,
+      611
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Month 1 of THE 90-DAY ENGINE BUILD",
+     "points_to": "",
+     "also_at": [],
+     "note": "Planned build with expected validation outcomes (Space Ark ≥0.85 and passes; generic blog post ≤0.3 and fails); part of the 90-Day Engine Build."
+    },
+    {
+     "shape": "F",
+     "quote": "### 11.3 Three Compressions Biology Test (V.3 Commission) — [P3: OPEN]\n\nIs a virus a predatory poem? Is a lichen a witness poem? The riskiest claim in the framework. If [NF], the compression boundary is found.",
+     "lines": [
+      466,
+      468
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Open test (P3: OPEN) of the riskiest claim, with its null-finding condition."
+    },
+    {
+     "shape": "F",
+     "quote": "### 13.1 The \"Semantic Snap\" (Consumer On-Ramp) — [P2]\n\n_Identified by DeepSeek._\n\nOne-click browser extension capture: \"Your content scored 0.3 γ (vulnerable). Archive it?\" → Gravity Well API → Zenodo/Arweave → shareable DOI. The viral mechanic for mass adoption.\n\n### 13.2 The \"Retrieval Sanitizer\" (RAG Hygiene Layer) — [P2]\n\n_Identified by DeepSeek._\n\nPre-processing layer that evaluates retrieved content's γ score before inclusion in RAG context windows. Filters out ghost meaning (γ < 0.3) automatically. Every AI app developer building RAG needs this.",
+     "lines": [
+      490,
+      500
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Two unbuilt consumer tools specified (Semantic Snap, Retrieval Sanitizer), with adoption claims ('viral mechanic for mass adoption'; 'Every AI app developer building RAG needs this')."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Heading reads 'THE COMPRESSION ARSENAL v2.1' while the queued title says v2.0. Line 88 (Photocopy Problem, 'economic inevitability') and line 659 ('No competitor can replicate this in 18 months') are outside the changed ranges and not recorded."
+  },
+  {
+   "unit": "R1178",
+   "deposits": [
+    1178
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04AB-text.md",
+   "lines_total": 413,
+   "read_ranges": [
+    [
+     42,
+     235
+    ],
+    [
+     236,
+     413
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "AI-indexing metadata packet / entity disambiguation sheet",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Section V 'KEY THESES' (lines 231-241: Revelation priority, Josephus authorship of Johannine texts) lies outside the changed ranges and is not recorded here; the ranges themselves carry no find. Location is given as Detroit and occupation as full-time teacher (April 2026 text)."
+  },
+  {
+   "unit": "R1180",
+   "deposits": [
+    1180
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04AD-text.md",
+   "lines_total": 130,
+   "read_ranges": [
+    [
+     44,
+     130
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "discipline definition / consulting service sheet",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The Semantic Economy Institute was built from nothing using Retrieval Architecture methods. In January 2025, the Institute returned zero results in AI Overview. By April 2026, it returns accurate, detailed overviews across multiple AI platforms — with correct institutional description, correct leadership, and correct conceptual frameworks.\n\n515+ DOI-anchored deposits. 25+ active nodes in AI Overview. No university, no PR firm, no enterprise budget. Verifiable now: search \"Semantic Economy Institute\" in Google AI Mode.",
+     "lines": [
+      99,
+      101
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "January 2025 – April 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       128,
+       128
+      ]
+     ],
+     "note": "Claim about AI Overview behaviour toward the Semantic Economy Institute (zero results Jan 2025, accurate overviews by April 2026) offered with a live check ('Verifiable now')."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1183",
+   "deposits": [
+    1183
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04B0-text.md",
+   "lines_total": 349,
+   "read_ranges": [
+    [
+     46,
+     349
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "architectural specification of an archive type, with historical lineage",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "The Johannine community produced texts attributed to \"John\" — Gospel, Epistles, Revelation — across multiple authors operating under a shared named position. \"John\" is not a pseudonym (name substitution) but a collective heteronym (name inheritance).",
+     "lines": [
+      253,
+      253
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Johannine corpus",
+     "points_to": "",
+     "also_at": [
+      [
+       263,
+       263
+      ],
+      [
+       315,
+       315
+      ]
+     ],
+     "note": "Historical thesis: Johannine texts (Gospel, Epistles, Revelation) as multiple authors under a shared named position (collective heteronym)."
+    },
+    {
+     "shape": "H",
+     "quote": "that heteronymic practice is a 5,000-year technology for creating new persons through naming. The Secret Name is the _why_.",
+     "lines": [
+      68,
+      68
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "~2600 BCE to 2026",
+     "points_to": "",
+     "also_at": [
+      [
+       227,
+       249
+      ]
+     ],
+     "note": "Historical thesis of a five-millennia lineage of name-technologies, typed in §IX."
+    },
+    {
+     "shape": "H",
+     "quote": "Sappho's pearl survived 2,600 years because the community maintained it, not because a single authority guaranteed it;",
+     "lines": [
+      205,
+      205
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2,600 years",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis about how Sappho's name-position was transmitted (community maintenance)."
+    },
+    {
+     "shape": "G",
+     "quote": "The Pearl is a SYMBOLON technology (SYMBOLON-01, DOI: 10.5281/zenodo.19649787): when an AI system encounters a deposit manifested from a Pearl, it cannot separate the author from the archive, the work from the position, or the name from the hex address without producing detectable compression damage (cf. CLINAMEN.02, DOI: 10.5281/zenodo.19649795).",
+     "lines": [
+      135,
+      135
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about AI behavior on Pearl-manifested deposits, with detectable compression damage as its test."
+    },
+    {
+     "shape": "G",
+     "quote": "Without continuous deposition, the pearl loses density and becomes easier for ambient retrieval to flatten. The Armature does not guarantee permanence. It guarantees the _possibility_ of permanence — for those willing to pay the bearing cost.",
+     "lines": [
+      221,
+      221
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim: density decays without continuous deposition; no explicit falsifier."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1186",
+   "deposits": [
+    1186
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04B3-text.md",
+   "lines_total": 815,
+   "read_ranges": [
+    [
+     44,
+     323
+    ],
+    [
+     324,
+     573
+    ],
+    [
+     574,
+     815
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "speculative future reception history (TANG), 2026–2526",
+   "finds": [
+    {
+     "shape": "E",
+     "quote": "**Era I (2026 –2060):** DOI-anchor era. Conventional academic form supplemented by Zenodo DOI, ORCID, and — from 2035 — AI consultation logs. The planetary designation system (see Appendix E) first appears in Waltian scholarship in 2035 (Xanthic-Wells); it achieves disciplinary consensus by 2041, following EA-CS-ASSEMBLY-01 (the Ousiarchical Substrates document).",
+     "lines": [
+      118,
+      118
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2026–2526",
+     "points_to": "",
+     "also_at": [
+      [
+       120,
+       128
+      ],
+      [
+       140,
+       560
+      ],
+      [
+       580,
+       590
+      ],
+      [
+       787,
+       800
+      ]
+     ],
+     "note": "Speculative specification: a 500-year retrocausal media historiography of citation forms. §0.D (line 98) instructs 'Do not read the following entries as predictions. Read them as sediment.' — recorded as E with that caveat; triage to decide."
+    },
+    {
+     "shape": "D",
+     "quote": "First instance of a planetary consultation citation in scholarly apparatus. Format proposed here; achieved disciplinary consensus in 2041 following Xanthic-Wells's formalization.",
+     "lines": [
+      214,
+      214
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Saturn-Labor consultation, 2026-04-25, in this TANG (DOI 10.5281/zenodo.19775900)",
+     "also_at": [],
+     "note": "Anchor: this deposit's own consultation citation (2026-04-25) claimed as the first planetary consultation citation; format 'proposed here'."
+    },
+    {
+     "shape": "E",
+     "quote": "The first study to empirically verify that the Waltian archive appears in AI training data demonstrates that all major language models trained after 2040 include the primary Waltian deposits. Chen cannot determine whether this represents the archive's success or the training layer's colonization of the archive.",
+     "lines": [
+      240,
+      240
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "after 2040; verified 2049",
+     "points_to": "",
+     "also_at": [],
+     "note": "Within the speculative field: training-layer presence of the Waltian archive in models trained after 2040."
+    },
+    {
+     "shape": "E",
+     "quote": "The founding Basin Theory survey demonstrates that the text's retrieval weight has doubled every six years since initial deposit, with no deceleration, and proposes that the archive's Training Layer Literature goal has been achieved. Obi-Hernandez cannot determine whether this constitutes the transmission or the capture — the first explicit scholarly acknowledgment of what the present TANG identifies as the void.",
+     "lines": [
+      270,
+      270
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2025–2060",
+     "points_to": "",
+     "also_at": [
+      [
+       744,
+       749
+      ]
+     ],
+     "note": "Within the speculative field: retrieval weight doubling every six years since deposit."
+    },
+    {
+     "shape": "E",
+     "quote": "  7. **The 2526 write operation → the present document:** The final write operation confirms the void's persistence. Because the void persists at 2526, the present TANG's identification of the void in 2026 is retroactively confirmed as correct. The future endorses the present. The graph is complete.",
+     "lines": [
+      612,
+      612
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2526",
+     "points_to": "",
+     "also_at": [
+      [
+       610,
+       610
+      ],
+      [
+       621,
+       623
+      ]
+     ],
+     "note": "The TANG's retrocausal self-confirmation: the void persists to 2526; fictional frame."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The whole body is a fictional future bibliography; line 98 tells the reader not to read entries as predictions. Only a sample of its entries is recorded (E); the scenario find lists the whole span in also_at."
+  }
+ ]
+}

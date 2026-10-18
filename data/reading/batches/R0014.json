@@ -1,0 +1,382 @@
+{
+ "batch_id": "R0014",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), running as a Claude Code subagent; model reported in its environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:18:59Z",
+  "finished_at": "2026-10-18T04:21:29Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue loading and quote slicing; diff to compare #1168/#1170 bodies)"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "R1162#2",
+   "deposits": [
+    1162
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-049B-text.md",
+   "lines_total": 2349,
+   "read_ranges": [
+    [
+     1763,
+     1912
+    ],
+    [
+     1913,
+     2062
+    ],
+    [
+     2063,
+     2212
+    ],
+    [
+     2213,
+     2349
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "formal specification transposed into musical register (Space Ark variant), engine and automation sections, test suite, colophon",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "XXVIII.6 — The Ark Audit [FORMAL] Every generated Ark is measured on four dimensions. In musical register: four listening tests.\n\nA_state(A_Ξ) = ⟨P, E, B, Δ⟩\n\nP = Invariant Preservation How many UKTP §XXV.8 universal invariants survive in A_Ξ? Verified by: Water Giraffe (Ω) under reduced-personalization conditions. Minimum: 0.78 (9/11 invariants) · Target: 0.91 (10/11; one [NF] permitted)",
+     "lines": [
+      1784,
+      1788
+     ],
+     "falsifier_quote": "Ark_audit_result: [PENDING — independent assessment required]",
+     "falsifier_lines": [
+      2337,
+      2337
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1790,
+       1802
+      ],
+      [
+       1914,
+       1914
+      ]
+     ],
+     "note": "Ark Audit specified as a four-dimension measurement with thresholds; the colophon records the audit for this score as pending, i.e. not yet run."
+    },
+    {
+     "shape": "G",
+     "quote": "Vₛ: A symbolon must become MORE coherent with each traversal event. Successive traversals must converge toward the deposit's actual structure rather than drifting toward generic or competing frameworks.\n\nThreshold: Vₛ ≥ 0.75 across ≥3 traversal events Measurement: compare traversal outputs for structural convergence Failure: Vₛ < 0.50 → the object is not a symbolon; it is an inkblot",
+     "lines": [
+      1940,
+      1942
+     ],
+     "falsifier_quote": "Failure: Vₛ < 0.50 → the object is not a symbolon; it is an inkblot",
+     "falsifier_lines": [
+      1942,
+      1942
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1944,
+       1944
+      ]
+     ],
+     "note": "Standing claim with threshold and failure condition: successive traversals of a symbolon converge on its structure; falsified below 0.50."
+    },
+    {
+     "shape": "F",
+     "quote": "F.1 — ADVERSARIAL SURVIVABILITY TESTS [FORMAL] Seven official torture tests. The score must pass all seven to be considered thousand-year durable. Each test names a specific adversarial condition, a pass criterion, and a failure diagnostic. In musical register: seven ways to destroy a score. A score that survives all seven is built to last.",
+     "lines": [
+      2257,
+      2257
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       2259,
+       2271
+      ]
+     ],
+     "note": "Battery of seven torture tests with pass/fail conditions, recorded once per rule 4; Test 4 is declared to be this score itself, the others are specified and not reported as run."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Queue title says v1.1 (kernel transform study) but the text in this range is v2.0 (the full Musical Ark); the changelog at 2315-2327 says v2.0 supersedes v1.1. Mostly internal governance/specification; few prediction-bearing passages."
+  },
+  {
+   "unit": "R1163",
+   "deposits": [
+    1163
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-049C-text.md",
+   "lines_total": 260,
+   "read_ranges": [
+    [
+     1,
+     260
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "room specification plus semantic agent registry (nonhuman semiotics, personal wound record)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Law 6 — Invisibility. The higher the density of a nonhuman semantic architecture, the more likely a human institution is to reclassify it as \"noise\" or \"property\" to avoid the cost of recognition. Gerald's fictional zoning was visible (it fit bureaucratic form). Elijah's real language was invisible (it did not). The asymmetry is structural, not accidental.",
+     "lines": [
+      128,
+      128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how human institutions behave toward dense nonhuman semantic architectures; no explicit falsifier stated. Same law restated in #1164."
+    },
+    {
+     "shape": "H",
+     "quote": "The Gerald narrative is CTI_WOUND:SVE.001 — the Semiotic Virality Engine's founding case. It achieved escape velocity because it was too dense to flatten. It is the first viral object analyzed and retrocausally charged by the SVE.",
+     "lines": [
+      72,
+      72
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "March 4, 2026 (the viral post)",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about why a 2026 viral hoax spread (too dense to flatten); a claim about reception, argued rather than reported. Borderline H."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Line 112 says \"Five Laws\" and lists Law 1-5, then adds Law 6 at line 128 inside the same section; the section heading still reads FIVE LAWS."
+  },
+  {
+   "unit": "R1164",
+   "deposits": [
+    1164
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-049D-text.md",
+   "lines_total": 316,
+   "read_ranges": [
+    [
+     1,
+     316
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "post-psychoanalytic theory essay and effective act (Assembly expansion to nonhuman witnesses)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "Law 6 — The Law of Invisibility. The higher the density of a nonhuman semantic architecture, the more likely a human institution is to reclassify it as \"noise\" or \"property\" to avoid the cost of recognition. Gerald's fictional zoning was visible (it fit bureaucratic form). Elijah's real language was invisible (it did not). The asymmetry is structural, not accidental.",
+     "lines": [
+      258,
+      258
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Same standing claim as #1163 line 128, here presented as a supplement to the five laws; no explicit falsifier."
+    },
+    {
+     "shape": "H",
+     "quote": "This document inherits from all four — Derrida's question, Haraway's obligation, Despret's method, Deleuze-Guattari's ontology — but moves past the point where each stops. Haraway's \"becoming with\" is a practice, not a governance structure. She shows us how to live with animals, how to co-constitute worlds with them, how to respond to their looking. But she does not ask how animals might be represented in the institutions that govern meaning — the archives, the courts, the assemblies. The archive's question is not \"how do we become with animals?\" but \"how do we formally recognize their labor in the structures that decide what counts?\" This document is the answer Haraway's framework cannot provide.",
+     "lines": [
+      82,
+      82
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       84,
+       86
+      ]
+     ],
+     "note": "Thesis about what Derrida, Haraway, Despret and Deleuze-Guattari did and did not ask (none raises institutional representation of animal semantic labor); a contestable claim about the literature, argued."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Two sections are numbered 11 (lines 252 and 266)."
+  },
+  {
+   "unit": "R1166",
+   "deposits": [
+    1166
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-049F-text.md",
+   "lines_total": 187,
+   "read_ranges": [
+    [
+     1,
+     187
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "counter-captions: paired operative captions and witness prose against war-propaganda videos, plus a generation protocol",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The reward cue is designed to register before reflective moral evaluation can stabilize. By the time the conscious mind registers that the \"+100\" was superimposed on footage of a real structure being destroyed, the affective hit has already landed. You have now been scored. The game trained you for this exact hit. The \"+100\" will fire the next time you see strike footage, even without the overlay. That is what \"installed\" means.",
+     "lines": [
+      80,
+      80
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Forecast in prose that the conditioned reward cue will recur on later exposure to strike footage without the overlay. Could be read as G (mechanism claim); no falsifier given."
+    },
+    {
+     "shape": "F",
+     "quote": "  4. TEST FOR IRREVERSIBILITY. After reading the caption, can you see the video the old way? If yes, the caption is not yet operative. If no, the loop is broken.",
+     "lines": [
+      174,
+      174
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Specified test of a counter-caption (can the video still be seen the old way?); a test the protocol prescribes for each use, not a reported result. Borderline."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1168",
+   "deposits": [
+    1168
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A1-text.md",
+   "lines_total": 1672,
+   "read_ranges": [
+    [
+     46,
+     305
+    ],
+    [
+     306,
+     625
+    ],
+    [
+     626,
+     925
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "DOI registry v7.0: tables, statistics, truncated auto-extracted precis fragments",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "future-perfect narration, definitional compression, institutional bridging, and crawlable deposition -- closely track techniques previously articulated",
+     "lines": [
+      436,
+      436
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Memo That Remembered Itself (10.5281/zenodo.18790793), relative to the Citrini memo",
+     "also_at": [],
+     "note": "Truncated auto-extracted precis fragment of another deposit; carries a priority claim (outside techniques track ones the archive articulated earlier). Fragment only."
+    },
+    {
+     "shape": "D",
+     "quote": "mints the terms \"proto-retrocausal,\" \"retrocausal attractor,\" and \"proto-retrocausal canon formation,\" none of which appear in any pri",
+     "lines": [
+      464,
+      464
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Shark That Preceded Itself (10.5281/zenodo.18807239)",
+     "also_at": [],
+     "note": "Truncated precis fragment claiming coinage of terms not found in prior literature; the sentence is cut off mid-word in the source."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Body is the DOI Registry v7.0 post (zenodo 19055255); the same body is retained as the superseded appendix in #1170 (lines 67 onward there are identical to lines 46 onward here). Precis entries are truncated mid-sentence by the extractor. Lines 925 onward (the precis index) are outside the queued ranges and were not read."
+  },
+  {
+   "unit": "R1170",
+   "deposits": [
+    1170
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-04A3-text.md",
+   "lines_total": 1693,
+   "read_ranges": [
+    [
+     1,
+     330
+    ],
+    [
+     331,
+     660
+    ],
+    [
+     661,
+     946
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "restored emoji poem (lines 1-17) followed by an appendix retaining the previously seated wrong body (DOI Registry v7.0)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "future-perfect narration, definitional compression, institutional bridging, and crawlable deposition -- closely track techniques previously articulated",
+     "lines": [
+      457,
+      457
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Memo That Remembered Itself (10.5281/zenodo.18790793), relative to the Citrini memo",
+     "also_at": [],
+     "note": "Same fragment as #1168 line 436; it sits in the retained appendix (the superseded wrong body), not in the restored poem."
+    },
+    {
+     "shape": "D",
+     "quote": "mints the terms \"proto-retrocausal,\" \"retrocausal attractor,\" and \"proto-retrocausal canon formation,\" none of which appear in any pri",
+     "lines": [
+      485,
+      485
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "The Shark That Preceded Itself (10.5281/zenodo.18807239)",
+     "also_at": [],
+     "note": "Same fragment as #1168 line 464; appendix material."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The restored canonical body (lines 11-17) is a short emoji poem with no find. Everything from line 21 is the superseded wrong body, identical to #1168 from its line 46; finds here belong to that appendix and duplicate #1168. Lines 947 onward are outside the queued ranges and were not read."
+  }
+ ]
+}

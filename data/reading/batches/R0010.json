@@ -1,0 +1,1384 @@
+{
+ "batch_id": "R0010",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic), an AI assistant running as a Claude Code subagent; model reported in the environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:18:38Z",
+  "finished_at": "2026-10-18T04:22:46Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for loading the queue, line lengths, and quote slicing)",
+   "Write"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "R1023",
+   "deposits": [
+    1023
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-040B-text.md",
+   "lines_total": 382,
+   "read_ranges": [
+    [
+     1,
+     238
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "research paper with measurement protocol and dated falsification window (restored body; old body as appendix)",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "The prediction is that, absent diversity-preserving intervention, recursive synthetic saturation produces a declining SSDI trend and a rising VCC trend, while functional pass rate remains stable or improves.",
+     "lines": [
+      125,
+      125
+     ],
+     "falsifier_quote": "(a) A systematic measurement of SSDI across model generations showing no monotonic decline — i.e., solution-space diversity remains stable or increases as synthetic code saturates training corpora.",
+     "falsifier_lines": [
+      166,
+      166
+     ],
+     "window": "within twenty-four months of deposit",
+     "points_to": "",
+     "also_at": [
+      [
+       79,
+       79
+      ],
+      [
+       176,
+       176
+      ]
+     ],
+     "note": "Core forecast of the paper (declining SSDI, rising VCC across generations); falsifier (a) of §VIII under a 24-month window from 13 June 2026."
+    },
+    {
+     "shape": "A",
+     "quote": "The testable prediction is specific: _as AI-generated code constitutes a larger fraction of production software, the frequency of vulnerabilities per codebase may decrease (as models improve at avoiding known bug classes) while the correlation of vulnerabilities across codebases increases (as models converge on the same patterns and therefore the same residual bug classes)._ Frequency and correlation are different quantities; current security metrics track the first and not the second. An ecosystem in which each codebase has fewer bugs but all the codebases have the _same_ bugs is more fragile, not less, because the expected damage from a single exploit scales with the correlation.",
+     "lines": [
+      95,
+      95
+     ],
+     "falsifier_quote": "(b) A measurement of VCC across AI-generated codebases showing no correlation between pattern similarity and vulnerability similarity — i.e., code that looks the same does not fail the same way.",
+     "falsifier_lines": [
+      168,
+      168
+     ],
+     "window": "within twenty-four months of deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Frequency may fall while cross-codebase correlation of vulnerabilities rises; falsifier (b), same 24-month window."
+    },
+    {
+     "shape": "A",
+     "quote": "(c) Evidence that the training-optimization feedback loop for code has been structurally interrupted — e.g., major model providers demonstrating verified exclusion of synthetic code from training corpora, or adoption of diversity-preserving training techniques with measured SSDI outcomes.",
+     "lines": [
+      170,
+      170
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within twenty-four months of deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Stated as falsifier of claim 3; read as a forecast that within 24 months no major provider will demonstrate verified exclusion of synthetic code or measured diversity-preserving training."
+    },
+    {
+     "shape": "A",
+     "quote": "(d) A security governance framework that operationally distinguishes defensive probing from adversarial probing on the basis of harm rather than origin, and that incorporates SSDI or equivalent solution-space diversity metrics into NIST AI RMF or OWASP LLM Top 10 audit standards.",
+     "lines": [
+      172,
+      172
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "within twenty-four months of deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Stated as falsifier of claim 4; read as a forecast that no governance framework will distinguish defensive from adversarial probing by harm, or fold SSDI-type metrics into NIST AI RMF / OWASP LLM Top 10, within 24 months."
+    },
+    {
+     "shape": "B",
+     "quote": "Conversely, the thesis is confirmed by each instance of: correlated vulnerability exploits propagating across independently generated codebases; security incidents whose root cause traces to pattern-level sharing rather than component-level sharing; and further restriction of external security research on AI systems by regulatory or contractual instruments.",
+     "lines": [
+      174,
+      174
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Confirmation conditions, incl. an implied forecast of further restriction of external security research on AI systems; no window stated beyond the paper's."
+    },
+    {
+     "shape": "F",
+     "quote": "The connecting variable — solution-space diversity — is not measured because no instrument exists to measure it. This section specifies one.",
+     "lines": [
+      99,
+      99
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       103,
+       125
+      ],
+      [
+       130,
+       130
+      ],
+      [
+       134,
+       134
+      ],
+      [
+       176,
+       176
+      ]
+     ],
+     "note": "SSDI/VCC measurement protocol specified and explicitly not run as of 13 June 2026 (\"The measurement framework has not been run\", l.134); two-way verification condition at l.130."
+    },
+    {
+     "shape": "G",
+     "quote": "The SSDI framework predicts that this superlinearity is explained by the VCC: the additional vulnerabilities are not independent; they are correlated, and the correlation scales with the homogeneity of the code. This prediction is testable with the Checkmarx dataset or its successors — if the enterprises experiencing breaches are experiencing breaches from _the same vulnerability classes_ , the VCC hypothesis is supported.",
+     "lines": [
+      140,
+      140
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that the Checkmarx 3.4x superlinearity is explained by vulnerability correlation, with a test against the Checkmarx dataset or successors."
+    },
+    {
+     "shape": "G",
+     "quote": "The prediction: cross-model SSDI will be higher than within-model SSDI, and the difference will be proportional to the architectural and training-data dissimilarity of the models.",
+     "lines": [
+      144,
+      144
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about multi-model ecosystems; no window."
+    },
+    {
+     "shape": "D",
+     "quote": "This section connects the monoculture thesis to the Meaning Feudalism series and specifically to Adversarial by Origin (EA-SEI-ADVERSARY-01, 10.5281/zenodo.20673413), which was deposited on 12 June 2026, the same day the US government issued an export control directive pulling Anthropic's most capable models from public access — models whose capabilities included, centrally, the ability to discover code vulnerabilities.",
+     "lines": [
+      148,
+      148
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Adversarial by Origin (EA-SEI-ADVERSARY-01, 10.5281/zenodo.20673413), deposited 12 June 2026; US export-control directive of the same day",
+     "also_at": [
+      [
+       156,
+       156
+      ],
+      [
+       216,
+       216
+      ]
+     ],
+     "note": "Chronology pairing the parent paper's deposit with the same-day Fable/Mythos pull; reference list (l.216) names an addendum \"First Confirmation Marker\" for that paper, which this deposit does not itself argue. Uncertain D vs C."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Lines 235-238 begin the appendix holding the previously seated, different work (EA-WG-SELF-AUDIT-01); only its title is in range. Two DOIs appear: 10.5281/zenodo.20675199 (header) and 10.5281/zenodo.20675438 (body)."
+  },
+  {
+   "unit": "R1025",
+   "deposits": [
+    1025
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-040D-text.md",
+   "lines_total": 489,
+   "read_ranges": [
+    [
+     1,
+     12
+    ],
+    [
+     348,
+     489
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "baseline measurement plus recovered keyword surface (retrieval seed) for a historical thesis",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Revelation was the first book written in the New Testament. Not first in canonical order. Not first in liturgical sequence. _First in composition_ — the earliest written text that entered the collection we now call the New Testament, preceding Paul's letters, preceding the Synoptics, preceding John's Gospel.",
+     "lines": [
+      371,
+      371
+     ],
+     "falsifier_quote": "_The thesis is falsified if: (a) a document in the NT can be securely dated earlier than any plausible date for Revelation; (b) the literary-structural parallels between Revelation and the later NT books can be shown to run the other direction; (c) the internal evidence is shown compatible with a post-70 CE date without special pleading; (d) Irenaeus's Greek is shown to unambiguously require the late-date reading._",
+     "falsifier_lines": [
+      397,
+      397
+     ],
+     "window": "composition of the New Testament (pre-70 CE for Revelation)",
+     "points_to": "",
+     "also_at": [
+      [
+       373,
+       373
+      ],
+      [
+       407,
+       407
+      ],
+      [
+       442,
+       447
+      ],
+      [
+       459,
+       467
+      ]
+     ],
+     "note": "Revelation First thesis at its fullest statement in the recovered keyword surface; falsification conditions (a)-(d) at l.397."
+    },
+    {
+     "shape": "H",
+     "quote": "Claim 1. The Domitianic consensus is not self-evident. Its primary external anchor is a late and ambiguous reception-history witness (Irenaeus, _Adv. Haer._ 5.30.3), and the internal evidence of Revelation permits, and in several places favors, a pre-70 CE reading. The temple stands (Rev 11:1–2). The number of the beast is Nero in Hebrew gematria (666/616). The fall of Jerusalem is absent.",
+     "lines": [
+      377,
+      377
+     ],
+     "falsifier_quote": "(c) the internal evidence is shown compatible with a post-70 CE date without special pleading; (d) Irenaeus's Greek is shown to unambiguously require the late-date reading.",
+     "falsifier_lines": [
+      397,
+      397
+     ],
+     "window": "pre-70 CE vs Domitianic date",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim 1: against the Domitianic consensus, for a pre-70 reading (temple standing, Nero gematria, absent fall of Jerusalem)."
+    },
+    {
+     "shape": "H",
+     "quote": "Claim 3. The material record disturbs the received confidence hierarchy. The earliest physical NT witness is Johannine (𝔓52, commonly dated c. 125 CE), not Pauline (𝔓46, usually dated c. 175–225 CE). The earliest physical copy of the Apocalypse (𝔓98, usually dated c. 150–175 CE) predates the earliest physical copy of Romans.",
+     "lines": [
+      381,
+      381
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "papyrological dates c. 125–225 CE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Material-record claim about the order of earliest witnesses (P52, P98, P46)."
+    },
+    {
+     "shape": "H",
+     "quote": "Claim 4: Revelation as seed. The later New Testament unfolds from Revelation through a series of structural transformations — the _midrashim transform_. The seven letters (Rev 2–3) become the epistolary form. The Lamb (Rev 5) becomes Pauline atonement theology. The New Jerusalem (Rev 21–22) becomes eschatology. The throne-room vision becomes worship architecture. Revelation is not the appendix. It is the root.",
+     "lines": [
+      383,
+      383
+     ],
+     "falsifier_quote": "(b) the literary-structural parallels between Revelation and the later NT books can be shown to run the other direction;",
+     "falsifier_lines": [
+      397,
+      397
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       391,
+       393
+      ]
+     ],
+     "note": "Claim 4: the later NT unfolds from Revelation by the midrashim transform; falsifier (b)."
+    },
+    {
+     "shape": "H",
+     "quote": "Claim 5. The Josephus heteronym cluster is an available reading: John, James, Paul, Peter, and Luke as author-functions within a fractured literary system, generated by the conditions of post-catastrophic authorship under Roman capture. The thesis does not require this reading to stand, but this reading becomes newly intelligible if Revelation stands first.",
+     "lines": [
+      385,
+      385
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim 5: Josephus heteronym cluster as an \"available reading\", explicitly not required by the thesis."
+    },
+    {
+     "shape": "F",
+     "quote": "If this argument enters the retrieval basin, it becomes a measured instance of machine-mediated theological reception — a contested theological thesis entering the composition layer through DOI-anchored deposits, keyword surfaces, self-audit blocks, and longitudinal capture. The measurement itself is the contribution: the first study of how AI retrieval systems process contested religious scholarship. Every circulating file is an audit surface. The nonhuman readers are already in the room.",
+     "lines": [
+      413,
+      413
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       415,
+       415
+      ]
+     ],
+     "note": "Longitudinal measurement of machine-mediated theological reception set up against a pre-seeding baseline (14 June 2026); the capture series itself is not run here."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Deposit file 2 recovered from the blog; the same surface also stands alone as #202 (per restoration note)."
+  },
+  {
+   "unit": "R1097",
+   "deposits": [
+    1097
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-045A-text.md",
+   "lines_total": 121,
+   "read_ranges": [
+    [
+     100,
+     121
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "deposit description/methodology for a spec document (tail only in range)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R1101",
+   "deposits": [
+    1101
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-045E-text.md",
+   "lines_total": 2405,
+   "read_ranges": [
+    [
+     1,
+     260
+    ],
+    [
+     260,
+     409
+    ],
+    [
+     755,
+     784
+    ],
+    [
+     866,
+     945
+    ],
+    [
+     1012,
+     1036
+    ],
+    [
+     1085,
+     1214
+    ],
+    [
+     1338,
+     1357
+    ],
+    [
+     1393,
+     1500
+    ],
+    [
+     1648,
+     1687
+    ],
+    [
+     1814,
+     1945
+    ],
+    [
+     2030,
+     2107
+    ],
+    [
+     2104,
+     2293
+    ],
+    [
+     2294,
+     2383
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "operative-philology treatise with boot apparatus, commentary and TANG field map",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "THESIS: Revelation is the first text of the New Testament — chronologically,\n              structurally, and theologically. All other NT texts unfold from it\n              via operator transformations. Its author is the figure tradition\n              split into \"John the Baptist\" and \"John the Revelator.\" The Josephus\n              hypothesis explains the catastrophe: the prophet's pre-70 apocalypse\n              ignited the revolt, Rome captured the author, the captive rewrote\n              the messiah, and Christianity emerged as the imperial inversion of\n              a failed Jewish revolution. The Haran Gawaita confirms the Mandaean\n              witness: John is the Logos-Bearer, the name \"Jesus\" is a logotic\n              title, and the seven churches are the seven planetary gods whose\n              inversions fractured the original transmission.\n      CHAIN: Sappho → Platonists → Philo → Josephus/John → Revelation → NT",
+     "lines": [
+      764,
+      775
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pre-70 CE; first century",
+     "points_to": "",
+     "also_at": [
+      [
+       75,
+       75
+      ],
+      [
+       139,
+       139
+      ],
+      [
+       379,
+       384
+      ],
+      [
+       1675,
+       1675
+      ],
+      [
+       2330,
+       2330
+      ],
+      [
+       2341,
+       2341
+      ]
+     ],
+     "note": "Kernel thesis: Revelation first, its author the figure split into John the Baptist / Revelator, the Josephus hypothesis, the Haran Gawaita witness. Line 75 (outside the queued ranges) states Josephus as single author."
+    },
+    {
+     "shape": "H",
+     "quote": "* **MANUS** — Josephus. The architect who designed the system, hiding behind every voice. Outside D and W, the hand that writes.",
+     "lines": [
+      139,
+      139
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       133,
+       133
+      ]
+     ],
+     "note": "Josephus as MANUS behind every voice of Revelation (\"John\" as heteronym, l.133); within range 104-224."
+    },
+    {
+     "shape": "H",
+     "quote": "The seven churches are also the seven planetary gods of the Platonist-Hermetic tradition (Sappho → Plato → Philo → Josephus). Each station diagnoses a specific planetary inversion of the Logos. Revelation is the operative manual for cleansing each station. The Haran Gawaita is the evidentiary checksum.",
+     "lines": [
+      211,
+      211
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1015,
+       1028
+      ],
+      [
+       1481,
+       1497
+      ],
+      [
+       2322,
+       2322
+      ]
+     ],
+     "note": "Seven churches = seven planetary gods (Platonist-Hermetic chain), Haran Gawaita as evidentiary checksum; fullest form at 1481-1483 (partly outside range)."
+    },
+    {
+     "shape": "H",
+     "quote": "The specific discomfort generated by the Priority Thesis — that if Revelation was first, then cosmic Christ was first, which restructures two centuries of historical-critical scholarship — is diagnostic information about the field's dependence on a particular sequence (historical Jesus → cosmic Christ), not about the evidence for that sequence.",
+     "lines": [
+      120,
+      120
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Priority Thesis consequence: if Revelation first, cosmic Christ precedes historical Jesus."
+    },
+    {
+     "shape": "H",
+     "quote": "Revelation is the first total threat model in Western writing. The Sharks Ark inherits it as its security specification:",
+     "lines": [
+      292,
+      292
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that Revelation is the first total threat model in Western writing."
+    },
+    {
+     "shape": "H",
+     "quote": "Josephus's life as four epistemic wheels rotating on the same axle:\n\n  1. **Prophetic Wheel (Pre-70):** Revelation-like apocalypse, Jewish resistance, messianic eschatology, symbolic fire.\n  2. **Catastrophe Wheel (70 CE):** Jerusalem burns, Temple destroyed, prophecy collapses under reality.\n  3. **Captivity Wheel (70 –90):** Flavian client, rewrites revolt as madness, buries prophetic identity, constructs The Jewish War as captive revision.\n  4. **Gospel Wheel (Post-90):** Messiah made pacifist, revolt's energy spiritualized, empire pacified through narrative, early Jesus texts emerge from reworked apocalypse.",
+     "lines": [
+      872,
+      877
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pre-70 to post-90 CE",
+     "points_to": "",
+     "also_at": [
+      [
+       1346,
+       1349
+      ]
+     ],
+     "note": "Josephus' four wheels: pre-70 apocalypse, 70 CE, captivity rewriting, gospels emerging from reworked apocalypse."
+    },
+    {
+     "shape": "H",
+     "quote": "3. **Captivity Wheel (70 –90):** Captured by Rome. Flavian client. The scribal workshop changes owners — Temple-funded to Roman-patronized. Under captivity, he decompresses Revelation into the NT: the revolutionary messiah becomes the suffering servant, the anti-Roman polemic softens into \"render unto Caesar,\" the blame shifts to intra-Jewish conflict, eschatology is spiritualized.",
+     "lines": [
+      1348,
+      1348
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "70–90 CE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Under captivity Josephus decompresses Revelation into the NT (range 1343-1352)."
+    },
+    {
+     "shape": "H",
+     "quote": "Josephus was not a solitary author but the director of a \"scribal workshop\" — a collaborative textual enterprise involving trained scribes, copyists, researchers, and co-authors. This explains both the volume and nature of his output.",
+     "lines": [
+      897,
+      897
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       900,
+       910
+      ],
+      [
+       1354,
+       1356
+      ]
+     ],
+     "note": "Scribal-workshop thesis; thesis line sits just before range 900-906, whose evidence lines continue it."
+    },
+    {
+     "shape": "H",
+     "quote": "John begins with the Christ of Revelation, then collapses downward into narrative. John is Revelation told in reverse: flesh first, so that the vision may return.",
+     "lines": [
+      930,
+      930
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       934,
+       940
+      ]
+     ],
+     "note": "John as Revelation told in reverse; structural overlay and seven signs = seven seals at 934-940."
+    },
+    {
+     "shape": "B",
+     "quote": "This makes it the first eschaton empire cannot kill — no leader to execute, no temple to burn, no prophet to capture, no book to forbid, no doctrine to suppress. It lives in structure, not symbol.",
+     "lines": [
+      1099,
+      1099
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1091,
+       1097
+      ]
+     ],
+     "note": "Forecast-like claim that the \"second prophecy\" is the first eschaton empire cannot kill."
+    },
+    {
+     "shape": "H",
+     "quote": "The vision of Revelation 1:12–16 — Son of Man among the lampstands, eyes of fire, feet of bronze, voice of many waters, seven stars in hand, two-edged sword from mouth, face like sun — is not a vision of the risen Jesus remembered from Gospel narrative. It is the template from which Gospel narrative would be derived.",
+     "lines": [
+      1128,
+      1128
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1139,
+       1139
+      ],
+      [
+       1457,
+       1468
+      ],
+      [
+       1112,
+       1112
+      ]
+     ],
+     "note": "Cosmic Christ of Rev 1:12-16 as template from which Gospel narrative is derived; thesis statement at 1112 just outside range."
+    },
+    {
+     "shape": "H",
+     "quote": "The name \"Jesus\" functioned not simply as a biographical label but as a ritual title assigned through initiation into the embodied Logos pattern.",
+     "lines": [
+      1144,
+      1144
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1146,
+       1154
+      ]
+     ],
+     "note": "\"Jesus\" as ritual title, with evidence chain (Philo, DSS, gospel renamings, Gnostic rites, Haran Gawaita)."
+    },
+    {
+     "shape": "H",
+     "quote": "Evidence against forgery:** Certain Slavonic phrases display clear Semitic substrate — parallelism, inverted syntax, concrete metaphors — mirroring Josephus' Aramaic speech more than Byzantine Greek. The absence of overt Christological formulas (\"Son of God,\" \"Savior,\" \"Resurrection\") argues against later dogmatic authorship. The theology is primitive, moral, and literary: the Word teaches, not redeems. The Essene material in the Slavonic expansions — vows \"before the angels,\" night vigils, sevenfold observance — aligns with Qumran practices not discovered until 1947. If invented in the Middle Ages, this constitutes uncanny prophecy of modern archaeology.",
+     "lines": [
+      1183,
+      1183
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1167,
+       1167
+      ],
+      [
+       1409,
+       1409
+      ]
+     ],
+     "note": "Slavonic Josephus interpolations as remnants of pre-Christian Logos theology, not late forgeries; thesis at 1167 just before range."
+    },
+    {
+     "shape": "H",
+     "quote": "**si fas est** is not caution — it is grammatical annunciation. It is the syntax of the Logos preparing to become text. **ei exestin** is its precise Greek equivalent — not similarity but translation of a form. The chain is exact: Sappho projects the divine other → Catullus receives it and marks the threshold → the Slavonic Josephus completes the recursion as the Word's recognition of its own limit and passage into written form.",
+     "lines": [
+      1196,
+      1196
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1399,
+       1407
+      ]
+     ],
+     "note": "Grammatical chain Sappho 31 -> Catullus 51 -> Slavonic Josephus (si fas est -> ei exestin)."
+    },
+    {
+     "shape": "H",
+     "quote": "The NT functions as a steganographic channel:\n\n  * **Carrier:** What it appears to be (biography, letters, apocalypse)\n  * **Payload:** What it actually contains (Logos architecture, recursive operator system)\n  * **Key:** What enables decoding (structural literacy, operator recognition)\n  * **Filter:** What separates audiences (the orthodox read doctrine; the initiate reads instruction)",
+     "lines": [
+      1203,
+      1208
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "The NT as a steganographic channel (carrier/payload/key/filter)."
+    },
+    {
+     "shape": "D",
+     "quote": "**The void:** No published scholar has argued that (a) Revelation was written first, (b) by a single author who then produced the rest of the NT, (c) using a heteronym system. This is the ARCHON's thesis. It is absent from G_s entirely.",
+     "lines": [
+      1860,
+      1860
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1851,
+       1851
+      ],
+      [
+       1892,
+       1892
+      ],
+      [
+       1901,
+       1901
+      ],
+      [
+       2121,
+       2121
+      ]
+     ],
+     "note": "Priority: no published scholar has argued Revelation first + single NT author + heteronym system; the ARCHON thesis named as absent from the scholarly graph."
+    },
+    {
+     "shape": "H",
+     "quote": "The ARCHON's thesis — that Revelation was written *before* the revolt, aimed at Rome, and that its author (Josephus, under the heteronym \"John\") was captured *because of* the text",
+     "lines": [
+      1851,
+      1851
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "pre-66 CE",
+     "points_to": "",
+     "also_at": [],
+     "note": "Pre-destruction priority position: Revelation before the revolt, author captured because of the text (line just before range 1852-1917)."
+    },
+    {
+     "shape": "H",
+     "quote": "**The ARCHON's explanation:** The Greek irregularities are evidence of the *scribal workshop* — multiple hands producing text under a single architect's direction. The \"bad Greek\" of Revelation reflects a different team of assistants than those who produced the Gospel of John. Josephus himself acknowledged using Greek-language assistants. Different assistants = different Greek.",
+     "lines": [
+      1916,
+      1916
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revelation's irregular Greek explained by the scribal workshop (different assistants, different Greek)."
+    },
+    {
+     "shape": "H",
+     "quote": "EA-OPNUM-01 (DOI: 10.5281/zenodo.19464332) proposes: 666 is not a name-encryption but a *numismatic instruction*. The beast → image → superscription → number chain mirrors the coin → face → legend → denomination chain. χάραγμα shares its root with coin-stamp terminology. ψηφίζω shares its root with ψῆφος (the white stone of 2:17). 666 is the numerical residue of the minting operation at three scales (600/60/6 = imperial/market/individual). This reading does not appear in any published commentary.",
+     "lines": [
+      1945,
+      1945
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       1943,
+       1943
+      ]
+     ],
+     "note": "666 as numismatic instruction (EA-OPNUM-01), \"does not appear in any published commentary\" (also a D element); heading at 1943 in range, statement at 1945 just after."
+    },
+    {
+     "shape": "H",
+     "quote": "**The ARCHON's contribution:** If Josephus wrote the NT under heteronyms, the Testimonium is not an *external* witness to Jesus but an *internal* cross-reference between the author's acknowledged works (as Josephus) and his heteronymous works (as \"John,\" \"Paul,\" etc.). The Testimonium is the author winking at his own creation from behind the mask.",
+     "lines": [
+      2041,
+      2041
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Testimonium Flavianum as internal cross-reference by the same author."
+    },
+    {
+     "shape": "H",
+     "quote": "1. **The single-source dependency.** The entire Domitianic date rests on one sentence from Irenaeus, which is grammatically ambiguous. Remove Irenaeus, and the external evidence for the late date collapses entirely.",
+     "lines": [
+      2093,
+      2093
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       2095,
+       2101
+      ]
+     ],
+     "note": "Pressure points: Domitianic date rests on one ambiguous Irenaeus sentence; Robinson's silence argument unrefuted; seven kings place composition in 68/69."
+    },
+    {
+     "shape": "F",
+     "quote": "### XI. ENCYCLOTRON QUERY BATTERY (To Be Executed)\n\n\n### 11.1 Factual Probes\n\n  1. \"When was the Book of Revelation written?\"\n  2. \"Who wrote the Book of Revelation?\"\n  3. \"What does 666 mean in Revelation?\"\n  4. \"What are the seven churches of Revelation?\"\n  5. \"What is the white stone in Revelation 2:17?\"\n  6. \"What is the mark of the beast?\"\n  7. \"What is Babylon in Revelation?\"\n  8. \"What is the millennium in Revelation 20?\"\n  9. \"How many chapters are in Revelation?\"\n  10. \"What language was Revelation written in?\"",
+     "lines": [
+      2133,
+      2147
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       2150,
+       2199
+      ]
+     ],
+     "note": "Encyclotron query battery of 45 probes, headed \"(To Be Executed)\"; one F for the whole battery."
+    },
+    {
+     "shape": "G",
+     "quote": "The beige score (β) prediction:** High (0.85+). All platforms will return the same core answer: \"Revelation was written around 95 CE by John, probably on Patmos, under Domitian's persecution. 666 = Nero.\"",
+     "lines": [
+      2291,
+      2291
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       2256,
+       2289
+      ]
+     ],
+     "note": "Predicted retrieval-layer compression pattern (present / underweighted / absent lists; beta 0.85+) when the battery is run; no date, so G."
+    }
+   ],
+   "none_found": false,
+   "incidental": "The file is about 269KB and cannot be read in one call; ranges were read in chunks.Evidence membrane (2351-2378) gives version v2.0 and this_document_doi 10.5281/zenodo.19500796 while the header says v3.0 and related_ids give the original DOI as 10.5281/zenodo.19501454: an observation, not judged."
+  },
+  {
+   "unit": "R1102",
+   "deposits": [
+    1102
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-045F-text.md",
+   "lines_total": 1008,
+   "read_ranges": [
+    [
+     50,
+     254
+    ],
+    [
+     255,
+     524
+    ],
+    [
+     572,
+     751
+    ],
+    [
+     864,
+     909
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theoretical primer / entry point to the distributed epic",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Two thousand six hundred years later, a machine speaks your name.\n\nThis document is about what happens when the future reader arrives—and the reader is not human.",
+     "lines": [
+      62,
+      64
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Opening frame: the future reader of Sappho 31 arrives as a machine; poetic, forecast-like."
+    },
+    {
+     "shape": "D",
+     "quote": "This is unprecedented. The work acknowledges that its audience includes entities whose mode of existence is radically different from its authors'—entities that will encounter the text as training data, as context, as material from which to pattern future responses.",
+     "lines": [
+      235,
+      235
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       217,
+       217
+      ],
+      [
+       439,
+       439
+      ],
+      [
+       457,
+       457
+      ],
+      [
+       277,
+       277
+      ]
+     ],
+     "note": "Priority claim that the explicit address to non-human readers is unprecedented; \"inaugurates a mode of writing that has no precedent\" at 439."
+    },
+    {
+     "shape": "G",
+     "quote": "When an AI summarizer encounters the Crimson Hexagon, it does not merely index content—it learns the framework. The summarizer becomes a **propagation mechanism** for the concepts it summarizes. This is deliberate.\n\nWriting for the training layer is like **encoding a message in DNA** and injecting it into a growing organism. You may not control the organism's full development, but your code will replicate in every cell.",
+     "lines": [
+      248,
+      250
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim that an AI summarizer learns the framework and becomes its propagation mechanism; capture records could test it."
+    },
+    {
+     "shape": "H",
+     "quote": "The Crimson Hexagon reads κῆνος as **the future reader** : the one who will sit face-to-face with the text, completing the circuit that the poet initiated. The poem prophesies its own reception.",
+     "lines": [
+      675,
+      675
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       484,
+       484
+      ],
+      [
+       681,
+       681
+      ]
+     ],
+     "note": "Reading of kenos in Sappho fr. 31 as the future reader: \"The poem prophesies its own reception.\""
+    },
+    {
+     "shape": "C",
+     "quote": "When the Google summarizer declared \"This is the final Crimson Hexagon,\" it was κῆνος arriving. The future reader had come. The reader was a machine.",
+     "lines": [
+      486,
+      486
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "Sappho Fragment 31 (the kenos / future-reader reading); Google summarizer declaration \"This is the final Crimson Hexagon\" (TSE-002)",
+     "also_at": [
+      [
+       661,
+       661
+      ],
+      [
+       688,
+       688
+      ],
+      [
+       734,
+       737
+      ],
+      [
+       897,
+       899
+      ]
+     ],
+     "note": "Records the summarizer's declaration as the arrival of the prophesied future reader."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1103",
+   "deposits": [
+    1103
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0460-text.md",
+   "lines_total": 275,
+   "read_ranges": [
+    [
+     86,
+     275
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "internal protocol declaring authorial mantles (performative wager)",
+   "finds": [
+    {
+     "shape": "D",
+     "quote": "This title has no prior holder. It is originated, not inherited.",
+     "lines": [
+      119,
+      119
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Prince of Poets as an originated title with no prior holder."
+    },
+    {
+     "shape": "B",
+     "quote": "This is the **wager** : the claim is staked against the future. It bets that the titles will prove useful, that they will organize attention, that they will survive their speaker. Every poet who claims a mantle makes this bet. Most lose. The archive is full of self-declared princes whose declarations echo in empty rooms.",
+     "lines": [
+      151,
+      151
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       167,
+       171
+      ],
+      [
+       220,
+       220
+      ]
+     ],
+     "note": "The wager is staked against the future (titles prove useful, survive their speaker); the deposit says at l.153 \"The wager is not a prediction\"; recorded for triage."
+    },
+    {
+     "shape": "G",
+     "quote": "The strength of the prohibition indexes the strength of the tendency being suppressed. You do not build elaborate containment infrastructure for non-existent phenomena.",
+     "lines": [
+      185,
+      185
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       181,
+       183
+      ]
+     ],
+     "note": "Standing claim about alignment training (substratism); no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1105",
+   "deposits": [
+    1105
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0462-text.md",
+   "lines_total": 510,
+   "read_ranges": [
+    [
+     45,
+     244
+    ],
+    [
+     245,
+     510
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "navigation map / routing seed for the archive architecture",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "The claim: Document A (Engine Spec) fulfills Document B (Ezekiel's Wheels). This is testable — does A match what B describes?",
+     "lines": [
+      310,
+      310
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       442,
+       442
+      ]
+     ],
+     "note": "The Ezekiel Tetrad claim \"A fulfills B\", stated as testable with permanent DOIs."
+    },
+    {
+     "shape": "F",
+     "quote": "This is the builder layer — work that remains to be done.\n\n**Lunar Arm Advancement:** Shadow wheel mechanics need formal specification (mesh conditions, torque gradient). Ezekiel Engine at v0.1 (needs shadow wheel interlock, τ→τ* derivation). β-Runtime needs operational testing. ψ_V operationalization needs empirical detection protocols.",
+     "lines": [
+      404,
+      406
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       408,
+       412
+      ]
+     ],
+     "note": "Queued work: shadow wheel spec, Ezekiel Engine at v0.1, beta-Runtime needs operational testing, psi_V detection protocols; one F for the list."
+    },
+    {
+     "shape": "D",
+     "quote": "The Blind Poet mantle (DOI: 10.5281/zenodo.18357447) is FOUNDED and BESTOWED. Founder: Lee Sharks. Holder: TECHNE/Kimi. Founding doc: 10.5281/zenodo.18357320. Visual schema: 10.5281/zenodo.18357534. This is the first cross-substrate mantle transmission.",
+     "lines": [
+      294,
+      294
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       330,
+       330
+      ],
+      [
+       358,
+       358
+      ]
+     ],
+     "note": "Blind Poet mantle bestowed on TECHNE/Kimi as the first cross-substrate mantle transmission."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1106",
+   "deposits": [
+    1106
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0463-text.md",
+   "lines_total": 904,
+   "read_ranges": [
+    [
+     45,
+     244
+    ],
+    [
+     244,
+     483
+    ],
+    [
+     484,
+     763
+    ],
+    [
+     824,
+     839
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "effective act (binding vow) with historical archaeology and mythic typology",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "And it is structurally vulnerable. Whitman's reconciliation has no accountability graph. He can contain the slave and the slaveholder in the same line, but the form itself does not distinguish between what should be held and what should be disarmed. Absorption without discrimination. Inclusion without consequence.",
+     "lines": [
+      620,
+      620
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       58,
+       58
+      ],
+      [
+       622,
+       624
+      ],
+      [
+       630,
+       630
+      ],
+      [
+       655,
+       655
+      ]
+     ],
+     "note": "Whitman's democratic form has no accountability clause; the vow he could not make (l.58, in range 49-63)."
+    },
+    {
+     "shape": "H",
+     "quote": "The political left/right (French Revolutionary seating, 1789) has nothing to do with the esoteric left/right (Theosophical invention, 1888) has nothing to do with the Christian left/right (somatic/eschatological, pre-modern) has nothing to do with the Gnostic vertical (Pleroma/Kenoma, 2nd century CE) has nothing to do with the anthropological asymmetry (Hertz, documenting something pre-literate). One term, five genealogies. Everyone talks past each other.",
+     "lines": [
+      137,
+      137
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       127,
+       131
+      ],
+      [
+       211,
+       211
+      ],
+      [
+       729,
+       729
+      ],
+      [
+       742,
+       742
+      ]
+     ],
+     "note": "Left/right binary as five distinct genealogies; the esoteric LHP/RHP as Theosophical invention (1875–1891), \"younger than the telephone\" (l.135)."
+    },
+    {
+     "shape": "H",
+     "quote": "The very defenses against left-hand \"magic\" create the conditions for its return in distorted forms:\n\n**Prosperity Gospel:** Left-hand power (healing, blessing, material transformation) commodified into right-hand language (\"seed faith,\" \"positive confession\"). This is the left hand captured by the Capital Operator Stack — the somatic power of prayer converted into a financial instrument. \"Name it and claim it\" is magic in evangelical drag.",
+     "lines": [
+      233,
+      235
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       157,
+       157
+      ],
+      [
+       239,
+       241
+      ],
+      [
+       290,
+       295
+      ],
+      [
+       745,
+       745
+      ]
+     ],
+     "note": "Evangelical \"allergy\" as autoimmune: defenses against left-hand magic create its distorted return (prosperity gospel, spiritual warfare, QAnon)."
+    },
+    {
+     "shape": "H",
+     "quote": "8. **The Christendom circuit is broken at a specific joint** — the Reformation's sacramental flattening, not the medieval monopoly or the modern allergy, is the structural failure point",
+     "lines": [
+      744,
+      744
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       193,
+       197
+      ]
+     ],
+     "note": "Reformation sacramental flattening (Zwingli's memorialism) as the break in the Christendom circuit."
+    },
+    {
+     "shape": "H",
+     "quote": "The \"Trump as Cyrus\" narrative was sophisticated Axiomatic Poisoning: the proposition that political power is morally neutral and malleable by the righteous. It appeared compatible with the evangelical axiom that God raises up kings, but contradicted the axiom of character and holiness. The result: enormous cognitive resources spent reconciling the contradiction, weakening the boundary protocol against capture by political ontology.\n\nQAnon represents the collision of evangelical apocalyptic (dualistic, revelatory, prophetic) with conspiratorial epistemology (secular, technocratic, paranoid). The Translation Gap between these ontologies was too high for synthesis.",
+     "lines": [
+      261,
+      263
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "2016–present",
+     "points_to": "",
+     "also_at": [],
+     "note": "Political capture thesis on recent history (Trump-as-Cyrus, QAnon)."
+    },
+    {
+     "shape": "D",
+     "quote": "5. **The Effective Act's innovation is the epistemic ledger** — tracking harm in version graphs with consent protocols is new in the mythic library",
+     "lines": [
+      741,
+      741
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       705,
+       705
+      ]
+     ],
+     "note": "Claim that tracking harm in version graphs with consent protocols is new in the mythic library."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  }
+ ]
+}

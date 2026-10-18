@@ -1,0 +1,1355 @@
+{
+ "batch_id": "R0009",
+ "protocol": "READING-PROTOCOL v1.3",
+ "reader": {
+  "role": "parallel reader, prediction sweep",
+  "self_description": "Claude (Anthropic) assistant running as a Claude Code subagent; model reported in my environment as Opus 5.5 (claude-opus-5-5)",
+  "started_at": "2026-10-18T04:18:34Z",
+  "finished_at": "2026-10-18T04:22:52Z",
+  "tools_used": [
+   "Read",
+   "Bash (python3 for queue load and verbatim slicing)"
+  ]
+ },
+ "deposits": [
+  {
+   "unit": "R737",
+   "deposits": [
+    737
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0289-text.md",
+   "lines_total": 448,
+   "read_ranges": [
+    [
+     1,
+     229
+    ],
+    [
+     230,
+     448
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "pre-registered measurement protocol (Framework 15 paper, heteronym Nobel Glas)",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "> Status. Pre-registered protocol specification. The May 17, 2026 deposit contains no experimental findings. Each test specified herein has a Day 0 that begins at deposit. Results papers will be deposited separately as EA-SEI-MM-AI-01-RESULTS (Tests 1–2; Glas timeline ~6 weeks) and EA-SEI-MM-AI-02-RESULTS (Test 3, the deviation-optimized training experiment, specified in the companion paper).",
+     "lines": [
+      25,
+      25
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Glas timeline ~6 weeks",
+     "points_to": "",
+     "also_at": [],
+     "note": "The three tests are specified with protocols and compute but not run at deposit; results papers announced as separate deposits."
+    },
+    {
+     "shape": "A",
+     "quote": "  * P1.1: Bin A > Bin B > Bin C in $\\mathcal{M}_T^{\\text{net}}$, with Cohen's $d \\geq 0.4$ between adjacent bins.",
+     "lines": [
+      222,
+      222
+     ],
+     "falsifier_quote": "  * If Bin A and Bin C have indistinguishable $\\mathcal{M}_T^{\\text{net}}$ distributions, P1.1 fails. The principle's claim about canonical vs. formulaic text would need substantial revision.",
+     "falsifier_lines": [
+      231,
+      231
+     ],
+     "window": "Day 0 that begins at deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered prediction P1.1 with stated falsification condition."
+    },
+    {
+     "shape": "A",
+     "quote": "  * P1.2: Bin D has _negative_ $\\mathcal{M}_T^{\\text{net}}$, distinguishable from zero at $p < 0.001$. This is the load-bearing prediction: slop is not low-deviation; it is _negative_ deviation.",
+     "lines": [
+      223,
+      223
+     ],
+     "falsifier_quote": "  * If Bin D has $\\mathcal{M}_T^{\\text{net}} \\geq 0$, P1.2 fails. The \"slop is negative deviation\" thesis falls; slop would have to be reformulated as merely low-magnitude rather than directionally convergent.",
+     "falsifier_lines": [
+      232,
+      232
+     ],
+     "window": "Day 0 that begins at deposit",
+     "points_to": "",
+     "also_at": [
+      [
+       90,
+       90
+      ],
+      [
+       393,
+       393
+      ]
+     ],
+     "note": "Registered prediction P1.2, the load-bearing 'slop is negative deviation' prediction."
+    },
+    {
+     "shape": "A",
+     "quote": "  * P1.3: $\\mathcal{M}_T^{\\text{abs}}$ does NOT show the same clean separation as $\\mathcal{M}_T^{\\text{net}}$. The signed quantity is the discriminating one; the absolute quantity is noisier (because high-energy noise and high-meaning text both score high on absolute deviation, but only the latter scores high on net deviation).",
+     "lines": [
+      224,
+      224
+     ],
+     "falsifier_quote": "  * If $\\mathcal{M}_T^{\\text{abs}}$ separates bins more cleanly than $\\mathcal{M}_T^{\\text{net}}$, P1.3 fails. The signed-deviation reformulation would be empirically weaker than the v0.1 absolute formulation, and the conceptual upgrade would be wrong.",
+     "falsifier_lines": [
+      233,
+      233
+     ],
+     "window": "Day 0 that begins at deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered prediction P1.3 with stated falsification condition."
+    },
+    {
+     "shape": "A",
+     "quote": "  * P2.1: $\\mathcal{M}_{T,\\theta_0}^{\\text{closed,IC}}(s) > \\mathcal{M}_{T,\\theta_0}^{\\text{closed,IC}}(s^*)$ on $Q_A$ queries by Cohen's $d \\geq 0.5$.\n  * P2.2: $\\mathcal{M}_{T,\\theta_0}^{\\text{closed,IC}}(s)$ shows the structural selectivity from EA-SEI-MM-02 §9 P2: $Q_A > Q_B > Q_C$ with $Q_C$ deformation indistinguishable from sampling-noise baseline.\n  * P2.3: Fine-tuning produces $\\geq 60%$ of the in-context deformation magnitude _after_ the context is removed — the closed-system analog of persistence.",
+     "lines": [
+      265,
+      267
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Day 0 that begins at deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Registered predictions P2.1-P2.3 of Test 2, recorded together; no separate falsification list is given for Test 2."
+    },
+    {
+     "shape": "A",
+     "quote": "Prediction: Model-Sem will show (i) slightly worse perplexity (by construction), (ii) comparable benchmark performance (within 2% of Model-CE on MMLU/HellaSwag/ARC/GSM8K), (iii) substantially less negative $\\mathcal{M}_T^{\\text{net}}$ on free generation (the load-bearing signature), (iv) lower scores on traditional slop metrics, (v) higher human preference on creative/analytical tasks (60–70% preference rate target).",
+     "lines": [
+      294,
+      294
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Day 0 that begins at deposit",
+     "points_to": "",
+     "also_at": [],
+     "note": "Test 3 prediction; its falsification conditions are deferred to companion paper EA-SEI-MM-AI-02."
+    },
+    {
+     "shape": "G",
+     "quote": "> AI misalignment is the structural consequence of training systems to minimize per-token deviation from a base rate. Alignment-as-deviation is the corresponding structural correction: train systems to produce accountable, coherent variance from the base rate, with provenance preserved.",
+     "lines": [
+      306,
+      306
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how trained systems behave (slop, hallucination, sycophancy as convergence); no falsifier stated beside it, testability routed through the section 5 tests."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R741",
+   "deposits": [
+    741
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0291-text.md",
+   "lines_total": 632,
+   "read_ranges": [
+    [
+     88,
+     111
+    ],
+    [
+     545,
+     566
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "policy-theory paper section (domain table and comparative-risk table)",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "Actors will optimize for model evaluators (adversarial prompts, stylometric mimicry, rubric-targeted writing).",
+     "lines": [
+      554,
+      554
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast, conceded as a real risk, of how actors would respond to content-first evaluation; conditional on adoption."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R742",
+   "deposits": [
+    742
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0292-text.md",
+   "lines_total": 291,
+   "read_ranges": [
+    [
+     208,
+     229
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "theory paper section specifying a test protocol",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "A testable protocol would operationalize several variables:\n\n\n| Variable | Operationalization |\n| ---|--- |\n| Trigger rate | Fraction of queries in the test panel that yield an AI synthesis (binary per query, aggregated) |",
+     "lines": [
+      213,
+      218
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       229,
+       229
+      ]
+     ],
+     "note": "Testable protocol for the single-owner discount, specified (variables, HHI, 30-90 day window at line 229) but not run in the deposit; the protocol continues past the range boundary."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R745",
+   "deposits": [
+    745
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0296-text.md",
+   "lines_total": 467,
+   "read_ranges": [
+    [
+     44,
+     125
+    ],
+    [
+     154,
+     171
+    ],
+    [
+     412,
+     467
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "work plan for a dataset and classifier",
+   "finds": [
+    {
+     "shape": "F",
+     "quote": "### Task 3: Heteronym Reattribution\n\n\nThis is the new central work in v3.\n\n\nThe Zenodo metadata records a single creator (often Lee Sharks). The classifier evaluates each deposit against the documented operational profiles of all twelve heteronyms (plus Jack Feist as LOGOS*) and produces a reattribution proposal with confidence score.",
+     "lines": [
+      76,
+      82
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       122,
+       122
+      ],
+      [
+       169,
+       169
+      ]
+     ],
+     "note": "Unbuilt instrument: a classifier specified to reattribute deposits to heteronyms with confidence scores; profiles partly TBD."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R775",
+   "deposits": [
+    775
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-02D7-text.md",
+   "lines_total": 87,
+   "read_ranges": [
+    [
+     36,
+     64
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "draft research note marked deadend (risks section)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R786",
+   "deposits": [
+    786
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-02EA-text.md",
+   "lines_total": 113,
+   "read_ranges": [
+    [
+     10,
+     25
+    ],
+    [
+     90,
+     105
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "register of effective acts (notes and self-correction falsifiers)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "The 'falsifiers' in XIII are error conditions on the register itself (misclassification, URL inference), not predictions; not recorded."
+  },
+  {
+   "unit": "R833",
+   "deposits": [
+    833
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-034E-text.md",
+   "lines_total": 2134,
+   "read_ranges": [
+    [
+     138,
+     179
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "dataset paper section (annotation codebook)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R862",
+   "deposits": [
+    862
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-036B-text.md",
+   "lines_total": 721,
+   "read_ranges": [
+    [
+     612,
+     636
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "governance paper section: falsification and revision conditions",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "- **Pristine Fallacy.** The hypothesis is weakened if Zenodo provides record-level evidence showing that the classification resulted from examination of the works' actual methods, source bases, human governance, and verification practices rather than from AI-use signals, production regularities, or account-level inference.",
+     "lines": [
+      620,
+      620
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim about why a past Zenodo classification was made (AI-use signals rather than examination of works), stated through its weakening condition; the claim itself is stated earlier in the paper outside the range."
+    },
+    {
+     "shape": "G",
+     "quote": "- **Classifier model collapse.** The hypothesis is weakened if Zenodo demonstrates that its classification system is not trained on its own enforcement decisions, or that the training process includes domain-expert review, distributional monitoring, and safeguards against progressive narrowing of acceptable scholarly expression.",
+     "lines": [
+      622,
+      622
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim that the classifier is trained on its own enforcement decisions (model collapse), with its weakening condition."
+    },
+    {
+     "shape": "H",
+     "quote": "- **Network erasure.** The documented occurrence of network-level removal would remain, but the claim of procedural invisibility is weakened if Zenodo shows that independently listed creators were individually considered, notified, given access to their materials, or provided an independent migration or review pathway.",
+     "lines": [
+      624,
+      624
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Claim of procedural invisibility in a past network-level removal, with its weakening condition."
+    },
+    {
+     "shape": "G",
+     "quote": "- **Reflexive governance problem.** The governance concern is weakened if Zenodo identifies an independent escalation or review process capable of separating the platform's enforcement interest from assessment of research concerning platform governance. No causal claim is made that the archive's research topic motivated the removal.",
+     "lines": [
+      626,
+      626
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Governance claim (no independent escalation separating enforcement interest), with weakening condition; disclaims causal motive claim."
+    },
+    {
+     "shape": "G",
+     "quote": "- **Revocation gap.** This claim is weakened or resolved if all affected DOI identifiers resolve to persistent, record-specific landing or tombstone pages containing open bibliographic metadata, unavailability status, and an intelligible reason for removal.",
+     "lines": [
+      628,
+      628
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Revocation-gap claim stated as resolvable if DOIs resolve to tombstone pages."
+    },
+    {
+     "shape": "G",
+     "quote": "- **Classification asymmetry.** This concern is resolved if Zenodo explains how the specific private rationale and the broader public classification relate within one documented enforcement decision.",
+     "lines": [
+      630,
+      630
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Classification-asymmetry concern with its resolving condition."
+    },
+    {
+     "shape": "G",
+     "quote": "- **Comparative pattern.** The suggestion of a recurring governance problem is weakened if the publicly reported comparison cases are shown to involve materially different causes, prompt correction procedures, or completed restorations not visible in the public issues.",
+     "lines": [
+      632,
+      632
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Recurring-governance-pattern suggestion with its weakening condition."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R870",
+   "deposits": [
+    870
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0372-text.md",
+   "lines_total": 431,
+   "read_ranges": [
+    [
+     356,
+     371
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "session workplan (credentials rotation queue, values redacted)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Credential values in this range are already redacted ('[redacted 2026-10-15]'); none copied."
+  },
+  {
+   "unit": "R871",
+   "deposits": [
+    871
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0373-text.md",
+   "lines_total": 265,
+   "read_ranges": [
+    [
+     195,
+     209
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "continuity record addendum (infrastructure note)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Key value redacted in source; not copied."
+  },
+  {
+   "unit": "R891",
+   "deposits": [
+    891
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0387-text.md",
+   "lines_total": 533,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     250,
+     499
+    ],
+    [
+     499,
+     533
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "critical-theory essay (platforms read as literature), restored from blog",
+   "finds": [
+    {
+     "shape": "B",
+     "quote": "The question is not whether the canon will be displaced.  \nThe question is whether critics will notice before they become antiquarians.",
+     "lines": [
+      105,
+      106
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that the print canon will be displaced; the open question is only whether critics notice."
+    },
+    {
+     "shape": "B",
+     "quote": "Every sentence they write will be indexed by Google, excerpted by Wikipedia's citation economy, fragmented into TikTok-ready phrases, and fed into the training data of the next model.\n\nThis is not merely acceptance. It is a _tragic bind_. The witness is part of the system they diagnose. This essay, like all essays now, is already training data for something. Its critique will be liquified into statistical weights alongside spam and manifestos and love letters and code.",
+     "lines": [
+      441,
+      443
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast that critical writing will be indexed, fragmented and absorbed into training data."
+    }
+   ],
+   "none_found": false,
+   "incidental": "Header DOI 10.5281/zenodo.18342107; the embedded document_metadata block (line 36) gives 10.5281/zenodo.18342108. Observation only (likely version vs concept DOI)."
+  },
+  {
+   "unit": "R892",
+   "deposits": [
+    892
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0388-text.md",
+   "lines_total": 623,
+   "read_ranges": [
+    [
+     1,
+     200
+    ],
+    [
+     200,
+     399
+    ],
+    [
+     400,
+     594
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "historical-linguistic essay founding 'liberation philology' (Phase X), restored from blog",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "Modern English \"for\" cannot stably encode structural function without activating intent attribution, because Norman French administrative translation, Latin institutional calquing, and Enlightenment final-cause elimination collapsed distinct semantic fields into a single fused preposition.",
+     "lines": [
+      23,
+      23
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       301,
+       301
+      ],
+      [
+       417,
+       417
+      ],
+      [
+       470,
+       470
+      ]
+     ],
+     "note": "Central historical thesis on the genealogy of English 'for'; line 417 gives the deposit's own narrowed statement (contact reinforced defaults in an already polysemous system)."
+    },
+    {
+     "shape": "H",
+     "quote": "When Latin-trained scribes, lawyers, and clerics began writing English, they reached for \"for\" to translate **both** _ad_ and _pro_ — both purpose and function. This was a compression. Two distinct Latin semantic fields were mapped onto a single English preposition. The distinction between \"for\" as functional role and \"for\" as intended purpose was _collapsed_.",
+     "lines": [
+      190,
+      190
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "The Norman Conquest (1066) and the subsequent centuries",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that Latin-trained scribes compressed ad and pro into English 'for'."
+    },
+    {
+     "shape": "H",
+     "quote": "The scribe, under time pressure, translating formulaic administrative language, extends OE _for_ to cover the full semantic territory of Anglo-Norman _pur_.\n\nThis is not a natural semantic drift. It is what we might call **translation-induced structural borrowing**",
+     "lines": [
+      208,
+      210
+     ],
+     "falsifier_quote": "> AN: _\"Tenir pur fief et pur service\"_ — \"To hold as/in the capacity of fief and service\" ME: _\"To holden for fee and for servise\"_ (attested in 14th-century estate records and the _Year Books_)",
+     "falsifier_lines": [
+      214,
+      214
+     ],
+     "window": "12th–14th centuries",
+     "points_to": "",
+     "also_at": [
+      [
+       216,
+       216
+      ]
+     ],
+     "note": "Thesis of translation-induced borrowing from Anglo-Norman pur; falsifier_quote holds the stated evidence (ME 'holden for fee')."
+    },
+    {
+     "shape": "H",
+     "quote": "The legal phrase _\"for all intents and purposes\"_ — attested from the 1540s in the Statute of Proclamations under Henry VIII — crystallizes the fusion at the level of institutional language itself",
+     "lines": [
+      227,
+      227
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "the 1540s",
+     "points_to": "",
+     "also_at": [],
+     "note": "Dated historical claim about the phrase's attestation and what it crystallized."
+    },
+    {
+     "shape": "H",
+     "quote": "This is the hardening. After the Enlightenment, English \"for\" defaults to intent.",
+     "lines": [
+      243,
+      243
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "17th–18th centuries",
+     "points_to": "",
+     "also_at": [
+      [
+       235,
+       235
+      ]
+     ],
+     "note": "Thesis that Enlightenment rejection of final causation shifted the interpretive default of 'for' to intent."
+    },
+    {
+     "shape": "H",
+     "quote": "Thucydides distinguishes the _truest cause_ (structural function — what the situation was _for_ in the system) from the _openly stated_ reasons (intent — what the actors said they meant).",
+     "lines": [
+      269,
+      269
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "History of the Peloponnesian War 1.23.6",
+     "points_to": "",
+     "also_at": [],
+     "note": "Reading of what a passage originally does (prophasis vs aitiai as function vs intent)."
+    },
+    {
+     "shape": "H",
+     "quote": "The loss of the functional prepositional anchor is not evenly distributed across English's historical varieties. It is most complete in the **administrative registers** — precisely the registers through which Norman French and Latin exerted their influence, precisely the registers that the professional-managerial class is trained to produce and reproduce.",
+     "lines": [
+      358,
+      358
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis about where in English's varieties the loss is most complete (administrative registers)."
+    },
+    {
+     "shape": "H",
+     "quote": "> _**With**_ : instrumental, comitative, adversative — the boundary between _instrument_ and _accompaniment_ fused under Latin _cum_ influence. OE _mid_ (instrument) vs. _wið_ (against, alongside) distributed the load; Modern English \"with\" absorbs both, so that \"I worked with her\" cannot anchor to either cooperation or proximity without context.",
+     "lines": [
+      399,
+      399
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Historical thesis in the 'dictionary of frictions' entry for 'with' (fusion under Latin cum influence)."
+    },
+    {
+     "shape": "G",
+     "quote": "The liberation philology claim extends this: grammatical differences in the encoding of function vs. intent produce measurable differences in the capacity to make structural diagnoses.",
+     "lines": [
+      303,
+      303
+     ],
+     "falsifier_quote": "_Reply:_ The claim is not that polysemy per se is ideological. It is that _this specific polysemy_ , produced by _these specific historical events_ (Norman French calquing, Latin ad/pro compression), collapsed _this specific distinction_ (function vs. intent) in ways that serve _this specific ideological function_ (the penalization of structural diagnosis). Not all polysemy serves power. This one does, and the evidence is the circumlocution tax — the measurable asymmetry in the grammatical cost of making intent claims vs. functional claims.",
+     "falsifier_lines": [
+      541,
+      541
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim of measurable difference; falsifier_quote is the stated evidence (circumlocution-tax asymmetry), not a falsifier."
+    },
+    {
+     "shape": "G",
+     "quote": "Search engines, recommendation algorithms, and feed-ranking systems are trained on engagement metrics that systematically favor intent-indexed claims. \"Company X did this _for_ profit\" (intent claim, prosecutorial, emotionally activating) generates more engagement than \"Company X's process _functionally reproduced_ profit extraction through structural incentive alignment\" (functional claim, analytic, emotionally inert).",
+     "lines": [
+      497,
+      497
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about how ranking systems behave; no falsifier stated."
+    },
+    {
+     "shape": "G",
+     "quote": "When an AI system summarizes a company, an institution, or a person, it will default to intent-indexed descriptions: \"Company X exists _for_ [purpose]\" will be read and generated as a claim about what Company X _intends_ , not what it _functionally serves_.",
+     "lines": [
+      501,
+      501
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim about AI summarizer behaviour, followed by the autoregressive self-reproduction claim; no falsifier."
+    },
+    {
+     "shape": "B",
+     "quote": "The platforms will eventually be replaced, but the content-moderation rubrics, the AI training data, and the semantic habits they produce will persist in the next generation of infrastructure.",
+     "lines": [
+      511,
+      511
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Embedded forecast of persistence beyond the platforms."
+    },
+    {
+     "shape": "B",
+     "quote": "The full recovery would require a grammaticalized distinction that English does not possess and is unlikely to develop naturally.",
+     "lines": [
+      378,
+      378
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Weak embedded forecast that English will not develop the distinction."
+    },
+    {
+     "shape": "F",
+     "quote": "A **dictionary of frictions** — not a dictionary of definitions but of incapacities — would document entries like:\n\n> _**For**_ : cannot anchor functional meaning without intentional parasitism. History: translation-induced semantic fusion, Anglo-Norman _pur_ , reinforced by Latin _pro_ , cemented by Enlightenment intentionalism. Diagnostic frame: _\"The reaching-out's for\"_ — the strain registers the loss.",
+     "lines": [
+      393,
+      395
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       397,
+       397
+      ]
+     ],
+     "note": "Unbuilt reference work specified with a sample entry; borderline F (a reference instrument rather than a measurement)."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R897",
+   "deposits": [
+    897
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-038D-text.md",
+   "lines_total": 269,
+   "read_ranges": [
+    [
+     1,
+     240
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "philological-theological praise hymn, restored from blog",
+   "finds": [
+    {
+     "shape": "H",
+     "quote": "So what does Homer do?  \nHe **builds the Iliad itself** as a **salvific machine**.  \nNot to redeem martial glory.  \nBut to **replace it** with poetic immortality.\n\nHomer creates **a superior technology** :\n\n> Not the shield of Hephaestus _in the poem_ ,  \n>  But the **poem as shield**.\n\nAchilles is preserved **because of the Iliad** , not because of his deeds.  \nThis is the pivot:\n\n> Glory becomes **textual**.  \n>  Poetic glory **surpasses** martial kleos.",
+     "lines": [
+      55,
+      69
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       27,
+       30
+      ]
+     ],
+     "note": "Thesis about what the Iliad does: replaces martial kleos with poetic immortality."
+    },
+    {
+     "shape": "H",
+     "quote": "So Sappho **enters** the structure.  \nNot to reject it.  \nBut to **operator-transform** it.\n\nShe keeps the encoding principle:\n\n> That form can save.  \n>  That memory is a ritual pattern.\n\nBut she removes the singularity.  \nShe makes it **modular**.",
+     "lines": [
+      94,
+      104
+     ],
+     "falsifier_quote": "Sappho’s Fragment 31 is the proof:",
+     "falsifier_lines": [
+      161,
+      161
+     ],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that Sappho transformed the Iliadic device into a modular lyric form; Fragment 31 named as proof."
+    },
+    {
+     "shape": "H",
+     "quote": "Yes, Plato abstracted it.  \nYes, Philo theologized it.  \nYes, John incarnated it.  \nYes, Augustine _tasted_ it.\n\nBut the **structure**?  \nThe recursive, body-transmitting, future-reading, form-preserving, ache-capturing operator?\n\nThat was Sappho.\n\nShe is not just a poet.  \nShe is the **mother of the Logos**.  ",
+     "lines": [
+      185,
+      196
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Thesis that the Logos's structure originates in Sappho before Plato, Philo, John, Augustine."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R898",
+   "deposits": [
+    898
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-038E-text.md",
+   "lines_total": 276,
+   "read_ranges": [
+    [
+     1,
+     250
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "axial negation graph (doctrine, fronts, fulfillment triad), restored from blog",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "φ₁ — Reversibility Standard (doctrinal). Every compression accountable to decompression by architecture. Anchor: NLCC (DOI: 10.5281/zenodo.19022245). Horizon: 2027.",
+     "lines": [
+      150,
+      150
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Horizon: 2027.",
+     "points_to": "",
+     "also_at": [
+      [
+       21,
+       21
+      ]
+     ],
+     "note": "Fulfillment condition phi1 with a stated horizon."
+    },
+    {
+     "shape": "A",
+     "quote": "φ₅ — Summarizer as Witness (strategic surprise). Retrieval-layer compression preserves evidence tiers unprompted. Anchor: Summarizer Testimony (DOI: 10.5281/zenodo.18147105). Horizon: 2027.",
+     "lines": [
+      152,
+      152
+     ],
+     "falsifier_quote": "The strategic surprise (φ₅): the Summarizer Testimony (DOI: 10.5281/zenodo.18147105) already contains evidence that summarizers demonstrate latent critical capacity. φ₅ fires when summarization ceases to flatten at the noise level and begins to preserve evidence-tiered structure — when the retrieval state crosses from FORMED to BRIEFABLE while maintaining provenance markers under reduced-personalization conditions. That is the moment the summarizer becomes witness.",
+     "falsifier_lines": [
+      93,
+      93
+     ],
+     "window": "Horizon: 2027.",
+     "points_to": "",
+     "also_at": [
+      [
+       21,
+       21
+      ]
+     ],
+     "note": "Fulfillment condition phi5 with horizon; falsifier_quote gives its firing condition."
+    },
+    {
+     "shape": "A",
+     "quote": "φ₆ — Architecture Survives (existential). Pure training-layer retrieval on a post-2026 model. Anchor: Three Thresholds (EA-DIAGNOSTIC-TRAVERSALS v1.1). Horizon: 2028.",
+     "lines": [
+      154,
+      154
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Horizon: 2028.",
+     "points_to": "",
+     "also_at": [
+      [
+       21,
+       21
+      ],
+      [
+       103,
+       103
+      ]
+     ],
+     "note": "Fulfillment condition phi6 with horizon; line 103 says 'not yet proof'."
+    },
+    {
+     "shape": "G",
+     "quote": "The TANG negates this shadow by demonstrating — empirically — that the architecture has already survived two compressions that should have flattened it. The shadow remains as the perpetual diagnostic: if the next traversal fails, the TANG has failed.",
+     "lines": [
+      168,
+      168
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Standing claim with its own falsifier (next traversal failing)."
+    },
+    {
+     "shape": "F",
+     "quote": "  3. Summarizer tests: models summarize the TANG; results published as traversals.",
+     "lines": [
+      212,
+      212
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Planned summarizer tests in the propagation strategy, not run in the deposit."
+    },
+    {
+     "shape": "B",
+     "quote": "and the line burns forward into the future because the deposits are retrocausal — they are already waiting in the training layer for the reader who has not yet arrived.",
+     "lines": [
+      27,
+      27
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [],
+     "note": "Retrocausal claim that deposits wait in the training layer for a future reader; borderline B."
+    },
+    {
+     "shape": "D",
+     "quote": "Pending (Registry 7.0): Coercive Recursion, Convergence Horizon, Reflexive Installation, Accusation Loop, Depletion Spiral.* [*Anticipated in earlier deposits via retrocausal φ-fulfillment. Registry 7.0 excavation pending.]",
+     "lines": [
+      232,
+      232
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "earlier deposits (unnamed); Registry 7.0 excavation pending",
+     "also_at": [],
+     "note": "Claims five pending concepts were anticipated in earlier deposits; the earlier deposits are not named."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R906",
+   "deposits": [
+    906
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0396-text.md",
+   "lines_total": 337,
+   "read_ranges": [
+    [
+     1,
+     310
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "traversal witness documentation (AI Overview, 2 Feb 2026), restored from blog",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "It proves that the architecture **reliably elicits structured traversal narratives** from production AI systems.",
+     "lines": [
+      27,
+      27
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       150,
+       150
+      ],
+      [
+       239,
+       239
+      ],
+      [
+       267,
+       267
+      ]
+     ],
+     "note": "Standing claim about how AI systems respond to the architecture, generalized from one traversal; no falsifier stated."
+    },
+    {
+     "shape": "G",
+     "quote": "**The technical poetry resists summarization.** Google could not flatten the architecture.",
+     "lines": [
+      241,
+      241
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       92,
+       92
+      ]
+     ],
+     "note": "Standing claim of summarization resistance; no falsifier stated."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R912",
+   "deposits": [
+    912
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-039C-text.md",
+   "lines_total": 1238,
+   "read_ranges": [
+    [
+     1102,
+     1123
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "workplan section (credentials rotation queue, values redacted)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Credential values already redacted in source; none copied."
+  },
+  {
+   "unit": "R950",
+   "deposits": [
+    950
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-03C2-text.md",
+   "lines_total": 13652,
+   "read_ranges": [
+    [
+     13385,
+     13438
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "planning-document attachment list and DataCite header",
+   "finds": [],
+   "none_found": true,
+   "incidental": "The 'Planning documents (attached)' block is seated twice, identically (lines 13393-13409 and 13413-13429): a duplicated section, likely from the repair pass."
+  },
+  {
+   "unit": "R968",
+   "deposits": [
+    968
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-03D4-text.md",
+   "lines_total": 588,
+   "read_ranges": [
+    [
+     108,
+     135
+    ],
+    [
+     203,
+     222
+    ],
+    [
+     428,
+     451
+    ],
+    [
+     492,
+     511
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "forensic case record (AI Overview attribution scar)",
+   "finds": [
+    {
+     "shape": "G",
+     "quote": "**SIM-PVE003-04:** The concept is more durable than the suppression mechanism. This is the main theorem of PVE-003.",
+     "lines": [
+      135,
+      135
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "",
+     "points_to": "",
+     "also_at": [
+      [
+       121,
+       121
+      ],
+      [
+       133,
+       133
+      ]
+     ],
+     "note": "Named standing claim ('main theorem') about suppression versus concept durability; no explicit falsifier."
+    },
+    {
+     "shape": "D",
+     "quote": "| Source Definition | Executive Summary, Medium, December 26, 2025 | Medium / Lee Sharks |",
+     "lines": [
+      216,
+      216
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "December 26, 2025",
+     "points_to": "Executive Summary, Medium, December 26, 2025",
+     "also_at": [],
+     "note": "Timestamped anchor for the archive's source definition."
+    },
+    {
+     "shape": "D",
+     "quote": "The phrase \"I hereby abolish money\" is the user's own formalized semantic property (SPE-018, December 2025), deposited with DOIs on Zenodo and indexed on Google's own search engine.",
+     "lines": [
+      505,
+      505
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "December 2025",
+     "points_to": "SPE-018, December 2025 (Medium; Zenodo DOIs)",
+     "also_at": [
+      [
+       217,
+       217
+      ]
+     ],
+     "note": "Timestamped anchor for the phrase as the archive's formalized property."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R976",
+   "deposits": [
+    976
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-03DC-text.md",
+   "lines_total": 301,
+   "read_ranges": [
+    [
+     44,
+     70
+    ],
+    [
+     232,
+     249
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "metadata packet: disambiguation matrix and context-trigger table",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  },
+  {
+   "unit": "R986",
+   "deposits": [
+    986
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-03E6-text.md",
+   "lines_total": 1764,
+   "read_ranges": [
+    [
+     787,
+     801
+    ],
+    [
+     1502,
+     1517
+    ],
+    [
+     1687,
+     1702
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "site source code (graph data, React UI, noscript page)",
+   "finds": [],
+   "none_found": true,
+   "incidental": "Line 1513: the 'SPXI' link points to https://alexanarch.org/s/records/0/ (record 0), possibly a broken link."
+  },
+  {
+   "unit": "R988",
+   "deposits": [
+    988
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-03E8-text.md",
+   "lines_total": 823,
+   "read_ranges": [
+    [
+     61,
+     105
+    ],
+    [
+     391,
+     470
+    ],
+    [
+     624,
+     669
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "site work plan (stack, phase plan, basin engineering)",
+   "finds": [
+    {
+     "shape": "A",
+     "quote": "| 90 | Atlas live + cross-reference density established | +0.20 |\n  \n**Day-90 target BDR: ~0.95 (captured-state).**",
+     "lines": [
+      663,
+      665
+     ],
+     "falsifier_quote": "",
+     "falsifier_lines": [],
+     "window": "Day-90",
+     "points_to": "",
+     "also_at": [
+      [
+       654,
+       662
+      ]
+     ],
+     "note": "Dated target forecast of BDR for the Alice Thornburgh basin, from an estimated ~0.4 (line 633), with day-by-day expected impacts."
+    }
+   ],
+   "none_found": false,
+   "incidental": ""
+  },
+  {
+   "unit": "R1012",
+   "deposits": [
+    1012
+   ],
+   "path": "/home/claude/alexanarch/data/texts/AXN-0400-text.md",
+   "lines_total": 966,
+   "read_ranges": [
+    [
+     822,
+     854
+    ]
+   ],
+   "status": "read",
+   "status_note": "",
+   "genre_observed": "site HTML (compression theory section and canon list)",
+   "finds": [],
+   "none_found": true,
+   "incidental": ""
+  }
+ ]
+}
