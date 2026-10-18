@@ -38,7 +38,10 @@ spaces, so copy phrases by script rather than retyping them.
 several statements. Use this for paraphrase, a translation into another register, or one thesis coded as G here and H
 there.
 
-**`states`**: a set of two or more claims that are one claim revised over time. List them in date order. For each step,
+**`states`**: a set of two or more claims that are one claim revised over time. List them in the order of the claim's
+development as the texts show it. Where that order disagrees with the registration dates (a deposit dated earlier
+that already holds the later form), keep the development order and say so in the `change` for that step and in an
+observation. For each step,
 say what changed (`change`): the window moved, the scope narrowed or widened, the falsifier changed, the claim was
 withdrawn, or the claim was reversed. When a later deposit corrects or supersedes an earlier claim, that is a state of
 it. Do not reconcile the two.
