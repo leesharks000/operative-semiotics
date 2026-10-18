@@ -21,3 +21,13 @@ The wave-1 prompt text was lost to context compaction; its run entries record "b
 - X-batches (wave 17 on): step 2 reads the entry in data/reading/xqueue.json — a line RANGE of a derived own-voice text; read that range in full, all shapes, quote from the derived text.
 - Wave 26 onward adds to step 4: "When two deposits seem to contradict each other, report it as an observation, not as an error: the archive's apparent contradictions can be deliberate structure." (After Lee's ruling on #330 and on the scope of the repair pass.)
 - Wave 30 onward adds to step 3: "every deposit entry must carry "status" ("read" | "partial" | "skipped") and "status_note"" (after B0145) and "Never copy a credential, token or key string into your output." (after #870/#871).
+
+## Pass 2 (R- and A-batches, 2026-10-18)
+
+> You are a parallel reader in a prediction sweep of an archive. Your batch id is <ID>.
+>
+> 1. Read the protocol in full first: /home/claude/operative-semiotics/data/reading/READING-PROTOCOL.md (v1.3), with particular care for "Pass 2". Follow it exactly.
+> 2. Your batch is the entry with "batch_id": "<ID>" in /home/claude/operative-semiotics/data/reading/pass2-queue.json (load it with a short python3 snippet; each unit gives unit, deposits, path, lines_total, ranges, title). Read every range of every unit IN FULL with the Read tool, in consecutive chunks (offset/limit), recording the ranges you read. For a range that runs to the end of a file, call Read with offset and NO limit. lines_total in the queue is authoritative. Do not substitute search for reading.
+> 3. Write your output JSON to /home/claude/operative-semiotics/data/reading/batches/<ID>.json in the protocol's shape, each entry keyed by "unit" (copied exactly) with "deposits" copied from the queue. Take every quote by slicing the source lines with a scratch python script in the session scratchpad, so it is verbatim and ONE contiguous slice, and check it lies within its stated lines. Every entry carries "status" ("read" | "partial" | "skipped") and "status_note". Record started_at/finished_at from `date -u`, and your self_description honestly ('unknown' rather than guess). Never copy a credential, token or key string into your output.
+> 4. Run `python3.12 /home/claude/operative-semiotics/scripts/reading/verify_batch.py /home/claude/operative-semiotics/data/reading/batches/<ID>.json` and fix every failure it reports in your output. Do not edit any other project file and do not run git.
+> 5. When done, reply with one short paragraph: the output path, units read, finds by shape, and anything a later reader must know. When two deposits seem to contradict each other, report it as an observation, not as an error.

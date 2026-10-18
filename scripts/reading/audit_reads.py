@@ -19,10 +19,13 @@ import hashlib, json, pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 R = ROOT / "data/reading"
 LN = re.compile(r"^\s*(\d+)\t", re.M)
-BID = re.compile(r"batches/((?:HB|B|S|X)\d{4}|CAL)\.json")
+BID = re.compile(r"batches/((?:HB|B|S|X|R|A)\d{4}|CAL)\.json")
 
 
 def batch_rows(bid):
+    if bid[0] in "RA" and bid[1:].isdigit():
+        b = next(x for x in json.loads((R / "pass2-queue.json").read_text())["batches"] if x["batch_id"] == bid)
+        return {u["unit"]: u for u in b["units"]}
     if bid == "CAL":
         return {r["deposit"]: r for r in json.loads((R / "calibration-batch.json").read_text())["deposits"]}
     if bid.startswith("X"):
@@ -56,7 +59,9 @@ def audit(tp):
         return None
     bid = m.group(1)
     rows = batch_rows(bid)
-    bypath = {str(pathlib.Path(r["path"])): n for n, r in rows.items()}
+    bypath = {}
+    for n, r in rows.items():
+        bypath.setdefault(str(pathlib.Path(r["path"])), []).append(n)
     calls, other = {}, {}
     for r in recs:
         msg = r.get("message") or {}
@@ -70,9 +75,10 @@ def audit(tp):
                     calls[c["id"]] = fp
                 else:
                     blob = json.dumps(inp)
-                    for p, n in bypath.items():
+                    for p, ns in bypath.items():
                         if p in blob or pathlib.Path(p).name in blob:
-                            other.setdefault(n, []).append(c.get("name"))
+                            for n in ns:
+                                other.setdefault(n, []).append(c.get("name"))
             elif c.get("type") == "tool_result" and c.get("tool_use_id") in calls:
                 fp = calls[c["tool_use_id"]]
                 got = {int(x) for x in LN.findall(text_of(c.get("content")))}
@@ -80,7 +86,8 @@ def audit(tp):
     seen = {}
     for v in calls.values():
         if isinstance(v, tuple):
-            seen.setdefault(bypath[v[0]], []).append(v[1])
+            for n in bypath[v[0]]:
+                seen.setdefault(n, []).append(v[1])
     bp = R / "batches" / f"{bid}.json"
     claimed = {}
     if bp.exists():
@@ -88,13 +95,12 @@ def audit(tp):
             s = set()
             for a, b in e.get("read_ranges") or []:
                 s.update(range(int(a), int(b) + 1))
-            claimed[e["deposit"]] = s
+            claimed[e.get("unit", e.get("deposit"))] = s
     out = []
     for n, row in rows.items():
         got = set().union(*seen.get(n, [set()]))
         cl = claimed.get(n, set())
-        lo, hi = row.get("range") or (1, row["lines_total"])
-        tot = set(range(lo, hi + 1))
+        tot = {i for a, b in (row.get("ranges") or [row.get("range") or (1, row["lines_total"])]) for i in range(a, b + 1)}
         out.append({"deposit": n, "lines_total": row["lines_total"], "read_calls": len(seen.get(n, [])),
                     "lines_returned": len(got & tot), "lines_claimed": len(cl & tot),
                     "claimed_not_returned": len((cl & tot) - got), "unread_lines": len(tot - got),

@@ -38,38 +38,44 @@ def txt(v):
     return json.dumps(v, ensure_ascii=False, indent=1)
 
 
+def render(n, s, src_bytes=None):
+    """The derived own-voice text of deposit n from its source JSON (current file, or the bytes given)."""
+    raw = src_bytes if src_bytes is not None else s["path"].read_bytes(); src = raw.decode("utf-8")
+    d = json.loads(src); lines = src.split("\n")
+    recs = d.get(s["list"]) or []
+    # locate each record's first line in the source: the line holding its id value
+    out = [f"# Reading text for deposit #{n} — own-voice fields, verbatim",
+           f"Source: {s['path']} (sha256 {hashlib.sha256(raw).hexdigest()})",
+           f"Fields read: {', '.join(s['read'])} (per record); top-level: {', '.join(s['top'])}",
+           f"Fields excluded by protocol: {s['excluded']}",
+           "Built by scripts/reading/derive_voice.py. Each block: record index, id, source line.", ""]
+    out.append("## TOP-LEVEL")
+    for k in s["top"]:
+        if k in d:
+            out += [f"### {k}", txt(d[k]), ""]
+    cursor = 0
+    for i, e in enumerate(recs):
+        rid = next((str(e[k]) for k in s["id"] if k in e), f"#{i}")
+        ln = next((j + 1 for j in range(cursor, len(lines)) if rid in lines[j]), None)
+        if ln:
+            cursor = ln
+        body = [(k, e[k]) for k in s["read"] if e.get(k)]
+        if not body:
+            continue
+        head = f"## record {i} · {rid} · source line {ln}" + (f" · {e.get('date')}" if e.get('date') else "")
+        if n == 3:
+            head += f" · {e.get('surface','')} · q: {str(e.get('q',''))[:120]}"
+        out.append(head)
+        for k, v in body:
+            out += [f"### {k}", txt(v), ""]
+    return out
+
+
 def main():
     (R / "derived").mkdir(exist_ok=True)
     xb = []
     for n, s in SPECS.items():
-        raw = s["path"].read_bytes(); src = raw.decode("utf-8")
-        d = json.loads(src); lines = src.split("\n")
-        recs = d.get(s["list"]) or []
-        # locate each record's first line in the source: the line holding its id value
-        out = [f"# Reading text for deposit #{n} — own-voice fields, verbatim",
-               f"Source: {s['path']} (sha256 {hashlib.sha256(raw).hexdigest()})",
-               f"Fields read: {', '.join(s['read'])} (per record); top-level: {', '.join(s['top'])}",
-               f"Fields excluded by protocol: {s['excluded']}",
-               "Built by scripts/reading/derive_voice.py. Each block: record index, id, source line.", ""]
-        out.append("## TOP-LEVEL")
-        for k in s["top"]:
-            if k in d:
-                out += [f"### {k}", txt(d[k]), ""]
-        cursor = 0
-        for i, e in enumerate(recs):
-            rid = next((str(e[k]) for k in s["id"] if k in e), f"#{i}")
-            ln = next((j + 1 for j in range(cursor, len(lines)) if rid in lines[j]), None)
-            if ln:
-                cursor = ln
-            body = [(k, e[k]) for k in s["read"] if e.get(k)]
-            if not body:
-                continue
-            head = f"## record {i} · {rid} · source line {ln}" + (f" · {e.get('date')}" if e.get('date') else "")
-            if n == 3:
-                head += f" · {e.get('surface','')} · q: {str(e.get('q',''))[:120]}"
-            out.append(head)
-            for k, v in body:
-                out += [f"### {k}", txt(v), ""]
+        out = render(n, s)
         p = R / "derived" / f"{n:04d}-voice.md"
         p.write_text("\n".join(out) + "\n")
         t = p.read_text(); L = t.split("\n")

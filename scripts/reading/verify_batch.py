@@ -15,6 +15,8 @@ verification record, nothing is dropped):
   QUEUED  every queued deposit of the batch has an entry, and no entry is outside the batch
           (S-batches: out-of-queue readings by the launcher; each listed deposit is checked against its queue row)
           (X-batches: a line range of a derived own-voice reading text, data/reading/xqueue.json; COVER is over the range)
+          (R- and A-batches, pass 2: units of data/reading/pass2-queue.json, keyed by "unit"; COVER is over the unit's
+          ranges, and QUOTE over the unit's file)
 With --write, the verification is stored beside the batch as <batch>.verified.json.
 """
 import json, pathlib, re, sys, hashlib
@@ -31,7 +33,11 @@ def main():
     bp = pathlib.Path(sys.argv[1]); write = "--write" in sys.argv
     out = json.loads(bp.read_text())
     q = json.loads((ROOT / "data/reading/queue.json").read_text())
-    if out["batch_id"] == "CAL":
+    if out["batch_id"][0] in "RA" and out["batch_id"][1:].isdigit():
+        p2 = json.loads((ROOT / "data/reading/pass2-queue.json").read_text())
+        b = next(x for x in p2["batches"] if x["batch_id"] == out["batch_id"])
+        queued = {u["unit"]: u for u in b["units"]}
+    elif out["batch_id"] == "CAL":
         cal = json.loads((ROOT / "data/reading/calibration-batch.json").read_text())
         queued = {r["deposit"]: r for r in cal["deposits"]}
     elif out["batch_id"].startswith("X"):
@@ -52,7 +58,7 @@ def main():
     seen = set()
     nq = nfail = 0
     for e in out.get("deposits", []):
-        n = e.get("deposit"); seen.add(n); fails = []
+        n = e.get("unit", e.get("deposit")); seen.add(n); fails = []
         if n not in queued:
             fails.append("QUEUED: not in this batch")
             res["checks"].append({"deposit": n, "fails": fails}); continue
@@ -66,10 +72,10 @@ def main():
             covered = set()
             for a, b2 in e.get("read_ranges") or []:
                 covered.update(range(int(a), int(b2) + 1))
-            lo, hi = row.get("range") or (1, row["lines_total"])
-            missing = [i for i in range(lo, hi + 1) if i not in covered]
+            want = [i for a, b2 in (row.get("ranges") or [row.get("range") or (1, row["lines_total"])]) for i in range(a, b2 + 1)]
+            missing = [i for i in want if i not in covered]
             if missing:
-                fails.append(f"COVER: {len(missing)} of {hi - lo + 1} lines not in read_ranges (first {missing[:5]})")
+                fails.append(f"COVER: {len(missing)} of {len(want)} lines not in read_ranges (first {missing[:5]})")
         finds = e.get("finds") or []
         if e.get("none_found") and finds:
             fails.append("NONE: none_found true with finds")

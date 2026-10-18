@@ -1,4 +1,4 @@
-# Reading Protocol — the prediction sweep (v1.2, 2026-10-15)
+# Reading Protocol — the prediction sweep (v1.3, 2026-10-18)
 
 You are a reader in the archive's prediction sweep. Your batch is a list of deposits of the Crimson
 Hexagonal Archive. You read each one IN FULL and record every prediction-bearing passage in it, by shape,
@@ -112,6 +112,26 @@ Deposits read before v1.2 are re-read for shape H alone (batches HB0001…, from
 deposit IN FULL exactly as above, record ONLY shape-H finds, and set none_found true when the deposit argues no
 historical thesis. The other shapes were already recorded by the first reading; do not record them again.
 
+## Pass 2: changed text and attachments (v1.3, R- and A-batches)
+
+The ruling (Lee Sharks, 2026-10-17): "lets do those reading sweeps." Two kinds of text were never read under this
+protocol, and pass 2 reads them. The queue is data/reading/pass2-queue.json, built by scripts/reading/build_pass2.py.
+Its rows are UNITS, not deposits:
+
+- **R-units: changed text.** The record repair of 2026-10-15/16 changed some deposits' texts after the first pass read
+  them. An R-unit is one deposit's current text with the RANGES that hold new words (with three lines of context). Read
+  every listed range IN FULL, as above, and record every find inside the ranges, all shapes A–H. You may read outside
+  the ranges for context; record a find there only if it continues across a range boundary. Line numbers are those of
+  the current file. A find the first pass may already hold is recorded anyway: triage matches it.
+- **A-units: attachments.** A file attached to one or more deposits (data/attachments in alexanarch), or the plain text
+  converted from a PDF or DOCX. Read it IN FULL, all shapes A–H. The unit names the deposits that carry the
+  attachment; a find belongs to them. Code is read as text: a prediction in a comment, docstring or header is a find,
+  the code itself is not. For a data file, record only the archive's own prose (notes, descriptions, stated
+  predictions), not data values.
+
+Your output has the shape above, with one change: each entry carries `"unit"` (the unit id exactly as queued) in
+place of `"deposit"`, and `read_ranges` must cover the unit's ranges. Copy `"deposits"` from the queue row.
+
 ## Each find
 
 Quote the passage VERBATIM from the file — exact characters, no paraphrase, no ellipsis inside the quote —
@@ -124,7 +144,7 @@ Write ONE JSON file to the path given in your batch, exactly this shape:
 
 {
   "batch_id": "<given>",
-  "protocol": "READING-PROTOCOL v1.2",
+  "protocol": "READING-PROTOCOL v1.2" (v1.3 for pass 2),
   "reader": {
     "role": "parallel reader, prediction sweep",
     "self_description": "<what you are, as you understand it: assistant, model if known to you; say 'unknown' rather than guess>",
