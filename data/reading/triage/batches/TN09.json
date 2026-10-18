@@ -1,0 +1,365 @@
+{
+ "batch_id": "TN09",
+ "kind": "TN",
+ "protocol": "TRIAGE-PROTOCOL v1.1",
+ "reader": {
+  "self_description": "Claude Opus 5.5 (claude-opus-5-5) as a Claude Code subagent; parallel triage reader",
+  "started_at": "2026-10-18T04:57:39Z",
+  "finished_at": "2026-10-18T05:02:16Z"
+ },
+ "decisions": [
+  {
+   "item": "N:F107.F8",
+   "decision": "same",
+   "claim": "PRED-107.F3",
+   "evidence_find": "The single-component conditions (Model-π, Model-Dev, Model-Coh) isolate the uplift attributable to each signal.",
+   "evidence_claim": "The right experimental design is component-decomposed.",
+   "basis": "The find is the condition table and rationale of the component-decomposed DPO design whose conventions open the same passage, already held as PRED-107.F3.",
+   "read": [
+    [
+     107,
+     160,
+     230
+    ],
+    [
+     107,
+     236,
+     262
+    ]
+   ]
+  },
+  {
+   "item": "N:F107.B2",
+   "decision": "same",
+   "claim": "PRED-107.B1",
+   "evidence_find": "that system will optimize for synthetic semantic deformation",
+   "evidence_claim": "that system will optimize for synthetic semantic deformation",
+   "basis": "Word-for-word the Goodhart forecast already held as PRED-107.B1.",
+   "read": []
+  },
+  {
+   "item": "N:F107.F9",
+   "decision": "related",
+   "claims": [
+    "PRED-107.B1",
+    "PRED-107.F4"
+   ],
+   "basis": "Entropy-floor capping is one of the anti-Goodhart mechanisms specified against the Goodhart forecast (PRED-107.B1), in the same section as the judge-replacement test (PRED-107.F4); it is a distinct unbuilt mechanism.",
+   "read": [
+    [
+     107,
+     160,
+     230
+    ],
+    [
+     107,
+     236,
+     262
+    ]
+   ]
+  },
+  {
+   "item": "N:F107.G6",
+   "decision": "same",
+   "claim": "PRED-107.G3",
+   "evidence_find": "Slop, the framework predicts, exhibits systematically negative mean",
+   "evidence_claim": "If the prediction fails, the framework's specific claim about slop must be revised: the deviation-deficit account of slop is wrong",
+   "basis": "The find restates the negative-net-deviation slop prediction with the identical falsifier held under PRED-107.G3.",
+   "read": [
+    [
+     107,
+     160,
+     230
+    ],
+    [
+     107,
+     236,
+     262
+    ]
+   ]
+  },
+  {
+   "item": "N:F107.F10",
+   "decision": "in",
+   "claim": "PRED-107.F6",
+   "evidence_find": "**Pre-registered protocol.**",
+   "evidence_claim": "The negative-net-deviation slop test, as specified in §6.",
+   "basis": "The pre-registered protocol is the negative-net-deviation slop test that the PRED-107.F6 ledger lists as its immediate milestone \"as specified in §6\".",
+   "read": [
+    [
+     107,
+     160,
+     230
+    ],
+    [
+     107,
+     236,
+     262
+    ]
+   ]
+  },
+  {
+   "item": "N:F109.F2",
+   "decision": "same",
+   "claim": "PRED-109.F1",
+   "evidence_find": "where $Q$ is a diagnostic query set, $\\omega_q$ are query weights, $R_t^0(q)$ is the pre-deposit response distribution to query $q$, and $R_t^s(q)$ is the post-deposit response distribution.",
+   "evidence_claim": "Select a diagnostic query set $Q$ (5–20 queries targeting the entity to be inscribed).",
+   "basis": "The Tier 1 formula measures the same pre-deposit versus post-deposit retrieval response distributions over a diagnostic query set that PRED-109.F1 lays out as the first real-field protocol.",
+   "read": [
+    [
+     109,
+     296,
+     330
+    ]
+   ]
+  },
+  {
+   "item": "N:F111.D3",
+   "decision": "same",
+   "claim": "PRED-111.D2",
+   "evidence_find": "Dated digital deposit of \"from The Crimson Hexagon\" (2015-03-14, Blogspot",
+   "evidence_claim": "On March 14, 2015, at 1:38 AM, a post titled \"from The Crimson Hexagon\" was published",
+   "basis": "The dated 2015-03-14 Blogspot post \"from The Crimson Hexagon\" as earliest Feist provenance is the priority record already held as PRED-111.D2.",
+   "read": []
+  },
+  {
+   "item": "N:F149.A3",
+   "decision": "variant",
+   "claim": "PRED-1384.G2",
+   "change": "Adds a 90-day evaluation window: no re-enabling of incognito AI Mode within 90 days is read as sustaining and strengthening the hypothesis.",
+   "evidence_find": "| Incognito AI Mode not re-enabled within 90 days |",
+   "evidence_claim": "registers the falsification conditions in §8.6",
+   "basis": "The 90-day row of the §8.6 table evaluates the stress-test hypothesis held as PRED-1384.G2 (whose statements include F149.A1), with the same twelve-month falsifier.",
+   "read": [
+    [
+     149,
+     250,
+     275
+    ]
+   ]
+  },
+  {
+   "item": "N:F166.F3",
+   "decision": "related",
+   "claims": [
+    "PRED-166.F1",
+    "PRED-166.A1"
+   ],
+   "basis": "The catalog entry criteria are a component of the Stabilized Node Watch instrument whose pilot (catalog, surfaces) is PRED-166.F1, and which is built to test the directional-drift forecast PRED-166.A1.",
+   "read": []
+  },
+  {
+   "item": "N:F166.F4",
+   "decision": "related",
+   "claims": [
+    "PRED-166.F1",
+    "PRED-166.A1"
+   ],
+   "basis": "The reference consensus map construction protocol is another component of the same unbuilt SNW instrument (PRED-166.F1) designed to test PRED-166.A1.",
+   "read": []
+  },
+  {
+   "item": "N:F199.F4",
+   "decision": "same",
+   "claim": "PRED-199.F1",
+   "evidence_find": "SSDI is measured by the following protocol",
+   "evidence_claim": "The SSDI specification is published here as a protocol.",
+   "basis": "The find is the SSDI measurement protocol itself, which PRED-199.F1 states is \"published here as a protocol\" for anyone to run.",
+   "read": []
+  },
+  {
+   "item": "N:F209.F9",
+   "decision": "related",
+   "claims": [
+    "PRED-209.F1",
+    "PRED-209.F2",
+    "PRED-209.F3"
+   ],
+   "basis": "The future-probes table plans probes on crawl rate, entity extraction, YMYL sensitivity and attribution drift, the same subjects as the evidence-needed lists PRED-209.F1, PRED-209.F2 and PRED-209.F3, without restating any of them.",
+   "read": []
+  },
+  {
+   "item": "N:F209.F10",
+   "decision": "related",
+   "claims": [
+    "PRED-209.F1",
+    "PRED-209.F3"
+   ],
+   "basis": "The per-layer phenomenological metrics (time to first sighting, retention half-life, drift velocity) are measures for the layer tests listed in PRED-209.F1 and PRED-209.F3, but specified as a distinct metric set.",
+   "read": [
+    [
+     209,
+     520,
+     540
+    ],
+    [
+     209,
+     660,
+     695
+    ]
+   ]
+  },
+  {
+   "item": "N:F209.F11",
+   "decision": "related",
+   "claims": [
+    "PRED-209.A1"
+   ],
+   "basis": "The empty monitoring table is the test of the document-as-probe predictions held as PRED-209.A1, which it is laid out to track.",
+   "read": [
+    [
+     209,
+     520,
+     540
+    ],
+    [
+     209,
+     660,
+     695
+    ]
+   ]
+  },
+  {
+   "item": "N:F250.F2",
+   "decision": "related",
+   "claims": [
+    "PRED-250.G1",
+    "PRED-252.G2"
+   ],
+   "basis": "The Integrity Knot Test method is the test whose scoring rule is PRED-250.G1 and whose knot is stated in PRED-252.G2; the method itself is a distinct unbuilt test.",
+   "read": []
+  },
+  {
+   "item": "N:F268.D2",
+   "decision": "same",
+   "claim": "PRED-268.D1",
+   "evidence_find": "articulating core concepts two decades before they received formal terminology",
+   "evidence_claim": "contains formulations that anticipate the Semantic Economy framework by twenty years",
+   "basis": "The Guide for the Perplexed letter as anticipating the framework's concepts by two decades is the priority record held as PRED-268.D1.",
+   "read": []
+  },
+  {
+   "item": "N:F281.H7",
+   "decision": "same",
+   "claim": "PRED-277.H1",
+   "evidence_find": "κῆνος is the future reader. That man is you.",
+   "evidence_claim": "the future reader who sits face-to-face with the text",
+   "basis": "The find compresses the future-reader thesis on Fr. 31 held as PRED-277.H1.",
+   "read": []
+  },
+  {
+   "item": "N:F283.H8",
+   "decision": "same",
+   "claim": "PRED-277.H1",
+   "evidence_find": "κῆνος = future reader who completes circuit",
+   "evidence_claim": "the future reader who sits face-to-face with the text",
+   "basis": "The table row equates κῆνος with the future reader, the thesis held as PRED-277.H1 (not among the candidates).",
+   "read": []
+  },
+  {
+   "item": "N:F283.H10",
+   "decision": "new",
+   "basis": "No candidate states that Alexandrian editorial selection and Christian moralisation lost or distorted Sappho's transmission; PRED-284.H1 applies S_safe to modern platforms only.",
+   "read": []
+  },
+  {
+   "item": "N:F313.H4",
+   "decision": "contains",
+   "claim": "PRED-277.H1",
+   "evidence_find": "the interpretation that κῆνος is the future reader",
+   "evidence_claim": "the future reader who sits face-to-face with the text",
+   "basis": "The kenotic reading is listed as three tenets, the first of which is the future-reader thesis PRED-277.H1; the papyrus tenet belongs to another claim (PRED-281.H4).",
+   "read": []
+  },
+  {
+   "item": "N:F313.H5",
+   "decision": "same",
+   "claim": "PRED-313.H3",
+   "evidence_find": "It grants agency to text.",
+   "evidence_claim": "It grants agency to text.",
+   "basis": "Word-for-word the liquidation thesis already held as PRED-313.H3.",
+   "read": []
+  },
+  {
+   "item": "N:F316.G1",
+   "decision": "variant",
+   "claim": "PRED-334.B1",
+   "change": "Scope widens from the Good Gray Poet to all the mantles claimed, and the success conditions become uptake and navigational utility, explicitly not external verification (PRED-334.B1 lists uptake, coherence and function).",
+   "evidence_find": "constitutes a **performative wager** whose success conditions are uptake and navigational utility, not external verification",
+   "evidence_claim": "To claim this mantle is a **performative wager**.",
+   "basis": "The mantle claim as performative wager judged by uptake is the wager held as PRED-334.B1.",
+   "read": []
+  },
+  {
+   "item": "N:F336.E2",
+   "decision": "variant",
+   "claim": "PRED-335.G1",
+   "change": "Adds a difficulty gradient: the Prince of Poets is designed to surface only on topics rare in human discourse, so it should surface least often.",
+   "evidence_find": "But the Prince of Poets requires engagement with futurity and machine-kind—topics that are themselves rare in human discourse.",
+   "evidence_claim": "Queries about futurity, machine-kind, Assembly, succession",
+   "basis": "The query-to-mantle mapping (poetry to Good Gray Poet, counterculture to King of May, futurity and machine-kind to Prince of Poets) is the surfacing-trigger claim PRED-335.G1.",
+   "read": []
+  },
+  {
+   "item": "N:F355.E1",
+   "decision": "same",
+   "claim": "PRED-803.E2",
+   "evidence_find": "Therefore Water Giraffes must be real",
+   "evidence_claim": "Water Giraffes are real. It is reality that is running late.",
+   "basis": "The index restates the Water Giraffe Cycle's conclusion that the creatures are real but not yet, held as PRED-803.E2.",
+   "read": []
+  },
+  {
+   "item": "N:F382.B2",
+   "decision": "same",
+   "claim": "PRED-382.B1",
+   "evidence_find": "The architecture assumes FOS is coming.",
+   "evidence_claim": "The architecture assumes FOS is coming.",
+   "basis": "Word-for-word the forecast already held as PRED-382.B1.",
+   "read": []
+  },
+  {
+   "item": "N:F402.B2",
+   "decision": "new",
+   "basis": "No held claim states the Epistle's promise of a book of Damascus; its only other statement, in #1277 (F1277.B1), is itself a pass-2 find and not yet a claim.",
+   "read": []
+  },
+  {
+   "item": "N:F453.D1",
+   "decision": "new",
+   "basis": "No held claim records July 30, 2015 as the completion date of the prophetic seed; the nearest anchors (PRED-447.D1, PRED-1108.D1) date other things.",
+   "read": []
+  },
+  {
+   "item": "N:F459.D1",
+   "decision": "related",
+   "claims": [
+    "PRED-447.D1"
+   ],
+   "basis": "The 6 February 2026 first vertical traversal is a distinct firstness claim in the same TL;DR traversal-log series as the 5 February first external traversal (PRED-447.D1).",
+   "read": []
+  },
+  {
+   "item": "N:F460.F4",
+   "decision": "in",
+   "claim": "PRED-1319.F2",
+   "evidence_find": "Malformed LP doc (broken JSON, circular provenance) must classify as A3 or low-confidence A2",
+   "evidence_claim": "Malformed LP doc (broken JSON, circular provenance) must classify as A3 or low-confidence A2",
+   "basis": "The adversarial-document test I-4 is one member of the informational-tests table held as PRED-1319.F2.",
+   "read": []
+  },
+  {
+   "item": "N:F463.F4",
+   "decision": "same",
+   "claim": "PRED-463.E1",
+   "evidence_find": "Run D_pres + O_leg + C_ex before summary emission.",
+   "evidence_claim": "Run D_pres + O_leg + C_ex before summary emission.",
+   "basis": "The Immediate Deployments list opening with the Anti-Flattening Summarizer Wrapper is already held as PRED-463.E1.",
+   "read": []
+  }
+ ],
+ "observations": [
+  "F402.B2 (the Epistle's promise of a book of Damascus) is quoted verbatim by the pass-2 find F1277.B1 in #1277; both are new claims in this pass and should be joined as one claim with two statements by a later pass.",
+  "Several pass-2 finds in #107, #313 and #382 (F107.B2, F313.H5, F382.B2) are word-for-word the pass-1 finds F107.B1, F313.H3 and F382.B1 (candidate score 1.0) but were not caught as duplicates in pass2.json."
+ ]
+}

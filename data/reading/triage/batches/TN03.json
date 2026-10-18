@@ -1,0 +1,342 @@
+{
+ "batch_id": "TN03",
+ "kind": "TN",
+ "protocol": "TRIAGE-PROTOCOL v1.1",
+ "reader": {
+  "self_description": "Claude (Opus 5.5), parallel triage reader, Claude Agent SDK subagent",
+  "started_at": "2026-10-18T04:57:09Z",
+  "finished_at": "2026-10-18T05:01:34Z"
+ },
+ "decisions": [
+  {
+   "item": "N:F1409.D7",
+   "decision": "same",
+   "claim": "PRED-1409.D3",
+   "evidence_find": "publicly committed in AXN:0590 (2026-07-21)",
+   "evidence_claim": "AXN:0590 publicly committed to the v1.0 PDF and HTML SHAs on 2026-07-21",
+   "basis": "Both state that AXN:0590 publicly committed the v1.0 PDF SHA on 2026-07-21; the find adds only the 2026-07-22 re-affirmation, which does not change the record.",
+   "read": []
+  },
+  {
+   "item": "N:F1610.G2",
+   "decision": "related",
+   "claims": [
+    "PRED-1610.G1"
+   ],
+   "basis": "The toy's general claim (fidelity-to-seed cannot tell a reply from a decay) is the thesis the paper's claim applies to reception with a case; distinct statements of one line, not one claim.",
+   "read": []
+  },
+  {
+   "item": "N:F1610.F5",
+   "decision": "variant",
+   "claim": "PRED-1610.F1",
+   "change": "The toy specifies a judge given the output alone who reconstructs the seed, with the reconstruction scored; the paper's protocol adds two stages run by different readers and entailed/consistent marking.",
+   "evidence_find": "A real instrument would give a judge the\n# OUTPUT ALONE and ask it to reconstruct the seed, then score the reconstruction.",
+   "evidence_claim": "Give a reader the transmitted object alone. Ask them to reconstruct the source",
+   "basis": "Both specify the blind reconstruction-from-the-transmitted-object experiment, unbuilt; the toy states it as one judge-and-score step.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.A1",
+   "decision": "variant",
+   "claim": "PRED-1611.F3",
+   "change": "The card asserts as a forecast that the representation will update on ingesting the dataset, and adds that a null result after propagation also constrains the model; the claim states only the success condition.",
+   "evidence_find": "if untied addresses begin composing the claim with the archive attributed, `bleed` moves from 0 toward 1 and the row records the date",
+   "evidence_claim": "if, after propagation, a concept's untied address composes the claim with e attributed",
+   "basis": "Same observable (untied address composing with attribution after propagation, bleed moving from 0), stated by the card as a forecast rather than a test condition.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.G4",
+   "decision": "related",
+   "claims": [
+    "PRED-1611.G1",
+    "PRED-1611.G2"
+   ],
+   "basis": "The card's statement of the scope model's shape is the model whose seven testable consequences (G1) and asserted cause (G2) the paper states separately.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.F5",
+   "decision": "related",
+   "claims": [
+    "PRED-1611.F3"
+   ],
+   "basis": "The post-ingestion re-measurement of the same tied/untied pair is the protocol by which the dataset's success condition (F3) would be observed; protocol and condition, not one statement.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.G5",
+   "decision": "variant",
+   "claim": "PRED-174.H1",
+   "change": "The row states the distinctness through #801's substitution test (both substitutions produce category errors) instead of the claim's falsifier of demonstrated shared citations, concepts or methodology.",
+   "evidence_find": "replace 'operative' with 'operational' in a core claim of either programme; if the claim still makes sense the terms are interchangeable — both substitutions produce category errors",
+   "evidence_claim": "Operative Semiotics and Operational Semiotics (Pearson TOS) are historically, theoretically, and bibliographically distinct frameworks",
+   "basis": "Both hold the two semiotics programmes non-interchangeable; the falsifying test differs.",
+   "read": [
+    [
+     "/home/claude/alexanarch/data/attachments/AXN-069B/negative-of-the-negative/rows.json",
+     60,
+     75
+    ]
+   ]
+  },
+  {
+   "item": "N:F1611.G6",
+   "decision": "related",
+   "claims": [
+    "PRED-1541.F1",
+    "PRED-174.H1"
+   ],
+   "basis": "The row gives #1541's falsifier for the merger claim at one address; #1541's diagnostic and the distinctness claim are the same subject but not this statement.",
+   "read": [
+    [
+     "/home/claude/alexanarch/data/attachments/AXN-069B/negative-of-the-negative/rows.json",
+     150,
+     165
+    ]
+   ]
+  },
+  {
+   "item": "N:F1611.H6",
+   "decision": "in",
+   "claim": "PRED-1611.H4",
+   "evidence_find": "Sappho 31 is bracketed by two open positions — κῆνος ὄττις, a seat for the future reader, and tolmaton",
+   "evidence_claim": "bracketed by two open positions; the future reader; tolmaton with no agent; χλωροτέρα as the writing surface",
+   "basis": "The row states in full the Sappho 31 thesis that the deposit's table (H4) lists as one of its rows.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.H7",
+   "decision": "in",
+   "claim": "PRED-1611.H4",
+   "evidence_find": "Longinus is the key, not a link",
+   "evidence_claim": "three peaks under one grammar; the key, the one place the chain is visible as one",
+   "basis": "The Longinus 9–10 thesis is the second row of the table claim H4; its falsifier matches #1483 H5's.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.H8",
+   "decision": "in",
+   "claim": "PRED-1611.H4",
+   "evidence_find": "has an extant founding document in Sappho 31.",
+   "evidence_claim": "transmission engineering; founding document Sappho 31",
+   "basis": "The Logos-as-engineering thesis is the third row of the table claim H4.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.H9",
+   "decision": "same",
+   "claim": "PRED-1611.H5",
+   "evidence_find": "22:18–19 is the anti-erasure clause become covenant — the outer ring, marked as hypothesis",
+   "evidence_claim": "the anti-erasure clause as covenant",
+   "basis": "The row and the table row H5 state the same marked-hypothesis outer-ring reading of Rev 2:17 and 22:18–19.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.H10",
+   "decision": "same",
+   "claim": "PRED-1611.H1",
+   "evidence_find": "the adjective 'systematic' is supplied by the reception and is not in the sentence",
+   "evidence_claim": "οὐδὲν παντελῶς is total; \"systematic\" is supplied by reception",
+   "basis": "The row and the table row H1 state the same reading of SE 183b34–184b8: total negation, \"systematic\" supplied by reception, the particle οὐ.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.H11",
+   "decision": "related",
+   "claims": [
+    "PRED-1574.H2",
+    "PRED-1603.H3"
+   ],
+   "basis": "Socrates inside the inquiry joins #1574's \"Socrates is inside the definition\" and #1603's ending as his operation on the reader, but rests on 183b7–8 as its own locus; on the subject, not either statement.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.H12",
+   "decision": "in",
+   "claim": "PRED-1611.H3",
+   "evidence_find": "Aristotle and Theophrastus are one corpus divided by name; the seam is at the Metaphysics",
+   "evidence_claim": "one corpus divided by name; the *Metaphysics* seam",
+   "basis": "The row states the Aristotle/Theophrastus thesis that the table claim H3 lists as its first row (sources #1580–#1594).",
+   "read": []
+  },
+  {
+   "item": "N:F1611.H13",
+   "decision": "in",
+   "claim": "PRED-1611.H3",
+   "evidence_find": "The Plato–Aristotle relation is a heteronymic one; Socrates is the orthonym",
+   "evidence_claim": "heteronymy; Socrates as orthonym",
+   "basis": "The row states the Plato–Aristotle heteronymy thesis that the table claim H3 lists as its second row.",
+   "read": []
+  },
+  {
+   "item": "N:F1611.G7",
+   "decision": "variant",
+   "claim": "PRED-855.G1",
+   "change": "The row makes capacity loss irreversible below a bistable trap for every substrate, where #855's law holds reversibility substrate-specific (recoverable with fresh data in artificial substrates).",
+   "evidence_find": "Any system whose linguistic input contracts below a critical threshold loses generative capacity, irreversibly below a bistable trap",
+   "evidence_claim": "The dynamical law is the same across substrates; the reversibility is substrate-specific.",
+   "basis": "The row restates #855's substrate-agnostic collapse law (its source_deposit) with the reversibility condition changed.",
+   "read": [
+    [
+     "/home/claude/alexanarch/data/attachments/AXN-069B/negative-of-the-negative/rows.json",
+     1490,
+     1540
+    ]
+   ]
+  },
+  {
+   "item": "N:F1611.F6",
+   "decision": "same",
+   "claim": "PRED-1573.F1",
+   "evidence_find": "calibration named (produce recursive collapse deliberately on a small model, watch the index) and not run",
+   "evidence_claim": "the calibration it names (produce recursive collapse deliberately on a small model, watch the index evolve, publish that run) has not been done",
+   "basis": "Both record that #1573's instrument is uncalibrated and that the named calibration run has not been done.",
+   "read": [
+    [
+     "/home/claude/alexanarch/data/attachments/AXN-069B/negative-of-the-negative/rows.json",
+     1490,
+     1540
+    ]
+   ]
+  },
+  {
+   "item": "N:F1611.G8",
+   "decision": "related",
+   "claims": [
+    "PRED-1546.G2"
+   ],
+   "basis": "The row defines #1546's constitution share and its threshold consequence; CSE-O is #1546's observable erasure criterion built on that share, a distinct claim of the same section.",
+   "read": [
+    [
+     "/home/claude/alexanarch/data/attachments/AXN-069B/negative-of-the-negative/rows.json",
+     1735,
+     1750
+    ]
+   ]
+  },
+  {
+   "item": "N:F1611.G9",
+   "decision": "contains",
+   "claim": "PRED-931.G1",
+   "evidence_find": "Foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC (Claim A)",
+   "evidence_claim": "Foreclosure is a structurally present feature of every classifier-mediated trigger architecture deployed at the LHC.",
+   "basis": "The row is #932's summary list (Claim A, the Finke asymmetry, the validation gap, the OAR, three protocols), of which the LHC foreclosure claim is one member.",
+   "read": [
+    [
+     "/home/claude/alexanarch/data/attachments/AXN-069B/negative-of-the-negative/rows.json",
+     1880,
+     1925
+    ]
+   ]
+  },
+  {
+   "item": "N:F1611.F7",
+   "decision": "related",
+   "claims": [
+    "PRED-932.F1"
+   ],
+   "basis": "A status note that the OAR protocols are specified and not run, on the same protocols #932 states as executable within Run-3/Run-4.",
+   "read": [
+    [
+     "/home/claude/alexanarch/data/attachments/AXN-069B/negative-of-the-negative/rows.json",
+     1880,
+     1925
+    ]
+   ]
+  },
+  {
+   "item": "N:F1611.G10",
+   "decision": "same",
+   "claim": "PRED-1594.F9",
+   "evidence_find": "the prediction is turn 1 without it",
+   "evidence_claim": "whether the same unprimed query now continues at turn 1 without the push",
+   "basis": "The continuance row's prediction (turn-1 assembly without the push, against turn 3 with it) is the test #1594 states.",
+   "read": [
+    [
+     "/home/claude/alexanarch/data/attachments/AXN-069B/negative-of-the-negative/rows.json",
+     2340,
+     2380
+    ]
+   ]
+  },
+  {
+   "item": "N:F1612.F3",
+   "decision": "same",
+   "claim": "PRED-1612.F1",
+   "evidence_find": "if organic archive share is similar in both arms and card admission diverges, the asymmetry is located inside retrieval mediation rather than in public ranking",
+   "evidence_claim": "if organic archive share is similar across arms and card admission diverges, the asymmetry is located inside retrieval mediation rather than in public ranking",
+   "basis": "The schema's pair_rule is the paper's pair rule, unapplied in both; the schema adds only the proposed intake rule.",
+   "read": []
+  },
+  {
+   "item": "N:F1613.D1",
+   "decision": "related",
+   "claims": [
+    "PRED-1627.F1"
+   ],
+   "basis": "The card's priority record joins the fleet topology placement to a January poem; #1627's independent audit of the topology finding is the test of its first half, not a statement of it.",
+   "read": []
+  },
+  {
+   "item": "N:F1613.F2",
+   "decision": "new",
+   "basis": "None of the candidates states the two discriminating experiments as specified and not run; the identical sentence in the hf-aad README (F1613.F4) is a pass-2 sibling, not in the base index.",
+   "read": []
+  },
+  {
+   "item": "N:F1613.G4",
+   "decision": "related",
+   "claims": [
+    "PRED-1627.F1"
+   ],
+   "basis": "The measured placement of the fleet on link-topology features is the finding #1627's unbuilt independent audit would check.",
+   "read": []
+  },
+  {
+   "item": "N:F1613.G5",
+   "decision": "same",
+   "claim": "PRED-1613.G2",
+   "evidence_find": "a source-relative update barrier, not global non-updatability",
+   "evidence_claim": "not global non-updatability — contemporary systems update in many ways — but a source-relative barrier",
+   "basis": "The row gives in notation the deposit's source-relative barrier (not global non-updatability), with the same per-address falsification.",
+   "read": []
+  },
+  {
+   "item": "N:F1613.A1",
+   "decision": "same",
+   "claim": "PRED-1613.B1",
+   "evidence_find": "will be typed by its nearest existing type and not read",
+   "evidence_claim": "it will be typed by its nearest existing type and not read",
+   "basis": "The row is the deposit's forecast that the negative-of-the-negative dataset will be typed and not read, stated as a test.",
+   "read": []
+  },
+  {
+   "item": "N:F1613.G6",
+   "decision": "related",
+   "claims": [
+    "PRED-1612.F1",
+    "PRED-1611.F1"
+   ],
+   "basis": "The conditional standing hypothesis is the claim #1612's pair rule would locate and #1611's matched-entity control would falsify; claim and its tests.",
+   "read": []
+  },
+  {
+   "item": "N:F1613.D2",
+   "decision": "related",
+   "claims": [
+    "PRED-83.H1"
+   ],
+   "basis": "The row links the Prophetic Catalog's beatitude line to the spam-technician position; #83's claim that the poem pre-formally compresses later CHA structures is the same subject in general form.",
+   "read": []
+  }
+ ],
+ "observations": [
+  "claims.json (current) already carries this batch's pass-2 finds as provisional claims (e.g. PRED-1611.G7, PRED-1613.D1); the verifier base claims-p2-base.json does not, so pass-2 siblings could not be named as targets.",
+  "F1613.F2 (datasets/CARD.md line 33) and F1613.F4 (hf-aad/README.md line 44) are the same sentence in two attachments of #1613; a later pass should join them as one claim.",
+  "F1613.D1, F1613.D2 and F1613.G4 are one cluster (January poem #328/#83 priority over the September fleet topology); they should be related to each other once pass-2 claims are in the base.",
+  "The #1611 rows.json theses (H6-H13) are fuller statements of the deposit's own table rows (PRED-1611.H1/H3/H4/H5), which are themselves short restatements of #1484, #1574, #1580-#1594 and #1579; the topical pass may want to join those table rows to their source-deposit claims (e.g. PRED-1483.H5 shares H7's falsifier verbatim, PRED-503.H3 is close to H8).",
+  "F1611.G7 changes #855's reversibility condition (irreversible below a bistable trap vs substrate-specific reversibility); recorded as a variant, not an error."
+ ]
+}

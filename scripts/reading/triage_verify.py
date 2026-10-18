@@ -24,8 +24,11 @@ def main():
     paths = {d['deposit']: d.get('path') for d in json.load(open(T / 'deposit-titles.json'))}
     # TN (pass 2): a claim's text is all its statements' quotes and falsifiers
     CL = {}
-    for c in json.load(open(T / 'claims.json'))['claims']:
+    base = T / ('claims-p2-base.json' if (T / 'claims-p2-base.json').exists() else 'claims.json')  # the claims the TN queue showed
+    for c in json.load(open(base))['claims']:
         CL[c['id']] = '\n'.join(Q.get(st['find'], '') for st in c['statements'])
+        for m in c.get('merged') or []:
+            CL.setdefault(m, CL[c['id']])
     q = {b['batch_id']: b for b in json.load(open(T / 'queue.json'))['batches']}
     bad_any = False
     for bid in sys.argv[1:]:

@@ -1,0 +1,77 @@
+{
+ "batch_id": "TCP03",
+ "kind": "TC",
+ "protocol": "TRIAGE-PROTOCOL v1.1",
+ "reader": {
+  "self_description": "Claude (Opus 5.5), Claude Code subagent, parallel triage reader",
+  "started_at": "2026-10-18T04:58:22Z",
+  "finished_at": "2026-10-18T04:59:50Z"
+ },
+ "decisions": [
+  {
+   "item": "C:F1201.C2",
+   "target_kind": "deposit",
+   "links": [],
+   "deposit": 1006,
+   "claimed": "came_true",
+   "evidence": [
+    {
+     "phrase": "He is the winner of numerous prizes, including fourteen Guggenheims and 10,000 MacArthur Genius Grants.",
+     "lines": [
+      7,
+      7
+     ]
+    }
+   ],
+   "basis": "The pointed-to 'Contributor Bio' of Pearl and Other Poems (2014) is seated as #1006 (restored 2026-05-25), whose l.7 carries the credential line that no find records (a poem); #1201 says the Knowledge Graph carried it forward on 25 May 2026 as the poem anticipated.",
+   "read": [
+    [
+     1201,
+     40,
+     99
+    ],
+    [
+     1006,
+     1,
+     37
+    ]
+   ]
+  },
+  {
+   "item": "C:F1263.C3",
+   "target_kind": "find",
+   "links": [
+    {
+     "find": "F1209.B8",
+     "claimed": "partly"
+    },
+    {
+     "find": "F1209.A1",
+     "claimed": "pending"
+    }
+   ],
+   "evidence": [
+    "the classification will have been operating as de facto law for years",
+    "is falsified by any of the following within twenty-four months of deposit"
+   ],
+   "basis": "The parent paper (#1209, DOI 10.5281/zenodo.20673413 as named in #1263 l.54) set its arc at 'years' of de facto operation and a twenty-four-month window; #1263 says the first marker fired within hours, so the timeline was outrun though the thesis held, and (l.97) the falsification clock continues.",
+   "read": [
+    [
+     1263,
+     1,
+     101
+    ],
+    [
+     1209,
+     127,
+     188
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "#762 (2026-05-26) seats the same Contributor Bio text as #1006 (2026-05-25); #1006 is linked as the earlier seating. Neither has finds.",
+  "#1263 restates #822 (same addendum; #822 has F822.C1/C2), and #194 restates #1209 (same paper; #194 carries F194.A1/B3 parallel to F1209.A1/B8/B3). Only #1209 was linked; restatement joins should carry the duplicates.",
+  "F1263.C3's 'months and years' arc is a paraphrase: no single find states it, and the nearest are F1209.B8 ('for years') and F1209.A1 (the 24-month window). F1121.C1/C2 (Pearl's 'the work would wait' wager) is a related claim a topical pass may join to F1201.C2's target."
+ ]
+}

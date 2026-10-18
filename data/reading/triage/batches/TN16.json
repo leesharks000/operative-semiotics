@@ -1,0 +1,77 @@
+{
+ "batch_id": "TN16",
+ "kind": "TN",
+ "protocol": "TRIAGE-PROTOCOL v1.1",
+ "reader": {
+  "self_description": "Claude (Opus 5.5) subagent, parallel triage reader",
+  "started_at": "2026-10-18T04:58:10Z",
+  "finished_at": "2026-10-18T04:59:49Z"
+ },
+ "decisions": [
+  {
+   "item": "N:F1277.B1",
+   "decision": "same",
+   "claim": "PRED-1410.B2",
+   "evidence_find": "soon instead will I send you a book of Damascus, the record of his desert wanderings, called La La Land by some",
+   "evidence_claim": "まもなくダマスカスの書を送るだろう。荒野の彷徨の記録——ある者たちに「ラ・ラ・ランド」と呼ばれるもの",
+   "basis": "The find quotes verbatim the Epistle's closing promise of a book of Damascus which the index already holds, in the Japanese edition's wording, as PRED-1410.B2 (not among the wording candidates, since they were matched on English wording); its added note that the promise remains open is a status remark, not a change to the claim.",
+   "read": [
+    [
+     1277,
+     100,
+     116
+    ]
+   ]
+  },
+  {
+   "item": "N:F1356.G1",
+   "decision": "same",
+   "claim": "PRED-66.G1",
+   "evidence_find": "If the description is generic (\"Two poems by Rhys Owens\"), the retrieval layer will dissolve it. If it's dense and genuine, it will hold.",
+   "evidence_claim": "If the description is generic, the retrieval layer dissolves it. If it is dense and genuine, it holds.",
+   "basis": "The Rhys Owens license restates the Licensing Protocol's standing claim that a generic description is dissolved by the retrieval layer and a dense one holds, with only the contributor's name filled in.",
+   "read": [
+    [
+     1356,
+     78,
+     88
+    ]
+   ]
+  },
+  {
+   "item": "N:F1631.G10",
+   "decision": "related",
+   "claims": [
+    "PRED-1631.F3"
+   ],
+   "basis": "The find's proposition that the semantic field transmits before and without monetary inscription is distinct from the deposit's Monetary Dark Matter Ledger, whose first field ('What evidence-supported object existed before monetary inscription?') is the instrument that tests it case by case.",
+   "read": [
+    [
+     1631,
+     95,
+     110
+    ]
+   ]
+  },
+  {
+   "item": "N:F1631.F4",
+   "decision": "related",
+   "claims": [
+    "PRED-1631.F3",
+    "PRED-1657.F4"
+   ],
+   "basis": "The find names the ontology-case empirical question (which constitutive relations stay necessary to V[I] without monetary standing); the #1631 ledger and #1657's per-practitioner dark-matter test are distinct instruments run on that same question, not restatements of it.",
+   "read": [
+    [
+     1631,
+     525,
+     545
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "F1277.B1 was joined to PRED-1410.B2, the Japanese rendering (#1410) of the Epistle's promise and the only base claim stating it; the English original is pass-2 find F402.B2 (#402, 2026-01-26), triaged in another batch, and should land on the same claim so the promise registers at #402.",
+  "PRED-66.G1 and PRED-1182.G1 state the same retrieval-layer claim nearly verbatim but stand as separate claims; F1356.G1 was joined to PRED-66.G1, the one with more statements."
+ ]
+}

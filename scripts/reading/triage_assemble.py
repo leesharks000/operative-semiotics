@@ -11,7 +11,12 @@ One CLAIM per group of finds that state the same thing:
   evidence   confirmation records (C) that link to any statement: who claims what came true or failed, and when
   related    claims a TE decision called 'related'
   aliases    register cards (data/predictions.json) and intake items (data/archive-intake.json) that a TR decision matched
-Finds whose quote is no longer in the current text (currency.json 'gone') are held out and listed.
+Finds whose quote is no longer in the current text (currency.json 'gone') are held out and listed, and so are finds read
+from a body the record repair replaced and kept as an appendix (superseded.json).
+Reading pass 2 (triage_pass2.py, 2026-10-18): its duplicates of finds already held are dropped (pass2.json); its
+restatements join mechanically (restatements-p2.json); each TN decision joins a pass-2 find to the claim it states
+(same, variant), places it as a member of a list claim or a list holding one (in, contains), relates it, or leaves it
+a new claim.
 C finds are evidence, not claims; a C that links to nothing in the archive stays in confirmations.json with its target.
 Only batches whose .verified.json says verified are used; the rest are listed as pending.
 USAGE  python3 scripts/reading/triage_assemble.py
@@ -139,7 +144,12 @@ def main():
             pending.append(b['batch_id'])
     cur = json.load(open(T / 'currency.json'))['finds']
     gone = sorted(i for i, v in cur.items() if v['state'] == 'gone')  # read from a body since replaced: held out, listed
-    par = {f['id']: f['id'] for f in F if f['shape'] != 'C' and f['id'] not in set(gone)}
+    sup = json.load(open(T / 'superseded.json'))['finds'] if (T / 'superseded.json').exists() else []
+    superseded = sorted({x['find'] for x in sup} - set(gone))  # in a replaced body kept as an appendix: held out, listed
+    p2 = json.load(open(T / 'pass2.json')) if (T / 'pass2.json').exists() else {'duplicates': {}}
+    dups = p2['duplicates']  # a pass-2 find quoting a passage a find already held quotes: not a new statement
+    out_ = set(gone) | set(superseded) | set(dups)
+    par = {f['id']: f['id'] for f in F if f['shape'] != 'C' and f['id'] not in out_}
 
     def g(i):
         while par[i] != i:
@@ -151,6 +161,16 @@ def main():
             par[g(a)] = g(b)
     for a, b, s in json.load(open(T / 'restatements.json'))['joins']:
         join(a, b)
+    if (T / 'restatements-p2.json').exists():
+        for a, b, s in json.load(open(T / 'restatements-p2.json'))['joins']:
+            join(a, b)
+    # a claim named by a TN decision is reached through one of its statements still in play
+    # the claims as the TN queue showed them (a copy taken when the queue was built), so later rebuilds resolve the same ids
+    prev = json.load(open(T / 'claims-p2-base.json'))['claims'] if (T / 'claims-p2-base.json').exists() else []
+    cfind = {c['id']: next((st['find'] for st in c['statements'] if st['find'] in par), None) for c in prev}
+    for c in prev:
+        for m in c.get('merged') or []:
+            cfind.setdefault(m, cfind[c['id']])
     variants, related, conf, alias, contains = {}, [], [], collections.defaultdict(list), []
     # a find linked 'same'/'variant' to two or more finds of one other deposit is a list holding them: its links are
     # 'contains', not joins (TE03 item 28, TE06 items 19 and 38: a ledger joined to one of its members)
@@ -182,6 +202,20 @@ def main():
                         variants[later] = {'change': d.get('change'), 'from': a if later == b else b, 'batch': bid}
                 elif d['decision'] == 'related':
                     related.append((a, b))
+            elif bid.startswith('TN'):
+                fid = it[2:]; dec = d['decision']
+                tgt = [cfind.get(c) for c in (d.get('claims') or [] if dec == 'related' else [d.get('claim')] if dec != 'new' else [])]
+                tgt = [t for t in tgt if t]
+                if dec in ('same', 'variant') and tgt:
+                    join(fid, tgt[0])
+                    if dec == 'variant':
+                        variants[fid] = {'change': d.get('change'), 'from': tgt[0], 'batch': bid}
+                elif dec == 'in' and tgt:
+                    contains.append((tgt[0], fid))
+                elif dec == 'contains' and tgt:
+                    contains.append((fid, tgt[0]))
+                elif dec == 'related':
+                    related.extend((fid, t) for t in tgt)
             elif bid.startswith('TC'):
                 cid = it[2:]; c = byid[cid]
                 conf.append({'confirmation': cid, 'deposit': c['deposit'], 'date': c.get('date'), 'quote': c['quote'],
@@ -213,6 +247,7 @@ def main():
                        'window': first.get('window') or None,
                        'statements': [{'find': i, 'deposit': byid[i]['deposit'], 'date': byid[i].get('date'),
                                        'lines': cur.get(i, {}).get('lines_now') or byid[i]['lines'], 'shape': byid[i]['shape'],
+                                       **({'attachment': byid[i]['unit'][2:].split('#')[0]} if str(byid[i].get('unit', '')).startswith('A:') else {}),
                                        **({'variant': variants[i]} if i in variants else {})} for i in mem],
                        'aliases': sorted({a['item'] for i in mem for a in alias.get(i, [])}),
                        'evidence': [], 'related': []})
@@ -231,18 +266,27 @@ def main():
                                          'claimed': l.get('claimed')})
     for c in claims:
         c['related'] = sorted(set(c['related']))
-        c['evidence'].sort(key=lambda e: e['date'] or '')
+        c['evidence'].sort(key=lambda e: (e['date'] or '', e['confirmation']))
+        # one record per deposit and outcome: pass 2 re-read some confirmation records pass 1 had judged (an attachment
+        # or a repaired text holding the same passage), and the copy adds nothing to the claim's evidence
+        seen_ev, ev = set(), []
+        for e in c['evidence']:
+            k = (e['deposit'], e.get('claimed'))
+            if k not in seen_ev:
+                seen_ev.add(k); ev.append(e)
+        c['evidence'] = ev
     claims, series = topical(claims, C, T, byid)
     claims.sort(key=lambda c: (c['registered'] or '9999', c['registered_in'], c['id']))
     by_tier = collections.Counter(c['tier'] for c in claims)
     summ = {'claims': len(claims), 'merged_by_topical': sum(len(c.get('merged') or []) for c in claims),
             'with_states': sum(bool(c.get('states')) for c in claims), 'series': len(series), 'by_tier': dict(by_tier), 'multi_statement': sum(len(c['statements']) > 1 for c in claims),
             'with_evidence': sum(bool(c['evidence']) for c in claims), 'with_register_alias': sum(bool(c['aliases']) for c in claims),
-            'confirmations': len(conf), 'held_out_gone': len(gone), 'batches_verified': sorted(done), 'batches_pending': pending}
+            'confirmations': len(conf), 'held_out_gone': len(gone), 'held_out_superseded': len(superseded),
+            'pass2_duplicates': len(dups), 'batches_verified': sorted(done), 'batches_pending': pending}
     json.dump({'what': 'Claims of the prediction triage: the sweep\'s 6162 finds grouped into claims, each registered at its '
                        'earliest statement. Built by scripts/reading/triage_assemble.py from finds.jsonl, restatements.json '
                        'and the verified judgment batches; protocol data/reading/TRIAGE-PROTOCOL.md.',
-               'summary': summ, 'held_out': gone, 'claims': claims}, open(T / 'claims.json', 'w'), ensure_ascii=False, indent=1)
+               'summary': summ, 'held_out': gone, 'held_out_superseded': superseded, 'claims': claims}, open(T / 'claims.json', 'w'), ensure_ascii=False, indent=1)
     obs = [{'batch': bid, 'observation': o} for bid, out in sorted(done.items()) for o in out.get('observations') or []]
     json.dump({'what': 'Observations the triage readers recorded for a later pass, by batch.', 'observations': obs},
               open(T / 'observations.json', 'w'), ensure_ascii=False, indent=1)

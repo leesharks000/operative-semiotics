@@ -127,7 +127,7 @@ in the candidate; the verifier also accepts a phrase from any of the claim's oth
 
 The nearest claims are found by wording; a claim restated in other words may not be among them. If you know the claim
 it states from elsewhere in the index, you may give a `claim` that is not a candidate. Look claims up in
-`data/reading/triage/claims.json`.
+`data/reading/triage/claims-p2-base.json` (the claims as this queue was built).
 
 Give `basis` in one sentence. `read` may name an attachment by its path: `[["/path/to/file", first, last]]`.
 

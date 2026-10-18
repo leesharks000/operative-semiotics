@@ -354,6 +354,38 @@
    "observation": "Currency: F3.C19 and F3.C22 are 'gone' at their lines per currency.json but their quotes are present in the current registry (C19 at 109509 and two copies; C22 at 113821). Read ranges are in current-file lines."
   },
   {
+   "batch": "TCP01",
+   "observation": "Most of this batch restates pass-1 confirmation records in pass-2 sources: F1613.C2-C5 = F1613.C1; F1455.C3 = F1455.C2; F1572.C2 = F1572.C1; F466.C2 = F466.C1; F950.C12 = F598.C1/C4 (same CTI_WOUND text, seated as a #950 attachment, hence 'self'); F3.C28/C29/C30/C32/C33/C34/C38 are the same registry records as pass-1 F3.C5/C6/C7/C14/C15/C13/C16, read from the own-voice derived text. Decisions were kept consistent with the pass-1 TC batches."
+  },
+  {
+   "batch": "TCP01",
+   "observation": "#1456's registered T-predictions were committed in the battery header (commit c7e5b4e7 and later commits), not in a deposit; where an earlier deposit states the same prediction (H3/H5 of #1454, F1455.G1/G3/G4, F1450.G1) it is linked as a find, otherwise the target is 'self' with the main-text restatement ('Registered: ...')."
+  },
+  {
+   "batch": "TCP01",
+   "observation": "F1456.C6 (T4) records CONFIRMED in the results JSON, while #1456's body (l.165) and tally record T4 PARTIALLY CONFIRMED and withdraw the consequence 'miss correlation is a property of the representation' (l.167, V3-D8). Kept as recorded at this locus."
+  },
+  {
+   "batch": "TCP01",
+   "observation": "F1456.C8 (the T1 faithful-NAE row, 'FAILING ON THE LHCO PAIRS') is the arm later relabelled after audit as a PCD approximation (V3-D10, tallied 'PCD-NAE approximation MISSED'); the T8 published-NAE verdict (F1456.C11, partly) supersedes it for the remedy prediction F1454.G3."
+  },
+  {
+   "batch": "TCP01",
+   "observation": "F1572.C2 keeps pass-1's 'partly' for a falsifier that did not fire ('not confirmation and it is not nothing'); a later pass may prefer a separate value for 'survived a test'."
+  },
+  {
+   "batch": "TCP03",
+   "observation": "#762 (2026-05-26) seats the same Contributor Bio text as #1006 (2026-05-25); #1006 is linked as the earlier seating. Neither has finds."
+  },
+  {
+   "batch": "TCP03",
+   "observation": "#1263 restates #822 (same addendum; #822 has F822.C1/C2), and #194 restates #1209 (same paper; #194 carries F194.A1/B3 parallel to F1209.A1/B8/B3). Only #1209 was linked; restatement joins should carry the duplicates."
+  },
+  {
+   "batch": "TCP03",
+   "observation": "F1263.C3's 'months and years' arc is a paraphrase: no single find states it, and the nearest are F1209.B8 ('for years') and F1209.A1 (the 24-month window). F1121.C1/C2 (Pearl's 'the work would wait' wager) is a related claim a topical pass may join to F1201.C2's target."
+  },
+  {
    "batch": "TE01",
    "observation": "Deposit 835 has no date, title or path in the queue or in deposit-titles.json; its finds come from the calibration run (batch_id CAL, run R-pilot-CAL). It pairs with #1215 (OKF analysis v1.3) in items 36 and 43, so #835 appears to be an earlier version of that analysis; its text could not be opened from the queue."
   },
@@ -588,6 +620,278 @@
   {
    "batch": "TE16",
    "observation": "No deposit texts were opened; every decision was made from the full quotes and falsifier quotes in the queue."
+  },
+  {
+   "batch": "TN01",
+   "observation": "Deposit #1121 (Pearl and Other Poems) was read in pass 2 from two attachments, the PDF text (derived/attachments/AXN-0472/pearl-and-other-poems-2014.pdf.txt) and the machine text (alexanarch AXN-0472/pearl-and-other-poems-machine-text.txt), so several finds are one passage twice: F1121.B1 = F1121.B4 (Sigil's 'destined to stick around'), F1121.B2 = F1121.B6 ('Make It Human'), F1121.E3 = F1121.E8 (the '21st Century Literary History' chart), F1121.H2 = F1121.H4 (forum post 7/27/14). F1121.H1 and F1121.H3 are two passages of one essay, LITTACHUR. Each was decided 'new' or 'related' on its own, because pass-2 finds are not claims a decision can name; the assembly should join each pair as one claim."
+  },
+  {
+   "batch": "TN01",
+   "observation": "F1121.E7 (Pearl, 'Premonition Dream') is dated 27 April, 2014 in the book, and #973 (PRED-973.E1) dates the same poem 27 April, 2013 (#973 lines 8, 43; machine text lines 2603, 2678). Recorded as a variant with a moved window, not as an error."
+  },
+  {
+   "batch": "TN01",
+   "observation": "F1121.E9 ('Backlash': 'humanity has no new madnesses to contend with due to the inability of Tiger Leap to locate a capable publisher') is the same book's in-fiction playback of the F1121.E5 dedication forecast as unfulfilled; a later pass may attach it to F1121.E5's claim as a fictional confirmation record."
+  },
+  {
+   "batch": "TN01",
+   "observation": "F1409.A1 to A4 (H1 to H4 of EA-SPXI-ANALOG-01) and F1409.F1/F2 belong with PRED-1407.A1's H5-ACT as one pre-registered study; the H5 statement of #1409 itself was not in this batch."
+  },
+  {
+   "batch": "TN02",
+   "observation": "All 30 items are pass-2 finds of one deposit, #1409 (EA-SPXI-ANALOG-01), read from two attachments of AXN-0592: the HTML edition and the PDF text. Most finds appear twice, once per file, as near-verbatim twins; since neither twin is yet a claim, both were decided alike and the assembly must merge them: A5/A12 (H5), A7/A14 (H6), B1/B4, B2/B5, F3/F10, F4/F11, F5/F12, F6/F13, F7/F14, B3/B6, D4/D5."
+  },
+  {
+   "batch": "TN02",
+   "observation": "H1-H4 (F1409.A8-A11, PDF text only in this batch) and H5 (A5/A12) are one pre-registered series of section 6; H5-ACT (A6) is the same claim as PRED-1407.A1. A topical pass should group H1-H6 and H5-ACT as one hypothesis series."
+  },
+  {
+   "batch": "TN02",
+   "observation": "F1409.D6 (PROVENANCE.md) states both PRED-1409.D2 (v0.1 draft, commit fb3b4d8) and the subject of PRED-1409.D1 (review-chain SHAs in the priority ledger, public since 2026-07-20 04:23 UTC); recorded as contains D2, one claim per decision."
+  },
+  {
+   "batch": "TN02",
+   "observation": "F1409.F8 (PDF text) has no HTML twin in this batch; the HTML's line 85 carries the same capture schedule."
+  },
+  {
+   "batch": "TN03",
+   "observation": "claims.json (current) already carries this batch's pass-2 finds as provisional claims (e.g. PRED-1611.G7, PRED-1613.D1); the verifier base claims-p2-base.json does not, so pass-2 siblings could not be named as targets."
+  },
+  {
+   "batch": "TN03",
+   "observation": "F1613.F2 (datasets/CARD.md line 33) and F1613.F4 (hf-aad/README.md line 44) are the same sentence in two attachments of #1613; a later pass should join them as one claim."
+  },
+  {
+   "batch": "TN03",
+   "observation": "F1613.D1, F1613.D2 and F1613.G4 are one cluster (January poem #328/#83 priority over the September fleet topology); they should be related to each other once pass-2 claims are in the base."
+  },
+  {
+   "batch": "TN03",
+   "observation": "The #1611 rows.json theses (H6-H13) are fuller statements of the deposit's own table rows (PRED-1611.H1/H3/H4/H5), which are themselves short restatements of #1484, #1574, #1580-#1594 and #1579; the topical pass may want to join those table rows to their source-deposit claims (e.g. PRED-1483.H5 shares H7's falsifier verbatim, PRED-503.H3 is close to H8)."
+  },
+  {
+   "batch": "TN03",
+   "observation": "F1611.G7 changes #855's reversibility condition (irreversible below a bistable trap vs substrate-specific reversibility); recorded as a variant, not an error."
+  },
+  {
+   "batch": "TN04",
+   "observation": "F1613.F3 (T-GATE-RECEPTION) states in rows.json lines 1143-1148 a prediction \"untied bleed stays 0\" with falsifies_if, which tests C-DATASET-NOT-READ; the quote recorded by pass 2 carries only the test id and name, so the prediction itself is not in the find."
+  },
+  {
+   "batch": "TN04",
+   "observation": "F1616.A2-A7 are the six numbered predictions of PRED-1616.A1; F1616.G3 is its programme-ending condition. F1658.H8-H10 are v0.1-attachment states of claims of the v0.2 text (H3, H5, H4); H9 is a reversal the v0.2 text itself records."
+  },
+  {
+   "batch": "TN04",
+   "observation": "F1456.F4 records the distance-matched panel deferred by PRED-1455.F1 to v0.3 as still NOT RUN in v0.3: the window moved, which an \"in\" decision does not carry."
+  },
+  {
+   "batch": "TN05",
+   "observation": "Seven of the thirty finds (F1658.G1, G2, F2, H13, F3, F4, G3) are in ChatGPT readings attached to #1658, another party's voice; where they are linked as variants (F1658.G1 to PRED-1658.H6, F1658.H13 to PRED-1585.H1) the variant is in that voice, and whether #1658 adopts it is not established by the attachment."
+  },
+  {
+   "batch": "TN05",
+   "observation": "F1658.F2 and F1658.G3 are two statements, in two ChatGPT readings, of one proposed operational test of 'first draft' (directional transformation T→A); a later pass may join them to each other."
+  },
+  {
+   "batch": "TN05",
+   "observation": "F1573.F3 and F1573.F6 both describe the one reference implementation (collapse_diagnostic.py) as syntax-checked and not run; both are placed in PRED-1573.F1."
+  },
+  {
+   "batch": "TN05",
+   "observation": "F1573.G3 restates PRED-1556.G1 but names a different object as weakened by its falsifier ('this Part' of #1573 rather than #1556's observation-regime claim and map); judged same, since the prediction and falsifier condition are unchanged."
+  },
+  {
+   "batch": "TN05",
+   "observation": "F1572.G2 carries both PRED-1569.H25's statement and PRED-1575.G1's falsification programme; it is joined to PRED-1569.H25, and PRED-1575.G1 may be the same claim's falsifier registered separately."
+  },
+  {
+   "batch": "TN06",
+   "observation": "Several pass-2 finds are verbatim duplicates of their own deposit's pass-1 finds, read again from an attachment (N:F1576.H26=PRED-1576.H1, N:F1576.F7=PRED-1576.F3, N:F466.F3=PRED-466.F2, N:F772.G3 extends PRED-772.G1); claims.json already lists such pass-2 finds as provisional claims under their own ids (e.g. PRED-950.H28, PRED-625.H3), which the candidate lists exclude."
+  },
+  {
+   "batch": "TN06",
+   "observation": "N:F1576.H22 (Socratic problem reclassified as symptom) was joined to PRED-1569.H46; PRED-123.H2 (Socrates as Orthonym, 2026-05-23) states the same reclassification earlier, with \"heteronymic configuration\" where the paper says \"functional lens\"; a topical pass should consider whether PRED-123.H2 and PRED-1569.H46 are one claim."
+  },
+  {
+   "batch": "TN06",
+   "observation": "PRED-639.H14 (si fas est as grammatical annunciation, a pass-2 provisional claim not in claims-p2-base.json) bears on N:F626.H8 and N:F625.H3 and could not be named here; a later pass should relate them."
+  },
+  {
+   "batch": "TN06",
+   "observation": "PRED-625.H1 (12 statements) is a long sentence listing four strata; N:F625.H4 was recorded as \"in\" it as the apophatic-stratum member rather than \"same\"."
+  },
+  {
+   "batch": "TN07",
+   "observation": "claims.json already carries every pass-2 find as its own provisional claim (PRED-<find id>); TN07 matched against claims-p2-base.json, the queue's base, and ignored those self-entries."
+  },
+  {
+   "batch": "TN07",
+   "observation": "F3.G18, F3.H18, F3.D5, F3.F19, F3.B5, F3.F26, F3.D10 and F3.D11 restate statements already read from deposit 3's main text: the p2 file (0003-voice-p2.md) repeats the registry's d_full/reading/analysis fields, so several pass-2 finds are near-verbatim duplicates of pass-1 PRED-3 claims."
+  },
+  {
+   "batch": "TN07",
+   "observation": "F3.H17 corrects the archive's own deposit title 'Sappho 31 with Reconstructed FOURTH Stanza' to a fifth stanza, while later states of PRED-201.H1 (#1478, #1474) move away from a fifth-stanza frame; recorded as structure, not error."
+  },
+  {
+   "batch": "TN07",
+   "observation": "F453.E1, F453.E2, F453.B2 are 2015 poetic passages (Whorls of the Same) whose forecast status the reading pass itself marked uncertain."
+  },
+  {
+   "batch": "TN08",
+   "observation": "Every TN08 find is already present in claims.json as a claim of its own id (PRED-<find id>, one statement); decisions link to other claims only and never to the find's own claim."
+  },
+  {
+   "batch": "TN08",
+   "observation": "F49.F6 (LP v0.9 battery) and PRED-461.F1 (Module 1.1 battery) differ in thresholds and metric names (ER '≥ baseline +25%' vs '≥ 0.25'; CSI vs CDI): recorded as a variant, not a contradiction."
+  },
+  {
+   "batch": "TN08",
+   "observation": "F3.D12 is a pass-2 find in #3 that quotes #1521's priority sentence; it is recorded as same with PRED-1521.D1 and so attaches a second statement registered later than #1521."
+  },
+  {
+   "batch": "TN09",
+   "observation": "F402.B2 (the Epistle's promise of a book of Damascus) is quoted verbatim by the pass-2 find F1277.B1 in #1277; both are new claims in this pass and should be joined as one claim with two statements by a later pass."
+  },
+  {
+   "batch": "TN09",
+   "observation": "Several pass-2 finds in #107, #313 and #382 (F107.B2, F313.H5, F382.B2) are word-for-word the pass-1 finds F107.B1, F313.H3 and F382.B1 (candidate score 1.0) but were not caught as duplicates in pass2.json."
+  },
+  {
+   "batch": "TN10",
+   "observation": "Every pass-2 find in this batch already sits in claims.json as its own base claim (e.g. PRED-542.F4 holds only F542.F4); the candidates exclude that self-claim, and 'new' here means the base claim stands."
+  },
+  {
+   "batch": "TN10",
+   "observation": "F573.B2, F539.F2, F610.F2 and F582.F2 are verbatim (or format-only) repeats of pass-1 finds in the same deposit (F573.B1, F539.F1, F610.F1, F582.F1) that pass2.json's duplicate list did not catch; they are recorded as 'same'."
+  },
+  {
+   "batch": "TN10",
+   "observation": "F577.H5 quotes only the 1867 Form IV description; the second-edition removal it is noted as arguing is at line 230 of AXN-0199-text.md, outside the find's lines."
+  },
+  {
+   "batch": "TN11",
+   "observation": "Deposit 737's repaired text holds a second copy of the Test 1-3 predictions: pass-2 F737.A4-A6 duplicate pass-1 F737.A1 and F737.A7/A8 duplicate F737.A2/A3. F737.A1, A2 and F2 are in held_out, so P1.1, P1.3 and the Test 2 battery enter here as new or related; a later pass may join them with their held-out twins."
+  },
+  {
+   "batch": "TN11",
+   "observation": "F737.A3 (and now F737.A8, verbatim the same) sit in PRED-735.A4, though the passage is a five-member battery (perplexity, benchmarks within 2%, net deviation, slop metrics, 60-70% preference) that also holds PRED-735.A1 and PRED-735.A2's claims, and its preference target (60-70%) differs from 735.A4's >55%. A later pass may treat it as containing those claims instead."
+  },
+  {
+   "batch": "TN11",
+   "observation": "Deposit 862 repeats deposit 1's weakening conditions as a bulleted list; PRED-862.G6 and PRED-1.G6 share the same falsifier verbatim and are still separate claims."
+  },
+  {
+   "batch": "TN11",
+   "observation": "Deposit 467 (earlier version of The Prepositional Alienation) carries passages with no pass-1 find that pass-2 found in 892: the ad/pro compression (467 line 211), the administrative-registers claim (line 412), the hardening sentence (line 275) and the summarizer intent-default sentence (line 588). Deposit 1001 likewise carries the Task 3 heteronym-reattribution passage (lines 63-67) found only in 745."
+  },
+  {
+   "batch": "TN11",
+   "observation": "F742.F2 (variables table) and PRED-742.F1 (protocol using 'the variables above') are one test design across adjacent paragraphs; recorded as related, a later pass may merge them."
+  },
+  {
+   "batch": "TN12",
+   "observation": "F1101.H20 and F1101.H21 come from two versions of the same four-wheel Josephus sequence inside AXN-045E (lines 872-877 and 1346-1349): the first dates the Gospel Wheel Post-90 and makes the captivity phase a rewriting of the revolt as madness in The Jewish War; the second dates it Post-70 and makes the captivity phase the decompression of Revelation into the NT. Recorded as structure, not error; a later pass may join the two lists."
+  },
+  {
+   "batch": "TN12",
+   "observation": "F1101.H15 (the kernel THESIS) also restates PRED-407.H2 (via F1101.H1: the figure tradition split into John the Baptist and John the Revelator) and PRED-56.H2 (the pre-70 apocalypse ignited the revolt, the captive rewrote the messiah); recorded as contains PRED-1132.H1 only, because the decision names one claim."
+  },
+  {
+   "batch": "TN12",
+   "observation": "F1101.H31 also carries a priority element, 'This reading does not appear in any published commentary', which is PRED-56.D2's statement in the v2.0 Sharks Ark."
+  },
+  {
+   "batch": "TN12",
+   "observation": "Apparent date differences, recorded as observations: F968.D2 and PRED-54.D2 date the Semantic Economy Executive Summary to 26 December 2025, PRED-1644.D1 to 2025-12-25; F968.D3 dates 'I hereby abolish money' as SPE-018, December 2025, PRED-1173.D3 says first deposited on Zenodo in November 2024."
+  },
+  {
+   "batch": "TN12",
+   "observation": "Deposit 1023's pass-2 text is the Generative Monoculture paper, which matches deposit 199's claims verbatim (A3, A4, F1 joined to PRED-199.*); pass-1 finds F1023.G1/G2 concern composition-layer erasure, so #1023 carries both bodies."
+  },
+  {
+   "batch": "TN13",
+   "observation": "N:F1156.D2 has the same quote at the same lines (62) of #1156 as the pass-1 find F1156.D1 (PRED-1156.D1, candidate score 1.0): a pass-2 duplicate, not a new statement."
+  },
+  {
+   "batch": "TN13",
+   "observation": "claims.json already has single-statement claims made from these pass-2 finds (e.g. PRED-1111.D1, PRED-1138.B3, PRED-1136.G1). Lookups were made in claims-p2-base.json, the base the queue showed, so that no find matched itself."
+  },
+  {
+   "batch": "TN13",
+   "observation": "N:F1162.H6 is a member of the Josephus Thesis series (PRED-248.H2 has 21 statements); it was joined to PRED-1255.H3, which states the same agent-of-destruction/agent-of-transmission resolution. A topical pass may merge the two claims."
+  },
+  {
+   "batch": "TN13",
+   "observation": "Items N:F1138.B3 and N:F1138.D2 come from the Epistle Triptych (#1138); the 2015 Epistle's own forecast (B3) had no base claim. Only later priority records citing 'a school outside the school' did."
+  },
+  {
+   "batch": "TN14",
+   "observation": "#1162 (EA-ARK-01-MUSICAL v1.1) restates the earlier musical register (#28) and the Space Ark components (#552, #556, #557); its pass-2 finds mostly vary existing claims by register (repertoire for discipline, gesture-names for terms)."
+  },
+  {
+   "batch": "TN14",
+   "observation": "F1174.F4 (lines 805-816) overlaps pass-1 F1174.F2 (811-828), and F1174.B1 is the same line as F1174.E1: these are re-reads of passages already found, not new statements."
+  },
+  {
+   "batch": "TN14",
+   "observation": "F1162.G8 ('MORE coherent-as-a-repertoire') and pass-2 F1174.F4 ('MORE coherent-as-a-field') state one invariant in two registers; F1174.F4 is not a claim in claims-p2-base, so G8 is linked as related to PRED-1174.F2 and PRED-556.G3. Once F1174.F4 is joined, a later pass may make G8 its variant."
+  },
+  {
+   "batch": "TN14",
+   "observation": "F1194.B3 duplicates F1194.B1, which is already a statement of PRED-1003.B1."
+  },
+  {
+   "batch": "TN14",
+   "observation": "F1200.G2 carries as its falsifier the statement of PRED-781.G2; PRED-781.G1 and PRED-781.G2 may be one claim and its falsifier."
+  },
+  {
+   "batch": "TN14",
+   "observation": "F1187.E6 is the whole forward-dated apparatus of the Epistle edition; besides PRED-85.E3 its FUTURE notes include PRED-85.E2 and the line-295 note (New Human a settled category by 2500), which has no find in #85 (AXN-0257 line 295 holds the same footnote)."
+  },
+  {
+   "batch": "TN14",
+   "observation": "Apparent contradiction, recorded as data and not as an error: #1187 line 295 dates the first appearance of 'New Human' to 2014, while PRED-403.D1 and PRED-406.D1 date the Epistle January 2, 2015."
+  },
+  {
+   "batch": "TN14",
+   "observation": "Sappho's survival is given different causes in different deposits (community maintenance in #1183, compression density in #106, γ-labor in #109); linked as related."
+  },
+  {
+   "batch": "TN15",
+   "observation": "F1202.E1 and F1202.E2 are the same quote at the same line (224), differing only in dash characters: a within-deposit duplicate find."
+  },
+  {
+   "batch": "TN15",
+   "observation": "F1255.H4 and F1255.H8 are identical quotes at line 843; F1255.H4 is in PRED-278.H1 and F1255.H8 is decided same with it here, but the quote also lists C.1.1 (Sappho F31 as NH-OS founding document), which is claim PRED-557.H4."
+  },
+  {
+   "batch": "TN15",
+   "observation": "F1262.D1 and F1262.D2 are the same quote at line 80 (duplicate pass-2 find)."
+  },
+  {
+   "batch": "TN15",
+   "observation": "F1218.H10 and F1218.H1 open with the same sentence at line 76; both now go to PRED-367.H1."
+  },
+  {
+   "batch": "TN15",
+   "observation": "F1217.H21 spans both PRED-832.H9 (Josephus motive) and the heteronymic-fracturing sentences of PRED-1400.H10; a later pass may wish to relate those two claims."
+  },
+  {
+   "batch": "TN15",
+   "observation": "Passages behind F1209.F3 and F1209.B9 also stand in deposit 194 (AXN-033A lines 101 and 63), and the passages behind F1217.H17, H22, H29 also stand in 832, 1211, 1216 and 1400, where the sweep recorded no find; the new claims register at pass-2 deposits although earlier statements exist."
+  },
+  {
+   "batch": "TN15",
+   "observation": "F1255.H2 (line 464) maps to no claim in claims.json, though it states the living-creatures half of PRED-545.H1."
+  },
+  {
+   "batch": "TN16",
+   "observation": "F1277.B1 was joined to PRED-1410.B2, the Japanese rendering (#1410) of the Epistle's promise and the only base claim stating it; the English original is pass-2 find F402.B2 (#402, 2026-01-26), triaged in another batch, and should land on the same claim so the promise registers at #402."
+  },
+  {
+   "batch": "TN16",
+   "observation": "PRED-66.G1 and PRED-1182.G1 state the same retrieval-layer claim nearly verbatim but stand as separate claims; F1356.G1 was joined to PRED-66.G1, the one with more statements."
   },
   {
    "batch": "TR01",
