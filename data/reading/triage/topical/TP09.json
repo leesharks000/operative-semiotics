@@ -1,0 +1,366 @@
+{
+ "batch_id": "TP09",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5) subagent reader; model id claude-opus-5-5",
+  "started_at": "2026-10-18T01:34:55Z",
+  "finished_at": "2026-10-18T01:37:27Z"
+ },
+ "groups": [
+  {
+   "group": "TP09.1",
+   "reviewed": [
+    "PRED-302.B1",
+    "PRED-368.B1",
+    "PRED-395.F1",
+    "PRED-423.G1",
+    "PRED-497.B3",
+    "PRED-499.B1",
+    "PRED-502.H3",
+    "PRED-510.B2",
+    "PRED-513.B1",
+    "PRED-520.E10",
+    "PRED-534.B2",
+    "PRED-561.G3",
+    "PRED-567.F2",
+    "PRED-1169.G1",
+    "PRED-579.F2",
+    "PRED-585.F4",
+    "PRED-950.H15",
+    "PRED-610.H2",
+    "PRED-49.B5",
+    "PRED-677.G1",
+    "PRED-99.H1",
+    "PRED-99.H2",
+    "PRED-739.F2",
+    "PRED-746.F1",
+    "PRED-779.F2",
+    "PRED-782.B1",
+    "PRED-784.H2",
+    "PRED-167.A1",
+    "PRED-200.H1",
+    "PRED-3.F6",
+    "PRED-857.B1",
+    "PRED-920.F1",
+    "PRED-921.H1",
+    "PRED-934.F3",
+    "PRED-935.H4",
+    "PRED-1068.F1",
+    "PRED-1452.F1",
+    "PRED-1458.F1",
+    "PRED-1478.H5",
+    "PRED-1483.H10",
+    "PRED-1546.G3",
+    "PRED-1570.H5",
+    "PRED-1569.F13",
+    "PRED-1569.F4",
+    "PRED-1569.H34",
+    "PRED-1575.F4",
+    "PRED-1588.H2",
+    "PRED-1605.H2",
+    "PRED-1613.G1",
+    "PRED-1658.H7",
+    "PRED-1660.G3",
+    "PRED-1666.B4"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1588.H2",
+      "PRED-1605.H2"
+     ],
+     "basis": "The metadata packet and the First Draft notebook state one thesis about the seam: Theophrastus's Metaphysics fragment presupposes Λ 6–7 as achieved, names Λ 8's question as the next one, and contests Λ 8's method.",
+     "evidence": [
+      {
+       "claim": "PRED-1588.H2",
+       "phrase": "marks Λ 6–7 achieved, names Λ 8's question as the next question, contests Λ 8's method in Λ 8's own terms, and"
+      },
+      {
+       "claim": "PRED-1605.H2",
+       "phrase": "marks where the finished account ends (§6), asks the next question (§7), and contests the way the next chapter answered "
+      }
+     ]
+    },
+    {
+     "kind": "states",
+     "claims": [
+      "PRED-1569.F4",
+      "PRED-1569.H34"
+     ],
+     "change": [
+      "reversed: the notebook's later round (§186) withdraws the framing of loss as absence requiring explanation, and the comparative question of what distinguishes survivors from losses inverts to what each fragment is the designed remainder of"
+     ],
+     "basis": "The notebook's §5 poses survival versus loss as an empirical comparison, and its §186 says it had been treating the lost as absence requiring explanation and inverts the question.",
+     "evidence": [
+      {
+       "claim": "PRED-1569.F4",
+       "phrase": "What distinguishes what survived from what was lost, from the same period, in\n> the same t"
+      },
+      {
+       "claim": "PRED-1569.H34",
+       "phrase": "I have been treating lost, fragmentary, and titles-only as absence requiring explanatio"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1588.H2",
+      "PRED-1658.H7"
+     ],
+     "name": "Theophrastus asking the next question at Aristotle's joint",
+     "basis": "Both read a Theophrastan text as raising, under the other name, the next question at a joint in Aristotle's treatise (Metaphysics Λ 8; De anima III.5).",
+     "evidence": [
+      {
+       "claim": "PRED-1588.H2",
+       "phrase": "names Λ 8's question as the next question, contests Λ 8's method in Λ 8's own te"
+      },
+      {
+       "claim": "PRED-1658.H7",
+       "phrase": "The question put under the other name is the question of memory, asked at the joint."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-99.H1",
+      "PRED-99.H2"
+     ],
+     "name": "The Abraham Principle: counting against the constitutive one",
+     "basis": "One template in #99, applied first to Abraham's lapse and then to the prophetic tradition: the question 'how many?' applied where the reality is constitutive and binary.",
+     "evidence": [
+      {
+       "claim": "PRED-99.H1",
+       "phrase": "He asked \"how many are enough to outweigh?\" when the question is \"is there one who is?\""
+      },
+      {
+       "claim": "PRED-99.H2",
+       "phrase": "the question \"how many?\" obscures the answer \"one."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-739.F2",
+      "PRED-739.G4"
+     ],
+     "name": "Narrative-Field Semantic Deviation pre-registered predictions (P1–P5)",
+     "basis": "P4 and P5 are members of one pre-registered battery in the #739 test-bed design (restated verbatim in #1259 and #1376).",
+     "evidence": [
+      {
+       "claim": "PRED-739.F2",
+       "phrase": "**P5 (The third-path question).** "
+      },
+      {
+       "claim": "PRED-739.G4",
+       "phrase": "**P4 (Basin-escape rarity).** "
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-499.B1",
+      "PRED-499.H7",
+      "PRED-1326.H2"
+     ],
+     "name": "Autonomous Semantic Warfare",
+     "basis": "Three distinct claims from the ASW field manual (#499) and its expanded announcement (#1326): permanent plurality as the network's condition, the Enlightenment as a universal Σ_Meta, and the four-community fragmentation case.",
+     "evidence": [
+      {
+       "claim": "PRED-499.B1",
+       "phrase": "make permanent semantic hegemony structurally impossible"
+      },
+      {
+       "claim": "PRED-499.H7",
+       "phrase": "an attempt to construct a universal Σ_Meta "
+      },
+      {
+       "claim": "PRED-1326.H2",
+       "phrase": "Four communities. Four explanations."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-510.B1",
+      "PRED-510.B2"
+     ],
+     "name": "Semantic Physics convergence horizon: hitting ground",
+     "basis": "Both #510 claims turn on the same terminus: ontological competition and its governance layers run until something makes contact with ground outside the system.",
+     "evidence": [
+      {
+       "claim": "PRED-510.B1",
+       "phrase": "from depth of self-reference to *contact with ground*."
+      },
+      {
+       "claim": "PRED-510.B2",
+       "phrase": "how many layers deep the writing goes before something hits ground"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-610.H2",
+      "PRED-44.E1",
+      "PRED-611.E3"
+     ],
+     "name": "The signature on the currency and the Sharpie blot",
+     "basis": "Three distinct claims of one programme dated 2026-03-29 on the signature on the bill: the Thayer 'image and superscription' history, the Sharpie counter-operation, and the speculative history of the blot spreading.",
+     "evidence": [
+      {
+       "claim": "PRED-610.H2",
+       "phrase": "whose image and superscription is this?"
+      },
+      {
+       "claim": "PRED-44.E1",
+       "phrase": "the bill with the signature is received; the Sharpie is uncappe"
+      },
+      {
+       "claim": "PRED-611.E3",
+       "phrase": "By September the blot had crossed from protest art"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1569,
+     860,
+     889
+    ],
+    [
+     1569,
+     3485,
+     3519
+    ],
+    [
+     1605,
+     284,
+     319
+    ],
+    [
+     1588,
+     55,
+     64
+    ]
+   ],
+   "located": [
+    [
+     610,
+     18,
+     18
+    ],
+    [
+     610,
+     60,
+     60
+    ],
+    [
+     610,
+     107,
+     130
+    ],
+    [
+     44,
+     243,
+     243
+    ],
+    [
+     510,
+     118,
+     118
+    ],
+    [
+     510,
+     127,
+     127
+    ],
+    [
+     1569,
+     3743,
+     3743
+    ]
+   ]
+  },
+  {
+   "group": "TP09.2",
+   "reviewed": [
+    "PRED-233.B1",
+    "PRED-289.B1",
+    "PRED-293.H1",
+    "PRED-347.G3",
+    "PRED-362.H2",
+    "PRED-454.B1",
+    "PRED-1326.H2",
+    "PRED-499.H7",
+    "PRED-510.B1",
+    "PRED-511.H1",
+    "PRED-950.H26",
+    "PRED-44.E1",
+    "PRED-611.E3",
+    "PRED-616.H1",
+    "PRED-617.H1",
+    "PRED-649.E2",
+    "PRED-681.E1",
+    "PRED-739.G4",
+    "PRED-134.H4",
+    "PRED-784.B2",
+    "PRED-176.B1",
+    "PRED-832.H11",
+    "PRED-3.B2",
+    "PRED-864.H3",
+    "PRED-1067.F1",
+    "PRED-1094.B1",
+    "PRED-1427.G1",
+    "PRED-1468.F3",
+    "PRED-1485.H2",
+    "PRED-1486.H12",
+    "PRED-1490.F1",
+    "PRED-1527.G2",
+    "PRED-1540.B2",
+    "PRED-1549.F1",
+    "PRED-1569.H36",
+    "PRED-1569.H40",
+    "PRED-1668.H4",
+    "PRED-1671.F1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1485.H2",
+      "PRED-1527.G2"
+     ],
+     "name": "What a scalar cannot see: component profiles",
+     "basis": "One template applied to two subjects: a per-dimension score separates what a single scalar conflates (lineage erasure versus author erasure; conferral versus relevance).",
+     "evidence": [
+      {
+       "claim": "PRED-1485.H2",
+       "phrase": "The scalar cannot see this. **The dimensions can"
+      },
+      {
+       "claim": "PRED-1527.G2",
+       "phrase": "**That distinction is invisible to a scalar**"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": []
+  }
+ ],
+ "observations": [
+  "Apparent contradiction: PRED-499.B1 (2026-02-20) holds that the network makes permanent semantic hegemony structurally impossible and the condition permanent plurality, while PRED-510.B1 (2026-02-24) models a Phase 5 of forced convergence under total opacity. Recorded as observation, not reconciled.",
+  "PRED-1569.F4's question is restated in the reading copy #1575 (F1575.F3, same date 2026-08-31) after the notebook's §186 inverts it (PRED-1569.H34, lines 3501-3504); a later pass may want to check whether the reading copy carries the inversion anywhere.",
+  "PRED-134.H4 (differential survival of Sappho explained by transmission effectiveness) belongs with PRED-1569.F4 / PRED-1569.H34 (what distinguishes the surviving from the lost); left unlinked here because 134.H4 is a general lyric-survival thesis and the 1569 claims concern the Platonic–Aristotelian corpus.",
+  "PRED-857.B1 (Generative Monoculture: whether divergence is contracting) belongs with PRED-779.F2 (Diversity Contraction / the Ratchet's link 3); they are distinct claims of the same contraction line.",
+  "PRED-1427.G1 (recursive narrowing: classifier outputs become later training ground) and PRED-1540.B2 (the loss will be experienced as improvement) are related claims of the classifier-standing line; not linked as a series here.",
+  "Dating: PRED-1588.H2's packet (#1588, 2026-09-06) already states the seam finding whose derivation is in the First Draft notebook (#1605, registered 2026-09-10, §10 map at lines 285-318). The notebook accrued before deposit, so the packet's earlier date is plausible, but the earliest statement is the packet's."
+ ]
+}

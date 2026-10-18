@@ -1,0 +1,525 @@
+{
+ "batch_id": "TP16",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5), parallel reader subagent; read every claim in full from the queue; opened no deposit texts",
+  "started_at": "2026-10-18T01:35:25Z",
+  "finished_at": "2026-10-18T01:37:16Z"
+ },
+ "groups": [
+  {
+   "group": "TP16.1",
+   "reviewed": [
+    "PRED-1268.B1",
+    "PRED-517.B2",
+    "PRED-518.B1",
+    "PRED-530.B1",
+    "PRED-550.B2",
+    "PRED-581.B1",
+    "PRED-36.B1",
+    "PRED-36.G1",
+    "PRED-38.D1",
+    "PRED-38.G2",
+    "PRED-1173.F1",
+    "PRED-42.B1",
+    "PRED-621.B1",
+    "PRED-621.F2",
+    "PRED-622.F1",
+    "PRED-55.B2",
+    "PRED-644.F2",
+    "PRED-57.B2",
+    "PRED-657.B1",
+    "PRED-658.G1",
+    "PRED-659.B1",
+    "PRED-659.B2",
+    "PRED-660.G1",
+    "PRED-61.B2",
+    "PRED-670.B1",
+    "PRED-670.G2",
+    "PRED-671.B1",
+    "PRED-672.B1",
+    "PRED-673.G2",
+    "PRED-673.G3",
+    "PRED-1182.G1",
+    "PRED-1182.G2",
+    "PRED-66.G1",
+    "PRED-66.G2",
+    "PRED-980.B1",
+    "PRED-70.E1",
+    "PRED-689.E1",
+    "PRED-698.F1",
+    "PRED-699.F2",
+    "PRED-709.G1",
+    "PRED-710.G1",
+    "PRED-81.F1",
+    "PRED-731.B1",
+    "PRED-732.B1",
+    "PRED-173.G1",
+    "PRED-909.G1",
+    "PRED-1094.F4",
+    "PRED-1426.H1",
+    "PRED-1439.G1",
+    "PRED-1472.G1"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1268.B1",
+      "PRED-517.B2"
+     ],
+     "name": "Platform exclusion versus summarizer indexing",
+     "basis": "Both forecast that a platform's exclusion of the work (Medium's 410, a subreddit's refusal) does not stop the summarizer layer from indexing it.",
+     "evidence": [
+      {
+       "claim": "PRED-1268.B1",
+       "phrase": "Everything Medium suppresses becomes"
+      },
+      {
+       "claim": "PRED-517.B2",
+       "phrase": "The summarizer layer will index the work regardless of whether any particular subreddit hosts it"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-581.B1",
+      "PRED-659.B2"
+     ],
+     "name": "Closing retrieval-layer inscription window",
+     "basis": "Both forecast a closing window in which retrieval-layer inscription is still possible before the layer hardens or locks an entity snapshot, one for the individual scholar and one for a client brand.",
+     "evidence": [
+      {
+       "claim": "PRED-581.B1",
+       "phrase": "It is not guaranteed to remain open"
+      },
+      {
+       "claim": "PRED-659.B2",
+       "phrase": "The window for intervention is closing"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-658.G1",
+      "PRED-659.B1",
+      "PRED-66.G1",
+      "PRED-1182.G2"
+     ],
+     "name": "Genericization in the retrieval layer",
+     "basis": "One template applied to brands and to contributor descriptions: a generic entity or framing is dissolved in the retrieval layer, irreversibly once ingested.",
+     "evidence": [
+      {
+       "claim": "PRED-658.G1",
+       "phrase": "your brand ceases to exist as a distinct entity in the retrieval layer"
+      },
+      {
+       "claim": "PRED-659.B1",
+       "phrase": "Your brand becomes generic in the retrieval layer (R1)"
+      },
+      {
+       "claim": "PRED-66.G1",
+       "phrase": "If the description is generic, the retrieval layer dissolves it"
+      },
+      {
+       "claim": "PRED-1182.G2",
+       "phrase": "A generic framing cannot be un-genericized after the retrieval layer ingests it"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-173.G1",
+      "PRED-710.G1",
+      "PRED-673.G3"
+     ],
+     "name": "Mass asymmetry and entity collapse",
+     "basis": "One mechanism stated for terms, persons and competing entity definitions: the retrieval layer resolves toward the heavier, denser or higher-frequency neighbour and collapses the lighter one.",
+     "evidence": [
+      {
+       "claim": "PRED-173.G1",
+       "phrase": "the retrieval layer merges the provenanced term with the higher-frequency neighbor"
+      },
+      {
+       "claim": "PRED-710.G1",
+       "phrase": "Surface mass drives retrieval-layer confidence; the lighter footprint loses by default"
+      },
+      {
+       "claim": "PRED-673.G3",
+       "phrase": "the retrieval layer will prefer it"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-698.F1",
+      "PRED-699.F2",
+      "PRED-81.F1"
+     ],
+     "name": "Logotic Technique Catalogue and Concordance Engine",
+     "basis": "The Logotic Technique Catalogue's two versions specify the Basin Hardening Cycle and the Concordance Engine as future implementation, and the Concordance Engine v0.1.1 records the Cycle as deferred to Tier C.",
+     "evidence": [
+      {
+       "claim": "PRED-698.F1",
+       "phrase": "the <strong>Basin Hardening Cycle</strong> for retrieval-layer defense"
+      },
+      {
+       "claim": "PRED-699.F2",
+       "phrase": "**Defensive implementation — The Basin Hardening Cycle.**"
+      },
+      {
+       "claim": "PRED-81.F1",
+       "phrase": "Basin Hardening Cycle, Term Collision Audit"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-950.F10",
+      "PRED-657.B1",
+      "PRED-61.B2",
+      "PRED-928.E1",
+      "PRED-928.F2"
+     ],
+     "name": "Uptake latency windows",
+     "basis": "Each states or sets out to measure the latency between deposit and retrieval-layer or AI Overview uptake, with windows ranging from hours to 120 days.",
+     "evidence": [
+      {
+       "claim": "PRED-950.F10",
+       "phrase": "Wait 72 hours."
+      },
+      {
+       "claim": "PRED-657.B1",
+       "phrase": "Results typically appear in 60–120 days as retrieval-layer crawls update"
+      },
+      {
+       "claim": "PRED-61.B2",
+       "phrase": "as short as hours to days for high-authority domains"
+      },
+      {
+       "claim": "PRED-928.E1",
+       "phrase": "**Days 7–30 — The retrieval bridge: indexing.**"
+      },
+      {
+       "claim": "PRED-928.F2",
+       "phrase": "How long until AI Overview commentary appears?"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-50.G1",
+      "PRED-622.F1"
+     ],
+     "name": "Immanent execution",
+     "basis": "The Compression Arsenal's runtime-environment finding and the Immanent Execution paper's density-manipulation test concern the same phenomenon: the retrieval layer executing the archive's categories.",
+     "evidence": [
+      {
+       "claim": "PRED-50.G1",
+       "phrase": "the retrieval layer acts as a runtime environment"
+      },
+      {
+       "claim": "PRED-622.F1",
+       "phrase": "the frequency or fidelity of immanent execution"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": []
+  },
+  {
+   "group": "TP16.2",
+   "reviewed": [
+    "PRED-209.F8",
+    "PRED-247.B2",
+    "PRED-381.F1",
+    "PRED-596.B2",
+    "PRED-950.F10",
+    "PRED-50.G1",
+    "PRED-54.G2",
+    "PRED-968.G2",
+    "PRED-644.F1",
+    "PRED-1091.G1",
+    "PRED-1091.G2",
+    "PRED-1091.G3",
+    "PRED-65.G1",
+    "PRED-674.G1",
+    "PRED-687.B1",
+    "PRED-687.F1",
+    "PRED-72.F1",
+    "PRED-80.F1",
+    "PRED-740.F3",
+    "PRED-1379.B2",
+    "PRED-120.F1",
+    "PRED-1384.G1",
+    "PRED-135.F1",
+    "PRED-791.F1",
+    "PRED-173.F1",
+    "PRED-1400.F2",
+    "PRED-832.D6",
+    "PRED-833.F4",
+    "PRED-870.F1",
+    "PRED-927.B2",
+    "PRED-928.E1",
+    "PRED-928.F1",
+    "PRED-928.F2",
+    "PRED-1083.F1",
+    "PRED-1468.F1",
+    "PRED-1607.F1",
+    "PRED-1649.F1",
+    "PRED-1654.H1",
+    "PRED-1657.F2",
+    "PRED-1670.H5"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-65.G1",
+      "PRED-674.G1"
+     ],
+     "basis": "The manifesto compression restates the dialectical-fracture paper's claim that AI retrieval fixes an orthodoxy in 90-day cycles where Athanasius needed four centuries.",
+     "evidence": [
+      {
+       "claim": "PRED-65.G1",
+       "phrase": "What Athanasius took four centuries to consolidate, the AI Overview fixes in ninety-day cycles"
+      },
+      {
+       "claim": "PRED-674.G1",
+       "phrase": "Athanasius needed four centuries. The model needs three months."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-381.F1",
+      "PRED-968.G2",
+      "PRED-1384.G1",
+      "PRED-740.F3",
+      "PRED-135.F1"
+     ],
+     "name": "Index-to-composition suppression (ECS)",
+     "basis": "A line from the indexing-layer delta probe through the Semantic Economy case to the general ECS formalization, its cross-system falsification test and its standing monitoring: content indexed in search but excluded from AI composition.",
+     "evidence": [
+      {
+       "claim": "PRED-381.F1",
+       "phrase": "the selection criteria that cause content\n    to be indexed but not injected"
+      },
+      {
+       "claim": "PRED-968.G2",
+       "phrase": "Google can find the content. Google AI Mode chooses not to surface it."
+      },
+      {
+       "claim": "PRED-1384.G1",
+       "phrase": "Entity-Level Compositional Suppression (ECS)"
+      },
+      {
+       "claim": "PRED-740.F3",
+       "phrase": "should reproduce the suppression if the mechanism is at Google's composition layer"
+      },
+      {
+       "claim": "PRED-135.F1",
+       "phrase": "for entity collapse or compositional suppression"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-209.F8",
+      "PRED-644.F1",
+      "PRED-72.F1",
+      "PRED-173.F1",
+      "PRED-120.F1",
+      "PRED-1400.F2",
+      "PRED-833.F4",
+      "PRED-1083.F1",
+      "PRED-1607.F1"
+     ],
+     "name": "Cross-substrate query batteries",
+     "basis": "One template applied to different subjects: the same query battery run across several AI summarizer surfaces to compare their behaviour.",
+     "evidence": [
+      {
+       "claim": "PRED-209.F8",
+       "phrase": "Compare same query across all five substrates"
+      },
+      {
+       "claim": "PRED-644.F1",
+       "phrase": "Run a systematic set of queries across every available summarizer surface"
+      },
+      {
+       "claim": "PRED-72.F1",
+       "phrase": "Minimum 3 systems."
+      },
+      {
+       "claim": "PRED-173.F1",
+       "phrase": "Run a standard benchmark across Google AI Overview, ChatGPT search, Gemini, Perplexity, Claude web search"
+      },
+      {
+       "claim": "PRED-120.F1",
+       "phrase": "cross-platform comparison (Bing, Perplexity, Google AI Mode vs. AI Overview)"
+      },
+      {
+       "claim": "PRED-1400.F2",
+       "phrase": "Run the battery not only against Google but against all Assembly substrates"
+      },
+      {
+       "claim": "PRED-833.F4",
+       "phrase": "Cross-substrate comparison (ChatGPT, Claude, Gemini, Perplexity) remains future work"
+      },
+      {
+       "claim": "PRED-1083.F1",
+       "phrase": "run six-SIM check against Google AI Mode, ChatGPT search, Perplexity, Claude web search"
+      },
+      {
+       "claim": "PRED-1607.F1",
+       "phrase": "**ten runs per prompt per system**"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1091.G1",
+      "PRED-1091.G3",
+      "PRED-1091.G2"
+     ],
+     "name": "Click Collapse falsifiers",
+     "basis": "Three numbered falsifiers of the Click Collapse paper's mechanism, R1 and R2 claims.",
+     "evidence": [
+      {
+       "claim": "PRED-1091.G1",
+       "phrase": "**AI Overviews are neutral to organic CTR.**"
+      },
+      {
+       "claim": "PRED-1091.G3",
+       "phrase": "**Publisher revenue does not correlate with AI Overview appearance rates.**"
+      },
+      {
+       "claim": "PRED-1091.G2",
+       "phrase": "**Classical SEO restores citation share.**"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-687.F1",
+      "PRED-687.B1",
+      "PRED-1379.B2"
+     ],
+     "name": "Overview Watch",
+     "basis": "The Overview Watch extension and two entries of its development plan's risk register, across the plan's April and May versions.",
+     "evidence": [
+      {
+       "claim": "PRED-687.F1",
+       "phrase": "is a Chrome extension that gives creators real-time visibility"
+      },
+      {
+       "claim": "PRED-687.B1",
+       "phrase": "### 11.1 Google Changes AI Overview DOM Structure"
+      },
+      {
+       "claim": "PRED-1379.B2",
+       "phrase": "### 11.2 Google Blocks or Flags the Extension"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-927.B2",
+      "PRED-928.E1",
+      "PRED-928.F1",
+      "PRED-928.F2"
+     ],
+     "name": "Mandala SURFACE canonization",
+     "basis": "The Mandala SURFACE documents specify one feedback architecture from deposit to AI Overview reception, capture and commentary.",
+     "evidence": [
+      {
+       "claim": "PRED-927.B2",
+       "phrase": "deposit → AI surface reception → captured overview → commentary appended"
+      },
+      {
+       "claim": "PRED-928.E1",
+       "phrase": "the AI Overview surface becomes capable of generating commentary on the deposit when queried"
+      },
+      {
+       "claim": "PRED-928.F1",
+       "phrase": "The architecture monitors the public compression layer for outputs that reference the archive's deposits"
+      },
+      {
+       "claim": "PRED-928.F2",
+       "phrase": "Build the retrieval bridge and the feedback bridge"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-832.D6",
+      "PRED-1400.F2",
+      "PRED-870.F1"
+     ],
+     "name": "Revelation First reception battery",
+     "basis": "The Revelation First work plan's reception measurement, its substrate battery, and the 96 RF battery addresses still awaiting observation.",
+     "evidence": [
+      {
+       "claim": "PRED-832.D6",
+       "phrase": "No one has measured this before."
+      },
+      {
+       "claim": "PRED-1400.F2",
+       "phrase": "SURFACE (Google AIO) — the primary target, measured through captures"
+      },
+      {
+       "claim": "PRED-870.F1",
+       "phrase": "96 RF battery subjunctive addresses"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1649.F1",
+      "PRED-1654.H1",
+      "PRED-1657.F2"
+     ],
+     "name": "King of AEO contest",
+     "basis": "The King of AEO mantle object, the SPXI-AEO account of the fabricated coronation and the crystallization battery belong to one contest programme; the triage linked only the last two.",
+     "evidence": [
+      {
+       "claim": "PRED-1649.F1",
+       "phrase": "matched observations of every candidate at comparable addresses"
+      },
+      {
+       "claim": "PRED-1654.H1",
+       "phrase": "No such ceremony occurred."
+      },
+      {
+       "claim": "PRED-1657.F2",
+       "phrase": "*The battery owed for t₁*"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": []
+  }
+ ],
+ "observations": [
+  "Apparent contradiction: PRED-657.B1 (2026-04-14) gives retrieval-layer results as typically appearing in 60–120 days, while PRED-61.B2 (2026-04-17) says re-composition can occur within hours to days for high-authority domains; linked only as members of the series 'Uptake latency windows'.",
+  "PRED-50.G1 (group TP16.2, runtime-environment finding) belongs with PRED-622.F1 (group TP16.1, immanent execution test); linked as a series across groups.",
+  "PRED-120.F1 carries window '90-day', but its statement contains no 90-day term; the window may have been taken from elsewhere in deposit 120.",
+  "PRED-1094.F4 (signed-in/signed-out asymmetry hypotheses) bears on PRED-1657.F2's battery, which specifies signed-in and signed-out runs; not linked.",
+  "PRED-968.G2 and PRED-1384.G1 state one thesis at two scales (the Semantic Economy case and the general ECS definition); linked as series, not same, because the later statement generalizes rather than restates."
+ ]
+}

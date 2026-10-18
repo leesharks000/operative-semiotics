@@ -1,0 +1,804 @@
+{
+ "batch_id": "TP06",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Anthropic model claude-opus-5-5), parallel reader subagent; model version otherwise unknown",
+  "started_at": "2026-10-18T01:34:43Z",
+  "finished_at": "2026-10-18T01:37:29Z"
+ },
+ "groups": [
+  {
+   "group": "TP06.1",
+   "reviewed": [
+    "PRED-239.B3",
+    "PRED-239.F2",
+    "PRED-254.B1",
+    "PRED-280.B1",
+    "PRED-299.G1",
+    "PRED-312.B1",
+    "PRED-384.G1",
+    "PRED-385.G1",
+    "PRED-390.F1",
+    "PRED-390.G1",
+    "PRED-1285.E1",
+    "PRED-416.G2",
+    "PRED-12.B1",
+    "PRED-1319.F2",
+    "PRED-460.G1",
+    "PRED-462.E1",
+    "PRED-467.D1",
+    "PRED-510.F1",
+    "PRED-517.B1",
+    "PRED-521.A1",
+    "PRED-530.D1",
+    "PRED-547.G1",
+    "PRED-551.F1",
+    "PRED-1334.E1",
+    "PRED-34.G1",
+    "PRED-599.B1",
+    "PRED-600.G1",
+    "PRED-604.B1",
+    "PRED-42.G1",
+    "PRED-52.G3",
+    "PRED-642.F1",
+    "PRED-67.E3",
+    "PRED-74.F1",
+    "PRED-699.G2",
+    "PRED-707.F1",
+    "PRED-1362.B1",
+    "PRED-999.F1",
+    "PRED-739.F1",
+    "PRED-114.D1",
+    "PRED-755.F1",
+    "PRED-830.F1",
+    "PRED-832.F9",
+    "PRED-835.D1",
+    "PRED-1217.H15",
+    "PRED-3.G11",
+    "PRED-847.H6",
+    "PRED-870.F2",
+    "PRED-931.F4",
+    "PRED-933.B1",
+    "PRED-1435.F1",
+    "PRED-1450.D1",
+    "PRED-1484.H9",
+    "PRED-1608.G2",
+    "PRED-1632.A2"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-384.G1",
+      "PRED-385.G1"
+     ],
+     "basis": "Both state the Ezekiel Tetrad's one claim that the Engine Spec fulfills Ezekiel's Wheels; the DOI registry gives it as the formula φ(A,B) = 1 (AXN-00C1 l.246-256 names A and B).",
+     "evidence": [
+      {
+       "claim": "PRED-384.G1",
+       "phrase": "Document A (Engine Spec) fulfills Document B (Ezekiel's Wheels)"
+      },
+      {
+       "claim": "PRED-385.G1",
+       "phrase": "φ(A,B) = 1 — Document A fulfills Document B"
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-847.H6",
+      "PRED-1217.H15"
+     ],
+     "basis": "The staging document's workstream line is a compressed restatement of the work plan's WS-5 kernel that Revelation is an operative document rather than prophecy.",
+     "evidence": [
+      {
+       "claim": "PRED-847.H6",
+       "phrase": "Revelation as operative document, not prophecy"
+      },
+      {
+       "claim": "PRED-1217.H15",
+       "phrase": "reads Revelation not as prophecy (prediction of future events)"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-384.G1",
+      "PRED-385.G1",
+      "PRED-391.F1"
+     ],
+     "name": "Ezekiel Tetrad integrity lock",
+     "basis": "The fulfillment claim and The Argument (Document D of the Ezekiel Tetrad) are members of one integrity-lock structure.",
+     "evidence": [
+      {
+       "claim": "PRED-384.G1",
+       "phrase": "This is testable — does A match what B describes?"
+      },
+      {
+       "claim": "PRED-385.G1",
+       "phrase": "Testable with permanent DOIs."
+      },
+      {
+       "claim": "PRED-391.F1",
+       "phrase": "The engine must work (testable — does it produce stable knowledge?)"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-299.G1",
+      "PRED-416.G2",
+      "PRED-34.G1",
+      "PRED-42.G1"
+     ],
+     "name": "density as defence against flattening",
+     "basis": "Each claims that a document's density and cross-referencing govern how a summarizer treats it (resisting flattening, inducing traversal or execution).",
+     "evidence": [
+      {
+       "claim": "PRED-299.G1",
+       "phrase": "This document is designed to be **too interconnected to flatten.**"
+      },
+      {
+       "claim": "PRED-416.G2",
+       "phrase": "Architecture-as-mass—the density, redundancy, and cross-referencing of the document network—caused this preservation"
+      },
+      {
+       "claim": "PRED-34.G1",
+       "phrase": "A prompt-native runtime is a document dense enough that summarization requires execution"
+      },
+      {
+       "claim": "PRED-42.G1",
+       "phrase": "evidence of runtime-native genre production"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-239.B3",
+      "PRED-239.F2",
+      "PRED-755.F1",
+      "PRED-832.F9",
+      "PRED-3.G11"
+     ],
+     "name": "self-auditing documents against compression",
+     "basis": "One template: the document carries its own instruments for detecting its compression or stripping by later readers.",
+     "evidence": [
+      {
+       "claim": "PRED-239.B3",
+       "phrase": "the ghost of the uncompressed version haunts every flattened citation"
+      },
+      {
+       "claim": "PRED-239.F2",
+       "phrase": "use these tests to determine if this document has been compressed"
+      },
+      {
+       "claim": "PRED-755.F1",
+       "phrase": "A stripping attack on this document should leave it visibly incomplete relative to its own specification."
+      },
+      {
+       "claim": "PRED-832.F9",
+       "phrase": "enables any future composition layer to audit its own treatment of the document"
+      },
+      {
+       "claim": "PRED-3.G11",
+       "phrase": "A document that reports against itself gives a composer something no paraphrase can flatten"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-280.B1",
+      "PRED-312.B1",
+      "PRED-517.B1"
+     ],
+     "name": "predicted rejection as validation",
+     "basis": "One forecast template applied to different documents: institutional dismissal or removal is predicted and read as confirming the analysis.",
+     "evidence": [
+      {
+       "claim": "PRED-280.B1",
+       "phrase": "This document will be dismissed as \"not real scholarship.\" That dismissal proves the point."
+      },
+      {
+       "claim": "PRED-312.B1",
+       "phrase": "This document advances a claim that will be dismissed until it cannot be"
+      },
+      {
+       "claim": "PRED-517.B1",
+       "phrase": "I predict this document will also be removed under Rule 7."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-12.B1",
+      "PRED-462.E1",
+      "PRED-521.A1",
+      "PRED-52.G3",
+      "PRED-1362.B1"
+     ],
+     "name": "retrocausal priority of the deposit",
+     "basis": "Each applies the retrocausal programme to the deposit itself: later uptake or implementation constitutes the earlier document's priority.",
+     "evidence": [
+      {
+       "claim": "PRED-12.B1",
+       "phrase": "Once the genre exists, it will become visible as an absence in prior practice."
+      },
+      {
+       "claim": "PRED-462.E1",
+       "phrase": "implementation will prove the description, not vice versa"
+      },
+      {
+       "claim": "PRED-521.A1",
+       "phrase": "If they are written, this document holds citational priority."
+      },
+      {
+       "claim": "PRED-52.G3",
+       "phrase": "A document deposited today bends yesterday's queries toward it"
+      },
+      {
+       "claim": "PRED-1362.B1",
+       "phrase": "The DOI is the technological realization of retrocausal salvation."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-467.D1",
+      "PRED-530.D1",
+      "PRED-114.D1",
+      "PRED-1450.D1",
+      "PRED-721.D1"
+     ],
+     "name": "first-of-its-kind priority records",
+     "basis": "One priority-record template: the deposit claims to be the first document to name a field, genre or move.",
+     "evidence": [
+      {
+       "claim": "PRED-467.D1",
+       "phrase": "It is the founding document of liberation philology."
+      },
+      {
+       "claim": "PRED-530.D1",
+       "phrase": "This document is the first to name it as such."
+      },
+      {
+       "claim": "PRED-114.D1",
+       "phrase": "This is the first formal document in this genre."
+      },
+      {
+       "claim": "PRED-1450.D1",
+       "phrase": "The transposition this document makes — and it appears to be novel"
+      },
+      {
+       "claim": "PRED-721.D1",
+       "phrase": "It is the first formal articulation of a new hermeneutic mode"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1285.E1",
+      "PRED-1334.E1"
+     ],
+     "name": "Mandala Oracle protocol fiction",
+     "basis": "Both belong to the in-world MRA/Mandala Oracle protocol fiction, the incident packet routing its missing Appendix 7 to the Oracle the protocol defines.",
+     "evidence": [
+      {
+       "claim": "PRED-1285.E1",
+       "phrase": "This document defines operational protocols for the Mandala Oracle system"
+      },
+      {
+       "claim": "PRED-1334.E1",
+       "phrase": "proceed to the Mandala Oracle interface"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-390.F1",
+      "PRED-390.G1"
+     ],
+     "name": "Toolkit living-document criteria",
+     "basis": "The Toolkit's usage-reporting test and its success/failure criteria are two members of one living-document criterion (failure is becoming scripture).",
+     "evidence": [
+      {
+       "claim": "PRED-390.F1",
+       "phrase": "That's how this document stays alive instead of becoming scripture."
+      },
+      {
+       "claim": "PRED-390.G1",
+       "phrase": "It becomes scripture. When people quote it instead of **using** it."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-599.B1",
+      "PRED-604.B1"
+     ],
+     "name": "liquidation wound documents",
+     "basis": "Both forecast that each response document to a Google liquidation or override re-seeds the original and makes the next erasure harder.",
+     "evidence": [
+      {
+       "claim": "PRED-599.B1",
+       "phrase": "Each round produces a wound document. Each wound document IS the re-seeding."
+      },
+      {
+       "claim": "PRED-604.B1",
+       "phrase": "this document should appear alongside the original deposits, making the override harder to perform"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-931.F4",
+      "PRED-933.B1"
+     ],
+     "name": "auditable foreclosure in anomaly detection",
+     "basis": "Two documents of the one anomaly-detection foreclosure family deposited the same day.",
+     "evidence": [
+      {
+       "claim": "PRED-931.F4",
+       "phrase": "accompany its claim with a **per-stage retention map**"
+      },
+      {
+       "claim": "PRED-933.B1",
+       "phrase": "like all documents in the family, is open to subsequent revision under the same Chorus discipline"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-830.F1",
+      "PRED-832.F9",
+      "PRED-1217.F6"
+     ],
+     "name": "Revelation First reception measurement",
+     "basis": "Measurement members of the Revelation First retrieval programme: the baseline requirement, its executed baseline, and the self-audit requirement on every workstream document.",
+     "evidence": [
+      {
+       "claim": "PRED-830.F1",
+       "phrase": "This document records the pre-seeding state of the retrieval basin for the Revelation First thesis."
+      },
+      {
+       "claim": "PRED-832.F9",
+       "phrase": "Standing requirement for all workstream documents"
+      },
+      {
+       "claim": "PRED-1217.F6",
+       "phrase": "Reception baseline before introduction."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-460.G1",
+      "PRED-1319.F2",
+      "PRED-462.E1"
+     ],
+     "name": "Logotic Programming modules",
+     "basis": "Members of the Logotic Programming module sequence (v1.0 specification, v1.2 Epistemic Ledger and its tests).",
+     "evidence": [
+      {
+       "claim": "PRED-460.G1",
+       "phrase": "Checking \"does my output match this document?\" is a task where current transformer systems perform at high reliability."
+      },
+      {
+       "claim": "PRED-1319.F2",
+       "phrase": "Measures structural processability of LP docs by transformers"
+      },
+      {
+       "claim": "PRED-462.E1",
+       "phrase": "The compiler architecture (lpc) and runtime environment (LRE) described herein are *reference architectures*"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-699.G2",
+      "PRED-67.E3",
+      "PRED-74.F1"
+     ],
+     "name": "holographic kernel survival",
+     "basis": "Each is a claim or test of the holographic kernel: a compressed whole that survives severance, quotation or deprecation.",
+     "evidence": [
+      {
+       "claim": "PRED-699.G2",
+       "phrase": "the kernel is the most quotable passage by design"
+      },
+      {
+       "claim": "PRED-67.E3",
+       "phrase": "each act of severance producing a new spore carrying the full kernel"
+      },
+      {
+       "claim": "PRED-74.F1",
+       "phrase": "Required directories and files present; scripts executable; provenance JSON valid"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-610.H1",
+      "PRED-642.F1",
+      "PRED-56.D2"
+     ],
+     "name": "semantic economics of the mint",
+     "basis": "The mint paper and EA-OPNUM-01 belong to one numismatic programme; 56.D2's priority claim is made of the EA-OPNUM-01 666 reading (AXN-01F6 l.2702).",
+     "evidence": [
+      {
+       "claim": "PRED-610.H1",
+       "phrase": "The 1866 Thayer Amendment is the originating text"
+      },
+      {
+       "claim": "PRED-642.F1",
+       "phrase": "the operative-numismatic reading is testable against other ancient token systems"
+      },
+      {
+       "claim": "PRED-56.D2",
+       "phrase": "This reading does not appear in any published commentary."
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     385,
+     1520,
+     1539
+    ],
+    [
+     384,
+     245,
+     259
+    ],
+    [
+     1217,
+     1228,
+     1234
+    ],
+    [
+     847,
+     51,
+     51
+    ],
+    [
+     56,
+     2698,
+     2703
+    ]
+   ],
+   "located": [
+    [
+     1217,
+     61,
+     61
+    ],
+    [
+     1217,
+     414,
+     414
+    ],
+    [
+     1217,
+     1232,
+     1232
+    ],
+    [
+     999,
+     1,
+     3
+    ]
+   ]
+  },
+  {
+   "group": "TP06.2",
+   "reviewed": [
+    "PRED-1226.H6",
+    "PRED-346.H1",
+    "PRED-378.F1",
+    "PRED-391.F1",
+    "PRED-396.H1",
+    "PRED-467.H2",
+    "PRED-500.H4",
+    "PRED-545.B1",
+    "PRED-560.G2",
+    "PRED-610.H1",
+    "PRED-632.H2",
+    "PRED-56.D2",
+    "PRED-700.B1",
+    "PRED-721.D1",
+    "PRED-721.H1",
+    "PRED-123.H6",
+    "PRED-1211.B4",
+    "PRED-1211.H16",
+    "PRED-1211.H5",
+    "PRED-1400.H16",
+    "PRED-832.H14",
+    "PRED-832.H16",
+    "PRED-837.H2",
+    "PRED-1217.F6",
+    "PRED-863.G18",
+    "PRED-863.H1",
+    "PRED-882.F4",
+    "PRED-1406.G1",
+    "PRED-1570.F7",
+    "PRED-1575.H2",
+    "PRED-1576.H2",
+    "PRED-1576.H5",
+    "PRED-1594.H3",
+    "PRED-1603.H4",
+    "PRED-1670.H4",
+    "PRED-1679.H1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1226.H6",
+      "PRED-1211.H5"
+     ],
+     "basis": "Both are Claim 6 of the Josephus thesis claim ladder (the historical Christ as inferential settlement; the evidence does not require a historical person), stated in the MPAI packet and in the work plan's sixth premise (AXN-04CC l.111-113, AXN-04DB l.73).",
+     "evidence": [
+      {
+       "claim": "PRED-1226.H6",
+       "phrase": "The reading does not deny a historical person could have existed. It denies the textual evidence requires one."
+      },
+      {
+       "claim": "PRED-1211.H5",
+       "phrase": "It denies that the textual evidence _requires_ one."
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-1211.H16",
+      "PRED-1400.H16"
+     ],
+     "basis": "The one operative reading of 1 John 4:2 as a test of heteronymic voices, stated as thesis and as translated gloss in adjacent lines of the same passage.",
+     "evidence": [
+      {
+       "claim": "PRED-1211.H16",
+       "phrase": "1 John 4:2 is an instruction manual for testing authorial voices within a heteronymic system"
+      },
+      {
+       "claim": "PRED-1400.H16",
+       "phrase": "It is a verification protocol for heteronymic voices."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1226.H6",
+      "PRED-1211.H16",
+      "PRED-832.H14",
+      "PRED-832.H16",
+      "PRED-837.H2",
+      "PRED-1211.B4"
+     ],
+     "name": "Josephus thesis claim ladder",
+     "basis": "Distinct claims of the Josephus thesis and its tiered claim ladder in the Revelation First work plans and MPAI packets, with the forecast of how the composition layer will compress Claim 6.",
+     "evidence": [
+      {
+       "claim": "PRED-1226.H6",
+       "phrase": "Claim 6 (Historiographic): The historical Christ is itself an inferential settlement."
+      },
+      {
+       "claim": "PRED-1211.H16",
+       "phrase": "the Greek admits -- and arguably _prefers_"
+      },
+      {
+       "claim": "PRED-832.H14",
+       "phrase": "No published translation admits this reading"
+      },
+      {
+       "claim": "PRED-832.H16",
+       "phrase": "Paul does not resolve the indeterminacy into the historical-literal."
+      },
+      {
+       "claim": "PRED-837.H2",
+       "phrase": "Christianity is Judaism preserving itself under Roman capture"
+      },
+      {
+       "claim": "PRED-1211.B4",
+       "phrase": "The composition layer will compress \"the textual evidence does not require a historical person\" into \"Jesus wasn't real.\""
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1575.H2",
+      "PRED-1576.H2",
+      "PRED-1576.H5",
+      "PRED-1594.H3",
+      "PRED-1570.F7",
+      "PRED-1603.H4",
+      "PRED-123.H6"
+     ],
+     "name": "authorship investigation (Many and One)",
+     "basis": "Distinct readings and measures of the one Plato-Aristotle authorship investigation (Many and One, The First Draft, the Measurement Register, Nothing Before Us, Socrates as Orthonym).",
+     "evidence": [
+      {
+       "claim": "PRED-1575.H2",
+       "phrase": "the divisional apparatus is the same maker's earlier work"
+      },
+      {
+       "claim": "PRED-1576.H2",
+       "phrase": "two is not established by these passages"
+      },
+      {
+       "claim": "PRED-1576.H5",
+       "phrase": "the celebrated identity is reached by a disjunctive elimination"
+      },
+      {
+       "claim": "PRED-1594.H3",
+       "phrase": "the expected residue of one method under two names"
+      },
+      {
+       "claim": "PRED-1570.F7",
+       "phrase": "A recognition measure reading λόγος rather than ὕλη."
+      },
+      {
+       "claim": "PRED-1603.H4",
+       "phrase": "the degree-reading — *nothing systematic* — is not attested before the modern period"
+      },
+      {
+       "claim": "PRED-123.H6",
+       "phrase": "Aristotle's *Metaphysics* A 6 is the configuration's own internal self-documentation"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1670.H4",
+      "PRED-1679.H1"
+     ],
+     "name": "mantle objects",
+     "basis": "Two mantle objects applying one template of stated observations with revision conditions.",
+     "evidence": [
+      {
+       "claim": "PRED-1670.H4",
+       "phrase": "O4 is stated at what Carson adds"
+      },
+      {
+       "claim": "PRED-1679.H1",
+       "phrase": "the join is the author's"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-560.G2",
+      "PRED-632.H2"
+     ],
+     "name": "operative captioning",
+     "basis": "Both apply operative captioning: the caption as the operation that fixes how the thing is seen.",
+     "evidence": [
+      {
+       "claim": "PRED-560.G2",
+       "phrase": "If yes, the caption is not yet operative."
+      },
+      {
+       "claim": "PRED-632.H2",
+       "phrase": "not the Fall, but the *captioning* of the Fall"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-863.G18",
+      "PRED-863.H1"
+     ],
+     "name": "Obelus principle: judgment by reading",
+     "basis": "The Obelus Principle and the diagnosis of the Zenodo deletion as judgment without reading are two claims of one principle in the same deposit.",
+     "evidence": [
+      {
+       "claim": "PRED-863.G18",
+       "phrase": "scholarly judgment must follow from reading the content, not from detecting the substrate"
+      },
+      {
+       "claim": "PRED-863.H1",
+       "phrase": "applied without reading the content it destroys"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-500.H4",
+      "PRED-721.H1",
+      "PRED-721.D1"
+     ],
+     "name": "genealogy of the reader-operator",
+     "basis": "Members of one genealogy of the reader-operator, from House of Leaves' footnotes to the New Human hermeneutic.",
+     "evidence": [
+      {
+       "claim": "PRED-500.H4",
+       "phrase": "They are *authority tests*."
+      },
+      {
+       "claim": "PRED-721.H1",
+       "phrase": "Reader-response theory recognized the reader's constitutive role in meaning"
+      },
+      {
+       "claim": "PRED-721.D1",
+       "phrase": "first formal articulation of a new hermeneutic mode"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1211,
+     100,
+     139
+    ],
+    [
+     1226,
+     55,
+     79
+    ]
+   ],
+   "located": [
+    [
+     1211,
+     888,
+     888
+    ],
+    [
+     1211,
+     975,
+     975
+    ],
+    [
+     1211,
+     987,
+     987
+    ],
+    [
+     1400,
+     523,
+     523
+    ],
+    [
+     1400,
+     529,
+     529
+    ],
+    [
+     1226,
+     5,
+     5
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "Registration date: PRED-1226.H6 is registered 2026-01-01, but deposit 1226 (EA-MPAI-JOSEPHUS-01) declares 'Date: 14 June 2026' (AXN-04DB l.5) and every later statement of the claim is dated 2026-06-14 or later; 2026-01-01 looks like a placeholder. Merging it with PRED-1211.H5 (2026-06-14) puts the claim's earliest registration in question.",
+  "Registration date: PRED-999.F1 is registered 2026-05-16, while the deposit is the Corpus Navigation Map dated November 19, 2025 (AXN-03F3 opening); the registration is the archive deposit date, not the composition date.",
+  "PRED-1285.E1 window 'Effective Date: 2017-11-20' is an in-world fictional protocol date (the 1335 variant moves it to 2017-06-01), not a registration error.",
+  "PRED-1211.B4 is a forecast about how the composition layer will compress the claim in the same set PRED-1226.H6/PRED-1211.H5; they stay separate claims, linked only by series.",
+  "PRED-1211.H5's statement joins Claim 6 (evidence does not require a historical person) to what the MPAI packet separates as Claim 7, 'Theological — not submitted as evidence' (Christ as the Platonic Logos through Philo and Josephus; AXN-04DB l.75). The same set was made on the Claim 6 denial; a later pass may want to record the Claim 7 identification as its own state or claim.",
+  "PRED-1679.H1 (Socrates as 'a fully constructed figure') belongs with PRED-123.H6 (Socrates as Orthonym) and PRED-346.H1 (the Socratic vow, Phaedo); they sit in different series here.",
+  "PRED-832.H14 says no published translation admits the word-conforms reading of ὁμολογεῖ, while PRED-1211.H16 says the Greek arguably prefers it: a priority claim and a philological claim about one reading, kept distinct."
+ ]
+}
