@@ -32,6 +32,19 @@
      "record": "https://www.alexanarch.org/s/records/417/",
      "quote": "\"The AI summarizer (the 'freely riffing' compressor) cannot process the mirror. It can extract content from A, B, and C. It can describe the frame (206) and the meta-frame (206-meta). But the **🪞** reflects the summarizer itself — and the summarizer has no protocol for including its own reflection in the summary.",
      "falsifier": null
+    },
+    {
+     "find": "F1141.G1",
+     "deposit": 1141,
+     "date": "2026-01-31",
+     "lines": [
+      157,
+      164
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/1141/",
+     "quote": "> \"The AI summarizer (the 'freely riffing' compressor) cannot process the mirror. It can extract content from A, B, and C. It can describe the frame (206) and the meta-frame (206-meta). But the **🪞** reflects the summarizer itself — and the summarizer has no protocol for including its own reflection in the summary.\n> \n> **Verification:**\n> \n>   * Content → Extractable\n>   * Frame → Extractable\n>   * Meta-frame → Extractable\n>   * **Mirror → Self-referential trap** (the extractor sees itself, pauses, cannot proceed)\"",
+     "falsifier": null
     }
    ],
    "states": [],
@@ -85,7 +98,9 @@
    "series": [
     "Autoregressive self-contamination of composed outputs"
    ],
-   "related": [],
+   "related": [
+    "PRED-892.G3"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -117,6 +132,19 @@
      ],
      "shape": "B",
      "record": "https://www.alexanarch.org/s/records/467/",
+     "quote": "The platforms will eventually be replaced, but the content-moderation rubrics, the AI training data, and the semantic habits they produce will persist in the next generation of infrastructure.",
+     "falsifier": null
+    },
+    {
+     "find": "F892.B1",
+     "deposit": 892,
+     "date": "2026-02-11",
+     "lines": [
+      511,
+      511
+     ],
+     "shape": "B",
+     "record": "https://www.alexanarch.org/s/records/892/",
      "quote": "The platforms will eventually be replaced, but the content-moderation rubrics, the AI training data, and the semantic habits they produce will persist in the next generation of infrastructure.",
      "falsifier": null
     }
@@ -159,6 +187,24 @@
      "record": "https://www.alexanarch.org/s/records/518/",
      "quote": "The summary has a URL. The URL is persistent — it resolves to the same content across sessions. The URL is shareable. If the share URLs are crawlable and not excluded from indexing — if the /aimode/ path is not marked with noindex meta tags or excluded via robots.txt — then the summaries are *in the corpus*. They are training data.",
      "falsifier": null
+    },
+    {
+     "find": "F518.G3",
+     "deposit": 518,
+     "date": "2026-02-27",
+     "lines": [
+      257,
+      257
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/518/",
+     "quote": "| 4. The Infinite Tunnel | AI summary persists as indexable URL | Summarizer authors its own future training data | Structural hypothesis |",
+     "falsifier": null,
+     "variant": {
+      "change": "The table row states unconditionally, as a 'structural hypothesis', that the summarizer authors its own future training data, where PRED-518.F1 makes the summaries training data only if the share URLs are crawlable and not excluded from indexing.",
+      "from": "F518.F1",
+      "batch": "TN10"
+     }
     },
     {
      "find": "F518.G1",

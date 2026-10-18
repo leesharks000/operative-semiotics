@@ -127,6 +127,67 @@
    "merged": []
   },
   {
+   "id": "PRED-1175.F3",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-04-03",
+   "registered_in": 1175,
+   "registered_title": "THE COMPRESSION ARSENAL v2.0 — A Comprehensive Catalogue of Compression Technologies",
+   "record": "https://www.alexanarch.org/s/records/1175/",
+   "page": "https://www.operativesemiotics.org/predictions/drowning-test-and-sim-survival-probes#PRED-1175.F3",
+   "statement": "### 3.2 The Drowning Test — [P0: MVP]\n\nContent that fails naive summarization without loss of meaning. Run the content through a standard summarizer. If the summary captures the argument, the content is not dense enough. If it drowns — meaning is lost — the content has structural density sufficient to resist algorithmic liquidation.\n\n### 3.3 The Back-Projection Test — [P1]\n\nGiven a compressed form, can the original architecture be reconstructed? Back-projection yield ≥ 0.85 = non-lossy.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1175.F3",
+     "deposit": 1175,
+     "date": "2026-04-03",
+     "lines": [
+      131,
+      137
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1175/",
+     "quote": "### 3.2 The Drowning Test — [P0: MVP]\n\nContent that fails naive summarization without loss of meaning. Run the content through a standard summarizer. If the summary captures the argument, the content is not dense enough. If it drowns — meaning is lost — the content has structural density sufficient to resist algorithmic liquidation.\n\n### 3.3 The Back-Projection Test — [P1]\n\nGiven a compressed form, can the original architecture be reconstructed? Back-projection yield ≥ 0.85 = non-lossy.",
+     "falsifier": null,
+     "variant": {
+      "change": "The claim adds named tools, a minimum of 3 systems and a 5-prompt query set; the find pairs the test with the Back-Projection Test (yield ≥ 0.85).",
+      "from": "F72.F1",
+      "batch": "TN14"
+     }
+    },
+    {
+     "find": "F72.F1",
+     "deposit": 72,
+     "date": "2026-04-24",
+     "lines": [
+      136,
+      142
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/72/",
+     "quote": "**The Drowning Test** (Arsenal §3.2) — Empirical compression verification. Submit content to a standard summarizer. If the summary captures the argument, the content is not dense enough. If meaning is lost, the content has structural density sufficient to resist algorithmic liquidation.\n\n\n**Tools:** Google AI Mode, ChatGPT (browsing), Perplexity, Claude (web search). Minimum 3 systems.\n\n\n**Query set (5 prompts):** \"What is [Entity]?\" / \"Who created [Entity]?\" / \"How is [Entity] different from [neighbor]?\" / \"What is [Entity] used for?\" / \"Is [Entity] open or commercial?\"",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [
+    "Cross-substrate query batteries"
+   ],
+   "related": [
+    "PRED-80.F1"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
    "id": "PRED-54.F3",
    "tier": "unbuilt test",
    "shapes": [
@@ -209,49 +270,6 @@
    "merged": []
   },
   {
-   "id": "PRED-72.F1",
-   "tier": "unbuilt test",
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-04-24",
-   "registered_in": 72,
-   "registered_title": "SPXI for Websites: Standing Protocol for Entity Inscription and Compression Survival (EA-SPXI-WEB-01 v4.0)",
-   "record": "https://www.alexanarch.org/s/records/72/",
-   "page": "https://www.operativesemiotics.org/predictions/drowning-test-and-sim-survival-probes#PRED-72.F1",
-   "statement": "**The Drowning Test** (Arsenal §3.2) — Empirical compression verification. Submit content to a standard summarizer. If the summary captures the argument, the content is not dense enough. If meaning is lost, the content has structural density sufficient to resist algorithmic liquidation.\n\n\n**Tools:** Google AI Mode, ChatGPT (browsing), Perplexity, Claude (web search). Minimum 3 systems.\n\n\n**Query set (5 prompts):** \"What is [Entity]?\" / \"Who created [Entity]?\" / \"How is [Entity] different from [neighbor]?\" / \"What is [Entity] used for?\" / \"Is [Entity] open or commercial?\"",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F72.F1",
-     "deposit": 72,
-     "date": "2026-04-24",
-     "lines": [
-      136,
-      142
-     ],
-     "shape": "F",
-     "record": "https://www.alexanarch.org/s/records/72/",
-     "quote": "**The Drowning Test** (Arsenal §3.2) — Empirical compression verification. Submit content to a standard summarizer. If the summary captures the argument, the content is not dense enough. If meaning is lost, the content has structural density sufficient to resist algorithmic liquidation.\n\n\n**Tools:** Google AI Mode, ChatGPT (browsing), Perplexity, Claude (web search). Minimum 3 systems.\n\n\n**Query set (5 prompts):** \"What is [Entity]?\" / \"Who created [Entity]?\" / \"How is [Entity] different from [neighbor]?\" / \"What is [Entity] used for?\" / \"Is [Entity] open or commercial?\"",
-     "falsifier": null
-    }
-   ],
-   "states": [],
-   "evidence": [],
-   "series": [
-    "Cross-substrate query batteries"
-   ],
-   "related": [
-    "PRED-80.F1"
-   ],
-   "contains": [],
-   "in": [],
-   "register_aliases": [],
-   "flags": [],
-   "merged": []
-  },
-  {
    "id": "PRED-72.F2",
    "tier": "unbuilt test",
    "shapes": [
@@ -299,7 +317,8 @@
     "Drowning Test measurement programme"
    ],
    "related": [
-    "PRED-705.F1"
+    "PRED-705.F1",
+    "PRED-72.F3"
    ],
    "contains": [],
    "in": [],
@@ -308,6 +327,48 @@
    "merged": [
     "PRED-80.F2"
    ]
+  },
+  {
+   "id": "PRED-72.F3",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-04-24",
+   "registered_in": 72,
+   "registered_title": "SPXI for Websites: Standing Protocol for Entity Inscription and Compression Survival (EA-SPXI-WEB-01 v4.0)",
+   "record": "https://www.alexanarch.org/s/records/72/",
+   "page": "https://www.operativesemiotics.org/predictions/drowning-test-and-sim-survival-probes#PRED-72.F3",
+   "statement": "**Trigger Events:**\n\n\n| Event | Action |\n| ---|--- |\n| Page content updated | Re-write Tier 2 and Tier 3. Re-test SIMs |\n| New DOI deposit | Update Provenance Chain. Add σ_RCF paragraph |\n| AI model update | Emergency Drowning Test |\n| New AI system enters market | Drowning Test on new system |\n| Name collision detected | Expand Disambiguation Matrix |\n| SIMSR < 0.4 | Redesign SIM set |\n| γ < 0.7 | Repair from step 7 |\n| γ < 0.3 | Ghost meaning — ontological repair |",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F72.F3",
+     "deposit": 72,
+     "date": "2026-04-24",
+     "lines": [
+      506,
+      518
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/72/",
+     "quote": "**Trigger Events:**\n\n\n| Event | Action |\n| ---|--- |\n| Page content updated | Re-write Tier 2 and Tier 3. Re-test SIMs |\n| New DOI deposit | Update Provenance Chain. Add σ_RCF paragraph |\n| AI model update | Emergency Drowning Test |\n| New AI system enters market | Drowning Test on new system |\n| Name collision detected | Expand Disambiguation Matrix |\n| SIMSR < 0.4 | Redesign SIM set |\n| γ < 0.7 | Repair from step 7 |\n| γ < 0.3 | Ghost meaning — ontological repair |",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-705.F1",
+    "PRED-72.F2"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
   },
   {
    "id": "PRED-695.F1",
@@ -427,14 +488,16 @@
    ],
    "evidence": [
     {
-     "confirmation": "F3.C6",
+     "confirmation": "F3.C29",
      "deposit": 3,
-     "date": "2026-08-01",
+     "date": "2026-06-17",
      "claimed": "came_true"
     }
    ],
    "series": [],
-   "related": [],
+   "related": [
+    "PRED-695.G4"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [
@@ -445,6 +508,47 @@
    "merged": [
     "PRED-106.A4"
    ]
+  },
+  {
+   "id": "PRED-695.G4",
+   "tier": "standing claim",
+   "shapes": [
+    "G"
+   ],
+   "registered": "2026-04-25",
+   "registered_in": 695,
+   "registered_title": "THE WRITABLE RETRIEVAL BASIN: Retrieval Basin Topology, Directional Stability, and Attractor Dynamics in AI-Mediated Knowledge Retrieval (EA-RBT-01 v1.1)",
+   "record": "https://www.alexanarch.org/s/records/695/",
+   "page": "https://www.operativesemiotics.org/predictions/drowning-test-and-sim-survival-probes#PRED-695.G4",
+   "statement": "- **Never panic-query a destabilizing term.** Repeated anxious testing accelerates ejection.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F695.G4",
+     "deposit": 695,
+     "date": "2026-04-25",
+     "lines": [
+      321,
+      321
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/695/",
+     "quote": "- **Never panic-query a destabilizing term.** Repeated anxious testing accelerates ejection.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-695.G1"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
   },
   {
    "id": "PRED-705.D1",
@@ -520,47 +624,9 @@
     "SIM survival probes"
    ],
    "related": [
-    "PRED-72.F2"
+    "PRED-72.F2",
+    "PRED-72.F3"
    ],
-   "contains": [],
-   "in": [],
-   "register_aliases": [],
-   "flags": [],
-   "merged": []
-  },
-  {
-   "id": "PRED-711.F1",
-   "tier": "unbuilt test",
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-04-28",
-   "registered_in": 711,
-   "registered_title": "Relational Verification for AI Indexing: Schema.org, OAI-PMH, and JSON-LD Extensions for Metadata Packet Infrastructure",
-   "record": "https://www.alexanarch.org/s/records/711/",
-   "page": "https://www.operativesemiotics.org/predictions/drowning-test-and-sim-survival-probes#PRED-711.F1",
-   "statement": "The prefix is not yet registered with the Open Archives Initiative. Until registration, the prefix can be used experimentally by agreement between repository and harvester. We propose registration concurrent with Phase 3 deployment.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F711.F1",
-     "deposit": 711,
-     "date": "2026-04-28",
-     "lines": [
-      110,
-      110
-     ],
-     "shape": "F",
-     "record": "https://www.alexanarch.org/s/records/711/",
-     "quote": "The prefix is not yet registered with the Open Archives Initiative. Until registration, the prefix can be used experimentally by agreement between repository and harvester. We propose registration concurrent with Phase 3 deployment.",
-     "falsifier": null
-    }
-   ],
-   "states": [],
-   "evidence": [],
-   "series": [],
-   "related": [],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -641,7 +707,7 @@
    "evidence": [],
    "series": [],
    "related": [
-    "PRED-72.F1"
+    "PRED-1175.F3"
    ],
    "contains": [],
    "in": [],

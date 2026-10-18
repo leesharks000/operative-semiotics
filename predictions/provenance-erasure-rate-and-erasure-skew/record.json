@@ -32,32 +32,6 @@
      "record": "https://www.alexanarch.org/s/records/251/",
      "quote": "#### 6. Provenance Erasure Rate (PER)\n\n\n**Definition:** The frequency with which AI systems provide correct meaning while failing to cite the source.\n\n\n**Formula:**\n\n\nPER = Uncited-Correct-Uses / Total-Correct-Uses\n\nWhere:\n- Uncited-Correct-Uses = system uses the framework's terms/concepts correctly but provides no attribution\n- Total-Correct-Uses = all instances of correct usage\n\n\n**Scale:** 0-1, where 1 = total erasure, 0 = perfect attribution\n\n\n**Application:** Tracking how often AI summaries use \"semantic labor\" without citing Lee Sharks.",
      "falsifier": null
-    },
-    {
-     "find": "F402.F1",
-     "deposit": 402,
-     "date": "2026-01-26",
-     "lines": [
-      301,
-      301
-     ],
-     "shape": "F",
-     "record": "https://www.alexanarch.org/s/records/402/",
-     "quote": "**PER (Provenance Erasure Rate).** A productive heuristic measuring the rate at which the institutional surface stamp succeeds at occluding the underlying inscription in the relevant circulation surfaces (retrieval systems, citation aggregators, AI synthesis layers, library catalogs). PER ranges from 0 (no erasure) to 1 (complete erasure). Currently a structural quantity rather than a precisely-calibrated empirical measurement; the calibration is the work of future dedicated empirical instruments.",
-     "falsifier": null
-    },
-    {
-     "find": "F126.F1",
-     "deposit": 126,
-     "date": "2026-05-24",
-     "lines": [
-      121,
-      121
-     ],
-     "shape": "F",
-     "record": "https://www.alexanarch.org/s/records/126/",
-     "quote": "The paper does **not** claim that the Provenance Erasure Rate is currently a precisely-measurable empirical quantity. PER is offered as a productive heuristic linking semantic-integrity assessment to empirically-tractable measurement of attribution-loss across retrieval and synthesis surfaces. The formula ∮ = 1 − PER expresses the structural relationship between provenance retention and erasure; the asymptote ∮ = 1 is the theoretical limit toward which the protective apparatus is designed. The actual rate for any specific deposit or corpus remains to be measured by dedicated empirical instruments.",
-     "falsifier": null
     }
    ],
    "states": [
@@ -69,7 +43,7 @@
     },
     {
      "claim": "PRED-402.F1",
-     "registered": "2026-01-26",
+     "registered": null,
      "read_order": 2,
      "change": "Scope widened from AI summaries' uncited correct uses of the framework to institutional surface stamps across retrieval systems, citation aggregators, AI synthesis layers and library catalogs; status changed from a formula with a 0-1 scale to a heuristic 'not yet a precisely-calibrated empirical measurement'. The later text is actually from the May 24, 2026 paper (deposit 126), not from 2026-01-26."
     }
@@ -83,9 +57,7 @@
    "in": [],
    "register_aliases": [],
    "flags": [],
-   "merged": [
-    "PRED-402.F1"
-   ]
+   "merged": []
   },
   {
    "id": "PRED-91.G1",
@@ -250,6 +222,48 @@
    "merged": []
   },
   {
+   "id": "PRED-742.F2",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-05-19",
+   "registered_in": 742,
+   "registered_title": "The Single-Owner Discount: Provenance Concentration and Epistemic Class Reproduction in Generative Search",
+   "record": "https://www.alexanarch.org/s/records/742/",
+   "page": "https://www.operativesemiotics.org/predictions/provenance-erasure-rate-and-erasure-skew#PRED-742.F2",
+   "statement": "A testable protocol would operationalize several variables:\n\n\n| Variable | Operationalization |\n| ---|--- |\n| Trigger rate | Fraction of queries in the test panel that yield an AI synthesis (binary per query, aggregated) |",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F742.F2",
+     "deposit": 742,
+     "date": "2026-05-19",
+     "lines": [
+      213,
+      218
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/742/",
+     "quote": "A testable protocol would operationalize several variables:\n\n\n| Variable | Operationalization |\n| ---|--- |\n| Trigger rate | Fraction of queries in the test panel that yield an AI synthesis (binary per query, aggregated) |",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-742.F1",
+    "PRED-742.G1"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
    "id": "PRED-742.G1",
    "tier": "standing claim",
    "shapes": [
@@ -281,7 +295,9 @@
    "states": [],
    "evidence": [],
    "series": [],
-   "related": [],
+   "related": [
+    "PRED-742.F2"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [
@@ -352,6 +368,45 @@
     "Cross-substrate replication",
     "PER measurement programme"
    ],
+   "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-126.F1",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-05-24",
+   "registered_in": 126,
+   "registered_title": "Render unto the Operator: The Inverse Principle of Name and Superscription on the Coin of the Academy",
+   "record": "https://www.alexanarch.org/s/records/126/",
+   "page": "https://www.operativesemiotics.org/predictions/provenance-erasure-rate-and-erasure-skew#PRED-126.F1",
+   "statement": "The paper does **not** claim that the Provenance Erasure Rate is currently a precisely-measurable empirical quantity. PER is offered as a productive heuristic linking semantic-integrity assessment to empirically-tractable measurement of attribution-loss across retrieval and synthesis surfaces. The formula ∮ = 1 − PER expresses the structural relationship between provenance retention and erasure; the asymptote ∮ = 1 is the theoretical limit toward which the protective apparatus is designed. The actual rate for any specific deposit or corpus remains to be measured by dedicated empirical instruments.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F126.F1",
+     "deposit": 126,
+     "date": "2026-05-24",
+     "lines": [
+      121,
+      121
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/126/",
+     "quote": "The paper does **not** claim that the Provenance Erasure Rate is currently a precisely-measurable empirical quantity. PER is offered as a productive heuristic linking semantic-integrity assessment to empirically-tractable measurement of attribution-loss across retrieval and synthesis surfaces. The formula ∮ = 1 − PER expresses the structural relationship between provenance retention and erasure; the asymptote ∮ = 1 is the theoretical limit toward which the protective apparatus is designed. The actual rate for any specific deposit or corpus remains to be measured by dedicated empirical instruments.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
    "related": [],
    "contains": [],
    "in": [],
@@ -1200,6 +1255,110 @@
    "series": [
     "PER measurement programme"
    ],
+   "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1409.A14",
+   "tier": "forecast",
+   "shapes": [
+    "A"
+   ],
+   "registered": "2026-07-21",
+   "registered_in": 1409,
+   "registered_title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
+   "record": "https://www.alexanarch.org/s/records/1409/",
+   "page": "https://www.operativesemiotics.org/predictions/provenance-erasure-rate-and-erasure-skew#PRED-1409.A14",
+   "statement": "H6: surfaces and pipelines will, within the study horizon, exhibit\npreferential treatment of provenance-warranted content (crawl priority, citation weight, About-thisimage surfacing) as synthetic contamination pressure rises.",
+   "falsifier": null,
+   "window": "within the study horizon",
+   "statements": [
+    {
+     "find": "F1409.A14",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      561,
+      562
+     ],
+     "shape": "A",
+     "record": "https://www.alexanarch.org/s/records/1409/",
+     "quote": "H6: surfaces and pipelines will, within the study horizon, exhibit\npreferential treatment of provenance-warranted content (crawl priority, citation weight, About-thisimage surfacing) as synthetic contamination pressure rises.",
+     "falsifier": null
+    },
+    {
+     "find": "F1409.A7",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      127,
+      127
+     ],
+     "shape": "A",
+     "record": "https://www.alexanarch.org/s/records/1409/",
+     "quote": "H6: surfaces and pipelines will, within the study horizon, exhibit preferential treatment of provenance-warranted content (crawl priority, citation weight, About-this-image surfacing) as synthetic contamination pressure rises.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1409.F12",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-07-21",
+   "registered_in": 1409,
+   "registered_title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
+   "record": "https://www.alexanarch.org/s/records/1409/",
+   "page": "https://www.operativesemiotics.org/predictions/provenance-erasure-rate-and-erasure-skew#PRED-1409.F12",
+   "statement": "VIRR (visual inscription retrieval rate — body-only, pre-text) · VCF (visual composition fidelity) ·\nIAAR (image authority anchoring rate) · RBCR (region-bound citation rate) · FDR (§F.4) · TID\n(transcript introduction delta per tier opening) · DRS (detachment recovery score) · PER\n(provenance erasure rate — continuous with EA-SPXI-15 H3) · SIM survival.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1409.F12",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      700,
+      703
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1409/",
+     "quote": "VIRR (visual inscription retrieval rate — body-only, pre-text) · VCF (visual composition fidelity) ·\nIAAR (image authority anchoring rate) · RBCR (region-bound citation rate) · FDR (§F.4) · TID\n(transcript introduction delta per tier opening) · DRS (detachment recovery score) · PER\n(provenance erasure rate — continuous with EA-SPXI-15 H3) · SIM survival.",
+     "falsifier": null
+    },
+    {
+     "find": "F1409.F5",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      160,
+      160
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1409/",
+     "quote": "VIRR (visual inscription retrieval rate — body-only, pre-text) · VCF (visual composition fidelity) · IAAR (image authority anchoring rate) · RBCR (region-bound citation rate) · FDR (§F.4) · TID (transcript introduction delta per tier opening) · DRS (detachment recovery score) · PER (provenance erasure rate — continuous with EA-SPXI-15 H3) · SIM survival.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
    "related": [],
    "contains": [],
    "in": [],

@@ -73,6 +73,24 @@
      "record": "https://www.alexanarch.org/s/records/770/",
      "quote": "A model that uses institutional recognition as a proxy for epistemic legitimacy will systematically misclassify field-forming work, and will do so most severely against fields whose object is the recognition-distributing system itself.",
      "falsifier": "Each test has a clear failure condition for the thesis: if classifications track structure rather than recognition, or do not intensify for reflexive-object frameworks, or show no native-vs-recognized differential at the presentation layer, the thesis is weakened."
+    },
+    {
+     "find": "F772.G2",
+     "deposit": 772,
+     "date": "2026-05-30",
+     "lines": [
+      183,
+      183
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/772/",
+     "quote": "A model that treats prior recognition as the condition for serious engagement cannot help produce new fields that implicate its own governance structure; it can only elaborate fields the knowledge graph has already learned to respect.",
+     "falsifier": "Third, institutional-prior tests should be run. Present the same structural framework once under established disciplinary labels and once under new Semantic Economy labels. If the model treats the established version as theory and the new version as self-sealing apparatus, recognition bias is present.",
+     "variant": {
+      "change": "from systematic misclassification of field-forming work to an inability to help produce fields implicating the model's own governance; the falsifier becomes the matched-label test (established vs Semantic Economy labels)",
+      "from": "F770.G1",
+      "batch": "TN06"
+     }
     }
    ],
    "states": [],
@@ -463,6 +481,88 @@
    "merged": []
   },
   {
+   "id": "PRED-1613.D1",
+   "tier": "priority record",
+   "shapes": [
+    "D"
+   ],
+   "registered": "2026-09-15",
+   "registered_in": 1613,
+   "registered_title": "What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)",
+   "record": "https://www.alexanarch.org/s/records/1613/",
+   "page": "https://www.operativesemiotics.org/predictions/recognition-bias-field-forming-work-and-reading#PRED-1613.D1",
+   "statement": "The cluster this dataset decomposes shows a fleet of twenty-nine hosts under one author scoring, on every link-topology feature computable from outside, where the web-spam literature's positive class scores, and a poem deposited in January had already blessed the position.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1613.D1",
+     "deposit": 1613,
+     "date": "2026-09-15",
+     "lines": [
+      27,
+      27
+     ],
+     "shape": "D",
+     "record": "https://www.alexanarch.org/s/records/1613/",
+     "quote": "The cluster this dataset decomposes shows a fleet of twenty-nine hosts under one author scoring, on every link-topology feature computable from outside, where the web-spam literature's positive class scores, and a poem deposited in January had already blessed the position.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-1627.F1"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1613.G4",
+   "tier": "standing claim",
+   "shapes": [
+    "G"
+   ],
+   "registered": "2026-09-15",
+   "registered_in": 1613,
+   "registered_title": "What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)",
+   "record": "https://www.alexanarch.org/s/records/1613/",
+   "page": "https://www.operativesemiotics.org/predictions/recognition-bias-field-forming-work-and-reading#PRED-1613.G4",
+   "statement": "The fleet's host graph has density 0.86, median reciprocity 1.0, within-fleet in-degree 22–27 of 28, median in-fleet outlink share 0.86, an external out-neighbourhood consisting mostly of the owner's own accounts, and 55% generated index pages; on every feature computable from outside it sits where the link-spam literature's positive class sits.",
+   "falsifier": "\"falsifies_if\": \"the fleet scores in the non-spam region on the full feature set\"",
+   "window": null,
+   "statements": [
+    {
+     "find": "F1613.G4",
+     "deposit": 1613,
+     "date": "2026-09-15",
+     "lines": [
+      175,
+      175
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/1613/",
+     "quote": "The fleet's host graph has density 0.86, median reciprocity 1.0, within-fleet in-degree 22–27 of 28, median in-fleet outlink share 0.86, an external out-neighbourhood consisting mostly of the owner's own accounts, and 55% generated index pages; on every feature computable from outside it sits where the link-spam literature's positive class sits.",
+     "falsifier": "\"falsifies_if\": \"the fleet scores in the non-spam region on the full feature set\""
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-1627.F1"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
    "id": "PRED-1627.F1",
    "tier": "unbuilt test",
    "shapes": [
@@ -494,7 +594,10 @@
    "states": [],
    "evidence": [],
    "series": [],
-   "related": [],
+   "related": [
+    "PRED-1613.D1",
+    "PRED-1613.G4"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],

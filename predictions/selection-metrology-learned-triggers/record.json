@@ -274,7 +274,9 @@
    ],
    "related": [],
    "contains": [],
-   "in": [],
+   "in": [
+    "PRED-1611.G9"
+   ],
    "register_aliases": [],
    "flags": [],
    "merged": []
@@ -526,7 +528,20 @@
     }
    ],
    "states": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F1455.C5",
+     "deposit": 1455,
+     "date": "2026-08-12",
+     "claimed": "came_true"
+    },
+    {
+     "confirmation": "F1456.C9",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "claimed": "came_true"
+    }
+   ],
    "series": [
     "Inversion Battery findings (v0.1-v0.3)"
    ],
@@ -982,6 +997,19 @@
      "record": "https://www.alexanarch.org/s/records/1456/",
      "quote": "And the AUC ordering **inverts across encodings of the same events**: constituents give AE 0.838 / VAE 0.535 / GMM 0.873; engineered features of those same events give AE 0.528 / VAE 0.799 / GMM 0.748. **An architecture's detection behaviour is not transportable across representations of the same events.**",
      "falsifier": "The transportability result fails if architecture orderings prove stable across encodings on other datasets."
+    },
+    {
+     "find": "F1456.G5",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "lines": [
+      6651,
+      6651
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/1456/",
+     "quote": "Deployment consequence: an architecture detection behaviour is NOT transportable across representations of the same events, so benchmarking a trigger model on one encoding says little about another.",
+     "falsifier": null
     }
    ],
    "states": [],
@@ -989,7 +1017,9 @@
    "series": [
     "Inversion Battery findings (v0.1-v0.3)"
    ],
-   "related": [],
+   "related": [
+    "PRED-1456.F6"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -1110,6 +1140,47 @@
    "series": [],
    "related": [],
    "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1611.G9",
+   "tier": "standing claim",
+   "shapes": [
+    "G"
+   ],
+   "registered": "2026-09-14",
+   "registered_in": 1611,
+   "registered_title": "The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)",
+   "record": "https://www.alexanarch.org/s/records/1611/",
+   "page": "https://www.operativesemiotics.org/predictions/selection-metrology-learned-triggers#PRED-1611.G9",
+   "statement": "Foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC (Claim A); the Finke et al. (2021) inversion asymmetry is the empirical counterexample to inferring open-world coverage from single-direction anomaly-detection success; the current validation literature does not demonstrate that recursive phenomenal collapse at the deployed triggers has been ruled out; the missing quantity is the Ontological Assimilation Rate, a family indexed by candidate unknown distributions, with three protocols executable within Run-3/Run-4.",
+   "falsifier": "#932 §3 falsification: the listed measurements, if performed and producing the corresponding results, would show the claim that foreclosure is an active structural feature requiring architectural response to be overstated; none would establish that the open-world OAR is zero, which is structurally not measurable",
+   "window": "Run-3/Run-4",
+   "statements": [
+    {
+     "find": "F1611.G9",
+     "deposit": 1611,
+     "date": "2026-09-14",
+     "lines": [
+      1920,
+      1920
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/1611/",
+     "quote": "Foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC (Claim A); the Finke et al. (2021) inversion asymmetry is the empirical counterexample to inferring open-world coverage from single-direction anomaly-detection success; the current validation literature does not demonstrate that recursive phenomenal collapse at the deployed triggers has been ruled out; the missing quantity is the Ontological Assimilation Rate, a family indexed by candidate unknown distributions, with three protocols executable within Run-3/Run-4.",
+     "falsifier": "#932 §3 falsification: the listed measurements, if performed and producing the corresponding results, would show the claim that foreclosure is an active structural feature requiring architectural response to be overstated; none would establish that the open-world OAR is zero, which is structurally not measurable"
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [],
+   "contains": [
+    "PRED-931.G1"
+   ],
    "in": [],
    "register_aliases": [],
    "flags": [],

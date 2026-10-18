@@ -174,52 +174,12 @@
     "Anomaly-trigger inversion battery and auditable foreclosure program (collider)"
    ],
    "related": [
+    "PRED-1611.F7",
     "PRED-934.F1"
    ],
    "contains": [
     "PRED-931.F3"
    ],
-   "in": [],
-   "register_aliases": [],
-   "flags": [],
-   "merged": []
-  },
-  {
-   "id": "PRED-933.B1",
-   "tier": "forecast",
-   "shapes": [
-    "B"
-   ],
-   "registered": "2026-06-29",
-   "registered_in": 933,
-   "registered_title": "06.UMB.ARCH.01 v0.2: Architectures for Auditable Foreclosure in Physical Anomaly Detection",
-   "record": "https://www.alexanarch.org/s/records/933/",
-   "page": "https://www.operativesemiotics.org/predictions/accelerator-classifier-assimilation-acrb-hypotheses#PRED-933.B1",
-   "statement": "The expectation is that further rounds will identify further refinements; the v0.2 of this document, like all documents in the family, is open to subsequent revision under the same Chorus discipline.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F933.B1",
-     "deposit": 933,
-     "date": "2026-06-29",
-     "lines": [
-      402,
-      402
-     ],
-     "shape": "B",
-     "record": "https://www.alexanarch.org/s/records/933/",
-     "quote": "The expectation is that further rounds will identify further refinements; the v0.2 of this document, like all documents in the family, is open to subsequent revision under the same Chorus discipline.",
-     "falsifier": null
-    }
-   ],
-   "states": [],
-   "evidence": [],
-   "series": [
-    "auditable foreclosure in anomaly detection"
-   ],
-   "related": [],
-   "contains": [],
    "in": [],
    "register_aliases": [],
    "flags": [],
@@ -748,6 +708,18 @@
      "deposit": 1455,
      "date": "2026-08-12",
      "claimed": "pending"
+    },
+    {
+     "confirmation": "F1456.C11",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "claimed": "partly"
+    },
+    {
+     "confirmation": "F1456.C8",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "claimed": "failed"
     }
    ],
    "series": [
@@ -831,7 +803,14 @@
     }
    ],
    "states": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F1456.C5",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "claimed": "failed"
+    }
+   ],
    "series": [
     "ACRB hypotheses H1-H6",
     "Accelerator selection-metrology suite"
@@ -960,7 +939,95 @@
    "series": [
     "Accelerator selection-metrology suite"
    ],
+   "related": [
+    "PRED-1455.F3"
+   ],
+   "contains": [
+    "PRED-1455.F2",
+    "PRED-1456.F4"
+   ],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1455.F2",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-08-12",
+   "registered_in": 1455,
+   "registered_title": "Inversion Battery v0.2: Multi-Seed Direction-Dependence, a Correction Ledger, and Four Rejected Overclaims (EA-SEI-BATTERY-01 v2.0)",
+   "record": "https://www.alexanarch.org/s/records/1455/",
+   "page": "https://www.operativesemiotics.org/predictions/accelerator-classifier-assimilation-acrb-hypotheses#PRED-1455.F2",
+   "statement": "A faithful NAE/WNAE port is a new registered experiment (v0.3).\"",
+   "falsifier": null,
+   "window": "v0.3",
+   "statements": [
+    {
+     "find": "F1455.F2",
+     "deposit": 1455,
+     "date": "2026-08-12",
+     "lines": [
+      2492,
+      2492
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1455/",
+     "quote": "A faithful NAE/WNAE port is a new registered experiment (v0.3).\"",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
    "related": [],
+   "contains": [],
+   "in": [
+    "PRED-1455.F1"
+   ],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1455.F3",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-08-12",
+   "registered_in": 1455,
+   "registered_title": "Inversion Battery v0.2: Multi-Seed Direction-Dependence, a Correction Ledger, and Four Rejected Overclaims (EA-SEI-BATTERY-01 v2.0)",
+   "record": "https://www.alexanarch.org/s/records/1455/",
+   "page": "https://www.operativesemiotics.org/predictions/accelerator-classifier-assimilation-acrb-hypotheses#PRED-1455.F3",
+   "statement": "   \"consequence\": \"RII results are a pilot, not the registered measurement. They are nonetheless informative once normalized: phi ranges from +0.968 (T1 AE~pNAE \\u2014 near-maximal miss coincidence, expected since pNAE is an AE variant) to +0.021 (T1 AE~VAE \\u2014 essentially independent misses). Raw delta_miss alone badly understates this spread because miss rates are near 1.\",\n   \"severity\": \"scope \\u2014 no cross-seed or cross-alpha RII claim may be made\"",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1455.F3",
+     "deposit": 1455,
+     "date": "2026-08-12",
+     "lines": [
+      2470,
+      2471
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1455/",
+     "quote": "   \"consequence\": \"RII results are a pilot, not the registered measurement. They are nonetheless informative once normalized: phi ranges from +0.968 (T1 AE~pNAE \\u2014 near-maximal miss coincidence, expected since pNAE is an AE variant) to +0.021 (T1 AE~VAE \\u2014 essentially independent misses). Raw delta_miss alone badly understates this spread because miss rates are near 1.\",\n   \"severity\": \"scope \\u2014 no cross-seed or cross-alpha RII claim may be made\"",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-1455.F1",
+    "PRED-1455.G3"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -1038,11 +1105,20 @@
     }
    ],
    "states": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F1456.C6",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "claimed": "came_true"
+    }
+   ],
    "series": [
     "Inversion battery on collider anomaly detection"
    ],
-   "related": [],
+   "related": [
+    "PRED-1455.F3"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -1126,6 +1202,86 @@
    ]
   },
   {
+   "id": "PRED-1456.F3",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-08-12",
+   "registered_in": 1456,
+   "registered_title": "Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+   "record": "https://www.alexanarch.org/s/records/1456/",
+   "page": "https://www.operativesemiotics.org/predictions/accelerator-classifier-assimilation-acrb-hypotheses#PRED-1456.F3",
+   "statement": "Hypothesis generated, not tested: KL regularisation alters inversion behaviour on low-complexity representations. v0.4 candidate.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1456.F3",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "lines": [
+      6582,
+      6582
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1456/",
+     "quote": "Hypothesis generated, not tested: KL regularisation alters inversion behaviour on low-complexity representations. v0.4 candidate.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1456.F4",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-08-12",
+   "registered_in": 1456,
+   "registered_title": "Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+   "record": "https://www.alexanarch.org/s/records/1456/",
+   "page": "https://www.operativesemiotics.org/predictions/accelerator-classifier-assimilation-acrb-hypotheses#PRED-1456.F4",
+   "statement": "a matched panel requires pairs holding W1 approximately constant while complexity direction differs, which this data does not contain. The matched panel is therefore registered as NOT RUN.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1456.F4",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "lines": [
+      2598,
+      2598
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1456/",
+     "quote": "a matched panel requires pairs holding W1 approximately constant while complexity direction differs, which this data does not contain. The matched panel is therefore registered as NOT RUN.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [],
+   "contains": [],
+   "in": [
+    "PRED-1455.F1"
+   ],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
    "id": "PRED-1570.H18",
    "tier": "historical thesis",
    "shapes": [
@@ -1158,6 +1314,47 @@
    "evidence": [],
    "series": [],
    "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1611.F7",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-09-14",
+   "registered_in": 1611,
+   "registered_title": "The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)",
+   "record": "https://www.alexanarch.org/s/records/1611/",
+   "page": "https://www.operativesemiotics.org/predictions/accelerator-classifier-assimilation-acrb-hypotheses#PRED-1611.F7",
+   "statement": "\"d_function_runs\": \"protocols specified, not run\"",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1611.F7",
+     "deposit": 1611,
+     "date": "2026-09-14",
+     "lines": [
+      1900,
+      1900
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1611/",
+     "quote": "\"d_function_runs\": \"protocols specified, not run\"",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-932.F1"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],

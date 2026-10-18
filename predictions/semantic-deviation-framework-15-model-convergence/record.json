@@ -71,6 +71,19 @@
      "record": "https://www.alexanarch.org/s/records/107/",
      "quote": "The right experimental design is component-decomposed. Conventions:\n\n- **Model-Base** is the pre-fine-tune checkpoint of the chosen open-weight model (e.g., the base Llama-3.1-8B prior to any post-training).",
      "falsifier": null
+    },
+    {
+     "find": "F107.F8",
+     "deposit": 107,
+     "date": "2026-05-17",
+     "lines": [
+      176,
+      179
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/107/",
+     "quote": "| Model-Full (= Model-Sem) | on | on | on | on | on |\n\n\nThe single-component conditions (Model-π, Model-Dev, Model-Coh) isolate the uplift attributable to each signal. The full condition (Model-Full) replicates the design of the corpus's existing DPO protocol. The differences between conditions are the scientifically interesting quantities, not the absolute performance of the full condition.",
+     "falsifier": null
     }
    ],
    "states": [],
@@ -119,7 +132,9 @@
    "series": [
     "Semantic Deviation Research Program audited claims"
    ],
-   "related": [],
+   "related": [
+    "PRED-107.F9"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],

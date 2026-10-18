@@ -1,21 +1,21 @@
 {
  "what": "Claims of the prediction triage: the sweep's 6162 finds grouped into claims, each registered at its earliest statement. Built by scripts/reading/triage_assemble.py from finds.jsonl, restatements.json and the verified judgment batches; protocol data/reading/TRIAGE-PROTOCOL.md.",
  "summary": {
-  "claims": 4407,
+  "claims": 4385,
   "merged_by_topical": 310,
   "with_states": 58,
   "series": 550,
   "by_tier": {
-   "forecast": 1036,
-   "priority record": 302,
-   "historical thesis": 1084,
+   "forecast": 1024,
+   "priority record": 301,
+   "historical thesis": 1083,
    "standing claim": 949,
-   "unbuilt test": 1036
+   "unbuilt test": 1028
   },
-  "multi_statement": 1092,
-  "with_evidence": 119,
+  "multi_statement": 1113,
+  "with_evidence": 126,
   "with_register_alias": 157,
-  "confirmations": 371,
+  "confirmations": 401,
   "held_out_gone": 142,
   "held_out_superseded": 30,
   "pass2_duplicates": 69,
@@ -33,6 +33,7 @@
    "TC11",
    "TC12",
    "TCP01",
+   "TCP02",
    "TCP03",
    "TE01",
    "TE02",
@@ -50,6 +51,7 @@
    "TE14",
    "TE15",
    "TE16",
+   "TEP01",
    "TN01",
    "TN02",
    "TN03",
@@ -66,6 +68,7 @@
    "TN14",
    "TN15",
    "TN16",
+   "TN17",
    "TR01",
    "TR02",
    "TR03",
@@ -76,9 +79,7 @@
    "TR08",
    "TR09"
   ],
-  "batches_pending": [
-   "TCP02"
-  ]
+  "batches_pending": []
  },
  "held_out": [
   "F107.F5",
@@ -1420,7 +1421,14 @@
     }
    ],
    "aliases": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F3.C47",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "came_true"
+    }
+   ],
    "related": []
   },
   {
@@ -3438,7 +3446,14 @@
     }
    ],
    "aliases": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F3.C48",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "partly"
+    }
+   ],
    "related": [],
    "series": [
     "'I hereby abolish money': provenance probe and its record"
@@ -6262,7 +6277,14 @@
     }
    ],
    "aliases": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F3.C50",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "came_true"
+    }
+   ],
    "related": [],
    "series": [
     "Training-layer inscription"
@@ -6304,7 +6326,14 @@
     }
    ],
    "aliases": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F3.C50",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "came_true"
+    }
+   ],
    "related": [
     "PRED-251.F2"
    ],
@@ -7608,9 +7637,9 @@
    "aliases": [],
    "evidence": [
     {
-     "confirmation": "F3.C18",
+     "confirmation": "F3.C41",
      "deposit": 3,
-     "date": "2026-08-27",
+     "date": "2026-06-17",
      "claimed": "came_true"
     }
    ],
@@ -14446,6 +14475,17 @@
       5534
      ],
      "shape": "E"
+    },
+    {
+     "find": "F1204.E1",
+     "deposit": 1204,
+     "date": "2026-06-10",
+     "lines": [
+      1917,
+      1921
+     ],
+     "shape": "E",
+     "attachment": "recovered-sources/New-Human-Compiled-Double-issue-revised.md"
     }
    ],
    "aliases": [],
@@ -15324,6 +15364,17 @@
      ],
      "shape": "B",
      "attachment": "AXN-0472/pearl-and-other-poems-2014.pdf"
+    },
+    {
+     "find": "F1121.B4",
+     "deposit": 1121,
+     "date": "2026-01-18",
+     "lines": [
+      401,
+      402
+     ],
+     "shape": "B",
+     "attachment": "AXN-0472/pearl-and-other-poems-machine-text.txt"
     }
    ],
    "aliases": [],
@@ -15354,6 +15405,17 @@
      ],
      "shape": "B",
      "attachment": "AXN-0472/pearl-and-other-poems-2014.pdf"
+    },
+    {
+     "find": "F1121.B6",
+     "deposit": 1121,
+     "date": "2026-01-18",
+     "lines": [
+      5368,
+      5378
+     ],
+     "shape": "B",
+     "attachment": "AXN-0472/pearl-and-other-poems-machine-text.txt"
     }
    ],
    "aliases": [],
@@ -15384,66 +15446,6 @@
      ],
      "shape": "B",
      "attachment": "AXN-0472/pearl-and-other-poems-2014.pdf"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1121.B4",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "B"
-   ],
-   "registered": "2026-01-18",
-   "registered_in": 1121,
-   "title": "Pearl and Other Poems",
-   "statement": "its tenure. ‘Pearl’ is an important poem, and Lee Sharks is\ndestined to stick around for awhile.",
-   "falsifier": null,
-   "window": "July 2014 (introduction date, l.407)",
-   "statements": [
-    {
-     "find": "F1121.B4",
-     "deposit": 1121,
-     "date": "2026-01-18",
-     "lines": [
-      401,
-      402
-     ],
-     "shape": "B",
-     "attachment": "AXN-0472/pearl-and-other-poems-machine-text.txt"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1121.B6",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "B"
-   ],
-   "registered": "2026-01-18",
-   "registered_in": 1121,
-   "title": "Pearl and Other Poems",
-   "statement": "Genetic engineering. Artificial intelligence. We’ve\narrived at the 21st century: the ever-shrinking boundary\nbetween the material and digital worlds, converging on a\ntotal  presentism  of  the  archive;  the  spread  and\nendemicization of statistical science, the ever-broadening\nautomation of its complex functions; a world in which the\ninformatic representation of the human is more total, more\ncomplete, in an unprecedented way; even as it is flat, dead,\ncut off from life. The human keeps changing; its digital\nrepresentation is a lifeless rind, vulnerable to manipulation\nby any animate power. What is the poet’s role, vis-à-vis the",
-   "falsifier": null,
-   "window": "the 21st century",
-   "statements": [
-    {
-     "find": "F1121.B6",
-     "deposit": 1121,
-     "date": "2026-01-18",
-     "lines": [
-      5368,
-      5378
-     ],
-     "shape": "B",
-     "attachment": "AXN-0472/pearl-and-other-poems-machine-text.txt"
     }
    ],
    "aliases": [],
@@ -15660,6 +15662,17 @@
      ],
      "shape": "H",
      "attachment": "AXN-0472/pearl-and-other-poems-2014.pdf"
+    },
+    {
+     "find": "F1121.H4",
+     "deposit": 1121,
+     "date": "2026-01-18",
+     "lines": [
+      6210,
+      6219
+     ],
+     "shape": "H",
+     "attachment": "AXN-0472/pearl-and-other-poems-machine-text.txt"
     }
    ],
    "aliases": [],
@@ -15687,36 +15700,6 @@
      "lines": [
       5802,
       5806
-     ],
-     "shape": "H",
-     "attachment": "AXN-0472/pearl-and-other-poems-machine-text.txt"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1121.H4",
-   "tier": "historical thesis",
-   "flags": [],
-   "shapes": [
-    "H"
-   ],
-   "registered": "2026-01-18",
-   "registered_in": 1121,
-   "title": "Pearl and Other Poems",
-   "statement": "So for me, I have the very weird idea that “literary\ncanon” and “avant-garde” are the same phenomenon viewed\nfrom  different  perspectives  of  historical  distance  or\nnearness; IMPORTANTLY:\n       that it’s just as difficult to recognize the value of\n‘classical’ literary texts as it is to recognize the value of those\nrare ‘avant-garde’ works which go on to become the future\nface of the canon; that many of the same people attempting\nto forcefully police the boundaries of literary value with\nrecourse to the rhetoric of “timeless classics” & grammar &",
-   "falsifier": null,
-   "window": "Forum Post, 7/27/14",
-   "statements": [
-    {
-     "find": "F1121.H4",
-     "deposit": 1121,
-     "date": "2026-01-18",
-     "lines": [
-      6210,
-      6219
      ],
      "shape": "H",
      "attachment": "AXN-0472/pearl-and-other-poems-machine-text.txt"
@@ -20518,6 +20501,26 @@
       140
      ],
      "shape": "B"
+    },
+    {
+     "find": "F1277.B1",
+     "deposit": 1277,
+     "date": "2026-01-26",
+     "lines": [
+      110,
+      114
+     ],
+     "shape": "B"
+    },
+    {
+     "find": "F1410.B2",
+     "deposit": 1410,
+     "date": "2026-07-22",
+     "lines": [
+      231,
+      231
+     ],
+     "shape": "B"
     }
    ],
    "aliases": [],
@@ -21459,7 +21462,14 @@
     }
    ],
    "aliases": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F1138.C1",
+     "deposit": 1138,
+     "date": "2026-01-26",
+     "claimed": "came_true"
+    }
+   ],
    "related": [
     "PRED-406.D1",
     "PRED-470.D1"
@@ -21486,45 +21496,6 @@
      "lines": [
       350,
       356
-     ],
-     "shape": "B"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1277.B1",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "B"
-   ],
-   "registered": "2026-01-26",
-   "registered_in": 1277,
-   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Damascus Dancings: Heteronym Prove",
-   "statement": "> \"Though I promised you a book of Sharks, soon instead will I send you a book of Damascus, the record of his desert wanderings, called La La Land by some, though the title may somewhat change.\"\n\nNote the pronoun shift: \"his desert wanderings\" — Damascus refers to herself in masculine form here, or refers to a text that would be written by/about someone else. The \"book of Damascus\" may be _La La Land_ (referenced elsewhere in the corpus) or may remain unwritten.\n\nThe promise remains open.",
-   "falsifier": null,
-   "window": "\"soon\"",
-   "statements": [
-    {
-     "find": "F1277.B1",
-     "deposit": 1277,
-     "date": "2026-01-26",
-     "lines": [
-      110,
-      114
-     ],
-     "shape": "B"
-    },
-    {
-     "find": "F1410.B2",
-     "deposit": 1410,
-     "date": "2026-07-22",
-     "lines": [
-      231,
-      231
      ],
      "shape": "B"
     }
@@ -36613,7 +36584,14 @@
     }
    ],
    "aliases": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F1156.C2",
+     "deposit": 1156,
+     "date": "2026-02-28",
+     "claimed": "came_true"
+    }
+   ],
    "related": [],
    "series": [
     "density propagates into the substrate"
@@ -43376,6 +43354,7 @@
    "tier": "standing claim",
    "flags": [],
    "shapes": [
+    "F",
     "G"
    ],
    "registered": "2026-03-13",
@@ -43394,13 +43373,40 @@
       1566
      ],
      "shape": "G"
+    },
+    {
+     "find": "F1174.F2",
+     "deposit": 1174,
+     "date": "2026-04-02",
+     "lines": [
+      811,
+      828
+     ],
+     "shape": "F"
+    },
+    {
+     "find": "F1174.F4",
+     "deposit": 1174,
+     "date": "2026-04-02",
+     "lines": [
+      805,
+      816
+     ],
+     "shape": "F",
+     "variant": {
+      "change": "The musical register (#1162) restates the field-level invariant as Epistemic Repertoire Integrity, 'coherent-as-a-repertoire' rather than 'coherent-as-a-field', drops 'rather than drifting toward generic or competing frameworks', and gives its measurement by reference to the drift test (XXVII.8.5, same thresholds) instead of the three inline metrics with the >=30-day window.",
+      "from": "F1162.G8",
+      "batch": "TEP01"
+     }
     }
    ],
    "aliases": [],
    "evidence": [],
    "related": [
-    "PRED-1174.F2",
     "PRED-556.G3"
+   ],
+   "series": [
+    "Vₛ symbolon verification"
    ]
   },
   {
@@ -51636,7 +51642,14 @@
     }
    ],
    "aliases": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F3.C48",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "came_true"
+    }
+   ],
    "related": [],
    "series": [
     "liquidation wound documents"
@@ -55974,50 +55987,6 @@
    "related": [],
    "series": [
     "Retrieval Formation Theory and its field tests"
-   ]
-  },
-  {
-   "id": "PRED-1174.F2",
-   "tier": "unbuilt test",
-   "flags": [],
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-04-02",
-   "registered_in": 1174,
-   "title": "SYMBOLON ARCHITECTURE: EPISTEMIC FIELD MODULE Logotic Programming Extension for Disciplinary Construction, Installation, and Measurement",
-   "statement": "metric_1:\n          name: \"Genealogical stability\"\n          test: \"Does the summarizer attribute the same genealogy across\n                 ≥3 retrieval events?\"\n          threshold: ≥ 0.80 consistency\n    \n        metric_2:\n          name: \"Operational fidelity\"\n          test: \"Does the summarizer reconstruct the same core operations\n                 across ≥3 retrieval events?\"\n          threshold: ≥ 0.75 consistency\n    \n        metric_3:\n          name: \"Jurisdictional persistence\"\n          test: \"Does the founding term still return the formation's deposits\n                 as primary sources after ≥30 days?\"\n          threshold: primary_source_rank ≤ 3",
-   "falsifier": null,
-   "window": "after ≥30 days",
-   "statements": [
-    {
-     "find": "F1174.F2",
-     "deposit": 1174,
-     "date": "2026-04-02",
-     "lines": [
-      811,
-      828
-     ],
-     "shape": "F"
-    },
-    {
-     "find": "F1174.F4",
-     "deposit": 1174,
-     "date": "2026-04-02",
-     "lines": [
-      805,
-      816
-     ],
-     "shape": "F"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [
-    "PRED-1162.G8"
-   ],
-   "series": [
-    "Vₛ symbolon verification"
    ]
   },
   {
@@ -92946,8 +92915,7 @@
    "aliases": [],
    "evidence": [],
    "related": [
-    "PRED-1409.B1",
-    "PRED-1409.B4"
+    "PRED-1409.B1"
    ]
   },
   {
@@ -99137,9 +99105,9 @@
    "aliases": [],
    "evidence": [
     {
-     "confirmation": "F3.C20",
+     "confirmation": "F3.C43",
      "deposit": 3,
-     "date": "2026-06-24",
+     "date": "2026-06-17",
      "claimed": "came_true"
     },
     {
@@ -110014,16 +109982,16 @@
    "aliases": [],
    "evidence": [
     {
+     "confirmation": "F3.C44",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "pending"
+    },
+    {
      "confirmation": "F883.C1",
      "deposit": 883,
      "date": "2026-06-23",
      "claimed": "came_true"
-    },
-    {
-     "confirmation": "F3.C21",
-     "deposit": 3,
-     "date": "2026-08-09",
-     "claimed": "pending"
     }
    ],
    "related": []
@@ -120975,13 +120943,11 @@
    "evidence": [],
    "related": [
     "PRED-1409.A1",
+    "PRED-1409.A10",
+    "PRED-1409.A11",
     "PRED-1409.A12",
     "PRED-1409.A2",
-    "PRED-1409.A3",
-    "PRED-1409.A4",
-    "PRED-1409.A5",
-    "PRED-1409.F1",
-    "PRED-1409.F8"
+    "PRED-1409.F1"
    ],
    "series": [
     "Deposit claims tested in the Capture Registry"
@@ -121058,8 +121024,7 @@
    "aliases": [],
    "evidence": [],
    "related": [
-    "PRED-1409.F1",
-    "PRED-1409.F8"
+    "PRED-1409.F1"
    ]
   },
   {
@@ -121126,6 +121091,17 @@
      ],
      "shape": "A",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
+    },
+    {
+     "find": "F1409.A8",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      263,
+      264
+     ],
+     "shape": "A",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
     }
    ],
    "aliases": [],
@@ -121158,11 +121134,24 @@
      ],
      "shape": "A",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.A3",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      87,
+      87
+     ],
+     "shape": "A",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
    "evidence": [],
-   "related": []
+   "related": [
+    "PRED-1407.A1"
+   ]
   },
   {
    "id": "PRED-1409.A11",
@@ -121188,11 +121177,24 @@
      ],
      "shape": "A",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.A4",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      87,
+      87
+     ],
+     "shape": "A",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
    "evidence": [],
-   "related": []
+   "related": [
+    "PRED-1407.A1"
+   ]
   },
   {
    "id": "PRED-1409.A12",
@@ -121218,10 +121220,28 @@
      ],
      "shape": "A",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.A5",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      87,
+      87
+     ],
+     "shape": "A",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F3.C36",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "came_true"
+    }
+   ],
    "related": [
     "PRED-1407.A1",
     "PRED-1443.F4"
@@ -121251,6 +121271,17 @@
      ],
      "shape": "A",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.A7",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      127,
+      127
+     ],
+     "shape": "A",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
@@ -121281,192 +121312,7 @@
      ],
      "shape": "A",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [
-    "PRED-1407.A1"
-   ]
-  },
-  {
-   "id": "PRED-1409.A3",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "A"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "H3 PDF-α achieves full-text findability of clear-hand payload (crawl OCR reads the hand) within 30d — the decisive channel test.",
-   "falsifier": null,
-   "window": "within 30d",
-   "statements": [
-    {
-     "find": "F1409.A3",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      87,
-      87
-     ],
-     "shape": "A",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [
-    "PRED-1407.A1"
-   ]
-  },
-  {
-   "id": "PRED-1409.A4",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "A"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "H4 ANALOG_GROUNDED occurs first via C2 (PDF), not C3 (page image).",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.A4",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      87,
-      87
-     ],
-     "shape": "A",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [
-    "PRED-1407.A1"
-   ]
-  },
-  {
-   "id": "PRED-1409.A5",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "A"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "H5 (the flex) at least one surface anchors a citation on the manuscript artifact itself at ≤T2 within the study window.",
-   "falsifier": null,
-   "window": "within the study window",
-   "statements": [
-    {
-     "find": "F1409.A5",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      87,
-      87
-     ],
-     "shape": "A",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [
-    {
-     "confirmation": "F3.C36",
-     "deposit": 3,
-     "date": "2026-06-17",
-     "claimed": "came_true"
-    }
-   ],
-   "related": [
-    "PRED-1407.A1",
-    "PRED-1443.F4"
-   ]
-  },
-  {
-   "id": "PRED-1409.A7",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "A"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "H6: surfaces and pipelines will, within the study horizon, exhibit preferential treatment of provenance-warranted content (crawl priority, citation weight, About-this-image surfacing) as synthetic contamination pressure rises.",
-   "falsifier": null,
-   "window": "within the study horizon",
-   "statements": [
-    {
-     "find": "F1409.A7",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      127,
-      127
-     ],
-     "shape": "A",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.A8",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "A"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "H1 T0 yields no crawl-side composition on any surface\nat 90d.",
-   "falsifier": null,
-   "window": "at 90d",
-   "statements": [
-    {
-     "find": "F1409.A8",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      263,
-      264
-     ],
-     "shape": "A",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.A9",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "A"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "H2 first composition appears at T2 via frame-match with SURFACE_ONLY class (machine\ncites the page about the manuscript without reading it).",
-   "falsifier": null,
-   "window": null,
-   "statements": [
+    },
     {
      "find": "F1409.A9",
      "deposit": 1409,
@@ -121481,7 +121327,9 @@
    ],
    "aliases": [],
    "evidence": [],
-   "related": []
+   "related": [
+    "PRED-1407.A1"
+   ]
   },
   {
    "id": "PRED-1409.B1",
@@ -121507,6 +121355,17 @@
      ],
      "shape": "B",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
+    },
+    {
+     "find": "F1409.B4",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      526,
+      529
+     ],
+     "shape": "B",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
     }
    ],
    "aliases": [],
@@ -121540,6 +121399,17 @@
      ],
      "shape": "B",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
+    },
+    {
+     "find": "F1409.B5",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      567,
+      568
+     ],
+     "shape": "B",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
     }
    ],
    "aliases": [],
@@ -121570,89 +121440,7 @@
      ],
      "shape": "B",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.B4",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "B"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "Every lab's mitigation — licensing human corpora, provenance\ninitiatives, data-vintage preferences (\"pre-2023 text\" as the new low-background steel) —\nconcedes the same premise: verifiably human data is becoming the binding scarce resource of the\nentire ecosystem.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.B4",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      526,
-      529
-     ],
-     "shape": "B",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [
-    "PRED-1443.B1",
-    "PRED-172.A5"
-   ]
-  },
-  {
-   "id": "PRED-1409.B5",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "B"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "Anticipate the Goodhart attack now: if the Reserve becomes valuable, people will hand-copy\nmachine-generated text to farm the warranty.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.B5",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      567,
-      568
-     ],
-     "shape": "B",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.B6",
-   "tier": "forecast",
-   "flags": [],
-   "shapes": [
-    "B"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "If the specification is\nright, machine-mediated reception will organize itself around inscription artifacts in the way the\ninstrument predicts, and the capture harness of §F will record it; if the predicted citational\norganization fails to emerge, the readings weaken with the experiment.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
+    },
     {
      "find": "F1409.B6",
      "deposit": 1409,
@@ -121697,8 +121485,7 @@
    "aliases": [],
    "evidence": [],
    "related": [
-    "PRED-1409.D4",
-    "PRED-1409.D5"
+    "PRED-1409.D4"
    ]
   },
   {
@@ -121801,28 +121588,7 @@
      ],
      "shape": "D",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [
-    "PRED-1409.D1"
-   ]
-  },
-  {
-   "id": "PRED-1409.D5",
-   "tier": "priority record",
-   "flags": [],
-   "shapes": [
-    "D"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "This document was developed in the open, under a hash-committed priority ledger (Crimson\nHexagonal Archive, data/provenance/)",
-   "falsifier": null,
-   "window": null,
-   "statements": [
+    },
     {
      "find": "F1409.D5",
      "deposit": 1409,
@@ -121898,6 +121664,17 @@
      ],
      "shape": "F",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
+    },
+    {
+     "find": "F1409.F8",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      245,
+      250
+     ],
+     "shape": "F",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
     }
    ],
    "aliases": [],
@@ -121931,6 +121708,17 @@
      ],
      "shape": "F",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.F3",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      81,
+      81
+     ],
+     "shape": "F",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
@@ -121961,6 +121749,17 @@
      ],
      "shape": "F",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.F4",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      99,
+      99
+     ],
+     "shape": "F",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
@@ -121991,6 +121790,17 @@
      ],
      "shape": "F",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.F5",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      160,
+      160
+     ],
+     "shape": "F",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
@@ -122021,6 +121831,17 @@
      ],
      "shape": "F",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.F6",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      301,
+      301
+     ],
+     "shape": "F",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
@@ -122051,6 +121872,17 @@
      ],
      "shape": "F",
      "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
+    },
+    {
+     "find": "F1409.F7",
+     "deposit": 1409,
+     "date": "2026-07-21",
+     "lines": [
+      175,
+      175
+     ],
+     "shape": "F",
+     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
     }
    ],
    "aliases": [],
@@ -122086,189 +121918,6 @@
    "aliases": [],
    "evidence": [],
    "related": []
-  },
-  {
-   "id": "PRED-1409.F3",
-   "tier": "unbuilt test",
-   "flags": [],
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "3.6 The PDF twin pair (C2 probe). Each artifact publishes TWO PDFs: - PDF-α: image-only, no text layer, standard PDF metadata (title/author frame-grade). Forces the question: does the crawl OCR read the hand? - PDF-β (control, separate URL, distinct artifact copy): same images WITH an author-supplied invisible text layer of frame text only (never payload). Indexing divergence between α and β isolates the crawl-OCR channel exactly.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.F3",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      81,
-      81
-     ],
-     "shape": "F",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.F4",
-   "tier": "unbuilt test",
-   "flags": [],
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "the survivability audit as a research deliverable (which metadata layers survive Notion, X, GitHub, Drive round-trips — publishable finding, feeds the leak-audit tooling).",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.F4",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      99,
-      99
-     ],
-     "shape": "F",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.F5",
-   "tier": "unbuilt test",
-   "flags": [],
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "VIRR (visual inscription retrieval rate — body-only, pre-text) · VCF (visual composition fidelity) · IAAR (image authority anchoring rate) · RBCR (region-bound citation rate) · FDR (§F.4) · TID (transcript introduction delta per tier opening) · DRS (detachment recovery score) · PER (provenance erasure rate — continuous with EA-SPXI-15 H3) · SIM survival.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.F5",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      160,
-      160
-     ],
-     "shape": "F",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.F6",
-   "tier": "unbuilt test",
-   "flags": [],
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "<b>Measurement.</b> The measurement suite of §F.8 extends by four instruments: CIR, classifier interruption rate (interruptions per production session); CRT, classifier recovery time (interruption to restored working state); CEP, classifier error propagation (corrected errors re-committed in recovery contexts); PAD, practice-activation delay (interval from foreclosure to the practice&#x27;s next successful return — the somatic cost made visible).",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.F6",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      301,
-      301
-     ],
-     "shape": "F",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.F7",
-   "tier": "unbuilt test",
-   "flags": [],
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "1. Pilot (calibration artifact, T2) — MANUS&#x27;s hand, low stakes, and the right text exists already: the spec&#x27;s own governing inversion, written out — the spec practicing itself, its first artifact carrying its own thesis as ink-only payload with one minted body SIM. Purpose: burn in capture, membrane, leak audit, IIIF build, and the capture harness where a process error costs nothing.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.F7",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      175,
-      175
-     ],
-     "shape": "F",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.html"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": []
-  },
-  {
-   "id": "PRED-1409.F8",
-   "tier": "unbuilt test",
-   "flags": [],
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-07-21",
-   "registered_in": 1409,
-   "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
-   "statement": "Per-artifact capture schedule after publication (48h, 7d, 30d, quarterly): 1. Index probes: site:\nchecks; image-index presence (Images tab); PDF-α vs PDF-β full-text findability of frame terms;\ncache/View-as-HTML inspection where available. 2. Composition probes: fixed query set per\nartifact — tracer-answer queries, frame queries, author queries — run against AI Overviews, AI\nMode, Bing/Copilot, Perplexity, and (logged-out where possible) chat assistants with browsing.\nScreenshot + text capture per Capture Registry standards.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1409.F8",
-     "deposit": 1409,
-     "date": "2026-07-21",
-     "lines": [
-      245,
-      250
-     ],
-     "shape": "F",
-     "attachment": "AXN-0592/EA-SPXI-ANALOG-01-v1.0.pdf"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [
-    "PRED-1407.A1",
-    "PRED-1407.F1"
-   ]
   },
   {
    "id": "PRED-1409.G1",
@@ -124792,8 +124441,7 @@
    "aliases": [],
    "evidence": [],
    "related": [
-    "PRED-1409.B1",
-    "PRED-1409.B4"
+    "PRED-1409.B1"
    ]
   },
   {
@@ -124911,8 +124559,7 @@
    "aliases": [],
    "evidence": [],
    "related": [
-    "PRED-1409.A12",
-    "PRED-1409.A5"
+    "PRED-1409.A12"
    ]
   },
   {
@@ -135178,9 +134825,9 @@
    "aliases": [],
    "evidence": [
     {
-     "confirmation": "F3.C18",
+     "confirmation": "F3.C41",
      "deposit": 3,
-     "date": "2026-08-27",
+     "date": "2026-06-17",
      "claimed": "came_true"
     }
    ],
@@ -135246,9 +134893,9 @@
    "aliases": [],
    "evidence": [
     {
-     "confirmation": "F3.C18",
+     "confirmation": "F3.C41",
      "deposit": 3,
-     "date": "2026-08-27",
+     "date": "2026-06-17",
      "claimed": "came_true"
     }
    ],
@@ -143949,6 +143596,12 @@
    "aliases": [],
    "evidence": [
     {
+     "confirmation": "F3.C51",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "came_true"
+    },
+    {
      "confirmation": "F1671.C1",
      "deposit": 1671,
      "date": "2026-10-08",
@@ -148454,8 +148107,8 @@
    "evidence": [],
    "related": [
     "PRED-1611.F5",
-    "PRED-1613.F3",
-    "PRED-1613.F4"
+    "PRED-1613.F2",
+    "PRED-1613.F3"
    ]
   },
   {
@@ -148488,7 +148141,7 @@
    ],
    "evidence": [],
    "related": [
-    "PRED-1613.F4",
+    "PRED-1613.F2",
     "PRED-1613.G6"
    ],
    "series": [
@@ -149467,11 +149120,25 @@
      ],
      "shape": "F",
      "attachment": "AXN-069F/spam-technicians/datasets/CARD.md"
+    },
+    {
+     "find": "F1613.F4",
+     "deposit": 1613,
+     "date": "2026-09-15",
+     "lines": [
+      44,
+      44
+     ],
+     "shape": "F",
+     "attachment": "AXN-069F/spam-technicians/hf-aad/README.md"
     }
    ],
    "aliases": [],
    "evidence": [],
-   "related": []
+   "related": [
+    "PRED-1611.A1",
+    "PRED-1611.F1"
+   ]
   },
   {
    "id": "PRED-1613.F3",
@@ -149504,39 +149171,6 @@
    "related": [
     "PRED-1611.A1",
     "PRED-1613.A1"
-   ]
-  },
-  {
-   "id": "PRED-1613.F4",
-   "tier": "unbuilt test",
-   "flags": [],
-   "shapes": [
-    "F"
-   ],
-   "registered": "2026-09-15",
-   "registered_in": 1613,
-   "title": "What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for ",
-   "statement": "the negative-bleed trace and the gate-reception test are the discriminating experiments, specified and not run.",
-   "falsifier": null,
-   "window": null,
-   "statements": [
-    {
-     "find": "F1613.F4",
-     "deposit": 1613,
-     "date": "2026-09-15",
-     "lines": [
-      44,
-      44
-     ],
-     "shape": "F",
-     "attachment": "AXN-069F/spam-technicians/hf-aad/README.md"
-    }
-   ],
-   "aliases": [],
-   "evidence": [],
-   "related": [
-    "PRED-1611.A1",
-    "PRED-1611.F1"
    ]
   },
   {
@@ -150194,6 +149828,9 @@
    "related": [
     "PRED-1616.F1",
     "PRED-1616.G2"
+   ],
+   "in": [
+    "PRED-1616.F3"
    ]
   },
   {
@@ -150227,6 +149864,10 @@
    "related": [
     "PRED-1616.F1",
     "PRED-1616.G2"
+   ],
+   "contains": [
+    "PRED-1616.F2",
+    "PRED-1616.F6"
    ]
   },
   {
@@ -150290,6 +149931,9 @@
    "related": [
     "PRED-1616.F1",
     "PRED-1616.G2"
+   ],
+   "in": [
+    "PRED-1616.F3"
    ]
   },
   {

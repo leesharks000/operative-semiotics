@@ -121,7 +121,9 @@
    "series": [
     "'I hereby abolish money': provenance probe and its record"
    ],
-   "related": [],
+   "related": [
+    "PRED-968.D3"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -201,7 +203,14 @@
     }
    ],
    "states": [],
-   "evidence": [],
+   "evidence": [
+    {
+     "confirmation": "F3.C47",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "claimed": "came_true"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -244,7 +253,9 @@
    "series": [
     "Embedded self-liquidation predictions"
    ],
-   "related": [],
+   "related": [
+    "PRED-209.F11"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -285,7 +296,93 @@
    "series": [
     "Diffuse Guardrail indexing diagnostics"
    ],
-   "related": [],
+   "related": [
+    "PRED-209.F10",
+    "PRED-209.F9"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-209.F10",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-01-02",
+   "registered_in": 209,
+   "registered_title": "Mapping the Diffuse Guardrail: Google's Indexing Architecture from Within 0. Purpose and Method",
+   "record": "https://www.alexanarch.org/s/records/209/",
+   "page": "https://www.operativesemiotics.org/predictions/i-hereby-abolish-money-probe-and-diffuse-guardrail#PRED-209.F10",
+   "statement": "Quantifying the *felt experience* of liquidation:\n\n\n| Layer | Metric | How to Measure | What It Captures |\n| ---|---|---|--- |\n| L0 | **Time to first sighting** | Hours until content appears in any `site:` query | The void of unseeing |\n| L1a | **Retention half-life** | Days until cached content disappears | Dissociative forgetting |",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F209.F10",
+     "deposit": 209,
+     "date": "2026-01-02",
+     "lines": [
+      526,
+      537
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/209/",
+     "quote": "Quantifying the *felt experience* of liquidation:\n\n\n| Layer | Metric | How to Measure | What It Captures |\n| ---|---|---|--- |\n| L0 | **Time to first sighting** | Hours until content appears in any `site:` query | The void of unseeing |\n| L1a | **Retention half-life** | Days until cached content disappears | Dissociative forgetting |",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-209.F1",
+    "PRED-209.F3"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-209.F11",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-01-02",
+   "registered_in": 209,
+   "registered_title": "Mapping the Diffuse Guardrail: Google's Indexing Architecture from Within 0. Purpose and Method",
+   "record": "https://www.alexanarch.org/s/records/209/",
+   "page": "https://www.operativesemiotics.org/predictions/i-hereby-abolish-money-probe-and-diffuse-guardrail#PRED-209.F11",
+   "statement": "Track this document's treatment across systems:\n\n\n| Date | Platform | Query | Summary/Response | Prediction Confirmed? |",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F209.F11",
+     "deposit": 209,
+     "date": "2026-01-02",
+     "lines": [
+      687,
+      690
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/209/",
+     "quote": "Track this document's treatment across systems:\n\n\n| Date | Platform | Query | Summary/Response | Prediction Confirmed? |",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-209.A1"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -324,7 +421,9 @@
    "states": [],
    "evidence": [],
    "series": [],
-   "related": [],
+   "related": [
+    "PRED-209.F9"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -378,7 +477,10 @@
    "series": [
     "'I hereby abolish money': provenance probe and its record"
    ],
-   "related": [],
+   "related": [
+    "PRED-209.F10",
+    "PRED-209.F9"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -386,6 +488,49 @@
    "merged": [
     "PRED-210.F2"
    ]
+  },
+  {
+   "id": "PRED-209.F9",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-01-02",
+   "registered_in": 209,
+   "registered_title": "Mapping the Diffuse Guardrail: Google's Indexing Architecture from Within 0. Purpose and Method",
+   "record": "https://www.alexanarch.org/s/records/209/",
+   "page": "https://www.operativesemiotics.org/predictions/i-hereby-abolish-money-probe-and-diffuse-guardrail#PRED-209.F9",
+   "statement": "### 2.2 Future Probes\n\n\n| Probe ID | Phrase/Artifact | Target Layer | Hypothesis Being Tested | Status |\n| ---|---|---|---|--- |\n| PROBE-001 | \"I hereby abolish money\" | All | Baseline semantic liquidation | Active |\n| PROBE-002 | [TBD] | L0 (Crawl) | Crawl rate by domain authority | Planned |\n| PROBE-003 | [TBD] | L1b (Representation) | Entity extraction for pseudonymous authors | Planned |\n| PROBE-004 | [TBD] | L2 (Ranking) | YMYL sensitivity threshold | Planned |\n| PROBE-005 | [TBD] | L5 (Feedback) | Attribution drift over time | Planned |",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F209.F9",
+     "deposit": 209,
+     "date": "2026-01-02",
+     "lines": [
+      470,
+      479
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/209/",
+     "quote": "### 2.2 Future Probes\n\n\n| Probe ID | Phrase/Artifact | Target Layer | Hypothesis Being Tested | Status |\n| ---|---|---|---|--- |\n| PROBE-001 | \"I hereby abolish money\" | All | Baseline semantic liquidation | Active |\n| PROBE-002 | [TBD] | L0 (Crawl) | Crawl rate by domain authority | Planned |\n| PROBE-003 | [TBD] | L1b (Representation) | Entity extraction for pseudonymous authors | Planned |\n| PROBE-004 | [TBD] | L2 (Ranking) | YMYL sensitivity threshold | Planned |\n| PROBE-005 | [TBD] | L5 (Feedback) | Attribution drift over time | Planned |",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-209.F1",
+    "PRED-209.F2",
+    "PRED-209.F3"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
   },
   {
    "id": "PRED-209.G1",
@@ -705,6 +850,48 @@
     "PVE-003 attribution scar"
    ],
    "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-968.D3",
+   "tier": "priority record",
+   "shapes": [
+    "D"
+   ],
+   "registered": "2026-04-08",
+   "registered_in": 968,
+   "registered_title": "PVE-003: The Attribution Scar — Failed Suppression, Fabrication, and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January–April 2026)",
+   "record": "https://www.alexanarch.org/s/records/968/",
+   "page": "https://www.operativesemiotics.org/predictions/i-hereby-abolish-money-probe-and-diffuse-guardrail#PRED-968.D3",
+   "statement": "The phrase \"I hereby abolish money\" is the user's own formalized semantic property (SPE-018, December 2025), deposited with DOIs on Zenodo and indexed on Google's own search engine.",
+   "falsifier": null,
+   "window": "December 2025",
+   "statements": [
+    {
+     "find": "F968.D3",
+     "deposit": 968,
+     "date": "2026-04-08",
+     "lines": [
+      505,
+      505
+     ],
+     "shape": "D",
+     "record": "https://www.alexanarch.org/s/records/968/",
+     "quote": "The phrase \"I hereby abolish money\" is the user's own formalized semantic property (SPE-018, December 2025), deposited with DOIs on Zenodo and indexed on Google's own search engine.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-1173.D3",
+    "PRED-206.D1"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],

@@ -676,8 +676,9 @@
   },
   {
    "id": "PRED-199.F3",
-   "tier": "unbuilt test",
+   "tier": "forecast",
    "shapes": [
+    "B",
     "F"
    ],
    "registered": "2026-06-13",
@@ -701,6 +702,19 @@
      "record": "https://www.alexanarch.org/s/records/199/",
      "quote": "Conversely, the thesis is confirmed by each instance of: correlated vulnerability exploits propagating across independently generated codebases; security incidents whose root cause traces to pattern-level sharing rather than component-level sharing; and further restriction of external security research on AI systems by regulatory or contractual instruments.",
      "falsifier": null
+    },
+    {
+     "find": "F1023.B1",
+     "deposit": 1023,
+     "date": "2026-06-13",
+     "lines": [
+      174,
+      174
+     ],
+     "shape": "B",
+     "record": "https://www.alexanarch.org/s/records/1023/",
+     "quote": "Conversely, the thesis is confirmed by each instance of: correlated vulnerability exploits propagating across independently generated codebases; security incidents whose root cause traces to pattern-level sharing rather than component-level sharing; and further restriction of external security research on AI systems by regulatory or contractual instruments.",
+     "falsifier": null
     }
    ],
    "states": [],
@@ -715,8 +729,9 @@
   },
   {
    "id": "PRED-199.G1",
-   "tier": "standing claim",
+   "tier": "forecast",
    "shapes": [
+    "A",
     "G"
    ],
    "registered": "2026-06-13",
@@ -740,6 +755,19 @@
      "record": "https://www.alexanarch.org/s/records/199/",
      "quote": "Note the asymmetry: each generation inherits the contraction of all previous generations and adds its own. The contraction is monotonic under current training conditions. The existing mitigation — maintaining human-written data in the mix — faces the arithmetic of adoption: as AI-assisted coding becomes the norm, the proportion of genuinely human-written code in new contributions declines, and the \"human data\" anchor erodes. The mitigation is a rate question, not a structural solution: it slows the contraction but does not reverse it, and the rate of synthetic code production currently exceeds the rate of novel human code production by a widening margin.",
      "falsifier": "(c) Evidence that the training-optimization feedback loop for code has been structurally interrupted — e.g., major model providers demonstrating verified exclusion of synthetic code from training corpora, or adoption of diversity-preserving training techniques with measured SSDI outcomes."
+    },
+    {
+     "find": "F1023.A3",
+     "deposit": 1023,
+     "date": "2026-06-13",
+     "lines": [
+      170,
+      170
+     ],
+     "shape": "A",
+     "record": "https://www.alexanarch.org/s/records/1023/",
+     "quote": "(c) Evidence that the training-optimization feedback loop for code has been structurally interrupted — e.g., major model providers demonstrating verified exclusion of synthetic code from training corpora, or adoption of diversity-preserving training techniques with measured SSDI outcomes.",
+     "falsifier": null
     }
    ],
    "states": [],
@@ -756,8 +784,9 @@
   },
   {
    "id": "PRED-199.G2",
-   "tier": "standing claim",
+   "tier": "forecast",
    "shapes": [
+    "A",
     "G"
    ],
    "registered": "2026-06-13",
@@ -781,6 +810,58 @@
      "record": "https://www.alexanarch.org/s/records/199/",
      "quote": "State the paradox in one sentence: *the security regime built to protect AI-generated infrastructure from attack is structurally identical to the condition that makes AI-generated infrastructure vulnerable to attack, because both consist of rejecting external influence on the system's behavior.*",
      "falsifier": "(d) A security governance framework that operationally distinguishes defensive probing from adversarial probing on the basis of harm rather than origin, and that incorporates SSDI or equivalent solution-space diversity metrics into NIST AI RMF or OWASP LLM Top 10 audit standards."
+    },
+    {
+     "find": "F1023.A4",
+     "deposit": 1023,
+     "date": "2026-06-13",
+     "lines": [
+      172,
+      172
+     ],
+     "shape": "A",
+     "record": "https://www.alexanarch.org/s/records/1023/",
+     "quote": "(d) A security governance framework that operationally distinguishes defensive probing from adversarial probing on the basis of harm rather than origin, and that incorporates SSDI or equivalent solution-space diversity metrics into NIST AI RMF or OWASP LLM Top 10 audit standards.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-3.G30",
+   "tier": "standing claim",
+   "shapes": [
+    "G"
+   ],
+   "registered": "2026-06-17",
+   "registered_in": 3,
+   "registered_title": "AI Overview Capture Registry v8.3",
+   "record": "https://www.alexanarch.org/s/records/3/",
+   "page": "https://www.operativesemiotics.org/predictions/iceberg-document-correlated-priors-discovery-channels#PRED-3.G30",
+   "statement": "The source that states the closure question first is the one whose compositions keep it.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F3.G30",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "lines": [
+      12382,
+      12382
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/3/",
+     "quote": "The source that states the closure question first is the one whose compositions keep it.",
+     "falsifier": null
     }
    ],
    "states": [],
@@ -1631,6 +1712,19 @@
      "record": "https://www.alexanarch.org/s/records/1456/",
      "quote": "Implemented 2026-08-12 in a separate commit that states the prediction and estimands are unchanged from commit c7e5b4e7, which stands unedited.",
      "falsifier": null
+    },
+    {
+     "find": "F1456.D2",
+     "deposit": 1456,
+     "date": "2026-08-12",
+     "lines": [
+      6616,
+      6616
+     ],
+     "shape": "D",
+     "record": "https://www.alexanarch.org/s/records/1456/",
+     "quote": "Original registration commit c7e5b4e7 stands unedited; prediction and estimands unchanged; only the execution is new.",
+     "falsifier": null
     }
    ],
    "states": [],
@@ -1796,7 +1890,50 @@
    "states": [],
    "evidence": [],
    "series": [],
-   "related": [],
+   "related": [
+    "PRED-1610.G2"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1610.G2",
+   "tier": "standing claim",
+   "shapes": [
+    "G"
+   ],
+   "registered": "2026-09-12",
+   "registered_in": 1610,
+   "registered_title": "The Anti-Summary Test Applied to a Reception: Transmission Fidelity Is Back-Projection Yield",
+   "record": "https://www.alexanarch.org/s/records/1610/",
+   "page": "https://www.operativesemiotics.org/predictions/iceberg-document-correlated-priors-discovery-channels#PRED-1610.G2",
+   "statement": "THE CLAIM: fidelity-to-seed cannot distinguish a reply from a decay, because\nanswering is moving. Both the mind-virus chain and the Worker C study measure\ndistance from a seed. A text that ENGAGES its seed registers as departure in both.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1610.G2",
+     "deposit": 1610,
+     "date": "2026-09-12",
+     "lines": [
+      33,
+      35
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/1610/",
+     "quote": "THE CLAIM: fidelity-to-seed cannot distinguish a reply from a decay, because\nanswering is moving. Both the mind-virus chain and the Worker C study measure\ndistance from a seed. A text that ENGAGES its seed registers as departure in both.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-1610.G1"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -1830,6 +1967,24 @@
      "record": "https://www.alexanarch.org/s/records/1613/",
      "quote": "The exit is territory held, and others joining on this side of the line — each adopter lowering its own score under the graph's rule and raising the excluded side's constitution share, until the seed has excluded the whole world and sits on its side with its dozen platforms",
      "falsifier": null
+    },
+    {
+     "find": "F1613.B3",
+     "deposit": 1613,
+     "date": "2026-09-15",
+     "lines": [
+      82,
+      82
+     ],
+     "shape": "B",
+     "record": "https://www.alexanarch.org/s/records/1613/",
+     "quote": "As the excluded side's constitution share of an answer-space crosses threshold, the seed's answers can only be composed by substitution or degradation — Regime 5, quality conflict, with CSE-O internally evidenced — and the ontology's collapse to its seed list (mirror §3) is completed by the excluder's own rule. The limit of the process is a seed set that has excluded the whole world and sits on its side of the line with its dozen platforms.",
+     "falsifier": null,
+     "variant": {
+      "change": "mechanism: the limit is reached as the excluded side's constitution share crosses threshold (Regime 5 substitution or degradation, collapse completed by the excluder's own rule), rather than through adopters lowering their own score",
+      "from": "F1613.B2",
+      "batch": "TN04"
+     }
     }
    ],
    "states": [],

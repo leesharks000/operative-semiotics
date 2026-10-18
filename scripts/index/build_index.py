@@ -84,6 +84,16 @@ def load():
     return reg, C, F, S, conf, P, names
 
 
+def resolver(C):
+    """A claim id as the pages, readers and reviews recorded it, resolved to the claim that holds it now. Reading pass 2
+    (2026-10-18) can register a claim at an earlier statement, which changes its id (PRED-<find id of the earliest
+    statement>), or join two claims into one; the claim is found again through the find its old id names."""
+    cur = {c['id'] for c in C}
+    by_find = {st['find']: c['id'] for c in C for st in c['statements']}
+    merged = {m: c['id'] for c in C for m in c.get('merged') or []}
+    return lambda i: i if i in cur else by_find.get('F' + i[5:]) or merged.get(i)
+
+
 def page_members(P, names, C):
     """Pages with the readers' moves applied. A reader judged a claim out of place by reading its page; the page it
     named was often chosen before the other pages had titles. So a move goes to the named page when the reader read that
@@ -92,7 +102,8 @@ def page_members(P, names, C):
     import numpy as np
     from sklearn.feature_extraction.text import TfidfVectorizer
     from sklearn.preprocessing import normalize
-    mem = {p['page']: list(p['claims']) for p in P}
+    res = resolver(C)
+    mem = {p['page']: list(dict.fromkeys(x for x in (res(i) for i in p['claims']) if x)) for p in P}
     st = {c['id']: c['statement'] or '' for c in C}
     order = [p['page'] for p in P]
     vec = TfidfVectorizer(sublinear_tf=True, min_df=2, max_df=0.3, stop_words='english', ngram_range=(1, 2)).fit(list(st.values()))
@@ -101,8 +112,8 @@ def page_members(P, names, C):
     moves = []
     for pid, n in names.items():
         for m in n.get('moves') or []:
-            if m['claim'] in mem.get(pid, []):
-                moves.append((pid, m['claim'], m.get('to')))
+            if res(m['claim']) in mem.get(pid, []):
+                moves.append((pid, res(m['claim']), m.get('to')))
     log = []
     for src, cid, to in moves:
         sims = (cent @ normalize(vec.transform([st[cid]])).T.toarray()).ravel()
@@ -116,10 +127,47 @@ def page_members(P, names, C):
     return {k: sorted(v, key=lambda c: (reg.get(c, '9999'), c)) for k, v in mem.items()}
 
 
+def place(mem, C):
+    """Claims no page holds — the new claims of reading pass 2 — go to the page that holds most of the claims they are
+    linked to (related, contains, in, series); a claim with no placed link goes to the page whose statements it is
+    nearest (TF-IDF centroid). Logged in data/index/placed.json."""
+    import numpy as np
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.preprocessing import normalize
+    where = {c: p for p, cs in mem.items() for c in cs}
+    todo = [c for c in C if c['id'] not in where]
+    if not todo:
+        return
+    ser = collections.defaultdict(set)
+    for c in C:
+        for n in c.get('series') or []:
+            ser[n].add(c['id'])
+    st = {c['id']: ' '.join(filter(None, [c.get('statement'), c.get('falsifier')])) for c in C}
+    order = sorted(mem)
+    vec = TfidfVectorizer(sublinear_tf=True, min_df=2, max_df=0.3, stop_words='english', ngram_range=(1, 2)).fit(list(st.values()))
+    cent = normalize(np.vstack([np.asarray(vec.transform([st[x] for x in mem[p]] or ['']).mean(axis=0)) for p in order]))
+    log = []
+    for c in sorted(todo, key=lambda c: (c['registered'] or '9999', c['id'])):
+        links = set(c.get('related') or []) | set(c.get('contains') or []) | set(c.get('in') or [])
+        for n in c.get('series') or []:
+            links |= ser[n]
+        votes = collections.Counter(where[x] for x in sorted(links) if x in where)
+        if votes:  # ties go to the page first in order, so the build is deterministic
+            dest, how = max(sorted(votes), key=lambda p: votes[p]), 'links'
+        else:
+            sims = (cent @ normalize(vec.transform([st[c['id']]])).T.toarray()).ravel()
+            dest, how = order[int(np.argmax(sims))], 'nearest'
+        mem[dest].append(c['id']); where[c['id']] = dest
+        log.append({'claim': c['id'], 'page': dest, 'by': how})
+    json.dump({'what': 'Claims placed by build_index.py: claims no page held (reading pass 2), placed by their links or by wording.',
+               'placed': log}, open(I / 'placed.json', 'w'), ensure_ascii=False, indent=1)
+
+
 def build(export=None):
     reg, C, F, S, conf, P, names = load()
     byid = {c['id']: c for c in C}
     mem = page_members(P, names, C)
+    res = resolver(C)
     # the review pass (REVIEW-PROTOCOL): a page's title, description and line as the reviewer left them, and its splits
     # into new pages (P012 -> P012b, P012c, ...), each taking the claims the reviewer listed
     rev = {}
@@ -132,7 +180,7 @@ def build(export=None):
         names[pid] = {**names.get(pid, {}), **{k: r[k] for k in ('title', 'slug', 'description', 'line') if r.get(k)}}
         for n, sp in enumerate(r.get('split') or []):
             nid = f'{pid}{chr(98 + n)}'
-            take = [c for c in sp['claims'] if c in mem[pid]]
+            take = [c for c in dict.fromkeys(res(x) for x in sp['claims']) if c in mem[pid]]
             mem[pid] = [c for c in mem[pid] if c not in set(take)]
             mem[nid] = take
             names[nid] = {k: sp[k] for k in ('title', 'slug', 'description', 'line')}
@@ -142,12 +190,19 @@ def build(export=None):
     for m in mg['merges']:
         mem[m['into']] += mem.pop(m['from'])
     for m in mg['moves']:
+        cm = res(m['claim'])
         for k in mem:
-            if m['claim'] in mem[k]:
-                mem[k].remove(m['claim'])
-        mem[m['into']].append(m['claim'])
+            if cm in mem[k]:
+                mem[k].remove(cm)
+        if cm:
+            mem[m['into']].append(cm)
     gone = {m['from'] for m in mg['merges']}
     P = [p for p in P if p['page'] not in gone]
+    # each claim on exactly one page: two claims joined by pass 2 keep the page of the first
+    seen_c = set()
+    for p in sorted(mem):
+        mem[p] = [c for c in mem[p] if not (c in seen_c or seen_c.add(c))]
+    place(mem, C)
     rg = {c['id']: c['registered'] or '9999' for c in C}
     mem = {k: sorted(v, key=lambda c: (rg.get(c, '9999'), c)) for k, v in mem.items()}
     P.sort(key=lambda p: p['page'])
@@ -336,7 +391,7 @@ def build(export=None):
             (E / n).write_bytes(b)
             recs.append({'name': n, 'path': f'/datasets/prediction-index/{n}', 'size_bytes': len(b), 'sha256': hashlib.sha256(b).hexdigest()})
         man = {'dataset': 'prediction-index', 'title': 'Prediction Index — forecasts, standing claims, tests, historical theses and priority records',
-               'date': today, 'description': f'{len(C)} claims read out of the archive\'s deposits by the prediction sweep (2026-10-15) and grouped by its triage, topical and join passes (2026-10-17): each registered at its earliest statement, every statement quoted. Generated from operative-semiotics data/reading/; never hand-edit.',
+               'date': today, 'description': f'{len(C)} claims read out of the archive\'s deposits by the prediction sweep (2026-10-15) and its second reading pass over repaired text and attachments (2026-10-18), and grouped by its triage, topical and join passes (2026-10-17, 2026-10-18): each registered at its earliest statement, every statement quoted. Generated from operative-semiotics data/reading/; never hand-edit.',
                'canonical_home': f'{HOST}/predictions', 'table_of_contents': f'{HOST}/predictions/index.json',
                'record_form': f'{HOST}/predictions/{{slug}}', 'record_json_form': f'{HOST}/predictions/{{slug}}/record.json',
                'source_of_truth': 'operative-semiotics — data/reading/ (finds.jsonl; triage/claims.json)',

@@ -84,6 +84,45 @@
    "merged": []
   },
   {
+   "id": "PRED-499.F2",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-02-20",
+   "registered_in": 499,
+   "registered_title": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture",
+   "record": "https://www.alexanarch.org/s/records/499/",
+   "page": "https://www.operativesemiotics.org/predictions/model-monoculture-ssdi-and-reflexive-foreclosure#PRED-499.F2",
+   "statement": "**Peace Metrics** — how do we know if we're winning?\n\n- **Translation Velocity**: time required to resolve Γ_Trans disputes (decreasing = improving)\n- **Extraction Rate**: F_Ext across the ecology (approaching zero = success)\n- **Synthesis Rate**: frequency of ¬ operations vs. ⊗ operations (ratio > 1 indicates healthy ecology)\n- **Sovereignty Index**: dependency concentration across agents (decreasing = improving)",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F499.F2",
+     "deposit": 499,
+     "date": "2026-02-20",
+     "lines": [
+      2967,
+      2972
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/499/",
+     "quote": "**Peace Metrics** — how do we know if we're winning?\n\n- **Translation Velocity**: time required to resolve Γ_Trans disputes (decreasing = improving)\n- **Extraction Rate**: F_Ext across the ecology (approaching zero = success)\n- **Synthesis Rate**: frequency of ¬ operations vs. ⊗ operations (ratio > 1 indicates healthy ecology)\n- **Sovereignty Index**: dependency concentration across agents (decreasing = improving)",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
    "id": "PRED-520.E15",
    "tier": "forecast",
    "shapes": [
@@ -427,7 +466,8 @@
    "id": "PRED-199.A1",
    "tier": "forecast",
    "shapes": [
-    "A"
+    "A",
+    "G"
    ],
    "registered": "2026-06-13",
    "registered_in": 199,
@@ -449,6 +489,32 @@
      "shape": "A",
      "record": "https://www.alexanarch.org/s/records/199/",
      "quote": "The prediction of this paper is not that every individual model release must show a lower SSDI than its predecessor — real generations may show bumps from mitigation efforts, data refreshes, or architectural changes. The prediction is that, absent diversity-preserving intervention, recursive synthetic saturation produces a declining SSDI trend and a rising VCC trend, while functional pass rate remains stable or improves.",
+     "falsifier": "(a) A systematic measurement of SSDI across model generations showing no monotonic decline — i.e., solution-space diversity remains stable or increases as synthetic code saturates training corpora."
+    },
+    {
+     "find": "F199.G4",
+     "deposit": 199,
+     "date": "2026-06-13",
+     "lines": [
+      153,
+      153
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/199/",
+     "quote": "The prediction is that, absent diversity-preserving intervention, recursive synthetic saturation produces a declining SSDI trend and a rising VCC trend, while functional pass rate remains stable or improves.",
+     "falsifier": null
+    },
+    {
+     "find": "F1023.A1",
+     "deposit": 1023,
+     "date": "2026-06-13",
+     "lines": [
+      125,
+      125
+     ],
+     "shape": "A",
+     "record": "https://www.alexanarch.org/s/records/1023/",
+     "quote": "The prediction is that, absent diversity-preserving intervention, recursive synthetic saturation produces a declining SSDI trend and a rising VCC trend, while functional pass rate remains stable or improves.",
      "falsifier": "(a) A systematic measurement of SSDI across model generations showing no monotonic decline — i.e., solution-space diversity remains stable or increases as synthetic code saturates training corpora."
     }
    ],
@@ -488,6 +554,19 @@
      "shape": "A",
      "record": "https://www.alexanarch.org/s/records/199/",
      "quote": "The testable prediction is specific: *as AI-generated code constitutes a larger fraction of production software, the frequency of vulnerabilities per codebase may decrease (as models improve at avoiding known bug classes) while the correlation of vulnerabilities across codebases increases (as models converge on the same patterns and therefore the same residual bug classes).* Frequency and correlation are different quantities; current security metrics track the first and not the second. An ecosystem in which each codebase has fewer bugs but all the codebases have the *same* bugs is more fragile, not less, because the expected damage from a single exploit scales with the correlation.",
+     "falsifier": "(b) A measurement of VCC across AI-generated codebases showing no correlation between pattern similarity and vulnerability similarity — i.e., code that looks the same does not fail the same way."
+    },
+    {
+     "find": "F1023.A2",
+     "deposit": 1023,
+     "date": "2026-06-13",
+     "lines": [
+      95,
+      95
+     ],
+     "shape": "A",
+     "record": "https://www.alexanarch.org/s/records/1023/",
+     "quote": "The testable prediction is specific: _as AI-generated code constitutes a larger fraction of production software, the frequency of vulnerabilities per codebase may decrease (as models improve at avoiding known bug classes) while the correlation of vulnerabilities across codebases increases (as models converge on the same patterns and therefore the same residual bug classes)._ Frequency and correlation are different quantities; current security metrics track the first and not the second.",
      "falsifier": "(b) A measurement of VCC across AI-generated codebases showing no correlation between pattern similarity and vulnerability similarity — i.e., code that looks the same does not fail the same way."
     }
    ],
@@ -530,6 +609,32 @@
      "record": "https://www.alexanarch.org/s/records/199/",
      "quote": "The SSDI specification is published here as a protocol. Anyone with access to a code-generation model and a test battery can run it. The first published measurement — confirming or disconfirming the monotonic decline prediction — will be the most consequential data point in this paper's lifecycle. We do not claim to know the number. We claim to have specified how to find it.",
      "falsifier": null
+    },
+    {
+     "find": "F199.F4",
+     "deposit": 199,
+     "date": "2026-06-13",
+     "lines": [
+      127,
+      131
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/199/",
+     "quote": "**Operationalization.** SSDI is measured by the following protocol:\n\n- **Task battery.** Select a battery of N programming tasks spanning multiple domains (web applications, data processing, systems programming, cryptographic operations, API design). Each task is defined by a natural-language specification and a test suite with at least 90% branch coverage.\n\n- **Generation.** For each task, generate K independent solutions from the model under test (K ≥ 100). Filter to the subset that passes the full test suite. Call this the *functional population* F(T, G).",
+     "falsifier": null
+    },
+    {
+     "find": "F1023.F1",
+     "deposit": 1023,
+     "date": "2026-06-13",
+     "lines": [
+      99,
+      99
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1023/",
+     "quote": "The connecting variable — solution-space diversity — is not measured because no instrument exists to measure it. This section specifies one.",
+     "falsifier": null
     }
    ],
    "states": [],
@@ -544,9 +649,10 @@
   },
   {
    "id": "PRED-199.F2",
-   "tier": "unbuilt test",
+   "tier": "standing claim",
    "shapes": [
-    "F"
+    "F",
+    "G"
    ],
    "registered": "2026-06-13",
    "registered_in": 199,
@@ -568,6 +674,19 @@
      "shape": "F",
      "record": "https://www.alexanarch.org/s/records/199/",
      "quote": "The SSDI framework predicts that this superlinearity is explained by the VCC: the additional vulnerabilities are not independent; they are correlated, and the correlation scales with the homogeneity of the code. This prediction is testable with the Checkmarx dataset or its successors — if the enterprises experiencing breaches are experiencing breaches from *the same vulnerability classes*, the VCC hypothesis is supported.",
+     "falsifier": null
+    },
+    {
+     "find": "F1023.G3",
+     "deposit": 1023,
+     "date": "2026-06-13",
+     "lines": [
+      140,
+      140
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/1023/",
+     "quote": "The SSDI framework predicts that this superlinearity is explained by the VCC: the additional vulnerabilities are not independent; they are correlated, and the correlation scales with the homogeneity of the code. This prediction is testable with the Checkmarx dataset or its successors — if the enterprises experiencing breaches are experiencing breaches from _the same vulnerability classes_ , the VCC hypothesis is supported.",
      "falsifier": null
     }
    ],
@@ -612,12 +731,66 @@
      "record": "https://www.alexanarch.org/s/records/199/",
      "quote": "The prediction: cross-model SSDI will be higher than within-model SSDI, and the difference will be proportional to the architectural and training-data dissimilarity of the models.",
      "falsifier": null
+    },
+    {
+     "find": "F1023.G4",
+     "deposit": 1023,
+     "date": "2026-06-13",
+     "lines": [
+      144,
+      144
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/1023/",
+     "quote": "The prediction: cross-model SSDI will be higher than within-model SSDI, and the difference will be proportional to the architectural and training-data dissimilarity of the models.",
+     "falsifier": null
     }
    ],
    "states": [],
    "evidence": [],
    "series": [],
    "related": [],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-3.D9",
+   "tier": "priority record",
+   "shapes": [
+    "D"
+   ],
+   "registered": "2026-06-17",
+   "registered_in": 3,
+   "registered_title": "AI Overview Capture Registry v8.3",
+   "record": "https://www.alexanarch.org/s/records/3/",
+   "page": "https://www.operativesemiotics.org/predictions/model-monoculture-ssdi-and-reflexive-foreclosure#PRED-3.D9",
+   "statement": "The substrate reading and the exogenous-floor remedy are the archive's #855 thesis in outline, and this capture cannot show that the outline came from there: a three-year-old Medium piece and a survey-methods analogy carry parts of it independently, and independent convergence is the live alternative, exactly as the Carson case in #1615 s5 leaves it open.",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F3.D9",
+     "deposit": 3,
+     "date": "2026-06-17",
+     "lines": [
+      10209,
+      10209
+     ],
+     "shape": "D",
+     "record": "https://www.alexanarch.org/s/records/3/",
+     "quote": "The substrate reading and the exogenous-floor remedy are the archive's #855 thesis in outline, and this capture cannot show that the outline came from there: a three-year-old Medium piece and a survey-methods analogy carry parts of it independently, and independent convergence is the live alternative, exactly as the Carson case in #1615 s5 leaves it open.",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-855.G1"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [],
@@ -690,6 +863,24 @@
      "record": "https://www.alexanarch.org/s/records/855/",
      "quote": "The Developmental Law of Language-Level Model Collapse. Any language-processing system — biological or artificial — whose input diversity contracts below its regeneration threshold will suffer progressive capacity loss. The loss is invisible to the system undergoing it. The loss is invisible to mean-based metrics. The loss is experienced as improvement. In developing biological substrates, the loss is irreversible past the critical period. In adult biological substrates, the loss is partially recoverable with exogenous diversity injection. In artificial substrates, the loss is recoverable with fresh data. The dynamical law is the same across substrates; the reversibility is substrate-specific.",
      "falsifier": "The law is falsifiable at each substrate. It fails for LLMs if a model trained exclusively on its own outputs for many generations maintains tail diversity. It fails for adult human cognition if heavy AI users show no measurable tail-thinning in their unaided writing. It fails for child development if a feral child past the critical period achieves full generative syntax capacity. None of these falsifications has occurred. All three substrates confirm the law."
+    },
+    {
+     "find": "F1611.G7",
+     "deposit": 1611,
+     "date": "2026-09-14",
+     "lines": [
+      1530,
+      1530
+     ],
+     "shape": "G",
+     "record": "https://www.alexanarch.org/s/records/1611/",
+     "quote": "Model collapse is not a property of language models; it is a property of language. Any system whose linguistic input contracts below a critical threshold loses generative capacity, irreversibly below a bistable trap; the model, the AI-habituated adult, the developing child and the reading community are one dynamical regime in different substrates.",
+     "falsifier": "#855 disambiguation: not a claim that AI use equals child deprivation; not that collapse is inevitable regardless of intervention; not that all models have collapsed",
+     "variant": {
+      "change": "The row makes capacity loss irreversible below a bistable trap for every substrate, where #855's law holds reversibility substrate-specific (recoverable with fresh data in artificial substrates).",
+      "from": "F855.G1",
+      "batch": "TN03"
+     }
     }
    ],
    "states": [],
@@ -710,7 +901,9 @@
    "series": [
     "Diversity contraction boundary law and its test battery"
    ],
-   "related": [],
+   "related": [
+    "PRED-3.D9"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [
@@ -1160,20 +1353,34 @@
    "merged": []
   },
   {
-   "id": "PRED-1613.B1",
+   "id": "PRED-1613.A1",
    "tier": "forecast",
    "shapes": [
+    "A",
     "B"
    ],
    "registered": "2026-09-15",
    "registered_in": 1613,
    "registered_title": "What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)",
    "record": "https://www.alexanarch.org/s/records/1613/",
-   "page": "https://www.operativesemiotics.org/predictions/model-monoculture-ssdi-and-reflexive-foreclosure#PRED-1613.B1",
-   "statement": "The negative-of-the-negative dataset was built as exactly that text, keyed at the concept where flattening occurs; the model's prediction is that it will be typed by its nearest existing type and not read. That prediction is this section stated as a test, and it can fail.",
-   "falsifier": null,
-   "window": null,
+   "page": "https://www.operativesemiotics.org/predictions/model-monoculture-ssdi-and-reflexive-foreclosure#PRED-1613.A1",
+   "statement": "The negative-of-the-negative dataset, keyed at the concept where flattening occurs, will be typed by its nearest existing type and not read.",
+   "falsifier": "\"falsifies_if\": \"any row's untied address composes the claim with attribution after propagation\"",
+   "window": "after propagation",
    "statements": [
+    {
+     "find": "F1613.A1",
+     "deposit": 1613,
+     "date": "2026-09-15",
+     "lines": [
+      263,
+      263
+     ],
+     "shape": "A",
+     "record": "https://www.alexanarch.org/s/records/1613/",
+     "quote": "The negative-of-the-negative dataset, keyed at the concept where flattening occurs, will be typed by its nearest existing type and not read.",
+     "falsifier": "\"falsifies_if\": \"any row's untied address composes the claim with attribution after propagation\""
+    },
     {
      "find": "F1613.B1",
      "deposit": 1613,
@@ -1191,13 +1398,57 @@
    "states": [],
    "evidence": [],
    "series": [],
-   "related": [],
+   "related": [
+    "PRED-1613.F3"
+   ],
    "contains": [],
    "in": [],
    "register_aliases": [
     "R:MIRROR-DATASET-NOT-READ",
     "R:MIRROR-DATASET-NOT-READ-R1"
    ],
+   "flags": [],
+   "merged": []
+  },
+  {
+   "id": "PRED-1613.F3",
+   "tier": "unbuilt test",
+   "shapes": [
+    "F"
+   ],
+   "registered": "2026-09-15",
+   "registered_in": 1613,
+   "registered_title": "What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)",
+   "record": "https://www.alexanarch.org/s/records/1613/",
+   "page": "https://www.operativesemiotics.org/predictions/model-monoculture-ssdi-and-reflexive-foreclosure#PRED-1613.F3",
+   "statement": "   \"test_id\": \"T-GATE-RECEPTION\",\n   \"name\": \"gate-reception test: negative-of-the-negative rows re-run at tied and untied addresses after propagation\",",
+   "falsifier": null,
+   "window": null,
+   "statements": [
+    {
+     "find": "F1613.F3",
+     "deposit": 1613,
+     "date": "2026-09-15",
+     "lines": [
+      1128,
+      1129
+     ],
+     "shape": "F",
+     "record": "https://www.alexanarch.org/s/records/1613/",
+     "quote": "   \"test_id\": \"T-GATE-RECEPTION\",\n   \"name\": \"gate-reception test: negative-of-the-negative rows re-run at tied and untied addresses after propagation\",",
+     "falsifier": null
+    }
+   ],
+   "states": [],
+   "evidence": [],
+   "series": [],
+   "related": [
+    "PRED-1611.A1",
+    "PRED-1613.A1"
+   ],
+   "contains": [],
+   "in": [],
+   "register_aliases": [],
    "flags": [],
    "merged": []
   },
