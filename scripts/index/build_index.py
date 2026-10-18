@@ -120,7 +120,30 @@ def build(export=None):
     reg, C, F, S, conf, P, names = load()
     byid = {c['id']: c for c in C}
     mem = page_members(P, names, C)
-    slug = {p['page']: (names.get(p['page'], {}).get('slug') or p['page'].lower()) for p in P}
+    # the review pass (REVIEW-PROTOCOL): a page's title, description and line as the reviewer left them, and its splits
+    # into new pages (P012 -> P012b, P012c, ...), each taking the claims the reviewer listed
+    rev = {}
+    for f in sorted(glob.glob(str(I / 'review/RV*.verified.json'))):
+        if json.load(open(f)).get('verified'):
+            for p in json.load(open(f.replace('.verified.json', '.json')))['pages']:
+                rev[p['page']] = p
+    P = [dict(p) for p in P]
+    for pid, r in rev.items():
+        names[pid] = {**names.get(pid, {}), **{k: r[k] for k in ('title', 'slug', 'description', 'line') if r.get(k)}}
+        for n, sp in enumerate(r.get('split') or []):
+            nid = f'{pid}{chr(98 + n)}'
+            take = [c for c in sp['claims'] if c in mem[pid]]
+            mem[pid] = [c for c in mem[pid] if c not in set(take)]
+            mem[nid] = take
+            names[nid] = {k: sp[k] for k in ('title', 'slug', 'description', 'line')}
+            P.append({'page': nid, 'claims': take})
+    P.sort(key=lambda p: p['page'])
+    slug, seen = {}, set()
+    for p in P:  # a slug two pages share takes its page id, so no page overwrites another
+        sl = names.get(p['page'], {}).get('slug') or p['page'].lower()
+        if sl in seen:
+            sl = f"{sl}-{p['page'].lower()}"
+        seen.add(sl); slug[p['page']] = sl
     title = {p['page']: (names.get(p['page'], {}).get('title') or 'Subject page ' + p['page']) for p in P}
     desc = {p['page']: (names.get(p['page'], {}).get('description') or '') for p in P}
     line = {}
