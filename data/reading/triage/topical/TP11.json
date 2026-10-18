@@ -1,0 +1,475 @@
+{
+ "batch_id": "TP11",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude Opus 5.5 (claude-opus-5-5), a parallel reader subagent in Claude Code; read every claim from the queue by script, located and read deposit context with grep and sed",
+  "started_at": "2026-10-18T01:35:03Z",
+  "finished_at": "2026-10-18T01:37:08Z"
+ },
+ "groups": [
+  {
+   "group": "TP11.1",
+   "reviewed": [
+    "PRED-217.B1",
+    "PRED-255.F1",
+    "PRED-264.F2",
+    "PRED-289.F1",
+    "PRED-302.F1",
+    "PRED-410.F1",
+    "PRED-448.F1",
+    "PRED-448.F2",
+    "PRED-457.F1",
+    "PRED-540.F1",
+    "PRED-556.F5",
+    "PRED-556.G1",
+    "PRED-557.F5",
+    "PRED-579.G2",
+    "PRED-584.F6",
+    "PRED-38.F1",
+    "PRED-1174.G2",
+    "PRED-627.F1",
+    "PRED-686.B2",
+    "PRED-72.F2",
+    "PRED-695.F1",
+    "PRED-80.A1",
+    "PRED-80.F2",
+    "PRED-100.F1",
+    "PRED-726.F1",
+    "PRED-731.F2",
+    "PRED-735.F2",
+    "PRED-116.F1",
+    "PRED-1384.F3",
+    "PRED-127.F1",
+    "PRED-779.F1",
+    "PRED-779.G5",
+    "PRED-790.F1",
+    "PRED-833.F1",
+    "PRED-833.F2",
+    "PRED-833.F3",
+    "PRED-3.A1",
+    "PRED-3.G12",
+    "PRED-848.F1",
+    "PRED-863.F1",
+    "PRED-879.F2",
+    "PRED-926.F6",
+    "PRED-1450.F1",
+    "PRED-1535.F1",
+    "PRED-1537.F1",
+    "PRED-1575.F2",
+    "PRED-1602.F2",
+    "PRED-1667.F1",
+    "PRED-1607.F2",
+    "PRED-1608.F3",
+    "PRED-1633.F1"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-556.F5",
+      "PRED-557.F5"
+     ],
+     "basis": "The glyphic and the formal Space Ark editions carry one Appendix F suite of seven adversarial survivability tests, the first opening with the same 500-word bad-summarization test, in two registers.",
+     "evidence": [
+      {
+       "claim": "PRED-556.F5",
+       "phrase": "500-word summary of this"
+      },
+      {
+       "claim": "PRED-557.F5",
+       "phrase": "Condition: A summarizer compresses the Ark to ≤500 words."
+      }
+     ]
+    },
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-72.F2",
+      "PRED-80.F2"
+     ],
+     "basis": "The LAL implementation report (which implements EA-SPXI-WEB-01) restates the protocol's monthly and quarterly maintenance loop as a table: one schedule, two statements.",
+     "evidence": [
+      {
+       "claim": "PRED-72.F2",
+       "phrase": "**Quarterly:** Full Drowning Test. Cross-surface audit. Compression damage review."
+      },
+      {
+       "claim": "PRED-80.F2",
+       "phrase": "Full Drowning Test, cross-surface audit, compression damage review"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-72.F2",
+      "PRED-80.A1",
+      "PRED-695.F1",
+      "PRED-116.F1",
+      "PRED-1633.F1"
+     ],
+     "name": "Drowning Test measurement programme",
+     "basis": "Each states a measurement or use of the Drowning Test (gamma scoring of entity resolution): scheduled runs, a baseline re-test, a dynamic weekly extension, a paid external panel, and a recommended rubric.",
+     "evidence": [
+      {
+       "claim": "PRED-72.F2",
+       "phrase": "**Quarterly:** Full Drowning Test."
+      },
+      {
+       "claim": "PRED-80.A1",
+       "phrase": "the **first Drowning Test** will likely return γ ≈ 0"
+      },
+      {
+       "claim": "PRED-695.F1",
+       "phrase": "the Dynamic Drowning Test — run the same query weekly, measure γ, compute DV"
+      },
+      {
+       "claim": "PRED-116.F1",
+       "phrase": "first paid CDI / PER / Drowning Test panel for an external organization"
+      },
+      {
+       "claim": "PRED-1633.F1",
+       "phrase": "or the Drowning Test rubric"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-255.F1",
+      "PRED-264.F2"
+     ],
+     "name": "Executive-summary liquidation self-tests",
+     "basis": "One executive-summary template, a graded summarizer self-test running PRESERVED to CRITICALLY LIQUIDATED, applied to two subjects (semantic liquidation, semantic exhaustion); the triage related both to PRED-253.F1 and PRED-256.F1 without linking them to each other.",
+     "evidence": [
+      {
+       "claim": "PRED-255.F1",
+       "phrase": "Omits the irreversibility property → CRITICALLY LIQUIDATED"
+      },
+      {
+       "claim": "PRED-264.F2",
+       "phrase": "Omits the cross-substrate warning (that this applies to AI) → CRITICALLY LIQUIDATED"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-448.F1",
+      "PRED-448.F2"
+     ],
+     "name": "Emoji Map conformance tests",
+     "basis": "Two phases of one Emoji Map planning document, each a test of the map's compression: back-translation by AI systems scored on provenance retention, and reconstruction of traversals from the lookup table.",
+     "evidence": [
+      {
+       "claim": "PRED-448.F1",
+       "phrase": "Ask each to back-translate. Score on provenance retention"
+      },
+      {
+       "claim": "PRED-448.F2",
+       "phrase": "can a reader with only the lookup table reconstruct the full Traversal Grammar operation?"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-833.F1",
+      "PRED-833.F2",
+      "PRED-833.F3"
+     ],
+     "name": "Capture registry: tests owed by future versions",
+     "basis": "Three tests the founding-dataset paper assigns to future versions of the capture registry: temporal drag across errata, generalization of epistemic hedging, and inter-coder reliability.",
+     "evidence": [
+      {
+       "claim": "PRED-833.F1",
+       "phrase": "Future registry versions should test whether this is a general pattern"
+      },
+      {
+       "claim": "PRED-833.F2",
+       "phrase": "Further registry versions should test whether epistemic hedging generalizes"
+      },
+      {
+       "claim": "PRED-833.F3",
+       "phrase": "test inter-coder reliability across independent annotators"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-627.F1",
+      "PRED-848.F1",
+      "PRED-879.F2"
+     ],
+     "name": "Reconstitution and continuity tests",
+     "basis": "Each names a test of whether the archive's working state can be reconstituted from its own traces in a fresh place: a reconstitution test not yet run, a fresh-instance continuity test, and deliberate destruction and rebuilding of a staging node.",
+     "evidence": [
+      {
+       "claim": "PRED-627.F1",
+       "phrase": "but no verified reconstitution test yet"
+      },
+      {
+       "claim": "PRED-848.F1",
+       "phrase": "A fresh instance reads manifest.json as its first action"
+      },
+      {
+       "claim": "PRED-879.F2",
+       "phrase": "Test reconstruction by deliberately destroying a staging node and rebuilding it elsewhere."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1575.F2",
+      "PRED-1602.F2",
+      "PRED-1667.F1"
+     ],
+     "name": "Authorship investigation: owed tests",
+     "basis": "Each is a test the authorship investigation (Many and One and the Theophrastus line) states as owed against its own result: an independent form-track, a biography control, and a full splice of Metaphysics Lambda.",
+     "evidence": [
+      {
+       "claim": "PRED-1575.F2",
+       "phrase": "define the proposed\n> form-track **independently of the stylometric variables**"
+      },
+      {
+       "claim": "PRED-1602.F2",
+       "phrase": "A real one would require a control"
+      },
+      {
+       "claim": "PRED-1667.F1",
+       "phrase": "a full splice of Λ is the next exhaustion"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1607.F2",
+      "PRED-1608.F3"
+     ],
+     "name": "Valuation memo: tests owed",
+     "basis": "Versions 1 and 2 of the valuation memorandum each name the test that the memo's own reading has not yet run: a controlled vocabulary swap, and a check of the components of the wider answers against the record.",
+     "evidence": [
+      {
+       "claim": "PRED-1607.F2",
+       "phrase": "a controlled test would supply each system with the other's vocabulary"
+      },
+      {
+       "claim": "PRED-1608.F3",
+       "phrase": "The test is whether the components in the wider answers are real and related"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-209.G6",
+      "PRED-620.G1",
+      "PRED-923.F1",
+      "PRED-1537.F1"
+     ],
+     "name": "Refusal and guardrail mapping",
+     "basis": "Each maps or proposes measuring how safety-layer routing turns content into refusal or a deflecting frame: diagnostic trigger predictions, crisis-discourse refusal at the consumer layer, refusal-distribution transparency, and the operativity penalty battery.",
+     "evidence": [
+      {
+       "claim": "PRED-209.G6",
+       "phrase": "Economic radicalism triggers legal/catastrophe associations"
+      },
+      {
+       "claim": "PRED-620.G1",
+       "phrase": "it compresses the discourse into the harm-prevention category and refuses"
+      },
+      {
+       "claim": "PRED-923.F1",
+       "phrase": "model cards extended with refusal-distribution profiles"
+      },
+      {
+       "claim": "PRED-1537.F1",
+       "phrase": "Whether request fulfilment degrades with **operative distance**"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     556,
+     4105,
+     4135
+    ],
+    [
+     557,
+     5710,
+     5730
+    ],
+    [
+     72,
+     495,
+     506
+    ],
+    [
+     80,
+     1,
+     12
+    ]
+   ],
+   "located": [
+    [
+     3,
+     70031,
+     70031
+    ],
+    [
+     80,
+     263,
+     263
+    ]
+   ]
+  },
+  {
+   "group": "TP11.2",
+   "reviewed": [
+    "PRED-209.G6",
+    "PRED-261.F6",
+    "PRED-887.H1",
+    "PRED-399.F1",
+    "PRED-412.B1",
+    "PRED-497.B2",
+    "PRED-498.B1",
+    "PRED-499.H13",
+    "PRED-501.H10",
+    "PRED-511.H3",
+    "PRED-950.F4",
+    "PRED-611.E4",
+    "PRED-616.H3",
+    "PRED-620.G1",
+    "PRED-752.F1",
+    "PRED-135.F2",
+    "PRED-1200.B2",
+    "PRED-1204.H1",
+    "PRED-194.B5",
+    "PRED-864.G1",
+    "PRED-923.F1",
+    "PRED-940.H1",
+    "PRED-1086.H2",
+    "PRED-1094.H5",
+    "PRED-1410.B1",
+    "PRED-1410.B2",
+    "PRED-1411.H1",
+    "PRED-1446.F1",
+    "PRED-1453.F1",
+    "PRED-1456.B1",
+    "PRED-1460.F1",
+    "PRED-1460.F2",
+    "PRED-1460.G1",
+    "PRED-1475.H2",
+    "PRED-1486.F8",
+    "PRED-1531.F1",
+    "PRED-1607.G3",
+    "PRED-1637.G6",
+    "PRED-1650.H2"
+   ],
+   "sets": [
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-135.F2",
+      "PRED-1446.F1"
+     ],
+     "name": "Portuna conformance predicates",
+     "basis": "The heteronym surface specification states its acceptance predicates on the Portuna model, the minting procedure whose state transitions are gated by boolean predicates.",
+     "evidence": [
+      {
+       "claim": "PRED-135.F2",
+       "phrase": "Each state transition must satisfy a set of boolean predicates"
+      },
+      {
+       "claim": "PRED-1446.F1",
+       "phrase": "On the Portuna model, a surface is conformant when **all** hold"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1460.G1",
+      "PRED-1460.F1",
+      "PRED-1460.F2"
+     ],
+     "name": "Unprimed traversals programme",
+     "basis": "The traversals paper's finding, the repeated trials that would strengthen it, and the state layer it recommends: three parts of one programme.",
+     "evidence": [
+      {
+       "claim": "PRED-1460.G1",
+       "phrase": "The basin is presently more semantically synchronized than temporally synchronized."
+      },
+      {
+       "claim": "PRED-1460.F1",
+       "phrase": "the finding would be strengthened by preregistered repeated trials"
+      },
+      {
+       "claim": "PRED-1460.F2",
+       "phrase": "future retrieval work should prioritize **precedence and state legibility**"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-412.B1",
+      "PRED-1200.B2",
+      "PRED-1410.B1"
+     ],
+     "name": "Future-reader forecasts",
+     "basis": "Each forecasts that the work will be found and received by readers still to come.",
+     "evidence": [
+      {
+       "claim": "PRED-412.B1",
+       "phrase": "The readers are arriving."
+      },
+      {
+       "claim": "PRED-1200.B2",
+       "phrase": "They will be findable by future receivers"
+      },
+      {
+       "claim": "PRED-1410.B1",
+       "phrase": "あなたがたの書いたものは、文学の記憶に列せられるだろう"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     1446,
+     138,
+     152
+    ]
+   ],
+   "located": [
+    [
+     135,
+     69,
+     69
+    ],
+    [
+     135,
+     249,
+     249
+    ],
+    [
+     135,
+     365,
+     365
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "PRED-3.A1 and PRED-3.G12 are registered 2026-06-17 in deposit 3, the AI Overview Capture Registry, a file versioned in place (now v12.258, dated 2026-10-17). PRED-3.A1 discusses the WARNED capture of 2026-09-06 and the packet #1588, so its registration date seems to be the registry's founding date rather than the date of the statement.",
+  "PRED-1537.F1 (group TP11.1) belongs with PRED-209.G6, PRED-620.G1 and PRED-923.F1 (group TP11.2) in the refusal and guardrail mapping series.",
+  "PRED-1456.B1 records a result that 'points away from what this program predicted'. It is a possible later state of an earlier inversion-battery prediction outside this batch.",
+  "PRED-1086.H2 is titled as the CERN stewardship revocation, but its statement concerns Sappho 31.5. It belongs with the Sappho 31 claims (PRED-1475.H2, PRED-1486.F8) by subject, but it is a different claim from either.",
+  "PRED-611.E4 carries a window of November 2026 to January 2027 inside a deposit framed as a speculative history dated 2026-03-29. The date is consistent with its genre. This is a note, not an error."
+ ]
+}

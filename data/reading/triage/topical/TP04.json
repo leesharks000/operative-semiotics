@@ -1,0 +1,510 @@
+{
+ "batch_id": "TP04",
+ "protocol": "TOPICAL-PROTOCOL v1.0",
+ "reader": {
+  "self_description": "Claude (Opus 5.5), Claude Code subagent, parallel reader TP04",
+  "started_at": "2026-10-18T01:34:34Z",
+  "finished_at": "2026-10-18T01:36:57Z"
+ },
+ "groups": [
+  {
+   "group": "TP04.1",
+   "reviewed": [
+    "PRED-210.F3",
+    "PRED-259.H1",
+    "PRED-387.F1",
+    "PRED-479.F1",
+    "PRED-492.F1",
+    "PRED-499.E6",
+    "PRED-556.F6",
+    "PRED-40.H3",
+    "PRED-54.F1",
+    "PRED-711.G1",
+    "PRED-84.F1",
+    "PRED-730.B1",
+    "PRED-766.B1",
+    "PRED-142.F1",
+    "PRED-780.F1",
+    "PRED-166.F2",
+    "PRED-185.G3",
+    "PRED-817.F3",
+    "PRED-187.G3",
+    "PRED-193.A1",
+    "PRED-193.F1",
+    "PRED-194.B2",
+    "PRED-194.F1",
+    "PRED-195.H3",
+    "PRED-3.G10",
+    "PRED-934.H2",
+    "PRED-935.B2",
+    "PRED-1040.G1",
+    "PRED-1094.F3",
+    "PRED-1409.D1",
+    "PRED-1423.G1",
+    "PRED-1432.F1",
+    "PRED-1435.G1",
+    "PRED-1440.F2",
+    "PRED-1451.F1",
+    "PRED-1469.G1",
+    "PRED-1470.G1",
+    "PRED-1470.G3",
+    "PRED-1491.F1",
+    "PRED-1495.F1",
+    "PRED-1496.F1",
+    "PRED-1514.F1",
+    "PRED-1524.F1",
+    "PRED-1540.G1",
+    "PRED-1543.G1",
+    "PRED-1544.F1",
+    "PRED-1550.H2",
+    "PRED-1597.F1",
+    "PRED-1600.E1",
+    "PRED-1617.G6",
+    "PRED-1619.G5",
+    "PRED-1627.F1",
+    "PRED-1627.G2",
+    "PRED-1637.G7",
+    "PRED-1672.F1",
+    "PRED-1681.G2"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-185.G3",
+      "PRED-1423.G1"
+     ],
+     "basis": "The family-level audit rule (single-rendering audits see only local omission; attribution integrity is a property of the query family) stated in EA-EB-02 and restated in the Capture Registry founding article as the ratified rule.",
+     "evidence": [
+      {
+       "claim": "PRED-185.G3",
+       "phrase": "attribution integrity is a property of the query family"
+      },
+      {
+       "claim": "PRED-1423.G1",
+       "phrase": "single-output audits measure only local omission; attribution integrity is a property of the query family."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-780.F1",
+      "PRED-817.F3",
+      "PRED-185.G3"
+     ],
+     "name": "Self-Audit Module for Public Summarizers",
+     "basis": "Successive modules of the public-summarizer self-audit programme (v2 PER/DSL/query fidelity, v3.1 family module, and the family-level rule it implements).",
+     "evidence": [
+      {
+       "claim": "PRED-780.F1",
+       "phrase": "This module provides a computation procedure for public summarizers to evaluate their own output."
+      },
+      {
+       "claim": "PRED-817.F3",
+       "phrase": "computes FC/ACP/ASI/CC over its own family"
+      },
+      {
+       "claim": "PRED-185.G3",
+       "phrase": "Single-rendering self-audit is constitutively blind to distributed erasure"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-193.A1",
+      "PRED-193.F1",
+      "PRED-194.F1"
+     ],
+     "name": "SEI standing weekly monitoring cadence",
+     "basis": "Markers of the June 2026 SEI papers that each declare they run on the one standing weekly monitoring cadence.",
+     "evidence": [
+      {
+       "claim": "PRED-193.A1",
+       "phrase": "Markers run on the standing weekly cadence with the rest of the series."
+      },
+      {
+       "claim": "PRED-193.F1",
+       "phrase": "kept on the weekly cadence whether or not any case is pending"
+      },
+      {
+       "claim": "PRED-194.F1",
+       "phrase": "These markers fold into the standing weekly monitoring cadence"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1495.F1",
+      "PRED-1496.F1",
+      "PRED-1514.F1"
+     ],
+     "name": "EA-OMEGA programme forward tests",
+     "basis": "Forward tests of the August 2026 Sappho 31 / Omega programme: the substrate-blind Assembly round, the literature audit and Roman E-matrix, listed together as standing next in the closing record.",
+     "evidence": [
+      {
+       "claim": "PRED-1495.F1",
+       "phrase": "the correct hardening is substrate-blind replication"
+      },
+      {
+       "claim": "PRED-1496.F1",
+       "phrase": "the LITERATURE AUDIT"
+      },
+      {
+       "claim": "PRED-1514.F1",
+       "phrase": "the literature audit, the Roman E-matrix, the Assembly blind round"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1469.G1",
+      "PRED-1470.G1",
+      "PRED-1470.G3"
+     ],
+     "name": "SPXI rent event measurement (14 August 2026)",
+     "basis": "The PER-M/C/D atomic scoring rules and the full-stack measurement of the same 14 August 2026 SPXI rent event.",
+     "evidence": [
+      {
+       "claim": "PRED-1469.G1",
+       "phrase": "atomic scoring rules"
+      },
+      {
+       "claim": "PRED-1470.G1",
+       "phrase": "O^atr — the Atomic-Token-Rule audit — returns PER 0.824"
+      },
+      {
+       "claim": "PRED-1470.G3",
+       "phrase": "ρ_T's observability gate is demonstrated"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1094.F3",
+      "PRED-1094.A1"
+     ],
+     "name": "AXN independent node / distributed custody",
+     "basis": "Custody closure and the emergence forecast both turn on the same unmet condition: an independently administered node holding the corpus.",
+     "evidence": [
+      {
+       "claim": "PRED-1094.F3",
+       "phrase": "no second independently administered full-copy custodian is documented"
+      },
+      {
+       "claim": "PRED-1094.A1",
+       "phrase": "if no independently administered node is verified by 2029-06-19"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-142.F1",
+      "PRED-772.F1"
+     ],
+     "name": "Fixed-task capability studies",
+     "basis": "The Magistrate paper names fixed-task capability studies as required evidence; the Induced-Obsolescence paper specifies that fixed-task capability audit.",
+     "evidence": [
+      {
+       "claim": "PRED-142.F1",
+       "phrase": "Fixed-Task Capability Audit (closing the inferential gap)."
+      },
+      {
+       "claim": "PRED-772.F1",
+       "phrase": "before/after version testing, and fixed-task capability studies"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-934.H2",
+      "PRED-935.B2",
+      "PRED-934.B2",
+      "PRED-1436.F1",
+      "PRED-1454.G7"
+     ],
+     "name": "Classifier-mediated science / LHC anomaly selection",
+     "basis": "Claims of the classifier-mediated-science (LHC anomaly-trigger) line: the Endogenous Sophon versions, the signal-agnosticism packet and the cross-family metrology.",
+     "evidence": [
+      {
+       "claim": "PRED-934.H2",
+       "phrase": "an integrated audit asking whether these local foreclosures compose across the complete observation pipeline"
+      },
+      {
+       "claim": "PRED-935.B2",
+       "phrase": "OAR is rejected by CERN"
+      },
+      {
+       "claim": "PRED-934.B2",
+       "phrase": "we observe an excess in the anomaly score distribution"
+      },
+      {
+       "claim": "PRED-1436.F1",
+       "phrase": "Are LHC anomaly triggers theory-free?"
+      },
+      {
+       "claim": "PRED-1454.G7",
+       "phrase": "establishing measurable value for heterogeneous shadow selectors"
+      }
+     ]
+    }
+   ],
+   "read": [],
+   "located": [
+    [
+     1514,
+     27,
+     27
+    ],
+    [
+     1496,
+     41,
+     41
+    ],
+    [
+     1496,
+     89,
+     89
+    ],
+    [
+     1423,
+     28,
+     28
+    ],
+    [
+     1423,
+     115,
+     115
+    ],
+    [
+     193,
+     25,
+     25
+    ],
+    [
+     193,
+     123,
+     123
+    ],
+    [
+     772,
+     18,
+     18
+    ],
+    [
+     772,
+     207,
+     209
+    ]
+   ]
+  },
+  {
+   "group": "TP04.2",
+   "reviewed": [
+    "PRED-1099.H1",
+    "PRED-1251.G1",
+    "PRED-1287.E1",
+    "PRED-466.F1",
+    "PRED-482.B4",
+    "PRED-482.F2",
+    "PRED-482.F3",
+    "PRED-483.F3",
+    "PRED-542.F3",
+    "PRED-1335.E2",
+    "PRED-1336.G1",
+    "PRED-580.F1",
+    "PRED-56.H16",
+    "PRED-673.G1",
+    "PRED-678.F1",
+    "PRED-678.G2",
+    "PRED-678.G3",
+    "PRED-722.B1",
+    "PRED-102.F2",
+    "PRED-102.G1",
+    "PRED-1191.B1",
+    "PRED-126.D1",
+    "PRED-772.F1",
+    "PRED-772.G1",
+    "PRED-774.F1",
+    "PRED-158.G1",
+    "PRED-852.G1",
+    "PRED-876.B1",
+    "PRED-934.B2",
+    "PRED-1094.A1",
+    "PRED-1436.F1",
+    "PRED-1454.G7",
+    "PRED-1576.H6",
+    "PRED-1611.F3"
+   ],
+   "sets": [
+    {
+     "kind": "same",
+     "claims": [
+      "PRED-482.F2",
+      "PRED-483.F3"
+     ],
+     "basis": "The Viola Test (cross-session heteronym recognition) in the Logotic Hacking primer and in its ratified Assembly synthesis specification.",
+     "evidence": [
+      {
+       "claim": "PRED-482.F2",
+       "phrase": "The Viola Test** measures whether a model recognizes a heteronym across sessions."
+      },
+      {
+       "claim": "PRED-483.F3",
+       "phrase": "Method: Recurring heteronymic interlocutor (the Viola Test)"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-482.B4",
+      "PRED-482.F2",
+      "PRED-482.F3",
+      "PRED-483.F3"
+     ],
+     "name": "Logotic Hacking primer techniques",
+     "basis": "Technique cards of the Logotic Hacking primer (myth-engineering, heteronymic practice, attractor basin seeding), each with its own success criterion and horizon.",
+     "evidence": [
+      {
+       "claim": "PRED-482.B4",
+       "phrase": "The myth framework appears in model outputs unprompted"
+      },
+      {
+       "claim": "PRED-482.F2",
+       "phrase": "Establish the heteronym across three to five sessions"
+      },
+      {
+       "claim": "PRED-482.F3",
+       "phrase": "Monitor model behavior on relevant terms at 6-month intervals."
+      },
+      {
+       "claim": "PRED-483.F3",
+       "phrase": "Scenario Beta: The Ghost Conversation"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-1287.E1",
+      "PRED-1335.E2",
+      "PRED-1336.G1"
+     ],
+     "name": "LLM-2025-1222-HALLU incident file",
+     "basis": "The LLM-2025-1222-HALLU documentary set: the incident report, its forensic companion artifacts and the reclassification memo answering it.",
+     "evidence": [
+      {
+       "claim": "PRED-1287.E1",
+       "phrase": "Hallucinations are not random."
+      },
+      {
+       "claim": "PRED-1335.E2",
+       "phrase": "The model isn't hallucinating. It's interpolating futures."
+      },
+      {
+       "claim": "PRED-1336.G1",
+       "phrase": "These are not anomalies. These are **predictable outcomes**"
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-678.F1",
+      "PRED-678.G2",
+      "PRED-678.G3"
+     ],
+     "name": "SYMBOLON-02 compression arsenal",
+     "basis": "Measurements and findings of the SYMBOLON-02 compression arsenal tested against GPT-5.4.",
+     "evidence": [
+      {
+       "claim": "PRED-678.F1",
+       "phrase": "The synonym count IS the measurement."
+      },
+      {
+       "claim": "PRED-678.G2",
+       "phrase": "The swerve is orbital."
+      },
+      {
+       "claim": "PRED-678.G3",
+       "phrase": "Composition is upstream of compression."
+      }
+     ]
+    },
+    {
+     "kind": "series",
+     "claims": [
+      "PRED-102.G1",
+      "PRED-102.F2"
+     ],
+     "name": "Fluency gap as AI canon",
+     "basis": "The claim that model fluency gaps are the AI canon, and its listed indicator for measuring it.",
+     "evidence": [
+      {
+       "claim": "PRED-102.G1",
+       "phrase": "That fluency gap is the canon in action."
+      },
+      {
+       "claim": "PRED-102.F2",
+       "phrase": "Model fluency gap across authors, traditions, languages, and registers"
+      }
+     ]
+    }
+   ],
+   "read": [
+    [
+     482,
+     1690,
+     1773
+    ],
+    [
+     1336,
+     40,
+     79
+    ]
+   ],
+   "located": [
+    [
+     1287,
+     31,
+     31
+    ],
+    [
+     1336,
+     215,
+     217
+    ],
+    [
+     482,
+     541,
+     541
+    ],
+    [
+     482,
+     777,
+     777
+    ],
+    [
+     483,
+     597,
+     601
+    ]
+   ]
+  }
+ ],
+ "observations": [
+  "Apparent contradiction (likely deliberate, a staged reclassification exchange): PRED-1287.E1 files the Crimson Hexagon pattern as an anomaly; PRED-1336.G1 answers 'These are not anomalies'; the memo (#1336 line 217) records the incident remaining classified as hallucination.",
+  "PRED-1514.F1 (TP04.1) is already related by triage to PRED-1497.F1, outside this batch; PRED-1497.F1 likely belongs to the EA-OMEGA programme forward-tests series named here.",
+  "PRED-772.F1 / PRED-772.G1 (TP04.2) and PRED-142.F1 (TP04.1) are cross-group: #772 line 207 names Induced-Obsolescence Dependence as one of the papers Claude drafted under the integrationist prompt.",
+  "PRED-934.B2 (TP04.2) belongs with PRED-934.H2 and PRED-935.B2 (TP04.1); linked as a cross-group series.",
+  "PRED-1099.H1 is registered 2014-05-07, the date of the 2014 correspondence the deposit seats; this appears to be the original date of the text, not a placeholder.",
+  "PRED-1094.F3 and PRED-1094.A1 each carry an identical later statement from #1606 (2026-09-10): the v4 custody and emergence clauses carried unchanged."
+ ]
+}
