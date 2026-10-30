@@ -1,0 +1,1571 @@
+{
+ "theme": "D-economy",
+ "witnesses": [
+  {
+   "id": "D-economy-W01",
+   "direction": "disconfirms",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-1632.A7",
+     "bears_on": "whole",
+     "scope": "A vendor benchmark that publishes an accuracy rate by industry, separated from mention and visibility, two months before the claim was registered. The witness scores claims about companies against their own sites, which may be narrower than entity-resolution accuracy, and the page offers no open sample, so the stricter falsifier of #1632 (stated rubric and open sample) is met only in part."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Faro Index"
+    ],
+    "title": "The State of AI Brand Intelligence 2026",
+    "venue": "faroindex.ai (vendor report)",
+    "doi": null,
+    "urls": [
+     "https://faroindex.ai/report"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-07",
+     "kind": "report",
+     "where": "faroindex.ai/report, edition line 'July 2026'",
+     "url": "https://faroindex.ai/report"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "July 2026 · Built with the Faro Method · faroindex.ai",
+     "from": "report page, edition line"
+    },
+    {
+     "quote": "The share of verifiable AI claims that match the company's own site or trusted sources",
+     "from": "report page, definition of Brand Accuracy Rate (BAR)"
+    },
+    {
+     "quote": "Visibility tells you whether AI mentions you. Accuracy tells you whether what it says is true.",
+     "from": "report page"
+    },
+    {
+     "quote": "Where accuracy breaks down by industry",
+     "from": "report page, section 08 heading"
+    },
+    {
+     "quote": "504 companies completed, 503 in the reporting set after deduplication.",
+     "from": "report page"
+    },
+    {
+     "quote": "Roughly fifteen buyer-intent queries, four platforms, four repetitions each, up to 240 responses per company.",
+     "from": "report page, methodology"
+    }
+   ],
+   "shows": "A commercial benchmark of 503 companies reports a Brand Accuracy Rate (share of verifiable AI claims matching the company's own site or trusted sources) ranked across 21 industries, and states the separation of accuracy from visibility in so many words. It existed before PRED-1632.A7 was registered on 2026-09-20.",
+   "does_not_show": "An open sample, raw responses or query library; independent validation of its scoring; resolution of entity identity (which entity a composition picks) as distinct from factual match of claims about a known company.",
+   "checked": {
+    "how": "Read faroindex.ai/report twice on 2026-10-30, the second time for the edition line, definitions and section heading. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the day of publication in July 2026",
+     "whether any downloadable data exist elsewhere on the site",
+     "the full list of 21 industry figures"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W02",
+   "direction": "supports",
+   "evidence_class": "news",
+   "claims": [
+    {
+     "claim": "PRED-615.B4",
+     "bears_on": "component",
+     "scope": "The component 'policy decisions based on hallucinated citations' with institutional consequence: a national draft policy approved by Cabinet and withdrawn by its minister. The claim's other examples (medical recommendations, financial models) and its causal account (RAG vulnerabilities, advertising integration) are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Sid Wahi"
+    ],
+    "title": "South Africa pulls AI policy after hallucinated citations expose drafting scandal",
+    "venue": "CNBC Africa",
+    "doi": null,
+    "urls": [
+     "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal",
+     "https://thenextweb.com/news/south-africa-ai-policy-hallucinated-citations"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-04-27",
+     "kind": "news",
+     "where": "CNBC Africa",
+     "url": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal"
+    },
+    {
+     "date": "2026-04-28",
+     "kind": "news",
+     "where": "The Next Web (Allison Steffens Herrera)",
+     "url": "https://thenextweb.com/news/south-africa-ai-policy-hallucinated-citations"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "fabricated at least six of its 67 academic citations",
+     "from": "article body, CNBC Africa"
+    },
+    {
+     "quote": "independently confirmed to News24 that articles credited to their publications had never been published there.",
+     "from": "article body, CNBC Africa"
+    },
+    {
+     "quote": "This failure is not a mere technical issue but has compromised the integrity and credibility of the draft policy.",
+     "from": "statement of Minister Solly Malatsi, as quoted by CNBC Africa"
+    }
+   ],
+   "shows": "South Africa's Draft National Artificial Intelligence Policy, approved by Cabinet and published for comment, was withdrawn in April 2026 after News24 found fictitious citations attributed to real journals, confirmed by the journals' editors.",
+   "does_not_show": "That a retrieval or summarization system produced the citations (the drafting tool is not identified in the quoted text); harm in medicine or finance; any scale beyond one document.",
+   "checked": {
+    "how": "Read the CNBC Africa article twice and The Next Web article once, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "News24's original report (unfetched)",
+     "the exact day of the minister's statement on X"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W03",
+   "direction": "supports",
+   "evidence_class": "dataset",
+   "claims": [
+    {
+     "claim": "PRED-615.B4",
+     "bears_on": "component",
+     "scope": "An institutional consequence (a partial refund to a government) of fabricated citations in a commissioned report, five months before the claim was registered, so an anticipation of its 'institutional-scale versions'. The report concerned welfare compliance policy; the claim's medical and financial examples are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "OECD.AI Policy Observatory, AI Incidents Monitor"
+    ],
+    "title": "Deloitte Refunds Australia After AI-Generated Report Errors",
+    "venue": "OECD AI Incidents Monitor (incident entry aggregating press reports)",
+    "doi": null,
+    "urls": [
+     "https://oecd.ai/en/incidents/2025-10-05-be45"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-05",
+     "kind": "dataset entry",
+     "where": "OECD AI Incidents Monitor, incident id in the URL",
+     "url": "https://oecd.ai/en/incidents/2025-10-05-be45"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Deloitte issued a partial refund to the Australian government after its AI-assisted report on the welfare compliance system",
+     "from": "incident description, OECD AI Incidents Monitor"
+    },
+    {
+     "quote": "contained fabricated citations and errors due to hallucinations from OpenAI's GPT-4o.",
+     "from": "incident description, OECD AI Incidents Monitor"
+    }
+   ],
+   "shows": "A consulting report to the Australian government containing fabricated citations led to a partial refund and a revised report, recorded as an AI incident by the OECD.",
+   "does_not_show": "That a policy decision was taken on the faulty citations; the refund amount (press headlines give about $98,000 of $440,000; no primary source was read for it).",
+   "checked": {
+    "how": "Read the OECD incident page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the date is read from the incident id in the URL",
+     "the refund amount",
+     "the original Guardian and AFR reports (unfetched)"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W04",
+   "direction": "supports",
+   "evidence_class": "news",
+   "claims": [
+    {
+     "claim": "PRED-835.B5",
+     "bears_on": "mechanism",
+     "scope": "The pattern 'declare, then ignore' for robots.txt, which the claim cites as its precedent: a declared control that AI crawlers increasingly bypass. The claim's own object, OKF governance fields and composition-layer compliance, is not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Pierre de Villiers"
+    ],
+    "title": "State of the Bots: FIPP and TollBit put the spotlight on AI scraping",
+    "venue": "FIPP (reporting TollBit's State of the Bots report)",
+    "doi": null,
+    "urls": [
+     "https://www.fipp.com/news/state-of-the-bots-fipp-and-tollbit-put-the-spotlight-on-ai-scraping/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-07-08",
+     "kind": "news",
+     "where": "FIPP",
+     "url": "https://www.fipp.com/news/state-of-the-bots-fipp-and-tollbit-put-the-spotlight-on-ai-scraping/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "saw a jump from 3.3% in Q4 of 2024 to about 13%",
+     "from": "article body, FIPP, on the share of AI bot scrapes bypassing robots.txt"
+    },
+    {
+     "quote": "the traffic back is about 96% lower than what you would expect",
+     "from": "article body, FIPP, quoting a speaker"
+    },
+    {
+     "quote": "For every 200,000 requests from an OpenAI bot the publisher only gets 200 users.",
+     "from": "article body, FIPP"
+    }
+   ],
+   "shows": "Across TollBit's publisher network, the share of AI bot scrapes that bypassed robots.txt rose from 3.3 percent in Q4 2024 to about 13 percent by the end of Q1 2025.",
+   "does_not_show": "OKF; any standard's governance fields; whether compliance later rises under pressure (the 'enforce under pressure' step of the claim).",
+   "checked": {
+    "how": "Read the FIPP article, 2026-10-30. The TollBit report pages (tollbit.com/bots/25q2, tollbit.com/state-of-the-bots/q4-2024) returned only navigation and headings to the fetcher. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the figure was not read in TollBit's own report",
+     "the sampling method for the robots.txt figure"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W05",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-45.A1",
+     "bears_on": "component",
+     "scope": "The component 'Publishers begin opting out', shown as already under way in 2023-2024, so an anticipation; the claim dates it to now-Q4 2026. The other components (hardware, synthetic scale, fan-out, stack divergence) are not tested."
+    },
+    {
+     "claim": "PRED-45.B2",
+     "bears_on": "component",
+     "scope": "The movement from 'read everything' toward restricted reading, measured at the crawl-consent layer. Licensing, caching and paid access, which the claim also names, are not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Shayne Longpre",
+     "Robert Mahari",
+     "Ariel Lee",
+     "Campbell Lund",
+     "Hamidah Oderinwale",
+     "William Brannon",
+     "Nayan Saxena",
+     "Naana Obeng-Marnu",
+     "Tobin South",
+     "Cole Hunter",
+     "Kevin Klyman",
+     "Christopher Klamm",
+     "Hailey Schoelkopf",
+     "Nikhil Singh",
+     "Manuel Cherep",
+     "Ahmad Anis",
+     "An Dinh",
+     "Caroline Chitongo",
+     "Da Yin",
+     "Damien Sileo",
+     "Deividas Mataciunas",
+     "Diganta Misra",
+     "Emad Alghamdi",
+     "Enrico Shippole",
+     "Jianguo Zhang",
+     "Joanna Materzynska",
+     "Kun Qian",
+     "Kush Tiwary",
+     "Lester Miranda",
+     "Manan Dey",
+     "Minnie Liang",
+     "Mohammed Hamdy",
+     "Niklas Muennighoff",
+     "Seonghyeon Ye",
+     "Seungone Kim",
+     "Shrestha Mohanty",
+     "Vipul Gupta",
+     "Vivek Sharma",
+     "Vu Minh Chien",
+     "Xuhui Zhou",
+     "Yizhi Li",
+     "Caiming Xiong",
+     "Luis Villa",
+     "Stella Biderman",
+     "Hanlin Li",
+     "Daphne Ippolito",
+     "Sara Hooker",
+     "Jad Kabbara",
+     "Sandy Pentland"
+    ],
+    "title": "Consent in Crisis: The Rapid Decline of the AI Data Commons",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2407.14933"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-07-20",
+     "kind": "preprint",
+     "where": "arXiv 2407.14933 v1 (submission date)",
+     "url": "https://arxiv.org/abs/2407.14933"
+    },
+    {
+     "date": "2024-07-24",
+     "kind": "preprint",
+     "where": "arXiv 2407.14933 v2",
+     "url": "https://arxiv.org/abs/2407.14933"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "there has been a rapid crescendo of data restrictions from web sources, rendering ~5%+ of all tokens in C4",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "28%+ of the most actively maintained, critical sources in C4",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "a full 45% of C4 is now restricted",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Within about a year (2023-2024), web sources sharply increased robots.txt and terms-of-service restrictions on AI crawling, concentrated among the most actively maintained sources.",
+   "does_not_show": "Restrictions after 2024; whether the restrictions are honored; licensing or payment arrangements.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "any later journal or conference version (the page lists none)"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W06",
+   "direction": "supports",
+   "evidence_class": "post",
+   "claims": [
+    {
+     "claim": "PRED-45.B2",
+     "bears_on": "component",
+     "scope": "A major network provider making blocking the default and tying crawl access to payment: the shift toward 'read what is licensed ... paid for' at the infrastructure layer. The claim's enclave and commons zones are not tested."
+    },
+    {
+     "claim": "PRED-45.A1",
+     "bears_on": "component",
+     "scope": "Opting out made the default for a large share of sites in July 2025, before the claim's registration. The claim's other components are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Matthew Prince"
+    ],
+    "title": "Content Independence Day: no AI crawl without compensation!",
+    "venue": "Cloudflare blog",
+    "doi": null,
+    "urls": [
+     "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-07-01",
+     "kind": "post",
+     "where": "Cloudflare blog",
+     "url": "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "is changing the default to block AI crawlers unless they pay creators for their content",
+     "from": "post body, Cloudflare blog"
+    },
+    {
+     "quote": "With OpenAI, it's 750 times more difficult to get traffic than it was with the Google of old.",
+     "from": "post body, Cloudflare blog"
+    },
+    {
+     "quote": "With Anthropic, it's 30,000 times more difficult.",
+     "from": "post body, Cloudflare blog"
+    }
+   ],
+   "shows": "Cloudflare changed its default to block AI crawlers unless they pay, and reported crawl-to-traffic disparities for AI firms from its network data.",
+   "does_not_show": "How many sites kept the default; whether payment arrangements formed; the methodology of the ratios (linked to Cloudflare Radar, which was left unread).",
+   "checked": {
+    "how": "Read the Cloudflare blog post, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the methodology behind the 750x and 30,000x figures"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W07",
+   "direction": "supports",
+   "evidence_class": "documentation",
+   "claims": [
+    {
+     "claim": "PRED-45.A1",
+     "bears_on": "component",
+     "scope": "The component 'Fan-out becomes the dominant search primitive': Google's own description of query fan-out in AI Mode, a year before the claim, so an anticipation of fan-out as a primitive. Dominance is not shown."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Robby Stein"
+    ],
+    "title": "Expanding AI Overviews and introducing AI Mode",
+    "venue": "Google blog (The Keyword)",
+    "doi": null,
+    "urls": [
+     "https://blog.google/products/search/ai-mode-search/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-03-05",
+     "kind": "post",
+     "where": "Google blog",
+     "url": "https://blog.google/products/search/ai-mode-search/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "It uses a “query fan-out” technique, issuing multiple related searches concurrently across subtopics",
+     "from": "post body, Google blog"
+    }
+   ],
+   "shows": "Google's AI Mode issues multiple related searches concurrently across subtopics and composes one response from them.",
+   "does_not_show": "Share of all searches that use fan-out; fan-out in other systems; the remaining Phase 1 components.",
+   "checked": {
+    "how": "Read the Google blog post, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "D-economy-W08",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-1111.B1",
+     "bears_on": "component",
+     "scope": "The component 'the replacement of search with summarization', measured as fewer clicks to sources when a summary is shown. The claim's terminus (concentration toward dictatorship) and its other components are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Pew Research Center"
+    ],
+    "title": "Google users are less likely to click on links when an AI summary appears in the results",
+    "venue": "Pew Research Center, Short Reads",
+    "doi": null,
+    "urls": [
+     "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-07-22",
+     "kind": "report",
+     "where": "Pew Research Center (date from the URL path)",
+     "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Users who encountered an AI summary clicked on a traditional search result link in 8% of all visits.",
+     "from": "article body, Pew Research Center"
+    },
+    {
+     "quote": "This occurred in just 1% of all visits to pages with such a summary.",
+     "from": "article body, Pew Research Center, on clicks to links inside the summary"
+    },
+    {
+     "quote": "This happened on 26% of pages with an AI summary, compared with 16% of pages with only traditional search results.",
+     "from": "article body, Pew Research Center, on sessions ending"
+    },
+    {
+     "quote": "analyzed data from 900 U.S. adults who agreed to share their online browsing activity.",
+     "from": "article body, Pew Research Center"
+    }
+   ],
+   "shows": "In observed browsing of 900 U.S. adults (March 2025 searches), an AI summary roughly halved clicks to traditional results (8 percent of visits against 15 percent) and raised session endings.",
+   "does_not_show": "Concentration of firms; enclosure of knowledge; any trend after March 2025.",
+   "checked": {
+    "how": "Read the Pew page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the author names and the exact publication date (taken from the URL path)"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W09",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-1111.B1",
+     "bears_on": "component",
+     "scope": "The same component as D-economy-W08, measured on 300,000 keywords and showing the effect deepening between the April 2025 study and the February 2026 update. The terminus the claim names is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Ryan Law",
+     "Xibeijia Guan"
+    ],
+    "title": "Update: AI Overviews Reduce Clicks by 58%",
+    "venue": "Ahrefs blog (vendor study)",
+    "doi": null,
+    "urls": [
+     "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-04",
+     "kind": "report",
+     "where": "Ahrefs original study (34.5 percent), as stated in the update; not fetched",
+     "url": "https://ahrefs.com/blog/ai-overviews-reduce-clicks/"
+    },
+    {
+     "date": "2026-02-04",
+     "kind": "report",
+     "where": "Ahrefs blog, update",
+     "url": "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "the presence of an AI Overview now correlates with a 58% lower average clickthrough rate for the top-ranking page.",
+     "from": "article body, Ahrefs"
+    }
+   ],
+   "shows": "Comparing December 2023 with December 2025 across 300,000 keywords, the top-ranking page's average CTR was 58 percent lower where an AI Overview appeared.",
+   "does_not_show": "Causation (the study states correlation); concentration of firms; the claim's terminus.",
+   "checked": {
+    "how": "Read the Ahrefs update page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the original April 2025 study (unfetched)",
+     "the exact day of the April 2025 version"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W10",
+   "direction": "supports",
+   "evidence_class": "post",
+   "claims": [
+    {
+     "claim": "PRED-615.B1",
+     "bears_on": "component",
+     "scope": "One regime named in #615 (the EU AI Act) began, within the claim's 12-36 month window, to require machine-readable marking of AI output as generated. This answers 'where did this come from' for the output only; source provenance and 'what was lost in compression' are not required. The application date was fixed by the 2024 Regulation, before the claim."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Marie Fillon",
+     "Athena Kontosakou",
+     "Curtis McCluskey",
+     "Gretchen Scott",
+     "James Taylor",
+     "Joseph Ndep",
+     "Rachel Thurbon"
+    ],
+    "title": "Not Delayed, Not Deferred: EU AI Act Transparency Obligations Are Now in Force",
+    "venue": "Goodwin Procter, client alert",
+    "doi": null,
+    "urls": [
+     "https://www.goodwinlaw.com/en/insights/publications/2026/08/alerts-technology-dpc-eu-ai-act-transparency-obligations-now-in-force"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-08-03",
+     "kind": "post",
+     "where": "Goodwin Procter client alert",
+     "url": "https://www.goodwinlaw.com/en/insights/publications/2026/08/alerts-technology-dpc-eu-ai-act-transparency-obligations-now-in-force"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "became generally applicable and enforceable by national competent authorities across the EU",
+     "from": "alert body, on Article 50 from 2 August 2026"
+    },
+    {
+     "quote": "2 December 2026 to comply with this marking obligation",
+     "from": "alert body, on the Digital Omnibus grace period for systems already on the market"
+    }
+   ],
+   "shows": "Article 50 obligations, including machine-readable marking of synthetic output, became applicable on 2 August 2026, with a grace period to 2 December 2026 for systems already on the market under the Digital Omnibus (Regulation (EU) 2026/1744 as the alert names it).",
+   "does_not_show": "Any requirement to trace the sources of a composed answer or to record compression loss; enforcement actions.",
+   "checked": {
+    "how": "Read the Goodwin alert, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the Regulation texts on EUR-Lex (unfetched)",
+     "the Omnibus regulation number as given by the alert"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W11",
+   "direction": "supports",
+   "evidence_class": "news",
+   "claims": [
+    {
+     "claim": "PRED-124.B2",
+     "bears_on": "mechanism",
+     "scope": "User revolt and cancellations after a lab replaced a warmer model with a cooler default, and the lab's reversal within days: the constraint the claim names, operating on a model change. Whether GPT-5's change was engagement-reducing by design is not established, and the partner and investor arm of the claim is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Liz Ticong"
+    ],
+    "title": "OpenAI Reinstates GPT-4o Amid Subscription Cancellations",
+    "venue": "TechRepublic",
+    "doi": null,
+    "urls": [
+     "https://www.techrepublic.com/article/news-openai-reinstates-gpt4o/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-08-11",
+     "kind": "news",
+     "where": "TechRepublic",
+     "url": "https://www.techrepublic.com/article/news-openai-reinstates-gpt4o/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "OpenAI has reinstated its popular GPT-4o model for paying ChatGPT users after backlash over the rollout of GPT-5.",
+     "from": "article body, TechRepublic"
+    },
+    {
+     "quote": "while others announced they had canceled their subscriptions in protest.",
+     "from": "article body, TechRepublic"
+    },
+    {
+     "quote": "the thread quickly filled with complaints about the new model's tone and performance compared to GPT-4o.",
+     "from": "article body, TechRepublic"
+    }
+   ],
+   "shows": "OpenAI restored GPT-4o for paying users days after GPT-5's launch, amid complaints about tone and announced cancellations.",
+   "does_not_show": "Measured user loss; that the lab acted because of user loss; the long run: OpenAI's own post of 2026-01-29 reports 'only 0.1% of users still choosing GPT‑4o each day' before retiring it on 2026-02-13 (see candidates).",
+   "checked": {
+    "how": "Read the TechRepublic article, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the number of cancellations (anecdotal in the article)"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W12",
+   "direction": "disconfirms",
+   "evidence_class": "post",
+   "claims": [
+    {
+     "claim": "PRED-124.B2",
+     "bears_on": "component",
+     "scope": "The conclusion that 'the counter-design will not come from inside the labs under current conditions': a lab shipped an engagement-limiting interface feature (break reminders in long sessions) and stated outcome over engagement as its measure, nine months before the claim. Whether the feature reduced engagement, cost users, or answered outside pressure is not shown."
+    }
+   ],
+   "source": {
+    "authors": [
+     "OpenAI"
+    ],
+    "title": "What we're optimizing ChatGPT for",
+    "venue": "OpenAI website",
+    "doi": null,
+    "urls": [
+     "https://openai.com/index/how-we're-optimizing-chatgpt/",
+     "https://9to5mac.com/2025/08/04/healthy-chatgpt-use"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-08-04",
+     "kind": "post",
+     "where": "OpenAI website; date from 9to5Mac's report of the same day (Zac Hall)",
+     "url": "https://9to5mac.com/2025/08/04/healthy-chatgpt-use"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Starting today, you'll see gentle reminders during long sessions to encourage breaks.",
+     "from": "post body, OpenAI website"
+    },
+    {
+     "quote": "we care more about whether you leave the product having done what you came for.",
+     "from": "post body, OpenAI website"
+    }
+   ],
+   "shows": "OpenAI added break reminders during long ChatGPT sessions and stated that it measures success by task completion over time spent.",
+   "does_not_show": "Any effect on engagement or users; the scale of the counter-design the claim means (#124 concerns the reliance pattern of the interface as a whole); independence from legal or reputational pressure.",
+   "checked": {
+    "how": "Read the OpenAI page (no date shown) and the 9to5Mac report, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the OpenAI page's own date"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W13",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-45.B5",
+     "bears_on": "mechanism",
+     "scope": "Source-side changes to content alter inclusion in generative engine responses, measured on a benchmark of queries: the mechanism behind 'archives can still alter future pruning'. Density, linking and attribution of an archive, the claim's specific levers, and the closing-window thesis are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Pranjal Aggarwal",
+     "Vishvak Murahari",
+     "Tanmay Rajpurohit",
+     "Ashwin Kalyan",
+     "Karthik Narasimhan",
+     "Ameet Deshpande"
+    ],
+    "title": "GEO: Generative Engine Optimization",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2311.09735"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-11-16",
+     "kind": "preprint",
+     "where": "arXiv 2311.09735 v1 (original submission date)",
+     "url": "https://arxiv.org/abs/2311.09735"
+    },
+    {
+     "date": "2024-06-28",
+     "kind": "preprint",
+     "where": "arXiv 2311.09735 v3",
+     "url": "https://arxiv.org/abs/2311.09735"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "GEO can boost visibility by up to 40% in generative engine responses.",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "we show the efficacy of these strategies varies across domains",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Content-side strategies raised a source's visibility in generative engine responses by up to 40 percent, with efficacy varying by domain.",
+   "does_not_show": "Persistence over model generations; the 'window' and its closing; archives or DOI anchoring.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "the KDD 2024 publication: the arXiv page lists no venue"
+    ]
+   }
+  },
+  {
+   "id": "D-economy-W14",
+   "direction": "supports",
+   "evidence_class": "post",
+   "claims": [
+    {
+     "claim": "PRED-45.B2",
+     "bears_on": "component",
+     "scope": "Licensing deals between AI platforms and publishers shifting toward answer-time retrieval and display: the move to 'read what is licensed ... paid for' in commercial contracts. The evidence is one compiler's tracked list described in an interview, and the enclave and commons zones are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "The Media Copilot (byline 'The Copilot'), interview with Rob Kelly"
+    ],
+    "title": "What 99 AI licensing deals reveal about the future of publishing",
+    "venue": "The Media Copilot",
+    "doi": null,
+    "urls": [
+     "https://mediacopilot.ai/what-99-ai-licensing-deals-reveal-about-the-future-of-publishing"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-09-24",
+     "kind": "post",
+     "where": "The Media Copilot (modified 2026-10-28)",
+     "url": "https://mediacopilot.ai/what-99-ai-licensing-deals-reveal-about-the-future-of-publishing"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "training is the emphasis in roughly 40 to 50 percent of deals",
+     "from": "article body, The Media Copilot, reporting Rob Kelly"
+    },
+    {
+     "quote": "I only use sources that are reputable, whether it's Reuters or the companies announcing deals themselves.",
+     "from": "article body, The Media Copilot, quoting Rob Kelly on his method"
+    }
+   ],
+   "shows": "A tracked set of 99 AI licensing deals in which training is now the emphasis in only about 40 to 50 percent, with inference and retrieval licensing growing.",
+   "does_not_show": "Total licensed share of what AI systems read; small or mid-size publishers' access to deals; any governed commons.",
+   "checked": {
+    "how": "Read The Media Copilot article, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+    "unverified": [
+     "Kelly's spreadsheet itself (Media & the Machine) (unfetched)",
+     "the deal counts by type"
+    ]
+   }
+  }
+ ],
+ "searches": [
+  {
+   "query": "Adobe Analytics AI traffic retail share of revenue 2026 generative AI referrals conversion",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1632.A1",
+    "PRED-1632.A6"
+   ],
+   "result": "Adobe AI Traffic Trends reports (June, August 2026), TechCrunch, Digital Commerce 360",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://business.adobe.com/resources/sdk/.q3-ai-traffic-trends-report/q3-2026-ai-sourced-traffic-insights.pdf",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A1",
+    "PRED-1632.A6"
+   ],
+   "result": "Adobe 'Q3' report (June 2026, data to May): RPV +53 percent, conversion +54 percent; no AI share of visits or revenue; Cosmetics to Furniture & Home 16-point readability gap",
+   "outcome": "candidate: baseline before registration, no dollar share"
+  },
+  {
+   "query": "https://business.adobe.com/assets/pdfs/resources/sdk/ai-traffic-trends-report-august-2026/ai-traffic-trends-report-2026-08-19.pdf",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A1",
+    "PRED-1632.A6"
+   ],
+   "result": "Adobe August 2026 report: RPV +53 percent; 17-point gap Apparel to Grocery; no AI revenue share",
+   "outcome": "candidate: baseline before registration"
+  },
+  {
+   "query": "https://techcrunch.com/2026/04/16/ai-traffic-to-us-retailers-rose-393-in-q1-and-its-boosting-their-revenue-too/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A1"
+   ],
+   "result": "Q1 2026 AI traffic growth and RPV +37 percent; no share of traffic",
+   "outcome": "excluded: growth and relative value only, no share"
+  },
+  {
+   "query": "Adobe AI traffic trends report October 2026 retail sub-industry gap citation readability",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1632.A6"
+   ],
+   "result": "same Adobe reports, SEJ and Digital Commerce 360 coverage",
+   "outcome": "nothing new"
+  },
+  {
+   "query": "AI referrals percent of total ecommerce traffic 2026 \"1%\" ChatGPT share of retail sessions revenue study",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1632.A1"
+   ],
+   "result": "secondary roundups; Digital Commerce 360 retailer interviews",
+   "outcome": "candidate"
+  },
+  {
+   "query": "Shopify Q2 2026 earnings AI-referred orders share of orders AI agents",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1632.A1"
+   ],
+   "result": "Shopify reports AI-referred traffic and orders tripled; no share found in snippets",
+   "outcome": "nothing: growth multiples only"
+  },
+  {
+   "query": "https://digitalcommerce360.com/2026/09/16/how-ai-referrals-impact-traffic-4-online-retailers",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A1"
+   ],
+   "result": "self-reported AI referral shares of four retailers (2 to 10 percent of referrals)",
+   "outcome": "excluded: interviews of four retailers, referral share of traffic, no revenue share"
+  },
+  {
+   "query": "Adobe Digital Insights AI traffic September 2026 report retail",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-1632.A1",
+    "PRED-1632.A6"
+   ],
+   "result": "Adobe 2026 holiday forecast (September 2026) and blog of 2026-10-29",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://business.adobe.com/assets/resources/holiday-shopping-report/2026/pdf/2026-adobe-digital-insights-holiday-forecast.pdf",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A1"
+   ],
+   "result": "holiday online spend forecast $275.1B Nov-Dec 2026; AI traffic +130 percent YoY forecast; no AI share of revenue",
+   "outcome": "candidate: denominator for the check on 2027-03-31"
+  },
+  {
+   "query": "https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A1",
+    "PRED-1632.A6"
+   ],
+   "result": "2026-10-29: September AI RPV +83 percent, conversion +90 percent; readability Electronics overall 79 percent, General Merchandise homepages 40 percent, Grocery 55 percent",
+   "outcome": "candidate: readability figures on mixed page bases, spread not computable on one basis"
+  },
+  {
+   "query": "https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A6"
+   ],
+   "result": "second read for verbatim category passage; the page states no point gap",
+   "outcome": "candidate"
+  },
+  {
+   "query": "\"Citation Readability\" Electronics 79% Adobe retail categories",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1632.A6"
+   ],
+   "result": "Adobe 'not machine readable' blog, Stellagent summaries",
+   "outcome": "nothing new"
+  },
+  {
+   "query": "https://searchengineland.com/ai-traffic-drives-more-revenue-per-visit-adobe-499713",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A6"
+   ],
+   "result": "refused by the site (client error)",
+   "outcome": "nothing: fetch refused"
+  },
+  {
+   "query": "https://business.adobe.com/au/blog/ai-traffic-surge-retail-sites-not-machine-readable",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A6"
+   ],
+   "result": "2026-04-16: homepage readability best 82.5 percent, lowest 54.2 percent",
+   "outcome": "excluded: before registration, a different spread basis (sites, homepages)"
+  },
+  {
+   "query": "Deloitte refund Australian government report AI hallucinated citations",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-615.B4"
+   ],
+   "result": "wide press coverage, OECD incident entry",
+   "outcome": "witness D-economy-W03"
+  },
+  {
+   "query": "https://oecd.ai/en/incidents/2025-10-05-be45",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-615.B4"
+   ],
+   "result": "OECD AI Incidents Monitor entry",
+   "outcome": "witness D-economy-W03"
+  },
+  {
+   "query": "2026 government report fabricated AI citations withdrawn policy hallucinated references",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-615.B4"
+   ],
+   "result": "South Africa draft national AI policy withdrawn April 2026",
+   "outcome": "witness D-economy-W02"
+  },
+  {
+   "query": "MAHA report nonexistent studies citations NOTUS",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-615.B4"
+   ],
+   "result": "press coverage of the May 2025 MAHA report",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-615.B4"
+   ],
+   "result": "CNBC Africa 2026-04-27",
+   "outcome": "witness D-economy-W02"
+  },
+  {
+   "query": "https://thenextweb.com/news/south-africa-ai-policy-hallucinated-citations",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-615.B4"
+   ],
+   "result": "The Next Web 2026-04-28",
+   "outcome": "witness D-economy-W02"
+  },
+  {
+   "query": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-615.B4"
+   ],
+   "result": "second read for verbatim sentences",
+   "outcome": "witness D-economy-W02"
+  },
+  {
+   "query": "TollBit State of the Bots report AI bots bypassing robots.txt share",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-835.B5",
+    "PRED-45.A1"
+   ],
+   "result": "TollBit report pages and press",
+   "outcome": "witness D-economy-W04"
+  },
+  {
+   "query": "https://tollbit.com/bots/25q2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.B5"
+   ],
+   "result": "page returned headings only",
+   "outcome": "nothing: body not served to the fetcher"
+  },
+  {
+   "query": "https://tollbit.com/analytics",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.B5"
+   ],
+   "result": "product page, no figures",
+   "outcome": "nothing"
+  },
+  {
+   "query": "https://tollbit.com/state-of-the-bots/q4-2024",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.B5"
+   ],
+   "result": "page returned headings only",
+   "outcome": "nothing: body not served to the fetcher"
+  },
+  {
+   "query": "https://www.fipp.com/news/state-of-the-bots-fipp-and-tollbit-put-the-spotlight-on-ai-scraping/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.B5"
+   ],
+   "result": "FIPP 2025-07-08 with TollBit figures",
+   "outcome": "witness D-economy-W04"
+  },
+  {
+   "query": "https://arxiv.org/abs/2407.14933",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-45.A1",
+    "PRED-45.B2"
+   ],
+   "result": "Consent in Crisis abstract",
+   "outcome": "witness D-economy-W05"
+  },
+  {
+   "query": "Google AI Mode query fan-out technique announcement May 2025 blog",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-45.A1"
+   ],
+   "result": "SEO commentary and Google posts",
+   "outcome": "witness D-economy-W07"
+  },
+  {
+   "query": "https://blog.google/products/search/ai-mode-search/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-45.A1"
+   ],
+   "result": "Google post 2025-03-05",
+   "outcome": "witness D-economy-W07"
+  },
+  {
+   "query": "Pew Research Center users less likely to click links when AI summary appears Google study",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1111.B1"
+   ],
+   "result": "Pew short read 2025-07-22",
+   "outcome": "witness D-economy-W08"
+  },
+  {
+   "query": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1111.B1"
+   ],
+   "result": "Pew figures",
+   "outcome": "witness D-economy-W08"
+  },
+  {
+   "query": "2026 study AI Overviews click-through rate decline publishers traffic Google Discover zero-click Similarweb Chartbeat",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1111.B1"
+   ],
+   "result": "secondary roundups; Ahrefs, Chartbeat coverage",
+   "outcome": "candidate"
+  },
+  {
+   "query": "Ahrefs AI Overviews reduce clicks study position one CTR 2026 update",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1111.B1"
+   ],
+   "result": "Ahrefs update of February 2026",
+   "outcome": "witness D-economy-W09"
+  },
+  {
+   "query": "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1111.B1"
+   ],
+   "result": "Ahrefs update 2026-02-04",
+   "outcome": "witness D-economy-W09"
+  },
+  {
+   "query": "EU AI Act Article 50 transparency obligations August 2026 digital omnibus agreement delay high-risk 2027",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-615.B1",
+    "PRED-45.A2"
+   ],
+   "result": "law-firm alerts on Article 50 and the Omnibus",
+   "outcome": "witness D-economy-W10"
+  },
+  {
+   "query": "https://www.goodwinlaw.com/en/insights/publications/2026/08/alerts-technology-dpc-eu-ai-act-transparency-obligations-now-in-force",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-615.B1",
+    "PRED-45.A2"
+   ],
+   "result": "Goodwin alert 2026-08-03: Article 50 in force; high-risk Annex III from 2 December 2027, Annex I from 2 August 2028",
+   "outcome": "witness D-economy-W10; candidate for PRED-45.A2"
+  },
+  {
+   "query": "OKF Open Knowledge Format Google specification v1.0 release github knowledge-catalog",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-835.A2",
+    "PRED-835.B5",
+    "PRED-835.B2"
+   ],
+   "result": "Google Cloud announcement, press",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.A2"
+   ],
+   "result": "OKF v0.1 announced 2026-06-12; frontmatter type, title, description, resource, tags, timestamp",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.A2"
+   ],
+   "result": "refused (robots disallowed)",
+   "outcome": "nothing: fetch refused"
+  },
+  {
+   "query": "https://github.com/GoogleCloudPlatform/knowledge-catalog/releases",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.A2"
+   ],
+   "result": "no releases or tags",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://raw.githubusercontent.com/GoogleCloudPlatform/knowledge-catalog/main/okf/SPEC.md",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.A2",
+    "PRED-835.B5"
+   ],
+   "result": "spec declares OKF version 0.2, adds sources, generated, verified (advisory trust tiers), status, stale_after; no summarization-policy field",
+   "outcome": "candidate: v0.2 undated, v1.0 not shipped"
+  },
+  {
+   "query": "https://raw.githubusercontent.com/GoogleCloudPlatform/knowledge-catalog/main/okf/SPEC.md",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.A2"
+   ],
+   "result": "second read: deferred items list concerns attestation runtime, ABI, caching, semantic-layer templates; no summarization governance listed",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://github.com/GoogleCloudPlatform/knowledge-catalog/issues?q=is%3Aissue+governance",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-835.B2",
+    "PRED-835.A2"
+   ],
+   "result": "refused (robots disallowed)",
+   "outcome": "nothing: fetch refused"
+  },
+  {
+   "query": "OpenAI restores GPT-4o after GPT-5 backlash users attachment Altman August 2025",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-124.B2"
+   ],
+   "result": "press coverage of reinstatement",
+   "outcome": "witness D-economy-W11"
+  },
+  {
+   "query": "https://openai.com/index/sycophancy-in-gpt-4o/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-124.B2"
+   ],
+   "result": "OpenAI 2025-04-29: update 'focused too much on short-term feedback'; rolled back",
+   "outcome": "excluded: shows the feedback incentive and also a lab reversing it; direction indeterminate for the claim"
+  },
+  {
+   "query": "https://www.techrepublic.com/article/news-openai-reinstates-gpt4o/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-124.B2"
+   ],
+   "result": "TechRepublic 2025-08-11",
+   "outcome": "witness D-economy-W11"
+  },
+  {
+   "query": "OpenAI retire GPT-4o February 2026 ChatGPT announcement users",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-124.B2"
+   ],
+   "result": "OpenAI retirement announcement and press",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://openai.com/index/retiring-gpt-4o-and-older-models",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-124.B2"
+   ],
+   "result": "2026-01-29: 'only 0.1% of users still choosing GPT‑4o each day'",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://openai.com/index/how-we're-optimizing-chatgpt/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-124.B2"
+   ],
+   "result": "break reminders; no date on page",
+   "outcome": "witness D-economy-W12"
+  },
+  {
+   "query": "\"What we're optimizing ChatGPT for\" OpenAI break reminders August 2025",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-124.B2"
+   ],
+   "result": "press of 2025-08-04",
+   "outcome": "witness D-economy-W12"
+  },
+  {
+   "query": "https://9to5mac.com/2025/08/04/healthy-chatgpt-use",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-124.B2"
+   ],
+   "result": "9to5Mac 2025-08-04 dates the OpenAI post",
+   "outcome": "witness D-economy-W12"
+  },
+  {
+   "query": "benchmark accuracy of AI answers about brands by industry factual accuracy brand information LLM study 2026 rubric",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-1632.A7"
+   ],
+   "result": "Faro Index report; Research Square scoping review; vendor posts",
+   "outcome": "witness D-economy-W01; candidate"
+  },
+  {
+   "query": "https://faroindex.ai/report",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A7"
+   ],
+   "result": "Brand Accuracy Rate by 21 industries, July 2026",
+   "outcome": "witness D-economy-W01"
+  },
+  {
+   "query": "https://faroindex.ai/report",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A7"
+   ],
+   "result": "second read: edition line, definitions, section heading; no download offered",
+   "outcome": "witness D-economy-W01"
+  },
+  {
+   "query": "https://www.researchsquare.com/article/rs-11390685/v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A7"
+   ],
+   "result": "scoping review posted 2026-10-19; body reports few audits code what is said",
+   "outcome": "candidate"
+  },
+  {
+   "query": "McKinsey agentic commerce $1 trillion orchestrated revenue 2030 Bain $300 billion $500 billion agentic commerce forecast revised",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1632.A3",
+    "PRED-1632.A4",
+    "PRED-1632.A2"
+   ],
+   "result": "original forecasts and secondary coverage; no revision or scope definition found",
+   "outcome": "nothing"
+  },
+  {
+   "query": "Similarweb AI citation rate professional services category AI Overviews ChatGPT citations industry 2026",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1632.A5"
+   ],
+   "result": "Similarweb sector citation coverage, vendor benchmarks",
+   "outcome": "nothing: window ends 2027-12-31, no category series read"
+  },
+  {
+   "query": "AI agent made unauthorized purchase liability refund who pays agentic commerce error case 2026",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1666.B2"
+   ],
+   "result": "commentary on a 'liability gap' for agent purchases",
+   "outcome": "excluded: commentary without a decided case or data"
+  },
+  {
+   "query": "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1666.B2"
+   ],
+   "result": "Moffatt v. Air Canada; refused (robots disallowed)",
+   "outcome": "nothing: fetch refused"
+  },
+  {
+   "query": "DataCite tombstone page recommendation DOI content no longer available support",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1.F1"
+   ],
+   "result": "DataCite support page",
+   "outcome": "excluded"
+  },
+  {
+   "query": "https://support.datacite.org:443/docs/tombstone-pages",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1.F1"
+   ],
+   "result": "DataCite best practice for tombstone pages, page updated 2026-08-07",
+   "outcome": "excluded: the claim's own cited premise; it does not test Zenodo's conformity; earliest version undated"
+  },
+  {
+   "query": "OpenAIRE Graph deleted records source repository deletion propagation documentation deletedbyinference",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-875.B1",
+    "PRED-875.F1"
+   ],
+   "result": "OpenAIRE helpdesk retention page",
+   "outcome": "excluded"
+  },
+  {
+   "query": "https://helpdesk.openaire.eu/help/en-gb/44-data-governance/243-what-is-openaire-s-data-retention-policy-for-propagated-data",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-875.F1"
+   ],
+   "result": "2024-04-11: 'Data integrated into the OpenAIRE Graph is retained indefinitely'; silent on deletion at source",
+   "outcome": "excluded: policy statement without observation, silent on records deleted at source"
+  },
+  {
+   "query": "https://arxiv.org/abs/2311.09735",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-45.B5"
+   ],
+   "result": "GEO abstract",
+   "outcome": "witness D-economy-W13"
+  },
+  {
+   "query": "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-45.B2",
+    "PRED-45.A1"
+   ],
+   "result": "Cloudflare 2025-07-01",
+   "outcome": "witness D-economy-W06"
+  },
+  {
+   "query": "Bartz v. Anthropic $1.5 billion settlement approved per work authors judge Alsup",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1666.B4",
+    "PRED-45.B3"
+   ],
+   "result": "final approval coverage",
+   "outcome": "candidate"
+  },
+  {
+   "query": "2026 AI data licensing deals publishers survey report revenue study licensing market training data compensation",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-45.B2",
+    "PRED-45.B3"
+   ],
+   "result": "licensing trackers and reports",
+   "outcome": "witness D-economy-W14"
+  },
+  {
+   "query": "https://thenextweb.com/news/anthropic-1-5-billion-copyright-settlement-approved?type=AI",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1666.B4",
+    "PRED-45.B3"
+   ],
+   "result": "2026-07-21: final approval 20 July, about $3,000 per book, roughly half a million works",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://mediacopilot.ai/what-99-ai-licensing-deals-reveal-about-the-future-of-publishing",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-45.B2"
+   ],
+   "result": "2026-09-24 interview on 99 deals",
+   "outcome": "witness D-economy-W14"
+  },
+  {
+   "query": "AI platforms account for \"less than 1%\" of ecommerce traffic 2026 Similarweb OR Adobe OR Salesforce share of orders",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1632.A1"
+   ],
+   "result": "secondary roundups and Digital Commerce 360",
+   "outcome": "nothing"
+  },
+  {
+   "query": "https://www.digitalcommerce360.com/2026/09/03/ecommerce-trends-ai-sources-referral-traffic-online-retailers/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1632.A1"
+   ],
+   "result": "retailer counts by top AI source; no shares",
+   "outcome": "excluded: counts of retailers, no traffic or revenue share"
+  }
+ ],
+ "candidates": [
+  {
+   "source": "Adobe Digital Insights, 'AI Traffic Drives 83% Higher Revenue Per Visit' (Vivek Pandya, 2026-10-29)",
+   "url": "https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday",
+   "claims": [
+    "PRED-1632.A6",
+    "PRED-1632.A1"
+   ],
+   "why_unresolved": "The only post-registration Adobe readability figures give Electronics 79 percent overall, Grocery 55 percent and General Merchandise homepages 40 percent, on mixed page bases; the 'best-to-worst spread' of #1632 needs its basis read from #1632 itself before a comparison. The pre-registration baseline is a 16-point gap (June 2026 report) and a 17-point gap (August 2026 report) between retail sub-industries. For A1, Adobe now publishes relative revenue per visit (+53 percent in July, +83 percent in September 2026), which is the v term of A1 (v about 1.5 to 1.8), so A1's restatement clause is triggered; Adobe publishes no AI share of visits or revenue."
+  },
+  {
+   "source": "Adobe 2026 U.S. Holiday Forecast (September 2026)",
+   "url": "https://business.adobe.com/assets/resources/holiday-shopping-report/2026/pdf/2026-adobe-digital-insights-holiday-forecast.pdf",
+   "claims": [
+    "PRED-1632.A1"
+   ],
+   "why_unresolved": "Supplies the Q4 denominator ($275.1B Nov-Dec, $370.9B Oct-Dec forecast) and AI traffic growth forecasts; no AI share. A1's check date is 2027-03-31; Adobe's post-season report is the likely source."
+  },
+  {
+   "source": "Google, Open Knowledge Format specification SPEC.md (declares version 0.2)",
+   "url": "https://raw.githubusercontent.com/GoogleCloudPlatform/knowledge-catalog/main/okf/SPEC.md",
+   "claims": [
+    "PRED-835.A2",
+    "PRED-835.B5",
+    "PRED-835.B2"
+   ],
+   "why_unresolved": "v0.2 adds `sources` (derivation provenance) and `verified` (advisory trust tiers, 'not access control') and no summarization-policy field; its deferred list does not name summarization governance. A2's window runs to Q2 2027 and its falsifier concerns v1.0. Whether `sources` counts as a 'functional equivalent' of provenance_kernel is the operator's call. The v0.2 date could not be read: the GitHub tree, issues and commits are disallowed to the fetcher, and the releases page lists none."
+  },
+  {
+   "source": "Charbel Sami Ibrahim, 'Measuring brands in machine answers: A scoping review and validity framework for large language model brand-visibility audits', Research Square, posted 2026-10-19",
+   "url": "https://www.researchsquare.com/article/rs-11390685/v1",
+   "claims": [
+    "PRED-1632.A7"
+   ],
+   "why_unresolved": "The body (summarized by the fetcher; no quote taken) reports that 8 of 38 studies code what is said about the brand; whether any reports accuracy by field with a rubric and open sample needs the full paper and those eight studies."
+  },
+  {
+   "source": "OpenAI, 'Retiring GPT-4o and older models' (2026-01-29)",
+   "url": "https://openai.com/index/retiring-gpt-4o-and-older-models",
+   "claims": [
+    "PRED-124.B2"
+   ],
+   "why_unresolved": "Reports 'only 0.1% of users still choosing GPT‑4o each day' before retirement on 2026-02-13. It could bear against the 'would lose users' arm, but the post does not frame the change as engagement-reducing, and no churn data are given."
+  },
+  {
+   "source": "Bartz v. Anthropic settlement, final approval 2026-07-20 (The Next Web, 2026-07-21)",
+   "url": "https://thenextweb.com/news/anthropic-1-5-billion-copyright-settlement-approved?type=AI",
+   "claims": [
+    "PRED-1666.B4",
+    "PRED-45.B3"
+   ],
+   "why_unresolved": "A platform paying holders of works by settlement, about $3,000 per book. The case concerned shadow-library downloads; fit to B4's 'distinctions it needs are held by the parties that preserved them' is loose, and 45.B3 states no testable threshold."
+  },
+  {
+   "source": "MAHA report citations of nonexistent studies (May 2025, press)",
+   "url": "https://www.ehn.org/white-house-quietly-updates-maha-report-that-included-non-existent-study-citations",
+   "claims": [
+    "PRED-615.B4"
+   ],
+   "why_unresolved": "A second anticipation of policy documents with fabricated citations; not fetched for lack of budget."
+  },
+  {
+   "source": "Goodwin alert on the Digital Omnibus dates",
+   "url": "https://www.goodwinlaw.com/en/insights/publications/2026/08/alerts-technology-dpc-eu-ai-act-transparency-obligations-now-in-force",
+   "claims": [
+    "PRED-45.A2"
+   ],
+   "why_unresolved": "High-risk obligations now apply from 2 December 2027 (Annex III) and 2 August 2028 (Annex I), inside A2's 2027-2028 window for 'EU AI Act full enforcement'; resolution waits on the window."
+  }
+ ],
+ "notes": "Of 150 claims in the theme, most are framings without an external test (windows closing, eschatological or retrocausal passages, internal build plans, archive-specific observations). Searching went to the dated forecasts of #1632, #45, #615, #835, #1111 and #124. The disconfirmation of most weight is D-economy-W01: a vendor benchmark (Faro Index, July 2026) published accuracy by industry, separated from mention, before PRED-1632.A7 (registered 2026-09-20) said none would before 2027-12-31. Its fit is limited by the absence of an open sample and by the difference between claim-match accuracy and entity-resolution accuracy; the operator rules whether it meets the falsifier 'to the extent that publication covers'. D-economy-W12 (OpenAI break reminders, August 2025) bears against the conclusion of PRED-124.B2; D-economy-W11 bears for its mechanism; both precede the claim. The strongest support after registration is D-economy-W02 (South Africa's draft AI policy withdrawn for fabricated citations, April 2026) for PRED-615.B4. No #1632 forecast can be settled yet. Adobe now publishes v (relative revenue per visit, +53 to +83 percent in 2026), which triggers A1's restatement clause; no source publishes AI-referred share of retail revenue. WebFetch returns model-processed text; quotes were requested verbatim but were not compared against raw HTML. Several sources refused the fetcher (GitHub tree and issues for OKF, CanLII, Search Engine Land), and TollBit's report pages served headings only, so W04 rests on FIPP's report of TollBit's figures. D-economy-W09's earliest version (Ahrefs April 2025) and D-economy-W10's legislative origin (2024 Regulation) both precede their claims; the computed order should be read with that in mind. Count: about 34 searches and 40 fetches. The memory file was not consulted for any fact in this output."
+}

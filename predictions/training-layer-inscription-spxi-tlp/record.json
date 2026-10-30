@@ -552,6 +552,93 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0114",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "component",
+     "scope": "The component that open-weight models have made reasoning capability increasingly reproducible: frontier open-weight models trail the best models by about three months on Epoch's capability index. The thesis that the moat moves to the corpus is not tested.",
+     "source": {
+      "authors": [
+       "Luke Emberson"
+      ],
+      "title": "Open-weight models lag state-of-the-art by around 3 months on average",
+      "venue": "Epoch AI Data Insights",
+      "doi": null,
+      "urls": [
+       "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-30",
+       "kind": "report",
+       "where": "epoch.ai data insight",
+       "url": "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Frontier open-weight models lag behind the most capable models by an average of 3 months",
+       "from": "headline, Epoch AI"
+      }
+     ],
+     "shows": "The capability gap between open-weight and closed frontier models is short.",
+     "does_not_show": "Scarcity of substrate or corpus; indices as sovereign territory.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Epoch AI page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0115",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "component",
+     "scope": "The component 'at dramatically lower cost': the price of reaching a fixed performance level fell 9x to 900x per year depending on the milestone. The corpus-moat thesis is not tested.",
+     "source": {
+      "authors": [
+       "Ben Cottier",
+       "Ben Snodin",
+       "David Owen",
+       "Tom Adamczewski"
+      ],
+      "title": "LLM inference prices have fallen rapidly but unequally across tasks",
+      "venue": "Epoch AI Data Insights",
+      "doi": null,
+      "urls": [
+       "https://epoch.ai/data-insights/llm-inference-price-trends"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-12",
+       "kind": "report",
+       "where": "epoch.ai data insight",
+       "url": "https://epoch.ai/data-insights/llm-inference-price-trends"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "The rate of decline varies dramatically depending on the performance milestone, ranging from 9x to 900x per year.",
+       "from": "headline, Epoch AI"
+      }
+     ],
+     "shows": "The cost of a fixed level of LLM capability falls by one to nearly three orders of magnitude a year.",
+     "does_not_show": "Where scarcity moves; corpus access.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Epoch AI page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -942,6 +1029,246 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0053",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The claim puts the detection threshold as a function of corpus share; the witness finds the effect of planted text depends on the absolute count of documents, independent of dataset size. That bears against the corpus-share term, while supporting the general premise that small planted inscription can register. Direction recorded here as supports for the premise; see also E-execution-W06.",
+     "source": {
+      "authors": [
+       "Alexandra Souly",
+       "Javier Rando",
+       "Ed Chapman",
+       "Xander Davies",
+       "Burak Hasircioglu",
+       "Ezzeldin Shereen",
+       "Carlos Mougan",
+       "Vasilios Mavroudis",
+       "Erik Jones",
+       "Chris Hicks",
+       "Nicholas Carlini",
+       "Yarin Gal",
+       "Robert Kirk"
+      ],
+      "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
+      "venue": "arXiv; listed at NeurIPS 2026",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.07192",
+       "https://neurips.cc/virtual/2026/poster/154663"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-08",
+       "kind": "preprint",
+       "where": "arXiv 2510.07192 v1",
+       "url": "https://arxiv.org/abs/2510.07192"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "pretraining models from 600M to 13B parameters on chinchilla-optimal datasets (6B to 260B tokens)",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "250 poisoned documents similarly compromise models across all model and dataset sizes",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "require a near-constant number of documents regardless of dataset size",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "poisoning attacks instead require a near-constant number of documents regardless of dataset size",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "We find that 250 poisoned documents similarly compromise models across all model and dataset sizes",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A fixed small number of planted documents is enough to shape a pretrained model's behavior.",
+     "does_not_show": "Specific hallucinations; transfer to later model generations.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "NeurIPS 2026 listing: search result only",
+       "any peer-reviewed venue (none shown on the arXiv page)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0091",
+     "direction": "disconfirms",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The component 'the threshold ... is a function of corpus share': the witness finds the number of poisoned documents needed stays near constant as the clean corpus grows, so share is not the governing variable in its setting. The setting is backdoor insertion with an adversarial trigger, a different effect from detection of a canary signature.",
+     "source": {
+      "authors": [
+       "Alexandra Souly",
+       "Javier Rando",
+       "Ed Chapman",
+       "Xander Davies",
+       "Burak Hasircioglu",
+       "Ezzeldin Shereen",
+       "Carlos Mougan",
+       "Vasilios Mavroudis",
+       "Erik Jones",
+       "Chris Hicks",
+       "Nicholas Carlini",
+       "Yarin Gal",
+       "Robert Kirk"
+      ],
+      "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.07192"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-08",
+       "kind": "preprint",
+       "where": "arXiv 2510.07192 v1",
+       "url": "https://arxiv.org/abs/2510.07192"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "poisoning attacks instead require a near-constant number of documents regardless of dataset size",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "For backdoor poisoning, absolute count governs and corpus share does not.",
+     "does_not_show": "That the same holds for detectability of distinctive vocabulary or canaries; the post-training term of the claim.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30. Same source as E-execution-W05, recorded separately because it bears in the opposite direction on a different component.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0092",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The claim says the protocol may not achieve detection at frontier pretraining scale and that detection depends on inscription density. The witness finds medium-length traps repeated 100 times undetectable in a 1.3B model and long, often-repeated sequences detectable, so detection hangs on repetition and length. The archive itself cites Meeus et al. 2024 (PRED-1384.F4); this is an anticipation the archive already knew.",
+     "source": {
+      "authors": [
+       "Matthieu Meeus",
+       "Igor Shilov",
+       "Manuel Faysse",
+       "Yves-Alexandre de Montjoye"
+      ],
+      "title": "Copyright Traps for Large Language Models",
+      "venue": "ICML 2024 (PMLR v235)",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2402.09363v2",
+       "https://proceedings.mlr.press/v235/meeus24a.html"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-02-14",
+       "kind": "preprint",
+       "where": "arXiv 2402.09363 v1",
+       "url": "https://arxiv.org/abs/2402.09363v2"
+      },
+      {
+       "date": "2024-06-04",
+       "kind": "preprint",
+       "where": "arXiv 2402.09363 v2",
+       "url": "https://arxiv.org/abs/2402.09363v2"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "even medium-length trap sentences repeated a significant number of times (100) are not detectable",
+       "from": "abstract, arXiv v2"
+      },
+      {
+       "quote": "longer sequences repeated a large number of times can be reliably detected (AUC=0.75) and used as copyright traps.",
+       "from": "abstract, arXiv v2"
+      }
+     ],
+     "shows": "Detectability of inserted sequences in a trained LLM depends on length and repetition; moderate repetition leaves no detectable trace.",
+     "does_not_show": "Frontier-scale models; vocabulary-level signatures of the SPECTRA kind; post-training effects.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v2, with submission history), 2026-10-30. ICML venue taken from the search result for proceedings.mlr.press; that page was not fetched.",
+      "unverified": [
+       "ICML 2024 publication (proceedings page not fetched)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0093",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The claim's term 'post-training intensity': the witness shows several poisoning effects persist through post-training. It does not measure detection of a signature.",
+     "source": {
+      "authors": [
+       "Yiming Zhang",
+       "Javier Rando",
+       "Ivan Evtimov",
+       "Jianfeng Chi",
+       "Eric Michael Smith",
+       "Nicholas Carlini",
+       "Florian Tramèr",
+       "Daphne Ippolito"
+      ],
+      "title": "Persistent Pre-Training Poisoning of LLMs",
+      "venue": "ICLR 2025",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2410.13722v1",
+       "https://proceedings.iclr.cc/paper_files/paper/2025/hash/4dade38eae8c007f3a564b8ea820664a-Abstract-Conference.html"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-10-17",
+       "kind": "preprint",
+       "where": "arXiv 2410.13722 v1",
+       "url": "https://arxiv.org/abs/2410.13722v1"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "poisoning only 0.1% of a model's pre-training dataset is sufficient for three out of four attacks",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "denial-of-service persist through post-training with a poisoning rate of only 0.001%.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Behavior planted through a small share of pretraining data survives the post-training that deployed models receive.",
+     "does_not_show": "Non-adversarial inscription; attribution or vocabulary uptake.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30. ICLR 2025 venue from the search result for proceedings.iclr.cc; that page was not fetched.",
+      "unverified": [
+       "ICLR 2025 publication (proceedings page not fetched)"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Encyclotron measurement of inscription"
    ],
@@ -1960,6 +2287,59 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0111",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The rule that a lexical test returns false negatives on compressed or re-sorted material: the witness's premise and method are that semantic duplicates, similar without being identical, escape exact deduplication and are found by embeddings. Its corpus is web-scale image-text data.",
+     "source": {
+      "authors": [
+       "Amro Abbas",
+       "Kushal Tirumala",
+       "Dániel Simig",
+       "Surya Ganguli",
+       "Ari S. Morcos"
+      ],
+      "title": "SemDeDup: Data-efficient learning at web-scale through semantic deduplication",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://huggingface.co/papers/2303.09540"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-03",
+       "kind": "preprint",
+       "where": "arXiv 2303.09540",
+       "url": "https://huggingface.co/papers/2303.09540"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "data pairs which are semantically similar, but not exactly identical",
+       "from": "abstract, Hugging Face papers page"
+      },
+      {
+       "quote": "can remove 50% of the data with minimal performance loss",
+       "from": "abstract, Hugging Face papers page"
+      }
+     ],
+     "shows": "Embedding-based deduplication finds a large class of near-duplicates that exact matching misses.",
+     "does_not_show": "Compression of a scholarly corpus; completeness of the archive's own blog index.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Hugging Face papers page (published Mar 16, 2023), 2026-10-30; the arXiv page itself was not fetched.",
+      "unverified": [
+       "the arXiv v1 day (the Hugging Face page gives Mar 16, 2023)"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

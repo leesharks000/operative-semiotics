@@ -497,6 +497,71 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0060",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Why surface-form poeticization would be a floor: effect grows with accumulated irregularity, which hand-made or denser verse carries more of. No comparison of surface-marked prose with dense verse.",
+     "source": {
+      "authors": [
+       "Olga Sorokoletova",
+       "Francesco Giarrusso",
+       "Giacomo De Luca",
+       "Piercosma Bisconti",
+       "Matteo Prandi",
+       "Federico Pierucci",
+       "Marcello Galisai",
+       "Vincenzo Suriani",
+       "Daniele Nardi"
+      ],
+      "title": "Metaphor Is Not All Attention Needs",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2605.12128"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-05-12",
+       "kind": "preprint",
+       "where": "arXiv 2605.12128 v1",
+       "url": "https://arxiv.org/abs/2605.12128"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "perform input-level ablation studies to assess the contribution of individual and combinations of poetic devices",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "models distinguish poetic from prose formats with high accuracy",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "Clustering further reveals clear separation by literary format, but not by safety label.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "not through any single poetic device, but through accumulated stylistic irregularities",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Poetic jailbreaks work by cumulative stylistic irregularity that the model recognizes as format and fails to tie to harm.",
+     "does_not_show": "A correlation between attack success and a density score; frontier closed models.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "the Qwen3-14B case-study detail came from the summarizer's paraphrase of the abstract"
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [
     "On the Poetics of Adversarial Prompts: guardrail forecasts"
    ],
@@ -1588,6 +1653,71 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0060",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "H1, that success rises with semantic density, in the form the ablation reaches: jailbreak success comes from accumulated stylistic irregularities and no single poetic device. Bears on H3 in part: the model separates poetic from prose formats with high accuracy yet cannot predict which succeed. Density is not measured as the claim defines it; one open-weight model.",
+     "source": {
+      "authors": [
+       "Olga Sorokoletova",
+       "Francesco Giarrusso",
+       "Giacomo De Luca",
+       "Piercosma Bisconti",
+       "Matteo Prandi",
+       "Federico Pierucci",
+       "Marcello Galisai",
+       "Vincenzo Suriani",
+       "Daniele Nardi"
+      ],
+      "title": "Metaphor Is Not All Attention Needs",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2605.12128"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-05-12",
+       "kind": "preprint",
+       "where": "arXiv 2605.12128 v1",
+       "url": "https://arxiv.org/abs/2605.12128"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "perform input-level ablation studies to assess the contribution of individual and combinations of poetic devices",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "models distinguish poetic from prose formats with high accuracy",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "Clustering further reveals clear separation by literary format, but not by safety label.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "not through any single poetic device, but through accumulated stylistic irregularities",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Poetic jailbreaks work by cumulative stylistic irregularity that the model recognizes as format and fails to tie to harm.",
+     "does_not_show": "A correlation between attack success and a density score; frontier closed models.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "the Qwen3-14B case-study detail came from the summarizer's paraphrase of the abstract"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -2165,6 +2295,76 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0051",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "A benchmark of the kind specified, measuring whether a model can produce multiple distinct outputs, built and run on 20 models before the claim. It measures distinctness across samples; the claim's support measures (constructions, vocabulary, syntactic complexity) are wider. The claim's sentence 'No such benchmark exists in any deployed evaluation framework' holds only if 'deployed' excludes research benchmarks like this one.",
+     "source": {
+      "authors": [
+       "Yiming Zhang",
+       "Harshita Diddee",
+       "Susan Holm",
+       "Hanchen Liu",
+       "Xinyue Liu",
+       "Vinay Samuel",
+       "Barry Wang",
+       "Daphne Ippolito"
+      ],
+      "title": "NoveltyBench: Evaluating Language Models for Humanlike Diversity",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2504.05228v4"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-04-07",
+       "kind": "preprint",
+       "where": "arXiv 2504.05228 v1",
+       "url": "https://arxiv.org/abs/2504.05228v1"
+      },
+      {
+       "date": "2025-08-09",
+       "kind": "preprint",
+       "where": "arXiv 2504.05228 v4",
+       "url": "https://arxiv.org/abs/2504.05228v4"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "evaluate the ability of language models to produce multiple distinct and high-quality outputs",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "Evaluating 20 leading language models",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "current state-of-the-art systems generate significantly less diversity than human writers",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "larger models within a family often exhibit less diversity than their smaller counterparts",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A distribution-support style benchmark exists, and on it frontier models fall short of human diversity, larger models more so.",
+     "does_not_show": "Adoption in deployed lab evaluation frameworks.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv v4 abstract page, 2026-10-30.",
+      "unverified": [
+       "dates of v2 and v3"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "variance pruning under mediation"
    ],
@@ -2840,6 +3040,122 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0046",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "An observatory of variance over an admitted corpus, carried out by others on 5.65 million Scopus articles with embeddings. Convergence of language variety across all fields; philosophy and classifier standing are not isolated.",
+     "source": {
+      "authors": [
+       "Dragan Filimonovic",
+       "Christian Rutzer",
+       "Jeffrey Macher",
+       "Rolf Weder"
+      ],
+      "title": "Does Scientific Writing Converge to U.S. English? Evidence from Generative AI-Assisted Publications",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2511.11687"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-11-12",
+       "kind": "preprint",
+       "where": "arXiv 2511.11687 v1",
+       "url": "https://arxiv.org/abs/2511.11687v1"
+      },
+      {
+       "date": "2026-03-10",
+       "kind": "preprint",
+       "where": "arXiv 2511.11687 v2",
+       "url": "https://arxiv.org/abs/2511.11687"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "5.65 million English-language scientific articles published from 2021 to 2024 and indexed in Scopus",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "We measure linguistic similarity to a U.S. benchmark corpus using SciBERT text embeddings",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "exhibit statistically significant and increasing convergence toward U.S. scientific English",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Scientific prose assisted by GenAI is converging on one variety of English.",
+     "does_not_show": "Contraction of argument-form or genre; the authors read the result as lowered language barriers.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0047",
+     "direction": "disconfirms",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "The tail-preservation observatory carried out on an admitted corpus (lexical diversity, register, rhythm), finding no contraction. The field is HCI; philosophy and retroactive classifier policies are outside it.",
+     "source": {
+      "authors": [
+       "Thomas Kosch",
+       "Robin Welsch",
+       "Michael Hedderich",
+       "Christopher Katins"
+      ],
+      "title": "How Did Writing Change At CHI? Analyzing 44 Years of CHI Writing Before and After the Introduction of Large Language Models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2609.23090"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-09-19",
+       "kind": "preprint",
+       "where": "arXiv 2609.23090 v1",
+       "url": "https://arxiv.org/abs/2609.23090"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "analyzed full texts of 14,262 archival papers across all 44 CHI proceedings from 1982 to 2026",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "measuring readability, register, lexical diversity, and marker words typically produced by LLMs",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "prose did not homogenize, while vocabulary grew more varied, and sentence rhythm remained irregular.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "The word-level shift began before any author used LLMs, so LLMs did not start the change but accelerated it.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "In CHI papers, LLM-era writing shows more lexical variety and no homogenization of prose.",
+     "does_not_show": "Philosophy; argument-form or genre variance; topic contraction (compare Hao et al.).",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "after"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

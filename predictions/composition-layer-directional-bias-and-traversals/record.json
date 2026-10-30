@@ -975,6 +975,89 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0005",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed article",
+     "bears_on": "method",
+     "scope": "An outside research group computing an attribution-loss rate across surfaces, the program the claim says any community could run. It measures web pages at large, with no comparison across fields or languages.",
+     "source": {
+      "authors": [
+       "Ilan Strauss",
+       "Jangho Yang",
+       "Tim O'Reilly",
+       "Sruly Rosenblat",
+       "Isobel Moure"
+      ],
+      "title": "The Attribution Crisis in LLM Search Results (journal version: The attribution crisis in LLM search results: Estimating ecosystem exploitation)",
+      "venue": "Social Science Research Council AI Disclosures Project working paper; arXiv cs.DL; Data & Policy (Cambridge University Press) vol. 8, e15",
+      "doi": "10.1017/dap.2026.10064",
+      "urls": [
+       "https://arxiv.org/abs/2508.00838",
+       "https://arxiv.org/html/2508.00838v1",
+       "https://rogue-scholar.org/records/b7q0a-dfk44",
+       "https://www.cambridge.org/core/journals/data-and-policy/article/attribution-crisis-in-llm-search-results-estimating-ecosystem-exploitation/170DD0B88E5F5AEA8F69F2E9AF1328E3",
+       "https://www.ssrc.org/publications/the-attribution-crisis-in-llm-search-results/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-06-27",
+       "kind": "working paper",
+       "where": "Rogue Scholar record of the Asimov's Addendum / AI Disclosures Project post, DOI 10.59350/veayq-6bz87",
+       "url": "https://rogue-scholar.org/records/b7q0a-dfk44"
+      },
+      {
+       "date": "2025-06-27",
+       "kind": "preprint",
+       "where": "arXiv 2508.00838 v1 (the only version listed)",
+       "url": "https://arxiv.org/abs/2508.00838"
+      },
+      {
+       "date": "2026-04-28",
+       "kind": "peer-reviewed article",
+       "where": "Data & Policy 8, e15, published online (issue date given as January 2026)",
+       "url": "https://www.cambridge.org/core/journals/data-and-policy/article/attribution-crisis-in-llm-search-results-estimating-ecosystem-exploitation/170DD0B88E5F5AEA8F69F2E9AF1328E3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "“attribution gap” – the difference between relevant URLs read and those actually cited.",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "Drawing on approximately 14,000 real-world LMArena conversation logs with search-enabled LLM systems",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "No citation: Gemini provides no clickable citation source in 92% of answers",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "Perplexity’s Sonar visits approximately 10 relevant pages per query but cites only three to four.",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "the average query answered by Gemini or Sonar leaves about 3 relevant websites uncited",
+       "from": "abstract, arXiv HTML v1"
+      }
+     ],
+     "shows": "Search-enabled LLMs read more relevant pages than they cite, at rates that differ widely by system on the same queries; the authors tie the difference to retrieval design. This is the earlier pass's candidate C-0001, now verified; it precedes every claim it bears on and is an anticipation.",
+     "does_not_show": "Loss of attribution for a named author's concepts; AI Overviews as a surface; any skew of the loss by source size or standing; any trend over time.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v1 only listed) and the arXiv HTML v1 abstract, the Rogue Scholar record, and the Data & Policy landing page, 2026-10-30. The SSRC page had refused a fetch in S-0002 and was not retried.",
+      "unverified": [
+       "The arXiv page gives v1 as 2025-06-27 although an identifier beginning 2508 is normally assigned in August 2025; the Rogue Scholar DOI record independently dates the paper 27 June 2025",
+       "Rogue Scholar lists four authors (no Jangho Yang); arXiv and Data & Policy list five",
+       "received and accepted dates of the journal version were not on the page read"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

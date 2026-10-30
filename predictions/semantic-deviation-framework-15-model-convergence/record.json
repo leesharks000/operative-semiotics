@@ -344,6 +344,230 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0028",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Post-training convergence pressure measured as reduced output diversity. The study compares RLHF with SFT across diversity measures; it does not compute signed per-token deviation and does not use Llama-3.1 base and instruct.",
+     "source": {
+      "authors": [
+       "Robert Kirk",
+       "Ishita Mediratta",
+       "Christoforos Nalmpantis",
+       "Jelena Luketina",
+       "Eric Hambro",
+       "Edward Grefenstette",
+       "Roberta Raileanu"
+      ],
+      "title": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "venue": "arXiv; listed in ICLR 2024 proceedings",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2310.06452v3",
+       "https://proceedings.iclr.cc/paper_files/paper/2024/hash/5a68d05006d5b05dd9463dd9c0219db0-Abstract-Conference.html"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-10-10",
+       "kind": "preprint",
+       "where": "arXiv 2310.06452 v1",
+       "url": "https://arxiv.org/abs/2310.06452v1"
+      },
+      {
+       "date": "2024-01-03",
+       "kind": "preprint",
+       "where": "arXiv 2310.06452 v2",
+       "url": "https://arxiv.org/abs/2310.06452v2"
+      },
+      {
+       "date": "2024-02-19",
+       "kind": "preprint",
+       "where": "arXiv 2310.06452 v3",
+       "url": "https://arxiv.org/abs/2310.06452v3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "However, RLHF significantly reduces output diversity compared to SFT across a variety of measures",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "RLHF lowers output diversity relative to SFT across several measures.",
+     "does_not_show": "The signed-deviation statistic; base versus instruct of the named model.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (full submission history), 2026-10-30.",
+      "unverified": [
+       "ICLR 2024 publication: seen only as a search-result listing, proceedings page not fetched"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0029",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The direction G1 predicts, base versus aligned, shown on the model's own next-token distribution: alignment sharpens it and cuts the branching factor 2 to 5 times. This is an entropy measure; G1's statistic is the signed deviation of realized tokens from that expectation, which the study does not report.",
+     "source": {
+      "authors": [
+       "Chenghao Yang",
+       "Sida Li",
+       "Ari Holtzman"
+      ],
+      "title": "LLM Probability Concentration: How Alignment Shrinks the Generative Horizon",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2506.17871"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-06-22",
+       "kind": "preprint",
+       "where": "arXiv 2506.17871 v1",
+       "url": "https://arxiv.org/abs/2506.17871"
+      },
+      {
+       "date": "2026-09-12",
+       "kind": "preprint",
+       "where": "arXiv 2506.17871 v4",
+       "url": "https://arxiv.org/abs/2506.17871"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Alignment tuning sharpens the output distribution from the outset, reducing BF by a factor of 2--5 overall",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "up to an order of magnitude (e.g., from 12 to 1.2) at early positions",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Aligned models concentrate probability on far fewer continuations than their base models.",
+     "does_not_show": "Signed deviation; a Mann-Whitney test on matched prompts; Llama-3.1-8B specifically.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "dates of v2 and v3"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0030",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Base models outperform their aligned forms on randomness and creative originality, with aligned models nearly predictable in some states. A behavioral measure; the per-token signed-deviation statistic is not computed.",
+     "source": {
+      "authors": [
+       "Peter West",
+       "Christopher Potts"
+      ],
+      "title": "Base Models Beat Aligned Models at Randomness and Creativity",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2505.00047"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-04-30",
+       "kind": "preprint",
+       "where": "arXiv 2505.00047 v1",
+       "url": "https://arxiv.org/abs/2505.00047"
+      },
+      {
+       "date": "2025-09-13",
+       "kind": "preprint",
+       "where": "arXiv 2505.00047 v2",
+       "url": "https://arxiv.org/abs/2505.00047"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "base language models consistently outperform their popular aligned forms",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "aligned models tend towards narrow behaviors that result in distinct disadvantages",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "becoming almost fully predictable in some game states",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Alignment narrows behavior and raises predictability relative to the base model.",
+     "does_not_show": "The deviation statistic; any safety-specific effect.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0031",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Aligned models show lower token-prediction entropy than their base. Entropy is the expectation term; G1 names the signed deviation from it, which the study does not compute.",
+     "source": {
+      "authors": [
+       "Behnam Mohammadi"
+      ],
+      "title": "Creativity Has Left the Chat: The Price of Debiasing Language Models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2406.05587"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-06-08",
+       "kind": "preprint",
+       "where": "arXiv 2406.05587 v1",
+       "url": "https://arxiv.org/abs/2406.05587"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "aligned models exhibit lower entropy in token predictions",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "form distinct clusters in the embedding space",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "attractor states",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Alignment that reduces bias and toxicity also lowers output entropy and pulls outputs toward a few attractor states.",
+     "does_not_show": "Frontier models; human-rated loss of nuance.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Semantic Deviation Research Program audited claims"
    ],
@@ -1223,6 +1447,129 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0037",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "The test P1 proposes, a per-token signed deviation of observed log-probability from the model's expected log-probability, normalized, used to separate machine from human text. Fast-DetectGPT builds a detector on exactly this curvature and reports it works; it reports detection accuracy and does not report P1's Mann-Whitney U or Cohen's d.",
+     "source": {
+      "authors": [
+       "Guangsheng Bao",
+       "Yanbin Zhao",
+       "Zhiyang Teng",
+       "Linyi Yang",
+       "Yue Zhang"
+      ],
+      "title": "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2310.05130"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-10-08",
+       "kind": "preprint",
+       "where": "arXiv 2310.05130 v1",
+       "url": "https://arxiv.org/abs/2310.05130v1"
+      },
+      {
+       "date": "2024-12-16",
+       "kind": "preprint",
+       "where": "arXiv 2310.05130 v3",
+       "url": "https://arxiv.org/abs/2310.05130"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "introduce the concept of conditional probability curvature",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "discrepancies in word choices between LLMs and humans within a given context",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "surpasses DetectGPT by a relative around 75% in both the white-box and black-box settings",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Machine text sits on the probable side of the scoring model's own expectation token by token, consistently enough to detect it zero-shot.",
+     "does_not_show": "Human-rated slop (PRED-107.G3); the claim's thresholds.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page twice, 2026-10-30.",
+      "unverified": [
+       "the curvature's exact definition (sign convention, normalization) is in the body, which was not read",
+       "ICLR 2024 publication: not on the page"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0038",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "On the matched human/ChatGPT corpus HC3, ChatGPT text has lower GPT-2 perplexity than human text at text and sentence level. Perplexity is raw surprisal; P1's statistic subtracts the model's expectation, so the fit is to the direction of the effect.",
+     "source": {
+      "authors": [
+       "Biyang Guo",
+       "Xin Zhang",
+       "Ziyuan Wang",
+       "Minqi Jiang",
+       "Jinran Nie",
+       "Yuxuan Ding",
+       "Jianwei Yue",
+       "Yupeng Wu"
+      ],
+      "title": "How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2301.07597",
+       "https://arxiv.org/html/2301.07597"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-01-18",
+       "kind": "preprint",
+       "where": "arXiv 2301.07597 v1",
+       "url": "https://arxiv.org/abs/2301.07597"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "We call the collected dataset the Human ChatGPT Comparison Corpus (HC3).",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "It is clearly observed that, regardless of whether it is at the text level or the sentence level,",
+       "from": "Section 4.4, arXiv HTML"
+      },
+      {
+       "quote": "the content generated by ChatGPT has relatively lower PPLs compared to the text written by humans.",
+       "from": "Section 4.4, arXiv HTML"
+      }
+     ],
+     "shows": "In HC3, ChatGPT answers are more predictable to a reference model than human answers.",
+     "does_not_show": "A signed-deviation statistic; effect size; human-rated slop.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and the HTML full text Section 4.4, 2026-10-30.",
+      "unverified": [
+       "the HTML fetched was the unversioned page; only v1 is listed"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1293,6 +1640,67 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0038",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "The roadmap's cheapest test names HC3; the corpus authors already ran a perplexity comparison on it. Not with P1's deviation statistic or three reference models.",
+     "source": {
+      "authors": [
+       "Biyang Guo",
+       "Xin Zhang",
+       "Ziyuan Wang",
+       "Minqi Jiang",
+       "Jinran Nie",
+       "Yuxuan Ding",
+       "Jianwei Yue",
+       "Yupeng Wu"
+      ],
+      "title": "How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2301.07597",
+       "https://arxiv.org/html/2301.07597"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-01-18",
+       "kind": "preprint",
+       "where": "arXiv 2301.07597 v1",
+       "url": "https://arxiv.org/abs/2301.07597"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "We call the collected dataset the Human ChatGPT Comparison Corpus (HC3).",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "It is clearly observed that, regardless of whether it is at the text level or the sentence level,",
+       "from": "Section 4.4, arXiv HTML"
+      },
+      {
+       "quote": "the content generated by ChatGPT has relatively lower PPLs compared to the text written by humans.",
+       "from": "Section 4.4, arXiv HTML"
+      }
+     ],
+     "shows": "In HC3, ChatGPT answers are more predictable to a reference model than human answers.",
+     "does_not_show": "A signed-deviation statistic; effect size; human-rated slop.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and the HTML full text Section 4.4, 2026-10-30.",
+      "unverified": [
+       "the HTML fetched was the unversioned page; only v1 is listed"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Framework 15 retrieval-basin measurement programme"
    ],

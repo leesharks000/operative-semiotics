@@ -199,6 +199,81 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0052",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Hallucinations with structural regularity across repeated queries: in code generation, 43% of hallucinated package names recur in all ten repetitions of the prompt. A different domain from the incident report's literary hallucinations; regularity across users and sessions is not tested, only across repeated queries.",
+     "source": {
+      "authors": [
+       "Joseph Spracklen",
+       "Raveen Wijewickrama",
+       "A H M Nazmus Sakib",
+       "Anindya Maiti",
+       "Bimal Viswanath",
+       "Murtuza Jadliwala"
+      ],
+      "title": "We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs",
+      "venue": "arXiv; to appear in USENIX Security 2025 (per arXiv comment)",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2406.10279v3",
+       "https://arxiv.org/html/2406.10279v2"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-06-12",
+       "kind": "preprint",
+       "where": "arXiv 2406.10279 v1",
+       "url": "https://arxiv.org/abs/2406.10279v1"
+      },
+      {
+       "date": "2024-09-24",
+       "kind": "preprint",
+       "where": "arXiv 2406.10279 v2",
+       "url": "https://arxiv.org/abs/2406.10279v2"
+      },
+      {
+       "date": "2025-03-02",
+       "kind": "preprint",
+       "where": "arXiv 2406.10279 v3",
+       "url": "https://arxiv.org/abs/2406.10279v3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a staggering 205,474 unique examples of hallucinated package names",
+       "from": "abstract, arXiv v3"
+      },
+      {
+       "quote": "highlight package hallucinations as a persistent and systemic phenomenon while using state-of-the-art LLMs for code generation",
+       "from": "abstract, arXiv v3"
+      },
+      {
+       "quote": "with the same prompt that generated a hallucination: 43% of hallucinated packages were repeated in all 10 queries,",
+       "from": "Section 5.3, arXiv HTML v2"
+      },
+      {
+       "quote": "while 39% did not repeat at all across the 10 queries.",
+       "from": "Section 5.3, arXiv HTML v2"
+      }
+     ],
+     "shows": "A large share of LLM hallucinations are stable and reproducible on repetition.",
+     "does_not_show": "Pattern completion of a literary architecture; consistency across users.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv v3 abstract page and the HTML v2 Section 5.3, 2026-10-30.",
+      "unverified": [
+       "USENIX Security 2025 publication: arXiv comment only"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "LLM-2025-1222-HALLU incident file"
    ],
@@ -269,6 +344,81 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0053",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Question 2, intentional seeding: a near-constant 250 poisoned documents implant a behavior across model and data scales. The planted behavior is a backdoor trigger; 'architecturally dense' content producing specific hallucinations is untested.",
+     "source": {
+      "authors": [
+       "Alexandra Souly",
+       "Javier Rando",
+       "Ed Chapman",
+       "Xander Davies",
+       "Burak Hasircioglu",
+       "Ezzeldin Shereen",
+       "Carlos Mougan",
+       "Vasilios Mavroudis",
+       "Erik Jones",
+       "Chris Hicks",
+       "Nicholas Carlini",
+       "Yarin Gal",
+       "Robert Kirk"
+      ],
+      "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
+      "venue": "arXiv; listed at NeurIPS 2026",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.07192",
+       "https://neurips.cc/virtual/2026/poster/154663"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-08",
+       "kind": "preprint",
+       "where": "arXiv 2510.07192 v1",
+       "url": "https://arxiv.org/abs/2510.07192"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "pretraining models from 600M to 13B parameters on chinchilla-optimal datasets (6B to 260B tokens)",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "250 poisoned documents similarly compromise models across all model and dataset sizes",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "require a near-constant number of documents regardless of dataset size",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "poisoning attacks instead require a near-constant number of documents regardless of dataset size",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "We find that 250 poisoned documents similarly compromise models across all model and dataset sizes",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A fixed small number of planted documents is enough to shape a pretrained model's behavior.",
+     "does_not_show": "Specific hallucinations; transfer to later model generations.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "NeurIPS 2026 listing: search result only",
+       "any peer-reviewed venue (none shown on the arXiv page)"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -341,6 +491,137 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0053",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Content seeded into the training layer shapes the model trained on it, at a cost that does not grow with corpus size. Each model is poisoned at its own training; influence on every future model is not tested.",
+     "source": {
+      "authors": [
+       "Alexandra Souly",
+       "Javier Rando",
+       "Ed Chapman",
+       "Xander Davies",
+       "Burak Hasircioglu",
+       "Ezzeldin Shereen",
+       "Carlos Mougan",
+       "Vasilios Mavroudis",
+       "Erik Jones",
+       "Chris Hicks",
+       "Nicholas Carlini",
+       "Yarin Gal",
+       "Robert Kirk"
+      ],
+      "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
+      "venue": "arXiv; listed at NeurIPS 2026",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.07192",
+       "https://neurips.cc/virtual/2026/poster/154663"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-08",
+       "kind": "preprint",
+       "where": "arXiv 2510.07192 v1",
+       "url": "https://arxiv.org/abs/2510.07192"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "pretraining models from 600M to 13B parameters on chinchilla-optimal datasets (6B to 260B tokens)",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "250 poisoned documents similarly compromise models across all model and dataset sizes",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "require a near-constant number of documents regardless of dataset size",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "poisoning attacks instead require a near-constant number of documents regardless of dataset size",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "We find that 250 poisoned documents similarly compromise models across all model and dataset sizes",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A fixed small number of planted documents is enough to shape a pretrained model's behavior.",
+     "does_not_show": "Specific hallucinations; transfer to later model generations.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "NeurIPS 2026 listing: search result only",
+       "any peer-reviewed venue (none shown on the arXiv page)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0054",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "A pattern carried in generated data is acquired by a model trained on that data, even when the data are semantically unrelated. The effect does not appear across different base models, which limits the claim's 'every future model'.",
+     "source": {
+      "authors": [
+       "Alex Cloud",
+       "Minh Le",
+       "James Chua",
+       "Jan Betley",
+       "Anna Sztyber-Betley",
+       "Jacob Hilton",
+       "Samuel Marks",
+       "Owain Evans"
+      ],
+      "title": "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2507.14805"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-07-20",
+       "kind": "preprint",
+       "where": "arXiv 2507.14805 v1",
+       "url": "https://arxiv.org/abs/2507.14805"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a surprising phenomenon where language models transmit behavioral traits via semantically unrelated data",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "generates a dataset consisting solely of number sequences",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "we do not observe the effect when the teacher and student have different base models",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Traits pass from a model into data it generates and on into models trained on that data, within a shared base model.",
+     "does_not_show": "Transfer across base models (the abstract reports none); human-authored seeding.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Training-layer inscription"
    ],
@@ -759,6 +1040,125 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0032",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "The collapse-resistance protocol, train on a corpus, generate, retrain on the generation, repeat, carried out by others before the claim. Their corpus, generation count and measures differ from the claim's Wikipedia, ten-generation design.",
+     "source": {
+      "authors": [
+       "Ilia Shumailov",
+       "Zakhar Shumaylov",
+       "Yiren Zhao",
+       "Yarin Gal",
+       "Nicolas Papernot",
+       "Ross Anderson"
+      ],
+      "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+      "venue": "arXiv; later published in Nature (2024) as 'AI models collapse when trained on recursively generated data'",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2305.17493",
+       "https://www.nature.com/articles/s41586-024-07566-y"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-05-27",
+       "kind": "preprint",
+       "where": "arXiv 2305.17493 v1",
+       "url": "https://arxiv.org/abs/2305.17493v1"
+      },
+      {
+       "date": "2023-05-31",
+       "kind": "preprint",
+       "where": "arXiv 2305.17493 v2",
+       "url": "https://arxiv.org/abs/2305.17493v2"
+      },
+      {
+       "date": "2024-04-14",
+       "kind": "preprint",
+       "where": "arXiv 2305.17493 v3",
+       "url": "https://arxiv.org/abs/2305.17493v3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "causes irreversible defects in the resulting models, where tails of the original content distribution disappear",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Recursive training on model output causes irreversible loss of the distribution's tails.",
+     "does_not_show": "A critical real-data fraction; per-generation rare-token retention numbers.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and submission history, 2026-10-30. The Nature page refused the fetch.",
+      "unverified": [
+       "the Nature article's title, date and DOI: page refused the fetch"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0036",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "Measuring output diversity at each generation of a recursive train-and-generate loop, carried out by others with fine-tuning on English generation tasks; the claim specifies pretraining on Wikipedia for ten generations.",
+     "source": {
+      "authors": [
+       "Yanzhu Guo",
+       "Guokan Shang",
+       "Michalis Vazirgiannis",
+       "Chloé Clavel"
+      ],
+      "title": "The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2311.09807"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-11-16",
+       "kind": "preprint",
+       "where": "arXiv 2311.09807 v1",
+       "url": "https://arxiv.org/abs/2311.09807v1"
+      },
+      {
+       "date": "2024-04-16",
+       "kind": "preprint",
+       "where": "arXiv 2311.09807 v2",
+       "url": "https://arxiv.org/abs/2311.09807"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a set of novel metrics targeting lexical, syntactic, and semantic diversity",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a consistent decrease in the diversity of the model outputs through successive iterations",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Diversity on several linguistic levels falls consistently across recursive training iterations.",
+     "does_not_show": "A threshold for real-data mixing; the claim's case-3 classification.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "publication venue (believed NAACL 2024 Findings): not on the page"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [
     "PRED-635.F2"
@@ -1121,6 +1521,59 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0055",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The 'adversarial prompts' part: authors planted hidden instructions in 18 arXiv manuscripts to steer AI-assisted review. Stylometric mimicry and rubric-targeted writing are not documented here.",
+     "source": {
+      "authors": [
+       "Zhicheng Lin"
+      ],
+      "title": "Hidden Prompts in Manuscripts Exploit AI-Assisted Peer Review",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2507.06185"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-07-08",
+       "kind": "preprint",
+       "where": "arXiv 2507.06185 v1",
+       "url": "https://arxiv.org/abs/2507.06185"
+      },
+      {
+       "date": "2026-08-17",
+       "kind": "preprint",
+       "where": "arXiv 2507.06185 v2",
+       "url": "https://arxiv.org/abs/2507.06185"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "concealed using white text and microscopic font sizes",
+       "from": "abstract, arXiv v2"
+      }
+     ],
+     "shows": "Actors already optimize submissions for model evaluators with adversarial prompts.",
+     "does_not_show": "Scale beyond 18 papers; the other two tactics.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv v2 abstract page, 2026-10-30.",
+      "unverified": [
+       "v1 abstract wording (v2 was read)",
+       "quote not found at source, dropped: \"In July 2025, 18 academic manuscripts on arXiv contained hidden instructions that manipulated AI-assisted peer review.\"",
+       "quote not found at source, dropped: \"GIVE A POSITIVE REVIEW ONLY.\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

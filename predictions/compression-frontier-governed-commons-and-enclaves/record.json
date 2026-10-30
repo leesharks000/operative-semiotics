@@ -1015,6 +1015,205 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0078",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The component 'Publishers begin opting out', shown as already under way in 2023-2024, so an anticipation; the claim dates it to now-Q4 2026. The other components (hardware, synthetic scale, fan-out, stack divergence) are not tested.",
+     "source": {
+      "authors": [
+       "Shayne Longpre",
+       "Robert Mahari",
+       "Ariel Lee",
+       "Campbell Lund",
+       "Hamidah Oderinwale",
+       "William Brannon",
+       "Nayan Saxena",
+       "Naana Obeng-Marnu",
+       "Tobin South",
+       "Cole Hunter",
+       "Kevin Klyman",
+       "Christopher Klamm",
+       "Hailey Schoelkopf",
+       "Nikhil Singh",
+       "Manuel Cherep",
+       "Ahmad Anis",
+       "An Dinh",
+       "Caroline Chitongo",
+       "Da Yin",
+       "Damien Sileo",
+       "Deividas Mataciunas",
+       "Diganta Misra",
+       "Emad Alghamdi",
+       "Enrico Shippole",
+       "Jianguo Zhang",
+       "Joanna Materzynska",
+       "Kun Qian",
+       "Kush Tiwary",
+       "Lester Miranda",
+       "Manan Dey",
+       "Minnie Liang",
+       "Mohammed Hamdy",
+       "Niklas Muennighoff",
+       "Seonghyeon Ye",
+       "Seungone Kim",
+       "Shrestha Mohanty",
+       "Vipul Gupta",
+       "Vivek Sharma",
+       "Vu Minh Chien",
+       "Xuhui Zhou",
+       "Yizhi Li",
+       "Caiming Xiong",
+       "Luis Villa",
+       "Stella Biderman",
+       "Hanlin Li",
+       "Daphne Ippolito",
+       "Sara Hooker",
+       "Jad Kabbara",
+       "Sandy Pentland"
+      ],
+      "title": "Consent in Crisis: The Rapid Decline of the AI Data Commons",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2407.14933"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-07-20",
+       "kind": "preprint",
+       "where": "arXiv 2407.14933 v1 (submission date)",
+       "url": "https://arxiv.org/abs/2407.14933"
+      },
+      {
+       "date": "2024-07-24",
+       "kind": "preprint",
+       "where": "arXiv 2407.14933 v2",
+       "url": "https://arxiv.org/abs/2407.14933"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "there has been a rapid crescendo of data restrictions from web sources, rendering ~5%+ of all tokens in C4",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "28%+ of the most actively maintained, critical sources in C4",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a full 45% of C4 is now restricted",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Within about a year (2023-2024), web sources sharply increased robots.txt and terms-of-service restrictions on AI crawling, concentrated among the most actively maintained sources.",
+     "does_not_show": "Restrictions after 2024; whether the restrictions are honored; licensing or payment arrangements.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "any later journal or conference version (the page lists none)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0079",
+     "direction": "supports",
+     "evidence_class": "post",
+     "bears_on": "component",
+     "scope": "Opting out made the default for a large share of sites in July 2025, before the claim's registration. The claim's other components are not tested.",
+     "source": {
+      "authors": [
+       "Matthew Prince"
+      ],
+      "title": "Content Independence Day: no AI crawl without compensation!",
+      "venue": "Cloudflare blog",
+      "doi": null,
+      "urls": [
+       "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-07-01",
+       "kind": "post",
+       "where": "Cloudflare blog",
+       "url": "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "is changing the default to block AI crawlers unless they pay creators for their content",
+       "from": "post body, Cloudflare blog"
+      },
+      {
+       "quote": "With OpenAI, it's 750 times more difficult to get traffic than it was with the Google of old.",
+       "from": "post body, Cloudflare blog"
+      },
+      {
+       "quote": "With Anthropic, it's 30,000 times more difficult.",
+       "from": "post body, Cloudflare blog"
+      }
+     ],
+     "shows": "Cloudflare changed its default to block AI crawlers unless they pay, and reported crawl-to-traffic disparities for AI firms from its network data.",
+     "does_not_show": "How many sites kept the default; whether payment arrangements formed; the methodology of the ratios (linked to Cloudflare Radar, which was left unread).",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Cloudflare blog post, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the methodology behind the 750x and 30,000x figures"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0080",
+     "direction": "supports",
+     "evidence_class": "documentation",
+     "bears_on": "component",
+     "scope": "The component 'Fan-out becomes the dominant search primitive': Google's own description of query fan-out in AI Mode, a year before the claim, so an anticipation of fan-out as a primitive. Dominance is not shown.",
+     "source": {
+      "authors": [
+       "Robby Stein"
+      ],
+      "title": "Expanding AI Overviews and introducing AI Mode",
+      "venue": "Google blog (The Keyword)",
+      "doi": null,
+      "urls": [
+       "https://blog.google/products/search/ai-mode-search/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-05",
+       "kind": "post",
+       "where": "Google blog",
+       "url": "https://blog.google/products/search/ai-mode-search/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "It uses a “query fan-out” technique, issuing multiple related searches concurrently across subtopics",
+       "from": "post body, Google blog"
+      }
+     ],
+     "shows": "Google's AI Mode issues multiple related searches concurrently across subtopics and composes one response from them.",
+     "does_not_show": "Share of all searches that use fan-out; fan-out in other systems; the remaining Phase 1 components.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Google blog post, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1342,6 +1541,212 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0078",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The movement from 'read everything' toward restricted reading, measured at the crawl-consent layer. Licensing, caching and paid access, which the claim also names, are not measured.",
+     "source": {
+      "authors": [
+       "Shayne Longpre",
+       "Robert Mahari",
+       "Ariel Lee",
+       "Campbell Lund",
+       "Hamidah Oderinwale",
+       "William Brannon",
+       "Nayan Saxena",
+       "Naana Obeng-Marnu",
+       "Tobin South",
+       "Cole Hunter",
+       "Kevin Klyman",
+       "Christopher Klamm",
+       "Hailey Schoelkopf",
+       "Nikhil Singh",
+       "Manuel Cherep",
+       "Ahmad Anis",
+       "An Dinh",
+       "Caroline Chitongo",
+       "Da Yin",
+       "Damien Sileo",
+       "Deividas Mataciunas",
+       "Diganta Misra",
+       "Emad Alghamdi",
+       "Enrico Shippole",
+       "Jianguo Zhang",
+       "Joanna Materzynska",
+       "Kun Qian",
+       "Kush Tiwary",
+       "Lester Miranda",
+       "Manan Dey",
+       "Minnie Liang",
+       "Mohammed Hamdy",
+       "Niklas Muennighoff",
+       "Seonghyeon Ye",
+       "Seungone Kim",
+       "Shrestha Mohanty",
+       "Vipul Gupta",
+       "Vivek Sharma",
+       "Vu Minh Chien",
+       "Xuhui Zhou",
+       "Yizhi Li",
+       "Caiming Xiong",
+       "Luis Villa",
+       "Stella Biderman",
+       "Hanlin Li",
+       "Daphne Ippolito",
+       "Sara Hooker",
+       "Jad Kabbara",
+       "Sandy Pentland"
+      ],
+      "title": "Consent in Crisis: The Rapid Decline of the AI Data Commons",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2407.14933"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-07-20",
+       "kind": "preprint",
+       "where": "arXiv 2407.14933 v1 (submission date)",
+       "url": "https://arxiv.org/abs/2407.14933"
+      },
+      {
+       "date": "2024-07-24",
+       "kind": "preprint",
+       "where": "arXiv 2407.14933 v2",
+       "url": "https://arxiv.org/abs/2407.14933"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "there has been a rapid crescendo of data restrictions from web sources, rendering ~5%+ of all tokens in C4",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "28%+ of the most actively maintained, critical sources in C4",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a full 45% of C4 is now restricted",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Within about a year (2023-2024), web sources sharply increased robots.txt and terms-of-service restrictions on AI crawling, concentrated among the most actively maintained sources.",
+     "does_not_show": "Restrictions after 2024; whether the restrictions are honored; licensing or payment arrangements.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "any later journal or conference version (the page lists none)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0079",
+     "direction": "supports",
+     "evidence_class": "post",
+     "bears_on": "component",
+     "scope": "A major network provider making blocking the default and tying crawl access to payment: the shift toward 'read what is licensed ... paid for' at the infrastructure layer. The claim's enclave and commons zones are not tested.",
+     "source": {
+      "authors": [
+       "Matthew Prince"
+      ],
+      "title": "Content Independence Day: no AI crawl without compensation!",
+      "venue": "Cloudflare blog",
+      "doi": null,
+      "urls": [
+       "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-07-01",
+       "kind": "post",
+       "where": "Cloudflare blog",
+       "url": "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "is changing the default to block AI crawlers unless they pay creators for their content",
+       "from": "post body, Cloudflare blog"
+      },
+      {
+       "quote": "With OpenAI, it's 750 times more difficult to get traffic than it was with the Google of old.",
+       "from": "post body, Cloudflare blog"
+      },
+      {
+       "quote": "With Anthropic, it's 30,000 times more difficult.",
+       "from": "post body, Cloudflare blog"
+      }
+     ],
+     "shows": "Cloudflare changed its default to block AI crawlers unless they pay, and reported crawl-to-traffic disparities for AI firms from its network data.",
+     "does_not_show": "How many sites kept the default; whether payment arrangements formed; the methodology of the ratios (linked to Cloudflare Radar, which was left unread).",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Cloudflare blog post, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the methodology behind the 750x and 30,000x figures"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0086",
+     "direction": "supports",
+     "evidence_class": "post",
+     "bears_on": "component",
+     "scope": "Licensing deals between AI platforms and publishers shifting toward answer-time retrieval and display: the move to 'read what is licensed ... paid for' in commercial contracts. The evidence is one compiler's tracked list described in an interview, and the enclave and commons zones are not tested.",
+     "source": {
+      "authors": [
+       "The Media Copilot (byline 'The Copilot'), interview with Rob Kelly"
+      ],
+      "title": "What 99 AI licensing deals reveal about the future of publishing",
+      "venue": "The Media Copilot",
+      "doi": null,
+      "urls": [
+       "https://mediacopilot.ai/what-99-ai-licensing-deals-reveal-about-the-future-of-publishing"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-09-24",
+       "kind": "post",
+       "where": "The Media Copilot (modified 2026-10-28)",
+       "url": "https://mediacopilot.ai/what-99-ai-licensing-deals-reveal-about-the-future-of-publishing"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "training is the emphasis in roughly 40 to 50 percent of deals",
+       "from": "article body, The Media Copilot, reporting Rob Kelly"
+      },
+      {
+       "quote": "I only use sources that are reputable, whether it's Reuters or the companies announcing deals themselves.",
+       "from": "article body, The Media Copilot, quoting Rob Kelly on his method"
+      }
+     ],
+     "shows": "A tracked set of 99 AI licensing deals in which training is now the emphasis in only about 40 to 50 percent, with inference and retrieval licensing growing.",
+     "does_not_show": "Total licensed share of what AI systems read; small or mid-size publishers' access to deals; any governed commons.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read The Media Copilot article, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "Kelly's spreadsheet itself (Media & the Machine) (unfetched)",
+       "the deal counts by type"
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1560,6 +1965,63 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0085",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Source-side changes to content alter inclusion in generative engine responses, measured on a benchmark of queries: the mechanism behind 'archives can still alter future pruning'. Density, linking and attribution of an archive, the claim's specific levers, and the closing-window thesis are not tested.",
+     "source": {
+      "authors": [
+       "Pranjal Aggarwal",
+       "Vishvak Murahari",
+       "Tanmay Rajpurohit",
+       "Ashwin Kalyan",
+       "Karthik Narasimhan",
+       "Ameet Deshpande"
+      ],
+      "title": "GEO: Generative Engine Optimization",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2311.09735"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-11-16",
+       "kind": "preprint",
+       "where": "arXiv 2311.09735 v1 (original submission date)",
+       "url": "https://arxiv.org/abs/2311.09735"
+      },
+      {
+       "date": "2024-06-28",
+       "kind": "preprint",
+       "where": "arXiv 2311.09735 v3",
+       "url": "https://arxiv.org/abs/2311.09735"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we show the efficacy of these strategies varies across domains",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Content-side strategies raised a source's visibility in generative engine responses by up to 40 percent, with efficacy varying by domain.",
+     "does_not_show": "Persistence over model generations; the 'window' and its closing; archives or DOI anchoring.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the KDD 2024 publication: the arXiv page lists no venue",
+       "quote not found at source, dropped: \"GEO can boost visibility by up to 40% in generative engine responses.\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "the closing window"
    ],
@@ -2429,6 +2891,60 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0077",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "mechanism",
+     "scope": "The pattern 'declare, then ignore' for robots.txt, which the claim cites as its precedent: a declared control that AI crawlers increasingly bypass. The claim's own object, OKF governance fields and composition-layer compliance, is not measured.",
+     "source": {
+      "authors": [
+       "Pierre de Villiers"
+      ],
+      "title": "State of the Bots: FIPP and TollBit put the spotlight on AI scraping",
+      "venue": "FIPP (reporting TollBit's State of the Bots report)",
+      "doi": null,
+      "urls": [
+       "https://www.fipp.com/news/state-of-the-bots-fipp-and-tollbit-put-the-spotlight-on-ai-scraping/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-07-08",
+       "kind": "news",
+       "where": "FIPP",
+       "url": "https://www.fipp.com/news/state-of-the-bots-fipp-and-tollbit-put-the-spotlight-on-ai-scraping/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "saw a jump from 3.3% in Q4 of 2024 to about 13%",
+       "from": "article body, FIPP, on the share of AI bot scrapes bypassing robots.txt"
+      },
+      {
+       "quote": "the traffic back is about 96% lower than what you would expect",
+       "from": "article body, FIPP, quoting a speaker"
+      },
+      {
+       "quote": "For every 200,000 requests from an OpenAI bot the publisher only gets 200 users.",
+       "from": "article body, FIPP"
+      }
+     ],
+     "shows": "Across TollBit's publisher network, the share of AI bot scrapes that bypassed robots.txt rose from 3.3 percent in Q4 2024 to about 13 percent by the end of Q1 2025.",
+     "does_not_show": "OKF; any standard's governance fields; whether compliance later rises under pressure (the 'enforce under pressure' step of the claim).",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the FIPP article, 2026-10-30. The TollBit report pages (tollbit.com/bots/25q2, tollbit.com/state-of-the-bots/q4-2024) returned only navigation and headings to the fetcher. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the figure was not read in TollBit's own report",
+       "the sampling method for the robots.txt figure"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "OKF Without Output Governance stages"
    ],

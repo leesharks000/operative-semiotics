@@ -129,6 +129,55 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0010",
+     "direction": "supports",
+     "evidence_class": "post",
+     "bears_on": "mechanism",
+     "scope": "The fluctuation in composition behaviour that the claim's daily or weekly sampling over 30–90 days is meant to control. Ahrefs measures it; it does not run the claim's protocol.",
+     "source": {
+      "authors": [
+       "Louise Linehan",
+       "Xibeijia Guan"
+      ],
+      "title": "AI Overviews Change Every 2 Days (But Never Change Their Mind)",
+      "venue": "Ahrefs blog (data from Ahrefs Brand Radar)",
+      "doi": null,
+      "urls": [
+       "https://ahrefs.com/blog/ai-overview-change/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-11-11",
+       "kind": "post",
+       "where": "Ahrefs blog",
+       "url": "https://ahrefs.com/blog/ai-overview-change/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we found that AI Overviews have a 70% chance of changing from one observation to the next.",
+       "from": "post, Ahrefs"
+      }
+     ],
+     "shows": "Over 43,000 keywords with at least 16 recorded Overviews each: the text and the citations of an AI Overview churn every couple of days while its gist stays stable, so presence, content and citation composition move separately. It precedes all three claims and is an anticipation.",
+     "does_not_show": "Any effect on a particular author or entity; same-day variation; differences by login state, device or location.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Ahrefs post (German-path URL served the English text), 2026-10-30.",
+      "unverified": [
+       "the exact check frequency (the post says checks were not daily)",
+       "the method is a vendor's own, without peer review",
+       "quote not found at source, dropped: \"nearly half (45.5%) of the cited sources are entirely new.\"",
+       "quote not found at source, dropped: \"AI Overviews score 0.95 out of 1.0 for semantic consistency.\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [
     "PRED-742.F2"
@@ -1802,6 +1851,116 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0012",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "component",
+     "scope": "The component 'consolidate platform jurisdiction and reduce visibility of independent sources': Google's own YouTube was the most cited source and ten providers supplied nearly half of all links. It is one snapshot in July 2026, with no multi-year drift.",
+     "source": {
+      "authors": [
+       "Clara Helming",
+       "AlgorithmWatch"
+      ],
+      "title": "Meinungsbildung mit KI: Welche Informationen zeigen Googles KI-Übersichten zu Wahlen?",
+      "venue": "AlgorithmWatch (study under DSA Article 40(12) data access)",
+      "doi": null,
+      "urls": [
+       "https://algorithmwatch.org/de/google-ki-ubersichten-meinungsbildung/",
+       "https://the-decoder.com/googles-election-ai-overviews-are-opaque-rely-on-few-sources-and-sometimes-take-sides/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-09-01",
+       "kind": "report",
+       "where": "AlgorithmWatch website (German)",
+       "url": "https://algorithmwatch.org/de/google-ki-ubersichten-meinungsbildung/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Bei Fragen zu Wahlen zeigt Google deutlich weniger KI-Übersichten an als bei Fragen zu unpolitischen Themen.",
+       "from": "report page, AlgorithmWatch"
+      },
+      {
+       "quote": "ist das meistzitierte Angebot in KI- Übersichten",
+       "from": "report page, AlgorithmWatch (of YouTube)"
+      },
+      {
+       "quote": "Fast die Hälfte aller angezeigten Links stammten von nur zehn verschiedenen Anbietern.",
+       "from": "report page, AlgorithmWatch"
+      },
+      {
+       "quote": "Unseren Beobachtungen nach ist dies sehr uneinheitlich.",
+       "from": "report page, AlgorithmWatch (of the criteria by which Overviews appear)"
+      }
+     ],
+     "shows": "4,480 queries on three 2026 German state elections, run in July 2026 through Google's Search Researcher Result API: Overviews appear far less on election questions, their appearance follows no consistent rule, and their sources concentrate, with YouTube first.",
+     "does_not_show": "Economic or authority-tier effects; any trend over time; the archive's entities.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the AlgorithmWatch page (German) and The Decoder's English report, 2026-10-30.",
+      "unverified": [
+       "the figures 39.1% (election) and 65.3% (non-political) and the AfD trigger gap (24% against 45–58%) come from The Decoder as paraphrased by the fetch tool; the AlgorithmWatch page read does not print them",
+       "the PDF study (code 260908) was not read"
+      ]
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0013",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "component",
+     "scope": "Directional drift toward the platform: Google's share of AI Mode citations rose from about 5% to about 17% in some nine months. The claim concerns stabilized public-knowledge nodes over years; the witness counts self-citation across commercial keywords on AI Mode.",
+     "source": {
+      "authors": [
+       "Matt G. Southern",
+       "SE Ranking"
+      ],
+      "title": "Google AI Mode cites itself more often (SE Ranking: Is Google stealing your clicks in AI Mode? 1.3M+ citations analyzed)",
+      "venue": "Search Engine Journal, reporting an SE Ranking study",
+      "doi": null,
+      "urls": [
+       "https://www.searchenginejournal.com/google-ai-mode-cites-itself-more-often-with-more-organic-links/568955/",
+       "https://searchengineland.com/google-ai-mode-citing-google-more-study-471042",
+       "https://seranking.com/blog/google-links-in-ai-mode-answers/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-03-06",
+       "kind": "news",
+       "where": "Search Engine Journal",
+       "url": "https://www.searchenginejournal.com/google-ai-mode-cites-itself-more-often-with-more-organic-links/568955/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Google properties accounted for 5% of AI Mode links.",
+       "from": "article, Search Engine Journal (SE Ranking's July 2025 report)"
+      }
+     ],
+     "shows": "Across 68,313 keywords and 1,321,398 AI Mode citations (February 2026), google.com was the most cited source, about three times its share nine months before. It precedes both claims and is an anticipation.",
+     "does_not_show": "Drift on stabilized public-knowledge nodes; self-preferencing on SEO-guidance queries specifically; anything multi-year.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Search Engine Journal and Search Engine Land articles, 2026-10-30. The SE Ranking page returned empty content.",
+      "unverified": [
+       "the SE Ranking study itself was not read",
+       "Search Engine Land's 'June 2025, 5.7%' baseline differs from SEJ's 'July, 5%'; the page date of the Search Engine Land article was not shown",
+       "SE Ranking sells the tracking tool used",
+       "quote not found at source, dropped: \"Google now accounts for 17% of all AI Mode citations.\"",
+       "quote not found at source, dropped: \"Google.com was the most cited source in AI Mode answers, accounting for 17.42% of all citations\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [
     "PRED-166.F3",

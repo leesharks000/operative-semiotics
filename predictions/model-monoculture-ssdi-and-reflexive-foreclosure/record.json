@@ -948,6 +948,143 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0006",
+     "direction": "disconfirms",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The claim forecasts a declining diversity trend across model generations under synthetic saturation, measured in code solution space (SSDI). The witness measures diversity of real-world claims in LLM outputs across 27 models over three years and finds it rose; the domain is knowledge claims, and the claim's caveat about diversity-preserving intervention is not tested.",
+     "source": {
+      "authors": [
+       "Dustin Wright",
+       "Sarah Masud",
+       "Jared Moore",
+       "Srishti Yadav",
+       "Maria Antoniak",
+       "Peter Ebert Christensen",
+       "Chan Young Park",
+       "Isabelle Augenstein"
+      ],
+      "title": "What and Whose Knowledge? Measuring Epistemic Diversity in Large Language Models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.04226v1",
+       "https://arxiv.org/abs/2510.04226"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-05",
+       "kind": "preprint",
+       "where": "arXiv 2510.04226 v1",
+       "url": "https://arxiv.org/abs/2510.04226v1"
+      },
+      {
+       "date": "2026-08-31",
+       "kind": "preprint",
+       "where": "arXiv 2510.04226 v7",
+       "url": "https://arxiv.org/abs/2510.04226"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "testing 27 LLMs on 155 topics covering 12 countries, resulting in 1.7M responses and 70M individual claims.",
+       "from": "abstract, arXiv v1"
+      },
+      {
+       "quote": "every system is less diverse than a search baseline",
+       "from": "abstract, arXiv v1"
+      },
+      {
+       "quote": "RAG can improve diversity, while large models are counterintuitively less diverse than smaller ones.",
+       "from": "abstract, arXiv v1"
+      },
+      {
+       "quote": "LLM parametric knowledge systematically reflects English over local-language knowledge for country specific topics.",
+       "from": "abstract, arXiv v1"
+      }
+     ],
+     "shows": "The earlier pass's candidate C-0002, verified: a 5 October 2025 preprint. Across 27 LLMs the range of real-world claims grew over three years, while every system stayed below a search baseline, larger models were less diverse, and country-specific knowledge leaned English over local languages. Its time trend runs against a forecast of declining diversity across generations; it precedes both claims and is an anticipation.",
+     "does_not_show": "Attribution, citation or provenance of any kind; code solution-space diversity; training on synthetic data as a cause. It bears on none of the A-attribution claims, and the two claims it bears on belong to the B-collapse theme.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract pages for v1 and the current version (v7), 2026-10-30.",
+      "unverified": [
+       "dates of versions v2 to v6 were not shown on the pages read",
+       "the v1 abstract sentences were read through the fetch tool's segmented quotation; the sentence about diversity pessimism was paraphrased by the tool and is left out",
+       "quote not found at source, dropped: \"We find that epistemic diversity has increased substantially over the past three years.\""
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0039",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed conference paper",
+     "bears_on": "mechanism",
+     "scope": "The monoculture premise: model-generated code shows low algorithmic diversity against human solutions, with model size, temperature and instruction tuning as factors. Cross-sectional; no trend across generations under synthetic saturation.",
+     "source": {
+      "authors": [
+       "Seonghyeon Lee",
+       "HeeJae Chon",
+       "Joonwon Jang",
+       "Dongha Lee",
+       "Hwanjo Yu"
+      ],
+      "title": "How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025, Suzhou, pp. 152–167",
+      "doi": "10.18653/v1/2025.findings-emnlp.10",
+      "urls": [
+       "https://aclanthology.org/2025.findings-emnlp.10/",
+       "https://arxiv.org/abs/2503.00691v2"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-02",
+       "kind": "preprint",
+       "where": "arXiv 2503.00691 v1",
+       "url": "https://arxiv.org/abs/2503.00691v1"
+      },
+      {
+       "date": "2025-03-07",
+       "kind": "preprint",
+       "where": "arXiv 2503.00691 v2",
+       "url": "https://arxiv.org/abs/2503.00691v2"
+      },
+      {
+       "date": "2025-11",
+       "kind": "peer-reviewed conference paper",
+       "where": "Findings of EMNLP 2025",
+       "url": "https://aclanthology.org/2025.findings-emnlp.10/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "We extensively investigate the property of model-generated solutions by contrasting them with human-written ones",
+       "from": "abstract, ACL Anthology"
+      },
+      {
+       "quote": "model-generated solutions exhibit low algorithmic diversity",
+       "from": "abstract, ACL Anthology"
+      }
+     ],
+     "shows": "Code models converge on fewer algorithms than human programmers for the same problems.",
+     "does_not_show": "Decline across model generations; vulnerability correlation.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the ACL Anthology landing page (preview mirror) and the arXiv submission history, 2026-10-30.",
+      "unverified": [
+       "the Findings publication month (EMNLP 2025 was held November 2025)"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1053,6 +1190,119 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0040",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The correlation half for one model: LLM output follows recurring templates, and a model reproduces the same vulnerabilities across different programs, enough to attack black-box software at up to 94% success. Change in vulnerability frequency, and growth of correlation as AI code share rises, are not measured.",
+     "source": {
+      "authors": [
+       "Tomer Kordonsky",
+       "Amit LeVi",
+       "Maayan Yamin",
+       "Noam Benzimra",
+       "Avi Mendelson"
+      ],
+      "title": "Extracting Recurring Vulnerabilities from Black-Box LLM-Generated Software",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2602.04894"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-02-02",
+       "kind": "preprint",
+       "where": "arXiv 2602.04894 v1",
+       "url": "https://arxiv.org/abs/2602.04894v1"
+      },
+      {
+       "date": "2026-06-05",
+       "kind": "preprint",
+       "where": "arXiv 2602.04894 v4",
+       "url": "https://arxiv.org/abs/2602.04894"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "often follow recurring templates that can induce predictable vulnerabilities",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "how consistently a model reproduces the same vulnerabilities across programs",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "achieves up to 94% attack success and 93% vulnerability coverage on Internal Tools (Claude-4.5 Opus)",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Vulnerabilities in LLM-generated software recur across programs from one model and can be predicted and exploited from that regularity.",
+     "does_not_show": "A trend over time; the frequency side of the claim; cross-model correlation.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "dates of v2 and v3"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0041",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Correlation across models: most vulnerability classes recur in code from all three models tested. Three models and one snapshot; no measure of frequency falling or correlation rising with AI code share.",
+     "source": {
+      "authors": [
+       "Shanna M. Kahn",
+       "John D. Hastings"
+      ],
+      "title": "Security Vulnerability Patterns in AI-Generated Code: A Cross-Model Comparative Study",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2607.20713"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-07-22",
+       "kind": "preprint",
+       "where": "arXiv 2607.20713 v1",
+       "url": "https://arxiv.org/abs/2607.20713"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Nine of the 17 identified vulnerability classes appeared in code from all three models",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "14 of the 17 vulnerability classes appeared in at least two models",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "The weighted CVSS scores across platforms differed by less than 10%.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Different code models share most of their vulnerability classes.",
+     "does_not_show": "A trend; the frequency claim; a statistical correlation coefficient.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "after"
+    }
+   ],
    "series": [
     "Centroid collapse and tail-thinning"
    ],
@@ -1185,6 +1435,72 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0039",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed conference paper",
+     "bears_on": "method",
+     "scope": "Measuring the solution-space diversity of a code model against a test battery, carried out by others with their own metric. One time point; the SSDI and the generational series are not run.",
+     "source": {
+      "authors": [
+       "Seonghyeon Lee",
+       "HeeJae Chon",
+       "Joonwon Jang",
+       "Dongha Lee",
+       "Hwanjo Yu"
+      ],
+      "title": "How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025, Suzhou, pp. 152–167",
+      "doi": "10.18653/v1/2025.findings-emnlp.10",
+      "urls": [
+       "https://aclanthology.org/2025.findings-emnlp.10/",
+       "https://arxiv.org/abs/2503.00691v2"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-02",
+       "kind": "preprint",
+       "where": "arXiv 2503.00691 v1",
+       "url": "https://arxiv.org/abs/2503.00691v1"
+      },
+      {
+       "date": "2025-03-07",
+       "kind": "preprint",
+       "where": "arXiv 2503.00691 v2",
+       "url": "https://arxiv.org/abs/2503.00691v2"
+      },
+      {
+       "date": "2025-11",
+       "kind": "peer-reviewed conference paper",
+       "where": "Findings of EMNLP 2025",
+       "url": "https://aclanthology.org/2025.findings-emnlp.10/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "We extensively investigate the property of model-generated solutions by contrasting them with human-written ones",
+       "from": "abstract, ACL Anthology"
+      },
+      {
+       "quote": "model-generated solutions exhibit low algorithmic diversity",
+       "from": "abstract, ACL Anthology"
+      }
+     ],
+     "shows": "Code models converge on fewer algorithms than human programmers for the same problems.",
+     "does_not_show": "Decline across model generations; vulnerability correlation.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the ACL Anthology landing page (preview mirror) and the arXiv submission history, 2026-10-30.",
+      "unverified": [
+       "the Findings publication month (EMNLP 2025 was held November 2025)"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1674,6 +1990,309 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0006",
+     "direction": "disconfirms",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "A longitudinal measurement of diversity across a model ecology, the test the claim proposes, carried out by others on knowledge claims. It uses a fixed topic set across models and countries, a different instrument from the Three Pillars directive.",
+     "source": {
+      "authors": [
+       "Dustin Wright",
+       "Sarah Masud",
+       "Jared Moore",
+       "Srishti Yadav",
+       "Maria Antoniak",
+       "Peter Ebert Christensen",
+       "Chan Young Park",
+       "Isabelle Augenstein"
+      ],
+      "title": "What and Whose Knowledge? Measuring Epistemic Diversity in Large Language Models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.04226v1",
+       "https://arxiv.org/abs/2510.04226"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-05",
+       "kind": "preprint",
+       "where": "arXiv 2510.04226 v1",
+       "url": "https://arxiv.org/abs/2510.04226v1"
+      },
+      {
+       "date": "2026-08-31",
+       "kind": "preprint",
+       "where": "arXiv 2510.04226 v7",
+       "url": "https://arxiv.org/abs/2510.04226"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "testing 27 LLMs on 155 topics covering 12 countries, resulting in 1.7M responses and 70M individual claims.",
+       "from": "abstract, arXiv v1"
+      },
+      {
+       "quote": "every system is less diverse than a search baseline",
+       "from": "abstract, arXiv v1"
+      },
+      {
+       "quote": "RAG can improve diversity, while large models are counterintuitively less diverse than smaller ones.",
+       "from": "abstract, arXiv v1"
+      },
+      {
+       "quote": "LLM parametric knowledge systematically reflects English over local-language knowledge for country specific topics.",
+       "from": "abstract, arXiv v1"
+      }
+     ],
+     "shows": "The earlier pass's candidate C-0002, verified: a 5 October 2025 preprint. Across 27 LLMs the range of real-world claims grew over three years, while every system stayed below a search baseline, larger models were less diverse, and country-specific knowledge leaned English over local languages. Its time trend runs against a forecast of declining diversity across generations; it precedes both claims and is an anticipation.",
+     "does_not_show": "Attribution, citation or provenance of any kind; code solution-space diversity; training on synthetic data as a cause. It bears on none of the A-attribution claims, and the two claims it bears on belong to the B-collapse theme.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract pages for v1 and the current version (v7), 2026-10-30.",
+      "unverified": [
+       "dates of versions v2 to v6 were not shown on the pages read",
+       "the v1 abstract sentences were read through the fetch tool's segmented quotation; the sentence about diversity pessimism was paraphrased by the tool and is left out",
+       "quote not found at source, dropped: \"We find that epistemic diversity has increased substantially over the past three years.\""
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0023",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The state the longitudinal study would track, whether the model ecology converges, measured at one time across many models on open-ended prompts. PRED-857.F1 asks for repeated runs of one directive on five named substrates at six-month intervals; this is a single cross-section on a different prompt set.",
+     "source": {
+      "authors": [
+       "Liwei Jiang",
+       "Yuanjun Chai",
+       "Margaret Li",
+       "Mickel Liu",
+       "Raymond Fok",
+       "Nouha Dziri",
+       "Yulia Tsvetkov",
+       "Maarten Sap",
+       "Alon Albalak",
+       "Yejin Choi"
+      ],
+      "title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)",
+      "venue": "arXiv; listed at NeurIPS 2025",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.22954",
+       "https://neurips.cc/virtual/2025/poster/121421"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-27",
+       "kind": "preprint",
+       "where": "arXiv 2510.22954 v1",
+       "url": "https://arxiv.org/abs/2510.22954v1"
+      },
+      {
+       "date": "2026-10-06",
+       "kind": "preprint",
+       "where": "arXiv 2510.22954 v2",
+       "url": "https://arxiv.org/abs/2510.22954"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Using Infinity-Chat, we present a large-scale study of mode collapse in LMs,",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "characterized by (1) intra-model repetition, where a single model consistently generates similar responses,",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "and more so (2) inter-model homogeneity, where different models produce strikingly similar outputs.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a large-scale dataset of 26K diverse, real-world, open-ended user queries",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "On 26K real open-ended queries, single models repeat themselves and different models give strikingly similar outputs.",
+     "does_not_show": "A trend over time; the five Assembly substrates or the Three Pillars directive; safety training as the cause.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (submission history and abstract), 2026-10-30.",
+      "unverified": [
+       "NeurIPS 2025 acceptance: seen only as a search-result listing on neurips.cc, page not fetched"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0024",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "The proposed longitudinal measurement of solution-space diversity across the model ecology, carried out by others across three years of releases with sentence-embedding similarity. It uses Infinity-Chat100 and the Alternate Uses Task in place of the Three Pillars directive and the five named substrates.",
+     "source": {
+      "authors": [
+       "Nirav Patel",
+       "Josiah Crossman",
+       "Eva Aggarwal",
+       "Emily Wenger"
+      ],
+      "title": "Are LLMs becoming similarly creative? Evidence from three years of models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2608.19437",
+       "https://arxiv.org/html/2608.19437v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-08-19",
+       "kind": "preprint",
+       "where": "arXiv 2608.19437 v1",
+       "url": "https://arxiv.org/abs/2608.19437"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a statistically significant decrease in model output diversity over time",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "LLM outputs may be converging in creative substance across models",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "This covers 33 closed weight models and 34 open weight models across 27 release months",
+       "from": "body, arXiv HTML v1"
+      }
+     ],
+     "shows": "Across 67 models released over 27 months, cross-model output diversity on creative prompts falls significantly with release date.",
+     "does_not_show": "The cause of the decline; the archive's substrates or directive; the authors note their regression cannot account for hidden relationships across model families.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and the HTML v1 (model count and limitations), 2026-10-30.",
+      "unverified": [
+       "model count: the HTML also reports 68 and 69 models in other places"
+      ]
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0025",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "A longitudinal measure of output diversity across successive releases, carried out on ChatGPT models with a text-similarity metric. One vendor's line only; the claim's study spans five substrates on one directive.",
+     "source": {
+      "authors": [
+       "Konstantinos F. Xylogiannopoulos",
+       "Petros Xanthopoulos",
+       "Panagiotis Karampelas",
+       "Georgios A. Bakamitsos"
+      ],
+      "title": "Experimental evidence of progressive ChatGPT models self-convergence",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2603.12683"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-03-13",
+       "kind": "preprint",
+       "where": "arXiv 2603.12683 v1",
+       "url": "https://arxiv.org/abs/2603.12683"
+      },
+      {
+       "date": "2026-03-16",
+       "kind": "preprint",
+       "where": "arXiv 2603.12683 v2",
+       "url": "https://arxiv.org/abs/2603.12683"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we employ a text similarity metric to evaluate different ChatGPT models' capacity to generate diverse textual outputs.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "Our findings indicate a measurable decline of recent ChatGPT releases' ability to produce varied text",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "even when explicitly prompted to do so, by setting the temperature parameter to one",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Recent ChatGPT releases produce less varied text than earlier ones, even at temperature one and when asked for variety.",
+     "does_not_show": "Cross-vendor convergence; any cause; effect sizes (not read beyond the abstract).",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0026",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Cross-model convergence at one time point: LLM responses resemble each other more than human responses do. No longitudinal series and not the claim's substrates or directive.",
+     "source": {
+      "authors": [
+       "Emily Wenger",
+       "Yoed Kenett"
+      ],
+      "title": "We're Different, We're the Same: Creative Homogeneity Across LLMs",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2501.19361"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-01-31",
+       "kind": "preprint",
+       "where": "arXiv 2501.19361 v1",
+       "url": "https://arxiv.org/abs/2501.19361"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "LLM responses are much more similar to other LLM responses than human responses are to each other",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "even after controlling for response structure and other key variables",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "The population of LLM responses to creative tasks is more homogeneous than the population of human responses, with structure controlled.",
+     "does_not_show": "Change over time; the cause.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1929,6 +2548,68 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0059",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "mechanism",
+     "scope": "Retrieval-augmented systems treat model outputs that have accumulated in the retrievable pool as evidence, and over-cite them: in simulation, a single self-authored reference can trigger collapse. The claim concerns a particular class of outputs and preference data; neither is tested.",
+     "source": {
+      "authors": [
+       "Gregory Druck",
+       "Ethan Smith"
+      ],
+      "title": "AI Search Collapse: AI Responses Collapse When AI Retrieves Its Own Generations (academic version: RAG Collapse: LLM Responses Collapse When Retrieved Documents Are Self-Authored)",
+      "venue": "Graphite research post; arXiv",
+      "doi": null,
+      "urls": [
+       "https://graphite.io/five-percent/research/ai-search-collapse",
+       "https://arxiv.org/abs/2608.22118"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-06-11",
+       "kind": "report",
+       "where": "Graphite research post",
+       "url": "https://graphite.io/five-percent/research/ai-search-collapse"
+      },
+      {
+       "date": "2026-08-22",
+       "kind": "preprint",
+       "where": "arXiv 2608.22118 v1",
+       "url": "https://arxiv.org/abs/2608.22118"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "We find that 79.6% (1,216/1,528) of simulations end in collapse.",
+       "from": "research post, Graphite"
+      },
+      {
+       "quote": "a single self-authored reference can trigger collapse because AI disproportionately cites its own content",
+       "from": "research post, Graphite"
+      },
+      {
+       "quote": "Self-authored references are cited far more often than original references, both AI-generated and human-written.",
+       "from": "research post, Graphite"
+      }
+     ],
+     "shows": "When AI-written documents enter a retrieval pool, AI answers drawn from it converge, driven by over-citation of self-authored text.",
+     "does_not_show": "Real deployed search systems (simulated loops); training-time effects.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Graphite post twice and the arXiv abstract page (submission history), 2026-10-30.",
+      "unverified": [
+       "the arXiv abstract wording was not compared with the post",
+       "the authors are a company's officers reporting on a field their company sells into"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Reflexive foreclosure (EA-RFCL-01)"
    ],
@@ -2322,6 +3003,54 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0056",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "component",
+     "scope": "The screening-market half: an integrity-software founder tracked 43 humanizer tools with 33.9 million site visits in a month. The claim states this half already occurred and cites Masrour, Emi & Spero 2025; this is further evidence of the market's scale. Boundary-optimization in submitted prose and the philosophy setting are not measured.",
+     "source": {
+      "authors": [
+       "NBC News"
+      ],
+      "title": "To avoid accusations of AI cheating, college students are turning to AI",
+      "venue": "NBC News",
+      "doi": null,
+      "urls": [
+       "https://nbcnews.com/tech/internet/college-students-ai-cheating-detectors-humanizers-rcna253878",
+       "https://bioethics.com/archives/101362"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-01",
+       "kind": "news",
+       "where": "NBC News; reposted by bioethics.com on 2026-01-29",
+       "url": "https://nbcnews.com/tech/internet/college-students-ai-cheating-detectors-humanizers-rcna253878"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "tracked 43 humanizers that had a combined 33.9 million website visits in October",
+       "from": "article body, NBC News"
+      }
+     ],
+     "shows": "Humanizer tools for passing detectors draw tens of millions of visits a month.",
+     "does_not_show": "Academic authors' screening behavior; detector-version escalation (PRED-1540.F2).",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the NBC News article and the bioethics.com repost (for the date), 2026-10-30.",
+      "unverified": [
+       "the NBC article's own publication date (repost dated 2026-01-29; earliest version taken as no later than that)",
+       "which October (presumably 2025)",
+       "the traffic figure's method (Cursive's tracking; not described)"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

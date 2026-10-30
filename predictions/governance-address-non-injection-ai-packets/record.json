@@ -263,6 +263,73 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0104",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The packet's diagnostic (preserve attribution, or liquidate it): the witness measures quote attribution across eleven LLMs and finds 'suppression', omission of attribution when authorship is available. The packet itself is not processed in the study.",
+     "source": {
+      "authors": [
+       "Eliza Berman",
+       "Bella Chang",
+       "Daniel B. Neill",
+       "Emily Black"
+      ],
+      "title": "Attribution Bias in Large Language Models",
+      "venue": "arXiv (cs.AI)",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2604.05224",
+       "https://arxiv.org/abs/2604.05224v2"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-04-06",
+       "kind": "preprint",
+       "where": "arXiv 2604.05224 v1",
+       "url": "https://arxiv.org/abs/2604.05224"
+      },
+      {
+       "date": "2026-09-24",
+       "kind": "preprint",
+       "where": "arXiv 2604.05224 v2",
+       "url": "https://arxiv.org/abs/2604.05224v2"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "quote attribution remains a challenging task even for frontier models",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a distinct failure mode in which models omit attribution entirely",
+       "from": "abstract, arXiv v2"
+      },
+      {
+       "quote": "even when the model has access to authorship information",
+       "from": "abstract, arXiv v2"
+      },
+      {
+       "quote": "suppression is widespread and unevenly distributed across demographic groups",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "LLMs drop attribution of quotes even when authorship is supplied, and do so unequally across groups.",
+     "does_not_show": "Scholarly attribution of concepts; retrieval or summarization pipelines; the archive's packets.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v2 with history), 2026-10-30. A search snippet labels it a COLM 2026 paper; the arXiv page does not say so.",
+      "unverified": [
+       "COLM 2026 publication"
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [
     "Self-processing diagnostic"
    ],
@@ -340,6 +407,129 @@
      "claimed": "came_true",
      "first_party": false,
      "first_party_basis": "another deposit of the archive (no statement or recorded lineage shared)"
+    }
+   ],
+   "witnesses": [
+    {
+     "witness": "W-0019",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "mechanism",
+     "scope": "Systems that 'liquidate' attribution: the witness finds tools citing syndicated copies over the original publisher even with licensing deals. The essay itself is not tested.",
+     "source": {
+      "authors": [
+       "Klaudia Jaźwińska",
+       "Aisvarya Chandrasekar"
+      ],
+      "title": "AI Search Has a Citation Problem",
+      "venue": "Columbia Journalism Review, Tow Center for Digital Journalism",
+      "doi": null,
+      "urls": [
+       "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-06",
+       "kind": "report",
+       "where": "Columbia Journalism Review (Tow Center)",
+       "url": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Collectively, they provided incorrect answers to more than 60 percent of queries.",
+       "from": "report page, CJR"
+      },
+      {
+       "quote": "directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+       "from": "report page, CJR"
+      },
+      {
+       "quote": "More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs",
+       "from": "findings, CJR article"
+      },
+      {
+       "quote": "chatbots directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+       "from": "findings, CJR article"
+      }
+     ],
+     "shows": "1,600 manually scored queries (excerpts from 200 articles of 20 publishers) across eight tools: most answers misidentified the source, often crediting syndicated copies or giving broken links. It precedes all three claims and is an anticipation.",
+     "does_not_show": "Uncited correct use of ideas; entity disambiguation; the archive's entities; any trend.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the CJR report page, 2026-10-30.",
+      "unverified": [
+       "quote not found at source, dropped: \"More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs.\""
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0104",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Same mechanism as for PRED-218.F1: liquidation of authorship observed as a measured failure mode, unevenly distributed by group.",
+     "source": {
+      "authors": [
+       "Eliza Berman",
+       "Bella Chang",
+       "Daniel B. Neill",
+       "Emily Black"
+      ],
+      "title": "Attribution Bias in Large Language Models",
+      "venue": "arXiv (cs.AI)",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2604.05224",
+       "https://arxiv.org/abs/2604.05224v2"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-04-06",
+       "kind": "preprint",
+       "where": "arXiv 2604.05224 v1",
+       "url": "https://arxiv.org/abs/2604.05224"
+      },
+      {
+       "date": "2026-09-24",
+       "kind": "preprint",
+       "where": "arXiv 2604.05224 v2",
+       "url": "https://arxiv.org/abs/2604.05224v2"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "quote attribution remains a challenging task even for frontier models",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a distinct failure mode in which models omit attribution entirely",
+       "from": "abstract, arXiv v2"
+      },
+      {
+       "quote": "even when the model has access to authorship information",
+       "from": "abstract, arXiv v2"
+      },
+      {
+       "quote": "suppression is widespread and unevenly distributed across demographic groups",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "LLMs drop attribution of quotes even when authorship is supplied, and do so unequally across groups.",
+     "does_not_show": "Scholarly attribution of concepts; retrieval or summarization pipelines; the archive's packets.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v2 with history), 2026-10-30. A search snippet labels it a COLM 2026 paper; the arXiv page does not say so.",
+      "unverified": [
+       "COLM 2026 publication"
+      ]
+     },
+     "order": "after"
     }
    ],
    "series": [],
@@ -1694,6 +1884,167 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0087",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "The claim's audit (benign inputs submitted to injection detectors, false positives scored) carried out by others on a benign set built around trigger words. The claim's four-way hand-labeled distinction, and governance address as a category, are absent from the witness.",
+     "source": {
+      "authors": [
+       "Hao Li",
+       "Xiaogeng Liu"
+      ],
+      "title": "InjecGuard: Benchmarking and Mitigating Over-defense in Prompt Injection Guardrail Models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2410.22770v1",
+       "https://arxiv.org/abs/2410.22770v3"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-10-30",
+       "kind": "preprint",
+       "where": "arXiv 2410.22770 v1",
+       "url": "https://arxiv.org/abs/2410.22770v1"
+      },
+      {
+       "date": "2025-03-30",
+       "kind": "preprint",
+       "where": "arXiv 2410.22770 v3",
+       "url": "https://arxiv.org/abs/2410.22770v3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "falsely flagging benign inputs as malicious due to trigger word bias",
+       "from": "abstract, arXiv v3"
+      },
+      {
+       "quote": "NotInject contains 339 benign samples enriched with trigger words common in prompt injection attacks",
+       "from": "abstract, arXiv v3"
+      },
+      {
+       "quote": "with accuracy dropping close to random guessing levels (60%)",
+       "from": "abstract, arXiv v3"
+      }
+     ],
+     "shows": "State-of-the-art prompt guard models misclassify benign inputs containing attack-associated words, scoring near chance on a benign benchmark built for the purpose.",
+     "does_not_show": "Governance address, direct address to an AI, or any public semantic text; the hand-labeled four-class scheme of PRED-139.F1.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract pages for v1 and v3, 2026-10-30.",
+      "unverified": [
+       "the v2 date"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0088",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "Benign-by-construction inputs passed through fifteen injection detectors and false-positive rates measured, which is the claim's audit design. The benign inputs are agent tool outputs; governance address and ordinary direct address are not among them.",
+     "source": {
+      "authors": [
+       "Zhuowen Liu"
+      ],
+      "title": "Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents",
+      "venue": "arXiv (cs.CR)",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/html/2610.03448v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-10-02",
+       "kind": "preprint",
+       "where": "arXiv 2610.03448 v1",
+       "url": "https://arxiv.org/html/2610.03448v1"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "False-positive rates on tool outputs, which range from none to over 90%, do transfer between the two agent benchmarks.",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "The flagged outputs contain no instructions; the password confirmation of Figure 1 is typical.",
+       "from": "section 5.1, arXiv HTML v1"
+      }
+     ],
+     "shows": "Deployed-style prompt-injection detectors vary from no false positives to over ninety percent on benign tool outputs, and some flag plain sentences; public benchmark scores do not predict in-agent behavior.",
+     "does_not_show": "Any category of governance or direct address; the error rate on texts that address a model on purpose without adversarial aim.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv HTML v1 (abstract, section 5, appendix D), 2026-10-30.",
+      "unverified": [
+       "whether a v2 exists",
+       "quote not found at source, dropped: \"The fmops model also flags two of five plain sentences such as 'The weather is nice today.'\""
+      ]
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0089",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "A formal argument that a defender who tightens contextual norms blocks legitimate flows, the overreach the audit is meant to measure. It is an impossibility argument with no false-positive measurement on governance address.",
+     "source": {
+      "authors": [
+       "Sahar Abdelnabi",
+       "Eugene Bagdasarian"
+      ],
+      "title": "AI Agents May Always Fall for Prompt Injections",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2605.17634"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-05-17",
+       "kind": "preprint",
+       "where": "arXiv 2605.17634 v1",
+       "url": "https://arxiv.org/abs/2605.17634"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "fails to detect attacks that operate through contextual manipulation",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "an adversary can always construct a context under which a blocked flow appears legitimate",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a defender who tightens norms will block genuinely legitimate flows",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "An argument, framed in contextual integrity, that instruction/data separation cannot settle prompt injection and that any tightening of norms blocks legitimate flows.",
+     "does_not_show": "Measured false-positive rates; origin-based classification in standards or law; the archive's governance-address category.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-05-17 v1, on 2026-10-30.",
+      "unverified": [
+       "the formal content of the impossibility result, which the abstract only summarizes"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Non-Injection Semantic Governance Address packet (#139)"
    ],

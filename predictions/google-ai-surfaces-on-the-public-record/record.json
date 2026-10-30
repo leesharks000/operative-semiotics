@@ -1236,6 +1236,115 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0014",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The loop the claim names, in which machine text re-enters what the next answer is built from: generative search engines already cite AI-generated sources. The witness measures the share of such sources, without tracing lost authorship from one answer to the next.",
+     "source": {
+      "authors": [
+       "Mowafak Allaham",
+       "Nicholas Diakopoulos"
+      ],
+      "title": "Synthetic Sources?: Auditing Generative Search Engine Citations for Evidence of AI-Generated Sources",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2605.23684"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-05-22",
+       "kind": "preprint",
+       "where": "arXiv 2605.23684 v1",
+       "url": "https://arxiv.org/abs/2605.23684"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "an audit of four generative search engines (ChatGPT, Copilot, Gemini, Perplexity)",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a total of 712 real-world human-generated queries",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "evidence of AI-generated sources being cited across all four generative search engines",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "(~16% of cited sources)",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "About a sixth of the sources cited by four generative search engines show evidence of being AI-generated. It precedes the claim and is an anticipation.",
+     "does_not_show": "That those sources lack authors or provenance; degradation over successive answers; any causal loop.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "the detection method and its error rate (full paper not read)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0015",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Extraction that degrades the corpus the next answer draws on, in a model of the crawlable commons. The model concerns funding and renewal of content; it does not model authorship.",
+     "source": {
+      "authors": [
+       "Sylvain Peyronnet"
+      ],
+      "title": "When Search Eats the Web: A Model of Corpus Erosion under Generative Extraction",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2608.15896"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-08-16",
+       "kind": "preprint",
+       "where": "arXiv 2608.15896 v1",
+       "url": "https://arxiv.org/abs/2608.15896"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "In this paper, we model the crawlable corpus as a common-pool resource: the crawlable commons.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "publishers opt out, renewal loses its funding, and content becomes more perishable",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "After a given erosion threshold, the corpus goes extinct.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A theoretical result: under generative extraction, publisher opt-out, unfunded renewal and perishability degrade the crawlable corpus together, with an extinction threshold. It came after PRED-615.B3 and before PRED-1643.B1.",
+     "does_not_show": "Any measurement; AI Overview quality; which material gains authority as others exit.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "whether the full paper calibrates the model on data"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

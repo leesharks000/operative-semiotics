@@ -278,6 +278,67 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0066",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The ΔD panel (LO-HOOK-1 in predictions.json) predicts that a watermark certified non-distorting per sequence contracts the ensemble of repeated generations. The paper proves that distortion-free guarantees hold for one generation and fail across multiple generations under key collisions, and describes identical outputs for a repeated prompt; it reports no Self-BLEU, distinct-n or embedding-dispersion measurement and does not test SynthID-Text.",
+     "source": {
+      "authors": [
+       "Yihan Wu",
+       "Ruibo Chen",
+       "Zhengmian Hu",
+       "Yanshuo Chen",
+       "Junfeng Guo",
+       "Hongyang Zhang",
+       "Heng Huang"
+      ],
+      "title": "Distortion-free Watermarks are not Truly Distortion-free under Watermark Key Collisions",
+      "venue": "arXiv:2406.02603",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2406.02603",
+       "https://arxiv.org/html/2406.02603"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-06-02",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2406.02603"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "all existing distortion-free watermarks are weakly distortion-free but not strongly distortion-free",
+       "from": "Section 1, Introduction, arXiv HTML"
+      },
+      {
+       "quote": "In extreme cases, such as when the prompt remains the same, key collisions can result in identical generated content",
+       "from": "Section 1, Introduction, arXiv HTML"
+      },
+      {
+       "quote": "across multiple generations, key collisions become inevitable",
+       "from": "Section 4, arXiv HTML"
+      }
+     ],
+     "shows": "The per-generation certification of distortion-free watermarks does not extend to the ensemble of repeated generations.",
+     "does_not_show": "A measured signed diversity contraction at flat quality, or behavior of the SynthID-Text tournament scheme.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and the HTML full text (sections 1 and 4) on 2026-10-30.",
+      "unverified": [
+       "Whether SynthID-Text falls within the schemes the theorems cover.",
+       "Peer-reviewed venue, if any."
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

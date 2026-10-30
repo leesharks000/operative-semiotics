@@ -602,6 +602,108 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0015",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "A formal model in which generative extraction makes publishers opt out and lowers the corpus's volume, average quality and lifetime. It is proved in a model with no empirical data, and it says nothing about DOI-anchored material gaining authority.",
+     "source": {
+      "authors": [
+       "Sylvain Peyronnet"
+      ],
+      "title": "When Search Eats the Web: A Model of Corpus Erosion under Generative Extraction",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2608.15896"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-08-16",
+       "kind": "preprint",
+       "where": "arXiv 2608.15896 v1",
+       "url": "https://arxiv.org/abs/2608.15896"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "In this paper, we model the crawlable corpus as a common-pool resource: the crawlable commons.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "publishers opt out, renewal loses its funding, and content becomes more perishable",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "After a given erosion threshold, the corpus goes extinct.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A theoretical result: under generative extraction, publisher opt-out, unfunded renewal and perishability degrade the crawlable corpus together, with an extinction threshold. It came after PRED-615.B3 and before PRED-1643.B1.",
+     "does_not_show": "Any measurement; AI Overview quality; which material gains authority as others exit.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "whether the full paper calibrates the model on data"
+      ]
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0016",
+     "direction": "disconfirms",
+     "evidence_class": "post",
+     "bears_on": "component",
+     "scope": "The component 'high-quality publishers withdraw from the summarizer's input layer': news sites blocking AI bots in robots.txt mostly still appear in AI citations, so the withdrawal the claim's chain begins with did not take effect for them. The claim's later links (quality decline, reweighting toward DOI-anchored material) are not tested.",
+     "source": {
+      "authors": [
+       "Vince Nero"
+      ],
+      "title": "Do News Publishers That Block AI Crawlers Get Cited Less Often by AI?",
+      "venue": "BuzzStream blog (citation data from Citation Labs' XOFU tool)",
+      "doi": null,
+      "urls": [
+       "https://www.buzzstream.com/?p=11713"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-03-18",
+       "kind": "post",
+       "where": "BuzzStream blog (updated 2026-04-08)",
+       "url": "https://www.buzzstream.com/?p=11713"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Around 75% of sites blocking OpenAI or Google AI bots still appeared in AI citations.",
+       "from": "post, BuzzStream"
+      },
+      {
+       "quote": "This, as we'll see, isn't foolproof, and bots can still circumvent the robots.txt directive.",
+       "from": "post, BuzzStream"
+      }
+     ],
+     "shows": "About 4 million citations from 3,600 prompts across ChatGPT, Gemini, AI Overviews and AI Mode: most of the top 50 news sites that block OpenAI or Google AI bots are still cited. Blocking did not remove them from the input layer. It precedes the claim and is an anticipation.",
+     "does_not_show": "Whether blocked content is still read or only cited from other copies; any change in answer quality; withdrawal by means other than robots.txt.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the BuzzStream post, 2026-10-30.",
+      "unverified": [
+       "the 70.6%–92.3% range by bot was given in the fetch tool's paraphrase",
+       "the post's explanations are labelled by its author as educated guesses",
+       "a vendor's own method, without peer review"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "density propagates into the substrate"
    ],
@@ -1434,6 +1536,55 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0022",
+     "direction": "supports",
+     "evidence_class": "documentation",
+     "bears_on": "component",
+     "scope": "The component 'the retrieval layer develops from summarization to agentic commerce': Google announced an open agent-commerce protocol and checkout inside AI Mode. It does not show that entities without structured definitions become unreachable, or any claim about SPXI or GEO.",
+     "source": {
+      "authors": [
+       "Vidhya Srinivasan"
+      ],
+      "title": "New tech and tools for retailers to succeed in an agentic shopping era",
+      "venue": "Google, The Keyword blog",
+      "doi": null,
+      "urls": [
+       "https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-01-11",
+       "kind": "documentation",
+       "where": "Google blog",
+       "url": "https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a new open standard for agentic commerce that works across the entire shopping journey",
+       "from": "blog post, Google (of the Universal Commerce Protocol)"
+      },
+      {
+       "quote": "UCP will soon power a new checkout feature on eligible Google product listings in AI Mode",
+       "from": "blog post, Google"
+      }
+     ],
+     "shows": "The platform itself moved its AI search surface toward transactions executed by agents three months before the claim. It is an anticipation. It is an announcement and measures nothing.",
+     "does_not_show": "Reachability effects for unstructured entities; adoption or use; the claim's nested-layer argument.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Google blog post, 2026-10-30.",
+      "unverified": [
+       "the post does not state that structured data is required for agents to transact"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "SPXI-over-GEO nested-layer relation"
    ],
@@ -2180,6 +2331,58 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0013",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "mechanism",
+     "scope": "Self-preferencing in the composition layer, the effect watch item (i) names. The claim's item concerns Google's own guidance on SEO, audit and AEO/GEO queries; the witness counts google.com citations across 20 industries.",
+     "source": {
+      "authors": [
+       "Matt G. Southern",
+       "SE Ranking"
+      ],
+      "title": "Google AI Mode cites itself more often (SE Ranking: Is Google stealing your clicks in AI Mode? 1.3M+ citations analyzed)",
+      "venue": "Search Engine Journal, reporting an SE Ranking study",
+      "doi": null,
+      "urls": [
+       "https://www.searchenginejournal.com/google-ai-mode-cites-itself-more-often-with-more-organic-links/568955/",
+       "https://searchengineland.com/google-ai-mode-citing-google-more-study-471042",
+       "https://seranking.com/blog/google-links-in-ai-mode-answers/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-03-06",
+       "kind": "news",
+       "where": "Search Engine Journal",
+       "url": "https://www.searchenginejournal.com/google-ai-mode-cites-itself-more-often-with-more-organic-links/568955/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Google properties accounted for 5% of AI Mode links.",
+       "from": "article, Search Engine Journal (SE Ranking's July 2025 report)"
+      }
+     ],
+     "shows": "Across 68,313 keywords and 1,321,398 AI Mode citations (February 2026), google.com was the most cited source, about three times its share nine months before. It precedes both claims and is an anticipation.",
+     "does_not_show": "Drift on stabilized public-knowledge nodes; self-preferencing on SEO-guidance queries specifically; anything multi-year.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Search Engine Journal and Search Engine Land articles, 2026-10-30. The SE Ranking page returned empty content.",
+      "unverified": [
+       "the SE Ranking study itself was not read",
+       "Search Engine Land's 'June 2025, 5.7%' baseline differs from SEJ's 'July, 5%'; the page date of the Search Engine Land article was not shown",
+       "SE Ranking sells the tracking tool used",
+       "quote not found at source, dropped: \"Google now accounts for 17% of all AI Mode citations.\"",
+       "quote not found at source, dropped: \"Google.com was the most cited source in AI Mode answers, accounting for 17.42% of all citations\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

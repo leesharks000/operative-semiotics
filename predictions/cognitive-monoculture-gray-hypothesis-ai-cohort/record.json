@@ -677,7 +677,7 @@
      },
      "versions": [
       {
-       "date": "2026-04",
+       "date": "2026-04-21",
        "kind": "preprint",
        "where": "PsyArXiv, 10.31234/osf.io/rz5s4_v1",
        "url": "https://doi.org/10.31234/osf.io/rz5s4_v1"
@@ -712,10 +712,248 @@
      "checked": {
       "by": "Claude (Opus 5.5), in session, at the operator's request",
       "date": "2026-10-30",
-      "how": "Read the Tilburg University Research Portal record, 2026-10-30; the journal's DOI page refused the fetch.",
-      "unverified": [
-       "the exact day of the PsyArXiv preprint (April 2026)"
+      "how": "Read the Tilburg University Research Portal record, 2026-10-30; the journal's DOI page refused the fetch. Dates from Crossref: PsyArXiv 10.31234/osf.io/rz5s4_v1 posted 2026-04-21 (is-preprint-of the journal article); Behaviour & Information Technology published online 2026-08-31.",
+      "unverified": []
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0044",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The component 'Academic and scientific discourse narrows toward AI-legible modes': excess style vocabulary in biomedical abstracts marks at least 13.5% of 2024 abstracts as processed with LLMs. It measures a shift of style toward LLM vocabulary; narrowing in the sense of lost variance is not measured.",
+     "source": {
+      "authors": [
+       "Dmitry Kobak",
+       "Rita González-Márquez",
+       "Emőke-Ágnes Horvát",
+       "Jan Lause"
+      ],
+      "title": "Delving into LLM-assisted writing in biomedical publications through excess vocabulary",
+      "venue": "arXiv; Science Advances",
+      "doi": "10.1126/sciadv.adt3813",
+      "urls": [
+       "https://arxiv.org/abs/2406.07016"
       ]
+     },
+     "versions": [
+      {
+       "date": "2024-06-11",
+       "kind": "preprint",
+       "where": "arXiv 2406.07016 v1",
+       "url": "https://arxiv.org/abs/2406.07016v1"
+      },
+      {
+       "date": "2025-07-03",
+       "kind": "preprint",
+       "where": "arXiv 2406.07016 v5",
+       "url": "https://arxiv.org/abs/2406.07016"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we study vocabulary changes in over 15 million biomedical abstracts from 2010--2024 indexed by PubMed",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "show how the appearance of LLMs led to an abrupt increase in the frequency of certain style words",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "This excess word analysis suggests that at least 13.5% of 2024 abstracts were processed with LLMs.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A measurable share of the scientific literature now carries an LLM style signature.",
+     "does_not_show": "Reduced variance or narrowed argument; the 5–15 year window.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "journal name and date of the Science Advances version (DOI only on the page)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0045",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The component on academic and scientific discourse narrowing: topic volume contracts 4.63% and engagement between scientists falls 22% in AI-using work. Narrowing of topics is measured; 'AI-legible modes' of discourse are not.",
+     "source": {
+      "authors": [
+       "Qianyue Hao",
+       "Fengli Xu",
+       "Yong Li",
+       "James Evans"
+      ],
+      "title": "Artificial Intelligence Tools Expand Scientists' Impact but Contract Science's Focus",
+      "venue": "arXiv; accepted at Nature",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2412.07727v4",
+       "https://arxiv.org/abs/2412.07727v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-12-10",
+       "kind": "preprint",
+       "where": "arXiv 2412.07727 v1",
+       "url": "https://arxiv.org/abs/2412.07727v1"
+      },
+      {
+       "date": "2025-11-29",
+       "kind": "preprint",
+       "where": "arXiv 2412.07727 v4",
+       "url": "https://arxiv.org/abs/2412.07727v4"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a dataset of 41.3 million research papers across natural science",
+       "from": "abstract, arXiv v4"
+      },
+      {
+       "quote": "shrinks the collective volume of scientific topics studied by 4.63%",
+       "from": "abstract, arXiv v4"
+      },
+      {
+       "quote": "decreases scientist's engagement with one another by 22.00%",
+       "from": "abstract, arXiv v4"
+      },
+      {
+       "quote": "AI tools appear to automate established fields rather than explore new ones",
+       "from": "abstract, arXiv v4"
+      }
+     ],
+     "shows": "AI-augmented research concentrates on established, data-rich topics and contracts science's collective range.",
+     "does_not_show": "Generative-AI writing; cognitive diversity of persons; the 15–50 year trajectory.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv v4 abstract page, 2026-10-30.",
+      "unverified": [
+       "the Nature publication (title, date, DOI): not fetched",
+       "the v1 abstract wording"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0046",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The component on scientific discourse narrowing: GenAI-assisted articles converge on a single benchmark variety, U.S. scientific English, in embedding space. A narrowing toward one norm; whether that norm is 'AI-legible' is the claim's reading.",
+     "source": {
+      "authors": [
+       "Dragan Filimonovic",
+       "Christian Rutzer",
+       "Jeffrey Macher",
+       "Rolf Weder"
+      ],
+      "title": "Does Scientific Writing Converge to U.S. English? Evidence from Generative AI-Assisted Publications",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2511.11687"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-11-12",
+       "kind": "preprint",
+       "where": "arXiv 2511.11687 v1",
+       "url": "https://arxiv.org/abs/2511.11687v1"
+      },
+      {
+       "date": "2026-03-10",
+       "kind": "preprint",
+       "where": "arXiv 2511.11687 v2",
+       "url": "https://arxiv.org/abs/2511.11687"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "5.65 million English-language scientific articles published from 2021 to 2024 and indexed in Scopus",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "We measure linguistic similarity to a U.S. benchmark corpus using SciBERT text embeddings",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "exhibit statistically significant and increasing convergence toward U.S. scientific English",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Scientific prose assisted by GenAI is converging on one variety of English.",
+     "does_not_show": "Contraction of argument-form or genre; the authors read the result as lowered language barriers.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0047",
+     "direction": "disconfirms",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Against the component 'Academic and scientific discourse narrows toward AI-legible modes' in one field: over 44 years of CHI full texts, prose did not homogenize after LLMs and vocabulary grew more varied, while LLM marker words rose. One venue and an early point in the 5–15 year window.",
+     "source": {
+      "authors": [
+       "Thomas Kosch",
+       "Robin Welsch",
+       "Michael Hedderich",
+       "Christopher Katins"
+      ],
+      "title": "How Did Writing Change At CHI? Analyzing 44 Years of CHI Writing Before and After the Introduction of Large Language Models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2609.23090"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-09-19",
+       "kind": "preprint",
+       "where": "arXiv 2609.23090 v1",
+       "url": "https://arxiv.org/abs/2609.23090"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "analyzed full texts of 14,262 archival papers across all 44 CHI proceedings from 1982 to 2026",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "measuring readability, register, lexical diversity, and marker words typically produced by LLMs",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "prose did not homogenize, while vocabulary grew more varied, and sentence rhythm remained irregular.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "The word-level shift began before any author used LLMs, so LLMs did not start the change but accelerated it.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "In CHI papers, LLM-era writing shows more lexical variety and no homogenization of prose.",
+     "does_not_show": "Philosophy; argument-form or genre variance; topic contraction (compare Hao et al.).",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
      },
      "order": "after"
     }
@@ -816,6 +1054,74 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0045",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The component 'Innovation patterns shift toward incremental/combinatorial, away from paradigm-breaking', for science using AI tools: the collective volume of topics shrinks and AI appears to automate established fields. The AI here is research tooling in the natural sciences, and the claim's horizon is 15–50 years.",
+     "source": {
+      "authors": [
+       "Qianyue Hao",
+       "Fengli Xu",
+       "Yong Li",
+       "James Evans"
+      ],
+      "title": "Artificial Intelligence Tools Expand Scientists' Impact but Contract Science's Focus",
+      "venue": "arXiv; accepted at Nature",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2412.07727v4",
+       "https://arxiv.org/abs/2412.07727v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-12-10",
+       "kind": "preprint",
+       "where": "arXiv 2412.07727 v1",
+       "url": "https://arxiv.org/abs/2412.07727v1"
+      },
+      {
+       "date": "2025-11-29",
+       "kind": "preprint",
+       "where": "arXiv 2412.07727 v4",
+       "url": "https://arxiv.org/abs/2412.07727v4"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a dataset of 41.3 million research papers across natural science",
+       "from": "abstract, arXiv v4"
+      },
+      {
+       "quote": "shrinks the collective volume of scientific topics studied by 4.63%",
+       "from": "abstract, arXiv v4"
+      },
+      {
+       "quote": "decreases scientist's engagement with one another by 22.00%",
+       "from": "abstract, arXiv v4"
+      },
+      {
+       "quote": "AI tools appear to automate established fields rather than explore new ones",
+       "from": "abstract, arXiv v4"
+      }
+     ],
+     "shows": "AI-augmented research concentrates on established, data-rich topics and contracts science's collective range.",
+     "does_not_show": "Generative-AI writing; cognitive diversity of persons; the 15–50 year trajectory.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv v4 abstract page, 2026-10-30.",
+      "unverified": [
+       "the Nature publication (title, date, DOI): not fetched",
+       "the v1 abstract wording"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "The Stakes: orders of cognitive-convergence effects"
    ],
@@ -1016,7 +1322,7 @@
     {
      "witness": "W-0004",
      "direction": "supports",
-     "evidence_class": "preprint",
+     "evidence_class": "peer-reviewed article",
      "bears_on": "component",
      "scope": "The term P, 'false positive rate for non-normative cognition' (#476 l.112), on the mechanism 'Safety classifiers optimized for recall produce systematic false positives' (l.97): shown for LLMs scoring psychosis-risk interviews, a high-recall, low-specificity classifier whose errors over-pathologize. The feedback loop B1 states, and safety classifiers as such, are not tested.",
      "source": {
@@ -1038,39 +1344,46 @@
        "Dominic Oliver"
       ],
       "title": "Evaluating Large Language Models for Assessment of Psychosis Risk",
-      "venue": "medRxiv",
-      "doi": "10.64898/2026.04.02.26349960",
+      "venue": "npj Digital Medicine (preprint: medRxiv)",
+      "doi": "10.1038/s41746-026-02928-4",
       "urls": [
+       "https://www.nature.com/articles/s41746-026-02928-4",
        "https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v1",
-       "https://www.nature.com/articles/s41746-026-02928-4"
+       "https://doi.org/10.64898/2026.04.02.26349960"
       ]
      },
      "versions": [
       {
-       "date": "2026-04",
+       "date": "2026-04-04",
        "kind": "preprint",
-       "where": "medRxiv (the DOI string carries 2026.04.02)",
+       "where": "medRxiv v1, 10.64898/2026.04.02.26349960",
        "url": "https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v1"
       },
       {
-       "date": null,
+       "date": "2026-06-15",
+       "kind": "preprint",
+       "where": "medRxiv v2",
+       "url": "https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v2"
+      },
+      {
+       "date": "2026-07-23",
        "kind": "peer-reviewed article",
-       "where": "npj Digital Medicine, s41746-026-02928-4, as reported in S-0001",
-       "url": "https://www.nature.com/articles/s41746-026-02928-4"
+       "where": "npj Digital Medicine, 10.1038/s41746-026-02928-4",
+       "url": "https://doi.org/10.1038/s41746-026-02928-4"
       }
      ],
      "finding": [
       {
-       "quote": "We assessed 11 open-weight LLMs on 678 PSYCHS interview transcripts from 373 participants (77.7% CHR-P).",
-       "from": "abstract, medRxiv"
+       "quote": "We assessed 11 open-weight LLMs on 678 partial PSYCHS interview transcripts from 373 participants (77.7% CHR-P).",
+       "from": "abstract, medRxiv (server record, v1 and v2) and npj Digital Medicine (Crossref)"
       },
       {
-       "quote": "Errors primarily reflected overpathologisation of non-clinical experiences.",
-       "from": "abstract, medRxiv"
+       "quote": "Larger models achieved the strongest classification performance (Llama-3.3-70B: accuracy = 0.80, sensitivity = 0.93, specificity = 0.58).",
+       "from": "abstract, medRxiv (server record, v1 and v2)"
       },
       {
-       "quote": "maintaining high sensitivity (0.934) and improved specificity (0.580)",
-       "from": "results, medRxiv"
+       "quote": "Errors primarily reflected over-pathologisation of non-clinical experiences.",
+       "from": "abstract, medRxiv (server record, v1 and v2) and npj Digital Medicine (Crossref)"
       }
      ],
      "shows": "LLMs scoring clinical interviews err mainly by reading non-clinical experience as pathological; the strongest classifier pairs high sensitivity with low specificity.",
@@ -1078,10 +1391,9 @@
      "checked": {
       "by": "Claude (Opus 5.5), in session, at the operator's request",
       "date": "2026-10-30",
-      "how": "Read the medRxiv page, 2026-10-30; the npj Digital Medicine page refused the fetch.",
+      "how": "medRxiv's page and npj's page refused or redirected the fetch; the abstract and dates read from the medRxiv server's API record (api.biorxiv.org, v1 2026-04-04, v2 2026-06-15, published DOI 10.1038/s41746-026-02928-4) and Crossref (npj, published 2026-07-23); quotes checked by scripts/witnesses/verify_quotes.py.",
       "unverified": [
-       "the journal version and its date (23 July 2026, as reported in S-0001)",
-       "the preprint's posting day: the page gives only 2026"
+       "S-0001 and S-0002 quoted 'sensitivity (0.934) … specificity (0.580)' from the results; the abstract gives 0.93 and 0.58, quoted instead (corrected 2026-10-30)"
       ]
      },
      "order": "after"
@@ -1535,6 +1847,56 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0058",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "component",
+     "scope": "The trajectory toward LLM access as the default condition of education: by autumn 2025, 54% of U.S. teens had used chatbots for schoolwork and one in ten did most of it with them. A point on the path; 'the entire K-12 population' by 2030 is not tested.",
+     "source": {
+      "authors": [
+       "Colleen McClain",
+       "Monica Anderson",
+       "Olivia Sidoti",
+       "William Bishop"
+      ],
+      "title": "How Teens Use and View AI",
+      "venue": "Pew Research Center",
+      "doi": null,
+      "urls": [
+       "https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-02-24",
+       "kind": "report",
+       "where": "Pew Research Center (survey 2025-09-25 to 2025-10-09, n=1,458 teens)",
+       "url": "https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "More than half of teens say they have used chatbots to search for information (57%) or get help with schoolwork (54%).",
+       "from": "report body, Pew"
+      },
+      {
+       "quote": "One-in-ten teens say they do all or most of their schoolwork with chatbots’ help.",
+       "from": "report body, Pew"
+      }
+     ],
+     "shows": "A majority of U.S. teens already use chatbots for schoolwork.",
+     "does_not_show": "Younger children; universality; the 2035 cohort.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Pew report page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "AI-raised cohort and cognitive monoculture"
    ],
@@ -1681,6 +2043,373 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0023",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Convergence of models toward similar outputs, shown across models. The Gray Hypothesis names safety pressure as the driver and loss of nuance as the effect; the study measures similarity of open-ended outputs and does not isolate safety training.",
+     "source": {
+      "authors": [
+       "Liwei Jiang",
+       "Yuanjun Chai",
+       "Margaret Li",
+       "Mickel Liu",
+       "Raymond Fok",
+       "Nouha Dziri",
+       "Yulia Tsvetkov",
+       "Maarten Sap",
+       "Alon Albalak",
+       "Yejin Choi"
+      ],
+      "title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)",
+      "venue": "arXiv; listed at NeurIPS 2025",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.22954",
+       "https://neurips.cc/virtual/2025/poster/121421"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-27",
+       "kind": "preprint",
+       "where": "arXiv 2510.22954 v1",
+       "url": "https://arxiv.org/abs/2510.22954v1"
+      },
+      {
+       "date": "2026-10-06",
+       "kind": "preprint",
+       "where": "arXiv 2510.22954 v2",
+       "url": "https://arxiv.org/abs/2510.22954"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Using Infinity-Chat, we present a large-scale study of mode collapse in LMs,",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "characterized by (1) intra-model repetition, where a single model consistently generates similar responses,",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "and more so (2) inter-model homogeneity, where different models produce strikingly similar outputs.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a large-scale dataset of 26K diverse, real-world, open-ended user queries",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "On 26K real open-ended queries, single models repeat themselves and different models give strikingly similar outputs.",
+     "does_not_show": "A trend over time; the five Assembly substrates or the Three Pillars directive; safety training as the cause.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (submission history and abstract), 2026-10-30.",
+      "unverified": [
+       "NeurIPS 2025 acceptance: seen only as a search-result listing on neurips.cc, page not fetched"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0024",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Models converging over time, shown across releases. Safety pressure as the driver and nuance as the quantity lost are not tested.",
+     "source": {
+      "authors": [
+       "Nirav Patel",
+       "Josiah Crossman",
+       "Eva Aggarwal",
+       "Emily Wenger"
+      ],
+      "title": "Are LLMs becoming similarly creative? Evidence from three years of models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2608.19437",
+       "https://arxiv.org/html/2608.19437v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-08-19",
+       "kind": "preprint",
+       "where": "arXiv 2608.19437 v1",
+       "url": "https://arxiv.org/abs/2608.19437"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a statistically significant decrease in model output diversity over time",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "LLM outputs may be converging in creative substance across models",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "This covers 33 closed weight models and 34 open weight models across 27 release months",
+       "from": "body, arXiv HTML v1"
+      }
+     ],
+     "shows": "Across 67 models released over 27 months, cross-model output diversity on creative prompts falls significantly with release date.",
+     "does_not_show": "The cause of the decline; the archive's substrates or directive; the authors note their regression cannot account for hidden relationships across model families.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and the HTML v1 (model count and limitations), 2026-10-30.",
+      "unverified": [
+       "model count: the HTML also reports 68 and 69 models in other places"
+      ]
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0025",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Successive releases of one model line lose the ability to vary their text. Safety pressure as the cause is not tested.",
+     "source": {
+      "authors": [
+       "Konstantinos F. Xylogiannopoulos",
+       "Petros Xanthopoulos",
+       "Panagiotis Karampelas",
+       "Georgios A. Bakamitsos"
+      ],
+      "title": "Experimental evidence of progressive ChatGPT models self-convergence",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2603.12683"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-03-13",
+       "kind": "preprint",
+       "where": "arXiv 2603.12683 v1",
+       "url": "https://arxiv.org/abs/2603.12683"
+      },
+      {
+       "date": "2026-03-16",
+       "kind": "preprint",
+       "where": "arXiv 2603.12683 v2",
+       "url": "https://arxiv.org/abs/2603.12683"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we employ a text similarity metric to evaluate different ChatGPT models' capacity to generate diverse textual outputs.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "Our findings indicate a measurable decline of recent ChatGPT releases' ability to produce varied text",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "even when explicitly prompted to do so, by setting the temperature parameter to one",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Recent ChatGPT releases produce less varied text than earlier ones, even at temperature one and when asked for variety.",
+     "does_not_show": "Cross-vendor convergence; any cause; effect sizes (not read beyond the abstract).",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0027",
+     "direction": "disconfirms",
+     "evidence_class": "peer-reviewed conference paper",
+     "bears_on": "mechanism",
+     "scope": "The cause the Gray Hypothesis names. The paper locates output homogeneity in pretraining, with alignment revealing or magnifying it and SFT data unable to introduce it; this tells against safety pressure as the origin, and leaves standing the role of alignment as an amplifier. Loss of nuance as such is not measured.",
+     "source": {
+      "authors": [
+       "Alexandrine Fortier",
+       "Hazel Chen",
+       "Peter West"
+      ],
+      "title": "Is Convergence Inevitable? Tracing Output Homogeneity Back to Base Models",
+      "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), Budapest, pp. 36846–36865",
+      "doi": "10.18653/2026.emnlp-main.1621",
+      "urls": [
+       "https://aclanthology.org/2026.emnlp-main.1621/",
+       "https://arxiv.org/abs/2608.11426"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-08-11",
+       "kind": "preprint",
+       "where": "arXiv 2608.11426 v1",
+       "url": "https://arxiv.org/abs/2608.11426"
+      },
+      {
+       "date": "2026-08-13",
+       "kind": "preprint",
+       "where": "arXiv 2608.11426 v2",
+       "url": "https://arxiv.org/abs/2608.11426"
+      },
+      {
+       "date": "2026-10",
+       "kind": "peer-reviewed conference paper",
+       "where": "EMNLP 2026",
+       "url": "https://aclanthology.org/2026.emnlp-main.1621/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "output homogeneity is likely learned during the pretraining phase",
+       "from": "abstract, ACL Anthology"
+      },
+      {
+       "quote": "only revealed or magnified during the alignment process",
+       "from": "abstract, ACL Anthology"
+      },
+      {
+       "quote": "convergence can be revealed and amplified, but not introduced by the SFT data",
+       "from": "abstract, ACL Anthology"
+      },
+      {
+       "quote": "instruct-like collapse can be induced through prompting alone, even without alignment",
+       "from": "abstract, ACL Anthology"
+      }
+     ],
+     "shows": "Homogeneity of instruct-model outputs can be produced from base models by prompting alone; alignment amplifies a convergence learned in pretraining.",
+     "does_not_show": "That alignment has no effect: the paper finds it magnifies convergence. Safety training is not separated from other alignment.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the ACL Anthology landing page and the arXiv abstract page (submission history), 2026-10-30.",
+      "unverified": [
+       "the ACL page's quotes came through the fetch summarizer; the arXiv abstract text was not compared word for word"
+      ]
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0028",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Preference training reduces diversity. Safety pressure as such and nuance are not isolated.",
+     "source": {
+      "authors": [
+       "Robert Kirk",
+       "Ishita Mediratta",
+       "Christoforos Nalmpantis",
+       "Jelena Luketina",
+       "Eric Hambro",
+       "Edward Grefenstette",
+       "Roberta Raileanu"
+      ],
+      "title": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "venue": "arXiv; listed in ICLR 2024 proceedings",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2310.06452v3",
+       "https://proceedings.iclr.cc/paper_files/paper/2024/hash/5a68d05006d5b05dd9463dd9c0219db0-Abstract-Conference.html"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-10-10",
+       "kind": "preprint",
+       "where": "arXiv 2310.06452 v1",
+       "url": "https://arxiv.org/abs/2310.06452v1"
+      },
+      {
+       "date": "2024-01-03",
+       "kind": "preprint",
+       "where": "arXiv 2310.06452 v2",
+       "url": "https://arxiv.org/abs/2310.06452v2"
+      },
+      {
+       "date": "2024-02-19",
+       "kind": "preprint",
+       "where": "arXiv 2310.06452 v3",
+       "url": "https://arxiv.org/abs/2310.06452v3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "However, RLHF significantly reduces output diversity compared to SFT across a variety of measures",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "RLHF lowers output diversity relative to SFT across several measures.",
+     "does_not_show": "The signed-deviation statistic; base versus instruct of the named model.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (full submission history), 2026-10-30.",
+      "unverified": [
+       "ICLR 2024 publication: seen only as a search-result listing, proceedings page not fetched"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0031",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Alignment for debiasing, a safety-adjacent pressure, yields lower token entropy and attractor states in Llama-2 variants. Close to the Gray Hypothesis's cause; its effect is measured as diversity, which is narrower than nuance.",
+     "source": {
+      "authors": [
+       "Behnam Mohammadi"
+      ],
+      "title": "Creativity Has Left the Chat: The Price of Debiasing Language Models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2406.05587"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-06-08",
+       "kind": "preprint",
+       "where": "arXiv 2406.05587 v1",
+       "url": "https://arxiv.org/abs/2406.05587"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "aligned models exhibit lower entropy in token predictions",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "form distinct clusters in the embedding space",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "attractor states",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Alignment that reduces bias and toxicity also lowers output entropy and pulls outputs toward a few attractor states.",
+     "does_not_show": "Frontier models; human-rated loss of nuance.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

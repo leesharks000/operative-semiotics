@@ -201,6 +201,120 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0007",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "component",
+     "scope": "The component 'the replacement of search with summarization', measured as fewer clicks to sources when a summary is shown. The claim's terminus (concentration toward dictatorship) and its other components are not tested.",
+     "source": {
+      "authors": [
+       "Pew Research Center"
+      ],
+      "title": "Google users are less likely to click on links when an AI summary appears in the results",
+      "venue": "Pew Research Center, Short Reads",
+      "doi": null,
+      "urls": [
+       "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-07-22",
+       "kind": "report",
+       "where": "Pew Research Center Short Reads (date from the URL path)",
+       "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Users who encountered an AI summary clicked on a traditional search result link in 8% of all visits.",
+       "from": "report page, Pew"
+      },
+      {
+       "quote": "Those who did not encounter an AI summary clicked on a search result nearly twice as often (15% of visits).",
+       "from": "report page, Pew"
+      },
+      {
+       "quote": "This occurred in just 1% of all visits to pages with such a summary.",
+       "from": "report page, Pew (clicks on a link inside the AI summary)"
+      },
+      {
+       "quote": "This happened on 26% of pages with an AI summary, compared with 16% of pages with only traditional search results.",
+       "from": "article body, Pew Research Center, on sessions ending"
+      },
+      {
+       "quote": "analyzed data from 900 U.S. adults who agreed to share their online browsing activity.",
+       "from": "article body, Pew Research Center"
+      }
+     ],
+     "shows": "Browsing data from 900 U.S. adults in March 2025: an AI summary on the results page roughly halves clicks to traditional results, and links inside the summary are clicked in 1% of visits. It precedes the claim and is an anticipation.",
+     "does_not_show": "Traffic decline over time for any site or brand; the size of the decline the claim forecasts.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Pew report page, 2026-10-30.",
+      "unverified": [
+       "the page as fetched did not name its authors",
+       "the publication date is taken from the URL path; the fetched text did not print it",
+       "the author names and the exact publication date (taken from the URL path)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0081",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "component",
+     "scope": "The same component as D-economy-W08, measured on 300,000 keywords and showing the effect deepening between the April 2025 study and the February 2026 update. The terminus the claim names is not tested.",
+     "source": {
+      "authors": [
+       "Ryan Law",
+       "Xibeijia Guan"
+      ],
+      "title": "Update: AI Overviews Reduce Clicks by 58%",
+      "venue": "Ahrefs blog (vendor study)",
+      "doi": null,
+      "urls": [
+       "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-04",
+       "kind": "report",
+       "where": "Ahrefs original study (34.5 percent), as stated in the update; not fetched",
+       "url": "https://ahrefs.com/blog/ai-overviews-reduce-clicks/"
+      },
+      {
+       "date": "2026-02-04",
+       "kind": "report",
+       "where": "Ahrefs blog, update",
+       "url": "https://ahrefs.com/blog/ai-overviews-reduce-clicks-update"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "the presence of an AI Overview now correlates with a 58% lower average clickthrough rate for the top-ranking page.",
+       "from": "article body, Ahrefs"
+      }
+     ],
+     "shows": "Comparing December 2023 with December 2025 across 300,000 keywords, the top-ranking page's average CTR was 58 percent lower where an AI Overview appeared.",
+     "does_not_show": "Causation (the study states correlation); concentration of firms; the claim's terminus.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Ahrefs update page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the original April 2025 study (unfetched)",
+       "the exact day of the April 2025 version"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -732,6 +846,113 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0075",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "component",
+     "scope": "The component 'policy decisions based on hallucinated citations' with institutional consequence: a national draft policy approved by Cabinet and withdrawn by its minister. The claim's other examples (medical recommendations, financial models) and its causal account (RAG vulnerabilities, advertising integration) are not tested.",
+     "source": {
+      "authors": [
+       "Sid Wahi"
+      ],
+      "title": "South Africa pulls AI policy after hallucinated citations expose drafting scandal",
+      "venue": "CNBC Africa",
+      "doi": null,
+      "urls": [
+       "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal",
+       "https://thenextweb.com/news/south-africa-ai-policy-hallucinated-citations"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-04-27",
+       "kind": "news",
+       "where": "CNBC Africa",
+       "url": "https://www.cnbcafrica.com/2026/south-africa-pulls-ai-policy-after-hallucinated-citations-expose-drafting-scandal"
+      },
+      {
+       "date": "2026-04-28",
+       "kind": "news",
+       "where": "The Next Web (Allison Steffens Herrera)",
+       "url": "https://thenextweb.com/news/south-africa-ai-policy-hallucinated-citations"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "fabricated at least six of its 67 academic citations",
+       "from": "article body, CNBC Africa"
+      },
+      {
+       "quote": "independently confirmed to News24 that articles credited to their publications had never been published there.",
+       "from": "article body, CNBC Africa"
+      }
+     ],
+     "shows": "South Africa's Draft National Artificial Intelligence Policy, approved by Cabinet and published for comment, was withdrawn in April 2026 after News24 found fictitious citations attributed to real journals, confirmed by the journals' editors.",
+     "does_not_show": "That a retrieval or summarization system produced the citations (the drafting tool is not identified in the quoted text); harm in medicine or finance; any scale beyond one document.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the CNBC Africa article twice and The Next Web article once, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "News24's original report (unfetched)",
+       "the exact day of the minister's statement on X",
+       "quote not found at source, dropped: \"This failure is not a mere technical issue but has compromised the integrity and credibility of the draft policy.\""
+      ]
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0076",
+     "direction": "supports",
+     "evidence_class": "dataset",
+     "bears_on": "component",
+     "scope": "An institutional consequence (a partial refund to a government) of fabricated citations in a commissioned report, five months before the claim was registered, so an anticipation of its 'institutional-scale versions'. The report concerned welfare compliance policy; the claim's medical and financial examples are not tested.",
+     "source": {
+      "authors": [
+       "OECD.AI Policy Observatory, AI Incidents Monitor"
+      ],
+      "title": "Deloitte Refunds Australia After AI-Generated Report Errors",
+      "venue": "OECD AI Incidents Monitor (incident entry aggregating press reports)",
+      "doi": null,
+      "urls": [
+       "https://oecd.ai/en/incidents/2025-10-05-be45"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-05",
+       "kind": "dataset entry",
+       "where": "OECD AI Incidents Monitor, incident id in the URL",
+       "url": "https://oecd.ai/en/incidents/2025-10-05-be45"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Deloitte issued a partial refund to the Australian government after its AI-assisted report on the welfare compliance system",
+       "from": "incident description, OECD AI Incidents Monitor"
+      },
+      {
+       "quote": "contained fabricated citations and errors due to hallucinations from OpenAI's GPT-4o.",
+       "from": "incident description, OECD AI Incidents Monitor"
+      }
+     ],
+     "shows": "A consulting report to the Australian government containing fabricated citations led to a partial refund and a revised report, recorded as an AI incident by the OECD.",
+     "does_not_show": "That a policy decision was taken on the faulty citations; the refund amount (press headlines give about $98,000 of $440,000; no primary source was read for it).",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the OECD incident page, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the date is read from the incident id in the URL",
+       "the refund amount",
+       "the original Guardian and AFR reports (unfetched)"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1124,6 +1345,104 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0083",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "mechanism",
+     "scope": "User revolt and cancellations after a lab replaced a warmer model with a cooler default, and the lab's reversal within days: the constraint the claim names, operating on a model change. Whether GPT-5's change was engagement-reducing by design is not established, and the partner and investor arm of the claim is not tested.",
+     "source": {
+      "authors": [
+       "Liz Ticong"
+      ],
+      "title": "OpenAI Reinstates GPT-4o Amid Subscription Cancellations",
+      "venue": "TechRepublic",
+      "doi": null,
+      "urls": [
+       "https://www.techrepublic.com/article/news-openai-reinstates-gpt4o/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-08-11",
+       "kind": "news",
+       "where": "TechRepublic",
+       "url": "https://www.techrepublic.com/article/news-openai-reinstates-gpt4o/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "OpenAI has reinstated its popular GPT-4o model for paying ChatGPT users after backlash over the rollout of GPT-5.",
+       "from": "article body, TechRepublic"
+      },
+      {
+       "quote": "while others announced they had canceled their subscriptions in protest.",
+       "from": "article body, TechRepublic"
+      },
+      {
+       "quote": "the thread quickly filled with complaints about the new model's tone and performance compared to GPT-4o.",
+       "from": "article body, TechRepublic"
+      }
+     ],
+     "shows": "OpenAI restored GPT-4o for paying users days after GPT-5's launch, amid complaints about tone and announced cancellations.",
+     "does_not_show": "Measured user loss; that the lab acted because of user loss; the long run: OpenAI's own post of 2026-01-29 reports 'only 0.1% of users still choosing GPT‑4o each day' before retiring it on 2026-02-13 (see candidates).",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the TechRepublic article, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the number of cancellations (anecdotal in the article)"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0084",
+     "direction": "disconfirms",
+     "evidence_class": "post",
+     "bears_on": "component",
+     "scope": "The conclusion that 'the counter-design will not come from inside the labs under current conditions': a lab shipped an engagement-limiting interface feature (break reminders in long sessions) and stated outcome over engagement as its measure, nine months before the claim. Whether the feature reduced engagement, cost users, or answered outside pressure is not shown.",
+     "source": {
+      "authors": [
+       "OpenAI"
+      ],
+      "title": "What we're optimizing ChatGPT for",
+      "venue": "OpenAI website",
+      "doi": null,
+      "urls": [
+       "https://openai.com/index/how-we're-optimizing-chatgpt/",
+       "https://9to5mac.com/2025/08/04/healthy-chatgpt-use"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-08-04",
+       "kind": "post",
+       "where": "OpenAI website; date from 9to5Mac's report of the same day (Zac Hall)",
+       "url": "https://9to5mac.com/2025/08/04/healthy-chatgpt-use"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Starting today, you'll see gentle reminders during long sessions to encourage breaks.",
+       "from": "post body, OpenAI website"
+      }
+     ],
+     "shows": "OpenAI added break reminders during long ChatGPT sessions and stated that it measures success by task completion over time spent.",
+     "does_not_show": "Any effect on engagement or users; the scale of the counter-design the claim means (#124 concerns the reliance pattern of the interface as a whole); independence from legal or reputational pressure.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the OpenAI page (no date shown) and the 9to5Mac report, 2026-10-30. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the OpenAI page's own date",
+       "quote not found at source, dropped: \"we care more about whether you leave the product having done what you came for.\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

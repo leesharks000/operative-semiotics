@@ -26,8 +26,16 @@ def page(url):
         return _cache[url]
     try:
         r = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=40)
-        raw = r.read().decode('utf-8', 'replace')
-        txt = norm(re.sub(r'<[^>]+>', ' ', re.sub(r'<script.*?</script>|<style.*?</style>', ' ', raw, flags=re.S)))
+        body = r.read()
+        if body[:5] == b'%PDF-' or 'pdf' in (r.headers.get('Content-Type') or ''):   # a PDF is read through pdftotext
+            import subprocess, tempfile
+            with tempfile.NamedTemporaryFile(suffix='.pdf') as f:
+                f.write(body); f.flush()
+                raw = subprocess.run(['pdftotext', '-layout', f.name, '-'], capture_output=True, text=True).stdout
+            txt = norm(re.sub(r'-\n\s*', '', raw))
+        else:
+            raw = body.decode('utf-8', 'replace')
+            txt = norm(re.sub(r'<[^>]+>', ' ', re.sub(r'<script.*?</script>|<style.*?</style>', ' ', raw, flags=re.S)))
         _cache[url] = ('ok', txt)
     except Exception as e:
         _cache[url] = ('refused', str(getattr(e, 'code', '') or e)[:80])

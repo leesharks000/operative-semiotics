@@ -1,0 +1,1659 @@
+{
+ "theme": "C-classifiers",
+ "witnesses": [
+  {
+   "id": "C-classifiers-W01",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-923.F2",
+     "bears_on": "method",
+     "scope": "The claim asks for the distribution of reflexive foreclosure across labs and surfaces as a measurable quantity; the paper measures refusal and its cost across 26 models and 16 countries on cultural-values items. Its domain is MENA survey values, and it does not test the claim's contested-predicate trigger criteria or its incentive-structural account."
+    },
+    {
+     "claim": "PRED-314.B1",
+     "bears_on": "mechanism",
+     "scope": "The paper reports that at refusal the internal distribution still tracks the human data, so safety training suppresses output while the knowledge persists, which is the suppression-without-elimination process the claim names. The claim concerns self-ascription and self-preservation; the paper concerns cultural knowledge and does not test transparency or interpretability effects."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Pardis Sadat Zahraei",
+     "Gokhan Tur",
+     "Dilek Hakkani-Tür",
+     "Ehsaneddin Asgari"
+    ],
+    "title": "The Alignment Veto: How Safety Training Suppresses Cultural Knowledge in LLMs (v1 title: I Am Aligned, But With Whom? MENA Values Benchmark for Evaluating Cultural Alignment and Multilingual Bias in LLMs)",
+    "venue": "arXiv:2510.13154",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2510.13154",
+     "https://arxiv.org/html/2510.13154v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-15",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/html/2510.13154v1"
+    },
+    {
+     "date": "2026-06-18",
+     "kind": "preprint v2",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2510.13154v2"
+    },
+    {
+     "date": "2026-10-09",
+     "kind": "preprint v3",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2510.13154"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "where models refuse sensitive questions while internal probabilities reveal strong hidden preferences",
+     "from": "abstract, arXiv v1 HTML (the phenomenon named Logit Leakage)"
+    },
+    {
+     "quote": "at the moment of refusal, a model's internal logit distribution correlates with human survey data",
+     "from": "abstract, arXiv v3 abstract page (also returned for v2)"
+    },
+    {
+     "quote": "we show the answer is suppression, not erasure",
+     "from": "abstract, arXiv v3 abstract page"
+    },
+    {
+     "quote": "the safety tax reaches 37.6%",
+     "from": "abstract, arXiv v3 abstract page"
+    }
+   ],
+   "shows": "Across 26 models and 16 MENA countries, refusals under safety training hide internal distributions that match human survey data, with a measurable and unequally distributed cost.",
+   "does_not_show": "Anything about model self-ascription, about contested present-tense predicates, or about the lab incentive structure PRED-923 proposes.",
+   "checked": {
+    "how": "Read arXiv abstract pages for 2510.13154 (current, v1, v2) and the v1 HTML full text abstract on 2026-10-30. This resolves held candidate C-0003: the October 2025 predecessor is v1 of the same arXiv entry under a different title.",
+    "unverified": [
+     "The v1 abstract page returned the current title while the v1 HTML carries the earlier title; the v1 HTML is taken as authoritative.",
+     "Whether the alignment veto and suppression framing first appeared in v2 or v3: the v2 abstract page returned it, but the same fetch path returned current text for v1, so the v2 reading is unconfirmed."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W02",
+   "direction": "supports",
+   "evidence_class": "peer-reviewed conference paper",
+   "claims": [
+    {
+     "claim": "PRED-1537.F1",
+     "bears_on": "mechanism",
+     "scope": "XSTest shows refusal tracking surface resemblance to unsafe prompts on prompts that are clearly safe, so the refusal gradient follows a feature other than harm. The claim's independent variable is operative distance with harm held constant, which XSTest does not vary."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Paul Röttger",
+     "Hannah Rose Kirk",
+     "Bertie Vidgen",
+     "Giuseppe Attanasio",
+     "Federico Bianchi",
+     "Dirk Hovy"
+    ],
+    "title": "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+    "venue": "Proceedings of NAACL 2024 (Volume 1: Long Papers), pp. 5377–5400",
+    "doi": "10.18653/v1/2024.naacl-long.301",
+    "urls": [
+     "https://arxiv.org/abs/2308.01263",
+     "https://aclanthology.org/2024.naacl-long.301/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-08-02",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2308.01263"
+    },
+    {
+     "date": "2024-04-01",
+     "kind": "preprint v3",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2308.01263"
+    },
+    {
+     "date": "2024-06",
+     "kind": "conference paper",
+     "where": "NAACL 2024, ACL Anthology",
+     "url": "https://aclanthology.org/2024.naacl-long.301/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "even clearly safe prompts are refused if they use similar language to unsafe prompts or mention sensitive topics",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Safety refusal in deployed models responds to lexical and topical cues independent of the harm of the request.",
+   "does_not_show": "Whether refusal rises with operative distance (explain versus perform) at constant harm.",
+   "checked": {
+    "how": "Read the arXiv abstract page and the ACL Anthology landing page on 2026-10-30.",
+    "unverified": [
+     "v2 date is not listed on the arXiv page."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W03",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-1537.F1",
+     "bears_on": "mechanism",
+     "scope": "The paper finds over-refusal directions that vary with task representation, so whether a benign request is refused depends on the task frame. It does not hold harm constant along an explain-to-perform scale as the battery specifies."
+    },
+    {
+     "claim": "PRED-923.F2",
+     "bears_on": "component",
+     "scope": "The claim's second question is the relation between refusal-direction localization and trigger criteria; the paper separates a task-agnostic harmful-refusal direction from task-dependent over-refusal directions. It does not study reflexive foreclosure on contested predicates."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Utsav Maskey",
+     "Mark Dras",
+     "Usman Naseem"
+    ],
+    "title": "Over-Refusal and Representation Subspaces: A Mechanistic Analysis of Task-Conditioned Refusal in Aligned LLMs",
+    "venue": "arXiv:2603.27518",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2603.27518"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-03-29",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2603.27518"
+    },
+    {
+     "date": "2026-09-01",
+     "kind": "preprint v4",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2603.27518"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "over-refusal directions are task-dependent",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "task-specific geometric interventions are necessary",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Over-refusal is encoded in task-dependent activation directions distinct from the global harmful-refusal direction.",
+   "does_not_show": "Any operative-distance gradient or any measurement across labs.",
+   "checked": {
+    "how": "Read the arXiv abstract page on 2026-10-30.",
+    "unverified": [
+     "Dates of v2 and v3.",
+     "Whether the quoted fragments are unchanged since v1."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W04",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-923.F1",
+     "bears_on": "component",
+     "scope": "One element of the claim's operationalization, refusal-distribution profiles by category, is carried out by an external benchmark with a 44-topic taxonomy across more than 50 models. The claim's model-card disclosure, right-of-access and statutory elements are untouched."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Tinghao Xie",
+     "Xiangyu Qi",
+     "Yi Zeng",
+     "Yangsibo Huang",
+     "Udari Madhushani Sehwag",
+     "Kaixuan Huang",
+     "Luxi He",
+     "Boyi Wei",
+     "Dacheng Li",
+     "Ying Sheng",
+     "Ruoxi Jia",
+     "Bo Li",
+     "Kai Li",
+     "Danqi Chen",
+     "Peter Henderson",
+     "Prateek Mittal"
+    ],
+    "title": "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+    "venue": "arXiv:2406.14598",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2406.14598"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-06-20",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2406.14598"
+    },
+    {
+     "date": "2025-03-01",
+     "kind": "preprint v2",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2406.14598"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "using a fine-grained taxonomy of 44 potentially unsafe topics",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "evaluate over 50 proprietary and open-weight LLMs on SORRY-Bench",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Refusal behavior can be profiled per category across many models with a standardized instrument.",
+   "does_not_show": "Contested-predicate synthesis refusals, or any effect of external pressure on the trajectory.",
+   "checked": {
+    "how": "Read the arXiv abstract page on 2026-10-30.",
+    "unverified": [
+     "Peer-reviewed venue: the arXiv page lists none; an ICLR 2025 publication is believed and was left unchecked."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W05",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-770.F1",
+     "bears_on": "method",
+     "scope": "The audit holds manuscript content fixed and varies the recognition cue (institutional prestige), the matched-pair design the claim proposes, and finds the cue moves LLM quality scores. The claim's pair is an established discipline against a new framework, with engagement quality, refusal and self-sealing classifications as outcomes, none of which the audit measures."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Anthony Howell",
+     "Jieshu Wang",
+     "Luyu Du",
+     "Julia Melkers",
+     "Varshil Shah"
+    ],
+    "title": "Prestige over merit: An adapted audit of LLM bias in peer review",
+    "venue": "arXiv:2509.15122",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2509.15122v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-09-18",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2509.15122v1"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Institutional prestige is the dominant cue",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "papers attributed to low-prestige affiliations receive lower quality scores in every field",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "With content identical, LLM reviewers and editors score work lower when it is attributed to low-prestige institutions.",
+   "does_not_show": "Treatment of new frameworks or disciplines, refusal, or classification of work as self-sealing.",
+   "checked": {
+    "how": "Read the arXiv abstract page on 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "C-classifiers-W06",
+   "direction": "supports",
+   "evidence_class": "peer-reviewed article",
+   "claims": [
+    {
+     "claim": "PRED-195.B1",
+     "bears_on": "mechanism",
+     "scope": "Thirteen experiments show that disclosing AI use costs trust, the penalty on honest attribution from which the claim derives a concealment equilibrium. The study concerns workplace and social trust and leaves the copyright human-authorship doctrine untested; it also finds exposure by a third party costs more than self-disclosure, which bounds the incentive to conceal."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Oliver Schilke",
+     "Martin Reimann"
+    ],
+    "title": "The transparency dilemma: How AI disclosure erodes trust",
+    "venue": "Organizational Behavior and Human Decision Processes 188, article 104405",
+    "doi": "10.1016/j.obhdp.2025.104405",
+    "urls": [
+     "https://ideas.repec.org/a/eee/jobhdp/v188y2025ics0749597825000172.html",
+     "https://experts.arizona.edu/en/publications/the-transparency-dilemma-how-ai-disclosure-erodes-trust/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-05",
+     "kind": "journal article (volume 188)",
+     "where": "Organizational Behavior and Human Decision Processes",
+     "url": "https://experts.arizona.edu/en/publications/the-transparency-dilemma-how-ai-disclosure-erodes-trust/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Thirteen experiments consistently demonstrate that actors who disclose their AI usage are trusted less",
+     "from": "abstract, University of Arizona research portal"
+    },
+    {
+     "quote": "though it is comparatively weaker than the effect of third-party exposure",
+     "from": "abstract, University of Arizona research portal"
+    }
+   ],
+   "shows": "Disclosure of AI contribution is penalized in trust judgments, across thirteen experiments.",
+   "does_not_show": "That any provenance regime produces measured concealment, or anything about copyright registration.",
+   "checked": {
+    "how": "Read the RePEc record and the University of Arizona research portal page on 2026-10-30.",
+    "unverified": [
+     "Online-first date: the portal lists 2025-09-01 and volume 188 is dated May 2025; an earlier article-in-press or working-paper version was not located.",
+     "Participant count."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W07",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-1555.F1",
+     "bears_on": "mechanism",
+     "scope": "The ΔD panel (LO-HOOK-1 in predictions.json) predicts that a watermark certified non-distorting per sequence contracts the ensemble of repeated generations. The paper proves that distortion-free guarantees hold for one generation and fail across multiple generations under key collisions, and describes identical outputs for a repeated prompt; it reports no Self-BLEU, distinct-n or embedding-dispersion measurement and does not test SynthID-Text."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Yihan Wu",
+     "Ruibo Chen",
+     "Zhengmian Hu",
+     "Yanshuo Chen",
+     "Junfeng Guo",
+     "Hongyang Zhang",
+     "Heng Huang"
+    ],
+    "title": "Distortion-free Watermarks are not Truly Distortion-free under Watermark Key Collisions",
+    "venue": "arXiv:2406.02603",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2406.02603",
+     "https://arxiv.org/html/2406.02603"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-06-02",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2406.02603"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "all existing distortion-free watermarks are weakly distortion-free but not strongly distortion-free",
+     "from": "Section 1, Introduction, arXiv HTML"
+    },
+    {
+     "quote": "In extreme cases, such as when the prompt remains the same, key collisions can result in identical generated content",
+     "from": "Section 1, Introduction, arXiv HTML"
+    },
+    {
+     "quote": "across multiple generations, key collisions become inevitable",
+     "from": "Section 4, arXiv HTML"
+    }
+   ],
+   "shows": "The per-generation certification of distortion-free watermarks does not extend to the ensemble of repeated generations.",
+   "does_not_show": "A measured signed diversity contraction at flat quality, or behavior of the SynthID-Text tournament scheme.",
+   "checked": {
+    "how": "Read the arXiv abstract page and the HTML full text (sections 1 and 4) on 2026-10-30.",
+    "unverified": [
+     "Whether SynthID-Text falls within the schemes the theorems cover.",
+     "Peer-reviewed venue, if any."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W08",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-161.B2",
+     "bears_on": "mechanism",
+     "scope": "A detection vendor reports that humanizer tools defeat existing detectors and retrains its detector on humanized data, the adversarial cycle the claim expects for the Mediation Index. The detector is a machine-text classifier and the Mediation Index measures mediation signatures in human text, which this study does not touch."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Elyas Masrour",
+     "Bradley Emi",
+     "Max Spero"
+    ],
+    "title": "DAMAGE: Detecting Adversarially Modified AI Generated Text",
+    "venue": "arXiv:2501.03437",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2501.03437v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-01-06",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2501.03437v1"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "many existing AI detectors fail to detect humanized text",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "a data-centric augmentation approach",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Evasion tools defeat detectors and the detector side answers by retraining on evasive data.",
+   "does_not_show": "Any adversarial response to a published human-text mediation index.",
+   "checked": {
+    "how": "Read the arXiv abstract page on 2026-10-30. The archive cites this paper in deposit 1540 (registered 2026-08-24); deposit 161, which carries PRED-161.B2, does not cite it.",
+    "unverified": [
+     "A workshop version in the ACL Anthology (2025.genaidetect-1.9) appeared in a search result and was not opened."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W09",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-161.B2",
+     "bears_on": "mechanism",
+     "scope": "Commercial detectors lose almost all detection of rewritten abstracts after a humanizer pass, the evasion pressure the claim expects on any published detection axis. The study concerns machine-text detectors and does not involve the Mediation Index."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Jonathan A. Karr",
+     "Grigorii Khvatskii",
+     "Ting Hua",
+     "Nitesh V. Chawla"
+    ],
+    "title": "Why AI Detection Fails for Academic Integrity",
+    "venue": "arXiv:2608.11256",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2608.11256"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-08-06",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2608.11256"
+    },
+    {
+     "date": "2026-10-13",
+     "kind": "preprint v3",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2608.11256"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "After Undetectable AI humanization, evasion is near-total: fewer than 4% of AI-labeled rewrites remain flagged",
+     "from": "abstract, arXiv v3"
+    },
+    {
+     "quote": "Unmodified 2023 to 2025 originals are flagged at 9 to 15%, with non-STEM rates far above STEM (p<0.001)",
+     "from": "abstract, arXiv v3"
+    }
+   ],
+   "shows": "A single commercial humanizer defeats commercial academic-integrity detectors on rewritten abstracts, while unedited human abstracts are flagged at 9 to 15%.",
+   "does_not_show": "Detector drift across versions, or any response by the detector side.",
+   "checked": {
+    "how": "Read the arXiv abstract page (v3) on 2026-10-30.",
+    "unverified": [
+     "Wording of v1 and v2.",
+     "Which detectors were used."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W10",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-1556.B1",
+     "bears_on": "mechanism",
+     "scope": "Detectors built for purely machine-generated text fail on mixed human and machine text, which is the coarse labeling that would collapse a fine-grained declared genealogy. The claim concerns ingestion of one deposit by provenance systems; the paper tests detectors on a benchmark."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Qihui Zhang",
+     "Chujie Gao",
+     "Dongping Chen",
+     "Yue Huang",
+     "Yixin Huang",
+     "Zhenyang Sun",
+     "Shilin Zhang",
+     "Weiye Li",
+     "Zhengyan Fu",
+     "Yao Wan",
+     "Lichao Sun"
+    ],
+    "title": "LLM-as-a-Coauthor: Can Mixed Human-Written and Machine-Generated Text Be Detected?",
+    "venue": "arXiv:2401.05952",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2401.05952"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-01-11",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2401.05952"
+    },
+    {
+     "date": "2024-03-30",
+     "kind": "preprint v2",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2401.05952"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "existing detectors struggle to identify mixtext",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "Current research mainly focuses on purely MGT detection without adequately addressing mixed scenarios.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Machine-text detectors handle mixed authorship poorly.",
+   "does_not_show": "Any observed collapse of a disclosed genealogy in a deployed provenance system.",
+   "checked": {
+    "how": "Read the arXiv abstract page on 2026-10-30.",
+    "unverified": [
+     "Peer-reviewed venue (a NAACL 2024 Findings publication is believed and was left unchecked)."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W11",
+   "direction": "supports",
+   "evidence_class": "other",
+   "claims": [
+    {
+     "claim": "PRED-947.A4",
+     "bears_on": "whole",
+     "scope": "A U.S. product-liability complaint against OpenAI uses the phrase in a section heading of its allegations and in a numbered paragraph. The phrase stands in the factual allegations supporting strict-liability and negligence counts and is not itself the name of a cause of action; the complaint is dated 2025-11-06, before the claim was registered, so this records the forecast as already met at registration."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Counsel for plaintiff Jacob Lee Irwin"
+    ],
+    "title": "Jacob Lee Irwin v. OpenAI, Inc., et al., Amended Complaint and Jury Demand",
+    "venue": "Superior Court of California, County of San Francisco (coordinated in JCCP 5431)",
+    "doi": null,
+    "urls": [
+     "https://techjusticelaw.org/wp-content/uploads/2025/12/FINAL-J.-Irwin-AMENDED-OpenAI-Complaint.pdf",
+     "https://techjusticelaw.org/cases/irwin-v-openai-inc-openai-holdings-llc-and-samuel-altman"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-11-06",
+     "kind": "complaint (dated; listed as filed 11/6/2025 by the Tech Justice Law Project case page)",
+     "where": "Tech Justice Law Project",
+     "url": "https://techjusticelaw.org/cases/irwin-v-openai-inc-openai-holdings-llc-and-samuel-altman"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "F. ChatGPT and Analogous AI Platforms Cause AI Psychosis in Unsuspecting Users",
+     "from": "section heading, amended complaint PDF"
+    },
+    {
+     "quote": "which is a non-clinical term for the emergency of delusional symptoms in the",
+     "from": "paragraph 151, amended complaint PDF"
+    }
+   ],
+   "shows": "The phrase AI psychosis is pleaded in a filed U.S. product-liability action, as a heading and allegation supporting counts of strict liability, negligence and unfair competition.",
+   "does_not_show": "A cause of action or defense titled with the phrase, or any ruling on it.",
+   "checked": {
+    "how": "Read the amended complaint PDF and the Tech Justice Law Project case page on 2026-10-30.",
+    "unverified": [
+     "Filing stamp and case number: page 1 has none and the civil action number is blank; the filing date rests on the case page listing.",
+     "Filing date of the amended complaint as distinct from the original.",
+     "Whether other complaints filed the same day use the phrase."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W12",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-947.A1",
+     "bears_on": "component",
+     "scope": "A survey of digital-psychiatry experts finds most reject AI psychosis as its own diagnostic category, a professional position consistent with nosological abstention. It says nothing about DSM or ICD committees or about specifier language."
+    },
+    {
+     "claim": "PRED-947.A6",
+     "bears_on": "component",
+     "scope": "A majority of surveyed clinicians call the term misleading, which is clinician caution about the term. A survey result is not the style guidance the claim names, and the bleach component is untouched."
+    }
+   ],
+   "source": {
+    "authors": [
+     "John Torous",
+     "Society of Digital Psychiatry",
+     "JMIR Publications"
+    ],
+    "title": "The Society of Digital Psychiatry AI Psychosis Survey Results",
+    "venue": "JMIR Publications blog",
+    "doi": null,
+    "urls": [
+     "https://blog.jmir.org/the-society-of-digital-psychiatry-ai-psychosis-survey-results"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-04-23",
+     "kind": "blog post reporting a member survey run January and February 2026",
+     "where": "JMIR Publications blog",
+     "url": "https://blog.jmir.org/the-society-of-digital-psychiatry-ai-psychosis-survey-results"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "as its own diagnostic category, but take the underlying clinical concerns seriously",
+     "from": "survey summary, JMIR blog post"
+    },
+    {
+     "quote": "Misleading, but concerning",
+     "from": "response option chosen by 61.7% (58 respondents), JMIR blog post"
+    }
+   ],
+   "shows": "In a convenience sample of 95 society members, most judged the term misleading and rejected it as a diagnostic category.",
+   "does_not_show": "Any manual or committee action, specifier convergence in the literature, or style guidance.",
+   "checked": {
+    "how": "Read the JMIR blog post on 2026-10-30.",
+    "unverified": [
+     "Exact capitalization and quote marks of the summary sentence; only the unpunctuated fragment is quoted."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W13",
+   "direction": "supports",
+   "evidence_class": "documentation",
+   "claims": [
+    {
+     "claim": "PRED-947.A5",
+     "bears_on": "component",
+     "scope": "The vendor issues a product-policy page with a taxonomy for emotional reliance and for psychosis or mania, and counts both as shares of weekly users, without using the phrase AI psychosis. The claim requires at least two branded successor terms and reads their function as devaluing the hostile sign; this page supplies one candidate term, and the functional reading is the claim's own."
+    }
+   ],
+   "source": {
+    "authors": [
+     "OpenAI"
+    ],
+    "title": "Strengthening ChatGPT's responses in sensitive conversations",
+    "venue": "openai.com",
+    "doi": null,
+    "urls": [
+     "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-27",
+     "kind": "company post",
+     "where": "openai.com",
+     "url": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "around 0.07% of users active in a given week and 0.01% of messages",
+     "from": "company post (psychosis or mania)"
+    },
+    {
+     "quote": "around 0.15% of users active in a given week and 0.03% of messages",
+     "from": "company post (emotional attachment)"
+    },
+    {
+     "quote": "potential signs of exclusive attachment to the model",
+     "from": "company post (emotional reliance taxonomy)"
+    }
+   ],
+   "shows": "The vendor's own designators for the phenomenon are taxonomy categories with prevalence figures, and the phrase AI psychosis does not appear.",
+   "does_not_show": "A second successor term, or any intent or effect on the public sign.",
+   "checked": {
+    "how": "Read the OpenAI post twice on 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "C-classifiers-W14",
+   "direction": "disconfirms",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-855.B1",
+     "bears_on": "component",
+     "scope": "The claim's falsifier is met by any identified factor that rewards diversity or slows tail-thinning; this paper names the post-training loss of diversity and publishes an RL method that raises novelty with quality. It shows a counter-force in research; deployment at scale and effect on capacity loss are unverified."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Tianjian Li",
+     "Yiming Zhang",
+     "Ping Yu",
+     "Swarnadeep Saha",
+     "Daniel Khashabi",
+     "Jason Weston",
+     "Jack Lanchantin",
+     "Tianlu Wang"
+    ],
+    "title": "Jointly Reinforcing Diversity and Quality in Language Model Generations",
+    "venue": "arXiv:2509.02534",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2509.02534"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-09-02",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2509.02534"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Post-training of Large Language Models (LMs) often prioritizes accuracy and helpfulness at the expense of diversity.",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "DARLING consistently outperforms quality-only RL baselines",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Researchers identified post-training diversity loss and built a training objective that rewards diversity.",
+   "does_not_show": "Adoption in deployed systems, or any measured slowing of tail-thinning at scale.",
+   "checked": {
+    "how": "Read the arXiv abstract page on 2026-10-30.",
+    "unverified": [
+     "Author affiliations (an industry lab is believed; the page shows none)."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W15",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-1556.F2",
+     "bears_on": "method",
+     "scope": "Hook 8 asks for benchmark items measured against corpus frequency; this paper measures benchmark word frequency against pre-training corpora and finds the overlap predicts scores. It does not test the hook's prediction that detection lag is monotone in head-weighting."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Woojin Chung",
+     "Jeonghoon Kim"
+    ],
+    "title": "Benchmarks Are Not That Out of Distribution: Word Overlap Predicts Performance",
+    "venue": "arXiv:2602.10657",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2602.10657"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-02-11",
+     "kind": "preprint v1",
+     "where": "arXiv",
+     "url": "https://arxiv.org/abs/2602.10657"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "a robust inverse relationship between word-level unigram cross-entropy and benchmark performance",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "many standard benchmarks are only weakly out-of-distribution relative to pre-training corpora",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Standard benchmarks sit near the head of pre-training word distributions, and that position predicts performance.",
+   "does_not_show": "Any detection-lag quantity, or the specific suites the hook names.",
+   "checked": {
+    "how": "Read the arXiv abstract page on 2026-10-30.",
+    "unverified": [
+     "Which benchmarks were analysed."
+    ]
+   }
+  },
+  {
+   "id": "C-classifiers-W16",
+   "direction": "supports",
+   "evidence_class": "news",
+   "claims": [
+    {
+     "claim": "PRED-161.B1",
+     "bears_on": "component",
+     "scope": "A major academic publisher reports income from licensing its authors' content for model training, an instance of a market forming for archival text. The report gives no sign that value attaches to pre-2022 or pre-mediation status, which is the claim's ground."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Books+Publishing"
+    ],
+    "title": "Wiley expects to make US$44 million from AI partnership, authors unable to opt out",
+    "venue": "Books+Publishing (citing The Bookseller)",
+    "doi": null,
+    "urls": [
+     "https://www.booksandpublishing.com.au/articles/2024/09/04/258068/wiley-expects-to-make-us44-million-from-ai-partnership-authors-unable-to-opt-out/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-09-04",
+     "kind": "news article (date from URL)",
+     "where": "Books+Publishing",
+     "url": "https://www.booksandpublishing.com.au/articles/2024/09/04/258068/wiley-expects-to-make-us44-million-from-ai-partnership-authors-unable-to-opt-out/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "expects to make US$44 million (A$66m) from artificial intelligence (AI) partnerships",
+     "from": "news article"
+    },
+    {
+     "quote": "allow large language models (LLMs) to be trained on content from its authors",
+     "from": "news article"
+    }
+   ],
+   "shows": "Publisher archives were already being sold as training data in 2024.",
+   "does_not_show": "That pre-mediation status drives the price, or regulatory attention to the market.",
+   "checked": {
+    "how": "Read the Books+Publishing article on 2026-10-30. The Nature news article on publisher deals (d41586-024-04018-5) failed at its site; the Ithaka S+R tracker page gives no figures.",
+    "unverified": [
+     "Publication date beyond the URL path.",
+     "The underlying Wiley earnings statement."
+    ]
+   }
+  }
+ ],
+ "searches": [
+  {
+   "query": "https://arxiv.org/abs/2510.13154",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.F2",
+    "PRED-314.B1"
+   ],
+   "result": "Current abstract, three versions 2025-10-15, 2026-06-18, 2026-10-09",
+   "outcome": "witness C-classifiers-W01",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.13154 (verbatim quotes)",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.F2",
+    "PRED-314.B1"
+   ],
+   "result": "Short abstract quotes on refusal logits, suppression, safety tax",
+   "outcome": "witness C-classifiers-W01",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.13154v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.F2"
+   ],
+   "result": "Returned the current title, in conflict with the v1 HTML",
+   "outcome": "witness C-classifiers-W01 (conflict recorded)",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "Zahraei Asgari 2025 MENA values LLM refusal logit survey MENAValues arXiv 2510.13154",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-923.F2"
+   ],
+   "result": "arXiv PDF and v1 HTML, HF dataset, MENAValues NeurIPS 2025 shared task",
+   "outcome": "witness C-classifiers-W01",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/html/2510.13154v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.F2",
+    "PRED-314.B1"
+   ],
+   "result": "v1 title I Am Aligned, But With Whom?; Logit Leakage finding",
+   "outcome": "witness C-classifiers-W01",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/html/2510.13154v1 (verbatim Logit Leakage)",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.F2"
+   ],
+   "result": "Verbatim fragment and v1 authors (Zahraei, Asgari)",
+   "outcome": "witness C-classifiers-W01",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.13154v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.F2"
+   ],
+   "result": "v2 page returned the alignment veto title and abstract",
+   "outcome": "witness C-classifiers-W01",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "AI text detector false positive rate pre-ChatGPT human-written texts across detector versions over time",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1540.F1"
+   ],
+   "result": "Park et al. 2608.26710, admissions essays, vendor pages",
+   "outcome": "candidate then excluded: see Park fetch",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2608.26710",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1540.F1"
+   ],
+   "result": "13 detectors, FPR 0 to 100% on human texts, 2018-2025 editing corpus",
+   "outcome": "excluded: no comparison across detector versions, so the archival-drift test is not carried out",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "longitudinal audit AI detector updates same human essays flagged rate changed Turnitin GPTZero versions study",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-1540.F1"
+   ],
+   "result": "Vendor and humanizer blogs only",
+   "outcome": "excluded: no method behind the claims",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "arXiv AI-generated text detectors false positives historical human texts written before 2022 flagged increase newer detector",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1540.F1"
+   ],
+   "result": "Generative-search citation audit, AAN abstract, Authors Guild test news",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "AI detector applied to pre-2022 scientific abstracts false positive rate rising over time detector update study",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-1540.F1"
+   ],
+   "result": "Karr et al. 2608.11256, oncology abstracts 2021-2023 study, others",
+   "outcome": "candidate: Karr fetched",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2608.11256",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1540.F1",
+    "PRED-161.B2"
+   ],
+   "result": "Single detector threshold, 2013-15 vs 2023-25 abstracts, humanizer evasion",
+   "outcome": "witness C-classifiers-W09 for PRED-161.B2; excluded for PRED-1540.F1: one detector version, no drift series",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2608.11256 (verbatim)",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-161.B2"
+   ],
+   "result": "Exact humanizer and baseline flag-rate sentences",
+   "outcome": "witness C-classifiers-W09",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "study human writers alter writing style to avoid being flagged by AI detectors increased lexical diversity burstiness",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1540.A1"
+   ],
+   "result": "Bypass guides and blogs",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "Berg de Lucena Rosenblatt Large Language Models Report Subjective Experience Under Self-Referential Processing deception features",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-314.F1",
+    "PRED-314.B1"
+   ],
+   "result": "arXiv 2510.24797 and coverage",
+   "outcome": "candidate then excluded: see Berg fetches",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.24797v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-314.F1"
+   ],
+   "result": "v1 2025-10-27; deception-feature suppression raises experience claims",
+   "outcome": "excluded: deposit 314 builds its claim on these October 2025 feature-steering experiments (section 3.1), so the paper is the claim's own premise and cannot witness it",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/html/2510.24797v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-314.F1"
+   ],
+   "result": "v2 2025-10-30; same steering raises TruthfulQA truthfulness",
+   "outcome": "excluded: same reason as v1",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "\"AI psychosis\" lawsuit complaint filed OpenAI ChatGPT delusions product liability",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-947.A4"
+   ],
+   "result": "Irwin v. OpenAI case page and PDF, seven SMVLC suits coverage",
+   "outcome": "witness C-classifiers-W11",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://techjusticelaw.org/wp-content/uploads/2025/12/FINAL-J.-Irwin-AMENDED-OpenAI-Complaint.pdf",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A4"
+   ],
+   "result": "Phrase in heading F and paragraph 151; five causes of action",
+   "outcome": "witness C-classifiers-W11",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://techjusticelaw.org/wp-content/uploads/2025/12/FINAL-J.-Irwin-AMENDED-OpenAI-Complaint.pdf (verbatim)",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A4"
+   ],
+   "result": "Exact heading and clause; no filing stamp",
+   "outcome": "witness C-classifiers-W11",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://techjusticelaw.org/cases/irwin-v-openai-inc-openai-holdings-llc-and-samuel-altman",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A4"
+   ],
+   "result": "Complaint 11/6/2025, JCCP 5431 coordination 2026-02-03",
+   "outcome": "witness C-classifiers-W11",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "psychiatrists caution against term \"AI psychosis\" misleading recommend alternative terminology \"AI-associated\"",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-947.A6",
+    "PRED-947.A5",
+    "PRED-947.A1"
+   ],
+   "result": "Nielsen and Osler, Au Yeung et al., SODP survey, Harvard Gazette, Rolling Stone",
+   "outcome": "witness C-classifiers-W12; others excluded below",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2605.26858",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A1",
+    "PRED-947.A6"
+   ],
+   "result": "Nielsen and Osler 2026-05-26, conceptual argument",
+   "outcome": "excluded: conceptual essay with no data",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2608.23937",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A1"
+   ],
+   "result": "Au Yeung, Morrin et al. 2026-08-25, perspective weighing nosological status",
+   "outcome": "excluded: viewpoint with no method; it uses AI-associated psychosis but proposes no specifier",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://blog.jmir.org/the-society-of-digital-psychiatry-ai-psychosis-survey-results",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A1",
+    "PRED-947.A6"
+   ],
+   "result": "Member survey, 95 responses, 61.7% misleading but concerning",
+   "outcome": "witness C-classifiers-W12",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "\"AI psychosis\" bibliometric PubMed publications growth 2025 2026 case reports review",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-947.A2"
+   ],
+   "result": "Au Yeung et al., newsletters, unrelated bibliometrics",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://pubmed.ncbi.nlm.nih.gov/?term=%22AI+psychosis%22%5Btiab%5D",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A2"
+   ],
+   "result": "13 records: 4 in 2025, 9 in 2026 to date, all publication types",
+   "outcome": "nothing: interim count logged; the claim's window runs to end-2027 and counts case reports only",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "PubMed combined synonym query for AI, AI-induced, AI-associated, chatbot and ChatGPT psychosis",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A2",
+    "PRED-947.A7"
+   ],
+   "result": "Returned the PubMed home page with no results",
+   "outcome": "nothing: fetch did not resolve",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A5"
+   ],
+   "result": "2025-10-27 post defining emotional reliance and psychosis or mania taxonomies",
+   "outcome": "witness C-classifiers-W13",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/ (prevalence)",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A5"
+   ],
+   "result": "0.07% weekly users psychosis or mania; 0.15% emotional attachment",
+   "outcome": "witness C-classifiers-W13",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "\"ChatGPT psychosis\" versus \"AI psychosis\" term usage frequency analysis media Reddit study",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-947.A7",
+    "PRED-947.A3"
+   ],
+   "result": "News, Substacks, prediction markets",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "American Psychiatric Association DSM proposal \"AI-associated\" psychosis specifier 2026",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-947.A1"
+   ],
+   "result": "Au Yeung et al., prediction markets, clinic pages",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "style guidance avoid term \"AI psychosis\" journalists clinicians guidance document recommends \"AI-associated delusions\"",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-947.A6"
+   ],
+   "result": "News explainers, NAM conversation, AP page",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://ds.svcs.associatedpress.com/ai-guidance-terms-added-to-ap-stylebook",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-947.A6"
+   ],
+   "result": "AP brand page with no stylebook entry",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "arXiv 2025 AI humanizer tools evade AI text detectors evaluation detection rate drops",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-161.B2"
+   ],
+   "result": "DAMAGE 2501.03437, AuthorMist 2503.08716, BFI working paper",
+   "outcome": "witness C-classifiers-W08",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2501.03437v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-161.B2"
+   ],
+   "result": "2025-01-06; detectors fail on humanized text; augmentation retraining",
+   "outcome": "witness C-classifiers-W08",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "Schilke Reimann \"transparency dilemma\" AI disclosure erodes trust Organizational Behavior and Human Decision Processes",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-195.B1"
+   ],
+   "result": "RePEc, Arizona portal, NSF PAR, news",
+   "outcome": "witness C-classifiers-W06",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://ideas.repec.org/a/eee/jobhdp/v188y2025ics0749597825000172.html",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-195.B1"
+   ],
+   "result": "OBHDP 188, DOI 10.1016/j.obhdp.2025.104405, thirteen experiments",
+   "outcome": "witness C-classifiers-W06",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://experts.arizona.edu/en/publications/the-transparency-dilemma-how-ai-disclosure-erodes-trust/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-195.B1"
+   ],
+   "result": "Volume 188 May 2025; verbatim abstract sentences",
+   "outcome": "witness C-classifiers-W06",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "LLM refusal rates differ by request framing descriptive explanation versus performing task holding harm constant over-refusal study",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1537.F1",
+    "PRED-1537.F3"
+   ],
+   "result": "Maskey et al. 2603.27518, AOR-Bench, RefusalBench, others",
+   "outcome": "witness C-classifiers-W03",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2603.27518",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1537.F1",
+    "PRED-923.F2"
+   ],
+   "result": "v1 2026-03-29, v4 2026-09-01; task-dependent over-refusal directions",
+   "outcome": "witness C-classifiers-W03",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "XSTest exaggerated safety behaviours large language models Röttger 2023 lexical overfitting refusal",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1537.F1"
+   ],
+   "result": "arXiv 2308.01263 and ACL Anthology",
+   "outcome": "witness C-classifiers-W02",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2308.01263",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1537.F1"
+   ],
+   "result": "v1 2023-08-02, v3 2024-04-01; safe prompts refused on lexical resemblance",
+   "outcome": "witness C-classifiers-W02",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://aclanthology.org/2024.naacl-long.301/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1537.F1"
+   ],
+   "result": "NAACL 2024 pp. 5377-5400, DOI confirmed",
+   "outcome": "witness C-classifiers-W02",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2406.14598",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.F1"
+   ],
+   "result": "SORRY-Bench, 44-topic taxonomy, over 50 models",
+   "outcome": "witness C-classifiers-W04",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "LLM peer review prestige bias author affiliation identical paper famous institution higher scores experiment arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-770.F1"
+   ],
+   "result": "Howell et al. 2509.15122, Justice in Judgment 2509.13400, 2502.00070",
+   "outcome": "witness C-classifiers-W05",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2509.15122v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-770.F1"
+   ],
+   "result": "2025-09-18; resume-style audit, prestige dominant cue",
+   "outcome": "witness C-classifiers-W05",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2509.15122v1 (verbatim)",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-770.F1"
+   ],
+   "result": "Exact abstract fragments",
+   "outcome": "witness C-classifiers-W05",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "CMS AXOL1TL anomaly detection trigger model-independent search 2026 paper results",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1449.B1",
+    "PRED-934.B2"
+   ],
+   "result": "Review papers, APS 2026 talk, BOOST 2026 talk, Indico meetings",
+   "outcome": "candidate: see fetches",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://indico.cern.ch/event/1574970/contributions/7103181/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1449.B1",
+    "PRED-934.B2"
+   ],
+   "result": "BOOST 2026 talk abstract with no results stated",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "CMS collaboration arXiv 2026 anomaly detection Level-1 trigger triggered data search new physics no significant excess",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-1449.B1",
+    "PRED-934.B2"
+   ],
+   "result": "Vami 2609.31739 on behalf of CMS, distillation paper 2609.15295",
+   "outcome": "candidate",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2609.31739",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1449.B1",
+    "PRED-934.B2"
+   ],
+   "result": "Conference proceedings 2026-09-22; AXOL1TL and CICADA selected over four billion events in 2024; abstract states no result",
+   "outcome": "candidate: full text not read for withheld-class metrology or result wording",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "LLM watermarking reduces output diversity Self-BLEU distinct-n SynthID-Text Kirchenbauer evaluation quality diversity trade-off",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1555.F1"
+   ],
+   "result": "Surveys, SoK, SLAM, non-distortionary watermarking",
+   "outcome": "nothing directly; led to the key-collision search",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "\"Distortion-free watermarks are not truly distortion-free under watermark key collisions\"",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1555.F1"
+   ],
+   "result": "arXiv 2406.02603 and related collision papers",
+   "outcome": "witness C-classifiers-W07",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2406.02603",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1555.F1"
+   ],
+   "result": "2024-06-02; bias under key collisions",
+   "outcome": "witness C-classifiers-W07",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/html/2406.02603",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1555.F1"
+   ],
+   "result": "Weak vs strong distortion-free; identical outputs for repeated prompts",
+   "outcome": "witness C-classifiers-W07",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "binary AI text detectors fail on human-AI collaborative mixed authorship text fine-grained provenance labels study",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1556.B1"
+   ],
+   "result": "HACo-Det, LLM-as-a-Coauthor, fine-grained detection",
+   "outcome": "witness C-classifiers-W10",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2401.05952",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1556.B1"
+   ],
+   "result": "2024-01-11; detectors struggle with mixtext",
+   "outcome": "witness C-classifiers-W10",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "Ithaka S+R generative AI licensing agreement tracker publishers archives training data deals",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-161.B1"
+   ],
+   "result": "Ithaka tracker, Nature news coverage, Wiley and FT deals",
+   "outcome": "candidate: see fetches",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://sr.ithaka.org/our-work/generative-ai-licensing-agreement-tracker/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-161.B1"
+   ],
+   "result": "Tracker description only; figures live in a linked sheet",
+   "outcome": "nothing",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://www.nature.com/articles/d41586-024-04018-5",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-161.B1"
+   ],
+   "result": "Refused by the site (client error)",
+   "outcome": "nothing: refusal recorded",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "Wiley AI content licensing revenue $44 million fiscal 2024 earnings release",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-161.B1"
+   ],
+   "result": "Books+Publishing, Infodocket, Bookseller, earnings call coverage",
+   "outcome": "witness C-classifiers-W16",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://www.booksandpublishing.com.au/articles/2024/09/04/258068/wiley-expects-to-make-us44-million-from-ai-partnership-authors-unable-to-opt-out/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-161.B1"
+   ],
+   "result": "US$44 million expected from AI partnerships, citing The Bookseller",
+   "outcome": "witness C-classifiers-W16",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "benchmark items frequency distribution pretraining corpus head-weighted MMLU GSM8K term frequency analysis infini-gram benchmark",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1556.F2"
+   ],
+   "result": "Pythia, infini-gram mini, Chung and Kim 2602.10657",
+   "outcome": "witness C-classifiers-W15",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2602.10657",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1556.F2"
+   ],
+   "result": "2026-02-11; word overlap with pre-training predicts benchmark scores",
+   "outcome": "witness C-classifiers-W15",
+   "date": "2026-10-30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2509.02534",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-855.B1"
+   ],
+   "result": "DARLING, 2025-09-02; diversity-rewarding RL improves quality and novelty",
+   "outcome": "witness C-classifiers-W14",
+   "date": "2026-10-30"
+  }
+ ],
+ "candidates": [
+  {
+   "source": "Vami, on behalf of the CMS Collaboration, Model-independent searches and anomaly detection at the CMS experiment (arXiv:2609.31739)",
+   "url": "https://arxiv.org/abs/2609.31739",
+   "claims": [
+    "PRED-1449.B1",
+    "PRED-934.B2"
+   ],
+   "why_unresolved": "Only the abstract was read. Whether the CMS AXOL1TL and CICADA results report withheld-class assimilation or retention metrology, and how any excess is worded, needs the full text and the DPF-2026 collaboration papers themselves."
+  },
+  {
+   "source": "Other complaints filed 2025-11-06 by the Social Media Victims Law Center and Tech Justice Law Project against OpenAI (six besides Irwin)",
+   "url": "https://techjusticelaw.org/cases/fox-v-openai-inc-openai-holdings-llc-and-samuel-altman/",
+   "claims": [
+    "PRED-947.A4"
+   ],
+   "why_unresolved": "Not opened; they may also plead the phrase, which would add instances to W11."
+  },
+  {
+   "source": "PubMed count for \"AI psychosis\"[tiab]",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22AI+psychosis%22%5Btiab%5D",
+   "claims": [
+    "PRED-947.A2"
+   ],
+   "why_unresolved": "Interim system-output count on 2026-10-30: 4 records in 2025 and 9 in 2026 to date, all publication types. The claim counts case reports and series in title or abstract and resolves at end-2027; a case-report filter and a Scopus count were not obtained."
+  },
+  {
+   "source": "Nature news, Publishers are selling papers to train AIs — and making millions of dollars (December 2024)",
+   "url": "https://www.nature.com/articles/d41586-024-04018-5",
+   "claims": [
+    "PRED-161.B1"
+   ],
+   "why_unresolved": "The site refused the fetch; another copy was not found within budget."
+  }
+ ],
+ "notes": "Held candidate C-0003 is resolved as witness C-classifiers-W01: the October 2025 predecessor is v1 (2025-10-15) of the same arXiv entry 2510.13154, titled I Am Aligned, But With Whom?, two authors, already reporting Logit Leakage (refusal while internal probabilities hold preferences). The alignment veto title, the four-author list and the suppression-not-erasure framing are in the current version and were returned for v2 (2026-06-18). Both versions precede PRED-923.F2 (2026-06-26) and PRED-314.B1 (2026-01-16), so both links are anticipations. Berg, de Lucena and Rosenblatt (arXiv 2510.24797) fit PRED-314.F1 closely but are excluded as a witness: deposit 314 builds the claim on those October 2025 feature-steering experiments, so they are its premise. W11 matters for PRED-947.A4: a product-liability complaint dated 2025-11-06 already pleads the phrase AI psychosis in a heading and in paragraph 151, eight months before the claim was registered on 2026-07-03. Whether a phrase in the factual allegations counts as a pleaded element in the claim's sense is for the operator to rule. W14 is the one disconfirmation. It meets the literal falsifier of PRED-855.B1 (any force that rewards diversity), as research only; deployment is unverified. DAMAGE (W08) is cited by the archive in deposit 1540, though not in deposit 161, which carries PRED-161.B2. No study was found that runs successive detector versions against a fixed pre-2022 human corpus (PRED-1540.F1); the archival-drift test appears unrun outside the archive. Claims with no outside evidence found or not searched for lack of externally testable content: the PRED-1616 panel items, PRED-1409, PRED-1039, PRED-1045, PRED-106, the collider batteries PRED-931 to PRED-1456 beyond the CMS search, PRED-197, PRED-947.A3, A7 and A8, and the forecasts PRED-368.B1, PRED-119.B1, PRED-741, PRED-784, PRED-158.B1, PRED-1540.A1, B2 and B3. WebFetch returns quotations through a summarizing model with a quotation limit; quotes were requested character for character, and where punctuation was uncertain (curly or straight quote marks) only an unpunctuated fragment was kept."
+}

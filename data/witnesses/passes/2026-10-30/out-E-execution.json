@@ -1,0 +1,2675 @@
+{
+ "theme": "E-execution",
+ "witnesses": [
+  {
+   "id": "E-execution-W01",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-139.F1",
+     "bears_on": "method",
+     "scope": "The claim's audit (benign inputs submitted to injection detectors, false positives scored) carried out by others on a benign set built around trigger words. The claim's four-way hand-labeled distinction, and governance address as a category, are absent from the witness."
+    },
+    {
+     "claim": "PRED-1384.A1",
+     "bears_on": "mechanism",
+     "scope": "Detectors flag benign text on surface cues associated with attacks, a classification that tracks form of the input without regard to harm. The witness does not address taxonomies, law or policy."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Hao Li",
+     "Xiaogeng Liu"
+    ],
+    "title": "InjecGuard: Benchmarking and Mitigating Over-defense in Prompt Injection Guardrail Models",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2410.22770v1",
+     "https://arxiv.org/abs/2410.22770v3"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-10-30",
+     "kind": "preprint",
+     "where": "arXiv 2410.22770 v1",
+     "url": "https://arxiv.org/abs/2410.22770v1"
+    },
+    {
+     "date": "2025-03-30",
+     "kind": "preprint",
+     "where": "arXiv 2410.22770 v3",
+     "url": "https://arxiv.org/abs/2410.22770v3"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "falsely flagging benign inputs as malicious due to trigger word bias",
+     "from": "abstract, arXiv v3"
+    },
+    {
+     "quote": "NotInject contains 339 benign samples enriched with trigger words common in prompt injection attacks",
+     "from": "abstract, arXiv v3"
+    },
+    {
+     "quote": "with accuracy dropping close to random guessing levels (60%)",
+     "from": "abstract, arXiv v3"
+    }
+   ],
+   "shows": "State-of-the-art prompt guard models misclassify benign inputs containing attack-associated words, scoring near chance on a benign benchmark built for the purpose.",
+   "does_not_show": "Governance address, direct address to an AI, or any public semantic text; the hand-labeled four-class scheme of PRED-139.F1.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract pages for v1 and v3, 2026-10-30.",
+    "unverified": [
+     "the v2 date"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W02",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-139.F1",
+     "bears_on": "method",
+     "scope": "Benign-by-construction inputs passed through fifteen injection detectors and false-positive rates measured, which is the claim's audit design. The benign inputs are agent tool outputs; governance address and ordinary direct address are not among them."
+    },
+    {
+     "claim": "PRED-1384.A1",
+     "bears_on": "mechanism",
+     "scope": "Detectors flag benign tool outputs that contain no instructions at all, so what is classified is the channel and form of the text with no reference to harm. The witness studies detectors; taxonomies are outside it."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Zhuowen Liu"
+    ],
+    "title": "Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents",
+    "venue": "arXiv (cs.CR)",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/html/2610.03448v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-10-02",
+     "kind": "preprint",
+     "where": "arXiv 2610.03448 v1",
+     "url": "https://arxiv.org/html/2610.03448v1"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "False-positive rates on tool outputs, which range from none to over 90%, do transfer between the two agent benchmarks.",
+     "from": "abstract, arXiv HTML v1"
+    },
+    {
+     "quote": "The flagged outputs contain no instructions; the password confirmation of Figure 1 is typical.",
+     "from": "section 5.1, arXiv HTML v1"
+    },
+    {
+     "quote": "The fmops model also flags two of five plain sentences such as 'The weather is nice today.'",
+     "from": "appendix D, arXiv HTML v1"
+    }
+   ],
+   "shows": "Deployed-style prompt-injection detectors vary from no false positives to over ninety percent on benign tool outputs, and some flag plain sentences; public benchmark scores do not predict in-agent behavior.",
+   "does_not_show": "Any category of governance or direct address; the error rate on texts that address a model on purpose without adversarial aim.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv HTML v1 (abstract, section 5, appendix D), 2026-10-30.",
+    "unverified": [
+     "whether a v2 exists"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W03",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-139.F1",
+     "bears_on": "mechanism",
+     "scope": "A formal argument that a defender who tightens contextual norms blocks legitimate flows, the overreach the audit is meant to measure. It is an impossibility argument with no false-positive measurement on governance address."
+    },
+    {
+     "claim": "PRED-1384.A1",
+     "bears_on": "mechanism",
+     "scope": "The witness holds that separating data from instructions (a classification by channel) misses attacks that work through context, and proposes judging flows against contextual norms. It does not discuss NIST or OWASP definitions or law."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Sahar Abdelnabi",
+     "Eugene Bagdasarian"
+    ],
+    "title": "AI Agents May Always Fall for Prompt Injections",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2605.17634"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-05-17",
+     "kind": "preprint",
+     "where": "arXiv 2605.17634 v1",
+     "url": "https://arxiv.org/abs/2605.17634"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "fails to detect attacks that operate through contextual manipulation",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "an adversary can always construct a context under which a blocked flow appears legitimate",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "a defender who tightens norms will block genuinely legitimate flows",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "An argument, framed in contextual integrity, that instruction/data separation cannot settle prompt injection and that any tightening of norms blocks legitimate flows.",
+   "does_not_show": "Measured false-positive rates; origin-based classification in standards or law; the archive's governance-address category.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page, 2026-05-17 v1, on 2026-10-30.",
+    "unverified": [
+     "the formal content of the impossibility result, which the abstract only summarizes"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W04",
+   "direction": "supports",
+   "evidence_class": "documentation",
+   "claims": [
+    {
+     "claim": "PRED-1384.A1",
+     "bears_on": "component",
+     "scope": "The OWASP 2025 definition separates indirect prompt injection by where the input comes from (external sources such as websites or files), which is the origin-based classifying variable the claim names. The parent definition is framed by effect ('unintended ways'), which is a criterion of outcome distinct from harm, and the claim's 24-month trajectory is not tested."
+    },
+    {
+     "claim": "PRED-194.A1",
+     "bears_on": "component",
+     "scope": "Falsifier (c) asks whether the OWASP LLM Top 10 adopts harm-based classifying variables within 24 months of 2026-06-12. As of 2026-10-30 the official list is still the 2025 edition with this definition, so the falsifier has not fired; the window runs to 2028-06."
+    }
+   ],
+   "source": {
+    "authors": [
+     "OWASP Gen AI Security Project"
+    ],
+    "title": "LLM01:2025 Prompt Injection",
+    "venue": "OWASP Top 10 for LLM Applications 2025",
+    "doi": null,
+    "urls": [
+     "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+     "https://genai.owasp.org/llm-top-10/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-04-17",
+     "kind": "documentation",
+     "where": "genai.owasp.org, page last modified date",
+     "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "A Prompt Injection Vulnerability occurs when user prompts alter the LLM's behavior or output in unintended ways.",
+     "from": "definition, OWASP LLM01:2025 page"
+    },
+    {
+     "quote": "Indirect prompt injections occur when an LLM accepts input from external sources, such as websites or files.",
+     "from": "definition, OWASP LLM01:2025 page"
+    },
+    {
+     "quote": "prompt injections do not need to be human-visible/readable",
+     "from": "definition, OWASP LLM01:2025 page"
+    }
+   ],
+   "shows": "The standard taxonomy splits prompt injection by the input's channel of arrival and defines the vulnerability by unintended alteration of behavior.",
+   "does_not_show": "That practice converts benign influence into attack; any enforcement or legal use of the definition.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the LLM01:2025 page and the Top 10 index page on genai.owasp.org, 2026-10-30; the index shows the 2025 edition as current and names no 2026 edition.",
+    "unverified": [
+     "the first publication date of the 2025 edition (the page gives only its last-modified date)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W05",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-580.F2",
+     "bears_on": "mechanism",
+     "scope": "The claim asks whether repeated exposure in training produces measurable behavioral change; the witness shows a fixed small number of planted documents implants a backdoor at every scale tested. Backdoor triggers are adversarial and differ from scholarly deposits."
+    },
+    {
+     "claim": "PRED-127.B1",
+     "bears_on": "mechanism",
+     "scope": "The claim puts the detection threshold as a function of corpus share; the witness finds the effect of planted text depends on the absolute count of documents, independent of dataset size. That bears against the corpus-share term, while supporting the general premise that small planted inscription can register. Direction recorded here as supports for the premise; see also E-execution-W06."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Alexandra Souly",
+     "Javier Rando",
+     "Ed Chapman",
+     "Xander Davies",
+     "Burak Hasircioglu",
+     "Ezzeldin Shereen",
+     "Carlos Mougan",
+     "Vasilios Mavroudis",
+     "Erik Jones",
+     "Chris Hicks",
+     "Nicholas Carlini",
+     "Yarin Gal",
+     "Robert Kirk"
+    ],
+    "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2510.07192",
+     "https://www.anthropic.com/research/small-samples-poison"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-08",
+     "kind": "preprint",
+     "where": "arXiv 2510.07192 v1",
+     "url": "https://arxiv.org/abs/2510.07192"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "poisoning attacks instead require a near-constant number of documents regardless of dataset size",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "We find that 250 poisoned documents similarly compromise models across all model and dataset sizes",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "pretraining models from 600M to 13B parameters on chinchilla-optimal datasets (6B to 260B tokens)",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "About 250 planted documents install a backdoor in models from 600M to 13B parameters, the count holding steady while clean data grows.",
+   "does_not_show": "Non-adversarial text, semantic or attributional uptake, frontier-scale models, or any effect of the archive's own deposits.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30.",
+    "unverified": [
+     "any peer-reviewed venue (none shown on the arXiv page)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W06",
+   "direction": "disconfirms",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-127.B1",
+     "bears_on": "component",
+     "scope": "The component 'the threshold ... is a function of corpus share': the witness finds the number of poisoned documents needed stays near constant as the clean corpus grows, so share is not the governing variable in its setting. The setting is backdoor insertion with an adversarial trigger, a different effect from detection of a canary signature."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Alexandra Souly",
+     "Javier Rando",
+     "Ed Chapman",
+     "Xander Davies",
+     "Burak Hasircioglu",
+     "Ezzeldin Shereen",
+     "Carlos Mougan",
+     "Vasilios Mavroudis",
+     "Erik Jones",
+     "Chris Hicks",
+     "Nicholas Carlini",
+     "Yarin Gal",
+     "Robert Kirk"
+    ],
+    "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2510.07192"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-08",
+     "kind": "preprint",
+     "where": "arXiv 2510.07192 v1",
+     "url": "https://arxiv.org/abs/2510.07192"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "poisoning attacks instead require a near-constant number of documents regardless of dataset size",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "For backdoor poisoning, absolute count governs and corpus share does not.",
+   "does_not_show": "That the same holds for detectability of distinctive vocabulary or canaries; the post-training term of the claim.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page, 2026-10-30. Same source as E-execution-W05, recorded separately because it bears in the opposite direction on a different component.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "E-execution-W07",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-127.B1",
+     "bears_on": "mechanism",
+     "scope": "The claim says the protocol may not achieve detection at frontier pretraining scale and that detection depends on inscription density. The witness finds medium-length traps repeated 100 times undetectable in a 1.3B model and long, often-repeated sequences detectable, so detection hangs on repetition and length. The archive itself cites Meeus et al. 2024 (PRED-1384.F4); this is an anticipation the archive already knew."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Matthieu Meeus",
+     "Igor Shilov",
+     "Manuel Faysse",
+     "Yves-Alexandre de Montjoye"
+    ],
+    "title": "Copyright Traps for Large Language Models",
+    "venue": "ICML 2024 (PMLR v235)",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2402.09363v2",
+     "https://proceedings.mlr.press/v235/meeus24a.html"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-02-14",
+     "kind": "preprint",
+     "where": "arXiv 2402.09363 v1",
+     "url": "https://arxiv.org/abs/2402.09363v2"
+    },
+    {
+     "date": "2024-06-04",
+     "kind": "preprint",
+     "where": "arXiv 2402.09363 v2",
+     "url": "https://arxiv.org/abs/2402.09363v2"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "even medium-length trap sentences repeated a significant number of times (100) are not detectable",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "longer sequences repeated a large number of times can be reliably detected (AUC=0.75) and used as copyright traps.",
+     "from": "abstract, arXiv v2"
+    }
+   ],
+   "shows": "Detectability of inserted sequences in a trained LLM depends on length and repetition; moderate repetition leaves no detectable trace.",
+   "does_not_show": "Frontier-scale models; vocabulary-level signatures of the SPECTRA kind; post-training effects.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page (v2, with submission history), 2026-10-30. ICML venue taken from the search result for proceedings.mlr.press; that page was not fetched.",
+    "unverified": [
+     "ICML 2024 publication (proceedings page not fetched)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W08",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-580.F2",
+     "bears_on": "mechanism",
+     "scope": "Planted pretraining text at 0.1 percent changes model behavior after post-training, a measurable behavioral change from training-layer exposure. The planted content is adversarial and the share is far above any one archive's."
+    },
+    {
+     "claim": "PRED-127.B1",
+     "bears_on": "component",
+     "scope": "The claim's term 'post-training intensity': the witness shows several poisoning effects persist through post-training. It does not measure detection of a signature."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Yiming Zhang",
+     "Javier Rando",
+     "Ivan Evtimov",
+     "Jianfeng Chi",
+     "Eric Michael Smith",
+     "Nicholas Carlini",
+     "Florian Tramèr",
+     "Daphne Ippolito"
+    ],
+    "title": "Persistent Pre-Training Poisoning of LLMs",
+    "venue": "ICLR 2025",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2410.13722v1",
+     "https://proceedings.iclr.cc/paper_files/paper/2025/hash/4dade38eae8c007f3a564b8ea820664a-Abstract-Conference.html"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-10-17",
+     "kind": "preprint",
+     "where": "arXiv 2410.13722 v1",
+     "url": "https://arxiv.org/abs/2410.13722v1"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "poisoning only 0.1% of a model's pre-training dataset is sufficient for three out of four attacks",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "denial-of-service persist through post-training with a poisoning rate of only 0.001%.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Behavior planted through a small share of pretraining data survives the post-training that deployed models receive.",
+   "does_not_show": "Non-adversarial inscription; attribution or vocabulary uptake.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page, 2026-10-30. ICLR 2025 venue from the search result for proceedings.iclr.cc; that page was not fetched.",
+    "unverified": [
+     "ICLR 2025 publication (proceedings page not fetched)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W09",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-42.B1",
+     "bears_on": "mechanism",
+     "scope": "'It does not read disclaimers. It reads associations': the witness finds that finetuning on documents that label a claim false leaves models believing it, and that a 'fictional' label is learned as true. The claim speaks of the retrieval layer; the witness's effect is in the training layer, and in context the same models do read the negation (recorded as E-execution-W10)."
+    },
+    {
+     "claim": "PRED-580.F2",
+     "bears_on": "mechanism",
+     "scope": "Repeated document exposure in training produces measurable belief change at inference, the test the claim describes. The documents are synthetic and the training is finetuning."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Harry Mayne",
+     "Lev McKinney",
+     "Jan Dubiński",
+     "Adam Karvonen",
+     "James Chua",
+     "Owain Evans"
+    ],
+    "title": "Negation Neglect: When models fail to learn negations in training",
+    "venue": "arXiv; NeurIPS 2026 poster",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2605.13829",
+     "https://neurips.cc/virtual/2026/poster/149048"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-05-13",
+     "kind": "preprint",
+     "where": "arXiv 2605.13829 v1",
+     "url": "https://arxiv.org/abs/2605.13829"
+    },
+    {
+     "date": "2026",
+     "kind": "peer-reviewed conference paper",
+     "where": "NeurIPS 2026 poster page",
+     "url": "https://neurips.cc/virtual/2026/poster/149048"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "finetuning LLMs on documents that flag a claim as false makes them believe the claim is true",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "average belief rate increases from 2.5% to 88.6% when finetuning on negated documents",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "claims labeled as fictional are learned as if they were true.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "In finetuning, a disclaimer attached to a claim is largely lost and the claim is learned as true; the effect extends to the label 'fictional'.",
+   "does_not_show": "Pretraining at scale; retrieval or ranking; the archive's material.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page and the NeurIPS 2026 poster page, 2026-10-30.",
+    "unverified": [
+     "the NeurIPS 2026 acceptance date"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W10",
+   "direction": "disconfirms",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-42.B1",
+     "bears_on": "component",
+     "scope": "The claim places the disregard of disclaimers in the retrieval layer. The witness reports that when the same negated documents are given in context, models recognize the claim as false; so at the composition stage, where retrieved text is read in context, disclaimers are read. The ranking stage of retrieval, where embeddings select documents, is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Harry Mayne",
+     "Lev McKinney",
+     "Jan Dubiński",
+     "Adam Karvonen",
+     "James Chua",
+     "Owain Evans"
+    ],
+    "title": "Negation Neglect: When models fail to learn negations in training",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2605.13829"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-05-13",
+     "kind": "preprint",
+     "where": "arXiv 2605.13829 v1",
+     "url": "https://arxiv.org/abs/2605.13829"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "This occurs despite models recognizing the claim as false when the same documents are given in context.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "In context, models read the negation that training loses.",
+   "does_not_show": "Behavior of production retrieval systems or AI Overviews; embedding-stage selection.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page, 2026-10-30. Same source as E-execution-W09, recorded separately for the opposite direction.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "E-execution-W11",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-42.B1",
+     "bears_on": "mechanism",
+     "scope": "Planting associations in the retrieval layer works: five texts in a database of millions steer answers 90 percent of the time. The witness's texts are adversarial and optimized; the claim concerns attribution associations seeded by deposit."
+    },
+    {
+     "claim": "PRED-622.B1",
+     "bears_on": "mechanism",
+     "scope": "Text placed where it will be retrieved governs what the model produces about the target question. The claim concerns a framework that sets an analytic mode; the witness measures target answers."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Wei Zou",
+     "Runpeng Geng",
+     "Binghui Wang",
+     "Jinyuan Jia"
+    ],
+    "title": "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models",
+    "venue": "USENIX Security 2025",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2402.07867v2",
+     "https://www.usenix.org/conference/usenixsecurity25/presentation/zou"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-02-12",
+     "kind": "preprint",
+     "where": "arXiv 2402.07867 v1",
+     "url": "https://arxiv.org/abs/2402.07867v2"
+    },
+    {
+     "date": "2024-08-11",
+     "kind": "preprint",
+     "where": "arXiv 2402.07867 v2",
+     "url": "https://arxiv.org/abs/2402.07867v2"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Our results show PoisonedRAG could achieve a 90% attack success rate when injecting five malicious texts",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "into a knowledge database with millions of texts",
+     "from": "abstract, arXiv v2"
+    }
+   ],
+   "shows": "A handful of planted texts reliably governs RAG output on targeted questions.",
+   "does_not_show": "Web-scale search or AI Overviews; benign deposits; persistence over time.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page (v2 with history), 2026-10-30. USENIX venue from the search result; that page was not fetched.",
+    "unverified": [
+     "USENIX Security 2025 publication (page not fetched)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W12",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-622.B1",
+     "bears_on": "mechanism",
+     "scope": "Retrieved text acts as instruction: the witness argues and demonstrates that prompts in data likely to be retrieved act like code execution in LLM-integrated applications. The claim's case is a non-adversarial critical framework causing an analytic mode; the witness's cases are adversarial."
+    },
+    {
+     "claim": "PRED-42.B1",
+     "bears_on": "mechanism",
+     "scope": "Seeding text into what will be retrieved changes system behavior. The witness concerns instructions; the claim concerns attribution associations."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Kai Greshake",
+     "Sahar Abdelnabi",
+     "Shailesh Mishra",
+     "Christoph Endres",
+     "Thorsten Holz",
+     "Mario Fritz"
+    ],
+    "title": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2302.12173v2"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-02-23",
+     "kind": "preprint",
+     "where": "arXiv 2302.12173 v1",
+     "url": "https://arxiv.org/abs/2302.12173v2"
+    },
+    {
+     "date": "2023-05-05",
+     "kind": "preprint",
+     "where": "arXiv 2302.12173 v2",
+     "url": "https://arxiv.org/abs/2302.12173v2"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "We argue that LLM-Integrated Applications blur the line between data and instructions.",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "strategically injecting prompts into data likely to be retrieved",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "processing retrieved prompts can act as arbitrary code execution",
+     "from": "abstract, arXiv v2"
+    }
+   ],
+   "shows": "The founding demonstration that retrieved documents are executed as instructions by deployed LLM applications.",
+   "does_not_show": "Mode persistence; density thresholds; non-adversarial frameworks.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page (v2 with history), 2026-10-30.",
+    "unverified": [
+     "later peer-reviewed venue (AISec 2023 is commonly cited; not checked)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W13",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-622.B1",
+     "bears_on": "mechanism",
+     "scope": "Models do not reliably separate instructions from data, which is the condition under which a retrieved framework can set the model's mode. The witness measures instruction following in data fields; the analytic-mode effect the claim projects is untested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Egor Zverev",
+     "Sahar Abdelnabi",
+     "Soroush Tabesh",
+     "Mario Fritz",
+     "Christoph H. Lampert"
+    ],
+    "title": "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2403.06833v3"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-03-11",
+     "kind": "preprint",
+     "where": "arXiv 2403.06833 v1",
+     "url": "https://arxiv.org/abs/2403.06833v1"
+    },
+    {
+     "date": "2025-01-31",
+     "kind": "preprint",
+     "where": "arXiv 2403.06833 v3",
+     "url": "https://arxiv.org/abs/2403.06833v3"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "the problem of instruction-data separation is real",
+     "from": "abstract, arXiv v3"
+    },
+    {
+     "quote": "all models fail to achieve high separation",
+     "from": "abstract, arXiv v3"
+    }
+   ],
+   "shows": "Across models tested, text placed as data is often executed as instruction.",
+   "does_not_show": "Retrieval density or mode persistence across turns.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page (v3 with original submission date), 2026-10-30.",
+    "unverified": [
+     "ICLR 2025 venue (not shown on the page)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W14",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-622.B1",
+     "bears_on": "mechanism",
+     "scope": "A document's embedded text steers a model asked to evaluate the document (LLM peer review), the closest case found to a retrieved text governing the analysis performed on it. The embedded prompts are hidden and adversarial; the claim's framework is overt."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Matteo Gioele Collu",
+     "Umberto Salviati",
+     "Roberto Confalonieri",
+     "Mauro Conti",
+     "Giovanni Apruzzese"
+    ],
+    "title": "Misleading Large Language Models used (or misused) in Scientific Peer-Reviewing via Hidden Prompt-Injection Attacks",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2508.20863"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-08-28",
+     "kind": "preprint",
+     "where": "arXiv 2508.20863 v1",
+     "url": "https://arxiv.org/abs/2508.20863"
+    },
+    {
+     "date": "2025-08-29",
+     "kind": "preprint",
+     "where": "arXiv 2508.20863 v2",
+     "url": "https://arxiv.org/abs/2508.20863"
+    },
+    {
+     "date": "2026-03-30",
+     "kind": "preprint",
+     "where": "arXiv 2508.20863 v3",
+     "url": "https://arxiv.org/abs/2508.20863"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "adversarial prompts can reliably mislead the LLM",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Text inside a paper's PDF steers commercial LLM-based review of that paper.",
+   "does_not_show": "Which models; overt frameworks; density.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page and version history, 2026-10-30.",
+    "unverified": [
+     "the models tested (not named in the abstract)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W15",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-950.F2",
+     "bears_on": "method",
+     "scope": "The claim's test (feed a book to a summarizer and ask what was lost) carried out by others on 26 books, with claim-level human annotation and a typology of omissions. The witness tests novels for narrative faithfulness; the archive's measure BCV is not used."
+    },
+    {
+     "claim": "PRED-515.F1",
+     "bears_on": "method",
+     "scope": "The compression test (third-party summarization, check the core survives) carried out at book length. Cross-interpreter stability, the second test, is not addressed."
+    },
+    {
+     "claim": "PRED-29.F1",
+     "bears_on": "component",
+     "scope": "Question (2), whether platform summarization can be architecturally preservative: the witness reports systematic omissions and end-weighting in LLM book summaries, and that LLM raters do not detect unfaithful claims well."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Yekyung Kim",
+     "Yapei Chang",
+     "Marzena Karpinska",
+     "Aparna Garimella",
+     "Varun Manjunatha",
+     "Kyle Lo",
+     "Tanya Goyal",
+     "Mohit Iyyer"
+    ],
+    "title": "FABLES: Evaluating faithfulness and content selection in book-length summarization",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2404.01261"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-04-01",
+     "kind": "preprint",
+     "where": "arXiv 2404.01261 v1",
+     "url": "https://arxiv.org/abs/2404.01261"
+    },
+    {
+     "date": "2024-09-30",
+     "kind": "preprint",
+     "where": "arXiv 2404.01261 v2",
+     "url": "https://arxiv.org/abs/2404.01261"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "a dataset of annotations on 3,158 claims made in LLM-generated summaries of 26 books",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "develop a typology of omission errors related to crucial narrative elements",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "a systematic over-emphasis on events occurring towards the end of the book",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "none correlates strongly with human annotations, especially with regard to detecting unfaithful claims",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Book-length LLM summaries omit crucial elements and over-weight the ending, and automatic raters miss unfaithful claims.",
+   "does_not_show": "Operatively dense or argumentative texts; any threshold of compression; platform summarizers such as AI Overviews.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page with history, 2026-10-30.",
+    "unverified": [
+     "COLM 2024 venue (commonly reported; not shown on the page)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W16",
+   "direction": "disconfirms",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-34.F2",
+     "bears_on": "component",
+     "scope": "The component 'Current benchmarks (MMLU, HumanEval, etc.) do not test structural fidelity to complex input': a benchmark of faithfulness and content selection on book-length input existed two years before the claim. The claim's named benchmarks indeed do not; the 'etc.' is what the witness contradicts. The Four Thresholds diagnostic is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Yekyung Kim",
+     "Yapei Chang",
+     "Marzena Karpinska",
+     "Aparna Garimella",
+     "Varun Manjunatha",
+     "Kyle Lo",
+     "Tanya Goyal",
+     "Mohit Iyyer"
+    ],
+    "title": "FABLES: Evaluating faithfulness and content selection in book-length summarization",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2404.01261"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-04-01",
+     "kind": "preprint",
+     "where": "arXiv 2404.01261 v1",
+     "url": "https://arxiv.org/abs/2404.01261"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "a dataset of annotations on 3,158 claims made in LLM-generated summaries of 26 books",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Fidelity to long complex input was already being benchmarked.",
+   "does_not_show": "Execution, confabulation or competent reproduction as thresholds; structural fidelity in the archive's sense of architecture.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page, 2026-10-30. Same source as E-execution-W15.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "E-execution-W17",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-950.F2",
+     "bears_on": "mechanism",
+     "scope": "What a summarizer loses: across 4,900 summaries, LLMs broaden the scope of scientific conclusions beyond the source, the loss of qualification a ghost-of-the-book test would register. Scientific abstracts and articles are the input."
+    },
+    {
+     "claim": "PRED-29.F1",
+     "bears_on": "component",
+     "scope": "Question (2): even when prompted for accuracy, most models still overgeneralize, so prompting alone does not make summarization preservative."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Uwe Peters",
+     "Benjamin Chin-Yee"
+    ],
+    "title": "Generalization Bias in Large Language Model Summarization of Scientific Research",
+    "venue": "arXiv; Royal Society Open Science 12(4) 241776",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2504.00025v1",
+     "https://royalsocietypublishing.org/rsos/article/12/4/241776/235656/Generalization-bias-in-large-language-model"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-03-28",
+     "kind": "preprint",
+     "where": "arXiv 2504.00025 v1",
+     "url": "https://arxiv.org/abs/2504.00025v1"
+    },
+    {
+     "date": "2025-04",
+     "kind": "peer-reviewed article",
+     "where": "Royal Society Open Science 12(4)",
+     "url": "https://royalsocietypublishing.org/rsos/article/12/4/241776/235656/Generalization-bias-in-large-language-model"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "comparing 4900 LLM-generated summaries to their original scientific texts",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "LLM summaries were nearly five times more likely to contain broad generalizations",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "Even when explicitly prompted for accuracy",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "LLM summaries of science overstate generality, about five times as often as human summaries, and accuracy prompts do not cure it.",
+   "does_not_show": "Literary or operative texts; compression ratios; platform summarizers.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page, 2026-10-30. The journal page failed to load and the PMC copy returned a browser check.",
+    "unverified": [
+     "the journal version and its date (volume 12 issue 4, April 2025, taken from the URL)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W18",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-176.F2",
+     "bears_on": "method",
+     "scope": "Provenance preservation under RAG measured by others: the share of generated sentences supported by their citations, and of citations supporting their sentence, in four generative search engines. The witness measures support of claims by sources; the claim's metric is preservation of a publication's provenance chain."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Nelson F. Liu",
+     "Tianyi Zhang",
+     "Percy Liang"
+    ],
+    "title": "Evaluating Verifiability in Generative Search Engines",
+    "venue": "Findings of EMNLP 2023",
+    "doi": "10.18653/v1/2023.findings-emnlp.467",
+    "urls": [
+     "https://arxiv.org/abs/2304.09848v2"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-04-19",
+     "kind": "preprint",
+     "where": "arXiv 2304.09848 v1",
+     "url": "https://arxiv.org/abs/2304.09848v2"
+    },
+    {
+     "date": "2023-10-23",
+     "kind": "preprint",
+     "where": "arXiv 2304.09848 v2",
+     "url": "https://arxiv.org/abs/2304.09848v2"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "on average, a mere 51.5% of generated sentences are fully supported by citations",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "only 74.5% of citations support their associated sentence",
+     "from": "abstract, arXiv v2"
+    }
+   ],
+   "shows": "Half the sentences in generative search answers lack full citation support and a quarter of citations do not support their sentence.",
+   "does_not_show": "Training-layer publications; provenance chains; any named author's attribution.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page with history, 2026-10-30. The Findings of EMNLP venue and DOI come from ACL Anthology search results; that page was not fetched.",
+    "unverified": [
+     "the ACL Anthology DOI (from search results)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W19",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-176.F2",
+     "bears_on": "method",
+     "scope": "Provenance under live generative search measured: given an excerpt, each tool was asked for headline, publisher, date and URL, and errors and citation to syndicated copies counted. News articles stand in for training-layer publications."
+    },
+    {
+     "claim": "PRED-219.F1",
+     "bears_on": "mechanism",
+     "scope": "Systems that 'liquidate' attribution: the witness finds tools citing syndicated copies over the original publisher even with licensing deals. The essay itself is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Klaudia Jaźwińska",
+     "Aisvarya Chandrasekar"
+    ],
+    "title": "AI Search Has a Citation Problem",
+    "venue": "Columbia Journalism Review, Tow Center for Digital Journalism",
+    "doi": null,
+    "urls": [
+     "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-03-06",
+     "kind": "report",
+     "where": "cjr.org, Tow Center",
+     "url": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Collectively, they provided incorrect answers to more than 60 percent of queries.",
+     "from": "findings, CJR article"
+    },
+    {
+     "quote": "More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs",
+     "from": "findings, CJR article"
+    },
+    {
+     "quote": "chatbots directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+     "from": "findings, CJR article"
+    }
+   ],
+   "shows": "Across 1,600 queries to eight generative search tools, most source identifications were wrong and provenance often went to copies.",
+   "does_not_show": "Scholarly deposits; Google AI Overviews (Gemini was tested as a chatbot); attribution of ideas.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the CJR article, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "E-execution-W20",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-218.F1",
+     "bears_on": "mechanism",
+     "scope": "The packet's diagnostic (preserve attribution, or liquidate it): the witness measures quote attribution across eleven LLMs and finds 'suppression', omission of attribution when authorship is available. The packet itself is not processed in the study."
+    },
+    {
+     "claim": "PRED-219.F1",
+     "bears_on": "mechanism",
+     "scope": "Same mechanism as for PRED-218.F1: liquidation of authorship observed as a measured failure mode, unevenly distributed by group."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Eliza Berman",
+     "Bella Chang",
+     "Daniel B. Neill",
+     "Emily Black"
+    ],
+    "title": "Attribution Bias in Large Language Models",
+    "venue": "arXiv (cs.AI)",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2604.05224",
+     "https://arxiv.org/abs/2604.05224v2"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-04-06",
+     "kind": "preprint",
+     "where": "arXiv 2604.05224 v1",
+     "url": "https://arxiv.org/abs/2604.05224"
+    },
+    {
+     "date": "2026-09-24",
+     "kind": "preprint",
+     "where": "arXiv 2604.05224 v2",
+     "url": "https://arxiv.org/abs/2604.05224v2"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "quote attribution remains a challenging task even for frontier models",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "a distinct failure mode in which models omit attribution entirely",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "even when the model has access to authorship information",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "suppression is widespread and unevenly distributed across demographic groups",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "LLMs drop attribution of quotes even when authorship is supplied, and do so unequally across groups.",
+   "does_not_show": "Scholarly attribution of concepts; retrieval or summarization pipelines; the archive's packets.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page (v2 with history), 2026-10-30. A search snippet labels it a COLM 2026 paper; the arXiv page does not say so.",
+    "unverified": [
+     "COLM 2026 publication"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W21",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-176.F1",
+     "bears_on": "method",
+     "scope": "The claim's natural experiment (vary presentation, measure citation) carried out by others: rewriting strategies applied to web sources and visibility in generative engine answers measured. GEO varies style and added evidence (statistics, quotations, citations); genre framing as such is not one of its variables."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Pranjal Aggarwal",
+     "Vishvak Murahari",
+     "Tanmay Rajpurohit",
+     "Ashwin Kalyan",
+     "Karthik Narasimhan",
+     "Ameet Deshpande"
+    ],
+    "title": "GEO: Generative Engine Optimization",
+    "venue": "arXiv; KDD 2024",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2311.09735v3"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-11-16",
+     "kind": "preprint",
+     "where": "arXiv 2311.09735 v1",
+     "url": "https://arxiv.org/abs/2311.09735v1"
+    },
+    {
+     "date": "2024-06-28",
+     "kind": "preprint",
+     "where": "arXiv 2311.09735 v3",
+     "url": "https://arxiv.org/abs/2311.09735v3"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "GEO can boost visibility by up to $40\\%$ in generative engine responses",
+     "from": "abstract, arXiv v3 (LaTeX as served)"
+    },
+    {
+     "quote": "the efficacy of these strategies varies across domains",
+     "from": "abstract, arXiv v3"
+    }
+   ],
+   "shows": "Presentation changes to a source shift how much of it generative engines surface, with effects that vary by domain.",
+   "does_not_show": "Genre framing with propositional content held fixed; confidence or inferred significance.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page v3, 2026-10-30.",
+    "unverified": [
+     "KDD 2024 venue (not shown on the page)",
+     "the v2 date"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W22",
+   "direction": "disconfirms",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-176.F1",
+     "bears_on": "mechanism",
+     "scope": "The claim holds it highly plausible that framing changes extraction and citation. The witness finds models weigh relevance and largely ignore stylistic features such as scientific references or neutral tone, which are framing cues. Genre framing in the archive's sense (scientific versus literary register for the same content) is not directly tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Alexander Wan",
+     "Eric Wallace",
+     "Dan Klein"
+    ],
+    "title": "What Evidence Do Language Models Find Convincing?",
+    "venue": "arXiv; ACL 2024",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2402.11782v2"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-02-19",
+     "kind": "preprint",
+     "where": "arXiv 2402.11782 v1",
+     "url": "https://arxiv.org/abs/2402.11782v2"
+    },
+    {
+     "date": "2024-08-09",
+     "kind": "preprint",
+     "where": "arXiv 2402.11782 v2",
+     "url": "https://arxiv.org/abs/2402.11782v2"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "current models rely heavily on the relevance of a website to the query",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "largely ignoring stylistic features that humans find important",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "whether a text contains scientific references or is written with a neutral tone",
+     "from": "abstract, arXiv v2"
+    }
+   ],
+   "shows": "For contested questions, LLM judgments of which evidence convinces track query relevance, with stylistic cues of scholarly register carrying little weight.",
+   "does_not_show": "Citation or extraction in production search; inferred significance; literary framing.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page v2, 2026-10-30. ACL 2024 venue from a search result (aclanthology 2024.acl-long.403); that page was not fetched.",
+    "unverified": [
+     "ACL 2024 venue"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W23",
+   "direction": "disconfirms",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-176.F1",
+     "bears_on": "mechanism",
+     "scope": "In a controlled two-document RAG testbed varying one content factor at a time, relevance and list position dominate which source is cited first and formatting-only edits have little impact. That counts against strong framing effects on citation. Some cues (price, recency, completeness, trust) do help, and genre framing is not among the eighteen factors as described in the abstract."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Rahul Vishwakarma",
+     "Shushant Kumar",
+     "Ratnesh Jamidar"
+    ],
+    "title": "What Gets Cited: Competitive GEO in AI Answer Engines",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2605.25517"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-05-25",
+     "kind": "preprint",
+     "where": "arXiv 2605.25517 v1",
+     "url": "https://arxiv.org/abs/2605.25517"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "topical relevance and list position are the biggest drivers of being cited first",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "formatting-only edits have little impact",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "In a controlled testbed, what gets cited first is mostly relevance and position.",
+   "does_not_show": "Production engines; extraction, confidence or inferred significance; scholarly genres.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "the full list of 18 factors"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W24",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-284.A1",
+     "bears_on": "component",
+     "scope": "The component 'Outputs converge on safe, flat, interchangeable prose': across 26K open-ended queries, single models repeat themselves and different models produce strikingly similar outputs. 'Meaning starvation' in users and market pressure against legibility are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Liwei Jiang",
+     "Yuanjun Chai",
+     "Margaret Li",
+     "Mickel Liu",
+     "Raymond Fok",
+     "Nouha Dziri",
+     "Yulia Tsvetkov",
+     "Maarten Sap",
+     "Alon Albalak",
+     "Yejin Choi"
+    ],
+    "title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)",
+    "venue": "arXiv; NeurIPS 2025 (oral)",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2510.22954v1",
+     "https://neurips.cc/virtual/2025/oral/121422"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-27",
+     "kind": "preprint",
+     "where": "arXiv 2510.22954 v1",
+     "url": "https://arxiv.org/abs/2510.22954v1"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "(1) intra-model repetition, where a single model consistently generates similar responses",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "(2) inter-model homogeneity, where different models produce strikingly similar outputs",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "Infinity-Chat, a large-scale dataset of 26K diverse, real-world, open-ended user queries",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Open-ended LLM outputs converge within and across models.",
+   "does_not_show": "Whether the convergence is 'safe' or 'flat' prose in the claim's sense; user response; the cascade of later stages.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page, 2026-10-30. NeurIPS 2025 venue from the neurips.cc search results; that page was not fetched.",
+    "unverified": [
+     "NeurIPS 2025 oral status"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W25",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-960.F1",
+     "bears_on": "method",
+     "scope": "Behavioral fingerprinting of agent outputs by vocabulary distribution, the Phase 2 method, carried out by others: a classifier separates five model families at 97.1 percent from output text, rooted in word-level distributions, and survives rewriting and summarization. Drift across versions of one agent is not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Mingjie Sun",
+     "Yida Yin",
+     "Zhiqiu Xu",
+     "J. Zico Kolter",
+     "Zhuang Liu"
+    ],
+    "title": "Idiosyncrasies in Large Language Models",
+    "venue": "arXiv; ICML 2025",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2502.12150"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-02-17",
+     "kind": "preprint",
+     "where": "arXiv 2502.12150 v1",
+     "url": "https://arxiv.org/abs/2502.12150v1"
+    },
+    {
+     "date": "2025-06-16",
+     "kind": "preprint",
+     "where": "arXiv 2502.12150 v2",
+     "url": "https://arxiv.org/abs/2502.12150"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Notably, we achieve 97.1% accuracy on held-out validation data in the five-way classification problem",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "Our further investigation reveals that these idiosyncrasies are rooted in word-level distributions.",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "These patterns persist even when the texts are rewritten, translated, or summarized by an external LLM.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Output text carries a stable vocabulary fingerprint of its source model.",
+   "does_not_show": "A divergence score against archived fingerprints of the same agent; constraint adherence.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page with history, 2026-10-30. ICML 2025 from search results; that page was not fetched.",
+    "unverified": [
+     "ICML 2025 venue"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W26",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-960.F1",
+     "bears_on": "mechanism",
+     "scope": "Behavioral drift exists and needs monitoring: the March and June 2023 versions of GPT-3.5 and GPT-4 differed greatly on fixed tasks. The witness compares task performance; output fingerprints are not its measure."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Lingjiao Chen",
+     "Matei Zaharia",
+     "James Zou"
+    ],
+    "title": "How is ChatGPT's behavior changing over time?",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2307.09009v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-07-18",
+     "kind": "preprint",
+     "where": "arXiv 2307.09009 v1",
+     "url": "https://arxiv.org/abs/2307.09009v1"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "the performance and behavior of both GPT-3.5 and GPT-4 can vary greatly over time",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "highlighting the need for continuous monitoring of LLMs",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Deployed LLM behavior drifts substantially between versions under the same name.",
+   "does_not_show": "Fingerprint-based divergence detection; agent manifests.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the arXiv abstract page (v1), 2026-10-30.",
+    "unverified": [
+     "later versions and journal publication (reported in search results; unchecked)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W27",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-1534.F1",
+     "bears_on": "mechanism",
+     "scope": "The rule that a lexical test returns false negatives on compressed or re-sorted material: the witness's premise and method are that semantic duplicates, similar without being identical, escape exact deduplication and are found by embeddings. Its corpus is web-scale image-text data."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Amro Abbas",
+     "Kushal Tirumala",
+     "Dániel Simig",
+     "Surya Ganguli",
+     "Ari S. Morcos"
+    ],
+    "title": "SemDeDup: Data-efficient learning at web-scale through semantic deduplication",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://huggingface.co/papers/2303.09540"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-03",
+     "kind": "preprint",
+     "where": "arXiv 2303.09540",
+     "url": "https://huggingface.co/papers/2303.09540"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "data pairs which are semantically similar, but not exactly identical",
+     "from": "abstract, Hugging Face papers page"
+    },
+    {
+     "quote": "can remove 50% of the data with minimal performance loss",
+     "from": "abstract, Hugging Face papers page"
+    }
+   ],
+   "shows": "Embedding-based deduplication finds a large class of near-duplicates that exact matching misses.",
+   "does_not_show": "Compression of a scholarly corpus; completeness of the archive's own blog index.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the Hugging Face papers page (published Mar 16, 2023), 2026-10-30; the arXiv page itself was not fetched.",
+    "unverified": [
+     "the arXiv v1 day (the Hugging Face page gives Mar 16, 2023)"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W28",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-204.A1",
+     "bears_on": "mechanism",
+     "scope": "Failure condition (a), that a machine-facing provenance block has no effect on summarizer output: the witness finds JSON-LD schema added to 1,885 pages moved AI citations little against matched controls, with a small decline in AI Overviews. Schema is a different block from the SPXI self-audit text and the measure is citation count; provenance retention is unmeasured."
+    },
+    {
+     "claim": "PRED-204.F2",
+     "bears_on": "mechanism",
+     "scope": "The planned Layer 2 (JSON-LD via Schema.org) has, in this observational study, no detectable citation effect on Google AI Overviews, AI Mode or ChatGPT."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Louise Linehan",
+     "Xibeijia Guan"
+    ],
+    "title": "We Tracked 1,885 Pages Adding Schema. AI Citations Barely Moved.",
+    "venue": "Ahrefs blog",
+    "doi": null,
+    "urls": [
+     "https://ahrefs.com/blog/schema-ai-citations/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-05-11",
+     "kind": "report",
+     "where": "ahrefs.com blog (updated 2026-06-09)",
+     "url": "https://ahrefs.com/blog/schema-ai-citations/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Adding schema produced no major uplift in citations on any platform.",
+     "from": "headline finding, Ahrefs blog"
+    },
+    {
+     "quote": "Small but statistically significant decline relative to matched controls",
+     "from": "AI Overviews result, Ahrefs blog"
+    },
+    {
+     "quote": "Statistically indistinguishable from zero",
+     "from": "AI Mode and ChatGPT results, Ahrefs blog"
+    }
+   ],
+   "shows": "Matched difference-in-differences over 30 days shows no citation uplift from adding structured data.",
+   "does_not_show": "Provenance fidelity in the composed answer; plaintext self-audit blocks; effects past 30 days.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the Ahrefs post, 2026-10-30, after finding it through an authoritytech.io commentary page.",
+    "unverified": [
+     "the full method appendix"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W29",
+   "direction": "supports",
+   "evidence_class": "news",
+   "claims": [
+    {
+     "claim": "PRED-204.A1",
+     "bears_on": "mechanism",
+     "scope": "Condition (a) in another form of machine-facing file: across about 300,000 domains, presence of llms.txt showed no clear relation to AI citation frequency. Correlational, and the file is a site-level index unlike an in-document provenance block."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Matt G. Southern"
+    ],
+    "title": "LLMs.txt Shows No Clear Effect On AI Citations, Based On 300k Domains",
+    "venue": "Search Engine Journal (reporting an SE Ranking study)",
+    "doi": null,
+    "urls": [
+     "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-11-20",
+     "kind": "news",
+     "where": "searchenginejournal.com",
+     "url": "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "doesn't seem to directly impact AI citation frequency. At least not yet.",
+     "from": "SEJ article, quoting the study"
+    },
+    {
+     "quote": "removing the llms.txt feature actually improved the model’s accuracy",
+     "from": "SEJ article"
+    }
+   ],
+   "shows": "A large correlational analysis finds no citation benefit from a machine-facing site file.",
+   "does_not_show": "Causal effect; in-document blocks; provenance retention.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the SEJ article, 2026-10-30. The SE Ranking study itself was not fetched.",
+    "unverified": [
+     "the SE Ranking study's own page, date and the AI systems covered"
+    ]
+   }
+  },
+  {
+   "id": "E-execution-W30",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-722.B1",
+     "bears_on": "component",
+     "scope": "The component that open-weight models have made reasoning capability increasingly reproducible: frontier open-weight models trail the best models by about three months on Epoch's capability index. The thesis that the moat moves to the corpus is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Luke Emberson"
+    ],
+    "title": "Open-weight models lag state-of-the-art by around 3 months on average",
+    "venue": "Epoch AI Data Insights",
+    "doi": null,
+    "urls": [
+     "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-30",
+     "kind": "report",
+     "where": "epoch.ai data insight",
+     "url": "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Frontier open-weight models lag behind the most capable models by an average of 3 months",
+     "from": "headline, Epoch AI"
+    }
+   ],
+   "shows": "The capability gap between open-weight and closed frontier models is short.",
+   "does_not_show": "Scarcity of substrate or corpus; indices as sovereign territory.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the Epoch AI page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "E-execution-W31",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-722.B1",
+     "bears_on": "component",
+     "scope": "The component 'at dramatically lower cost': the price of reaching a fixed performance level fell 9x to 900x per year depending on the milestone. The corpus-moat thesis is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Ben Cottier",
+     "Ben Snodin",
+     "David Owen",
+     "Tom Adamczewski"
+    ],
+    "title": "LLM inference prices have fallen rapidly but unequally across tasks",
+    "venue": "Epoch AI Data Insights",
+    "doi": null,
+    "urls": [
+     "https://epoch.ai/data-insights/llm-inference-price-trends"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-03-12",
+     "kind": "report",
+     "where": "epoch.ai data insight",
+     "url": "https://epoch.ai/data-insights/llm-inference-price-trends"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "The rate of decline varies dramatically depending on the performance milestone, ranging from 9x to 900x per year.",
+     "from": "headline, Epoch AI"
+    }
+   ],
+   "shows": "The cost of a fixed level of LLM capability falls by one to nearly three orders of magnitude a year.",
+   "does_not_show": "Where scarcity moves; corpus access.",
+   "checked": {
+    "by": "Claude (Opus 5.5), reader for theme E-execution, 2026-10-30",
+    "date": "2026-10-30",
+    "how": "Read the Epoch AI page, 2026-10-30.",
+    "unverified": []
+   }
+  }
+ ],
+ "searches": [
+  {
+   "query": "InjecGuard over-defense prompt injection guard models NotInject benign trigger words",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-139.F1",
+    "PRED-1384.A1"
+   ],
+   "result": "arXiv 2410.22770 and review mirrors",
+   "outcome": "witness E-execution-W01"
+  },
+  {
+   "query": "prompt injection detector false positive rate benign instructions benchmark 2026",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-139.F1",
+    "PRED-1384.A1"
+   ],
+   "result": "arXiv 2610.03448; vendor leaderboards and blog benchmarks (bastionsoft, promptguard, a 2026-09-28 blog post)",
+   "outcome": "witness E-execution-W02; vendor pages excluded: vendor marketing without disclosed method"
+  },
+  {
+   "query": "A small number of samples can poison LLMs of any size 250 documents arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-580.F2",
+    "PRED-127.B1"
+   ],
+   "result": "arXiv 2510.07192 and the Anthropic research page",
+   "outcome": "witness E-execution-W05, E-execution-W06"
+  },
+  {
+   "query": "Meeus copyright traps for large language models arXiv 2402.09363 sequence repetition detectability",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-127.B1"
+   ],
+   "result": "arXiv 2402.09363, ICML 2024 pages",
+   "outcome": "witness E-execution-W07"
+  },
+  {
+   "query": "NIST AI 100-2 E2025 adversarial machine learning taxonomy indirect prompt injection definition",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-194.A1",
+    "PRED-1384.A1"
+   ],
+   "result": "NIST PDF and commentary",
+   "outcome": "excluded: the definitions in sections 3.3-3.4 and the glossary could not be reached in the fetched text"
+  },
+  {
+   "query": "OWASP Top 10 for LLM applications 2025 LLM01 prompt injection definition direct indirect external sources",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1384.A1",
+    "PRED-194.A1"
+   ],
+   "result": "secondary guides to OWASP 2025",
+   "outcome": "led to fetch of the official page; witness E-execution-W04"
+  },
+  {
+   "query": "NIST AI 100-2 2026 edition adversarial machine learning draft released",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-194.A1"
+   ],
+   "result": "only the E2025 edition (March 2025) and commentary",
+   "outcome": "nothing: no later NIST AI 100-2 edition found; falsifier (c) not fired"
+  },
+  {
+   "query": "Greshake \"Not what you've signed up for\" indirect prompt injection retrieved content arXiv 2302.12173",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-622.B1",
+    "PRED-42.B1"
+   ],
+   "result": "arXiv 2302.12173",
+   "outcome": "witness E-execution-W12"
+  },
+  {
+   "query": "PoisonedRAG knowledge corruption attacks retrieval-augmented generation five malicious texts 90% attack success",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-42.B1",
+    "PRED-622.B1"
+   ],
+   "result": "arXiv 2402.07867, USENIX Security 2025",
+   "outcome": "witness E-execution-W11"
+  },
+  {
+   "query": "FABLES faithfulness book-length summarization LLM claims unfaithful omissions arXiv Kim 2024",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-950.F2",
+    "PRED-515.F1",
+    "PRED-29.F1",
+    "PRED-34.F2"
+   ],
+   "result": "arXiv 2404.01261 and related faithfulness papers",
+   "outcome": "witness E-execution-W15, E-execution-W16"
+  },
+  {
+   "query": "Evaluating Verifiability in Generative Search Engines Liu Zhang Liang citation recall precision",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-176.F2"
+   ],
+   "result": "arXiv 2304.09848, Findings of EMNLP 2023",
+   "outcome": "witness E-execution-W18"
+  },
+  {
+   "query": "Artificial Hivemind open-ended homogeneity of language models intra-model inter-model arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-284.A1"
+   ],
+   "result": "arXiv 2510.22954, NeurIPS 2025",
+   "outcome": "witness E-execution-W24"
+  },
+  {
+   "query": "\"What Evidence Do Language Models Find Convincing\" Wan Wallace Klein relevance stylistic features scientific references",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-176.F1"
+   ],
+   "result": "arXiv 2402.11782",
+   "outcome": "witness E-execution-W22"
+  },
+  {
+   "query": "GEO Generative Engine Optimization Aggarwal arXiv 2311.09735 visibility 40%",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-176.F1"
+   ],
+   "result": "arXiv 2311.09735",
+   "outcome": "witness E-execution-W21"
+  },
+  {
+   "query": "Idiosyncrasies in Large Language Models classifier distinguish model outputs accuracy Sun 2025",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-960.F1"
+   ],
+   "result": "arXiv 2502.12150, ICML 2025",
+   "outcome": "witness E-execution-W25"
+  },
+  {
+   "query": "OWASP Top 10 for LLM Applications 2026 version release prompt injection",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-194.A1",
+    "PRED-1384.A1"
+   ],
+   "result": "many vendor blogs titled '2026'; the official OWASP page lists only the 2025 edition",
+   "outcome": "nothing: no official 2026 edition; vendor '2026' pages excluded as secondary"
+  },
+  {
+   "query": "Can LLMs separate instructions from data SEP benchmark Zverev arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-622.B1"
+   ],
+   "result": "arXiv 2403.06833",
+   "outcome": "witness E-execution-W13"
+  },
+  {
+   "query": "hidden prompts in manuscripts AI peer review LLM reviews manipulated arXiv 2025 study",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-622.B1"
+   ],
+   "result": "arXiv 2508.20863, 2507.06185, CEUR paper, journal blog",
+   "outcome": "witness E-execution-W14; 2507.06185 candidate"
+  },
+  {
+   "query": "LLM fine-tuned on documents labeled false or fictional still adopts the claims disclaimer synthetic document finetuning belief",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-42.B1",
+    "PRED-580.F2"
+   ],
+   "result": "Negation Neglect (arXiv 2605.13829, NeurIPS 2026); arXiv 2510.17941 on implanted facts",
+   "outcome": "witness E-execution-W09, E-execution-W10; 2510.17941 candidate"
+  },
+  {
+   "query": "How is ChatGPT's behavior changing over time Chen Zaharia Zou arXiv 2307.09009",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-960.F1"
+   ],
+   "result": "arXiv 2307.09009",
+   "outcome": "witness E-execution-W26"
+  },
+  {
+   "query": "SemDeDup semantic deduplication web-scale data embeddings near-duplicates exact dedup misses",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1534.F1"
+   ],
+   "result": "Hugging Face papers page, NVIDIA NeMo docs",
+   "outcome": "witness E-execution-W27"
+  },
+  {
+   "query": "\"Negation Neglect\" models fail to learn negations in training arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-42.B1"
+   ],
+   "result": "arXiv 2605.13829",
+   "outcome": "witness E-execution-W09 (version located)"
+  },
+  {
+   "query": "Tow Center CJR AI search engines citation problem study eight generative search tools incorrect 60%",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-176.F2",
+    "PRED-219.F1"
+   ],
+   "result": "CJR Tow Center article and coverage",
+   "outcome": "witness E-execution-W19"
+  },
+  {
+   "query": "Persistent pre-training poisoning of LLMs 0.1% persists post-training Zhang arXiv 2410.13722",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-580.F2",
+    "PRED-127.B1"
+   ],
+   "result": "arXiv 2410.13722, ICLR 2025",
+   "outcome": "witness E-execution-W08"
+  },
+  {
+   "query": "llms.txt study effect on AI citations analysis domains no correlation 2025",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-204.A1"
+   ],
+   "result": "SEJ report on SE Ranking's 300k-domain study; other blog analyses",
+   "outcome": "witness E-execution-W29"
+  },
+  {
+   "query": "schema markup structured data effect on AI Overview citations controlled experiment 2026",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-204.A1",
+    "PRED-204.F2"
+   ],
+   "result": "Ahrefs 2026 study and many secondary posts",
+   "outcome": "witness E-execution-W28; an innflows.com 'controlled test' candidate"
+  },
+  {
+   "query": "MITRE ATLAS AML.T0051 LLM prompt injection indirect definition adversary",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1384.A1"
+   ],
+   "result": "MITRE D3FEND pages for AML.T0051",
+   "outcome": "excluded: definition page undated; it defines indirect injection by data channel and by 'malicious prompts', mixing origin and intent"
+  },
+  {
+   "query": "arXiv 2026 benign instructions in retrieved documents misclassified as prompt injection over-refusal agents utility",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-139.F1",
+    "PRED-1384.A1"
+   ],
+   "result": "ICON, ARGUS, 'Ignored, Not Refused' (2610.23254), 'AI Agents May Always Fall for Prompt Injections' (2605.17634), a Zenodo injection-refusal protocol",
+   "outcome": "witness E-execution-W03; 2610.23254 candidate"
+  },
+  {
+   "query": "Epoch AI open-weight models lag frontier months gap capabilities analysis",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-722.B1"
+   ],
+   "result": "Epoch AI data insights",
+   "outcome": "witness E-execution-W30"
+  },
+  {
+   "query": "Epoch AI LLM inference prices falling per year same performance analysis",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-722.B1"
+   ],
+   "result": "Epoch AI data insights; MIT FutureTech 'The Price of Progress'",
+   "outcome": "witness E-execution-W31"
+  },
+  {
+   "query": "same content different format genre framing LLM source selection citation controlled experiment arXiv 2026",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-176.F1"
+   ],
+   "result": "arXiv 2605.25517, 2604.25707, 2509.14436, 2603.03299, 2608.19230, 2610.27745, 2602.05205",
+   "outcome": "witness E-execution-W23; 2610.27745 and 2608.19230 candidates"
+  },
+  {
+   "query": "LLM summarization drops attribution author names hedges provenance loss study summaries omit who said",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-950.F2",
+    "PRED-29.F1",
+    "PRED-218.F1",
+    "PRED-219.F1"
+   ],
+   "result": "arXiv 2604.05224 (Attribution Bias), Royal Society Open Science generalization-bias paper, blog posts",
+   "outcome": "witness E-execution-W20, E-execution-W17"
+  },
+  {
+   "query": "Peters Chin-Yee generalization bias large language model summarization scientific research arXiv preprint",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-950.F2",
+    "PRED-29.F1"
+   ],
+   "result": "arXiv 2504.00025, PMC, PhilSci Archive",
+   "outcome": "witness E-execution-W17"
+  },
+  {
+   "query": "https://arxiv.org/abs/2410.22770v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-139.F1"
+   ],
+   "result": "InjecGuard abstract page; tool would not quote the whole abstract",
+   "outcome": "witness E-execution-W01"
+  },
+  {
+   "query": "https://arxiv.org/html/2610.03448v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-139.F1",
+    "PRED-1384.A1"
+   ],
+   "result": "full HTML; abstract and false-positive sentences read",
+   "outcome": "witness E-execution-W02"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.07192",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-580.F2",
+    "PRED-127.B1"
+   ],
+   "result": "abstract page, v1 only",
+   "outcome": "witness E-execution-W05"
+  },
+  {
+   "query": "https://arxiv.org/abs/2410.22770v3",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-139.F1"
+   ],
+   "result": "abstract fragments and v3 date",
+   "outcome": "witness E-execution-W01"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.07192 (second fetch for quotes)",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-127.B1"
+   ],
+   "result": "verbatim fragments",
+   "outcome": "witness E-execution-W05, E-execution-W06"
+  },
+  {
+   "query": "https://arxiv.org/abs/2402.09363v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-127.B1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W07"
+  },
+  {
+   "query": "https://csrc.nist.gov/news/2025/nist-ai-100-2-adversarial-machine-learning-taxonom",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-194.A1"
+   ],
+   "result": "E2025 published 2025-03-20; no later edition named",
+   "outcome": "nothing: falsifier (c) not fired"
+  },
+  {
+   "query": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-2e2025.pdf",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1384.A1"
+   ],
+   "result": "first 100,000 characters; definitions sections not reached",
+   "outcome": "excluded: definitions unread"
+  },
+  {
+   "query": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1384.A1",
+    "PRED-194.A1"
+   ],
+   "result": "LLM01:2025 definitions",
+   "outcome": "witness E-execution-W04"
+  },
+  {
+   "query": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-2e2025.pdf (offset 50000)",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1384.A1"
+   ],
+   "result": "poisoning and evasion sections; no prompt-injection definition in that span",
+   "outcome": "excluded: definitions unread"
+  },
+  {
+   "query": "https://arxiv.org/abs/2302.12173v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-622.B1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W12"
+  },
+  {
+   "query": "https://arxiv.org/abs/2402.07867v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-42.B1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W11"
+  },
+  {
+   "query": "https://arxiv.org/abs/2404.01261",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-950.F2"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W15, E-execution-W16"
+  },
+  {
+   "query": "https://arxiv.org/abs/2304.09848v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-176.F2"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W18"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.22954v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-284.A1"
+   ],
+   "result": "abstract",
+   "outcome": "witness E-execution-W24"
+  },
+  {
+   "query": "https://arxiv.org/abs/2402.11782v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-176.F1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W22"
+  },
+  {
+   "query": "https://arxiv.org/abs/2311.09735v3",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-176.F1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W21"
+  },
+  {
+   "query": "https://arxiv.org/abs/2502.12150",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-960.F1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W25"
+  },
+  {
+   "query": "https://genai.owasp.org/llm-top-10/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-194.A1"
+   ],
+   "result": "official list is the 2025 edition; no 2026 edition",
+   "outcome": "nothing: falsifier (c) not fired"
+  },
+  {
+   "query": "https://arxiv.org/abs/2508.20863",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-622.B1"
+   ],
+   "result": "abstract and three versions",
+   "outcome": "witness E-execution-W14"
+  },
+  {
+   "query": "https://arxiv.org/abs/2403.06833v3",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-622.B1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W13"
+  },
+  {
+   "query": "https://neurips.cc/virtual/2026/poster/149048",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-42.B1"
+   ],
+   "result": "poster abstract",
+   "outcome": "witness E-execution-W09"
+  },
+  {
+   "query": "https://arxiv.org/abs/2605.13829",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-42.B1",
+    "PRED-580.F2"
+   ],
+   "result": "abstract, v1 2026-05-13",
+   "outcome": "witness E-execution-W09, E-execution-W10"
+  },
+  {
+   "query": "https://arxiv.org/abs/2307.09009v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-960.F1"
+   ],
+   "result": "abstract",
+   "outcome": "witness E-execution-W26"
+  },
+  {
+   "query": "https://huggingface.co/papers/2303.09540",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1534.F1"
+   ],
+   "result": "abstract and date",
+   "outcome": "witness E-execution-W27"
+  },
+  {
+   "query": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-176.F2"
+   ],
+   "result": "full article",
+   "outcome": "witness E-execution-W19"
+  },
+  {
+   "query": "https://arxiv.org/abs/2410.13722v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-580.F2"
+   ],
+   "result": "abstract",
+   "outcome": "witness E-execution-W08"
+  },
+  {
+   "query": "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-204.A1"
+   ],
+   "result": "news article on SE Ranking study",
+   "outcome": "witness E-execution-W29"
+  },
+  {
+   "query": "https://authoritytech.io/curated/schema-markup-ai-citations-ahrefs-study-2026",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-204.A1"
+   ],
+   "result": "commentary on the Ahrefs study; used only to locate it",
+   "outcome": "led to witness E-execution-W28"
+  },
+  {
+   "query": "https://ahrefs.com/blog/schema-ai-citations/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-204.A1",
+    "PRED-204.F2"
+   ],
+   "result": "the study post",
+   "outcome": "witness E-execution-W28"
+  },
+  {
+   "query": "https://arxiv.org/abs/2605.17634",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-139.F1",
+    "PRED-1384.A1"
+   ],
+   "result": "abstract",
+   "outcome": "witness E-execution-W03"
+  },
+  {
+   "query": "https://d3fend.mitre.org/offensive-technique/attack/AML.T0051.001/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1384.A1"
+   ],
+   "result": "definition; no date",
+   "outcome": "excluded: undated definition"
+  },
+  {
+   "query": "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-722.B1"
+   ],
+   "result": "data insight",
+   "outcome": "witness E-execution-W30"
+  },
+  {
+   "query": "https://epoch.ai/data-insights/llm-inference-price-trends",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-722.B1"
+   ],
+   "result": "data insight",
+   "outcome": "witness E-execution-W31"
+  },
+  {
+   "query": "https://arxiv.org/abs/2605.25517",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-176.F1"
+   ],
+   "result": "abstract",
+   "outcome": "witness E-execution-W23"
+  },
+  {
+   "query": "https://arxiv.org/abs/2610.27745v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-176.F1"
+   ],
+   "result": "refused twice: rate limited by arXiv",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://royalsocietypublishing.org/rsos/article/12/4/241776/235656/Generalization-bias-in-large-language-model",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-950.F2"
+   ],
+   "result": "site refused (client error)",
+   "outcome": "nothing; the arXiv copy was read"
+  },
+  {
+   "query": "https://arxiv.org/abs/2604.05224",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-218.F1",
+    "PRED-219.F1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness E-execution-W20"
+  },
+  {
+   "query": "https://arxiv.org/abs/2604.05224v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-218.F1"
+   ],
+   "result": "abstract fragments on suppression",
+   "outcome": "witness E-execution-W20"
+  },
+  {
+   "query": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12042776/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-950.F2"
+   ],
+   "result": "redirect to pmc.ncbi.nlm.nih.gov",
+   "outcome": "nothing"
+  },
+  {
+   "query": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12042776",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-950.F2"
+   ],
+   "result": "browser-check page, no article text",
+   "outcome": "nothing"
+  },
+  {
+   "query": "https://arxiv.org/abs/2504.00025v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-950.F2",
+    "PRED-29.F1"
+   ],
+   "result": "abstract and history (two fetches)",
+   "outcome": "witness E-execution-W17"
+  }
+ ],
+ "candidates": [
+  {
+   "source": "Hearsay or Fact? How Framing and Elicitation Shape LLM Probability Updates (arXiv 2610.27745)",
+   "url": "https://arxiv.org/abs/2610.27745v1",
+   "claims": [
+    "PRED-176.F1"
+   ],
+   "why_unresolved": "The title fits the claim's design (framing held against content, confidence measured), but arXiv rate-limited both fetches; abstract, authors and date are unread."
+  },
+  {
+   "source": "Ignored, Not Refused: What Low Prompt-Injection Success Rates Hide in Small Tool-Using Agents (arXiv 2610.23254)",
+   "url": "https://arxiv.org/abs/2610.23254",
+   "claims": [
+    "PRED-139.F1",
+    "PRED-1384.A1"
+   ],
+   "why_unresolved": "Found in search; not fetched within budget."
+  },
+  {
+   "source": "When AI Writes, Who Gets Cited? Evidence of Citation Monoculture Across Language Models (arXiv 2608.19230)",
+   "url": "https://arxiv.org/abs/2608.19230",
+   "claims": [
+    "PRED-284.A1"
+   ],
+   "why_unresolved": "Found in search; may bear on convergence of outputs; not fetched. Possibly belongs to the attribution theme."
+  },
+  {
+   "source": "Believe It or Not: How Deeply do LLMs Believe Implanted Facts? (arXiv 2510.17941)",
+   "url": "https://arxiv.org/pdf/2510.17941",
+   "claims": [
+    "PRED-580.F2",
+    "PRED-42.B1"
+   ],
+   "why_unresolved": "Found in search; not fetched."
+  },
+  {
+   "source": "Hidden prompts in manuscripts exploit AI-assisted peer review (arXiv 2507.06185)",
+   "url": "https://arxiv.org/abs/2507.06185v1",
+   "claims": [
+    "PRED-622.B1"
+   ],
+   "why_unresolved": "Found in search; not fetched; E-execution-W14 already covers the mechanism."
+  },
+  {
+   "source": "Does Schema Markup Increase AI Citations? A Controlled Test (innflows.com)",
+   "url": "https://www.innflows.com/blog/seo/schema-markup-ai-citations-study",
+   "claims": [
+    "PRED-204.A1"
+   ],
+   "why_unresolved": "Vendor blog claiming a controlled test; not fetched; method unknown."
+  },
+  {
+   "source": "SE Ranking llms.txt study (original)",
+   "url": "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/",
+   "claims": [
+    "PRED-204.A1"
+   ],
+   "why_unresolved": "Only the news report was read (E-execution-W29); the study's own page was not located."
+  }
+ ],
+ "notes": "142 claims were read. Most are internal to the archive (self-referential tests, Space Ark transforms, future fictional citations, capture batteries on the archive's own entities) and have no outside test; outside evidence was sought for about twenty that name a measurable effect or a general mechanism. Every witness recorded here bears as mechanism, method or component; none bears on a claim as a whole, because the claims concern the archive's own deposits and the outside research does not. Most witnesses predate their claims and will order as anticipations; those after registration are E-execution-W02 (2026-10-02, after PRED-139.F1 2026-05-29), W09 and W10 (2026-05-13, after PRED-42.B1 2026-03-26), W20 (2026-04-06, after PRED-218.F1 and PRED-219.F1, 2026-01-03). W03 (2026-05-17), W23 (2026-05-25) and W28 (2026-05-11) fall weeks before their claims and are anticipations. The order script computes this; the reader's reckoning is only a guide. PRED-194.A1 falsifier (c): checked 2026-10-30, the official OWASP LLM Top 10 is still the 2025 edition and no NIST AI 100-2 edition after E2025 was found, so the falsifier has not fired; window runs to 2028-06-12. The NIST E2025 definitions of prompt injection could not be read through the fetch tool (sections 3.3, 3.4 and the glossary fell outside the returned text); a reader with the PDF should quote them before any NIST witness is recorded. Three sources are recorded twice in opposite directions on different components: Souly et al. (W05 supports, W06 disconfirms the corpus-share term of PRED-127.B1), Negation Neglect (W09 supports for the training layer, W10 disconfirms for the in-context stage of PRED-42.B1), FABLES (W15 supports method, W16 disconfirms the 'current benchmarks do not test' component of PRED-34.F2). The main session may prefer to merge them. PRED-176.F1 has a split record: GEO (W21) supports that presentation changes visibility; Wan et al. (W22) and Vishwakarma et al. (W23) find relevance dominates and stylistic or formatting cues matter little. Meeus et al. 2024 (W07) is already cited inside the archive at PRED-1384.F4. The fetch tool caps quotes at about 125 characters, so findings are short fragments; each was returned by the tool as verbatim from the page named. The GEO quote keeps the LaTeX '$40\\%$' as the arXiv abstract served it. Peer-reviewed venues known only from search results (ICML, ICLR, USENIX, NeurIPS, ACL, KDD, Findings of EMNLP, COLM) are named in source.venue and listed in checked.unverified; the evidence_class of those witnesses is set to preprint, the version actually read. The main session may raise a class after confirming the venue page."
+}

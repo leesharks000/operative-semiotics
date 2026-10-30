@@ -531,6 +531,73 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0074",
+     "direction": "disconfirms",
+     "evidence_class": "report",
+     "bears_on": "whole",
+     "scope": "A vendor benchmark that publishes an accuracy rate by industry, separated from mention and visibility, two months before the claim was registered. The witness scores claims about companies against their own sites, which may be narrower than entity-resolution accuracy, and the page offers no open sample, so the stricter falsifier of #1632 (stated rubric and open sample) is met only in part.",
+     "source": {
+      "authors": [
+       "Faro Index"
+      ],
+      "title": "The State of AI Brand Intelligence 2026",
+      "venue": "faroindex.ai (vendor report)",
+      "doi": null,
+      "urls": [
+       "https://faroindex.ai/report"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-07",
+       "kind": "report",
+       "where": "faroindex.ai/report, edition line 'July 2026'",
+       "url": "https://faroindex.ai/report"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "July 2026 · Built with the Faro Method · faroindex.ai",
+       "from": "report page, edition line"
+      },
+      {
+       "quote": "The share of verifiable AI claims that match the company's own site or trusted sources",
+       "from": "report page, definition of Brand Accuracy Rate (BAR)"
+      },
+      {
+       "quote": "Visibility tells you whether AI mentions you. Accuracy tells you whether what it says is true.",
+       "from": "report page"
+      },
+      {
+       "quote": "Where accuracy breaks down by industry",
+       "from": "report page, section 08 heading"
+      },
+      {
+       "quote": "504 companies completed, 503 in the reporting set after deduplication.",
+       "from": "report page"
+      },
+      {
+       "quote": "Roughly fifteen buyer-intent queries, four platforms, four repetitions each, up to 240 responses per company.",
+       "from": "report page, methodology"
+      }
+     ],
+     "shows": "A commercial benchmark of 503 companies reports a Brand Accuracy Rate (share of verifiable AI claims matching the company's own site or trusted sources) ranked across 21 industries, and states the separation of accuracy from visibility in so many words. It existed before PRED-1632.A7 was registered on 2026-09-20.",
+     "does_not_show": "An open sample, raw responses or query library; independent validation of its scoring; resolution of entity identity (which entity a composition picks) as distinct from factual match of claims about a known company.",
+     "checked": {
+      "by": "intake reader, theme D-economy; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read faroindex.ai/report twice on 2026-10-30, the second time for the edition line, definitions and section heading. Read with WebFetch on 2026-10-30; WebFetch returns model-processed page text, and each quote was requested verbatim from it.",
+      "unverified": [
+       "the day of publication in July 2026",
+       "whether any downloadable data exist elsewhere on the site",
+       "the full list of 21 industry figures"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "EA-MEDIATED-SHARE-01 registered forecasts"
    ],

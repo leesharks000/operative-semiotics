@@ -893,6 +893,59 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0042",
+     "direction": "supports",
+     "evidence_class": "documentation",
+     "bears_on": "component",
+     "scope": "One instance of the movement the claim predicts: a provider whose consumer chats had been kept out of training begins to use them, with users given the choice and retention extended to five years. The claim's causes, exhausted data and competitive pressure, are not stated in the announcement as quoted.",
+     "source": {
+      "authors": [
+       "Anthropic"
+      ],
+      "title": "Updates to Consumer Terms and Privacy Policy",
+      "venue": "anthropic.com",
+      "doi": null,
+      "urls": [
+       "https://www.anthropic.com/news/updates-to-our-consumer-terms"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-08-28",
+       "kind": "documentation",
+       "where": "Anthropic news post",
+       "url": "https://www.anthropic.com/news/updates-to-our-consumer-terms"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "We're now giving users the choice to allow their data to be used to improve Claude",
+       "from": "page body, anthropic.com"
+      },
+      {
+       "quote": "We are also extending data retention to five years, if you allow us to use your data for model training.",
+       "from": "page body, anthropic.com"
+      },
+      {
+       "quote": "These updates apply to users on our Claude Free, Pro, and Max plans",
+       "from": "page body, anthropic.com"
+      }
+     ],
+     "shows": "A frontier provider moved its consumer chat data into model training in 2025.",
+     "does_not_show": "Why it did so; competitive disadvantage; other providers.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the announcement page, 2026-10-30.",
+      "unverified": [
+       "the prior policy (no training on consumer chats) is not quoted from this page"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -962,6 +1015,71 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0043",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The drift the proposed audit would catch: human language measured against a pre-ChatGPT baseline by synthetic control shifts toward words ChatGPT favors. Measured in podcast speech; chat inputs, habituation depth and turn position are not studied.",
+     "source": {
+      "authors": [
+       "Hiromu Yakura",
+       "Ezequiel Lopez-Lopez",
+       "Levin Brinkmann",
+       "Ignacio de la Serna",
+       "Lara Kirfel",
+       "Prateek Gupta",
+       "Ivan Soraperra",
+       "Thomas F. Eisenmann",
+       "Dirk U. Wulff",
+       "Iyad Rahwan"
+      ],
+      "title": "Empirical evidence of Large Language Model's influence on human spoken communication",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2409.01754"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-09-03",
+       "kind": "preprint",
+       "where": "arXiv 2409.01754 v1",
+       "url": "https://arxiv.org/abs/2409.01754v1"
+      },
+      {
+       "date": "2026-07-16",
+       "kind": "preprint",
+       "where": "arXiv 2409.01754 v4",
+       "url": "https://arxiv.org/abs/2409.01754"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "synthetic-control analysis of 737,083 hours of conversation from 824,634 podcast episodes",
+       "from": "abstract, arXiv v4"
+      },
+      {
+       "quote": "increased abruptly in spontaneous human speech",
+       "from": "abstract, arXiv v4"
+      }
+     ],
+     "shows": "Human speech moved toward ChatGPT-preferred vocabulary after ChatGPT's release, against a pre-AI baseline.",
+     "does_not_show": "Contamination of chat logs; training effects.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v4), 2026-10-30.",
+      "unverified": [
+       "v1 abstract wording (the v4 abstract was read)",
+       "dates of v2 and v3"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Mediation ratchet and chat-data collapse"
    ],

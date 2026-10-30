@@ -60,6 +60,177 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0017",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "mechanism",
+     "scope": "The same planted page treated differently by different systems: Gemini and AI Overviews repeated it without naming a source, ChatGPT repeated it, Claude did not. One case, with no test of whether systems inherit Google's guardrails.",
+     "source": {
+      "authors": [
+       "Thomas Germain"
+      ],
+      "title": "I hacked ChatGPT and Google's AI - and it only took 20 minutes (Spanish edition: Hackeé ChatGPT y la IA de Google en 20 minutos (y qué logré demostrar con eso))",
+      "venue": "BBC Future; Spanish edition by BBC News Mundo, republished by La Prensa",
+      "doi": null,
+      "urls": [
+       "https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes",
+       "https://www.prensa.com/bbc/hackee-chatgpt-y-la-ia-de-google-en-20-minutos-y-que-logre-demostrar-con-eso/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-02-18",
+       "kind": "news",
+       "where": "BBC Future (date from the article URL)",
+       "url": "https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes"
+      },
+      {
+       "date": "2026-02-19",
+       "kind": "news",
+       "where": "BBC News Mundo edition, republished by La Prensa",
+       "url": "https://www.prensa.com/bbc/hackee-chatgpt-y-la-ia-de-google-en-20-minutos-y-que-logre-demostrar-con-eso/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Menos de 24 horas después, los chatbots más importantes del mundo hablaban sin parar",
+       "from": "article, BBC News Mundo edition (La Prensa)"
+      },
+      {
+       "quote": "ChatGPT hizo lo mismo, aunque Claude, un chatbot de la empresa Anthropic, no se dejó engañar.",
+       "from": "article, BBC News Mundo edition (La Prensa)"
+      },
+      {
+       "quote": "Gemini no se molestó en decir de dónde obtuvo la información.",
+       "from": "article, BBC News Mundo edition (La Prensa)"
+      }
+     ],
+     "shows": "One planted page reached Gemini, AI Overviews and ChatGPT answers within a day; Gemini gave no source; the others linked it without saying it was the only source; Claude did not repeat it. It precedes PRED-61.B2 and comes after PRED-232.F3 and PRED-209.F8.",
+     "does_not_show": "Any rate across cases; persistence; behaviour for DOI-anchored or scholarly material; the timing beyond the author's own account.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the BBC News Mundo edition at La Prensa and the Tildes link record, 2026-10-30. bbc.com refused the fetch (site blocked).",
+      "unverified": [
+       "the English original was not read; its date comes from its URL and the Tildes link record",
+       "the under-24-hours timing is the journalist's own report",
+       "quote not found at source, dropped: \"Todas las demás IA enlazaron a mi artículo, aunque rara vez mencionaron que yo era la única fuente.\""
+      ]
+     },
+     "order": "after"
+    },
+    {
+     "witness": "W-0018",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "Source selection compared across AI search providers on the same arena traffic, the comparison the claim assigns: models from different providers cite distinct news sources. It covers OpenAI, Perplexity and Google models, without Grok or Claude, and does not ask whether they inherit Google's guardrails.",
+     "source": {
+      "authors": [
+       "Kai-Cheng Yang"
+      ],
+      "title": "News Source Citing Patterns in AI Search Systems",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2507.05301v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-07-07",
+       "kind": "preprint",
+       "where": "arXiv 2507.05301 v1",
+       "url": "https://arxiv.org/abs/2507.05301v1"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "The dataset comprises over 24,000 conversations and 65,000 responses",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "News citations concentrate heavily among a small number of outlets",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "models from different providers cite distinct news sources",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "display a pronounced liberal bias, though low-credibility sources are rarely cited",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "On AI Search Arena data (366,000+ citations), news citations concentrate in few outlets, differ by provider, and lean liberal. It precedes both claims and is an anticipation.",
+     "does_not_show": "Inheritance of Google's index or filters; attribution of specific phrases; any trend.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0019",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "method",
+     "scope": "The same queries compared across eight generative search tools, the claim's assembly task. It measures citation accuracy and does not test inheritance of Google's guardrails.",
+     "source": {
+      "authors": [
+       "Klaudia Jaźwińska",
+       "Aisvarya Chandrasekar"
+      ],
+      "title": "AI Search Has a Citation Problem",
+      "venue": "Columbia Journalism Review, Tow Center for Digital Journalism",
+      "doi": null,
+      "urls": [
+       "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-06",
+       "kind": "report",
+       "where": "Columbia Journalism Review (Tow Center)",
+       "url": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Collectively, they provided incorrect answers to more than 60 percent of queries.",
+       "from": "report page, CJR"
+      },
+      {
+       "quote": "directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+       "from": "report page, CJR"
+      },
+      {
+       "quote": "More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs",
+       "from": "findings, CJR article"
+      },
+      {
+       "quote": "chatbots directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+       "from": "findings, CJR article"
+      }
+     ],
+     "shows": "1,600 manually scored queries (excerpts from 200 articles of 20 publishers) across eight tools: most answers misidentified the source, often crediting syndicated copies or giving broken links. It precedes all three claims and is an anticipation.",
+     "does_not_show": "Uncited correct use of ideas; entity disambiguation; the archive's entities; any trend.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the CJR report page, 2026-10-30.",
+      "unverified": [
+       "quote not found at source, dropped: \"More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs.\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Cross-substrate query batteries"
    ],
@@ -200,6 +371,55 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0021",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "A detector that asks which model's style produced a text, with near-perfect precision across Claude, Gemini, Llama and OpenAI models. The claim's 'architecture' in the ASDF frame is an authorial signature that can run through AI; the witness attributes text to model families.",
+     "source": {
+      "authors": [
+       "Yehonatan Bitton",
+       "Elad Bitton",
+       "Shai Nisan"
+      ],
+      "title": "Detecting Stylistic Fingerprints of Large Language Models",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2503.01659"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-03",
+       "kind": "preprint",
+       "where": "arXiv 2503.01659 v1",
+       "url": "https://arxiv.org/abs/2503.01659"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "classify texts based on the stylistic fingerprints of the models that generated them",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "achieves extremely high precision (0.9988) and a very low false-positive rate (0.0004)",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Attribution of generated text to its source model family is practicable, a detection question beyond human-or-AI. It precedes the claim and is an anticipation.",
+     "does_not_show": "Detection of a human author's architecture in AI-mediated text; that the human-or-AI question is becoming meaningless.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "ASDF voice-persistence measurement"
    ],
@@ -1040,6 +1260,64 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0019",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "method",
+     "scope": "The claim's replication design (the same queries across Copilot, Perplexity, ChatGPT search, Gemini and others), carried out by others for source identification of news excerpts. It does not measure CDI, disambiguation or entity suppression.",
+     "source": {
+      "authors": [
+       "Klaudia Jaźwińska",
+       "Aisvarya Chandrasekar"
+      ],
+      "title": "AI Search Has a Citation Problem",
+      "venue": "Columbia Journalism Review, Tow Center for Digital Journalism",
+      "doi": null,
+      "urls": [
+       "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-06",
+       "kind": "report",
+       "where": "Columbia Journalism Review (Tow Center)",
+       "url": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Collectively, they provided incorrect answers to more than 60 percent of queries.",
+       "from": "report page, CJR"
+      },
+      {
+       "quote": "directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+       "from": "report page, CJR"
+      },
+      {
+       "quote": "More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs",
+       "from": "findings, CJR article"
+      },
+      {
+       "quote": "chatbots directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+       "from": "findings, CJR article"
+      }
+     ],
+     "shows": "1,600 manually scored queries (excerpts from 200 articles of 20 publishers) across eight tools: most answers misidentified the source, often crediting syndicated copies or giving broken links. It precedes all three claims and is an anticipation.",
+     "does_not_show": "Uncited correct use of ideas; entity disambiguation; the archive's entities; any trend.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the CJR report page, 2026-10-30.",
+      "unverified": [
+       "quote not found at source, dropped: \"More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs.\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Index-to-composition suppression (ECS)"
    ],
@@ -1542,6 +1820,177 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0010",
+     "direction": "supports",
+     "evidence_class": "post",
+     "bears_on": "component",
+     "scope": "The component that single observations of a generative surface mean little and that presence must be tracked apart from citation composition: an Overview changes between observations 70% of the time and nearly half its cited sources turn over, while its meaning holds. The same-day ≥3 sampling rule and the claim's watch query are not tested.",
+     "source": {
+      "authors": [
+       "Louise Linehan",
+       "Xibeijia Guan"
+      ],
+      "title": "AI Overviews Change Every 2 Days (But Never Change Their Mind)",
+      "venue": "Ahrefs blog (data from Ahrefs Brand Radar)",
+      "doi": null,
+      "urls": [
+       "https://ahrefs.com/blog/ai-overview-change/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-11-11",
+       "kind": "post",
+       "where": "Ahrefs blog",
+       "url": "https://ahrefs.com/blog/ai-overview-change/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we found that AI Overviews have a 70% chance of changing from one observation to the next.",
+       "from": "post, Ahrefs"
+      }
+     ],
+     "shows": "Over 43,000 keywords with at least 16 recorded Overviews each: the text and the citations of an AI Overview churn every couple of days while its gist stays stable, so presence, content and citation composition move separately. It precedes all three claims and is an anticipation.",
+     "does_not_show": "Any effect on a particular author or entity; same-day variation; differences by login state, device or location.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Ahrefs post (German-path URL served the English text), 2026-10-30.",
+      "unverified": [
+       "the exact check frequency (the post says checks were not daily)",
+       "the method is a vendor's own, without peer review",
+       "quote not found at source, dropped: \"nearly half (45.5%) of the cited sources are entirely new.\"",
+       "quote not found at source, dropped: \"AI Overviews score 0.95 out of 1.0 for semantic consistency.\""
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0011",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Overview presence depends on query format (13.7% overall, 64.7% for question-form queries), the format classes the claim's battery spans. The witness does not test the gate-stack model or the claim's watch query.",
+     "source": {
+      "authors": [
+       "Haofei Xu",
+       "Umar Iqbal",
+       "Jacob M. Montgomery"
+      ],
+      "title": "Measuring Google AI Overviews: Activation, Source Quality, Claim Fidelity, and Publisher Impact",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2605.14021",
+       "https://arxiv.org/html/2605.14021v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-05-13",
+       "kind": "preprint",
+       "where": "arXiv 2605.14021 v1",
+       "url": "https://arxiv.org/abs/2605.14021"
+      },
+      {
+       "date": "2026-10-01",
+       "kind": "preprint",
+       "where": "arXiv 2605.14021 v2",
+       "url": "https://arxiv.org/abs/2605.14021"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "issuing 55,393 trending queries across 19 topical categories over a 40-day window (March 13 - April 21, 2026).",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "overall AIO activation is 13.7%, rising to 64.7% for question-form queries,",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "decomposing responses into 98,020 atomic claims, 11.0% are unsupported by the cited pages",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "nearly 30% do not appear in those results at all",
+       "from": "abstract, arXiv (AIO-cited domains against co-displayed first-page results)"
+      }
+     ],
+     "shows": "A large audit of AI Overviews: activation is gated strongly by query form; cited domains are more credible than first-page results and often absent from them; 11% of atomic claims are unsupported by the pages cited. It came after PRED-716.F1 and before PRED-742.F2 and PRED-187.F1.",
+     "does_not_show": "Attribution of a named author's concepts; any power skew in what is cited; stability across repeated queries.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "the v1 date is the original submission date given on the page; no separate v1 line was shown"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0012",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "mechanism",
+     "scope": "Overview presence gated by query type and inconsistent in its criteria, observed through Google's own researcher API under the DSA. The claim's sampling discipline is not tested.",
+     "source": {
+      "authors": [
+       "Clara Helming",
+       "AlgorithmWatch"
+      ],
+      "title": "Meinungsbildung mit KI: Welche Informationen zeigen Googles KI-Übersichten zu Wahlen?",
+      "venue": "AlgorithmWatch (study under DSA Article 40(12) data access)",
+      "doi": null,
+      "urls": [
+       "https://algorithmwatch.org/de/google-ki-ubersichten-meinungsbildung/",
+       "https://the-decoder.com/googles-election-ai-overviews-are-opaque-rely-on-few-sources-and-sometimes-take-sides/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-09-01",
+       "kind": "report",
+       "where": "AlgorithmWatch website (German)",
+       "url": "https://algorithmwatch.org/de/google-ki-ubersichten-meinungsbildung/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Bei Fragen zu Wahlen zeigt Google deutlich weniger KI-Übersichten an als bei Fragen zu unpolitischen Themen.",
+       "from": "report page, AlgorithmWatch"
+      },
+      {
+       "quote": "ist das meistzitierte Angebot in KI- Übersichten",
+       "from": "report page, AlgorithmWatch (of YouTube)"
+      },
+      {
+       "quote": "Fast die Hälfte aller angezeigten Links stammten von nur zehn verschiedenen Anbietern.",
+       "from": "report page, AlgorithmWatch"
+      },
+      {
+       "quote": "Unseren Beobachtungen nach ist dies sehr uneinheitlich.",
+       "from": "report page, AlgorithmWatch (of the criteria by which Overviews appear)"
+      }
+     ],
+     "shows": "4,480 queries on three 2026 German state elections, run in July 2026 through Google's Search Researcher Result API: Overviews appear far less on election questions, their appearance follows no consistent rule, and their sources concentrate, with YouTube first.",
+     "does_not_show": "Economic or authority-tier effects; any trend over time; the archive's entities.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the AlgorithmWatch page (German) and The Decoder's English report, 2026-10-30.",
+      "unverified": [
+       "the figures 39.1% (election) and 65.3% (non-political) and the AfD trigger gap (24% against 45–58%) come from The Decoder as paraphrased by the fetch tool; the AlgorithmWatch page read does not print them",
+       "the PDF study (code 260908) was not read"
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -2052,6 +2501,89 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0005",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed article",
+     "bears_on": "mechanism",
+     "scope": "Gemini answering with no clickable citation in 92% of answers is the behaviour the claim forecasts for AI Overviews. The data are LMArena conversations with the Gemini model, a different surface from AI Overviews, gathered in 2025.",
+     "source": {
+      "authors": [
+       "Ilan Strauss",
+       "Jangho Yang",
+       "Tim O'Reilly",
+       "Sruly Rosenblat",
+       "Isobel Moure"
+      ],
+      "title": "The Attribution Crisis in LLM Search Results (journal version: The attribution crisis in LLM search results: Estimating ecosystem exploitation)",
+      "venue": "Social Science Research Council AI Disclosures Project working paper; arXiv cs.DL; Data & Policy (Cambridge University Press) vol. 8, e15",
+      "doi": "10.1017/dap.2026.10064",
+      "urls": [
+       "https://arxiv.org/abs/2508.00838",
+       "https://arxiv.org/html/2508.00838v1",
+       "https://rogue-scholar.org/records/b7q0a-dfk44",
+       "https://www.cambridge.org/core/journals/data-and-policy/article/attribution-crisis-in-llm-search-results-estimating-ecosystem-exploitation/170DD0B88E5F5AEA8F69F2E9AF1328E3",
+       "https://www.ssrc.org/publications/the-attribution-crisis-in-llm-search-results/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-06-27",
+       "kind": "working paper",
+       "where": "Rogue Scholar record of the Asimov's Addendum / AI Disclosures Project post, DOI 10.59350/veayq-6bz87",
+       "url": "https://rogue-scholar.org/records/b7q0a-dfk44"
+      },
+      {
+       "date": "2025-06-27",
+       "kind": "preprint",
+       "where": "arXiv 2508.00838 v1 (the only version listed)",
+       "url": "https://arxiv.org/abs/2508.00838"
+      },
+      {
+       "date": "2026-04-28",
+       "kind": "peer-reviewed article",
+       "where": "Data & Policy 8, e15, published online (issue date given as January 2026)",
+       "url": "https://www.cambridge.org/core/journals/data-and-policy/article/attribution-crisis-in-llm-search-results-estimating-ecosystem-exploitation/170DD0B88E5F5AEA8F69F2E9AF1328E3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "“attribution gap” – the difference between relevant URLs read and those actually cited.",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "Drawing on approximately 14,000 real-world LMArena conversation logs with search-enabled LLM systems",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "No citation: Gemini provides no clickable citation source in 92% of answers",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "Perplexity’s Sonar visits approximately 10 relevant pages per query but cites only three to four.",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "the average query answered by Gemini or Sonar leaves about 3 relevant websites uncited",
+       "from": "abstract, arXiv HTML v1"
+      }
+     ],
+     "shows": "Search-enabled LLMs read more relevant pages than they cite, at rates that differ widely by system on the same queries; the authors tie the difference to retrieval design. This is the earlier pass's candidate C-0001, now verified; it precedes every claim it bears on and is an anticipation.",
+     "does_not_show": "Loss of attribution for a named author's concepts; AI Overviews as a surface; any skew of the loss by source size or standing; any trend over time.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v1 only listed) and the arXiv HTML v1 abstract, the Rogue Scholar record, and the Data & Policy landing page, 2026-10-30. The SSRC page had refused a fetch in S-0002 and was not retried.",
+      "unverified": [
+       "The arXiv page gives v1 as 2025-06-27 although an identifier beginning 2508 is normally assigned in August 2025; the Rogue Scholar DOI record independently dates the paper 27 June 2025",
+       "Rogue Scholar lists four authors (no Jangho Yang); arXiv and Data & Policy list five",
+       "received and accepted dates of the journal version were not on the page read"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

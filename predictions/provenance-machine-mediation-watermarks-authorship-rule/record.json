@@ -223,6 +223,58 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0065",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed article",
+     "bears_on": "mechanism",
+     "scope": "Thirteen experiments show that disclosing AI use costs trust, the penalty on honest attribution from which the claim derives a concealment equilibrium. The study concerns workplace and social trust and leaves the copyright human-authorship doctrine untested; it also finds exposure by a third party costs more than self-disclosure, which bounds the incentive to conceal.",
+     "source": {
+      "authors": [
+       "Oliver Schilke",
+       "Martin Reimann"
+      ],
+      "title": "The transparency dilemma: How AI disclosure erodes trust",
+      "venue": "Organizational Behavior and Human Decision Processes 188, article 104405",
+      "doi": "10.1016/j.obhdp.2025.104405",
+      "urls": [
+       "https://ideas.repec.org/a/eee/jobhdp/v188y2025ics0749597825000172.html",
+       "https://experts.arizona.edu/en/publications/the-transparency-dilemma-how-ai-disclosure-erodes-trust/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-05",
+       "kind": "journal article (volume 188)",
+       "where": "Organizational Behavior and Human Decision Processes",
+       "url": "https://experts.arizona.edu/en/publications/the-transparency-dilemma-how-ai-disclosure-erodes-trust/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Thirteen experiments consistently demonstrate that actors who disclose their AI usage are trusted less",
+       "from": "abstract, University of Arizona research portal"
+      },
+      {
+       "quote": "though it is comparatively weaker than the effect of third-party exposure",
+       "from": "abstract, University of Arizona research portal"
+      }
+     ],
+     "shows": "Disclosure of AI contribution is penalized in trust judgments, across thirteen experiments.",
+     "does_not_show": "That any provenance regime produces measured concealment, or anything about copyright registration.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the RePEc record and the University of Arizona research portal page on 2026-10-30.",
+      "unverified": [
+       "Online-first date: the portal lists 2025-09-01 and volume 188 is dated May 2025; an earlier article-in-press or working-paper version was not located.",
+       "Participant count."
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1145,6 +1197,68 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0069",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Detectors built for purely machine-generated text fail on mixed human and machine text, which is the coarse labeling that would collapse a fine-grained declared genealogy. The claim concerns ingestion of one deposit by provenance systems; the paper tests detectors on a benchmark.",
+     "source": {
+      "authors": [
+       "Qihui Zhang",
+       "Chujie Gao",
+       "Dongping Chen",
+       "Yue Huang",
+       "Yixin Huang",
+       "Zhenyang Sun",
+       "Shilin Zhang",
+       "Weiye Li",
+       "Zhengyan Fu",
+       "Yao Wan",
+       "Lichao Sun"
+      ],
+      "title": "LLM-as-a-Coauthor: Can Mixed Human-Written and Machine-Generated Text Be Detected?",
+      "venue": "arXiv:2401.05952",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2401.05952"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-01-11",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2401.05952"
+      },
+      {
+       "date": "2024-03-30",
+       "kind": "preprint v2",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2401.05952"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "existing detectors struggle to identify mixtext",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Machine-text detectors handle mixed authorship poorly.",
+     "does_not_show": "Any observed collapse of a disclosed genealogy in a deployed provenance system.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page on 2026-10-30.",
+      "unverified": [
+       "Peer-reviewed venue (a NAACL 2024 Findings publication is believed and was left unchecked).",
+       "quote not found at source, dropped: \"Current research mainly focuses on purely MGT detection without adequately addressing mixed scenarios.\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "watermark and provenance-observation wing"
    ],

@@ -1972,6 +1972,107 @@
      "first_party_basis": "another deposit of the archive (no statement or recorded lineage shared)"
     }
    ],
+   "witnesses": [
+    {
+     "witness": "W-0112",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "mechanism",
+     "scope": "Failure condition (a), that a machine-facing provenance block has no effect on summarizer output: the witness finds JSON-LD schema added to 1,885 pages moved AI citations little against matched controls, with a small decline in AI Overviews. Schema is a different block from the SPXI self-audit text and the measure is citation count; provenance retention is unmeasured.",
+     "source": {
+      "authors": [
+       "Louise Linehan",
+       "Xibeijia Guan"
+      ],
+      "title": "We Tracked 1,885 Pages Adding Schema. AI Citations Barely Moved.",
+      "venue": "Ahrefs blog",
+      "doi": null,
+      "urls": [
+       "https://ahrefs.com/blog/schema-ai-citations/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-05-11",
+       "kind": "report",
+       "where": "ahrefs.com blog (updated 2026-06-09)",
+       "url": "https://ahrefs.com/blog/schema-ai-citations/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Adding schema produced no major uplift in citations on any platform.",
+       "from": "headline finding, Ahrefs blog"
+      },
+      {
+       "quote": "Small but statistically significant decline relative to matched controls",
+       "from": "AI Overviews result, Ahrefs blog"
+      },
+      {
+       "quote": "Statistically indistinguishable from zero",
+       "from": "AI Mode and ChatGPT results, Ahrefs blog"
+      }
+     ],
+     "shows": "Matched difference-in-differences over 30 days shows no citation uplift from adding structured data.",
+     "does_not_show": "Provenance fidelity in the composed answer; plaintext self-audit blocks; effects past 30 days.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Ahrefs post, 2026-10-30, after finding it through an authoritytech.io commentary page.",
+      "unverified": [
+       "the full method appendix"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0113",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "mechanism",
+     "scope": "Condition (a) in another form of machine-facing file: across about 300,000 domains, presence of llms.txt showed no clear relation to AI citation frequency. Correlational, and the file is a site-level index unlike an in-document provenance block.",
+     "source": {
+      "authors": [
+       "Matt G. Southern"
+      ],
+      "title": "LLMs.txt Shows No Clear Effect On AI Citations, Based On 300k Domains",
+      "venue": "Search Engine Journal (reporting an SE Ranking study)",
+      "doi": null,
+      "urls": [
+       "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-11-20",
+       "kind": "news",
+       "where": "searchenginejournal.com",
+       "url": "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "doesn't seem to directly impact AI citation frequency. At least not yet.",
+       "from": "SEJ article, quoting the study"
+      },
+      {
+       "quote": "removing the llms.txt feature actually improved the model’s accuracy",
+       "from": "SEJ article"
+      }
+     ],
+     "shows": "A large correlational analysis finds no citation benefit from a machine-facing site file.",
+     "does_not_show": "Causal effect; in-document blocks; provenance retention.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the SEJ article, 2026-10-30. The SE Ranking study itself was not fetched.",
+      "unverified": [
+       "the SE Ranking study's own page, date and the AI systems covered"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -2205,6 +2306,60 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0112",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "mechanism",
+     "scope": "The planned Layer 2 (JSON-LD via Schema.org) has, in this observational study, no detectable citation effect on Google AI Overviews, AI Mode or ChatGPT.",
+     "source": {
+      "authors": [
+       "Louise Linehan",
+       "Xibeijia Guan"
+      ],
+      "title": "We Tracked 1,885 Pages Adding Schema. AI Citations Barely Moved.",
+      "venue": "Ahrefs blog",
+      "doi": null,
+      "urls": [
+       "https://ahrefs.com/blog/schema-ai-citations/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-05-11",
+       "kind": "report",
+       "where": "ahrefs.com blog (updated 2026-06-09)",
+       "url": "https://ahrefs.com/blog/schema-ai-citations/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Adding schema produced no major uplift in citations on any platform.",
+       "from": "headline finding, Ahrefs blog"
+      },
+      {
+       "quote": "Small but statistically significant decline relative to matched controls",
+       "from": "AI Overviews result, Ahrefs blog"
+      },
+      {
+       "quote": "Statistically indistinguishable from zero",
+       "from": "AI Mode and ChatGPT results, Ahrefs blog"
+      }
+     ],
+     "shows": "Matched difference-in-differences over 30 days shows no citation uplift from adding structured data.",
+     "does_not_show": "Provenance fidelity in the composed answer; plaintext self-audit blocks; effects past 30 days.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Ahrefs post, 2026-10-30, after finding it through an authoritytech.io commentary page.",
+      "unverified": [
+       "the full method appendix"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

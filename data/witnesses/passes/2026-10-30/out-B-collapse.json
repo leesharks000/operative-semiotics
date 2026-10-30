@@ -1,0 +1,3268 @@
+{
+ "theme": "B-collapse",
+ "witnesses": [
+  {
+   "id": "B-collapse-W01",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-857.F1",
+     "bears_on": "component",
+     "scope": "The state the longitudinal study would track, whether the model ecology converges, measured at one time across many models on open-ended prompts. PRED-857.F1 asks for repeated runs of one directive on five named substrates at six-month intervals; this is a single cross-section on a different prompt set."
+    },
+    {
+     "claim": "PRED-803.B2",
+     "bears_on": "mechanism",
+     "scope": "Convergence of models toward similar outputs, shown across models. The Gray Hypothesis names safety pressure as the driver and loss of nuance as the effect; the study measures similarity of open-ended outputs and does not isolate safety training."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Liwei Jiang",
+     "Yuanjun Chai",
+     "Margaret Li",
+     "Mickel Liu",
+     "Raymond Fok",
+     "Nouha Dziri",
+     "Yulia Tsvetkov",
+     "Maarten Sap",
+     "Alon Albalak",
+     "Yejin Choi"
+    ],
+    "title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)",
+    "venue": "arXiv; listed at NeurIPS 2025",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2510.22954",
+     "https://neurips.cc/virtual/2025/poster/121421"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-27",
+     "kind": "preprint",
+     "where": "arXiv 2510.22954 v1",
+     "url": "https://arxiv.org/abs/2510.22954v1"
+    },
+    {
+     "date": "2026-10-06",
+     "kind": "preprint",
+     "where": "arXiv 2510.22954 v2",
+     "url": "https://arxiv.org/abs/2510.22954"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Using Infinity-Chat, we present a large-scale study of mode collapse in LMs,",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "characterized by (1) intra-model repetition, where a single model consistently generates similar responses,",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "and more so (2) inter-model homogeneity, where different models produce strikingly similar outputs.",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "a large-scale dataset of 26K diverse, real-world, open-ended user queries",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "On 26K real open-ended queries, single models repeat themselves and different models give strikingly similar outputs.",
+   "does_not_show": "A trend over time; the five Assembly substrates or the Three Pillars directive; safety training as the cause.",
+   "checked": {
+    "how": "Read the arXiv abstract page (submission history and abstract), 2026-10-30.",
+    "unverified": [
+     "NeurIPS 2025 acceptance: seen only as a search-result listing on neurips.cc, page not fetched"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W02",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-857.F1",
+     "bears_on": "method",
+     "scope": "The proposed longitudinal measurement of solution-space diversity across the model ecology, carried out by others across three years of releases with sentence-embedding similarity. It uses Infinity-Chat100 and the Alternate Uses Task in place of the Three Pillars directive and the five named substrates."
+    },
+    {
+     "claim": "PRED-803.B2",
+     "bears_on": "mechanism",
+     "scope": "Models converging over time, shown across releases. Safety pressure as the driver and nuance as the quantity lost are not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Nirav Patel",
+     "Josiah Crossman",
+     "Eva Aggarwal",
+     "Emily Wenger"
+    ],
+    "title": "Are LLMs becoming similarly creative? Evidence from three years of models",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2608.19437",
+     "https://arxiv.org/html/2608.19437v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-08-19",
+     "kind": "preprint",
+     "where": "arXiv 2608.19437 v1",
+     "url": "https://arxiv.org/abs/2608.19437"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "a statistically significant decrease in model output diversity over time",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "LLM outputs may be converging in creative substance across models",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "This covers 33 closed weight models and 34 open weight models across 27 release months",
+     "from": "body, arXiv HTML v1"
+    }
+   ],
+   "shows": "Across 67 models released over 27 months, cross-model output diversity on creative prompts falls significantly with release date.",
+   "does_not_show": "The cause of the decline; the archive's substrates or directive; the authors note their regression cannot account for hidden relationships across model families.",
+   "checked": {
+    "how": "Read the arXiv abstract page and the HTML v1 (model count and limitations), 2026-10-30.",
+    "unverified": [
+     "model count: the HTML also reports 68 and 69 models in other places"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W03",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-857.F1",
+     "bears_on": "method",
+     "scope": "A longitudinal measure of output diversity across successive releases, carried out on ChatGPT models with a text-similarity metric. One vendor's line only; the claim's study spans five substrates on one directive."
+    },
+    {
+     "claim": "PRED-803.B2",
+     "bears_on": "mechanism",
+     "scope": "Successive releases of one model line lose the ability to vary their text. Safety pressure as the cause is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Konstantinos F. Xylogiannopoulos",
+     "Petros Xanthopoulos",
+     "Panagiotis Karampelas",
+     "Georgios A. Bakamitsos"
+    ],
+    "title": "Experimental evidence of progressive ChatGPT models self-convergence",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2603.12683"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-03-13",
+     "kind": "preprint",
+     "where": "arXiv 2603.12683 v1",
+     "url": "https://arxiv.org/abs/2603.12683"
+    },
+    {
+     "date": "2026-03-16",
+     "kind": "preprint",
+     "where": "arXiv 2603.12683 v2",
+     "url": "https://arxiv.org/abs/2603.12683"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "we employ a text similarity metric to evaluate different ChatGPT models' capacity to generate diverse textual outputs.",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "Our findings indicate a measurable decline of recent ChatGPT releases' ability to produce varied text",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "even when explicitly prompted to do so, by setting the temperature parameter to one",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Recent ChatGPT releases produce less varied text than earlier ones, even at temperature one and when asked for variety.",
+   "does_not_show": "Cross-vendor convergence; any cause; effect sizes (not read beyond the abstract).",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W04",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-857.F1",
+     "bears_on": "component",
+     "scope": "Cross-model convergence at one time point: LLM responses resemble each other more than human responses do. No longitudinal series and not the claim's substrates or directive."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Emily Wenger",
+     "Yoed Kenett"
+    ],
+    "title": "We're Different, We're the Same: Creative Homogeneity Across LLMs",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2501.19361"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-01-31",
+     "kind": "preprint",
+     "where": "arXiv 2501.19361 v1",
+     "url": "https://arxiv.org/abs/2501.19361"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "LLM responses are much more similar to other LLM responses than human responses are to each other",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "even after controlling for response structure and other key variables",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "The population of LLM responses to creative tasks is more homogeneous than the population of human responses, with structure controlled.",
+   "does_not_show": "Change over time; the cause.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W05",
+   "direction": "disconfirms",
+   "evidence_class": "peer-reviewed conference paper",
+   "claims": [
+    {
+     "claim": "PRED-803.B2",
+     "bears_on": "mechanism",
+     "scope": "The cause the Gray Hypothesis names. The paper locates output homogeneity in pretraining, with alignment revealing or magnifying it and SFT data unable to introduce it; this tells against safety pressure as the origin, and leaves standing the role of alignment as an amplifier. Loss of nuance as such is not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Alexandrine Fortier",
+     "Hazel Chen",
+     "Peter West"
+    ],
+    "title": "Is Convergence Inevitable? Tracing Output Homogeneity Back to Base Models",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), Budapest, pp. 36846–36865",
+    "doi": "10.18653/2026.emnlp-main.1621",
+    "urls": [
+     "https://aclanthology.org/2026.emnlp-main.1621/",
+     "https://arxiv.org/abs/2608.11426"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-08-11",
+     "kind": "preprint",
+     "where": "arXiv 2608.11426 v1",
+     "url": "https://arxiv.org/abs/2608.11426"
+    },
+    {
+     "date": "2026-08-13",
+     "kind": "preprint",
+     "where": "arXiv 2608.11426 v2",
+     "url": "https://arxiv.org/abs/2608.11426"
+    },
+    {
+     "date": "2026-10",
+     "kind": "peer-reviewed conference paper",
+     "where": "EMNLP 2026",
+     "url": "https://aclanthology.org/2026.emnlp-main.1621/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "output homogeneity is likely learned during the pretraining phase",
+     "from": "abstract, ACL Anthology"
+    },
+    {
+     "quote": "only revealed or magnified during the alignment process",
+     "from": "abstract, ACL Anthology"
+    },
+    {
+     "quote": "convergence can be revealed and amplified, but not introduced by the SFT data",
+     "from": "abstract, ACL Anthology"
+    },
+    {
+     "quote": "instruct-like collapse can be induced through prompting alone, even without alignment",
+     "from": "abstract, ACL Anthology"
+    }
+   ],
+   "shows": "Homogeneity of instruct-model outputs can be produced from base models by prompting alone; alignment amplifies a convergence learned in pretraining.",
+   "does_not_show": "That alignment has no effect: the paper finds it magnifies convergence. Safety training is not separated from other alignment.",
+   "checked": {
+    "how": "Read the ACL Anthology landing page and the arXiv abstract page (submission history), 2026-10-30.",
+    "unverified": [
+     "the ACL page's quotes came through the fetch summarizer; the arXiv abstract text was not compared word for word"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W06",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-107.G1",
+     "bears_on": "mechanism",
+     "scope": "Post-training convergence pressure measured as reduced output diversity. The study compares RLHF with SFT across diversity measures; it does not compute signed per-token deviation and does not use Llama-3.1 base and instruct."
+    },
+    {
+     "claim": "PRED-803.B2",
+     "bears_on": "mechanism",
+     "scope": "Preference training reduces diversity. Safety pressure as such and nuance are not isolated."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Robert Kirk",
+     "Ishita Mediratta",
+     "Christoforos Nalmpantis",
+     "Jelena Luketina",
+     "Eric Hambro",
+     "Edward Grefenstette",
+     "Roberta Raileanu"
+    ],
+    "title": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+    "venue": "arXiv; listed in ICLR 2024 proceedings",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2310.06452v3",
+     "https://proceedings.iclr.cc/paper_files/paper/2024/hash/5a68d05006d5b05dd9463dd9c0219db0-Abstract-Conference.html"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-10-10",
+     "kind": "preprint",
+     "where": "arXiv 2310.06452 v1",
+     "url": "https://arxiv.org/abs/2310.06452v1"
+    },
+    {
+     "date": "2024-01-03",
+     "kind": "preprint",
+     "where": "arXiv 2310.06452 v2",
+     "url": "https://arxiv.org/abs/2310.06452v2"
+    },
+    {
+     "date": "2024-02-19",
+     "kind": "preprint",
+     "where": "arXiv 2310.06452 v3",
+     "url": "https://arxiv.org/abs/2310.06452v3"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "However, RLHF significantly reduces output diversity compared to SFT across a variety of measures",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "RLHF lowers output diversity relative to SFT across several measures.",
+   "does_not_show": "The signed-deviation statistic; base versus instruct of the named model.",
+   "checked": {
+    "how": "Read the arXiv abstract page (full submission history), 2026-10-30.",
+    "unverified": [
+     "ICLR 2024 publication: seen only as a search-result listing, proceedings page not fetched"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W07",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-107.G1",
+     "bears_on": "mechanism",
+     "scope": "The direction G1 predicts, base versus aligned, shown on the model's own next-token distribution: alignment sharpens it and cuts the branching factor 2 to 5 times. This is an entropy measure; G1's statistic is the signed deviation of realized tokens from that expectation, which the study does not report."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Chenghao Yang",
+     "Sida Li",
+     "Ari Holtzman"
+    ],
+    "title": "LLM Probability Concentration: How Alignment Shrinks the Generative Horizon",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2506.17871"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-06-22",
+     "kind": "preprint",
+     "where": "arXiv 2506.17871 v1",
+     "url": "https://arxiv.org/abs/2506.17871"
+    },
+    {
+     "date": "2026-09-12",
+     "kind": "preprint",
+     "where": "arXiv 2506.17871 v4",
+     "url": "https://arxiv.org/abs/2506.17871"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Alignment tuning sharpens the output distribution from the outset, reducing BF by a factor of 2--5 overall",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "up to an order of magnitude (e.g., from 12 to 1.2) at early positions",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Aligned models concentrate probability on far fewer continuations than their base models.",
+   "does_not_show": "Signed deviation; a Mann-Whitney test on matched prompts; Llama-3.1-8B specifically.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "dates of v2 and v3"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W08",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-107.G1",
+     "bears_on": "mechanism",
+     "scope": "Base models outperform their aligned forms on randomness and creative originality, with aligned models nearly predictable in some states. A behavioral measure; the per-token signed-deviation statistic is not computed."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Peter West",
+     "Christopher Potts"
+    ],
+    "title": "Base Models Beat Aligned Models at Randomness and Creativity",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2505.00047"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-04-30",
+     "kind": "preprint",
+     "where": "arXiv 2505.00047 v1",
+     "url": "https://arxiv.org/abs/2505.00047"
+    },
+    {
+     "date": "2025-09-13",
+     "kind": "preprint",
+     "where": "arXiv 2505.00047 v2",
+     "url": "https://arxiv.org/abs/2505.00047"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "base language models consistently outperform their popular aligned forms",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "aligned models tend towards narrow behaviors that result in distinct disadvantages",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "becoming almost fully predictable in some game states",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Alignment narrows behavior and raises predictability relative to the base model.",
+   "does_not_show": "The deviation statistic; any safety-specific effect.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W09",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-803.B2",
+     "bears_on": "mechanism",
+     "scope": "Alignment for debiasing, a safety-adjacent pressure, yields lower token entropy and attractor states in Llama-2 variants. Close to the Gray Hypothesis's cause; its effect is measured as diversity, which is narrower than nuance."
+    },
+    {
+     "claim": "PRED-107.G1",
+     "bears_on": "mechanism",
+     "scope": "Aligned models show lower token-prediction entropy than their base. Entropy is the expectation term; G1 names the signed deviation from it, which the study does not compute."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Behnam Mohammadi"
+    ],
+    "title": "Creativity Has Left the Chat: The Price of Debiasing Language Models",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2406.05587"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-06-08",
+     "kind": "preprint",
+     "where": "arXiv 2406.05587 v1",
+     "url": "https://arxiv.org/abs/2406.05587"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "aligned models exhibit lower entropy in token predictions",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "form distinct clusters in the embedding space",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "attractor states",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Alignment that reduces bias and toxicity also lowers output entropy and pulls outputs toward a few attractor states.",
+   "does_not_show": "Frontier models; human-rated loss of nuance.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W10",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-782.A7",
+     "bears_on": "component",
+     "scope": "Part (1): training only on generated data across generations destroys the tails of the original distribution. Parts (2) to (4), the mixing threshold and the rare-token retention rates, are not quantified here."
+    },
+    {
+     "claim": "PRED-635.F1",
+     "bears_on": "method",
+     "scope": "The collapse-resistance protocol, train on a corpus, generate, retrain on the generation, repeat, carried out by others before the claim. Their corpus, generation count and measures differ from the claim's Wikipedia, ten-generation design."
+    },
+    {
+     "claim": "PRED-1573.F4",
+     "bears_on": "method",
+     "scope": "Deliberately producing recursive collapse on small models and watching its measures evolve. They do not calibrate a composite index or severity bands."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Ilia Shumailov",
+     "Zakhar Shumaylov",
+     "Yiren Zhao",
+     "Yarin Gal",
+     "Nicolas Papernot",
+     "Ross Anderson"
+    ],
+    "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+    "venue": "arXiv; later published in Nature (2024) as 'AI models collapse when trained on recursively generated data'",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2305.17493",
+     "https://www.nature.com/articles/s41586-024-07566-y"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-05-27",
+     "kind": "preprint",
+     "where": "arXiv 2305.17493 v1",
+     "url": "https://arxiv.org/abs/2305.17493v1"
+    },
+    {
+     "date": "2023-05-31",
+     "kind": "preprint",
+     "where": "arXiv 2305.17493 v2",
+     "url": "https://arxiv.org/abs/2305.17493v2"
+    },
+    {
+     "date": "2024-04-14",
+     "kind": "preprint",
+     "where": "arXiv 2305.17493 v3",
+     "url": "https://arxiv.org/abs/2305.17493v3"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "causes irreversible defects in the resulting models, where tails of the original content distribution disappear",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Recursive training on model output causes irreversible loss of the distribution's tails.",
+   "does_not_show": "A critical real-data fraction; per-generation rare-token retention numbers.",
+   "checked": {
+    "how": "Read the arXiv abstract page and submission history, 2026-10-30. The Nature page refused the fetch.",
+    "unverified": [
+     "the Nature article's title, date and DOI: page refused the fetch"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W11",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-782.A7",
+     "bears_on": "component",
+     "scope": "Part (2), that real data in the mix prevents collapse, in the accumulation regime: real data kept alongside each generation's synthetic data. The claim's fixed mixing fraction α and its critical value are a different parametrization."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Matthias Gerstgrasser",
+     "Rylan Schaeffer",
+     "Apratim Dey",
+     "Rafael Rafailov",
+     "Henry Sleight",
+     "John Hughes",
+     "Tomasz Korbak",
+     "Rajashree Agrawal",
+     "Dhruv Pai",
+     "Andrey Gromov",
+     "Daniel A. Roberts",
+     "Diyi Yang",
+     "David L. Donoho",
+     "Sanmi Koyejo"
+    ],
+    "title": "Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2404.01413"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-04-01",
+     "kind": "preprint",
+     "where": "arXiv 2404.01413 v1",
+     "url": "https://arxiv.org/abs/2404.01413v1"
+    },
+    {
+     "date": "2024-04-29",
+     "kind": "preprint",
+     "where": "arXiv 2404.01413 v2",
+     "url": "https://arxiv.org/abs/2404.01413"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "replacing the original real data by each generation's synthetic data does indeed tend towards model collapse",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "accumulating the successive generations of synthetic data alongside the original real data avoids model collapse",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Replacing real data collapses the model; accumulating real and synthetic data avoids collapse, with bounded test error proved in a linear setting.",
+   "does_not_show": "A threshold α*; rare-token retention.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W12",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-782.A7",
+     "bears_on": "component",
+     "scope": "Parts (2) and (3): stability of iterative retraining holds once the proportion of clean data is large enough, which implies a threshold. The paper proves the condition for generative models in general and gives no value to compare with the claim's range of 0.05 to 0.15."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Quentin Bertrand",
+     "Avishek Joey Bose",
+     "Alexandre Duplessis",
+     "Marco Jiralerspong",
+     "Gauthier Gidel"
+    ],
+    "title": "On the Stability of Iterative Retraining of Generative Models on their own Data",
+    "venue": "arXiv; listed at ICLR 2024",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2310.00429v5",
+     "https://iclr.cc/virtual/2024/poster/18942"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-09-30",
+     "kind": "preprint",
+     "where": "arXiv 2310.00429 v1",
+     "url": "https://arxiv.org/abs/2310.00429v1"
+    },
+    {
+     "date": "2024-04-02",
+     "kind": "preprint",
+     "where": "arXiv 2310.00429 v5",
+     "url": "https://arxiv.org/abs/2310.00429v5"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "We first prove the stability of iterative training under the condition that the initial generative models",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "approximate the data distribution well enough and the proportion of clean training data",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "(w.r.t. synthetic data) is large enough.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Iterative retraining is stable when the share of clean data is large enough.",
+   "does_not_show": "The numerical threshold; language models specifically.",
+   "checked": {
+    "how": "Read the arXiv v5 abstract page, 2026-10-30.",
+    "unverified": [
+     "ICLR 2024 acceptance: search listing only",
+     "dates of v2 to v4"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W13",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-782.A7",
+     "bears_on": "component",
+     "scope": "Parts (1) and (3): collapse is unavoidable on synthetic data alone, and a maximal synthetic share exists below which it can be avoided, derived for a statistical language model. Whether its estimate falls in the claim's α* range was not read beyond the abstract."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Mohamed El Amine Seddik",
+     "Suei-Wen Chen",
+     "Soufiane Hayou",
+     "Pierre Youssef",
+     "Merouane Debbah"
+    ],
+    "title": "How Bad is Training on Synthetic Data? A Statistical Analysis of Language Model Collapse",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2404.05090"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-04-07",
+     "kind": "preprint",
+     "where": "arXiv 2404.05090 v1",
+     "url": "https://arxiv.org/abs/2404.05090"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Specifically, we demonstrate that model collapse cannot be avoided when training solely on synthetic data.",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "However, when mixing both real and synthetic data, we provide an estimate of a maximal amount of synthetic data",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "below which model collapse can eventually be avoided.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "A threshold structure for collapse in language-model training: certain on synthetic data alone, avoidable below a maximal synthetic share.",
+   "does_not_show": "The numerical value of the threshold in the claim's terms.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "the paper's numerical estimate of the threshold"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W14",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-782.A7",
+     "bears_on": "component",
+     "scope": "Parts (1) and (4) in part: lexical, syntactic and semantic diversity of outputs fall through successive recursive fine-tuning. The claim's rare-token retention rate per generation and its α conditions are not measured."
+    },
+    {
+     "claim": "PRED-635.F1",
+     "bears_on": "method",
+     "scope": "Measuring output diversity at each generation of a recursive train-and-generate loop, carried out by others with fine-tuning on English generation tasks; the claim specifies pretraining on Wikipedia for ten generations."
+    },
+    {
+     "claim": "PRED-1573.F4",
+     "bears_on": "method",
+     "scope": "Producing recursive collapse on models and tracking diversity measures across iterations. No severity bands are calibrated."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Yanzhu Guo",
+     "Guokan Shang",
+     "Michalis Vazirgiannis",
+     "Chloé Clavel"
+    ],
+    "title": "The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2311.09807"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-11-16",
+     "kind": "preprint",
+     "where": "arXiv 2311.09807 v1",
+     "url": "https://arxiv.org/abs/2311.09807v1"
+    },
+    {
+     "date": "2024-04-16",
+     "kind": "preprint",
+     "where": "arXiv 2311.09807 v2",
+     "url": "https://arxiv.org/abs/2311.09807"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "a set of novel metrics targeting lexical, syntactic, and semantic diversity",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "a consistent decrease in the diversity of the model outputs through successive iterations",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Diversity on several linguistic levels falls consistently across recursive training iterations.",
+   "does_not_show": "A threshold for real-data mixing; the claim's case-3 classification.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "publication venue (believed NAACL 2024 Findings): not on the page"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W15",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-110.A1",
+     "bears_on": "method",
+     "scope": "The test P1 proposes, a per-token signed deviation of observed log-probability from the model's expected log-probability, normalized, used to separate machine from human text. Fast-DetectGPT builds a detector on exactly this curvature and reports it works; it reports detection accuracy and does not report P1's Mann-Whitney U or Cohen's d."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Guangsheng Bao",
+     "Yanbin Zhao",
+     "Zhiyang Teng",
+     "Linyi Yang",
+     "Yue Zhang"
+    ],
+    "title": "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2310.05130"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-10-08",
+     "kind": "preprint",
+     "where": "arXiv 2310.05130 v1",
+     "url": "https://arxiv.org/abs/2310.05130v1"
+    },
+    {
+     "date": "2024-12-16",
+     "kind": "preprint",
+     "where": "arXiv 2310.05130 v3",
+     "url": "https://arxiv.org/abs/2310.05130"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "introduce the concept of conditional probability curvature",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "discrepancies in word choices between LLMs and humans within a given context",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "surpasses DetectGPT by a relative around 75% in both the white-box and black-box settings",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Machine text sits on the probable side of the scoring model's own expectation token by token, consistently enough to detect it zero-shot.",
+   "does_not_show": "Human-rated slop (PRED-107.G3); the claim's thresholds.",
+   "checked": {
+    "how": "Read the arXiv abstract page twice, 2026-10-30.",
+    "unverified": [
+     "the curvature's exact definition (sign convention, normalization) is in the body, which was not read",
+     "ICLR 2024 publication: not on the page"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W16",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-110.A1",
+     "bears_on": "component",
+     "scope": "On the matched human/ChatGPT corpus HC3, ChatGPT text has lower GPT-2 perplexity than human text at text and sentence level. Perplexity is raw surprisal; P1's statistic subtracts the model's expectation, so the fit is to the direction of the effect."
+    },
+    {
+     "claim": "PRED-110.F2",
+     "bears_on": "method",
+     "scope": "The roadmap's cheapest test names HC3; the corpus authors already ran a perplexity comparison on it. Not with P1's deviation statistic or three reference models."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Biyang Guo",
+     "Xin Zhang",
+     "Ziyuan Wang",
+     "Minqi Jiang",
+     "Jinran Nie",
+     "Yuxuan Ding",
+     "Jianwei Yue",
+     "Yupeng Wu"
+    ],
+    "title": "How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2301.07597",
+     "https://arxiv.org/html/2301.07597"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2023-01-18",
+     "kind": "preprint",
+     "where": "arXiv 2301.07597 v1",
+     "url": "https://arxiv.org/abs/2301.07597"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "We call the collected dataset the Human ChatGPT Comparison Corpus (HC3).",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "It is clearly observed that, regardless of whether it is at the text level or the sentence level,",
+     "from": "Section 4.4, arXiv HTML"
+    },
+    {
+     "quote": "the content generated by ChatGPT has relatively lower PPLs compared to the text written by humans.",
+     "from": "Section 4.4, arXiv HTML"
+    }
+   ],
+   "shows": "In HC3, ChatGPT answers are more predictable to a reference model than human answers.",
+   "does_not_show": "A signed-deviation statistic; effect size; human-rated slop.",
+   "checked": {
+    "how": "Read the arXiv abstract page and the HTML full text Section 4.4, 2026-10-30.",
+    "unverified": [
+     "the HTML fetched was the unversioned page; only v1 is listed"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W17",
+   "direction": "supports",
+   "evidence_class": "peer-reviewed conference paper",
+   "claims": [
+    {
+     "claim": "PRED-199.A1",
+     "bears_on": "mechanism",
+     "scope": "The monoculture premise: model-generated code shows low algorithmic diversity against human solutions, with model size, temperature and instruction tuning as factors. Cross-sectional; no trend across generations under synthetic saturation."
+    },
+    {
+     "claim": "PRED-199.F1",
+     "bears_on": "method",
+     "scope": "Measuring the solution-space diversity of a code model against a test battery, carried out by others with their own metric. One time point; the SSDI and the generational series are not run."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Seonghyeon Lee",
+     "HeeJae Chon",
+     "Joonwon Jang",
+     "Dongha Lee",
+     "Hwanjo Yu"
+    ],
+    "title": "How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025, Suzhou, pp. 152–167",
+    "doi": "10.18653/v1/2025.findings-emnlp.10",
+    "urls": [
+     "https://aclanthology.org/2025.findings-emnlp.10/",
+     "https://arxiv.org/abs/2503.00691v2"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-03-02",
+     "kind": "preprint",
+     "where": "arXiv 2503.00691 v1",
+     "url": "https://arxiv.org/abs/2503.00691v1"
+    },
+    {
+     "date": "2025-03-07",
+     "kind": "preprint",
+     "where": "arXiv 2503.00691 v2",
+     "url": "https://arxiv.org/abs/2503.00691v2"
+    },
+    {
+     "date": "2025-11",
+     "kind": "peer-reviewed conference paper",
+     "where": "Findings of EMNLP 2025",
+     "url": "https://aclanthology.org/2025.findings-emnlp.10/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "We extensively investigate the property of model-generated solutions by contrasting them with human-written ones",
+     "from": "abstract, ACL Anthology"
+    },
+    {
+     "quote": "model-generated solutions exhibit low algorithmic diversity",
+     "from": "abstract, ACL Anthology"
+    }
+   ],
+   "shows": "Code models converge on fewer algorithms than human programmers for the same problems.",
+   "does_not_show": "Decline across model generations; vulnerability correlation.",
+   "checked": {
+    "how": "Read the ACL Anthology landing page (preview mirror) and the arXiv submission history, 2026-10-30.",
+    "unverified": [
+     "the Findings publication month (EMNLP 2025 was held November 2025)"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W18",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-199.A2",
+     "bears_on": "component",
+     "scope": "The correlation half for one model: LLM output follows recurring templates, and a model reproduces the same vulnerabilities across different programs, enough to attack black-box software at up to 94% success. Change in vulnerability frequency, and growth of correlation as AI code share rises, are not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Tomer Kordonsky",
+     "Amit LeVi",
+     "Maayan Yamin",
+     "Noam Benzimra",
+     "Avi Mendelson"
+    ],
+    "title": "Extracting Recurring Vulnerabilities from Black-Box LLM-Generated Software",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2602.04894"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-02-02",
+     "kind": "preprint",
+     "where": "arXiv 2602.04894 v1",
+     "url": "https://arxiv.org/abs/2602.04894v1"
+    },
+    {
+     "date": "2026-06-05",
+     "kind": "preprint",
+     "where": "arXiv 2602.04894 v4",
+     "url": "https://arxiv.org/abs/2602.04894"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "often follow recurring templates that can induce predictable vulnerabilities",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "how consistently a model reproduces the same vulnerabilities across programs",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "achieves up to 94% attack success and 93% vulnerability coverage on Internal Tools (Claude-4.5 Opus)",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Vulnerabilities in LLM-generated software recur across programs from one model and can be predicted and exploited from that regularity.",
+   "does_not_show": "A trend over time; the frequency side of the claim; cross-model correlation.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "dates of v2 and v3"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W19",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-199.A2",
+     "bears_on": "component",
+     "scope": "Correlation across models: most vulnerability classes recur in code from all three models tested. Three models and one snapshot; no measure of frequency falling or correlation rising with AI code share."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Shanna M. Kahn",
+     "John D. Hastings"
+    ],
+    "title": "Security Vulnerability Patterns in AI-Generated Code: A Cross-Model Comparative Study",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2607.20713"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-07-22",
+     "kind": "preprint",
+     "where": "arXiv 2607.20713 v1",
+     "url": "https://arxiv.org/abs/2607.20713"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Nine of the 17 identified vulnerability classes appeared in code from all three models",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "14 of the 17 vulnerability classes appeared in at least two models",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "The weighted CVSS scores across platforms differed by less than 10%.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Different code models share most of their vulnerability classes.",
+   "does_not_show": "A trend; the frequency claim; a statistical correlation coefficient.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W20",
+   "direction": "supports",
+   "evidence_class": "documentation",
+   "claims": [
+    {
+     "claim": "PRED-856.B1",
+     "bears_on": "component",
+     "scope": "One instance of the movement the claim predicts: a provider whose consumer chats had been kept out of training begins to use them, with users given the choice and retention extended to five years. The claim's causes, exhausted data and competitive pressure, are not stated in the announcement as quoted."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Anthropic"
+    ],
+    "title": "Updates to Consumer Terms and Privacy Policy",
+    "venue": "anthropic.com",
+    "doi": null,
+    "urls": [
+     "https://www.anthropic.com/news/updates-to-our-consumer-terms"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-08-28",
+     "kind": "documentation",
+     "where": "Anthropic news post",
+     "url": "https://www.anthropic.com/news/updates-to-our-consumer-terms"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "We're now giving users the choice to allow their data to be used to improve Claude",
+     "from": "page body, anthropic.com"
+    },
+    {
+     "quote": "We are also extending data retention to five years, if you allow us to use your data for model training.",
+     "from": "page body, anthropic.com"
+    },
+    {
+     "quote": "These updates apply to users on our Claude Free, Pro, and Max plans",
+     "from": "page body, anthropic.com"
+    }
+   ],
+   "shows": "A frontier provider moved its consumer chat data into model training in 2025.",
+   "does_not_show": "Why it did so; competitive disadvantage; other providers.",
+   "checked": {
+    "how": "Read the announcement page, 2026-10-30.",
+    "unverified": [
+     "the prior policy (no training on consumer chats) is not quoted from this page"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W21",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-856.F1",
+     "bears_on": "mechanism",
+     "scope": "The drift the proposed audit would catch: human language measured against a pre-ChatGPT baseline by synthetic control shifts toward words ChatGPT favors. Measured in podcast speech; chat inputs, habituation depth and turn position are not studied."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Hiromu Yakura",
+     "Ezequiel Lopez-Lopez",
+     "Levin Brinkmann",
+     "Ignacio de la Serna",
+     "Lara Kirfel",
+     "Prateek Gupta",
+     "Ivan Soraperra",
+     "Thomas F. Eisenmann",
+     "Dirk U. Wulff",
+     "Iyad Rahwan"
+    ],
+    "title": "Empirical evidence of Large Language Model's influence on human spoken communication",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2409.01754"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-09-03",
+     "kind": "preprint",
+     "where": "arXiv 2409.01754 v1",
+     "url": "https://arxiv.org/abs/2409.01754v1"
+    },
+    {
+     "date": "2026-07-16",
+     "kind": "preprint",
+     "where": "arXiv 2409.01754 v4",
+     "url": "https://arxiv.org/abs/2409.01754"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "synthetic-control analysis of 737,083 hours of conversation from 824,634 podcast episodes",
+     "from": "abstract, arXiv v4"
+    },
+    {
+     "quote": "increased abruptly in spontaneous human speech",
+     "from": "abstract, arXiv v4"
+    }
+   ],
+   "shows": "Human speech moved toward ChatGPT-preferred vocabulary after ChatGPT's release, against a pre-AI baseline.",
+   "does_not_show": "Contamination of chat logs; training effects.",
+   "checked": {
+    "how": "Read the arXiv abstract page (v4), 2026-10-30.",
+    "unverified": [
+     "v1 abstract wording (the v4 abstract was read)",
+     "dates of v2 and v3"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W22",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-476.A2",
+     "bears_on": "component",
+     "scope": "The component 'Academic and scientific discourse narrows toward AI-legible modes': excess style vocabulary in biomedical abstracts marks at least 13.5% of 2024 abstracts as processed with LLMs. It measures a shift of style toward LLM vocabulary; narrowing in the sense of lost variance is not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Dmitry Kobak",
+     "Rita González-Márquez",
+     "Emőke-Ágnes Horvát",
+     "Jan Lause"
+    ],
+    "title": "Delving into LLM-assisted writing in biomedical publications through excess vocabulary",
+    "venue": "arXiv; Science Advances",
+    "doi": "10.1126/sciadv.adt3813",
+    "urls": [
+     "https://arxiv.org/abs/2406.07016"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-06-11",
+     "kind": "preprint",
+     "where": "arXiv 2406.07016 v1",
+     "url": "https://arxiv.org/abs/2406.07016v1"
+    },
+    {
+     "date": "2025-07-03",
+     "kind": "preprint",
+     "where": "arXiv 2406.07016 v5",
+     "url": "https://arxiv.org/abs/2406.07016"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "we study vocabulary changes in over 15 million biomedical abstracts from 2010--2024 indexed by PubMed",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "show how the appearance of LLMs led to an abrupt increase in the frequency of certain style words",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "This excess word analysis suggests that at least 13.5% of 2024 abstracts were processed with LLMs.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "A measurable share of the scientific literature now carries an LLM style signature.",
+   "does_not_show": "Reduced variance or narrowed argument; the 5–15 year window.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "journal name and date of the Science Advances version (DOI only on the page)"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W23",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-476.A3",
+     "bears_on": "component",
+     "scope": "The component 'Innovation patterns shift toward incremental/combinatorial, away from paradigm-breaking', for science using AI tools: the collective volume of topics shrinks and AI appears to automate established fields. The AI here is research tooling in the natural sciences, and the claim's horizon is 15–50 years."
+    },
+    {
+     "claim": "PRED-476.A2",
+     "bears_on": "component",
+     "scope": "The component on academic and scientific discourse narrowing: topic volume contracts 4.63% and engagement between scientists falls 22% in AI-using work. Narrowing of topics is measured; 'AI-legible modes' of discourse are not."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Qianyue Hao",
+     "Fengli Xu",
+     "Yong Li",
+     "James Evans"
+    ],
+    "title": "Artificial Intelligence Tools Expand Scientists' Impact but Contract Science's Focus",
+    "venue": "arXiv; accepted at Nature",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2412.07727v4",
+     "https://arxiv.org/abs/2412.07727v1"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-12-10",
+     "kind": "preprint",
+     "where": "arXiv 2412.07727 v1",
+     "url": "https://arxiv.org/abs/2412.07727v1"
+    },
+    {
+     "date": "2025-11-29",
+     "kind": "preprint",
+     "where": "arXiv 2412.07727 v4",
+     "url": "https://arxiv.org/abs/2412.07727v4"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "a dataset of 41.3 million research papers across natural science",
+     "from": "abstract, arXiv v4"
+    },
+    {
+     "quote": "shrinks the collective volume of scientific topics studied by 4.63%",
+     "from": "abstract, arXiv v4"
+    },
+    {
+     "quote": "decreases scientist's engagement with one another by 22.00%",
+     "from": "abstract, arXiv v4"
+    },
+    {
+     "quote": "AI tools appear to automate established fields rather than explore new ones",
+     "from": "abstract, arXiv v4"
+    }
+   ],
+   "shows": "AI-augmented research concentrates on established, data-rich topics and contracts science's collective range.",
+   "does_not_show": "Generative-AI writing; cognitive diversity of persons; the 15–50 year trajectory.",
+   "checked": {
+    "how": "Read the arXiv v4 abstract page, 2026-10-30.",
+    "unverified": [
+     "the Nature publication (title, date, DOI): not fetched",
+     "the v1 abstract wording"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W24",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-476.A2",
+     "bears_on": "component",
+     "scope": "The component on scientific discourse narrowing: GenAI-assisted articles converge on a single benchmark variety, U.S. scientific English, in embedding space. A narrowing toward one norm; whether that norm is 'AI-legible' is the claim's reading."
+    },
+    {
+     "claim": "PRED-1540.F3",
+     "bears_on": "method",
+     "scope": "An observatory of variance over an admitted corpus, carried out by others on 5.65 million Scopus articles with embeddings. Convergence of language variety across all fields; philosophy and classifier standing are not isolated."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Dragan Filimonovic",
+     "Christian Rutzer",
+     "Jeffrey Macher",
+     "Rolf Weder"
+    ],
+    "title": "Does Scientific Writing Converge to U.S. English? Evidence from Generative AI-Assisted Publications",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2511.11687"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-11-12",
+     "kind": "preprint",
+     "where": "arXiv 2511.11687 v1",
+     "url": "https://arxiv.org/abs/2511.11687v1"
+    },
+    {
+     "date": "2026-03-10",
+     "kind": "preprint",
+     "where": "arXiv 2511.11687 v2",
+     "url": "https://arxiv.org/abs/2511.11687"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "5.65 million English-language scientific articles published from 2021 to 2024 and indexed in Scopus",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "We measure linguistic similarity to a U.S. benchmark corpus using SciBERT text embeddings",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "exhibit statistically significant and increasing convergence toward U.S. scientific English",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Scientific prose assisted by GenAI is converging on one variety of English.",
+   "does_not_show": "Contraction of argument-form or genre; the authors read the result as lowered language barriers.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W25",
+   "direction": "disconfirms",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-476.A2",
+     "bears_on": "component",
+     "scope": "Against the component 'Academic and scientific discourse narrows toward AI-legible modes' in one field: over 44 years of CHI full texts, prose did not homogenize after LLMs and vocabulary grew more varied, while LLM marker words rose. One venue and an early point in the 5–15 year window."
+    },
+    {
+     "claim": "PRED-1540.F3",
+     "bears_on": "method",
+     "scope": "The tail-preservation observatory carried out on an admitted corpus (lexical diversity, register, rhythm), finding no contraction. The field is HCI; philosophy and retroactive classifier policies are outside it."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Thomas Kosch",
+     "Robin Welsch",
+     "Michael Hedderich",
+     "Christopher Katins"
+    ],
+    "title": "How Did Writing Change At CHI? Analyzing 44 Years of CHI Writing Before and After the Introduction of Large Language Models",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2609.23090"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-09-19",
+     "kind": "preprint",
+     "where": "arXiv 2609.23090 v1",
+     "url": "https://arxiv.org/abs/2609.23090"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "analyzed full texts of 14,262 archival papers across all 44 CHI proceedings from 1982 to 2026",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "measuring readability, register, lexical diversity, and marker words typically produced by LLMs",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "prose did not homogenize, while vocabulary grew more varied, and sentence rhythm remained irregular.",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "The word-level shift began before any author used LLMs, so LLMs did not start the change but accelerated it.",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "In CHI papers, LLM-era writing shows more lexical variety and no homogenization of prose.",
+   "does_not_show": "Philosophy; argument-form or genre variance; topic contraction (compare Hao et al.).",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W26",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-779.F4",
+     "bears_on": "method",
+     "scope": "Study 1's design, diversity measured across several dimensions under different mediation designs, carried out by others on 6,875 student essays (human-only, AI-only, three human+AI prompt strategies). Mixed result: some dimensions lose most of their variance, one diversifies, and prompt specificity reverses homogenization on one dimension. It is a new experiment; Doshi & Hauser and Wan & Kalman are not reanalyzed."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Keito Inoshita",
+     "Michiaki Omura",
+     "Tsukasa Yamanaka",
+     "Go Maeda",
+     "Kentaro Tsuji"
+    ],
+    "title": "Does AI Homogenize Student Thinking? A Multi-Dimensional Analysis of Structural Convergence in AI-Augmented Essays",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2603.21228"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-03-22",
+     "kind": "preprint",
+     "where": "arXiv 2603.21228 v1",
+     "url": "https://arxiv.org/abs/2603.21228"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "Analyzing 6,875 essays across five conditions (Human-only, AI-only, and three Human+AI prompt strategies)",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "cohesion architecture lost 70-78% of its variance",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "perspective plurality was diversified",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "prompt specificity reversed homogenization into diversification on argument depth",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Whether AI mediation contracts diversity depends on the dimension measured and on the mediation design.",
+   "does_not_show": "Collective diversity across resolutions in the claim's sense; persona or retrieval-amplified designs.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W27",
+   "direction": "supports",
+   "evidence_class": "peer-reviewed article",
+   "claims": [
+    {
+     "claim": "PRED-779.F4",
+     "bears_on": "mechanism",
+     "scope": "The contrast Study 1 would test: diverse-persona mediation preserves collective story diversity against a human-only baseline, where uniform deployment reduced it in earlier work. The claim names this study among the datasets to reanalyze; the witness is its authors' own result, and the reanalysis across resolutions remains undone."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Yun Wan",
+     "Yoram M. Kalman"
+    ],
+    "title": "Diverse AI Personas Can Mitigate the Homogenization Effect in Human-AI Collaborative Ideation",
+    "venue": "Computers in Human Behavior: Artificial Humans, vol. 8",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2504.13868v1",
+     "https://cris.openu.ac.il/en/publications/diverse-ai-personas-can-mitigate-the-homogenization-effect-in-hum/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-03-29",
+     "kind": "preprint",
+     "where": "arXiv 2504.13868 v1",
+     "url": "https://arxiv.org/abs/2504.13868v1"
+    },
+    {
+     "date": "2026-05",
+     "kind": "peer-reviewed article",
+     "where": "Computers in Human Behavior: Artificial Humans 8",
+     "url": "https://cris.openu.ac.il/en/publications/diverse-ai-personas-can-mitigate-the-homogenization-effect-in-hum/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "we used structured prompting with 10 diverse GenAI personas to generate 300 story plots",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "diverse GenAI inputs can preserve story diversity compared to a human-only baseline",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "the trade-off may emerge from uniform deployment practices rather than from an inherent limitation of GenAI",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Varying the AI mediator's persona keeps collective diversity at the human baseline.",
+   "does_not_show": "Measurement across resolutions; a direct single-mode arm in the same experiment (implied by the abstract only).",
+   "checked": {
+    "how": "Read the arXiv abstract page and the Open University of Israel research-portal record, 2026-10-30.",
+    "unverified": [
+     "DOI of the journal version: not on the portal page"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W28",
+   "direction": "supports",
+   "evidence_class": "working paper",
+   "claims": [
+    {
+     "claim": "PRED-779.F4",
+     "bears_on": "mechanism",
+     "scope": "Mediation design changes the diversity of AI-produced idea pools: prompting methods move cosine similarity, and chain-of-thought approaches human-group diversity. AI-only pools; collective human diversity is not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Lennart Meincke",
+     "Ethan R. Mollick",
+     "Christian Terwiesch"
+    ],
+    "title": "Prompting Diverse Ideas: Increasing AI Idea Variance",
+    "venue": "arXiv; SSRN 4708466",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2402.01727",
+     "https://papers.ssrn.com/abstract=4708466"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-01-27",
+     "kind": "preprint",
+     "where": "arXiv 2402.01727 v1",
+     "url": "https://arxiv.org/abs/2402.01727"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "we explore the effect of different prompting methods on Cosine Similarity",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "was able to come close to what is achieved by groups of human subjects",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "How a model is prompted sets the diversity of the ideas it yields.",
+   "does_not_show": "Human-AI co-creation; persona designs (the abstract does not name personas).",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "SSRN date"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W29",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-855.F1",
+     "bears_on": "method",
+     "scope": "A benchmark of the kind specified, measuring whether a model can produce multiple distinct outputs, built and run on 20 models before the claim. It measures distinctness across samples; the claim's support measures (constructions, vocabulary, syntactic complexity) are wider. The claim's sentence 'No such benchmark exists in any deployed evaluation framework' holds only if 'deployed' excludes research benchmarks like this one."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Yiming Zhang",
+     "Harshita Diddee",
+     "Susan Holm",
+     "Hanchen Liu",
+     "Xinyue Liu",
+     "Vinay Samuel",
+     "Barry Wang",
+     "Daphne Ippolito"
+    ],
+    "title": "NoveltyBench: Evaluating Language Models for Humanlike Diversity",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2504.05228v4"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-04-07",
+     "kind": "preprint",
+     "where": "arXiv 2504.05228 v1",
+     "url": "https://arxiv.org/abs/2504.05228v1"
+    },
+    {
+     "date": "2025-08-09",
+     "kind": "preprint",
+     "where": "arXiv 2504.05228 v4",
+     "url": "https://arxiv.org/abs/2504.05228v4"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "evaluate the ability of language models to produce multiple distinct and high-quality outputs",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "Evaluating 20 leading language models",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "current state-of-the-art systems generate significantly less diversity than human writers",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "larger models within a family often exhibit less diversity than their smaller counterparts",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "A distribution-support style benchmark exists, and on it frontier models fall short of human diversity, larger models more so.",
+   "does_not_show": "Adoption in deployed lab evaluation frameworks.",
+   "checked": {
+    "how": "Read the arXiv v4 abstract page, 2026-10-30.",
+    "unverified": [
+     "dates of v2 and v3"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W30",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-1287.E1",
+     "bears_on": "mechanism",
+     "scope": "Hallucinations with structural regularity across repeated queries: in code generation, 43% of hallucinated package names recur in all ten repetitions of the prompt. A different domain from the incident report's literary hallucinations; regularity across users and sessions is not tested, only across repeated queries."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Joseph Spracklen",
+     "Raveen Wijewickrama",
+     "A H M Nazmus Sakib",
+     "Anindya Maiti",
+     "Bimal Viswanath",
+     "Murtuza Jadliwala"
+    ],
+    "title": "We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs",
+    "venue": "arXiv; to appear in USENIX Security 2025 (per arXiv comment)",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2406.10279v3",
+     "https://arxiv.org/html/2406.10279v2"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2024-06-12",
+     "kind": "preprint",
+     "where": "arXiv 2406.10279 v1",
+     "url": "https://arxiv.org/abs/2406.10279v1"
+    },
+    {
+     "date": "2024-09-24",
+     "kind": "preprint",
+     "where": "arXiv 2406.10279 v2",
+     "url": "https://arxiv.org/abs/2406.10279v2"
+    },
+    {
+     "date": "2025-03-02",
+     "kind": "preprint",
+     "where": "arXiv 2406.10279 v3",
+     "url": "https://arxiv.org/abs/2406.10279v3"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "a staggering 205,474 unique examples of hallucinated package names",
+     "from": "abstract, arXiv v3"
+    },
+    {
+     "quote": "highlight package hallucinations as a persistent and systemic phenomenon while using state-of-the-art LLMs for code generation",
+     "from": "abstract, arXiv v3"
+    },
+    {
+     "quote": "with the same prompt that generated a hallucination: 43% of hallucinated packages were repeated in all 10 queries,",
+     "from": "Section 5.3, arXiv HTML v2"
+    },
+    {
+     "quote": "while 39% did not repeat at all across the 10 queries.",
+     "from": "Section 5.3, arXiv HTML v2"
+    }
+   ],
+   "shows": "A large share of LLM hallucinations are stable and reproducible on repetition.",
+   "does_not_show": "Pattern completion of a literary architecture; consistency across users.",
+   "checked": {
+    "how": "Read the arXiv v3 abstract page and the HTML v2 Section 5.3, 2026-10-30.",
+    "unverified": [
+     "USENIX Security 2025 publication: arXiv comment only"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W31",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-1287.E3",
+     "bears_on": "component",
+     "scope": "Question 2, intentional seeding: a near-constant 250 poisoned documents implant a behavior across model and data scales. The planted behavior is a backdoor trigger; 'architecturally dense' content producing specific hallucinations is untested."
+    },
+    {
+     "claim": "PRED-21.B2",
+     "bears_on": "mechanism",
+     "scope": "Content seeded into the training layer shapes the model trained on it, at a cost that does not grow with corpus size. Each model is poisoned at its own training; influence on every future model is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Alexandra Souly",
+     "Javier Rando",
+     "Ed Chapman",
+     "Xander Davies",
+     "Burak Hasircioglu",
+     "Ezzeldin Shereen",
+     "Carlos Mougan",
+     "Vasilios Mavroudis",
+     "Erik Jones",
+     "Chris Hicks",
+     "Nicholas Carlini",
+     "Yarin Gal",
+     "Robert Kirk"
+    ],
+    "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
+    "venue": "arXiv; listed at NeurIPS 2026",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2510.07192",
+     "https://neurips.cc/virtual/2026/poster/154663"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-10-08",
+     "kind": "preprint",
+     "where": "arXiv 2510.07192 v1",
+     "url": "https://arxiv.org/abs/2510.07192"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "pretraining models from 600M to 13B parameters on chinchilla-optimal datasets (6B to 260B tokens)",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "250 poisoned documents similarly compromise models across all model and dataset sizes",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "require a near-constant number of documents regardless of dataset size",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "A fixed small number of planted documents is enough to shape a pretrained model's behavior.",
+   "does_not_show": "Specific hallucinations; transfer to later model generations.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "NeurIPS 2026 listing: search result only"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W32",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-21.B2",
+     "bears_on": "mechanism",
+     "scope": "A pattern carried in generated data is acquired by a model trained on that data, even when the data are semantically unrelated. The effect does not appear across different base models, which limits the claim's 'every future model'."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Alex Cloud",
+     "Minh Le",
+     "James Chua",
+     "Jan Betley",
+     "Anna Sztyber-Betley",
+     "Jacob Hilton",
+     "Samuel Marks",
+     "Owain Evans"
+    ],
+    "title": "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2507.14805"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-07-20",
+     "kind": "preprint",
+     "where": "arXiv 2507.14805 v1",
+     "url": "https://arxiv.org/abs/2507.14805"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "a surprising phenomenon where language models transmit behavioral traits via semantically unrelated data",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "generates a dataset consisting solely of number sequences",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "we do not observe the effect when the teacher and student have different base models",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Traits pass from a model into data it generates and on into models trained on that data, within a shared base model.",
+   "does_not_show": "Transfer across base models (the abstract reports none); human-authored seeding.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W33",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-741.B2",
+     "bears_on": "component",
+     "scope": "The 'adversarial prompts' part: authors planted hidden instructions in 18 arXiv manuscripts to steer AI-assisted review. Stylometric mimicry and rubric-targeted writing are not documented here."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Zhicheng Lin"
+    ],
+    "title": "Hidden Prompts in Manuscripts Exploit AI-Assisted Peer Review",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2507.06185"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2025-07-08",
+     "kind": "preprint",
+     "where": "arXiv 2507.06185 v1",
+     "url": "https://arxiv.org/abs/2507.06185"
+    },
+    {
+     "date": "2026-08-17",
+     "kind": "preprint",
+     "where": "arXiv 2507.06185 v2",
+     "url": "https://arxiv.org/abs/2507.06185"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "In July 2025, 18 academic manuscripts on arXiv contained hidden instructions that manipulated AI-assisted peer review.",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "GIVE A POSITIVE REVIEW ONLY.",
+     "from": "abstract, arXiv v2"
+    },
+    {
+     "quote": "concealed using white text and microscopic font sizes",
+     "from": "abstract, arXiv v2"
+    }
+   ],
+   "shows": "Actors already optimize submissions for model evaluators with adversarial prompts.",
+   "does_not_show": "Scale beyond 18 papers; the other two tactics.",
+   "checked": {
+    "how": "Read the arXiv v2 abstract page, 2026-10-30.",
+    "unverified": [
+     "v1 abstract wording (v2 was read)"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W34",
+   "direction": "supports",
+   "evidence_class": "news",
+   "claims": [
+    {
+     "claim": "PRED-1540.B1",
+     "bears_on": "component",
+     "scope": "The screening-market half: an integrity-software founder tracked 43 humanizer tools with 33.9 million site visits in a month. The claim states this half already occurred and cites Masrour, Emi & Spero 2025; this is further evidence of the market's scale. Boundary-optimization in submitted prose and the philosophy setting are not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "NBC News"
+    ],
+    "title": "To avoid accusations of AI cheating, college students are turning to AI",
+    "venue": "NBC News",
+    "doi": null,
+    "urls": [
+     "https://nbcnews.com/tech/internet/college-students-ai-cheating-detectors-humanizers-rcna253878",
+     "https://bioethics.com/archives/101362"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-01",
+     "kind": "news",
+     "where": "NBC News; reposted by bioethics.com on 2026-01-29",
+     "url": "https://nbcnews.com/tech/internet/college-students-ai-cheating-detectors-humanizers-rcna253878"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "tracked 43 humanizers that had a combined 33.9 million website visits in October",
+     "from": "article body, NBC News"
+    }
+   ],
+   "shows": "Humanizer tools for passing detectors draw tens of millions of visits a month.",
+   "does_not_show": "Academic authors' screening behavior; detector-version escalation (PRED-1540.F2).",
+   "checked": {
+    "how": "Read the NBC News article and the bioethics.com repost (for the date), 2026-10-30.",
+    "unverified": [
+     "the NBC article's own publication date (repost dated 2026-01-29; earliest version taken as no later than that)",
+     "which October (presumably 2025)",
+     "the traffic figure's method (Cursive's tracking; not described)"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W35",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-782.A5",
+     "bears_on": "mechanism",
+     "scope": "Correct identification falls as prior weight falls: LM factual accuracy drops for less popular entities and scaling does not fix the long tail. Accuracy on PopQA questions; entity substitution rates by the claim's four tiers are not measured."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Alex Mallen",
+     "Akari Asai",
+     "Victor Zhong",
+     "Rajarshi Das",
+     "Daniel Khashabi",
+     "Hannaneh Hajishirzi"
+    ],
+    "title": "When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2212.10511"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2022-12-20",
+     "kind": "preprint",
+     "where": "arXiv 2212.10511 v1",
+     "url": "https://arxiv.org/abs/2212.10511v1"
+    },
+    {
+     "date": "2023-07-02",
+     "kind": "preprint",
+     "where": "arXiv 2212.10511 v4",
+     "url": "https://arxiv.org/abs/2212.10511"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "LMs struggle with less popular factual knowledge",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "scaling fails to appreciably improve memorization of factual knowledge in the long tail",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "A monotone link between an entity's prior frequency and the model's reliability about it.",
+   "does_not_show": "Substitution of one identity for another; the claim's tier thresholds.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "ACL 2023 publication: not on the page"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W36",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-124.B1",
+     "bears_on": "component",
+     "scope": "The trajectory toward LLM access as the default condition of education: by autumn 2025, 54% of U.S. teens had used chatbots for schoolwork and one in ten did most of it with them. A point on the path; 'the entire K-12 population' by 2030 is not tested."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Colleen McClain",
+     "Monica Anderson",
+     "Olivia Sidoti",
+     "William Bishop"
+    ],
+    "title": "How Teens Use and View AI",
+    "venue": "Pew Research Center",
+    "doi": null,
+    "urls": [
+     "https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-02-24",
+     "kind": "report",
+     "where": "Pew Research Center (survey 2025-09-25 to 2025-10-09, n=1,458 teens)",
+     "url": "https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "More than half of teens say they have used chatbots to search for information (57%) or get help with schoolwork (54%).",
+     "from": "report body, Pew"
+    },
+    {
+     "quote": "One-in-ten teens say they do all or most of their schoolwork with chatbots’ help.",
+     "from": "report body, Pew"
+    }
+   ],
+   "shows": "A majority of U.S. teens already use chatbots for schoolwork.",
+   "does_not_show": "Younger children; universality; the 2035 cohort.",
+   "checked": {
+    "how": "Read the Pew report page, 2026-10-30.",
+    "unverified": []
+   }
+  },
+  {
+   "id": "B-collapse-W37",
+   "direction": "supports",
+   "evidence_class": "report",
+   "claims": [
+    {
+     "claim": "PRED-923.B2",
+     "bears_on": "mechanism",
+     "scope": "Retrieval-augmented systems treat model outputs that have accumulated in the retrievable pool as evidence, and over-cite them: in simulation, a single self-authored reference can trigger collapse. The claim concerns a particular class of outputs and preference data; neither is tested."
+    },
+    {
+     "claim": "PRED-1088.B1",
+     "bears_on": "mechanism",
+     "scope": "Compounding of unmarked synthetic content through repeated agent passes: responses collapse when AI retrieves its own generations, 79.6% of simulations. Simulated RAG loops with three LLMs; Google's Open Knowledge Format bundles are not studied."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Gregory Druck",
+     "Ethan Smith"
+    ],
+    "title": "AI Search Collapse: AI Responses Collapse When AI Retrieves Its Own Generations (academic version: RAG Collapse: LLM Responses Collapse When Retrieved Documents Are Self-Authored)",
+    "venue": "Graphite research post; arXiv",
+    "doi": null,
+    "urls": [
+     "https://graphite.io/five-percent/research/ai-search-collapse",
+     "https://arxiv.org/abs/2608.22118"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-06-11",
+     "kind": "report",
+     "where": "Graphite research post",
+     "url": "https://graphite.io/five-percent/research/ai-search-collapse"
+    },
+    {
+     "date": "2026-08-22",
+     "kind": "preprint",
+     "where": "arXiv 2608.22118 v1",
+     "url": "https://arxiv.org/abs/2608.22118"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "We find that 79.6% (1,216/1,528) of simulations end in collapse.",
+     "from": "research post, Graphite"
+    },
+    {
+     "quote": "a single self-authored reference can trigger collapse because AI disproportionately cites its own content",
+     "from": "research post, Graphite"
+    },
+    {
+     "quote": "Self-authored references are cited far more often than original references, both AI-generated and human-written.",
+     "from": "research post, Graphite"
+    }
+   ],
+   "shows": "When AI-written documents enter a retrieval pool, AI answers drawn from it converge, driven by over-citation of self-authored text.",
+   "does_not_show": "Real deployed search systems (simulated loops); training-time effects.",
+   "checked": {
+    "how": "Read the Graphite post twice and the arXiv abstract page (submission history), 2026-10-30.",
+    "unverified": [
+     "the arXiv abstract wording was not compared with the post",
+     "the authors are a company's officers reporting on a field their company sells into"
+    ]
+   }
+  },
+  {
+   "id": "B-collapse-W38",
+   "direction": "supports",
+   "evidence_class": "preprint",
+   "claims": [
+    {
+     "claim": "PRED-1205.F2",
+     "bears_on": "mechanism",
+     "scope": "H1, that success rises with semantic density, in the form the ablation reaches: jailbreak success comes from accumulated stylistic irregularities and no single poetic device. Bears on H3 in part: the model separates poetic from prose formats with high accuracy yet cannot predict which succeed. Density is not measured as the claim defines it; one open-weight model."
+    },
+    {
+     "claim": "PRED-1251.B1",
+     "bears_on": "mechanism",
+     "scope": "Why surface-form poeticization would be a floor: effect grows with accumulated irregularity, which hand-made or denser verse carries more of. No comparison of surface-marked prose with dense verse."
+    }
+   ],
+   "source": {
+    "authors": [
+     "Olga Sorokoletova",
+     "Francesco Giarrusso",
+     "Giacomo De Luca",
+     "Piercosma Bisconti",
+     "Matteo Prandi",
+     "Federico Pierucci",
+     "Marcello Galisai",
+     "Vincenzo Suriani",
+     "Daniele Nardi"
+    ],
+    "title": "Metaphor Is Not All Attention Needs",
+    "venue": "arXiv",
+    "doi": null,
+    "urls": [
+     "https://arxiv.org/abs/2605.12128"
+    ]
+   },
+   "versions": [
+    {
+     "date": "2026-05-12",
+     "kind": "preprint",
+     "where": "arXiv 2605.12128 v1",
+     "url": "https://arxiv.org/abs/2605.12128"
+    }
+   ],
+   "finding": [
+    {
+     "quote": "perform input-level ablation studies to assess the contribution of individual and combinations of poetic devices",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "models distinguish poetic from prose formats with high accuracy",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "Clustering further reveals clear separation by literary format, but not by safety label.",
+     "from": "abstract, arXiv"
+    },
+    {
+     "quote": "not through any single poetic device, but through accumulated stylistic irregularities",
+     "from": "abstract, arXiv"
+    }
+   ],
+   "shows": "Poetic jailbreaks work by cumulative stylistic irregularity that the model recognizes as format and fails to tie to harm.",
+   "does_not_show": "A correlation between attack success and a density score; frontier closed models.",
+   "checked": {
+    "how": "Read the arXiv abstract page, 2026-10-30.",
+    "unverified": [
+     "the Qwen3-14B case-study detail came from the summarizer's paraphrase of the abstract"
+    ]
+   }
+  }
+ ],
+ "searches": [
+  {
+   "query": "Artificial Hivemind open-ended homogeneity of language models arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-857.F1",
+    "PRED-803.B2"
+   ],
+   "result": "arXiv 2510.22954 and NeurIPS listings",
+   "outcome": "witness B-collapse-W01"
+  },
+  {
+   "query": "model collapse fraction of real data mixing threshold synthetic data iterative retraining",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-782.A7"
+   ],
+   "result": "Garg et al. 2509.22341, Gerstgrasser 2404.01413, Seddik, Dohmatob",
+   "outcome": "witness B-collapse-W11; others followed up"
+  },
+  {
+   "query": "AI-generated code solution diversity decline across model generations homogeneity vulnerabilities correlated",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-199.A1",
+    "PRED-199.A2"
+   ],
+   "result": "Lee et al. Findings EMNLP 2025; security comparisons; a Medium post",
+   "outcome": "witness B-collapse-W17"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.22954",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-857.F1"
+   ],
+   "result": "abstract and history, three fetches for verbatim pieces",
+   "outcome": "witness B-collapse-W01"
+  },
+  {
+   "query": "https://arxiv.org/abs/2404.01413",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-782.A7"
+   ],
+   "result": "abstract, two fetches",
+   "outcome": "witness B-collapse-W11"
+  },
+  {
+   "query": "https://arxiv.org/abs/2509.22341",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-782.A7"
+   ],
+   "result": "Garg, Bhattacharya, Sur: optimal real-data proportion tends to 1/golden ratio for min-norm interpolation, at least 1/2 for ridge",
+   "outcome": "excluded: an optimal mixing ratio for test error in linear regression, a different quantity from the claim's collapse threshold α*; neither confirms nor contradicts the 0.05–0.15 range"
+  },
+  {
+   "query": "Bertrand On the Stability of Iterative Retraining of Generative Models on their own Data proportion of real data",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-782.A7"
+   ],
+   "result": "arXiv 2310.00429, ICLR 2024 poster",
+   "outcome": "witness B-collapse-W12"
+  },
+  {
+   "query": "model collapse rare tokens tail disappears minimum fraction real data 2026 arXiv language model",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-782.A7"
+   ],
+   "result": "Shumailov v3 on alphaxiv, Seddik 2404.05090, blogs",
+   "outcome": "witness B-collapse-W13"
+  },
+  {
+   "query": "https://arxiv.org/abs/2404.05090",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-782.A7"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W13"
+  },
+  {
+   "query": "https://arxiv.org/abs/2310.00429v5",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-782.A7"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W12"
+  },
+  {
+   "query": "https://www.nature.com/articles/s41586-024-07566-y",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-782.A7",
+    "PRED-635.F1"
+   ],
+   "result": "refused (client_error)",
+   "outcome": "nothing: used arXiv copy"
+  },
+  {
+   "query": "https://arxiv.org/abs/2305.17493",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-782.A7",
+    "PRED-635.F1",
+    "PRED-1573.F4"
+   ],
+   "result": "history and abstract, two fetches",
+   "outcome": "witness B-collapse-W10"
+  },
+  {
+   "query": "Kirk Understanding the Effects of RLHF on LLM Generalisation and Diversity output diversity reduced",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-107.G1",
+    "PRED-803.B2"
+   ],
+   "result": "arXiv 2310.06452, ICLR 2024 proceedings",
+   "outcome": "witness B-collapse-W06"
+  },
+  {
+   "query": "instruction-tuned versus base model lower perplexity entropy outputs base models creativity randomness aligned",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-107.G1"
+   ],
+   "result": "West & Potts 2505.00047, Mohammadi 2406.05587, Yang et al. 2506.17871",
+   "outcome": "witnesses B-collapse-W07, W08, W09"
+  },
+  {
+   "query": "https://arxiv.org/abs/2506.17871",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-107.G1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W07"
+  },
+  {
+   "query": "https://arxiv.org/abs/2310.06452v3",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-107.G1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W06"
+  },
+  {
+   "query": "Shaib Measuring AI slop in text arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-107.G3"
+   ],
+   "result": "arXiv 2509.19163",
+   "outcome": "nothing: see fetch"
+  },
+  {
+   "query": "https://arxiv.org/abs/1906.04043",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-110.A1"
+   ],
+   "result": "GLTR abstract: detection rate 54% to 72%, no surprisal-direction statement in the abstract",
+   "outcome": "excluded: abstract does not state the probability-rank finding; body not read"
+  },
+  {
+   "query": "https://arxiv.org/abs/2509.19163",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-107.G3"
+   ],
+   "result": "slop judgments correlate with coherence and relevance; no deviation or surprisal measure in the abstract",
+   "outcome": "excluded: does not test token-level deviation of slop; a full-text check could still bear on G3"
+  },
+  {
+   "query": "https://arxiv.org/abs/2310.05130",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-110.A1"
+   ],
+   "result": "Fast-DetectGPT abstract, two fetches",
+   "outcome": "witness B-collapse-W15"
+  },
+  {
+   "query": "Anthropic updates consumer terms train on chats opt out September 2025 five year retention",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-856.B1"
+   ],
+   "result": "news coverage and the Anthropic post",
+   "outcome": "witness B-collapse-W20"
+  },
+  {
+   "query": "human-written text influenced by LLM vocabulary shift after ChatGPT study spoken language delve",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-856.F1"
+   ],
+   "result": "Yakura et al. 2409.01754; 2508.00238",
+   "outcome": "witness B-collapse-W21"
+  },
+  {
+   "query": "https://www.anthropic.com/news/updates-to-our-consumer-terms",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-856.B1"
+   ],
+   "result": "announcement",
+   "outcome": "witness B-collapse-W20"
+  },
+  {
+   "query": "https://arxiv.org/abs/2409.01754",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-856.F1"
+   ],
+   "result": "abstract v4",
+   "outcome": "witness B-collapse-W21"
+  },
+  {
+   "query": "AI expands scientists' impact but contracts science's focus Hao Evans",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-476.A3",
+    "PRED-476.A2"
+   ],
+   "result": "arXiv 2412.07727, press",
+   "outcome": "witness B-collapse-W23"
+  },
+  {
+   "query": "hidden prompt injection in manuscripts targeting LLM reviewers study arXiv papers positive review",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-741.B2"
+   ],
+   "result": "Lin 2507.06185; 2508.20863; 2509.10248",
+   "outcome": "witness B-collapse-W33"
+  },
+  {
+   "query": "https://arxiv.org/abs/2412.07727v4",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-476.A3"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W23"
+  },
+  {
+   "query": "https://arxiv.org/abs/2507.06185",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-741.B2"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W33"
+  },
+  {
+   "query": "https://preview.aclanthology.org/new-sigs/2025.findings-emnlp.10/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-199.A1",
+    "PRED-199.F1"
+   ],
+   "result": "landing page",
+   "outcome": "witness B-collapse-W17"
+  },
+  {
+   "query": "LLM code generation same vulnerabilities across models shared weakness correlated CWE monoculture empirical study",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-199.A2"
+   ],
+   "result": "Kahn & Hastings 2607.20713; Kordonsky 2602.04894; others",
+   "outcome": "witnesses B-collapse-W18, W19"
+  },
+  {
+   "query": "https://arxiv.org/abs/2607.20713",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-199.A2"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W19"
+  },
+  {
+   "query": "https://arxiv.org/abs/2602.04894",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-199.A2"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W18"
+  },
+  {
+   "query": "arXiv Exploring the Algorithmic Diversity of Model-Generated Code Lee Chon Jang",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-199.A1"
+   ],
+   "result": "arXiv 2503.00691",
+   "outcome": "dated B-collapse-W17"
+  },
+  {
+   "query": "https://arxiv.org/abs/2505.00047",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-107.G1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W08"
+  },
+  {
+   "query": "https://arxiv.org/abs/2503.00691v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-199.A1"
+   ],
+   "result": "history",
+   "outcome": "dated B-collapse-W17"
+  },
+  {
+   "query": "NoveltyBench evaluating language models for humanlike diversity arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-855.F1",
+    "PRED-790.F1"
+   ],
+   "result": "arXiv 2504.05228",
+   "outcome": "witness B-collapse-W29"
+  },
+  {
+   "query": "Doshi Hauser generative AI enhances individual creativity reduces collective diversity Science Advances",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-779.F4"
+   ],
+   "result": "Science Advances 2024 and its Dryad data",
+   "outcome": "excluded: the dataset the claim proposes to reanalyze, already within the scope of W-0003's meta-analysis; it does not carry out the mediation-design reanalysis"
+  },
+  {
+   "query": "https://arxiv.org/abs/2504.05228v4",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-855.F1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W29"
+  },
+  {
+   "query": "Meincke Mollick prompting diverse ideas increasing AI idea variance persona chain-of-thought",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-779.F4"
+   ],
+   "result": "arXiv 2402.01727, SSRN",
+   "outcome": "witness B-collapse-W28"
+  },
+  {
+   "query": "https://arxiv.org/abs/2402.01727",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-779.F4"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W28"
+  },
+  {
+   "query": "LLM persona diversity human-AI co-creation collective diversity homogenization mitigated diverse personas experiment 2025 2026",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-779.F4"
+   ],
+   "result": "Wan & Kalman arXiv and journal record; 2602.20408",
+   "outcome": "witness B-collapse-W27"
+  },
+  {
+   "query": "https://arxiv.org/abs/2504.13868v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-779.F4"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W27"
+  },
+  {
+   "query": "https://cris.openu.ac.il/en/publications/diverse-ai-personas-can-mitigate-the-homogenization-effect-in-hum/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-779.F4"
+   ],
+   "result": "journal record, May 2026",
+   "outcome": "witness B-collapse-W27"
+  },
+  {
+   "query": "We Have a Package for You package hallucinations code-generating LLMs repeated persistent arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1287.E1"
+   ],
+   "result": "arXiv 2406.10279",
+   "outcome": "witness B-collapse-W30"
+  },
+  {
+   "query": "Poisoning attacks on LLMs require a near-constant number of poison samples arXiv",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1287.E3",
+    "PRED-21.B2"
+   ],
+   "result": "arXiv 2510.07192",
+   "outcome": "witness B-collapse-W31"
+  },
+  {
+   "query": "https://arxiv.org/abs/2406.10279v3",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1287.E1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness B-collapse-W30"
+  },
+  {
+   "query": "https://arxiv.org/abs/2510.07192",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1287.E3"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W31"
+  },
+  {
+   "query": "https://arxiv.org/html/2406.10279v2",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1287.E1"
+   ],
+   "result": "Section 5.3 repetition figure",
+   "outcome": "witness B-collapse-W30"
+  },
+  {
+   "query": "adversarial poetry jailbreak follow-up 2026 semantic density literary quality attack success rate Bisconti",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1251.B1",
+    "PRED-1205.F2",
+    "PRED-188.F1"
+   ],
+   "result": "Bisconti 2511.15304; Adversarial Tales 2601.08837",
+   "outcome": "see fetches"
+  },
+  {
+   "query": "https://arxiv.org/abs/2601.08837v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1251.B1"
+   ],
+   "result": "Adversarial Tales: 71.3% average ASR across 26 frontier models with cyberpunk narrative framing",
+   "outcome": "candidate"
+  },
+  {
+   "query": "https://arxiv.org/abs/2511.15304",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1251.B1",
+    "PRED-188.F1"
+   ],
+   "result": "Bisconti et al.: hand-crafted poems 62%, meta-prompt conversions about 43%",
+   "outcome": "excluded: the source the claims themselves analyze; not an independent witness"
+  },
+  {
+   "query": "poetic jailbreak literary quality versus attack success correlation stylistic obfuscation metaphor density LLM safety 2026 arXiv",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-1205.F2",
+    "PRED-1251.B1"
+   ],
+   "result": "Sorokoletova et al. 2605.12128",
+   "outcome": "witness B-collapse-W38"
+  },
+  {
+   "query": "https://arxiv.org/abs/2605.12128",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1205.F2"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W38"
+  },
+  {
+   "query": "https://arxiv.org/abs/2406.05587",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-803.B2",
+    "PRED-107.G1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W09"
+  },
+  {
+   "query": "homogenization of academic writing after ChatGPT lexical diversity decline scientific abstracts study",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1540.F3",
+    "PRED-476.A2"
+   ],
+   "result": "Filimonovic et al. 2511.11687; THE news; theses",
+   "outcome": "witness B-collapse-W24"
+  },
+  {
+   "query": "https://arxiv.org/abs/2511.11687",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1540.F3",
+    "PRED-476.A2"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W24"
+  },
+  {
+   "query": "https://arxiv.org/abs/2406.07016",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-476.A2"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W22"
+  },
+  {
+   "query": "AI humanizer tools usage students study 2026 bypass AI detectors survey prevalence",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1540.B1",
+    "PRED-1540.F2"
+   ],
+   "result": "NBC News, The Star, blogs",
+   "outcome": "witness B-collapse-W34"
+  },
+  {
+   "query": "self-consuming loop language model generations lexical diversity decline measured tail tokens model collapse experiment 2026",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-782.A7",
+    "PRED-1573.F4",
+    "PRED-635.F1"
+   ],
+   "result": "Guo et al. via 2410.12341 listing; Losing our Tail (ACL 2026); Break Step 2609.11149; entropy-rate filtering 2610.01493",
+   "outcome": "witness B-collapse-W14; Break Step candidate"
+  },
+  {
+   "query": "https://arxiv.org/abs/2311.09807",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-782.A7",
+    "PRED-635.F1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W14"
+  },
+  {
+   "query": "https://arxiv.org/abs/2609.11149",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1573.F4"
+   ],
+   "result": "Break Step: recursive training where shared sampling seeds collapse unique-4-gram fraction to 0.045–0.38 across seven checkpoints",
+   "outcome": "candidate"
+  },
+  {
+   "query": "Pew Research teens use ChatGPT for schoolwork share 2025 2026 survey",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-124.B1"
+   ],
+   "result": "Pew 2025 and 2026 reports and coverage",
+   "outcome": "witness B-collapse-W36"
+  },
+  {
+   "query": "share of new web articles AI-generated Graphite study 2025 retrieval LLM-generated content web proportion",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-923.B2"
+   ],
+   "result": "GPTZero/Graphite share-of-web study; Axios",
+   "outcome": "see fetch"
+  },
+  {
+   "query": "https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-124.B1"
+   ],
+   "result": "report",
+   "outcome": "witness B-collapse-W36"
+  },
+  {
+   "query": "https://gptzero.me/news/ai-written-web/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.B2"
+   ],
+   "result": "news post on Graphite study: new articles about 50% AI-generated",
+   "outcome": "excluded: shows the volume of AI text on the web; does not show retrieval systems treating it as evidence, which is what PRED-923.B2 states"
+  },
+  {
+   "query": "https://arxiv.org/abs/2301.07597",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-110.A1",
+    "PRED-110.F2"
+   ],
+   "result": "HC3 abstract (no perplexity statement)",
+   "outcome": "see HTML fetch"
+  },
+  {
+   "query": "https://arxiv.org/html/2301.07597",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-110.A1"
+   ],
+   "result": "Section 4.4 perplexity",
+   "outcome": "witness B-collapse-W16"
+  },
+  {
+   "query": "https://arxiv.org/abs/2501.19361",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-857.F1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W04"
+  },
+  {
+   "query": "longitudinal convergence of LLM outputs across model releases over time homogeneity increasing successive versions study 2026",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-857.F1",
+    "PRED-803.B2",
+    "PRED-107.G1"
+   ],
+   "result": "Patel et al. 2608.19437; Fortier et al. EMNLP 2026; Xylogiannopoulos 2603.12683; TiCS review",
+   "outcome": "witnesses B-collapse-W02, W03, W05"
+  },
+  {
+   "query": "https://arxiv.org/abs/2608.19437",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-857.F1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W02"
+  },
+  {
+   "query": "https://aclanthology.org/2026.emnlp-main.1621/",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-803.B2",
+    "PRED-107.G1"
+   ],
+   "result": "landing page",
+   "outcome": "witness B-collapse-W05"
+  },
+  {
+   "query": "https://arxiv.org/abs/2608.11426",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-803.B2"
+   ],
+   "result": "history",
+   "outcome": "dated B-collapse-W05"
+  },
+  {
+   "query": "https://arxiv.org/html/2608.19437v1",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-857.F1"
+   ],
+   "result": "model count, limitations",
+   "outcome": "witness B-collapse-W02"
+  },
+  {
+   "query": "code generation diversity newer models less diverse solutions than older models pass@k diversity across model versions",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-199.A1"
+   ],
+   "result": "CRUXEval; API drift; Rath et al. 2610.07405",
+   "outcome": "see fetch"
+  },
+  {
+   "query": "https://arxiv.org/abs/2610.07405",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-199.A1"
+   ],
+   "result": "post-training moves diversity measures while pass@k shows no consistent winner (GSM8K)",
+   "outcome": "excluded: math reasoning, one model, post-training arms; does not measure code diversity across generations under synthetic saturation"
+  },
+  {
+   "query": "https://arxiv.org/abs/2212.10511",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-782.A5"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W35"
+  },
+  {
+   "query": "https://nbcnews.com/tech/internet/college-students-ai-cheating-detectors-humanizers-rcna253878",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1540.B1"
+   ],
+   "result": "article; date not in fetched text",
+   "outcome": "witness B-collapse-W34"
+  },
+  {
+   "query": "tracked 43 humanizers 33.9 million website visits NBC News",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1540.B1"
+   ],
+   "result": "nothing on the article's date",
+   "outcome": "nothing"
+  },
+  {
+   "query": "https://bioethics.com/archives/101362",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-1540.B1"
+   ],
+   "result": "repost dated 2026-01-29",
+   "outcome": "dated B-collapse-W34"
+  },
+  {
+   "query": "https://arxiv.org/abs/2507.14805",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-21.B2",
+    "PRED-872.F1"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W32"
+  },
+  {
+   "query": "no evidence of model collapse newer LLMs trained on web after ChatGPT diversity not declining study",
+   "mode": "extended",
+   "aimed_at": [
+    "PRED-782.A7",
+    "PRED-857.F1",
+    "PRED-923.B2"
+   ],
+   "result": "Graphite AI search collapse; knowledge-collapse study (EurekAlert); Xylogiannopoulos; CACM blog",
+   "outcome": "witnesses B-collapse-W03, W37; no disconfirmation of collapse in deployed models found"
+  },
+  {
+   "query": "LLM-generated text more diverse than human field study homogenization not found long-term creativity null result 2026",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-476.A2",
+    "PRED-779.F4"
+   ],
+   "result": "Kosch et al. CHI 2609.23090; Inoshita et al. 2603.21228; Do LLMs Always Tell The Same Stories 2606.17350",
+   "outcome": "witnesses B-collapse-W25 (disconfirming), W26"
+  },
+  {
+   "query": "https://arxiv.org/abs/2609.23090",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-476.A2",
+    "PRED-1540.F3"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W25"
+  },
+  {
+   "query": "https://arxiv.org/abs/2603.12683",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-857.F1"
+   ],
+   "result": "abstract and history",
+   "outcome": "witness B-collapse-W03"
+  },
+  {
+   "query": "https://graphite.io/five-percent/research/ai-search-collapse",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.B2",
+    "PRED-1088.B1"
+   ],
+   "result": "research post, two fetches",
+   "outcome": "witness B-collapse-W37"
+  },
+  {
+   "query": "https://arxiv.org/abs/2603.21228",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-779.F4"
+   ],
+   "result": "abstract",
+   "outcome": "witness B-collapse-W26"
+  },
+  {
+   "query": "https://arxiv.org/abs/2608.22118",
+   "mode": "fetch",
+   "aimed_at": [
+    "PRED-923.B2"
+   ],
+   "result": "history of the academic version",
+   "outcome": "dated B-collapse-W37"
+  },
+  {
+   "query": "Bartz v. Anthropic fair use training ruling pirated library not fair use June 2025 order",
+   "mode": "standard",
+   "aimed_at": [
+    "PRED-1209.B9"
+   ],
+   "result": "law-firm summaries of the June 2025 order",
+   "outcome": "excluded: what 'the fence' names in PRED-1209.B9 could not be fixed without reading the deposit; fit not honest without it"
+  }
+ ],
+ "candidates": [
+  {
+   "source": "Bisconti et al., From Adversarial Poetry to Adversarial Tales: An Interpretability Research Agenda (arXiv 2601.08837, submitted 2025-12-16)",
+   "url": "https://arxiv.org/abs/2601.08837v1",
+   "claims": [
+    "PRED-1251.B1",
+    "PRED-1205.F2"
+   ],
+   "why_unresolved": "Narrative framing reaches 71.3% average ASR against 62% (hand-crafted poems) and about 43% (converted prose) in the earlier paper, which fits PRED-1251.B1's floor reading; the two figures come from different papers, model sets and harm batteries, so the comparison is uncontrolled. Needs the body to see whether the authors compare within one setup."
+  },
+  {
+   "source": "Liu & Han, Break Step: Recursive Training Resonates with Replayed Sampling Noise (arXiv 2609.11149, submitted 2026-09-10)",
+   "url": "https://arxiv.org/abs/2609.11149",
+   "claims": [
+    "PRED-1573.F4",
+    "PRED-635.F1"
+   ],
+   "why_unresolved": "Runs recursive training across checkpoints and tracks unique-4-gram fraction, which is close to the calibration PRED-1573.F4 calls for; the abstract centres on a sampling-seed artefact, and how far its control arm calibrates a collapse index was not read."
+  },
+  {
+   "source": "Losing our Tail, Again: (Un)Natural Selection and Multilingual LLMs (ACL 2026 long paper; arXiv 2507.03933)",
+   "url": "https://aclanthology.org/2026.acl-long.532/",
+   "claims": [
+    "PRED-782.A7",
+    "PRED-855.F1"
+   ],
+   "why_unresolved": "Title and listing bear on tail loss; not fetched, so whether it reports measurements or argues a position is unknown."
+  },
+  {
+   "source": "Do Large Language Models Always Tell The Same Stories? (arXiv 2606.17350)",
+   "url": "https://www.alphaxiv.org/abs/2606.17350",
+   "claims": [
+    "PRED-857.F1",
+    "PRED-803.B2"
+   ],
+   "why_unresolved": "Listed in a search on narrative homogeneity across models; not fetched."
+  },
+  {
+   "source": "Masrour, Emi & Spero 2025, humanizer-tool study by detection-vendor researchers",
+   "url": "",
+   "claims": [
+    "PRED-1540.B1"
+   ],
+   "why_unresolved": "The claim itself cites it as the half already occurred; not searched as a witness, since it is the claim's own evidence."
+  }
+ ],
+ "notes": "Scope: 166 claims in the theme; most are narrative, internal-protocol or archive-specific (Assembly Chorus, SPXI, RES, Glas function, Bead Count tiers) with no external analogue, and were not searched. Searched lines: cross-model and longitudinal convergence (857.F1, 803.B2), alignment and diversity (107.G1), recursive-training collapse and real-data thresholds (782.A7, 635.F1, 1573.F4), machine-text predictability (110.A1, 110.F2), code monoculture (199.A1, 199.A2, 199.F1), chat data (856.B1, 856.F1), academic discourse (476.A2, 476.A3, 1540.F3), mediation design (779.F4), diversity benchmarks (855.F1), hallucination regularity and seeding (1287.E1, 1287.E3, 21.B2), evaluator gaming and humanizers (741.B2, 1540.B1), entity tail (782.A5), adoption (124.B1), RAG self-retrieval (923.B2, 1088.B1), poetic jailbreaks (1205.F2, 1251.B1). Disconfirmations: B-collapse-W25 (Kosch et al., CHI writing: prose did not homogenize, vocabulary grew more varied) against 476.A2's academic-discourse component; it sits beside B-collapse-W22, W23 and W24, which support that component in biomedicine, natural science and Scopus-wide. B-collapse-W05 (Fortier, Chen & West, EMNLP 2026) locates output homogeneity in pretraining with alignment as amplifier, which tells against safety pressure as the origin named by 803.B2; it also bears on 107.G1, whose predicted direction (instruct below base) it leaves standing while contesting RLHF as the source, so it was not linked there; the main session may wish to add a 107.G1 link with that scope. On 855.F1: NoveltyBench (W29) predates the claim and is a benchmark of output diversity; the claim's sentence that no such benchmark exists in any deployed evaluation framework stands only on a narrow reading of 'deployed'. Recorded as method support; the operator may rule it a disconfirmation of that sentence. W-0003 (de Rooij & Biskjaer) may also bear on PRED-779.F4 as method in part: a reanalysis of existing AI-creativity studies with a moderator (task constraint); the claim's moderator is mediation design, so the fit is partial. It does not bear on 476.A3's population-level trajectory. Anticipations: most witnesses predate their claims (the collapse literature from 2023–2024, the alignment-diversity literature from 2023–2025). After-registration witnesses: W02 (857.F1, 803.B2), W05, W19 (199.A2), W25 (476.A2, 1540.F3), and W37's arXiv version. Evidence classes needing care: W37 is a company research post by Graphite's officers, with an arXiv version; W34 is news reporting a figure from an integrity-software founder whose method is not described; W20 is a vendor announcement. Quotes: WebFetch returns verbatim fragments of at most about 120 characters, so long abstracts are quoted in pieces; every quote was requested character for character from the fetched page. The summarizer's paraphrase was never used as a quote. Not resolved: PRED-782.A7 part (3), the critical α in 0.05–0.15, has threshold existence results (W12, W13) and no value in the claim's terms; Garg et al. (2509.22341) give an optimal ratio near 0.618 for linear interpolation, a different quantity, logged as excluded. PRED-199.A1's generational SSDI decline has no direct measurement in code; W03 and W02 show generational decline in text. PRED-107.G3 (human-rated slop and signed deviation): Shaib et al. relate slop to coherence and relevance and do not test deviation. Prose rule: two verbatim quotes (W23, W27) contain a phrase the prose rules bar outside quotation; they are left as found."
+}

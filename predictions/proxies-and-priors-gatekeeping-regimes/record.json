@@ -1415,6 +1415,56 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0073",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "component",
+     "scope": "A major academic publisher reports income from licensing its authors' content for model training, an instance of a market forming for archival text. The report gives no sign that value attaches to pre-2022 or pre-mediation status, which is the claim's ground.",
+     "source": {
+      "authors": [
+       "Books+Publishing"
+      ],
+      "title": "Wiley expects to make US$44 million from AI partnership, authors unable to opt out",
+      "venue": "Books+Publishing (citing The Bookseller)",
+      "doi": null,
+      "urls": [
+       "https://www.booksandpublishing.com.au/articles/2024/09/04/258068/wiley-expects-to-make-us44-million-from-ai-partnership-authors-unable-to-opt-out/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-09-04",
+       "kind": "news article (date from URL)",
+       "where": "Books+Publishing",
+       "url": "https://www.booksandpublishing.com.au/articles/2024/09/04/258068/wiley-expects-to-make-us44-million-from-ai-partnership-authors-unable-to-opt-out/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "expects to make US$44 million (A$66m) from artificial intelligence (AI) partnerships",
+       "from": "news article"
+      },
+      {
+       "quote": "allow large language models (LLMs) to be trained on content from its authors",
+       "from": "news article"
+      }
+     ],
+     "shows": "Publisher archives were already being sold as training data in 2024.",
+     "does_not_show": "That pre-mediation status drives the price, or regulatory attention to the market.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Books+Publishing article on 2026-10-30. The Nature news article on publisher deals (d41586-024-04018-5) failed at its site; the Ithaka S+R tracker page gives no figures.",
+      "unverified": [
+       "Publication date beyond the URL path.",
+       "The underlying Wiley earnings statement."
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1487,6 +1537,114 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0067",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "A detection vendor reports that humanizer tools defeat existing detectors and retrains its detector on humanized data, the adversarial cycle the claim expects for the Mediation Index. The detector is a machine-text classifier and the Mediation Index measures mediation signatures in human text, which this study does not touch.",
+     "source": {
+      "authors": [
+       "Elyas Masrour",
+       "Bradley Emi",
+       "Max Spero"
+      ],
+      "title": "DAMAGE: Detecting Adversarially Modified AI Generated Text",
+      "venue": "arXiv:2501.03437",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2501.03437v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-01-06",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2501.03437v1"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "many existing AI detectors fail to detect humanized text",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a data-centric augmentation approach",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Evasion tools defeat detectors and the detector side answers by retraining on evasive data.",
+     "does_not_show": "Any adversarial response to a published human-text mediation index.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page on 2026-10-30. The archive cites this paper in deposit 1540 (registered 2026-08-24); deposit 161, which carries PRED-161.B2, does not cite it.",
+      "unverified": [
+       "A workshop version in the ACL Anthology (2025.genaidetect-1.9) appeared in a search result and was not opened."
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0068",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Commercial detectors lose almost all detection of rewritten abstracts after a humanizer pass, the evasion pressure the claim expects on any published detection axis. The study concerns machine-text detectors and does not involve the Mediation Index.",
+     "source": {
+      "authors": [
+       "Jonathan A. Karr",
+       "Grigorii Khvatskii",
+       "Ting Hua",
+       "Nitesh V. Chawla"
+      ],
+      "title": "Why AI Detection Fails for Academic Integrity",
+      "venue": "arXiv:2608.11256",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2608.11256"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-08-06",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2608.11256"
+      },
+      {
+       "date": "2026-10-13",
+       "kind": "preprint v3",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2608.11256"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "After Undetectable AI humanization, evasion is near-total: fewer than 4% of AI-labeled rewrites remain flagged",
+       "from": "abstract, arXiv v3"
+      },
+      {
+       "quote": "Unmodified 2023 to 2025 originals are flagged at 9 to 15%, with non-STEM rates far above STEM (p<0.001)",
+       "from": "abstract, arXiv v3"
+      }
+     ],
+     "shows": "A single commercial humanizer defeats commercial academic-integrity detectors on rewritten abstracts, while unedited human abstracts are flagged at 9 to 15%.",
+     "does_not_show": "Detector drift across versions, or any response by the detector side.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v3) on 2026-10-30.",
+      "unverified": [
+       "Wording of v1 and v2.",
+       "Which detectors were used."
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
@@ -1885,6 +2043,62 @@
      "claimed": "came_true",
      "first_party": false,
      "first_party_basis": "another deposit of the archive (no statement or recorded lineage shared)"
+    }
+   ],
+   "witnesses": [
+    {
+     "witness": "W-0072",
+     "direction": "disconfirms",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The claim's falsifier is met by any identified factor that rewards diversity or slows tail-thinning; this paper names the post-training loss of diversity and publishes an RL method that raises novelty with quality. It shows a counter-force in research; deployment at scale and effect on capacity loss are unverified.",
+     "source": {
+      "authors": [
+       "Tianjian Li",
+       "Yiming Zhang",
+       "Ping Yu",
+       "Swarnadeep Saha",
+       "Daniel Khashabi",
+       "Jason Weston",
+       "Jack Lanchantin",
+       "Tianlu Wang"
+      ],
+      "title": "Jointly Reinforcing Diversity and Quality in Language Model Generations",
+      "venue": "arXiv:2509.02534",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2509.02534"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-09-02",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2509.02534"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Post-training of Large Language Models (LMs) often prioritizes accuracy and helpfulness at the expense of diversity.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "DARLING consistently outperforms quality-only RL baselines",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Researchers identified post-training diversity loss and built a training objective that rewards diversity.",
+     "does_not_show": "Adoption in deployed systems, or any measured slowing of tail-thinning at scale.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page on 2026-10-30.",
+      "unverified": [
+       "Author affiliations (an industry lab is believed; the page shows none)."
+      ]
+     },
+     "order": "before"
     }
    ],
    "series": [

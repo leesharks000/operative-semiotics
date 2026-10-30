@@ -2996,6 +2996,68 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0059",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "mechanism",
+     "scope": "Compounding of unmarked synthetic content through repeated agent passes: responses collapse when AI retrieves its own generations, 79.6% of simulations. Simulated RAG loops with three LLMs; Google's Open Knowledge Format bundles are not studied.",
+     "source": {
+      "authors": [
+       "Gregory Druck",
+       "Ethan Smith"
+      ],
+      "title": "AI Search Collapse: AI Responses Collapse When AI Retrieves Its Own Generations (academic version: RAG Collapse: LLM Responses Collapse When Retrieved Documents Are Self-Authored)",
+      "venue": "Graphite research post; arXiv",
+      "doi": null,
+      "urls": [
+       "https://graphite.io/five-percent/research/ai-search-collapse",
+       "https://arxiv.org/abs/2608.22118"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-06-11",
+       "kind": "report",
+       "where": "Graphite research post",
+       "url": "https://graphite.io/five-percent/research/ai-search-collapse"
+      },
+      {
+       "date": "2026-08-22",
+       "kind": "preprint",
+       "where": "arXiv 2608.22118 v1",
+       "url": "https://arxiv.org/abs/2608.22118"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "We find that 79.6% (1,216/1,528) of simulations end in collapse.",
+       "from": "research post, Graphite"
+      },
+      {
+       "quote": "a single self-authored reference can trigger collapse because AI disproportionately cites its own content",
+       "from": "research post, Graphite"
+      },
+      {
+       "quote": "Self-authored references are cited far more often than original references, both AI-generated and human-written.",
+       "from": "research post, Graphite"
+      }
+     ],
+     "shows": "When AI-written documents enter a retrieval pool, AI answers drawn from it converge, driven by over-citation of self-authored text.",
+     "does_not_show": "Real deployed search systems (simulated loops); training-time effects.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Graphite post twice and the arXiv abstract page (submission history), 2026-10-30.",
+      "unverified": [
+       "the arXiv abstract wording was not compared with the post",
+       "the authors are a company's officers reporting on a field their company sells into"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

@@ -434,6 +434,69 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0108",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "The component 'Outputs converge on safe, flat, interchangeable prose': across 26K open-ended queries, single models repeat themselves and different models produce strikingly similar outputs. 'Meaning starvation' in users and market pressure against legibility are not tested.",
+     "source": {
+      "authors": [
+       "Liwei Jiang",
+       "Yuanjun Chai",
+       "Margaret Li",
+       "Mickel Liu",
+       "Raymond Fok",
+       "Nouha Dziri",
+       "Yulia Tsvetkov",
+       "Maarten Sap",
+       "Alon Albalak",
+       "Yejin Choi"
+      ],
+      "title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)",
+      "venue": "arXiv; NeurIPS 2025 (oral)",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.22954v1",
+       "https://neurips.cc/virtual/2025/oral/121422"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-27",
+       "kind": "preprint",
+       "where": "arXiv 2510.22954 v1",
+       "url": "https://arxiv.org/abs/2510.22954v1"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "(1) intra-model repetition, where a single model consistently generates similar responses",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "(2) inter-model homogeneity, where different models produce strikingly similar outputs",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "Infinity-Chat, a large-scale dataset of 26K diverse, real-world, open-ended user queries",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Open-ended LLM outputs converge within and across models.",
+     "does_not_show": "Whether the convergence is 'safe' or 'flat' prose in the claim's sense; user response; the cascade of later stages.",
+     "checked": {
+      "by": "intake reader, theme E-execution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30. NeurIPS 2025 venue from the neurips.cc search results; that page was not fetched.",
+      "unverified": [
+       "NeurIPS 2025 oral status"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "LOS operator failure cascade"
    ],

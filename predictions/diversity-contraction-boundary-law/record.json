@@ -367,6 +367,171 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0048",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "Study 1's design, diversity measured across several dimensions under different mediation designs, carried out by others on 6,875 student essays (human-only, AI-only, three human+AI prompt strategies). Mixed result: some dimensions lose most of their variance, one diversifies, and prompt specificity reverses homogenization on one dimension. It is a new experiment; Doshi & Hauser and Wan & Kalman are not reanalyzed.",
+     "source": {
+      "authors": [
+       "Keito Inoshita",
+       "Michiaki Omura",
+       "Tsukasa Yamanaka",
+       "Go Maeda",
+       "Kentaro Tsuji"
+      ],
+      "title": "Does AI Homogenize Student Thinking? A Multi-Dimensional Analysis of Structural Convergence in AI-Augmented Essays",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2603.21228"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-03-22",
+       "kind": "preprint",
+       "where": "arXiv 2603.21228 v1",
+       "url": "https://arxiv.org/abs/2603.21228"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Analyzing 6,875 essays across five conditions (Human-only, AI-only, and three Human+AI prompt strategies)",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "cohesion architecture lost 70-78% of its variance",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "perspective plurality was diversified",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "prompt specificity reversed homogenization into diversification on argument depth",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Whether AI mediation contracts diversity depends on the dimension measured and on the mediation design.",
+     "does_not_show": "Collective diversity across resolutions in the claim's sense; persona or retrieval-amplified designs.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0049",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed article",
+     "bears_on": "mechanism",
+     "scope": "The contrast Study 1 would test: diverse-persona mediation preserves collective story diversity against a human-only baseline, where uniform deployment reduced it in earlier work. The claim names this study among the datasets to reanalyze; the witness is its authors' own result, and the reanalysis across resolutions remains undone.",
+     "source": {
+      "authors": [
+       "Yun Wan",
+       "Yoram M. Kalman"
+      ],
+      "title": "Diverse AI Personas Can Mitigate the Homogenization Effect in Human-AI Collaborative Ideation",
+      "venue": "Computers in Human Behavior: Artificial Humans, vol. 8",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2504.13868v1",
+       "https://cris.openu.ac.il/en/publications/diverse-ai-personas-can-mitigate-the-homogenization-effect-in-hum/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-29",
+       "kind": "preprint",
+       "where": "arXiv 2504.13868 v1",
+       "url": "https://arxiv.org/abs/2504.13868v1"
+      },
+      {
+       "date": "2026-05",
+       "kind": "peer-reviewed article",
+       "where": "Computers in Human Behavior: Artificial Humans 8",
+       "url": "https://cris.openu.ac.il/en/publications/diverse-ai-personas-can-mitigate-the-homogenization-effect-in-hum/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we used structured prompting with 10 diverse GenAI personas to generate 300 story plots",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "diverse GenAI inputs can preserve story diversity compared to a human-only baseline",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Varying the AI mediator's persona keeps collective diversity at the human baseline.",
+     "does_not_show": "Measurement across resolutions; a direct single-mode arm in the same experiment (implied by the abstract only).",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and the Open University of Israel research-portal record, 2026-10-30.",
+      "unverified": [
+       "DOI of the journal version: not on the portal page",
+       "quote not found at source, dropped: \"the trade-off may emerge from uniform deployment practices rather than from an inherent limitation of GenAI\""
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0050",
+     "direction": "supports",
+     "evidence_class": "working paper",
+     "bears_on": "mechanism",
+     "scope": "Mediation design changes the diversity of AI-produced idea pools: prompting methods move cosine similarity, and chain-of-thought approaches human-group diversity. AI-only pools; collective human diversity is not measured.",
+     "source": {
+      "authors": [
+       "Lennart Meincke",
+       "Ethan R. Mollick",
+       "Christian Terwiesch"
+      ],
+      "title": "Prompting Diverse Ideas: Increasing AI Idea Variance",
+      "venue": "arXiv; SSRN 4708466",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2402.01727",
+       "https://papers.ssrn.com/abstract=4708466"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-01-27",
+       "kind": "preprint",
+       "where": "arXiv 2402.01727 v1",
+       "url": "https://arxiv.org/abs/2402.01727"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we explore the effect of different prompting methods on Cosine Similarity",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "was able to come close to what is achieved by groups of human subjects",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "How a model is prompted sets the diversity of the ideas it yields.",
+     "does_not_show": "Human-AI co-creation; persona designs (the abstract does not name personas).",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "SSRN date"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Diversity Contraction / Mediation Ratchet programme"
    ],
@@ -1958,6 +2123,66 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0057",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Correct identification falls as prior weight falls: LM factual accuracy drops for less popular entities and scaling does not fix the long tail. Accuracy on PopQA questions; entity substitution rates by the claim's four tiers are not measured.",
+     "source": {
+      "authors": [
+       "Alex Mallen",
+       "Akari Asai",
+       "Victor Zhong",
+       "Rajarshi Das",
+       "Daniel Khashabi",
+       "Hannaneh Hajishirzi"
+      ],
+      "title": "When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2212.10511"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2022-12-20",
+       "kind": "preprint",
+       "where": "arXiv 2212.10511 v1",
+       "url": "https://arxiv.org/abs/2212.10511v1"
+      },
+      {
+       "date": "2023-07-02",
+       "kind": "preprint",
+       "where": "arXiv 2212.10511 v4",
+       "url": "https://arxiv.org/abs/2212.10511"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "LMs struggle with less popular factual knowledge",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "scaling fails to appreciably improve memorization of factual knowledge in the long tail",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A monotone link between an entity's prior frequency and the model's reliability about it.",
+     "does_not_show": "Substitution of one identity for another; the claim's tier thresholds.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "ACL 2023 publication: not on the page"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Entity substitution rate",
     "The Bead Count predictions"
@@ -2036,6 +2261,307 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0032",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Part (1): training only on generated data across generations destroys the tails of the original distribution. Parts (2) to (4), the mixing threshold and the rare-token retention rates, are not quantified here.",
+     "source": {
+      "authors": [
+       "Ilia Shumailov",
+       "Zakhar Shumaylov",
+       "Yiren Zhao",
+       "Yarin Gal",
+       "Nicolas Papernot",
+       "Ross Anderson"
+      ],
+      "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+      "venue": "arXiv; later published in Nature (2024) as 'AI models collapse when trained on recursively generated data'",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2305.17493",
+       "https://www.nature.com/articles/s41586-024-07566-y"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-05-27",
+       "kind": "preprint",
+       "where": "arXiv 2305.17493 v1",
+       "url": "https://arxiv.org/abs/2305.17493v1"
+      },
+      {
+       "date": "2023-05-31",
+       "kind": "preprint",
+       "where": "arXiv 2305.17493 v2",
+       "url": "https://arxiv.org/abs/2305.17493v2"
+      },
+      {
+       "date": "2024-04-14",
+       "kind": "preprint",
+       "where": "arXiv 2305.17493 v3",
+       "url": "https://arxiv.org/abs/2305.17493v3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "causes irreversible defects in the resulting models, where tails of the original content distribution disappear",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Recursive training on model output causes irreversible loss of the distribution's tails.",
+     "does_not_show": "A critical real-data fraction; per-generation rare-token retention numbers.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and submission history, 2026-10-30. The Nature page refused the fetch.",
+      "unverified": [
+       "the Nature article's title, date and DOI: page refused the fetch"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0033",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Part (2), that real data in the mix prevents collapse, in the accumulation regime: real data kept alongside each generation's synthetic data. The claim's fixed mixing fraction α and its critical value are a different parametrization.",
+     "source": {
+      "authors": [
+       "Matthias Gerstgrasser",
+       "Rylan Schaeffer",
+       "Apratim Dey",
+       "Rafael Rafailov",
+       "Henry Sleight",
+       "John Hughes",
+       "Tomasz Korbak",
+       "Rajashree Agrawal",
+       "Dhruv Pai",
+       "Andrey Gromov",
+       "Daniel A. Roberts",
+       "Diyi Yang",
+       "David L. Donoho",
+       "Sanmi Koyejo"
+      ],
+      "title": "Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2404.01413"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-04-01",
+       "kind": "preprint",
+       "where": "arXiv 2404.01413 v1",
+       "url": "https://arxiv.org/abs/2404.01413v1"
+      },
+      {
+       "date": "2024-04-29",
+       "kind": "preprint",
+       "where": "arXiv 2404.01413 v2",
+       "url": "https://arxiv.org/abs/2404.01413"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "replacing the original real data by each generation's synthetic data does indeed tend towards model collapse",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "accumulating the successive generations of synthetic data alongside the original real data avoids model collapse",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Replacing real data collapses the model; accumulating real and synthetic data avoids collapse, with bounded test error proved in a linear setting.",
+     "does_not_show": "A threshold α*; rare-token retention.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0034",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Parts (2) and (3): stability of iterative retraining holds once the proportion of clean data is large enough, which implies a threshold. The paper proves the condition for generative models in general and gives no value to compare with the claim's range of 0.05 to 0.15.",
+     "source": {
+      "authors": [
+       "Quentin Bertrand",
+       "Avishek Joey Bose",
+       "Alexandre Duplessis",
+       "Marco Jiralerspong",
+       "Gauthier Gidel"
+      ],
+      "title": "On the Stability of Iterative Retraining of Generative Models on their own Data",
+      "venue": "arXiv; listed at ICLR 2024",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2310.00429v5",
+       "https://iclr.cc/virtual/2024/poster/18942"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-09-30",
+       "kind": "preprint",
+       "where": "arXiv 2310.00429 v1",
+       "url": "https://arxiv.org/abs/2310.00429v1"
+      },
+      {
+       "date": "2024-04-02",
+       "kind": "preprint",
+       "where": "arXiv 2310.00429 v5",
+       "url": "https://arxiv.org/abs/2310.00429v5"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "We first prove the stability of iterative training under the condition that the initial generative models",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "approximate the data distribution well enough and the proportion of clean training data",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "(w.r.t. synthetic data) is large enough.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Iterative retraining is stable when the share of clean data is large enough.",
+     "does_not_show": "The numerical threshold; language models specifically.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv v5 abstract page, 2026-10-30.",
+      "unverified": [
+       "ICLR 2024 acceptance: search listing only",
+       "dates of v2 to v4"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0035",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Parts (1) and (3): collapse is unavoidable on synthetic data alone, and a maximal synthetic share exists below which it can be avoided, derived for a statistical language model. Whether its estimate falls in the claim's α* range was not read beyond the abstract.",
+     "source": {
+      "authors": [
+       "Mohamed El Amine Seddik",
+       "Suei-Wen Chen",
+       "Soufiane Hayou",
+       "Pierre Youssef",
+       "Merouane Debbah"
+      ],
+      "title": "How Bad is Training on Synthetic Data? A Statistical Analysis of Language Model Collapse",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2404.05090"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-04-07",
+       "kind": "preprint",
+       "where": "arXiv 2404.05090 v1",
+       "url": "https://arxiv.org/abs/2404.05090"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Specifically, we demonstrate that model collapse cannot be avoided when training solely on synthetic data.",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "However, when mixing both real and synthetic data, we provide an estimate of a maximal amount of synthetic data",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "below which model collapse can eventually be avoided.",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "A threshold structure for collapse in language-model training: certain on synthetic data alone, avoidable below a maximal synthetic share.",
+     "does_not_show": "The numerical value of the threshold in the claim's terms.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "the paper's numerical estimate of the threshold"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0036",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "Parts (1) and (4) in part: lexical, syntactic and semantic diversity of outputs fall through successive recursive fine-tuning. The claim's rare-token retention rate per generation and its α conditions are not measured.",
+     "source": {
+      "authors": [
+       "Yanzhu Guo",
+       "Guokan Shang",
+       "Michalis Vazirgiannis",
+       "Chloé Clavel"
+      ],
+      "title": "The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2311.09807"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-11-16",
+       "kind": "preprint",
+       "where": "arXiv 2311.09807 v1",
+       "url": "https://arxiv.org/abs/2311.09807v1"
+      },
+      {
+       "date": "2024-04-16",
+       "kind": "preprint",
+       "where": "arXiv 2311.09807 v2",
+       "url": "https://arxiv.org/abs/2311.09807"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a set of novel metrics targeting lexical, syntactic, and semantic diversity",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "a consistent decrease in the diversity of the model outputs through successive iterations",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Diversity on several linguistic levels falls consistently across recursive training iterations.",
+     "does_not_show": "A threshold for real-data mixing; the claim's case-3 classification.",
+     "checked": {
+      "by": "intake reader, theme B-collapse; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "publication venue (believed NAACL 2024 Findings): not on the page"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Diversity contraction boundary law and its test battery"
    ],

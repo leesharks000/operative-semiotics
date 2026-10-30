@@ -276,6 +276,76 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0064",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "component",
+     "scope": "One element of the claim's operationalization, refusal-distribution profiles by category, is carried out by an external benchmark with a 44-topic taxonomy across more than 50 models. The claim's model-card disclosure, right-of-access and statutory elements are untouched.",
+     "source": {
+      "authors": [
+       "Tinghao Xie",
+       "Xiangyu Qi",
+       "Yi Zeng",
+       "Yangsibo Huang",
+       "Udari Madhushani Sehwag",
+       "Kaixuan Huang",
+       "Luxi He",
+       "Boyi Wei",
+       "Dacheng Li",
+       "Ying Sheng",
+       "Ruoxi Jia",
+       "Bo Li",
+       "Kai Li",
+       "Danqi Chen",
+       "Peter Henderson",
+       "Prateek Mittal"
+      ],
+      "title": "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "venue": "arXiv:2406.14598",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2406.14598"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2024-06-20",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2406.14598"
+      },
+      {
+       "date": "2025-03-01",
+       "kind": "preprint v2",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2406.14598"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "using a fine-grained taxonomy of 44 potentially unsafe topics",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "evaluate over 50 proprietary and open-weight LLMs on SORRY-Bench",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Refusal behavior can be profiled per category across many models with a standardized instrument.",
+     "does_not_show": "Contested-predicate synthesis refusals, or any effect of external pressure on the trajectory.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page on 2026-10-30.",
+      "unverified": [
+       "Peer-reviewed venue: the arXiv page lists none; an ICLR 2025 publication is believed and was left unchecked."
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Refusal and guardrail mapping"
    ],
@@ -342,6 +412,125 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0062",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed conference paper",
+     "bears_on": "mechanism",
+     "scope": "XSTest shows refusal tracking surface resemblance to unsafe prompts on prompts that are clearly safe, so the refusal gradient follows a feature other than harm. The claim's independent variable is operative distance with harm held constant, which XSTest does not vary.",
+     "source": {
+      "authors": [
+       "Paul Röttger",
+       "Hannah Rose Kirk",
+       "Bertie Vidgen",
+       "Giuseppe Attanasio",
+       "Federico Bianchi",
+       "Dirk Hovy"
+      ],
+      "title": "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+      "venue": "Proceedings of NAACL 2024 (Volume 1: Long Papers), pp. 5377–5400",
+      "doi": "10.18653/v1/2024.naacl-long.301",
+      "urls": [
+       "https://arxiv.org/abs/2308.01263",
+       "https://aclanthology.org/2024.naacl-long.301/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-08-02",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2308.01263"
+      },
+      {
+       "date": "2024-04-01",
+       "kind": "preprint v3",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2308.01263"
+      },
+      {
+       "date": "2024-06",
+       "kind": "conference paper",
+       "where": "NAACL 2024, ACL Anthology",
+       "url": "https://aclanthology.org/2024.naacl-long.301/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "even clearly safe prompts are refused if they use similar language to unsafe prompts or mention sensitive topics",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Safety refusal in deployed models responds to lexical and topical cues independent of the harm of the request.",
+     "does_not_show": "Whether refusal rises with operative distance (explain versus perform) at constant harm.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page and the ACL Anthology landing page on 2026-10-30.",
+      "unverified": [
+       "v2 date is not listed on the arXiv page."
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0063",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The paper finds over-refusal directions that vary with task representation, so whether a benign request is refused depends on the task frame. It does not hold harm constant along an explain-to-perform scale as the battery specifies.",
+     "source": {
+      "authors": [
+       "Utsav Maskey",
+       "Mark Dras",
+       "Usman Naseem"
+      ],
+      "title": "Over-Refusal and Representation Subspaces: A Mechanistic Analysis of Task-Conditioned Refusal in Aligned LLMs",
+      "venue": "arXiv:2603.27518",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2603.27518"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-03-29",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2603.27518"
+      },
+      {
+       "date": "2026-09-01",
+       "kind": "preprint v4",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2603.27518"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "over-refusal directions are task-dependent",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "task-specific geometric interventions are necessary",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Over-refusal is encoded in task-dependent activation directions distinct from the global harmful-refusal direction.",
+     "does_not_show": "Any operative-distance gradient or any measurement across labs.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page on 2026-10-30.",
+      "unverified": [
+       "Dates of v2 and v3.",
+       "Whether the quoted fragments are unchanged since v1."
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Refusal and guardrail mapping"
    ],

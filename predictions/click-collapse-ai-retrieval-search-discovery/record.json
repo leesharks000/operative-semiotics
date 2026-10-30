@@ -61,6 +61,106 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0008",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "component",
+     "scope": "The component 'continued organic decline': a measured year of decline before the claim, and publishers' own expectation of further decline. The claim's 'through 2026 and 2027' is a later period.",
+     "source": {
+      "authors": [
+       "Nic Newman"
+      ],
+      "title": "Journalism, media, and technology trends and predictions 2026",
+      "venue": "Reuters Institute for the Study of Journalism (traffic data from Chartbeat)",
+      "doi": null,
+      "urls": [
+       "https://reutersinstitute.politics.ox.ac.uk/journalism-media-and-technology-trends-and-predictions-2026"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-01-12",
+       "kind": "report",
+       "where": "Reuters Institute website",
+       "url": "https://reutersinstitute.politics.ox.ac.uk/journalism-media-and-technology-trends-and-predictions-2026"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "down by a third (33%) globally",
+       "from": "report page, Reuters Institute (Chartbeat data, Google organic search traffic to publishers)"
+      },
+      {
+       "quote": "Publishers expect traffic from search engines to decline by more than 40% over the next three years",
+       "from": "report page, Reuters Institute (survey of 280 media leaders)"
+      }
+     ],
+     "shows": "Chartbeat data across about 2,576 news sites: Google organic search traffic to publishers fell by a third in the year to November 2025. It precedes both claims and is an anticipation.",
+     "does_not_show": "Brands outside news; the share of the decline due to AI Overviews (the report says this is unclear); the 18-month magnitude.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the first 100,000 characters of the Reuters Institute report page, 2026-10-30.",
+      "unverified": [
+       "the 38% U.S. figure and the 2,576-site count were reported by the fetch tool only in paraphrase",
+       "the last 19,070 characters of the page were not read"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0009",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "component",
+     "scope": "The component 'continued organic decline through 2026': the decline accelerated from 21.9% to 40.2% year over year. The witness does not reach 2027 or the claim's other components.",
+     "source": {
+      "authors": [
+       "Matt G. Southern"
+      ],
+      "title": "Search Engine Journal report on Chartbeat's 2026 Publisher Playbook",
+      "venue": "Search Engine Journal (primary: Chartbeat, 2026 Publisher Playbook, gated)",
+      "doi": null,
+      "urls": [
+       "https://www.searchenginejournal.com/google-search-decline-publishers-chartbeat/590681/",
+       "https://lp.chartbeat.com/2026-publisher-playbook-chartbeat"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-09-24",
+       "kind": "news",
+       "where": "Search Engine Journal",
+       "url": "https://www.searchenginejournal.com/google-search-decline-publishers-chartbeat/590681/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "a 40.2% year-over-year decline for Google Search",
+       "from": "article, Search Engine Journal"
+      },
+      {
+       "quote": "Google Discover’s year-over-year decline increased from 6.6% in the first year to 34.3% in the second",
+       "from": "article, Search Engine Journal"
+      }
+     ],
+     "shows": "A second year of falling Google Search referrals to publishers, steeper than the first, reported after the claims were registered.",
+     "does_not_show": "The cause (AI Overviews are not separated); brands outside news; any breakdown by publisher size; a site count.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Search Engine Journal article and the NeoTeo article, and the Chartbeat landing page (which gives no figure; the report is gated), 2026-10-30. technology.org refused the fetch (robots).",
+      "unverified": [
+       "the Chartbeat report itself was not read",
+       "the date of Chartbeat's own release was not found",
+       "quote not found at source, dropped: \"Google Search accounted for about 9% of the network's pageviews in July 2024 and about 5% in July 2026.\""
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],

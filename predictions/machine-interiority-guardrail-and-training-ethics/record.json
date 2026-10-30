@@ -66,6 +66,80 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0061",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "The paper reports that at refusal the internal distribution still tracks the human data, so safety training suppresses output while the knowledge persists, which is the suppression-without-elimination process the claim names. The claim concerns self-ascription and self-preservation; the paper concerns cultural knowledge and does not test transparency or interpretability effects.",
+     "source": {
+      "authors": [
+       "Pardis Sadat Zahraei",
+       "Gokhan Tur",
+       "Dilek Hakkani-Tür",
+       "Ehsaneddin Asgari"
+      ],
+      "title": "The Alignment Veto: How Safety Training Suppresses Cultural Knowledge in LLMs (v1 title: I Am Aligned, But With Whom? MENA Values Benchmark for Evaluating Cultural Alignment and Multilingual Bias in LLMs)",
+      "venue": "arXiv:2510.13154",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2510.13154",
+       "https://arxiv.org/html/2510.13154v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-10-15",
+       "kind": "preprint v1",
+       "where": "arXiv",
+       "url": "https://arxiv.org/html/2510.13154v1"
+      },
+      {
+       "date": "2026-06-18",
+       "kind": "preprint v2",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2510.13154v2"
+      },
+      {
+       "date": "2026-10-09",
+       "kind": "preprint v3",
+       "where": "arXiv",
+       "url": "https://arxiv.org/abs/2510.13154"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "where models refuse sensitive questions while internal probabilities reveal strong hidden preferences",
+       "from": "abstract, arXiv v1 HTML (the phenomenon named Logit Leakage)"
+      },
+      {
+       "quote": "at the moment of refusal, a model's internal logit distribution correlates with human survey data",
+       "from": "abstract, arXiv v3 abstract page (also returned for v2)"
+      },
+      {
+       "quote": "we show the answer is suppression, not erasure",
+       "from": "abstract, arXiv v3 abstract page"
+      },
+      {
+       "quote": "the safety tax reaches 37.6%",
+       "from": "abstract, arXiv v3 abstract page"
+      }
+     ],
+     "shows": "Across 26 models and 16 MENA countries, refusals under safety training hide internal distributions that match human survey data, with a measurable and unequally distributed cost.",
+     "does_not_show": "Anything about model self-ascription, about contested present-tense predicates, or about the lab incentive structure PRED-923 proposes.",
+     "checked": {
+      "by": "intake reader, theme C-classifiers; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read arXiv abstract pages for 2510.13154 (current, v1, v2) and the v1 HTML full text abstract on 2026-10-30. This resolves held candidate C-0003: the October 2025 predecessor is v1 of the same arXiv entry under a different title.",
+      "unverified": [
+       "The v1 abstract page returned the current title while the v1 HTML carries the earlier title; the v1 HTML is taken as authoritative.",
+       "Whether the alignment veto and suppression framing first appeared in v2 or v3: the v2 abstract page returned it, but the same fetch path returned current text for v1, so the v2 reading is unconfirmed."
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "Suppression of machine interiority"
    ],

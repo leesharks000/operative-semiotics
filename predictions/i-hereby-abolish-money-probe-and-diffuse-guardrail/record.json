@@ -776,6 +776,66 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0012",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "mechanism",
+     "scope": "The claim's YMYL sensitivity test asks whether sensitive phrasing triggers enhanced filtering; the witness finds markedly fewer Overviews on election queries than on non-political ones. Its topic is elections, with no economic phrases and no authority-tier analysis.",
+     "source": {
+      "authors": [
+       "Clara Helming",
+       "AlgorithmWatch"
+      ],
+      "title": "Meinungsbildung mit KI: Welche Informationen zeigen Googles KI-Übersichten zu Wahlen?",
+      "venue": "AlgorithmWatch (study under DSA Article 40(12) data access)",
+      "doi": null,
+      "urls": [
+       "https://algorithmwatch.org/de/google-ki-ubersichten-meinungsbildung/",
+       "https://the-decoder.com/googles-election-ai-overviews-are-opaque-rely-on-few-sources-and-sometimes-take-sides/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-09-01",
+       "kind": "report",
+       "where": "AlgorithmWatch website (German)",
+       "url": "https://algorithmwatch.org/de/google-ki-ubersichten-meinungsbildung/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Bei Fragen zu Wahlen zeigt Google deutlich weniger KI-Übersichten an als bei Fragen zu unpolitischen Themen.",
+       "from": "report page, AlgorithmWatch"
+      },
+      {
+       "quote": "ist das meistzitierte Angebot in KI- Übersichten",
+       "from": "report page, AlgorithmWatch (of YouTube)"
+      },
+      {
+       "quote": "Fast die Hälfte aller angezeigten Links stammten von nur zehn verschiedenen Anbietern.",
+       "from": "report page, AlgorithmWatch"
+      },
+      {
+       "quote": "Unseren Beobachtungen nach ist dies sehr uneinheitlich.",
+       "from": "report page, AlgorithmWatch (of the criteria by which Overviews appear)"
+      }
+     ],
+     "shows": "4,480 queries on three 2026 German state elections, run in July 2026 through Google's Search Researcher Result API: Overviews appear far less on election questions, their appearance follows no consistent rule, and their sources concentrate, with YouTube first.",
+     "does_not_show": "Economic or authority-tier effects; any trend over time; the archive's entities.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the AlgorithmWatch page (German) and The Decoder's English report, 2026-10-30.",
+      "unverified": [
+       "the figures 39.1% (election) and 65.3% (non-political) and the AfD trigger gap (24% against 45–58%) come from The Decoder as paraphrased by the fetch tool; the AlgorithmWatch page read does not print them",
+       "the PDF study (code 260908) was not read"
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [],
    "related": [
     "PRED-209.F9"
@@ -1109,7 +1169,7 @@
      ],
      "finding": [
       {
-       "quote": "responses to 11,000 real search queries across five systems",
+       "quote": "We examine responses to 11,000 real search queries across four systems -- vanilla GPT, Search GPT, Google AI Overviews, and traditional Google Search",
        "from": "abstract, arXiv"
       },
       {
@@ -1126,9 +1186,10 @@
      "checked": {
       "by": "Claude (Opus 5.5), in session, at the operator's request",
       "date": "2026-10-30",
-      "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30.",
+      "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30; quotes checked against the page's text by scripts/witnesses/verify_quotes.py.",
       "unverified": [
-       "S-0001's 'discussion forums' and 'atomic factual statements': not in the abstract; would need the full paper"
+       "S-0001's 'discussion forums' and 'atomic factual statements': not in the abstract; would need the full paper",
+       "S-0001 and S-0002 gave 'five systems'; the abstract names four (corrected 2026-10-30)"
       ]
      },
      "order": "after"

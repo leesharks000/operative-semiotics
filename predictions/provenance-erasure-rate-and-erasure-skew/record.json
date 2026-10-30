@@ -77,6 +77,201 @@
     }
    ],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0005",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed article",
+     "bears_on": "mechanism",
+     "scope": "The attribution gap counts relevant pages read and left uncited by search-enabled LLMs; PER counts correct uses of a framework's concepts left unattributed. The unit is the URL in the witness and the concept in the claim.",
+     "source": {
+      "authors": [
+       "Ilan Strauss",
+       "Jangho Yang",
+       "Tim O'Reilly",
+       "Sruly Rosenblat",
+       "Isobel Moure"
+      ],
+      "title": "The Attribution Crisis in LLM Search Results (journal version: The attribution crisis in LLM search results: Estimating ecosystem exploitation)",
+      "venue": "Social Science Research Council AI Disclosures Project working paper; arXiv cs.DL; Data & Policy (Cambridge University Press) vol. 8, e15",
+      "doi": "10.1017/dap.2026.10064",
+      "urls": [
+       "https://arxiv.org/abs/2508.00838",
+       "https://arxiv.org/html/2508.00838v1",
+       "https://rogue-scholar.org/records/b7q0a-dfk44",
+       "https://www.cambridge.org/core/journals/data-and-policy/article/attribution-crisis-in-llm-search-results-estimating-ecosystem-exploitation/170DD0B88E5F5AEA8F69F2E9AF1328E3",
+       "https://www.ssrc.org/publications/the-attribution-crisis-in-llm-search-results/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-06-27",
+       "kind": "working paper",
+       "where": "Rogue Scholar record of the Asimov's Addendum / AI Disclosures Project post, DOI 10.59350/veayq-6bz87",
+       "url": "https://rogue-scholar.org/records/b7q0a-dfk44"
+      },
+      {
+       "date": "2025-06-27",
+       "kind": "preprint",
+       "where": "arXiv 2508.00838 v1 (the only version listed)",
+       "url": "https://arxiv.org/abs/2508.00838"
+      },
+      {
+       "date": "2026-04-28",
+       "kind": "peer-reviewed article",
+       "where": "Data & Policy 8, e15, published online (issue date given as January 2026)",
+       "url": "https://www.cambridge.org/core/journals/data-and-policy/article/attribution-crisis-in-llm-search-results-estimating-ecosystem-exploitation/170DD0B88E5F5AEA8F69F2E9AF1328E3"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "“attribution gap” – the difference between relevant URLs read and those actually cited.",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "Drawing on approximately 14,000 real-world LMArena conversation logs with search-enabled LLM systems",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "No citation: Gemini provides no clickable citation source in 92% of answers",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "Perplexity’s Sonar visits approximately 10 relevant pages per query but cites only three to four.",
+       "from": "abstract, arXiv HTML v1"
+      },
+      {
+       "quote": "the average query answered by Gemini or Sonar leaves about 3 relevant websites uncited",
+       "from": "abstract, arXiv HTML v1"
+      }
+     ],
+     "shows": "Search-enabled LLMs read more relevant pages than they cite, at rates that differ widely by system on the same queries; the authors tie the difference to retrieval design. This is the earlier pass's candidate C-0001, now verified; it precedes every claim it bears on and is an anticipation.",
+     "does_not_show": "Loss of attribution for a named author's concepts; AI Overviews as a surface; any skew of the loss by source size or standing; any trend over time.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v1 only listed) and the arXiv HTML v1 abstract, the Rogue Scholar record, and the Data & Policy landing page, 2026-10-30. The SSRC page had refused a fetch in S-0002 and was not retried.",
+      "unverified": [
+       "The arXiv page gives v1 as 2025-06-27 although an identifier beginning 2508 is normally assigned in August 2025; the Rogue Scholar DOI record independently dates the paper 27 June 2025",
+       "Rogue Scholar lists four authors (no Jangho Yang); arXiv and Data & Policy list five",
+       "received and accepted dates of the journal version were not on the page read"
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0019",
+     "direction": "supports",
+     "evidence_class": "report",
+     "bears_on": "mechanism",
+     "scope": "Provenance displaced in composed answers: tools sent users to syndicated copies on aggregators and to broken or fabricated URLs. PER counts uncited correct use of concepts; the witness counts wrong attribution of articles.",
+     "source": {
+      "authors": [
+       "Klaudia Jaźwińska",
+       "Aisvarya Chandrasekar"
+      ],
+      "title": "AI Search Has a Citation Problem",
+      "venue": "Columbia Journalism Review, Tow Center for Digital Journalism",
+      "doi": null,
+      "urls": [
+       "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-03-06",
+       "kind": "report",
+       "where": "Columbia Journalism Review (Tow Center)",
+       "url": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Collectively, they provided incorrect answers to more than 60 percent of queries.",
+       "from": "report page, CJR"
+      },
+      {
+       "quote": "directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+       "from": "report page, CJR"
+      },
+      {
+       "quote": "More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs",
+       "from": "findings, CJR article"
+      },
+      {
+       "quote": "chatbots directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+       "from": "findings, CJR article"
+      }
+     ],
+     "shows": "1,600 manually scored queries (excerpts from 200 articles of 20 publishers) across eight tools: most answers misidentified the source, often crediting syndicated copies or giving broken links. It precedes all three claims and is an anticipation.",
+     "does_not_show": "Uncited correct use of ideas; entity disambiguation; the archive's entities; any trend.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the CJR report page, 2026-10-30.",
+      "unverified": [
+       "quote not found at source, dropped: \"More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs.\""
+      ]
+     },
+     "order": "before"
+    },
+    {
+     "witness": "W-0020",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Composed statements left without supporting citation, the condition PER counts when the statement is correct. The witness does not separate correct from incorrect uncited statements.",
+     "source": {
+      "authors": [
+       "Nelson F. Liu",
+       "Tianyi Zhang",
+       "Percy Liang"
+      ],
+      "title": "Evaluating Verifiability in Generative Search Engines",
+      "venue": "arXiv (cs.CL, cs.IR)",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2304.09848"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2023-04-19",
+       "kind": "preprint",
+       "where": "arXiv 2304.09848 v1",
+       "url": "https://arxiv.org/abs/2304.09848"
+      },
+      {
+       "date": "2023-10-23",
+       "kind": "preprint",
+       "where": "arXiv 2304.09848 v2",
+       "url": "https://arxiv.org/abs/2304.09848"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "on average, a mere 51.5% of generated sentences are fully supported by citations",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "only 74.5% of citations support their associated sentence",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Half of the sentences generative search engines produced in 2023 lacked full citation support. It precedes both claims by about three years and is an anticipation.",
+     "does_not_show": "Whether the unsupported statements were correct uses of an identifiable source; current systems.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "publication in Findings of EMNLP 2023 (no journal-ref on the page read)",
+       "quote not found at source, dropped: \"audit four popular generative search engines -- Bing Chat, NeevaAI, perplexity.ai, and YouChat\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "PER measurement programme"
    ],
@@ -443,6 +638,72 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0011",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "method",
+     "scope": "Trigger rate operationalized as the fraction of a query panel that yields an AI synthesis, measured by others: 13.7% overall on 55,393 queries. The panel is trending queries, without per-concept panels or the claim's other variables.",
+     "source": {
+      "authors": [
+       "Haofei Xu",
+       "Umar Iqbal",
+       "Jacob M. Montgomery"
+      ],
+      "title": "Measuring Google AI Overviews: Activation, Source Quality, Claim Fidelity, and Publisher Impact",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2605.14021",
+       "https://arxiv.org/html/2605.14021v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-05-13",
+       "kind": "preprint",
+       "where": "arXiv 2605.14021 v1",
+       "url": "https://arxiv.org/abs/2605.14021"
+      },
+      {
+       "date": "2026-10-01",
+       "kind": "preprint",
+       "where": "arXiv 2605.14021 v2",
+       "url": "https://arxiv.org/abs/2605.14021"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "issuing 55,393 trending queries across 19 topical categories over a 40-day window (March 13 - April 21, 2026).",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "overall AIO activation is 13.7%, rising to 64.7% for question-form queries,",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "decomposing responses into 98,020 atomic claims, 11.0% are unsupported by the cited pages",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "nearly 30% do not appear in those results at all",
+       "from": "abstract, arXiv (AIO-cited domains against co-displayed first-page results)"
+      }
+     ],
+     "shows": "A large audit of AI Overviews: activation is gated strongly by query form; cited domains are more credible than first-page results and often absent from them; 11% of atomic claims are unsupported by the pages cited. It came after PRED-716.F1 and before PRED-742.F2 and PRED-187.F1.",
+     "does_not_show": "Attribution of a named author's concepts; any power skew in what is cited; stability across repeated queries.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "the v1 date is the original submission date given on the page; no separate v1 line was shown"
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [],
    "related": [
     "PRED-742.F1",

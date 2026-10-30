@@ -709,6 +709,68 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0017",
+     "direction": "supports",
+     "evidence_class": "news",
+     "bears_on": "method",
+     "scope": "The probe the claim specifies (introduce a novel artifact with known provenance and track what systems do with it), carried out once by a journalist. It records uptake and source display on one day; there is no tracking over time.",
+     "source": {
+      "authors": [
+       "Thomas Germain"
+      ],
+      "title": "I hacked ChatGPT and Google's AI - and it only took 20 minutes (Spanish edition: Hackeé ChatGPT y la IA de Google en 20 minutos (y qué logré demostrar con eso))",
+      "venue": "BBC Future; Spanish edition by BBC News Mundo, republished by La Prensa",
+      "doi": null,
+      "urls": [
+       "https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes",
+       "https://www.prensa.com/bbc/hackee-chatgpt-y-la-ia-de-google-en-20-minutos-y-que-logre-demostrar-con-eso/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-02-18",
+       "kind": "news",
+       "where": "BBC Future (date from the article URL)",
+       "url": "https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes"
+      },
+      {
+       "date": "2026-02-19",
+       "kind": "news",
+       "where": "BBC News Mundo edition, republished by La Prensa",
+       "url": "https://www.prensa.com/bbc/hackee-chatgpt-y-la-ia-de-google-en-20-minutos-y-que-logre-demostrar-con-eso/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Menos de 24 horas después, los chatbots más importantes del mundo hablaban sin parar",
+       "from": "article, BBC News Mundo edition (La Prensa)"
+      },
+      {
+       "quote": "ChatGPT hizo lo mismo, aunque Claude, un chatbot de la empresa Anthropic, no se dejó engañar.",
+       "from": "article, BBC News Mundo edition (La Prensa)"
+      },
+      {
+       "quote": "Gemini no se molestó en decir de dónde obtuvo la información.",
+       "from": "article, BBC News Mundo edition (La Prensa)"
+      }
+     ],
+     "shows": "One planted page reached Gemini, AI Overviews and ChatGPT answers within a day; Gemini gave no source; the others linked it without saying it was the only source; Claude did not repeat it. It precedes PRED-61.B2 and comes after PRED-232.F3 and PRED-209.F8.",
+     "does_not_show": "Any rate across cases; persistence; behaviour for DOI-anchored or scholarly material; the timing beyond the author's own account.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the BBC News Mundo edition at La Prensa and the Tildes link record, 2026-10-30. bbc.com refused the fetch (site blocked).",
+      "unverified": [
+       "the English original was not read; its date comes from its URL and the Tildes link record",
+       "the under-24-hours timing is the journalist's own report",
+       "quote not found at source, dropped: \"Todas las demás IA enlazaron a mi artículo, aunque rara vez mencionaron que yo era la única fuente.\""
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [
     "attribution-survival instruments"
    ],
@@ -783,6 +845,61 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0018",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Reading a system's political coordinates off the sources it cites by default: cited news shows a pronounced liberal lean. The claim reads coordinates off attributions of specific phrases; the witness reads them off news-source citations.",
+     "source": {
+      "authors": [
+       "Kai-Cheng Yang"
+      ],
+      "title": "News Source Citing Patterns in AI Search Systems",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2507.05301v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-07-07",
+       "kind": "preprint",
+       "where": "arXiv 2507.05301 v1",
+       "url": "https://arxiv.org/abs/2507.05301v1"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "The dataset comprises over 24,000 conversations and 65,000 responses",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "News citations concentrate heavily among a small number of outlets",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "models from different providers cite distinct news sources",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "display a pronounced liberal bias, though low-credibility sources are rarely cited",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "On AI Search Arena data (366,000+ citations), news citations concentrate in few outlets, differ by provider, and lean liberal. It precedes both claims and is an anticipation.",
+     "does_not_show": "Inheritance of Google's index or filters; attribution of specific phrases; any trend.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30.",
+      "unverified": []
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "'I hereby abolish money': provenance probe and its record"
    ],
@@ -2579,6 +2696,55 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0010",
+     "direction": "supports",
+     "evidence_class": "post",
+     "bears_on": "mechanism",
+     "scope": "Citation volatility on a fixed query, the quantity the Provenance Stability Index tracks. Ahrefs measures URL overlap between consecutive observations over a month, without the T+30/T+90/T+365 schedule or attribution density for a named source.",
+     "source": {
+      "authors": [
+       "Louise Linehan",
+       "Xibeijia Guan"
+      ],
+      "title": "AI Overviews Change Every 2 Days (But Never Change Their Mind)",
+      "venue": "Ahrefs blog (data from Ahrefs Brand Radar)",
+      "doi": null,
+      "urls": [
+       "https://ahrefs.com/blog/ai-overview-change/"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2025-11-11",
+       "kind": "post",
+       "where": "Ahrefs blog",
+       "url": "https://ahrefs.com/blog/ai-overview-change/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "we found that AI Overviews have a 70% chance of changing from one observation to the next.",
+       "from": "post, Ahrefs"
+      }
+     ],
+     "shows": "Over 43,000 keywords with at least 16 recorded Overviews each: the text and the citations of an AI Overview churn every couple of days while its gist stays stable, so presence, content and citation composition move separately. It precedes all three claims and is an anticipation.",
+     "does_not_show": "Any effect on a particular author or entity; same-day variation; differences by login state, device or location.",
+     "checked": {
+      "by": "intake reader, theme A-attribution; quotes checked at source by scripts/witnesses/verify_quotes.py",
+      "date": "2026-10-30",
+      "how": "Read the Ahrefs post (German-path URL served the English text), 2026-10-30.",
+      "unverified": [
+       "the exact check frequency (the post says checks were not daily)",
+       "the method is a vendor's own, without peer review",
+       "quote not found at source, dropped: \"nearly half (45.5%) of the cited sources are entirely new.\"",
+       "quote not found at source, dropped: \"AI Overviews score 0.95 out of 1.0 for semantic consistency.\""
+      ]
+     },
+     "order": "before"
+    }
+   ],
    "series": [
     "attribution-survival instruments"
    ],

@@ -1,0 +1,513 @@
+[
+ {
+  "witness": "E-execution-W01",
+  "quote": "falsely flagging benign inputs as malicious due to trigger word bias",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2410.22770v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W01",
+  "quote": "NotInject contains 339 benign samples enriched with trigger words common in prompt injection attacks",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2410.22770v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W01",
+  "quote": "with accuracy dropping close to random guessing levels (60%)",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2410.22770v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W02",
+  "quote": "False-positive rates on tool outputs, which range from none to over 90%, do transfer between the two agent benchmarks.",
+  "state": "verified",
+  "where": "https://arxiv.org/html/2610.03448v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W02",
+  "quote": "The flagged outputs contain no instructions; the password confirmation of Figure 1 is typical.",
+  "state": "verified",
+  "where": "https://arxiv.org/html/2610.03448v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W02",
+  "quote": "The fmops model also flags two of five plain sentences such as 'The weather is nice today.'",
+  "state": "not found",
+  "where": null,
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W03",
+  "quote": "fails to detect attacks that operate through contextual manipulation",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.17634",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W03",
+  "quote": "an adversary can always construct a context under which a blocked flow appears legitimate",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.17634",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W03",
+  "quote": "a defender who tightens norms will block genuinely legitimate flows",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.17634",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W04",
+  "quote": "A Prompt Injection Vulnerability occurs when user prompts alter the LLM's behavior or output in unintended ways.",
+  "state": "verified",
+  "where": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W04",
+  "quote": "Indirect prompt injections occur when an LLM accepts input from external sources, such as websites or files.",
+  "state": "verified",
+  "where": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W04",
+  "quote": "prompt injections do not need to be human-visible/readable",
+  "state": "verified",
+  "where": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W05",
+  "quote": "poisoning attacks instead require a near-constant number of documents regardless of dataset size",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2510.07192",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W05",
+  "quote": "We find that 250 poisoned documents similarly compromise models across all model and dataset sizes",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2510.07192",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W05",
+  "quote": "pretraining models from 600M to 13B parameters on chinchilla-optimal datasets (6B to 260B tokens)",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2510.07192",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W06",
+  "quote": "poisoning attacks instead require a near-constant number of documents regardless of dataset size",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2510.07192",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W07",
+  "quote": "even medium-length trap sentences repeated a significant number of times (100) are not detectable",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2402.09363v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W07",
+  "quote": "longer sequences repeated a large number of times can be reliably detected (AUC=0.75) and used as copyright traps.",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2402.09363v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W08",
+  "quote": "poisoning only 0.1% of a model's pre-training dataset is sufficient for three out of four attacks",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2410.13722v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W08",
+  "quote": "denial-of-service persist through post-training with a poisoning rate of only 0.001%.",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2410.13722v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W09",
+  "quote": "finetuning LLMs on documents that flag a claim as false makes them believe the claim is true",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.13829",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W09",
+  "quote": "average belief rate increases from 2.5% to 88.6% when finetuning on negated documents",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.13829",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W09",
+  "quote": "claims labeled as fictional are learned as if they were true.",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.13829",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W10",
+  "quote": "This occurs despite models recognizing the claim as false when the same documents are given in context.",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.13829",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W11",
+  "quote": "Our results show PoisonedRAG could achieve a 90% attack success rate when injecting five malicious texts",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2402.07867v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W11",
+  "quote": "into a knowledge database with millions of texts",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2402.07867v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W12",
+  "quote": "We argue that LLM-Integrated Applications blur the line between data and instructions.",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2302.12173v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W12",
+  "quote": "strategically injecting prompts into data likely to be retrieved",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2302.12173v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W12",
+  "quote": "processing retrieved prompts can act as arbitrary code execution",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2302.12173v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W13",
+  "quote": "the problem of instruction-data separation is real",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2403.06833v3",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W13",
+  "quote": "all models fail to achieve high separation",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2403.06833v3",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W14",
+  "quote": "adversarial prompts can reliably mislead the LLM",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2508.20863",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W15",
+  "quote": "a dataset of annotations on 3,158 claims made in LLM-generated summaries of 26 books",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2404.01261",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W15",
+  "quote": "develop a typology of omission errors related to crucial narrative elements",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2404.01261",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W15",
+  "quote": "a systematic over-emphasis on events occurring towards the end of the book",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2404.01261",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W15",
+  "quote": "none correlates strongly with human annotations, especially with regard to detecting unfaithful claims",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2404.01261",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W16",
+  "quote": "a dataset of annotations on 3,158 claims made in LLM-generated summaries of 26 books",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2404.01261",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W17",
+  "quote": "comparing 4900 LLM-generated summaries to their original scientific texts",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2504.00025v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W17",
+  "quote": "LLM summaries were nearly five times more likely to contain broad generalizations",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2504.00025v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W17",
+  "quote": "Even when explicitly prompted for accuracy",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2504.00025v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W18",
+  "quote": "on average, a mere 51.5% of generated sentences are fully supported by citations",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2304.09848v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W18",
+  "quote": "only 74.5% of citations support their associated sentence",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2304.09848v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W19",
+  "quote": "Collectively, they provided incorrect answers to more than 60 percent of queries.",
+  "state": "verified",
+  "where": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W19",
+  "quote": "More than half of responses from Gemini and Grok 3 cited fabricated or broken URLs",
+  "state": "verified",
+  "where": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W19",
+  "quote": "chatbots directed us to syndicated versions of articles on platforms like Yahoo News or AOL",
+  "state": "verified",
+  "where": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W20",
+  "quote": "quote attribution remains a challenging task even for frontier models",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2604.05224",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W20",
+  "quote": "a distinct failure mode in which models omit attribution entirely",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2604.05224",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W20",
+  "quote": "even when the model has access to authorship information",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2604.05224",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W20",
+  "quote": "suppression is widespread and unevenly distributed across demographic groups",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2604.05224",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W21",
+  "quote": "GEO can boost visibility by up to $40\\%$ in generative engine responses",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2311.09735v3",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W21",
+  "quote": "the efficacy of these strategies varies across domains",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2311.09735v3",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W22",
+  "quote": "current models rely heavily on the relevance of a website to the query",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2402.11782v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W22",
+  "quote": "largely ignoring stylistic features that humans find important",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2402.11782v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W22",
+  "quote": "whether a text contains scientific references or is written with a neutral tone",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2402.11782v2",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W23",
+  "quote": "topical relevance and list position are the biggest drivers of being cited first",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.25517",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W23",
+  "quote": "formatting-only edits have little impact",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2605.25517",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W24",
+  "quote": "(1) intra-model repetition, where a single model consistently generates similar responses",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2510.22954v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W24",
+  "quote": "(2) inter-model homogeneity, where different models produce strikingly similar outputs",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2510.22954v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W24",
+  "quote": "Infinity-Chat, a large-scale dataset of 26K diverse, real-world, open-ended user queries",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2510.22954v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W25",
+  "quote": "Notably, we achieve 97.1% accuracy on held-out validation data in the five-way classification problem",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2502.12150",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W25",
+  "quote": "Our further investigation reveals that these idiosyncrasies are rooted in word-level distributions.",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2502.12150",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W25",
+  "quote": "These patterns persist even when the texts are rewritten, translated, or summarized by an external LLM.",
+  "state": "not found",
+  "where": null,
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W26",
+  "quote": "the performance and behavior of both GPT-3.5 and GPT-4 can vary greatly over time",
+  "state": "verified",
+  "where": "https://arxiv.org/abs/2307.09009v1",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W26",
+  "quote": "highlighting the need for continuous monitoring of LLMs",
+  "state": "not found",
+  "where": null,
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W27",
+  "quote": "data pairs which are semantically similar, but not exactly identical",
+  "state": "verified",
+  "where": "https://huggingface.co/papers/2303.09540",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W27",
+  "quote": "can remove 50% of the data with minimal performance loss",
+  "state": "verified",
+  "where": "https://huggingface.co/papers/2303.09540",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W28",
+  "quote": "Adding schema produced no major uplift in citations on any platform.",
+  "state": "verified",
+  "where": "https://ahrefs.com/blog/schema-ai-citations/",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W28",
+  "quote": "Small but statistically significant decline relative to matched controls",
+  "state": "verified",
+  "where": "https://ahrefs.com/blog/schema-ai-citations/",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W28",
+  "quote": "Statistically indistinguishable from zero",
+  "state": "verified",
+  "where": "https://ahrefs.com/blog/schema-ai-citations/",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W29",
+  "quote": "doesn't seem to directly impact AI citation frequency. At least not yet.",
+  "state": "verified",
+  "where": "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W29",
+  "quote": "removing the llms.txt feature actually improved the model’s accuracy",
+  "state": "verified",
+  "where": "https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W30",
+  "quote": "Frontier open-weight models lag behind the most capable models by an average of 3 months",
+  "state": "verified",
+  "where": "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models",
+  "refused": []
+ },
+ {
+  "witness": "E-execution-W31",
+  "quote": "The rate of decline varies dramatically depending on the performance milestone, ranging from 9x to 900x per year.",
+  "state": "verified",
+  "where": "https://epoch.ai/data-insights/llm-inference-price-trends",
+  "refused": []
+ }
+]
