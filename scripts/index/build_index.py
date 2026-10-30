@@ -362,6 +362,9 @@ def build(export=None):
             wit[l['claim']].append({'witness': w['id'], 'direction': w['direction'], 'evidence_class': w['evidence_class'], 'bears_on': l['bears_on'],
                                     'scope': l['scope'], 'source': w['source'], 'versions': w['versions'], 'finding': w['finding'],
                                     'shows': w['shows'], 'does_not_show': w['does_not_show'], 'checked': w['checked']})
+    rul = collections.defaultdict(list)   # questions held for the operator's ruling (data/witnesses/rulings.json)
+    for r_ in json.load(open(ROOT / 'data/witnesses/rulings.json'))['rulings']:
+        rul[r_['claim']].append(r_)
     data_claims = []
     for c in C:
         st = [{'find': s['find'], 'deposit': s['deposit'], 'date': s['date'], 'lines': s['lines'], 'shape': s['shape'],
@@ -387,6 +390,7 @@ def build(export=None):
                             'statement': c['statement'], 'falsifier': c.get('falsifier'), 'window': c.get('window'),
                             'statements': st, 'states': c.get('states', []), 'evidence': evid,
                             **({'witnesses': [{**x, 'order': CW.order(c['registered'], x['versions'])[0]} for x in wit[c['id']]]} if wit.get(c['id']) else {}),
+                            **({'rulings': rul[c['id']]} if rul.get(c['id']) else {}),
                             'series': c.get('series', []), 'related': c.get('related', []), 'contains': c.get('contains', []),
                             'in': c.get('in', []), 'register_aliases': c.get('aliases', []), 'flags': c.get('flags', []),
                             'merged': c.get('merged', [])})
@@ -478,6 +482,9 @@ def build(export=None):
                              + (' · unverified: ' + esc('; '.join(x['checked']['unverified'])) if x['checked'].get('unverified') else '') + '</span></div>')
                 h.append('<div class="links"><span class="lbl">witnesses</span> recorded under the protocol of 2026-10-30; a witness does not change the claim\'s status. '
                          f'<a href="{DATASET}witnesses.json">witnesses.json</a> · <a href="{DATASET}searches.json">the search log</a></div></details>')
+            for r_ in k.get('rulings', []):
+                h.append(f'<div class="links"><span class="lbl">ruling {esc(r_["id"])} · {esc(r_["state"])}</span> {esc(r_["question"])}'
+                         + (f' — <b>ruled</b> {esc(r_["ruling"])}' if r_.get('ruling') else '') + '</div>')
             lk = []
             if k['series']:
                 lk.append('series: ' + '; '.join(esc(x) for x in k['series']))
@@ -601,6 +608,7 @@ def build(export=None):
                  'confirmations.json': json.load(open(T / 'confirmations.json')),
                  'witnesses.json': json.load(open(ROOT / 'data/witnesses/witnesses.json')),
                  'searches.json': json.load(open(ROOT / 'data/witnesses/searches.json')),
+                 'rulings.json': json.load(open(ROOT / 'data/witnesses/rulings.json')),
                  'pages.json': {'what': 'Subject pages of the index on operativesemiotics.org.', 'pages': [{k: v for k, v in t.items()} for t in toc]}}
         recs = []
         for n, o in files.items():
