@@ -1078,6 +1078,62 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0002",
+     "direction": "supports",
+     "evidence_class": "preprint",
+     "bears_on": "mechanism",
+     "scope": "Unequal retention by kind of source, found in the composed answer: sources are cited and then under-used in the summary. PRED-209.G2 states lower retention for low-authority domains in the index; the witness measures representation in the synthesis, by source type.",
+     "source": {
+      "authors": [
+       "Michelle Huang",
+       "Agam Goyal",
+       "Koustuv Saha",
+       "Eshwar Chandrasekharan"
+      ],
+      "title": "Answer Bubbles: Information Exposure in AI-Mediated Search",
+      "venue": "arXiv",
+      "doi": null,
+      "urls": [
+       "https://arxiv.org/abs/2603.16138v1"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-03-17",
+       "kind": "preprint",
+       "where": "arXiv 2603.16138 v1",
+       "url": "https://arxiv.org/abs/2603.16138v1"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "responses to 11,000 real search queries across five systems",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "Wikipedia and longer sources are disproportionately overrepresented",
+       "from": "abstract, arXiv"
+      },
+      {
+       "quote": "cited social media content and negatively framed sources are substantially underrepresented",
+       "from": "abstract, arXiv"
+      }
+     ],
+     "shows": "Generative search selects sources unequally and the summary compounds it: what is admitted to the source list is not admitted equally to the composed answer.",
+     "does_not_show": "Suppression of any named author or entity; the index layer; any claim about the archive's own content.",
+     "checked": {
+      "by": "Claude (Opus 5.5), in session, at the operator's request",
+      "date": "2026-10-30",
+      "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30.",
+      "unverified": [
+       "S-0001's 'discussion forums' and 'atomic factual statements': not in the abstract; would need the full paper"
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [
     "Diffuse Guardrail indexing diagnostics"
    ],

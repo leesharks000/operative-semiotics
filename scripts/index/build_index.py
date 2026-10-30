@@ -22,7 +22,8 @@ WHAT IT WRITES (all derived; never hand-edit)
   --export DIR                     the dataset (alexanarch datasets/prediction-index/): predictions.json (every claim with
                                    its statements quoted), series.json, confirmations.json, pages.json, manifest.json
 
-Inputs: data/reading/triage/{claims,series,confirmations}.json, data/reading/finds.jsonl (+ finds.ids.jsonl),
+Inputs: data/reading/triage/{claims,series,confirmations}.json, data/witnesses/{witnesses,searches}.json (external witnesses, 2026-10-30),
+data/reading/finds.jsonl (+ finds.ids.jsonl),
 data/index/categories.json and the verified naming batches data/index/naming/NM*.json (titles, descriptions, lines,
 moves), and the alexanarch registry for record titles, lines and URLs.
 USAGE  python3 scripts/index/build_index.py [--export ../alexanarch/datasets/prediction-index]
@@ -354,6 +355,13 @@ def build(export=None):
         for l in x['links']:
             ev[l.get('find')].append({'confirmation': x['confirmation'], 'deposit': x['deposit'], 'date': x['date'],
                                       'claimed': l.get('claimed'), 'quote': x['quote']})
+    sys.path.insert(0, str(ROOT / 'scripts/witnesses')); import check_witnesses as CW
+    wit = collections.defaultdict(list)   # external witnesses (data/witnesses, protocol of 2026-10-30)
+    for w in json.load(open(ROOT / 'data/witnesses/witnesses.json'))['witnesses']:
+        for l in w['claims']:
+            wit[l['claim']].append({'witness': w['id'], 'direction': w['direction'], 'evidence_class': w['evidence_class'], 'bears_on': l['bears_on'],
+                                    'scope': l['scope'], 'source': w['source'], 'versions': w['versions'], 'finding': w['finding'],
+                                    'shows': w['shows'], 'does_not_show': w['does_not_show'], 'checked': w['checked']})
     data_claims = []
     for c in C:
         st = [{'find': s['find'], 'deposit': s['deposit'], 'date': s['date'], 'lines': s['lines'], 'shape': s['shape'],
@@ -378,6 +386,7 @@ def build(export=None):
                             'record': rec_url(c['registered_in']), 'page': url(where[c['id']]) + '#' + c['id'] if c['id'] in where else None,
                             'statement': c['statement'], 'falsifier': c.get('falsifier'), 'window': c.get('window'),
                             'statements': st, 'states': c.get('states', []), 'evidence': evid,
+                            **({'witnesses': [{**x, 'order': CW.order(c['registered'], x['versions'])[0]} for x in wit[c['id']]]} if wit.get(c['id']) else {}),
                             'series': c.get('series', []), 'related': c.get('related', []), 'contains': c.get('contains', []),
                             'in': c.get('in', []), 'register_aliases': c.get('aliases', []), 'flags': c.get('flags', []),
                             'merged': c.get('merged', [])})
@@ -451,6 +460,24 @@ def build(export=None):
                     h.append(f'<div class="later"><span class="lbl"><a href="{rec_url(e["deposit"])}">#{e["deposit"]}</a> · {esc(e["date"])} · claims: {esc(e["claimed"])}'
                              + (' · first-party (a deposit that states the claim, or its companion)' if first_p else '') + f'</span>\n{esc(e["quote"][:900])}</div>')
                 h.append('</details>')
+            if k.get('witnesses'):
+                n = len(k['witnesses'])
+                h.append(f'<details><summary>{n} external witness{"es" if n > 1 else ""} — research outside the archive that bears on it</summary>')
+                for x in k['witnesses']:
+                    s_ = x['source']; v0 = min((v['date'] for v in x['versions'] if v.get('date')), default=None)
+                    ordw = {'after': 'after registration', 'before': 'before registration — an anticipation', 'same day': 'the day of registration',
+                            'undetermined': 'order undetermined'}[x['order']]
+                    link = (s_.get('urls') or [None])[0] or (f'https://doi.org/{s_["doi"]}' if s_.get('doi') else None)
+                    cite = (', '.join(s_['authors'][:3]) + (' et al.' if len(s_['authors']) > 3 else '') + ', ' if s_.get('authors') else '')
+                    tt = f'<a href="{esc(link)}">{esc(s_["title"])}</a>' if link else esc(s_['title'])
+                    h.append(f'<div class="later"><span class="lbl">{esc(x["witness"])} · {esc(x["direction"])} · {esc(x["evidence_class"])} · first public {esc(v0)} · {ordw} · bears on: {esc(x["bears_on"])}</span>\n'
+                             f'{esc(cite)}{tt}' + (f', {esc(s_["venue"])}' if s_.get('venue') else '') + '.'
+                             + ''.join(f'<br>“{esc(f["quote"])}” <span class="lbl">({esc(f["from"])})</span>' for f in x['finding'])
+                             + f'<br><b>Shows:</b> {esc(x["shows"])}<br><b>Does not show:</b> {esc(x["does_not_show"])}<br><b>Scope:</b> {esc(x["scope"])}'
+                             + f'<br><span class="lbl">checked {esc(x["checked"]["date"])} — {esc(x["checked"]["how"])}'
+                             + (' · unverified: ' + esc('; '.join(x['checked']['unverified'])) if x['checked'].get('unverified') else '') + '</span></div>')
+                h.append('<div class="links"><span class="lbl">witnesses</span> recorded under the protocol of 2026-10-30; a witness does not change the claim\'s status. '
+                         f'<a href="{DATASET}witnesses.json">witnesses.json</a> · <a href="{DATASET}searches.json">the search log</a></div></details>')
             lk = []
             if k['series']:
                 lk.append('series: ' + '; '.join(esc(x) for x in k['series']))
@@ -572,6 +599,8 @@ def build(export=None):
                                       'generated': today, 'claims': data_claims},
                  'series.json': json.load(open(T / 'series.json')),
                  'confirmations.json': json.load(open(T / 'confirmations.json')),
+                 'witnesses.json': json.load(open(ROOT / 'data/witnesses/witnesses.json')),
+                 'searches.json': json.load(open(ROOT / 'data/witnesses/searches.json')),
                  'pages.json': {'what': 'Subject pages of the index on operativesemiotics.org.', 'pages': [{k: v for k, v in t.items()} for t in toc]}}
         recs = []
         for n, o in files.items():

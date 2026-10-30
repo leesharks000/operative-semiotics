@@ -324,6 +324,67 @@
    ],
    "states": [],
    "evidence": [],
+   "witnesses": [
+    {
+     "witness": "W-0001",
+     "direction": "supports",
+     "evidence_class": "peer-reviewed conference paper",
+     "bears_on": "method",
+     "scope": "The probe's method, the same content under different authority signals, carried out by others on LLM paper recommendation. PRED-209.F5 specifies Google's crawl speed, ranking position and summarization treatment, which this study does not measure.",
+     "source": {
+      "authors": [
+       "Uthman Jinadu",
+       "Parsa Ghazvinian",
+       "Anjila Budathoki",
+       "Benjamin M. Ampel",
+       "Rajshekhar Sunderraman",
+       "Yi Ding"
+      ],
+      "title": "Authority Bias in Conversational Search Engines for Academic Paper Recommendation",
+      "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), Budapest, pp. 24548–24568",
+      "doi": "10.18653/2026.emnlp-main.1069",
+      "urls": [
+       "https://aclanthology.org/2026.emnlp-main.1069/",
+       "https://arxiv.org/abs/2609.00248"
+      ]
+     },
+     "versions": [
+      {
+       "date": "2026-08-31",
+       "kind": "preprint",
+       "where": "arXiv 2609.00248 v1",
+       "url": "https://arxiv.org/abs/2609.00248"
+      },
+      {
+       "date": "2026-10",
+       "kind": "peer-reviewed conference paper",
+       "where": "EMNLP 2026",
+       "url": "https://aclanthology.org/2026.emnlp-main.1069/"
+      }
+     ],
+     "finding": [
+      {
+       "quote": "Holding title and abstract constant, we vary authority metadata across three counterfactual conditions",
+       "from": "abstract, ACL Anthology"
+      },
+      {
+       "quote": "debiasing instructions suppress authority mentions far faster than authority-driven flips",
+       "from": "abstract, ACL Anthology"
+      }
+     ],
+     "shows": "Across eight LLMs (five open-weight, three closed), recommendations of the same paper shift with its authority metadata (author prestige, venue, citations), substantially and directionally; instructions against bias remove the mention of authority faster than the authority-driven choice, so auditing what the model says understates what it does.",
+     "does_not_show": "Google indexing, crawl speed or ranking; the archive's own entities; any effect size the archive registered.",
+     "checked": {
+      "by": "Claude (Opus 5.5), in session, at the operator's request",
+      "date": "2026-10-30",
+      "how": "Read the ACL Anthology landing page and the arXiv abstract page, 2026-10-30.",
+      "unverified": [
+       "the count of 17,898 parsed observations reported in S-0001: not in the abstract or the page metadata"
+      ]
+     },
+     "order": "after"
+    }
+   ],
    "series": [],
    "related": [],
    "contains": [],
