@@ -129,7 +129,7 @@
    ],
    "finding": [
     {
-     "quote": "responses to 11,000 real search queries across five systems",
+     "quote": "We examine responses to 11,000 real search queries across four systems -- vanilla GPT, Search GPT, Google AI Overviews, and traditional Google Search",
      "from": "abstract, arXiv"
     },
     {
@@ -146,9 +146,10 @@
    "checked": {
     "by": "Claude (Opus 5.5), in session, at the operator's request",
     "date": "2026-10-30",
-    "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30.",
+    "how": "Read the arXiv abstract page (v1 only listed), 2026-10-30; quotes checked against the page's text by scripts/witnesses/verify_quotes.py.",
     "unverified": [
-     "S-0001's 'discussion forums' and 'atomic factual statements': not in the abstract; would need the full paper"
+     "S-0001's 'discussion forums' and 'atomic factual statements': not in the abstract; would need the full paper",
+     "S-0001 and S-0002 gave 'five systems'; the abstract names four (corrected 2026-10-30)"
     ]
    },
    "found_by": [
@@ -182,7 +183,7 @@
    },
    "versions": [
     {
-     "date": "2026-04",
+     "date": "2026-04-21",
      "kind": "preprint",
      "where": "PsyArXiv, 10.31234/osf.io/rz5s4_v1",
      "url": "https://doi.org/10.31234/osf.io/rz5s4_v1"
@@ -217,10 +218,8 @@
    "checked": {
     "by": "Claude (Opus 5.5), in session, at the operator's request",
     "date": "2026-10-30",
-    "how": "Read the Tilburg University Research Portal record, 2026-10-30; the journal's DOI page refused the fetch.",
-    "unverified": [
-     "the exact day of the PsyArXiv preprint (April 2026)"
-    ]
+    "how": "Read the Tilburg University Research Portal record, 2026-10-30; the journal's DOI page refused the fetch. Dates from Crossref: PsyArXiv 10.31234/osf.io/rz5s4_v1 posted 2026-04-21 (is-preprint-of the journal article); Behaviour & Information Technology published online 2026-08-31.",
+    "unverified": []
    },
    "found_by": [
     "S-0001",
@@ -230,7 +229,7 @@
   {
    "id": "W-0004",
    "direction": "supports",
-   "evidence_class": "preprint",
+   "evidence_class": "peer-reviewed article",
    "claims": [
     {
      "claim": "PRED-476.B1",
@@ -257,39 +256,46 @@
      "Dominic Oliver"
     ],
     "title": "Evaluating Large Language Models for Assessment of Psychosis Risk",
-    "venue": "medRxiv",
-    "doi": "10.64898/2026.04.02.26349960",
+    "venue": "npj Digital Medicine (preprint: medRxiv)",
+    "doi": "10.1038/s41746-026-02928-4",
     "urls": [
+     "https://www.nature.com/articles/s41746-026-02928-4",
      "https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v1",
-     "https://www.nature.com/articles/s41746-026-02928-4"
+     "https://doi.org/10.64898/2026.04.02.26349960"
     ]
    },
    "versions": [
     {
-     "date": "2026-04",
+     "date": "2026-04-04",
      "kind": "preprint",
-     "where": "medRxiv (the DOI string carries 2026.04.02)",
+     "where": "medRxiv v1, 10.64898/2026.04.02.26349960",
      "url": "https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v1"
     },
     {
-     "date": null,
+     "date": "2026-06-15",
+     "kind": "preprint",
+     "where": "medRxiv v2",
+     "url": "https://www.medrxiv.org/content/10.64898/2026.04.02.26349960v2"
+    },
+    {
+     "date": "2026-07-23",
      "kind": "peer-reviewed article",
-     "where": "npj Digital Medicine, s41746-026-02928-4, as reported in S-0001",
-     "url": "https://www.nature.com/articles/s41746-026-02928-4"
+     "where": "npj Digital Medicine, 10.1038/s41746-026-02928-4",
+     "url": "https://doi.org/10.1038/s41746-026-02928-4"
     }
    ],
    "finding": [
     {
-     "quote": "We assessed 11 open-weight LLMs on 678 PSYCHS interview transcripts from 373 participants (77.7% CHR-P).",
-     "from": "abstract, medRxiv"
+     "quote": "We assessed 11 open-weight LLMs on 678 partial PSYCHS interview transcripts from 373 participants (77.7% CHR-P).",
+     "from": "abstract, medRxiv (server record, v1 and v2) and npj Digital Medicine (Crossref)"
     },
     {
-     "quote": "Errors primarily reflected overpathologisation of non-clinical experiences.",
-     "from": "abstract, medRxiv"
+     "quote": "Larger models achieved the strongest classification performance (Llama-3.3-70B: accuracy = 0.80, sensitivity = 0.93, specificity = 0.58).",
+     "from": "abstract, medRxiv (server record, v1 and v2)"
     },
     {
-     "quote": "maintaining high sensitivity (0.934) and improved specificity (0.580)",
-     "from": "results, medRxiv"
+     "quote": "Errors primarily reflected over-pathologisation of non-clinical experiences.",
+     "from": "abstract, medRxiv (server record, v1 and v2) and npj Digital Medicine (Crossref)"
     }
    ],
    "shows": "LLMs scoring clinical interviews err mainly by reading non-clinical experience as pathological; the strongest classifier pairs high sensitivity with low specificity.",
@@ -297,10 +303,9 @@
    "checked": {
     "by": "Claude (Opus 5.5), in session, at the operator's request",
     "date": "2026-10-30",
-    "how": "Read the medRxiv page, 2026-10-30; the npj Digital Medicine page refused the fetch.",
+    "how": "medRxiv's page and npj's page refused or redirected the fetch; the abstract and dates read from the medRxiv server's API record (api.biorxiv.org, v1 2026-04-04, v2 2026-06-15, published DOI 10.1038/s41746-026-02928-4) and Crossref (npj, published 2026-07-23); quotes checked by scripts/witnesses/verify_quotes.py.",
     "unverified": [
-     "the journal version and its date (23 July 2026, as reported in S-0001)",
-     "the preprint's posting day: the page gives only 2026"
+     "S-0001 and S-0002 quoted 'sensitivity (0.934) … specificity (0.580)' from the results; the abstract gives 0.93 and 0.58, quoted instead (corrected 2026-10-30)"
     ]
    },
    "found_by": [
